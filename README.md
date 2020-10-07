@@ -16,7 +16,9 @@ pip3 install sphinx-book-theme
 
 This project uses [Sphinx](https://www.sphinx-doc.org/en/master/usage/installation.html) and [Restructured Text](https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html)
 
-`conf.py` is the configuration source for the Sphinx project
+`./source/conf.py` is the configuration source for the Sphinx project.
+
+The navigation structure is aligned with the folder/file organization under `./source/`. This is where the individual page `.rst` files live and can be edited.
 
 If any css or table of contents organization changes, run: `make clean html`
 
