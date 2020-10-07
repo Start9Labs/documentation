@@ -1,12 +1,11 @@
 .. _faq:
 
-Frequently Asked Questions
-==========================
-
-This guide is meant to compile questions we commonly receive. We are a small team working hard to build and deliver the best product and features possible, so please regard this guide before directly reaching out. Also, let us know if there is a question you would like to see answered here!
+***
+FAQ
+***
 
 What is the Embassy?
---------------------
+====================
 
 The internet as we know it is organized into questioners, or clients, and answerers, or servers. When you open a mobile email app, say Gmail, the app (client) begins asking questions: "have I received new mail?", "what are my last 50 messages?", "what drafts am I in the midst of writing?", and so on. Your app's questions are sent to and heard by a Google-run server which then provides answers back to the client and are subsequently displayed to the screen.
 
@@ -20,7 +19,7 @@ One thing is for certain though: if you control your server, then you control yo
 
 
 How does the Embassy work?
---------------------------
+==========================
 
 The Embassy runs on the Raspberry Pi 4B hardware with a Cortex-a72 CPU, 4GB of RAM, and has 2.4ghz and 5.0ghz IEEE 802.11AC wireless capabilities and a BLE internal speaker for audio feedback of system operations. It also features a high endurance MicroSD card, on which the operating system software is installed.
 
@@ -30,15 +29,15 @@ One of these operations is creating and managing Tor addresses, which are unique
 
 In depth
 --------
-    :ref:`tor-concept`
+  :ref:`tor`
 
-    :ref:`embassy-os-concept`
+  :ref:`embassyos`
 
-    :ref:`connect`
+  :ref:`connecting`
 
 
 I can't connect to my Embassy.
-------------------------------
+==============================
 
 If the Embassy is connected to a WiFi network, ensure your phone / computer is connected to the same network.
 
@@ -46,15 +45,9 @@ If the Embassy is connected via ethernet or to a router, ensure your phone / com
 
 Ensure that your server has been running long enough for the startup chime noise to sound.
 
-.. _post-setup:
-
-I setup my Embassy, now what?
------------------------------
-
-Connect to the dashboard using a preferable :ref:`browser-access` compatible with the communicating device's operating system.
 
 Do I plug the Embassy into my computer?
----------------------------------------
+=======================================
 
 The Embassy does not plug into any other device. It is a just a small computer without a screen designed for constant uptime, aka a server. You can connect to and manage your Embassy from any mobile device, desktop computer, or laptop computer. This is accomplished right through the browser by visiting your Embassy's private and unique URL.
 
@@ -64,27 +57,31 @@ Once on Embassy's web page, you can choose what services to install to the Embas
 
 The list of services will grow rapidly over the coming months, such that many things you currently do using cloud-based third party servers can be just as easily accomplished using your own personal cloud serving your own personal apps and storing your own private data. No trusted third parties at all.
 
+
 Are my Internet requests anonymous and secure?
------------------------------------------------------------
+==============================================
 
 Embassy OS and every service on the Embassy are served on their own Tor Hidden Services with unique Tor addresses. The private keys used to create these addresses are generated on your phone or computer when you first set up the Embassy. No one, not even Start9, has any idea what your Tor addresses are, let alone the password(s) you choose to authenticate with them. 
 
-There is also the option to communicate with your Embassy using standard :ref:`ssl-concept` encryption and a uniquely generated `.local` address. This method is faster than Tor, but can only be used on your home network.
+There is also the option to communicate with your Embassy using standard :ref:`ssl` encryption and a uniquely generated `.local` address. This method is faster than Tor, but can only be used on your home network.
+
 
 I cannot connect to a service.
-------------------------------
+==============================
 
 Make sure the service is started by viewing it in the Services tab in the Embassy dashboard menu. A green indicator bar should be visible.
 
+
 Is the software open source?
-----------------------------
+============================
 
 The team at Start9 Labs is working to open source Embassy OS with a custom license. 
 
 Some of our projects are currently open sourced under MIT.
 
+
 Is there a product warranty?
-----------------------------
+============================
 
 Yes. Start9 commits to serving each beta Embassy product released until the wild. We commit, to the best of our ability, to resolve any issue encountered with our provided hardware or software in a personalized matter until resolved.
 

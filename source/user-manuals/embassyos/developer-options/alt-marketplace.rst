@@ -1,7 +1,8 @@
-.. _alt-reg:
+.. _alt-marketplace:
 
-Alternative Registry URL
-========================
+***********************
+Alternative Marketplace
+***********************
 
 Embassy OS supports accessing alternative marketplaces by configuring a system file.
 Start9 Labs is not responsible for issues encountered by downloading unverified services from these alternative marketplaces.
@@ -12,4 +13,4 @@ After SSHing into the Embassy, run the following commands::
     sudo sh -c "echo '<alternative_registry_url>' > /root/agent/alt_registry_url.txt"
     sudo systemctl start agent
 
-The Embassy is now able to connect to the provided alternative registry. 
+The Embassy is now able to connect to the provided alternative registry.

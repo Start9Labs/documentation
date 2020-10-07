@@ -1,58 +1,35 @@
+#############
 Documentation
-=============
+#############
 
 Start9 Lab's documentation resources aim to provide product and troubleshooting information for all levels of users. Explore to learn more about our mission, our products, and the technology behind our solutions. 
 
-
-Table of Contents
------------------
 .. toctree::
-   :maxdepth: 3
-   :caption: Getting Started
+  :maxdepth: 2
+  :caption: Getting Started
 
-   Unboxing <./getting-started/unboxing>
-   Setup <./getting-started/setup>
-   Connect <./getting-started/connect>
-   Dashboard <./getting-started/dashboard>
-   Marketplace <./getting-started/marketplace>
+  getting-started/initial-setup
+  getting-started/connecting
 
 .. toctree::
-   :maxdepth: 3
-   :caption: Manual
+  :maxdepth: 2
+  :caption: User Manuals
 
-   Connecting Wifi <./manual/embassy-one/wifi>
-   SSL Setup <./manual/embassy-one/ssl>
-   Installing Services <./manual/embassy-one/services>
-   Manage Device <./manual/embassy-one/manage>
-   Upgrading <./manual/embassy-one/upgrade>
-   View notifications <./manual/embassy-one/notifications>
-   Backups <./manual/embassy-one/backups>
-   Dependencies <./manual/embassy-one/dependencies>
-   Restart <./manual/embassy-one/restart>
-   Shutdown <./manual/embassy-one/shutdown>
+  user-manuals/embassyos/index
+  user-manuals/services/index
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Support
+  :maxdepth: 2
+  :caption: Contributing
 
-   FAQ <./support/faq>
-   Contact <./support/contact>
-
-.. toctree::
-   :maxdepth: 3
-   :caption: Concepts
-
-   Embassy OS <./concepts/embassy-os>
-   Open Source <./concepts/open-source>
-   SSL <./concepts/ssl>
-   TOR <./concepts/tor>
-   Services <./concepts/services>
+  contributing/adding-services
+  contributing/beta-testing
+  contributing/documentation
 
 .. toctree::
-   :maxdepth: 3
-   :caption: Developer
+  :maxdepth: 2
+  :caption: Support
 
-   Services SDK <./developer/sdk>
-   SSH Keys <./developer/ssh>
-   Beta Testing <./developer/beta>
-   Alt Registry <./developer/alt-reg>
+  support/faq
+  support/concepts
+  support/contact

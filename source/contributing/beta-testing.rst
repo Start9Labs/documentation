@@ -1,7 +1,8 @@
 .. _best-testing:
 
+************
 Beta Testing
-============
+************
 
 On request, or by selective offerings, we will admit certain users to test upcoming releases in our beta environment. This environment requires authorized SSH authentication, the credentials for which will be provided to selected users.
 

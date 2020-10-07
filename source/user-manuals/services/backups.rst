@@ -1,7 +1,6 @@
-.. _backups:
-
+*******
 Backups
-=======
+*******
 
 The Embassy supports encrypted backups of installed services to an external USB drive. Encryption utilizes the master password, so memorization of only one password is necessary.
 

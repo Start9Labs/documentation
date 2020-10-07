@@ -1,7 +1,6 @@
-.. _dependencies:
-
+************
 Dependencies
-============
+************
 
 Some services require a dependency on another service. For example, in order to run Lightning, Bitcoin also needs to be installed and running on the Embassy - Bitcoin is a *depencency* of Lightning.
 

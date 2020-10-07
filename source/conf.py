@@ -67,7 +67,12 @@ html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
 
 html_theme_options = {
-    "extra_navbar": "",
+    "theme_dev_mode": True,
+    "path_to_docs": "source",
+    "repository_url": "https://github.com/Start9Labs/documentation",
+    "use_edit_page_button": True,
+    "use_issues_button": True,
+    "use_repository_button": True,
 }
 html_logo = "_static/logo.png"
 html_title = ""

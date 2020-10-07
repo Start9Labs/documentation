@@ -1,7 +1,8 @@
-.. _sdk:
+.. _adding-services:
 
-Services Software Development Kit (SDK)
-=======================================
+***************
+Adding Services
+***************
 
 We are finalizing the OS infrastructure requirements to ensure a smooth process for developer contribution. This includes wrapping everything up into a software development kit for developing services on the Embassy OS platform.
 
