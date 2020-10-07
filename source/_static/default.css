@@ -1,0 +1,75 @@
+body, h1, h2, h3, h4, nav, .topbar, .topbar-main, .tocsection, .form-control, .bd-toc {
+    background-color: #2b2b2b!important;
+    color: #f8f8ff!important;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+p, nav a  {
+    font-size: 1.1em;
+    letter-spacing: 0.75px;
+}
+
+
+a, a:visited, .headerlink {
+    color: #ff4961!important;
+}
+
+.bd-toc nav li.active>a.active {
+    border-left: 2px solid #ff4961!important;;
+}
+
+.prev-next-bottom a.left-prev, .prev-next-bottom a.right-next {
+    border: 1px solid #f8f8ff;
+}
+
+.input:focus {
+    outline: none !important;
+    border:1px solid #ff4961!important;
+    box-shadow: 0 0 10px #ff4961!important;
+}
+
+h1, h2 {
+    /* border-bottom: 1px solid #666!important;
+    padding-bottom: 0.5rem!important; */
+    /* font-variant: small-caps; */
+    letter-spacing: 2.3px;
+
+}
+
+.admonition.warning .admonition-title, .admonition.note .admonition-title  {
+    background-color: #666;
+}
+
+.header-style:before, h1:before, h2:before, h3:before, h4:before, h5:before, h6:before {
+    display: inline;
+}
+
+.main-content {
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .bd-sidebar {
+        border-right: 1px solid #f8f8ff;
+    }
+}
+
+li .current {
+    text-decoration: underline #f8f8ff;
+}
