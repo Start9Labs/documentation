@@ -70,6 +70,12 @@ h1, h2 {
     }
 }
 
-li .current {
+ul .current li .current {
     text-decoration: underline #f8f8ff;
+}
+
+@media (max-width: 768px) {
+    #site-navigation {
+        background-color: #2b2b2b;
+    }
 }
