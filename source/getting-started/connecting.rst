@@ -4,7 +4,7 @@
 Connecting
 **********
 
-With the :ref:`initial-setup` complete, your Embassy is now privately hosted on the Internet and can be accessed right from the borwser. Your Embassy's addresses (its Tor and LAN URLs) are completely private; no one else even knows they exists.
+With the :ref:`initial-setup` complete, your Embassy is now privately hosted on the Internet and can be accessed right from the browsers. Your Embassy's addresses (its Tor and LAN URLs) are completely private; no one else even knows they exists.
 
 If you accidentally leak your Embassy's addresses, do not worry. You Embassy is also protected by your password; so only you can log in.
 
@@ -12,7 +12,7 @@ If you accidentally leak your Embassy's addresses, do not worry. You Embassy is 
 Tor
 ===
 
-Connecting to your Embassy over :ref:`tor` requires uing a browser that supports *.onion* URLs.
+Connecting to your Embassy over :ref:`tor` requires using a browser that supports *.onion* URLs.
 
 Currently, Tor is the default and our recommended approach for most users. It *just works*. The one drawback, however, is latency; onion-routed communications over Tor can be slow. For a lightning fast experience, you can connect to your Embassy over LAN (below), but this requires additional setup.
 
@@ -31,6 +31,6 @@ Below are a list of our recommended browsers for Tor:
 LAN
 ===
 
-Connecting to your Embassy over :ref:`lan` has the benefit of being fast! It requires uing a browser that supports *.local* URLs, which is true for most browsers.
+Connecting to your Embassy over :ref:`lan` has the benefit of being fast! It requires using a browser that supports *.local* URLs, which is true for most browsers.
 
 This option is considered *advanced*, since it requires :ref:`installing and trusting your Embassy's Root Certificate Authority SSL<ssl-setup>` on any phone or laptop you use to connect.

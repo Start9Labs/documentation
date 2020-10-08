@@ -4,8 +4,7 @@
 Concepts
 ********
 
-Depending on your background, the Embassy platform may deal with some unfamilar concepts. While it is not strictly *necessary* for you to understand these concepts to use your Embassy, we know many of you would like to.
-
+Depending on your background, the Embassy platform may deal with some unfamiliar concepts. While it is not strictly *necessary* for you to understand these concepts to use your Embassy, we know many of you would like to.
 
 .. _embassyos:
 
@@ -25,7 +24,7 @@ Embassy OS is a forked branch of the Buster Lite version of Raspberry Pi OS. Sta
 * a custom application management layer specialized for installing, running, and backing up .s9pk packaged services
 * a layer responsible for Embassy specific operations, such as Tor, Backups, and Notifications
 
-The .s9pk extension is Start9 Labs's custom package format based on tar. It encompasses the necessary components to compress, host, and install a service on the marketplace.
+The .s9pk extension is Start9 Labs' custom package format based on tar. It encompasses the necessary components to compress, host, and install a service on the marketplace.
 
 
 .. _open-source:
@@ -51,7 +50,7 @@ LAN
 
 A Local Area Network (LAN) is a computer network that interconnects computers within a limited area such as a residence, school, laboratory, university campus or office building.
 
-Devices on a LAN are private and protected, such that only devices conncted to the same Ethernet or WiFi network can see or communicate with them.
+Devices on a LAN are private and protected, such that only devices connected to the same Ethernet or WiFi network can see or communicate with them.
 
 Your Embassy hosts itself on the LAN and is reachable by visiting its *.local* URL in the browser while also connected to the LAN.
 

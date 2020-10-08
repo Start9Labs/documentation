@@ -15,6 +15,6 @@ WiFi Setup
       Add WiFi Network options
 
 #. Save
-    * Clicking *Add* will save the network credentials but not try to connect immediately. This is useful, for example, if you are conncted over Ethernet at home and want to add your office WiFi credentials.
+    * Clicking *Add* will save the network credentials but not try to connect immediately. This is useful, for example, if you are connected over Ethernet at home and want to add your office WiFi credentials.
     * `Add and Connect`.
 #. The saved network will appear in the list when successfully added. If you are successfully connected, the WiFi symbol will be green, at which point, you can safely disconnect the Embassy from your router.

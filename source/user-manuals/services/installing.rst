@@ -9,9 +9,9 @@ Adding
 
 To add a new service, find it's listing inside the Service Marketplace: ``Marketplace ---> [Service Name] ---> Install``.
 
-Depending on the size of the service and your Internet connection, installation shoud take between 60 seconds and a few minutes.
+Depending on the size of the service and your Internet connection, installation should take between 60 seconds and a few minutes.
 
-After installtion, you can view the service's instructions by navigating to ``Services ---> [Service Name] ---> Instructions``
+After installation, you can view the service's instructions by navigating to ``Services ---> [Service Name] ---> Instructions``
 
 .. note:: You can only start and use a service once its dependencies are met, its :ref:`configuration<service-config>` complete, and is in a *running* state.
 

@@ -1,4 +1,4 @@
-.. _managing dependencies:
+.. _managing-dependencies:
 
 *********************
 Managing Dependencies
