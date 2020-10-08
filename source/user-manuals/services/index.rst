@@ -2,7 +2,7 @@
 Services
 ********
 
-After you install a service, you can view its instructions by navigating to ``Services ---> [Service Name] ---> Instructions``
+To view the instructions for a particular service, navigating to ``Services ---> [Service Name] ---> Instructions``
 
 .. note:: Some services require configuration before starting up. You can only connect to and use a service once it is in a *running* state.
 
@@ -18,9 +18,9 @@ After you install a service, you can view its instructions by navigating to ``Se
 .. toctree::
   :maxdepth: 2
 
-  updating
+  installing
   backups
-  config
+  service-config
   properties
   logs
-  dependencies
+  managing-deps

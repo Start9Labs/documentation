@@ -1,6 +1,6 @@
-*********
-Configure
-*********
+**************
+Embassy Config
+**************
 
 ``Embassy ---> Configure``
 

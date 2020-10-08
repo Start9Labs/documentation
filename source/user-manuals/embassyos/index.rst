@@ -8,14 +8,14 @@ You can view and manage your Embassy inside the ``Embassy`` tab in the main menu
   :width: 90%
   :alt: Embassy Menu Tab
 
-  Embassy settings tab in dashboard menu
+  Embassy tab
 
 .. toctree::
   :maxdepth: 2
 
   about
   monitor
-  configure
+  embassy-config
   updating
   wifi
   developer-options/index
