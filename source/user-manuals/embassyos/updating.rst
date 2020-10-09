@@ -2,7 +2,7 @@
 Updating EmbassyOS
 ******************
 
-``Embassy ---> Check for Updates``
+``Embassy > Check for Updates``
 
 #. If there is an update available, you will be prompted to install it.
 #. While updating, your Embassy will emit a gentle chime every 20 seconds.

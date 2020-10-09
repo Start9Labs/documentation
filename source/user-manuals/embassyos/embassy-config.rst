@@ -2,7 +2,7 @@
 Embassy Config
 **************
 
-``Embassy ---> Configure``
+``Embassy > Configure``
 
 Here you can set custom configurations for your Embassy. Currently, changing the ``Device Name`` is the only option.
 

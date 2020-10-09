@@ -2,7 +2,7 @@
 WiFi Setup
 **********
 
-``Embassy tab ---> WiFi``
+``Embassy tab > WiFi``
 
 #. Click the ``+`` button in the lower right corner.
 #. Select the appropriate country.

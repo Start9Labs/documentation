@@ -81,3 +81,6 @@ html_favicon = "_static/favicon.ico"
 html_js_files = [
     'js/main.js'
 ]
+html_cs_files = [
+    'default.css'
+]

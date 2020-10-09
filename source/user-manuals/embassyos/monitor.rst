@@ -2,7 +2,7 @@
 Monitor
 *******
 
-``Embassy ---> Monitor``
+``Embassy > Monitor``
 
 Provides real-time statistics, such as temperature, CPU usage, memory and disk space. 
 

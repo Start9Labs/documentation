@@ -4,7 +4,7 @@
 SSH Setup
 *********
 
-``Embassy ---> Developer Options ---> SSH Keys``
+``Embassy > Developer Options > SSH Keys``
 
 #. Click the ``+`` button in the lower right hand corner.
 #. Paste in your SSH key.
