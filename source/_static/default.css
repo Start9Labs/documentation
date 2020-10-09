@@ -130,3 +130,10 @@ code {
 .expand .admonition-title:before {
     color: #393838!important;
 }
+
+@media (max-width: 600px) {
+    .expand {
+        width: 90%;
+        margin: 0 0 1em 1.5em;
+    }
+}
