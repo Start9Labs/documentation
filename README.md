@@ -4,7 +4,7 @@ At Start9, we see great value in maintaining clear and accurate documentation fo
 
 ## Contributing to the docs
 
-If you notice a mistake in the docs, or you have an idea for improving them, we would like to know about it. You can either fix the mistake yourself and submit a pull request, or you can report the mistake by submittig an issue.
+If you notice a mistake in the docs, or you have an idea for improving them, we would like to know about it. You can either fix the mistake yourself and submit a pull request, or you can report the mistake by submitting an issue.
 
 ### Submitting an issue
 
