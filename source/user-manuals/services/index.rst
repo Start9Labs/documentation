@@ -2,7 +2,7 @@
 Services
 ********
 
-To view the instructions for a particular service, navigating to ``Services ---> [Service Name] ---> Instructions``
+To view the instructions for a particular service, navigating to ``Services > [Service Name] > Instructions``
 
 .. note:: Some services require configuration before starting up. You can only connect to and use a service once it is in a *running* state.
 

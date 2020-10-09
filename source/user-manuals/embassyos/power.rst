@@ -5,7 +5,7 @@ Power
 Restart
 =======
 
-#. ``Embassy ---> Restart ---> 'Restart'``.
+#. ``Embassy > Restart > 'Restart'``.
 #. Be patient while services shut down. A *tune* will play, indicating the shutdown is complete. 
 #. A gentle *bep* will sound when the Embassy is powered back on.
 #. A *chime* will sound when the Embassy is ready to use.
@@ -13,7 +13,7 @@ Restart
 Shutdown
 ========
 
-#. ``Embassy ---> Shutdown ---> 'Shutdown'``
+#. ``Embassy > Shutdown > 'Shutdown'``
 #. Be patient while services shut down. A *tune* will play, indicating the shutdown is complete. 
 #. It is now safe to unplug the Embassy from power and the ethernet cable, if connected.
 

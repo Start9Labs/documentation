@@ -9,15 +9,15 @@ h1 {
 }
 
 h2 {
-    font-size: 1.75rem;
-}
-
-h3 {
     font-size: 1.5rem;
 }
 
-h4 {
+h3 {
     font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1.15rem;
 }
 
 p, nav a  {
@@ -78,4 +78,55 @@ ul .current li .current {
     #site-navigation {
         background-color: #2b2b2b;
     }
+}
+
+code {
+    color: #ff4961!important;
+}
+
+.topbar .topbar-main button.topbarbtn {
+    background-color: #2b2b2b;
+    color: #ff4960;
+}
+
+.admonition {
+    width: 80%;
+}
+
+/* TOGGLE */
+
+.toggle .admonition {
+    padding-bottom: 0px!important;
+}
+
+.toggle .admonition-title {
+    display: block;
+    clear: both;
+    cursor: pointer;
+}
+
+.toggle .admonition-title::after {
+    content: " ▶";
+}
+
+.toggle .admonition-title.open::after {
+    content: " ▼";
+}
+
+.expand {
+    width: 60%;
+    margin: 1em 0 1em 5em;
+    padding: 0 .6rem 0rem!important;
+    border-left: .2rem solid #393838!important;
+    box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,.05), 0 0 0.05rem rgba(0,0,0,.1);
+    transition: color .25s,background-color .25s,border-color .25s;
+}
+
+.expand .admonition-title {
+    background-color: #1e1e1e;
+    font-weight: 300;
+}
+
+.expand .admonition-title:before {
+    color: #393838!important;
 }
