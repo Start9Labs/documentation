@@ -19,4 +19,6 @@ The Embassy is now able to connect to the provided alternative registry.
 
 To revert this change, simply delete the file::
 
+    sudo systemctl stop agent
     sudo rm /root/agent/alt_registry_url.txt
+    sudo systemctl start agent

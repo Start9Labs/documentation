@@ -8,7 +8,7 @@ Start9 Lab's documentation resources aim to provide product and troubleshooting 
   :maxdepth: 2
   :caption: Getting Started
 
-  getting-started/index
+  getting-started/setup/index
   getting-started/connecting
 
 .. toctree::
