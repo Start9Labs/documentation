@@ -89,6 +89,15 @@ code {
     color: #ff4960;
 }
 
+@media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 2200px;
+}
+
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 80%;
+}
+
 .admonition {
     width: 80%;
 }
