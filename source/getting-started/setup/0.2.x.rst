@@ -75,7 +75,7 @@ Claim Your Embassy
     
     All three secrets are packaged together and transmitted to the Embassy encrypted with its product key.
 
-Done!
-=====
+Setup Complete!
+===============
 
-Your Embassy is now hosted on the private web. You can view and manage your Embassy by visiting its unique ``.onion`` URL from any Tor-enabled browser. The Setup App contains our recommendations for your various devices.
+Your Embassy is now hosted on the private web. You can view and manage your Embassy by visiting its unique ``.onion`` URL from any Tor-enabled browser. The Setup App contains our recommendations for various devices.

@@ -4,8 +4,6 @@
 Initial Setup
 *************
 
-Ensure your phone is connected to the same WiFi network as your router.
-
 .. toctree::
   :maxdepth: 2
 
