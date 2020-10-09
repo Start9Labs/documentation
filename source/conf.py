@@ -67,7 +67,7 @@ html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
 
 html_theme_options = {
-    "theme_dev_mode": True,
+    # "theme_dev_mode": True,
     "path_to_docs": "source",
     "repository_url": "https://github.com/Start9Labs/documentation",
     "use_edit_page_button": True,
