@@ -4,7 +4,13 @@ Version 0.2.x
 
 Ensure your phone is connected to the same WiFi network as your router.
 
-.. margin:: Tips
+Power On
+========
+
+Connect your Embassy to power and Ethernet using the provided cables.
+
+.. admonition:: Tips
+    :class: toggle expand
 
     Ethernet cable may be plugged into your router or any live Ethernet port.
 
@@ -13,13 +19,6 @@ Ensure your phone is connected to the same WiFi network as your router.
     * bep ‐ Powering on
 
     * chime ‐ Embassy is ready
-
-
-Power On
-========
-
-
-Connect your Embassy to power and Ethernet using the provided cables.
 
 Setup App
 =========
@@ -57,11 +56,6 @@ Claim Your Embassy
     * On your desktop or laptop computer, navigate to your router configuration settings within the browser. This is usually an IP address such as 192.168.1.1. A simple Google search will usually reveal how to access the router configuration settings for a particular brand.
     * Once in the router config settings, find the section that lists the devices on your network. You should see an item labeled "start9labs". Take note of the associated IP address and enter it into the Setup App in the "LAN IP Address" input field.
 
-
-.. margin:: Tips
-
-    Choose a strong master password. Physically write it down. Store it somewhere safe. DO NOT LOSE IT.
-
 2. Create your all powerful and irreplaceable master password
 
 .. admonition:: Explanation
@@ -74,6 +68,11 @@ Claim Your Embassy
     * Your master password, used by the Embassy to authenticate you as its one and only master. If you lose this password, there is no way to access your Embassy ever again. You will be forced to reset the device, resulting in permanent loss of data.
     
     All three secrets are packaged together and transmitted to the Embassy encrypted with its product key.
+
+.. admonition:: Tips
+    :class: toggle expand
+
+    Choose a strong master password. Physically write it down. Store it somewhere safe. DO NOT LOSE IT.
 
 Setup Complete!
 ===============
