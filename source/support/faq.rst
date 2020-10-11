@@ -23,7 +23,7 @@ How does the Embassy work?
 
 The Embassy runs on the Raspberry Pi 4B hardware with a Cortex-a72 CPU, 4GB of RAM, and has 2.4ghz and 5.0ghz IEEE 802.11AC wireless capabilities and a BLE internal speaker for audio feedback of system operations. It also features a high endurance MicroSD card, on which the operating system software is installed.
 
-Embassy OS is a stripped down version of Raspbian Buster Lite and handles all operations of your Embassy device. This core element of the technology stack is what enables you to set up, login, access your Embassy’s dashboard, and download and install services.
+EmbassyOS is a stripped down version of Raspbian Buster Lite and handles all operations of your Embassy device. This core element of the technology stack is what enables you to set up, login, access your Embassy’s dashboard, and download and install services.
 
 One of these operations is creating and managing Tor addresses, which are uniquely attributed to each service you download, as well as to the Embassy device itself. You can see your uniquely generated Tor address when you complete the setup process using the Setup App. This address is how you view your Embassy’s dashboard, which is actually just a website served up from your Embassy itself! It is authenticated, of course, so only you can access it. 
 
@@ -61,7 +61,7 @@ The list of services will grow rapidly over the coming months, such that many th
 Are my Internet requests anonymous and secure?
 ==============================================
 
-Embassy OS and every service on the Embassy are served on their own Tor Hidden Services with unique Tor addresses. The private keys used to create these addresses are generated on your phone or computer when you first set up the Embassy. No one, not even Start9, has any idea what your Tor addresses are, let alone the password(s) you choose to authenticate with them. 
+EmbassyOS and every service on the Embassy are served on their own Tor Hidden Services with unique Tor addresses. The private keys used to create these addresses are generated on your phone or computer when you first set up the Embassy. No one, not even Start9, has any idea what your Tor addresses are, let alone the password(s) you choose to authenticate with them. 
 
 There is also the option to communicate with your Embassy using standard :ref:`ssl` encryption and a uniquely generated `.local` address. This method is faster than Tor, but can only be used on your home network.
 
@@ -75,7 +75,7 @@ Make sure the service is started by viewing it in the Services tab in the Embass
 Is the software open source?
 ============================
 
-The team at Start9 Labs is working to open source Embassy OS with a custom license. 
+The team at Start9 Labs is working to open source EmbassyOS with a custom license. 
 
 Some of our projects are currently open sourced under MIT.
 
@@ -86,5 +86,3 @@ Is there a product warranty?
 Yes. Start9 commits to serving each beta Embassy product released until the wild. We commit, to the best of our ability, to resolve any issue encountered with our provided hardware or software in a personalized matter until resolved.
 
 Do not hesitate to :ref:`contact`. We strive to also provide quality and available customer service upfront. 
-
-.. warning:: Adding an SSH key voids the product warranty in totality.

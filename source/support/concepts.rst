@@ -11,7 +11,7 @@ Depending on your background, the Embassy platform may deal with some unfamiliar
 EmbassyOS
 =========
 
-Embassy OS refers to a custom Linux distribution along with a suite of software tools installed on the Embassy which makes it easy to:
+EmbassyOS refers to a custom Linux distribution along with a suite of software tools installed on the Embassy which makes it easy to:
 
 * Install new services
 * Uninstall services
@@ -19,7 +19,7 @@ Embassy OS refers to a custom Linux distribution along with a suite of software 
 * Upgrade your Embassy software to future versions
 * Manage the data of each installed service
 
-Embassy OS is a forked branch of the Buster Lite version of Raspberry Pi OS. Start9 Labs augmented this base operating system to include:
+EmbassyOS is a forked branch of the Buster Lite version of Raspberry Pi OS. Start9 Labs augmented this base operating system to include:
 
 * a custom application management layer specialized for installing, running, and backing up .s9pk packaged services
 * a layer responsible for Embassy specific operations, such as Tor, Backups, and Notifications

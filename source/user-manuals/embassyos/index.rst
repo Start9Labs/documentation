@@ -13,8 +13,6 @@ You can view and manage your Embassy inside the ``Embassy`` tab in the main menu
 .. toctree::
   :maxdepth: 2
 
-  about
-  monitor
   embassy-config
   updating
   wifi
@@ -22,3 +20,4 @@ You can view and manage your Embassy inside the ``Embassy`` tab in the main menu
   power
   notifications
   ssl
+  forgot-password

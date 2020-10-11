@@ -1,9 +1,8 @@
-**********
-WiFi Setup
-**********
+***************
+Setting up WiFi
+***************
 
-``Embassy tab > WiFi``
-
+#. Click ``WiFi``.
 #. Click the ``+`` button in the lower right corner.
 #. Select the appropriate country.
 #. Enter your WiFi SSID and password.

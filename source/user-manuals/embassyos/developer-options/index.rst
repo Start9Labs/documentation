@@ -6,4 +6,3 @@ Developer Options
   :maxdepth: 2
 
   ssh-setup
-  alt-marketplace

@@ -2,7 +2,9 @@
 Documentation
 #############
 
-Start9 Lab's documentation resources aim to provide product and troubleshooting information for all levels of users. Explore to learn more about our mission, our products, and the technology behind our solutions. 
+Welcome to the docs!
+
+Here you will find guidance and information about the Start9 Embassy personal server and its operating system, EmbassyOS. If you identify an error with the docs or would like to contribute to them, please use the GitHub link at the top of this page.
 
 .. toctree::
   :maxdepth: 2
@@ -23,8 +25,6 @@ Start9 Lab's documentation resources aim to provide product and troubleshooting 
   :caption: Contributing
 
   contributing/adding-services
-  contributing/beta-testing
-  contributing/documentation
 
 .. toctree::
   :maxdepth: 2

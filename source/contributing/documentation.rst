@@ -1,5 +1,0 @@
-.. _documentation:
-
-*************
-Documentation
-*************
