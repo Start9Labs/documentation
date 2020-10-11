@@ -29,7 +29,7 @@ If you already have :ref:`SSH keys registered with your Embassy<ssh-setup>` **OR
   * Check if you have sqlite3 installed. If not, install it::
 
       which sqlite3
-      sudo apt insall sqlite3
+      sudo apt install sqlite3
 
   * Run::
 
@@ -37,7 +37,7 @@ If you already have :ref:`SSH keys registered with your Embassy<ssh-setup>` **OR
       delete from account;
       .quit
 
-  * Unmount the microSD card::
+  * Un-mount the microSD card::
 
       umount [mount folder]
 
@@ -48,4 +48,4 @@ If you already have :ref:`SSH keys registered with your Embassy<ssh-setup>` **OR
 No SSH/Linux
 ============
 
-The only way to regain access to your Emabssy is to :ref:`contact the Start9 dev team<contact>` directly to obtain a new operating system image. This is equivelent to a factory reset; all data will be lost.
+The only way to regain access to your Embassy is to :ref:`contact the Start9 dev team<contact>` directly to obtain a new operating system image. This is equivalent to a factory reset; all data will be lost.
