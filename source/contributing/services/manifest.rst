@@ -4,7 +4,7 @@
 Service Manifest
 ****************
 
-This file describes the service and it's requirements. Important to note is the dependencies key, which contains rules for optional or required other services that are depended on to successfully run the service at hand. 
+This file describes the service and it's requirements. Important to note is the dependencies key, which contains rules for optional or required other services that are depended on for the developed service to successfully run. 
 
 Formatting: 
     - Serialization language:``.yaml``
@@ -12,14 +12,15 @@ Formatting:
 
 Below are the types and sub-type definitions, with necessary elaborations:
 
-Manifest
+Example ``manifest.yaml`` with field notes:
+
 .. code:: yaml
 
     # manifest version compatibility ie. v0 (this is currently the only option)
     compat: v0
     # service id, used for uniqueness and BE identification ie. bitcoind
     id: String
-    # semantic version for the release
+    # version number of the release conforming to the semantic versioning scheme
     version: String
     # display name of service
     title: String
@@ -31,9 +32,9 @@ Manifest
     release_notes: String
     # denoting the existence of instructions.md
     has_instructions: Boolean
-    # required version of EmbassyOS to run service
+    # required semver version range of EmbassyOS to run service eg. ">=1.0.0"
     os_version_required: VersionReq
-    # recommended version of EmbassyOS to run service
+    # recommended semver version range of EmbassyOS to run service eg."^1.0.0"
     os_version_recommended: VersionReq
     # a list of objects of ports to run the service on localhost and tor
     ports:
@@ -56,19 +57,38 @@ Manifest
     # A map of dependent services, see below for more details
     dependencies: Dependencies
 
-Version
-.. code:: yaml
-
-    @aiden define type if more than string
-
-VersionReq
-.. code:: yaml
-
-    @aiden define type if more than string
-
-
 Dependencies
 ------------
+
+The key of each field in the dependencies object is the lowercase, kebab-case app ID of the service that is depended on. Each dependency contains a set of rules that need to be fulfilled as true if the dependency is to be properly installed. The interface should provide suggestions for the behavior if the denoted rule cannot be met with previous configurations.
+
+Let's take this snippet for example:
+
+.. code:: yaml
+
+    ...
+    dependencies:
+        btc-rpc-proxy:
+            version: "^0.1.0"
+            optional: Can configure an external bitcoin node.
+            description: Required for fetching validated blocks.
+            config:
+            - rule: '''users.*.name = "c-lightning"'
+                description: 'Must have an RPC user named "c-lightning"'
+                suggestions:
+                - PUSH:
+                    to: 'users'
+                    value:
+                        name: c-lightning
+    ...
+
+.. role:: raw-html(raw)
+    :format: html
+:raw-html:`<br />`
+
+The service ``btc-rpc-proxy`` is a dependency of the service ``c-lightning``. ``c-lightning`` requires it to be installed at a version >=0.1.0 <0.2.0. There exists a rule that states the config option ``user.name`` must be equal to "c-lightning". If this value does not exist for ``user.name`` when accessed, ``PUSH`` the value "c-lighting" to the field. 
+
+Types for ``manifest.yaml`` fields:
 
 .. code:: typescript
 
@@ -117,7 +137,7 @@ Dependencies
 
 ----
 
-Examples:
+Examples of actual ``manifest.yaml`` files for existing services:
 
 .. code:: yaml
 
