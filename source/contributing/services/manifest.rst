@@ -4,77 +4,169 @@
 Service Manifest
 ****************
 
-Types:
+This file describes the service and it's requirements. Important to note is the dependencies key, which contains rules for optional or required other services that are depended on to successfully run the service at hand. 
+
+Formatting: 
+    - Serialization language:``.yaml``
+    - Case style: ``kebab-case``
+
+Below are the types and sub-type definitions, with necessary elaborations:
 
 Manifest
-.. code:: rust
+.. code:: yaml
 
+    # manifest version compatibility ie. v0 (this is currently the only option)
+    compat: v0
+    # service id, used for uniqueness and BE identification ie. bitcoind
     id: String
-    version: semver::Version
+    # semantic version for the release
+    version: String
+    # display name of service
     title: String
-    description: Description
+    # an object containing a short and long description of the service. TODO character lengths
+    description:
+        short: String
+        long: String
+    # a link to the release tag notes in GitHub, or a short description TODO character length
     release_notes: String
-    has_instructions: bool
-    os_version_required: semver::VersionReq
-    os_version_recommended: semver::VersionReq
-    ports: Vec<PortMapping>
-    image: ImageConfig
-    mount: PathBuf
-    assets: Vec<Asset>
-    hidden_service_version: HiddenServiceVersion
+    # denoting the existence of instructions.md
+    has_instructions: Boolean
+    # required version of EmbassyOS to run service
+    os_version_required: VersionReq
+    # recommended version of EmbassyOS to run service
+    os_version_recommended: VersionReq
+    # a list of objects of ports to run the service on localhost and tor
+    ports:
+        - internal: String
+          tor: String
+    # currently only tar is supported
+    image:
+        type: String 
+    # path to mount the image on the volume, ie: /root/bitcoind
+    mount: String
+    # a list of objecting containing the source and destination directories of persistent assets, either that should be copied over during build, or to persist when service started, and if the volume directory should be overwritten when the release is copied over
+    # src: path to file within the assets directory that is in the build directory
+    # dst: path within volume to place it
+    assets:
+      - src: String TODO confirm type
+        dst: String TODO confirm type
+        overwrite: Boolean
+    # version of tor support, eg. v1, v2, v3
+    hidden_service_version: String
+    # A map of dependent services, see below for more details
     dependencies: Dependencies
-    extra: LinearMap<String, serde_yaml::Value>
 
 Version
-.. code:: rust
+.. code:: yaml
+
+    @aiden define type if more than string
 
 VersionReq
-.. code:: rust
+.. code:: yaml
 
-ImageConfig
-
-pub enum ImageConfig {
-    Tar,
-}
+    @aiden define type if more than string
 
 
-#[derive(Debug, Clone, serde::Deserialize, serde::Serialize)]
-pub struct Asset {
-    pub src: PathBuf,
-    pub dst: PathBuf,
-    pub overwrite: bool,
-}
+Dependencies
+------------
 
-pub struct Description {
-    pub short: String,
-    pub long: String,
-}
+.. code:: typescript
 
-pub struct PortMapping {
-    pub internal: u16,
-    pub tor: u16,
-}
+    interface Dependencies [{
+        serviceId: DepInfo
+    }]
 
-pub enum HiddenServiceVersion {
-    V1,
-    V2,
-    V3,
-}
+    interface DepInfo {
+        version: String -- TODO correct for VersionReq?,
+        optional?: String,
+        description?: String,
+        config: [
+            entry: {
+                rule: ConfigRule,
+                description: String,
+            },
+            suggestions: [{
+                condition?: ConfigRule,
+                variant: SuggestionVariant,
+            }],
+        ],
+    }
 
-pub struct Dependencies(pub LinearMap<String, DepInfo>);
+    interface SuggestionVariant {
+        SET: {
+            var: String,
+            to: SetVariant,
+        },
+        DELETE: {
+            src: String,
+        },
+        PUSH: {
+            to: String,
+            value: Value, @aiden define Value
+        },
+    }
 
-#[derive(Clone, Debug, serde::Deserialize, serde::Serialize)]
-pub struct DepInfo {
-    pub version: VersionReq,
-    pub optional: Option<String>,
-    pub description: Option<String>,
-    #[serde(default)]
-    pub config: Vec<ConfigRuleEntryWithSuggestions>,
-}
+    interface SetVariant {
+        to: string,
+        to-value: Value,
+        to-entropy: {
+            charset: String // 'a-z,A-Z,0-9'
+            len: number
+        },
+    }
 
 ----
 
-Example ``manifest.yaml``:
+Examples:
+
+.. code:: yaml
+
+    compat: v0
+    id: c-lightning
+    version: "0.1.0"
+    title: c-lightning
+    description:
+    short: "The Lightning Node implementation by Blockstream"
+    long: "A lightweight, highly customizable and standard compliant implementation of the Lightning Network protocol."
+    release-notes: https://github.com/ElementsProject/lightning/releases/tag/v0.1.0
+        ports:
+        - internal: 8080
+          tor: 8080
+    image:
+    type: tar
+    mount: /root/.lightning
+    has-instructions: true
+    os-version-required: ">=0.2.5"
+    os-version-recommended: ">=0.2.5"
+    assets: []
+    hidden-service-version: v3
+    dependencies:
+        btc-rpc-proxy:
+            version: "^0.1.0"
+            optional: Can configure an external bitcoin node.
+            description: Required for fetching validated blocks.
+            config:
+            - rule: '''users.*.name = "c-lightning"'
+                description: 'Must have an RPC user named "c-lightning"'
+                suggestions:
+                - PUSH:
+                    to: 'users'
+                    value:
+                        name: c-lightning
+            - rule: 'users.[first(item => ''item.name = "c-lightning")].password?'
+                description: 'RPC user "c-lightning" must have a password'
+                suggestions:
+                - SET:
+                    var: 'users.[first(item => ''item.name = "c-lightning")].password'
+                    to-entropy:
+                        charset: 'a-z,A-Z,0-9'
+                        len: 22
+            - rule: 'users.[first(item => ''item.name = "c-lightning")].fetch-blocks?'
+                description: 'RPC user "c-lightning" must have "Fetch Blocks" enabled'
+                suggestions:
+                - SET:
+                    var: 'users.[first(item => ''item.name = "c-lightning")].fetch-blocks'
+                    to-value: true
 
 .. code:: yaml
 
@@ -89,10 +181,10 @@ Example ``manifest.yaml``:
     Features
         - Adds instructions defined by EmbassyOS 0.2.4 instructions feature
     ports:
-    - internal: 59001
-        tor: 59001
-    - internal: 80
-        tor: 80
+        - internal: 59001
+            tor: 59001
+        - internal: 80
+            tor: 80
     image:
     type: tar
     mount: /root
@@ -100,10 +192,10 @@ Example ``manifest.yaml``:
     os-version-required: ">=0.2.4"
     os-version-recommended: ">=0.2.4"
     assets:
-    - src: httpd.conf
-        dst: "."
-        overwrite: true
-    - src: www
-        dst: "."
-        overwrite: true
+        - src: httpd.conf
+            dst: "."
+            overwrite: true
+        - src: www
+            dst: "."
+            overwrite: true
     hidden-service-version: v3

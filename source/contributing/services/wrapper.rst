@@ -4,6 +4,8 @@
 Service Wrapper
 ***************
 
+Everything you need to build a service. 
+
 Each service is bound with a wrapper repository. The purpose of this repo is:
 
 - Denote any dependencies required to run and build the project.
@@ -22,11 +24,11 @@ The project structure should be used as a model:
 .. code-block:: bash
 
     ├── Dockerfile
-    ├── Makefile
+    ├── Makefile (optional)
     ├── README.md
     ├── assets
-    │   ├── httpd.conf
-    │   └── httpd.conf.template
+    │   ├── httpd.conf (optional)
+    │   └── httpd.conf.template (optional)
     ├── config_rules.yaml
     ├── config_spec.yaml
     ├── <submodule_project_dir>
@@ -45,3 +47,9 @@ Run ``git submodule add <link_to_source_project>``
 
 For reference: `git-submodules <https://www.git-scm.com/book/en/v2/Git-Tools-Submodules>`_
 
+Assets
+======
+
+Whenever a service is stopped, any file that is not contained within in the ``/assets`` directory will be cleared from memory. Any unsaved changes will be reverted. This folder acts as a persistance storage container.
+
+In this folder belongs any assets that are unique configurations to your service. For instance, bitcoind's ``.conf`` file is saved here. 
