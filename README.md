@@ -33,7 +33,7 @@ If you notice a mistake in the docs, or you have an idea for improving them, we 
 
 ### Guide Templates
 
-We welcome contributions to add a guide to this documentation repository. Please follow the templates provided [here](./source/contributing/template) and use proper `rst` style syntax. 
+We welcome contributions to add a guide to this documentation repository. Please reference the template [here](template.rst) and use proper `rst` style syntax. 
 
 All images should be placed in `./source/_static/images` with descriptive labeling. 
 
