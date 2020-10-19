@@ -28,7 +28,7 @@ An `external link <https://start9labs.com>`_ within a sentence.
   :width: 50%
   :alt: Test figure
 
-  Here is a figure title.
+  Here is a figure title. This image will only display in the live documentation.
 
 Sub-title 2
 -----------
