@@ -19,6 +19,7 @@ Here you will find guidance and information about the Start9 Embassy personal se
 
   user-manuals/embassyos/index
   user-manuals/services/index
+  user-manuals/external/index
 
 .. toctree::
   :maxdepth: 2
