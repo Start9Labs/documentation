@@ -26,6 +26,7 @@ Here you will find guidance and information about the Start9 Embassy personal se
   :caption: Contributing
 
   contributing/adding-services
+  contributing/template
 
 .. toctree::
   :maxdepth: 2
