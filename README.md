@@ -33,7 +33,9 @@ If you notice a mistake in the docs, or you have an idea for improving them, we 
 
 ### Guide Templates
 
-We welcome contributions to add a guide to this documentation repository. Please reference the template [here](source/contributing/template.rst) and use proper `rst` style syntax. 
+We welcome contributions to add a guide to this documentation repository. Please reference the template [here](source/contributing/template.rst) and use proper restructured text syntax. 
+
+Guides should live under `./source/user-manuals/external`. If they are bitcoin related, add a section title for the next integration guide in the `bitcoin.rst` page. If the guide belongs in a new topic, create a new `.rst` file with an appropriate name following the template conventions. Don't forget to include the new page in the `index.rst` file toctree within the external folder.
 
 All images should be placed in `./source/_static/images` with descriptive labeling. 
 
