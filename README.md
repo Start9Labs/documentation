@@ -31,16 +31,6 @@ If any css or table of contents organization changes, run: `make clean html`.
 
 If you notice a mistake in the docs, or you have an idea for improving them, we would like to know about it. You can either fix the mistake yourself and submit a pull request, or you can report the mistake by submitting an issue.
 
-### Guide Templates
-
-We welcome contributions to add a guide to this documentation repository. Please reference the template [here](source/contributing/template.rst) and use proper restructured text syntax. 
-
-Guides should live under `./source/user-manuals/external`. If they are bitcoin related, add a section title for the next integration guide in the `bitcoin.rst` page. If the guide belongs in a new topic, create a new `.rst` file with an appropriate name following the template conventions. Don't forget to include the new page in the `index.rst` file toctree within the external folder.
-
-All images should be placed in `./source/_static/images` with descriptive labeling. 
-
-Figure directives should include an alt description.
-
 ### Submitting an issue
 
 Click on the "Issues" tab in the top navbar. Provide a good title and describe clearly the mistake or improvement.

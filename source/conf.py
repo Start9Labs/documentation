@@ -76,7 +76,7 @@ html_theme_options = {
     "extra_navbar": "",
 }
 html_logo = "_static/logo.png"
-html_title = "Docs"
+html_title = "Start9 Labs"
 html_favicon = "_static/favicon.ico"
 html_js_files = [
     'js/main.js'

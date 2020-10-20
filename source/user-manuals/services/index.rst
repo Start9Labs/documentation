@@ -2,23 +2,18 @@
 Services
 ********
 
-To view the instructions for a particular service, navigating to ``Services > [Service Name] > Instructions``
+Services are self-hosted, open source projects made compatible for EmbassyOS. Each service is has been independently developed by members of the open source community. The Embassy enables configuration, customization and a one click install.
 
 .. note:: Some services require configuration before starting up. You can only connect to and use a service once it is in a *running* state.
 
-
-`Bitcoin <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/docs/instructions.md>`_
-
-`Bitwarden <https://github.com/Start9Labs/filebrowser-wrapper/blob/master/docs/instructions.md>`_
-
-`Cups <https://github.com/Start9Labs/cups-wrapper/blob/master/docs/instructions.md>`_
-
-`File Browser <https://github.com/Start9Labs/filebrowser-wrapper/blob/master/docs/instructions.md>`_
+Features
+========
 
 .. toctree::
   :maxdepth: 2
 
   installing
+  instructions
   backups
   service-config
   properties
