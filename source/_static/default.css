@@ -91,7 +91,8 @@ code {
 
 @media (min-width: 1200px){
     .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 2200px;
+        max-width: 2200px;
+    }
 }
 
 .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
@@ -145,4 +146,12 @@ code {
         width: 90%;
         margin: 0 0 1em 1.5em;
     }
+}
+
+.caption > i {
+    display: none;
+}
+
+nav.bd-links .fa-chevron-up:hover, nav.bd-links .fa-chevron-down:hover {
+    color: #ff4960;
 }

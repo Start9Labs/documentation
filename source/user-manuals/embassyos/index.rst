@@ -10,14 +10,11 @@ You can view and manage your Embassy inside the ``Embassy`` tab in the main menu
 
   Embassy tab
 
+Features
+========
+
 .. toctree::
   :maxdepth: 2
 
-  embassy-config
-  updating
-  wifi
-  developer-options/index
-  power
-  notifications
-  ssl
-  forgot-password
+  general/index
+  services/index

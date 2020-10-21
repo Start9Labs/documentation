@@ -1,6 +1,6 @@
-#############
-Documentation
-#############
+#########################
+Start9 Labs Documentation
+#########################
 
 Welcome to the docs!
 
@@ -18,7 +18,7 @@ Here you will find guidance and information about the Start9 Embassy personal se
   :caption: User Manuals
 
   user-manuals/embassyos/index
-  user-manuals/services/index
+  user-manuals/available-services/index
 
 .. toctree::
   :maxdepth: 2
