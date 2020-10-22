@@ -7,7 +7,7 @@ MacOS
 
 1. Copy the Tor address from the Setup App. It is safe to message this address to yourself so that you can paste it in a browser.
 
-2. Navigate to a `Tor enabled browser <_connecting>`.
+2. Navigate to a :ref:`Tor enabled browser <connecting>`.
 
 3. Your browser might display a warning screen. You can typically navigate to ``Advanced > Accept the risk and continue``.
 
@@ -25,7 +25,7 @@ MacOS
 
   Select the "Secure LAN Setup" menu item
 
-8. Select the "SSL Certificate" sub menu. This will prompt a download.
+8. Select the "SSL Certificate" sub menu. This will prompt a download to save the certificate file to your machine.
 
 .. figure:: /_static/images/secure_lan_setup_page.png
   :width: 90%
@@ -61,7 +61,7 @@ If the keychain console did not open, press ``Command + spacebar`` and type “K
   :width: 90%
   :alt: Keychain submenu
 
-  Selec "Always trust" under SSL dropdown for Embassy Local CA
+  Select "Always trust" under SSL dropdown for Embassy Local CA
 
 14. Close this window and enter your password to apply the settings.
 
@@ -73,42 +73,122 @@ If the keychain console did not open, press ``Command + spacebar`` and type “K
 
   Trusted Embassy Local CA certificate
 
-16. Navigate to your desired browser to import this certificate and follow the steps for `supported browsers <browsers>`.
+16. Navigate to your desired browser to import this certificate and follow the steps for :ref:`supported browsers <browsers>`.
 
 Windows
 =======
 
-1. Copy the Tor .onion link from the final page of the Setup App. It is safe to message this address to yourself so that you can paste it in a browser.
-2. Navigate to a Tor enabled browser. *
-3. Your browser might display a warning screen. You can typically navigate to Advanced > Accept the risk and continue.
+1. Copy the Tor address from the Setup App. It is safe to message this address to yourself so that you can paste it in a browser.
+
+2. Navigate to a :ref:`Tor enabled browser <connecting>`.
+
+3. Your browser might display a warning screen. You can typically navigate to ``Advanced > Accept the risk and continue``.
+
 4. Allow the page to load with your Tor address over HTTP. Using HTTPS is less performant and unnecessary because Tor v3 is self authenticating.
+
 5. Login to Ambassador UI with the master password you created in the Setup App.
+
 6. Navigate to the “Embassy” tab in the menu.
-7. Find the section entitled “Install SSL Certificate”.
-8. This will prompt a download to save the certificate file to your machine.
-Image for post
-9. Right-click the “Start” menu and select “Run”.
-10. Type in “mmc” and click “OK”. When prompted on the “User Account Control” window, select “Yes” to allow this program to run.
-Image for post
-11. When the Management Console opens, navigate to File > Add/Remove Snap-in.
-Image for post
-12. Select “Certificates” in the left side menu, then “Add”. This will open another window.
-Image for post
-13. Select “Computer account” and click “Next. Leave defaulted options on the next screen and click “Finish”.
-14. When you return to the “Add or Remove Snap-ins” page, ensure “Certificates (Local Computer)” exists under “Console Root” in the “Selected snap-ins” section, then click “OK”.
-Image for post
-15. In the left hand menu of the Management Console, navigate to Certificates (Local Computer) > Trusted Root Certification Authorities > Certificates.
-Image for post
-16. Right click on “Certificates”, then select All Tasks > Import.
-Image for post
-17. Click “Next” on the first page of the Certificate Import Wizard, then browse to the location where you saved the downloaded certificate and click “Open”.
-Image for post
-18. On the “Certificate Store” window, ensure that it says “Trusted Root Certificate Authorities” and click “Next”.
-19. Select “OK” when the import is successful.
-20. Verify the Embassy Local Root CA certificate is in the “Certificates” folder.
-Image for post
-21. You can save the settings to the console if desired or cancel.
-22. Navigate to your desired browser to import this certificate. Steps for supported browsers are outlined below.
+
+7. Find the section entitled “Secure LAN Setup”.
+
+.. figure:: /_static/images/ssl/windows/windows_embassy_menu.png
+  :width: 90%
+  :alt: Secure LAN setup menu item
+
+  Select the "Secure LAN Setup" menu item
+
+8. Select the "SSL Certificate" sub menu. This will prompt a download to save the certificate file to your machine.
+
+.. figure:: /_static/images/ssl/windows/windows_lan_page.png
+  :width: 90%
+  :alt: Secure LAN setup page
+
+  Select the "SSL Certificate" sub menu download icon
+
+9.  Select the option to save the ``Embassy Local CA.crt`` file. 
+
+.. figure:: /_static/images/ssl/windows/windows_download_cert.png
+  :width: 90%
+  :alt: Secure LAN setup prompt
+
+  "Save file" when Opening Embassy Local CA.crt
+
+10. On your computer, right-click the “Start” menu and select “Run”.
+
+11. Type in “mmc” and click “OK”. When prompted on the “User Account Control” window, select “Yes” to allow this program to run.
+
+.. figure:: /_static/images/ssl/windows/1_windows_mmc.png
+  :width: 90%
+  :alt: Windows MMC
+
+  Access the Windows Management Console
+  
+12. When the Management Console opens, navigate to ``File > Add/Remove Snap-in``.
+
+.. figure:: /_static/images/ssl/windows/2_windows_console_root.png
+  :width: 90%
+  :alt: Windows Console Root
+
+  Add Snap-in from Console Root
+
+13. Select “Certificates” in the left side menu, then “Add”. This will open another window.
+
+.. figure:: /_static/images/ssl/windows/3_windows_add_certificates.png
+  :width: 90%
+  :alt: Add Certificates
+
+  Add Certificates to selected snap-ins
+
+14. Select “Computer account” and click “Next. Leave defaulted options on the next screen and click “Finish”.
+
+15. When you return to the “Add or Remove Snap-ins” page, ensure “Certificates (Local Computer)” exists under “Console Root” in the “Selected snap-ins” section, then click “OK”.
+
+.. figure:: /_static/images/ssl/windows/4_windows_selected_snapin.png
+  :width: 90%
+  :alt: Snap-in Selected
+
+  Certificates (Local Computer) is selected as snap-in
+
+16. In the left hand menu of the Management Console, navigate to Certificates (Local Computer) > Trusted Root Certification Authorities > Certificates.
+
+.. figure:: /_static/images/ssl/windows/5_windows_trusted_certificate_menu.png
+  :width: 90%
+  :alt: Certificates in Management Console
+
+  Access Certificates in Management Console
+
+17. Right click on “Certificates”, then select ``All Tasks > Import``.
+
+.. figure:: /_static/images/ssl/windows/6_windows_import_cert.png
+  :width: 90%
+  :alt: Import certificate
+
+  Select "Import" from Certificates sub-menu
+
+18. Click “Next” on the first page of the Certificate Import Wizard, then browse to the location where you saved the downloaded certificate and click “Open”.
+
+.. figure:: /_static/images/ssl/windows/7_windows_import_cert_wizard.png
+  :width: 90%
+  :alt: Import cert wizard
+
+  Add downloaded certificate int he Certificate Import Wizard
+
+19. On the “Certificate Store” window, ensure that it says “Trusted Root Certificate Authorities” and click “Next”.
+
+20. Select “OK” when the import is successful.
+
+21. Verify the Embassy Local Root CA certificate is in the “Certificates” folder.
+
+.. figure:: /_static/images/ssl/windows/8_windows_successful_cert_install.png
+  :width: 90%
+  :alt: Successful cert install
+
+  Embassy Local Root CA imported into Certificate folder
+
+22. You can save the settings to the console if desired or cancel.
+
+23. Navigate to your desired browser to import this certificate and follow the steps for :ref:`supported browsers <browsers>`.
 
 Linux
 =====
