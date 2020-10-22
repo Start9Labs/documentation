@@ -16,5 +16,5 @@ Features
   developer-options/index
   power
   notifications
-  ssl
+  secure-lan/index
   forgot-password

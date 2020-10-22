@@ -70,7 +70,12 @@ h1, h2 {
     }
 }
 
-ul .current li .current {
+
+a:active {
+    text-decoration: none;
+}
+
+ul.current > .current .active > a.current {
     text-decoration: underline #f8f8ff;
 }
 
