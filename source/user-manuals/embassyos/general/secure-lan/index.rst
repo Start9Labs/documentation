@@ -36,3 +36,6 @@ Next, complete the setup for your desired browser. This guide currently covers:
   :maxdepth: 2
 
   browser
+
+.. note:: 
+  For security, Secure LAN Setup is only available over the Embassy's Tor address. Ensure you are setup with a :ref:`Tor enabled browser <connecting>`.
