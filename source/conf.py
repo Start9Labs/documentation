@@ -74,6 +74,7 @@ html_theme_options = {
     "use_issues_button": True,
     "use_repository_button": True,
     "extra_navbar": "",
+    "show_navbar_depth": 1,
 }
 html_logo = "_static/logo.png"
 html_title = "Docs"
