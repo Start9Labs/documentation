@@ -2,7 +2,6 @@
 Mobile
 ******
 
-
 iOS
 ====
 
@@ -10,7 +9,7 @@ iOS
 
 2. Select your claimed Embassy to view the setup results.
 
-3. Find the "Advanced" menu item at the bottom of the Setup App screen.
+3. Find the "LAN (advanced)" menu item at the bottom of the Setup App screen.
 
 .. figure:: /_static/images/ssl/mobile/ssl_setup_app_complete.png
   :width: 90%

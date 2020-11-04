@@ -5,7 +5,7 @@ Desktop
 MacOS
 =====
 
-1. Copy the Tor address from the Setup App. It is safe to message this address to yourself so that you can paste it in a browser.
+1. In the Setup App, select your claimed Embassy to view the setup results. Navigate to the "Tor (easy)" menu item and copy the Tor address. It is safe to message this address to yourself so that you can paste it in a browser.
 
 2. Navigate to a :ref:`Tor enabled browser <connecting>`.
 
@@ -78,7 +78,7 @@ If the keychain console did not open, press ``Command + spacebar`` and type “K
 Windows
 =======
 
-1. Copy the Tor address from the Setup App. It is safe to message this address to yourself so that you can paste it in a browser.
+1. In the Setup App, select your claimed Embassy to view the setup results. Navigate to the "Tor (easy)" menu item and copy the Tor address. It is safe to message this address to yourself so that you can paste it in a browser.
 
 2. Navigate to a :ref:`Tor enabled browser <connecting>`.
 
