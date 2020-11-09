@@ -11,22 +11,27 @@ If you already have :ref:`SSH keys registered with your Embassy<ssh-setup>` **OR
 
 * SSH:
 
-  * Use the command line to gain remote access to your Embassy
+  * Use the command line to gain SSH access to your Embassy::
 
       ssh pi@start9-[network-id].local
 
-  * Install the sqlite3 command line utility
+  * Check if you have sqlite3 installed. If not, install it::
 
+      which sqlite3
       sudo apt install sqlite3
   
   * Access the sqlite3 terminal::
 
       sudo sqlite3 /root/agent/start9_agent.sqlite3
 
-  * Then inside the sqlite3 terminal::
+  * Run::
 
       delete from account;
       .quit
+
+  * Exit the SSH session::
+
+      exit
 
   * You can now use the Start9 Setup App to reclaim your Embassy and set a new password.
 
@@ -42,9 +47,12 @@ If you already have :ref:`SSH keys registered with your Embassy<ssh-setup>` **OR
       which sqlite3
       sudo apt install sqlite3
 
+  * Access the sqlite3 terminal::
+
+      sudo sqlite3 /root/agent/start9_agent.sqlite3
+
   * Run::
 
-      sudo sqlite3 [mount folder]/root/agent/start9_agent.sqlite3
       delete from account;
       .quit
 
