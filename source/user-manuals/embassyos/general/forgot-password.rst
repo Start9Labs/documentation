@@ -11,9 +11,20 @@ If you already have :ref:`SSH keys registered with your Embassy<ssh-setup>` **OR
 
 * SSH:
 
-  * Use the command line to gain remote access to your Embassy, then run::
+  * Use the command line to gain remote access to your Embassy
+
+      ssh pi@start9-[network-id].local
+
+  * Install the sqlite3 command line utility
+
+      sudo apt install sqlite3
+  
+  * Access the sqlite3 terminal::
 
       sudo sqlite3 /root/agent/start9_agent.sqlite3
+
+  * Then inside the sqlite3 terminal::
+
       delete from account;
       .quit
 
