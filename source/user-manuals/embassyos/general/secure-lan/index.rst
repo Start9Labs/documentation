@@ -21,7 +21,7 @@ First, determine your current version of EmbassyOS from the menu  at ``Embassy >
   For EmbassyOS versions ``<0.2.5``, please follow the setup instructions on this `blog post <https://medium.com/@start9labs/embassy-https-certificate-setup-8cd873d7075c>`_.
 
 
-For EmbassyOS versions ``>=0.2.5``, continue below. Complete the setup for your device operating system:
+For EmbassyOS versions ``>=0.2.5``, continue completing the setup for your device operating system:
 
 .. toctree::
   :maxdepth: 2
