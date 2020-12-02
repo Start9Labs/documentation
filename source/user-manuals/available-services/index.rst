@@ -8,7 +8,7 @@ A list of currently released services for EmbassyOS. Links to the wrapper reposi
 
     `Bitcoin <https://github.com/Start9Labs/bitcoind-wrapper>`_
 
-    `Bitwarden <https://github.com/Start9Labs/filebrowser-wrapper>`_
+    `Bitwarden <https://github.com/Start9Labs/bitwarden-wrapper>`_
 
     `Cups <https://github.com/Start9Labs/cups-wrapper>`_
 
