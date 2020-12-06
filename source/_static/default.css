@@ -101,7 +101,7 @@ code {
 }
 
 .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-    width: 80%;
+    width: 90%;
 }
 
 .admonition {
@@ -159,4 +159,8 @@ code {
 
 nav.bd-links .fa-chevron-up:hover, nav.bd-links .fa-chevron-down:hover {
     color: #ff4960;
+}
+
+nav.bd-links > ul.nav {
+  padding-right: 8px;
 }

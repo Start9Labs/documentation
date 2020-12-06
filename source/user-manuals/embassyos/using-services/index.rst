@@ -1,6 +1,6 @@
-********
-Services
-********
+**************
+Using Services
+**************
 
 Services are self-hosted, open source projects made compatible for EmbassyOS. Each service is has been independently developed by members of the open source community. The Embassy enables configuration, customization and a one click install.
 

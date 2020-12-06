@@ -2,7 +2,7 @@
 EmbassyOS
 *********
 
-You can view and manage your Embassy inside the ``Embassy`` tab in the main menu.
+You can view and manage your Embassy inside the "Embassy" tab in the main menu.
 
 .. figure:: /_static/images/embassy_tab.png
   :width: 90%
@@ -17,4 +17,4 @@ Features
   :maxdepth: 2
 
   general/index
-  services/index
+  using-services/index

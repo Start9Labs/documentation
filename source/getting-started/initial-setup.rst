@@ -1,38 +1,34 @@
-**************
-Version 0.2.x
-**************
+.. _initial-setup:
 
-Ensure your phone is connected to the same WiFi network as your router.
+*************
+Initial Setup
+*************
 
-Power On
-========
-
-Connect your Embassy to power and Ethernet using the provided cables.
-
-.. admonition:: Tips
-    :class: toggle expand
-
-    Ethernet cable may be plugged into your router or any live Ethernet port.
-
-    You will hear 2 distinct sounds
-
-    * bep ‐ Powering on
-
-    * chime ‐ Embassy is ready
-
-Setup App
-=========
-
-Download the "Start9 Setup App"
+Download the Setup App
+======================
 
 `App Store <https://apps.apple.com/us/app/start9-setup-app/id1528125889>`_
 
 `Google Play <https://play.google.com/store/apps/details?id=com.start9labs.setup>`_
 
+Power On
+========
+
+Connect your Embassy to power and Ethernet.
+
+.. note:: to avoid networking issues, it is recommended to use your primary router, not an extender or mesh router.
+
+You will hear 2 distinct sounds:
+
+* "bep" ‐ Powering on
+* "chime" ‐ Embassy is ready
+
 Claim Your Embassy
 ==================
 
-1. Inside the Setup App, enter the product key located on the bottom of your Embassy
+1. Ensure your phone is connected to the same WiFi network as your router.
+
+2. Inside the Setup App, enter the product key located on the bottom of your Embassy
 
 .. admonition:: Explanation
     :class: toggle expand
@@ -43,8 +39,9 @@ Claim Your Embassy
     :class: toggle expand
 
     #. Confirm that the Embassy is plugged into both power and Ethernet.
-    #. Confirm the Embassy emitted a two sounds when powering on: a bep and a chime.
+    #. Confirm the Embassy emitted two sounds when powering on: a bep and a chime.
     #. Confirm you are entering the correct product key.
+    #. Confirm your phone is not using a VPN.
     #. Close and reopen the Setup App and try again.
     #. Rarely, certain routers do not support mDNS. Please see the "Advanced" tab.
 
@@ -56,7 +53,7 @@ Claim Your Embassy
     * On your desktop or laptop computer, navigate to your router configuration settings within the browser. This is usually an IP address such as 192.168.1.1. A simple Google search will usually reveal how to access the router configuration settings for a particular brand.
     * Once in the router config settings, find the section that lists the devices on your network. You should see an item labeled "start9labs". Take note of the associated IP address and enter it into the Setup App in the "LAN IP Address" input field.
 
-2. Create your all powerful and irreplaceable master password
+3. Create your *permanent* master password and complete setup.
 
 .. admonition:: Explanation
     :class: toggle expand
@@ -64,17 +61,14 @@ Claim Your Embassy
     In this step, the Setup App will provide your Embassy with three pieces of critical information:
 
     * A ed25519 private key. Used by the Embassy to create a .onion public address for encrypted and anonymous communication over Tor.
-    * A 4096 bit RSA private key, used by the Embassy to create a SSL certificate for encrypted communication over LAN.
-    * Your master password, used by the Embassy to authenticate you as its one and only master. If you lose this password, there is no way to access your Embassy ever again. You will be forced to reset the device, resulting in permanent loss of data.
+    * A 4096 bit RSA private key. Used by the Embassy to create a SSL certificate for encrypted communication over LAN.
+    * A master password. Used by the Embassy to authenticate you as its owner.
     
     All three secrets are packaged together and transmitted to the Embassy encrypted with its product key.
 
-.. admonition:: Tips
-    :class: toggle expand
-
-    Choose a strong master password. Physically write it down. Store it somewhere safe. DO NOT LOSE IT.
+.. warning:: There is also currently no way to change your password. Choose a strong master password. Write it down. Store it somewhere safe. DO NOT LOSE IT. If you lose this password, you may be forced to reset the device, resulting in permanent loss of data.
 
 Setup Complete!
 ===============
 
-Your Embassy is now hosted on the private web. You can view and manage your Embassy by visiting its unique ``.onion`` URL from any Tor-enabled browser. The Setup App contains our recommendations for various devices.
+Your Embassy is now hosted on the private web. You can view and manage your Embassy by visiting its unique Tor Address from any Tor-enabled browser. The Setup App contains our recommendations for various devices.

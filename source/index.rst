@@ -10,7 +10,7 @@ Here you will find guidance and information about the Start9 Embassy personal se
   :maxdepth: 2
   :caption: Getting Started
 
-  getting-started/setup/index
+  getting-started/initial-setup
   getting-started/connecting
 
 .. toctree::

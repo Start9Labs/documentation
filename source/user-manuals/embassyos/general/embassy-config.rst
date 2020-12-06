@@ -2,7 +2,7 @@
 Config Options
 **************
 
-Click ``config``. Here you can set custom configurations for your Embassy. Currently, changing the ``Device Name`` is the only option.
+Click "Config". Here you can set custom configurations for your Embassy. Currently, changing the Device Name is the only option.
 
 .. figure:: /_static/images/embassy_config.png
   :width: 90%

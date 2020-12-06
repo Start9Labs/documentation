@@ -2,7 +2,7 @@
 Setting up WiFi
 ***************
 
-#. Click ``WiFi``.
+#. Click "WiFi".
 #. Click the ``+`` button in the lower right corner.
 #. Select the appropriate country.
 #. Enter your WiFi SSID and password.

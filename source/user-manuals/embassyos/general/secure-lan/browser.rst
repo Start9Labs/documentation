@@ -11,15 +11,13 @@ Brave
 
 1. Navigate to your Brave Settings in a new tab.
 
-2. On the left hand sidebar, select ``Additional Settings > Privacy and Security``.
+2. On the left hand sidebar, navigate to *Additional Settings > Privacy and Security*.
 
 3. Add the bottom of the section, select "Manage Certificates".
 
 .. figure:: /_static/images/ssl/browser/brave_security_settings.png
   :width: 90%
-  :alt: Brave security settings
-
-  Brave privacy and security settings page
+  :alt: Brave privacy and security settings page
 
 4. If you see a trusted “Embassy Local Root CA”, open a new tab to apply the certificate. If this does not work, quit and restart Brave.
 
@@ -27,9 +25,7 @@ Brave
 
 .. figure:: /_static/images/ssl/browser/brave_view_certs.png
   :width: 90%
-  :alt: Brave manage certs
-
-  Brave Manage Certificates sub-menu on MacOS
+  :alt: Brave Manage Certificates sub-menu on MacOS
 
 6. Obtain the LAN address provided in the Setup App and enter it in a new tab.
 
@@ -63,7 +59,7 @@ Firefox
 
 4. Select the "Authorities" tab from the "Certificate Manager".
 
-5. Click “Import” and open the downloaded ``Embassy Local Root CA.crt`` file on your device. If you cannot find this, make sure you completed the :ref:`device setup steps <ssl-setup>`.
+5. Click “Import” and open the downloaded *Embassy Local Root CA.crt* file on your device. If you cannot find this, make sure you completed the :ref:`device setup steps <ssl-setup>`.
 
 6. When prompted, check “Trust this CA to identity websites” and select “OK”.
 

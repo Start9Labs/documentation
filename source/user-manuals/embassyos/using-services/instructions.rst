@@ -2,7 +2,7 @@
 Instructions
 ************
 
-To view the instructions for a particular service, navigate to ``Services > [Service Name] > Instructions``.
+To view the instructions for a particular service, navigate to *Services > [Service Name] > Instructions*.
 
 .. figure:: /_static/images/bitcoin_instructions.png
   :width: 90%

@@ -4,7 +4,7 @@
 Service Config
 **************
 
-``Services > [Service Name] > Config``
+Navigate to *Services > [Service Name] > Config*
 
 After installation or update, some services require configuration before they can be started.
 

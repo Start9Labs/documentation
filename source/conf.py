@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Start9 Labs'
-copyright = '2020, Start9 Labs'
+copyright = '2020, Start9 Labs, Inc'
 
 # -- General configuration ---------------------------------------------------
 

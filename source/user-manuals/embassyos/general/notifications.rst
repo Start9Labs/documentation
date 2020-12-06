@@ -2,7 +2,7 @@
 Notifications
 *************
 
-You can view and manage your Notifications inside the ``Notifications`` tab in the main menu. They include:
+You can view and manage your Notifications inside the "Notifications" tab in the main menu. They include:
 
 * successful or failed EmbassyOS updates
 * successful or failed service installations

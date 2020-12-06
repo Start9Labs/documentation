@@ -43,7 +43,7 @@ iOS
 
   General settings
 
-7. Navigate to ``General > Profile(s) > Downloaded Profile > Install``.
+7. Navigate to *General > Profile(s) > Downloaded Profile > Install*.
 
 .. figure:: /_static/images/ssl/mobile/ssl_ipad_profiles.png
   :width: 90%
@@ -59,7 +59,7 @@ iOS
 
 8. Select “yes” to any warning prompts.
 
-9. Next, navigate to ``General > About > Certificate Trust Settings``.
+9. Next, navigate to *General > About > Certificate Trust Settings*.
 
 .. figure:: /_static/images/ssl/mobile/ssl_ipad_cert_trust_settings.png
   :width: 90%

@@ -19,9 +19,10 @@ Currently, Tor is the default and our recommended approach for most users. It *j
 Below are a list of our recommended browsers for Tor:
 
 * `Start9 Consulate <https://apps.apple.com/us/app/consulate/id1528124570>`_ (iOS)
-* `Firefox <https://mozilla.org/firefox/new/>`_ (Mac, Windows, Linux, Android)
+* `Firefox <https://mozilla.org/firefox/new/>`_ (Mac, Windows, Linux)
+* `Firefox Beta <https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta>`_ (Android)
 * `Tor Browser <https://torproject.org/download/>`_ (Mac, Windows, Linux, Android)
-* `Brave <https://brave.com/>`_ (Mac, Windows, Linux, Android)
+* `Brave <https://brave.com/>`_ (Mac, Windows, Linux)
 
 .. seealso:: `Setting up Firefox to handle Tor addresses <https://medium.com/@start9labs/setting-up-your-firefox-web-browser-to-handle-onion-urls-b805391726e4>`_
 
@@ -31,6 +32,6 @@ Below are a list of our recommended browsers for Tor:
 LAN
 ===
 
-Connecting to your Embassy over :ref:`lan` has the benefit of being fast! It requires using a browser that supports *.local* URLs, which is true for most browsers.
+Connecting to your Embassy over :ref:`lan` has the benefit of being fast! It requires that your are connected to your home network and using a browser that supports *.local* URLs, which is true for most browsers.
 
-This option is considered *advanced*, since it requires :ref:`installing and trusting your Embassy's Root Certificate Authority SSL<ssl-setup>` on any phone or laptop you use to connect.
+.. seealso:: :ref:`Installing and trusting your Embassy's Root Certificate Authority SSL<ssl-setup>`

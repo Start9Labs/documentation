@@ -8,7 +8,7 @@ EmbassyOS has ability to securely access your Embassy over HTTPS from any browse
 
 The following guides will take you through the steps to install and trust the SSL certificate generated from your Embassy.
 
-First, determine your current version of EmbassyOS from the menu  at ``Embassy > About > EmbassyOS Version``.
+First, determine your current version of EmbassyOS, found in *Embassy > About > EmbassyOS Version*.
 
 .. figure:: /_static/images/embassy_version.png
   :width: 90%
@@ -18,10 +18,10 @@ First, determine your current version of EmbassyOS from the menu  at ``Embassy >
 
 
 .. warning:: 
-  For EmbassyOS versions ``<0.2.5``, please follow the setup instructions on this `blog post <https://medium.com/@start9labs/embassy-https-certificate-setup-8cd873d7075c>`_.
+  For EmbassyOS versions <0.2.5, please follow the setup instructions on this `blog post <https://medium.com/@start9labs/embassy-https-certificate-setup-8cd873d7075c>`_.
 
 
-For EmbassyOS versions ``>=0.2.5``, continue completing the setup for your device operating system:
+For EmbassyOS versions >=0.2.5, continue completing the setup for your device operating system:
 
 .. toctree::
   :maxdepth: 2

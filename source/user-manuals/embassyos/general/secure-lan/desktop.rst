@@ -9,7 +9,7 @@ MacOS
 
 2. Navigate to a :ref:`Tor enabled browser <connecting>`.
 
-3. Your browser might display a warning screen. You can typically navigate to ``Advanced > Accept the risk and continue``.
+3. Your browser might display a warning screen. You can typically navigate to *Advanced > Accept the risk and continue*.
 
 4. Allow the page to load with your Tor address over HTTP. Using HTTPS is less performant and unnecessary because Tor v3 is self authenticating.
 
@@ -49,9 +49,9 @@ MacOS
 
   Keychain access import menu
 
-If the keychain console did not open, press ``Command + spacebar`` and type “Keychain Access”, and hit enter to open it.
+If the keychain console did not open, press "Command + spacebar" and type “Keychain Access”, and hit enter to open it.
 
-11. Navigate to the “System” tab and find the certificate entitled “Embassy Local Root CA”.
+11. Navigate to the "System" tab and find the certificate entitled “Embassy Local Root CA”.
 
 12. Double click on this certificate. A second window will pop up.
 
@@ -82,7 +82,7 @@ Windows
 
 2. Navigate to a :ref:`Tor enabled browser <connecting>`.
 
-3. Your browser might display a warning screen. You can typically navigate to ``Advanced > Accept the risk and continue``.
+3. Your browser might display a warning screen. You can typically navigate to *Advanced > Accept the risk and continue*.
 
 4. Allow the page to load with your Tor address over HTTP. Using HTTPS is less performant and unnecessary because Tor v3 is self authenticating.
 
@@ -106,7 +106,7 @@ Windows
 
   Select the "SSL Certificate" sub menu download icon
 
-9.  Select the option to save the ``Embassy Local CA.crt`` file. 
+9.  Select the option to save the *Embassy Local CA.crt* file. 
 
 .. figure:: /_static/images/ssl/windows/windows_download_cert.png
   :width: 90%
@@ -124,7 +124,7 @@ Windows
 
   Access the Windows Management Console
   
-12. When the Management Console opens, navigate to ``File > Add/Remove Snap-in``.
+12. When the Management Console opens, navigate to *File > Add/Remove Snap-in*.
 
 .. figure:: /_static/images/ssl/windows/2_windows_console_root.png
   :width: 90%
@@ -158,7 +158,7 @@ Windows
 
   Access Certificates in Management Console
 
-17. Right click on “Certificates”, then select ``All Tasks > Import``.
+17. Right click on “Certificates”, then navigate to *All Tasks > Import*.
 
 .. figure:: /_static/images/ssl/windows/6_windows_import_cert.png
   :width: 90%
