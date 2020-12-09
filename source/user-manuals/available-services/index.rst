@@ -22,3 +22,4 @@ Other services
 * `Bitwarden <https://github.com/Start9Labs/bitwarden-wrapper/tree/master/docs>`_
 * `Cups <https://github.com/Start9Labs/cups-wrapper/tree/master/docs>`_
 * `File Browser <https://github.com/Start9Labs/filebrowser-wrapper/tree/master/docs>`_
+* `Burn After Reading <https://github.com/Start9Labs/burn-after-reading>`_
