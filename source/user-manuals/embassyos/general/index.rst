@@ -2,10 +2,7 @@
 General
 *******
 
-An overview of EmbassyOS general capabilities. 
-
-Features
-========
+An overview of EmbassyOS general capabilities.
 
 .. toctree::
   :maxdepth: 2

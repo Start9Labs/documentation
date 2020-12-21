@@ -6,9 +6,6 @@ Services are self-hosted, open source projects made compatible for EmbassyOS. Ea
 
 .. note:: Some services require configuration before starting up. You can only connect to and use a service once it is in a *running* state.
 
-Features
-========
-
 .. toctree::
   :maxdepth: 2
 
