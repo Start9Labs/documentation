@@ -15,11 +15,13 @@ By popular demand, we are pleased to present this "Do it Yourself" (DIY) guide f
 Motivation
 ==========
 
-There are three reasons you might prefer to build your own Embassy instead of purchasing one from us.
+There are four reasons you might prefer to build your own Embassy instead of purchasing one from us.
 
 #. You already have a Raspberry Pi and would like to re-purpose it
 
 #. You live outside the United States and want to save on shipping/duties fees
+
+#. You prefer not to divulge your physical shipping address
 
 #. You just like building things.
 
