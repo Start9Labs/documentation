@@ -17,11 +17,11 @@ Motivation
 
 There are four reasons you might prefer to build your own Embassy instead of purchasing one from us.
 
-#. You already have a Raspberry Pi and would like to re-purpose it
+#. You already have a Raspberry Pi and would like to re-purpose it.
 
-#. You live outside the United States and want to save on shipping fees
+#. You want to save on shipping costs.
 
-#. You prefer not to divulge your physical shipping address
+#. You prefer not to divulge your physical shipping address.
 
 #. You just like building things.
 
@@ -41,13 +41,13 @@ Components
 Assembly Instructions
 ---------------------
 
-#. Insert mini speaker/buzzer into GPIO pins 6/8/10/12 with the word "speaker" facing out, `away from the board`.
+1. Insert mini speaker/buzzer into GPIO pins 6/8/10/12 with the word "speaker" facing out, `away from the board`.
 
 .. figure:: /_static/images/diy/pins.png
   :width: 60%
   :alt: Speaker board spec
 
-#. That's it. Place the Raspberry Pi 4 board (with speaker attached), into its case.
+That's it. Place the Raspberry Pi 4 board (with speaker attached), into its case.
 
 Getting EmbassyOS
 =================
