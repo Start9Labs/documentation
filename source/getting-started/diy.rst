@@ -1,11 +1,11 @@
 .. _diy:
 
-***
-DIY
-***
+*********
+DIY Guide
+*********
 
 .. figure:: /_static/images/diy/pi.png
-  :width: 90%
+  :width: 40%
   :alt: Raspberry Pi
 
   Raspberry Pi Board
@@ -44,7 +44,7 @@ Assembly Instructions
 #. Insert mini speaker/buzzer into GPIO pins 6/8/10/12 with the word "speaker" facing out, `away from the board`.
 
 .. figure:: /_static/images/diy/pins.png
-  :width: 90%
+  :width: 60%
   :alt: Speaker board spec
 
 #. That's it. Place the Raspberry Pi 4 board (with speaker attached), into its case.
@@ -65,7 +65,7 @@ Building from Source
 If you have the proper tooling and are comfortable using the command line, you can build EmbassyOS from `source <https://github.com/Start9Labs/embassy-os>`_, which is made available under the `Start9 Personal Use License <https://start9labs.com/license>`_.
 
 Installing EmbassyOS
---------------------
+====================
 
 Whether you purchase EmbassyOS from us or build it yourself, you need to flash it onto a microSD card.
 
@@ -77,10 +77,10 @@ Whether you purchase EmbassyOS from us or build it yourself, you need to flash i
 6. Click `Flash!` You may be asked to (1) approve the unusually large disk target or (2) enter your password. Both are normal.
 
 .. figure:: /_static/images/diy/balena.png
-  :width: 90%
+  :width: 60%
   :alt: Balena Etcher Dashboard
 
 7. Once the image is flashed and verified, you may remove the micro SD and insert it into your Embassy.
-8. The Embassy is now ready for use, and you may following the normal :ref:`setup <initial-setup>` instructions. *
+8. The Embassy is now ready for use, and you may following the normal :ref:`setup <initial-setup>` instructions. ``*``
 
 ``*`` The first time you power it on, your Embassy will make more noises than future attempts, and it may take several minutes to finally complete.
