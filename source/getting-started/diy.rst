@@ -19,7 +19,7 @@ There are four reasons you might prefer to build your own Embassy instead of pur
 
 #. You already have a Raspberry Pi and would like to re-purpose it
 
-#. You live outside the United States and want to save on shipping/duties fees
+#. You live outside the United States and want to save on shipping fees
 
 #. You prefer not to divulge your physical shipping address
 
