@@ -67,4 +67,4 @@ If you already have :ref:`SSH keys registered with your Embassy<ssh-setup>` **OR
 No SSH/Linux
 ============
 
-The only way to regain access to your Embassy is to :ref:`contact the Start9 dev team<contact>` directly to obtain a new operating system image. This is equivalent to a factory reset; all data will be lost.
+You must factory reset your device by re-installing EmbassyOS, resulting in permanent loss of data. Visit the `image downloader <https://images.start9labs.com/download>`_ to obtain a new EmbassyOS image, then follow the `installation instructions </getting-started/diy.html#installing-embassyos>`_.
