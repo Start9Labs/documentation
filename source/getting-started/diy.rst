@@ -30,11 +30,11 @@ Hardware
 
 Components
 ----------
-#. `Raspberry Pi 4B (4GB) <https://www.raspberrypi.org/products/raspberry-pi-4-model-b/?variant=raspberry-pi-4-model-b-4gb>`_
-#. `Power supply for Raspberry Pi 4B <https://www.raspberrypi.org/products/type-c-power-supply/F>`_
+#. `Raspberry Pi 4B (4GB) <https://raspberrypi.org/products/raspberry-pi-4-model-b/?variant=raspberry-pi-4-model-b-4gb>`_
+#. `Power supply for Raspberry Pi 4B <https://raspberrypi.org/products/type-c-power-supply/>`_
 #. Case for Raspberry Pi 4B (plenty on Amazon)
-#. High endurance microSD card (recommended 128GB or more)
-#. `GPIO mini speaker/buzzer <https://www.amazon.com/dp/B07F8NXHGP/ref=sspa_dk_detail_0?psc=1&pd_rd_i=B07F8NXHGP&pd_rd_w=TTBRH&pf_rd_p=7d37a48b-2b1a-4373-8c1a-bdcc5da66be9&pd_rd_wg=56LGK&pf_rd_r=ZZDK9N77R3ZJATC9ED7J&pd_rd_r=ff5067b4-2a86-4302-b9ac-1d2576dd78ba&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExOEYyOVhBUkRaT0xSJmVuY3J5cHRlZElkPUEwMjc5NjgxM1g1WDdLOFRUR0tDJmVuY3J5cHRlZEFkSWQ9QTA0Njk1MTIzQldOTjZaWVFLRklXJndpZGdldE5hbWU9c3BfZGV0YWlsJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==D>`_
+#. `High endurance microSD <https://amazon.com/SanDisk-Endurance-microSDXC-Adapter-Monitoring/dp/B07NY23WBG/>`_ (recommended 128GB or more)
+#. `GPIO mini speaker/buzzer <https://amazon.com/dp/B07F8NXHGP/>`_
 #. Ethernet cable
 #. MicroSD → USB adapter (if no microSD port on your computer)
 
