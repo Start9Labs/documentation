@@ -32,11 +32,13 @@ Components
 ----------
 #. `Raspberry Pi 4B (4GB) <https://raspberrypi.org/products/raspberry-pi-4-model-b/?variant=raspberry-pi-4-model-b-4gb>`_
 #. `Power supply for Raspberry Pi 4B <https://raspberrypi.org/products/type-c-power-supply/>`_
-#. Case for Raspberry Pi 4B (plenty on Amazon)
+#. Case for Raspberry Pi 4B (`passive cooling recommended <https://www.amazon.com/Geekworm-Raspberry-Aluminum-Passive-Heatsink/dp/B07Z6FYHCH/>`_ `*`)
 #. `High endurance microSD <https://amazon.com/SanDisk-Endurance-microSDXC-Adapter-Monitoring/dp/B07NY23WBG/>`_ (recommended 128GB or more)
 #. `GPIO mini speaker/buzzer <https://amazon.com/dp/B07F8NXHGP/>`_
 #. Ethernet cable
 #. MicroSD → USB adapter (if no microSD port on your computer)
+
+`*` If you use a fan, **DO NOT** use the official Raspberry Pi fan, as it requires the same GPIO pins as the audio speaker. Instead, we recommend `this fan <https://www.amazon.com/Raspberry-iUniker-30x30x7mm-Brushless-RetroFlag/dp/B076H3TKBP/>`_.
 
 Assembly Instructions
 ---------------------
