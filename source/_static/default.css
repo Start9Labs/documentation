@@ -64,9 +64,14 @@ h1, h2 {
     margin-top: 1rem;
 }
 
+.bd-sidebar {
+    background: none;
+}
+
 @media (min-width: 768px) {
     .bd-sidebar {
         border-right: 1px solid #f8f8ff;
+        background: none;
     }
 }
 
@@ -163,4 +168,12 @@ nav.bd-links .fa-chevron-up:hover, nav.bd-links .fa-chevron-down:hover {
 
 nav.bd-links > ul.nav {
   padding-right: 8px;
+}
+
+.highlight > pre {
+  background-color: lightgray;
+}
+
+#main-content.row {
+    margin-top: 6rem!important;
 }
