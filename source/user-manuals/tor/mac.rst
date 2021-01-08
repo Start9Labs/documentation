@@ -26,6 +26,7 @@ When this completes, you should see something like:
 If you notice issues connecting to Tor websites, try restarting the Tor service. Open the terminal and run:
 
 .. code-block::
+
     brew services restart tor
 
 After running this command, you should see something like:

@@ -24,7 +24,7 @@ Below are a list of our recommended browsers for Tor:
 * `Tor Browser <https://torproject.org/download/>`_ (Mac, Windows, Linux, Android)
 * `Brave <https://brave.com/>`_ (Mac, Windows, Linux)
 
-.. seealso:: `Setting up Firefox to handle Tor addresses <https://medium.com/@start9labs/setting-up-your-firefox-web-browser-to-handle-onion-urls-b805391726e4>`_
+.. seealso:: `Setting up Tor for browsers :ref:<tor-system-setup>`
 
 .. seealso:: `Announcing the Consulate Browser! <https://medium.com/@start9labs/announcing-the-consulate-browser-76d94a8599cb>`_
 
