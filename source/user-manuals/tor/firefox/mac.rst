@@ -38,6 +38,7 @@ Search for the term “proxy” in the search bar in the upper right, then selec
 This should open a menu that will allow you to configure your proxy settings. Select `Automatic proxy configuration URL` and paste in:
 
 .. code-block::
+
   file:///usr/local/etc/tor/proxy.pac
 
 Then, check the box labeled `Proxy DNS when using SOCKS v5`:
