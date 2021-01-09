@@ -1,8 +1,8 @@
 .. _tor-windows:
 
-*************************
-Setting up Tor on Windows
-*************************
+**********************
+Running Tor on Windows
+**********************
 
 First, you need to install the Tor proxy service to your system. Unfortunately, `torproject.org` no longer publishes a standalone Tor binary for Windows, so the recommended way to get it is with the Tor Browser Bundle. You can download it `here <https://www.torproject.org/download/>`_.
 
@@ -23,8 +23,8 @@ Once it is downloaded, go ahead and run the installer. If you want to install th
 It does not matter where you set the destination folder, however you need to make note of it for later. Go ahead and finish the installation.
 
 Now you want to set up Tor to run as a service: to run in the background and keep itself running so you don’t have to worry about it again. To do so, you need to open your Command Prompt as an administrator.
-In Windows 10, you can simply type :code:`cmd` in the Windows search bar, right click on the first result, and select `Run as Administrator`.
-Once it opens, you can run the following commands, inserting your destination folder in place of :code:`<PATH TO>`:
+In Windows 10, you can simply type ``cmd`` in the Windows search bar, right click on the first result, and select `Run as Administrator`.
+Once it opens, you can run the following commands, inserting your destination folder in place of ``<PATH TO>``:
 
 .. code-block::
 

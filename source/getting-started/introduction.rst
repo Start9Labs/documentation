@@ -10,4 +10,4 @@ So what do you do with your Embassy? You use it to run services: Bitcoin, Lightn
 
 Every communication between you and your Embassy is end-to-end encrypted and onion routed over the Tor network. All services are open-source and self-hosted, meaning there are no trusted third parties of any kind.
 
-To get an Embassy, you can :ref:`purchase<purchase>` one directly from Start9 Labs, or you can :ref:`build one yourself<diy>`.
+To get an Embassy, you can :ref:`purchase<purchasing>` one directly from Start9 Labs, or you can :ref:`build one yourself<diy>`.

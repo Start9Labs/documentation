@@ -1,8 +1,8 @@
 .. _tor-mac:
 
-***********************
-Setting up Tor on MacOS
-***********************
+********************
+Running Tor on MacOS
+********************
 
 First, you need to install the Tor proxy service to your system. This will require opening your Terminal. 
 

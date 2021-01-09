@@ -11,16 +11,25 @@ Here you will find guidance and information about the Start9 Embassy personal se
   :caption: Getting Started
 
   getting-started/introduction
-  getting-started/purchase
+  getting-started/purchasing
   getting-started/diy
 
 .. toctree::
   :maxdepth: 2
-  :caption: User Manuals
+  :caption: User Manual
 
-  user-manuals/embassyos/index
-  user-manuals/available-services/index
-  user-manuals/tor/index
+  user-manual/initial-setup
+  user-manual/connecting
+  user-manual/general/index
+  user-manual/managing-services/index
+
+.. toctree::
+  :maxdepth: 2
+  :caption: Misc Guides
+
+  misc-guides/available-services
+  misc-guides/tor-os/index
+  misc-guides/tor-firefox/index
 
 .. toctree::
   :maxdepth: 2

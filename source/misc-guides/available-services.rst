@@ -4,7 +4,7 @@
 Available Services
 ******************
 
-A list of currently released services for EmbassyOS. Links to the wrapper repository that contains advanced instructions and integration guides.
+A list of currently-available services for the Embassy.
 
 Bitcoin-related services
 ========================
@@ -20,6 +20,6 @@ Other services
 ==============
 
 * `Bitwarden <https://github.com/Start9Labs/bitwarden-wrapper/tree/master/docs>`_
+* `Burn After Reading <https://github.com/Start9Labs/burn-after-reading>`_
 * `Cups <https://github.com/Start9Labs/cups-wrapper/tree/master/docs>`_
 * `File Browser <https://github.com/Start9Labs/filebrowser-wrapper/tree/master/docs>`_
-* `Burn After Reading <https://github.com/Start9Labs/burn-after-reading>`_

@@ -1,8 +1,8 @@
 .. _tor-linux:
 
-***********************
-Setting up Tor on Linux
-***********************
+********************
+Running Tor on Linux
+********************
 
 All you need to do is install the Tor proxy service to your system. To do so, open your terminal and run the following command:
 

@@ -1,11 +1,11 @@
 .. _tor-android:
 
-*************************
-Setting up Tor on Android
-*************************
+**********************
+Running Tor on Android
+**********************
 
 .. warning::
-    Custom proxies are now only available in Firefox `Beta <https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta&hl=en_US&gl=US>`_ or `Nightly <https://play.google.com/store/apps/details?id=org.mozilla.fenix&hl=en_US&gl=US>`_ due to a breaking change by the Firefox team.
+    Custom proxies are now only available in `Firefox Beta <https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta&hl=en_US&gl=US>`_ or `Firefox Nightly <https://play.google.com/store/apps/details?id=org.mozilla.fenix&hl=en_US&gl=US>`_ due to a breaking change by the Firefox team.
 
 First, install the Tor proxy service to your system. To do so, open the play store and download `Orbot <https://play.google.com/store/apps/details?id=org.torproject.android>`_. Once you have done so, launch Orbot.
 
@@ -42,7 +42,7 @@ Orbot's VPN mode allows certain applications to utilize it's Tor service.
 
 This process also applies for GrapheneOS.
 
-To setup, first disable Private DNS on your device. To do so, navigate to: :code:`Settings > Network & Internet > Advanced > Private DNS > Off`
+To setup, first disable Private DNS on your device. To do so, navigate to: ``Settings > Network & Internet > Advanced > Private DNS > Off``
 
 .. figure:: /_static/images/tor/private_dns_off.png
   :width: 80%
