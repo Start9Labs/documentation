@@ -1,8 +1,8 @@
 .. _running-tor:
 
-*************************************
-Running Tor on Your Phone or Computer
-*************************************
+***********
+Running Tor
+***********
 
 Running Tor on your phone or computer enables apps that are not Tor-enabled to communicate over Tor.
 

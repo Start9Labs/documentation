@@ -1,3 +1,5 @@
+.. _configure_firefox_tor:
+
 ***************************
 Configuring Firefox for Tor
 ***************************
