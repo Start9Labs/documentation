@@ -5,7 +5,7 @@ body, h1, h2, h3, h4, nav, .topbar, .topbar-main, .tocsection, .form-control, .b
 
 h1 {
     font-size: 2rem;
-    margin-top: 2rem;
+    margin-top: 3.5rem;
 }
 
 h2 {
@@ -24,7 +24,6 @@ p, nav a  {
     font-size: 1.1em;
     letter-spacing: 0.75px;
 }
-
 
 a, a:visited, .headerlink {
     color: #ff4961!important;
@@ -58,10 +57,6 @@ h1, h2 {
 
 .header-style:before, h1:before, h2:before, h3:before, h4:before, h5:before, h6:before {
     display: inline;
-}
-
-.main-content {
-    margin-top: 1rem;
 }
 
 .bd-sidebar {
@@ -174,6 +169,6 @@ nav.bd-links > ul.nav {
   background-color: lightgray;
 }
 
-#main-content.row {
-    margin-top: 6rem!important;
+.set-padding {
+    padding-top: 75px!important;
 }

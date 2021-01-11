@@ -9,3 +9,11 @@ $(document).ready(function () {
       $(this).parent().children(".admonition-title").toggleClass("open");
   })
 });
+$(window).on('load', function () {
+  console.log("loaded")
+
+  $('a').click(function () {
+    console.log('tag clicked')
+    $("body.scrolled").addClass("set-padding")
+    })
+})
