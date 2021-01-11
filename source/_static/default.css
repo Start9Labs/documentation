@@ -5,7 +5,7 @@ body, h1, h2, h3, h4, nav, .topbar, .topbar-main, .tocsection, .form-control, .b
 
 h1 {
     font-size: 2rem;
-    margin-top: 2rem;
+    margin-top: 3.5rem;
 }
 
 h2 {
@@ -24,7 +24,6 @@ p, nav a  {
     font-size: 1.1em;
     letter-spacing: 0.75px;
 }
-
 
 a, a:visited, .headerlink {
     color: #ff4961!important;
@@ -60,13 +59,14 @@ h1, h2 {
     display: inline;
 }
 
-.main-content {
-    margin-top: 1rem;
+.bd-sidebar {
+    background: none;
 }
 
 @media (min-width: 768px) {
     .bd-sidebar {
         border-right: 1px solid #f8f8ff;
+        background: none;
     }
 }
 
@@ -163,4 +163,12 @@ nav.bd-links .fa-chevron-up:hover, nav.bd-links .fa-chevron-down:hover {
 
 nav.bd-links > ul.nav {
   padding-right: 8px;
+}
+
+.highlight > pre {
+  background-color: lightgray;
+}
+
+.set-padding {
+    padding-top: 75px!important;
 }
