@@ -41,6 +41,7 @@ Claim Your Embassy
     #. Confirm that the Embassy is plugged into both power and Ethernet.
     #. Confirm the Embassy emitted two sounds when powering on: a bep and a chime.
     #. Confirm you are entering the correct product key.
+    #. Confirm your phone is not connected to a "Guest" network
     #. Confirm your phone is not using a VPN.
     #. Close and reopen the Setup App and try again.
     #. Rarely, certain routers do not support mDNS. Please see the "Advanced" tab.
