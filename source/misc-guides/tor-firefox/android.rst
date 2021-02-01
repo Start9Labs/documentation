@@ -7,7 +7,15 @@ Setting up Firefox with Tor on Android
 .. warning::
   This guide assumes you have completed :ref:`setting up Tor for Android<tor-android>`. Please visit this section first before you proceed as it is required for Firefox to properly work with Tor.
 
-Once Tor is setup on your system, you can proceed to setup Firefox.
+Once Tor is setup on your system, you will need to edit your phone's private DNS setting.
+
+Navigate to `Network & Internet > Advanced > Private DNS` and toggle Private DNS Mode "off".
+
+.. figure:: /_static/images/private_dns.png
+  :width: 50%
+  :alt: Private DNS toggle
+
+Next, you can proceed to setup Firefox.
 
 Download `Firefox Beta <https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta>`_ from the Play Store, or Fennec for F-Droid.
 
