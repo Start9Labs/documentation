@@ -4,7 +4,9 @@
 Service Manifest
 ****************
 
-This file describes the service and it's requirements. Important to note is the dependencies key, which contains rules for optional or required other services that are depended on for the developed service to successfully run. 
+This file describes the service and it's requirements. It is used by the marketplace to create a service listing. 
+
+Important to note is the dependencies key, which contains rules for optional or required other services that are depended on for the developed service to successfully run. 
 
 Formatting: 
     - Serialization language:``.yaml``
