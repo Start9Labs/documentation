@@ -15,7 +15,9 @@ Since the build requires specific arm runtime environments, these base images ca
 For instance: 
 
 ``FROM alpine:3.12``
+
 ``FROM arm32v7/alpine``
+
 ``arm32v7/golang:alpine``
 
 

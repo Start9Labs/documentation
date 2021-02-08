@@ -10,7 +10,7 @@ Each service is an image. An image is a snapshot of a linux environment in which
 
 The volume directory (for seeding data into the volume) is typically: ``/root/volumes/<serviceId>``.
 
-.. important::
+.. warning::
     Any files that are in the image at the volume path will be overwritten when a backup restore occurs.
 
 A service is mounted to the EmbassyOS image. Each service application gets a volume allocated to it by EmbassyOS. Within the Docker container that encompasses the service image, a path is specified as to where it should mount on EmbassyOS. This path is specified in the :ref:`manifest <service_manifest>`.

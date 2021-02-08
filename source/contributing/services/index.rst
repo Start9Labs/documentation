@@ -1,4 +1,4 @@
-.. _service_sdk:
+.. _service_pacakge:
 
 ***********************
 Service Packaging Guide
@@ -13,14 +13,14 @@ For reference, the `Hello world <https://github.com/Start9Labs/hello-world-wrapp
 .. toctree::
   :maxdepth: 2
 
-  Overview <services/overview>
-  Wrapper <services/wrapper>
-  Docker <services/docker>
-  Makefile <services/makefile>
-  Manifest <services/manifest>
-  Config <services/config>
-  Properties <services/properties>
-  Docs <services/docs>
+  Overview <overview>
+  Wrapper <wrapper>
+  Docker <docker>
+  Makefile <makefile>
+  Manifest <manifest>
+  Config <config>
+  Properties <properties>
+  Docs <docs>
 
 Submission process
 ------------------
