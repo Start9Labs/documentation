@@ -80,8 +80,11 @@ Example
     dependencies: Dependencies
 
 .. _dependencies:
+
 Dependencies
 ------------
+
+Many services depend on other libraries and services on EmbassyOS (such as Bitcoin), sometimes even a particular version of those services, which need to be specified by the developers so that EmbassyOS can handle installing these dependencies under the hood.
 
 The key of each field in the dependencies object is the lowercase, kebab-case app ID of the service that is depended on. Each dependency contains a set of rules that need to be fulfilled as true if the dependency is to be properly installed. The interface should provide suggestions for the behavior if the denoted rule cannot be met with previous configurations.
 
@@ -107,6 +110,7 @@ Let's take this snippet for example:
 
 .. role:: raw-html(raw)
     :format: html
+
 :raw-html:`<br />`
 
 The service ``btc-rpc-proxy`` is a dependency of the service ``c-lightning``. ``c-lightning`` requires it to be installed at a version >=0.1.0 <0.2.0. There exists a rule that states the config option ``user.name`` must be equal to "c-lightning". If this value does not exist for ``user.name`` when accessed, ``PUSH`` the value "c-lighting" to the field. 
@@ -158,6 +162,7 @@ Types for ``manifest.yaml`` fields:
 
 .. role:: raw-html(raw)
     :format: html
+
 :raw-html:`<br />`
 
 ----

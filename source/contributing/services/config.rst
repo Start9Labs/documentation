@@ -17,6 +17,7 @@ These files contain a detailed mapping of configuration options with acceptable 
 For example, if the user chooses config option A, then config option B must be between 5 and 10. This enables a simple GUI configuration experience, complete with validations and protections, for users. They do not have to worry about the consequences of a wrong value in a ``.conf`` file. 
 
 .. _config_spec:
+
 Config Spec
 ===========
 
@@ -84,6 +85,7 @@ The following section contains implementation specifications for the ``config_sp
 - Change warning text displays when the value is altered
 
 .. _boolean:
+
 Boolean
 ^^^^^^^
 
@@ -110,6 +112,7 @@ Example:
         default: true
 
 .. _enum:
+
 Enum
 ^^^^
 
@@ -140,6 +143,7 @@ ValueSpec Type:
         default: NIGHT
 
 .. _list:
+
 List
 ^^^^
 
@@ -190,6 +194,7 @@ Example:
 
 
 .. _number:
+
 Number
 ^^^^^^
 
@@ -223,6 +228,7 @@ Example:
     default: 30
 
 .. _object:
+
 Object Type
 ^^^^^^^^^^^
 
@@ -290,6 +296,7 @@ Example:
             default: 1
 
 .. _string:
+
 String
 ^^^^^^
 
@@ -348,6 +355,7 @@ Examples:
             len: 22
 
 .. _pointer:
+
 Pointer
 ^^^^^^^
 
@@ -383,6 +391,7 @@ Example:
         index: "rpc.username"
 
 .. _union:
+
 Union
 ^^^^^
 This type describes a necessary dependency. Multiple variants can be expressed to enable the user the option to connect to another service (internal dependency) or outside source (external dependency).
@@ -416,6 +425,7 @@ Tag Type:
     description: Option<String>
     variant-names: Map<String, String>
 
+.. _example_config_spec:
 
 Example:
 
@@ -489,6 +499,7 @@ Example:
 
 
 .. _config_rules:
+
 Config Rules
 ============
 

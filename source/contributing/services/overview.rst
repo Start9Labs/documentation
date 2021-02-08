@@ -15,7 +15,7 @@ The volume directory (for seeding data into the volume) is typically: ``/root/vo
 
 A service is mounted to the EmbassyOS image. Each service application gets a volume allocated to it by EmbassyOS. Within the Docker container that encompasses the service image, a path is specified as to where it should mount on EmbassyOS. This path is specified in the :ref:`manifest <service_manifest>`.
 
-The config spec, config rules, and manifest get bundled into the ``.s9pk`` package when built using `appmgr <https://github.com/Start9Labs/appmgr>`_. Each new version release should include the updated version of these files re-bundled into a new binary. 
+The config spec, config rules, and manifest get bundled into the ``.s9pk`` package, `built using appmgr <https://github.com/Start9Labs/appmgr>`_. Each new version release should include the updated version of these files re-bundled into a new binary. 
 
 .. note::
     Due to tech debt, code in appmgr may reference ``app-id`` instead of ``service-id``.
