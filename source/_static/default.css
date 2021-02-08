@@ -51,7 +51,7 @@ h1, h2 {
 
 }
 
-.admonition.warning .admonition-title, .admonition.note .admonition-title  {
+.admonition.warning .admonition-title, .admonition.note .admonition-title,  .admonition.important .admonition-title   {
     background-color: #666;
 }
 

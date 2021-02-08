@@ -11,7 +11,7 @@ Once Tor is setup on your system, you will need to edit your phone's private DNS
 
 Navigate to `Network & Internet > Advanced > Private DNS` and toggle Private DNS Mode "off".
 
-.. figure:: /_static/images/private_dns.png
+.. figure:: /_static/images/tor/private_dns_off.png
   :width: 50%
   :alt: Private DNS toggle
 

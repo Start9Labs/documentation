@@ -35,7 +35,7 @@ Here you will find guidance and information about the Start9 Embassy personal se
   :maxdepth: 2
   :caption: Contributing
 
-  contributing/adding-services
+  contributing/index
 
 .. toctree::
   :maxdepth: 2
