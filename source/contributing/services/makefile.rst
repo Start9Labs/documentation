@@ -5,8 +5,14 @@ Service Makefile
 ****************
 
 *This file is optional*
-It is a convenience if anyone else wants to contribute to project. An alternative is using the nix specification.
+
+A Makefile serves as a convenience for building and for additional developer contributions to your project. Please reference the GNU `documentation <https://www.gnu.org/software/make/manual/html_node/Introduction.html>`_ for implementation details.
+
+An alternative to using ``make`` is to use the `nix <https://nixos.wiki/wiki/Nix>`_ specification.
 
 This purpose of this file is to:
- - read the docker container and build the project
- - build all prerequisite for running the docker file, build all dependencies of application, and package into .s9pk (ie. invoke ``appmgr``)
+
+- Read the docker container and build the project
+- Build all prerequisite for running the docker file
+- Build all dependencies 
+- Package ``config.yaml``, ``manifest.yaml``, and ``image.tar`` into an ``.s9pk`` extension by invoke ``appmgr``. 

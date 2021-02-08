@@ -16,7 +16,6 @@ These files contain a detailed mapping of configuration options with acceptable 
 
 For example, if the user chooses config option A, then config option B must be between 5 and 10. This enables a simple GUI configuration experience, complete with validations and protections, for users. They do not have to worry about the consequences of a wrong value in a ``.conf`` file. 
 
-
 .. _config_spec:
 Config Spec
 ===========
@@ -24,14 +23,22 @@ Config Spec
 Overview
 --------
 
+.. figure:: /_static/images/service/bitcoin_config.png
+  :width: 80%
+  :alt: Bitcoin Config
+
 This file defines the structure of configuration options your service depends on to run. It additionally can include configuration options that users might want to enable for more advanced or customized usage. Ultimately, these values influence the UI elements for a user to interact with. Specifically, they evaluate to the options available when managing a service, such as:
 
 - Prior to service installation when the user needs to be made aware of any necessary dependency configurations
 - When the user installs a service and the service is in the "Needs Config" state
 - Whenever a user edits a service config
-- When config pointers get updated * (TODO define)
+- When config pointers get updated
 
 The neat part about this file is that each ValueSpec type gets translated into a specific front end component. For instance, boolean values display as a toggle button.
+
+.. figure:: /_static/images/service/boolean_toggle.png
+  :width: 80%
+  :alt: Example boolean toggle
 
 Another advantage is the ability to define default values. These values automatically get populated if the user selects the ``Default`` option when setting up a service in ``Needs Config`` state. This is super convenient for users who want to get up and running quickly.
 
@@ -44,24 +51,32 @@ ConfigSpec Type:
 
     key: ValueSpec
 
-ValueSpec Type: Boolean | Enum | List | Number | Object | String | Union | Pointer (see below for details)
+    ValueSpec Type: Boolean | Enum | List | Number | Object | String | Union | Pointer (see below for details)
 
 Implementation Guide
 --------------------
 
 The following section contains implementation specifications for the ``config_spec.yaml`` file.
 
-- All keys are ``kebab-case`` strings
-    - keys correspond to the 
-- All values are one the following specs (ie. ValueSpec type):
-    - :ref:`boolean <boolean>`
-    - :ref:`enum <enum>`
-    - :ref:`list <list>`
-    - :ref:`number <number>`
-    - :ref:`object <object>`
-    - :ref:`string <string>`
-    - :ref:`union <union>`
-    - :ref:`pointer <pointer>`
+- All keys are ``kebab-case`` strings, which correspond to the service (app) id
+- All values are one the following specs (ie. ``ValueSpec`` type):
+
+    :ref:`boolean <boolean>`
+
+    :ref:`enum <enum>`
+
+    :ref:`list <list>`
+
+    :ref:`number <number>`
+
+    :ref:`object <object>`
+
+    :ref:`string <string>`
+
+    :ref:`union <union>`
+
+    :ref:`pointer <pointer>`
+
 - In the examples for each value spec type below, ``Option`` means the key is optional. Otherwise, the key is required.
 - Descriptions are optional but recommended
 - Name corresponds to the name of the config field
@@ -74,7 +89,7 @@ Boolean
 
 Config value specification denoted as a boolean value. A default value is required.
 
-ValueSpec Type:
+``ValueSpec`` Type:
 
 .. code::
 
@@ -178,7 +193,7 @@ Example:
 Number
 ^^^^^^
 
-A number value within an optionally defined range. Nullable field is required. If ``nullable: true``, the default is assumed to be ``null`` if it is not provided.
+A number value within an optionally defined range. Nullable field is required. If ``nullable`` is true, the default is assumed to be ``null`` if it is not provided.
 
 ValueSpec Type:
 
@@ -215,6 +230,8 @@ A nested representation of a ConfigSpec. The object type takes the same structur
 
 There is no default option for the object type. Rather, the option ``null-by-default`` should be used to indicate the default as ``null``. If null by default is true, nullable must be true. If null by default is false, nullable could be either.
 
+``unique-by`` indicates whether duplicates can be permitted in the list.
+
 ValueSpec Type:
 
 .. code::
@@ -226,8 +243,10 @@ ValueSpec Type:
     nullable: Boolean
     null-by-default: Boolean
     display-as: Option<String>
-    unique-by: any | all | exactly | not unique
+    unique-by: UniqueBy
     spec: ConfigSpec
+
+    type UniqueBy = null | string | { any: UniqueBy[] } | { all: UniqueBy[] }
 
 Example:
 
@@ -296,6 +315,7 @@ ValueSpec Type:
 Entropy Type:
 
 .. code::
+
     charset: Option<String>
     len: integer
 
@@ -336,6 +356,7 @@ The pointer type *points* to a config value on another service installed on Emba
 ValueSpec Type:
 
 .. code::
+
     type: pointer
     name: String
     description: Option<String>
@@ -383,8 +404,8 @@ ValueSpec Type;
     default: Boolean
     tag: Tag
     variants: Map<String, ConfigSpec>
-    display-as: Option<String> TODO ask aiden if this should be exposed
-    unique-by: any | all | exactly | notUnique TODO ask aiden
+    display-as: Option<String>
+    unique-by: any | all | exactly | notUnique
 
 Tag Type:
 
@@ -473,9 +494,9 @@ Config Rules
 
 This file defines the configuration rules, or the rule-set that defines dependencies between config variables. 
 
-A rule is a boolean expression that we demand to be true. If it is failing, it is not true.
+A rule is a boolean expression that we demand to be true. It is not true if the expression fails the rule parser.
 
-They follow the `Backus–Naur <https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form>`_ metasyntax for writing rules.
+They follow the `Backus–Naur <https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form>`_ meta-syntax for writing rules.
 
 Rules are composed of two main concepts:
 
@@ -491,11 +512,11 @@ Variables can be booleans, numbers, or strings, and have a different syntax depe
 
 If application does not satisfy a rule, a set of suggestions should be provided. These suggestions are in the form of the operation to preform:
 
-    - Set - set the value 
+    - ``Set`` - set the value 
 
-    - Push - add to the value (such as with a list)
+    - ``Push`` - add to the value (such as to a list)
 
-    - Delete - delete the value
+    - ``Delete`` - delete the value
 
 .. code:: typescript 
 
@@ -539,5 +560,3 @@ SetVariant Examples:
 
     - rule: 'rpc.enable? OR !(''advanced.pruning.mode = "manual")'
       description: "RPC must be enabled for manual pruning."
-
-

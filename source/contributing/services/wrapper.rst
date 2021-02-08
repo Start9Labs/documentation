@@ -4,17 +4,17 @@
 Service Wrapper
 ***************
 
-Everything you need to build a service. 
+Each service is bound with a wrapper repository, which contains everything you need to build a service.
 
-Each service is bound with a wrapper repository. The purpose of this repo is:
+The purpose of this repo is:
 
-- Denote any dependencies required to run and build the project.
-- To define the necessary, ``config_rules.yaml``, ``config_spec.yaml`` and ``manifest.yaml`` options.
-- To build the project into the ``.s9pk`` format digestible to the Embassy.
-- Link to the source project as a git submodule.
-- Define the docker file for running the project on an Embassy.
-- Provide documentation for the project, especially user runbook instructions.
-- symlink of ``instructions.md`` from ``docs`` directory to wrapper repo root
+- Denote any dependencies required to run and build the project
+- To define the necessary, ``config_rules.yaml``, ``config_spec.yaml`` and ``manifest.yaml`` options
+- To build the project into the ``.s9pk`` format digestible to EmbassyOS
+- Link to the source project as a git submodule
+- Define the docker file for running the project on EmbassyOS
+- Provide documentation for the project, especially user runbook instructions
+- symlink of ``instructions.md`` from ``docs`` directory to wrapper repo root, if included
 
 File Structure
 ==============
