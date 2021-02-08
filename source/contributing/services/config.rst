@@ -571,3 +571,8 @@ SetVariant Examples:
 
     - rule: 'rpc.enable? OR !(''advanced.pruning.mode = "manual")'
       description: "RPC must be enabled for manual pruning."
+
+.. role:: raw-html(raw)
+    :format: html
+
+:raw-html:`<br />`

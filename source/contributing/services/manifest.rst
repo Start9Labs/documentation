@@ -339,3 +339,8 @@ Cups
             dst: "."
             overwrite: true
     hidden-service-version: v3
+
+.. role:: raw-html(raw)
+    :format: html
+
+:raw-html:`<br />`

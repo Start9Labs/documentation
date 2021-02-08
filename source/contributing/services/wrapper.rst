@@ -53,3 +53,8 @@ Assets
 Whenever a service is stopped, any file that is not contained within in the ``/assets`` directory will be cleared from memory. Any unsaved changes will be reverted. This folder acts as a persistance storage container.
 
 In this folder belongs any assets that are unique configurations to your service. For instance, bitcoind's ``.conf`` file is saved here. 
+
+.. role:: raw-html(raw)
+    :format: html
+
+:raw-html:`<br />`

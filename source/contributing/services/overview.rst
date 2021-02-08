@@ -41,3 +41,8 @@ Recommended Dependencies
 `make <https://www.gnu.org/software/make/>`_
 
 `musl <https://github.com/Start9Labs/rust-musl-cross>`_
+
+.. role:: raw-html(raw)
+    :format: html
+
+:raw-html:`<br />`

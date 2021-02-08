@@ -27,3 +27,8 @@ File specified as: ``docker_entrypoint.sh``
 This file defines what to do when the service application starts.
 
 It consists of a bash script that completes any environment setup (eg. creating folder substructure), sets any environment variables, and executes the run command. The only required feature of this file is to execute the run commands on EmbassyOS.
+
+.. role:: raw-html(raw)
+    :format: html
+
+:raw-html:`<br />`

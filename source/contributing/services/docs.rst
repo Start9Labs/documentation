@@ -11,3 +11,8 @@ If an ``instructions.md`` file is included, this markdown formatted file will be
 .. figure:: /_static/images/service/bitcoin_instructions.png
   :width: 80%
   :alt: Bitcoin Instructions
+
+.. role:: raw-html(raw)
+    :format: html
+
+:raw-html:`<br />`
