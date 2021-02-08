@@ -39,19 +39,19 @@ Example
         short: String
         long: String
     # a link to the release tag notes in GitHub, or a short description TODO character length
-    release_notes: String
+    release-notes: String
     # a notification message that should caution the user with any service particularities, eg. beta tech
-    install_alert: Option<String>
+    install-alert: Option<String>
     # a notification message warning users of potential problems with uninstalling, such as dependency failures or data loss
-    uninstall_alert: Option<String>
+    uninstall-alert: Option<String>
     # a notification message containing warning or details about backup restoration
-    restore_alert: Option<String>
+    restore-alert: Option<String>
     # denoting the existence of instructions.md
-    has_instructions: Boolean
+    has-instructions: Boolean
     # required semver version range of EmbassyOS to run service eg. ">=1.0.0"
-    os_version_required: VersionReq
+    os-version-required: VersionReq
     # recommended semver version range of EmbassyOS to run service eg."^1.0.0"
-    os_version_recommended: VersionReq
+    os-version-recommended: VersionReq
     # a list of objects of ports to run the service on localhost and tor
     ports:
         - internal: String
@@ -60,22 +60,17 @@ Example
     image:
         type: String
     # shared memory container size
-    shm_size_mb: Option<usize>
+    shm-size-mb: Option<usize>
     # path to mount the image on the volume, ie: /root/bitcoind
     mount: String
-    # public directory path
+    # read only data exposed to dependencies (path is relevant to mount)
     public: Option<String>
-    # shared directory path
+    # shared filesystem segment with each of your dependencies (path is relevant to mount)
     shared: Option<String>
-    # a list of objecting containing the source and destination directories of persistent assets, either that should be copied over during build, or to persist when service started, and if the volume directory should be overwritten when the release is copied over
-    # src: path to file within the assets directory that is in the build directory
-    # dst: path within volume to place it
-    assets:
-      - src: String TODO confirm type
-        dst: String TODO confirm type
-        overwrite: Boolean
-    # version of tor support, eg. v1, v2, v3
-    hidden_service_version: String
+    # deprecated - will default to an empty vector
+    assets: []
+    # version of tor support, eg. v2, v3
+    hidden-service-version: String
     # A map of dependent services, see below for more details
     dependencies: Dependencies
 
@@ -132,7 +127,7 @@ Types for ``manifest.yaml`` fields:
     }
 
     interface ConfigRule {
-        rule: String, // ie. '''users.*.name = "lnd"'
+        rule: String, // ie. 'users.*.name = "lnd"
         description: String,
         suggestions: [SuggestionVariant]
     }

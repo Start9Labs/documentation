@@ -4,7 +4,11 @@
 Service Packaging Guide
 ***********************
 
-This technical guide covers the necessary steps to package up a service for deployment to the EmbassyOS platform. To start, you will need to acquire :ref:`EmbassyOS <purchasing>` for testing the packaged service.
+This technical guide covers the necessary steps to package up a service for deployment to the EmbassyOS platform. To start, you will need to acquire EmbassyOS for testing the packaged service. This can be done by:
+
+- building from `source <https://github.com/Start9Labs/embassy-os/blob/master/CONTRIBUTING.md#setting-up-your-development-environment>`_
+- :ref:`DIY <diy>`
+- :ref:`purchasing <purchasing>`
 
 While you are waiting to assemble a device, you can begin the process of building your project in the format necessary to run on the Embassy. The sections below outline these steps in detail.
 
@@ -15,9 +19,9 @@ For reference, the `Hello world <https://github.com/Start9Labs/hello-world-wrapp
 
   Overview <overview>
   Wrapper <wrapper>
+  Manifest <manifest>
   Docker <docker>
   Makefile <makefile>
-  Manifest <manifest>
   Config <config>
   Properties <properties>
   Docs <docs>
