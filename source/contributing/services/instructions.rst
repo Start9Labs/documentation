@@ -1,8 +1,8 @@
-.. _service_docs:
+.. _service_instructions:
 
-*********************
-Service Documentation
-*********************
+************************************
+Service Instructions & Documentation
+************************************
 
 Within each wrapper repository should exist a ``docs`` directory. This folder should include any pertinent documentation, instructions, external integrations, or other details about the service that users or developers might find relevant.
 
