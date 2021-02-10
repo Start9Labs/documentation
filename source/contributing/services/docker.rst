@@ -32,8 +32,7 @@ It consists of a bash script that completes any environment setup (eg. creating 
 Example
 =======
 
-See an example `here <https://github.com/Start9Labs/lnd-wrapper/blob/master/Dockerfile>`_.
-
+The `LND wrapper <https://github.com/Start9Labs/lnd-wrapper/blob/master/Dockerfile>`_ features a well defined Dockerfile, for example.
 
 .. role:: raw-html(raw)
     :format: html

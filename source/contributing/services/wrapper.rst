@@ -48,7 +48,9 @@ Run ``git submodule add <link_to_source_project>``
 Assets
 ======
 
-*This section is being deprecated in favor of baking assets into the Docker image, and moved into the mountpoint at runtime if necessary*
+.. warning::
+
+    *This section is being deprecated in favor of baking assets into the Docker image, and moved into the mountpoint at runtime if necessary*
 
 Whenever a service is stopped, any file that is not contained within in the ``/assets`` directory will be cleared from memory. Any unsaved changes will be reverted. This folder acts as a persistance storage container.
 

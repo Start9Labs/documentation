@@ -12,6 +12,9 @@ If an ``instructions.md`` file is included, this markdown formatted file will be
   :width: 80%
   :alt: Bitcoin Instructions
 
+Example
+=======
+
 The `bitcoind wrapper <https://github.com/Start9Labs/bitcoind-wrapper/tree/master/docs>`_ demonstrates a good use of instructions and external integrations.
 
 .. role:: raw-html(raw)
