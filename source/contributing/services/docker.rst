@@ -20,15 +20,14 @@ For instance:
 
 ``FROM arm32v7/golang:alpine``
 
+We recommended using ``alpine`` since it produces the smallest image. We try to keep the image under 100MB when possible.
 
 Entry-point
 ===========
 
-File specified as: ``docker_entrypoint.sh``
+The ``docker_entrypoint.sh`` defines what to do when the service application starts.
 
-This file defines what to do when the service application starts.
-
-It consists of a bash script that completes any environment setup (eg. creating folder substructure), sets any environment variables, and executes the run command. The only required feature of this file is to execute the run commands on EmbassyOS.
+It consists of a bash script that completes any environment setup (eg. creating folder substructure), sets any environment variables, and executes the run command. The only required feature of this file is to execute the run commands for EmbassyOS.
 
 Example
 =======
