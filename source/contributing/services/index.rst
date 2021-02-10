@@ -21,7 +21,7 @@ While you are waiting to receive or assemble a device, you can begin the process
 Happy building!
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
 
   Overview <overview>
   Wrapper <wrapper>
