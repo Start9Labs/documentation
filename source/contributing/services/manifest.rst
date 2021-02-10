@@ -7,9 +7,19 @@ Service Manifest
 Overview
 ========
 
-This file describes the service and it's requirements. It is used by the marketplace to create a service listing. 
+This file describes the service and it's requirements. It is used to:
 
-Important of note is the :ref:`dependencies <dependencies>` key, which contains rules for optional or required other services that are depended on for the service to successfully run.
+- create a listing in the marketplace
+- denote any installation considerations
+- define dependency requirements
+
+Each time a service is updated, the manifest should be updated to include the new version, release notes, and any pertinent updates to the install, uninstall, or restoration flows. All this information is displayed in the marketplace listing, and the optionally denoted alerts will be displayed when appropriate to provide the user with more information about the particularities of the service.
+
+For instance, `LND displays alerts <https://github.com/Start9Labs/lnd-wrapper/blob/master/manifest.yaml#L28>`_  around restoration since data will be overwritten. 
+
+There is nothing you need to do as a developer to enable the service to run over Tor. This is *completely* handled by EmbassyOS - a Tor address will be automatically generated when the service is installed. Just define which version of Tor your service needs in this manifest file!
+
+The manifest is also responsible for outlining service :ref:`dependencies <dependencies>`. By defining rules using the :ref:`EmbassyOS DSL specification <config_rules>`, users can easily and selectively install, uninstall, and update any service without getting stuck in dependency hell. EmbassyOS presents this information in a polished install/uninstall/update wizard, so there's no need for editing configuration files or jumping into the command line. For you as a developer, this simply means populating this key in the manifest!
 
 Formatting
 ==========

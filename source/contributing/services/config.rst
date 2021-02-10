@@ -4,7 +4,12 @@
 Service Config Specification
 ****************************
 
-Configuration options are a crucial component of any application. EmbassyOS requires a particular format to ensure your service integrates smoothly with the user interface. This enables clean handling of improper values and dependency management.
+Overview
+========
+
+Most self-hosted applications require the user to tell the app how to behave using a config file in a specific format, environment variables, command-line arguments, or some combination of these inputs. One of the coolest features of EmbassyOS is that, when packaged correctly, the app's configuration will be available to the user as a slick GUI that always produces a valid configuration no matter how little experience or skill the user has.
+
+With EmbassyOS, this means a service wrappers' configuration requires a particular format and rule structure to ensure it integrates smoothly with the user interface. This format enables clean handling of improper values and dependency management.
 
 The outcome of this step is two files:
 

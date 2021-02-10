@@ -17,6 +17,11 @@ This purpose of this file is to:
 - Build all dependencies 
 - Package ``config.yaml``, ``manifest.yaml``, and ``image.tar`` into an ``.s9pk`` extension by invoke ``appmgr``. 
 
+Example
+=======
+
+See an example `here <https://github.com/Start9Labs/lnd-wrapper/blob/master/Makefile>`_.
+
 .. role:: raw-html(raw)
     :format: html
 
