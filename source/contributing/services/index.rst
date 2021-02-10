@@ -30,7 +30,7 @@ Happy building!
   Makefile <makefile>
   Config <config>
   Properties <properties>
-  Docs <docs>
+  Instructions <instructions>
 
 Submission process
 ------------------

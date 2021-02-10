@@ -41,7 +41,7 @@ The project structure should be used as a model:
 Submodule
 ==========
 
-`Git sub-modules <https://www.git-scm.com/book/en/v2/Git-Tools-Submodules>>`_ allow use of another project while in the working project directory. Setting up this feature enables linking of the source service repository so that it's context is available.
+`Git sub-modules <https://www.git-scm.com/book/en/v2/Git-Tools-Submodules>`_ allow use of another project while in the working project directory. Setting up this feature enables linking of the source service repository so that it's context is available.
 
 Run ``git submodule add <link_to_source_project>``
 

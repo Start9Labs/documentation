@@ -31,9 +31,6 @@ Type definitions
 ================
 Below are the types and sub-type definitions, with necessary elaborations. Any item that contains ``Option<>`` is an optional field.
 
-Example
-=======
-
 .. code:: yaml
 
     # manifest version compatibility ie. v0 (this is currently the only option)
@@ -87,7 +84,7 @@ Example
 .. _dependencies:
 
 Dependencies
-------------
+============
 
 Many services depend on other libraries and services on EmbassyOS (such as Bitcoin), sometimes even a particular version of those services, which need to be specified by the developers so that EmbassyOS can handle installing these dependencies under the hood.
 
@@ -119,6 +116,9 @@ Let's take this snippet for example:
 :raw-html:`<br />`
 
 The service ``btc-rpc-proxy`` is a dependency of the service ``c-lightning``. ``c-lightning`` requires it to be installed at a version >=0.1.0 <0.2.0. There exists a rule that states the config option ``user.name`` must be equal to "c-lightning". If this value does not exist for ``user.name`` when accessed, ``PUSH`` the value "c-lighting" to the field. 
+
+Type definitions
+----------------
 
 Types for ``manifest.yaml`` fields:
 
@@ -169,8 +169,6 @@ Types for ``manifest.yaml`` fields:
     :format: html
 
 :raw-html:`<br />`
-
-----
 
 Examples
 --------
