@@ -8,7 +8,7 @@ Dockerfile
 ==========
 
 This purpose of the Dockerfile is to define how to build the image for the service. It declares the environment and building stages.
-The Dockerfile is responsible for mounting the service application to whatever volume the manifest specifies, typically ``/root``.
+The Dockerfile is responsible for mounting the service application to whatever volume the manifest specifies, typically ``/root/.<service-id>``.
 
 Since the build requires specific arm runtime environments, these base images can be imported into the Dockerfile as a starting point so the base system does not need to be completely redefined. This enables importing a specific build environment version that encapsulates any necessary libraries for running the service build, eg. golang, rust.
 

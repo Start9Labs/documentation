@@ -23,3 +23,4 @@ Other services
 * `Burn After Reading <https://github.com/Start9Labs/burn-after-reading>`_
 * `Cups <https://github.com/Start9Labs/cups-wrapper/tree/master/docs>`_
 * `File Browser <https://github.com/Start9Labs/filebrowser-wrapper/tree/master/docs>`_
+* `Mastodon <https://github.com/Start9Labs/mastodon-wrapper>`_
