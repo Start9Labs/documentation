@@ -4,9 +4,6 @@
 Running Tor on Android
 **********************
 
-.. warning::
-    Custom proxies are now only available in `Firefox Beta <https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta&hl=en_US&gl=US>`_ or `Firefox Nightly <https://play.google.com/store/apps/details?id=org.mozilla.fenix&hl=en_US&gl=US>`_ due to a breaking change by the Firefox team.
-
 First, install the Tor proxy service to your system. To do so, open the play store and download `Orbot <https://play.google.com/store/apps/details?id=org.torproject.android>`_. Once you have done so, launch Orbot.
 
 Next, open the kebab menu in the upper right hand corner and select `Settings`:
