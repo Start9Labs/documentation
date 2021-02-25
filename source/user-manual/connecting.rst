@@ -4,7 +4,7 @@
 Connecting
 **********
 
-With the :ref:`initial-setup` complete, your Embassy is now privately hosted on the Internet and can be accessed right from the browsers. Your Embassy's addresses (its Tor and LAN URLs) are completely private; no one else even knows they exists.
+With the :ref:`initial-setup` complete, your Embassy is now privately hosted on the Internet and can be accessed right from a web browser. Your Embassy's addresses (its Tor and LAN URLs) are completely private; no one else even knows they exist.
 
 If you accidentally leak your Embassy's addresses, do not worry. You Embassy is also protected by your password; so only you can log in.
 
