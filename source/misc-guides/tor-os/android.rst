@@ -4,7 +4,7 @@
 Running Tor on Android
 **********************
 
-First, install the Tor proxy service to your system. To do so, open the play store and download `Orbot <https://play.google.com/store/apps/details?id=org.torproject.android>`_. Once you have done so, launch Orbot.
+First, install the Tor proxy service to your system. To do so, you can download Orbot from the `Play Store <https://play.google.com/store/apps/details?id=org.torproject.android>`_ , or from `FDroid <https://f-droid.org/packages/org.torproject.android>`_ . Once you have done so, launch Orbot.
 
 Next, open the kebab menu in the upper right hand corner and select `Settings`:
 
@@ -44,7 +44,7 @@ To setup, first disable Private DNS on your device. To do so, navigate to: ``Set
 .. figure:: /_static/images/tor/private_dns_off.png
   :width: 50%
   :alt: Private DNS off
-  
+
   Toggle Private DNS to "off"
 
 Next, launch Orbot and toggle VPN Mode on while on the main screen:
@@ -52,15 +52,15 @@ Next, launch Orbot and toggle VPN Mode on while on the main screen:
 .. figure:: /_static/images/tor/orbot_vpn.png
   :width: 50%
   :alt: Orbot vpn mode
-  
+
   Toggle VPN Mode to "on"
 
-Under `Tor-Enabled Apps`, select the gear to add applications that need to be proxied through VPN mode to utilize Tor. 
+Under `Tor-Enabled Apps`, select the gear to add applications that need to be proxied through VPN mode to utilize Tor.
 
 .. figure:: /_static/images/tor/orbot_apps.png
   :width: 50%
   :alt: Orbot apps
-  
+
 Examples of applications that need this feature are:
 
 - Bitwarden
