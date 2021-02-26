@@ -17,9 +17,9 @@ The outcome of this step is two files:
 
 :ref:`config_rules.yaml <config_rules>`
 
-These files contain a detailed mapping of configuration options with acceptable values, defaults and relational rule-sets. 
+These files contain a detailed mapping of configuration options with acceptable values, defaults, and relational rule-sets.
 
-For example, if the user chooses config option A, then config option B must be between 5 and 10. This enables a simple GUI configuration experience, complete with validations and protections, for users. They do not have to worry about the consequences of a wrong value in a ``.conf`` file. 
+For example, if the user chooses config option A, then config option B must be between 5 and 10. This enables a simple GUI configuration experience, complete with validations and protections, for users. They do not have to worry about the consequences of a wrong value in a ``.conf`` file.
 
 .. _config_spec:
 
@@ -84,7 +84,7 @@ The following section contains implementation specifications for the ``config_sp
     :ref:`pointer <pointer>`
 
 - In the examples for each value spec type below, ``Option`` means the key is optional. Otherwise, the key is required.
-- Descriptions are optional but recommended
+- Descriptions are optional, but recommended
 - Name corresponds to the name of the config field
 - Find a complete example :ref:`here <example_config_spec>`
 - Change warning text displays when the value is altered
@@ -152,8 +152,8 @@ ValueSpec Type:
 List
 ^^^^
 
-The list type describes an array of values. The values must consist of the same subtype, which can be any of the ValueSpec types available in the EmbassyOS config specification. 
-Lists of any type do not contain the default for each item in list. The list *itself* can be have a default. If no default is provided, ``null`` will be the assumed value.
+The list type describes an array of values. The values must consist of the same subtype, which can be any of the ValueSpec types available in the EmbassyOS config specification.
+Lists of any type do not contain the default for each item in list. The list *itself* can have a default. If no default is provided, ``null`` will be the assumed value.
 
 Range is loosely based off mathematical range syntax, with infinity replaced with ``*``:
 
@@ -171,7 +171,7 @@ eg:
 
 ValueSpec Type:
 
-.. code:: 
+.. code::
 
     type: list
     name: String
@@ -237,7 +237,7 @@ Example:
 Object Type
 ^^^^^^^^^^^
 
-A nested representation of a ConfigSpec. The object type takes the same structure under the ``spec`` key as a ConfigSpec: a key indicates the field name, and the value denotes the ValueSpec type for that field. 
+A nested representation of a ConfigSpec. The object type takes the same structure under the ``spec`` key as a ConfigSpec: a key indicates the field name, and the value denotes the ValueSpec type for that field.
 
 There is no default option for the object type. Rather, the option ``null-by-default`` should be used to indicate the default as ``null``. If null by default is true, nullable must be true. If null by default is false, nullable could be either.
 
@@ -379,7 +379,7 @@ ValueSpec Type:
     target: AppPointerSpecVariants | SystemPointerSpecVariants
     index: Option<String> (dependent on target being AppPointerSpecVariants)
 
-    AppPointerSpecVariants = LanAddress | TorAddress | TorKey | Config 
+    AppPointerSpecVariants = LanAddress | TorAddress | TorKey | Config
     SystemPointerSpecVariants = HostIp
 
 Example:
@@ -403,7 +403,7 @@ This type describes a necessary dependency. Multiple variants can be expressed t
 
 For example, the Bitcoin Proxy service is united with an instance of Bitcoin. Three variants are defined: internal, external, and a quick connect. In this case, internal refers to the Bitcoin Core instance running on EmbassyOS, and defines the RPC credentials necessary for connecting; external refers to a Bitcoin Core node running on a different device, and defines the RPC credentials necessary for connecting; quick connect refers to yet another method of connecting to a Bitcoin Core node, optimized for convenience.
 
-Default is required and corresponds to one of the variants. 
+Default is required and corresponds to one of the variants.
 
 ``Tag`` is the key that will be rendered on the UI element.
 
@@ -508,7 +508,7 @@ Example:
 Config Rules
 ============
 
-This file defines the configuration rules, or the rule-set that defines dependencies between config variables. 
+This file defines the configuration rules, or the rule-set that defines dependencies between config variables.
 
 A rule is a boolean expression that we demand to be true. It is not true if the expression fails the rule parser.
 
@@ -519,22 +519,22 @@ Rules are composed of two main concepts:
 * Variables - accessor into a configuration
 * Terms - either a variable or type literal (ie. a boolean term is a boolean variable, a boolean expression, or a comparison operation between numbers or strings)
 
-Variables can be booleans, numbers, or strings, and have a different syntax depending on the type. These type annotations check your config rules against your config spec and throw an error if invalid. 
+Variables can be booleans, numbers, or strings, and have a different syntax depending on the type. These type annotations check your config rules against your config spec and throw an error if invalid.
 
 - ``?`` - Casts to boolean value. If the value is not a boolean, this notes whether or not the value is null.
-- ``#`` - Treat the value as a number. If it is not a number, the value will be parsed as NaN. String numbers are not currently supported. 
-- ``'`` - Cast the value into a string. Applies to any value except for an object or a list. 
+- ``#`` - Treat the value as a number. If it is not a number, the value will be parsed as NaN. String numbers are not currently supported.
+- ``'`` - Cast the value into a string. Applies to any value except for an object or a list.
 - ``!`` - Equals not.
 
 If application does not satisfy a rule, a set of suggestions should be provided. These suggestions are in the form of the operation to preform:
 
-    - ``Set`` - set the value 
+    - ``Set`` - set the value
 
     - ``Push`` - add to the value (such as to a list)
 
     - ``Delete`` - delete the value
 
-.. code:: typescript 
+.. code:: typescript
 
     enum SuggestionVariant = Set | Delete | Push
 
@@ -589,7 +589,7 @@ Push Examples:
         to: 'users.[first(item => ''item.name = "c-lightning")].allowed-calls'
         value: "getnetworkinfo"
 
-Full example from `c-lightning manifest <https://github.com/Start9Labs/c-lightning-wrapper/blob/master/manifest.yaml>`_: 
+Full example from `c-lightning manifest <https://github.com/Start9Labs/c-lightning-wrapper/blob/master/manifest.yaml>`_:
 
 .. code:: yaml
 

@@ -4,7 +4,7 @@
 Service Package Overview
 ************************
 
-There are several main components that comprise a service package for EmbassyOS. This overview will introduce them and following sections will dive into technical specifics. 
+There are several main components that comprise a service package for EmbassyOS. This overview will introduce them and following sections will dive into technical specifics.
 
 First, let's get your system setup with the necessary software dependencies.
 
@@ -36,15 +36,15 @@ Package Components
 Image
 -----
 
-Each service boils down to a Docker image. We're not going to dive into Docker specifics in this guide, since there exists tons of `resources <https://docs.docker.com/>`_ for developing with this containerization tool. 
+Each service boils down to a Docker image. We're not going to dive into Docker specifics in this guide, since there exists tons of `resources <https://docs.docker.com/>`_ for developing with this containerization tool.
 
-Because the service ultimately runs on a Raspberry Pi, the created Docker image should be a snapshot of a arm based linux environment. The service image is then mounted to the EmbassyOS image during installation. This path is defined in the :ref:`manifest <service_manifest>` configuration file.
+Because the service ultimately runs on a Raspberry Pi, the created Docker image should be a snapshot of an arm based linux environment. The service image is then mounted to the EmbassyOS image during installation. This path is defined in the :ref:`manifest <service_manifest>` configuration file.
 
-The image is immutable, meaning that when the service is updated, the image is replaced with a completely new image containing the updated features. 
+The image is immutable, meaning that when the service is updated, the image is replaced with a completely new image containing the updated features.
 
 Volume
 ------
-Each service application gets a volume allocated to it by EmbassyOS. All service application data is stored in this directory and is persisted across updates. 
+Each service application gets a volume allocated to it by EmbassyOS. All service application data is stored in this directory and is persisted across updates.
 
 The volume directory (for seeding data into the volume) is typically: ``/root/volumes/<service-id>``.
 
@@ -54,7 +54,7 @@ The volume directory (for seeding data into the volume) is typically: ``/root/vo
 Dependencies
 ------------
 
-When it comes to running your own server, managing dependencies is perhaps the most difficult part. The term "dependency hell" emerged from this sentiment. Even the best developers have lost significant amounts of time trying to find, correct, or clarify documentation for dependencies or dependency configuration. Individuals who manage their own servers have specific technical skills and are willing to devote the time and effort necessary to maintain them. Companies have entire departments dedicated to this feat. 
+When it comes to running your own server, managing dependencies is perhaps the most difficult part. The term "dependency hell" emerged from this sentiment. Even the best developers have lost significant amounts of time trying to find, correct, or clarify documentation for dependencies or dependency configuration. Individuals who manage their own servers have specific technical skills and are willing to devote the time and effort necessary to maintain them. Companies have entire departments dedicated to this feat.
 
 Some other personal server products aimed at non-technical individuals tackle this problem by simply hard coding dependencies. Since EmbassyOS is a platform for running all open-source, self-hosted software, it is not possible to hard code every possible service, service dependency, and service dependency configuration forever. Instead, Start9 built a new, unprecedented operating system that touts a generalized, intuitive approach to dependency management and service configuration. EmbassyOS enables users to easily and selectively install, uninstall, and update any service they want without getting stuck in dependency hell.
 
@@ -75,7 +75,7 @@ This file describes the service and it's requirements. It is used to:
 
 Each time a service is updated, the manifest should be updated to include the new version, release notes, and any pertinent updates to the install, uninstall, or restoration flows. All this information is displayed in the marketplace listing, and the optionally denoted alerts will be displayed when appropriate to provide the user with more information about the particularities of the service.
 
-For instance, `LND displays alerts <https://github.com/Start9Labs/lnd-wrapper/blob/master/manifest.yaml#L28>`_  around restoration since data will be overwritten. 
+For instance, `LND displays alerts <https://github.com/Start9Labs/lnd-wrapper/blob/master/manifest.yaml#L28>`_  around restoration since data will be overwritten.
 
 There is nothing you need to do as a developer to enable the service to run over Tor. This is *completely* handled by EmbassyOS - a Tor address will be automatically generated and an Nginx server configured (if a client application) when the service is installed. Just define which version of Tor your service needs in this manifest file!
 
