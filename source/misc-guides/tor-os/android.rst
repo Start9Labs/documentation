@@ -4,7 +4,7 @@
 Running Tor on Android
 **********************
 
-First, install the Tor proxy service to your system. To do so, download Orbot from the `Play Store <https://play.google.com/store/apps/details?id=org.torproject.android>`_ , or from `FDroid <https://f-droid.org/packages/org.torproject.android>`_ . Once you have done so, launch Orbot.
+First, install the Tor proxy service to your system. To do so, download Orbot from the `Play Store <https://play.google.com/store/apps/details?id=org.torproject.android>`_ , or from `F-Droid <https://f-droid.org/packages/org.torproject.android>`_ . Once you have done so, launch Orbot.
 
 Next, open the kebab menu in the upper right hand corner and select `Settings`:
 
