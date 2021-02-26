@@ -2,7 +2,7 @@
 Backups
 *******
 
-Creating frequent service backups is critical. If anything happens to your Embassy, these backups are you only path to recovering your data.
+Creating frequent service backups is critical. If anything happens to your Embassy, these backups are your only path to recovering your data.
 
 .. warning:: Backups are encrypted using your Embassy master password. If you forget your password, you lose your backups.
 
@@ -75,7 +75,7 @@ To begin the backup restore process:
 
   Restore backup sub-menu options
 
-6. Note the warning that restoring will wipe current data. 
+6. Note the warning that restoring will wipe current data.
 
 .. figure:: /_static/images/backup_warning.png
   :width: 90%
@@ -93,7 +93,7 @@ To begin the backup restore process:
 
 8. "Restoring Backup..." will appear on the service sub menu while the restoration is in process.
 
-.. note:: 
+.. note::
   The service might be momentarily unreachable as it starts back up. This is expected behavior.
 
 .. figure:: /_static/images/restoring_backup.png
