@@ -17,7 +17,7 @@ Navigate to `Network & Internet > Advanced > Private DNS` and toggle Private DNS
 
 Next, you can proceed to setup Firefox.
 
-Download `Firefox Beta <https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta>`_ from the Play Store, or Fennec for F-Droid.
+Download `Firefox Beta <https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta>`_ from the Play Store, or `Fennec <https://f-droid.org/en/packages/org.mozilla.fennec_fdroid/>`_ from F-Droid.
 
 Now, you need to download a `Proxy Auto Config` file that will use Orbot to resolve `.onion` URLs. We have one hosted `here <https://registry.start9labs.com/sys/proxy.pac>`_.
 
