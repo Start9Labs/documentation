@@ -1,9 +1,10 @@
 .. _faq:
 
-
+***
 FAQ
 ***
 
+=======
 General
 =======
 
@@ -17,11 +18,11 @@ The Embassy is a "shelf-top" computer built using a `Raspberry Pi <https://www.r
 
 What is EmbassyOS?
 ------------------
-EmbassyOS is a new kind of Operating System (OS).  It is built from the ground up starting with a stripped-down version of `Raspbian Buster Lite <https://www.raspbian.org/>`_.  It handles all operations of the device, including managing the Marketplace, Services, and Service data.
+EmbassyOS is a new kind of Operating System (OS).  It is built from the ground up starting with a stripped-down version of `Raspbian Buster Lite <https://www.raspbian.org/>`_.  It handles all operations of the device, including managing the Marketplace, Services, and Service data.  Learn more :ref:`here <embassyos>`.
 
 What are EmbassyOS Services?
 ----------------------------
-A Service can be any piece of software added to the Marketplace.  All services are "self-hosted," meaning that you are in complete control of your data.  This means you can run your own "cloud!"
+A Service can be any piece of software added to the Marketplace.  All services are "self-hosted," meaning that you are in complete control of your data.  This means you can run your own "cloud!"  Learn more :ref:`here <managing-services>` and see our currently :ref:`Available Services <available-services>`.
 
 Does the Embassy ship worldwide?
 --------------------------------
@@ -31,6 +32,7 @@ Does the Embassy have international electrical plugs?
 -----------------------------------------------------
 Power supplies for EU, AU, US, and UK are available.
 
+===========
 Basic Usage
 ===========
 
@@ -56,6 +58,7 @@ Yes! Start9 commits, to the best of our ability, to serving each beta Embassy pr
 
 The fastest way to get support is via our `Telegram <https://t.me/start9_labs>`_ or `Matrix <https://matrix.to/#/!lMnRwPWnyQvOfAoEnD:matrix.start9labs.com>`_ channels.  You can also `email us <support@start9labs.com>`_.  Please do not hesitate to reach out!
 
+=============================
 Embassy (Device, OS, and DIY)
 =============================
 
@@ -77,6 +80,7 @@ Are my Internet requests anonymous and secure?
 ----------------------------------------------
 EmbassyOS and every service on the Embassy serve their own Tor Hidden Services with unique Tor addresses. The private keys used to create these addresses are generated on your phone or computer when you first set up the Embassy. No one, not even Start9, has any idea what your Tor addresses are, let alone the password(s) you choose to authenticate with them.
 
+=========================
 Setup and Troubleshooting
 =========================
 
@@ -98,6 +102,7 @@ Why does the Bitcoin service take so long to be ready?
 ------------------------------------------------------
 On first install, the Bitcoin service must verify the entire history of transactions in order to verify transactions going forward.  This can take approximately a week depending on your internet connection.  You can continue to use the Embassy normally in the meantime.
 
+========
 Services
 ========
 
