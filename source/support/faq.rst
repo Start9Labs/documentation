@@ -14,11 +14,11 @@ Start9Labs is a company based in Denver, CO that builds the Embassy and EmbassyO
 
 What is the Embassy?
 --------------------
-The Embassy is a "shelf-top" computer built using a `Raspberry Pi <https://www.raspberrypi.org/products/raspberry-pi-4-model-b/>`_ for hardware and running EmbassyOS software.
+The Embassy is a "shelf-top" computer built using a `Raspberry Pi <https://www.raspberrypi.org/products/raspberry-pi-4-model-b/>`_ for hardware and running EmbassyOS software.  Learn more :ref:`here <embassy>`.
 
 What is EmbassyOS?
 ------------------
-EmbassyOS is a new kind of Operating System (OS).  It is built from the ground up starting with a stripped-down version of `Raspbian Buster Lite <https://www.raspbian.org/>`_.  It handles all operations of the device, including managing the Marketplace, Services, and Service data.  Learn more :ref:`here <embassyos>`.
+EmbassyOS is a new kind of Operating System (OS).  It is built from the ground up to allow anyone to easily run thier own 'cloud,' remove their dependence on Big Tech, and own their own data.  EmbassyOS allows anyone to easily self-host their own software services.  It handles all operations of the device, including managing the Service Marketplace, Services, Backups, Updates, data, and much more.  Learn more :ref:`here <embassyos>`.
 
 What are EmbassyOS Services?
 ----------------------------
@@ -94,13 +94,7 @@ After plugging into power and internet, you will hear 2 distinct sounds: first, 
 
 What if I can't connect to my Embassy?
 --------------------------------------
-Via WiFi - Please ensure your phone / computer is connected to the same wireless network as your Embassy.
-
-Via Ethernet - Please ensure your phone / computer is connected to the same network as the router.  Be careful that you are not on a seperate or "guest" network.
-
-Why does the Bitcoin service take so long to be ready?
-------------------------------------------------------
-On first install, the Bitcoin service must verify the entire history of transactions in order to verify transactions going forward.  This can take approximately a week depending on your internet connection.  You can continue to use the Embassy normally in the meantime.
+Please ensure your phone / computer is connected to the same wired or wireless network as your Embassy.  Be careful that you are not on a seperate or "guest" network.
 
 ========
 Services
@@ -113,3 +107,7 @@ You can now access your Embassy and find the Services you want from the "Marketp
 What if I cannot connect to a Service?
 --------------------------------------
 Please make sure the service is started by viewing it in the Services tab in the Embassy dashboard menu. A green indicator bar should be visible.
+
+Why does the Bitcoin service take so long to be ready?
+------------------------------------------------------
+On first install, the Bitcoin service must verify the entire history of transactions in order to verify transactions going forward.  This can take approximately a week depending on your internet connection.  You can continue to use the Embassy normally in the meantime.
