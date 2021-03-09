@@ -62,7 +62,7 @@ Your Embassy hosts itself on the LAN and is reachable by visiting its *.local* U
 SSL
 ===
 
-Visiting websites on the Tor network is slow. We wanted to provide a be \er option to access the Embassy at home. That’s why we created an address for the Embassy that can be accessed on your Local Area Network. 
+Visiting websites on the Tor network is slow. We wanted to provide a better option to access the Embassy at home. That’s why we created an address for the Embassy that can be accessed on your Local Area Network. 
 
 By default, this `.local` address is served like a regular website, over HTTP. Browser's makes it noticeable visiting a site over HTTP in the URL bar - it could be red, show an unlocked lock, or warn the connection is not secure. 
 
