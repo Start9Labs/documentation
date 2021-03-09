@@ -9,7 +9,7 @@ Setting up Firefox with Tor on Android
 
 Once Tor is setup on your system, you can proceed to setup Firefox:
 
-#. Download `Firefox Beta <https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta>`_ from the Play Store, or Fennec for F-Droid.
+#. Download `Firefox Beta <https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta>`_ from the Play Store, or `Fennec <https://f-droid.org/en/packages/org.mozilla.fennec_fdroid/>`_ from F-Droid.
 
 #. Next, download a `Proxy Auto Config` file that will use Orbot to resolve `.onion` URLs. We have one hosted `here <https://registry.start9labs.com/sys/proxy.pac>`_.
 
@@ -43,6 +43,4 @@ Once Tor is setup on your system, you can proceed to setup Firefox:
     :width: 50%
     :alt: Firefox whitelist onions screenshot
 
-#. Restart Firefox, and you’re all set! 
-
-You should now be able to navigate to `.onion` URLs in Firefox. This means you can bookmark Cups Messenger, and use your Bitwarden Tor address in the `Bitwarden Password Manager <https://play.google.com/store/apps/details?id=com.x8bit.bitwarden&hl=en_US&gl=US>`_ native application.
+#. Restart Firefox, and you’re all set! You should now be able to navigate to `.onion` URLs in Firefox. This means you can bookmark Cups Messenger, and use your Bitwarden Tor address in the `Bitwarden Password Manager <https://play.google.com/store/apps/details?id=com.x8bit.bitwarden&hl=en_US&gl=US>`_ native application.

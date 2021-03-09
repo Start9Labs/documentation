@@ -1,3 +1,5 @@
+.. _managing-services:
+
 *****************
 Managing Services
 *****************
