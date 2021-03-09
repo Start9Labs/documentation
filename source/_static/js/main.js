@@ -10,7 +10,14 @@ $(document).ready(function () {
       $(this).parent().children().not(".admonition-title").toggle(400);
       $(this).parent().children(".admonition-title").toggleClass("open");
   })
+  // initially hide menu close button
+  $('.fa-times').addClass('hidden');
   $('#navbar-toggler').click(function() {
-    $('.fa-times').toggleClass('hidden');
+    // toggle menu open/close button depending on collapsed state
+    if ($('#navbar-toggler').hasClass("collapsed")) {
+      $('.fa-times').removeClass('hidden');
+    } else {
+      $('.fa-times').addClass('hidden');
+    }
   });
 });
