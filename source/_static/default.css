@@ -177,6 +177,17 @@ nav.bd-links > ul.nav {
     padding-top: 75px!important;
 }
 
+/* MISC */
+
 .hidden {
     display: none!important;
+}
+
+.navbar-brand-box a.navbar-brand {
+    width: 75%;
+    height: auto;
+}
+
+.navbar-brand-box {
+    text-align: center;
 }

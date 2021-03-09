@@ -2,8 +2,11 @@
 Desktop
 ********
 
+Operating Systems
+=================
+
 MacOS
-=====
+-----
 
 1. In the Setup App, select your claimed Embassy to view the setup results. Navigate to the "Tor" menu item and copy the Tor address. It is safe to message this address to yourself so that you can paste it in a browser.
 
@@ -17,27 +20,27 @@ MacOS
 
 6. Navigate to the “Embassy” tab in the menu.
 
-7. Find the section entitled “Secure LAN Setup”.
+7. Find the section entitled “Connect over LAN”.
 
 .. figure:: /_static/images/embassy_lan_setup.png
   :width: 90%
-  :alt: Secure LAN setup menu item
+  :alt: LAN setup menu item
 
-  Select the "Secure LAN Setup" menu item
+  Select the "Connect over LAN" menu item
 
-8. Select the "SSL Certificate" sub menu. This will prompt a download to save the certificate file to your machine.
+8. Select the "Root Certificate Authority" sub menu. This will prompt a download to save the certificate file to your machine.
 
 .. figure:: /_static/images/secure_lan_setup_page.png
   :width: 90%
-  :alt: Secure LAN setup page
+  :alt: LAN setup page
 
-  Select the "SSL Certificate" sub menu
+  Select the "Root Certificate Authority" sub menu
 
 9.  Select the option to open your key with Keychain Access. If you choose to save file, double click on it once downloaded.
 
 .. figure:: /_static/images/secure_lan_setup_prompt.png
   :width: 90%
-  :alt: Secure LAN setup prompt
+  :alt: LAN setup prompt
 
   Open with "Keychain Access" and select "OK"
 
@@ -76,7 +79,7 @@ If the keychain console did not open, press "Command + spacebar" and type “Key
 16. Navigate to your desired browser to import this certificate and follow the steps for :ref:`supported browsers <browsers>`.
 
 Windows
-=======
+-------
 
 1. In the Setup App, select your claimed Embassy to view the setup results. Navigate to the "Tor" menu item and copy the Tor address. It is safe to message this address to yourself so that you can paste it in a browser.
 
@@ -90,27 +93,27 @@ Windows
 
 6. Navigate to the “Embassy” tab in the menu.
 
-7. Find the section entitled “Secure LAN Setup”.
+7. Find the section entitled “Connect over LAN”.
 
-.. figure:: /_static/images/ssl/windows/windows_embassy_menu.png
+.. figure:: /_static/images/embassy_lan_setup.png
   :width: 90%
-  :alt: Secure LAN setup menu item
+  :alt: LAN setup menu item
 
-  Select the "Secure LAN Setup" menu item
+  Select the "Connect over LAN" menu item
 
-8. Select the "SSL Certificate" sub menu. This will prompt a download to save the certificate file to your machine.
+8. Select the "Root Certificate Authority" sub menu. This will prompt a download to save the certificate file to your machine.
 
-.. figure:: /_static/images/ssl/windows/windows_lan_page.png
+.. figure:: /_static/images/secure_lan_setup_page.png
   :width: 90%
-  :alt: Secure LAN setup page
+  :alt: LAN setup page
 
-  Select the "SSL Certificate" sub menu download icon
+  Select the "Root Certificate Authority" sub menu download icon
 
 9.  Select the option to save the *Embassy Local CA.crt* file. 
 
 .. figure:: /_static/images/ssl/windows/windows_download_cert.png
   :width: 90%
-  :alt: Secure LAN setup prompt
+  :alt: LAN setup prompt
 
   "Save file" when Opening Embassy Local CA.crt
 
@@ -191,6 +194,21 @@ Windows
 23. Navigate to your desired browser to import this certificate and follow the steps for :ref:`supported browsers <browsers>`.
 
 Linux
-=====
+-----
 
-Please reach out to `@ProofOfKeags <http://twitter.com/ProofOfKeags>`_ on `Telegram <https://t.me/start9_labs>`_ if you would like assistance setting up SSL Certificates in this environment.
+Nothing specific needs to be configured for this environment. Follow the guides below to import the certificate into your desired browser.
+
+Browsers
+========
+
+Select the browser you would like to configure to import the certificate from your desktop:
+
+.. toctree::
+  :hidden:
+
+  browser
+
+- :ref:`Brave <brave>`
+- :ref:`Chrome <chrome>`
+- :ref:`Firefox <firefox>`
+- :ref:`Safari <safari>`
