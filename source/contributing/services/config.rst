@@ -508,7 +508,7 @@ Example:
 Config Rules
 ============
 
-This file defines the configuration rules, or the rule-set that defines dependencies between config variables.
+This file defines the configuration rules, or the rule-set that defines dependencies between config variables. In practice, config rules are for auto-configuring self dependencies. Self dependencies are internal dependencies of a service, such as if the setting of one config variable informs the option of another setting. These "dependencies" are configured as rules. 
 
 A rule is a boolean expression that we demand to be true. It is not true if the expression fails the rule parser.
 
@@ -525,6 +525,9 @@ Variables can be booleans, numbers, or strings, and have a different syntax depe
 - ``#`` - Treat the value as a number. If it is not a number, the value will be parsed as NaN. String numbers are not currently supported.
 - ``'`` - Cast the value into a string. Applies to any value except for an object or a list.
 - ``!`` - Equals not.
+
+.. note::
+    Config rules are processed in order.
 
 If application does not satisfy a rule, a set of suggestions should be provided. These suggestions are in the form of the operation to preform:
 
