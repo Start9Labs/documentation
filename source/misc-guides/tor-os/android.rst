@@ -4,42 +4,49 @@
 Running Tor on Android
 **********************
 
-#. First, install the Tor proxy service to your system. To do so, download Orbot from the `Play Store <https://play.google.com/store/apps/details?id=org.torproject.android>`_ , or from `F-Droid <https://f-droid.org/packages/org.torproject.android>`_ . Once you have done so, launch Orbot.
+Some apps, such as Tor Browser or Cups Messenger, have Tor built in. They do not require additional software or configurations to utilize Tor. Most apps, however, do not have Tor built in. They require an app called Orbot to be installed in order to utilize Tor.
 
-#. Once you have done so, launch Orbot.
+Running Orbot
+-------------
 
-#. Next, open the kebab menu in the upper right hand corner and select `Settings`:
+Orbot is a system wide proxy for your Android or Graphene device that enables communications over Tor.
 
-   .. figure:: /_static/images/tor/orbot_menu.png
-    :width: 50%
-    :alt: Orbot menu
+1. Download Orbot from the `Play Store <https://play.google.com/store/apps/details?id=org.torproject.android>`_ , or from `F-Droid <https://f-droid.org/packages/org.torproject.android>`_.
 
-#. Then, make sure the options for `Start Orbot on Boot` and `Allow Background Starts` are checked:
+2. Launch Orbot.
 
-   .. figure:: /_static/images/tor/orbot_settings.png
-    :width: 50%
-    :alt: Orbot settings
+3. Open the kebab menu in the upper right hand corner and select `Settings`:
 
-#. Go back, and tap start:
+.. figure:: /_static/images/tor/orbot_menu.png
+  :width: 50%
+  :alt: Orbot menu
 
-   .. figure:: /_static/images/tor/orbot_start.png
-    :width: 50%
-    :alt: Orbot start
+4. Make sure the options for `Start Orbot on Boot` and `Allow Background Starts` are checked:
 
-#. Orbot will start up the Tor service. Once complete, you will see:
+.. figure:: /_static/images/tor/orbot_settings.png
+  :width: 50%
+  :alt: Orbot settings
 
-   .. figure:: /_static/images/tor/orbot_started.png
-    :width: 50%
-    :alt: Orbot started
+5. Go back, and tap start:
 
-#. You can now close Orbot. It will continue running in the background.
+.. figure:: /_static/images/tor/orbot_start.png
+  :width: 50%
+  :alt: Orbot start
 
-Setting up Orbot VPN mode
--------------------------
+6. Orbot will start up the Tor service. Once complete, you will see:
 
-Orbot's VPN mode allows certain applications to utilize it's Tor service. To setup:
+.. figure:: /_static/images/tor/orbot_started.png
+  :width: 50%
+  :alt: Orbot started
 
-#. First disable Private DNS on your device. To do so, navigate to:
+7. That's it. Certain apps, such as Firefox or DuckDuckGo will now just work. Other apps, however, require that Orbot be running VPN mode.
+
+Orbot VPN mode
+--------------
+
+To utilize Tor, most apps require that Orbot be running in VPN mode.
+
+1. Disable Private DNS on your device. To do so, navigate to:
 
    ``Settings > Network & Internet > Advanced > Private DNS > Off``
 
@@ -49,7 +56,7 @@ Orbot's VPN mode allows certain applications to utilize it's Tor service. To set
 
   Toggle Private DNS to "off"
 
-#. Next, launch Orbot and toggle VPN Mode on while on the main screen:
+2. Launch Orbot and toggle VPN Mode on:
 
 .. figure:: /_static/images/tor/orbot_vpn.png
   :width: 50%
@@ -57,7 +64,7 @@ Orbot's VPN mode allows certain applications to utilize it's Tor service. To set
 
   Toggle VPN Mode to "on"
 
-Under `Tor-Enabled Apps`, select the gear to add applications that need to be proxied through VPN mode to utilize Tor.
+Under `Tor-Enabled Apps`, click the gear icon and add apps you want to utilize Tor.
 
 .. figure:: /_static/images/tor/orbot_apps.png
   :width: 50%

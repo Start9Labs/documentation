@@ -17,13 +17,13 @@ Setting up Firefox with Tor on Linux
     :width: 80%
     :alt: Firefox whitelist onions screenshot
 
-#. In order to tell Firefox which urls to use Tor for, you need a `Proxy Auto Config` file. We have one hosted `here <https://registry.start9labs.com/sys/proxy.pac>`_. To get it, you can run:
+#. Create a `Proxy Auto Config` file (advanced) or use our standard one (recommended):
 
    .. code-block::
 
     sudo wget -P /etc/tor https://registry.start9labs.com/sys/proxy.pac
 
-#. Now open your Firefox web browser, and select preferences:
+#. Now open your Firefox web browser, and select preferences.
 
    .. figure:: /_static/images/tor/firefox_preferences.png
     :width: 80%
@@ -31,7 +31,7 @@ Setting up Firefox with Tor on Linux
 
     Select :menuselection:`Settings --> Preferences`
 
-#. Search for the term “proxy” in the search bar in the upper right, then select the button that says `Settings…`:
+#. Search for the term “proxy” in the search bar in the upper right, then select the button that says `Settings…`.
 
    .. figure:: /_static/images/tor/firefox_search.png
     :width: 80%
@@ -43,14 +43,12 @@ Setting up Firefox with Tor on Linux
 
     file:///etc/tor/proxy.pac
 
-#. Check the box labeled `Proxy DNS when using SOCKS v5`:
+#. Check the box labeled `Proxy DNS when using SOCKS v5`.
 
    .. figure:: /_static/images/tor/firefox_proxy.png
     :width: 80%
     :alt: Firefox proxy settings screenshot
 
 #. Click ``OK`` and then restart Firefox for the changes to take effect.
-
-#. You're all set! 
 
 You should now be able to navigate to `.onion` URLs in Firefox. This means you can bookmark Cups Messenger, and use your Bitwarden Tor address in the `Bitwarden Firefox Plugin <https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/>`_.
