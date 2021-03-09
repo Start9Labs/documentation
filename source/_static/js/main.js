@@ -10,6 +10,9 @@ $(document).ready(function () {
       $(this).parent().children().not(".admonition-title").toggle(400);
       $(this).parent().children(".admonition-title").toggleClass("open");
   })
+  $('.site-navigation').removeClass('collapsing');
+  $('.site-navigation').removeClass('collapse');
+  $('.site-navigation').addClass('show');
   // initially hide menu close button
   $('.fa-times').addClass('hidden');
   $('#navbar-toggler').click(function() {
