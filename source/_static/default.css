@@ -69,7 +69,7 @@ h1, h2 {
 
 @media (min-width: 768px) {
     .bd-sidebar {
-        border-right: 1px solid #f8f8ff;
+        border-right: 0.5px solid #f8f8ff;
         background: none;
     }
 }
@@ -175,4 +175,19 @@ nav.bd-links > ul.nav {
 
 .set-padding {
     padding-top: 75px!important;
+}
+
+/* MISC */
+
+.hidden {
+    display: none!important;
+}
+
+.navbar-brand-box a.navbar-brand {
+    width: 75%;
+    height: auto;
+}
+
+.navbar-brand-box {
+    text-align: center;
 }

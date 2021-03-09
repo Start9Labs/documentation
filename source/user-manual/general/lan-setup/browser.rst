@@ -6,6 +6,8 @@ Browser
 
 .. warning:: Make sure you have completed setup on your :ref:`device <ssl-setup>` before continuing!
 
+.. _brave:
+
 Brave
 =====
 
@@ -33,6 +35,8 @@ Brave
 
 8. Additionally, you can start a Brave private window with Tor to visit the Tor address over HTTPS (unnecessary in principle, but will circumvent annoying browser warnings).
 
+.. _chrome:
+
 Chrome
 ======
 
@@ -41,6 +45,8 @@ Chrome
 2. Obtain the LAN address provided in the Setup App and enter it in the URL bar.
 
 3. You can now securely navigate to your Embassy over HTTPS!
+
+.. _firefox:
 
 Firefox
 ========
@@ -78,6 +84,8 @@ Firefox
 10. Navigate to the LAN address provided in the Setup App.
 
 11. You can now securely navigate to your Embassy over HTTPS!
+
+.. _safari:
 
 Safari
 ======

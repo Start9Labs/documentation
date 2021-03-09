@@ -13,5 +13,5 @@ An overview of EmbassyOS general capabilities.
   developer-options/index
   power
   notifications
-  secure-lan/index
+  lan-setup/index
   forgot-password
