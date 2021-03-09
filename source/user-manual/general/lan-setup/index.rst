@@ -4,16 +4,12 @@
 LAN Setup
 *********
 
-EmbassyOS has ability to securely access your Embassy over HTTPS from any browser in addition to the already secure option of communicating over Tor. This method of connecting is faster when on the same Local Area Network (LAN). This is accomplished by HTTPS using the OpenSSL protocol. Your Embassy becomes a Certificate Authority and uses its root certificate to generate a self-signed cert for you to import on your devices.
+You can securely access your Embassy over LAN while connected to the same network. This method of communicating with your Embassy is significantly faster than Tor, and it also serves as a fallback in case the Tor network is experiencing connectivity issues.
 
-The following guides will take you through the steps to install and trust the SSL certificate generated from your Embassy.
+The guides below will walk you through the steps to install and trust your Embassy's SSL certificate, such that your communications are encrypted over HTTPS.
 
-#. For security, Secure LAN Setup is only available over the Embassy's Tor address. Ensure you are setup with a :ref:`Tor enabled browser <connecting>`.
+.. toctree::
+  :maxdepth: 2
 
-#. Complete the setup for your device operating system:
-
-   .. toctree::
-    :maxdepth: 2
-
-    desktop
-    mobile
+  desktop
+  mobile
