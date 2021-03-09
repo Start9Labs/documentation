@@ -11,10 +11,6 @@ Download the Setup App
 
 `Google Play <https://play.google.com/store/apps/details?id=com.start9labs.setup>`_
 
-Windows Users:
-==============
-If you run Windows, you’ll need to install the Bonjour service, which is available `here <https://support.apple.com/kb/DL999?locale=en_US>`_ .
-
 Power On
 ========
 
