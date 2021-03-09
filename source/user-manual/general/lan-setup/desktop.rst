@@ -73,9 +73,9 @@ Windows
 
 1. Install `Bonjour Print Services <https://support.apple.com/kb/DL999>`_ on your Windows machine. This is necessary in order to visit .local addresses on Windows.
 
-1. Visit your Embassy at its Tor Address.
+2. Visit your Embassy at its Tor Address.
    
-2. Navigate to --> Embassy --> Connect Over LAN
+3. Navigate to --> Embassy --> Connect Over LAN
 
 .. figure:: /_static/images/embassy_lan_setup.png
   :width: 90%
@@ -83,7 +83,7 @@ Windows
 
   Select the "Connect over LAN" menu item
 
-3. Select the "Root Certificate Authority" sub menu. This will prompt a download to save the certificate file to your machine.
+4. Select the "Root Certificate Authority" sub menu. This will prompt a download to save the certificate file to your machine.
 
 .. figure:: /_static/images/secure_lan_setup_page.png
   :width: 90%
@@ -91,7 +91,7 @@ Windows
 
   Select the "Root Certificate Authority" sub menu download icon
 
-4.  Select the option to save the *Embassy Local CA.crt* file. 
+5.  Select the option to save the *Embassy Local CA.crt* file. 
 
 .. figure:: /_static/images/ssl/windows/windows_download_cert.png
   :width: 90%
@@ -99,9 +99,9 @@ Windows
 
   "Save file" when Opening Embassy Local CA.crt
 
-5. On your computer, right-click the “Start” menu and select “Run”.
+6. On your computer, right-click the “Start” menu and select “Run”.
 
-6. Type in “mmc” and click “OK”. When prompted on the “User Account Control” window, select “Yes” to allow this program to run.
+7. Type in “mmc” and click “OK”. When prompted on the “User Account Control” window, select “Yes” to allow this program to run.
 
 .. figure:: /_static/images/ssl/windows/1_windows_mmc.png
   :width: 90%
@@ -109,7 +109,7 @@ Windows
 
   Access the Windows Management Console
   
-7. When the Management Console opens, navigate to *File > Add/Remove Snap-in*.
+8. When the Management Console opens, navigate to *File > Add/Remove Snap-in*.
 
 .. figure:: /_static/images/ssl/windows/2_windows_console_root.png
   :width: 90%
@@ -117,7 +117,7 @@ Windows
 
   Add Snap-in from Console Root
 
-8. Select “Certificates” in the left side menu, then “Add”. This will open another window.
+9. Select “Certificates” in the left side menu, then “Add”. This will open another window.
 
 .. figure:: /_static/images/ssl/windows/3_windows_add_certificates.png
   :width: 90%
@@ -125,9 +125,9 @@ Windows
 
   Add Certificates to selected snap-ins
 
-9. Select “Computer account” and click “Next. Leave defaulted options on the next screen and click “Finish”.
+10. Select “Computer account” and click “Next. Leave defaulted options on the next screen and click “Finish”.
 
-10. When you return to the “Add or Remove Snap-ins” page, ensure “Certificates (Local Computer)” exists under “Console Root” in the “Selected snap-ins” section, then click “OK”.
+11. When you return to the “Add or Remove Snap-ins” page, ensure “Certificates (Local Computer)” exists under “Console Root” in the “Selected snap-ins” section, then click “OK”.
 
 .. figure:: /_static/images/ssl/windows/4_windows_selected_snapin.png
   :width: 90%
@@ -135,7 +135,7 @@ Windows
 
   Certificates (Local Computer) is selected as snap-in
 
-11. In the left hand menu of the Management Console, navigate to Certificates (Local Computer) > Trusted Root Certification Authorities > Certificates.
+12. In the left hand menu of the Management Console, navigate to Certificates (Local Computer) > Trusted Root Certification Authorities > Certificates.
 
 .. figure:: /_static/images/ssl/windows/5_windows_trusted_certificate_menu.png
   :width: 90%
@@ -143,7 +143,7 @@ Windows
 
   Access Certificates in Management Console
 
-12. Right click on “Certificates”, then navigate to *All Tasks > Import*.
+13. Right click on “Certificates”, then navigate to *All Tasks > Import*.
 
 .. figure:: /_static/images/ssl/windows/6_windows_import_cert.png
   :width: 90%
@@ -151,7 +151,7 @@ Windows
 
   Select "Import" from Certificates sub-menu
 
-13. Click “Next” on the first page of the Certificate Import Wizard, then browse to the location where you saved the downloaded certificate and click “Open”.
+14. Click “Next” on the first page of the Certificate Import Wizard, then browse to the location where you saved the downloaded certificate and click “Open”.
 
 .. figure:: /_static/images/ssl/windows/7_windows_import_cert_wizard.png
   :width: 90%
@@ -159,11 +159,11 @@ Windows
 
   Add downloaded certificate int he Certificate Import Wizard
 
-14. On the “Certificate Store” window, ensure that it says “Trusted Root Certificate Authorities” and click “Next”.
+15. On the “Certificate Store” window, ensure that it says “Trusted Root Certificate Authorities” and click “Next”.
 
-15. Select “OK” when the import is successful.
+16. Select “OK” when the import is successful.
 
-16. Verify the Embassy Local Root CA certificate is in the “Certificates” folder.
+17. Verify the Embassy Local Root CA certificate is in the “Certificates” folder.
 
 .. figure:: /_static/images/ssl/windows/8_windows_successful_cert_install.png
   :width: 90%
@@ -171,9 +171,9 @@ Windows
 
   Embassy Local Root CA imported into Certificate folder
 
-17. You can save the settings to the console if desired or cancel.
+18. You can save the settings to the console if desired or cancel.
 
-18. Open to your favorite browser to import this certificate and follow the steps for :ref:`supported browsers <browsers>`.
+19. Open to your favorite browser to import this certificate and follow the steps for :ref:`supported browsers <browsers>`.
 
 Linux
 -----
