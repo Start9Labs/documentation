@@ -7,7 +7,7 @@ Setting up WiFi
 #. Select the appropriate country.
 #. Enter your WiFi SSID and password.
 
-    .. figure:: /_static/images/embassy_wifi.png
+   .. figure:: /_static/images/embassy_wifi.png
       :width: 90%
       :alt: Add WiFi
 
