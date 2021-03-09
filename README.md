@@ -4,7 +4,10 @@ At Start9, we see great value in maintaining clear and accurate documentation fo
 
 ## Runbook
 
-This project uses [Sphinx](https://www.sphinx-doc.org/en/master/usage/installation.html) and [Restructured Text](https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html)
+This project uses:
+- [Sphinx](https://www.sphinx-doc.org/en/master/usage/installation.html)
+- [Restructured Text](https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html)
+- [Sphinx Book Theme](https://sphinx-book-theme.readthedocs.io/)
 
 ### Dependencies
 
@@ -14,7 +17,7 @@ Install sphinx and dependencies:
 ```
 brew install sphinx-doc
 pip3 install sphinx-autobuild
-pip3 install sphinx-book-theme
+pip3 install sphinx-book-theme || pip install git+https://github.com/executablebooks/sphinx-book-theme.git@master
 ```
 
 ### Development

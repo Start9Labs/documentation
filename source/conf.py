@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Start9 Labs'
-copyright = '2020, Start9 Labs, Inc'
+copyright = '2021, Start9 Labs, Inc'
 
 # -- General configuration ---------------------------------------------------
 
@@ -42,24 +42,10 @@ exclude_patterns = []
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-#
-# import sphinx_press_theme
-# html_theme_path = [sphinx_press_theme.get_html_theme_path()]
-# import sphinxbootstrap4theme
 
 html_theme = 'sphinx_book_theme'
-
-# possible alternative themes:
-# sphinxawesome_theme
-# pydata_sphinx_theme
-# sphinx_material
-# pytorch_sphinx_theme
-# sphinx-typlog-theme
-# sphinx-press-theme
-# msmb_theme
-# sphinx-glpi-theme
-# sphinx-material
-
+html_copy_source = True
+html_last_updated_fmt = ""
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -75,6 +61,11 @@ html_theme_options = {
     "use_repository_button": True,
     "extra_navbar": "",
     "show_navbar_depth": 1,
+    "use_download_button": False,
+    "use_edit_page_button": True,
+    "launch_buttons": {
+        "main_site": "https://start9labs.com",
+    },
 }
 html_logo = "_static/logo.png"
 html_title = "Docs"
