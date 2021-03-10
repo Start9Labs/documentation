@@ -218,6 +218,31 @@ Is it insecure to run a pruned node?
 ------------------------------------
 As a user, pruned nodes and archival nodes provide you the same security.  In a larger sense, if 100% of people ran pruned nodes, the security of the network could be in dire circumstances and be put at risk if no nodes kept history, as then no one could bootstrap new nodes.  The reality however, is that most Embassy owners are new node operators, so there is no net systemic risk introduced.
 
+Why would I want to run a lightning node?
+-----------------------------------------
+The Lightning Network (LN) is a second 'layer,' built on top of the Bitcoin Protocol.  As a result all transactions on LN are backed up by the full security of the Bitcoin network.  Lightning is designed for instant payments between nodes, but similar to running a Bitcoin node, running your own is the only way to be sovereign.  When you have your own node, you will have the convenience of linking a Lightning wallet, for use on the go.  It is also possible to earn an income (granted a very small one at this time), if you are willing to learn how to become a 'routing node.'
+
+Are there any resources for learning about how to use Bitcoin and the Lightning Network?
+----------------------------------------------------------------------------------------
+It may be helpful to start `here <lopp.net/bitcoin>`_ for Bitcoin and `here <lopp.net/lightning>`_ for Lightning.
+
+I opened a Lightning channel, but my local balance is lower than I expected.  Where is the remainder?
+-----------------------------------------------------------------------------------------------------
+A fee to close the channel (onchain) is set aside at opening.  
+
+How is that fee estimation calculated?
+--------------------------------------
+The commitment fees are automatically negotiated every few blocks with your peer. They are on chain txs like all channel closes but they are not broadcast until you attempt to close the channel.
+
+What would happen if I shut down an Embassy that is running a Lightning node with open channels?
+------------------------------------------------------------------------------------------------
+It is REALLY IMPORTANT that people understand that if they shut off their Lightning services for long periods of time (days on end) it is possible for your peers to cheat you out of money. If you are not prepared to LOSE ALL THE MONEY IN YOUR CHANNELS, KEEP YOUR NODE RUNNING.
+That said, malicious actors on the network right now are probably sparse, however you are still open to that risk if you do not keep your node online.
+
+Is there a solution to this?
+----------------------------
+Yes, the concept of a Watchtower was originally conceptualized in the LN whitepaper.  A Watchtower is simply a lightning node to which you can give the authority to monitor transactions associated with your open payment channels.
+
 Is a wallet vulnerable to hacking if it’s always online??
 -------------------------------------------------------
 Funds are not stored on the node typically.  The node simply serves as a source of truth for the state of the blockchain.  Attacks depend on where the keys are and where the signing happens. You can use something like a hardware wallet for better security.  Though, to be fair, a lot of attacks depend on you or your machine being targeted specifically, and a whole bunch of attack vectors are highly theoretical and obscure.
