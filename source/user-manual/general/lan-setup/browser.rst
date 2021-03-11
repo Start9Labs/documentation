@@ -6,6 +6,9 @@ Browser
 
 .. warning:: Make sure you have completed setup on your :ref:`device <ssl-setup>` before continuing!
 
+.. note::
+  Some browsers (such as Firefox) may emit a "Warning: Potential Security Risk Ahead". This is because the SSL Certificate issued from your Embassy is not from a registered certificate authority. Usually, this warning is a valid concern, but in the case of accessing a service over LAN from your Embassy, select "Advanced" and "Accept the Risk and Continue".
+
 .. _brave:
 
 Brave
