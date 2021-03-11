@@ -66,6 +66,11 @@ Building from Source
 
 If you have the proper tooling and are comfortable using the command line, you can build EmbassyOS from `source <https://github.com/Start9Labs/embassy-os>`_, which is made available under the `Start9 Personal Use License <https://start9labs.com/license>`_.
 
+Thanks to our community members who have kindly put together these guides!
+
+* A comprehensive and user friendly guide by `Bitcoin Mechanic <https://medium.com/@lex10/building-my-wife-an-embassy-from-scratch-19cb87193fb2>`_
+* A technically focused guide by `t0mmysm1th <https://github.com/t0mmysm1th/embassy-os/blob/master/BuildGuide.md>`_
+
 Installing EmbassyOS
 ====================
 
