@@ -196,6 +196,7 @@ Please make sure the service is started by viewing it in the Services tab in the
 Why does the Bitcoin service take so long to be ready?
 ------------------------------------------------------
 On first install, the Bitcoin service must verify the entire history of transactions in order to verify transactions going forward.  This can take approximately a week depending on your internet connection.  You can continue to use the Embassy normally in the meantime.
+You can learn more about the Initial Block Download in `this video <https://www.youtube.com/watch?v=OrYDehC-8TU>`_.
 
 Can the IBD (Initial Block Download) be made faster?  Or can wait times be improved?
 ------------------------------------------------------------------------------------
@@ -228,7 +229,7 @@ It may be helpful to start `here <lopp.net/bitcoin>`_ for Bitcoin and `here <lop
 
 I opened a Lightning channel, but my local balance is lower than I expected.  Where is the remainder?
 -----------------------------------------------------------------------------------------------------
-A fee to close the channel (onchain) is set aside at opening.  
+A fee to close the channel (onchain) is set aside at opening.
 
 How is that fee estimation calculated?
 --------------------------------------
@@ -244,12 +245,11 @@ Is there a solution to this?
 Yes, the concept of a Watchtower was originally conceptualized in the LN whitepaper.  A Watchtower is simply a lightning node to which you can give the authority to monitor transactions associated with your open payment channels.
 
 Is a wallet vulnerable to hacking if it’s always online??
--------------------------------------------------------
+---------------------------------------------------------
 Funds are not stored on the node typically.  The node simply serves as a source of truth for the state of the blockchain.  Attacks depend on where the keys are and where the signing happens. You can use something like a hardware wallet for better security.  Though, to be fair, a lot of attacks depend on you or your machine being targeted specifically, and a whole bunch of attack vectors are highly theoretical and obscure.
 Most successful attacks seem to be either fake/doctored software or a social attack (tricking you into installing some malware or giving your seed outright or something like that).
 Keep in mind, however, the more value there is out there to steal, the more sophisticated attacks will get automated (bots, crawlers etc). So its not just the risk profile of today, but also tomorrow you have to consider.  That’s why something like a hardware wallet or dedicated mobile device for key signing is a good idea.
 Even if your wallet is plugged into your Embassy, whether your wallet is hot or cold depends on the hardware that stores the keys.
-
 
 How does Bitcoin Proxy request (and verify) data when that data is needed by some app using it?
 -----------------------------------------------------------------------------------------------
@@ -303,7 +303,7 @@ Check the LND logs, it can take a while to bootstrap, and starting RTL before th
 
 "Server is still in the process of starting," but LND and RTL are running.  How can I address this?
 ---------------------------------------------------------------------------------------------------
- You may need to restart LND.
+You may need to restart LND.
 
 Can the browser extension be used with Bitwarden hosted on the embassy?
 -----------------------------------------------------------------------
@@ -320,5 +320,5 @@ While we are intent on providing the most friendly experience possible to our cu
 I want to understand in depth how a Service works and it's available configuration options.  Where can I go to learn more?
 --------------------------------------------------------------------------------------------------------------------------
 Depending on the app, the config options can be quite involved. Bitcoin Core, for example, has an enormous amount of complex options, almost none of which are useful to a normal user doing normal things. We chose some very sane defaults that should work for normal use cases. Here is an example config from the Bitcoin `GitHub <https://github.com/bitcoin/bitcoin/blob/master/share/examples/bitcoin.conf>`.
-By reading the descriptions in the link above, as well as doing some extra searching on your favorite search engine, you can begin to discover all the crazy ways in which someone can customize their Bitcoin node. Here is another list of `possible options <https://en.bitcoinwiki.org/wiki/Running_Bitcoind>`.
+By reading the descriptions in the link above, as well as doing some extra searching on your favorite search engine, you can begin to discover all the crazy ways in which someone can customize their Bitcoin node. Here is another list of `possible options <https://en.bitcoinwiki.org/wiki/Running_Bitcoind>`_.
 We translated much of (but not all of) the tons of options into a clean and easy-to-use GUI with toggles, dropdowns, inputs, etc, which is what you're seeing in your config screen. If you notice the little "?" icons on the left of each option, clicking them will provide a brief description as to what the option does. Also, our config GUI restricts the possible values you can enter such that you don't accidentally crash Bitcoin. That said, be very careful about just randomly changing things, lest your node starts to behave strangely.
