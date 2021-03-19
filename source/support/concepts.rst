@@ -95,6 +95,8 @@ The Embassy runs a Bitcoin Full Node.  When most people say "full node" what the
 
 All that said, it will soon be possible to run a full archival node with he embassy, should you determine you want block explorer functionality. This will require plugging in an external hard drive to the embassy and changing a setting in the app, and also a resycnhing of the blockchain from genesis.
 
+You can learn more about Bitcoin and nodes `here <https://lopp.net/bitcoin>`_.
+
 Bitcoin wallets
 ===============
 
@@ -112,3 +114,5 @@ Lightning Network
 =================
 
 The Lightning Network is a "payment layer" that sits on top of the Bitcoin blockchain, which it uses for final settlement. This allows Bitcoin to scale without affecting the security of the protocol layer.  It is easiest to think of Lightning Network as a system that allows anyone to use their Bitcoin to have a running tab (think bar tab) of money they owe each other.  For example, 2 friends may have a "channel" (tab) between them that they use for exchanging value.  The channel keeps track of who owes what. Those payments can be settled at any time on the Bitcoin blockchain if either or both parties decide to close out.  One big incentive to use Lightning is that payments are extremely fast and fees are extremely low.  You can find an introductory video explanation `here <https://www.youtube.com/watch?v=rrr_zPmEiME>`_.
+
+You can learn more about Lightning `here <https://lopp.net/lightning>`_.

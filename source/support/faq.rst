@@ -248,6 +248,56 @@ What if I cannot connect to a Service?
 --------------------------------------
 Please make sure the service is started by viewing it in the Services tab in the Embassy dashboard menu. A green indicator bar should be visible.
 
+Can it be used as a firewall?
+-----------------------------
+Potentially. The PiHole service is on the roadmap.
+
+Will there be a VPN?
+--------------------
+We are looking into adding as a Wireguard service for VPN access when you are not home.  A client-to-client VPN may also be possible.
+
+Can the Embassy run 'X' Service??
+---------------------------------
+Potentially.  `Here <https://github.com/awesome-selfhosted/awesome-selfhosted>`_ is a comprehensive list of self-hosted services, any of which can theoretically make it to the Embassy one day.
+If you are interested in packaging a service up for the Embassy, which does not require extensive development skills, please see our guide :ref:`here <service_package>`.
+We are agressivly moving away from service development in favor of a more community driven approach. Meaning you, an app development team, or anyone else on Earth, can bring the Service they want to the Embassy Marketplace. You don't need our permission.
+
+Is the Embassy a Tor relay node?
+--------------------------------
+No, currently it is not, but we plan to add that functionality in the future.
+
+Are files on File browser encrypted on disk?
+--------------------------------------------
+No, not currently.
+
+Can I use my CUPS instance with other people? How does that work?
+-----------------------------------------------------------------
+Cups does not have multiple accounts support. Each person would need their own Embassy. We are considering adding multi-account support to Cups, but it's just not a priority at the moment.
+
+Is the embassy able to connect to Sphinxchat?
+---------------------------------------------
+Maybe, but we are also planning to add Sphinxchat to the Embassy directly.
+
+Can the browser extension be used with Bitwarden hosted on the embassy?
+-----------------------------------------------------------------------
+Yes, but only in a tor-enabled browser.  Just add your .onion address as the server in the extension.
+
+I don't see an answer to my question regarding a certain service.  Is there more documentation?
+-----------------------------------------------------------------------------------------------
+While we are intent on providing the most friendly experience possible to our customers, ultimately it will be impossible for Start9 to create documentation and tutorials for every service we make available on the Embassy.  Each service *should* have its own documentation produced by the service developers themselves, and we will do our best keep track, consolidate, and link to it.  Also, much of the reason good tutorials don't exist is simply because no one in the community has taken the time to produce it.  If you come across something useful or write something up yourself, please let us know and we will promote it.  Otherwise we will do our best to answer questions as they arise and gradually build out tutorials where they are lacking.
+
+I want to understand in depth how a Service works and it's available configuration options.  Where can I go to learn more?
+--------------------------------------------------------------------------------------------------------------------------
+Depending on the app, the config options can be quite involved. Bitcoin Core, for example, has an enormous amount of complex options, almost none of which are useful to a normal user doing normal things. We chose some very sane defaults that should work for normal use cases. Here is an example config from the Bitcoin `GitHub <https://github.com/bitcoin/bitcoin/blob/master/share/examples/bitcoin.conf>`.
+
+By reading the descriptions in the link above, as well as doing some extra searching on your favorite search engine, you can begin to discover all the crazy ways in which someone can customize their Bitcoin node. Here is another list of `possible options <https://en.bitcoinwiki.org/wiki/Running_Bitcoind>`_.
+
+We translated much of (but not all of) the tons of options into a clean and easy-to-use GUI with toggles, dropdowns, inputs, etc, which is what you're seeing in your config screen. If you notice the little "?" icons on the left of each option, clicking them will provide a brief description as to what the option does. Also, our config GUI restricts the possible values you can enter such that you don't accidentally crash Bitcoin. That said, be very careful about just randomly changing things, lest your node starts to behave strangely.
+
+=============================
+Bitcoin and Lightning Network
+=============================
+
 Why does the Bitcoin service take so long to be ready?
 ------------------------------------------------------
 On first install, the Bitcoin service must verify the entire history of transactions in order to verify transactions going forward.  This can take approximately a week depending on your internet connection.  You can continue to use the Embassy normally in the meantime.
@@ -256,10 +306,6 @@ You can learn more about the Initial Block Download in `this video <https://www.
 Can the IBD (Initial Block Download) be made faster?  Or can wait times be improved?
 ------------------------------------------------------------------------------------
 We have some work planned to improve the wait times, which we think is the better way to deal with painful sync times without sacrificing the trust minimization.
-
-Can this run 'X' Service??
---------------------------
-Potentially.  The list of software that can be self-hosted is growing rapidly.  Feel free to drop us a comment letting us know what you'd like to see on the Embassy!
 
 Does the Embassy run a full archival Bitcoin node?
 --------------------------------------------------
@@ -277,10 +323,6 @@ As a user, pruned nodes and archival nodes provide you the same security.  In a 
 Why would I want to run a lightning node?
 -----------------------------------------
 The Lightning Network (LN) is a second 'layer,' built on top of the Bitcoin Protocol.  As a result all transactions on LN are backed up by the full security of the Bitcoin network.  Lightning is designed for instant payments between nodes, but similar to running a Bitcoin node, running your own is the only way to be sovereign.  When you have your own node, you will have the convenience of linking a Lightning wallet, for use on the go.  It is also possible to earn an income (granted a very small one at this time), if you are willing to learn how to become a 'routing node.'
-
-Are there any resources for learning about how to use Bitcoin and the Lightning Network?
-----------------------------------------------------------------------------------------
-It may be helpful to start `here <lopp.net/bitcoin>`_ for Bitcoin and `here <lopp.net/lightning>`_ for Lightning.
 
 I opened a Lightning channel, but my local balance is lower than I expected.  Where is the remainder?
 -----------------------------------------------------------------------------------------------------
@@ -308,24 +350,7 @@ Even if your wallet is plugged into your Embassy, whether your wallet is hot or 
 
 How does Bitcoin Proxy request (and verify) data when that data is needed by some app using it?
 -----------------------------------------------------------------------------------------------
-Proxy fetches blocks from your pruned node if it still has them, and fetches them from peers when it does not.  Proxy can ensures the fetched block is valid by comparing it to its header, which is retained by the pruned node.  The header is a product of the hash of the block itself, amongst other things, so it can't be faked.
-
-Can it be used as a firewall?
------------------------------
-Potentially. The PiHole service is on the roadmap.
-
-Will there be a VPN?
---------------------
-We are looking into adding as a Wireguard service for VPN access when you are not home.  A client-to-client VPN may also be possible.
-
-Can the Embassy run 'X' Service??
----------------------------------
-Potentially.  `Here <https://github.com/awesome-selfhosted/awesome-selfhosted>`_ is a comprehensive list of self-hosted services, any of which can theoretically make it to the Embassy one day.
-If you are interested in packaging a service up for the Embassy, which does not require extensive development skills, please see our guide :ref:`here <service_package>`.
-
-Is the Embassy a Tor relay node?
---------------------------------
-No, currently it is not, but we plan to add that functionality in the future.
+Proxy fetches blocks from your pruned node if it still has them, and fetches them from peers when it does not.  Proxy can ensures the fetched block is valid by comparing it to its header, which is retained by the pruned node.  The header is a product of the hash of the block itself, amongst other things, so it can't be
 
 What is the difference between the Bitcoin Wallet Tracker and the Electrum Personal Server?
 -------------------------------------------------------------------------------------------
@@ -336,18 +361,6 @@ Electrum (and some other wallets) require more than just a Bitcoin node to run i
 Which wallets can I use that sync with my Embassy Bitcoin node?
 ---------------------------------------------------------------
 There are many wallets that support linking to your own full node.  You will need one that supports tor.  Here are a few options that are compatible: FullyNoded, Samourai, Specter, Wasabi, Zap, and Zeus.
-
-Are files on File browser encrypted on disk?
---------------------------------------------
-No, not currently.
-
-Can I use my CUPS instance with other people? How does that work?
------------------------------------------------------------------
-Cups does not have multiple accounts support. Each person would need their own Embassy. We are considering adding multi-account support to Cups, but it's just not a priority at the moment.
-
-Is the embassy able to connect to Sphinxchat?
----------------------------------------------
-Maybe, but we are also planning to add Sphinxchat to the Embassy directly.
 
 Is it possible to run c-lightning and lnd parallel on the Embassy?
 ------------------------------------------------------------------
@@ -363,24 +376,8 @@ Check the LND logs, it can take a while to bootstrap, and starting RTL before th
 
 "Server is still in the process of starting," but LND and RTL are running.  How can I address this?
 ---------------------------------------------------------------------------------------------------
-You may need to restart LND.
-
-Can the browser extension be used with Bitwarden hosted on the embassy?
------------------------------------------------------------------------
-Yes, but only in a tor-enabled browser.  Just add your .onion address as the server in the extension.
+You may need to restart the LND Service.
 
 What's the best way to move a small lightning balance?
 ------------------------------------------------------
 It is possible to have lightning balances that are so low that they will not (or barely will) cover the on-chain fees to recoup into an on-chain wallet.
-
-I don't see an answer to my question regarding a certain service.  Is there more documentation?
------------------------------------------------------------------------------------------------
-While we are intent on providing the most friendly experience possible to our customers, ultimately it will be impossible for Start9 to create documentation and tutorials for every service we make available on the Embassy.  Each service *should* have its own documentation produced by the service developers themselves, and we will do our best keep track, consolidate, and link to it.  Also, much of the reason good tutorials don't exist is simply because no one in the community has taken the time to produce it.  If you come across something useful or write something up yourself, please let us know and we will promote it.  Otherwise we will do our best to answer questions as they arise and gradually build out tutorials where they are lacking.
-
-I want to understand in depth how a Service works and it's available configuration options.  Where can I go to learn more?
---------------------------------------------------------------------------------------------------------------------------
-Depending on the app, the config options can be quite involved. Bitcoin Core, for example, has an enormous amount of complex options, almost none of which are useful to a normal user doing normal things. We chose some very sane defaults that should work for normal use cases. Here is an example config from the Bitcoin `GitHub <https://github.com/bitcoin/bitcoin/blob/master/share/examples/bitcoin.conf>`.
-
-By reading the descriptions in the link above, as well as doing some extra searching on your favorite search engine, you can begin to discover all the crazy ways in which someone can customize their Bitcoin node. Here is another list of `possible options <https://en.bitcoinwiki.org/wiki/Running_Bitcoind>`_.
-
-We translated much of (but not all of) the tons of options into a clean and easy-to-use GUI with toggles, dropdowns, inputs, etc, which is what you're seeing in your config screen. If you notice the little "?" icons on the left of each option, clicking them will provide a brief description as to what the option does. Also, our config GUI restricts the possible values you can enter such that you don't accidentally crash Bitcoin. That said, be very careful about just randomly changing things, lest your node starts to behave strangely.
