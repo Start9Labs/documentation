@@ -39,7 +39,6 @@ Distinct from open source software is proprietary, or closed source, software. C
 
 As a company founded on the principles of freedom, every service we support is open source. We believe in contributing to the future of this vibrant and passionate ecosystem.
 
-
 .. _lan:
 
 LAN

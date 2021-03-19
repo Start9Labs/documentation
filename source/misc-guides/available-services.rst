@@ -15,6 +15,7 @@ Bitcoin-related services
 * `c-lightning <https://github.com/Start9Labs/c-lightning-wrapper/tree/master/docs>`_
 * `Ride the Lightning (RTL) <https://github.com/Start9Labs/ride-the-lightning-wrapper/tree/master/docs>`_
 * `Spark Wallet <https://github.com/Start9Labs/spark-wallet-wrapper/tree/master/docs>`_
+* `BTCPayServer <https://github.com/Start9Labs/btcpayserver-wrapper>`_
 
 Other services
 ==============
