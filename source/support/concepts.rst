@@ -39,6 +39,8 @@ Distinct from open source software is proprietary, or closed source, software. C
 
 As a company founded on the principles of freedom, every service we support is open source. We believe in contributing to the future of this vibrant and passionate ecosystem.
 
+Open Source ideas explained in `Lego <https://www.youtube.com/watch?v=a8fHgx9mE5U>`_.
+
 .. _lan:
 
 LAN
@@ -86,6 +88,8 @@ When you use Tor to communicate with services running on the Embassy, all the tr
 
 Furthermore, every service on the Embassy has a different Tor address, including the device itself. This is for privacy reasons - should one Tor address be exposed, the others will not be compromised. Tor addresses are actually ed25519 keys, which means they also provide all the benefits of cryptographically secure private/public keys.
 
+Here's an introductory video on `Tor <https://www.youtube.com/watch?v=6czcc1gZ7Ak>`_.
+
 .. _node:
 
 Bitcoin Full Node
@@ -95,7 +99,9 @@ The Embassy runs a Bitcoin Full Node.  When most people say "full node" what the
 
 All that said, it will soon be possible to run a full archival node with he embassy, should you determine you want block explorer functionality. This will require plugging in an external hard drive to the embassy and changing a setting in the app, and also a resycnhing of the blockchain from genesis.
 
-You can learn more about Bitcoin and nodes `here <https://lopp.net/bitcoin>`_.
+A video explainin the importance of running a node can be found `here <https://www.youtube.com/watch?v=oX0Yrv-6jVs>`_.
+
+You can learn more about Bitcoin `here <https://lopp.net/bitcoin>`_.
 
 Bitcoin wallets
 ===============
