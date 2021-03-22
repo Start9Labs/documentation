@@ -12,7 +12,7 @@ Creating A Backup
 
 To begin the backup process:
 
-1. Enter the USB stick provided with the Embassy kit, or any USB drive with enough storage capacity, into a USB port on the device.
+1. Enter a USB drive with sufficient capacity into a USB port on the device. The blue ports are USB 3.0. The black ports are USB 2.0.
 2. Navigate to the `Services` sub menu from the main dashboard menu.
 3. Select the service to be backed-up.
 4. Select the floppy disc icon next to the `Last Backup` menu item. If a backup was never completed, this should say "never".

@@ -11,6 +11,8 @@ Download the Setup App
 
 `Google Play <https://play.google.com/store/apps/details?id=com.start9labs.setup>`_
 
+`APK direct download <https://github.com/Start9Labs/setup-app/releases>`_
+
 Power On
 ========
 

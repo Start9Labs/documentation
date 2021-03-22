@@ -4,6 +4,8 @@
 Running Tor on Linux
 ********************
 
+For Debian and Debian-based systems, such as Ubuntu, Mint, etc.
+
 #. Install the Tor proxy service to your system. To do so, open your terminal and run the following command:
 
    .. code-block::
