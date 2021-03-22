@@ -14,15 +14,15 @@ Start9Labs is a company based in Denver, CO that builds the Embassy and EmbassyO
 
 What is the Embassy?
 --------------------
-The Embassy is a "shelf-top" computer built using a `Raspberry Pi <https://www.raspberrypi.org/products/raspberry-pi-4-model-b/>`_ for hardware and running EmbassyOS software.  Learn more :ref:`here <embassy>`.
+The Embassy is a "shelf-top" computer built using a `Raspberry Pi <https://www.raspberrypi.org/products/raspberry-pi-4-model-b/>`_ for hardware and running EmbassyOS software.  Learn more here: :ref:`embassy`.
 
 What is EmbassyOS?
 ------------------
-EmbassyOS is a new kind of Operating System (OS).  It is built from the ground up to allow anyone to easily run thier own 'cloud,' remove their dependence on Big Tech, and own their own data.  EmbassyOS allows anyone to easily self-host their own software services.  It handles all operations of the device, including managing the Service Marketplace, Services, Backups, Updates, data, and much more.  Learn more :ref:`here <embassyos>`.
+EmbassyOS is a new kind of Operating System (OS).  It is built from the ground up to allow anyone to easily run thier own 'cloud,' remove their dependence on Big Tech, and own their own data.  EmbassyOS allows anyone to easily self-host their own software services.  It handles all operations of the device, including managing the Service Marketplace, Services, Backups, Updates, data, and much more.  Learn more here: :ref:`embassyos`.
 
 What are EmbassyOS Services?
 ----------------------------
-A Service can be any piece of software added to the Marketplace.  All services are "self-hosted," meaning that you are in complete control of your data.  This means you can run your own "cloud!"  Learn more :ref:`here <managing-services>` and see our currently :ref:`Available Services <available-services>`.
+A Service can be any piece of software added to the Marketplace.  All services are "self-hosted," meaning that you are in complete control of your data.  This means you can run your own "cloud"! Check out our currently :ref:`available services <available-services>` and learn more here: :ref:`managing-services`.
 
 Does the Embassy ship worldwide?
 --------------------------------
@@ -41,10 +41,14 @@ How does pricing work for EmbassyOS?  Are you targeting a specific USD price?
 The price is changed every 2016 blocks, which occurs about every 14 days. And no, the intent is not to tie EmbassyOS to a USD value, though at the moment USD is a convenient proxy for real purchasing power.
 
 What are you using for a store backend?  Do you store my data?
----------------------------------------
+--------------------------------------------------------------
+
 Great question, here is our exact situation currently:
+
 Embassy device sales are processed through Shopify, which we do not like, but it was expedient in the early days, especially for shipping, so we went with it. Aside from a master list of email addresses for those who have explicitly opted in to our mailing list, all customer data is contained within Shopify. We do not duplicate it anywhere. We are asking Shopify to delete our customer data, but they claim it will take upward of 3 months to comply and we of course have no guarantee the data will actually be deleted permanently. This is partly why we exist...as such, we will be moving off of Shopify and onto a self-hosted solution, where Start9 alone controls our customer data for Embassy purchases, which we will delete as a matter of policy following a short grace period after delivery.
+
 For EmbassyOS sales, we took the maximally private approach right out of the gate. When you buy EmbassyOS, the only thing we need is an email address, and you can only pay with bitcoin. That's it. Then, unless you have explicitly requested that we keep your email for mailing list purposes, we delete the email immediately upon transaction completion.
+
 So...in summary: (1) the shipping data we currently have is stored in Shopify (2) we are asking Shopify to delete all our customer data (3) we will be migrating off of Shopify (4) going forward, we alone will control customer data and will purge it regularly (5) you can always assemble the hardware yourself and just buy EmbassyOS from us with bitcoin, which only requires an email, which is gets purged immediately.
 
 I want to help, but I'm not a developer.  Are there any ways for non-coders to contribute?
@@ -120,7 +124,7 @@ No, and we do not advise this. It is designed to be used on a RaspberryPi.
 
 Is it possible to use the EmbassyOS on my own hardware?
 -------------------------------------------------------
-Yes! You can follow the diy guide :ref:`here <diy>`. This option is great for people who already own the necessary hardware or who live outside the US and want to save on shipping and customs fees.
+Yes! The :ref:`diy guide <diy>` will take you through the setup steps. This option is great for people who already own the necessary hardware or who live outside the US and want to save on shipping and customs fees.
 
 Additionally, EmbassyOS is available to build from source under the Start9 Personal Use License. If you have the time and energy, it is possible to download and compile EmbassyOS yourself, for free, with the caveat that your “Embassy” will not have a product key generated by us. This means you will miss out on the perks that come along with purchasing from us, which will grow over time.
 
@@ -162,7 +166,7 @@ Can I mine Bitcoin with this?
 No, you can not.
 
 Does the Embassy only work over Tor? No http or VPN...??
-----------------------------------------------------
+--------------------------------------------------------
 The Embassy’s current primary communication is Tor, yes. In many cases we use HTTP over Tor (they are not mutually exclusive), you can see this by navigating to the Tor address in a browser and see the “http” in front of it.  A VPN is a feature we’re exploring as an alternative to Tor to make things faster without meaningfully impacting privacy.  You can also connect directly via LAN if you are on the same network as your device.
 
 =========================
@@ -208,7 +212,7 @@ Potentially.  The list of software that can be self-hosted is growing rapidly.  
 Does the Embassy run a full archival Bitcoin node?
 --------------------------------------------------
 The Embassy runs a full node, but does not run a full *archival* node, it's pruned. This means it does not store the entire Blockchain.  As it syncs, it discards blocks and transactions it does not need.
-It is fully validating and verifying consensus all the way from Genesis. Really, the only reason to store the entire Blockchain is if you want to run a block explorer.  Learn more :ref:`here <node>`.
+It is fully validating and verifying consensus all the way from Genesis. Really, the only reason to store the entire Blockchain is if you want to run a block explorer.  Learn more here: :ref:`node`.
 
 What actions, specifically, are only possible with an archival, or ‘unpruned’ node?
 -----------------------------------------------------------------------------------
@@ -224,7 +228,7 @@ The Lightning Network (LN) is a second 'layer,' built on top of the Bitcoin Prot
 
 Are there any resources for learning about how to use Bitcoin and the Lightning Network?
 ----------------------------------------------------------------------------------------
-It may be helpful to start `here <lopp.net/bitcoin>`_ for Bitcoin and `here <lopp.net/lightning>`_ for Lightning.
+It may be helpful to start `here <lopp.net/bitcoin>`__ for Bitcoin and `here <lopp.net/lightning>`__ for Lightning.
 
 I opened a Lightning channel, but my local balance is lower than I expected.  Where is the remainder?
 -----------------------------------------------------------------------------------------------------
@@ -244,7 +248,7 @@ Is there a solution to this?
 Yes, the concept of a Watchtower was originally conceptualized in the LN whitepaper.  A Watchtower is simply a lightning node to which you can give the authority to monitor transactions associated with your open payment channels.
 
 Is a wallet vulnerable to hacking if it’s always online??
--------------------------------------------------------
+---------------------------------------------------------
 Funds are not stored on the node typically.  The node simply serves as a source of truth for the state of the blockchain.  Attacks depend on where the keys are and where the signing happens. You can use something like a hardware wallet for better security.  Though, to be fair, a lot of attacks depend on you or your machine being targeted specifically, and a whole bunch of attack vectors are highly theoretical and obscure.
 Most successful attacks seem to be either fake/doctored software or a social attack (tricking you into installing some malware or giving your seed outright or something like that).
 Keep in mind, however, the more value there is out there to steal, the more sophisticated attacks will get automated (bots, crawlers etc). So its not just the risk profile of today, but also tomorrow you have to consider.  That’s why something like a hardware wallet or dedicated mobile device for key signing is a good idea.
