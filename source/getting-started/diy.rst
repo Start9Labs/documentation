@@ -43,11 +43,11 @@ Components
 Assembly Instructions
 ---------------------
 
-1. Insert mini speaker/buzzer into GPIO pins 6/8/10/12 with the word "speaker" facing out, `away from the board`.
+#. Insert mini speaker/buzzer into GPIO pins 6/8/10/12 with the word "speaker" facing out, `away from the board`.
 
-.. figure:: /_static/images/diy/pins.png
-  :width: 60%
-  :alt: Speaker board spec
+   .. figure:: /_static/images/diy/pins.png
+    :width: 60%
+    :alt: Speaker board spec
 
 That's it. Place the Raspberry Pi 4 board (with speaker attached), into its case.
 
@@ -76,18 +76,18 @@ Installing EmbassyOS
 
 Whether you purchase EmbassyOS from us or build it yourself, you need to flash it onto a microSD card.
 
-1. Download `balenaEtcher <https://www.balena.io/etcher/>`_ onto your Mac, Windows, or Linux computer.
-2. Insert the microSD card into your computer, either directly or using an adapter.
-3. Open balenaEtcher.
-4. Click `Select Image`, then find and select your copy of EmbassyOS.
-5. Click `Select Target`, then find and select your micro SD card.
-6. Click `Flash!` You may be asked to (1) approve the unusually large disk target or (2) enter your password. Both are normal.
+#. Download `balenaEtcher <https://www.balena.io/etcher/>`_ onto your Mac, Windows, or Linux computer.
+#. Insert the microSD card into your computer, either directly or using an adapter.
+#. Open balenaEtcher.
+#. Click `Select Image`, then find and select your copy of EmbassyOS.
+#. Click `Select Target`, then find and select your micro SD card.
+#. Click `Flash!` You may be asked to (1) approve the unusually large disk target or (2) enter your password. Both are normal.
 
-.. figure:: /_static/images/diy/balena.png
-  :width: 60%
-  :alt: Balena Etcher Dashboard
+   .. figure:: /_static/images/diy/balena.png
+    :width: 60%
+    :alt: Balena Etcher Dashboard
 
-7. Once the image is flashed and verified, you may remove the micro SD and insert it into your Embassy.
-8. The Embassy is now ready for use, and you may following the normal :ref:`setup <initial-setup>` instructions. ``*``
+#. Once the image is flashed and verified, you may remove the micro SD and insert it into your Embassy.
+#. The Embassy is now ready for use, and you may following the normal :ref:`setup <initial-setup>` instructions. ``*``
 
 ``*`` The first time you power it on, your Embassy will make more noises than future attempts, and it may take several minutes to finally complete.
