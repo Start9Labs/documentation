@@ -24,3 +24,4 @@ Other services
 * `Cups <https://github.com/Start9Labs/cups-wrapper/tree/master/docs>`_
 * `File Browser <https://github.com/Start9Labs/filebrowser-wrapper/tree/master/docs>`_
 * `Mastodon <https://github.com/Start9Labs/mastodon-wrapper>`_
+* `BTCPay Server <https://github.com/Start9Labs/btcpayserver-wrapper>`_
