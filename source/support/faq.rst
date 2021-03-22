@@ -259,8 +259,8 @@ We are looking into adding as a Wireguard service for VPN access when you are no
 Can the Embassy run 'X' Service??
 ---------------------------------
 Potentially.  `Here <https://github.com/awesome-selfhosted/awesome-selfhosted>`_ is a comprehensive list of self-hosted services, any of which can theoretically make it to the Embassy one day.
-If you are interested in packaging a service up for the Embassy, which does not require extensive development skills, please see our guide :ref:`here <service_package>`.
-We are agressivly moving away from service development in favor of a more community driven approach. Meaning you, an app development team, or anyone else on Earth, can bring the Service they want to the Embassy Marketplace. You don't need our permission.
+If you are interested in packaging a service up for the Embassy, which does not require extensive development skills, please see our guide :ref:`here <service_package_overview>`.
+We are aggressively moving away from service development in favor of a more community driven approach. Meaning you, an app development team, or anyone else on Earth, can bring the Service they want to the Embassy Marketplace. You don't need our permission.
 
 Is the Embassy a Tor relay node?
 --------------------------------
