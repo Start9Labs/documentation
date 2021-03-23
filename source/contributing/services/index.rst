@@ -31,6 +31,7 @@ Happy building!
   Config <config>
   Properties <properties>
   Instructions <instructions>
+  Backups <backups>
 
 Submission process
 ------------------
