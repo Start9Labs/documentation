@@ -26,16 +26,12 @@ The project structure should be used as a model:
     ├── Dockerfile
     ├── Makefile (optional)
     ├── README.md
-    ├── assets
-    │   ├── httpd.conf (optional)
-    │   └── httpd.conf.template (optional)
     ├── config_rules.yaml
     ├── config_spec.yaml
     ├── <submodule_project_dir>
     ├── docker_entrypoint.sh
     ├── docs
     │   └── instructions.md
-    ├── instructions.md -> docs/instructions.md (symlink)
     └── manifest.yaml
 
 Submodule
@@ -44,19 +40,3 @@ Submodule
 `Git sub-modules <https://www.git-scm.com/book/en/v2/Git-Tools-Submodules>`_ allow use of another project while in the working project directory. Setting up this feature enables linking of the source service repository so that it's context is available.
 
 Run ``git submodule add <link_to_source_project>``
-
-Assets
-======
-
-.. warning::
-
-    *This section is being deprecated in favor of baking assets into the Docker image, and moved into the mountpoint at runtime if necessary*
-
-Whenever a service is stopped, any file that is not contained within in the ``/assets`` directory will be cleared from memory. Any unsaved changes will be reverted. This folder acts as a persistance storage container.
-
-In this folder belongs any assets that are unique configurations to your service. For instance, bitcoind's ``.conf`` file is saved here. 
-
-.. role:: raw-html(raw)
-    :format: html
-
-:raw-html:`<br />`
