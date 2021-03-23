@@ -142,6 +142,10 @@ Absolutely.  An Embassy would be a great addition to any business as it is easy 
 
 With the addition of `BTCPayServer <https://btcpayserver.org/>`_, you can even run your own payment processor and accept cryptocurrency payments with no third party necessary!
 
+Can I have multiple users on my Embassy?
+----------------------------------------
+Currently, the Embassy itself is designed to for a single user. There is no way to grant others access to your Embassy without sharing your personal, master password, which is not recommended. There are certain services, however, such as Bitwarden, File Browser, and Mastodon, that absolutely support multiple users (aka multi-tenancy, aka uncle Jim model) where people who trust you can create their own, personal accounts for these services on your Embassy. Just remind them that they are trusting you with their data, and that it might be preferable for them to take the final leap of self-sovereignty and get an Embassy of their own.
+
 Why would I even buy this when I can just build it for free??
 -------------------------------------------------------------
 (1) White glove support. Because each Embassy comes with a unique product key engraved on it, and we have a record of all product keys ever, we can ask the user to verify their product key in order to receive a higher tier of support, such as phone calls.
@@ -213,6 +217,10 @@ What if someone gets physical access to my device, can they read the contents? I
 -----------------------------------------------------------------------------------------------
 The device is currently not currently protected in that way. Someone with physical access to the device can get full access to everything on it.
 Apps like bitwarden however do not store plaintext information, so your passwords will not be compromised unless they know your master password.
+
+Why http and not https for .onion websites?
+-------------------------------------------
+When visiting a Tor V3 URL (.onion website), your communications are end-to-end encrypted and onion-routed by default. There is no added benefit to using https.
 
 =========================
 Setup and Troubleshooting
