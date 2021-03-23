@@ -187,7 +187,7 @@ Are my Internet requests anonymous and secure?
 EmbassyOS and every service on the Embassy serve their own Tor Hidden Services with unique Tor addresses. The private keys used to create these addresses are generated on your phone or computer when you first set up the Embassy. No one, not even Start9, has any idea what your Tor addresses are, let alone the password(s) you choose to authenticate with them.
 
 Can multiple Embassies be setup to run redundantly in physically separate locations?
------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 Soon (tm).  Currently no, be we have plans for a feature that will enable Embassies to provide encrypted, automated backup services for one another.
 
 How does the Embassy compare to other Bitcoin nodes or personal servers?
@@ -390,7 +390,7 @@ How do I connect my Spark mobile app to the Embassy Spark server?
 To use a Spark client, you still need to have Spark installed on the Embassy (which ‘serves’ Spark). Then, under Properties, there is a "Pairing URL". The first part of this is the server URL, and the end portion of it is the access key.
 
 Are my addresses, channels, and balances all stored in LND or in RTL?
---------------------------------------------------------------------
+---------------------------------------------------------------------
 This is all on LND, and RTL is just a GUI for accessing LND.  On-chain balance is also part of the LND backup.
 
 Is there a way to use the channel backups made within RTL?
