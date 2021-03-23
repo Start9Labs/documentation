@@ -14,15 +14,57 @@ Start9Labs is a company based in Denver, CO that builds the Embassy and EmbassyO
 
 What is the Embassy?
 --------------------
-The Embassy is a "shelf-top" computer built using a `Raspberry Pi <https://www.raspberrypi.org/products/raspberry-pi-4-model-b/>`_ for hardware and running EmbassyOS software.  Learn more here: :ref:`embassy`.
+The Embassy is a "shelf-top" computer built using a `Raspberry Pi <https://www.raspberrypi.org/products/raspberry-pi-4-model-b/>`_ for hardware and running EmbassyOS software.
+
+The internet as we know it is organized into questioners, or clients, and answerers, or servers. When you open a mobile email app, say Gmail, the app (client) begins asking questions: "have I received new mail?", "what are my last 50 messages?", "what drafts am I in the midst of writing?", and so on. Your app's questions are sent to and heard by a Google-run server which then provides answers back to the client and are subsequently displayed to the screen.
+
+The Embassy is exactly that: your very own "answerer", just like Google's, except managed simply and with ease by and for you alone.
+
+In other words, it is a generalized private personal server capable of running all sorts of self hosted open source software.
+
+When you see your credit card information on your banking app, your messages in your texting app, your passwords in your password management app, all of that information comes from somewhere in the cloud: some server run by some company somewhere on the planet. Who can see the data stored in that server? Who can edit it? It's not always clear, but the increasingly common practice of selling your data to advertisers and the high-profile cyber-security breaches of the last decade suggest a pessimistic outlook.
+
+One thing is for certain though: if you control your server, then you control your data. Your finances, your communications, all of it is actually yours -- and only yours -- with an Embassy.
+
+Why do I care?
+--------------
+As an example, let's talk about the password manager, Bitwarden. It may help convey the concept of a personal server. Currently, when you use Bitwarden, your passwords are stored on a physical device (aka server) owned and operated by the Bitwarden team. Your phone or laptop sends requests to their server when you want to do anything: create an account, create a new password, retrieve existing passwords, etc. Your passwords are stored on their device, encrypted with your Bitwarden password. They are the custodian of your passwords, similar to getting a safe deposit box at the bank. The bank keeps your valuables in their vault, presumably they don't know what's in the box, and any time you want access to your box, you ask the bank for permission. This is exactly how a hosted Bitwarden experience works, as well as just about everything on the internet. When you install Bitwarden on your Embassy, by contrast, it's like building your own safe deposit box in a private bunker whose location is only known to you and whose keys only you posses. You create an account with yourself, store your passwords with yourself, etc. You are your own custodian. This same concept can be applied to just about everything on the Internet, without losing the convenience of the custodial model, which is what we are out to accomplish. This may sound cool, or neat, but it is so much more than that. The custodial data model is amongst the greatest threats to human liberty the world has ever seen.
+
+How does the Embassy work?
+--------------------------
+The Embassy runs on the Raspberry Pi 4B hardware with a Cortex-a72 CPU, 4GB of RAM, and has 2.4ghz and 5.0ghz IEEE 802.11AC wireless capabilities and an internal speaker for audio feedback of system operations. It also features a high endurance MicroSD card, on which the operating system software is installed.
+
+EmbassyOS is a stripped down version of Raspbian Buster Lite and handles all operations of your Embassy device. This core element of the technology stack is what enables you to set up, login, access your Embassy’s dashboard, and download and install services.
+
+One of these operations is creating and managing Tor addresses, which are uniquely attributed to each service you download, as well as to the Embassy device itself. You can see your uniquely generated Tor address when you complete the setup process using the Setup App. This address is how you view your Embassy’s dashboard, which is actually just a website served up from your Embassy itself! It is authenticated, of course, so only you can access it.
+
+You can connect to and manage your Embassy from any mobile device, desktop computer, or laptop computer. This is accomplished right through the browser by visiting your Embassy's private and unique URL.
+
+Once on Embassy's web page, you can choose what services to install to the Embassy. Then, each installed service also receives its own private and unique URL, such that you can access it from the browser or any mobile app that supports using it as a backend.
+
+The list of services will grow rapidly over the coming months, such that many things you currently do using cloud-based third party servers can be just as easily accomplished using your own personal cloud serving your own personal apps and storing your own private data. No trusted third parties at all.
 
 What is EmbassyOS?
 ------------------
-EmbassyOS is a new kind of Operating System (OS).  It is built from the ground up to allow anyone to easily run thier own 'cloud,' remove their dependence on Big Tech, and own their own data.  EmbassyOS allows anyone to easily self-host their own software services.  It handles all operations of the device, including managing the Service Marketplace, Services, Backups, Updates, data, and much more.  Learn more here: :ref:`embassyos`.
+EmbassyOS is a new kind of Operating System (OS). It is built from the ground up to allow anyone to easily run their own ‘cloud,’ become independent from Big Tech, and own their own data. EmbassyOS allows anyone to easily self-host their own software services.
+
+EmbassyOS is a custom-built Linux distribution, which is a stripped down and beefed up version of `Raspbian Buster Lite OS <https://www.raspberrypi.org/software/operating-systems/>`_, along with a suite of software tools which make it easy to:
+
+* Install, uninstall, and upgrade services from the custom Marketplace (similar to your phone's app store)
+* Manage and run services that YOU control
+* Upgrade your Embassy software with the latest features and security updates
+* Backup services, and restore from backups if needed
+
+Start9 Labs augmented the original Raspbian OS to include:
+
+* a custom application management layer, specialized for installing, running, and backing up .s9pk packaged services
+* a layer responsible for Embassy specific operations, such as Tor, Backups, and Notifications
+
+The .s9pk extension is Start9 Labs' custom package format based on tar. It encompasses the necessary components to compress, host, and install a service on the marketplace.
 
 What are EmbassyOS Services?
 ----------------------------
-A Service can be any piece of software added to the Marketplace.  All services are "self-hosted," meaning that you are in complete control of your data.  This means you can run your own "cloud"! Check out our currently :ref:`available services <available-services>` and learn more here: :ref:`managing-services`.
+A Service can be any piece of software added to the Marketplace.  All services are "self-hosted," meaning that you are in complete control of your data.  This means you can run your own "cloud!"  Learn more about managing services :ref:`here <managing-services>` and see our currently :ref:`Available Services <available-services>`.
 
 Does the Embassy ship worldwide?
 --------------------------------
@@ -42,9 +84,7 @@ The price is changed every 2016 blocks, which occurs about every 14 days. And no
 
 What are you using for a store backend?  Do you store my data?
 --------------------------------------------------------------
-
-Great question, here is our exact situation currently:
-
+Here is our exact situation currently:
 Embassy device sales are processed through Shopify, which we do not like, but it was expedient in the early days, especially for shipping, so we went with it. Aside from a master list of email addresses for those who have explicitly opted in to our mailing list, all customer data is contained within Shopify. We do not duplicate it anywhere. We are asking Shopify to delete our customer data, but they claim it will take upward of 3 months to comply and we of course have no guarantee the data will actually be deleted permanently. This is partly why we exist...as such, we will be moving off of Shopify and onto a self-hosted solution, where Start9 alone controls our customer data for Embassy purchases, which we will delete as a matter of policy following a short grace period after delivery.
 
 For EmbassyOS sales, we took the maximally private approach right out of the gate. When you buy EmbassyOS, the only thing we need is an email address, and you can only pay with bitcoin. That's it. Then, unless you have explicitly requested that we keep your email for mailing list purposes, we delete the email immediately upon transaction completion.
@@ -102,6 +142,12 @@ I run a business, can I use an Embassy for tasks such as password management and
 ----------------------------------------------------------------------------------------------
 Absolutely.  An Embassy would be a great addition to any business as it is easy to use and provides services that you control, with no subscription fees.
 
+With the addition of `BTCPay Server <https://btcpayserver.org/>`_, you can even run your own payment processor and accept cryptocurrency payments with no third party necessary!
+
+Can I have multiple users on my Embassy?
+----------------------------------------
+Currently, the Embassy itself is designed to for a single user. There is no way to grant others access to your Embassy without sharing your personal, master password, which is not recommended. There are certain services, however, such as Bitwarden, File Browser, and Mastodon, that absolutely support multiple users (aka multi-tenancy, aka uncle Jim model) where people who trust you can create their own, personal accounts for these services on your Embassy. Just remind them that they are trusting you with their data, and that it might be preferable for them to take the final leap of self-sovereignty and get an Embassy of their own.
+
 Why would I even buy this when I can just build it for free??
 -------------------------------------------------------------
 (1) White glove support. Because each Embassy comes with a unique product key engraved on it, and we have a record of all product keys ever, we can ask the user to verify their product key in order to receive a higher tier of support, such as phone calls.
@@ -120,7 +166,7 @@ Embassy (Device, OS, and DIY)
 
 Can I run EmbassyOS on a VPS or VM?
 -----------------------------------
-No, and we do not advise this. It is designed to be used on a RaspberryPi.
+Maybe, but we advise against this. It is designed to be used on a RaspberryPi.
 
 Is it possible to use the EmbassyOS on my own hardware?
 -------------------------------------------------------
@@ -140,7 +186,7 @@ Are my Internet requests anonymous and secure?
 ----------------------------------------------
 EmbassyOS and every service on the Embassy serve their own Tor Hidden Services with unique Tor addresses. The private keys used to create these addresses are generated on your phone or computer when you first set up the Embassy. No one, not even Start9, has any idea what your Tor addresses are, let alone the password(s) you choose to authenticate with them.
 
-Can multiple Embassys be setup to run redundantly in physically separate locations?
+Can multiple Embassies be setup to run redundantly in physically separate locations?
 -----------------------------------------------------------------------------------
 Soon (tm).  Currently no, be we have plans for a feature that will enable Embassies to provide encrypted, automated backup services for one another.
 
@@ -169,6 +215,16 @@ Does the Embassy only work over Tor? No http or VPN...??
 --------------------------------------------------------
 The Embassy’s current primary communication is Tor, yes. In many cases we use HTTP over Tor (they are not mutually exclusive), you can see this by navigating to the Tor address in a browser and see the “http” in front of it.  A VPN is a feature we’re exploring as an alternative to Tor to make things faster without meaningfully impacting privacy.  You can also connect directly via LAN if you are on the same network as your device.
 
+What if someone gets physical access to my device, can they read the contents? Is it encrypted?
+-----------------------------------------------------------------------------------------------
+The device is currently not currently protected in that way. Someone with physical access to the device can get full access to everything on it.
+
+Apps like Bitwarden however do not store plaintext information, so your passwords will not be compromised unless they know your master password.
+
+Why http and not https for .onion websites?
+-------------------------------------------
+When visiting a Tor V3 URL (.onion website), your communications are end-to-end encrypted and onion-routed by default. There is no added benefit to using https.
+
 =========================
 Setup and Troubleshooting
 =========================
@@ -183,7 +239,13 @@ After plugging into power and internet, you will hear 2 distinct sounds: first, 
 
 What if I can't connect to my Embassy?
 --------------------------------------
-Please ensure your phone / computer is connected to the same wired or wireless network as your Embassy.  Be careful that you are not on a seperate or "guest" network.
+Please ensure your phone / computer is connected to the same wired or wireless network as your Embassy.  Be careful that you are not on a separate or "guest" network.
+
+Can I use the Embassy from behind a VPN, for example, if my router has a built-in VPN?
+--------------------------------------------------------------------------------------
+While this is possible, it adds complexity, which may lead to problems.  You will need to understand the setup of your router/VPN and how it supports (or doesn't support) tor connections.
+
+If you are having trouble with this, you might consider letting the Embassy out "in the clear," since everything is broadcast exclusively across the Tor network, offering a high level of privacy.
 
 ========
 Services
@@ -197,17 +259,68 @@ What if I cannot connect to a Service?
 --------------------------------------
 Please make sure the service is started by viewing it in the Services tab in the Embassy dashboard menu. A green indicator bar should be visible.
 
+Can it be used as a firewall?
+-----------------------------
+Potentially. The PiHole service is on the roadmap.
+
+Will there be a VPN?
+--------------------
+We are looking into adding as a Wireguard service for VPN access when you are not home.  A client-to-client VPN may also be possible.
+
+Can the Embassy run 'X' Service??
+---------------------------------
+Potentially.  `Here <https://github.com/awesome-selfhosted/awesome-selfhosted>`_ is a comprehensive list of self-hosted services, any of which can theoretically make it to the Embassy one day.
+If you are interested in packaging a service up for the Embassy, which does not require extensive development skills, please see our guide :ref:`here <service_package_overview>`.
+We are aggressively moving away from service development in favor of a more community driven approach. Meaning you, an app development team, or anyone else on Earth, can bring the Service they want to the Embassy Marketplace. You don't need our permission.
+
+Is the Embassy a Tor relay node?
+--------------------------------
+No, currently it is not, but we plan to add that functionality in the future.
+
+Are files on File browser encrypted on disk?
+--------------------------------------------
+No, not currently.
+
+Can I use my CUPS instance with other people? How does that work?
+-----------------------------------------------------------------
+Cups does not have multiple accounts support. Each person would need their own Embassy. We are considering adding multi-account support to Cups, but it's just not a priority at the moment.
+
+Is the embassy able to connect to Sphinxchat?
+---------------------------------------------
+Maybe, but we are also planning to add Sphinxchat to the Embassy directly.
+
+Can the browser extension be used with Bitwarden hosted on the embassy?
+-----------------------------------------------------------------------
+Yes, but only in a tor-enabled browser.  Just add your .onion address as the server in the extension.
+
+I don't see an answer to my question regarding a certain service.  Is there more documentation?
+-----------------------------------------------------------------------------------------------
+While we are intent on providing the most friendly experience possible to our customers, ultimately it will be impossible for Start9 to create documentation and tutorials for every service we make available on the Embassy.  Each service *should* have its own documentation produced by the service developers themselves, and we will do our best keep track, consolidate, and link to it.  Also, much of the reason good tutorials don't exist is simply because no one in the community has taken the time to produce it.  If you come across something useful or write something up yourself, please let us know and we will promote it.  Otherwise we will do our best to answer questions as they arise and gradually build out tutorials where they are lacking.
+
+I want to understand in depth how a Service works and it's available configuration options.  Where can I go to learn more?
+--------------------------------------------------------------------------------------------------------------------------
+Depending on the app, the config options can be quite involved. Bitcoin Core, for example, has an enormous amount of complex options, almost none of which are useful to a normal user doing normal things. We chose some very sane defaults that should work for normal use cases. Here is an example config from the Bitcoin `GitHub <https://github.com/bitcoin/bitcoin/blob/master/share/examples/bitcoin.conf>`.
+
+By reading the descriptions in the link above, as well as doing some extra searching on your favorite search engine, you can begin to discover all the crazy ways in which someone can customize their Bitcoin node. Here is another list of `possible options <https://en.bitcoinwiki.org/wiki/Running_Bitcoind>`_.
+
+We translated much of (but not all of) the tons of options into a clean and easy-to-use GUI with toggles, dropdowns, inputs, etc, which is what you're seeing in your config screen. If you notice the little "?" icons on the left of each option, clicking them will provide a brief description as to what the option does. Also, our config GUI restricts the possible values you can enter such that you don't accidentally crash Bitcoin. That said, be very careful about just randomly changing things, lest your node starts to behave strangely.
+
+=============================
+Bitcoin and Lightning Network
+=============================
+
 Why does the Bitcoin service take so long to be ready?
 ------------------------------------------------------
 On first install, the Bitcoin service must verify the entire history of transactions in order to verify transactions going forward.  This can take approximately a week depending on your internet connection.  You can continue to use the Embassy normally in the meantime.
+You can learn more about the Initial Block Download in `this video <https://www.youtube.com/watch?v=OrYDehC-8TU>`_.
 
 Can the IBD (Initial Block Download) be made faster?  Or can wait times be improved?
 ------------------------------------------------------------------------------------
 We have some work planned to improve the wait times, which we think is the better way to deal with painful sync times without sacrificing the trust minimization.
 
-Can this run 'X' Service??
---------------------------
-Potentially.  The list of software that can be self-hosted is growing rapidly.  Feel free to drop us a comment letting us know what you'd like to see on the Embassy!
+I'm getting this error: unable to connect to bitcoind: -28: Loading block index... What do I do?
+------------------------------------------------------------------------------------------------
+The block index error is normal and goes away after the Bitcoin blockchain has synced.  If you have completed the Initial Blockchain Download (IBD), this will be a few minutes at most.
 
 Does the Embassy run a full archival Bitcoin node?
 --------------------------------------------------
@@ -226,13 +339,9 @@ Why would I want to run a lightning node?
 -----------------------------------------
 The Lightning Network (LN) is a second 'layer,' built on top of the Bitcoin Protocol.  As a result all transactions on LN are backed up by the full security of the Bitcoin network.  Lightning is designed for instant payments between nodes, but similar to running a Bitcoin node, running your own is the only way to be sovereign.  When you have your own node, you will have the convenience of linking a Lightning wallet, for use on the go.  It is also possible to earn an income (granted a very small one at this time), if you are willing to learn how to become a 'routing node.'
 
-Are there any resources for learning about how to use Bitcoin and the Lightning Network?
-----------------------------------------------------------------------------------------
-It may be helpful to start `here <lopp.net/bitcoin>`__ for Bitcoin and `here <lopp.net/lightning>`__ for Lightning.
-
 I opened a Lightning channel, but my local balance is lower than I expected.  Where is the remainder?
 -----------------------------------------------------------------------------------------------------
-A fee to close the channel (onchain) is set aside at opening.  
+A fee to close the channel (onchain) is set aside at opening.
 
 How is that fee estimation calculated?
 --------------------------------------
@@ -254,22 +363,9 @@ Most successful attacks seem to be either fake/doctored software or a social att
 Keep in mind, however, the more value there is out there to steal, the more sophisticated attacks will get automated (bots, crawlers etc). So its not just the risk profile of today, but also tomorrow you have to consider.  That’s why something like a hardware wallet or dedicated mobile device for key signing is a good idea.
 Even if your wallet is plugged into your Embassy, whether your wallet is hot or cold depends on the hardware that stores the keys.
 
-
 How does Bitcoin Proxy request (and verify) data when that data is needed by some app using it?
 -----------------------------------------------------------------------------------------------
-Proxy fetches blocks from your pruned node if it still has them, and fetches them from peers when it does not.  Proxy can ensures the fetched block is valid by comparing it to its header, which is retained by the pruned node.  The header is a product of the hash of the block itself, amongst other things, so it can't be faked.
-
-Can it be used as a firewall?
------------------------------
-Potentially. The PiHole service is on the roadmap.
-
-Will there be a VPN?
---------------------
-We are looking into adding as a Wireguard service for VPN access when you are not home.  A client-to-client VPN may also be possible.
-
-Is the Embassy a Tor relay node?
---------------------------------
-Not, currently it is not, but we plan to add that functionality in the future.
+Proxy fetches blocks from your pruned node if it still has them, and fetches them from peers when it does not.  Proxy can ensures the fetched block is valid by comparing it to its header, which is retained by the pruned node.  The header is a product of the hash of the block itself, amongst other things, so it can't be
 
 What is the difference between the Bitcoin Wallet Tracker and the Electrum Personal Server?
 -------------------------------------------------------------------------------------------
@@ -281,17 +377,9 @@ Which wallets can I use that sync with my Embassy Bitcoin node?
 ---------------------------------------------------------------
 There are many wallets that support linking to your own full node.  You will need one that supports tor.  Here are a few options that are compatible: FullyNoded, Samourai, Specter, Wasabi, Zap, and Zeus.
 
-Are files on File browser encrypted on disk?
---------------------------------------------
-No, not currently.
-
-Can I use my CUPS instance with other people? How does that work?
------------------------------------------------------------------
-Cups does not have multiple accounts support. Each person would need their own Embassy. We are considering adding multi-account support to Cups, but it's just not a priority at the moment.
-
-Is the embassy able to connect to Sphinxchat?
----------------------------------------------
-Maybe, but we are also planning to add Sphinxchat to the Embassy directly.
+Is BlueWallet an option?
+------------------------
+BlueWallet requires a seperate backend service called LNDHub, which is not available on the Embassy at this time.
 
 Is it possible to run c-lightning and lnd parallel on the Embassy?
 ------------------------------------------------------------------
@@ -301,28 +389,27 @@ How do I connect my Spark mobile app to the Embassy Spark server?
 -----------------------------------------------------------------
 To use a Spark client, you still need to have Spark installed on the Embassy (which ‘serves’ Spark). Then, under Properties, there is a "Pairing URL". The first part of this is the server URL, and the end portion of it is the access key.
 
+Are my addresses, channels, and balances all stored in LND or in RTL?
+--------------------------------------------------------------------
+This is all on LND, and RTL is just a GUI for accessing LND.  On-chain balance is also part of the LND backup.
+
+Is there a way to use the channel backups made within RTL?
+----------------------------------------------------------
+The only backup flow we officially support is through the Embassy backup system. This does include the channel backups created automatically by LND, but it must be understood that backups in Lightning are very different than they are on Layer 1 Bitcoin. If you restore from backup all your channels will close, and there is a potential, albeit small, probability for you to lose funds.
+
 When attempting to add new peer, RTL says "server is still in the process of starting," but chain state seems to be fully up to date.  What can I do?
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 Check the LND logs, it can take a while to bootstrap, and starting RTL before this completes could cause errors.
 
 "Server is still in the process of starting," but LND and RTL are running.  How can I address this?
 ---------------------------------------------------------------------------------------------------
- You may need to restart LND.
-
-Can the browser extension be used with Bitwarden hosted on the embassy?
------------------------------------------------------------------------
-Yes, but only in a tor-enabled browser.  Just add your .onion address as the server in the extension.
+You may need to restart the LND Service.
 
 What's the best way to move a small lightning balance?
 ------------------------------------------------------
 It is possible to have lightning balances that are so low that they will not (or barely will) cover the on-chain fees to recoup into an on-chain wallet.
 
-I don't see an answer to my question regarding a certain service.  Is there more documentation?
------------------------------------------------------------------------------------------------
-While we are intent on providing the most friendly experience possible to our customers, ultimately it will be impossible for Start9 to create documentation and tutorials for every service we make available on the Embassy.  Each service *should* have its own documentation produced by the service developers themselves, and we will do our best keep track, consolidate, and link to it.  Also, much of the reason good tutorials don't exist is simply because no one in the community has taken the time to produce it.  If you come across something useful or write something up yourself, please let us know and we will promote it.  Otherwise we will do our best to answer questions as they arise and gradually build out tutorials where they are lacking.
-
-I want to understand in depth how a Service works and it's available configuration options.  Where can I go to learn more?
---------------------------------------------------------------------------------------------------------------------------
-Depending on the app, the config options can be quite involved. Bitcoin Core, for example, has an enormous amount of complex options, almost none of which are useful to a normal user doing normal things. We chose some very sane defaults that should work for normal use cases. Here is an example config from the Bitcoin `GitHub <https://github.com/bitcoin/bitcoin/blob/master/share/examples/bitcoin.conf>`.
-By reading the descriptions in the link above, as well as doing some extra searching on your favorite search engine, you can begin to discover all the crazy ways in which someone can customize their Bitcoin node. Here is another list of `possible options <https://en.bitcoinwiki.org/wiki/Running_Bitcoind>`.
-We translated much of (but not all of) the tons of options into a clean and easy-to-use GUI with toggles, dropdowns, inputs, etc, which is what you're seeing in your config screen. If you notice the little "?" icons on the left of each option, clicking them will provide a brief description as to what the option does. Also, our config GUI restricts the possible values you can enter such that you don't accidentally crash Bitcoin. That said, be very careful about just randomly changing things, lest your node starts to behave strangely.
+Why are Lightning Network backups and moves so complicated?
+-----------------------------------------------------------
+There are safe ways to do an “atomic move” of a LN node but it requires a very specific sequence of actions and certain mistakes can result in your counterparties taking all your funds. Fundamentally, today, LN works on a punishment scheme. This means if you publish revoked state, that the counterparty is entitled to a claim on all the funds in the channel. This incentive system is what makes the whole thing work. Without it LN would be subject to various kinds of thievery. 
+So the downside is that backups of old state are not safe. This is because your node might believe it is the real state of the channel, but it may be unaware of states created since then. The problem here is that your node naively believes something different from the truth, which can result in all of the funds being lost. In response to this reality, the safe backup systems, including those generated by RTL, actually do not include channel state. They only list the peers that you had channels with. Restoring these backups essentially politely asks your peers to force close the channels they have with you. In those moments it is possible for your peer to try and cheat you, but they cannot be 100% sure that you can’t punish them, so it’s extremely unlikely that they will attempt to do so.
