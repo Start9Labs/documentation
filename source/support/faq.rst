@@ -30,6 +30,8 @@ Why do I care?
 --------------
 As an example, let's talk about the password manager, Bitwarden. It may help convey the concept of a personal server. Currently, when you use Bitwarden, your passwords are stored on a physical device (aka server) owned and operated by the Bitwarden team. Your phone or laptop sends requests to their server when you want to do anything: create an account, create a new password, retrieve existing passwords, etc. Your passwords are stored on their device, encrypted with your Bitwarden password. They are the custodian of your passwords, similar to getting a safe deposit box at the bank. The bank keeps your valuables in their vault, presumably they don't know what's in the box, and any time you want access to your box, you ask the bank for permission. This is exactly how a hosted Bitwarden experience works, as well as just about everything on the internet. When you install Bitwarden on your Embassy, by contrast, it's like building your own safe deposit box in a private bunker whose location is only known to you and whose keys only you posses. You create an account with yourself, store your passwords with yourself, etc. You are your own custodian. This same concept can be applied to just about everything on the Internet, without losing the convenience of the custodial model, which is what we are out to accomplish. This may sound cool, or neat, but it is so much more than that. The custodial data model is amongst the greatest threats to human liberty the world has ever seen.
 
+This `podcast <https://www.youtube.com/watch?v=aylDowaSdzU&t=270s>`_ may help expound upon why this is important.
+
 How does the Embassy work?
 --------------------------
 The Embassy runs on the Raspberry Pi 4B hardware with a Cortex-a72 CPU, 4GB of RAM, and has 2.4ghz and 5.0ghz IEEE 802.11AC wireless capabilities and an internal speaker for audio feedback of system operations. It also features a high endurance MicroSD card, on which the operating system software is installed.
@@ -325,6 +327,10 @@ We have some work planned to improve the wait times, which we think is the bette
 I'm getting this error: unable to connect to bitcoind: -28: Loading block index... What do I do?
 ------------------------------------------------------------------------------------------------
 The block index error is normal and goes away after the Bitcoin blockchain has synced.  If you have completed the Initial Blockchain Download (IBD), this will be a few minutes at most.
+
+The Bitcoin Service is different from the GUI version I am used to using (bitcoin-qt).  How to I use this like I used to?
+-------------------------------------------------------------------------------------------------------------------------
+At present, the Embassy does not offer its own node visualization tool. You can view certain properties about your node inside the "Properties" section, but not in an animated GUI. If you want to use bitcoin-cli, you may do so by adding an SSH key onto your Embassy and exec-ing into the bitcoind docker container. Otherwise, the main way to actually *use* your node is through a wallet. The QT GUI is not usable because it cannot be served through the browser (which is necessary here), and last we checked, the QT desktop client was incapable of connecting to a remote node over Tor. As far as we are aware, the only wallets that support this are Specter, Fully Noded, and Sparrow.
 
 Does the Embassy run a full archival Bitcoin node?
 --------------------------------------------------
