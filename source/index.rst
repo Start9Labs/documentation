@@ -43,6 +43,6 @@ Here you will find guidance and information about the Start9 Embassy personal se
   :maxdepth: 2
   :caption: Support
 
-  support/faq
+  support/FAQ/index
   support/concepts
   support/contact
