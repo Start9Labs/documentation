@@ -243,6 +243,10 @@ What if I can't connect to my Embassy?
 --------------------------------------
 Please ensure your phone / computer is connected to the same wired or wireless network as your Embassy.  Be careful that you are not on a separate or "guest" network.
 
+Why do I need the Bonjour service (Windows only)?
+-------------------------------------------------
+Because a major use case of Bonjour is wireless printing over the LAN, but your Windows machine can also use Bonjour to discover and connect with other devices on the LAN. In this case the Embassy.
+
 What if I have a network issue, for example, with a firewall?
 -------------------------------------------------------------
 The Embassy is designed to work as simply as possible, for as many as possible, while providing the ability to self-host in a private manner.  If you have an agressive or custom firewall, or other custom network settings, there is a good chance that addtional configuration may be necessary.  We will continue to learn about custom networking issues, update our docs with resources, and help in the community :ref:`channels <contact>` to the best of our ability.
