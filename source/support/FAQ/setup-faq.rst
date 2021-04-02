@@ -18,8 +18,18 @@ Why do I need the Bonjour service (Windows only)?
 -------------------------------------------------
 Because a major use case of Bonjour is wireless printing over the LAN, but your Windows machine can also use Bonjour to discover and connect with other devices on the LAN. In this case the Embassy.
 
-What if I have a network issue, for example, with a firewall?
--------------------------------------------------------------
+My Tor sites aren't loading, what should I do?
+----------------------------------------------
+This is most likely a transient networking issue that will correct itself in a few minutes to an hour. If it does not, there are few things you can try: 
+
+1. On Android/Orbot, the most common solution is to restart your Android device.
+ 
+2. Access your Embassy over :ref:`LAN <ssl-setup>` and restart it from the "Embassy" menu.
+
+3. Restart your router.
+
+What if I have an unique network issue, for example, with a firewall?
+---------------------------------------------------------------------
 The Embassy is designed to work as simply as possible, for as many as possible, while providing the ability to self-host in a private manner.  If you have an agressive or custom firewall, or other custom network settings, there is a good chance that addtional configuration may be necessary.  We will continue to learn about custom networking issues, update our docs with resources, and help in the community :ref:`channels <contact>` to the best of our ability.
 
 Can I use the Embassy from behind a VPN, for example, if my router has a built-in VPN?
