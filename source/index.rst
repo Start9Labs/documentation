@@ -28,6 +28,7 @@ Here you will find guidance and information about the Start9 Embassy personal se
   :caption: Misc Guides
 
   misc-guides/available-services
+  misc-guides/bitcoin-cli
   misc-guides/tor-os/index
   misc-guides/tor-firefox/index
 
@@ -42,6 +43,6 @@ Here you will find guidance and information about the Start9 Embassy personal se
   :maxdepth: 2
   :caption: Support
 
-  support/faq
+  support/FAQ/index
   support/concepts
   support/contact
