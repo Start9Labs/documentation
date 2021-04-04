@@ -16,7 +16,7 @@ Yes, but there is currently no way to synchronize or federate them.  We are work
 
 What if I forget my Embassy password?
 -------------------------------------
-Check out the `docs < https://docs.start9labs.com/user-manual/general/forgot-password.html>` on forgot password, and let us know if you have any additional questions.  All your services and data will remain.
+Check out the `docs <https://docs.start9labs.com/user-manual/general/forgot-password.html>`_ on forgot password, and let us know if you have any additional questions.  All your services and data will remain.
 
 Can I move my Embassy to another location?  What happens when I do this?
 ------------------------------------------------------------------------
