@@ -40,6 +40,14 @@ Is the embassy able to connect to Sphinxchat?
 ---------------------------------------------
 Maybe, but we are also planning to add Sphinxchat to the Embassy directly.
 
+I get an error ("Unlock Wallet Failed") when trying to log in to RTL, what can I do?
+------------------------------------------------------------------------------------
+Stop and Restart the Service.
+
+What is happening if I cannot connect with another user on Mastodon?
+--------------------------------------------------------------------
+You can only follow someone who has an account on a Mastodon server that supports Tor. It is a new feature, so many instances do not have it yet.
+
 Can the browser extension be used with Bitwarden hosted on the embassy?
 -----------------------------------------------------------------------
 Yes, but only in a tor-enabled browser.  Just add your .onion address as the server in the extension.
