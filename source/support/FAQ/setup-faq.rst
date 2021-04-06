@@ -20,10 +20,10 @@ Because a major use case of Bonjour is wireless printing over the LAN, but your 
 
 My Tor sites aren't loading, what should I do?
 ----------------------------------------------
-This is most likely a transient networking issue that will correct itself in a few minutes to an hour. If it does not, there are few things you can try: 
+This is most likely a transient networking issue that will correct itself in a few minutes to an hour. If it does not, there are few things you can try:
 
 1. On Android/Orbot, the most common solution is to restart your Android device.
- 
+
 2. Access your Embassy over :ref:`LAN <ssl-setup>` and restart it from the "Embassy" menu.
 
 3. Restart your router.
@@ -37,3 +37,7 @@ Can I use the Embassy from behind a VPN, for example, if my router has a built-i
 While this is possible, it adds complexity, which may lead to problems.  You will need to understand the setup of your router/VPN and how it supports (or doesn't support) tor connections.
 
 If you are having trouble with this, you might consider letting the Embassy out "in the clear," since everything is broadcast exclusively across the Tor network, offering a high level of privacy.
+
+Why am I having trouble using my Embassy via the Brave browser?
+---------------------------------------------------------------
+Unfortunately, Brave does not treat .onion addresses in a 'secure context.'  This is a known issue in Brave that is being tracked `here <https://github.com/brave/brave-browser/issues/13834>`_.

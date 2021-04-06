@@ -40,9 +40,21 @@ Is the embassy able to connect to Sphinxchat?
 ---------------------------------------------
 Maybe, but we are also planning to add Sphinxchat to the Embassy directly.
 
+I get an error ("Unlock Wallet Failed") when trying to log in to RTL, what can I do?
+------------------------------------------------------------------------------------
+Stop and Restart the Service.
+
+What is happening if I cannot connect with another user on Mastodon?
+--------------------------------------------------------------------
+You can only follow someone who has an account on a Mastodon server that supports Tor. It is a new feature, so many instances do not have it yet.
+
 Can the browser extension be used with Bitwarden hosted on the embassy?
 -----------------------------------------------------------------------
 Yes, but only in a tor-enabled browser.  Just add your .onion address as the server in the extension.
+
+I heard I can connect Specter Wallet to my Embassy; is there a guide for that?
+------------------------------------------------------------------------------
+There is.  Please look `here <https://github.com/Start9Labs/bitcoind-wrapper/tree/master/docs/integrations/specter>`_ and select based on your operating system.
 
 I don't see an answer to my question regarding a certain service.  Is there more documentation?
 -----------------------------------------------------------------------------------------------
