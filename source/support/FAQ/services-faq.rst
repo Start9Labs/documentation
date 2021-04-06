@@ -52,6 +52,10 @@ Can the browser extension be used with Bitwarden hosted on the embassy?
 -----------------------------------------------------------------------
 Yes, but only in a tor-enabled browser.  Just add your .onion address as the server in the extension.
 
+I heard I can connect Specter Wallet to my Embassy; is there a guide for that?
+------------------------------------------------------------------------------
+There is.  Please look `here <https://github.com/Start9Labs/bitcoind-wrapper/tree/master/docs/integrations/specter>`_ and select based on your operating system.
+
 I don't see an answer to my question regarding a certain service.  Is there more documentation?
 -----------------------------------------------------------------------------------------------
 While we are intent on providing the most friendly experience possible to our customers, ultimately it will be impossible for Start9 to create documentation and tutorials for every service we make available on the Embassy.  Each service *should* have its own documentation produced by the service developers themselves, and we will do our best keep track, consolidate, and link to it.  Also, much of the reason good tutorials don't exist is simply because no one in the community has taken the time to produce it.  If you come across something useful or write something up yourself, please let us know and we will promote it.  Otherwise we will do our best to answer questions as they arise and gradually build out tutorials where they are lacking.
