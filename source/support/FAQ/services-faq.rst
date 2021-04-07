@@ -21,6 +21,16 @@ We are looking into adding as a Wireguard service for VPN access when you are no
 Can the Embassy run 'X' Service??
 ---------------------------------
 Potentially.  `Here <https://github.com/awesome-selfhosted/awesome-selfhosted>`_ is a comprehensive list of self-hosted services, any of which can theoretically make it to the Embassy one day.
+To get a general idea of what is required of an app, answer these questions:
+    
+    1. Is it designed to be self-hosted?
+    2. Can it run on a Raspberry Pi?
+    3. If it has a P2P interface, does that interface support Tor?
+    4. Does it ship with it's own web interface? Or is there a Tor-enabled client app?
+    5. Is there someone willing to put in the time to package it up?
+
+If all answers are yes, then it can run on EmbassyOS.
+
 If you are interested in packaging a service up for the Embassy, which does not require extensive development skills, please see our guide :ref:`here <service_package_overview>`.
 We are aggressively moving away from service development in favor of a more community driven approach. Meaning you, an app development team, or anyone else on Earth, can bring the Service they want to the Embassy Marketplace. You don't need our permission.
 
