@@ -90,6 +90,10 @@ Are my addresses, channels, and balances all stored in LND or in RTL?
 ---------------------------------------------------------------------
 This is all on LND, and RTL is just a GUI for accessing LND.  On-chain balance is also part of the LND backup.
 
+How do I find my LND seed so I can write it down to backup?
+-----------------------------------------------------------
+We only support backups via the Embassy backup flow.  While it is technically possible to get the LND seed from your box, it is very difficult and we have no documentation for this.  Everything is backed up by our backup system and so you do not need your seed.  The seed is ONLY for the onchain wallet and does not backup your channel state, which is why we do not support it.
+
 Is there a way to use the channel backups made within RTL?
 ----------------------------------------------------------
 The only backup flow we officially support is through the Embassy backup system. This does include the channel backups created automatically by LND, but it must be understood that backups in Lightning are very different than they are on Layer 1 Bitcoin. If you restore from backup all your channels will close, and there is a potential, albeit small, probability for you to lose funds.
