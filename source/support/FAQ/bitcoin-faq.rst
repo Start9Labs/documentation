@@ -92,7 +92,11 @@ This is all on LND, and RTL is just a GUI for accessing LND.  On-chain balance i
 
 How do I find my LND seed so I can write it down to backup?
 -----------------------------------------------------------
-We only support backups via the Embassy backup flow.  While it is technically possible to get the LND seed from your box, it is very difficult and we have no documentation for this.  Everything is backed up by our backup system and so you do not need your seed.  The seed is ONLY for the onchain wallet and does not backup your channel state, which is why we do not support it.
+All LND backups are best done via the Embassy backup flow.  It is not supported to use a seed as backup; LND does not expose this.  Everything is backed up by our backup system and so you do not need your seed.  The seed is ONLY for the onchain wallet and does not backup your channel state.  
+
+To clarify some of the reasons for this choice:
+
+First off, Lightning is fundamentally different than on-chain/Layer1 bitcoin. There is no way to compress all of that information down into a single 24 word seed in such a way that it will continue to work throughout your usage of the Lightning Network.  So that yields the question: what is the LND seed *for*? In short, the seed is only used for the Layer1 portion of the funds you have locked up in LND. Due to the live nature of LND and lightning nodes more generally, we generally discourage keeping any significant amount of money in the onchain portion of your wallet. Further, given that we cannot actually recover the L2 funds with that seed, we needed to have a more holistic way to backup  LND funds such that the backup would encompass the ability to get L2 funds back. The Embassy backup system does this, and this approach also happens to be a perfectly good backup of your L1 funds as well. While Bitcoin users have been trained that the 24 word seed can be used to recover all of their funds, it is important to state that lightning does not and cannot work this way. Exposing the seed gives you two separate things to keep track of in order to recover your funds instead of just one.
 
 Is there a way to use the channel backups made within RTL?
 ----------------------------------------------------------
