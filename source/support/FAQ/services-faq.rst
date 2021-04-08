@@ -34,8 +34,8 @@ If all answers are yes, then it can run on EmbassyOS.
 If you are interested in packaging a service up for the Embassy, which does not require extensive development skills, please see our guide :ref:`here <service_package_overview>`.
 We are aggressively moving away from service development in favor of a more community driven approach. Meaning you, an app development team, or anyone else on Earth, can bring the Service they want to the Embassy Marketplace. You don't need our permission.
 
-Is the Embassy a Tor relay node?
---------------------------------
+Does the Embassy operate as a Tor relay node?
+---------------------------------------------
 No, currently it is not, but we plan to add that functionality in the future.
 
 Are files on File browser encrypted on disk?
