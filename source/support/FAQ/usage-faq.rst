@@ -48,6 +48,10 @@ Can I have multiple users on my Embassy?
 ----------------------------------------
 Currently, the Embassy itself is designed to for a single user. There is no way to grant others access to your Embassy without sharing your personal, master password, which is not recommended. There are certain services, however, such as Bitwarden, File Browser, and Mastodon, that absolutely support multiple users (aka multi-tenancy, aka uncle Jim model) where people who trust you can create their own, personal accounts for these services on your Embassy. Just remind them that they are trusting you with their data, and that it might be preferable for them to take the final leap of self-sovereignty and get an Embassy of their own.
 
+Do I need to delete existing backups before doing a new backup? Or does a new backup override the old backup?
+-------------------------------------------------------------------------------------------------------------
+No, you don’t need to delete the old backups. The tech we use updates the existing backup.
+
 Why would I even buy this when I can just build it for free??
 -------------------------------------------------------------
 (1) White glove support. Because each Embassy comes with a unique product key engraved on it, and we have a record of all product keys ever, we can ask the user to verify their product key in order to receive a higher tier of support, such as phone calls.
