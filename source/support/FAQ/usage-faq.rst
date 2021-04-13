@@ -50,7 +50,7 @@ Currently, the Embassy itself is designed to for a single user. There is no way 
 
 Do I need to delete existing backups before doing a new backup? Or does a new backup override the old backup?
 -------------------------------------------------------------------------------------------------------------
-No, you don’t need to delete the old backups. The tech we use updates the existing backup.
+No, you don’t need to delete the old backups. The technology we use updates the existing backup.
 
 Why would I even buy this when I can just build it for free??
 -------------------------------------------------------------
