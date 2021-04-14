@@ -24,6 +24,8 @@ pip3 install sphinx-book-theme || pip install git+https://github.com/executableb
 
 Run: `sphinx-autobuild source build/html` to activate a live-reload environment on `localhost:8000`.
 
+To run in development mode when actively changing js/css files run: `sphinx-autobuild source build/html source/_static/js/main.js source/_static/default.css`. this will auto-load with changes to noted files.
+
 The main configuration file for this project is located at `./source/conf.py`.
 
 The navigation structure is aligned with the folder/file organization under `./source/`. This is where the individual page `.rst` files live and can be edited.
