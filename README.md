@@ -47,3 +47,12 @@ Click on the "Pull requests" tab in the top navbar. Select the green "New pull r
 ## Helpful Resources
 
 - [Lists in RST](https://sublime-and-sphinx-guide.readthedocs.io/en/latest/lists.html)
+
+## Updating theme
+
+To update Sphinx Book Theme:
+- `pip uninstall sphinx-book-theme` (needed to properly propagate new changes for some undetermined reason)
+- `pip install sphinx-book-theme==<tag_version>` || `pip install git+https://github.com/executablebooks/sphinx-book-theme.git@<branch_name>` eg. `pip install sphinx-book-theme==0.0.42`
+
+To deploy theme update:
+- Build and publish according to production release process
