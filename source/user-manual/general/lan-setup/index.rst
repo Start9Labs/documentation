@@ -11,5 +11,5 @@ The guides below will walk you through the steps to install and trust your Embas
 .. toctree::
   :maxdepth: 2
 
-  desktop
-  mobile
+  Desktop<desktop>
+  Mobile<mobile>
