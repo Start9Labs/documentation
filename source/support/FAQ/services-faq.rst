@@ -20,12 +20,23 @@ We are looking into adding as a Wireguard service for VPN access when you are no
 
 Can the Embassy run 'X' Service??
 ---------------------------------
-Potentially.  `Here <https://github.com/awesome-selfhosted/awesome-selfhosted>`_ is a comprehensive list of self-hosted services, any of which can theoretically make it to the Embassy one day.
-If you are interested in packaging a service up for the Embassy, which does not require extensive development skills, please see our guide :ref:`here <service_package_overview>`.
+Potentially. Here is a `comprehensive list <https://github.com/awesome-selfhosted/awesome-selfhosted>`_ of self-hosted services, any of which can theoretically be run on the Embassy.
+To get a general idea of what is required of an app, answer these questions:
+
+    1. Is it designed to be self-hosted?
+    2. Can it run on a Raspberry Pi?
+    3. If it has a P2P interface, does that interface support Tor?
+    4. Does it ship with it's own web interface? Or is there a Tor-enabled client app?
+    5. Is there someone willing to put in the time to package it up?
+
+If all answers are yes, then it can run on EmbassyOS.
+
+Packing up a service for the Embassy does not require extensive development skills. If you are interested in doing do, please see our service packaging guide :ref:`here <service_package_overview>`.
+
 We are aggressively moving away from service development in favor of a more community driven approach. Meaning you, an app development team, or anyone else on Earth, can bring the Service they want to the Embassy Marketplace. You don't need our permission.
 
-Is the Embassy a Tor relay node?
---------------------------------
+Does the Embassy operate as a Tor relay node?
+---------------------------------------------
 No, currently it is not, but we plan to add that functionality in the future.
 
 Are files on File browser encrypted on disk?
@@ -54,7 +65,7 @@ Yes, but only in a tor-enabled browser.  Just add your .onion address as the ser
 
 I heard I can connect Specter Wallet to my Embassy; is there a guide for that?
 ------------------------------------------------------------------------------
-There is.  Please look `here <https://github.com/Start9Labs/bitcoind-wrapper/tree/master/docs/integrations/specter>`_ and select based on your operating system.
+There is.  Please follow the integration guide `here <https://github.com/Start9Labs/bitcoind-wrapper/tree/master/docs/integrations/specter>`_ and select the tutorial based on your operating system.
 
 I don't see an answer to my question regarding a certain service.  Is there more documentation?
 -----------------------------------------------------------------------------------------------
@@ -62,8 +73,10 @@ While we are intent on providing the most friendly experience possible to our cu
 
 I want to understand in depth how a Service works and it's available configuration options.  Where can I go to learn more?
 --------------------------------------------------------------------------------------------------------------------------
-Depending on the app, the config options can be quite involved. Bitcoin Core, for example, has an enormous amount of complex options, almost none of which are useful to a normal user doing normal things. We chose some very sane defaults that should work for normal use cases. Here is an example config from the Bitcoin `GitHub <https://github.com/bitcoin/bitcoin/blob/master/share/examples/bitcoin.conf>`.
+Depending on the app, the config options can be quite involved. Bitcoin Core, for example, has an enormous amount of complex options, almost none of which are useful to a normal user doing normal things. We chose some very sane defaults that should work for normal use cases. Here is an example config from the Bitcoin `GitHub <https://github.com/bitcoin/bitcoin/blob/master/share/examples/bitcoin.conf>`_.
 
 By reading the descriptions in the link above, as well as doing some extra searching on your favorite search engine, you can begin to discover all the crazy ways in which someone can customize their Bitcoin node. Here is another list of `possible options <https://en.bitcoinwiki.org/wiki/Running_Bitcoind>`_.
 
 We translated much of (but not all of) the tons of options into a clean and easy-to-use GUI with toggles, dropdowns, inputs, etc, which is what you're seeing in your config screen. If you notice the little "?" icons on the left of each option, clicking them will provide a brief description as to what the option does. Also, our config GUI restricts the possible values you can enter such that you don't accidentally crash Bitcoin. That said, be very careful about just randomly changing things, lest your node starts to behave strangely.
+
+You can also check out our :ref:`Service Config Spec <service_config>` documentation for further details.
