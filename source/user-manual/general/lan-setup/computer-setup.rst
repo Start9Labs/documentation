@@ -1,5 +1,7 @@
-Operating System Config
-=======================
+.. _computer-setup:
+
+Computer Setup
+==============
 
 MacOS
 -----
@@ -62,7 +64,7 @@ MacOS
 
     Trusted Embassy Local CA certificate
 
-#. Open to your favorite browser to import this certificate and follow the steps for :ref:`supported browsers <browsers>`.
+#. Open to your favorite browser to import this certificate and follow the steps for :ref:`browser setup <browser-setup>`.
 
 Windows
 -------
@@ -71,7 +73,7 @@ Windows
 #. If you are having issues running Bonjour after installing, you might have had Bonjour previously installed. To fix:
 
    #. Check out this video: https://www.youtube.com/watch?v=9ECCB3bqNDQ
-   #. UNinstall Bonjour completely via ``system settings -> remove programs``
+   #. Uninstall Bonjour completely via ``system settings -> remove programs``
    #. Reinstall Bonjour Printer Driver package (download at https://support.apple.com/kb/DL999?locale=en_US)
    #. Restart Windows
    #. Note: Uninstalling Bonjour via the setup package seems to be not enough to solve the issue. Bonjour must be uninstalled via windows system settings.
@@ -176,10 +178,10 @@ Windows
 
 #. You can save the settings to the console if desired or cancel.
 
-#. Open to your favorite browser to import this certificate and follow the steps for :ref:`supported browsers <browsers>`.
+#. Open to your favorite browser to import this certificate and follow the steps for :ref:`browser setup <browser-setup>`.
 
 
 Linux
 -----
 
-Nothing specific needs to be configured for this environment. Follow the guides below to import the certificate into your desired browser.
+Nothing specific needs to be configured for this environment. Open to your favorite browser to import this certificate and follow the steps for :ref:`browser setup <browser-setup>`.
