@@ -1,7 +1,6 @@
 body, p, h1, h2, h3, h4, nav, .topbar, .topbar-main, .tocsection, .form-control, .bd-toc, .bd-sidebar {
     background-color: #2b2b2b!important;
     color: #f8f8ff!important;
-    /* font-family: Lato,sans-serif!important; */
     line-height: 1.65;
 }
 
@@ -192,8 +191,4 @@ nav.bd-links > ul.nav {
 
 .navbar-brand-box {
     text-align: center;
-}
-
-.above {
-    margin-top: -1000px!important;
 }
