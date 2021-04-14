@@ -12,7 +12,7 @@ Running Tor on Windows
 
     Download Tor for Windows
 
-#. Once it is downloaded, go ahead and run the installer. If you want to install the program outside of your user directory, you will have to right click and select `Run as Administrator`. 
+#. Once it is downloaded, go ahead and run the installer. If you want to install the program outside of your user directory, you will have to right click and select `Run as Administrator`.
 
 #. Once you have selected a language, you should see a menu like this:
 
@@ -43,4 +43,4 @@ Running Tor on Windows
 
     Replace highlighted section with noted destination folder
 
-#. That's it! Your Windows computer is now setup to natively use Tor. 
+#. That's it! Your Windows computer is now setup to natively use Tor.

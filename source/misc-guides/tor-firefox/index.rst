@@ -10,9 +10,7 @@ Configuring Firefox for Tor
 Once you have completed the above guide, select your device's operating system below:
 
 .. toctree::
-  :maxdepth: 1
+  :maxdepth: 2
 
-  MacOS <mac>
-  Windows <windows>
-  Linux <linux>
-  Android <android>
+  Desktop<desktop>
+  Mobile<mobile>

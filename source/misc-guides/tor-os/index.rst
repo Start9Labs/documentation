@@ -15,3 +15,4 @@ Select your operating system to get started:
   Windows<windows>
   Linux<linux>
   Android<android>
+  iOS<ios>
