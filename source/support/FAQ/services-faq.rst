@@ -20,7 +20,7 @@ We are looking into adding as a Wireguard service for VPN access when you are no
 
 Can the Embassy run 'X' Service??
 ---------------------------------
-Potentially.  `Here <https://github.com/awesome-selfhosted/awesome-selfhosted>`_ is a comprehensive list of self-hosted services, any of which can theoretically make it to the Embassy one day.
+Potentially. Here is a `comprehensive list <https://github.com/awesome-selfhosted/awesome-selfhosted>`_ of self-hosted services, any of which can theoretically be run on the Embassy.
 To get a general idea of what is required of an app, answer these questions:
 
     1. Is it designed to be self-hosted?
@@ -31,7 +31,8 @@ To get a general idea of what is required of an app, answer these questions:
 
 If all answers are yes, then it can run on EmbassyOS.
 
-If you are interested in packaging a service up for the Embassy, which does not require extensive development skills, please see our guide :ref:`here <service_package_overview>`.
+Packing up a service for the Embassy does not require extensive development skills. If you are interested in doing do, please see our service packaging guide :ref:`here <service_package_overview>`.
+
 We are aggressively moving away from service development in favor of a more community driven approach. Meaning you, an app development team, or anyone else on Earth, can bring the Service they want to the Embassy Marketplace. You don't need our permission.
 
 Does the Embassy operate as a Tor relay node?
@@ -64,7 +65,7 @@ Yes, but only in a tor-enabled browser.  Just add your .onion address as the ser
 
 I heard I can connect Specter Wallet to my Embassy; is there a guide for that?
 ------------------------------------------------------------------------------
-There is.  Please look `here <https://github.com/Start9Labs/bitcoind-wrapper/tree/master/docs/integrations/specter>`_ and select based on your operating system.
+There is.  Please follow the integration guide `here <https://github.com/Start9Labs/bitcoind-wrapper/tree/master/docs/integrations/specter>`_ and select the tutorial based on your operating system.
 
 I don't see an answer to my question regarding a certain service.  Is there more documentation?
 -----------------------------------------------------------------------------------------------
