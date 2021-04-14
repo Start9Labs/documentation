@@ -22,7 +22,7 @@ Can the Embassy run 'X' Service??
 ---------------------------------
 Potentially.  `Here <https://github.com/awesome-selfhosted/awesome-selfhosted>`_ is a comprehensive list of self-hosted services, any of which can theoretically make it to the Embassy one day.
 To get a general idea of what is required of an app, answer these questions:
-    
+
     1. Is it designed to be self-hosted?
     2. Can it run on a Raspberry Pi?
     3. If it has a P2P interface, does that interface support Tor?
@@ -77,3 +77,5 @@ Depending on the app, the config options can be quite involved. Bitcoin Core, fo
 By reading the descriptions in the link above, as well as doing some extra searching on your favorite search engine, you can begin to discover all the crazy ways in which someone can customize their Bitcoin node. Here is another list of `possible options <https://en.bitcoinwiki.org/wiki/Running_Bitcoind>`_.
 
 We translated much of (but not all of) the tons of options into a clean and easy-to-use GUI with toggles, dropdowns, inputs, etc, which is what you're seeing in your config screen. If you notice the little "?" icons on the left of each option, clicking them will provide a brief description as to what the option does. Also, our config GUI restricts the possible values you can enter such that you don't accidentally crash Bitcoin. That said, be very careful about just randomly changing things, lest your node starts to behave strangely.
+
+You can also check out our :ref:`Service Config Spec <service_config>` documentation for further details.
