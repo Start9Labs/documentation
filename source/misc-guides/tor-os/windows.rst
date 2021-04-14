@@ -32,7 +32,7 @@ Running Tor on Windows
 
    .. code-block::
 
-    sc create tor start=auto binPath="<PATH TO>\Tor Browser\Browser\TorBrowser\Tor\tor.exe -nt-service"
+    sc create tor start=auto binPath="<PATH TO>\Browser\TorBrowser\Tor\tor.exe -nt-service"
     sc start tor
 
 #. When you run this, it should look something like this:
