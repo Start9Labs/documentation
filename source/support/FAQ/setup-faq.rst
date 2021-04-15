@@ -28,6 +28,10 @@ This is most likely a transient networking issue that will correct itself in a f
 
 3. Restart your router.
 
+Do I need to take any additional security precautions with my device, for example with my router/modem?
+-------------------------------------------------------------------------------------------------------
+Nothing special is required, however, it is best practice to use good passwords, i.e. for your WiFi and your Embassy.  Here's a `comic <https://xkcd.com/936/>`_ explaining how to make strong passwords, simply.
+
 What if I have an unique network issue, for example, with a firewall?
 ---------------------------------------------------------------------
 The Embassy is designed to work as simply as possible, for as many as possible, while providing the ability to self-host in a private manner.  If you have an agressive or custom firewall, or other custom network settings, there is a good chance that addtional configuration may be necessary.  We will continue to learn about custom networking issues, update our docs with resources, and help in the community :ref:`channels <contact>` to the best of our ability.

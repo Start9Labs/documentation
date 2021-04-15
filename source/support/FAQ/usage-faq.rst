@@ -52,6 +52,12 @@ Do I need to delete existing backups before doing a new backup? Or does a new ba
 -------------------------------------------------------------------------------------------------------------
 No, you don’t need to delete the old backups. The technology we use updates the existing backup.
 
+Can I clone my Embassy SD card for backup purposes?
+---------------------------------------------------
+Warning: **DO NOT do this if you are running LND or c-lightning**. If you clone the SD card, then go back to running LND or c-lightning, and you *ever* try to restore the SD card, there is a good chance you will lose *all your channel funds*. Also, if you try to use the SD card for a 2nd Embassy, that will also result in loss of funds. This has nothing to do with Start9 or the Embassy; it is inherent to the architecture of Lightning.
+
+If you are not running LND or c-lightning, then *yes*, it is possible to do a deep clone of the SD card as a backup. But even here, there are some considerations: Start9 does not test/support this officially, which means it is untested. Also, it may take a while to do a deep clone of the card since the ones we ship are 128GB and there isn't a really effective way to clone the Embassy card that isn't a byte-for-byte copy. However, if you do a byte for byte copy (128GB), and run `PiShrink <https://github.com/Drewsif/PiShrink>`_ you could flash that image file onto a new card and restore all of your data.
+
 Why would I even buy this when I can just build it for free??
 -------------------------------------------------------------
 (1) White glove support. Because each Embassy comes with a unique product key engraved on it, and we have a record of all product keys ever, we can ask the user to verify their product key in order to receive a higher tier of support, such as phone calls.

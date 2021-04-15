@@ -1,15 +1,26 @@
-.. _browsers:
+.. _browser-setup:
 
-*******
-Browser
-*******
+Browser Setup
+=============
 
-.. warning:: Make sure you have completed setup on your :ref:`device <ssl-setup>` before continuing!
+.. warning:: Make sure you have completed your :ref:`computer setup <computer-setup>` before continuing!
+
+Select the browser you would like to configure to import the certificate from your desktop:
+
+.. .. toctree::
+..   :hidden:
+
+..   browser
+
+- :ref:`Brave <brave>`
+- :ref:`Chrome <chrome>`
+- :ref:`Firefox <firefox>`
+- :ref:`Safari <safari>`
 
 .. _brave:
 
 Brave
-=====
+-----
 
 #. Navigate to your Brave Settings in a new tab.
 
@@ -38,7 +49,7 @@ Brave
 .. _chrome:
 
 Chrome
-======
+------
 
 #. Once you have followed the steps to setup your device, open a new tab to apply the certificate. If this does not work, quit and restart Chrome.
 
@@ -49,7 +60,7 @@ Chrome
 .. _firefox:
 
 Firefox
-========
+-------
 
 #. Navigate to your Firefox Settings in a new tab.
 
@@ -88,6 +99,6 @@ Firefox
 .. _safari:
 
 Safari
-======
+------
 
 Once you have completed the steps to install a SSL certificate on your device, simply open a new tab to apply the changes. If this does not work, quit and restart Safari. You can now securely navigate to the LAN address for your Embassy!
