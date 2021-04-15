@@ -64,7 +64,7 @@ MacOS
 
     Trusted Embassy Local CA certificate
 
-#. Open to your favorite browser to import this certificate and follow the steps for :ref:`browser setup <browser-setup>`.
+#. Open your favorite browser to import this certificate and follow the steps for :ref:`browser setup <browser-setup>`.
 
 Windows
 -------
@@ -178,10 +178,10 @@ Windows
 
 #. You can save the settings to the console if desired or cancel.
 
-#. Open to your favorite browser to import this certificate and follow the steps for :ref:`browser setup <browser-setup>`.
+#. Open your favorite browser to import this certificate and follow the steps for :ref:`browser setup <browser-setup>`.
 
 
 Linux
 -----
 
-Nothing specific needs to be configured for this environment. Open to your favorite browser to import this certificate and follow the steps for :ref:`browser setup <browser-setup>`.
+Nothing specific needs to be configured for this environment. Open your favorite browser to import this certificate and follow the steps for :ref:`browser setup <browser-setup>`.
