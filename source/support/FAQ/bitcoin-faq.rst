@@ -46,8 +46,8 @@ The commitment fees are automatically negotiated every few blocks with your peer
 
 What would happen if I shut down an Embassy that is running a Lightning node with open channels?
 ------------------------------------------------------------------------------------------------
-It is REALLY IMPORTANT that people understand that if they shut off their Lightning services for long periods of time (days on end) it is possible for your peers to cheat you out of money. If you are not prepared to LOSE ALL THE MONEY IN YOUR CHANNELS, KEEP YOUR NODE RUNNING.
-That said, malicious actors on the network right now are probably sparse, however you are still open to that risk if you do not keep your node online.
+It is REALLY IMPORTANT to understand that if Lightning services are shut off for long periods of time (days on end) it is possible for your peers to cheat you out of money. If you are not prepared to LOSE ALL THE MONEY IN YOUR CHANNELS, KEEP YOUR NODE RUNNING.
+That said, malicious actors on the network right now are probably sparse.  However, you are still open to that risk if you do not keep your node online.
 
 Is there a solution to this?
 ----------------------------
@@ -70,8 +70,8 @@ Bitcoin Wallet Tracker and Electrum Personal Server are 2 services that do the s
 Both work with your Bitcoin node to provide a richer set of information to wallets than could be done with bitcoind alone.  They are basically identical in purpose, their differences are notably in the software memory requirements and how snappily they can answer the same questions.
 Electrum (and some other wallets) require more than just a Bitcoin node to run in a sovereign way, they require an “Electrum Server”. Both Electrum Personal Server and Bitcoin Wallet Tracker are “Electrum servers”.
 
-I want to use my hardware signer, such as Coldcard or Trezor with my Embassy.  How does this work?
---------------------------------------------------------------------------------------------------
+I want to use my hardware signer, such as Coldcard or Trezor, with my Embassy.  How does this work?
+---------------------------------------------------------------------------------------------------
 You do not use hardware signers directly with your node. Hardware signers interface with wallets, and wallets interface with nodes.
 
 Node (Embassy) <— Wallet (Specter, Sparrow, Electrum) <— Hardware signer (Coldcard, Trezor)
@@ -91,6 +91,12 @@ Please note: of the wallets listed (Specter/Sparrow/Electrum), only Specter is c
 Which wallets can I use that sync with my Embassy Bitcoin node?
 ---------------------------------------------------------------
 There are many wallets that support linking to your own full node.  You will need one that supports tor.  Here are a few options that are compatible: FullyNoded, Samourai, Specter, Wasabi, Zap, and Zeus.
+
+Is there a guide for connecting Specter Wallet to my Embassy?
+-------------------------------------------------------------
+There is.  Please follow the integration guide `here <https://github.com/Start9Labs/bitcoind-wrapper/tree/master/docs/integrations/specter>`_ and select the tutorial based on your operating system.
+
+More guides, particularly in video form, are forthcoming.
 
 Is BlueWallet an option?
 ------------------------

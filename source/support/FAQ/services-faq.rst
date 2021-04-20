@@ -49,7 +49,7 @@ Cups does not have multiple accounts support. Each person would need their own E
 
 Is the embassy able to connect to Sphinxchat?
 ---------------------------------------------
-Maybe, but we are also planning to add Sphinxchat to the Embassy directly.
+We have added Sphinx as an Embassy service.  Please see the announcement `here <https://start9labs.medium.com/new-service-sphinx-chat-2cd4f40d3f05>`_ and check the Marketplace to start using Sphinx!
 
 I get an error ("Unlock Wallet Failed") when trying to log in to RTL, what can I do?
 ------------------------------------------------------------------------------------
@@ -62,10 +62,6 @@ You can only follow someone who has an account on a Mastodon server that support
 Can the browser extension be used with Bitwarden hosted on the embassy?
 -----------------------------------------------------------------------
 Yes, but only in a tor-enabled browser.  Just add your .onion address as the server in the extension.
-
-I heard I can connect Specter Wallet to my Embassy; is there a guide for that?
-------------------------------------------------------------------------------
-There is.  Please follow the integration guide `here <https://github.com/Start9Labs/bitcoind-wrapper/tree/master/docs/integrations/specter>`_ and select the tutorial based on your operating system.
 
 I don't see an answer to my question regarding a certain service.  Is there more documentation?
 -----------------------------------------------------------------------------------------------
