@@ -1,9 +1,21 @@
-.. _browsers:
+.. _browser-setup:
 
-Browser Config
-==============
+Browser Setup
+=============
 
-.. warning:: Make sure you have completed setup on your :ref:`device <ssl-setup>` before continuing!
+.. warning:: Make sure you have completed your :ref:`computer setup <computer-setup>` before continuing!
+
+Select the browser you would like to configure to import the certificate from your desktop:
+
+.. .. toctree::
+..   :hidden:
+
+..   browser
+
+- :ref:`Brave <brave>`
+- :ref:`Chrome <chrome>`
+- :ref:`Firefox <firefox>`
+- :ref:`Safari <safari>`
 
 Select the browser you would like to configure to import the certificate from your desktop:
 

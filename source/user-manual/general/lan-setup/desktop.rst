@@ -2,8 +2,10 @@
 Desktop
 *******
 
+Enabling LAN connectivity for desktop involves configuring both your computer and your browser.
+
 .. toctree::
   :maxdepth: 1
 
-  OS Config<os-config>
-  Browser Config<browser>
+  Computer Setup<computer-setup>
+  Browser Setup<browser-setup>

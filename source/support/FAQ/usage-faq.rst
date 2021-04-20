@@ -54,15 +54,9 @@ No, you don’t need to delete the old backups. The technology we use updates th
 
 Can I clone my Embassy SD card for backup purposes?
 ---------------------------------------------------
-It is absolutely possible to do a deep clone of the card as a backup if you wish to do so, but there are some considerations when it comes to this. First off, we don't test/support that officially; it doesn't get nearly the same level of attention that the backups feature *within* the Embassy does. Secondly, it may take a while to do a deep clone of the card since the ones we ship are 128GB and there isn't a really effective way to clone the Embassy card that isn't a byte-for-byte copy. However, if you do a byte for byte copy (128GB), and run pishrink you could flash that image file onto a new card and restore all of your data.
+Warning: **DO NOT do this if you are running LND or c-lightning**. If you clone the SD card, then go back to running LND or c-lightning, and you *ever* try to restore the SD card, there is a good chance you will lose *all your channel funds*. Also, if you try to use the SD card for a 2nd Embassy, that will also result in loss of funds. This has nothing to do with Start9 or the Embassy; it is inherent to the architecture of Lightning.
 
-Another thing that must be mentioned, depending on what services you are running, if you are going outside of the Embassy backup flow you should be deeply aware of the implications of restoring backups. For instance, with LND it is *dangerous* to have multiple instances of the same LND node running at once because it can cause your channel funds to be completely lost. So while it would be safe for LND to restore the SD card if the original copy was completely offline, you should be aware that if it isn't offline you can lose all of that money.
-
-This is not just if you run two embassies. It can also happen if you conduct any lightning activity including letting the commitment fees update. The embassy backup system informs each service when it has been restored through the backup flow so that each service can respond appropriately how it sees fit. At the moment LND and c-lightning both respond to this by deleting their dangerous state. If you restore with a deep clone of the sd, this information is not included and so LND/c-lightning will unwittingly expose themselves to channel fund loss.
-
-And to be crystal clear, commitment fees update without user action.
-
-So all in all, if you are running lightning, we strongly advise that you DO NOT DO THIS.
+If you are not running LND or c-lightning, then *yes*, it is possible to do a deep clone of the SD card as a backup. But even here, there are some considerations: Start9 does not test/support this officially, which means it is untested. Also, it may take a while to do a deep clone of the card since the ones we ship are 128GB and there isn't a really effective way to clone the Embassy card that isn't a byte-for-byte copy. However, if you do a byte for byte copy (128GB), and run `PiShrink <https://github.com/Drewsif/PiShrink>`_ you could flash that image file onto a new card and restore all of your data.
 
 Why would I even buy this when I can just build it for free??
 -------------------------------------------------------------

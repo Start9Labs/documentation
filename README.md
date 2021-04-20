@@ -24,6 +24,8 @@ pip3 install sphinx-book-theme || pip install git+https://github.com/executableb
 
 Run: `sphinx-autobuild source build/html` to activate a live-reload environment on `localhost:8000`.
 
+To run in development mode when actively changing js/css files run: `sphinx-autobuild source build/html source/_static/js/main.js source/_static/default.css`. This will auto reload with changes to noted files.
+
 The main configuration file for this project is located at `./source/conf.py`.
 
 The navigation structure is aligned with the folder/file organization under `./source/`. This is where the individual page `.rst` files live and can be edited.
@@ -45,3 +47,12 @@ Click on the "Pull requests" tab in the top navbar. Select the green "New pull r
 ## Helpful Resources
 
 - [Lists in RST](https://sublime-and-sphinx-guide.readthedocs.io/en/latest/lists.html)
+
+## Updating theme
+
+To update Sphinx Book Theme:
+- `pip uninstall sphinx-book-theme` (needed to properly propagate new changes for some undetermined reason)
+- `pip install sphinx-book-theme==<tag_version>` || `pip install git+https://github.com/executablebooks/sphinx-book-theme.git@<branch_name>` eg. `pip install sphinx-book-theme==0.0.42`
+
+To deploy theme update:
+- Build and publish according to production release process

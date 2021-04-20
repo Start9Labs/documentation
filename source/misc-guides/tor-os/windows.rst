@@ -28,7 +28,7 @@ Running Tor on Windows
 
    * In Windows 10, you can simply type ``cmd`` in the Windows search bar, right click on the first result, and select `Run as Administrator`.
 
-#. Once it opens, you can run the following commands, inserting your destination folder in place of ``<PATH TO>``:
+#. Once it opens, you can run the following commands, inserting your destination folder (from above) in place of ``<PATH TO>``:
 
    .. code-block::
 

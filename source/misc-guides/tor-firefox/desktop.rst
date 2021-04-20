@@ -17,17 +17,17 @@ Setting up Firefox with Tor on Desktop
     :width: 80%
     :alt: Firefox whitelist onions screenshot
 
-4. Create a `Proxy Auto Config` file (advanced) or use our `standard one <https://registry.start9labs.com/sys/proxy.pac>`_ (recommended), using the OS-specific instructions below:
+4. Download a `Proxy Auto Config` file to inform Firefox how to use the Tor daemon running on your computer. You can get Start9's standard file by following the OS-specific instructions below:
 
-Windows
+Windows:
 
-Download a `Proxy Auto Config` file that will use the Tor service to resolve .onion urls. We have one hosted. Save it somewhere you won’t delete it. For this example:
+Click `here <https://registry.start9labs.com/sys/proxy.pac>`_ to get the file and save the file somewhere you won’t delete it. For this example:
 
     .. code-block::
 
       C:\Program Files\Tor Browser\proxy.pac
 
-Mac
+Mac:
 
 Open the `Terminal` App on your Mac. You can find it in your list of Applications.  In the terminal, enter:
 
@@ -41,7 +41,7 @@ Open the `Terminal` App on your Mac. You can find it in your list of Application
 
       wget -P /usr/local/etc/tor https://registry.start9labs.com/sys/proxy.pac
 
-Linux
+Linux:
 
 From a terminal, enter:
 

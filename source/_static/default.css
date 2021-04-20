@@ -1,6 +1,7 @@
-body, h1, h2, h3, h4, nav, .topbar, .topbar-main, .tocsection, .form-control, .bd-toc {
+body, p, h1, h2, h3, h4, nav, .topbar, .topbar-main, .tocsection, .form-control, .bd-toc, .bd-sidebar {
     background-color: #2b2b2b!important;
     color: #f8f8ff!important;
+    line-height: 1.65;
 }
 
 h1 {
