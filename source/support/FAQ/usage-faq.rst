@@ -26,24 +26,6 @@ What’s the advantage of using the .local address over the .onion address?
 -------------------------------------------------------------------------
 If you are in your home network it is both faster and more private since the connection never leaves your household.  The downside is that it won’t work if you’re on the go.
 
-Is the software Open Source?
-----------------------------
-Yes! EmbassyOS is open sourced under the `Start9 Personal Use License <https://start9labs.com/license>`_.  Some of our other projects are currently open sourced under MIT. You can find these in the Start9 Labs `GitHub repository <https://github.com/Start9Labs>`_.
-
-Is there a product warranty?
-----------------------------
-Yes! Start9 commits, to the best of our ability, to serving each beta Embassy product released until the wild. We will resolve any issue encountered with our provided hardware or software in a personalized matter.  We strive to provide highly available, quality customer service.
-
-Can you tell me about the License?
-----------------------------------
-EmbassyOS is published under our own Start9 Non-Commercial License, which has similar properties to many open source licenses with the exception that users cannot in any way, either through products or services, commercialize the source code, and any changes to the code or derivative works of the code are treated in the same manner. This means people will be welcome to access the source code, download it, use it, run it, fork it, change it, improve it - whatever they want - except sell it or sell services related to it.
-
-I run a business, can I use an Embassy for tasks such as password management and file sharing?
-----------------------------------------------------------------------------------------------
-Absolutely.  An Embassy would be a great addition to any business as it is easy to use and provides services that you control, with no subscription fees.
-
-With the addition of `BTCPay Server <https://btcpayserver.org/>`_, you can even run your own payment processor and accept cryptocurrency payments with no third party necessary!
-
 Can I have multiple users on my Embassy?
 ----------------------------------------
 Currently, the Embassy itself is designed to for a single user. There is no way to grant others access to your Embassy without sharing your personal, master password, which is not recommended. There are certain services, however, such as Bitwarden, File Browser, and Mastodon, that absolutely support multiple users (aka multi-tenancy, aka uncle Jim model) where people who trust you can create their own, personal accounts for these services on your Embassy. Just remind them that they are trusting you with their data, and that it might be preferable for them to take the final leap of self-sovereignty and get an Embassy of their own.

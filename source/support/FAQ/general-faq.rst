@@ -74,6 +74,24 @@ Is the power supply that comes with Embassy 220v compatible?
 ------------------------------------------------------------
 Yes.
 
+Is the software Open Source?
+----------------------------
+Yes! EmbassyOS is open sourced under the `Start9 Personal Use License <https://start9labs.com/license>`_.  Some of our other projects are currently open sourced under MIT. You can find these in the Start9 Labs `GitHub repository <https://github.com/Start9Labs>`_.
+
+Is there a product warranty?
+----------------------------
+Yes! Start9 commits, to the best of our ability, to serving each beta Embassy product released until the wild. We will resolve any issue encountered with our provided hardware or software in a personalized matter.  We strive to provide highly available, quality customer service.
+
+Can you tell me about the License?
+----------------------------------
+EmbassyOS is published under our own Start9 Non-Commercial License, which has similar properties to many open source licenses with the exception that users cannot in any way, either through products or services, commercialize the source code, and any changes to the code or derivative works of the code are treated in the same manner. This means people will be welcome to access the source code, download it, use it, run it, fork it, change it, improve it - whatever they want - except sell it or sell services related to it.
+
+I run a business, can I use an Embassy for tasks such as password management and file sharing?
+----------------------------------------------------------------------------------------------
+Absolutely.  An Embassy would be a great addition to any business as it is easy to use and provides services that you control, with no subscription fees.
+
+With the addition of `BTCPay Server <https://btcpayserver.org/>`_, you can even run your own payment processor and accept cryptocurrency payments with no third party necessary!
+
 How does pricing work for EmbassyOS?  Are you targeting a specific USD price?
 -----------------------------------------------------------------------------
 The price is changed every 2016 blocks, which occurs about every 14 days. And no, the intent is not to tie EmbassyOS to a USD value, though at the moment USD is a convenient proxy for real purchasing power.
