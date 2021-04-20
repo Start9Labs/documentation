@@ -70,6 +70,24 @@ Bitcoin Wallet Tracker and Electrum Personal Server are 2 services that do the s
 Both work with your Bitcoin node to provide a richer set of information to wallets than could be done with bitcoind alone.  They are basically identical in purpose, their differences are notably in the software memory requirements and how snappily they can answer the same questions.
 Electrum (and some other wallets) require more than just a Bitcoin node to run in a sovereign way, they require an “Electrum Server”. Both Electrum Personal Server and Bitcoin Wallet Tracker are “Electrum servers”.
 
+I want to use my hardware signer, such as Coldcard or Trezor with my Embassy.  How does this work?
+--------------------------------------------------------------------------------------------------
+You do not use hardware signers directly with your node. Hardware signers interface with wallets, and wallets interface with nodes.
+
+Node (Embassy) <— Wallet (Specter, Sparrow, Electrum) <— Hardware signer (Coldcard, Trezor)
+
+You would use your hardware with your wallet, then instruct that wallet to use Embassy as its node.
+
+- Nodes are for interacting with the Bitcoin network: enforcing consensus rules, validating and relaying blocks/transactions, and broadcasting transactions.
+
+- Wallets are for constructing and viewing transactions, as well as generating addresses.
+
+- Signers are for generating and storing keys, as well as signing transactions.
+
+The reason there is so much confusion about these 3 concepts is that the Bitcoin Core Node comes with its own Wallet (which you should not use), and that wallet is also a signer. In fact, most wallets double as signers, and most wallets do NOT support connecting to your own node. So, most wallets are actually serving as a wallet, a node, and a signer, which might be convenient, but it is neither trustless nor maximally secure. Ideally, you are using a wallet that supports both integrating with a hardware signer (like Coldcard or Trezor) AND a backend node (like on the Embassy).
+
+Please note: of the wallets listed (Specter/Sparrow/Electrum), only Specter is currently able to use Embassy as it's node, but the other two should be available soon.
+
 Which wallets can I use that sync with my Embassy Bitcoin node?
 ---------------------------------------------------------------
 There are many wallets that support linking to your own full node.  You will need one that supports tor.  Here are a few options that are compatible: FullyNoded, Samourai, Specter, Wasabi, Zap, and Zeus.
@@ -96,7 +114,7 @@ All LND backups are best done via the Embassy backup flow.  It is not supported 
 
 To clarify some of the reasons for this choice:
 
-First off, Lightning is fundamentally different than on-chain/Layer1(L1) bitcoin. There is no way to compress all of that information down into a single 24 word seed in such a way that it will continue to work throughout your usage of the Lightning Network. 
+First off, Lightning is fundamentally different than on-chain/Layer1(L1) bitcoin. There is no way to compress all of that information down into a single 24 word seed in such a way that it will continue to work throughout your usage of the Lightning Network.
 
 So, what is the LND seed *for*? In short, the seed is only used for the Layer1 portion of the funds you have locked up in LND. Due to the live nature of LND and lightning nodes in general, we tend to discourage keeping any significant amounts of money in the onchain portion of your wallet. Given that we cannot actually recover the Layer2(L2) funds with that seed, we needed to have a more holistic way to backup LND funds such that the backup would encompass the ability to get L2 funds back. The Embassy backup system does this, and this approach also happens to be a perfectly valid backup of your L1 funds as well. While Bitcoin users have been trained that the 24 word seed can be used to recover all of their funds, it is important to state that lightning does not and cannot work this way. Exposing the seed gives you two separate things to keep track of in order to recover your funds instead of just one.
 
