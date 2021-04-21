@@ -16,7 +16,7 @@ Yes, but there is currently no way to synchronize or federate them.  We are work
 
 What if I forget my Embassy password?
 -------------------------------------
-Check out the `docs <https://docs.start9labs.com/user-manual/general/forgot-password.html>`_ on forgot password, and let us know if you have any additional questions.  All your services and data will remain.
+Check out the `docs <https://docs.start9.com/user-manual/general/forgot-password.html>`_ on forgot password, and let us know if you have any additional questions.  All your services and data will remain.
 
 Can I move my Embassy to another location?  What happens when I do this?
 ------------------------------------------------------------------------
@@ -28,7 +28,7 @@ If you are in your home network it is both faster and more private since the con
 
 Is the software Open Source?
 ----------------------------
-Yes! EmbassyOS is open sourced under the `Start9 Personal Use License <https://start9labs.com/license>`_.  Some of our other projects are currently open sourced under MIT. You can find these in the Start9 Labs `GitHub repository <https://github.com/Start9Labs>`_.
+Yes! EmbassyOS is open sourced under the `Start9 Personal Use License <https://start9.com/license>`_.  Some of our other projects are currently open sourced under MIT. You can find these in the Start9 Labs `GitHub repository <https://github.com/Start9Labs>`_.
 
 Is there a product warranty?
 ----------------------------

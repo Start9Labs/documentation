@@ -64,7 +64,7 @@ html_theme_options = {
     "use_download_button": False,
     "use_edit_page_button": True,
     "launch_buttons": {
-        "main_site": "https://start9labs.com",
+        "main_site": "https://start9.com",
     },
 }
 html_logo = "_static/logo.png"

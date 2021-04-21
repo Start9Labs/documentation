@@ -64,7 +64,7 @@ Depending on your Internet speed, the download should take between 5 and 30 minu
 Building from Source
 --------------------
 
-If you have the proper tooling and are comfortable using the command line, you can build EmbassyOS from `source <https://github.com/Start9Labs/embassy-os>`_, which is made available under the `Start9 Personal Use License <https://start9labs.com/license>`_.
+If you have the proper tooling and are comfortable using the command line, you can build EmbassyOS from `source <https://github.com/Start9Labs/embassy-os>`_, which is made available under the `Start9 Personal Use License <https://start9.com/license>`_.
 
 Thanks to our community members who have kindly put together these guides!
 
