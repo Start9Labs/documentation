@@ -16,6 +16,7 @@ Bitcoin-related services
 * `Ride the Lightning (RTL) <https://github.com/Start9Labs/ride-the-lightning-wrapper/tree/master/docs>`_
 * `Spark Wallet <https://github.com/Start9Labs/spark-wallet-wrapper/tree/master/docs>`_
 * `BTCPayServer <https://github.com/Start9Labs/btcpayserver-wrapper>`_
+* `Sphinx Chat <https://sphinx.chat/>`_
 
 Other services
 ==============
@@ -25,3 +26,4 @@ Other services
 * `Cups <https://github.com/Start9Labs/cups-wrapper/tree/master/docs>`_
 * `File Browser <https://github.com/Start9Labs/filebrowser-wrapper/tree/master/docs>`_
 * `Mastodon <https://github.com/Start9Labs/mastodon-wrapper>`_
+* `Embassy Pages <https://github.com/Start9Labs/embassy-pages-wrapper>`_
