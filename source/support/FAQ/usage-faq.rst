@@ -26,6 +26,10 @@ What’s the advantage of using the .local address over the .onion address?
 -------------------------------------------------------------------------
 If you are in your home network it is both faster and more private since the connection never leaves your household.  The downside is that it won’t work if you’re on the go.
 
+Can I use the .local addresses over the Tor Browser?
+----------------------------------------------------
+Unfortunately, no.  The tor browser requires all web visits to first enter the tor network. Once you have entered the tor network there is no way to exit the tor network in such a way that .local/mDNS addresses resolve.
+
 Can I have multiple users on my Embassy?
 ----------------------------------------
 Currently, the Embassy itself is designed to for a single user. There is no way to grant others access to your Embassy without sharing your personal, master password, which is not recommended. There are certain services, however, such as Bitwarden, File Browser, and Mastodon, that absolutely support multiple users (aka multi-tenancy, aka uncle Jim model) where people who trust you can create their own, personal accounts for these services on your Embassy. Just remind them that they are trusting you with their data, and that it might be preferable for them to take the final leap of self-sovereignty and get an Embassy of their own.
