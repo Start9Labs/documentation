@@ -16,7 +16,7 @@ Yes, but there is currently no way to synchronize or federate them.  We are work
 
 What if I forget my Embassy password?
 -------------------------------------
-Check out the `docs <https://docs.start9labs.com/user-manual/general/forgot-password.html>`_ on forgot password, and let us know if you have any additional questions.  All your services and data will remain.
+Check out the `docs <https://docs.start9.com/user-manual/general/forgot-password.html>`_ on forgot password, and let us know if you have any additional questions.  All your services and data will remain.
 
 Can I move my Embassy to another location?  What happens when I do this?
 ------------------------------------------------------------------------
@@ -29,6 +29,23 @@ If you are in your home network it is both faster and more private since the con
 Can I use the .local addresses over the Tor Browser?
 ----------------------------------------------------
 Unfortunately, no.  The tor browser requires all web visits to first enter the tor network. Once you have entered the tor network there is no way to exit the tor network in such a way that .local/mDNS addresses resolve.
+Is the software Open Source?
+----------------------------
+Yes! EmbassyOS is open sourced under the `Start9 Personal Use License <https://start9.com/license>`_.  Some of our other projects are currently open sourced under MIT. You can find these in the Start9 Labs `GitHub repository <https://github.com/Start9Labs>`_.
+
+Is there a product warranty?
+----------------------------
+Yes! Start9 commits, to the best of our ability, to serving each beta Embassy product released until the wild. We will resolve any issue encountered with our provided hardware or software in a personalized matter.  We strive to provide highly available, quality customer service.
+
+Can you tell me about the License?
+----------------------------------
+EmbassyOS is published under our own Start9 Non-Commercial License, which has similar properties to many open source licenses with the exception that users cannot in any way, either through products or services, commercialize the source code, and any changes to the code or derivative works of the code are treated in the same manner. This means people will be welcome to access the source code, download it, use it, run it, fork it, change it, improve it - whatever they want - except sell it or sell services related to it.
+
+I run a business, can I use an Embassy for tasks such as password management and file sharing?
+----------------------------------------------------------------------------------------------
+Absolutely.  An Embassy would be a great addition to any business as it is easy to use and provides services that you control, with no subscription fees.
+
+With the addition of `BTCPay Server <https://btcpayserver.org/>`_, you can even run your own payment processor and accept cryptocurrency payments with no third party necessary!
 
 Can I have multiple users on my Embassy?
 ----------------------------------------

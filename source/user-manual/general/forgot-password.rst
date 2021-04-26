@@ -35,6 +35,8 @@ If you already have :ref:`SSH keys registered with your Embassy<ssh-setup>` **OR
 
   * You can now use the Start9 Setup App to reclaim your Embassy and set a new password.
 
+.. warning:: Running setup process will generate new certificate and Tor address for your Embassy.
+
 * Linux computer:
 
   * Shut down your Embassy, disconnect from power, and remove the microSD card.
@@ -62,6 +64,8 @@ If you already have :ref:`SSH keys registered with your Embassy<ssh-setup>` **OR
 
   * Return the microSD card to your Embassy and power it on.
   * You can now use the Start9 Setup App to reclaim your Embassy and set a new password.
+
+.. warning:: Running setup process will generate new certificate and Tor address for your Embassy.
 
 
 No SSH/Linux
