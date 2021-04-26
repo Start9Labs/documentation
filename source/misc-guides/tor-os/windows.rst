@@ -35,6 +35,18 @@ Running Tor on Windows
     sc create tor start=auto binPath="<PATH TO>\Browser\TorBrowser\Tor\tor.exe -nt-service"
     sc start tor
 
+   .. note:: If you get the error "Access denied," please ensure you are running the command prompt in Administrator mode.  You can tell because the prompt will show C:\\Users\\YOUR-USERNAME> if you are NOT in admin mode, and it will show C:\\WINDOWS\\system32 if you ARE in admin mode.
+
+   .. note:: If you get the error "The specified service already exists," complete the following steps:
+      #. Run the command:
+      
+      .. code-block::
+
+       sc delete tor
+
+      #. Uninstall the Tor Browser, following the steps `here <https://tb-manual.torproject.org/uninstalling/>`_.
+      #. Begin this guide again from the beginning.
+
 #. When you run this, it should look something like this:
 
    .. figure:: /_static/images/tor/tor_windows_terminal.png
