@@ -29,6 +29,11 @@ If you are in your home network it is both faster and more private since the con
 Can I use the .local addresses over the Tor Browser?
 ----------------------------------------------------
 Unfortunately, no.  The tor browser requires all web visits to first enter the tor network. Once you have entered the tor network there is no way to exit the tor network in such a way that .local/mDNS addresses resolve.
+
+Can I not use .local addresses on Android?  Why not?
+----------------------------------------------------
+Unfortunately, no.  Google has not included support for .local addresses via mDNS for Android.
+
 Is the software Open Source?
 ----------------------------
 Yes! EmbassyOS is open sourced under the `Start9 Personal Use License <https://start9.com/license>`_.  Some of our other projects are currently open sourced under MIT. You can find these in the Start9 Labs `GitHub repository <https://github.com/Start9Labs>`_.

@@ -26,7 +26,7 @@ It is fully validating and verifying consensus all the way from Genesis. Really,
 
 What actions, specifically, are only possible with an archival, or ‘unpruned’ node?
 -----------------------------------------------------------------------------------
-The more sophisticated the blockchain analysis being done is, the more index data is required, which will increase the system resources required.  For example, if you wanted to run a block explorer, you would require not only a full archival node, but also a full transaction index.
+The more sophisticated the blockchain analysis being done is, the more index data is required, which will increase the system resources required.  For example, if you wanted to run a block explorer, you would require not only a full archival node, but also a full transaction index.  So, specifically, at this time, a full archival node is required for running an Electrum server, a block explorer, and for doing advanced chainalysis in general.
 
 Is it insecure to run a pruned node?
 ------------------------------------

@@ -63,6 +63,12 @@ Can the browser extension be used with Bitwarden hosted on the embassy?
 -----------------------------------------------------------------------
 Yes, but only in a tor-enabled browser.  Just add your .onion address as the server in the extension.
 
+I want to use BTCPayServer on my website, but Tor is the only option, how can visitors access my BTCPay on clearnet?
+--------------------------------------------------------------------------------------------------------------------
+As the Embassy produces a Tor Hidden Service for each service, BTCPayServer is only available via Tor by default.  For a brick and mortar business, this is no problem as you can use your own device for a customer to pay you on.  If you run your own website, it is possible to set up a reverse proxy in order to serve BTCPay content to your clearnet visitors.  A guide to doing this is available in the `BTCPayServer docs <https://docs.btcpayserver.org/ReverseProxyToTor/>`_.
+
+We understand that this can be a frustrating limitation, and adding clearnet support is high on our list of priorities for the Embassy.  This will allow a number of services to have better interoperability with the broader Web.
+
 I don't see an answer to my question regarding a certain service.  Is there more documentation?
 -----------------------------------------------------------------------------------------------
 While we are intent on providing the most friendly experience possible to our customers, ultimately it will be impossible for Start9 to create documentation and tutorials for every service we make available on the Embassy.  Each service *should* have its own documentation produced by the service developers themselves, and we will do our best keep track, consolidate, and link to it.  Also, much of the reason good tutorials don't exist is simply because no one in the community has taken the time to produce it.  If you come across something useful or write something up yourself, please let us know and we will promote it.  Otherwise we will do our best to answer questions as they arise and gradually build out tutorials where they are lacking.
