@@ -184,7 +184,7 @@ Windows
 Linux
 -----
 
-Nothing specific needs to be configured for this environment, you just need the certificate from your Embassy.
+Nothing specific needs to be configured for this environment, so you just need the certificate from your Embassy.
 
 #. Visit your Embassy at its Tor Address.
 
