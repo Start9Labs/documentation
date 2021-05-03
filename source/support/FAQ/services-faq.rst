@@ -49,7 +49,7 @@ Cups does not have multiple accounts support. Each person would need their own E
 
 Is the embassy able to connect to Sphinxchat?
 ---------------------------------------------
-Maybe, but we are also planning to add Sphinxchat to the Embassy directly.
+We have added Sphinx as an Embassy service.  Please see the announcement `here <https://start9labs.medium.com/new-service-sphinx-chat-2cd4f40d3f05>`_ and check the Marketplace to start using Sphinx!
 
 I get an error ("Unlock Wallet Failed") when trying to log in to RTL, what can I do?
 ------------------------------------------------------------------------------------
@@ -63,9 +63,11 @@ Can the browser extension be used with Bitwarden hosted on the embassy?
 -----------------------------------------------------------------------
 Yes, but only in a tor-enabled browser.  Just add your .onion address as the server in the extension.
 
-I heard I can connect Specter Wallet to my Embassy; is there a guide for that?
-------------------------------------------------------------------------------
-There is.  Please follow the integration guide `here <https://github.com/Start9Labs/bitcoind-wrapper/tree/master/docs/integrations/specter>`_ and select the tutorial based on your operating system.
+I want to use BTCPayServer on my website, but Tor is the only option, how can visitors access my BTCPay on clearnet?
+--------------------------------------------------------------------------------------------------------------------
+As the Embassy produces a Tor Hidden Service for each service, BTCPayServer is only available via Tor by default.  For a brick and mortar business, this is no problem as you can use your own device for a customer to pay you on.  If you run your own website, it is possible to set up a reverse proxy in order to serve BTCPay content to your clearnet visitors.  A guide to doing this is available in the `BTCPayServer docs <https://docs.btcpayserver.org/ReverseProxyToTor/>`_.
+
+We understand that this can be a frustrating limitation, and adding clearnet support is high on our list of priorities for the Embassy.  This will allow a number of services to have better interoperability with the broader Web.
 
 I don't see an answer to my question regarding a certain service.  Is there more documentation?
 -----------------------------------------------------------------------------------------------

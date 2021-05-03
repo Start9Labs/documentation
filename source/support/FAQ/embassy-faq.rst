@@ -61,4 +61,4 @@ Apps like Bitwarden however do not store plaintext information, so your password
 
 Why http and not https for .onion websites?
 -------------------------------------------
-When visiting a Tor V3 URL (.onion website), your communications are end-to-end encrypted and onion-routed by default. There is no added benefit to using https.
+When visiting a Tor V3 URL (.onion website), your communications are end-to-end encrypted and onion-routed by default. There is no added benefit to using https.  See this `article <https://community.torproject.org/onion-services/advanced/https/>`_ from the Tor Project for more details.

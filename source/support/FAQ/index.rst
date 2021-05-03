@@ -5,7 +5,7 @@ Frequently Asked Questions
 A collection of common questions and concerns from our community.
 
 .. toctree::
-  :maxdepth: 1
+  :maxdepth: 2
 
   general-faq
   embassy-faq

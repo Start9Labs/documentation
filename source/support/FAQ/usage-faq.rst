@@ -26,6 +26,14 @@ What’s the advantage of using the .local address over the .onion address?
 -------------------------------------------------------------------------
 If you are in your home network it is both faster and more private since the connection never leaves your household.  The downside is that it won’t work if you’re on the go.
 
+Can I use the .local addresses over the Tor Browser?
+----------------------------------------------------
+Unfortunately, no.  The Tor Browser requires all web visits to first enter the Tor network. Once you have entered the Tor network there is no way to exit the Tor network in such a way that .local/mDNS addresses resolve.
+
+Can I not use .local addresses on Android?  Why not?
+----------------------------------------------------
+Unfortunately, no.  Google has not included support for .local addresses via mDNS for Android.
+
 Is the software Open Source?
 ----------------------------
 Yes! EmbassyOS is open sourced under the `Start9 Personal Use License <https://start9.com/license>`_.  Some of our other projects are currently open sourced under MIT. You can find these in the Start9 Labs `GitHub repository <https://github.com/Start9Labs>`_.
@@ -47,6 +55,10 @@ With the addition of `BTCPay Server <https://btcpayserver.org/>`_, you can even 
 Can I have multiple users on my Embassy?
 ----------------------------------------
 Currently, the Embassy itself is designed to for a single user. There is no way to grant others access to your Embassy without sharing your personal, master password, which is not recommended. There are certain services, however, such as Bitwarden, File Browser, and Mastodon, that absolutely support multiple users (aka multi-tenancy, aka uncle Jim model) where people who trust you can create their own, personal accounts for these services on your Embassy. Just remind them that they are trusting you with their data, and that it might be preferable for them to take the final leap of self-sovereignty and get an Embassy of their own.
+
+What can I do if I am having issues connecting to an Android app?
+-----------------------------------------------------------------
+Unfortunately, Orbot can be finicky, and therefore the best solution to Android issues is normally to restart Orbot, or to reboot the phone.  This will solve most common problems.
 
 Do I need to delete existing backups before doing a new backup? Or does a new backup override the old backup?
 -------------------------------------------------------------------------------------------------------------

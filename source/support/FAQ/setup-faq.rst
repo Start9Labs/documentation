@@ -4,11 +4,11 @@ Setup and Troubleshooting
 
 What do I do first?
 -------------------
-Simply plug the device into power and internet, typically from your home internet router.  That's it!  After this, get the :ref:`Setup App <initial-setup>`, and follow the instructions.
+Simply plug the device into power and internet, most easily by using an empty ethernet port on your home internet router.  That's it!  After this, get the :ref:`Setup App <initial-setup>`, and follow the instructions.
 
 How do I know if my Embassy is running?
 ---------------------------------------
-After plugging into power and internet, you will hear 2 distinct sounds: first, a “bep” ‐ indicating the device is powering on, and second, a “chime” ‐ indicating the device is ready for setup.
+After plugging into power and your router, you will hear 2 distinct sounds: first, a “bep” ‐ indicating the device is powering on, and second, a “chime” ‐ indicating the device is ready for setup.
 
 What if I can't connect to my Embassy?
 --------------------------------------
