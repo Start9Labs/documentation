@@ -16,9 +16,9 @@ Download the Setup App
 Power On
 ========
 
-Connect your Embassy to power and Ethernet.
+Connect your Embassy to power and Internet, normally using an ethernet port on your home Internet router.
 
-.. note:: to avoid networking issues, it is recommended to use your primary router, not an extender or mesh router.
+.. note:: To avoid networking issues, it is recommended to use your primary router, not an extender or mesh router.
 
 You will hear 2 distinct sounds:
 
@@ -28,7 +28,9 @@ You will hear 2 distinct sounds:
 Claim Your Embassy
 ==================
 
-1. Ensure your phone is connected to the same WiFi network as your router.
+1. Ensure your phone is connected to the same WiFi network as your router.  
+
+.. warning:: Sometmies a router will have a "guest WiFi network," which might be different than the network your Embassy is placed on via ethernet.
 
 2. Inside the Setup App, enter the product key located on the bottom of your Embassy
 
