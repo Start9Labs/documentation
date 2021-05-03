@@ -136,6 +136,10 @@ Check the LND logs, it can take a while to bootstrap, and starting RTL before th
 ---------------------------------------------------------------------------------------------------
 You may need to restart the LND Service.
 
+I get the following error from LND: "Error ECONNREFUSED Fetching Info Failed! Unknown Error." What's wrong?
+-----------------------------------------------------------------------------------------------------------
+LND is waiting for Bitcoin to completely sync, and then needs to catch up on block scanning itself.  This may take several minutes, and in some cases might require a restart of the LND service.  Do this if the process takes more than 5-10min.
+
 What's the best way to move a small lightning balance?
 ------------------------------------------------------
 It is possible to have lightning balances that are so low that they will not (or barely will) cover the on-chain fees to recoup into an on-chain wallet.
