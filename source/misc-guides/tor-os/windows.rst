@@ -45,8 +45,8 @@ Running Tor on Windows
 
        sc delete tor
 
-      2. Uninstall the Tor Browser, following the steps `here <https://tb-manual.torproject.org/uninstalling/>`_.
-      3. Begin this guide again from the beginning.
+      1. Uninstall the Tor Browser, following `these steps <https://tb-manual.torproject.org/uninstalling/>`_.
+      2. Begin this guide again from the beginning.
 
 #. When you run this, it should look something like this:
 

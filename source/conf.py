@@ -59,7 +59,7 @@ html_theme_options = {
     "use_edit_page_button": True,
     "use_issues_button": True,
     "use_repository_button": True,
-    "extra_navbar": "Powered by <a href=\"https://start9.com\">Start9</a>", # Will be displayed underneath the left navbar",
+    "extra_navbar": "Powered by <a href=\"https://start9.com\">Start9</a>", # Will be displayed underneath the left navbar"
     "show_navbar_depth": 1,
     "use_download_button": False,
     "use_edit_page_button": True,

@@ -80,7 +80,7 @@ Yes! EmbassyOS is open sourced under the `Start9 Personal Use License <https://s
 
 Is there a product warranty?
 ----------------------------
-Yes! Start9 commits, to the best of our ability, to serving each beta Embassy product released until the wild. We will resolve any issue encountered with our provided hardware or software in a personalized matter.  We strive to provide highly available, quality customer service.
+Yes! Start9 commits, to the best of our ability, to serving each beta Embassy product released into the wild. We will resolve any issue encountered with our provided hardware or software in a personalized matter.  We strive to provide highly available, quality customer service.
 
 Can you tell me about the License?
 ----------------------------------

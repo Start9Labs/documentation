@@ -26,7 +26,7 @@ It is fully validating and verifying consensus all the way from Genesis. Really,
 
 What actions, specifically, are only possible with an archival, or ‘unpruned’ node?
 -----------------------------------------------------------------------------------
-The more sophisticated the blockchain analysis being done is, the more index data is required, which will increase the system resources required.  For example, if you wanted to run a block explorer, you would require not only a full archival node, but also a full transaction index.  So, specifically, at this time, a full archival node is required for running an Electrum server, a block explorer, and for doing advanced chainalysis in general.
+The more sophisticated the blockchain analysis being done is, the more index data is required, which will increase the system resources required.  For example, if you wanted to run a block explorer, you would require not only a full archival node, but also a full transaction index.  So, specifically, at this time, a full archival node is required for running an Electrum server, a block explorer, and for doing advanced chain analysis in general.
 
 Is it insecure to run a pruned node?
 ------------------------------------
@@ -47,7 +47,7 @@ The commitment fees are automatically negotiated every few blocks with your peer
 What would happen if I shut down an Embassy that is running a Lightning node with open channels?
 ------------------------------------------------------------------------------------------------
 It is REALLY IMPORTANT to understand that if Lightning services are shut off for long periods of time (days on end) it is possible for your peers to cheat you out of money. If you are not prepared to LOSE ALL THE MONEY IN YOUR CHANNELS, KEEP YOUR NODE RUNNING.
-That said, malicious actors on the network right now are probably sparse.  However, you are still open to that risk if you do not keep your node online.
+That said, malicious actors on the network right now are probably sparse. However, you are still open to that risk if you do not keep your node online.
 
 Is there a solution to this?
 ----------------------------
@@ -76,7 +76,7 @@ You do not use hardware signers directly with your node. Hardware signers interf
 
 Node (Embassy) <— Wallet (Specter, Sparrow, Electrum) <— Hardware signer (Coldcard, Trezor)
 
-You would use your hardware with your wallet, then instruct that wallet to use Embassy as its node.
+You would use your hardware signee with your wallet, then instruct that wallet to use Embassy as its node.
 
 - Nodes are for interacting with the Bitcoin network: enforcing consensus rules, validating and relaying blocks/transactions, and broadcasting transactions.
 
@@ -90,7 +90,7 @@ Please note: of the wallets listed (Specter/Sparrow/Electrum), only Specter is c
 
 Which wallets can I use that sync with my Embassy Bitcoin node?
 ---------------------------------------------------------------
-There are many wallets that support linking to your own full node.  You will need one that supports tor.  Here are a few options that are compatible: FullyNoded, Samourai, Specter, Wasabi, Zap, and Zeus.
+There are many wallets that support linking to your own full node.  You will need one that supports Tor.  Here are a few options that are compatible: FullyNoded, Samourai, Specter, Wasabi, Zap, and Zeus.
 
 Is there a guide for connecting Specter Wallet to my Embassy?
 -------------------------------------------------------------
@@ -138,7 +138,7 @@ You may need to restart the LND Service.
 
 I get the following error from LND: "Error ECONNREFUSED Fetching Info Failed! Unknown Error." What's wrong?
 -----------------------------------------------------------------------------------------------------------
-LND is waiting for Bitcoin to completely sync, and then needs to catch up on block scanning itself.  This may take several minutes, and in some cases might require a restart of the LND service.  Do this if the process takes more than 5-10min.
+LND is waiting for Bitcoin to completely sync, and then needs to catch up on block scanning itself.  This may take several minutes, and in some cases might require a restart of the LND service.  Do this if the process takes more than 5-10 minutes.
 
 What's the best way to move a small lightning balance?
 ------------------------------------------------------
