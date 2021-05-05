@@ -57,7 +57,7 @@ Getting EmbassyOS
 Purchasing
 ----------
 
-You can purchase EmbassyOS `here <https://images.start9labs.com/order>`_. This is by far the easiest path to get up and running.
+You can purchase EmbassyOS `here <https://store.start9.com/collections/embassy/products/embassyos-software-download>`_. This is by far the easiest path to get up and running.
 
 Depending on your Internet speed, the download should take between 5 and 30 minutes.
 
