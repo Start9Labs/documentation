@@ -61,7 +61,7 @@ What if someone gets physical access to my device, can they read the contents? I
 -----------------------------------------------------------------------------------------------
 The device is currently not currently protected in that way. Someone with physical access to the device can get full access to everything on it.
 
-Apps like Bitwarden however do not store plaintext information, so your passwords will not be compromised unless they know your master password.
+Apps like Bitwarden, however, do not store plaintext information, so your passwords will not be compromised unless they know your master password.
 
 Why http and not https for .onion websites?
 -------------------------------------------

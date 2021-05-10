@@ -66,9 +66,9 @@ In the top right menu, select 'Clear Cache.'  If this does not solve the problem
 
 If I uninstall a service, then re-install it, does any data remain?
 -------------------------------------------------------------------
-No.  When uninstalling a service, you completely destroy everything associated with it.  This is because each service is run in it's own 'container,' which includes all the required software, including an operating system, that it needs to function.  When uninstalling, this container is wiped from your system, and with it any associated service data that you have not backed up.
+No.  When uninstalling a service, you completely destroy everything associated with it.  This is because each service runs in it's own 'container', which includes all the required software and operating system environment that it needs to function.  When uninstalling, this container is wiped from your Embassy's system, and with it, any associated service data that you have not backed up.
 
-This can be useful, as you may want to wipe a service and start anew, for example, in order to receive a fresh Tor .onion address, or to spin up a new Lightning node.  However, if you do this, YOU MUST BE 100% CERTAIN THAT YOU ARE PREPARED TO LOSE ALL DATA for this service.  Also keep in mind that other services may depend on the service you are uninstalling.
+This can be useful, as you may want to wipe a service and start anew. For example, you might want to receive a fresh Tor .onion address, or to spin up a new Lightning node.  However, if you do this, YOU MUST BE 100% CERTAIN THAT YOU ARE PREPARED TO LOSE ALL DATA for this service.  Also, keep in mind that other services may depend on the service you are uninstalling.
 
 Do I need to delete existing backups before doing a new backup? Or does a new backup override the old backup?
 -------------------------------------------------------------------------------------------------------------
