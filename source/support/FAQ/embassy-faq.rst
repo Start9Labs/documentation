@@ -24,6 +24,10 @@ Are my Internet requests anonymous and secure?
 ----------------------------------------------
 EmbassyOS and every service on the Embassy serve their own Tor Hidden Services with unique Tor addresses. The private keys used to create these addresses are generated on your phone or computer when you first set up the Embassy. No one, not even Start9, has any idea what your Tor addresses are, let alone the password(s) you choose to authenticate with them.
 
+Does Start9 have access to my Embassy's encryption keys?
+--------------------------------------------------------
+No.  Your keys are generated on your device using the password you create.
+
 Can multiple Embassies be setup to run redundantly in physically separate locations?
 ------------------------------------------------------------------------------------
 Soon (tm).  Currently no, be we have plans for a feature that will enable Embassies to provide encrypted, automated backup services for one another.
@@ -57,7 +61,7 @@ What if someone gets physical access to my device, can they read the contents? I
 -----------------------------------------------------------------------------------------------
 The device is currently not currently protected in that way. Someone with physical access to the device can get full access to everything on it.
 
-Apps like Bitwarden however do not store plaintext information, so your passwords will not be compromised unless they know your master password.
+Apps like Bitwarden, however, do not store plaintext information, so your passwords will not be compromised unless they know your master password.
 
 Why http and not https for .onion websites?
 -------------------------------------------

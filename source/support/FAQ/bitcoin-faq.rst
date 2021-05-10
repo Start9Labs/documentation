@@ -76,7 +76,7 @@ You do not use hardware signers directly with your node. Hardware signers interf
 
 Node (Embassy) <— Wallet (Specter, Sparrow, Electrum) <— Hardware signer (Coldcard, Trezor)
 
-You would use your hardware signee with your wallet, then instruct that wallet to use Embassy as its node.
+You would use your hardware signer with your wallet, then instruct that wallet to use Embassy as its node.
 
 - Nodes are for interacting with the Bitcoin network: enforcing consensus rules, validating and relaying blocks/transactions, and broadcasting transactions.
 
