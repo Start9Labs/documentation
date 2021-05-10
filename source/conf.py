@@ -26,6 +26,7 @@ copyright = '2021, Start9 Labs, Inc'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinxcontrib.yt'
     # 'sphinxcontrib.needs'
 ]
 
