@@ -58,7 +58,11 @@ Currently, the Embassy itself is designed to for a single user. There is no way 
 
 What can I do if I am having issues connecting to an Android app?
 -----------------------------------------------------------------
-Unfortunately, Orbot can be finicky, and therefore the best solution to Android issues is normally to restart Orbot, or to reboot the phone.  This will solve most common problems.
+Unfortunately, Orbot can be finicky.  The best solution to Android issues is normally to restart Orbot, or to reboot the phone.  This will solve most common problems.
+
+What can I do if I am having issues connecting with Consulate?
+--------------------------------------------------------------
+In the top right menu, select 'Clear Cache.'  If this does not solve the problem, delete the bookmarked site entirely, then re-add it.  This will solve most connection issues.
 
 If I uninstall a service, then re-install it, does any data remain?
 -------------------------------------------------------------------

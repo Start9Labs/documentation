@@ -18,6 +18,10 @@ Will there be a VPN?
 --------------------
 We are looking into adding as a Wireguard service for VPN access when you are not home.  A client-to-client VPN may also be possible.
 
+Will there be an email server?
+------------------------------
+We do hope to add this functionality one day, however it has some technical challenges, and is not currently a high priority.  If you would like to tackle this and help us get a self-hosted email server on the Embassy, please reach out in our `Matrix Community Dev Channel <https://matrix.to/#/#community-dev:matrix.start9labs.com>`_, and we will be happy to help in any way that we can.
+
 Can the Embassy run 'X' Service??
 ---------------------------------
 Potentially. Here is a `comprehensive list <https://github.com/awesome-selfhosted/awesome-selfhosted>`_ of self-hosted services, any of which can theoretically be run on the Embassy.
