@@ -65,7 +65,7 @@ You can only follow someone who has an account on a Mastodon server that support
 
 Can the browser extension be used with Bitwarden hosted on the embassy?
 -----------------------------------------------------------------------
-Yes, but only in a tor-enabled browser.  Just add your .onion address as the server in the extension.
+Yes, but only in a tor-enabled browser.  Just add your .onion address as the server in the extension.  Make sure that http:// is at the beginning, and NOT https://, as this will not work.
 
 I want to use BTCPayServer on my website, but Tor is the only option, how can visitors access my BTCPay on clearnet?
 --------------------------------------------------------------------------------------------------------------------
