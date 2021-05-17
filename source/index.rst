@@ -1,6 +1,6 @@
-#########################
-Start9 Labs Documentation
-#########################
+####################
+Start9 Documentation
+####################
 
 Welcome to the docs!
 

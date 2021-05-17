@@ -1,4 +1,4 @@
-# Start9 Labs Documentation
+# Start9 Documentation
 
 At Start9, we see great value in maintaining clear and accurate documentation for our already simple and friendly products. These docs are a continuous work-in-progress, and we welcome contributions from our partners and customers.
 
