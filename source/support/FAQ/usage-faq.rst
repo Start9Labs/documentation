@@ -36,7 +36,7 @@ Unfortunately, no.  Google has not included support for .local addresses via mDN
 
 Is the software Open Source?
 ----------------------------
-Yes! EmbassyOS is open sourced under the `Start9 Personal Use License <https://start9.com/license>`_.  Some of our other projects are currently open sourced under MIT. You can find these in the Start9 Labs `GitHub repository <https://github.com/Start9Labs>`_.
+Yes! EmbassyOS is open sourced under the `Start9 Personal Use License <https://start9.com/license>`_.  Some of our other projects are currently open sourced under MIT. You can find these in the Start9 `GitHub repository <https://github.com/Start9Labs>`_.
 
 Is there a product warranty?
 ----------------------------
