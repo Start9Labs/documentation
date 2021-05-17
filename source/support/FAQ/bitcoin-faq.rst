@@ -49,15 +49,18 @@ Bitcoin Wallet Tracker and Electrum Personal Server are 2 services that do the s
 Both work with your Bitcoin node to provide a richer set of information to wallets than could be done with bitcoind alone.  They are basically identical in purpose, their differences are notably in the software memory requirements and how snappily they can answer the same questions.
 Electrum (and some other wallets) require more than just a Bitcoin node to run in a sovereign way, they require an “Electrum Server”. Both Electrum Personal Server and Bitcoin Wallet Tracker are “Electrum servers”.
 
-Should I use Bitcoin Core as a wallet?
+How do I use Bitcoin Core as a wallet?
 --------------------------------------
-This is a question that deserves more attention.  Bitcoin Core is your full node.  It is helpful to think of this as your own personal Bitcoin Server.  This is your own verified source of truth of the Bitcoin ledger, that requires no permission for you to set up and own.  The job of your Bitcoin server is to verify that the transactions you want to make and receive are valid.
-While it does have the ability to host a wallet, it is generally bad practice to do so.  This is because it is best to let your node do its job and not mix duties with that of a wallet.  There are also security implications.
-There are many modern wallets that have the ability to use your personal Bitcoin node as a source of truth, but with the advantages of additional security and advanced features.  This also follows the Linux mantra of "do one thing and do it well."
+Bitcoin Core is a full node that also contains wallet functionality.  Some will be familiar with Bitcoin-QT, which is a Bitcoin Core GUI that for a long time was the only available wallet.  This is currently not compatible with the Embassy.
+You can use the wallet in Bitcoin Core, however it is for advanced users and is only available in the command line via SSH.
+
+It is helpful to think of the Bitcoin Core service on the Embassy as your own personal Bitcoin Server. This is your own verified source of truth of the Bitcoin ledger, that requires no permission for you to set up and own. The job of your Bitcoin server is to verify that the transactions you want to make and receive are valid.
+There are modern wallets that have the ability to use your personal Bitcoin node as a source of truth, and with the advantages of additional security and advanced features. This also follows the Linux mantra of "do one thing and do it well."  The recommended way to use Bitcoin with your Embassy’s Bitcoin node is with an external wallet.  
+The available wallets are listed in the following FAQ.
 
 Which wallets can I use that sync with my Embassy Bitcoin node?
 ---------------------------------------------------------------
-There are many wallets that support linking to your own full node.  You will need one that supports Tor.  Here are a few options that are compatible: FullyNoded, Specter, Sparrow, Zap, and Zeus.
+The only currently available external options are FullyNoded and Specter.  Within the Embassy, BTCPayServer is available, which offers a wallet that is automatically connected to your Embassy's Bitcoin Core node.  Keep in mind that this first and foremost a payment gateway, rather than a personal wallet.  Unforutnately, this is still not a popular functionality in Bitcoin wallets.  We are in communication with several wallet developers about adding Tor full node support.  
 
 Is there a guide for connecting Specter Wallet to my Embassy?
 -------------------------------------------------------------
