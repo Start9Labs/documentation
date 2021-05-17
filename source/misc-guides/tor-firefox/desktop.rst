@@ -21,7 +21,7 @@ Setting up Firefox with Tor on Desktop
 
 Windows:
 
-Click `here <https://registry.start9labs.com/sys/proxy.pac>`_ to get the file and save the file somewhere you won’t delete it. For this example:
+Click `here <https://registry.start9labs.com/sys/proxy.pac>`_ to get the file and save the file somewhere you won’t delete it.  Please ensure to remember and use the location you save the file in.  For this example:
 
     .. code-block::
 
