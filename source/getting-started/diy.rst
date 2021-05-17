@@ -30,7 +30,7 @@ Hardware
 
 Components
 ----------
-#. `Raspberry Pi 4B (4GB) <https://raspberrypi.org/products/raspberry-pi-4-model-b/?variant=raspberry-pi-4-model-b-4gb>`_
+#. `Raspberry Pi 4B (8GB) <https://raspberrypi.org/products/raspberry-pi-4-model-b/?variant=raspberry-pi-4-model-b-8gb>`_
 #. `Power supply for Raspberry Pi 4B <https://raspberrypi.org/products/type-c-power-supply/>`_
 #. Case for Raspberry Pi 4B (`passive cooling recommended <https://www.amazon.com/Geekworm-Raspberry-Aluminum-Passive-Heatsink/dp/B07Z6FYHCH/>`_ `*`)
 #. `High endurance microSD <https://amazon.com/SanDisk-Endurance-microSDXC-Adapter-Monitoring/dp/B07NY23WBG/>`_ (recommended 128GB or more)
