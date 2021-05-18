@@ -6,6 +6,8 @@ Running Tor on Android
 
 Some apps, such as Tor Browser or Cups Messenger, have Tor built in. They do not require additional software or configurations to utilize Tor. Most apps, however, do not have Tor built in. They require an app called Orbot to be installed in order to utilize Tor.
 
+.. youtube:: b__mVfN-BP8
+
 Running Orbot
 -------------
 

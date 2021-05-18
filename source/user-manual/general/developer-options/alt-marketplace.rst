@@ -2,7 +2,7 @@
 Alternative Marketplace
 ***********************
 
-EmbassyOS supports accessing alternative marketplaces by configuring a system file. Start9 Labs is not responsible for issues encountered by downloading services from alternative marketplaces.
+EmbassyOS supports accessing alternative marketplaces by configuring a system file. Start9 is not responsible for issues encountered by downloading services from alternative marketplaces.
 
 After SSH-ing into the Embassy, run the following commands::
 

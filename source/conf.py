@@ -14,10 +14,9 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-
 # -- Project information -----------------------------------------------------
 
-project = 'Start9 Labs'
+project = 'Start9 Docs'
 copyright = '2021, Start9 Labs, Inc'
 
 # -- General configuration ---------------------------------------------------
@@ -26,6 +25,7 @@ copyright = '2021, Start9 Labs, Inc'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinxcontrib.yt'
     # 'sphinxcontrib.needs'
 ]
 

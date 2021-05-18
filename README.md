@@ -1,4 +1,4 @@
-# Start9 Labs Documentation
+# Start9 Documentation
 
 At Start9, we see great value in maintaining clear and accurate documentation for our already simple and friendly products. These docs are a continuous work-in-progress, and we welcome contributions from our partners and customers.
 
@@ -18,6 +18,7 @@ Install sphinx and dependencies:
 brew install sphinx-doc
 pip3 install sphinx-autobuild
 pip3 install sphinx-book-theme || pip install git+https://github.com/executablebooks/sphinx-book-theme.git@master
+pip3 install sphinxcontrib.yt
 ```
 
 ### Development

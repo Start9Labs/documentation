@@ -51,9 +51,9 @@ Can I use my CUPS instance with other people? How does that work?
 -----------------------------------------------------------------
 Cups does not have multiple accounts support. Each person would need their own Embassy. We are considering adding multi-account support to Cups, but it's just not a priority at the moment.
 
-Is the embassy able to connect to Sphinxchat?
----------------------------------------------
-We have added Sphinx as an Embassy service.  Please see the announcement `here <https://start9labs.medium.com/new-service-sphinx-chat-2cd4f40d3f05>`_ and check the Marketplace to start using Sphinx!
+How can I fix issues with Sphinx?
+---------------------------------
+If you are on Android, make sure Orbot is setup correctly, and if it is, try to restart it or your device.  If you still have issues, *back up your keys,* delete all app data from your phone, uninstall, restart the Sphinx service on your Embassy, then reinstall and import your keys.
 
 I get an error ("Unlock Wallet Failed") when trying to log in to RTL, what can I do?
 ------------------------------------------------------------------------------------
@@ -65,7 +65,7 @@ You can only follow someone who has an account on a Mastodon server that support
 
 Can the browser extension be used with Bitwarden hosted on the embassy?
 -----------------------------------------------------------------------
-Yes, but only in a tor-enabled browser.  Just add your .onion address as the server in the extension.
+Yes, but only in a tor-enabled browser.  Just add your .onion address as the server in the extension.  Make sure that http:// is at the beginning, and NOT https://, as this will not work.
 
 I want to use BTCPayServer on my website, but Tor is the only option, how can visitors access my BTCPay on clearnet?
 --------------------------------------------------------------------------------------------------------------------
