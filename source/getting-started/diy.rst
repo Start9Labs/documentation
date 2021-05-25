@@ -12,16 +12,22 @@ DIY Guide
 
 By popular demand, we are pleased to present this "Do it Yourself" (DIY) guide for the Start9 Embassy personal server!
 
+.. warning:: This DIY guide is for Embassy OS version 0.2.13. A substantive change will be made to this guide for Embassy OS 0.3.0 scheduled for release in July.  When 0.3.0 launches it will require hardware updates. Please `contact us <https://docs.start9.com/support/contact.html>`_ for additional information.
+
+
+
 Motivation
 ==========
 
 There are four reasons you might prefer to build your own Embassy instead of purchasing one from us.
 
-#. You already have a Raspberry Pi and would like to re-purpose it.
+#. You already own the necessary hardware and would like to re-purpose it.
 
-#. You want to save on shipping costs.
+#. You live outside the US and want to save on shipping costs.
 
-#. You prefer not to divulge your physical shipping address.
+#. You do not trust Start9's supply chain.
+
+#. You do not want to share your shipping address.
 
 #. You just like building things.
 
