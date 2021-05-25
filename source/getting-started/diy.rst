@@ -12,7 +12,7 @@ DIY Guide
 
 By popular demand, we are pleased to present this "Do it Yourself" (DIY) guide for the Start9 Embassy personal server!
 
-.. warning:: This DIY guide is for Embassy OS version 0.2.13. A substantive change will be made to this guide for Embassy OS 0.3.0 scheduled for release in July.  When 0.3.0 launches it will require hardware updates. Please `contact us <https://docs.start9.com/support/contact.html>`_ for additional information.
+.. warning:: This DIY guide is for EmbassyOS version 0.2.13. A substantive change will be made to this guide for EmbassyOS v0.3.0 scheduled for release in July.  When 0.3.0 launches it will REQUIRE hardware updates. Please `contact us <https://docs.start9.com/support/contact.html>`_ for additional information.
 
 
 
