@@ -94,9 +94,9 @@ Why would I want to run a lightning node?
 -----------------------------------------
 The Lightning Network (LN) is a second 'layer,' built on top of the Bitcoin Protocol.  As a result all transactions on LN are backed up by the full security of the Bitcoin network.  Lightning is designed for instant payments between nodes, but similar to running a Bitcoin node, running your own is the only way to be sovereign.  When you have your own node, you will have the convenience of linking a Lightning wallet, for use on the go.  It is also possible to earn an income (granted a very small one at this time), if you are willing to learn how to become a 'routing node.'
 
-Where can I find instructions to open a channel with Start9?
-------------------------------------------------------------
-Please check out our "Using Lightning" video `here <https://www.youtube.com/watch?v=rAvoUNsobws>`_.
+How can I get started with Lightning and open my first channel?
+---------------------------------------------------------------
+You can check out our "Using Lightning" video `here <https://www.youtube.com/watch?v=rAvoUNsobws>`_ and learn the basics, including opening a channel with Start9.
 
 .. youtube:: rAvoUNsobws
 
