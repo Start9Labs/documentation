@@ -90,10 +90,17 @@ The reason there is so much confusion about these 3 concepts is that the Bitcoin
 
 Please note: of the wallets listed (Specter/Sparrow/Electrum), only Specter is currently able to use Embassy as it's node, but the other two should be available soon.
 
-
 Why would I want to run a lightning node?
 -----------------------------------------
 The Lightning Network (LN) is a second 'layer,' built on top of the Bitcoin Protocol.  As a result all transactions on LN are backed up by the full security of the Bitcoin network.  Lightning is designed for instant payments between nodes, but similar to running a Bitcoin node, running your own is the only way to be sovereign.  When you have your own node, you will have the convenience of linking a Lightning wallet, for use on the go.  It is also possible to earn an income (granted a very small one at this time), if you are willing to learn how to become a 'routing node.'
+
+Where can I find instructions to open a channel with Start9?
+------------------------------------------------------------
+Please check out our "Using Lightning" video `here <https://www.youtube.com/watch?v=rAvoUNsobws>`_.
+
+.. youtube:: rAvoUNsobws
+
+Please remember to always open a "Private" channel with us, or your channel is likely to be closed.  Please don't hesitate to reach out to us with any questions.
 
 I opened a Lightning channel, but my local balance is lower than I expected.  Where is the remainder?
 -----------------------------------------------------------------------------------------------------
