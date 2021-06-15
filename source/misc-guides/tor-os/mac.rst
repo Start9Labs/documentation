@@ -100,6 +100,6 @@ or
 
 .. code-block::
 
-    arch -x86_64 services start tor
+    arch -x86_64 brew services start tor
 
 depending on your device (as explained above). This will start Tor and ensure that it is always running, even after a restart.
