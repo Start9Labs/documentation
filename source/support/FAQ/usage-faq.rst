@@ -4,7 +4,8 @@ Basic Usage
 
 Is it easy to use?
 ------------------
-Yes!  The Embassy is designed to be plugged into power and internet, and after a short setup, is immediately ready to use.  Getting services is as easy as getting apps for a smartphone.
+Yes!  The Embassy is designed to be plugged into power and internet, and after a short setup, is immediately ready to use.  Getting Services is as easy as getting apps for a smartphone.
+As with anything new, you should expect to spend a little time learning the functions and features, and keep in mind that some Services may be more complex to understand and use than others.
 
 So I can run my own cloud?
 --------------------------
