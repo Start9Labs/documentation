@@ -18,7 +18,7 @@ The block index error is normal and goes away after the Bitcoin blockchain has s
 Does the Embassy run a full archival Bitcoin node?
 --------------------------------------------------
 The Embassy runs a full node, but does not run a full *archival* node, it's pruned. This means it does not store the entire Blockchain.  As it syncs, it discards blocks and transactions it does not need.
-It is fully validating and verifying consensus all the way from Genesis. Really, the only reason to store the entire Blockchain is if you want to run a block explorer.  Learn more here: :ref:`node`.  All this being said, it will be possible to run a full archival node on the Embassy in mid-2021, bringing this addtional functionality to those that would like it.
+It is fully validating and verifying consensus all the way from Genesis. Really, the only reason to store the entire Blockchain is if you want to run a block explorer.  Learn more here: :ref:`node`.  All this being said, it will be possible to run a full archival node on the Embassy in mid-2021, bringing this additional functionality to those that would like it.
 
 What actions, specifically, are only possible with an archival, or ‘unpruned’ node?
 -----------------------------------------------------------------------------------
@@ -96,7 +96,7 @@ The Lightning Network (LN) is a second 'layer,' built on top of the Bitcoin Prot
 
 How can I get started with Lightning and open my first channel?
 ---------------------------------------------------------------
-You can check out our "Using Lightning" video `here <https://www.youtube.com/watch?v=rAvoUNsobws>`_ and learn the basics, including opening a channel with Start9.
+You can check out our `"Using Lightning" video <https://www.youtube.com/watch?v=rAvoUNsobws>`_ and learn the basics, including opening a channel with Start9.
 
 .. youtube:: rAvoUNsobws
 
