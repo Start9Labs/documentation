@@ -62,6 +62,7 @@ Stop and Restart the Service.
 What is happening if I cannot connect with another user on Mastodon?
 --------------------------------------------------------------------
 You can only follow someone who has an account on a Mastodon server that supports Tor. It is a new feature, so many instances do not have it yet.
+Other issues are typically related to the tor connection, check your tor daemon, orbot, or try to restart the service.
 
 Can the browser extension be used with Bitwarden hosted on the embassy?
 -----------------------------------------------------------------------
@@ -72,6 +73,11 @@ I want to use BTCPayServer on my website, but Tor is the only option, how can vi
 As the Embassy produces a Tor Hidden Service for each service, BTCPayServer is only available via Tor by default.  For a brick and mortar business, this is no problem as you can use your own device for a customer to pay you on.  If you run your own website, it is possible to set up a reverse proxy in order to serve BTCPay content to your clearnet visitors.  A guide to doing this is available in the `BTCPayServer docs <https://docs.btcpayserver.org/ReverseProxyToTor/>`_.
 
 We understand that this can be a frustrating limitation, and adding clearnet support is high on our list of priorities for the Embassy.  This will allow a number of services to have better interoperability with the broader Web.
+
+I'm having issues connecting to users or rooms in Matrix/Synapse, what can I do?
+--------------------------------------------------------------------------------
+Most issues in Matrix will be due to improper setup, or tor connectivity issues.  Please follow the directions in the Synapse web interface closely, and be sure that you have a good tor connection on the device you are trying to connect with.
+Please reach out to us if you are still unable to connect.
 
 I don't see an answer to my question regarding a certain service.  Is there more documentation?
 -----------------------------------------------------------------------------------------------

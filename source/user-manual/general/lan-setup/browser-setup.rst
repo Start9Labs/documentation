@@ -17,18 +17,6 @@ Select the browser you would like to configure to import the certificate from yo
 - :ref:`Firefox <firefox>`
 - :ref:`Safari <safari>`
 
-Select the browser you would like to configure to import the certificate from your desktop:
-
-.. .. toctree::
-..   :hidden:
-
-..   browser
-
-- :ref:`Brave <brave>`
-- :ref:`Chrome <chrome>`
-- :ref:`Firefox <firefox>`
-- :ref:`Safari <safari>`
-
 .. _brave:
 
 Brave
