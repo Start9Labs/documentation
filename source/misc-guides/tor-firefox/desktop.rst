@@ -18,8 +18,7 @@ Setting up Firefox with Tor on Desktop
     :alt: Firefox whitelist onions screenshot
 
 4. Download a `Proxy Auto Config` file to inform Firefox how to use the Tor daemon running on your computer. You can get Start9's standard file by following the OS-specific instructions below:
-
-    Windows:
+    Windows:  
 
     Click `here <https://registry.start9labs.com/sys/proxy.pac>`_ to get the file and save the file somewhere you won’t delete it.  Please remember the location you save the file in if you do not use our example location.  For this example:
 
@@ -29,7 +28,7 @@ Setting up Firefox with Tor on Desktop
 
     Mac:
 
-    Open the `Terminal` App on your Mac. You can find it in your list of Applications.  In the terminal, enter:
+    Open the ``Terminal`` App on your Mac. You can find it in your list of Applications.  In the terminal, enter:
 
     .. code-block::
 
@@ -56,17 +55,16 @@ Setting up Firefox with Tor on Desktop
     :width: 80%
     :alt: Firefox options screenshot
 
-    Select :menuselection:`Settings --> Options`
+    Select :menuselection:``Settings --> Options``
 
 
-6. Search for the term “proxy” in the search bar in the upper right, then select the button that says `Settings…`:
+6. Search for the term “proxy” in the search bar in the upper right, then select the button that says ``Settings…``:
 
    .. figure:: /_static/images/tor/firefox_search.png
     :width: 80%
     :alt: Firefox search screenshot
 
-7. This should open a menu that will allow you to configure your proxy settings. Select `Automatic proxy configuration URL` and paste in the path to your PAC file from earlier, prefixed with ``file://``. For example:
-
+7. This should open a menu that will allow you to configure your proxy settings. Select ``Automatic proxy configuration URL`` and paste in the path to your PAC file from earlier, prefixed with ``file://``. For example:
     Windows:
 
     .. code-block::
@@ -85,7 +83,7 @@ Setting up Firefox with Tor on Desktop
 
       file:///etc/tor/proxy.pac
 
-8. Then, check the box labeled `Proxy DNS when using SOCKS v5`:
+8. Then, check the box labeled ``Proxy DNS when using SOCKS v5``:
 
    .. figure:: /_static/images/tor/firefox_proxy.png
     :width: 80%
@@ -93,4 +91,4 @@ Setting up Firefox with Tor on Desktop
 
 9. Click ``OK`` and then restart Firefox for the changes to take effect.
 
-10. You’re all set! You should now be able to navigate to `.onion` URLs in Firefox. This means you can bookmark Cups Messenger, and use your Bitwarden Tor address in the `Bitwarden Firefox Plugin <https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/>`_.
+10. You’re all set! You should now be able to navigate to ``.onion`` URLs in Firefox. This means you can bookmark Cups Messenger, and use your Bitwarden Tor address in the `Bitwarden Firefox Plugin <https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/>`_.
