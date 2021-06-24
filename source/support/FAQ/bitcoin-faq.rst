@@ -62,15 +62,19 @@ Which wallets can I use that sync with my Embassy Bitcoin node?
 ---------------------------------------------------------------
 The only currently available external options are FullyNoded and Specter.  Within the Embassy, BTCPayServer is available, which offers a wallet that is automatically connected to your Embassy's Bitcoin Core node.  Keep in mind that this first and foremost a payment gateway, rather than a personal wallet.  Unforutnately, this is still not a popular functionality in Bitcoin wallets.  We are in communication with several wallet developers about adding Tor full node support.  
 
+What Lightning wallets can I use that sync with my Embassy?
+-----------------------------------------------------------
+Spark, Zap, and Zeus.
+
+Is BlueWallet an option?
+------------------------
+BlueWallet requires a separate backend service called LNDHub, which is not available on the Embassy at this time.
+
 Is there a guide for connecting Specter Wallet to my Embassy?
 -------------------------------------------------------------
 There is.  Please follow the integration guide `here <https://github.com/Start9Labs/bitcoind-wrapper/tree/master/docs/integrations/specter>`_ and select the tutorial based on your operating system.
 
 More guides, particularly in video form, are forthcoming.
-
-Is BlueWallet an option?
-------------------------
-BlueWallet requires a separate backend service called LNDHub, which is not available on the Embassy at this time.
 
 I want to use my hardware signer, such as Coldcard or Trezor, with my Embassy.  How does this work?
 ---------------------------------------------------------------------------------------------------
@@ -126,6 +130,8 @@ Yes, you may run both.  They will operate in their own environments and allow yo
 How do I connect my Spark mobile app to the Embassy Spark server?
 -----------------------------------------------------------------
 To use a Spark client, you still need to have Spark installed on the Embassy (which ‘serves’ Spark). Then, under Properties, there is a "Pairing URL". The first part of this is the server URL, and the end portion of it is the access key.
+
+Unforutnately, Spark cannot currently be used in Consulate.  This issue is being tracked `here <https://github.com/Start9Labs/consulate-ios/issues/30>`_.
 
 Are my addresses, channels, and balances all stored in LND or in RTL?
 ---------------------------------------------------------------------
