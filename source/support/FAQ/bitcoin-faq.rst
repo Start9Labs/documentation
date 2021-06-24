@@ -131,7 +131,7 @@ How do I connect my Spark mobile app to the Embassy Spark server?
 -----------------------------------------------------------------
 To use a Spark client, you still need to have Spark installed on the Embassy (which ‘serves’ Spark). Then, under Properties, there is a "Pairing URL". The first part of this is the server URL, and the end portion of it is the access key.
 
-Unforutnately, Spark cannot currently be used in Consulate.  This issue is being tracked `here <https://github.com/Start9Labs/consulate-ios/issues/30>`_.
+Unfortunately, Spark cannot currently be used in Consulate.  This issue is being tracked `here <https://github.com/Start9Labs/consulate-ios/issues/30>`_.
 
 Are my addresses, channels, and balances all stored in LND or in RTL?
 ---------------------------------------------------------------------
