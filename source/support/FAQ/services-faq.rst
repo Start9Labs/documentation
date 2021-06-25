@@ -76,8 +76,13 @@ We understand that this can be a frustrating limitation, and adding clearnet sup
 
 I'm having issues connecting to users or rooms in Matrix/Synapse, what can I do?
 --------------------------------------------------------------------------------
-Most issues in Matrix will be due to improper setup, or tor connectivity issues.  Please follow the directions in the Synapse web interface closely, and be sure that you have a good tor connection on the device you are trying to connect with.
+Most issues in Matrix will be due to improper setup, or tor connectivity issues.  Please follow the directions in the Synapse web interface closely, and be sure that you have a good tor connection on the device you are trying to connect with.  As with all Tor addresses, make sure you are using http:// as a prefix (some apps will automatically prefix https://.
+
 Please reach out to us if you are still unable to connect.
+
+My Element desktop client stopped working after an OS update, what is happening?
+--------------------------------------------------------------------------------
+If you had to create a custom destkop shortcut, it is likely that this was reset with the system update, so you'll just need to remake it.
 
 I don't see an answer to my question regarding a certain service.  Is there more documentation?
 -----------------------------------------------------------------------------------------------
