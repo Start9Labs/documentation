@@ -13,3 +13,4 @@ A collection of common questions and concerns from our community.
   setup-faq
   services-faq
   bitcoin-faq
+  030-faq
