@@ -19,12 +19,6 @@ For macOS running on ARM chips (ie. newer macs):
         softwareupdate --install-rosetta
         arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-#. Use this command to install packages:
-
-    .. code-block::
-
-        arch -x86_64 brew install <package>
-
 For macOS Big Sur/Catalina:
 ---------------------------
 
