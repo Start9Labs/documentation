@@ -16,7 +16,7 @@ You have 2 options:
 
 I want to buy an Embassy, what do I need to do?
 -----------------------------------------------
-Currently we are selling the v0.2.x Embassy, which are shipped immediately and can be upgraded when v0.3.0 is available.  We are also selling upgrade kits, which contain all the `required hardware <https://start9.com/eos-0.3.0>`_ for v0.3.0 and will be shipped when the update is complete.
+Currently we are selling the v0.2.x Embassy, which are shipped immediately and can be upgraded when v0.3.0 is available.  We are also selling upgrade kits, which contain all the `required hardware <https://start9.com/eos-0.3.0>`_ for v0.3.0 and will be shipped when the update is complete.  The software update is free.
 
 I want to build an Embassy myself, what do I need to do?
 --------------------------------------------------------
@@ -24,13 +24,13 @@ You'll simply need to gather the `required hardware <https://start9.com/eos-0.3.
 
 I would like to purchase my own hardware.  What factors do I need to consider?
 ------------------------------------------------------------------------------
-Please check :ref:`here<diy>` for the basic Raspberry Pi hardware. ``*`` (Skip this step if you already have an Embassy) ``*``
+1 - Please check :ref:`here<diy>` for the basic Raspberry Pi hardware. ``*`` (Skip this step if you already have an Embassy) ``*``
 
-The most important piece of additional hardware is the external drive.  It MUST have a USB 3.x connection (3.0, 3.1, etc are fine).  You may use a HDD, an SSD, or an M.2 SSD / NVME.  HDDs are cheaper, and the storage capacities can be much higher, however this is at a big performance sacrifice.  SSDs are significantly faster (all services and user data will be stored on your external drive), and more generally more reliable than an HDD.  This is what we recommend and sell with our official upgrade kits.  An M.2 SSD is simply an SSD with a smaller form factor.  An NVME SSD is even more performant than an SSD, however that perfomance will not be accessable due to the USB bottleneck the data must traverse to the Pi.  Drives will range in price radically depending on what you choose.
+2 - The most important piece of additional hardware is the external drive.  It MUST have a USB 3.x connection (3.0, 3.1, etc are fine).  You may use a HDD, an SSD, or an M.2 SSD / NVME.  HDDs are cheaper, and the storage capacities can be much higher, however this is at a big performance sacrifice.  SSDs are significantly faster (all services and user data will be stored on your external drive), and more generally more reliable than an HDD.  This is what we recommend and sell with our official upgrade kits.  An M.2 SSD is simply an SSD with a smaller form factor.  An NVME SSD is even more performant than an SSD, however that perfomance will not be accessable due to the USB bottleneck the data must traverse to the Pi.  Drives will range in price radically depending on what you choose.
 
 If you are unsure what drive type is best for you, get an external SSD with a USB 3.0 connection, such as a Samsung T5.  These are around $130USD for 1TB and around $240 for 2TB.
 
-For the SD card, any type will work, and 16GB is recommended.  A larger card will not offer any benefit.  These are $5-10USD.
+3 - For the SD card, any type will work, and 16GB is recommended.  A larger card will not offer any benefit.  These are $5-10USD.
 
 What size drive do I need?
 --------------------------
