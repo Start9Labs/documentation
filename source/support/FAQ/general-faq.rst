@@ -86,6 +86,10 @@ Can you tell me about the License?
 ----------------------------------
 EmbassyOS is published under our own Start9 Non-Commercial License, which has similar properties to many open source licenses with the exception that users cannot in any way, either through products or services, commercialize the source code, and any changes to the code or derivative works of the code are treated in the same manner. This means people will be welcome to access the source code, download it, use it, run it, fork it, change it, improve it - whatever they want - except sell it or sell services related to it.
 
+What kind of Internet connection is required to use Embassy?
+------------------------------------------------------------
+In general, any modern Internet connection is usually fine.  We have had reports from users on rural satellite connections with high latency (ping), and low up/download speeds who had issues accessing via Tor.  You can check your internet connection at `SpeedTest <https://speedtest.net>`_ to find your ping and speed.  If your ping is higher than 200ms and/or your speeds are lower than 5Mbps, you may want to host your Embassy somewhere with a better connection.  Please don't hesitate to contact us with any questions.
+
 I run a business, can I use an Embassy for tasks such as password management and file sharing?
 ----------------------------------------------------------------------------------------------
 Absolutely.  An Embassy would be a great addition to any business as it is easy to use and provides services that you control, with no subscription fees.
