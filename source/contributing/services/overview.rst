@@ -67,7 +67,7 @@ This DSL is utilized in the :ref:`config rules <config_rules>` and :ref:`depende
 Manifest
 --------
 
-This file describes the service and it's requirements. It is used to:
+This file describes the service and its requirements. It is used to:
 
 - create a listing in the marketplace
 - denote any installation considerations
