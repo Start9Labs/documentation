@@ -50,6 +50,10 @@ Why am I having trouble using my Embassy via the Brave browser?
 ---------------------------------------------------------------
 Unfortunately, Brave does not treat .onion addresses in a 'secure context.'  This is a known issue in Brave that is being tracked `here <https://github.com/brave/brave-browser/issues/13834>`_.
 
+I'm getting this error: The shell command "apt-get update" returned a failure exit code: 100.  What do I do?
+------------------------------------------------------------------------------------------------------------
+This has been fixed in newer updates.  Please first make sure to update to the latest EOS version (2.16 or higher).  If this does not work, please :ref:`contact us <contact>`.
+
 Is it true that iOS has some limited functionality in regard to the Embassy?
 ----------------------------------------------------------------------------
 The short answer is yes, but not much.  Unfortunately, Apple does not allow any ability for Tor to run in the background (everything on the Embassy runs over Tor).  Most of your Embassy services can be run with Tor-native apps, inside Consulate, or with another Tor browser, with the exception of RTL, Spark, and Matrix.  Zap and Zeus wallets can be used in place of RTL/Spark, and we hope a Tor-native Element client will be available soon to allow for the use of Matrix.

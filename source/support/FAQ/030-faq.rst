@@ -46,6 +46,6 @@ Yes, you may, and our original upgrade kits come with this style of drive.  We h
 
 Can I re-use the SD Card from my Embassy for the new version?
 -------------------------------------------------------------
-ONLY if you have no data that you want to transfer.  If you have existing files, Lightning channels, etc, then you will need to migrate to the new drive first.  You can use the original 128GB card for other purposes, sell it, etc.
+ONLY if you have no data that you want to transfer.  If you have existing files, Lightning channels, etc, then you will need to migrate to the new drive first.  Keep in mind that this SD card is major overkill for newer versions of EmbassyOS, which will only require a 16GB SD card.  This is because all service and user data will be stored on external drives going forward.  You can use the original 128GB card for other purposes, sell it, etc.
 
 ``*`` PLEASE FEEL FREE TO REACH OUT TO US WITH ANY QUESTIONS - THIS PROCESS WILL BE QUITE EASY AND WE ARE HERE TO HELP :) ``*``
