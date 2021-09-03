@@ -1,3 +1,5 @@
+.. _bitcoin_faq:
+
 *****************************
 Bitcoin and Lightning Network
 *****************************

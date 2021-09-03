@@ -1,3 +1,5 @@
+.. _setup_faq:
+
 *************************
 Setup and Troubleshooting
 *************************
