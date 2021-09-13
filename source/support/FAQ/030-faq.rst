@@ -34,6 +34,8 @@ If you are unsure what drive type is best for you, get an external SSD with a US
 
 3 - For the SD card, any type will work, and 16GB is recommended.  A larger card will not offer any benefit.  These are $5-10USD. EmbassyOS will be stored on this card.
 
+4 - For the powered USB hub, any kind will work as long as it has it's own power supply and is USB 3.0 capable.  
+
 What size drive do I need?
 --------------------------
 This will depend on how you want to use your Embassy.  We recommend a minimum of 1TB if you intend to run a pruned Bitcoin node, or no Bitcoin node at all, and a 2TB minimum if you intend to run a full archival node, which will add a lot more functionality.
@@ -46,7 +48,7 @@ I want to add an HDD later, in addition to my SSD, what are the performance cons
 -------------------------------------------------------------------------------------------------------
 After additional drive support is added (v0.3.x, no current ETA), we will recommend using uniform drives, but it will not be required.  If you choose to add a lower performance HDD to an existing SSD in order to increase storage capacity, the reads and writes to the HDD will obviously be slower, but otherwise there will not be any issues.
 
-The reason we will recommend uniform drives is because we will be adding the ability to create redundancy (as an advanced feature), if you are interested.  This will only be necessary if uptime is very important to you, such as when running a Lightning routing node, or serving a popular .onion site.  Most users will find that a single drive, adding drives as space is needed, will suit their needs just fine.
+The reason we will recommend uniform drives is because we will be adding the ability to create redundancy (drive mirroring, as an advanced feature), if you are interested.  This will only be necessary if uptime is very important to you, such as when running a Lightning routing node, or serving a popular .onion site.  Most users will find that a single drive, adding drives as space is needed, will suit their needs just fine.
 
 Can I use an internal SSD with a USB 3 enclosure?  I've heard these may have issues?
 ------------------------------------------------------------------------------------
@@ -54,7 +56,7 @@ Yes, you may, and our original upgrade kits come with this style of drive.  We h
 
 Does my external drive need its own power supply?
 -------------------------------------------------
-This should not be necessary for a single drive and we are not selling external power with our kits.  However, it will be advised to use a powered USB hub, or powered external drives, if you continue to add additional drives in the future.
+We are recommending the use of a powered USB hub to connect drives with (and power the Pi if it has USB-C).  However, you may use powered disk drives if you prefer.
 
 Can I re-use the SD Card from my Embassy for the new version?
 -------------------------------------------------------------
