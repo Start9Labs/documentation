@@ -19,6 +19,7 @@ brew install sphinx-doc
 pip3 install sphinx-autobuild
 pip3 install sphinx-book-theme || pip install git+https://github.com/executablebooks/sphinx-book-theme.git@master
 pip3 install sphinxcontrib.yt
+pip3 install sphinx-multiversion
 ```
 
 ### Development

@@ -25,17 +25,30 @@ copyright = '2021, Start9 Labs, Inc'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinxcontrib.yt'
+    'sphinxcontrib.yt',
+    'sphinx_multiversion'
     # 'sphinxcontrib.needs'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
+# HTML sidebar widgets
+# html_sidebars = {
+#     '**': [
+#         'versioning.html',
+#     ],
+# }
+
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
+
+# Multiversion settings
+smv_tag_whitelist = 'None'
+smv_prefer_remote_refs = True
+# smv_branch_whitelist = master
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -56,12 +69,13 @@ html_theme_options = {
     # "theme_dev_mode": True,
     "path_to_docs": "source",
     "repository_url": "https://github.com/Start9Labs/documentation",
+    "repository_branch": "master",
     "use_edit_page_button": True,
     "use_issues_button": True,
     "use_repository_button": True,
     "extra_navbar": "Powered by <a href=\"https://start9.com\">Start9</a>", # Will be displayed underneath the left navbar"
     "show_navbar_depth": 1,
-    "use_download_button": False,
+    "use_download_button": True,
     "use_edit_page_button": True,
     "launch_buttons": {
         "main_site": "https://start9.com",

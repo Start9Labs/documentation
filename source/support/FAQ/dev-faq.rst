@@ -22,7 +22,7 @@ With sufficient effort, most any software with the ability to be self-hosted cou
 - Already 'dockerized'
 
 Which possible formats can I use to write the :code:`manifest`, :code:`config_spec`, and :code:`config_rules` files?
----------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
 JSON, TOML, or YAML are valid options.
 
 I'm getting errors on the `embassy-sdk pack` step.  What's going on?
