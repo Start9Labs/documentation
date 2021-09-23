@@ -1,3 +1,5 @@
+.. _setup_faq:
+
 *************************
 Setup and Troubleshooting
 *************************
@@ -49,6 +51,10 @@ If you are having trouble with this, you might consider letting the Embassy out 
 Why am I having trouble using my Embassy via the Brave browser?
 ---------------------------------------------------------------
 Unfortunately, Brave does not treat .onion addresses in a 'secure context.'  This is a known issue in Brave that is being tracked `here <https://github.com/brave/brave-browser/issues/13834>`_.
+
+I'm getting this error: The shell command "apt-get update" returned a failure exit code: 100.  What do I do?
+------------------------------------------------------------------------------------------------------------
+This has been fixed in newer updates.  Please first make sure to update to the latest EOS version (2.16 or higher).  If this does not work, please :ref:`contact us <contact>`.
 
 Is it true that iOS has some limited functionality in regard to the Embassy?
 ----------------------------------------------------------------------------

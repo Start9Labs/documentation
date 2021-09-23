@@ -14,3 +14,4 @@ A collection of common questions and concerns from our community.
   services-faq
   bitcoin-faq
   030-faq
+  dev-faq

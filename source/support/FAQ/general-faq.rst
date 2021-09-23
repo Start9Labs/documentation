@@ -1,3 +1,5 @@
+.. _general_faq:
+
 *******
 General
 *******
