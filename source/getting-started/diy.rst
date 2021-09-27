@@ -35,7 +35,7 @@ Hardware
 ========
 
 Components (EmbassyOS versions 0.2.x)
-------------------------------------
+-------------------------------------
 
 .. note:: For newer versions of EmbassyOS (0.3.0 and above), please see the new hardware requirements `here <https://start9.com/eos-0.3.0>`_.  These pieces are *in addition* to the hardware below.
 
