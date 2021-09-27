@@ -12,7 +12,7 @@ DIY Guide
 
 By popular demand, we are pleased to present this "Do it Yourself" (DIY) guide for the Start9 Embassy personal server!
 
-.. warning:: This DIY guide is for EmbassyOS version 0.2.13. A substantive change will be made to this guide for EmbassyOS v0.3.0 scheduled for release in Q3 2021.  When 0.3.0 launches it will REQUIRE hardware updates. Please `contact us <https://docs.start9.com/support/contact.html>`_ for additional information.
+.. warning:: This DIY guide is for EmbassyOS version 0.2.13. A substantive change will be made to this guide for EmbassyOS v0.3.0 scheduled for release in Q3 2021.  When 0.3.0 launches it will REQUIRE hardware updates, which you can find `here <https://start9.com/eos-0.3.0>`_.
 
 
 
@@ -34,8 +34,11 @@ There are four reasons you might prefer to build your own Embassy instead of pur
 Hardware
 ========
 
-Components
-----------
+Components (EmbassyOS versions 0.2.x)
+------------------------------------
+
+.. note:: For newer versions of EmbassyOS (0.3.0 and above), please see the new hardware requirements `here <https://start9.com/eos-0.3.0>`_.  These pieces are *in addition* to the hardware below.
+
 #. `Raspberry Pi 4B (8GB) <https://raspberrypi.org/products/raspberry-pi-4-model-b/?variant=raspberry-pi-4-model-b-8gb>`_
 #. `Power supply for Raspberry Pi 4B <https://raspberrypi.org/products/type-c-power-supply/>`_
 #. Case for Raspberry Pi 4B (`passive cooling recommended <https://www.amazon.com/Geekworm-Raspberry-Aluminum-Passive-Heatsink/dp/B07Z6FYHCH/>`_ `*`)
