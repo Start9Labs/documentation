@@ -33,6 +33,9 @@ Running Tor on Windows
    .. code-block::
 
     sc create tor start=auto binPath="<PATH TO>\Browser\TorBrowser\Tor\tor.exe -nt-service"
+    
+   .. code-block::
+    
     sc start tor
 
    .. note:: If you get the error "Access denied," please ensure you are running the command prompt in Administrator mode.  You can tell because the prompt will show C:\\Users\\YOUR-USERNAME> if you are NOT in admin mode, and it will show C:\\WINDOWS\\system32 if you ARE in admin mode.
