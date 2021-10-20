@@ -59,3 +59,7 @@ This has been fixed in newer updates.  Please first make sure to update to the l
 Is it true that iOS has some limited functionality in regard to the Embassy?
 ----------------------------------------------------------------------------
 The short answer is yes, but not much.  Unfortunately, Apple does not allow any ability for Tor to run in the background (everything on the Embassy runs over Tor).  Most of your Embassy services can be run with Tor-native apps, inside Consulate, or with another Tor browser, with the exception of RTL, Spark, and Matrix.  Zap and Zeus wallets can be used in place of RTL/Spark, and we hope a Tor-native Element client will be available soon to allow for the use of Matrix.
+
+I'm having trouble using Firefox for Tor addresses on Lineage, what can I do?
+-----------------------------------------------------------------------------
+Unfortunately, there seems to be a bug in Lineage that makes using Firefox over Tor currently unusable.  Currently, this feature works fine on Calyx and Graphene.
