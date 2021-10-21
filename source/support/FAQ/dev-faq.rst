@@ -17,8 +17,8 @@ What considerations go into selecting an application to package?
 With sufficient effort, most any software with the ability to be self-hosted could make its way onto EmbassyOS.  That being said, the following features will make service packaging much easier:
 
 - Already built with self-hosting in mind
-- Active development
-- Built-in tor support
+- Active development / community
+- Native proxy/tor support
 - Already 'dockerized'
 
 Which possible formats can I use to write the :code:`manifest`, :code:`config_spec`, and :code:`config_rules` files?
@@ -28,5 +28,4 @@ JSON, TOML, or YAML are valid options.
 I'm getting errors on the `embassy-sdk pack` step.  What's going on?
 --------------------------------------------------------------------
 There is something either missing or incorrect in regard to one of the :code:`manifest`, :code:`configs`, :code:`instructions`, or :code:`icon` files.
-
 
