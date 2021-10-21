@@ -35,13 +35,10 @@ templates_path = ['_templates']
 
 # HTML sidebar widgets
 # html_sidebars = {
-<<<<<<< HEAD
 #     "**": ["versioning.html"],
-=======
 #     '**': [
 #         'versioning.html',
 #     ],
->>>>>>> c566da4 (Versioning init)
 # }
 
 # List of patterns, relative to source directory, that match files and
@@ -50,7 +47,6 @@ templates_path = ['_templates']
 exclude_patterns = []
 
 # Multiversion settings
-<<<<<<< HEAD
 # smv_tag_whitelist = None
 # smv_branch_whitelist = None
 # smv_prefer_remote_refs = True
@@ -59,12 +55,10 @@ exclude_patterns = []
 #     "v0.2.x" : "https://github.com/Start9Labs/documentation",
 #     "v0.3.x" : "https://github.com/Start9Labs/documentation/tree/docs-updates"
 # }
-=======
 smv_tag_whitelist = 'None'
 smv_prefer_remote_refs = True
 # smv_branch_whitelist = master
 
->>>>>>> c566da4 (Versioning init)
 
 # -- Options for HTML output -------------------------------------------------
 
