@@ -89,7 +89,7 @@ With EmbassyOS, this means a service wrappers' configuration requires a particul
 .s9pk Bundle
 ------------
 
-The configuration and manifest files get bundled into the ``.s9pk`` package, which is `built using appmgr <https://github.com/Start9Labs/appmgr>`_. Each new version release should include the updated version of these files re-bundled into a new binary. This is the file that will be downloaded from the marketplace. Upon user initiation, EmbassyOS then un-packages and installs the service.
+The configuration and manifest files get bundled into the ``.s9pk`` package, which is `built using appmgr <https://github.com/Start9Labs/embassy-os/tree/master/appmgr>`_. Each new version release should include the updated version of these files re-bundled into a new binary. This is the file that will be downloaded from the marketplace. Upon user initiation, EmbassyOS then un-packages and installs the service.
 
 Hello World Example
 -------------------
