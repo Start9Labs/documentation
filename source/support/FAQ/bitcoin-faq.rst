@@ -43,7 +43,7 @@ Even if your wallet is plugged into your Embassy, whether your wallet is hot or 
 
 How does Bitcoin Proxy request (and verify) data when that data is needed by some app using it?
 -----------------------------------------------------------------------------------------------
-Proxy fetches blocks from your pruned node if it still has them, and fetches them from peers when it does not.  Proxy can ensures the fetched block is valid by comparing it to its header, which is retained by the pruned node.  The header is a product of the hash of the block itself, amongst other things, so it can't be
+Proxy fetches blocks from your pruned node if it still has them, and fetches them from peers when it does not.  Proxy can ensures the fetched block is valid by comparing it to its header, which is retained by the pruned node.  The header is a product of the hash of the block itself, amongst other things, so it can't be tampered with.
 
 What is the difference between the Bitcoin Wallet Tracker and the Electrum Personal Server?
 -------------------------------------------------------------------------------------------
