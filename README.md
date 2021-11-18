@@ -58,3 +58,7 @@ To update Sphinx Book Theme:
 
 To deploy theme update:
 - Build and publish according to production release process
+
+## Versioning
+- Build for versioning: `sphinx-multiversion source build/html`
+- To view version metadata: `sphinx-multiversion source build/html --dump-metadata`

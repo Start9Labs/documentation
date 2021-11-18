@@ -34,12 +34,9 @@ extensions = [
 templates_path = ['_templates']
 
 # HTML sidebar widgets
-# html_sidebars = {
-#     "**": ["versioning.html"],
-#     '**': [
-#         'versioning.html',
-#     ],
-# }
+html_sidebars = {
+    "**": ["sidebar-logo.html", "search-field.html", "versioning.html", "sbt-sidebar-nav.html", "sbt-sidebar-footer.html"]
+}
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -47,18 +44,23 @@ templates_path = ['_templates']
 exclude_patterns = []
 
 # Multiversion settings
-# smv_tag_whitelist = None
-# smv_branch_whitelist = None
-# smv_prefer_remote_refs = True
+# Whitelist pattern for tags (set to None to ignore all tags)
+smv_tag_whitelist = r'^v\d+\.\d+$' # Include tags like "v2.1"
 
-# Versions = {
-#     "v0.2.x" : "https://github.com/Start9Labs/documentation",
-#     "v0.3.x" : "https://github.com/Start9Labs/documentation/tree/docs-updates"
-# }
-smv_tag_whitelist = 'None'
+# Whitelist pattern for branches (set to None to ignore all branches)
+smv_branch_whitelist = r'^.*$'
+
+# Whitelist pattern for remotes (set to None to use local branches only)
+smv_remote_whitelist = r'^(origin)$'
+
+# Pattern for released versions
+smv_released_pattern = r'^tags/.*$'
+
+# Format for versioned output directories inside the build directory
+smv_outputdir_format = 'versions/{ref.name}'
+
+# Determines whether remote or local git branches/tags are preferred if their output dirs conflict
 smv_prefer_remote_refs = True
-# smv_branch_whitelist = master
-
 
 # -- Options for HTML output -------------------------------------------------
 
