@@ -66,7 +66,7 @@ A Service can be any piece of software added to the Marketplace.  All services a
 
 Does the Embassy ship worldwide?
 --------------------------------
-Yes.
+No.  We ship everywhere that DHL ships, with the unfortunate exception of Europe, where the VAT and Customs are so ridiculous that they cost as much as Embassy itself or more.  Please consider buying your hardware locally, and purchasing EmbassyOS as a download from us instead.
 
 Does the Embassy have international electrical plugs?
 -----------------------------------------------------
@@ -97,10 +97,6 @@ I run a business, can I use an Embassy for tasks such as password management and
 Absolutely.  An Embassy would be a great addition to any business as it is easy to use and provides services that you control, with no subscription fees.
 
 With the addition of `BTCPay Server <https://btcpayserver.org/>`_, you can even run your own payment processor and accept cryptocurrency payments with no third party necessary!
-
-How does pricing work for EmbassyOS?  Are you targeting a specific USD price?
------------------------------------------------------------------------------
-The price is changed every 2016 blocks, which occurs about every 14 days. And no, the intent is not to tie EmbassyOS to a USD value, though at the moment USD is a convenient proxy for real purchasing power.
 
 What are you using for a store backend?  Do you store my data?
 --------------------------------------------------------------
