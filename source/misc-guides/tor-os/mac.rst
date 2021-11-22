@@ -4,11 +4,11 @@
 Running Tor on MacOS
 ********************
 
-Install Homebrew
-================
-
 For macOS running on ARM chips (ie. newer macs):
-------------------------------------------------
+================================================
+
+Install Homebrew
+----------------
 
 .. warning:: macOS Homebrew running natively on M1/Apple Silicon/ARM has partial functionality. Therefore, some additional steps are needed to setup Homebrew.
 
@@ -19,8 +19,30 @@ For macOS running on ARM chips (ie. newer macs):
         softwareupdate --install-rosetta
         arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
+Install Tor
+-----------
+
+.. warning:: If you have the Tor Browser open, close it and quit the application.
+
+#. In the command line, install Tor:
+
+    .. code-block::
+
+        arch -x86_64 brew install tor
+
+#. Then start Tor:
+
+    .. code-block::
+
+        arch -x86_64 brew services start tor
+
+This will start Tor and ensure that it is always running, even after a restart.  See the `Tor Project <https://2019.www.torproject.org/docs/tor-doc-osx.html.en>`_ for more details.
+
 For macOS Big Sur/Catalina:
----------------------------
+===========================
+
+Install Homebrew
+----------------
 
 1. If you do not have Homebrew installed, follow the installation instructions `here <https://brew.sh/>`_.
 
@@ -51,49 +73,26 @@ Wait a few minutes while it downloads and installs what it needs.
 .. warning:: Surprisingly, Homebrew uses Google Analytics to collect anonymous usage data. You can deselect the option to share usage data by `opting out <https://docs.brew.sh/Analytics#opting-out>`_.
 
 Install Tor
-===========
+-----------
 
 .. warning:: If you have the Tor Browser open, close it and quit the application.
 
-For macOS with ARM chips
-------------------------
-
-In the command line type:
-
-    .. code-block::
-
-        arch -x86_64 brew install tor
-
-For macOS Big Sur/Catalina:
----------------------------
-
-In the command line type:
+#. In the command line, install Tor:
 
     .. code-block::
 
         brew install tor
 
+    Once it is finished you have the following options:
 
-See the `Tor Project <https://2019.www.torproject.org/docs/tor-doc-osx.html.en>`_ for more details.
+    .. figure:: /_static/images/tor/install_tor.png
+        :width: 80%
+        :alt: Tor installation
 
-Once it is finished you have the following options:
+#. Then run Tor with:
 
-.. figure:: /_static/images/tor/install_tor.png
-    :width: 80%
-    :alt: Tor installation
+    .. code-block::
 
-    Install Tor
+        brew services start tor
 
-In the command line type
-
-.. code-block::
-
-    brew services start tor
-
-or
-
-.. code-block::
-
-    arch -x86_64 brew services start tor
-
-depending on your device (as explained above). This will start Tor and ensure that it is always running, even after a restart.
+This will start Tor and ensure that it is always running, even after a restart.  See the `Tor Project <https://2019.www.torproject.org/docs/tor-doc-osx.html.en>`_ for more details.
