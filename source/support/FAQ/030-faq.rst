@@ -6,7 +6,7 @@ EmbassyOS Version 0.3.0
 
 WHEN will the new version be released?
 --------------------------------------
-We are as eager to share this major OS overhaul with you as you are to use it.  At this time we can only confirm that it will be completed in Q3 of 2021.  We will update the ETA as soon as we can.
+We are as eager to share this major OS overhaul with you as you are to use it.  At this time we are in the testing phase.  We will update with an ETA as soon as we can.
 
 I have an Embassy already, what do I need to do?
 ------------------------------------------------
@@ -34,7 +34,7 @@ If you are unsure what drive type is best for you, get an external SSD with a US
 
 3 - For the SD card, any type will work, and 16GB is recommended.  A larger card will not offer any benefit.  These are $5-10USD. EmbassyOS will be stored on this card.
 
-4 - For the powered USB hub, any kind will work as long as it has it's own power supply and is USB 3.0 capable.  
+4 - For the powered USB hub, any kind will work as long as it has it's own power supply and is USB 3.0 capable.
 
 What size drive do I need?
 --------------------------
