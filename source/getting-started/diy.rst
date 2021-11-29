@@ -43,7 +43,7 @@ Components (EmbassyOS versions 0.2.x)
 #. `Power supply for Raspberry Pi 4B <https://raspberrypi.org/products/type-c-power-supply/>`_
 #. Case for Raspberry Pi 4B (`passive cooling recommended <https://www.amazon.com/Geekworm-Raspberry-Aluminum-Passive-Heatsink/dp/B07Z6FYHCH/>`_ `*`)
 #. `High endurance microSD <https://amazon.com/SanDisk-Endurance-microSDXC-Adapter-Monitoring/dp/B07NY23WBG/>`_ (recommended 128GB or more)
-#. `GPIO mini speaker/buzzer <https://www.amazon.com/Motherboard-Speaker-Desktop-Computer-Internal/dp/B079DKDSJ9/ref=sr_1_4?keywords=PC+Internal+Speaker+Buzzer&qid=1637340725&qsid=142-6397234-9356056&s=electronics&sr=1-4&sres=B01MR1A4NV%2CB079DKDSJ9%2CB07SPYB2HF%2CB07FCHT22L%2CB07F8NXHGP%2CB088KN6B9Q%2CB07Q81VG54%2CB08GKLQWZZ%2CB09B1W6MLL%2CB01LY5OP1E%2CB075M7FHM1%2CB016P9HJIA%2CB010OYASRG%2CB01N9MIOJX%2CB01FU0OQ0E%2CB01MXSEJO3%2CB0816B9Y5G%2CB08F57GSJ7%2CB01LAYWUDO%2CB086JXJ1LF>`_ (These often sell out, please let us know if this link needs to be refreshed)
+#. `GPIO mini speaker/buzzer <https://www.amazon.com/Corporate-Computer-Motherboard-Internal-Speaker/dp/B01527H4W2/ref=sr_1_5?keywords=pc+internal+speaker&qid=1638200450&qsid=134-2367895-4553613&sr=8-5&sres=B07FCHT22L%2CB01DM56TFY%2CB01527H4W2%2CB07VZV7GHL%2CB097B53J39%2CB01MR1A4NV%2CB08QRYTPGH%2CB088CSDZQM%2CB08GKLQWZZ%2CB09B1W6MLL%2CB08777GG4P%2CB084TSLMC6%2CB086JXJ1LF%2CB08C4P78DK%2CB07Q81VG54%2CB07B2WLS17&srpt=SPEAKERS>`_ (These often sell out, please let us know if this link needs to be refreshed)
 #. Ethernet cable
 #. MicroSD → USB adapter (if no microSD port on your computer)
 
