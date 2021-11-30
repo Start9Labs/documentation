@@ -40,7 +40,7 @@ Hardware: Components
 #. `Power supply for Raspberry Pi 4B <https://raspberrypi.org/products/type-c-power-supply/>`_
 #. Case for Raspberry Pi 4B (`passive cooling recommended <https://www.amazon.com/Geekworm-Raspberry-Aluminum-Passive-Heatsink/dp/B07Z6FYHCH/>`_ `*`)
 #. `High endurance microSD <https://amazon.com/SanDisk-Endurance-microSDXC-Adapter-Monitoring/dp/B07NY23WBG/>`_ (recommended 128GB or more)
-#. `GPIO mini speaker/buzzer <https://www.amazon.com/Corporate-Computer-Motherboard-Internal-Speaker/dp/B01527H4W2/ref=sr_1_5?keywords=pc+internal+speaker&qid=1638200450&qsid=134-2367895-4553613&sr=8-5&sres=B07FCHT22L%2CB01DM56TFY%2CB01527H4W2%2CB07VZV7GHL%2CB097B53J39%2CB01MR1A4NV%2CB08QRYTPGH%2CB088CSDZQM%2CB08GKLQWZZ%2CB09B1W6MLL%2CB08777GG4P%2CB084TSLMC6%2CB086JXJ1LF%2CB08C4P78DK%2CB07Q81VG54%2CB07B2WLS17&srpt=SPEAKERS>`_ (These often sell out, please let us know if this link needs to be refreshed)
+#. `GPIO mini speaker/buzzer <https://www.amazon.com/Corporate-Computer-Motherboard-Internal-Speaker/dp/B01527H4W2/>`_ (These often sell out, please let us know if this link needs to be refreshed)
 #. Ethernet cable
 #. MicroSD → USB adapter (or you may have a microSD port on your computer)
 
@@ -105,7 +105,7 @@ Hardware: Components
 #. `Power supply for Raspberry Pi 4B <https://raspberrypi.org/products/type-c-power-supply/>`_ Make sure this is at minimum 15w and 3.5a.
 #. Case for Raspberry Pi 4B (`passive cooling recommended <https://www.amazon.com/Geekworm-Raspberry-Aluminum-Passive-Heatsink/dp/B07Z6FYHCH/>`_ `*`)
 #. A `16GB microSD card <https://amazon.com/SanDisk-Endurance-microSDXC-Adapter-Monitoring/dp/B07NY23WBG/>`_ (no need for bigger). If you have ABSOLUTELY NO data to migrate, you may choose to re-use the card already in your Embassy.
-#. `GPIO mini speaker/buzzer <https://www.amazon.com/Corporate-Computer-Motherboard-Internal-Speaker/dp/B01527H4W2/ref=sr_1_5?keywords=pc+internal+speaker&qid=1638200450&qsid=134-2367895-4553613&sr=8-5&sres=B07FCHT22L%2CB01DM56TFY%2CB01527H4W2%2CB07VZV7GHL%2CB097B53J39%2CB01MR1A4NV%2CB08QRYTPGH%2CB088CSDZQM%2CB08GKLQWZZ%2CB09B1W6MLL%2CB08777GG4P%2CB084TSLMC6%2CB086JXJ1LF%2CB08C4P78DK%2CB07Q81VG54%2CB07B2WLS17&srpt=SPEAKERS>`_ (These often sell out, please let us know if this link needs to be refreshed)
+#. `GPIO mini speaker/buzzer <https://www.amazon.com/Corporate-Computer-Motherboard-Internal-Speaker/dp/B01527H4W2/>`_ (These often sell out, please let us know if this link needs to be refreshed)
 #. Ethernet cable
 #. MicroSD → USB adapter (or you may have a microSD port on your computer)
 #. An external drive (1TB minimum, 2TB SSD recommended), or an `internal drive <https://www.amazon.com/Crucial-MX500-NAND-SATA-Internal/dp/B078211KBB>`_ with an `USB enclosure <https://www.amazon.com/gp/product/B07T9D8F6C>`_, as sold with our upgrade kits. MUST CONNECT OVER USB 3.0
