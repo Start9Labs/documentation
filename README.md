@@ -19,6 +19,7 @@ brew install sphinx-doc
 pip3 install sphinx-autobuild
 pip3 install sphinx-book-theme || pip install git+https://github.com/executablebooks/sphinx-book-theme.git@master
 pip3 install sphinxcontrib.yt
+pip3 install sphinx-multiversion
 ```
 
 ### Development
@@ -43,7 +44,7 @@ Click on the "Issues" tab in the top navbar. Provide a good title and describe c
 
 ### Submitting a pull request
 
-Click on the "Pull requests" tab in the top navbar. Select the green "New pull request button" in the top right section. Select your branch for the compare dropdown, and master as the base. Provide an appropriate title and summary of the changes in the pull request description. Changes will be reviewed and merged when satisfactory. 
+Click on the "Pull requests" tab in the top navbar. Select the green "New pull request button" in the top right section. Select your branch for the compare dropdown, and master as the base. Provide an appropriate title and summary of the changes in the pull request description. Changes will be reviewed and merged when satisfactory.
 
 ## Helpful Resources
 
@@ -57,3 +58,7 @@ To update Sphinx Book Theme:
 
 To deploy theme update:
 - Build and publish according to production release process
+
+## Versioning
+- Build for versioning: `sphinx-multiversion source build/html`
+- To view version metadata: `sphinx-multiversion source build/html --dump-metadata`
