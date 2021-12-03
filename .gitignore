@@ -2,3 +2,4 @@
 .vscode/
 build/
 build-send.sh
+utils/deploy.sh
