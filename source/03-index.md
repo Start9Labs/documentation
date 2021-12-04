@@ -1,0 +1,125 @@
+Table of Contents
+
+# Getting Started
+- Introduction
+    - Purchasing
+    - Initial Setup
+    - Device-specific Setup Guides
+        - Linux
+        - Mac
+        - Windows
+        - Android
+        - iOS
+    - Walkthrough
+        - Tabs Overview
+        - Updating EOS
+        - Services Basics
+    - User Manual
+            - Basic Config
+                - Name Your Embassy
+                - WiFi Setup
+            - Running Tor
+                - Desktop
+                    - Linux
+                    - Mac
+                    - Windows
+                - Mobile
+                    - Android
+                    - iOS
+                - Browser
+                    - FF Desktop
+                    - FF Mobile
+            - LAN Setup
+                - Desktop
+                    - Linux
+                    - Mac
+                    - Windows
+                - Mobile
+                    - Android
+                    - iOS
+            - Known Limitations
+                - Desktop
+                    - Linux
+                    - Mac
+                    - Windows
+                - Mobile
+                    - Android
+                    - iOS
+    - Services
+        - Currently Available Services
+        - Managing Services
+            - Install / Uninstall
+            - Instructions
+            - Interfaces
+            - Config
+            - Backups
+            - Properties
+            - Logs
+            - Dependencies
+    - Troubleshooting
+        - Connection
+        - Embassy
+            - Hardware
+            - Software
+        - Services
+
+# Tune & Guides
+- DIY Guide
+    - Hardware
+    - EmbassyOS
+- Migrating to Embassy
+    - From Umbrel
+- Advanced Configurations
+    - SSH Setup
+    - SSH over Tor
+    - Exec into a Service
+    - Change Marketplace
+- EmbassyOS
+- Service-specific Guides
+    - Connecting External Services
+        - Bitcoin Wallets
+            - FullyNoded
+            - Specter
+            - Sparrow
+        - Lightning Wallets
+            - Spark
+            - Zap
+            - Zeus
+
+# Knowledgebase
+    - Concepts
+        - Open Source
+        - Self-Hosting
+        - Start9
+        - EmbassyOS
+        - Bitcoin/Lightning
+        - LAN
+        - SSL
+        - Tor
+    - FAQ
+        - General
+        - Embassy
+            - Device
+            - OS
+            - DIY
+        - Basic Usage
+        - Services
+        - Bitcoin and Lightning Network
+    - Contact
+
+# Developer Documentation
+    - Service Packaging Guide
+        - Overview
+        - Wrapper
+        - Manifest
+        - Docker
+        - Makefile
+        - Config
+        - Properties
+        - Instructions
+        - Backups
+        - Submission Process
+    - Service Packaging Walkthrough (Hello-World Example)
+    - Development FAQ
+        - Contributing
+        - Service Packaging
