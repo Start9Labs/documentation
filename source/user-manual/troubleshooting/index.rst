@@ -1,8 +1,8 @@
-.. _lan-setup:
+.. _troubleshooting:
 
-************
-Local Access
-************
+***************
+Troubleshooting
+***************
 
 .. warning::
   This guide assumes you are already :ref:`running Tor on your phone or computer<running-tor>`.
@@ -12,8 +12,6 @@ Once you have completed the above guide, select your device's operating system b
 .. toctree::
   :maxdepth: 2
 
-  linux
-  mac
-  windows
-  android
-  ios
+  shoot-connection
+  shoot-embassy
+  shoot-services

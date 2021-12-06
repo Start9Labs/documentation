@@ -1,0 +1,5 @@
+.. _embassy-os:
+
+*********
+EmbassyOS
+*********

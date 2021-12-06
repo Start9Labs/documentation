@@ -1,8 +1,8 @@
-.. _lan-setup:
+.. _limitations:
 
-************
-Local Access
-************
+*****************
+Known Limitations
+*****************
 
 .. warning::
   This guide assumes you are already :ref:`running Tor on your phone or computer<running-tor>`.

@@ -1,0 +1,5 @@
+.. _faq-bitcoin:
+
+*******
+Bitcoin
+*******

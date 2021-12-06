@@ -10,7 +10,7 @@
         - Android
         - iOS
 - Walkthrough
-    - Tabs Overview
+    - EmbassyOS Overview
     - Updating EOS
 - Services
     - Service Marketplace <link to marketplace>
@@ -27,7 +27,7 @@
         - Basic Config
             - Name Your Embassy
             - WiFi Setup
-        - Running Tor
+        - Tor Setup
             - Desktop
                 - Linux
                 - Mac
@@ -46,7 +46,7 @@
             - Mobile
                 - Android
                 - iOS
-        - Known Limitations
+        - Platform Limitations
             - Desktop
                 - Linux
                 - Mac
@@ -90,9 +90,10 @@
         - Start9
         - EmbassyOS
         - Bitcoin/Lightning
-        - LAN
-        - SSL
-        - Tor
+        - Networks
+            - LAN
+            - SSL
+            - Tor
     - FAQ
         - General
         - Embassy
@@ -101,7 +102,8 @@
             - DIY
         - Basic Usage
         - Services
-        - Bitcoin and Lightning Network
+        - Bitcoin
+        - aLightning Network
 
 # Developer Documentation
     - Service Packaging Guide

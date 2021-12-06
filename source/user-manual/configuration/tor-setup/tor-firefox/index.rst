@@ -1,8 +1,8 @@
-.. _lan-setup:
+.. _tor-firefox:
 
-************
-Local Access
-************
+********************
+Using Tor on Firefox
+********************
 
 .. warning::
   This guide assumes you are already :ref:`running Tor on your phone or computer<running-tor>`.

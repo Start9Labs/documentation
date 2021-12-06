@@ -1,8 +1,8 @@
-.. _lan-setup:
+.. _tor-os:
 
-************
-Local Access
-************
+******************
+Using Tor Natively
+******************
 
 .. warning::
   This guide assumes you are already :ref:`running Tor on your phone or computer<running-tor>`.
