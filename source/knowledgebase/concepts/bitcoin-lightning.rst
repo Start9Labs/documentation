@@ -32,7 +32,7 @@ The word "wallet" has come to mean a lot of things, depending on who you ask and
 
 (4) BRANCH WALLETS - This is how Specter uses the word wallet, and it is causing a lot of confusion. Whenever you create a new "wallet" in specter, you are actually creating a new hierarchical deterministic branch of your mnemonic seed - or in the case of multisig, multiple seeds. The branch you create can be based on "purpose" (segwit, non-segwit, single-sig, multi-sig, etc), "coin type" (Bitcoin, Doegecoin, etc), or "account" (for personal accounting). Change any of these parameters, and you have yourself a new wallet, which again is just a different branch of the same mnemonic seed that potentially abides by a different set of rules. Perhaps a better name for this concept is "bank". Instead of "wallets", you should be able to create different "banks" from your seed.
 
-.. _lightning:
+.. _lightning-network:
 
 Lightning Network
 =================

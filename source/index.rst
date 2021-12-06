@@ -12,7 +12,7 @@ Table of Contents
 -----------------
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
   :caption: User Manual
 
   user-manual/getting-started/index
@@ -23,14 +23,14 @@ Table of Contents
   user-manual/troubleshooting/index
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
   :caption: Knowledgebase
 
   knowledgebase/concepts/index
   knowledgebase/faq/index
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
   :caption: Developer Docs
 
   dev-docs/service-packaging/index

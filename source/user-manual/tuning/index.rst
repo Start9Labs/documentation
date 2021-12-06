@@ -11,4 +11,4 @@ An overview of EmbassyOS general capabilities.
   migrating
   advanced-config/index
   embassy-os
-  service-guides
+  service-guides/index

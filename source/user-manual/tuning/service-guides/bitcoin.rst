@@ -1,14 +1,15 @@
-.. _service-guides:
+.. _bitcoin:
 
-***********************
-Service-Specific Guides
-***********************
+*******
+Bitcoin
+*******
+
+Here you will find guides on how to connect different kinds of Bitcoin wallets (hardware and software) to your Embassy node, to complete your sovereign Bitcoin stack!
 
 .. _bitcoin-cli:
 
-*****************
 Using Bitcoin-Cli
-*****************
+=================
 
 Instructions for accessing the bitcoind service in order to issue commands directly.
 
@@ -30,3 +31,18 @@ You can also drop into a shell using::
     sudo docker exec -it bitcoind bash
 
 and then enter ``bitcoin-cli`` commands.  When you are finished, simply type ``exit``.
+
+.. _fully-noded:
+
+FullyNoded
+==========
+
+.. _sparrow:
+
+Sparrow
+=======
+
+.. _specter:
+
+Specter
+=======
