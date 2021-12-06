@@ -12,8 +12,6 @@ DIY Guide
 
 By popular demand, we are pleased to present this "Do it Yourself" (DIY) guide for the Start9 Embassy personal server!
 
-.. warning:: This DIY guide has directions for EmbassyOS versions 0.2.x and versions 0.3.x.  When 0.3.0 launches it will REQUIRE hardware updates, which you can find `here <https://start9.com/eos-0.3.0>`__.  Please keep in mind that version 0.3.x is not yet available for purchase!! Please stay tuned to our community channels for updates.
-
 Motivation
 ==========
 
@@ -68,7 +66,7 @@ Depending on your Internet speed, the download should take between 5 and 30 minu
 Getting EmbassyOS: Building from Source
 ---------------------------------------
 
-A detailed build guide will be available around the time of the v0.3.0 release (or now, if you snoop around our GitHub long enough).
+***Placehodler for build guide - either link to GH or duplicate here.  Probably duplicate to keep all docs centralized to this repo - https://github.com/Start9Labs/embassy-os/tree/integration/0.3.0/build***
 
 Installing EmbassyOS
 --------------------
