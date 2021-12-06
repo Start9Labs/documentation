@@ -2,47 +2,43 @@
 Start9 Documentation
 ####################
 
-Welcome!!
+Welcome to the Start9 Docs!
+---------------------------
 
-Here you will find guidance and information about the Embassy personal server and its operating system, EmbassyOS. If you identify an error with the docs or would like to contribute to them, please use the GitHub link at the top of this page.
+Here you will find guidance and information about Embassy personal server and its operating system, EmbassyOS. If you identify an error with the docs or would like to contribute to them, please use the GitHub link at the top of this page.
 
-.. toctree::
-  :maxdepth: 2
-  :caption: Getting Started
+EmbassyOS is designed to work out of the box with a minimal setup and immediate practicality.  That being said, there are a great many different use-cases and utilities that can be added at your convenience.  You can get started right away with Initial Setup <link>.  In the `User Manual <link>`, you will find information on what EmbassyOS can do for you, as well as configuration and customization options.  Use our Knowledgebase <link> to learn more about the technologies behind Embassy.  When you're ready to build, please check out our `Developer Docs <link>`.  Please don't hestitate to `Contact Us <link>` if you have any issues, questions, or suggestions that are not covered here.
 
-  getting-started/introduction
-  getting-started/purchasing
-  getting-started/diy
+Table of Contents
+=================
 
 .. toctree::
   :maxdepth: 2
   :caption: User Manual
 
-  user-manual/initial-setup
-  user-manual/connecting
-  user-manual/general/index
-  user-manual/managing-services/index
+- Introduction
+    - Purchasing
+    - Initial Setup
+    - Device-specific Setup Guides
+
+  user-manual/getting-started
+  user-manual/walkthrough
+  user-manual/services
+  user-manual/configuration
+  user-manual/tuning
+  user-manual/troubleshooting
 
 .. toctree::
   :maxdepth: 2
-  :caption: Misc Guides
+  :caption: Knowledgebase
 
-  misc-guides/available-services
-  misc-guides/bitcoin-cli
-  misc-guides/tor-os/index
-  misc-guides/tor-firefox/index
+  knowledgebase/concepts
+  knowledgebase/faq
 
 .. toctree::
   :maxdepth: 2
-  :caption: Contributing
+  :caption: Developer Docs
 
-  contributing/services/index
-  contributing/embassyos
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Support
-
-  support/FAQ/index
-  support/concepts
-  support/contact
+  dev-docs/service-packaging
+  dev-docs/packaging-example
+  dev-docs/dev-faq
