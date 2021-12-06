@@ -12,8 +12,8 @@ Once you have completed the above guide, select your device's operating system b
 .. toctree::
   :maxdepth: 2
 
-  linux
-  mac
-  windows
-  android
-  ios
+  lim-linux
+  lim-mac
+  lim-windows
+  lim-android
+  lim-ios

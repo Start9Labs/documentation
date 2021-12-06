@@ -1,0 +1,5 @@
+.. _lan-windows:
+
+*******
+Windows
+*******

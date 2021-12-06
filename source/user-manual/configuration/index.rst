@@ -10,4 +10,5 @@ An overview of EmbassyOS general capabilities.
   basic-config
   tor-setup/index
   lan-setup/index
+  wifi
   limitations/index

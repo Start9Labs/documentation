@@ -1,8 +1,8 @@
 .. _faq-general:
 
-*******
-General
-*******
+***********
+General FAQ
+***********
 
 What is Start9Labs?
 -------------------

@@ -38,7 +38,7 @@ Image
 
 Each service boils down to a Docker image. We're not going to dive into Docker specifics in this guide, since there exists tons of `resources <https://docs.docker.com/>`_ for developing with this containerization tool.
 
-Because the service ultimately runs on a Raspberry Pi, the created Docker image should be a snapshot of an arm based linux environment. The service image is then mounted to the EmbassyOS image during installation. This path is defined in the :ref:`manifest <service_manifest>` configuration file.
+Because the service ultimately runs on a Raspberry Pi, the created Docker image should be a snapshot of an arm based linux environment. The service image is then mounted to the EmbassyOS image during installation. This path is defined in the :ref:`manifest <manifest>` configuration file.
 
 The image is immutable, meaning that when the service is updated, the image is replaced with a completely new image containing the updated features.
 

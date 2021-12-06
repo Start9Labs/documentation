@@ -9,6 +9,7 @@ An overview of EmbassyOS general capabilities.
 
   faq-general
   faq-basic-use
+  faq-troubleshooting
   faq-embassy
   faq-services
   faq-bitcoin

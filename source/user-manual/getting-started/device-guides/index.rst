@@ -7,8 +7,8 @@ An overview of EmbassyOS general capabilities.
 .. toctree::
   :maxdepth: 2
 
-  linux
-  mac
-  windows
-  android
-  ios
+  dg-linux
+  dg-mac
+  dg-windows
+  dg-android
+  dg-ios

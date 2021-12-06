@@ -1,0 +1,5 @@
+.. _dg-windows:
+
+*******
+Windows
+*******

@@ -8,4 +8,7 @@ An overview of EmbassyOS general capabilities.
   :maxdepth: 2
 
   overview
+  power
   updating
+  backup
+  password

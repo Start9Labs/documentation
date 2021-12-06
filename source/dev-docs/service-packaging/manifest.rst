@@ -1,4 +1,4 @@
-.. _service_manifest:
+.. _manifest:
 
 ****************
 Service Manifest
