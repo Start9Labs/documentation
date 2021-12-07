@@ -43,7 +43,7 @@ Wait a few minutes while it downloads and installs what it needs.
 
 For new (M1) macs using zsh, brew will need to be added to your path as follows:
 
-    ..code-block::
+    .. code-block::
 
 	echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 	eval "$(/opt/homebrew/bin/brew shellenv)"
