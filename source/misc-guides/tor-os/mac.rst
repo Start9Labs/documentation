@@ -18,6 +18,7 @@ Install Homebrew
     On new (M1) Macs, you might need to be root for this in which case:
 
     .. code-block::
+	
 	sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 2. You will be prompted for your system password before installation; proceed with entering your password:
