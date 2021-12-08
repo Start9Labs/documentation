@@ -1,5 +1,5 @@
 .. _lim-windows:
 
-*******
-Windows
-*******
+*************************
+Windows Known Limitations
+*************************

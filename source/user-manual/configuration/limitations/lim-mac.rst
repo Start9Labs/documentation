@@ -1,15 +1,6 @@
 .. _lim-mac:
 
-***
-Mac
-***
+*********************
+Mac Known Limitations
+*********************
 
-.. _lim-new-mac:
-
-Newer Mac (M1)
-==============
-
-.. _lim-old-mac:
-
-Older Mac
-=========

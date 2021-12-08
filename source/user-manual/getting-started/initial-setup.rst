@@ -50,7 +50,7 @@ Claim Your Embassy
     If your router does not support mDNS
 
     * On your desktop or laptop computer, navigate to your router configuration settings within the browser. This is usually an IP address such as 192.168.1.1. A simple Google search will usually reveal how to access the router configuration settings for a particular brand.
-    * Once in the router config settings, find the section that lists the devices on your network. You should see an item labeled "start9labs". Take note of the associated IP address and enter it into the Setup App in the "LAN IP Address" input field.
+    * Once in the router config settings, find the section that lists the devices on your network. You should see an item labeled "embassy". Take note of the associated IP address and enter it into your browser's URL field to enter setup.
 
 3. Create your *permanent* master password and complete setup.
 

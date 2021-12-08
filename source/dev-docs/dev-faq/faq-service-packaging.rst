@@ -12,14 +12,17 @@ What considerations are there when choosing a service for packaging?
 --------------------------------------------------------------------
 There are several things you will want to consider.  Requirements include:
 
-#. Most importantly, pick a service you are passionate about seeing on EmbassyOS.
+#. Most importantly, pick a service you are passionate about seeing on EmbassyOS
 #. Make sure it is :ref:`Open Source <open-source>`
 
 Recommendations that may ease the process:
 
 #. A service that has already been 'dockerized' (has a **working** ``Dockerfile``)
+#. A service that incorporates a 'self-hosting' option
 #. A service written in a language you are familiar with
 #. A service with a strong community
+
+You can check this expansive list if you are in search of ideas: `Awesome Self-Hosted <https://github.com/awesome-selfhosted/awesome-selfhosted>`_
 
 What if I don't need a Config in my service?
 --------------------------------------------
