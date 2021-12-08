@@ -4,7 +4,7 @@
 Start9 Labs
 ***********
 
-Start9 Labs is a small, but rapidly growing team of passionate builders.  We are based in Denver, Colorado, but with team members around the world.
+Start9 Labs is a small, but rapidly growing team of passionate builders.  We are based in Denver, Colorado, but have team members around the world.
 
 "The Origin of “Start9”
 =======================

@@ -1,8 +1,8 @@
 .. _packaging-example:
 
-***********************
-Service Packaging Guide
-***********************
+*************************
+Service Packaging Example
+*************************
 
 A rough walkthrough of how to package a service using our example `hello-world-wrapper <https://github.com/Start9Labs/hello-world-wrapper>`_.
 

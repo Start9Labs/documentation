@@ -13,9 +13,20 @@ A Local Area Network (LAN) is a computer network that interconnects computers wi
 
 Devices on a LAN are private and protected, such that only devices connected to the same Ethernet or WiFi network can see or communicate with them.
 
-Your Embassy hosts itself on the LAN and is reachable by visiting its *.local* URL in the browser while also connected to the LAN.
+Your Embassy hosts itself on the LAN and is reachable by visiting its ``embassy.local`` URL in the browser while also connected to the LAN.
 
 .. note:: Any device connected to a LAN can inspect all communications on that LAN. To avoid snooping, your Embassy's LAN communications are encrypted using :ref:`ssl`, which requires :ref:`additional setup <ssl-setup>`.
+
+.. _mdns:
+
+MDNS
+====
+
+Multicast Domain Name System (MDNS) is a protocol that resolves a human-readable hostname to an IP address on a small network, such as the home or office network you might host your Embassy on.
+
+This is known as a "zeroconf," or zero-configuration service, meaning that you can instantly visit a human-recognizable domain name, such as ``embassy.local`` from your network.
+
+This domain is not broadcast outside of your local network, so it is as private and secure as your LAN.
 
 .. _ssl:
 
@@ -24,7 +35,7 @@ SSL
 
 Visiting websites on the Tor network is slow. We wanted to provide a better option to access the Embassy at home. That’s why we created an address for the Embassy that can be accessed on your Local Area Network.
 
-By default, this `.local` address is served like a regular website, over HTTP. Browsers make it noticeable when visiting a site over HTTP in the URL bar - it could be red, show an unlocked lock, or warn that the connection is not secure.
+By default, this ``.local`` address is served like a regular website, over HTTP. Browsers make it noticeable when visiting a site over HTTP in the URL bar - it could be red, show an unlocked lock, or warn that the connection is not secure.
 
 SSL certificates are what enable websites to move from HTTP to HTTPS, which increases security and makes browsers happy. Using the Secure Sockets Layer protocol, HTTPS enabled websites use certificates to establish authenticated and encrypted links between networked computers. It’s the standard technology for keeping an internet connection secure and safeguarding any sensitive data that is being sent between two devices, preventing third parties from reading and modifying any personal information transferred. They also verify ownership of a website.
 
@@ -32,7 +43,7 @@ Valid SSL certificates are typically issued and obtained from Certificate Author
 
 We decided to have the Embassy act as a Certificate Authority. It creates a self-signed certificate, which means that the private key used to sign the digital certificate is the Embassy’s own private key instead of a third party’s.
 
-When you setup SSL for your Embassy and device, the certificate communicates to the client (a browser) that the server (the Embassy) demonstrated ownership of the domain (the `start9-xxxxxxxx.local` address) to the certificate authority (created on the Embassy) at the time of certificate issuance (during the setup process). The Embassy dashboard can then be accessed from a home network (LAN) using a secure HTTPS connection!
+When you setup SSL for your Embassy and device, the certificate communicates to the client (a browser) that the server (the Embassy) demonstrated ownership of the domain (the ``embassy-xxxxxxxx.local`` address) to the certificate authority (created on the Embassy) at the time of certificate issuance (during the setup process). The Embassy dashboard can then be accessed from a home network (LAN) using a secure HTTPS connection!
 
 For more information on how to setup your devices to enable this feature visit :ref:`ssl-setup`.
 
@@ -51,3 +62,13 @@ When you use Tor to communicate with services running on the Embassy, all the tr
 Furthermore, every service on the Embassy has a different Tor address, including the device itself. This is for privacy reasons - should one Tor address be exposed, the others will not be compromised. Tor addresses are actually ed25519 keys, which means they also provide all the benefits of cryptographically secure private/public keys.
 
 Here's an introductory video on `Tor <https://www.youtube.com/watch?v=6czcc1gZ7Ak>`__.
+
+
+.. _hidden-service:
+
+Tor Hidden Service
+==================
+
+A Tor Hidden Service is essentially just software or a website that is only broadcast on the Tor network.  These are identified by a long, random public key, and end with the ``.onion`` suffix.  For example, you can visit http://privacy34kn4ez3y3nijweec6w4g54i3g54sdv7r5mr6soma3w4begyd.onion to view the Start9 homepage on Tor.
+
+In order to reach a Hidden Service, you must use a browser that can handle ``.onion`` domains, such as `The Tor Browser <https://www.torproject.org/download/>`_ or by configuring :ref:`Firefox <>` ***REF NEEDED***.
