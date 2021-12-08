@@ -1,6 +1,6 @@
-************
-Waltkthrough
-************
+***********
+Walkthrough
+***********
 
 An overview of EmbassyOS general capabilities.
 

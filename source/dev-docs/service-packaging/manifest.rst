@@ -1,4 +1,4 @@
-.. _manifest:
+.. _service_manifest:
 
 ****************
 Service Manifest
@@ -15,9 +15,9 @@ This file describes the service and it's requirements. It is used to:
 
 Each time a service is updated, the manifest should be updated to include the new version, release notes, and any pertinent updates to the install, uninstall, or restoration flows. All this information is displayed in the marketplace listing, and the optionally denoted alerts will be displayed when appropriate to provide the user with more information.
 
-For instance, `LND displays alerts <https://github.com/Start9Labs/lnd-wrapper/blob/master/manifest.yaml#L28>`_  around restoration since data will be overwritten. 
+For instance, `LND displays alerts <https://github.com/Start9Labs/lnd-wrapper/blob/master/manifest.yaml#L28>`_  around restoration since data will be overwritten.
 
-There is nothing you need to do as a developer to set up Tor for running a service. This is *completely* handled by EmbassyOS - a Tor address will be automatically generated when the service is installed. Just define the port and which version of Tor the service needs in this manifest file! You do, however, need to ensure the service is in fact capable of running over Tor. 
+There is nothing you need to do as a developer to set up Tor for running a service. This is *completely* handled by EmbassyOS - a Tor address will be automatically generated when the service is installed. Just define the port and which version of Tor the service needs in this manifest file! You do, however, need to ensure the service is in fact capable of running over Tor.
 
 The manifest is also responsible for outlining service :ref:`dependencies <dependencies>`. By defining rules using the :ref:`EmbassyOS DSL specification <config_rules>`, users can easily and selectively install, uninstall, and update any service without getting stuck in dependency hell. EmbassyOS presents this information in a polished install/uninstall/update wizard, so there's no need for editing configuration files or jumping into the command line. For you as a developer, this simply means populating this key in the manifest!
 
