@@ -1,10 +1,10 @@
 .. _packaging-example:
 
-*********************************
-EmbassyOS Service Packaging Guide
-*********************************
+***********************
+Service Packaging Guide
+***********************
 
-A rough walkthrough of how to package a service using our example "Hello World" wrapper.
+A rough walkthrough of how to package a service using our example `hello-world-wrapper <https://github.com/Start9Labs/hello-world-wrapper>`_.
 
 Welcome!  The following guide will provide the prerequisites, introduce a brief overview of the packaging process, use an example demonstrating how to package a service, and finally describe the submission process.  This essentially describes how you can take an existing app (or one you have written yourself), and wrap it up such that it can be added to an EmbassyOS Marketplace!
 
