@@ -9,7 +9,7 @@ Restart
 
 #. Be patient while services shut down. A *tune* will play, indicating the shutdown is complete. 
 #. A gentle *bep* will sound when the Embassy is powered back on.
-#. A *chime* will sound when the Embassy is ready to use.
+#. A *chime* will sound when the Embassy is ready to use.  Please be patient as a Restart will take some time.
 
 Shutdown
 ========

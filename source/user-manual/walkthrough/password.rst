@@ -1,8 +1,8 @@
-.. _password:
+.. _forgot-password:
 
-***************
+===============
 Forgot Password
-***************
+===============
 
 There is currently no way to reset you Embassy master password through a standard UI flow.
 
