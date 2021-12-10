@@ -1,7 +1,7 @@
 .. _initial-setup:
 
 =============
-Initial Setup
+Initial Setup - ***NEEDS COMPACTING / SIMPLIFYING***
 =============
 
 .. youtube:: DmTlwp5_zvY

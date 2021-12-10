@@ -12,4 +12,4 @@ So, what do you do with your Embassy? You use it to run services: Bitcoin, Light
 
 Every communication between you and your Embassy is end-to-end encrypted and onion routed over the :ref:`Tor network<tor>`. All services are open-source and self-hosted, meaning there are no trusted third parties of any kind.
 
-To get an Embassy, you can :ref:`purchase<purchasing>` one directly from Start9, or you can :ref:`build one yourself<diy>`.
+To get an Embassy, you can :ref:`purchase<purchasing>` one directly from :ref:`Start9<start9>`, or you can :ref:`build one yourself<diy>`.

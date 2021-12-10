@@ -4,22 +4,22 @@
 Overview of EmbassyOS
 *********************
 
-.. _services:
+.. _services-tab:
 
 Services Tab
 ============
 
-.. _embassy:
+.. _embassy-tab:
 
 Embassy Tab
 ===========
 
-.. _marketplace:
+.. _marketplace-tab:
 
 Marketplace Tab
 ===============
 
-.. _notifications:
+.. _notifications-tab:
 
 Notifications Tab
 =================
