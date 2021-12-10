@@ -1,8 +1,8 @@
-***************
+===============
 Getting Started
-***************
+===============
 
-An overview of EmbassyOS general capabilities.
+Take your first steps!
 
 .. toctree::
   :maxdepth: 2
