@@ -1,13 +1,13 @@
 .. _managing-services:
 
-*****************
+=================
 Managing Services
-*****************
+=================
 
 .. _managing-dependencies:
 
 Dependencies
-============
+------------
 
 Some services have dependencies on other services. A service may even require its dependency to be *configured* in a particular way.
 
@@ -22,7 +22,7 @@ Sometimes, a dependency can be satisfied in multiple ways. For example, Lightnin
 .. note:: Some services have :ref:`dependencies<managing-dependencies>` on other services. Adding, updating, or removing a service can sometimes have requirements or consequences for other services. Your Embassy will inform you of these issues along the way.
 
 Installing
-==========
+----------
 
 To add a new service, find it's listing inside the Service Marketplace: *Marketplace > [Service Name] > Install*.
 
@@ -35,7 +35,7 @@ After installation, you can view the service's instructions by navigating to *Se
 .. _updates:
 
 Updating
-========
+--------
 
 To see if an update is available for a service, you can click the *refresh* button inside the dashboard of the installed service or by visiting its listing in the Service Marketplace.
 
@@ -44,14 +44,14 @@ If an update is available, simply click "Update" and confirm the action.
 .. _uninstalling:
 
 Uninstalling
-============
+------------
 
 To remove a service, navigate to *Services > [Service Name] > Uninstall*.
 
 .. _instructions:
 
 Instructions
-============
+------------
 
 To view the instructions for a particular service, navigate to *Services > [Service Name] > Instructions*.
 
@@ -72,7 +72,7 @@ To view the instructions for a particular service, navigate to *Services > [Serv
 .. _service-config:
 
 Service Config
-==============
+--------------
 
 Navigate to *Services > [Service Name] > Config*
 
@@ -85,7 +85,7 @@ Config options are defined by the service developer and can be almost anything. 
 .. _properties:
 
 Properties
-==========
+----------
 
 Navigate to *Services > [Service Name] > Properties*
 
@@ -100,17 +100,17 @@ Properties may be accompanied by one or more of the following:
 .. _actions:
 
 Actions
-=======
+-------
 
 .. _interfaces:
 
 Interfaces
-==========
+----------
 
 .. _logs:
 
 Logs
-====
+----
 
 Naviage to *Services > [Service Name] > Logs*
 
@@ -119,4 +119,6 @@ Every service emits logs while it is in a *running* state. Logs give an *under-t
 .. _donate:
 
 Donate
-======
+------
+
+This link is provided by the developer so that you may donate to them or the developer of the service they packaged directly.

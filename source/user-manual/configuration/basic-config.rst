@@ -1,10 +1,13 @@
 .. _basic-config:
 
-*******************
-Basic Configuration
-*******************
+===================
+Basic Configuration - ***NEEDS UPDATE / SCREENS***
+===================
 
-Click "Config". Here you can set custom configurations for your Embassy. Currently, you can change the "Device Name" and enable/disable "Auto Check for Updates."
+Set Device Name
+---------------
+
+Here you can change the name of your Embassy!
 
 .. figure:: /_static/images/embassy_config.png
   :width: 90%

@@ -1,6 +1,6 @@
-***********
+===========
 Walkthrough
-***********
+===========
 
 An overview of EmbassyOS general capabilities.
 
@@ -8,7 +8,6 @@ An overview of EmbassyOS general capabilities.
   :maxdepth: 2
 
   overview
-  power
-  updating
+  updates
   backup
   password

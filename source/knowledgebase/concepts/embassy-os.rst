@@ -25,3 +25,9 @@ Whether you purchase a device, download an image, or build yourself from source,
 If you purchase a device from us, this is printed on the bottom of your Embassy.  If you purchase a download, we provide you the key.  If you build from source, the key is created during the build.
 
 The first and foremost use of the Product Key is to encrypt data that is sent to Embassy at :ref:`Initial Setup<initial-setup>`.  There are several other usecases.  Start9 keeps an anonymous database of all Product Keys that have been purchased by us (ZERO additional data is associated) so that we can verify someone is a "paid user."  Currently this is just to allow someone to get a new copy of the EOS image if they have a problem, but in future we intend to give added bonuses to customers who have chosen to pay us for a copy of the software.
+
+.. _services:
+
+Services
+--------
+The server-side software available on EmbassyOS are referred to as "Services."  It's important to distinguish the difference between *services* and *applications*.  Applications are generally *client-side*.  This means that they are either standalone software, or they reach out to a server in order to operate.  Services are *server-side*.  These generally run 24/7, waiting for commands from a user via an application.

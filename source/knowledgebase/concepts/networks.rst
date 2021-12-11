@@ -1,13 +1,13 @@
 .. _networks:
 
-********
+========
 Networks
-********
+========
 
 .. _lan:
 
 LAN
-===
+---
 
 A Local Area Network (LAN) is a computer network that interconnects computers within a limited area such as a residence, school, laboratory, university campus, or office building.
 
@@ -20,7 +20,7 @@ Your Embassy hosts itself on the LAN and is reachable by visiting its ``embassy.
 .. _mdns:
 
 MDNS
-====
+----
 
 Multicast Domain Name System (MDNS) is a protocol that resolves a human-readable hostname to an IP address on a small network, such as the home or office network you might host your Embassy on.
 
@@ -31,7 +31,7 @@ This domain is not broadcast outside of your local network, so it is as private 
 .. _ssl:
 
 SSL
-===
+---
 
 Visiting websites on the Tor network is slow. We wanted to provide a better option to access the Embassy at home. That’s why we created an address for the Embassy that can be accessed on your Local Area Network.
 
@@ -51,7 +51,7 @@ For more information on how to setup your devices to enable this feature visit :
 .. _tor:
 
 Tor
-===
+---
 
 The Onion Router, or Tor, is a free and open source software that enables anonymous communication. By routing Internet traffic though a worldwide, volunteer overlay network of nodes, requests are bundled in layers of encryption like the layers of an onion. The request is relayed across nodes, decrypting a layer only to reveal the next relay destination, until the request meets its final destination, without revealing the source IP address.
 
@@ -63,11 +63,19 @@ Furthermore, every service on the Embassy has a different Tor address, including
 
 Here's an introductory video on `Tor <https://www.youtube.com/watch?v=6czcc1gZ7Ak>`__.
 
+.. _tor-browser:
+
+Tor Browser
+-----------
+
+The Tor Browser is a version of Firefox specifically made for use with the Tor Network.  Tor Browser has Tor built-in, so that you do not need to be running Tor natively in order to use the network.  This makes it a great browser for use with your Embassy.
+
+.. caution::  Tor Browser has some advanced security and privacy settings, which can be useful, but please keep in mind that if you raise them from the standard level, you may be unable to use some websites, such as your Embassy UI.
 
 .. _hidden-service:
 
 Tor Hidden Service
-==================
+------------------
 
 A Tor Hidden Service is essentially just software or a website that is only broadcast on the Tor network.  These are identified by a long, random public key, and end with the ``.onion`` suffix.  For example, you can visit http://privacy34kn4ez3y3nijweec6w4g54i3g54sdv7r5mr6soma3w4begyd.onion to view the Start9 homepage on Tor.
 

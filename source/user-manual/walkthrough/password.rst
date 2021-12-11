@@ -1,13 +1,13 @@
 .. _forgot-password:
 
 ===============
-Forgot Password
+Forgot Password - ***NEEDS UPDATING***
 ===============
 
 There is currently no way to reset you Embassy master password through a standard UI flow.
 
 SSH/Linux
-=========
+---------
 
 If you already have :ref:`SSH keys registered with your Embassy<ssh-setup>` **OR** you have access to a Linux computer, you can reset your Embassy password without losing any data.
 
@@ -21,7 +21,7 @@ If you already have :ref:`SSH keys registered with your Embassy<ssh-setup>` **OR
 
       which sqlite3
       sudo apt install sqlite3
-  
+
   * Access the sqlite3 terminal::
 
       sudo sqlite3 /root/agent/start9_agent.sqlite3
@@ -71,6 +71,6 @@ If you already have :ref:`SSH keys registered with your Embassy<ssh-setup>` **OR
 
 
 No SSH/Linux
-============
+------------
 
 You must factory reset your device by re-installing EmbassyOS, resulting in permanent loss of data. Visit the `image downloader <https://images.start9labs.com/download>`_ to obtain a new EmbassyOS image, then follow the `installation instructions </getting-started/diy.html#installing-embassyos>`_.
