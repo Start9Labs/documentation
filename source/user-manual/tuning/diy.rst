@@ -1,8 +1,8 @@
 .. _diy:
 
-*********
+=========
 DIY Guide
-*********
+=========
 
 .. figure:: /_static/images/diy/pi.png
   :width: 40%
@@ -13,7 +13,7 @@ DIY Guide
 By popular demand, we are pleased to present this "Do it Yourself" (DIY) guide for the Start9 Embassy personal server!
 
 Motivation
-==========
+----------
 
 There are four reasons you might prefer to build your own Embassy instead of purchasing one from us.
 
@@ -28,10 +28,10 @@ There are four reasons you might prefer to build your own Embassy instead of pur
 #. You just like building things.
 
 Building an Embassy
-===================
+-------------------
 
 Hardware: Components
---------------------
+....................
 
 #. `Raspberry Pi 4B (8GB) <https://raspberrypi.org/products/raspberry-pi-4-model-b/?variant=raspberry-pi-4-model-b-8gb>`_
 #. `Power supply for Raspberry Pi 4B <https://raspberrypi.org/products/type-c-power-supply/>`_ Make sure this is at minimum 15w and 3.5a.
@@ -45,7 +45,7 @@ Hardware: Components
 `*` If you use a fan, **DO NOT** use the official Raspberry Pi fan, as it requires the same GPIO pins as the audio speaker. Instead, we recommend `this fan <https://www.amazon.com/Raspberry-iUniker-30x30x7mm-Brushless-RetroFlag/dp/B076H3TKBP/>`_.
 
 Hardware: Assembly Instructions
--------------------------------
+...............................
 
 #. Insert mini speaker/buzzer into GPIO pins 6/8/10/12 with the word "speaker" facing out, `away from the board`.
 
@@ -56,15 +56,18 @@ Hardware: Assembly Instructions
 #. Place the Raspberry Pi 4 board (with speaker attached), into its case.
 #. Plug in the external drive to one of the USB 3.0 (blue) slots
 
+Getting EmbassyOS
+-----------------
+
 Getting EmbassyOS: Purchasing
------------------------------
+.............................
 
 You can purchase EmbassyOS `here <https://store.start9.com/collections/embassy/products/embassyos-software-download>`_. This is by far the easiest path to get up and running.
 
 Depending on your Internet speed, the download should take between 5 and 30 minutes.
 
-Getting EmbassyOS: Building from Source
----------------------------------------
+Getting EmbassyOS: Building from Source
+.......................................
 
 ***Placehodler for build guide - either link to GH or duplicate here.  Probably duplicate to keep all docs centralized to this repo - https://github.com/Start9Labs/embassy-os/tree/integration/0.3.0/build***
 

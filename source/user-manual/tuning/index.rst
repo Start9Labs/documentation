@@ -1,8 +1,8 @@
-******
+======
 Tuning
-******
+======
 
-An overview of EmbassyOS general capabilities.
+Here, you can customize your Embassy with advanced configuration, setup external tools, migrate from old projects, or build your own Embassy from scratch.
 
 .. toctree::
   :maxdepth: 2

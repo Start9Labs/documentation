@@ -1,13 +1,20 @@
 .. _bitcoin-lightning:
 
-*********************
+=====================
 Bitcoin and Lightning
-*********************
+=====================
+
+.. _bitcoin:
+
+Bitcoin
+-------
+
+Bees knees
 
 .. _bitcoin-node:
 
 Bitcoin Node
-============
+------------
 
 The Embassy runs a Bitcoin Full Node.  When most people say "full node" what they mean (or ought to mean) is "fully validating node", meaning that the node is capable of enforcing the consensus rules of Bitcoin by accepting, validating, and relaying every transaction and block produced by the network. Fully validating nodes are necessary for Bitcoin to exist and function properly and are what protect the network from attackers attempting to bypass the consensus rules. A fully validating node (aka full node) does not need to store the entire blockchain to accomplish this. A node that stores the entire blockchain is called a "full archival node". It is the same as a full node, except that it stores every single valid transaction and block ever produced by the network. There are not many reasons why an individual would want to run a full archival node. Most of the benefits of node operatorship are encompassed by a basic full node described above. Full archival nodes have the added benefit of enabling a block explorer. For instace, if you were interested in looking up the history of a particular address or viewing the details of a transaction, neither of which were your own. If an address or transaction is your own, you can view those details using a pruned node.
 
@@ -20,7 +27,7 @@ You can learn more about Bitcoin `here <https://lopp.net/bitcoin>`__.
 .. _btc-wallets:
 
 Bitcoin Wallets
-===============
+---------------
 
 The word "wallet" has come to mean a lot of things, depending on who you ask and what software you are using. There are (1) software "wallets", (2) hardware "wallets", (3) seed "wallets", and (4) branch "wallets". The one thing all these wallets have in common is that they have almost nothing in common.  As the terms are used today, here is usually what they mean.
 
@@ -35,7 +42,7 @@ The word "wallet" has come to mean a lot of things, depending on who you ask and
 .. _lightning-network:
 
 Lightning Network
-=================
+-----------------
 
 The Lightning Network is a "payment layer" that sits on top of the Bitcoin blockchain, which it uses for final settlement. This allows Bitcoin to scale without affecting the security of the protocol layer.  It is easiest to think of Lightning Network as a system that allows anyone to use their Bitcoin to have a running tab (think bar tab) of money they owe each other.  For example, 2 friends may have a "channel" (tab) between them that they use for exchanging value.  The channel keeps track of who owes what. Those payments can be settled at any time on the Bitcoin blockchain if either or both parties decide to close out.  One big incentive to use Lightning is that payments are extremely fast and fees are extremely low.  You can find an introductory video explanation `here <https://www.youtube.com/watch?v=rrr_zPmEiME>`__.
 

@@ -1,6 +1,6 @@
-********
+========
 Concepts
-********
+========
 
 An overview of EmbassyOS general capabilities.
 
@@ -10,6 +10,7 @@ An overview of EmbassyOS general capabilities.
   open-source
   self-hosting
   networks
+  software
   bitcoin-lightning
   start9
-  embassy-os
+  embassy

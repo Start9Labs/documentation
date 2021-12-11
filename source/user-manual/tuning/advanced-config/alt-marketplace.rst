@@ -1,6 +1,6 @@
-***********************
-Alternative Marketplace
-***********************
+=======================
+Alternative Marketplace - ***NEEDS UPDATED***
+=======================
 
 EmbassyOS supports accessing alternative marketplaces by configuring a system file. Start9 is not responsible for issues encountered by downloading services from alternative marketplaces.
 
