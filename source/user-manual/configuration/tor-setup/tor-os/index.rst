@@ -1,13 +1,10 @@
 .. _tor-os:
 
-******************
+==================
 Using Tor Natively
-******************
+==================
 
-.. warning::
-  This guide assumes you are already :ref:`running Tor on your phone or computer<running-tor>`.
-
-Once you have completed the above guide, select your device's operating system below:
+Select your Operating System to setup Tor to run in the background (natively) of any device that you might want to use to access your Embassy with remotely.
 
 .. toctree::
   :maxdepth: 2

@@ -1,8 +1,8 @@
 .. _service_backups:
 
-***************
+===============
 Service Backups
-***************
+===============
 
 Everything within the root of the mounted volume directory will be stored in an EmbassyOS backup. This includes the config (config.yaml) and properties (stats.yaml) files, as well as any other persisted data within the volume directory. 
 
@@ -12,7 +12,7 @@ In this case, create a `.backupignore` file. This file contains a list of relati
 
 
 Example
-=======
+-------
 
 The `btcpayserver wrapper <https://github.com/Start9Labs/btcpayserver-wrapper/blob/master/configurator/src/templates/.backupignore.templates>`_ demonstrates a good use of a backupignore template.
 

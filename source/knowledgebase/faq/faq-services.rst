@@ -1,8 +1,8 @@
 .. _faq-services:
 
-************
+============
 Services FAQ
-************
+============
 
 My Embassy is set up, now what?
 -------------------------------

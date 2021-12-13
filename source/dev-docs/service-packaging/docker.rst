@@ -1,11 +1,11 @@
 .. _service_docker:
 
-******************
+==================
 Service Dockerfile
-******************
+==================
 
 Dockerfile
-==========
+----------
 
 This purpose of the Dockerfile is to define how to build the image for the service. It declares the environment and building stages.
 The Dockerfile is responsible for mounting the service application to whatever volume the manifest specifies, typically ``/root/.<service-id>``.
@@ -23,14 +23,14 @@ For instance:
 We recommended using ``alpine`` since it produces the smallest image. We try to keep the image under 100MB when possible.
 
 Entry-point
-===========
+-----------
 
 The ``docker_entrypoint.sh`` defines what to do when the service application starts.
 
 It consists of a bash script that completes any environment setup (eg. creating folder substructure), sets any environment variables, and executes the run command. The only required feature of this file is to execute the run commands for EmbassyOS.
 
 Example
-=======
+-------
 
 The `LND wrapper <https://github.com/Start9Labs/lnd-wrapper/blob/master/Dockerfile>`_ features a well defined Dockerfile, for example.
 

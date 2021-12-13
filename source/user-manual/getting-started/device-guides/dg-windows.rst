@@ -18,3 +18,5 @@ Tor Firefox Config (Connectivity)
 ---------------------------------
 
 `Configure Firefox <docs.start9.com/user-manual/configuration/tor-setup/tor-firefox/torff-windows>`_ to be able to use the :ref:`Tor Network<tor>` so that you can reach ``.onion`` sites without needing to change browsers.
+
+.. note:: Please see Window's :ref:`Known Limitations<lim-windows>` to understand what is currently not possible on these devices

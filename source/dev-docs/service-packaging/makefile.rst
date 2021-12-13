@@ -1,8 +1,8 @@
 .. _service_makefile:
 
-****************
+================
 Service Makefile
-****************
+================
 
 .. note::
 
@@ -20,7 +20,7 @@ This purpose of this file is to:
 - Package ``config_rules.yaml``, ``config_spec.yaml``, ``manifest.yaml``, and ``image.tar`` into an ``.s9pk`` extension by invoking ``appmgr``.
 
 Example
-=======
+-------
 
 The `LND wrapper <https://github.com/Start9Labs/lnd-wrapper/blob/master/Makefile>`_ features a well defined Makefile, for example.
 

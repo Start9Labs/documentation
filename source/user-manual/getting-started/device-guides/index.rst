@@ -1,6 +1,6 @@
-**********************
+======================
 Device-Specific Guides
-**********************
+======================
 
 An overview of EmbassyOS general capabilities.
 

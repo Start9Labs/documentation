@@ -1,8 +1,8 @@
 .. _faq-service-packaging:
 
-*********************
+=====================
 Service Packaging FAQ
-*********************
+=====================
 
 Do I need programming experience to package a service for EmbassyOS?
 --------------------------------------------------------------------

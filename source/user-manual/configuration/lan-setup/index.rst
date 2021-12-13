@@ -1,13 +1,10 @@
 .. _lan-setup:
 
-************
+============
 Local Access
-************
+============
 
-.. warning::
-  This guide assumes you are already :ref:`running Tor on your phone or computer<running-tor>`.
-
-Once you have completed the above guide, select your device's operating system below:
+When you are on the same network as your Embassy (typically a home or small office), :ref:`Local Access<lan>` is much faster and will allow access to your data, even with no Internet connection.
 
 .. toctree::
   :maxdepth: 2

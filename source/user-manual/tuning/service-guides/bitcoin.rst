@@ -32,6 +32,11 @@ You can also drop into a shell using::
 
 and then enter ``bitcoin-cli`` commands.  When you are finished, simply type ``exit``.
 
+.. _electrum:
+
+Electrum
+--------
+
 .. _fully-noded:
 
 FullyNoded
@@ -46,3 +51,13 @@ Sparrow
 
 Specter
 -------
+
+.. _trezor:
+
+Trezor
+------
+
+.. _ledger:
+
+Ledger Live
+-----------

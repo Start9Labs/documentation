@@ -1,8 +1,8 @@
 .. _open-source:
 
-***********
+===========
 Open Source
-***********
+===========
 
 The Internet itself was built on free and publicly available code, with the values of collaboration, peer review, communication, and openness built into its very foundation. This decentralized model evolved into the open source movement, which uses these values to discover new ways to solve problems across boundaries and industries.
 

@@ -1,11 +1,11 @@
 .. _service_config:
 
-****************************
+============================
 Service Config Specification
-****************************
+============================
 
 Overview
-========
+--------
 
 Most self-hosted applications require the user to tell the app how to behave using a config file in a specific format, environment variables, command-line arguments, or some combination of these inputs. One of the coolest features of EmbassyOS is that, when packaged correctly, the app's configuration will be available to the user as a slick GUI that always produces a valid configuration no matter how little experience or skill the user has.
 
@@ -24,10 +24,10 @@ For example, if the user chooses config option A, then config option B must be b
 .. _config_spec:
 
 Config Spec
-===========
+-----------
 
 Overview
---------
+........
 
 .. figure:: /_static/images/service/bitcoin_config.png
   :width: 80%
@@ -49,7 +49,7 @@ The neat part about this file is that each ValueSpec type gets translated into a
 Another advantage is the ability to define default values. These values automatically get populated if the user selects the ``Default`` option when setting up a service in ``Needs Config`` state. This is super convenient for users who want to get up and running quickly.
 
 Types
------
+.....
 
 ConfigSpec Type:
 
@@ -60,7 +60,7 @@ ConfigSpec Type:
     ValueSpec Type: Boolean | Enum | List | Number | Object | String | Union | Pointer (see below for details)
 
 Implementation Guide
---------------------
+....................
 
 The following section contains implementation specifications for the ``config_spec.yaml`` file.
 
@@ -506,7 +506,7 @@ Example:
 .. _config_rules:
 
 Config Rules
-============
+------------
 
 This file defines the configuration rules, or the rule-set that defines dependencies between config variables. In practice, config rules are for auto-configuring self dependencies. Self dependencies are internal dependencies of a service, such as if the setting of one config variable informs the option of another setting. These "dependencies" are configured as rules. 
 

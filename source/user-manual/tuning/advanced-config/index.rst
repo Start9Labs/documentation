@@ -1,8 +1,8 @@
-**********************
+======================
 Advanced Configuration
-**********************
+======================
 
-An overview of EmbassyOS general capabilities.
+Custom options for folks that "know what they're doing."
 
 .. toctree::
   :maxdepth: 2

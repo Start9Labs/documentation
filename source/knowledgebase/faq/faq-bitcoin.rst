@@ -1,8 +1,8 @@
 .. _faq-bitcoin:
 
-***********
+===========
 Bitcoin FAQ
-***********
+===========
 
 Why does the Bitcoin service take so long to be ready?
 ------------------------------------------------------

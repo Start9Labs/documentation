@@ -1,8 +1,8 @@
 .. _introduction:
 
-************
+============
 Introduction
-************
+============
 
 :ref:`Embassy<embassy>` is a new kind of personal computer - one that sits quietly on your shelf and runs all day and night. It has no screen and no keyboard. You access your Embassy from anywhere in the world in total, trustless privacy, simply by visiting its unique Tor address (.onion URL) right from the browser.
 

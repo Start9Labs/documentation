@@ -6,7 +6,7 @@ Android Known Limitations
 
 Local Access
 ------------
-Android does not have native support for :ref:`mDNS<mdns>` and therefore cannot resolve ``.local`` addresses.  This issue has been long known and can be tracked `here <https://issuetracker.google.com/issues/140786115>`_ (Google account required to view).
+Android does not have native support for :ref:`mDNS<mdns>` and therefore cannot resolve ``.local`` addresses.  This issue has been long known by Google, and can be tracked `here <https://issuetracker.google.com/issues/140786115>`_ (Google account required to view).
 
 Workarounds
 ...........

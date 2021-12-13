@@ -1,8 +1,8 @@
 .. _faq-embassy:
 
-***********
+===========
 Embassy FAQ
-***********
+===========
 
 Can I run EmbassyOS on a VPS or VM?
 -----------------------------------

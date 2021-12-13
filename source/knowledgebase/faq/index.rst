@@ -1,8 +1,8 @@
-***
+===
 FAQ
-***
+===
 
-An overview of EmbassyOS general capabilities.
+Frequently Asked Questions from Embassy users
 
 .. toctree::
   :maxdepth: 2

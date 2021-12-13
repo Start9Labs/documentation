@@ -1,11 +1,11 @@
 .. _service_manifest:
 
-****************
+================
 Service Manifest
-****************
+================
 
 Overview
-========
+--------
 
 This file describes the service and it's requirements. It is used to:
 
@@ -22,13 +22,14 @@ There is nothing you need to do as a developer to set up Tor for running a servi
 The manifest is also responsible for outlining service :ref:`dependencies <dependencies>`. By defining rules using the :ref:`EmbassyOS DSL specification <config_rules>`, users can easily and selectively install, uninstall, and update any service without getting stuck in dependency hell. EmbassyOS presents this information in a polished install/uninstall/update wizard, so there's no need for editing configuration files or jumping into the command line. For you as a developer, this simply means populating this key in the manifest!
 
 Formatting
-==========
+----------
 
 - Serialization language:``.yaml``
 - Case style: ``kebab-case``
 
 Type definitions
-================
+----------------
+
 Below are the types and sub-type definitions, with necessary elaborations. Any item that contains ``Option<>`` is an optional field.
 
 .. code:: yaml
@@ -84,7 +85,7 @@ Below are the types and sub-type definitions, with necessary elaborations. Any i
 .. _dependencies:
 
 Dependencies
-============
+------------
 
 Many services depend on other libraries and services on EmbassyOS (such as Bitcoin), sometimes even a particular version of those services, which need to be specified by the developers so that EmbassyOS can handle installing these dependencies under the hood.
 
@@ -121,7 +122,7 @@ The service ``btc-rpc-proxy`` is a dependency of the service ``c-lightning``. ``
     Dependency config rules are processed in order.
 
 Type definitions
-----------------
+................
 
 Types for ``manifest.yaml`` fields:
 
@@ -174,7 +175,7 @@ Types for ``manifest.yaml`` fields:
 :raw-html:`<br />`
 
 Examples
---------
+........
 
 Actual ``manifest.yaml`` files for existing services:
 

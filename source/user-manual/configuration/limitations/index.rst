@@ -1,13 +1,10 @@
 .. _limitations:
 
-*****************
+=================
 Known Limitations
-*****************
+=================
 
-.. warning::
-  This guide assumes you are already :ref:`running Tor on your phone or computer<running-tor>`.
-
-Once you have completed the above guide, select your device's operating system below:
+The following pages describe functionality that is known to be missing from certain platforms.  Please bother the appropriate company or developers until they have been remedied.
 
 .. toctree::
   :maxdepth: 2

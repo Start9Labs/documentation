@@ -1,8 +1,8 @@
 .. _faq-contributing:
 
-************
+============
 Contributing
-************
+============
 
 We ❤️ contributions!
 
@@ -11,7 +11,6 @@ Please follow the guide `here <https://github.com/Start9Labs/embassy-os/blob/mas
 Do I need to be a professional developer or have coding experience to contribute?
 ---------------------------------------------------------------------------------
 Absolutely not!  Contributions can be as simple as finding a typo in our docs, making a suggestion on GitHub, creating educational or promotional content, and the list goes on!  Everyone that wants to contribute can do so in some unique way.  Please don't hesitate to ***CONTACT LINK*** us for ideas if you're not sure where to begin.
-
 
 Expound the following into FAQs move to other dev-faq section if necessary:
 ---------------------------------------------------------------------------

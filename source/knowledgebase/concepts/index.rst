@@ -2,7 +2,7 @@
 Concepts
 ========
 
-An overview of EmbassyOS general capabilities.
+An overview of the ideas and technologies surrounding Start9 Labs and Embassy
 
 .. toctree::
   :maxdepth: 2

@@ -1,8 +1,8 @@
 .. _service_wrapper:
 
-***************
+===============
 Service Wrapper
-***************
+===============
 
 Each service is bound with a wrapper repository, which contains everything you need to build a service.
 
@@ -17,7 +17,7 @@ The purpose of this repo is:
 - symlink of ``instructions.md`` from ``docs`` directory to wrapper repo root, if included
 
 File Structure
-==============
+--------------
 
 The project structure should be used as a model:
 
@@ -35,7 +35,7 @@ The project structure should be used as a model:
     └── manifest.yaml
 
 Submodule
-==========
+---------
 
 `Git submodules <https://www.git-scm.com/book/en/v2/Git-Tools-Submodules>`_ allow use of another project while in the working project directory. Setting up this feature enables linking of the source service repository so that its context is available.
 
