@@ -1,5 +1,0 @@
-.. _lan-android:
-
-*******
-Android
-*******
