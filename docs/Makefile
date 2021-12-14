@@ -18,10 +18,6 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) $(SOURCEDIR)
 .PHONY: all
 all: dirhtml
 
-.PHONY: pristine
-pristine: clean
-	git clean -dfX
-
 .PHONY: setup
 setup:
 	./_utils/setup.sh
@@ -45,24 +41,6 @@ singlehtml: setup
 	$(SPHINXBUILD) -b singlehtml $(ALLSPHINXOPTS) $(BUILDDIR)/singlehtml
 	@echo
 	@echo "Build finished. The HTML page is in $(BUILDDIR)/singlehtml."
-
-.PHONY: test
-test: setup
-	$(SPHINXBUILD) -b dirhtml $(TESTSPHINXOPTS) $(BUILDDIR)/dirhtml
-	@echo
-	@echo "Build finished. The HTML pages are in $(BUILDDIR)/dirhtml."
-
-.PHONY: epub
-epub: 	setup
-	$(SPHINXBUILD) -b epub $(ALLSPHINXOPTS) $(BUILDDIR)/epub
-	@echo
-	@echo "Build finished. The epub file is in $(BUILDDIR)/epub."
-
-.PHONY: epub3
-epub3:	setup
-	$(SPHINXBUILD) -b epub3 $(ALLSPHINXOPTS) $(BUILDDIR)/epub3
-	@echo
-	@echo "Build finished. The epub3 file is in $(BUILDDIR)/epub3."
 
 .PHONY: dummy
 dummy: 	setup
