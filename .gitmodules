@@ -1,0 +1,3 @@
+[submodule "sphinx-scylladb-theme"]
+	path = sphinx-scylladb-theme
+	url = https://github.com/Start9Labs/sphinx-scylladb-theme.git

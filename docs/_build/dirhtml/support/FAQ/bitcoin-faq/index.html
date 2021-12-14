@@ -1,0 +1,763 @@
+
+
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> Bitcoin and Lightning Network | Start9 Docs
+    </title>
+    <meta name="description" content="Start9 Product Documentation and Education Guides" />
+    <link
+      rel="icon"
+      href="../../../_static/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="../../../_static/img/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="../../../_static/img/favicon-228x228.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="../../../_static/img/favicon-228x228.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      href="../../../_static/img/favicon-228x228.png"
+    />
+    <link rel="canonical" href="https://docs.start9.com/" />
+    <link rel="author" href="mailto:support@start9labs.com" />
+  <!-- connect to domain of font files -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- optionally increase loading priority -->
+  <link
+    rel="preload"
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,400&display=swap"
+  />
+
+  <!-- async CSS -->
+  <link
+    rel="stylesheet"
+    media="print"
+    onload="this.onload=null;this.removeAttribute('media');"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,400&display=swap"
+  />
+
+  <!-- no-JS fallback -->
+  <noscript>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,400&display=swap"
+    />
+  </noscript>
+  <link
+    rel="stylesheet"
+    href="../../../_static/css/main.css"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="../../../_static/pygments.css"
+    type="text/css"
+  /> <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+
+  <script
+    type="text/javascript"
+    id="documentation_options"
+    data-url_root="../../../"
+    src="../../../_static/documentation_options.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="../../../_static/js/runtime.bundle.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="../../../_static/js/main.bundle.js"
+  ></script> <script src="../../../_static/underscore.js"></script> <script src="../../../_static/doctools.js"></script> <script src="../../../_static/language_data.js"></script> <script src="../../../_static/clipboard.min.js"></script> <script src="../../../_static/copybutton.js"></script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-T8P2JP");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Marketo -->
+    <script type="text/javascript">
+      (function () {
+        var didInit = false;
+        function initMunchkin() {
+          if (didInit === false) {
+            didInit = true;
+            Munchkin.init("791-QBF-350");
+          }
+        }
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "//munchkin.marketo.net/munchkin.js";
+        s.onreadystatechange = function () {
+          if (this.readyState == "complete" || this.readyState == "loaded") {
+            initMunchkin();
+          }
+        };
+        s.onload = initMunchkin;
+        document.getElementsByTagName("head")[0].appendChild(s);
+      })();
+    </script>
+    <!-- End Marketo -->
+    <!-- Expertrec -->
+    <script>
+      var id = "e2077224-9ccf-11e9-a0c9-0242ac130002";
+      var ci_search = document.createElement("script");
+      ci_search.type = "text/javascript";
+      ci_search.async = true;
+      ci_search.src = "https://cse.expertrec.com/api/js/ci_common.js?id=" + id;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(ci_search, s);
+    </script>
+    <!-- End Expertrec -->
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b1870adf6a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- End Font Awesome -->
+  </head>
+  
+  <body>
+     <header class="header">
+  <div class="header-logo">
+    <a class="header-logo__img" href="https://start9.com/">
+      <img
+        src="../../../_static/img/logo.png"
+        alt="Start9 Logo"
+      />
+    </a>
+    <span class="header-logo__bar"></span>
+    <a class="header-logo__text" href="https://docs.start9.com/">
+      Documentation
+    </a>
+  </div>
+  <div class="header-navigation">
+    <ul
+      class="dropdown menu scylla-dropdown scylla-dropdown--header"
+      data-dropdown-menu
+    >
+      <li class="scylla-dropdown__item">
+        <a href="#" class="scylla-dropdown__title"
+          >Contributing <i class="chevron scylla-icon scylla-icon--triangle-down"></i
+        ></a>
+        <ul class="menu scylla-dropdown__content">
+          <li>
+            <a href="https://docs.start9.com/developing"
+              ><i class="scylla-icon scylla-icon--apps"></i>Developer</a
+            >
+          </li>
+          <li>
+            <a href="https://docs.start9.com/service-packaging"
+              ><i class="scylla-icon scylla-icon--open-source"></i>Service Packaging</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="scylla-dropdown__item">
+        <a href="#" class="scylla-dropdown__title"
+          >About <i class="chevron scylla-icon scylla-icon--triangle-down"></i
+        ></a>
+        <ul class="menu scylla-dropdown__content">
+          <li>
+            <a href="https://docs.start9.com/about">
+              <i class="scylla-icon scylla-icon--enterprise"></i>Company</a
+            >
+          </li>
+          <li>
+            <a href="https://docs.start9.com/license">
+              <i class="scylla-icon scylla-icon--whitepapers"></i>License</a
+            >
+          </li>
+          <li>
+            <a href="https://docs.start9.com/careers">
+              <i class="scylla-icon scylla-icon--careers"></i>Hiring
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="header-button">
+      <a href="https://store.start9.com" class="button" target="_blank">Purchase</a>
+    </div>
+  </div>
+  <div class="header-search-box">
+    <div class="search-box">
+      <ci-search></ci-search>
+    </div>
+  </div>
+  <div class="side-nav-toggle" data-toggle="side-nav">
+  <div class="side-nav-toggle__button">
+    <img src="../../../_static/img/menu.svg" alt="Menu" />
+  </div>
+</div>
+</header>
+    <section class="layout ">
+      <div class="content large-order-2">
+         
+
+        <div class="pre-content">
+          <div class="pre-content__left"><div class="breadcrumbs">
+  <span class="bread__item">
+    <a
+      href="../../../"
+      class="bread__highlight"
+    >
+      <i class="fas fa-home"></i> Start9 Docs</a
+    ></span
+  >
+  
+  <span class="bread__item"
+    ><a href="../">Frequently Asked Questions</a></span
+  >
+  
+  <span class="bread__item bread__item--last">Bitcoin and Lightning Network</span>
+</div></div>
+          <div class="pre-content__right"><ul
+  class="dropdown menu scylla-dropdown scylla-dropdown--contribute"
+  data-dropdown-menu
+>
+  <li class="scylla-dropdown__item">
+    <a class="scylla-dropdown__title" href="#">
+      <div class="scylla-dropdown__title--body">
+        <i class="icon fa fa-github" aria-hidden="true"></i>
+        Contribute
+      </div>
+      <i class="chevron scylla-icon scylla-icon--chevron-right"></i>
+    </a>
+    <ul class="menu scylla-dropdown__content">
+      <li>
+        <a
+          href="https://github.com/Start9Labs/documentation/issues/new?title=Issue in page Bitcoin and Lightning Network&&body=I%20would%20like%20to%20report%20an%20issue%20in%20page%20https://docs.start9.com/support/FAQ/bitcoin-faq%0A%0A%23%23%23%20Problem%0A%0A%23%23%23%20%20Suggest%20a%20fix"
+          target="_blank"
+          >Report a doc issue
+          <i class="icon fa fa-external-link" aria-hidden="true"></i
+        ></a>
+      </li>
+      
+      <li>
+         
+        <a
+          href="https://github.com/Start9Labs/documentation/edit/master/docs/source/support/FAQ/bitcoin-faq.rst"
+          target="_blank"
+          >Edit this page
+          <i class="icon fa fa-external-link" aria-hidden="true"></i
+        ></a>
+      </li>
+      
+      <li>
+        <a href="https://docs.start9.com/contributing/" target="_blank"
+          >Learn how to contribute
+          <i class="icon fa fa-external-link" aria-hidden="true"></i
+        ></a>
+      </li>
+    </ul>
+  </li>
+</ul></div>
+        </div>
+         <div class="section" id="bitcoin-and-lightning-network">
+<span id="bitcoin-faq"></span><h1>Bitcoin and Lightning Network<a class="headerlink" href="#bitcoin-and-lightning-network" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="why-does-the-bitcoin-service-take-so-long-to-be-ready">
+<h2>Why does the Bitcoin service take so long to be ready?<a class="headerlink" href="#why-does-the-bitcoin-service-take-so-long-to-be-ready" title="Permalink to this headline">¶</a></h2>
+<p>On first install, the Bitcoin service must verify the entire history of transactions in order to verify transactions going forward.  This can take approximately a week depending on your internet connection.  You can continue to use the Embassy normally in the meantime.
+You can learn more about the Initial Block Download in <a class="reference external" href="https://www.youtube.com/watch?v=OrYDehC-8TU">this video</a>.</p>
+</div>
+<div class="section" id="can-the-ibd-initial-block-download-be-made-faster-or-can-wait-times-be-improved">
+<h2>Can the IBD (Initial Block Download) be made faster?  Or can wait times be improved?<a class="headerlink" href="#can-the-ibd-initial-block-download-be-made-faster-or-can-wait-times-be-improved" title="Permalink to this headline">¶</a></h2>
+<p>We have improvements on the way in mid-2021 to vastly improve the painful sync times, without sacrificing trust minimization.</p>
+</div>
+<div class="section" id="i-m-getting-this-error-unable-to-connect-to-bitcoind-28-loading-block-index-what-do-i-do">
+<h2>I’m getting this error: unable to connect to bitcoind: -28: Loading block index… What do I do?<a class="headerlink" href="#i-m-getting-this-error-unable-to-connect-to-bitcoind-28-loading-block-index-what-do-i-do" title="Permalink to this headline">¶</a></h2>
+<p>The block index error is normal and goes away after the Bitcoin blockchain has synced.  If you have completed the Initial Blockchain Download (IBD), this will be a few minutes at most.</p>
+</div>
+<div class="section" id="does-the-embassy-run-a-full-archival-bitcoin-node">
+<h2>Does the Embassy run a full archival Bitcoin node?<a class="headerlink" href="#does-the-embassy-run-a-full-archival-bitcoin-node" title="Permalink to this headline">¶</a></h2>
+<p>The Embassy runs a full node, but does not run a full <em>archival</em> node, it’s pruned. This means it does not store the entire Blockchain.  As it syncs, it discards blocks and transactions it does not need.
+It is fully validating and verifying consensus all the way from Genesis. Really, the only reason to store the entire Blockchain is if you want to run a block explorer.  Learn more here: <a class="reference internal" href="../../concepts/#node"><span class="std std-ref">Bitcoin Full Node</span></a>.  All this being said, it will be possible to run a full archival node on the Embassy in mid-2021, bringing this additional functionality to those that would like it.</p>
+</div>
+<div class="section" id="what-actions-specifically-are-only-possible-with-an-archival-or-unpruned-node">
+<h2>What actions, specifically, are only possible with an archival, or ‘unpruned’ node?<a class="headerlink" href="#what-actions-specifically-are-only-possible-with-an-archival-or-unpruned-node" title="Permalink to this headline">¶</a></h2>
+<p>The more sophisticated the blockchain analysis being done is, the more index data is required, which will increase the system resources required.  For example, if you wanted to run a block explorer, you would require not only a full archival node, but also a full transaction index.  So, specifically, at this time, a full archival node is required for running an Electrum server, a block explorer, and for doing advanced chain analysis in general.</p>
+</div>
+<div class="section" id="is-it-insecure-to-run-a-pruned-node">
+<h2>Is it insecure to run a pruned node?<a class="headerlink" href="#is-it-insecure-to-run-a-pruned-node" title="Permalink to this headline">¶</a></h2>
+<p>As a user, pruned nodes and archival nodes provide you the same security.  In a larger sense, if 100% of people ran pruned nodes, the security of the network could be in dire circumstances and be put at risk if no nodes kept history, as then no one could bootstrap new nodes.  The reality however, is that most Embassy owners are new node operators, so there is no net systemic risk introduced.</p>
+</div>
+<div class="section" id="the-bitcoin-service-is-different-from-the-gui-version-i-am-used-to-using-bitcoin-qt-how-do-i-use-this-like-i-used-to">
+<h2>The Bitcoin Service is different from the GUI version I am used to using (bitcoin-qt).  How do I use this like I used to?<a class="headerlink" href="#the-bitcoin-service-is-different-from-the-gui-version-i-am-used-to-using-bitcoin-qt-how-do-i-use-this-like-i-used-to" title="Permalink to this headline">¶</a></h2>
+<p>At present, the Embassy does not offer its own node visualization tool. You can view certain properties about your node inside the “Properties” section, but not in an animated GUI. If you want to use bitcoin-cli, you may do so by adding an SSH key onto your Embassy and exec-ing into the bitcoind docker container. Otherwise, the main way to actually <em>use</em> your node is through a wallet. The QT GUI is not usable because it cannot be served through the browser (which is necessary here), and last we checked, the QT desktop client was incapable of connecting to a remote node over Tor. As far as we are aware, the only wallets that support this are Specter, Fully Noded, and Sparrow.</p>
+</div>
+<div class="section" id="is-a-wallet-vulnerable-to-hacking-if-its-always-online">
+<h2>Is a wallet vulnerable to hacking if it’s always online??<a class="headerlink" href="#is-a-wallet-vulnerable-to-hacking-if-its-always-online" title="Permalink to this headline">¶</a></h2>
+<p>Funds are not stored on the node typically.  The node simply serves as a source of truth for the state of the blockchain.  Attacks depend on where the keys are and where the signing happens. You can use something like a hardware wallet for better security.  Though, to be fair, a lot of attacks depend on you or your machine being targeted specifically, and a whole bunch of attack vectors are highly theoretical and obscure.
+Most successful attacks seem to be either fake/doctored software or a social attack (tricking you into installing some malware or giving your seed outright or something like that).
+Keep in mind, however, the more value there is out there to steal, the more sophisticated attacks will get automated (bots, crawlers etc). So its not just the risk profile of today, but also tomorrow you have to consider.  That’s why something like a hardware wallet or dedicated mobile device for key signing is a good idea.
+Even if your wallet is plugged into your Embassy, whether your wallet is hot or cold depends on the hardware that stores the keys.</p>
+</div>
+<div class="section" id="how-does-bitcoin-proxy-request-and-verify-data-when-that-data-is-needed-by-some-app-using-it">
+<h2>How does Bitcoin Proxy request (and verify) data when that data is needed by some app using it?<a class="headerlink" href="#how-does-bitcoin-proxy-request-and-verify-data-when-that-data-is-needed-by-some-app-using-it" title="Permalink to this headline">¶</a></h2>
+<p>Proxy fetches blocks from your pruned node if it still has them, and fetches them from peers when it does not.  Proxy can ensures the fetched block is valid by comparing it to its header, which is retained by the pruned node.  The header is a product of the hash of the block itself, amongst other things, so it can’t be tampered with.</p>
+</div>
+<div class="section" id="what-is-the-difference-between-the-bitcoin-wallet-tracker-and-the-electrum-personal-server">
+<h2>What is the difference between the Bitcoin Wallet Tracker and the Electrum Personal Server?<a class="headerlink" href="#what-is-the-difference-between-the-bitcoin-wallet-tracker-and-the-electrum-personal-server" title="Permalink to this headline">¶</a></h2>
+<p>Bitcoin Wallet Tracker and Electrum Personal Server are 2 services that do the same thing, similar to bitcoind vs btcd, or lnd vs c-lightning.
+Both work with your Bitcoin node to provide a richer set of information to wallets than could be done with bitcoind alone.  They are basically identical in purpose, their differences are notably in the software memory requirements and how snappily they can answer the same questions.
+Electrum (and some other wallets) require more than just a Bitcoin node to run in a sovereign way, they require an “Electrum Server”. Both Electrum Personal Server and Bitcoin Wallet Tracker are “Electrum servers”.</p>
+</div>
+<div class="section" id="how-do-i-use-bitcoin-core-as-a-wallet">
+<h2>How do I use Bitcoin Core as a wallet?<a class="headerlink" href="#how-do-i-use-bitcoin-core-as-a-wallet" title="Permalink to this headline">¶</a></h2>
+<p>Bitcoin Core is a full node that also contains wallet functionality.  Some will be familiar with Bitcoin-QT, which is a Bitcoin Core GUI that for a long time was the only available wallet.  This is currently not compatible with the Embassy.
+You can use the wallet in Bitcoin Core, however it is for advanced users and is only available in the command line via SSH.</p>
+<p>It is helpful to think of the Bitcoin Core service on the Embassy as your own personal Bitcoin Server. This is your own verified source of truth of the Bitcoin ledger, that requires no permission for you to set up and own. The job of your Bitcoin server is to verify that the transactions you want to make and receive are valid.
+There are modern wallets that have the ability to use your personal Bitcoin node as a source of truth, and with the advantages of additional security and advanced features. This also follows the Linux mantra of “do one thing and do it well.”  The recommended way to use Bitcoin with your Embassy’s Bitcoin node is with an external wallet.
+The available wallets are listed in the following FAQ.</p>
+</div>
+<div class="section" id="which-wallets-can-i-use-that-sync-with-my-embassy-bitcoin-node">
+<h2>Which wallets can I use that sync with my Embassy Bitcoin node?<a class="headerlink" href="#which-wallets-can-i-use-that-sync-with-my-embassy-bitcoin-node" title="Permalink to this headline">¶</a></h2>
+<p>The only currently available external options are FullyNoded and Specter.  Within the Embassy, BTCPayServer is available, which offers a wallet that is automatically connected to your Embassy’s Bitcoin Core node.  Keep in mind that this first and foremost a payment gateway, rather than a personal wallet.  Unforutnately, this is still not a popular functionality in Bitcoin wallets.  We are in communication with several wallet developers about adding Tor full node support.</p>
+</div>
+<div class="section" id="what-lightning-wallets-can-i-use-that-sync-with-my-embassy">
+<h2>What Lightning wallets can I use that sync with my Embassy?<a class="headerlink" href="#what-lightning-wallets-can-i-use-that-sync-with-my-embassy" title="Permalink to this headline">¶</a></h2>
+<p>Spark, Zap, and Zeus.</p>
+</div>
+<div class="section" id="is-bluewallet-an-option">
+<h2>Is BlueWallet an option?<a class="headerlink" href="#is-bluewallet-an-option" title="Permalink to this headline">¶</a></h2>
+<p>BlueWallet requires a separate backend service called LNDHub, which is not available on the Embassy at this time.</p>
+</div>
+<div class="section" id="is-there-a-guide-for-connecting-specter-wallet-to-my-embassy">
+<h2>Is there a guide for connecting Specter Wallet to my Embassy?<a class="headerlink" href="#is-there-a-guide-for-connecting-specter-wallet-to-my-embassy" title="Permalink to this headline">¶</a></h2>
+<p>There is.  Please follow the integration guide <a class="reference external" href="https://github.com/Start9Labs/bitcoind-wrapper/tree/master/docs/integrations/specter">here</a> and select the tutorial based on your operating system.</p>
+<p>More guides, particularly in video form, are forthcoming.</p>
+</div>
+<div class="section" id="i-want-to-use-my-hardware-signer-such-as-coldcard-or-trezor-with-my-embassy-how-does-this-work">
+<h2>I want to use my hardware signer, such as Coldcard or Trezor, with my Embassy.  How does this work?<a class="headerlink" href="#i-want-to-use-my-hardware-signer-such-as-coldcard-or-trezor-with-my-embassy-how-does-this-work" title="Permalink to this headline">¶</a></h2>
+<p>You do not use hardware signers directly with your node. Hardware signers interface with wallets, and wallets interface with nodes.</p>
+<p>Node (Embassy) &lt;— Wallet (Specter, Sparrow, Electrum) &lt;— Hardware signer (Coldcard, Trezor)</p>
+<p>You would use your hardware signer with your wallet, then instruct that wallet to use Embassy as its node.</p>
+<ul class="simple">
+<li><p>Nodes are for interacting with the Bitcoin network: enforcing consensus rules, validating and relaying blocks/transactions, and broadcasting transactions.</p></li>
+<li><p>Wallets are for constructing and viewing transactions, as well as generating addresses.</p></li>
+<li><p>Signers are for generating and storing keys, as well as signing transactions.</p></li>
+</ul>
+<p>The reason there is so much confusion about these 3 concepts is that the Bitcoin Core Node comes with its own Wallet (which you should not use), and that wallet is also a signer. In fact, most wallets double as signers, and most wallets do NOT support connecting to your own node. So, most wallets are actually serving as a wallet, a node, and a signer, which might be convenient, but it is neither trustless nor maximally secure. Ideally, you are using a wallet that supports both integrating with a hardware signer (like Coldcard or Trezor) AND a backend node (like on the Embassy).</p>
+<p>Please note: of the wallets listed (Specter/Sparrow/Electrum), only Specter is currently able to use Embassy as it’s node, but the other two should be available soon.</p>
+</div>
+<div class="section" id="why-would-i-want-to-run-a-lightning-node">
+<h2>Why would I want to run a lightning node?<a class="headerlink" href="#why-would-i-want-to-run-a-lightning-node" title="Permalink to this headline">¶</a></h2>
+<p>The Lightning Network (LN) is a second ‘layer,’ built on top of the Bitcoin Protocol.  As a result all transactions on LN are backed up by the full security of the Bitcoin network.  Lightning is designed for instant payments between nodes, but similar to running a Bitcoin node, running your own is the only way to be sovereign.  When you have your own node, you will have the convenience of linking a Lightning wallet, for use on the go.  It is also possible to earn an income (granted a very small one at this time), if you are willing to learn how to become a ‘routing node.’</p>
+</div>
+<div class="section" id="how-can-i-get-started-with-lightning-and-open-my-first-channel">
+<h2>How can I get started with Lightning and open my first channel?<a class="headerlink" href="#how-can-i-get-started-with-lightning-and-open-my-first-channel" title="Permalink to this headline">¶</a></h2>
+<p>You can check out our <a class="reference external" href="https://www.youtube.com/watch?v=rAvoUNsobws">“Using Lightning” video</a> and learn the basics, including opening a channel with Start9.</p>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/KhU_sTiaN8w" style="border: 0; height: 345px; width: 560px">
+</iframe></div><p>Please remember to always open a “Private” channel with us, or your channel is likely to be closed.  Please don’t hesitate to reach out to us with any questions.</p>
+</div>
+<div class="section" id="i-opened-a-lightning-channel-but-my-local-balance-is-lower-than-i-expected-where-is-the-remainder">
+<h2>I opened a Lightning channel, but my local balance is lower than I expected.  Where is the remainder?<a class="headerlink" href="#i-opened-a-lightning-channel-but-my-local-balance-is-lower-than-i-expected-where-is-the-remainder" title="Permalink to this headline">¶</a></h2>
+<p>A fee to close the channel (onchain) is set aside at opening.</p>
+</div>
+<div class="section" id="how-is-that-fee-estimation-calculated">
+<h2>How is that fee estimation calculated?<a class="headerlink" href="#how-is-that-fee-estimation-calculated" title="Permalink to this headline">¶</a></h2>
+<p>The commitment fees are automatically negotiated every few blocks with your peer. They are on chain txs like all channel closes but they are not broadcast until you attempt to close the channel.</p>
+</div>
+<div class="section" id="what-would-happen-if-i-shut-down-an-embassy-that-is-running-a-lightning-node-with-open-channels">
+<h2>What would happen if I shut down an Embassy that is running a Lightning node with open channels?<a class="headerlink" href="#what-would-happen-if-i-shut-down-an-embassy-that-is-running-a-lightning-node-with-open-channels" title="Permalink to this headline">¶</a></h2>
+<p>It is REALLY IMPORTANT to understand that if Lightning services are shut off for long periods of time (days on end) it is possible for your peers to cheat you out of money. If you are not prepared to LOSE ALL THE MONEY IN YOUR CHANNELS, KEEP YOUR NODE RUNNING.
+That said, malicious actors on the network right now are probably sparse. However, you are still open to that risk if you do not keep your node online.</p>
+</div>
+<div class="section" id="is-there-a-solution-to-this">
+<h2>Is there a solution to this?<a class="headerlink" href="#is-there-a-solution-to-this" title="Permalink to this headline">¶</a></h2>
+<p>Yes, the concept of a Watchtower was originally conceptualized in the LN whitepaper.  A Watchtower is simply a lightning node to which you can give the authority to monitor transactions associated with your open payment channels.</p>
+</div>
+<div class="section" id="is-it-possible-to-run-c-lightning-and-lnd-parallel-on-the-embassy">
+<h2>Is it possible to run c-lightning and lnd parallel on the Embassy?<a class="headerlink" href="#is-it-possible-to-run-c-lightning-and-lnd-parallel-on-the-embassy" title="Permalink to this headline">¶</a></h2>
+<p>Yes, you may run both.  They will operate in their own environments and allow you to run services that depend on either.</p>
+</div>
+<div class="section" id="how-do-i-connect-my-spark-mobile-app-to-the-embassy-spark-server">
+<h2>How do I connect my Spark mobile app to the Embassy Spark server?<a class="headerlink" href="#how-do-i-connect-my-spark-mobile-app-to-the-embassy-spark-server" title="Permalink to this headline">¶</a></h2>
+<p>To use a Spark client, you still need to have Spark installed on the Embassy (which ‘serves’ Spark). Then, under Properties, there is a “Pairing URL”. The first part of this is the server URL, and the end portion of it is the access key.</p>
+<p>Unfortunately, Spark cannot currently be used in Consulate.  This issue is being tracked <a class="reference external" href="https://github.com/Start9Labs/consulate-ios/issues/30">here</a>.</p>
+</div>
+<div class="section" id="are-my-addresses-channels-and-balances-all-stored-in-lnd-or-in-rtl">
+<h2>Are my addresses, channels, and balances all stored in LND or in RTL?<a class="headerlink" href="#are-my-addresses-channels-and-balances-all-stored-in-lnd-or-in-rtl" title="Permalink to this headline">¶</a></h2>
+<p>This is all on LND, and RTL is just a GUI for accessing LND.  On-chain balance is also part of the LND backup.</p>
+</div>
+<div class="section" id="how-do-i-find-my-lnd-seed-so-i-can-write-it-down-to-backup">
+<h2>How do I find my LND seed so I can write it down to backup?<a class="headerlink" href="#how-do-i-find-my-lnd-seed-so-i-can-write-it-down-to-backup" title="Permalink to this headline">¶</a></h2>
+<p>All LND backups are best done via the Embassy backup flow.  It is not supported to use a seed as backup; LND does not expose this. Everything crucial is backed up by our backup system so you do not need your seed.  The seed is ONLY for the onchain wallet and does not backup your channel state.</p>
+<p>To clarify some of the reasons for this choice:</p>
+<p>First off, Lightning is fundamentally different than on-chain/Layer1(L1) bitcoin. There is no way to compress all of that information down into a single 24 word seed in such a way that it will continue to work throughout your usage of the Lightning Network.</p>
+<p>So, what is the LND seed <em>for</em>? In short, the seed is only used for the Layer1 portion of the funds you have locked up in LND. Due to the live nature of LND and lightning nodes in general, we tend to discourage keeping any significant amounts of money in the onchain portion of your wallet. Given that we cannot actually recover the Layer2(L2) funds with that seed, we needed to have a more holistic way to backup LND funds such that the backup would encompass the ability to get L2 funds back. The Embassy backup system does this, and this approach also happens to be a perfectly valid backup of your L1 funds as well. While Bitcoin users have been trained that the 24 word seed can be used to recover all of their funds, it is important to state that lightning does not and cannot work this way. Exposing the seed gives you two separate things to keep track of in order to recover your funds instead of just one.</p>
+</div>
+<div class="section" id="is-there-a-way-to-use-the-channel-backups-made-within-rtl">
+<h2>Is there a way to use the channel backups made within RTL?<a class="headerlink" href="#is-there-a-way-to-use-the-channel-backups-made-within-rtl" title="Permalink to this headline">¶</a></h2>
+<p>The only backup flow we officially support is through the Embassy backup system. This does include the channel backups created automatically by LND, but it must be understood that backups in Lightning are very different than they are on Layer 1 Bitcoin. If you restore from backup all your channels will close, and there is a potential, albeit small, probability for you to lose funds.</p>
+</div>
+<div class="section" id="when-attempting-to-add-new-peer-rtl-says-server-is-still-in-the-process-of-starting-but-chain-state-seems-to-be-fully-up-to-date-what-can-i-do">
+<h2>When attempting to add new peer, RTL says “server is still in the process of starting,” but chain state seems to be fully up to date.  What can I do?<a class="headerlink" href="#when-attempting-to-add-new-peer-rtl-says-server-is-still-in-the-process-of-starting-but-chain-state-seems-to-be-fully-up-to-date-what-can-i-do" title="Permalink to this headline">¶</a></h2>
+<p>Check the LND logs, it can take a while to bootstrap, and starting RTL before this completes could cause errors.</p>
+</div>
+<div class="section" id="server-is-still-in-the-process-of-starting-but-lnd-and-rtl-are-running-how-can-i-address-this">
+<h2>“Server is still in the process of starting,” but LND and RTL are running.  How can I address this?<a class="headerlink" href="#server-is-still-in-the-process-of-starting-but-lnd-and-rtl-are-running-how-can-i-address-this" title="Permalink to this headline">¶</a></h2>
+<p>You may need to restart the LND Service.</p>
+</div>
+<div class="section" id="i-get-the-following-error-from-lnd-error-econnrefused-fetching-info-failed-unknown-error-what-s-wrong">
+<h2>I get the following error from LND: “Error ECONNREFUSED Fetching Info Failed! Unknown Error.” What’s wrong?<a class="headerlink" href="#i-get-the-following-error-from-lnd-error-econnrefused-fetching-info-failed-unknown-error-what-s-wrong" title="Permalink to this headline">¶</a></h2>
+<p>LND is waiting for Bitcoin to completely sync, and then needs to catch up on block scanning itself.  This may take several minutes, and in some cases might require a restart of the LND service.  Do this if the process takes more than 5-10 minutes.</p>
+</div>
+<div class="section" id="what-s-the-best-way-to-move-a-small-lightning-balance">
+<h2>What’s the best way to move a small lightning balance?<a class="headerlink" href="#what-s-the-best-way-to-move-a-small-lightning-balance" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to have lightning balances that are so low that they will not (or barely will) cover the on-chain fees to recoup into an on-chain wallet.</p>
+</div>
+<div class="section" id="why-are-lightning-network-backups-and-moves-so-complicated">
+<h2>Why are Lightning Network backups and moves so complicated?<a class="headerlink" href="#why-are-lightning-network-backups-and-moves-so-complicated" title="Permalink to this headline">¶</a></h2>
+<p>There are safe ways to do an “atomic move” of a LN node, but it requires a very specific sequence of actions and certain mistakes can result in your counterparties taking all your funds. Currently, LN works on a punishment scheme. This means if you publish revoked state, the counterparty is entitled to a claim on all the funds in the channel. This incentive system is what makes the whole system work. Without it LN would be subject to various kinds of thievery.</p>
+<p>The downside is that backups of old state are not safe. This is because your node might believe it is the real state of the channel, but it may be unaware of states created since then. The problem here is that your node naively believes something different from the truth, which can result in all of the funds being lost. In response to this reality, the safe backup systems, including those generated by RTL, actually do not include channel state. They only list the peers that you had channels with. Restoring these backups essentially politely asks your peers to force close the channels they have with you. In those moments it is possible for your peer to try and cheat you, but they cannot be 100% sure that you can’t punish them, so it’s extremely unlikely that they will attempt to do so.</p>
+</div>
+</div>
+  <div class="content-navigation">
+  <div class="navigation navigation--prev">
+    <a class="navigation__link" href="../services-faq/">
+      <button class="navigation__button">
+        <i class="scylla-icon scylla-icon--chevron-left"></i>
+      </button>
+      <div class="navigation__title">
+        <span class="colored">PREVIOUS</span> <br />Services
+      </div>
+    </a>
+  </div>
+  <div class="navigation navigation--next">
+    <a class="navigation__link" href="../030-faq/">
+      <div class="navigation__title">
+        <span class="colored">NEXT</span> <br />EmbassyOS Version 0.3.0
+      </div>
+      <button class="navigation__button">
+        <i class="scylla-icon scylla-icon--chevron-right"></i>
+      </button>
+    </a>
+  </div>
+</div> 
+      </div>
+      <div
+        class="sidebar-left  large-order-1"
+      > <div id="side-nav" class="side-nav custom-scroll-bar" data-closable data-toggler=".show">
+  <button class="collapsible-button">
+    <i class="scylla-icon scylla-icon--chevron-left"></i>
+  </button>
+  <div class="side-nav-content">
+    <div class="side-nav__search">
+      <div class="search-box">
+        <ci-search></ci-search>
+      </div>
+    </div>
+    <div class="side-nav__versions">
+      
+    </div>
+    <div class="side-nav__content">
+      <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/introduction/">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/purchasing/">Purchasing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/diy/">DIY Guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../user-manual/initial-setup/">Initial Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../user-manual/connecting/">Connecting</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../user-manual/general/">General</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/embassy-config/">Config Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/updating/">Updating EmbassyOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/wifi/">Setting up WiFi</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../user-manual/general/developer-options/">Developer Options</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../user-manual/general/developer-options/ssh-setup/">SSH Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../user-manual/general/developer-options/alt-marketplace/">Alternative Marketplace</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/power/">Power</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/notifications/">Notifications</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../user-manual/general/lan-setup/">LAN Setup</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../user-manual/general/lan-setup/desktop/">Desktop</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../user-manual/general/lan-setup/computer-setup/">Computer Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../user-manual/general/lan-setup/browser-setup/">Browser Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../user-manual/general/lan-setup/mobile/">Mobile</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/forgot-password/">Forgot Password</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../user-manual/managing-services/">Managing Services</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/installing/">Install / Uninstall</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/instructions/">Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/backups/">Backups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/service-config/">Service Config</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/properties/">Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/logs/">Viewing Logs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/managing-deps/">Managing Dependencies</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Misc Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc-guides/available-services/">Available Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc-guides/bitcoin-cli/">Using Bitcoin-Cli</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../misc-guides/tor-os/">Running Tor</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label for="toctree-checkbox-6"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-os/mac/">MacOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-os/windows/">Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-os/linux/">Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-os/android/">Android</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-os/ios/">iOS</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../misc-guides/tor-firefox/">Configuring Firefox for Tor</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-firefox/desktop/">Desktop</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../misc-guides/tor-firefox/mobile/">Mobile</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label for="toctree-checkbox-8"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc-guides/tor-firefox/android/">Android</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc-guides/tor-firefox/ios/">iOS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Contributing</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../contributing/services/">Service Packaging Guide</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label for="toctree-checkbox-9"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributing/services/overview/">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributing/services/wrapper/">Wrapper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributing/services/manifest/">Manifest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributing/services/docker/">Docker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributing/services/makefile/">Makefile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributing/services/config/">Config</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributing/services/properties/">Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributing/services/instructions/">Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributing/services/backups/">Backups</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contributing/embassyos/">EmbassyOS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Support</span></p>
+<ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../">Frequently Asked Questions</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label for="toctree-checkbox-10"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../general-faq/">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../embassy-faq/">Embassy (Device, OS, and DIY)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usage-faq/">Basic Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../setup-faq/">Setup and Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../services-faq/">Services</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Bitcoin and Lightning Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../030-faq/">EmbassyOS Version 0.3.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev-faq/">Contributing &amp; Development</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../concepts/">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contact/">Contact</a></li>
+</ul>
+
+    </div>
+  </div>
+</div>
+      </div>
+      
+      <div class="sidebar-right large-order-3">
+         <div class="secondary-side-nav custom-scroll-bar">
+  <div class="secondary-side-nav__content">
+    <p class="topic-title">On this page</p>
+    <ul>
+<li><a class="reference internal" href="#">Bitcoin and Lightning Network</a><ul>
+<li><a class="reference internal" href="#why-does-the-bitcoin-service-take-so-long-to-be-ready">Why does the Bitcoin service take so long to be ready?</a></li>
+<li><a class="reference internal" href="#can-the-ibd-initial-block-download-be-made-faster-or-can-wait-times-be-improved">Can the IBD (Initial Block Download) be made faster?  Or can wait times be improved?</a></li>
+<li><a class="reference internal" href="#i-m-getting-this-error-unable-to-connect-to-bitcoind-28-loading-block-index-what-do-i-do">I’m getting this error: unable to connect to bitcoind: -28: Loading block index… What do I do?</a></li>
+<li><a class="reference internal" href="#does-the-embassy-run-a-full-archival-bitcoin-node">Does the Embassy run a full archival Bitcoin node?</a></li>
+<li><a class="reference internal" href="#what-actions-specifically-are-only-possible-with-an-archival-or-unpruned-node">What actions, specifically, are only possible with an archival, or ‘unpruned’ node?</a></li>
+<li><a class="reference internal" href="#is-it-insecure-to-run-a-pruned-node">Is it insecure to run a pruned node?</a></li>
+<li><a class="reference internal" href="#the-bitcoin-service-is-different-from-the-gui-version-i-am-used-to-using-bitcoin-qt-how-do-i-use-this-like-i-used-to">The Bitcoin Service is different from the GUI version I am used to using (bitcoin-qt).  How do I use this like I used to?</a></li>
+<li><a class="reference internal" href="#is-a-wallet-vulnerable-to-hacking-if-its-always-online">Is a wallet vulnerable to hacking if it’s always online??</a></li>
+<li><a class="reference internal" href="#how-does-bitcoin-proxy-request-and-verify-data-when-that-data-is-needed-by-some-app-using-it">How does Bitcoin Proxy request (and verify) data when that data is needed by some app using it?</a></li>
+<li><a class="reference internal" href="#what-is-the-difference-between-the-bitcoin-wallet-tracker-and-the-electrum-personal-server">What is the difference between the Bitcoin Wallet Tracker and the Electrum Personal Server?</a></li>
+<li><a class="reference internal" href="#how-do-i-use-bitcoin-core-as-a-wallet">How do I use Bitcoin Core as a wallet?</a></li>
+<li><a class="reference internal" href="#which-wallets-can-i-use-that-sync-with-my-embassy-bitcoin-node">Which wallets can I use that sync with my Embassy Bitcoin node?</a></li>
+<li><a class="reference internal" href="#what-lightning-wallets-can-i-use-that-sync-with-my-embassy">What Lightning wallets can I use that sync with my Embassy?</a></li>
+<li><a class="reference internal" href="#is-bluewallet-an-option">Is BlueWallet an option?</a></li>
+<li><a class="reference internal" href="#is-there-a-guide-for-connecting-specter-wallet-to-my-embassy">Is there a guide for connecting Specter Wallet to my Embassy?</a></li>
+<li><a class="reference internal" href="#i-want-to-use-my-hardware-signer-such-as-coldcard-or-trezor-with-my-embassy-how-does-this-work">I want to use my hardware signer, such as Coldcard or Trezor, with my Embassy.  How does this work?</a></li>
+<li><a class="reference internal" href="#why-would-i-want-to-run-a-lightning-node">Why would I want to run a lightning node?</a></li>
+<li><a class="reference internal" href="#how-can-i-get-started-with-lightning-and-open-my-first-channel">How can I get started with Lightning and open my first channel?</a></li>
+<li><a class="reference internal" href="#i-opened-a-lightning-channel-but-my-local-balance-is-lower-than-i-expected-where-is-the-remainder">I opened a Lightning channel, but my local balance is lower than I expected.  Where is the remainder?</a></li>
+<li><a class="reference internal" href="#how-is-that-fee-estimation-calculated">How is that fee estimation calculated?</a></li>
+<li><a class="reference internal" href="#what-would-happen-if-i-shut-down-an-embassy-that-is-running-a-lightning-node-with-open-channels">What would happen if I shut down an Embassy that is running a Lightning node with open channels?</a></li>
+<li><a class="reference internal" href="#is-there-a-solution-to-this">Is there a solution to this?</a></li>
+<li><a class="reference internal" href="#is-it-possible-to-run-c-lightning-and-lnd-parallel-on-the-embassy">Is it possible to run c-lightning and lnd parallel on the Embassy?</a></li>
+<li><a class="reference internal" href="#how-do-i-connect-my-spark-mobile-app-to-the-embassy-spark-server">How do I connect my Spark mobile app to the Embassy Spark server?</a></li>
+<li><a class="reference internal" href="#are-my-addresses-channels-and-balances-all-stored-in-lnd-or-in-rtl">Are my addresses, channels, and balances all stored in LND or in RTL?</a></li>
+<li><a class="reference internal" href="#how-do-i-find-my-lnd-seed-so-i-can-write-it-down-to-backup">How do I find my LND seed so I can write it down to backup?</a></li>
+<li><a class="reference internal" href="#is-there-a-way-to-use-the-channel-backups-made-within-rtl">Is there a way to use the channel backups made within RTL?</a></li>
+<li><a class="reference internal" href="#when-attempting-to-add-new-peer-rtl-says-server-is-still-in-the-process-of-starting-but-chain-state-seems-to-be-fully-up-to-date-what-can-i-do">When attempting to add new peer, RTL says “server is still in the process of starting,” but chain state seems to be fully up to date.  What can I do?</a></li>
+<li><a class="reference internal" href="#server-is-still-in-the-process-of-starting-but-lnd-and-rtl-are-running-how-can-i-address-this">“Server is still in the process of starting,” but LND and RTL are running.  How can I address this?</a></li>
+<li><a class="reference internal" href="#i-get-the-following-error-from-lnd-error-econnrefused-fetching-info-failed-unknown-error-what-s-wrong">I get the following error from LND: “Error ECONNREFUSED Fetching Info Failed! Unknown Error.” What’s wrong?</a></li>
+<li><a class="reference internal" href="#what-s-the-best-way-to-move-a-small-lightning-balance">What’s the best way to move a small lightning balance?</a></li>
+<li><a class="reference internal" href="#why-are-lightning-network-backups-and-moves-so-complicated">Why are Lightning Network backups and moves so complicated?</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div> 
+      </div>
+    </section>
+
+    <footer class="footer">
+  <div class="footer-group">
+    <div class="footer-top">
+      <a class="footer-logo" href="https://start9.com"
+        ><img
+          src="../../../_static/img/icon-transparent.png"
+          alt="Logo"
+      /></a>
+      <div class="footer-links">
+        <a class="footer-links__link" href="https://docs.start9.com/">Docs</a>
+        <a
+          class="footer-links__link"
+          href="https://start9.com/#community"
+          >Contact Us</a
+        >
+        <a class="footer-links__link" href="https://start9.com/"
+          >About Us</a
+        >
+      </div>
+      <div class="footer-actions">
+        <a
+          class="footer-actions__link"
+          href="https://twitter.com/start9labs"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="Twitter feed"
+            data-position="bottom"
+          >
+            <img
+              src="../../../_static/img/icons/twitter.png"
+              alt="Twitter Icon"
+            />
+          </span>
+        </a>
+        <a
+          class="footer-actions__link"
+          href="https://t.me/start9_labs"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="User Telegram channel"
+            data-position="bottom"
+          >
+            <img
+              src="../../../_static/img/icons/telegram.png"
+              alt="Telegram Icon"
+          /></span>
+        </a>
+        <a
+          class="footer-actions__link"
+          href="https://matrix.to/#/!lMnRwPWnyQvOfAoEnD:matrix.start9labs.com"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="User Matrix channel"
+            data-position="bottom"
+          >
+            <img
+              src="../../../_static/img/icons/matrix.svg"
+              alt="Matrix Icon"
+          /></span>
+        </a>
+        </a>
+        <a
+          class="footer-actions__link"
+          href="https://medium.com/@start9labs"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="Medium feed"
+            data-position="bottom"
+          >
+            <img
+              src="../../../_static/img/icons/medium.png"
+              alt="Medium Icon"
+          /></span>
+        </a>
+        <a
+          class="footer-actions__link"
+          href="https://github.com/Start9Labs/"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="GitHub page"
+            data-position="bottom"
+          >
+            <img
+              src="../../../_static/img/icons/github.png"
+              alt="GitHub Icon"
+          /></span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom__copyright"> &#169; 2021,  Start9 Labs, Inc. All rights reserved.
+      </div>
+      <div class="footer-bottom__last-updated">
+        Last updated on 13 Dec 2021.
+      </div>
+      <div class="footer-bottom__version">
+        Powered by
+        <a href="http://sphinx-doc.org/">Sphinx 2.4.5</a> &amp;
+        <a href="https://sphinx-theme.scylladb.com/"
+          >ScyllaDB Theme 1.0.6</a
+        >
+      </div>
+      <!-- <p class="footer-bottom__canary">We have never received a secret government request to hand over user information.</p> -->
+    </div>
+  </div>
+</footer>
+
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T8P2JP"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+  </body>
+</html>

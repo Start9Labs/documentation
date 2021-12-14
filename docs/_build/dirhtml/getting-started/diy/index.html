@@ -1,0 +1,723 @@
+
+
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> DIY Guide | Start9 Docs
+    </title>
+    <meta name="description" content="Start9 Product Documentation and Education Guides" />
+    <link
+      rel="icon"
+      href="../../_static/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="../../_static/img/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="../../_static/img/favicon-228x228.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="../../_static/img/favicon-228x228.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      href="../../_static/img/favicon-228x228.png"
+    />
+    <link rel="canonical" href="https://docs.start9.com/" />
+    <link rel="author" href="mailto:support@start9labs.com" />
+  <!-- connect to domain of font files -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- optionally increase loading priority -->
+  <link
+    rel="preload"
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,400&display=swap"
+  />
+
+  <!-- async CSS -->
+  <link
+    rel="stylesheet"
+    media="print"
+    onload="this.onload=null;this.removeAttribute('media');"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,400&display=swap"
+  />
+
+  <!-- no-JS fallback -->
+  <noscript>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,400&display=swap"
+    />
+  </noscript>
+  <link
+    rel="stylesheet"
+    href="../../_static/css/main.css"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="../../_static/pygments.css"
+    type="text/css"
+  /> <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+
+  <script
+    type="text/javascript"
+    id="documentation_options"
+    data-url_root="../../"
+    src="../../_static/documentation_options.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="../../_static/js/runtime.bundle.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="../../_static/js/main.bundle.js"
+  ></script> <script src="../../_static/underscore.js"></script> <script src="../../_static/doctools.js"></script> <script src="../../_static/language_data.js"></script> <script src="../../_static/clipboard.min.js"></script> <script src="../../_static/copybutton.js"></script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-T8P2JP");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Marketo -->
+    <script type="text/javascript">
+      (function () {
+        var didInit = false;
+        function initMunchkin() {
+          if (didInit === false) {
+            didInit = true;
+            Munchkin.init("791-QBF-350");
+          }
+        }
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "//munchkin.marketo.net/munchkin.js";
+        s.onreadystatechange = function () {
+          if (this.readyState == "complete" || this.readyState == "loaded") {
+            initMunchkin();
+          }
+        };
+        s.onload = initMunchkin;
+        document.getElementsByTagName("head")[0].appendChild(s);
+      })();
+    </script>
+    <!-- End Marketo -->
+    <!-- Expertrec -->
+    <script>
+      var id = "e2077224-9ccf-11e9-a0c9-0242ac130002";
+      var ci_search = document.createElement("script");
+      ci_search.type = "text/javascript";
+      ci_search.async = true;
+      ci_search.src = "https://cse.expertrec.com/api/js/ci_common.js?id=" + id;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(ci_search, s);
+    </script>
+    <!-- End Expertrec -->
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b1870adf6a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- End Font Awesome -->
+  </head>
+  
+  <body>
+     <header class="header">
+  <div class="header-logo">
+    <a class="header-logo__img" href="https://start9.com/">
+      <img
+        src="../../_static/img/logo.png"
+        alt="Start9 Logo"
+      />
+    </a>
+    <span class="header-logo__bar"></span>
+    <a class="header-logo__text" href="https://docs.start9.com/">
+      Documentation
+    </a>
+  </div>
+  <div class="header-navigation">
+    <ul
+      class="dropdown menu scylla-dropdown scylla-dropdown--header"
+      data-dropdown-menu
+    >
+      <li class="scylla-dropdown__item">
+        <a href="#" class="scylla-dropdown__title"
+          >Contributing <i class="chevron scylla-icon scylla-icon--triangle-down"></i
+        ></a>
+        <ul class="menu scylla-dropdown__content">
+          <li>
+            <a href="https://docs.start9.com/developing"
+              ><i class="scylla-icon scylla-icon--apps"></i>Developer</a
+            >
+          </li>
+          <li>
+            <a href="https://docs.start9.com/service-packaging"
+              ><i class="scylla-icon scylla-icon--open-source"></i>Service Packaging</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="scylla-dropdown__item">
+        <a href="#" class="scylla-dropdown__title"
+          >About <i class="chevron scylla-icon scylla-icon--triangle-down"></i
+        ></a>
+        <ul class="menu scylla-dropdown__content">
+          <li>
+            <a href="https://docs.start9.com/about">
+              <i class="scylla-icon scylla-icon--enterprise"></i>Company</a
+            >
+          </li>
+          <li>
+            <a href="https://docs.start9.com/license">
+              <i class="scylla-icon scylla-icon--whitepapers"></i>License</a
+            >
+          </li>
+          <li>
+            <a href="https://docs.start9.com/careers">
+              <i class="scylla-icon scylla-icon--careers"></i>Hiring
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="header-button">
+      <a href="https://store.start9.com" class="button" target="_blank">Purchase</a>
+    </div>
+  </div>
+  <div class="header-search-box">
+    <div class="search-box">
+      <ci-search></ci-search>
+    </div>
+  </div>
+  <div class="side-nav-toggle" data-toggle="side-nav">
+  <div class="side-nav-toggle__button">
+    <img src="../../_static/img/menu.svg" alt="Menu" />
+  </div>
+</div>
+</header>
+    <section class="layout ">
+      <div class="content large-order-2">
+         
+
+        <div class="pre-content">
+          <div class="pre-content__left"><div class="breadcrumbs">
+  <span class="bread__item">
+    <a
+      href="../../"
+      class="bread__highlight"
+    >
+      <i class="fas fa-home"></i> Start9 Docs</a
+    ></span
+  >
+  
+  <span class="bread__item bread__item--last">DIY Guide</span>
+</div></div>
+          <div class="pre-content__right"><ul
+  class="dropdown menu scylla-dropdown scylla-dropdown--contribute"
+  data-dropdown-menu
+>
+  <li class="scylla-dropdown__item">
+    <a class="scylla-dropdown__title" href="#">
+      <div class="scylla-dropdown__title--body">
+        <i class="icon fa fa-github" aria-hidden="true"></i>
+        Contribute
+      </div>
+      <i class="chevron scylla-icon scylla-icon--chevron-right"></i>
+    </a>
+    <ul class="menu scylla-dropdown__content">
+      <li>
+        <a
+          href="https://github.com/Start9Labs/documentation/issues/new?title=Issue in page DIY Guide&&body=I%20would%20like%20to%20report%20an%20issue%20in%20page%20https://docs.start9.com/getting-started/diy%0A%0A%23%23%23%20Problem%0A%0A%23%23%23%20%20Suggest%20a%20fix"
+          target="_blank"
+          >Report a doc issue
+          <i class="icon fa fa-external-link" aria-hidden="true"></i
+        ></a>
+      </li>
+      
+      <li>
+         
+        <a
+          href="https://github.com/Start9Labs/documentation/edit/master/docs/source/getting-started/diy.rst"
+          target="_blank"
+          >Edit this page
+          <i class="icon fa fa-external-link" aria-hidden="true"></i
+        ></a>
+      </li>
+      
+      <li>
+        <a href="https://docs.start9.com/contributing/" target="_blank"
+          >Learn how to contribute
+          <i class="icon fa fa-external-link" aria-hidden="true"></i
+        ></a>
+      </li>
+    </ul>
+  </li>
+</ul></div>
+        </div>
+         <div class="section" id="diy-guide">
+<span id="diy"></span><h1>DIY Guide<a class="headerlink" href="#diy-guide" title="Permalink to this headline">¶</a></h1>
+<div class="figure align-default" id="id13">
+<a class="reference internal image-reference" href="../../_images/pi.png"><img alt="Raspberry Pi" src="../../_images/pi.png" style="width: 40%;" /></a>
+<p class="caption"><span class="caption-text">Raspberry Pi Board</span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
+</div>
+<p>By popular demand, we are pleased to present this “Do it Yourself” (DIY) guide for the Start9 Embassy personal server!</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This DIY guide has directions for EmbassyOS versions 0.2.x and versions 0.3.x.  When 0.3.0 launches it will REQUIRE hardware updates, which you can find <a class="reference external" href="https://start9.com/eos-0.3.0">here</a>.  Please keep in mind that version 0.3.x is not yet available for purchase!! Please stay tuned to our community channels for updates.</p>
+</div>
+<div class="section" id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h2>
+<p>There are four reasons you might prefer to build your own Embassy instead of purchasing one from us.</p>
+<ol class="arabic simple">
+<li><p>You already own the necessary hardware and would like to re-purpose it.</p></li>
+<li><p>You live outside the US and want to save on shipping costs.</p></li>
+<li><p>You do not trust Start9’s supply chain.</p></li>
+<li><p>You do not want to share your shipping address.</p></li>
+<li><p>You just like building things.</p></li>
+</ol>
+</div>
+<div class="section" id="building-embassyos-versions-0-2-x">
+<h2>Building EmbassyOS Versions 0.2.x<a class="headerlink" href="#building-embassyos-versions-0-2-x" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="hardware-components">
+<h3>Hardware: Components<a class="headerlink" href="#hardware-components" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://raspberrypi.org/products/raspberry-pi-4-model-b/?variant=raspberry-pi-4-model-b-8gb">Raspberry Pi 4B (8GB)</a></p></li>
+<li><p><a class="reference external" href="https://raspberrypi.org/products/type-c-power-supply/">Power supply for Raspberry Pi 4B</a></p></li>
+<li><p>Case for Raspberry Pi 4B (<a class="reference external" href="https://www.amazon.com/Geekworm-Raspberry-Aluminum-Passive-Heatsink/dp/B07Z6FYHCH/">passive cooling recommended</a> <cite>*</cite>)</p></li>
+<li><p><a class="reference external" href="https://amazon.com/SanDisk-Endurance-microSDXC-Adapter-Monitoring/dp/B07NY23WBG/">High endurance microSD</a> (recommended 128GB or more)</p></li>
+<li><p><a class="reference external" href="https://www.amazon.com/Corporate-Computer-Motherboard-Internal-Speaker/dp/B01527H4W2/">GPIO mini speaker/buzzer</a> (These often sell out, please let us know if this link needs to be refreshed)</p></li>
+<li><p>Ethernet cable</p></li>
+<li><p>MicroSD → USB adapter (or you may have a microSD port on your computer)</p></li>
+</ol>
+<p><cite>*</cite> If you use a fan, <strong>DO NOT</strong> use the official Raspberry Pi fan, as it requires the same GPIO pins as the audio speaker. Instead, we recommend <a class="reference external" href="https://www.amazon.com/Raspberry-iUniker-30x30x7mm-Brushless-RetroFlag/dp/B076H3TKBP/">this fan</a>.</p>
+</div>
+<div class="section" id="hardware-assembly-instructions">
+<h3>Hardware: Assembly Instructions<a class="headerlink" href="#hardware-assembly-instructions" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p>Insert mini speaker/buzzer into GPIO pins 6/8/10/12 with the word “speaker” facing out, <cite>away from the board</cite>.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../_images/pins.png"><img alt="Speaker board spec" src="../../_images/pins.png" style="width: 60%;" /></a>
+</div>
+</li>
+</ol>
+<p>That’s it. Place the Raspberry Pi 4 board (with speaker attached), into its case.</p>
+</div>
+<div class="section" id="getting-embassyos-purchasing">
+<h3>Getting EmbassyOS: Purchasing<a class="headerlink" href="#getting-embassyos-purchasing" title="Permalink to this headline">¶</a></h3>
+<p>You can purchase EmbassyOS <a class="reference external" href="https://store.start9.com/collections/embassy/products/embassyos-software-download">here</a>. This is by far the easiest path to get up and running.</p>
+<p>Depending on your Internet speed, the download should take between 5 and 30 minutes.</p>
+</div>
+<div class="section" id="getting-embassyos-building-from-source">
+<h3>Getting EmbassyOS: Building from Source<a class="headerlink" href="#getting-embassyos-building-from-source" title="Permalink to this headline">¶</a></h3>
+<p>If you have the proper tooling and are comfortable using the command line, you can build EmbassyOS from <a class="reference external" href="https://github.com/Start9Labs/embassy-os">source</a>, which is made available under the <a class="reference external" href="https://start9.com/license">Start9 Personal Use License</a>.</p>
+<p>Thanks to our community members who have kindly put together these guides!</p>
+<ul class="simple">
+<li><p>A comprehensive and user friendly guide by <a class="reference external" href="https://medium.com/&#64;lex10/building-my-wife-an-embassy-from-scratch-19cb87193fb2">Bitcoin Mechanic</a></p></li>
+<li><p>A technically focused guide by <a class="reference external" href="https://github.com/t0mmysm1th/embassy-os/blob/master/BuildGuide.md">t0mmysm1th</a></p></li>
+</ul>
+</div>
+<div class="section" id="installing-embassyos">
+<h3>Installing EmbassyOS<a class="headerlink" href="#installing-embassyos" title="Permalink to this headline">¶</a></h3>
+<p>Whether you purchase EmbassyOS from us or build it yourself, you need to flash it onto a microSD card.</p>
+<ol class="arabic">
+<li><p>Download <a class="reference external" href="https://www.balena.io/etcher/">balenaEtcher</a> onto your Mac, Windows, or Linux computer.</p></li>
+<li><p>Insert the microSD card into your computer, either directly or using an adapter.</p></li>
+<li><p>Open balenaEtcher.</p></li>
+<li><p>Click <cite>Select Image</cite>, then find and select your copy of EmbassyOS.</p></li>
+<li><p>Click <cite>Select Target</cite>, then find and select your micro SD card.</p></li>
+<li><p>Click <cite>Flash!</cite> You may be asked to (1) approve the unusually large disk target or (2) enter your password. Both are normal.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../_images/balena.png"><img alt="Balena Etcher Dashboard" src="../../_images/balena.png" style="width: 60%;" /></a>
+</div>
+</li>
+<li><p>Once the image is flashed and verified, you may remove the micro SD, insert it into your Embassy, and power up the device.</p></li>
+<li><p>The Embassy is now ready for use, and you may following the normal <a class="reference internal" href="../../user-manual/initial-setup/#initial-setup"><span class="std std-ref">setup</span></a> instructions. <code class="docutils literal notranslate"><span class="pre">*</span></code></p></li>
+</ol>
+<p><code class="docutils literal notranslate"><span class="pre">*</span></code> The first time you power it on, your Embassy will make more noises than future attempts, and it may take several minutes to finally complete.</p>
+</div>
+</div>
+<div class="section" id="building-embassyos-versions-0-3-x">
+<h2>Building EmbassyOS Versions 0.3.x<a class="headerlink" href="#building-embassyos-versions-0-3-x" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Hardware: Components<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://raspberrypi.org/products/raspberry-pi-4-model-b/?variant=raspberry-pi-4-model-b-8gb">Raspberry Pi 4B (8GB)</a></p></li>
+<li><p><a class="reference external" href="https://raspberrypi.org/products/type-c-power-supply/">Power supply for Raspberry Pi 4B</a> Make sure this is at minimum 15w and 3.5a.</p></li>
+<li><p>Case for Raspberry Pi 4B (<a class="reference external" href="https://www.amazon.com/Geekworm-Raspberry-Aluminum-Passive-Heatsink/dp/B07Z6FYHCH/">passive cooling recommended</a> <cite>*</cite>)</p></li>
+<li><p>A <a class="reference external" href="https://amazon.com/SanDisk-Endurance-microSDXC-Adapter-Monitoring/dp/B07NY23WBG/">16GB microSD card</a> (no need for bigger). If you have ABSOLUTELY NO data to migrate, you may choose to re-use the card already in your Embassy.</p></li>
+<li><p><a class="reference external" href="https://www.amazon.com/Corporate-Computer-Motherboard-Internal-Speaker/dp/B01527H4W2/">GPIO mini speaker/buzzer</a> (These often sell out, please let us know if this link needs to be refreshed)</p></li>
+<li><p>Ethernet cable</p></li>
+<li><p>MicroSD → USB adapter (or you may have a microSD port on your computer)</p></li>
+<li><p>An external drive (1TB minimum, 2TB SSD recommended), or an <a class="reference external" href="https://www.amazon.com/Crucial-MX500-NAND-SATA-Internal/dp/B078211KBB">internal drive</a> with an <a class="reference external" href="https://www.amazon.com/gp/product/B07T9D8F6C">USB enclosure</a>, as sold with our upgrade kits. MUST CONNECT OVER USB 3.0</p></li>
+</ol>
+<p><cite>*</cite> If you use a fan, <strong>DO NOT</strong> use the official Raspberry Pi fan, as it requires the same GPIO pins as the audio speaker. Instead, we recommend <a class="reference external" href="https://www.amazon.com/Raspberry-iUniker-30x30x7mm-Brushless-RetroFlag/dp/B076H3TKBP/">this fan</a>.</p>
+</div>
+<div class="section" id="id7">
+<h3>Hardware: Assembly Instructions<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p>Insert mini speaker/buzzer into GPIO pins 6/8/10/12 with the word “speaker” facing out, <cite>away from the board</cite>.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../_images/pins.png"><img alt="Speaker board spec" src="../../_images/pins.png" style="width: 60%;" /></a>
+</div>
+</li>
+<li><p>Place the Raspberry Pi 4 board (with speaker attached), into its case.</p></li>
+<li><p>Plug in the external drive to one of the USB 3.0 (blue) slots</p></li>
+</ol>
+</div>
+<div class="section" id="id8">
+<h3>Getting EmbassyOS: Purchasing<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>You can purchase EmbassyOS <a class="reference external" href="https://store.start9.com/collections/embassy/products/embassyos-software-download">here</a>. This is by far the easiest path to get up and running.</p>
+<p>Depending on your Internet speed, the download should take between 5 and 30 minutes.</p>
+</div>
+<div class="section" id="id10">
+<h3>Getting EmbassyOS: Building from Source<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>A detailed build guide will be available around the time of the v0.3.0 release (or now, if you snoop around our GitHub long enough).</p>
+</div>
+<div class="section" id="id11">
+<h3>Installing EmbassyOS<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>Whether you purchase EmbassyOS from us or build it yourself, you need to flash it onto a microSD card.</p>
+<ol class="arabic">
+<li><p>Download <a class="reference external" href="https://www.balena.io/etcher/">balenaEtcher</a> onto your Mac, Windows, or Linux computer.</p></li>
+<li><p>Insert the microSD card into your computer, either directly or using an adapter.</p></li>
+<li><p>Open balenaEtcher.</p></li>
+<li><p>Click <cite>Select Image</cite>, then find and select your copy of EmbassyOS.</p></li>
+<li><p>Click <cite>Select Target</cite>, then find and select your micro SD card.</p></li>
+<li><p>Click <cite>Flash!</cite> You may be asked to (1) approve the unusually large disk target or (2) enter your password. Both are normal.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../_images/balena.png"><img alt="Balena Etcher Dashboard" src="../../_images/balena.png" style="width: 60%;" /></a>
+</div>
+</li>
+<li><p>Once the image is flashed and verified, you may remove the micro SD, insert it into your Embassy, and power up the device.</p></li>
+<li><p>The Embassy is now ready for use, and you may following the normal <a class="reference internal" href="../../user-manual/initial-setup/#initial-setup"><span class="std std-ref">setup</span></a> instructions. <code class="docutils literal notranslate"><span class="pre">*</span></code></p></li>
+</ol>
+<p><code class="docutils literal notranslate"><span class="pre">*</span></code> The first time you power it on, your Embassy will make more noises than future attempts, and it may take several minutes to finally complete.</p>
+</div>
+</div>
+</div>
+  <div class="content-navigation">
+  <div class="navigation navigation--prev">
+    <a class="navigation__link" href="../purchasing/">
+      <button class="navigation__button">
+        <i class="scylla-icon scylla-icon--chevron-left"></i>
+      </button>
+      <div class="navigation__title">
+        <span class="colored">PREVIOUS</span> <br />Purchasing
+      </div>
+    </a>
+  </div>
+  <div class="navigation navigation--next">
+    <a class="navigation__link" href="../../user-manual/initial-setup/">
+      <div class="navigation__title">
+        <span class="colored">NEXT</span> <br />Initial Setup
+      </div>
+      <button class="navigation__button">
+        <i class="scylla-icon scylla-icon--chevron-right"></i>
+      </button>
+    </a>
+  </div>
+</div> 
+      </div>
+      <div
+        class="sidebar-left  large-order-1"
+      > <div id="side-nav" class="side-nav custom-scroll-bar" data-closable data-toggler=".show">
+  <button class="collapsible-button">
+    <i class="scylla-icon scylla-icon--chevron-left"></i>
+  </button>
+  <div class="side-nav-content">
+    <div class="side-nav__search">
+      <div class="search-box">
+        <ci-search></ci-search>
+      </div>
+    </div>
+    <div class="side-nav__versions">
+      
+    </div>
+    <div class="side-nav__content">
+      <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction/">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../purchasing/">Purchasing</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">DIY Guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../user-manual/initial-setup/">Initial Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-manual/connecting/">Connecting</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../user-manual/general/">General</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../user-manual/general/embassy-config/">Config Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../user-manual/general/updating/">Updating EmbassyOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../user-manual/general/wifi/">Setting up WiFi</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../user-manual/general/developer-options/">Developer Options</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../user-manual/general/developer-options/ssh-setup/">SSH Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../user-manual/general/developer-options/alt-marketplace/">Alternative Marketplace</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../user-manual/general/power/">Power</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../user-manual/general/notifications/">Notifications</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../user-manual/general/lan-setup/">LAN Setup</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../user-manual/general/lan-setup/desktop/">Desktop</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user-manual/general/lan-setup/computer-setup/">Computer Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user-manual/general/lan-setup/browser-setup/">Browser Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user-manual/general/lan-setup/mobile/">Mobile</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../user-manual/general/forgot-password/">Forgot Password</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../user-manual/managing-services/">Managing Services</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../user-manual/managing-services/installing/">Install / Uninstall</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../user-manual/managing-services/instructions/">Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../user-manual/managing-services/backups/">Backups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../user-manual/managing-services/service-config/">Service Config</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../user-manual/managing-services/properties/">Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../user-manual/managing-services/logs/">Viewing Logs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../user-manual/managing-services/managing-deps/">Managing Dependencies</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Misc Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../misc-guides/available-services/">Available Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc-guides/bitcoin-cli/">Using Bitcoin-Cli</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../misc-guides/tor-os/">Running Tor</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label for="toctree-checkbox-6"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../misc-guides/tor-os/mac/">MacOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../misc-guides/tor-os/windows/">Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../misc-guides/tor-os/linux/">Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../misc-guides/tor-os/android/">Android</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../misc-guides/tor-os/ios/">iOS</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../misc-guides/tor-firefox/">Configuring Firefox for Tor</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../misc-guides/tor-firefox/desktop/">Desktop</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../misc-guides/tor-firefox/mobile/">Mobile</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label for="toctree-checkbox-8"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../misc-guides/tor-firefox/android/">Android</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../misc-guides/tor-firefox/ios/">iOS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Contributing</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../contributing/services/">Service Packaging Guide</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label for="toctree-checkbox-9"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../contributing/services/overview/">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contributing/services/wrapper/">Wrapper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contributing/services/manifest/">Manifest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contributing/services/docker/">Docker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contributing/services/makefile/">Makefile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contributing/services/config/">Config</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contributing/services/properties/">Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contributing/services/instructions/">Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contributing/services/backups/">Backups</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing/embassyos/">EmbassyOS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Support</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../support/FAQ/">Frequently Asked Questions</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label for="toctree-checkbox-10"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../support/FAQ/general-faq/">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../support/FAQ/embassy-faq/">Embassy (Device, OS, and DIY)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../support/FAQ/usage-faq/">Basic Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../support/FAQ/setup-faq/">Setup and Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../support/FAQ/services-faq/">Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../support/FAQ/bitcoin-faq/">Bitcoin and Lightning Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../support/FAQ/030-faq/">EmbassyOS Version 0.3.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../support/FAQ/dev-faq/">Contributing &amp; Development</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../support/concepts/">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../support/contact/">Contact</a></li>
+</ul>
+
+    </div>
+  </div>
+</div>
+      </div>
+      
+      <div class="sidebar-right large-order-3">
+         <div class="secondary-side-nav custom-scroll-bar">
+  <div class="secondary-side-nav__content">
+    <p class="topic-title">On this page</p>
+    <ul>
+<li><a class="reference internal" href="#">DIY Guide</a><ul>
+<li><a class="reference internal" href="#motivation">Motivation</a></li>
+<li><a class="reference internal" href="#building-embassyos-versions-0-2-x">Building EmbassyOS Versions 0.2.x</a><ul>
+<li><a class="reference internal" href="#hardware-components">Hardware: Components</a></li>
+<li><a class="reference internal" href="#hardware-assembly-instructions">Hardware: Assembly Instructions</a></li>
+<li><a class="reference internal" href="#getting-embassyos-purchasing">Getting EmbassyOS: Purchasing</a></li>
+<li><a class="reference internal" href="#getting-embassyos-building-from-source">Getting EmbassyOS: Building from Source</a></li>
+<li><a class="reference internal" href="#installing-embassyos">Installing EmbassyOS</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#building-embassyos-versions-0-3-x">Building EmbassyOS Versions 0.3.x</a><ul>
+<li><a class="reference internal" href="#id1">Hardware: Components</a></li>
+<li><a class="reference internal" href="#id7">Hardware: Assembly Instructions</a></li>
+<li><a class="reference internal" href="#id8">Getting EmbassyOS: Purchasing</a></li>
+<li><a class="reference internal" href="#id10">Getting EmbassyOS: Building from Source</a></li>
+<li><a class="reference internal" href="#id11">Installing EmbassyOS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div> 
+      </div>
+    </section>
+
+    <footer class="footer">
+  <div class="footer-group">
+    <div class="footer-top">
+      <a class="footer-logo" href="https://start9.com"
+        ><img
+          src="../../_static/img/icon-transparent.png"
+          alt="Logo"
+      /></a>
+      <div class="footer-links">
+        <a class="footer-links__link" href="https://docs.start9.com/">Docs</a>
+        <a
+          class="footer-links__link"
+          href="https://start9.com/#community"
+          >Contact Us</a
+        >
+        <a class="footer-links__link" href="https://start9.com/"
+          >About Us</a
+        >
+      </div>
+      <div class="footer-actions">
+        <a
+          class="footer-actions__link"
+          href="https://twitter.com/start9labs"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="Twitter feed"
+            data-position="bottom"
+          >
+            <img
+              src="../../_static/img/icons/twitter.png"
+              alt="Twitter Icon"
+            />
+          </span>
+        </a>
+        <a
+          class="footer-actions__link"
+          href="https://t.me/start9_labs"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="User Telegram channel"
+            data-position="bottom"
+          >
+            <img
+              src="../../_static/img/icons/telegram.png"
+              alt="Telegram Icon"
+          /></span>
+        </a>
+        <a
+          class="footer-actions__link"
+          href="https://matrix.to/#/!lMnRwPWnyQvOfAoEnD:matrix.start9labs.com"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="User Matrix channel"
+            data-position="bottom"
+          >
+            <img
+              src="../../_static/img/icons/matrix.svg"
+              alt="Matrix Icon"
+          /></span>
+        </a>
+        </a>
+        <a
+          class="footer-actions__link"
+          href="https://medium.com/@start9labs"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="Medium feed"
+            data-position="bottom"
+          >
+            <img
+              src="../../_static/img/icons/medium.png"
+              alt="Medium Icon"
+          /></span>
+        </a>
+        <a
+          class="footer-actions__link"
+          href="https://github.com/Start9Labs/"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="GitHub page"
+            data-position="bottom"
+          >
+            <img
+              src="../../_static/img/icons/github.png"
+              alt="GitHub Icon"
+          /></span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom__copyright"> &#169; 2021,  Start9 Labs, Inc. All rights reserved.
+      </div>
+      <div class="footer-bottom__last-updated">
+        Last updated on 13 Dec 2021.
+      </div>
+      <div class="footer-bottom__version">
+        Powered by
+        <a href="http://sphinx-doc.org/">Sphinx 2.4.5</a> &amp;
+        <a href="https://sphinx-theme.scylladb.com/"
+          >ScyllaDB Theme 1.0.6</a
+        >
+      </div>
+      <!-- <p class="footer-bottom__canary">We have never received a secret government request to hand over user information.</p> -->
+    </div>
+  </div>
+</footer>
+
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T8P2JP"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+  </body>
+</html>

@@ -1,0 +1,1094 @@
+
+
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> Service Config Specification | Start9 Docs
+    </title>
+    <meta name="description" content="Start9 Product Documentation and Education Guides" />
+    <link
+      rel="icon"
+      href="../../../_static/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="../../../_static/img/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="../../../_static/img/favicon-228x228.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="../../../_static/img/favicon-228x228.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      href="../../../_static/img/favicon-228x228.png"
+    />
+    <link rel="canonical" href="https://docs.start9.com/" />
+    <link rel="author" href="mailto:support@start9labs.com" />
+  <!-- connect to domain of font files -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- optionally increase loading priority -->
+  <link
+    rel="preload"
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,400&display=swap"
+  />
+
+  <!-- async CSS -->
+  <link
+    rel="stylesheet"
+    media="print"
+    onload="this.onload=null;this.removeAttribute('media');"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,400&display=swap"
+  />
+
+  <!-- no-JS fallback -->
+  <noscript>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,400&display=swap"
+    />
+  </noscript>
+  <link
+    rel="stylesheet"
+    href="../../../_static/css/main.css"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="../../../_static/pygments.css"
+    type="text/css"
+  /> <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+
+  <script
+    type="text/javascript"
+    id="documentation_options"
+    data-url_root="../../../"
+    src="../../../_static/documentation_options.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="../../../_static/js/runtime.bundle.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="../../../_static/js/main.bundle.js"
+  ></script> <script src="../../../_static/underscore.js"></script> <script src="../../../_static/doctools.js"></script> <script src="../../../_static/language_data.js"></script> <script src="../../../_static/clipboard.min.js"></script> <script src="../../../_static/copybutton.js"></script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-T8P2JP");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Marketo -->
+    <script type="text/javascript">
+      (function () {
+        var didInit = false;
+        function initMunchkin() {
+          if (didInit === false) {
+            didInit = true;
+            Munchkin.init("791-QBF-350");
+          }
+        }
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "//munchkin.marketo.net/munchkin.js";
+        s.onreadystatechange = function () {
+          if (this.readyState == "complete" || this.readyState == "loaded") {
+            initMunchkin();
+          }
+        };
+        s.onload = initMunchkin;
+        document.getElementsByTagName("head")[0].appendChild(s);
+      })();
+    </script>
+    <!-- End Marketo -->
+    <!-- Expertrec -->
+    <script>
+      var id = "e2077224-9ccf-11e9-a0c9-0242ac130002";
+      var ci_search = document.createElement("script");
+      ci_search.type = "text/javascript";
+      ci_search.async = true;
+      ci_search.src = "https://cse.expertrec.com/api/js/ci_common.js?id=" + id;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(ci_search, s);
+    </script>
+    <!-- End Expertrec -->
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b1870adf6a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- End Font Awesome -->
+  </head>
+  
+  <body>
+     <header class="header">
+  <div class="header-logo">
+    <a class="header-logo__img" href="https://start9.com/">
+      <img
+        src="../../../_static/img/logo.png"
+        alt="Start9 Logo"
+      />
+    </a>
+    <span class="header-logo__bar"></span>
+    <a class="header-logo__text" href="https://docs.start9.com/">
+      Documentation
+    </a>
+  </div>
+  <div class="header-navigation">
+    <ul
+      class="dropdown menu scylla-dropdown scylla-dropdown--header"
+      data-dropdown-menu
+    >
+      <li class="scylla-dropdown__item">
+        <a href="#" class="scylla-dropdown__title"
+          >Contributing <i class="chevron scylla-icon scylla-icon--triangle-down"></i
+        ></a>
+        <ul class="menu scylla-dropdown__content">
+          <li>
+            <a href="https://docs.start9.com/developing"
+              ><i class="scylla-icon scylla-icon--apps"></i>Developer</a
+            >
+          </li>
+          <li>
+            <a href="https://docs.start9.com/service-packaging"
+              ><i class="scylla-icon scylla-icon--open-source"></i>Service Packaging</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="scylla-dropdown__item">
+        <a href="#" class="scylla-dropdown__title"
+          >About <i class="chevron scylla-icon scylla-icon--triangle-down"></i
+        ></a>
+        <ul class="menu scylla-dropdown__content">
+          <li>
+            <a href="https://docs.start9.com/about">
+              <i class="scylla-icon scylla-icon--enterprise"></i>Company</a
+            >
+          </li>
+          <li>
+            <a href="https://docs.start9.com/license">
+              <i class="scylla-icon scylla-icon--whitepapers"></i>License</a
+            >
+          </li>
+          <li>
+            <a href="https://docs.start9.com/careers">
+              <i class="scylla-icon scylla-icon--careers"></i>Hiring
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="header-button">
+      <a href="https://store.start9.com" class="button" target="_blank">Purchase</a>
+    </div>
+  </div>
+  <div class="header-search-box">
+    <div class="search-box">
+      <ci-search></ci-search>
+    </div>
+  </div>
+  <div class="side-nav-toggle" data-toggle="side-nav">
+  <div class="side-nav-toggle__button">
+    <img src="../../../_static/img/menu.svg" alt="Menu" />
+  </div>
+</div>
+</header>
+    <section class="layout ">
+      <div class="content large-order-2">
+         
+
+        <div class="pre-content">
+          <div class="pre-content__left"><div class="breadcrumbs">
+  <span class="bread__item">
+    <a
+      href="../../../"
+      class="bread__highlight"
+    >
+      <i class="fas fa-home"></i> Start9 Docs</a
+    ></span
+  >
+  
+  <span class="bread__item"
+    ><a href="../">Service Packaging Guide</a></span
+  >
+  
+  <span class="bread__item bread__item--last">Service Config Specification</span>
+</div></div>
+          <div class="pre-content__right"><ul
+  class="dropdown menu scylla-dropdown scylla-dropdown--contribute"
+  data-dropdown-menu
+>
+  <li class="scylla-dropdown__item">
+    <a class="scylla-dropdown__title" href="#">
+      <div class="scylla-dropdown__title--body">
+        <i class="icon fa fa-github" aria-hidden="true"></i>
+        Contribute
+      </div>
+      <i class="chevron scylla-icon scylla-icon--chevron-right"></i>
+    </a>
+    <ul class="menu scylla-dropdown__content">
+      <li>
+        <a
+          href="https://github.com/Start9Labs/documentation/issues/new?title=Issue in page Service Config Specification&&body=I%20would%20like%20to%20report%20an%20issue%20in%20page%20https://docs.start9.com/contributing/services/config%0A%0A%23%23%23%20Problem%0A%0A%23%23%23%20%20Suggest%20a%20fix"
+          target="_blank"
+          >Report a doc issue
+          <i class="icon fa fa-external-link" aria-hidden="true"></i
+        ></a>
+      </li>
+      
+      <li>
+         
+        <a
+          href="https://github.com/Start9Labs/documentation/edit/master/docs/source/contributing/services/config.rst"
+          target="_blank"
+          >Edit this page
+          <i class="icon fa fa-external-link" aria-hidden="true"></i
+        ></a>
+      </li>
+      
+      <li>
+        <a href="https://docs.start9.com/contributing/" target="_blank"
+          >Learn how to contribute
+          <i class="icon fa fa-external-link" aria-hidden="true"></i
+        ></a>
+      </li>
+    </ul>
+  </li>
+</ul></div>
+        </div>
+         <div class="section" id="service-config-specification">
+<span id="service-config"></span><h1>Service Config Specification<a class="headerlink" href="#service-config-specification" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>Most self-hosted applications require the user to tell the app how to behave using a config file in a specific format, environment variables, command-line arguments, or some combination of these inputs. One of the coolest features of EmbassyOS is that, when packaged correctly, the app’s configuration will be available to the user as a slick GUI that always produces a valid configuration no matter how little experience or skill the user has.</p>
+<p>With EmbassyOS, this means a service wrappers’ configuration requires a particular format and rule structure to ensure it integrates smoothly with the user interface. This format enables clean handling of improper values and dependency management.</p>
+<p>The outcome of this step is two files:</p>
+<p><a class="reference internal" href="#config-spec"><span class="std std-ref">config_spec.yaml</span></a></p>
+<p><a class="reference internal" href="#config-rules"><span class="std std-ref">config_rules.yaml</span></a></p>
+<p>These files contain a detailed mapping of configuration options with acceptable values, defaults, and relational rule-sets.</p>
+<p>For example, if the user chooses config option A, then config option B must be between 5 and 10. This enables a simple GUI configuration experience, complete with validations and protections, for users. They do not have to worry about the consequences of a wrong value in a <code class="docutils literal notranslate"><span class="pre">.conf</span></code> file.</p>
+</div>
+<div class="section" id="config-spec">
+<span id="id1"></span><h2>Config Spec<a class="headerlink" href="#config-spec" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h3>Overview<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../../_images/bitcoin_config.png"><img alt="Bitcoin Config" src="../../../_images/bitcoin_config.png" style="width: 80%;" /></a>
+</div>
+<p>This file defines the structure of configuration options your service depends on to run. It additionally can include configuration options that users might want to enable for more advanced or customized usage. Ultimately, these values influence the UI elements for a user to interact with. Specifically, they evaluate to the options available when managing a service, such as:</p>
+<ul class="simple">
+<li><p>Prior to service installation when the user needs to be made aware of any necessary dependency configurations</p></li>
+<li><p>When the user installs a service and the service is in the “Needs Config” state</p></li>
+<li><p>Whenever a user edits a service config</p></li>
+<li><p>When config pointers get updated</p></li>
+</ul>
+<p>The neat part about this file is that each ValueSpec type gets translated into a specific front end component. For instance, boolean values display as a toggle button.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../../_images/boolean_toggle.png"><img alt="Example boolean toggle" src="../../../_images/boolean_toggle.png" style="width: 80%;" /></a>
+</div>
+<p>Another advantage is the ability to define default values. These values automatically get populated if the user selects the <code class="docutils literal notranslate"><span class="pre">Default</span></code> option when setting up a service in <code class="docutils literal notranslate"><span class="pre">Needs</span> <span class="pre">Config</span></code> state. This is super convenient for users who want to get up and running quickly.</p>
+</div>
+<div class="section" id="types">
+<h3>Types<a class="headerlink" href="#types" title="Permalink to this headline">¶</a></h3>
+<p>ConfigSpec Type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">key</span><span class="p">:</span> <span class="n">ValueSpec</span>
+
+<span class="n">ValueSpec</span> <span class="n">Type</span><span class="p">:</span> <span class="n">Boolean</span> <span class="o">|</span> <span class="n">Enum</span> <span class="o">|</span> <span class="n">List</span> <span class="o">|</span> <span class="n">Number</span> <span class="o">|</span> <span class="n">Object</span> <span class="o">|</span> <span class="n">String</span> <span class="o">|</span> <span class="n">Union</span> <span class="o">|</span> <span class="n">Pointer</span> <span class="p">(</span><span class="n">see</span> <span class="n">below</span> <span class="k">for</span> <span class="n">details</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="implementation-guide">
+<h3>Implementation Guide<a class="headerlink" href="#implementation-guide" title="Permalink to this headline">¶</a></h3>
+<p>The following section contains implementation specifications for the <code class="docutils literal notranslate"><span class="pre">config_spec.yaml</span></code> file.</p>
+<ul>
+<li><p>All keys are <code class="docutils literal notranslate"><span class="pre">kebab-case</span></code> strings, which correspond to the service (app) id</p></li>
+<li><p>All values are one the following specs (ie. <code class="docutils literal notranslate"><span class="pre">ValueSpec</span></code> type):</p>
+<blockquote>
+<div><p><a class="reference internal" href="#boolean"><span class="std std-ref">boolean</span></a></p>
+<p><a class="reference internal" href="#enum"><span class="std std-ref">enum</span></a></p>
+<p><a class="reference internal" href="#list"><span class="std std-ref">list</span></a></p>
+<p><a class="reference internal" href="#number"><span class="std std-ref">number</span></a></p>
+<p><a class="reference internal" href="#object"><span class="std std-ref">object</span></a></p>
+<p><a class="reference internal" href="#string"><span class="std std-ref">string</span></a></p>
+<p><a class="reference internal" href="#union"><span class="std std-ref">union</span></a></p>
+<p><a class="reference internal" href="#pointer"><span class="std std-ref">pointer</span></a></p>
+</div></blockquote>
+</li>
+<li><p>In the examples for each value spec type below, <code class="docutils literal notranslate"><span class="pre">Option</span></code> means the key is optional. Otherwise, the key is required.</p></li>
+<li><p>Descriptions are optional, but recommended</p></li>
+<li><p>Name corresponds to the name of the config field</p></li>
+<li><p>Find a complete example <a class="reference internal" href="#example-config-spec"><span class="std std-ref">here</span></a></p></li>
+<li><p>Change warning text displays when the value is altered</p></li>
+</ul>
+<div class="section" id="boolean">
+<span id="id3"></span><h4>Boolean<a class="headerlink" href="#boolean" title="Permalink to this headline">¶</a></h4>
+<p>Config value specification denoted as a boolean value. A default value is required.</p>
+<p><code class="docutils literal notranslate"><span class="pre">ValueSpec</span></code> Type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">:</span> <span class="n">boolean</span>
+<span class="n">name</span><span class="p">:</span> <span class="n">String</span>
+<span class="n">description</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>
+<span class="n">changeWarning</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>
+<span class="n">default</span><span class="p">:</span> <span class="n">Boolean</span>
+</pre></div>
+</div>
+<p>Example:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">fetch-blocks</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">boolean</span>
+    <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Fetch Blocks</span>
+    <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Fetch blocks from the network if pruned from disk</span>
+    <span class="l l-Scalar l-Scalar-Plain">default</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="enum">
+<span id="id4"></span><h4>Enum<a class="headerlink" href="#enum" title="Permalink to this headline">¶</a></h4>
+<p>Config value specification denoted as an enum value. Enums values must be a unique set. If no default is provided, <code class="docutils literal notranslate"><span class="pre">null</span></code> will be the assumed value.</p>
+<p>ValueSpec Type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">:</span> <span class="n">enum</span>
+<span class="n">name</span><span class="p">:</span> <span class="n">String</span>
+<span class="n">description</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>
+<span class="n">changeWarning</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>
+<span class="n">default</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">Enum</span><span class="o">&gt;</span>
+<span class="n">values</span><span class="p">:</span> <span class="n">Set</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme-mode</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">enum</span>
+    <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Theme Mode</span>
+    <span class="l l-Scalar l-Scalar-Plain">values</span><span class="p p-Indicator">:</span>
+            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">NIGHT</span>
+            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">DAY</span>
+    <span class="l l-Scalar l-Scalar-Plain">valueNames</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">NIGHT</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Night</span>
+            <span class="l l-Scalar l-Scalar-Plain">DAY</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Day</span>
+    <span class="l l-Scalar l-Scalar-Plain">default</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">NIGHT</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="list">
+<span id="id5"></span><h4>List<a class="headerlink" href="#list" title="Permalink to this headline">¶</a></h4>
+<p>The list type describes an array of values. The values must consist of the same subtype, which can be any of the ValueSpec types available in the EmbassyOS config specification.
+Lists of any type do not contain the default for each item in list. The list <em>itself</em> can have a default. If no default is provided, <code class="docutils literal notranslate"><span class="pre">null</span></code> will be the assumed value.</p>
+<p>Range is loosely based off mathematical range syntax, with infinity replaced with <code class="docutils literal notranslate"><span class="pre">*</span></code>:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">||</span> <span class="pre">]</span></code> = inclusive</p>
+<p><code class="docutils literal notranslate"><span class="pre">(</span> <span class="pre">||</span> <span class="pre">)</span></code> = noninclusive</p>
+<p><code class="docutils literal notranslate"><span class="pre">*</span></code> = infinity on either end</p>
+</div></blockquote>
+<p>eg:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="o">*</span><span class="p">)</span> <span class="o">-</span> <span class="nb">all</span> <span class="n">numbers</span> <span class="n">to</span> <span class="n">infinity</span> <span class="n">including</span> <span class="mi">0</span>
+</pre></div>
+</div>
+<p>ValueSpec Type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">:</span> <span class="nb">list</span>
+<span class="n">name</span><span class="p">:</span> <span class="n">String</span>
+<span class="n">description</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>
+<span class="n">subtype</span><span class="p">:</span> <span class="n">enum</span> <span class="o">||</span> <span class="n">number</span> <span class="o">||</span> <span class="nb">object</span> <span class="o">||</span> <span class="n">string</span> <span class="o">||</span> <span class="n">union</span>
+<span class="nb">range</span><span class="p">:</span> <span class="n">NumRange</span><span class="o">&lt;</span><span class="n">unsigned</span> <span class="n">integer</span><span class="o">&gt;</span>
+<span class="n">spec</span><span class="p">:</span> <span class="n">ValueSpec</span>
+<span class="n">default</span><span class="p">:</span> <span class="n">ValueSpec</span>
+</pre></div>
+</div>
+<p>Example:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">allowed-calls</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">list</span>
+    <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Allowed Calls</span>
+    <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">The list of all RPC methods this user is allowed to make</span>
+    <span class="l l-Scalar l-Scalar-Plain">subtype</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">enum</span>
+    <span class="l l-Scalar l-Scalar-Plain">range</span><span class="p p-Indicator">:</span> <span class="s">&quot;[0,</span><span class="nv"> </span><span class="s">*)&quot;</span>
+    <span class="l l-Scalar l-Scalar-Plain">spec</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">enum</span>
+        <span class="l l-Scalar l-Scalar-Plain">values</span><span class="p p-Indicator">:</span>
+            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">item</span>
+            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">item</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="number">
+<span id="id6"></span><h4>Number<a class="headerlink" href="#number" title="Permalink to this headline">¶</a></h4>
+<p>A number value within an optionally defined range. Nullable field is required. If <code class="docutils literal notranslate"><span class="pre">nullable</span></code> is true, the default is assumed to be <code class="docutils literal notranslate"><span class="pre">null</span></code> if it is not provided.</p>
+<p>ValueSpec Type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">:</span> <span class="n">number</span>
+<span class="n">name</span><span class="p">:</span> <span class="n">String</span>
+<span class="n">description</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>
+<span class="n">changeWarning</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>
+<span class="n">default</span><span class="p">:</span> <span class="n">Boolean</span>
+<span class="n">nullable</span><span class="p">:</span> <span class="n">Boolean</span>
+<span class="nb">range</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">NumRange</span><span class="o">&lt;</span><span class="mi">64</span> <span class="n">bit</span> <span class="n">floating</span> <span class="n">point</span><span class="o">&gt;&gt;</span>
+<span class="n">integral</span><span class="p">:</span> <span class="n">Boolean</span>
+<span class="n">units</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Example:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">number</span>
+<span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Peer Message Timeout</span>
+<span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">How long to wait for a response from a peer before failing</span>
+<span class="l l-Scalar l-Scalar-Plain">nullable</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="l l-Scalar l-Scalar-Plain">integral</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="l l-Scalar l-Scalar-Plain">units</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Seconds</span>
+<span class="l l-Scalar l-Scalar-Plain">range</span><span class="p p-Indicator">:</span> <span class="s">&quot;[0,</span><span class="nv"> </span><span class="s">*)&quot;</span>
+<span class="l l-Scalar l-Scalar-Plain">default</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">30</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="object-type">
+<span id="object"></span><h4>Object Type<a class="headerlink" href="#object-type" title="Permalink to this headline">¶</a></h4>
+<p>A nested representation of a ConfigSpec. The object type takes the same structure under the <code class="docutils literal notranslate"><span class="pre">spec</span></code> key as a ConfigSpec: a key indicates the field name, and the value denotes the ValueSpec type for that field.</p>
+<p>There is no default option for the object type. Rather, the option <code class="docutils literal notranslate"><span class="pre">null-by-default</span></code> should be used to indicate the default as <code class="docutils literal notranslate"><span class="pre">null</span></code>. If null by default is true, nullable must be true. If null by default is false, nullable could be either.</p>
+<p><code class="docutils literal notranslate"><span class="pre">unique-by</span></code> indicates whether duplicates can be permitted in the list.</p>
+<p>ValueSpec Type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">:</span> <span class="nb">object</span>
+<span class="n">name</span><span class="p">:</span> <span class="n">String</span>
+<span class="n">description</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>
+<span class="n">changeWarning</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>
+<span class="n">nullable</span><span class="p">:</span> <span class="n">Boolean</span>
+<span class="n">null</span><span class="o">-</span><span class="n">by</span><span class="o">-</span><span class="n">default</span><span class="p">:</span> <span class="n">Boolean</span>
+<span class="n">display</span><span class="o">-</span><span class="k">as</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>
+<span class="n">unique</span><span class="o">-</span><span class="n">by</span><span class="p">:</span> <span class="n">UniqueBy</span>
+<span class="n">spec</span><span class="p">:</span> <span class="n">ConfigSpec</span>
+
+<span class="nb">type</span> <span class="n">UniqueBy</span> <span class="o">=</span> <span class="n">null</span> <span class="o">|</span> <span class="n">string</span> <span class="o">|</span> <span class="p">{</span> <span class="nb">any</span><span class="p">:</span> <span class="n">UniqueBy</span><span class="p">[]</span> <span class="p">}</span> <span class="o">|</span> <span class="p">{</span> <span class="nb">all</span><span class="p">:</span> <span class="n">UniqueBy</span><span class="p">[]</span> <span class="p">}</span>
+</pre></div>
+</div>
+<p>Example:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">object</span>
+<span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Advanced</span>
+<span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Advanced settings for Bitcoin Proxy</span>
+<span class="l l-Scalar l-Scalar-Plain">nullable</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="l l-Scalar l-Scalar-Plain">spec</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">tor-only</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">boolean</span>
+        <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Only Tor Peers</span>
+        <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Use Tor for all peer connections</span>
+        <span class="l l-Scalar l-Scalar-Plain">default</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+    <span class="l l-Scalar l-Scalar-Plain">peer-timeout</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">number</span>
+        <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Peer Message Timeout</span>
+        <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">How long to wait for a response from a peer before failing</span>
+        <span class="l l-Scalar l-Scalar-Plain">nullable</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+        <span class="l l-Scalar l-Scalar-Plain">integral</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+        <span class="l l-Scalar l-Scalar-Plain">units</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Seconds</span>
+        <span class="l l-Scalar l-Scalar-Plain">range</span><span class="p p-Indicator">:</span> <span class="s">&quot;[0,</span><span class="nv"> </span><span class="s">*)&quot;</span>
+        <span class="l l-Scalar l-Scalar-Plain">default</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">30</span>
+    <span class="l l-Scalar l-Scalar-Plain">max-peer-age</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">number</span>
+        <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Maximum Peer Age</span>
+        <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">How long to wait before refreshing the peer list</span>
+        <span class="l l-Scalar l-Scalar-Plain">nullable</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+        <span class="l l-Scalar l-Scalar-Plain">integral</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+        <span class="l l-Scalar l-Scalar-Plain">units</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Seconds</span>
+        <span class="l l-Scalar l-Scalar-Plain">range</span><span class="p p-Indicator">:</span> <span class="s">&quot;[0,</span><span class="nv"> </span><span class="s">*)&quot;</span>
+        <span class="l l-Scalar l-Scalar-Plain">default</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">300</span>
+    <span class="l l-Scalar l-Scalar-Plain">max-peer-concurrency</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">number</span>
+        <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Maximum Peer Concurrency</span>
+        <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">How many peers to reach out to concurrently for block data</span>
+        <span class="l l-Scalar l-Scalar-Plain">nullable</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+        <span class="l l-Scalar l-Scalar-Plain">integral</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+        <span class="l l-Scalar l-Scalar-Plain">range</span><span class="p p-Indicator">:</span> <span class="s">&quot;[1,</span><span class="nv"> </span><span class="s">*)&quot;</span>
+        <span class="l l-Scalar l-Scalar-Plain">default</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="string">
+<span id="id7"></span><h4>String<a class="headerlink" href="#string" title="Permalink to this headline">¶</a></h4>
+<p>There are various options for string values. They can optionally be marked as copyable or masked, such as for passwords, which will reflect the UI element display. A pattern, expressed in regex, can be denoted. If it exists, this field requires both the pattern type (ie. Regex) and pattern description (ie. an explanation of the pattern requirements).</p>
+<p>If the default type is <code class="docutils literal notranslate"><span class="pre">Entropy</span></code>, the charset can optionally specify an inclusive ranged character set (ie. “a-f,0-9”).</p>
+<p>ValueSpec Type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">:</span> <span class="n">string</span>
+<span class="n">name</span><span class="p">:</span> <span class="n">String</span>
+<span class="n">description</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>
+<span class="n">changeWarning</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>
+<span class="n">copyable</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">boolean</span><span class="o">&gt;</span>
+<span class="n">masked</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">boolean</span><span class="o">&gt;</span>
+<span class="n">nullable</span><span class="p">:</span> <span class="n">Boolean</span>
+<span class="n">default</span><span class="p">:</span> <span class="n">String</span> <span class="o">|</span> <span class="n">Entropy</span>
+<span class="n">pattern</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">Regex</span><span class="o">&gt;</span>
+<span class="n">pattern</span><span class="o">-</span><span class="n">description</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Entropy Type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">charset</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>
+<span class="nb">len</span><span class="p">:</span> <span class="n">integer</span>
+</pre></div>
+</div>
+<p>Examples:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">color</span><span class="p">:</span>
+    <span class="nb">type</span><span class="p">:</span> <span class="n">string</span>
+    <span class="n">name</span><span class="p">:</span> <span class="n">Color</span>
+    <span class="n">description</span><span class="p">:</span> <span class="n">Color</span> <span class="n">value</span> <span class="k">for</span> <span class="n">the</span> <span class="n">Lightning</span> <span class="n">Network</span>
+    <span class="n">nullable</span><span class="p">:</span> <span class="n">false</span>
+    <span class="n">pattern</span><span class="p">:</span> <span class="s2">&quot;[0-9a-fA-F]</span><span class="si">{6}</span><span class="s2">&quot;</span>
+    <span class="n">patternDescription</span><span class="p">:</span> <span class="o">|</span>
+            <span class="n">Must</span> <span class="n">be</span> <span class="n">a</span> <span class="n">valid</span> <span class="mi">6</span> <span class="n">digit</span> <span class="n">hexadecimal</span> <span class="n">RGB</span> <span class="n">value</span><span class="o">.</span> <span class="n">The</span> <span class="n">first</span> <span class="n">two</span> <span class="n">digits</span> <span class="n">are</span> <span class="n">red</span><span class="p">,</span> <span class="n">middle</span> <span class="n">two</span> <span class="n">are</span> <span class="n">green</span> <span class="ow">and</span> <span class="n">final</span> <span class="n">two</span> <span class="n">are</span>
+            <span class="n">blue</span>
+    <span class="n">default</span><span class="p">:</span>
+            <span class="n">charset</span><span class="p">:</span> <span class="s2">&quot;a-f,0-9&quot;</span>
+            <span class="nb">len</span><span class="p">:</span> <span class="mi">6</span>
+
+<span class="n">password</span><span class="p">:</span>
+    <span class="nb">type</span><span class="p">:</span> <span class="n">string</span>
+    <span class="n">name</span><span class="p">:</span> <span class="n">Password</span>
+    <span class="n">description</span><span class="p">:</span> <span class="n">The</span> <span class="n">password</span> <span class="k">for</span> <span class="n">the</span> <span class="n">RPC</span> <span class="n">User</span>
+    <span class="n">nullable</span><span class="p">:</span> <span class="n">false</span>
+    <span class="n">copyable</span><span class="p">:</span> <span class="n">true</span>
+    <span class="n">masked</span><span class="p">:</span> <span class="n">true</span>
+    <span class="n">default</span><span class="p">:</span>
+        <span class="n">charset</span><span class="p">:</span> <span class="s2">&quot;a-z,A-Z,0-9&quot;</span>
+        <span class="nb">len</span><span class="p">:</span> <span class="mi">22</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="pointer">
+<span id="id8"></span><h4>Pointer<a class="headerlink" href="#pointer" title="Permalink to this headline">¶</a></h4>
+<p>The pointer type <em>points</em> to a config value on another service installed on EmbassyOS (ie. app subtype) or to the EmbassyOS system (ie. system subtype). When pointing to another service, the <code class="docutils literal notranslate"><span class="pre">index</span></code> field indicates the path to the desired config variable.</p>
+<p>ValueSpec Type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">:</span> <span class="n">pointer</span>
+<span class="n">name</span><span class="p">:</span> <span class="n">String</span>
+<span class="n">description</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>
+<span class="n">changeWarning</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>
+<span class="n">subtype</span><span class="p">:</span> <span class="n">app</span> <span class="o">|</span> <span class="n">system</span>
+<span class="n">app</span><span class="o">-</span><span class="nb">id</span><span class="p">:</span> <span class="n">String</span> <span class="p">(</span><span class="o">*</span><span class="n">always</span><span class="o">*</span> <span class="n">kebab</span> <span class="n">case</span><span class="p">)</span>
+<span class="n">target</span><span class="p">:</span> <span class="n">AppPointerSpecVariants</span> <span class="o">|</span> <span class="n">SystemPointerSpecVariants</span>
+<span class="n">index</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">dependent</span> <span class="n">on</span> <span class="n">target</span> <span class="n">being</span> <span class="n">AppPointerSpecVariants</span><span class="p">)</span>
+
+<span class="n">AppPointerSpecVariants</span> <span class="o">=</span> <span class="n">LanAddress</span> <span class="o">|</span> <span class="n">TorAddress</span> <span class="o">|</span> <span class="n">TorKey</span> <span class="o">|</span> <span class="n">Config</span>
+<span class="n">SystemPointerSpecVariants</span> <span class="o">=</span> <span class="n">HostIp</span>
+</pre></div>
+</div>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">user</span><span class="p">:</span>
+    <span class="nb">type</span><span class="p">:</span> <span class="n">pointer</span>
+    <span class="n">name</span><span class="p">:</span> <span class="n">RPC</span> <span class="n">Username</span>
+    <span class="n">description</span><span class="p">:</span> <span class="n">The</span> <span class="n">username</span> <span class="k">for</span> <span class="n">the</span> <span class="n">RPC</span> <span class="n">user</span> <span class="k">for</span> <span class="n">Bitcoin</span> <span class="n">Core</span>
+    <span class="n">subtype</span><span class="p">:</span> <span class="n">app</span>
+    <span class="n">app</span><span class="o">-</span><span class="nb">id</span><span class="p">:</span> <span class="n">bitcoind</span>
+    <span class="n">target</span><span class="p">:</span> <span class="n">config</span>
+    <span class="n">index</span><span class="p">:</span> <span class="s2">&quot;rpc.username&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="union">
+<span id="id9"></span><h4>Union<a class="headerlink" href="#union" title="Permalink to this headline">¶</a></h4>
+<p>This type describes a necessary dependency. Multiple variants can be expressed to enable the user the option to connect to another service (internal dependency) or outside source (external dependency).</p>
+<p>For example, the Bitcoin Proxy service is united with an instance of Bitcoin. Three variants are defined: internal, external, and a quick connect. In this case, internal refers to the Bitcoin Core instance running on EmbassyOS, and defines the RPC credentials necessary for connecting; external refers to a Bitcoin Core node running on a different device, and defines the RPC credentials necessary for connecting; quick connect refers to yet another method of connecting to a Bitcoin Core node, optimized for convenience.</p>
+<p>Default is required and corresponds to one of the variants.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Tag</span></code> is the key that will be rendered on the UI element.</p>
+<p>ValueSpec Type;</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">:</span> <span class="n">union</span>
+<span class="n">name</span><span class="p">:</span> <span class="n">String</span>
+<span class="n">description</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>
+<span class="n">changeWarning</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>
+<span class="n">default</span><span class="p">:</span> <span class="n">Boolean</span>
+<span class="n">tag</span><span class="p">:</span> <span class="n">Tag</span>
+<span class="n">variants</span><span class="p">:</span> <span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span> <span class="n">ConfigSpec</span><span class="o">&gt;</span>
+<span class="n">display</span><span class="o">-</span><span class="k">as</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>
+<span class="n">unique</span><span class="o">-</span><span class="n">by</span><span class="p">:</span> <span class="nb">any</span> <span class="o">|</span> <span class="nb">all</span> <span class="o">|</span> <span class="n">exactly</span> <span class="o">|</span> <span class="n">notUnique</span>
+</pre></div>
+</div>
+<p>Tag Type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">id</span><span class="p">:</span> <span class="n">String</span>
+<span class="n">name</span><span class="p">:</span> <span class="n">String</span>
+<span class="n">description</span><span class="p">:</span> <span class="n">Option</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>
+<span class="n">variant</span><span class="o">-</span><span class="n">names</span><span class="p">:</span> <span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span> <span class="n">String</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p id="example-config-spec">Example:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">bitcoind</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">union</span>
+    <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Bitcoin Core</span>
+    <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">The Bitcoin Core node to connect to</span>
+    <span class="l l-Scalar l-Scalar-Plain">tag</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">id</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">type</span>
+        <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Type</span>
+        <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">|</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Internal</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">The Bitcoin Core service installed to your Embassy</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">External</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">A Bitcoin Core node running on a different device</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Quick Connect</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">A Quick Connect URL for an unpruned Bitcoin Core node</span>
+        <span class="l l-Scalar l-Scalar-Plain">variant-names</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">internal</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Internal</span>
+        <span class="l l-Scalar l-Scalar-Plain">external</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">External</span>
+        <span class="l l-Scalar l-Scalar-Plain">quick-connect</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Quick Connect</span>
+    <span class="l l-Scalar l-Scalar-Plain">default</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">internal</span>
+    <span class="l l-Scalar l-Scalar-Plain">variants</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">internal</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">address</span><span class="p p-Indicator">:</span>
+                <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">pointer</span>
+                <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Local Address</span>
+                <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">The LAN IP address of your Bitcoin Core service</span>
+                <span class="l l-Scalar l-Scalar-Plain">subtype</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">app</span>
+                <span class="l l-Scalar l-Scalar-Plain">app-id</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">bitcoind</span>
+                <span class="l l-Scalar l-Scalar-Plain">target</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">lan-address</span>
+            <span class="l l-Scalar l-Scalar-Plain">user</span><span class="p p-Indicator">:</span>
+                <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">pointer</span>
+                <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">RPC Username</span>
+                <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">The username for the RPC user for Bitcoin Core</span>
+                <span class="l l-Scalar l-Scalar-Plain">subtype</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">app</span>
+                <span class="l l-Scalar l-Scalar-Plain">app-id</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">bitcoind</span>
+                <span class="l l-Scalar l-Scalar-Plain">target</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">config</span>
+                <span class="l l-Scalar l-Scalar-Plain">index</span><span class="p p-Indicator">:</span> <span class="s">&quot;rpc.username&quot;</span>
+            <span class="l l-Scalar l-Scalar-Plain">password</span><span class="p p-Indicator">:</span>
+                <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">pointer</span>
+                <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">RPC Password</span>
+                <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">The password for the RPC user for Bitcoin Core</span>
+                <span class="l l-Scalar l-Scalar-Plain">subtype</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">app</span>
+                <span class="l l-Scalar l-Scalar-Plain">app-id</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">bitcoind</span>
+                <span class="l l-Scalar l-Scalar-Plain">target</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">config</span>
+                <span class="l l-Scalar l-Scalar-Plain">index</span><span class="p p-Indicator">:</span> <span class="s">&quot;rpc.password&quot;</span>
+        <span class="l l-Scalar l-Scalar-Plain">external</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">addressext</span><span class="p p-Indicator">:</span>
+                <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">string</span>
+                <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Public Address</span>
+                <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">The public address of your Bitcoin Core RPC server</span>
+                <span class="l l-Scalar l-Scalar-Plain">nullable</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+            <span class="l l-Scalar l-Scalar-Plain">userext</span><span class="p p-Indicator">:</span>
+                <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">string</span>
+                <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">RPC Username</span>
+                <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">The username for the RPC user on your Bitcoin Core RPC server</span>
+                <span class="l l-Scalar l-Scalar-Plain">nullable</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+            <span class="l l-Scalar l-Scalar-Plain">passwordext</span><span class="p p-Indicator">:</span>
+                <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">string</span>
+                <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">RPC Password</span>
+                <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">The password for the RPC user on your Bitcoin Core RPC server</span>
+                <span class="l l-Scalar l-Scalar-Plain">nullable</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+        <span class="l l-Scalar l-Scalar-Plain">quick-connect</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">quick-connect-url</span><span class="p p-Indicator">:</span>
+                <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">string</span>
+                <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Quick Connect URL</span>
+                <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">The Quick Connect URL for your Bitcoin Core RPC server</span>
+                <span class="l l-Scalar l-Scalar-Plain">nullable</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+                <span class="l l-Scalar l-Scalar-Plain">pattern</span><span class="p p-Indicator">:</span> <span class="s">&#39;btcstandup://[^:]*:[^@]*@[a-zA-Z0-9.-]+:[0-9]+(/(\?(label=.+)?)?)?&#39;</span>
+                <span class="l l-Scalar l-Scalar-Plain">patternDescription</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Must be a valid Quick Connect URL. For help, check out https://github.com/BlockchainCommons/Gordian/blob/master/Docs/Quick-Connect-API.md</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="config-rules">
+<span id="id10"></span><h2>Config Rules<a class="headerlink" href="#config-rules" title="Permalink to this headline">¶</a></h2>
+<p>This file defines the configuration rules, or the rule-set that defines dependencies between config variables. In practice, config rules are for auto-configuring self dependencies. Self dependencies are internal dependencies of a service, such as if the setting of one config variable informs the option of another setting. These “dependencies” are configured as rules.</p>
+<p>A rule is a boolean expression that we demand to be true. It is not true if the expression fails the rule parser.</p>
+<p>They follow the <a class="reference external" href="https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form">Backus–Naur</a> meta-syntax for writing rules.</p>
+<p>Rules are composed of two main concepts:</p>
+<ul class="simple">
+<li><p>Variables - accessor into a configuration</p></li>
+<li><p>Terms - either a variable or type literal (ie. a boolean term is a boolean variable, a boolean expression, or a comparison operation between numbers or strings)</p></li>
+</ul>
+<p>Variables can be booleans, numbers, or strings, and have a different syntax depending on the type. These type annotations check your config rules against your config spec and throw an error if invalid.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">?</span></code> - Casts to boolean value. If the value is not a boolean, this notes whether or not the value is null.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">#</span></code> - Treat the value as a number. If it is not a number, the value will be parsed as NaN. String numbers are not currently supported.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'</span></code> - Cast the value into a string. Applies to any value except for an object or a list.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">!</span></code> - Equals not.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Config rules are processed in order.</p>
+</div>
+<p>If application does not satisfy a rule, a set of suggestions should be provided. These suggestions are in the form of the operation to preform:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Set</span></code> - set the value</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Push</span></code> - add to the value (such as to a list)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Delete</span></code> - delete the value</p></li>
+</ul>
+</div></blockquote>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="kr">enum</span> <span class="nx">SuggestionVariant</span> <span class="o">=</span> <span class="nx">Set</span> <span class="o">|</span> <span class="nx">Delete</span> <span class="o">|</span> <span class="nx">Push</span>
+
+<span class="kr">interface</span> <span class="nx">Set</span> <span class="p">{</span>
+    <span class="kd">var</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="c1">// fully qualified path without typecast</span>
+    <span class="c1">// one of the following three variants are required</span>
+    <span class="nx">to</span>: <span class="kt">Option</span><span class="o">&lt;</span><span class="nb">String</span><span class="o">&gt;</span> <span class="c1">// a string expression, use when tying another config value</span>
+    <span class="nx">to</span><span class="o">-</span><span class="nx">value</span>: <span class="kt">Option</span><span class="o">&lt;</span><span class="nb">String</span><span class="o">&gt;</span>
+    <span class="nx">to</span><span class="o">-</span><span class="nx">entropy</span>: <span class="kt">Option</span><span class="o">&lt;</span><span class="p">{</span>
+        <span class="nx">charset</span>: <span class="kt">String</span> <span class="p">(</span><span class="nx">eg</span><span class="p">.</span> <span class="s1">&#39;a-z,A-Z,0-9&#39;</span><span class="p">)</span>
+        <span class="nx">len</span>: <span class="kt">Number</span>
+    <span class="p">}</span><span class="o">&gt;</span>
+<span class="p">}</span>
+
+<span class="kr">interface</span> <span class="nx">Delete</span> <span class="p">{</span>
+    <span class="nx">src</span>: <span class="kt">String</span><span class="p">,</span> <span class="c1">// path to key - removes if in a list</span>
+<span class="p">}</span>
+
+<span class="kr">interface</span> <span class="nx">Push</span> <span class="p">{</span>
+    <span class="nx">to</span>: <span class="kt">String</span><span class="p">,</span>
+    <span class="nx">value</span>: <span class="kt">String</span><span class="p">,</span> <span class="c1">// string literal of value to be set</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Set Examples:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">SET</span><span class="p p-Indicator">:</span>
+    <span class="c1"># the key in config you want to set</span>
+    <span class="l l-Scalar l-Scalar-Plain">var</span><span class="p p-Indicator">:</span> <span class="s">&#39;users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;c-lightning&quot;)].password&#39;</span>
+    <span class="c1"># the value in config that you will set</span>
+    <span class="l l-Scalar l-Scalar-Plain">to-entropy</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">charset</span><span class="p p-Indicator">:</span> <span class="s">&quot;a-z,A-Z,0-9&quot;</span>
+        <span class="l l-Scalar l-Scalar-Plain">len</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">22</span>
+
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">SET</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">var</span><span class="p p-Indicator">:</span> <span class="s">&#39;users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;c-lightning&quot;)].fetch-blocks&#39;</span>
+    <span class="l l-Scalar l-Scalar-Plain">to-value</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</pre></div>
+</div>
+<p>Push Examples:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PUSH</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">to</span><span class="p p-Indicator">:</span> <span class="s">&quot;users&quot;</span>
+    <span class="l l-Scalar l-Scalar-Plain">value</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">c-lightning</span>
+        <span class="l l-Scalar l-Scalar-Plain">allowed-calls</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[]</span>
+
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PUSH</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">to</span><span class="p p-Indicator">:</span> <span class="s">&#39;users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;c-lightning&quot;)].allowed-calls&#39;</span>
+    <span class="l l-Scalar l-Scalar-Plain">value</span><span class="p p-Indicator">:</span> <span class="s">&quot;getnetworkinfo&quot;</span>
+</pre></div>
+</div>
+<p>Full example from <a class="reference external" href="https://github.com/Start9Labs/c-lightning-wrapper/blob/master/manifest.yaml">c-lightning manifest</a>:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">config</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">rule</span><span class="p p-Indicator">:</span> <span class="s">&#39;</span><span class="se">&#39;&#39;</span><span class="s">users.*.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;c-lightning&quot;&#39;</span>
+    <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="s">&#39;Must</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">an</span><span class="nv"> </span><span class="s">RPC</span><span class="nv"> </span><span class="s">user</span><span class="nv"> </span><span class="s">named</span><span class="nv"> </span><span class="s">&quot;c-lightning&quot;&#39;</span>
+    <span class="l l-Scalar l-Scalar-Plain">suggestions</span><span class="p p-Indicator">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PUSH</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">to</span><span class="p p-Indicator">:</span> <span class="s">&quot;users&quot;</span>
+            <span class="l l-Scalar l-Scalar-Plain">value</span><span class="p p-Indicator">:</span>
+                <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">c-lightning</span>
+                <span class="l l-Scalar l-Scalar-Plain">allowed-calls</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[]</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">SET</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">var</span><span class="p p-Indicator">:</span> <span class="s">&#39;users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;c-lightning&quot;)].password&#39;</span>
+            <span class="l l-Scalar l-Scalar-Plain">to-entropy</span><span class="p p-Indicator">:</span>
+                <span class="l l-Scalar l-Scalar-Plain">charset</span><span class="p p-Indicator">:</span> <span class="s">&quot;a-z,A-Z,0-9&quot;</span>
+                <span class="l l-Scalar l-Scalar-Plain">len</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">22</span>
+</pre></div>
+</div>
+<p><span class="raw-html"><br /></span></p>
+</div>
+</div>
+  <div class="content-navigation">
+  <div class="navigation navigation--prev">
+    <a class="navigation__link" href="../makefile/">
+      <button class="navigation__button">
+        <i class="scylla-icon scylla-icon--chevron-left"></i>
+      </button>
+      <div class="navigation__title">
+        <span class="colored">PREVIOUS</span> <br />Service Makefile
+      </div>
+    </a>
+  </div>
+  <div class="navigation navigation--next">
+    <a class="navigation__link" href="../properties/">
+      <div class="navigation__title">
+        <span class="colored">NEXT</span> <br />Service Properties
+      </div>
+      <button class="navigation__button">
+        <i class="scylla-icon scylla-icon--chevron-right"></i>
+      </button>
+    </a>
+  </div>
+</div> 
+      </div>
+      <div
+        class="sidebar-left  large-order-1"
+      > <div id="side-nav" class="side-nav custom-scroll-bar" data-closable data-toggler=".show">
+  <button class="collapsible-button">
+    <i class="scylla-icon scylla-icon--chevron-left"></i>
+  </button>
+  <div class="side-nav-content">
+    <div class="side-nav__search">
+      <div class="search-box">
+        <ci-search></ci-search>
+      </div>
+    </div>
+    <div class="side-nav__versions">
+      
+    </div>
+    <div class="side-nav__content">
+      <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/introduction/">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/purchasing/">Purchasing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/diy/">DIY Guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../user-manual/initial-setup/">Initial Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../user-manual/connecting/">Connecting</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../user-manual/general/">General</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/embassy-config/">Config Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/updating/">Updating EmbassyOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/wifi/">Setting up WiFi</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../user-manual/general/developer-options/">Developer Options</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../user-manual/general/developer-options/ssh-setup/">SSH Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../user-manual/general/developer-options/alt-marketplace/">Alternative Marketplace</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/power/">Power</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/notifications/">Notifications</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../user-manual/general/lan-setup/">LAN Setup</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../user-manual/general/lan-setup/desktop/">Desktop</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../user-manual/general/lan-setup/computer-setup/">Computer Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../user-manual/general/lan-setup/browser-setup/">Browser Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../user-manual/general/lan-setup/mobile/">Mobile</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/forgot-password/">Forgot Password</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../user-manual/managing-services/">Managing Services</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/installing/">Install / Uninstall</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/instructions/">Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/backups/">Backups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/service-config/">Service Config</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/properties/">Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/logs/">Viewing Logs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/managing-deps/">Managing Dependencies</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Misc Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc-guides/available-services/">Available Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc-guides/bitcoin-cli/">Using Bitcoin-Cli</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../misc-guides/tor-os/">Running Tor</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label for="toctree-checkbox-6"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-os/mac/">MacOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-os/windows/">Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-os/linux/">Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-os/android/">Android</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-os/ios/">iOS</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../misc-guides/tor-firefox/">Configuring Firefox for Tor</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-firefox/desktop/">Desktop</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../misc-guides/tor-firefox/mobile/">Mobile</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label for="toctree-checkbox-8"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc-guides/tor-firefox/android/">Android</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc-guides/tor-firefox/ios/">iOS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Contributing</span></p>
+<ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../">Service Packaging Guide</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label for="toctree-checkbox-9"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview/">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wrapper/">Wrapper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manifest/">Manifest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../docker/">Docker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../makefile/">Makefile</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Config</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../properties/">Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../instructions/">Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../backups/">Backups</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../embassyos/">EmbassyOS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Support</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../support/FAQ/">Frequently Asked Questions</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label for="toctree-checkbox-10"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../support/FAQ/general-faq/">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../support/FAQ/embassy-faq/">Embassy (Device, OS, and DIY)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../support/FAQ/usage-faq/">Basic Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../support/FAQ/setup-faq/">Setup and Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../support/FAQ/services-faq/">Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../support/FAQ/bitcoin-faq/">Bitcoin and Lightning Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../support/FAQ/030-faq/">EmbassyOS Version 0.3.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../support/FAQ/dev-faq/">Contributing &amp; Development</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../support/concepts/">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../support/contact/">Contact</a></li>
+</ul>
+
+    </div>
+  </div>
+</div>
+      </div>
+      
+      <div class="sidebar-right large-order-3">
+         <div class="secondary-side-nav custom-scroll-bar">
+  <div class="secondary-side-nav__content">
+    <p class="topic-title">On this page</p>
+    <ul>
+<li><a class="reference internal" href="#">Service Config Specification</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#config-spec">Config Spec</a><ul>
+<li><a class="reference internal" href="#id2">Overview</a></li>
+<li><a class="reference internal" href="#types">Types</a></li>
+<li><a class="reference internal" href="#implementation-guide">Implementation Guide</a><ul>
+<li><a class="reference internal" href="#boolean">Boolean</a></li>
+<li><a class="reference internal" href="#enum">Enum</a></li>
+<li><a class="reference internal" href="#list">List</a></li>
+<li><a class="reference internal" href="#number">Number</a></li>
+<li><a class="reference internal" href="#object-type">Object Type</a></li>
+<li><a class="reference internal" href="#string">String</a></li>
+<li><a class="reference internal" href="#pointer">Pointer</a></li>
+<li><a class="reference internal" href="#union">Union</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#config-rules">Config Rules</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div> 
+      </div>
+    </section>
+
+    <footer class="footer">
+  <div class="footer-group">
+    <div class="footer-top">
+      <a class="footer-logo" href="https://start9.com"
+        ><img
+          src="../../../_static/img/icon-transparent.png"
+          alt="Logo"
+      /></a>
+      <div class="footer-links">
+        <a class="footer-links__link" href="https://docs.start9.com/">Docs</a>
+        <a
+          class="footer-links__link"
+          href="https://start9.com/#community"
+          >Contact Us</a
+        >
+        <a class="footer-links__link" href="https://start9.com/"
+          >About Us</a
+        >
+      </div>
+      <div class="footer-actions">
+        <a
+          class="footer-actions__link"
+          href="https://twitter.com/start9labs"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="Twitter feed"
+            data-position="bottom"
+          >
+            <img
+              src="../../../_static/img/icons/twitter.png"
+              alt="Twitter Icon"
+            />
+          </span>
+        </a>
+        <a
+          class="footer-actions__link"
+          href="https://t.me/start9_labs"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="User Telegram channel"
+            data-position="bottom"
+          >
+            <img
+              src="../../../_static/img/icons/telegram.png"
+              alt="Telegram Icon"
+          /></span>
+        </a>
+        <a
+          class="footer-actions__link"
+          href="https://matrix.to/#/!lMnRwPWnyQvOfAoEnD:matrix.start9labs.com"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="User Matrix channel"
+            data-position="bottom"
+          >
+            <img
+              src="../../../_static/img/icons/matrix.svg"
+              alt="Matrix Icon"
+          /></span>
+        </a>
+        </a>
+        <a
+          class="footer-actions__link"
+          href="https://medium.com/@start9labs"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="Medium feed"
+            data-position="bottom"
+          >
+            <img
+              src="../../../_static/img/icons/medium.png"
+              alt="Medium Icon"
+          /></span>
+        </a>
+        <a
+          class="footer-actions__link"
+          href="https://github.com/Start9Labs/"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="GitHub page"
+            data-position="bottom"
+          >
+            <img
+              src="../../../_static/img/icons/github.png"
+              alt="GitHub Icon"
+          /></span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom__copyright"> &#169; 2021,  Start9 Labs, Inc. All rights reserved.
+      </div>
+      <div class="footer-bottom__last-updated">
+        Last updated on 13 Dec 2021.
+      </div>
+      <div class="footer-bottom__version">
+        Powered by
+        <a href="http://sphinx-doc.org/">Sphinx 2.4.5</a> &amp;
+        <a href="https://sphinx-theme.scylladb.com/"
+          >ScyllaDB Theme 1.0.6</a
+        >
+      </div>
+      <!-- <p class="footer-bottom__canary">We have never received a secret government request to hand over user information.</p> -->
+    </div>
+  </div>
+</footer>
+
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T8P2JP"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+  </body>
+</html>

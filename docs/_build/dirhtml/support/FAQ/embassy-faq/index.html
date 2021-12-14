@@ -1,0 +1,651 @@
+
+
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> Embassy (Device, OS, and DIY) | Start9 Docs
+    </title>
+    <meta name="description" content="Start9 Product Documentation and Education Guides" />
+    <link
+      rel="icon"
+      href="../../../_static/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="../../../_static/img/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="../../../_static/img/favicon-228x228.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="../../../_static/img/favicon-228x228.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      href="../../../_static/img/favicon-228x228.png"
+    />
+    <link rel="canonical" href="https://docs.start9.com/" />
+    <link rel="author" href="mailto:support@start9labs.com" />
+  <!-- connect to domain of font files -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- optionally increase loading priority -->
+  <link
+    rel="preload"
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,400&display=swap"
+  />
+
+  <!-- async CSS -->
+  <link
+    rel="stylesheet"
+    media="print"
+    onload="this.onload=null;this.removeAttribute('media');"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,400&display=swap"
+  />
+
+  <!-- no-JS fallback -->
+  <noscript>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,400&display=swap"
+    />
+  </noscript>
+  <link
+    rel="stylesheet"
+    href="../../../_static/css/main.css"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="../../../_static/pygments.css"
+    type="text/css"
+  /> <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+
+  <script
+    type="text/javascript"
+    id="documentation_options"
+    data-url_root="../../../"
+    src="../../../_static/documentation_options.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="../../../_static/js/runtime.bundle.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="../../../_static/js/main.bundle.js"
+  ></script> <script src="../../../_static/underscore.js"></script> <script src="../../../_static/doctools.js"></script> <script src="../../../_static/language_data.js"></script> <script src="../../../_static/clipboard.min.js"></script> <script src="../../../_static/copybutton.js"></script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-T8P2JP");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Marketo -->
+    <script type="text/javascript">
+      (function () {
+        var didInit = false;
+        function initMunchkin() {
+          if (didInit === false) {
+            didInit = true;
+            Munchkin.init("791-QBF-350");
+          }
+        }
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "//munchkin.marketo.net/munchkin.js";
+        s.onreadystatechange = function () {
+          if (this.readyState == "complete" || this.readyState == "loaded") {
+            initMunchkin();
+          }
+        };
+        s.onload = initMunchkin;
+        document.getElementsByTagName("head")[0].appendChild(s);
+      })();
+    </script>
+    <!-- End Marketo -->
+    <!-- Expertrec -->
+    <script>
+      var id = "e2077224-9ccf-11e9-a0c9-0242ac130002";
+      var ci_search = document.createElement("script");
+      ci_search.type = "text/javascript";
+      ci_search.async = true;
+      ci_search.src = "https://cse.expertrec.com/api/js/ci_common.js?id=" + id;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(ci_search, s);
+    </script>
+    <!-- End Expertrec -->
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b1870adf6a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- End Font Awesome -->
+  </head>
+  
+  <body>
+     <header class="header">
+  <div class="header-logo">
+    <a class="header-logo__img" href="https://start9.com/">
+      <img
+        src="../../../_static/img/logo.png"
+        alt="Start9 Logo"
+      />
+    </a>
+    <span class="header-logo__bar"></span>
+    <a class="header-logo__text" href="https://docs.start9.com/">
+      Documentation
+    </a>
+  </div>
+  <div class="header-navigation">
+    <ul
+      class="dropdown menu scylla-dropdown scylla-dropdown--header"
+      data-dropdown-menu
+    >
+      <li class="scylla-dropdown__item">
+        <a href="#" class="scylla-dropdown__title"
+          >Contributing <i class="chevron scylla-icon scylla-icon--triangle-down"></i
+        ></a>
+        <ul class="menu scylla-dropdown__content">
+          <li>
+            <a href="https://docs.start9.com/developing"
+              ><i class="scylla-icon scylla-icon--apps"></i>Developer</a
+            >
+          </li>
+          <li>
+            <a href="https://docs.start9.com/service-packaging"
+              ><i class="scylla-icon scylla-icon--open-source"></i>Service Packaging</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="scylla-dropdown__item">
+        <a href="#" class="scylla-dropdown__title"
+          >About <i class="chevron scylla-icon scylla-icon--triangle-down"></i
+        ></a>
+        <ul class="menu scylla-dropdown__content">
+          <li>
+            <a href="https://docs.start9.com/about">
+              <i class="scylla-icon scylla-icon--enterprise"></i>Company</a
+            >
+          </li>
+          <li>
+            <a href="https://docs.start9.com/license">
+              <i class="scylla-icon scylla-icon--whitepapers"></i>License</a
+            >
+          </li>
+          <li>
+            <a href="https://docs.start9.com/careers">
+              <i class="scylla-icon scylla-icon--careers"></i>Hiring
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="header-button">
+      <a href="https://store.start9.com" class="button" target="_blank">Purchase</a>
+    </div>
+  </div>
+  <div class="header-search-box">
+    <div class="search-box">
+      <ci-search></ci-search>
+    </div>
+  </div>
+  <div class="side-nav-toggle" data-toggle="side-nav">
+  <div class="side-nav-toggle__button">
+    <img src="../../../_static/img/menu.svg" alt="Menu" />
+  </div>
+</div>
+</header>
+    <section class="layout ">
+      <div class="content large-order-2">
+         
+
+        <div class="pre-content">
+          <div class="pre-content__left"><div class="breadcrumbs">
+  <span class="bread__item">
+    <a
+      href="../../../"
+      class="bread__highlight"
+    >
+      <i class="fas fa-home"></i> Start9 Docs</a
+    ></span
+  >
+  
+  <span class="bread__item"
+    ><a href="../">Frequently Asked Questions</a></span
+  >
+  
+  <span class="bread__item bread__item--last">Embassy (Device, OS, and DIY)</span>
+</div></div>
+          <div class="pre-content__right"><ul
+  class="dropdown menu scylla-dropdown scylla-dropdown--contribute"
+  data-dropdown-menu
+>
+  <li class="scylla-dropdown__item">
+    <a class="scylla-dropdown__title" href="#">
+      <div class="scylla-dropdown__title--body">
+        <i class="icon fa fa-github" aria-hidden="true"></i>
+        Contribute
+      </div>
+      <i class="chevron scylla-icon scylla-icon--chevron-right"></i>
+    </a>
+    <ul class="menu scylla-dropdown__content">
+      <li>
+        <a
+          href="https://github.com/Start9Labs/documentation/issues/new?title=Issue in page Embassy (Device, OS, and DIY)&&body=I%20would%20like%20to%20report%20an%20issue%20in%20page%20https://docs.start9.com/support/FAQ/embassy-faq%0A%0A%23%23%23%20Problem%0A%0A%23%23%23%20%20Suggest%20a%20fix"
+          target="_blank"
+          >Report a doc issue
+          <i class="icon fa fa-external-link" aria-hidden="true"></i
+        ></a>
+      </li>
+      
+      <li>
+         
+        <a
+          href="https://github.com/Start9Labs/documentation/edit/master/docs/source/support/FAQ/embassy-faq.rst"
+          target="_blank"
+          >Edit this page
+          <i class="icon fa fa-external-link" aria-hidden="true"></i
+        ></a>
+      </li>
+      
+      <li>
+        <a href="https://docs.start9.com/contributing/" target="_blank"
+          >Learn how to contribute
+          <i class="icon fa fa-external-link" aria-hidden="true"></i
+        ></a>
+      </li>
+    </ul>
+  </li>
+</ul></div>
+        </div>
+         <div class="section" id="embassy-device-os-and-diy">
+<span id="embassy-faq"></span><h1>Embassy (Device, OS, and DIY)<a class="headerlink" href="#embassy-device-os-and-diy" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="can-i-run-embassyos-on-a-vps-or-vm">
+<h2>Can I run EmbassyOS on a VPS or VM?<a class="headerlink" href="#can-i-run-embassyos-on-a-vps-or-vm" title="Permalink to this headline">¶</a></h2>
+<p>Maybe, but we advise against this. It is designed to be used on a RaspberryPi.</p>
+</div>
+<div class="section" id="is-it-possible-to-use-the-embassyos-on-my-own-hardware">
+<h2>Is it possible to use the EmbassyOS on my own hardware?<a class="headerlink" href="#is-it-possible-to-use-the-embassyos-on-my-own-hardware" title="Permalink to this headline">¶</a></h2>
+<p>Yes! The <a class="reference internal" href="../../../getting-started/diy/#diy"><span class="std std-ref">diy guide</span></a> will take you through the setup steps. This option is great for people who already own the necessary hardware or who live outside the US and want to save on shipping and customs fees.</p>
+<p>Additionally, EmbassyOS is available to build from source under the Start9 Personal Use License. If you have the time and energy, it is possible to download and compile EmbassyOS yourself, for free, with the caveat that your “Embassy” will not have a product key generated by us. This means you will miss out on the perks that come along with purchasing from us, which will grow over time.</p>
+</div>
+<div class="section" id="do-i-plug-the-embassy-into-my-computer">
+<h2>Do I plug the Embassy into my computer?<a class="headerlink" href="#do-i-plug-the-embassy-into-my-computer" title="Permalink to this headline">¶</a></h2>
+<p>No.  The Embassy only needs to be plugged into power and internet, just like your router.  You can set it up right by your router and forget about it.</p>
+</div>
+<div class="section" id="how-much-storage-does-the-embassy-have">
+<h2>How much storage does the Embassy have?<a class="headerlink" href="#how-much-storage-does-the-embassy-have" title="Permalink to this headline">¶</a></h2>
+<p>Currently, the Embassy ships with a 128gb of storage.</p>
+</div>
+<div class="section" id="are-my-internet-requests-anonymous-and-secure">
+<h2>Are my Internet requests anonymous and secure?<a class="headerlink" href="#are-my-internet-requests-anonymous-and-secure" title="Permalink to this headline">¶</a></h2>
+<p>EmbassyOS and every service on the Embassy serve their own Tor Hidden Services with unique Tor addresses. The private keys used to create these addresses are generated on your phone or computer when you first set up the Embassy. No one, not even Start9, has any idea what your Tor addresses are, let alone the password(s) you choose to authenticate with them.</p>
+</div>
+<div class="section" id="does-start9-have-access-to-my-embassy-s-encryption-keys">
+<h2>Does Start9 have access to my Embassy’s encryption keys?<a class="headerlink" href="#does-start9-have-access-to-my-embassy-s-encryption-keys" title="Permalink to this headline">¶</a></h2>
+<p>No.  Your keys are generated on your device using the password you create.</p>
+</div>
+<div class="section" id="can-multiple-embassies-be-setup-to-run-redundantly-in-physically-separate-locations">
+<h2>Can multiple Embassies be setup to run redundantly in physically separate locations?<a class="headerlink" href="#can-multiple-embassies-be-setup-to-run-redundantly-in-physically-separate-locations" title="Permalink to this headline">¶</a></h2>
+<p>Soon (tm).  Currently no, be we have plans for a feature that will enable Embassies to provide encrypted, automated backup services for one another.</p>
+</div>
+<div class="section" id="how-does-the-embassy-compare-to-other-bitcoin-nodes-or-personal-servers">
+<h2>How does the Embassy compare to other Bitcoin nodes or personal servers?<a class="headerlink" href="#how-does-the-embassy-compare-to-other-bitcoin-nodes-or-personal-servers" title="Permalink to this headline">¶</a></h2>
+<p>The cheapest way to run a Bitcoin/Lightning node is to buy a Raspberry Pi (or equivalent), compile the software from source yourself, and host everything on Tor.  This takes even technical people significant time to accomplish. On the other end of the spectrum is something like the Embassy, which “just works”. In between is stuff like MyNode, Nodl, Dojo, Umbrel, and Raspiblitz, which all require some degree of command line effort and network configuration. The biggest benefit of the Embassy is that it is infinitely extensible to all of open-source, self-hosted software. The service listing will expand enormously over time in ways the other platforms cannot.</p>
+</div>
+<div class="section" id="would-you-consider-umbrel-nodl-dojo-etc-a-competitor-to-you-guys-or-are-they-different-enough-to-be-compatible">
+<h2>Would you consider (Umbrel, Nodl, Dojo, etc) a competitor to you guys, or are they different enough to be compatible?<a class="headerlink" href="#would-you-consider-umbrel-nodl-dojo-etc-a-competitor-to-you-guys-or-are-they-different-enough-to-be-compatible" title="Permalink to this headline">¶</a></h2>
+<p>Other node devices are competitors, and there are distinct trade-offs to each platform, but we are definitely moving toward the same future, which is a win for everyone!
+We are taking more a general approach to all of open-source, self-hosted software, including Bitcoin/Lightning. They are more Bitcoin/Lightning oriented.</p>
+</div>
+<div class="section" id="is-a-more-powerful-device-in-the-works">
+<h2>Is a more powerful device in the works??<a class="headerlink" href="#is-a-more-powerful-device-in-the-works" title="Permalink to this headline">¶</a></h2>
+<p>In the near future, the Embassy will move to more powerful hardware.</p>
+</div>
+<div class="section" id="i-heard-on-an-old-podcast-that-there-will-be-an-embassy-two-to-be-launched-in-2021-is-there-an-eta-on-this">
+<h2>I heard on an old podcast that there will be an Embassy Two, to be launched in 2021.  Is there an ETA on this?<a class="headerlink" href="#i-heard-on-an-old-podcast-that-there-will-be-an-embassy-two-to-be-launched-in-2021-is-there-an-eta-on-this" title="Permalink to this headline">¶</a></h2>
+<p>Do not expect a new device in 2021, but we are always doing R&amp;D.</p>
+</div>
+<div class="section" id="can-i-mine-bitcoin-with-this">
+<h2>Can I mine Bitcoin with this?<a class="headerlink" href="#can-i-mine-bitcoin-with-this" title="Permalink to this headline">¶</a></h2>
+<p>No, you can not.</p>
+</div>
+<div class="section" id="does-the-embassy-only-work-over-tor-no-http-or-vpn">
+<h2>Does the Embassy only work over Tor? No http or VPN…??<a class="headerlink" href="#does-the-embassy-only-work-over-tor-no-http-or-vpn" title="Permalink to this headline">¶</a></h2>
+<p>The Embassy’s current primary communication is Tor, yes. In many cases we use HTTP over Tor (they are not mutually exclusive), you can see this by navigating to the Tor address in a browser and see the “http” in front of it.  A VPN is a feature we’re exploring as an alternative to Tor to make things faster without meaningfully impacting privacy.  You can also connect directly via LAN if you are on the same network as your device.</p>
+</div>
+<div class="section" id="what-if-someone-gets-physical-access-to-my-device-can-they-read-the-contents-is-it-encrypted">
+<h2>What if someone gets physical access to my device, can they read the contents? Is it encrypted?<a class="headerlink" href="#what-if-someone-gets-physical-access-to-my-device-can-they-read-the-contents-is-it-encrypted" title="Permalink to this headline">¶</a></h2>
+<p>The device is currently not currently protected in that way. Someone with physical access to the device can get full access to everything on it.</p>
+<p>Apps like Bitwarden, however, do not store plaintext information, so your passwords will not be compromised unless they know your master password.</p>
+</div>
+<div class="section" id="why-http-and-not-https-for-onion-websites">
+<h2>Why http and not https for .onion websites?<a class="headerlink" href="#why-http-and-not-https-for-onion-websites" title="Permalink to this headline">¶</a></h2>
+<p>When visiting a Tor V3 URL (.onion website), your communications are end-to-end encrypted and onion-routed by default. There is no added benefit to using https.  See this <a class="reference external" href="https://community.torproject.org/onion-services/advanced/https/">article</a> from the Tor Project for more details.</p>
+</div>
+</div>
+  <div class="content-navigation">
+  <div class="navigation navigation--prev">
+    <a class="navigation__link" href="../general-faq/">
+      <button class="navigation__button">
+        <i class="scylla-icon scylla-icon--chevron-left"></i>
+      </button>
+      <div class="navigation__title">
+        <span class="colored">PREVIOUS</span> <br />General
+      </div>
+    </a>
+  </div>
+  <div class="navigation navigation--next">
+    <a class="navigation__link" href="../usage-faq/">
+      <div class="navigation__title">
+        <span class="colored">NEXT</span> <br />Basic Usage
+      </div>
+      <button class="navigation__button">
+        <i class="scylla-icon scylla-icon--chevron-right"></i>
+      </button>
+    </a>
+  </div>
+</div> 
+      </div>
+      <div
+        class="sidebar-left  large-order-1"
+      > <div id="side-nav" class="side-nav custom-scroll-bar" data-closable data-toggler=".show">
+  <button class="collapsible-button">
+    <i class="scylla-icon scylla-icon--chevron-left"></i>
+  </button>
+  <div class="side-nav-content">
+    <div class="side-nav__search">
+      <div class="search-box">
+        <ci-search></ci-search>
+      </div>
+    </div>
+    <div class="side-nav__versions">
+      
+    </div>
+    <div class="side-nav__content">
+      <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/introduction/">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/purchasing/">Purchasing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/diy/">DIY Guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../user-manual/initial-setup/">Initial Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../user-manual/connecting/">Connecting</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../user-manual/general/">General</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/embassy-config/">Config Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/updating/">Updating EmbassyOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/wifi/">Setting up WiFi</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../user-manual/general/developer-options/">Developer Options</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../user-manual/general/developer-options/ssh-setup/">SSH Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../user-manual/general/developer-options/alt-marketplace/">Alternative Marketplace</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/power/">Power</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/notifications/">Notifications</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../user-manual/general/lan-setup/">LAN Setup</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../user-manual/general/lan-setup/desktop/">Desktop</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../user-manual/general/lan-setup/computer-setup/">Computer Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../user-manual/general/lan-setup/browser-setup/">Browser Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../user-manual/general/lan-setup/mobile/">Mobile</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/forgot-password/">Forgot Password</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../user-manual/managing-services/">Managing Services</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/installing/">Install / Uninstall</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/instructions/">Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/backups/">Backups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/service-config/">Service Config</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/properties/">Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/logs/">Viewing Logs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/managing-deps/">Managing Dependencies</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Misc Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc-guides/available-services/">Available Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc-guides/bitcoin-cli/">Using Bitcoin-Cli</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../misc-guides/tor-os/">Running Tor</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label for="toctree-checkbox-6"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-os/mac/">MacOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-os/windows/">Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-os/linux/">Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-os/android/">Android</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-os/ios/">iOS</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../misc-guides/tor-firefox/">Configuring Firefox for Tor</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-firefox/desktop/">Desktop</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../misc-guides/tor-firefox/mobile/">Mobile</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label for="toctree-checkbox-8"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc-guides/tor-firefox/android/">Android</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc-guides/tor-firefox/ios/">iOS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Contributing</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../contributing/services/">Service Packaging Guide</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label for="toctree-checkbox-9"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributing/services/overview/">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributing/services/wrapper/">Wrapper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributing/services/manifest/">Manifest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributing/services/docker/">Docker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributing/services/makefile/">Makefile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributing/services/config/">Config</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributing/services/properties/">Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributing/services/instructions/">Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributing/services/backups/">Backups</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contributing/embassyos/">EmbassyOS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Support</span></p>
+<ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../">Frequently Asked Questions</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label for="toctree-checkbox-10"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../general-faq/">General</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Embassy (Device, OS, and DIY)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usage-faq/">Basic Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../setup-faq/">Setup and Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../services-faq/">Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bitcoin-faq/">Bitcoin and Lightning Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../030-faq/">EmbassyOS Version 0.3.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev-faq/">Contributing &amp; Development</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../concepts/">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contact/">Contact</a></li>
+</ul>
+
+    </div>
+  </div>
+</div>
+      </div>
+      
+      <div class="sidebar-right large-order-3">
+         <div class="secondary-side-nav custom-scroll-bar">
+  <div class="secondary-side-nav__content">
+    <p class="topic-title">On this page</p>
+    <ul>
+<li><a class="reference internal" href="#">Embassy (Device, OS, and DIY)</a><ul>
+<li><a class="reference internal" href="#can-i-run-embassyos-on-a-vps-or-vm">Can I run EmbassyOS on a VPS or VM?</a></li>
+<li><a class="reference internal" href="#is-it-possible-to-use-the-embassyos-on-my-own-hardware">Is it possible to use the EmbassyOS on my own hardware?</a></li>
+<li><a class="reference internal" href="#do-i-plug-the-embassy-into-my-computer">Do I plug the Embassy into my computer?</a></li>
+<li><a class="reference internal" href="#how-much-storage-does-the-embassy-have">How much storage does the Embassy have?</a></li>
+<li><a class="reference internal" href="#are-my-internet-requests-anonymous-and-secure">Are my Internet requests anonymous and secure?</a></li>
+<li><a class="reference internal" href="#does-start9-have-access-to-my-embassy-s-encryption-keys">Does Start9 have access to my Embassy’s encryption keys?</a></li>
+<li><a class="reference internal" href="#can-multiple-embassies-be-setup-to-run-redundantly-in-physically-separate-locations">Can multiple Embassies be setup to run redundantly in physically separate locations?</a></li>
+<li><a class="reference internal" href="#how-does-the-embassy-compare-to-other-bitcoin-nodes-or-personal-servers">How does the Embassy compare to other Bitcoin nodes or personal servers?</a></li>
+<li><a class="reference internal" href="#would-you-consider-umbrel-nodl-dojo-etc-a-competitor-to-you-guys-or-are-they-different-enough-to-be-compatible">Would you consider (Umbrel, Nodl, Dojo, etc) a competitor to you guys, or are they different enough to be compatible?</a></li>
+<li><a class="reference internal" href="#is-a-more-powerful-device-in-the-works">Is a more powerful device in the works??</a></li>
+<li><a class="reference internal" href="#i-heard-on-an-old-podcast-that-there-will-be-an-embassy-two-to-be-launched-in-2021-is-there-an-eta-on-this">I heard on an old podcast that there will be an Embassy Two, to be launched in 2021.  Is there an ETA on this?</a></li>
+<li><a class="reference internal" href="#can-i-mine-bitcoin-with-this">Can I mine Bitcoin with this?</a></li>
+<li><a class="reference internal" href="#does-the-embassy-only-work-over-tor-no-http-or-vpn">Does the Embassy only work over Tor? No http or VPN…??</a></li>
+<li><a class="reference internal" href="#what-if-someone-gets-physical-access-to-my-device-can-they-read-the-contents-is-it-encrypted">What if someone gets physical access to my device, can they read the contents? Is it encrypted?</a></li>
+<li><a class="reference internal" href="#why-http-and-not-https-for-onion-websites">Why http and not https for .onion websites?</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div> 
+      </div>
+    </section>
+
+    <footer class="footer">
+  <div class="footer-group">
+    <div class="footer-top">
+      <a class="footer-logo" href="https://start9.com"
+        ><img
+          src="../../../_static/img/icon-transparent.png"
+          alt="Logo"
+      /></a>
+      <div class="footer-links">
+        <a class="footer-links__link" href="https://docs.start9.com/">Docs</a>
+        <a
+          class="footer-links__link"
+          href="https://start9.com/#community"
+          >Contact Us</a
+        >
+        <a class="footer-links__link" href="https://start9.com/"
+          >About Us</a
+        >
+      </div>
+      <div class="footer-actions">
+        <a
+          class="footer-actions__link"
+          href="https://twitter.com/start9labs"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="Twitter feed"
+            data-position="bottom"
+          >
+            <img
+              src="../../../_static/img/icons/twitter.png"
+              alt="Twitter Icon"
+            />
+          </span>
+        </a>
+        <a
+          class="footer-actions__link"
+          href="https://t.me/start9_labs"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="User Telegram channel"
+            data-position="bottom"
+          >
+            <img
+              src="../../../_static/img/icons/telegram.png"
+              alt="Telegram Icon"
+          /></span>
+        </a>
+        <a
+          class="footer-actions__link"
+          href="https://matrix.to/#/!lMnRwPWnyQvOfAoEnD:matrix.start9labs.com"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="User Matrix channel"
+            data-position="bottom"
+          >
+            <img
+              src="../../../_static/img/icons/matrix.svg"
+              alt="Matrix Icon"
+          /></span>
+        </a>
+        </a>
+        <a
+          class="footer-actions__link"
+          href="https://medium.com/@start9labs"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="Medium feed"
+            data-position="bottom"
+          >
+            <img
+              src="../../../_static/img/icons/medium.png"
+              alt="Medium Icon"
+          /></span>
+        </a>
+        <a
+          class="footer-actions__link"
+          href="https://github.com/Start9Labs/"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="GitHub page"
+            data-position="bottom"
+          >
+            <img
+              src="../../../_static/img/icons/github.png"
+              alt="GitHub Icon"
+          /></span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom__copyright"> &#169; 2021,  Start9 Labs, Inc. All rights reserved.
+      </div>
+      <div class="footer-bottom__last-updated">
+        Last updated on 13 Dec 2021.
+      </div>
+      <div class="footer-bottom__version">
+        Powered by
+        <a href="http://sphinx-doc.org/">Sphinx 2.4.5</a> &amp;
+        <a href="https://sphinx-theme.scylladb.com/"
+          >ScyllaDB Theme 1.0.6</a
+        >
+      </div>
+      <!-- <p class="footer-bottom__canary">We have never received a secret government request to hand over user information.</p> -->
+    </div>
+  </div>
+</footer>
+
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T8P2JP"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+  </body>
+</html>

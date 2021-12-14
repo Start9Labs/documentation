@@ -1,0 +1,905 @@
+
+
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> Service Manifest | Start9 Docs
+    </title>
+    <meta name="description" content="Start9 Product Documentation and Education Guides" />
+    <link
+      rel="icon"
+      href="../../../_static/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="../../../_static/img/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="../../../_static/img/favicon-228x228.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="../../../_static/img/favicon-228x228.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      href="../../../_static/img/favicon-228x228.png"
+    />
+    <link rel="canonical" href="https://docs.start9.com/" />
+    <link rel="author" href="mailto:support@start9labs.com" />
+  <!-- connect to domain of font files -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- optionally increase loading priority -->
+  <link
+    rel="preload"
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,400&display=swap"
+  />
+
+  <!-- async CSS -->
+  <link
+    rel="stylesheet"
+    media="print"
+    onload="this.onload=null;this.removeAttribute('media');"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,400&display=swap"
+  />
+
+  <!-- no-JS fallback -->
+  <noscript>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,400&display=swap"
+    />
+  </noscript>
+  <link
+    rel="stylesheet"
+    href="../../../_static/css/main.css"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="../../../_static/pygments.css"
+    type="text/css"
+  /> <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+
+  <script
+    type="text/javascript"
+    id="documentation_options"
+    data-url_root="../../../"
+    src="../../../_static/documentation_options.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="../../../_static/js/runtime.bundle.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="../../../_static/js/main.bundle.js"
+  ></script> <script src="../../../_static/underscore.js"></script> <script src="../../../_static/doctools.js"></script> <script src="../../../_static/language_data.js"></script> <script src="../../../_static/clipboard.min.js"></script> <script src="../../../_static/copybutton.js"></script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-T8P2JP");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Marketo -->
+    <script type="text/javascript">
+      (function () {
+        var didInit = false;
+        function initMunchkin() {
+          if (didInit === false) {
+            didInit = true;
+            Munchkin.init("791-QBF-350");
+          }
+        }
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "//munchkin.marketo.net/munchkin.js";
+        s.onreadystatechange = function () {
+          if (this.readyState == "complete" || this.readyState == "loaded") {
+            initMunchkin();
+          }
+        };
+        s.onload = initMunchkin;
+        document.getElementsByTagName("head")[0].appendChild(s);
+      })();
+    </script>
+    <!-- End Marketo -->
+    <!-- Expertrec -->
+    <script>
+      var id = "e2077224-9ccf-11e9-a0c9-0242ac130002";
+      var ci_search = document.createElement("script");
+      ci_search.type = "text/javascript";
+      ci_search.async = true;
+      ci_search.src = "https://cse.expertrec.com/api/js/ci_common.js?id=" + id;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(ci_search, s);
+    </script>
+    <!-- End Expertrec -->
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b1870adf6a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- End Font Awesome -->
+  </head>
+  
+  <body>
+     <header class="header">
+  <div class="header-logo">
+    <a class="header-logo__img" href="https://start9.com/">
+      <img
+        src="../../../_static/img/logo.png"
+        alt="Start9 Logo"
+      />
+    </a>
+    <span class="header-logo__bar"></span>
+    <a class="header-logo__text" href="https://docs.start9.com/">
+      Documentation
+    </a>
+  </div>
+  <div class="header-navigation">
+    <ul
+      class="dropdown menu scylla-dropdown scylla-dropdown--header"
+      data-dropdown-menu
+    >
+      <li class="scylla-dropdown__item">
+        <a href="#" class="scylla-dropdown__title"
+          >Contributing <i class="chevron scylla-icon scylla-icon--triangle-down"></i
+        ></a>
+        <ul class="menu scylla-dropdown__content">
+          <li>
+            <a href="https://docs.start9.com/developing"
+              ><i class="scylla-icon scylla-icon--apps"></i>Developer</a
+            >
+          </li>
+          <li>
+            <a href="https://docs.start9.com/service-packaging"
+              ><i class="scylla-icon scylla-icon--open-source"></i>Service Packaging</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="scylla-dropdown__item">
+        <a href="#" class="scylla-dropdown__title"
+          >About <i class="chevron scylla-icon scylla-icon--triangle-down"></i
+        ></a>
+        <ul class="menu scylla-dropdown__content">
+          <li>
+            <a href="https://docs.start9.com/about">
+              <i class="scylla-icon scylla-icon--enterprise"></i>Company</a
+            >
+          </li>
+          <li>
+            <a href="https://docs.start9.com/license">
+              <i class="scylla-icon scylla-icon--whitepapers"></i>License</a
+            >
+          </li>
+          <li>
+            <a href="https://docs.start9.com/careers">
+              <i class="scylla-icon scylla-icon--careers"></i>Hiring
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="header-button">
+      <a href="https://store.start9.com" class="button" target="_blank">Purchase</a>
+    </div>
+  </div>
+  <div class="header-search-box">
+    <div class="search-box">
+      <ci-search></ci-search>
+    </div>
+  </div>
+  <div class="side-nav-toggle" data-toggle="side-nav">
+  <div class="side-nav-toggle__button">
+    <img src="../../../_static/img/menu.svg" alt="Menu" />
+  </div>
+</div>
+</header>
+    <section class="layout ">
+      <div class="content large-order-2">
+         
+
+        <div class="pre-content">
+          <div class="pre-content__left"><div class="breadcrumbs">
+  <span class="bread__item">
+    <a
+      href="../../../"
+      class="bread__highlight"
+    >
+      <i class="fas fa-home"></i> Start9 Docs</a
+    ></span
+  >
+  
+  <span class="bread__item"
+    ><a href="../">Service Packaging Guide</a></span
+  >
+  
+  <span class="bread__item bread__item--last">Service Manifest</span>
+</div></div>
+          <div class="pre-content__right"><ul
+  class="dropdown menu scylla-dropdown scylla-dropdown--contribute"
+  data-dropdown-menu
+>
+  <li class="scylla-dropdown__item">
+    <a class="scylla-dropdown__title" href="#">
+      <div class="scylla-dropdown__title--body">
+        <i class="icon fa fa-github" aria-hidden="true"></i>
+        Contribute
+      </div>
+      <i class="chevron scylla-icon scylla-icon--chevron-right"></i>
+    </a>
+    <ul class="menu scylla-dropdown__content">
+      <li>
+        <a
+          href="https://github.com/Start9Labs/documentation/issues/new?title=Issue in page Service Manifest&&body=I%20would%20like%20to%20report%20an%20issue%20in%20page%20https://docs.start9.com/contributing/services/manifest%0A%0A%23%23%23%20Problem%0A%0A%23%23%23%20%20Suggest%20a%20fix"
+          target="_blank"
+          >Report a doc issue
+          <i class="icon fa fa-external-link" aria-hidden="true"></i
+        ></a>
+      </li>
+      
+      <li>
+         
+        <a
+          href="https://github.com/Start9Labs/documentation/edit/master/docs/source/contributing/services/manifest.rst"
+          target="_blank"
+          >Edit this page
+          <i class="icon fa fa-external-link" aria-hidden="true"></i
+        ></a>
+      </li>
+      
+      <li>
+        <a href="https://docs.start9.com/contributing/" target="_blank"
+          >Learn how to contribute
+          <i class="icon fa fa-external-link" aria-hidden="true"></i
+        ></a>
+      </li>
+    </ul>
+  </li>
+</ul></div>
+        </div>
+         <div class="section" id="service-manifest">
+<span id="id1"></span><h1>Service Manifest<a class="headerlink" href="#service-manifest" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>This file describes the service and it’s requirements. It is used to:</p>
+<ul class="simple">
+<li><p>create a listing in the marketplace</p></li>
+<li><p>denote any installation considerations</p></li>
+<li><p>define dependency requirements</p></li>
+</ul>
+<p>Each time a service is updated, the manifest should be updated to include the new version, release notes, and any pertinent updates to the install, uninstall, or restoration flows. All this information is displayed in the marketplace listing, and the optionally denoted alerts will be displayed when appropriate to provide the user with more information.</p>
+<p>For instance, <a class="reference external" href="https://github.com/Start9Labs/lnd-wrapper/blob/master/manifest.yaml#L28">LND displays alerts</a>  around restoration since data will be overwritten.</p>
+<p>There is nothing you need to do as a developer to set up Tor for running a service. This is <em>completely</em> handled by EmbassyOS - a Tor address will be automatically generated when the service is installed. Just define the port and which version of Tor the service needs in this manifest file! You do, however, need to ensure the service is in fact capable of running over Tor.</p>
+<p>The manifest is also responsible for outlining service <a class="reference internal" href="#dependencies"><span class="std std-ref">dependencies</span></a>. By defining rules using the <a class="reference internal" href="../config/#config-rules"><span class="std std-ref">EmbassyOS DSL specification</span></a>, users can easily and selectively install, uninstall, and update any service without getting stuck in dependency hell. EmbassyOS presents this information in a polished install/uninstall/update wizard, so there’s no need for editing configuration files or jumping into the command line. For you as a developer, this simply means populating this key in the manifest!</p>
+</div>
+<div class="section" id="formatting">
+<h2>Formatting<a class="headerlink" href="#formatting" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Serialization language:<code class="docutils literal notranslate"><span class="pre">.yaml</span></code></p></li>
+<li><p>Case style: <code class="docutils literal notranslate"><span class="pre">kebab-case</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="type-definitions">
+<h2>Type definitions<a class="headerlink" href="#type-definitions" title="Permalink to this headline">¶</a></h2>
+<p>Below are the types and sub-type definitions, with necessary elaborations. Any item that contains <code class="docutils literal notranslate"><span class="pre">Option&lt;&gt;</span></code> is an optional field.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1"># manifest version compatibility ie. v0 (this is currently the only option)</span>
+<span class="l l-Scalar l-Scalar-Plain">compat</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">v0</span>
+<span class="c1"># service id, used for uniqueness and BE identification ie. bitcoind</span>
+<span class="l l-Scalar l-Scalar-Plain">id</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">String</span>
+<span class="c1"># version number of the release conforming to the semantic versioning scheme</span>
+<span class="l l-Scalar l-Scalar-Plain">version</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">String</span>
+<span class="c1"># display name of service</span>
+<span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">String</span>
+<span class="c1"># an object containing a short and long description of the service. TODO character lengths</span>
+<span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">short</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">String</span>
+    <span class="l l-Scalar l-Scalar-Plain">long</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">String</span>
+<span class="c1"># a link to the release tag notes in GitHub, or a short description TODO character length</span>
+<span class="l l-Scalar l-Scalar-Plain">release-notes</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">String</span>
+<span class="c1"># a notification message that should caution the user with any service particularities, eg. beta tech</span>
+<span class="l l-Scalar l-Scalar-Plain">install-alert</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Option&lt;String&gt;</span>
+<span class="c1"># a notification message warning users of potential problems with uninstalling, such as dependency failures or data loss</span>
+<span class="l l-Scalar l-Scalar-Plain">uninstall-alert</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Option&lt;String&gt;</span>
+<span class="c1"># a notification message containing warning or details about backup restoration</span>
+<span class="l l-Scalar l-Scalar-Plain">restore-alert</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Option&lt;String&gt;</span>
+<span class="c1"># denoting the existence of instructions.md</span>
+<span class="l l-Scalar l-Scalar-Plain">has-instructions</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Boolean</span>
+<span class="c1"># required semver version range of EmbassyOS to run service eg. &quot;&gt;=1.0.0&quot;</span>
+<span class="l l-Scalar l-Scalar-Plain">os-version-required</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">VersionReq</span>
+<span class="c1"># recommended semver version range of EmbassyOS to run service eg.&quot;^1.0.0&quot;</span>
+<span class="l l-Scalar l-Scalar-Plain">os-version-recommended</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">VersionReq</span>
+<span class="c1"># a list of objects of ports to run the service on localhost and tor</span>
+<span class="l l-Scalar l-Scalar-Plain">ports</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">internal</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">String</span>
+      <span class="l l-Scalar l-Scalar-Plain">tor</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">String</span>
+<span class="c1"># currently only tar is supported</span>
+<span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">String</span>
+<span class="c1"># shared memory container size</span>
+<span class="l l-Scalar l-Scalar-Plain">shm-size-mb</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Option&lt;usize&gt;</span>
+<span class="c1"># path to mount the image on the volume, ie: /root/bitcoind</span>
+<span class="l l-Scalar l-Scalar-Plain">mount</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">String</span>
+<span class="c1"># read only data exposed to dependencies (path is relevant to mount)</span>
+<span class="l l-Scalar l-Scalar-Plain">public</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Option&lt;String&gt;</span>
+<span class="c1"># shared filesystem segment with each of your dependencies (path is relevant to mount)</span>
+<span class="l l-Scalar l-Scalar-Plain">shared</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Option&lt;String&gt;</span>
+<span class="c1"># deprecated - will default to an empty vector</span>
+<span class="l l-Scalar l-Scalar-Plain">assets</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[]</span>
+<span class="c1"># version of tor support, eg. v2, v3</span>
+<span class="l l-Scalar l-Scalar-Plain">hidden-service-version</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">String</span>
+<span class="c1"># A map of dependent services, see below for more details</span>
+<span class="l l-Scalar l-Scalar-Plain">dependencies</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Dependencies</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="dependencies">
+<span id="id2"></span><h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<p>Many services depend on other libraries and services on EmbassyOS (such as Bitcoin), sometimes even a particular version of those services, which need to be specified by the developers so that EmbassyOS can handle installing these dependencies under the hood.</p>
+<p>The key of each field in the dependencies object is the lowercase, kebab-case app ID of the service that is depended on. Each dependency contains a set of rules that need to be fulfilled as true if the dependency is to be properly installed. The “config rules” here are for auto-configuring dependencies - the action defined by the rule will be executed if the service is auto configured with defaults during initial setup. This simplifies and streamlines the user experience. The interface should provide suggestions for the behavior if the denoted rule cannot be met with previous configurations.</p>
+<p>Let’s take this snippet for example:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nn">...</span>
+<span class="l l-Scalar l-Scalar-Plain">dependencies</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">btc-rpc-proxy</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">version</span><span class="p p-Indicator">:</span> <span class="s">&quot;^0.1.0&quot;</span>
+        <span class="l l-Scalar l-Scalar-Plain">optional</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Can configure an external bitcoin node.</span>
+        <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Required for fetching validated blocks.</span>
+        <span class="l l-Scalar l-Scalar-Plain">config</span><span class="p p-Indicator">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">rule</span><span class="p p-Indicator">:</span> <span class="s">&#39;</span><span class="se">&#39;&#39;</span><span class="s">users.*.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;c-lightning&quot;&#39;</span>
+            <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="s">&#39;Must</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">an</span><span class="nv"> </span><span class="s">RPC</span><span class="nv"> </span><span class="s">user</span><span class="nv"> </span><span class="s">named</span><span class="nv"> </span><span class="s">&quot;c-lightning&quot;&#39;</span>
+            <span class="l l-Scalar l-Scalar-Plain">suggestions</span><span class="p p-Indicator">:</span>
+            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PUSH</span><span class="p p-Indicator">:</span>
+                <span class="l l-Scalar l-Scalar-Plain">to</span><span class="p p-Indicator">:</span> <span class="s">&#39;users&#39;</span>
+                <span class="l l-Scalar l-Scalar-Plain">value</span><span class="p p-Indicator">:</span>
+                    <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">c-lightning</span>
+<span class="nn">...</span>
+</pre></div>
+</div>
+<p><span class="raw-html"><br /></span></p>
+<p>The service <code class="docutils literal notranslate"><span class="pre">btc-rpc-proxy</span></code> is a dependency of the service <code class="docutils literal notranslate"><span class="pre">c-lightning</span></code>. <code class="docutils literal notranslate"><span class="pre">c-lightning</span></code> requires it to be installed at a version &gt;=0.1.0 &lt;0.2.0. There exists a rule that states the config option <code class="docutils literal notranslate"><span class="pre">user.name</span></code> must be equal to “c-lightning”. If this value does not exist for <code class="docutils literal notranslate"><span class="pre">user.name</span></code> when accessed, <code class="docutils literal notranslate"><span class="pre">PUSH</span></code> the value “c-lighting” to the field. This all takes place during the initial service configuration, before the service is started for the first time.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Dependency config rules are processed in order.</p>
+</div>
+<div class="section" id="id3">
+<h3>Type definitions<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Types for <code class="docutils literal notranslate"><span class="pre">manifest.yaml</span></code> fields:</p>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="kr">interface</span> <span class="nx">Dependencies</span> <span class="p">[{</span>
+    <span class="nx">serviceId</span>: <span class="kt">DepInfo</span>
+<span class="p">}]</span>
+
+<span class="kr">interface</span> <span class="nx">DepInfo</span> <span class="p">{</span>
+    <span class="nx">version</span>: <span class="kt">String</span> <span class="c1">// ie. 0.11.1.1</span>
+    <span class="nx">optional?</span>: <span class="kt">String</span><span class="p">,</span>
+    <span class="nx">description?</span>: <span class="kt">String</span><span class="p">,</span>
+    <span class="nx">config</span><span class="o">:</span> <span class="p">[</span><span class="nx">ConfigRule</span><span class="p">],</span>
+    <span class="p">],</span>
+<span class="p">}</span>
+
+<span class="kr">interface</span> <span class="nx">ConfigRule</span> <span class="p">{</span>
+    <span class="nx">rule</span>: <span class="kt">String</span><span class="p">,</span> <span class="c1">// ie. &#39;users.*.name = &quot;lnd&quot;</span>
+    <span class="nx">description</span>: <span class="kt">String</span><span class="p">,</span>
+    <span class="nx">suggestions</span><span class="o">:</span> <span class="p">[</span><span class="nx">SuggestionVariant</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="kr">interface</span> <span class="nx">SuggestionVariant</span> <span class="p">{</span>
+    <span class="nx">SET</span><span class="o">:</span> <span class="p">{</span>
+        <span class="kd">var</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span>
+        <span class="nx">to</span>: <span class="kt">SetVariant</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="nx">DELETE</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">src</span>: <span class="kt">String</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="nx">PUSH</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">to</span>: <span class="kt">String</span><span class="p">,</span>
+        <span class="nx">value</span>: <span class="kt">Value</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+
+<span class="kr">interface</span> <span class="nx">SetVariant</span> <span class="p">{</span>
+    <span class="nx">to</span>: <span class="kt">Option</span><span class="o">&lt;</span><span class="nb">String</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="nx">to</span><span class="o">-</span><span class="nx">value</span>: <span class="kt">Option</span><span class="o">&lt;</span><span class="nx">Value</span><span class="o">&gt;</span><span class="p">,</span> <span class="c1">// ie. true/false</span>
+    <span class="nx">to</span><span class="o">-</span><span class="nx">entropy</span>: <span class="kt">Option</span><span class="o">&lt;</span><span class="p">{</span>
+        <span class="nx">charset</span>: <span class="kt">String</span> <span class="c1">// ie. &#39;a-z,A-Z,0-9&#39;</span>
+        <span class="nx">len</span>: <span class="kt">number</span>
+    <span class="p">}</span><span class="o">&gt;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><span class="raw-html"><br /></span></p>
+</div>
+<div class="section" id="examples">
+<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
+<p>Actual <code class="docutils literal notranslate"><span class="pre">manifest.yaml</span></code> files for existing services:</p>
+<div class="section" id="lnd">
+<h4>LND<a class="headerlink" href="#lnd" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">compat</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">v0</span>
+<span class="l l-Scalar l-Scalar-Plain">id</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">lnd</span>
+<span class="l l-Scalar l-Scalar-Plain">version</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">0.11.1.1</span>
+<span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Lightning Network Daemon</span>
+<span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span>
+<span class="l l-Scalar l-Scalar-Plain">short</span><span class="p p-Indicator">:</span> <span class="s">&quot;A</span><span class="nv"> </span><span class="s">complete</span><span class="nv"> </span><span class="s">implementation</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">Lightning</span><span class="nv"> </span><span class="s">Network</span><span class="nv"> </span><span class="s">node</span><span class="nv"> </span><span class="s">by</span><span class="nv"> </span><span class="s">Lightning</span><span class="nv"> </span><span class="s">Labs&quot;</span>
+<span class="l l-Scalar l-Scalar-Plain">long</span><span class="p p-Indicator">:</span> <span class="s">&quot;LND</span><span class="nv"> </span><span class="s">fully</span><span class="nv"> </span><span class="s">conforms</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">Lightning</span><span class="nv"> </span><span class="s">Network</span><span class="nv"> </span><span class="s">specification</span><span class="nv"> </span><span class="s">(BOLTs).</span><span class="nv"> </span><span class="s">BOLT</span><span class="nv"> </span><span class="s">stands</span><span class="nv"> </span><span class="s">for:</span><span class="nv"> </span><span class="s">Basis</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">Lightning</span><span class="nv"> </span><span class="s">Technology.</span><span class="nv"> </span><span class="s">In</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">current</span><span class="nv"> </span><span class="s">state</span><span class="nv"> </span><span class="s">lnd</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">capable</span><span class="nv"> </span><span class="s">of:</span><span class="nv"> </span><span class="s">creating</span><span class="nv"> </span><span class="s">channels,</span><span class="nv"> </span><span class="s">closing</span><span class="nv"> </span><span class="s">channels,</span><span class="nv"> </span><span class="s">managing</span><span class="nv"> </span><span class="s">all</span><span class="nv"> </span><span class="s">channel</span><span class="nv"> </span><span class="s">states</span><span class="nv"> </span><span class="s">(including</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">exceptional</span><span class="nv"> </span><span class="s">ones!),</span><span class="nv"> </span><span class="s">maintaining</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">fully</span><span class="nv"> </span><span class="s">authenticated+validated</span><span class="nv"> </span><span class="s">channel</span><span class="nv"> </span><span class="s">graph,</span><span class="nv"> </span><span class="s">performing</span><span class="nv"> </span><span class="s">path</span><span class="nv"> </span><span class="s">finding</span><span class="nv"> </span><span class="s">within</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">network,</span><span class="nv"> </span><span class="s">passively</span><span class="nv"> </span><span class="s">forwarding</span><span class="nv"> </span><span class="s">incoming</span><span class="nv"> </span><span class="s">payments,</span><span class="nv"> </span><span class="s">sending</span><span class="nv"> </span><span class="s">outgoing</span><span class="nv"> </span><span class="s">onion-encrypted</span><span class="nv"> </span><span class="s">payments</span><span class="nv"> </span><span class="s">through</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">network,</span><span class="nv"> </span><span class="s">updating</span><span class="nv"> </span><span class="s">advertised</span><span class="nv"> </span><span class="s">fee</span><span class="nv"> </span><span class="s">schedules,</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">automatic</span><span class="nv"> </span><span class="s">channel</span><span class="nv"> </span><span class="s">management</span><span class="nv"> </span><span class="s">(autopilot).&quot;</span>
+<span class="l l-Scalar l-Scalar-Plain">release-notes</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/lightningnetwork/lnd/releases/tag/v0.11.1-beta</span>
+<span class="l l-Scalar l-Scalar-Plain">ports</span><span class="p p-Indicator">:</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">internal</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">8080</span>
+    <span class="l l-Scalar l-Scalar-Plain">tor</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">8080</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">internal</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">9735</span>
+    <span class="l l-Scalar l-Scalar-Plain">tor</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">9735</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">internal</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">9911</span>
+    <span class="l l-Scalar l-Scalar-Plain">tor</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">9911</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">internal</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">10009</span>
+    <span class="l l-Scalar l-Scalar-Plain">tor</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">10009</span>
+<span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span>
+<span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">tar</span>
+<span class="l l-Scalar l-Scalar-Plain">mount</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">/root/.lnd</span>
+<span class="l l-Scalar l-Scalar-Plain">public</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">public</span>
+<span class="l l-Scalar l-Scalar-Plain">has-instructions</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="l l-Scalar l-Scalar-Plain">os-version-required</span><span class="p p-Indicator">:</span> <span class="s">&quot;&gt;=0.2.8&quot;</span>
+<span class="l l-Scalar l-Scalar-Plain">os-version-recommended</span><span class="p p-Indicator">:</span> <span class="s">&quot;&gt;=0.2.8&quot;</span>
+<span class="l l-Scalar l-Scalar-Plain">install-alert</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">|</span>
+<span class="l l-Scalar l-Scalar-Plain">READ CAREFULLY! LND and the Lightning Network are considered beta software. Please use with caution and do not risk more money than you are willing to lose. We encourage frequent backups. If for any reason, you need to restore LND from a backup, your on-chain wallet will be restored, but all your channels will be closed and their funds returned to your on-chain wallet, minus fees. It may also take some time for this process to occur.</span>
+<span class="l l-Scalar l-Scalar-Plain">uninstall-alert</span><span class="p p-Indicator">:</span> <span class="s">&quot;READ</span><span class="nv"> </span><span class="s">CAREFULLY!</span><span class="nv"> </span><span class="s">Uninstalling</span><span class="nv"> </span><span class="s">LND</span><span class="nv"> </span><span class="s">will</span><span class="nv"> </span><span class="s">result</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">permanent</span><span class="nv"> </span><span class="s">loss</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">data,</span><span class="nv"> </span><span class="s">including</span><span class="nv"> </span><span class="s">its</span><span class="nv"> </span><span class="s">private</span><span class="nv"> </span><span class="s">keys</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">its</span><span class="nv"> </span><span class="s">on-chain</span><span class="nv"> </span><span class="s">wallet</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">all</span><span class="nv"> </span><span class="s">channel</span><span class="nv"> </span><span class="s">states.</span><span class="nv"> </span><span class="s">Please</span><span class="nv"> </span><span class="s">make</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">backup</span><span class="nv"> </span><span class="s">if</span><span class="nv"> </span><span class="s">you</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">any</span><span class="nv"> </span><span class="s">funds</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">your</span><span class="nv"> </span><span class="s">on-chain</span><span class="nv"> </span><span class="s">wallet</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">any</span><span class="nv"> </span><span class="s">channels.</span><span class="nv"> </span><span class="s">Recovering</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">backup</span><span class="nv"> </span><span class="s">will</span><span class="nv"> </span><span class="s">restore</span><span class="nv"> </span><span class="s">your</span><span class="nv"> </span><span class="s">on-chain</span><span class="nv"> </span><span class="s">wallet,</span><span class="nv"> </span><span class="s">but</span><span class="nv"> </span><span class="s">due</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">architecture</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">Lightning</span><span class="nv"> </span><span class="s">Network,</span><span class="nv"> </span><span class="s">your</span><span class="nv"> </span><span class="s">channels</span><span class="nv"> </span><span class="s">cannot</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">recovered.</span><span class="nv"> </span><span class="s">All</span><span class="nv"> </span><span class="s">your</span><span class="nv"> </span><span class="s">channels</span><span class="nv"> </span><span class="s">will</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">closed</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">their</span><span class="nv"> </span><span class="s">funds</span><span class="nv"> </span><span class="s">returned</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">your</span><span class="nv"> </span><span class="s">on-chain</span><span class="nv"> </span><span class="s">wallet,</span><span class="nv"> </span><span class="s">minus</span><span class="nv"> </span><span class="s">fees.</span><span class="nv"> </span><span class="s">\n&quot;</span>
+<span class="l l-Scalar l-Scalar-Plain">restore-alert</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">|</span>
+<span class="l l-Scalar l-Scalar-Plain">Restoring LND will overwrite its current data, including its on-chain wallet and channels. Any channels opened since the last backup will be forgotten and may linger indefinitely, and channels contained in the backup will be closed and their funds returned to your on-chain wallet, minus fees.</span>
+<span class="l l-Scalar l-Scalar-Plain">assets</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[]</span>
+<span class="l l-Scalar l-Scalar-Plain">hidden-service-version</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">v3</span>
+<span class="l l-Scalar l-Scalar-Plain">dependencies</span><span class="p p-Indicator">:</span>
+<span class="l l-Scalar l-Scalar-Plain">btc-rpc-proxy</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">version</span><span class="p p-Indicator">:</span> <span class="s">&quot;^0.2.4&quot;</span>
+    <span class="l l-Scalar l-Scalar-Plain">optional</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Can alternatively configure an external bitcoin node.</span>
+    <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Used to fetch validated blocks.</span>
+    <span class="l l-Scalar l-Scalar-Plain">config</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">rule</span><span class="p p-Indicator">:</span> <span class="s">&#39;</span><span class="se">&#39;&#39;</span><span class="s">users.*.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="s">&#39;Must</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">an</span><span class="nv"> </span><span class="s">RPC</span><span class="nv"> </span><span class="s">user</span><span class="nv"> </span><span class="s">named</span><span class="nv"> </span><span class="s">&quot;lnd&quot;&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">suggestions</span><span class="p p-Indicator">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PUSH</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">to</span><span class="p p-Indicator">:</span> <span class="s">&quot;users&quot;</span>
+            <span class="l l-Scalar l-Scalar-Plain">value</span><span class="p p-Indicator">:</span>
+                <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">lnd</span>
+                <span class="l l-Scalar l-Scalar-Plain">allowed-calls</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[]</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">SET</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">var</span><span class="p p-Indicator">:</span> <span class="s">&#39;users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].password&#39;</span>
+            <span class="l l-Scalar l-Scalar-Plain">to-entropy</span><span class="p p-Indicator">:</span>
+                <span class="l l-Scalar l-Scalar-Plain">charset</span><span class="p p-Indicator">:</span> <span class="s">&quot;a-z,A-Z,0-9&quot;</span>
+                <span class="l l-Scalar l-Scalar-Plain">len</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">22</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">rule</span><span class="p p-Indicator">:</span> <span class="s">&#39;</span><span class="se">&#39;&#39;</span><span class="s">users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].allowed-calls.*</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;getinfo&quot;&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="s">&#39;RPC</span><span class="nv"> </span><span class="s">user</span><span class="nv"> </span><span class="s">&quot;lnd&quot;</span><span class="nv"> </span><span class="s">must</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">&quot;getinfo&quot;</span><span class="nv"> </span><span class="s">enabled&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">suggestions</span><span class="p p-Indicator">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PUSH</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">to</span><span class="p p-Indicator">:</span> <span class="s">&#39;users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].allowed-calls&#39;</span>
+            <span class="l l-Scalar l-Scalar-Plain">value</span><span class="p p-Indicator">:</span> <span class="s">&quot;getinfo&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">rule</span><span class="p p-Indicator">:</span> <span class="s">&#39;</span><span class="se">&#39;&#39;</span><span class="s">users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].allowed-calls.*</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;getbestblockhash&quot;&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="s">&#39;RPC</span><span class="nv"> </span><span class="s">user</span><span class="nv"> </span><span class="s">&quot;lnd&quot;</span><span class="nv"> </span><span class="s">must</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">&quot;getbestblockhash&quot;</span><span class="nv"> </span><span class="s">enabled&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">suggestions</span><span class="p p-Indicator">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PUSH</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">to</span><span class="p p-Indicator">:</span> <span class="s">&#39;users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].allowed-calls&#39;</span>
+            <span class="l l-Scalar l-Scalar-Plain">value</span><span class="p p-Indicator">:</span> <span class="s">&quot;getbestblockhash&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">rule</span><span class="p p-Indicator">:</span> <span class="s">&#39;</span><span class="se">&#39;&#39;</span><span class="s">users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].allowed-calls.*</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;gettxout&quot;&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="s">&#39;RPC</span><span class="nv"> </span><span class="s">user</span><span class="nv"> </span><span class="s">&quot;lnd&quot;</span><span class="nv"> </span><span class="s">must</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">&quot;gettxout&quot;</span><span class="nv"> </span><span class="s">enabled&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">suggestions</span><span class="p p-Indicator">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PUSH</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">to</span><span class="p p-Indicator">:</span> <span class="s">&#39;users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].allowed-calls&#39;</span>
+            <span class="l l-Scalar l-Scalar-Plain">value</span><span class="p p-Indicator">:</span> <span class="s">&quot;gettxout&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">rule</span><span class="p p-Indicator">:</span> <span class="s">&#39;</span><span class="se">&#39;&#39;</span><span class="s">users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].allowed-calls.*</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;getblockchaininfo&quot;&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="s">&#39;RPC</span><span class="nv"> </span><span class="s">user</span><span class="nv"> </span><span class="s">&quot;lnd&quot;</span><span class="nv"> </span><span class="s">must</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">&quot;getblockchaininfo&quot;</span><span class="nv"> </span><span class="s">enabled&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">suggestions</span><span class="p p-Indicator">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PUSH</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">to</span><span class="p p-Indicator">:</span> <span class="s">&#39;users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].allowed-calls&#39;</span>
+            <span class="l l-Scalar l-Scalar-Plain">value</span><span class="p p-Indicator">:</span> <span class="s">&quot;getblockchaininfo&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">rule</span><span class="p p-Indicator">:</span> <span class="s">&#39;</span><span class="se">&#39;&#39;</span><span class="s">users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].allowed-calls.*</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;sendrawtransaction&quot;&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="s">&#39;RPC</span><span class="nv"> </span><span class="s">user</span><span class="nv"> </span><span class="s">&quot;lnd&quot;</span><span class="nv"> </span><span class="s">must</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">&quot;sendrawtransaction&quot;</span><span class="nv"> </span><span class="s">enabled&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">suggestions</span><span class="p p-Indicator">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PUSH</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">to</span><span class="p p-Indicator">:</span> <span class="s">&#39;users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].allowed-calls&#39;</span>
+            <span class="l l-Scalar l-Scalar-Plain">value</span><span class="p p-Indicator">:</span> <span class="s">&quot;sendrawtransaction&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">rule</span><span class="p p-Indicator">:</span> <span class="s">&#39;</span><span class="se">&#39;&#39;</span><span class="s">users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].allowed-calls.*</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;getblockhash&quot;&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="s">&#39;RPC</span><span class="nv"> </span><span class="s">user</span><span class="nv"> </span><span class="s">&quot;lnd&quot;</span><span class="nv"> </span><span class="s">must</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">&quot;getblockhash&quot;</span><span class="nv"> </span><span class="s">enabled&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">suggestions</span><span class="p p-Indicator">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PUSH</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">to</span><span class="p p-Indicator">:</span> <span class="s">&#39;users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].allowed-calls&#39;</span>
+            <span class="l l-Scalar l-Scalar-Plain">value</span><span class="p p-Indicator">:</span> <span class="s">&quot;getblockhash&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">rule</span><span class="p p-Indicator">:</span> <span class="s">&#39;</span><span class="se">&#39;&#39;</span><span class="s">users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].allowed-calls.*</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;getblock&quot;&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="s">&#39;RPC</span><span class="nv"> </span><span class="s">user</span><span class="nv"> </span><span class="s">&quot;lnd&quot;</span><span class="nv"> </span><span class="s">must</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">&quot;getblock&quot;</span><span class="nv"> </span><span class="s">enabled&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">suggestions</span><span class="p p-Indicator">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PUSH</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">to</span><span class="p p-Indicator">:</span> <span class="s">&#39;users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].allowed-calls&#39;</span>
+            <span class="l l-Scalar l-Scalar-Plain">value</span><span class="p p-Indicator">:</span> <span class="s">&quot;getblock&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">rule</span><span class="p p-Indicator">:</span> <span class="s">&#39;</span><span class="se">&#39;&#39;</span><span class="s">users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].allowed-calls.*</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;getblockheader&quot;&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="s">&#39;RPC</span><span class="nv"> </span><span class="s">user</span><span class="nv"> </span><span class="s">&quot;lnd&quot;</span><span class="nv"> </span><span class="s">must</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">&quot;getblockheader&quot;</span><span class="nv"> </span><span class="s">enabled&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">suggestions</span><span class="p p-Indicator">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PUSH</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">to</span><span class="p p-Indicator">:</span> <span class="s">&#39;users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].allowed-calls&#39;</span>
+            <span class="l l-Scalar l-Scalar-Plain">value</span><span class="p p-Indicator">:</span> <span class="s">&quot;getblockheader&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">rule</span><span class="p p-Indicator">:</span> <span class="s">&#39;</span><span class="se">&#39;&#39;</span><span class="s">users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].allowed-calls.*</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;estimatesmartfee&quot;&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="s">&#39;RPC</span><span class="nv"> </span><span class="s">user</span><span class="nv"> </span><span class="s">&quot;lnd&quot;</span><span class="nv"> </span><span class="s">must</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">&quot;estimatesmartfee&quot;</span><span class="nv"> </span><span class="s">enabled&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">suggestions</span><span class="p p-Indicator">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PUSH</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">to</span><span class="p p-Indicator">:</span> <span class="s">&#39;users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].allowed-calls&#39;</span>
+            <span class="l l-Scalar l-Scalar-Plain">value</span><span class="p p-Indicator">:</span> <span class="s">&quot;estimatesmartfee&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">rule</span><span class="p p-Indicator">:</span> <span class="s">&#39;</span><span class="se">&#39;&#39;</span><span class="s">users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].allowed-calls.*</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;getnetworkinfo&quot;&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="s">&#39;RPC</span><span class="nv"> </span><span class="s">user</span><span class="nv"> </span><span class="s">&quot;lnd&quot;</span><span class="nv"> </span><span class="s">must</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">&quot;getnetworkinfo&quot;</span><span class="nv"> </span><span class="s">enabled&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">suggestions</span><span class="p p-Indicator">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PUSH</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">to</span><span class="p p-Indicator">:</span> <span class="s">&#39;users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].allowed-calls&#39;</span>
+            <span class="l l-Scalar l-Scalar-Plain">value</span><span class="p p-Indicator">:</span> <span class="s">&quot;getnetworkinfo&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">rule</span><span class="p p-Indicator">:</span> <span class="s">&#39;users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].fetch-blocks?&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="s">&#39;RPC</span><span class="nv"> </span><span class="s">user</span><span class="nv"> </span><span class="s">&quot;lnd&quot;</span><span class="nv"> </span><span class="s">must</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">&quot;Fetch</span><span class="nv"> </span><span class="s">Blocks&quot;</span><span class="nv"> </span><span class="s">enabled&#39;</span>
+        <span class="l l-Scalar l-Scalar-Plain">suggestions</span><span class="p p-Indicator">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">SET</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">var</span><span class="p p-Indicator">:</span> <span class="s">&#39;users.[first(item</span><span class="nv"> </span><span class="s">=&gt;</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="s">item.name</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">&quot;lnd&quot;)].fetch-blocks&#39;</span>
+            <span class="l l-Scalar l-Scalar-Plain">to-value</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="l l-Scalar l-Scalar-Plain">bitcoind</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">version</span><span class="p p-Indicator">:</span> <span class="s">&quot;^0.21.0&quot;</span>
+    <span class="l l-Scalar l-Scalar-Plain">optional</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Can alternatively configure an external bitcoin node.</span>
+    <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Used to subscribe to new block events.</span>
+    <span class="l l-Scalar l-Scalar-Plain">config</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">rule</span><span class="p p-Indicator">:</span> <span class="s">&quot;zmq-enabled?&quot;</span>
+        <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="s">&quot;Must</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">an</span><span class="nv"> </span><span class="s">ZeroMQ</span><span class="nv"> </span><span class="s">enabled&quot;</span>
+        <span class="l l-Scalar l-Scalar-Plain">suggestions</span><span class="p p-Indicator">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">SET</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">var</span><span class="p p-Indicator">:</span> <span class="s">&quot;zmq-enabled&quot;</span>
+            <span class="l l-Scalar l-Scalar-Plain">to-value</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="cups">
+<h4>Cups<a class="headerlink" href="#cups" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">compat</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">v0</span>
+<span class="l l-Scalar l-Scalar-Plain">id</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">cups</span>
+<span class="l l-Scalar l-Scalar-Plain">version</span><span class="p p-Indicator">:</span> <span class="s">&quot;0.3.6&quot;</span>
+<span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span> <span class="s">&quot;Cups</span><span class="nv"> </span><span class="s">Messenger&quot;</span>
+<span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span>
+<span class="l l-Scalar l-Scalar-Plain">short</span><span class="p p-Indicator">:</span> <span class="s">&quot;Real</span><span class="nv"> </span><span class="s">private</span><span class="nv"> </span><span class="s">messaging&quot;</span>
+<span class="l l-Scalar l-Scalar-Plain">long</span><span class="p p-Indicator">:</span> <span class="s">&quot;Cups</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">private,</span><span class="nv"> </span><span class="s">self-hosted,</span><span class="nv"> </span><span class="s">peer-to-peer,</span><span class="nv"> </span><span class="s">Tor-based,</span><span class="nv"> </span><span class="s">instant</span><span class="nv"> </span><span class="s">messenger.</span><span class="nv"> </span><span class="s">Unlike</span><span class="nv"> </span><span class="s">other</span><span class="nv"> </span><span class="s">end-to-end</span><span class="nv"> </span><span class="s">encrypted</span><span class="nv"> </span><span class="s">messengers,</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">Cups</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">Embassy</span><span class="nv"> </span><span class="s">there</span><span class="nv"> </span><span class="s">are</span><span class="nv"> </span><span class="s">no</span><span class="nv"> </span><span class="s">trusted</span><span class="nv"> </span><span class="s">third</span><span class="nv"> </span><span class="s">parties.&quot;</span>
+<span class="l l-Scalar l-Scalar-Plain">release-notes</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">|</span>
+<span class="l l-Scalar l-Scalar-Plain">Features</span>
+    <span class="l l-Scalar l-Scalar-Plain">- Adds instructions defined by EmbassyOS 0.2.4 instructions feature</span>
+<span class="l l-Scalar l-Scalar-Plain">ports</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">internal</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">59001</span>
+        <span class="l l-Scalar l-Scalar-Plain">tor</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">59001</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">internal</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">80</span>
+        <span class="l l-Scalar l-Scalar-Plain">tor</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">80</span>
+<span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span>
+<span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">tar</span>
+<span class="l l-Scalar l-Scalar-Plain">mount</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">/root</span>
+<span class="l l-Scalar l-Scalar-Plain">has-instructions</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="l l-Scalar l-Scalar-Plain">os-version-required</span><span class="p p-Indicator">:</span> <span class="s">&quot;&gt;=0.2.4&quot;</span>
+<span class="l l-Scalar l-Scalar-Plain">os-version-recommended</span><span class="p p-Indicator">:</span> <span class="s">&quot;&gt;=0.2.4&quot;</span>
+<span class="l l-Scalar l-Scalar-Plain">assets</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">src</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">httpd.conf</span>
+        <span class="l l-Scalar l-Scalar-Plain">dst</span><span class="p p-Indicator">:</span> <span class="s">&quot;.&quot;</span>
+        <span class="l l-Scalar l-Scalar-Plain">overwrite</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">src</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">www</span>
+        <span class="l l-Scalar l-Scalar-Plain">dst</span><span class="p p-Indicator">:</span> <span class="s">&quot;.&quot;</span>
+        <span class="l l-Scalar l-Scalar-Plain">overwrite</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="l l-Scalar l-Scalar-Plain">hidden-service-version</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">v3</span>
+</pre></div>
+</div>
+<p><span class="raw-html"><br /></span></p>
+</div>
+</div>
+</div>
+</div>
+  <div class="content-navigation">
+  <div class="navigation navigation--prev">
+    <a class="navigation__link" href="../wrapper/">
+      <button class="navigation__button">
+        <i class="scylla-icon scylla-icon--chevron-left"></i>
+      </button>
+      <div class="navigation__title">
+        <span class="colored">PREVIOUS</span> <br />Service Wrapper
+      </div>
+    </a>
+  </div>
+  <div class="navigation navigation--next">
+    <a class="navigation__link" href="../docker/">
+      <div class="navigation__title">
+        <span class="colored">NEXT</span> <br />Service Dockerfile
+      </div>
+      <button class="navigation__button">
+        <i class="scylla-icon scylla-icon--chevron-right"></i>
+      </button>
+    </a>
+  </div>
+</div> 
+      </div>
+      <div
+        class="sidebar-left  large-order-1"
+      > <div id="side-nav" class="side-nav custom-scroll-bar" data-closable data-toggler=".show">
+  <button class="collapsible-button">
+    <i class="scylla-icon scylla-icon--chevron-left"></i>
+  </button>
+  <div class="side-nav-content">
+    <div class="side-nav__search">
+      <div class="search-box">
+        <ci-search></ci-search>
+      </div>
+    </div>
+    <div class="side-nav__versions">
+      
+    </div>
+    <div class="side-nav__content">
+      <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/introduction/">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/purchasing/">Purchasing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/diy/">DIY Guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../user-manual/initial-setup/">Initial Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../user-manual/connecting/">Connecting</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../user-manual/general/">General</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/embassy-config/">Config Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/updating/">Updating EmbassyOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/wifi/">Setting up WiFi</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../user-manual/general/developer-options/">Developer Options</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../user-manual/general/developer-options/ssh-setup/">SSH Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../user-manual/general/developer-options/alt-marketplace/">Alternative Marketplace</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/power/">Power</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/notifications/">Notifications</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../user-manual/general/lan-setup/">LAN Setup</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../user-manual/general/lan-setup/desktop/">Desktop</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../user-manual/general/lan-setup/computer-setup/">Computer Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../user-manual/general/lan-setup/browser-setup/">Browser Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../user-manual/general/lan-setup/mobile/">Mobile</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/general/forgot-password/">Forgot Password</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../user-manual/managing-services/">Managing Services</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/installing/">Install / Uninstall</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/instructions/">Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/backups/">Backups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/service-config/">Service Config</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/properties/">Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/logs/">Viewing Logs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user-manual/managing-services/managing-deps/">Managing Dependencies</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Misc Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc-guides/available-services/">Available Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc-guides/bitcoin-cli/">Using Bitcoin-Cli</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../misc-guides/tor-os/">Running Tor</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label for="toctree-checkbox-6"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-os/mac/">MacOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-os/windows/">Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-os/linux/">Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-os/android/">Android</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-os/ios/">iOS</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../misc-guides/tor-firefox/">Configuring Firefox for Tor</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc-guides/tor-firefox/desktop/">Desktop</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../misc-guides/tor-firefox/mobile/">Mobile</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label for="toctree-checkbox-8"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc-guides/tor-firefox/android/">Android</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc-guides/tor-firefox/ios/">iOS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Contributing</span></p>
+<ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../">Service Packaging Guide</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label for="toctree-checkbox-9"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview/">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wrapper/">Wrapper</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Manifest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../docker/">Docker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../makefile/">Makefile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../config/">Config</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../properties/">Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../instructions/">Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../backups/">Backups</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../embassyos/">EmbassyOS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Support</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../support/FAQ/">Frequently Asked Questions</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label for="toctree-checkbox-10"><i class="scylla-icon scylla-icon--expand"></i></label><div class="break"></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../support/FAQ/general-faq/">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../support/FAQ/embassy-faq/">Embassy (Device, OS, and DIY)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../support/FAQ/usage-faq/">Basic Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../support/FAQ/setup-faq/">Setup and Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../support/FAQ/services-faq/">Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../support/FAQ/bitcoin-faq/">Bitcoin and Lightning Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../support/FAQ/030-faq/">EmbassyOS Version 0.3.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../support/FAQ/dev-faq/">Contributing &amp; Development</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../support/concepts/">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../support/contact/">Contact</a></li>
+</ul>
+
+    </div>
+  </div>
+</div>
+      </div>
+      
+      <div class="sidebar-right large-order-3">
+         <div class="secondary-side-nav custom-scroll-bar">
+  <div class="secondary-side-nav__content">
+    <p class="topic-title">On this page</p>
+    <ul>
+<li><a class="reference internal" href="#">Service Manifest</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#formatting">Formatting</a></li>
+<li><a class="reference internal" href="#type-definitions">Type definitions</a></li>
+<li><a class="reference internal" href="#dependencies">Dependencies</a><ul>
+<li><a class="reference internal" href="#id3">Type definitions</a></li>
+<li><a class="reference internal" href="#examples">Examples</a><ul>
+<li><a class="reference internal" href="#lnd">LND</a></li>
+<li><a class="reference internal" href="#cups">Cups</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div> 
+      </div>
+    </section>
+
+    <footer class="footer">
+  <div class="footer-group">
+    <div class="footer-top">
+      <a class="footer-logo" href="https://start9.com"
+        ><img
+          src="../../../_static/img/icon-transparent.png"
+          alt="Logo"
+      /></a>
+      <div class="footer-links">
+        <a class="footer-links__link" href="https://docs.start9.com/">Docs</a>
+        <a
+          class="footer-links__link"
+          href="https://start9.com/#community"
+          >Contact Us</a
+        >
+        <a class="footer-links__link" href="https://start9.com/"
+          >About Us</a
+        >
+      </div>
+      <div class="footer-actions">
+        <a
+          class="footer-actions__link"
+          href="https://twitter.com/start9labs"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="Twitter feed"
+            data-position="bottom"
+          >
+            <img
+              src="../../../_static/img/icons/twitter.png"
+              alt="Twitter Icon"
+            />
+          </span>
+        </a>
+        <a
+          class="footer-actions__link"
+          href="https://t.me/start9_labs"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="User Telegram channel"
+            data-position="bottom"
+          >
+            <img
+              src="../../../_static/img/icons/telegram.png"
+              alt="Telegram Icon"
+          /></span>
+        </a>
+        <a
+          class="footer-actions__link"
+          href="https://matrix.to/#/!lMnRwPWnyQvOfAoEnD:matrix.start9labs.com"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="User Matrix channel"
+            data-position="bottom"
+          >
+            <img
+              src="../../../_static/img/icons/matrix.svg"
+              alt="Matrix Icon"
+          /></span>
+        </a>
+        </a>
+        <a
+          class="footer-actions__link"
+          href="https://medium.com/@start9labs"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="Medium feed"
+            data-position="bottom"
+          >
+            <img
+              src="../../../_static/img/icons/medium.png"
+              alt="Medium Icon"
+          /></span>
+        </a>
+        <a
+          class="footer-actions__link"
+          href="https://github.com/Start9Labs/"
+          target="_blank"
+          ><span
+            data-tooltip
+            tabindex="1"
+            title="GitHub page"
+            data-position="bottom"
+          >
+            <img
+              src="../../../_static/img/icons/github.png"
+              alt="GitHub Icon"
+          /></span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom__copyright"> &#169; 2021,  Start9 Labs, Inc. All rights reserved.
+      </div>
+      <div class="footer-bottom__last-updated">
+        Last updated on 13 Dec 2021.
+      </div>
+      <div class="footer-bottom__version">
+        Powered by
+        <a href="http://sphinx-doc.org/">Sphinx 2.4.5</a> &amp;
+        <a href="https://sphinx-theme.scylladb.com/"
+          >ScyllaDB Theme 1.0.6</a
+        >
+      </div>
+      <!-- <p class="footer-bottom__canary">We have never received a secret government request to hand over user information.</p> -->
+    </div>
+  </div>
+</footer>
+
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T8P2JP"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+  </body>
+</html>
