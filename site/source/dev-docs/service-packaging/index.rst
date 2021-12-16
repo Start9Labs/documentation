@@ -16,12 +16,12 @@ To start, you will need to acquire EmbassyOS for testing the packaged service. T
 - following the :ref:`DIY <diy>` guide
 - :ref:`purchasing <purchasing>` the ready to run personal server
 
-While you are waiting to receive or assemble a device, you can begin the process of packaging a project. The sections below outline these steps in detail.
+While you are waiting to receive or assemble a device, you can begin the process of packaging a project. The next sections outline these steps in detail.
 
 Happy building!
 
 .. toctree::
-  :maxdepth: 2
+  :hidden:
 
   overview
   wrapper

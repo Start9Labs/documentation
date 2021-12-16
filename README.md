@@ -27,6 +27,27 @@ The [extension](https://github.com/Holzhaus/sphinx-multiversion) used to build d
 
 Install [pyenv](https://github.com/pyenv/pyenv)
 
+
+## Project Setup
+
+1. Clone this repository and enter the project folder:
+
+```
+git clone https://github.com/Start9Labs/documentation.git && cd documentation
+```
+
+1. Install theme submodule:
+
+```
+git submodule update --init
+```
+
+1. Navigate to the `docs` folder and start the project:
+
+```
+cd docs
+make clean && make preview
+```
 ## Development
 
 When editing these files, begin a livereload environment by running `make preview` while in the `./site/` directory.
