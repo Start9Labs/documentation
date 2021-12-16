@@ -9,6 +9,11 @@ Lightning
 Ride the Lightning
 ------------------
 
+.. _spark:
+
+Spark
+-----
+
 .. _thunderhub:
 
 Thunderhub
