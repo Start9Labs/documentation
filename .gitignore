@@ -3,3 +3,5 @@
 build/
 build-send.sh
 utils/deploy.sh
+docs/_build
+.env
