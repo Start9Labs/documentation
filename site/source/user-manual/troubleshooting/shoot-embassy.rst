@@ -1,7 +1,7 @@
 .. _shoot-embassy:
 
 =======================
-Troubleshooting Embassy
+Troubleshooting Embassy - ***ADD LIST OF SOUNDS***
 =======================
 
 Hardware
@@ -11,7 +11,7 @@ Embassy is making noises
 ........................
 The plug and play Embassy sold by Start9 has no moving parts, so the only noises it should ever make would come from its internal speaker.  The following is a list of all possible sounds:
 
-#. 
+#.
 
 Embassy will not boot
 .....................

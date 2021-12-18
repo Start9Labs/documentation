@@ -1,8 +1,11 @@
+.. _dev-docs:
+
+==============
 Developer Docs
 ==============
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :hidden:
 
    dev-faq/index
@@ -14,6 +17,6 @@ Developer Docs
   :id: "dev-docs"
   :class: my-panel
 
-  * :doc:`Developer FAQ <dev-faq/index>` - Frequently asked questions for developers.
-  * :doc:`Service Packaging <service-packaging/index>` - Guides on how to package a service for EmbassyOS.
-  * :doc:`Package Example <packaging-example>` - An example based guide on how to package a service.
+  * :doc:`Developer FAQ <dev-faq/index>` - Frequently asked questions by developers in regard to EmbassyOS and packaging services.
+  * :doc:`Service Packaging <service-packaging/index>` - The full specification for packaging a service.
+  * :doc:`Package Example <packaging-example>` - A walkthrough of how to package a service using an example.

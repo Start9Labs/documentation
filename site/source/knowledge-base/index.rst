@@ -1,3 +1,6 @@
+.. _knowledge-base:
+
+==============
 Knowledge Base
 ==============
 
@@ -13,5 +16,5 @@ Knowledge Base
   :id: "knowledge-base"
   :class: my-panel
 
-  * :doc:`Concepts <concepts/index>` - An overview of concepts that will aid in understanding the Start9 Embassy.
-  * :doc:`FAQ <faq/index>` - The complete guide of frequently asked questions by our users.
+  * :doc:`Concepts <concepts/index>` - An overview of the ideas and technologies surrounding Start9 Labs and Embassy.
+  * :doc:`FAQ <faq/index>` - Answers to Frequently Asked Questions from Embassy users.

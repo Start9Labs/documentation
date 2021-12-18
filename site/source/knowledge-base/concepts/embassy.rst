@@ -8,7 +8,9 @@ Embassy and EmbassyOS
 
 Embassy
 -------
-Embassy is the plug 'n' play hardware device sold by Start9.  The current iteration is a Raspberry Pi with an internal speaker in a custom, passively cooled case.  The Embassy comes pre-loaded with EmbassyOS.
+Embassy is the plug 'n' play hardware device sold by Start9.  The current iteration is a Raspberry Pi with an internal speaker in a custom, passively cooled case.  The Embassy comes pre-loaded with EmbassyOS.  Check out the video below to get a brief overview:
+
+.. youtube:: GfMvXJxYamw
 
 .. _embassy-os:
 

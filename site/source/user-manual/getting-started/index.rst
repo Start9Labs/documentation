@@ -1,3 +1,5 @@
+.. _getting-started:
+
 ===============
 Getting Started
 ===============
@@ -10,4 +12,5 @@ Take your first steps!
   introduction
   purchasing
   initial-setup
+  recover
   device-guides/index

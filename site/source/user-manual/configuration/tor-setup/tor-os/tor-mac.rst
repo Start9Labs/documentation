@@ -1,52 +1,13 @@
 .. _tor-mac:
 
 ===
-Mac - ***SIMPLIFY M1 INSTRUCTION***
+Mac
 ===
 
-For macOS running on ARM chips (ie. newer macs):
-================================================
-
 Install Homebrew
 ----------------
 
-.. warning:: macOS Homebrew running natively on M1/Apple Silicon/ARM has partial functionality. Therefore, some additional steps are needed to setup Homebrew.
-
-#. Open a command line editor (Terminal), and run the following commands:
-
-    .. code-block::
-
-        softwareupdate --install-rosetta
-        arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
-Install Tor
------------
-
-.. warning:: If you have the Tor Browser open, close it and quit the application.
-
-#. In the command line, install Tor:
-
-    .. code-block::
-
-        arch -x86_64 brew install tor
-
-#. Then start Tor:
-
-    .. code-block::
-
-        arch -x86_64 brew services start tor
-
-This will start Tor and ensure that it is always running, even after a restart.  See the `Tor Project <https://2019.www.torproject.org/docs/tor-doc-osx.html.en>`_ for more details.
-
-For macOS Big Sur/Catalina:
-===========================
-
-Install Homebrew
-----------------
-
-1. If you do not have Homebrew installed, follow the installation instructions `here <https://brew.sh/>`_.
-
-    TLDR: Open the command line editor (Terminal) and paste the following line:
+1. If you do not have Homebrew installed, follow the installation instructions `here <https://brew.sh/>`_.  TLDR: Open the Terminal and paste the following line:
 
     .. code-block::
 

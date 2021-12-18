@@ -1,21 +1,19 @@
 =======================
-Alternative Marketplace - ***NEEDS UPDATED***
+Alternative Marketplace
 =======================
 
-EmbassyOS supports accessing alternative marketplaces by configuring a system file. Start9 is not responsible for issues encountered by downloading services from alternative marketplaces.
+.. caution:: EmbassyOS supports accessing alternative marketplaces. Start9 is not responsible for issues encountered when downloading services from alternative marketplaces, and cannot provide support for Services that are not from our offical marketplace.  Here be dragons!!
 
-After SSH-ing into the Embassy, run the following commands::
+After SSH-ing into the Embassy, run the following command, replacing ``<url>`` with your desired marketplace URL:
 
-    sudo systemctl stop agent
-    sudo sh -c "echo '<alternative_marketplace_url>' > /root/agent/alt_registry_url.txt"
-    sudo systemctl start agent
+.. code-block:: bash
 
-The Embassy is now able to connect to the provided alternative registry.
+    embassy-cli server set-marketplace <url>
 
-----
+or to only change the marketplace for fetching packages, but not os updates:
 
-To revert this change, simply delete the file::
+.. code-block:: bash
 
-    sudo systemctl stop agent
-    sudo rm /root/agent/alt_registry_url.txt
-    sudo systemctl start agent
+    embassy-cli package set-marketplace <url>
+
+.. note:: Make sure you have the URL **EXACTLY CORRECT.**  If you do not, your Embassy may crash.  In this case, just reboot the device and try again.

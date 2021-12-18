@@ -14,7 +14,7 @@ The only way to use Tor on iOS is with apps that come with Tor built-in, such as
 
 Matrix
 ------
-The lack of Tor support on iOS means that Element/Matrix cannot be run on an iPhone in conjunction with your Embassy Matrix server, as that currently requires a Tor connection.  This will be fixed if `Element <https://github.com/vector-im/element-ios>` builds Tor into their app.
+The lack of Tor support on iOS means that Element/Matrix cannot be run on an iPhone in conjunction with your Embassy Matrix server, as that currently requires a Tor connection.  This will be fixed when `Element <https://github.com/vector-im/element-ios>`_ builds Tor into their app.  An issue specifically in regard to this can be found `here <https://github.com/vector-im/element-ios/issues/1085>`_.
 
 Workarounds
 ...........

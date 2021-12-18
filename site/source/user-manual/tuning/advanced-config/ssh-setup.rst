@@ -9,12 +9,16 @@ SSH Setup
 Connecting via CLI
 ------------------
 
-#. Navigate to *Developer Options > SSH Keys*
-#. Click the ``+`` button in the lower right hand corner.
-#. Paste in your SSH key.
-#. You can now access your Embassy from the command line using::
+#. Navigate to the ``Embassy`` tab, then under ``Settings``, click ``SSH``
+#. Click the ``+ Add New Key`` button
+#. Paste in your SSH key and hit ``Submit``
+#. You can now access your Embassy from the command line (Linux and Mac) using:
 
-    ssh pi@<LAN URL>
+    .. code-block:: bash
+
+        ssh root@<LAN URL>
+
+Replacing ``<LAN URL>`` with your Embassy's LAN (``embassy-xxxxxxx.local``) address
 
 Connecting via SSH on Windows, using PuTTY
 ------------------------------------------

@@ -2,7 +2,7 @@
 FAQ
 ===
 
-Frequently Asked Questions from Embassy users
+Answers to Frequently Asked Questions from Embassy users
 
 .. toctree::
   :maxdepth: 2

@@ -1,5 +1,9 @@
 .. _faq-service-packaging:
 
+.. contents::
+   :depth: 3
+   :local:
+
 =====================
 Service Packaging FAQ
 =====================

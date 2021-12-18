@@ -1,24 +1,58 @@
 .. _basic-config:
 
 ===================
-Basic Configuration - ***NEEDS UPDATE / SCREENS***
+Basic Configuration - ***NEEDS BUG REPORT LINK***
 ===================
+
+.. _device-name:
 
 Set Device Name
 ---------------
 
 Here you can change the name of your Embassy!
 
-.. figure:: /_static/images/embassy_config.png
-  :width: 90%
-  :alt: Embassy Config View
+1. Go to the ``Embassy`` tab on the main menu on the left side of the UI
+
+.. figure:: /_static/images/config/basic-config0.png
+  :width: 60%
+  :alt: Embassy Tab
+
+2. Under the ``Settings`` section, click ``Preferences``
+
+.. figure:: /_static/images/config/basic-config1.png
+  :width: 60%
+  :alt: Preferences
+
+3. Then click ``Device Name``, set to desired name, and click ``Save``
+
+.. figure:: /_static/images/config/basic-config2.png
+  :width: 60%
+  :alt: Rename Embassy
+
+.. _auto-reporting:
+
+Automatically Report Bugs
+-------------------------
+
+You are asked at first setup if you would like to provide bug reports to Start9.  You can edit that setting here if you change your mind.  This data is anonymous and you can see exactly what is collected `here<>`.
+
+1. As in the :ref:`Set Device Name<device-name>` steps above, go to the ``Embasssy`` tab, then under ``Settings``, click ``Preferences``
+2. Click ``Auto Report Bugs`` and either ``Enable`` or ``Disable``
+
+.. figure:: /_static/images/config/basic-config3.png
+  :width: 60%
+  :alt: Automatically Report Bugs
 
 .. _auto-update:
 
+Automatically Check for Updates
+-------------------------------
+
 Automatic check for updates enables you to choose whether you want to be informed of EmbassyOS updates. Enabling this feature makes a request to the Start9 Marketplace to see if a new OS version has been released, and notifies you if so. This request is only made when you log into a new session or refresh your current session.
 
-.. figure:: /_static/images/embassy_auto_check_updates.png
-  :width: 90%
-  :alt: Embassy Config View
+1. As in the :ref:`Set Device Name<device-name>` steps above, go to the ``Embasssy`` tab, then under ``Settings``, click ``Preferences``
+2. Click ``Automatically Check for Updates`` and either ``Enable`` or ``Disable``
 
-  View of Embassy Config
+.. figure:: /_static/images/config/basic-config4.png
+  :width: 60%
+  :alt: Automatically Report Bugs

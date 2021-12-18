@@ -1,10 +1,10 @@
 .. _lan-ios:
 
 ===
-iOS
+iOS - ***UPDATE SCREENS***
 ===
 
-#. Navigate back to the `Start9 Setup App <https://apps.apple.com/us/app/start9-setup-app/id1528125889>`_. 
+#. Navigate back to the `Start9 Setup App <https://apps.apple.com/us/app/start9-setup-app/id1528125889>`_.
 
 #. Select your claimed Embassy to view the setup results.
 
@@ -24,7 +24,7 @@ iOS
 
     Setup App advanced menu
 
-#. You will be directed to a page in your default browser indicating next steps and that the profile has been successfully downloaded. 
+#. You will be directed to a page in your default browser indicating next steps and that the profile has been successfully downloaded.
 
    .. note::
         If you have changed the default browser from Safari to Brave, the following auto save certificate to device flow will *not* work. Safari, Firefox, and Chrome work as expected. We recommend you temporarily use one of these browsers to complete this action.

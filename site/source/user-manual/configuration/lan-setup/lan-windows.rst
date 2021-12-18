@@ -1,7 +1,7 @@
 .. _lan-windows:
 
 =======
-Windows
+Windows - ***UPDATE SCREENS***
 =======
 
 #. Install `Bonjour Print Services <https://support.apple.com/kb/DL999>`_ on your Windows machine. This is necessary in order to visit .local addresses on Windows.

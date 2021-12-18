@@ -1,7 +1,7 @@
 .. _diy:
 
 =========
-DIY Guide
+DIY Guide - ***UPDATE BUILD GUIDE LINK***
 =========
 
 .. figure:: /_static/images/diy/pi.png
@@ -69,7 +69,7 @@ Depending on your Internet speed, the download should take between 5 and 30 minu
 Getting EmbassyOS: Building from Source
 .......................................
 
-***Placehodler for build guide - either link to GH or duplicate here.  Probably duplicate to keep all docs centralized to this repo - https://github.com/Start9Labs/embassy-os/tree/integration/0.3.0/build***
+***Placehodler for build guide - https://github.com/Start9Labs/embassy-os/tree/integration/0.3.0/build***
 
 Installing EmbassyOS
 --------------------

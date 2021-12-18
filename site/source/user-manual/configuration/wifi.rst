@@ -1,21 +1,32 @@
 .. _wifi:
 
 ===============
-Setting up WiFi - ***UPDATE SCREENS***
+Setting up WiFi - ***VERIFY CONNECTION BEHAVIOR***
 ===============
 
-#. On the Embassy Tab, Under "Settings", Click  "WiFi".
-#. Click the ``+`` button in the lower right corner.
-#. Select the appropriate country.
-#. Enter your WiFi SSID and password.
+You can connect your Embassy with a wireless connection if you prefer.  Follow the directions below to connect to a WiFi network, or save your credentials for later to connect to a network you are not currently in proximity to.
 
-   .. figure:: /_static/images/embassy_wifi.png
-      :width: 90%
-      :alt: Add WiFi
+#. On the ``Embassy`` tab, Under ``Settings``, Click  ``WiFi``
+#. Select the appropriate region at the top
 
-      Add WiFi Network options
+   .. figure:: /_static/images/config/wifi0.png
+    :width: 60%
+    :alt: Select Region
 
-#. Save
-    * Clicking *Add* will save the network credentials but not try to connect immediately. This is useful, for example, if you are connected over Ethernet at home and want to add your office WiFi credentials.
-    * `Add and Connect`.
-#. The saved network will appear in the list when successfully added. If you are successfully connected, the WiFi symbol will be green, at which point, you can safely disconnect the Embassy from your router.
+#. Click the ``+ Add new network``
+
+   .. figure:: /_static/images/config/wifi1.png
+    :width: 60%
+    :alt: Add WiFi Network
+
+#. Enter your WiFi SSID and password and either select ``Save for Later`` or ``Save and Connect`` to connect immediately
+
+   .. figure:: /_static/images/config/wifi2.png
+    :width: 60%
+    :alt: Enter Credentials
+
+#. The saved network will appear in the list when successfully added. Click on it for connection options.  If you are successfully connected, the WiFi symbol will be green, at which point, you can safely disconnect the Embassy from your router.
+
+   .. figure:: /_static/images/config/wifi3.png
+    :width: 60%
+    :alt: Connect

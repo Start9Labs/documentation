@@ -75,6 +75,7 @@ Under `Tor-Enabled Apps`, click the gear icon and add apps you want to utilize T
 Examples of applications that need this feature are:
 
 - Bitwarden
+- Element (Matrix)
 - Zeus
 
 You can also add the following browsers to the Tor-Enabled Apps list to easily access Tor addresses (`.onion` URLs):
