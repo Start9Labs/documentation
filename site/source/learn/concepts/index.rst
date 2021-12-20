@@ -12,5 +12,4 @@ An overview of the ideas and technologies surrounding Start9 Labs and Embassy
   networks
   software
   bitcoin-lightning
-  start9
   embassy
