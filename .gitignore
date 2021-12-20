@@ -2,6 +2,4 @@
 .vscode/
 build-send.sh
 site/_build
-site/_utils/docsearch_config.json
-site/_utils/docsearch_index.js
 .env

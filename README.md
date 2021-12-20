@@ -42,10 +42,10 @@ git clone https://github.com/Start9Labs/documentation.git && cd documentation
 git submodule update --init
 ```
 
-1. Navigate to the `docs` folder and start the project:
+1. Navigate to the `site` folder and start the project:
 
 ```
-cd docs
+cd site
 make clean && make preview
 ```
 ## Development
