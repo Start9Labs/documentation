@@ -5,11 +5,9 @@
   <div class="landing landing--floating">
 
 .. hero-box::
-  :title: Welcome to the Start9 Documentation
+  :title: Become unstoppable
   :button_icon: scylla-icon scylla-icon--monitoring
-  :button_url: user-manual
-  :button_text: Start here
-  :image: /_static/img/icons/docs_info.png
+  :image: /_static/img/eos_0.3.0.png
 
   Here you will find guidance and information about the Start9 Embassy personal server and its operating system, EmbassyOS.
 
@@ -25,57 +23,84 @@
 
 .. topic-box::
   :title: Purchasing
-  :link:   user-manual/getting-started/purchasing
+  :link:   https://store.start9.com
   :icon: scylla-icon scylla-icon--bitcoin
-  :class: large-6
-  :anchor: Learn more
+  :class: large-4
+  :anchor: Buy now
 
-  Learn about how you can purchase Start9 products.
+  Learn about how you can purchase Start9 products
 
 .. topic-box::
-  :title: Videos
-  :link: https://www.youtube.com/channel/UCGEw4HJDvOn3Oy8ykR36P7Q
-  :icon: scylla-icon scylla-icon--webinars
-  :class: large-6
-  :anchor: Learn more
+  :title: Build your own
+  :link: user-manual/tuning/diy
+  :icon: scylla-icon scylla-icon--integrations
+  :class: large-4
+  :anchor: Get started
 
-  Check out our how to and informational videos.
+  Build from source with our DIY guide
+
+.. topic-box::
+  :title: Service Marketplace
+  :link: https://marketplace.start9.com
+  :icon: scylla-icon scylla-icon--monitoring
+  :class: large-4
+  :anchor: Browse
+
+  See what Services are available
+
+.. topic-box::
+  :title: User Manual
+  :link: user-manual
+  :icon: scylla-icon scylla-icon--knowledge-base
+  :class: large-6
+  :anchor: View
+
+  Get started with your Embassy
 
 .. topic-box::
   :title: Support
   :link: knowledge-base/faq
   :icon: scylla-icon scylla-icon--support
   :class: large-6
-  :anchor: Learn more
+  :anchor: Get help
 
-  Read our FAQ and learn about platform concepts.
-
-.. topic-box::
-  :title: DIY
-  :link: user-manual/tuning/diy
-  :icon: scylla-icon scylla-icon--integrations
-  :class: large-6
-  :anchor: Learn more
-
-  Get started yourself with our Do It Yourself guide
+  Find answers to your questions
 
 .. topic-box::
-  :title: About
-  :link: about
-  :icon: scylla-icon scylla-icon--about-team
-  :class: large-6
-  :anchor: Learn more
+  :title: Learn
+  :link: knowledge-base/faq
+  :icon: scylla-icon scylla-icon--webinars
+  :class: large-3
+  :anchor: Get started
 
-  Explore Start9's mission and philosophy.
+  Read our FAQ and learn about platform concepts
+
+.. topic-box::
+  :title: SDK
+  :link: dev-docs
+  :icon: scylla-icon scylla-icon--open-source
+  :class: large-3
+  :anchor: View
+
+  Package a service for the Embassy Marketplace
 
 .. topic-box::
   :title: Contribute
   :link: dev-docs/dev-faq/faq-contributing
-  :icon: scylla-icon scylla-icon--apps
-  :class: large-6
+  :icon: scylla-icon scylla-icon--networking
+  :class: large-3
+  :anchor: Join us
+
+  Use your skills to add to the Start9 ecosystem
+
+.. topic-box::
+  :title: About Start9
+  :link: about
+  :icon: scylla-icon scylla-icon--about-team
+  :class: large-3
   :anchor: Learn more
 
-  Learn about developing for EmbassyOS or contribute to packing services for the marketplace.
+  Explore Start9's mission, history and future
 
 .. raw:: html
 
