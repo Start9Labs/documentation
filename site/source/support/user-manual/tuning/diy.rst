@@ -1,7 +1,7 @@
 .. _diy:
 
 =========
-DIY Guide - ***UPDATE BUILD GUIDE LINK***
+DIY Guide - ***CHECK BUILD GUIDE LINK WHEN ON MASTER, ADD PHOTOS OF HARDWARE SETUP***
 =========
 
 .. figure:: /_static/images/diy/pi.png
@@ -44,8 +44,8 @@ Hardware: Components
 
 `*` If you use a fan, **DO NOT** use the official Raspberry Pi fan, as it requires the same GPIO pins as the audio speaker. Instead, we recommend `this fan <https://www.amazon.com/Raspberry-iUniker-30x30x7mm-Brushless-RetroFlag/dp/B076H3TKBP/>`_.
 
-Hardware: Assembly Instructions
-...............................
+Hardware: Assembly
+..................
 
 #. Insert mini speaker/buzzer into GPIO pins 6/8/10/12 with the word "speaker" facing out, `away from the board`.
 
@@ -69,7 +69,7 @@ Depending on your Internet speed, the download should take between 5 and 30 minu
 Getting EmbassyOS: Building from Source
 .......................................
 
-***Placehodler for build guide - https://github.com/Start9Labs/embassy-os/tree/integration/0.3.0/build***
+If you prefer to build EmbassyOS from source, you can do so following our guide `here <https://github.com/Start9Labs/embassy-os/tree/master/build>`_.
 
 Installing EmbassyOS
 --------------------

@@ -1,3 +1,5 @@
+.. _service-guides:
+
 =======================
 Service-Specific Guides
 =======================

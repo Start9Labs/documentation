@@ -29,4 +29,4 @@ Enable Auto Check for Updates
 Manually Checking Updates
 -------------------------
 
-If you choose not to enable automatic updates, service updates will appear in the `Updates` tab of the Marketplace when ready.
+If you choose not to enable automatic update checks, service updates will still appear in the ``Updates`` tab of the Marketplace when ready.

@@ -3,7 +3,7 @@
     - Introduction
     - Purchasing
     - Initial Setup
-    - Device-specific Setup Guides <label links with connectivity, performance, or tuning>
+    - Device-specific Setup Guides <label links with connectivity, performance, reliability, or tuning> - **ASK LUCY ABOUT "BADGES?"**
         - Linux
         - Mac
         - Windows

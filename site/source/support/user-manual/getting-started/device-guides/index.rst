@@ -1,8 +1,10 @@
+.. _device-guides:
+
 ======================
-Device-Specific Guides
+Device-Specific Guides - ***NEED TO CHECK ALL LINKS AS THEY ARE NOT REFS (IN ORDER TO OPEN EXTERNALLY)***
 ======================
 
-An overview of EmbassyOS general capabilities.
+Guides to get connected with or improve your Embassy by device-type.
 
 .. toctree::
   :maxdepth: 2

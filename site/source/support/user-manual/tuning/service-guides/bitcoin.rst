@@ -42,6 +42,15 @@ Electrum
 FullyNoded
 ----------
 
+.. note:: Mac only
+
+.. _samourai:
+
+Samourai
+--------
+
+.. note:: Android only
+
 .. _sparrow:
 
 Sparrow
@@ -54,10 +63,14 @@ Specter
 
 .. _trezor:
 
-Trezor
-------
+Trezor Suite
+------------
+
+.. note:: Built for use with Trezor hardware devices
 
 .. _ledger:
 
 Ledger Live
 -----------
+
+.. note:: Built for use with Ledger hardware devices
