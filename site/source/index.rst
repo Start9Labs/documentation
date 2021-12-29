@@ -32,7 +32,7 @@
 
 .. topic-box::
   :title: Build your own
-  :link: user-manual/tuning/diy
+  :link: support/user-manual/tuning/diy
   :icon: scylla-icon scylla-icon--integrations
   :class: large-4
   :anchor: Get started
@@ -50,7 +50,7 @@
 
 .. topic-box::
   :title: User Manual
-  :link: user-manual
+  :link: support/user-manual
   :icon: scylla-icon scylla-icon--knowledge-base
   :class: large-6
   :anchor: View
@@ -59,7 +59,7 @@
 
 .. topic-box::
   :title: Support
-  :link: knowledge-base/faq
+  :link: support
   :icon: scylla-icon scylla-icon--support
   :class: large-6
   :anchor: Get help
@@ -68,7 +68,7 @@
 
 .. topic-box::
   :title: Learn
-  :link: knowledge-base/faq
+  :link: learn
   :icon: scylla-icon scylla-icon--webinars
   :class: large-3
   :anchor: Get started
@@ -77,7 +77,7 @@
 
 .. topic-box::
   :title: SDK
-  :link: dev-docs
+  :link: support/dev-docs
   :icon: scylla-icon scylla-icon--open-source
   :class: large-3
   :anchor: View
@@ -86,7 +86,7 @@
 
 .. topic-box::
   :title: Contribute
-  :link: dev-docs/dev-faq/faq-contributing
+  :link: contribute
   :icon: scylla-icon scylla-icon--networking
   :class: large-3
   :anchor: Join us

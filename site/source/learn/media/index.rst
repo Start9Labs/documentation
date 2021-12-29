@@ -8,8 +8,8 @@ Knowledge Base
    :maxdepth: 2
    :hidden:
 
-   concepts/index
-   faq/index
+   articles
+   podcasts
 
 .. panel-box::
   :title: Overview

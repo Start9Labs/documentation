@@ -11,5 +11,5 @@ An overview of EmbassyOS general capabilities.
 
   overview
   updates
-  backup
+  backup/index
   password
