@@ -33,3 +33,9 @@ The first and foremost use of the Product Key is to encrypt data that is sent to
 Services
 --------
 The server-side software available on EmbassyOS are referred to as "Services."  It's important to distinguish the difference between *services* and *applications*.  Applications are generally *client-side*.  This means that they are either standalone software, or they reach out to a server in order to operate.  Services are *server-side*.  These generally run 24/7, waiting for commands from a user via an application.
+
+.. _webui:
+
+Web User Interface (UI)
+-----------------------
+A User Interface, or UI, is as the name suggests, the way in which the user interacts with some software, typically in our context it will be a graphical interface (GUI).  A WebUI is basically a website that is served (often by your Embassy) specifically for a user to issue commands or view data.  A great example of this is EmbassyOS itself, which serves a WebUI for the user to add/remove services, make configurations, etc.  This is your main point of contact with EOS.

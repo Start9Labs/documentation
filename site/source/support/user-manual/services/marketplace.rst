@@ -4,7 +4,12 @@
 Marketplace
 ===========
 
-LINK TO MARKETPLACE
-FIND A PLACE TO LINK S9 ALTWEB SERVICE MOST WANTED LIST
+Embassy Marketplace
+-------------------
 
-ROADMAP NEEDS A HOME
+LINK TO MARKETPLACE
+
+Community Wishlist
+------------------
+
+`Embassy: Voice <https://s9.altweb.me/>`_ unofficial feedback forum.

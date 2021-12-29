@@ -1,11 +1,10 @@
 .. _torff-mac:
 
 ===
-Mac - ***NEEDS UPDATED***
+Mac
 ===
 
-
-.. warning::
+.. caution::
   This guide assumes you have completed :ref:`setting up Tor<running-tor>`. Please visit this section first before you proceed as it is required for Firefox to properly work with Tor.
 
 1. Open Firefox.

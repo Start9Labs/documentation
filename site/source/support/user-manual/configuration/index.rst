@@ -2,7 +2,7 @@
 Configuration
 =============
 
-Configuration, setup guides, and known limitations are provided here by device
+Configuration, setup guides, and known limitations are provided here by device.
 
 .. toctree::
   :maxdepth: 2

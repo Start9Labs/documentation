@@ -4,7 +4,7 @@
 Android - ***NEEDS UPDATED***
 =======
 
-.. warning::
+.. caution::
   This guide assumes you have completed :ref:`setting up Tor for Android<tor-android>`. Please visit this section before proceeding as it is required for Firefox to properly work with Tor.
 
 Once Tor is setup on your system, you can proceed to setup Firefox:

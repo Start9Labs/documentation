@@ -1,7 +1,7 @@
 .. _wifi:
 
 ===============
-Setting up WiFi - ***VERIFY CONNECTION BEHAVIOR***
+Setting up WiFi - ***VERIFY CONNECTION BEHAVIOR and UPDATE FINAL SCREEN***
 ===============
 
 You can connect your Embassy with a wireless connection if you prefer.  Follow the directions below to connect to a WiFi network, or save your credentials for later to connect to a network you are not currently in proximity to.

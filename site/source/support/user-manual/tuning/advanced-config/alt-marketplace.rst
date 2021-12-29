@@ -1,8 +1,12 @@
+.. _alt-marketplace:
+
 =======================
 Alternative Marketplace
 =======================
 
-.. caution:: EmbassyOS supports accessing alternative marketplaces. Start9 is not responsible for issues encountered when downloading services from alternative marketplaces, and cannot provide support for Services that are not from our offical marketplace.  Here be dragons!!
+EmbassyOS supports accessing alternative marketplaces.
+
+.. caution:: Start9 is not responsible for issues encountered when downloading services from alternative marketplaces, and cannot provide support for services that are not from our offical marketplace.  Here be dragons!!
 
 After SSH-ing into the Embassy, run the following command, replacing ``<url>`` with your desired marketplace URL:
 

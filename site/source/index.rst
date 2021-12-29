@@ -100,7 +100,7 @@
   :class: large-3
   :anchor: Learn more
 
-  Explore Start9's mission, history and future
+  Explore Start9's mission, history, and future
 
 .. raw:: html
 
@@ -118,3 +118,4 @@
   user-manual/index
   knowledge-base/index
   dev-docs/index
+

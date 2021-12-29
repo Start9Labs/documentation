@@ -1,5 +1,10 @@
-                  <h2 style="font-size: calc(1.5vw + 16px);">Decentralize</h2>
-                  <p>EmbassyOS allows users to swap Marketplaces in case they want a service not offered in the official Start9 Marketplace.</p>
-                  <ul>
-                    <li>In order to change to an unofficial Marketplace, you can see our documentaion here</li>
-                    <li>If you'd like to run your own Marketplace, and help decentralize the ecosystem, please see our guide here</li>
+.. _decentralize:
+
+============
+Decentralize - **ALT MARKET GUIDE NEEDS WRITTEN**
+============
+
+EmbassyOS allows users to swap to an alternative Marketplace in case they want a service not offered in the official `Start9 Marketplace <https://marketplace.start9.com>`_, would like a backup registry, or have for some reason lost trust in :ref:`Start9 <start9>`.
+
+- In order to change to an unofficial Marketplace, you can see our documentaion :ref:`here <alt-marketplace>`.
+- If you'd like to run your own Marketplace, and help decentralize the ecosystem, please see our guide `here <https://github.com/Start9Labs/registry>`_.

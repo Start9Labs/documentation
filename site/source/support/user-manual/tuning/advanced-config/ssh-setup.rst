@@ -6,12 +6,12 @@ SSH Setup
 
 .. warning:: This is an advanced feature and should be used with caution. Start9 is not responsible for any damage you might cause through SSH access.
 
-Connecting via CLI
-------------------
+Connecting via CLI (Linux / Mac)
+--------------------------------
 
 #. Navigate to the ``Embassy`` tab, then under ``Settings``, click ``SSH``
 #. Click the ``+ Add New Key`` button
-#. Paste in your SSH key and hit ``Submit``
+#. Paste in your SSH public key and hit ``Submit``
 #. You can now access your Embassy from the command line (Linux and Mac) using:
 
     .. code-block:: bash

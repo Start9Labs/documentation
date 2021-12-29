@@ -4,7 +4,8 @@
 Start9 Software License
 =======================
 
-# START9 PERSONAL USE LICENSE v1.0
+START9 PERSONAL USE LICENSE v1.0
+--------------------------------
 
 This license governs the use of the accompanying Software. If you use the Software, you accept this license. If you do not accept the license, do not use the Software.
 
@@ -29,3 +30,5 @@ This license governs the use of the accompanying Software. If you use the Softwa
 4. **Contributions.** You hereby grant to Licensor a perpetual, irrevocable, worldwide, non-exclusive, royalty-free license to use and exploit any modifications or derivative works based on the Source Code of which you are the author.
 
 5. **Disclaimer.** THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. LICENSOR HAS NO OBLIGATION TO SUPPORT RECIPIENTS OF THE SOFTWARE.
+
+.. note:: Last updated Dec 17, 2020, please see `Github <https://github.com/Start9Labs/embassy-os/blob/master/LICENSE.md>`_ for latest edits

@@ -1,15 +1,27 @@
 .. _recover:
 
-===============
-Recover Embassy
-===============
+=========================
+Recover / Migrate Embassy
+=========================
 
 .. _recover-02x:
 
-Recover Embassy from version series 0.2.x
------------------------------------------
+Migrate Embassy Series 0.2.x Data
+---------------------------------
+
+Additional Hardware
+...................
+
+Instructions
+............
 
 .. _recover-03x:
 
-Recover Embassy from Version Series 0.3.x
------------------------------------------
+Migrate Embassy Series 0.3.x Data
+---------------------------------
+
+Recover From Remote Backup
+..........................
+
+Recover From Local (External Drive) Backup
+..........................................

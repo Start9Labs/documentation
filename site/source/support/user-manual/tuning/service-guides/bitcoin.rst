@@ -1,7 +1,7 @@
 .. _bitcoin:
 
 =======
-Bitcoin
+Bitcoin - **NEED GUIDES WRITTEN (in bitcoind repo?)**
 =======
 
 Here you will find guides on how to connect different kinds of Bitcoin wallets (hardware and software) to your Embassy node, to complete your sovereign Bitcoin stack!
@@ -37,12 +37,16 @@ and then enter ``bitcoin-cli`` commands.  When you are finished, simply type ``e
 Electrum
 --------
 
+**UNTESTED**
+
 .. _fully-noded:
 
 FullyNoded
 ----------
 
 .. note:: Mac only
+
+**UNTESTED**
 
 .. _samourai:
 
@@ -51,26 +55,38 @@ Samourai
 
 .. note:: Android only
 
+**UNTESTED**
+
 .. _sparrow:
 
 Sparrow
 -------
+
+**UNTESTED**
 
 .. _specter:
 
 Specter
 -------
 
+Current - https://github.com/Start9Labs/bitcoind-wrapper/tree/master/docs/integrations/specter
+
+**UNTESTED**
+
 .. _trezor:
 
 Trezor Suite
 ------------
 
-.. note:: Built for use with Trezor hardware devices
+.. tip:: Built for use with Trezor hardware devices
+
+**UNTESTED**
 
 .. _ledger:
 
 Ledger Live
 -----------
 
-.. note:: Built for use with Ledger hardware devices
+.. tip:: Built for use with Ledger hardware devices
+
+**UNTESTED**

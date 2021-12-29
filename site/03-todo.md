@@ -1,3 +1,11 @@
+- Jobs
+- Update principles, privacy, about, etc
+- Footer links need update or removal?
+- Lots of screenshots and details
+- Left sidebar empty, figure out how that is populated
+- Warrant canary
+- There are many issues that should be closed by 0.3 docs release, check that this is the case (some issues await new processes in order to test)
+
 # User Manual
 - Getting Started
     - Introduction

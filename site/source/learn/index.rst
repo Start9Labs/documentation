@@ -25,7 +25,7 @@
 
 .. topic-box::
   :title: Concepts
-  :link: concepts/index
+  :link: concepts
   :icon: scylla-icon scylla-icon--knowledge-base
   :class: large-4
   :anchor: Learn
@@ -34,7 +34,7 @@
 
 .. topic-box::
   :title: FAQ
-  :link: faq/index
+  :link: ../support/faq
   :icon: scylla-icon scylla-icon--monitoring
   :class: large-4
   :anchor: Get Answers

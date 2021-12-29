@@ -5,7 +5,7 @@
    :local:
 
 =====================
-Service Packaging FAQ
+Service Packaging FAQ - **EXPAND**
 =====================
 
 Do I need programming experience to package a service for EmbassyOS?

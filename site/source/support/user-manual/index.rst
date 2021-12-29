@@ -27,6 +27,6 @@ User Manual
   * :doc:`Getting Started <getting-started/index>` - Initial setup and device-specific guides to connect with your Embassy.
   * :doc:`Walkthrough <walkthrough/index>` - A guided tour of EmbassyOS.
   * :doc:`Services <services/index>` - Overview of featured Services and general usage on EmbassyOS.
-  * :doc:`Configuration Options <configuration/index>` - Configuration your Embassy.
+  * :doc:`Configuration <configuration/index>` - Configure your Embassy to your preference.
   * :doc:`Tuning <tuning/index>` - Customize your Embassy with advanced configuration and external service integrations.
   * :doc:`Troubleshooting <troubleshooting/index>` - Resolve any common issues you may encounter.

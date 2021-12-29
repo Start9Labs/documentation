@@ -29,8 +29,8 @@ Install the Tor proxy service to your system. To do so, open your terminal and r
 
         sudo systemctl restart tor
 
-Arch
-----
+Arch / Manjaro
+--------------
 
 Simply install Tor with:
 

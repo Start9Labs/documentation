@@ -22,4 +22,4 @@ Online Purchases
 
 When you purchase Products from our website, we necessarily collect certain personal information, such as name, email, shipping address, and payment details, in order to facilitate the transaction and conduct shipment. We do not use the information for any other purpose. Start9 relies on third party payment processors and shipping partners to conduct transactions, and have no control over their collection or usage of your information.
 
-This Privacy Policy was last updated on July 28, 2020
+.. note:: This Privacy Policy was last updated on July 28, 2020

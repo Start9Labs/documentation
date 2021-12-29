@@ -25,7 +25,7 @@
 
 .. topic-box::
   :title: User Manual
-  :link: user-manual/index
+  :link: user-manual
   :icon: scylla-icon scylla-icon--knowledge-base
   :class: large-4
   :anchor: View
@@ -34,16 +34,16 @@
 
 .. topic-box::
   :title: FAQ
-  :link: faq/index
+  :link: faq
   :icon: scylla-icon scylla-icon--monitoring
   :class: large-4
   :anchor: Get Answers
 
-  Answers to Frequently Asked Questions from Embassy users.
+  Answers to Frequently Asked Questions from Embassy users
 
 .. topic-box::
   :title: Developer Documentation
-  :link: dev-docs/index
+  :link: dev-docs
   :icon: scylla-icon scylla-icon--open-source
   :class: large-4
   :anchor: Build
@@ -52,7 +52,7 @@
 
 .. topic-box::
   :title: Community Channels
-  :link: dev-docs/index
+  :link: ../about/contact
   :icon: scylla-icon scylla-icon--networking
   :class: large-4
   :anchor: Join us
@@ -75,3 +75,4 @@
   user-manual/index
   faq/index
   dev-docs/index
+

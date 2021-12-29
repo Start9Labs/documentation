@@ -11,7 +11,8 @@ SSH/Linux
 
 If you already have :ref:`SSH keys registered with your Embassy<ssh-setup>` **OR** you have access to a Linux computer, you can reset your Embassy password without losing any data.
 
-* SSH:
+SSH
+===
 
   * Use the command line to gain SSH access to your Embassy::
 
@@ -39,7 +40,8 @@ If you already have :ref:`SSH keys registered with your Embassy<ssh-setup>` **OR
 
 .. warning:: Running setup process will generate new certificate and Tor address for your Embassy.
 
-* Linux computer:
+Linux
+=====
 
   * Shut down your Embassy, disconnect from power, and remove the microSD card.
   * Insert the microSD card into your Linux computer and mount the drive::

@@ -1,7 +1,7 @@
 .. _faq-contributing:
 
 ============
-Contributing
+Contributing - **EXPAND**
 ============
 
 We ❤️ contributions!
