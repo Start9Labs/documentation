@@ -1,7 +1,7 @@
 .DS_Store
 .vscode/
-build/
 build-send.sh
-utils/deploy.sh
-docs/_build
+site/_build
+site/_utils/docsearch_config.json
+site/_utils/docsearch_index.js
 .env

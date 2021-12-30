@@ -29,7 +29,7 @@ Install [pyenv](https://github.com/pyenv/pyenv)
 
 ## Development
 
-When editing these files, begin a livereload environment by running `make preview` while in the `./docs/` directory.
+When editing these files, begin a livereload environment by running `make preview` while in the `./site/` directory.
 
 When editing any css or table of contents organization changes, the livereload environment must be ended and `make clean` run before starting `make preview` again.
 
