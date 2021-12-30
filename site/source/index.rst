@@ -115,7 +115,8 @@
   :maxdepth: 2
   :hidden:
 
-  user-manual/index
-  knowledge-base/index
-  dev-docs/index
+  learn/index
+  contribute/index
+  support/index
+  about/index
 

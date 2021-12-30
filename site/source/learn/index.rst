@@ -50,6 +50,15 @@
 
   Our video archives, with educational content, including how-tos and DIY guides.
 
+.. topic-box::
+  :title: Media
+  :link: media
+  :icon: scylla-icon scylla-icon--monitoring
+  :class: large-4
+  :anchor: View
+
+  Check out interviews, podcasts, and articles featuring Start9 and Embassy.
+
 .. raw:: html
 
   </div></div>
@@ -65,3 +74,4 @@
 
    concepts/index
    faq/index
+   media/index

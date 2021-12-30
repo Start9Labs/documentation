@@ -4,7 +4,6 @@
 Privacy Policy
 ==============
 
-
 General Principles
 ------------------
 

@@ -4,11 +4,13 @@
 Open Positions
 ==============
 
-Get a jerb ya bum
+Please check back soon!!
 
-Engineering Manager
--------------------
+.. Get a jerb ya bum
+
+.. Engineering Manager
+.. -------------------
 
 
-Customer Support
-----------------
+.. Customer Support
+.. ----------------
