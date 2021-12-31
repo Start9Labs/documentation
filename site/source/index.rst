@@ -24,7 +24,7 @@
 .. topic-box::
   :title: Guides
   :link: getting-started
-  :icon: scylla-icon scylla-icon--monitoring
+  :icon: scylla-icon scylla-icon--knowledge-base
   :class: large-6
   :anchor: View
 
@@ -34,7 +34,7 @@
 .. topic-box::
   :title: User Manual
   :link: user-manual
-  :icon: scylla-icon scylla-icon--knowledge-base
+  :icon: scylla-icon scylla-icon--integrations
   :class: large-6
   :anchor: View
 
@@ -50,13 +50,22 @@
   Find answers to your questions
 
 .. topic-box::
-  :title: Learn
-  :link: support/faq
-  :icon: scylla-icon scylla-icon--webinars
+  :title: Contribute
+  :link: contributing
+  :icon: scylla-icon scylla-icon--apps
   :class: large-6
   :anchor: Get started
 
   Read our FAQ and learn about platform concepts
+
+.. .. topic-box::
+..   :title: Learn
+..   :link: support/FAQ
+..   :icon: scylla-icon scylla-icon--webinars
+..   :class: large-6
+..   :anchor: Get started
+
+..   Read our FAQ and learn about platform concepts
 
 .. .. topic-box::
 ..   :title: Purchasing
