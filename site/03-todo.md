@@ -1,4 +1,3 @@
-- Jobs
 - Transfer HTML or refactor: Roadmap, News (now media/articles and media/podcasts)
 - Update principles, privacy, about, etc
 - Footer links need update (or removal?)
