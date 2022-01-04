@@ -22,14 +22,13 @@
   <div class="grid-x grid-margin-x">
 
 .. topic-box::
-  :title: Guides
+  :title: Docs
   :link: getting-started
   :icon: scylla-icon scylla-icon--knowledge-base
   :class: large-6
-  :anchor: View
+  :anchor: Get Started
 
-  Read the documentation
-
+  Dive into the Embassy documentation and other helpful guides
 
 .. topic-box::
   :title: User Manual
@@ -38,7 +37,7 @@
   :class: large-6
   :anchor: View
 
-  Get started with your Embassy
+  Get started with learning how to use EmbassyOS
 
 .. topic-box::
   :title: Support
@@ -47,7 +46,7 @@
   :class: large-6
   :anchor: Get help
 
-  Find answers to your questions
+  View the FAQ and find answers to your questions
 
 .. topic-box::
   :title: Contribute
