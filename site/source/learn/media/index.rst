@@ -7,7 +7,8 @@ Media
 Start9 Labs "in the news"
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    articles
    podcasts
+   videos

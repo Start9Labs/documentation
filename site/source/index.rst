@@ -112,11 +112,11 @@
 
 .. This is for the side navigation display
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
   :hidden:
 
+  support/index
   learn/index
   contribute/index
-  support/index
   about/index
 

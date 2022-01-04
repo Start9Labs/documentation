@@ -69,7 +69,7 @@
 
 .. This is for the side navigation display
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
   :hidden:
 
   user-manual/index

@@ -4,7 +4,7 @@
 Getting Started
 ===============
 
-Take your first steps!
+Take your first steps!  If you are setting up your device for the first time, you can also skip straight to :ref:`Initial Setup <initial-setup>`.
 
 .. toctree::
   :maxdepth: 2
@@ -12,5 +12,6 @@ Take your first steps!
   introduction
   purchasing
   initial-setup
-  recover
+  recover-02
+  recover-03
   device-guides/index

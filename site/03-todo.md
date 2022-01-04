@@ -2,10 +2,10 @@
 - Update principles, privacy, about, etc
 - Footer links need update (or removal?)
 - Lots of screenshots and details
-- Warrant canary
 - Verify ALL links and TOCs
 - Add / verify ALL links in the UI go to the right place in docs
 - There are many issues that should be closed by 0.3 docs release, check that this is the case (some issues await new processes in order to test)
+- Update all guides in services
 
 <!-- Original Layout (deprecated)
 # User Manual
