@@ -7,7 +7,7 @@ authors = ["elvece <lucy@start9labs.com>, kn0wmad <david@start9labs.com>"]
 [tool.poetry.dependencies]
 python = "^3.7"
 pyyaml = "^5.3"
-pygments = "2.2.0"
+pygments = "^2.7.4"
 recommonmark = "0.5.0"
 sphinx-scylladb-theme = "1.0.6"
 sphinx-sitemap = "2.1.0"
