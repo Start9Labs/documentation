@@ -56,7 +56,7 @@
   :class: large-6
   :anchor: Get started
 
-  Read our FAQ and learn about platform concepts
+  Use your skills to add to the Start9 ecosystem
 
 .. .. topic-box::
 ..   :title: Learn
