@@ -94,5 +94,6 @@
    roadmap
    privacy
    license
+   team
    jobs
    contact

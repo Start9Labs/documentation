@@ -6,13 +6,13 @@ Service Packaging Example
 
 A rough walkthrough of how to package a service using our example `hello-world-wrapper <https://github.com/Start9Labs/hello-world-wrapper>`_.
 
-Welcome!  The following guide will provide the prerequisites, introduce a brief overview of the packaging process, use an example demonstrating how to package a service, and finally describe the submission process.  This essentially describes how you can take an existing app (or one you have written yourself), and wrap it up such that it can be added to an EmbassyOS Marketplace!
+Welcome!  The following guide will provide the prerequisites, introduce a brief overview of the packaging process, use an example demonstrating how to package a service, and finally describe the submission process.  This essentially describes how you can take an existing app (or one you have written yourself), and wrap it up into an ``s9pk`` such that it can be added to an EmbassyOS (EOS) Marketplace!  The ``s9pk`` is the final product, which is the portable version of a package that is understood by EOS, and can be distributed to any EOS users either directly, or via a Marketplace.
 
 Pre-requisites
 --------------
 
 EmbassyOS (EOS)
-...............
+===============
 
 It is **HIGHLY RECOMMENDED** to have a copy of EmbassyOS for testing your packaged service.
 
@@ -22,7 +22,7 @@ There are 3 options for this:
     #. :ref:`Purchse <purchasing>` a device or copy of the OS
 
 Development Environment
-.......................
+=======================
 
 Once you have EOS installed, you'll want to set up your development system with the necessary software.
 
@@ -41,7 +41,7 @@ Overview
 --------
 
 Components
-..........
+==========
 
 Simply, the package is made up of the following parts:
     1. Image - Each service is running in a Docker image.  Best results will come from an arm based linux; [Alpine](https://www.alpinelinux.org/) is highly recommended.
@@ -54,7 +54,7 @@ Simply, the package is made up of the following parts:
 Check :ref:`here <service_package_overview>` for a detailed overview of package components.
 
 Service Wrapper Repo and Submodules
-...................................
+===================================
 
 See :ref:`here <service_wrapper>` for how to structure your service wrapper's git repository.
 
@@ -72,7 +72,7 @@ Example - Hello World
 Okay, let's actually package a service!  For this example, we're going to use an example service `Hello World <https://github.com/Start9Labs/hello-world>`_.  This repository can also be used as a template to quickly get started with your service.  This will give a good overview of service packaging, but obviously your app will be different.  This will assume a Linux development environment with all the recommended dependencies listed above.  To get started quickly, we'll use Start9's wrapper template.
 
 Clone the Template Repo and Edit the Manifest
-.............................................
+=============================================
 
 1. Clone and rename the repo (or alternatively, use the template generation button found on the github `repo <https://github.com/Start9Labs/hello-world-wrapper>`_)
 
@@ -86,7 +86,7 @@ Clone the Template Repo and Edit the Manifest
 3. Edit the ``manifest`` file.  This must be in ``.json``, ``.toml``, or ``.yaml`` format and in ``kebab-case`` style.  You can see descriptions of each key (and some notes) in our 'Hello World' example ``manifest.yaml`` below:
 
 Manifest example
-................
+================
 
 .. code-block:: yaml
 
@@ -247,7 +247,7 @@ Note the ``dependencies`` and ``volumes`` sections, which may access another ser
 For details on all the different possible dependency, type, and subtype definitions available for the ``manifest`` file, please see :ref:`here <service_manifest>`.
 
 Edit the Dockerfile and Entrypoint
-..................................
+==================================
 
 Next, it's time to edit the ``Dockerfile``.  This defines how to build the image for the package by declaring the environment, building stages, and mounting the package to the volume specified in the ``manifest``.
 
@@ -303,7 +303,10 @@ Next, it's time to edit the ``Dockerfile``.  This defines how to build the image
 
   ENTRYPOINT ["/usr/local/bin/docker_entrypoint.sh"]
 
-6. Okay, let's move on to our ``docker_entrypoint.sh`` file.  This is a script that defines what to do when the service starts.  It will need to complete any environment setup (such as folder substructure), sets any environment variables, and executes the run command.  If you have built a ``configurator``, it will also execute here.  Let's take a look at our (extremely basic) Hello World example:
+Docker Entrypoint
+=================
+
+1. Okay, let's move on to our ``docker_entrypoint.sh`` file.  This is a script that defines what to do when the service starts.  It will need to complete any environment setup (such as folder substructure), sets any environment variables, and executes the run command.  It's also PID 1 in the docker container, so it does all of the signal handling and container exits when it is stopped/exits.  If you have built a ``configurator``, it will also execute here.  Let's take a look at our (extremely basic) Hello World example:
 
 .. code:: bash
 
@@ -313,14 +316,14 @@ Next, it's time to edit the ``Dockerfile``.  This defines how to build the image
 
   exec tini hello-world
 
-7. We've defined the file, exported the IP address, and run the program.
+2. We've defined the file, exported the IP address, and run the program.
 
 For a more detailed ``docker_entrypoint.sh``, please check out the `filebrowser-wrapper <https://github.com/Start9Labs/filebrowser-wrapper/blob/master/docker_entrypoint.sh>`_.  Additional details on the ``Dockerfile`` and ``docker_entrypoint`` can be found `here <https://docs.start9.com/contributing/services/docker.html>`_.
 
 Makefile (Optional)
-...................
+===================
 
-Here, we will create a ``Makefile``, which is optional, but recommended as it outlines the build and streamlines additional developer contributions.  Alternatively, you could use any other build orchestration tool, such as ``nix``, ``bash``, ``python``, ``perl``, ``ruby``, etc instead of ``make``.
+Here, we will create a ``Makefile``, which is optional, but recommended as it outlines the build and streamlines additional developer contributions.  Alternatively, you could use ``nix``, ``bash``, ``python``, ``perl``, ``ruby``, etc instead of ``make`` for build orchestration.
 
 Our example ``Makefile`` is agin fairly simple for Hello World.  Let's take a look:
 
@@ -357,20 +360,20 @@ Our example ``Makefile`` is agin fairly simple for Hello World.  Let's take a lo
 
 2. The next line simply removes the progress of a ``make`` process if it fails.
 
-.. code-block:: Makefile
+  .. code-block:: Makefile
 
-  .DELETE_ON_ERROR:
+    .DELETE_ON_ERROR:
 
-1. The ``all`` step is run when the ``make`` command is issued.  This attempts the ``verify`` step, which requires that the ``hello-world.s9pk`` must first be built, which first requires the ``image.tar``, and so on.  Meaning each step essentially requires the next .
+3. The ``all`` step is run when the ``make`` command is issued.  This attempts the ``verify`` step, which requires that the ``hello-world.s9pk`` must first be built, which first requires the ``image.tar``, and so on.  Meaning each step essentially requires the next .
 
-2. So the ``.s9pk`` is created with the ``embassy-sdk pack`` command, supplied with the ``manifest``, ``config_spec``, previously created ``image.tar``, and ``instructions.md``.  Your project may likely also contain a ``config_rules`` file.  Some of these files we have not yet edited, but that will come shortly.
+4. So the ``.s9pk`` is created with the ``embassy-sdk pack`` command, supplied with the ``manifest``, ``config_spec``, previously created ``image.tar``, and ``instructions.md``.  Your project may likely also contain a ``config_rules`` file.  Some of these files we have not yet edited, but that will come shortly.
 
-3. The ``image.tar`` is built below this, the cross-compiled ``hello-world`` source code, and ``manifest`` at the bottom.
+5. The ``image.tar`` is built below this, the cross-compiled ``hello-world`` source code, and ``manifest`` at the bottom.
 
 For more details on creating a ``Makefile`` for your project, please check :ref:`here <service_makefile>`.
 
 Service Config Specification and Rules
-......................................
+======================================
 
 Most self-hosted packages require a configuration.  With EmbassyOS, these config options are provided to the user in a friendly GUI, and invalid configs are not permitted.  This allows the user to manage their software without a lot of technical skill, and minimal risk of borking their software.  Two files are created in this process:
 
@@ -482,14 +485,14 @@ In our example, there is *no need* for a ``config_rules`` file.  This is because
 Here we see that a Maximum Channel Size **MUST** be one of 3 possible options in order to be a valid config.
 
 Properties
-..........
+==========
 
 Next we need to create the Properties section for our package, to display any relevant info.  The result of this step is a ``stats.yaml`` file, which is only populated at runtime.  These commands will be issued in the ``docker_entrypoint`` file (or ``configurator``, if you are using one).
 
-***STATS.YAML IS APPARENTLY BEING DEPRECATED, THIS SECTION NEEDS COMMENT***
+.. ***STATS.YAML IS APPARENTLY BEING DEPRECATED, THIS SECTION NEEDS COMMENT***  Possibly this is not actually the case?
 
 Instructions
-............
+============
 
 Instructions are the basic directions or any particular details that you would like to convey to the user to help get them on their way.  Each wrapper repo should contain a ``docs`` directory which can include anything you'd like, but specifically if you include an ``instructions.md`` file, formatted in Markdown language, it will be displayed simply for the user as shown below.
 
@@ -498,12 +501,12 @@ Instructions are the basic directions or any particular details that you would l
 You can find the ``instructions.md`` file for Embassy Pages `here <https://github.com/Start9Labs/embassy-pages-wrapper/tree/master/docs>`_ if you are interested.
 
 Backups
-.......
+=======
 
 Everything in the root folder of the mounted system directory will be stored in an EOS backup.  If you want to ignore any particular files for backup, you can create a ``.backupignore`` file and add the relative paths of any directories you would like ignored.
 
 Submission Process
-..................
+------------------
 
 When you have built and tested your project for EmbassyOS, please send Start9 a submission with the project repository to dev@start9labs.com. After being reviewed for security and compatibility, the service will be deployed to the marketplace and available for all EmbassyOS users to download.
 

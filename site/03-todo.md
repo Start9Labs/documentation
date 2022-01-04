@@ -1,11 +1,15 @@
-- Transfer HTML or refactor: Roadmap, News (now media/articles and media/podcasts)
+# ToDo
+
+- Transfer HTML or refactor: Roadmap
 - Update principles, privacy, about, etc
 - Footer links need update (or removal?)
-- Lots of screenshots and details
+- Add screenshots and details
 - Verify ALL links and TOCs
 - Add / verify ALL links in the UI go to the right place in docs
 - There are many issues that should be closed by 0.3 docs release, check that this is the case (some issues await new processes in order to test)
 - Update all guides in services
+- Launch versioned site/docs to start9.com
+- Address build errors after versioning is live
 
 <!-- Original Layout (deprecated)
 # User Manual
