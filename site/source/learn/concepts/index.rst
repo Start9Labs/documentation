@@ -10,8 +10,8 @@ An overview of the ideas and technologies surrounding Start9 Labs and Embassy
   :maxdepth: 2
 
   open-source
-  self-hosting
   networks
+  self-hosting
+  embassy
   software
   bitcoin-lightning
-  embassy

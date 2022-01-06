@@ -1,13 +1,13 @@
 .. _services-index:
 
 ========
-Services - ***NEEDS UPDATING / SCREENS***
+Services
 ========
 
-An overview of EmbassyOS general capabilities.
+An overview of Services and Marketplaces on EmbassyOS.
 
 .. toctree::
   :maxdepth: 2
 
   marketplace
-  managing-services
+  managing-services/index
