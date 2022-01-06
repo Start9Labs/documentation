@@ -1,7 +1,7 @@
 .. _lan-windows:
 
 =======
-Windows - ***UPDATE SCREENS***
+Windows
 =======
 
 #. Install `Bonjour Print Services <https://support.apple.com/kb/DL999>`_ on your Windows machine. This is necessary in order to visit .local addresses on Windows.
@@ -113,4 +113,4 @@ Windows - ***UPDATE SCREENS***
 
 #. You can save the settings to the console if desired or cancel.
 
-#. Open your favorite browser to import this certificate and follow the steps for :ref:`browser setup <browser-setup>`.
+#. Open your favorite browser to import this certificate and follow the steps for :ref:`browser setup <lan-browser>`.

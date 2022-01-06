@@ -16,6 +16,5 @@ An overview of Services and Marketplaces on EmbassyOS.
   service-actions
   service-interfaces
   service-logs
-  service-marketplace
   service-donate
   service-updates

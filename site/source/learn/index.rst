@@ -1,6 +1,6 @@
-.. _knowledge-base:
+.. _learn:
 
-.. title:: Knowledge Base
+.. title:: Learn
 
 .. raw:: html
 
@@ -69,9 +69,11 @@
 
 .. This is for the side navigation display
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :hidden:
 
    concepts/index
-   faq/index
    media/index
+  
+  
+..  faq/index
