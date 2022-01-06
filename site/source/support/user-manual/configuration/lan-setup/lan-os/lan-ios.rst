@@ -1,7 +1,7 @@
 .. _lan-ios:
 
 ===
-iOS - ***UPDATE SCREENS***
+iOS
 ===
 
 #. Navigate back to the `Start9 Setup App <https://apps.apple.com/us/app/start9-setup-app/id1528125889>`_.

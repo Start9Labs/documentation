@@ -1,12 +1,10 @@
-.. _recover-03:
+.. _recover-03x:
 
 ===================================
 Recover Embassy from Versions 0.3.x
 ===================================
 
-.. _recover-03x:
-
-Migrate Embassy Series 0.3.x Data
+Recover Embassy Series 0.3.x Data
 ---------------------------------
 
 Recover From Remote Backup

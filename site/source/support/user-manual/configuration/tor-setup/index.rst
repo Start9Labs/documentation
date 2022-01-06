@@ -1,3 +1,5 @@
+.. _running-tor:
+
 =========
 Tor Setup
 =========

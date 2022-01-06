@@ -21,6 +21,8 @@ Embassy Tab
 
 The Embassy Tab is where you can perform :ref:`Backups<backups>`, get Insights into EOS, change some basic Settings, and Power cycle your device if necessary.
 
+.. _backups:
+
 Backups
 =======
 

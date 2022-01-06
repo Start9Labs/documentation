@@ -1,4 +1,4 @@
-.. _recover-02:
+.. _recover-02x:
 
 ===================================
 Migrate Embassy from Versions 0.2.x - **NEEDS SCREENS**
@@ -9,7 +9,7 @@ Migrate Embassy Series 0.2.x Data
 
 This guide will cover how to upgrade from EmbassyOS version 0.2.x to version 0.3.0.
 
-If you purchased the upgrade kit from us you can skip to :ref:`backing up <recover-03-backup>` unless you received your kit before we completed 0.3.0, in which case please skip to :ref:`flashing <recover-03-flashing>` as you will need to flash 0.3.0 onto your SD card to continue migrating.
+If you purchased the upgrade kit from us you can skip to :ref:`backing up <recover-02-backup>` unless you received your kit before we completed 0.3.0, in which case please skip to :ref:`flashing <recover-02-flashing>` as you will need to flash 0.3.0 onto your SD card to continue migrating.
 
 Additional Hardware
 ===================

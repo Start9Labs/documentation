@@ -1,7 +1,7 @@
 .. _lan-mac:
 
 ===
-Mac - ***UPDATE SCREENS***
+Mac
 ===
 
 #. Visit your Embassy at its Tor Address.

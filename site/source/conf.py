@@ -32,6 +32,7 @@ needs_sphinx = "1.8"
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.todo",
+    "sphinx.ext.viewcode",
     "sphinx.ext.mathjax",
     "sphinx.ext.extlinks",
     "sphinx_scylladb_theme",

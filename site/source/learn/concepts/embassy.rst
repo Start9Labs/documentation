@@ -52,3 +52,9 @@ Sometimes, a dependency can be satisfied in multiple ways. For example, Lightnin
 Web User Interface (UI)
 -----------------------
 A User Interface, or UI, is as the name suggests, the way in which the user interacts with some software, typically in our context it will be a graphical interface (GUI).  A WebUI is basically a website that is served (often by your Embassy) specifically for a user to issue commands or view data.  A great example of this is EmbassyOS itself, which serves a WebUI for the user to add/remove services, make configurations, etc.  This is your main point of contact with EOS.
+
+.. _health-checks:
+
+Health Checks
+-------------
+
