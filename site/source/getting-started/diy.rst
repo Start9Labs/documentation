@@ -40,7 +40,7 @@ Hardware: Components
 #. `Power supply for Raspberry Pi 4B <https://raspberrypi.org/products/type-c-power-supply/>`_
 #. Case for Raspberry Pi 4B (`passive cooling recommended <https://www.amazon.com/Geekworm-Raspberry-Aluminum-Passive-Heatsink/dp/B07Z6FYHCH/>`_ `*`)
 #. `High endurance microSD <https://amazon.com/SanDisk-Endurance-microSDXC-Adapter-Monitoring/dp/B07NY23WBG/>`_ (recommended 128GB or more)
-#. `GPIO mini speaker/buzzer <https://www.amazon.com/Corporate-Computer-Motherboard-Internal-Speaker/dp/B01527H4W2/>`_ (These often sell out, please let us know if this link needs to be refreshed)
+#. `GPIO mini speaker/buzzer <https://www.amazon.com/s?k=pc+speaker+buzzer>`_ (We simply include an Amazon search here, as vendors often sell out)
 #. Ethernet cable
 #. MicroSD → USB adapter (or you may have a microSD port on your computer)
 
