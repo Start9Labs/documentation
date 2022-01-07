@@ -1,3 +1,5 @@
+.. _config:
+
 =============
 Configuration
 =============
@@ -11,4 +13,5 @@ Configuration, setup guides, and known limitations are provided here by device.
   tor-setup/index
   lan-setup/index
   wifi
+  sessions
   limitations/index

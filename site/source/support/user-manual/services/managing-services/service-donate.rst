@@ -9,8 +9,6 @@ Currently, this is a link provided by the service package developer so that you 
     .. figure:: /_static/images/services/donate.svg
         :width: 60%
 
-        Donate
-
 .. topic-box::
     :title: Looking Forward
 

@@ -1,4 +1,4 @@
-.. _service_config:
+.. _service-config:
 
 ============================
 Service Config Specification
@@ -508,7 +508,7 @@ Example:
 Config Rules
 ------------
 
-This file defines the configuration rules, or the rule-set that defines dependencies between config variables. In practice, config rules are for auto-configuring self dependencies. Self dependencies are internal dependencies of a service, such as if the setting of one config variable informs the option of another setting. These "dependencies" are configured as rules. 
+This file defines the configuration rules, or the rule-set that defines dependencies between config variables. In practice, config rules are for auto-configuring self dependencies. Self dependencies are internal dependencies of a service, such as if the setting of one config variable informs the option of another setting. These "dependencies" are configured as rules.
 
 A rule is a boolean expression that we demand to be true. It is not true if the expression fails the rule parser.
 

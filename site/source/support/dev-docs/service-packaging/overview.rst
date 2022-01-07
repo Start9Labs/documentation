@@ -38,7 +38,7 @@ Image
 
 Each service boils down to a Docker image. We're not going to dive into Docker specifics in this guide, since there exists tons of `resources <https://docs.docker.com/>`_ for developing with this containerization tool.
 
-Because the service ultimately runs on a Raspberry Pi, the created Docker image should be a snapshot of an arm based linux environment. The service image is then mounted to the EmbassyOS image during installation. This path is defined in the :ref:`manifest <manifest>` configuration file.
+Because the service ultimately runs on a Raspberry Pi, the created Docker image should be a snapshot of an arm based linux environment. The service image is then mounted to the EmbassyOS image during installation. This path is defined in the :ref:`manifest <service-manifest>` configuration file.
 
 The image is immutable, meaning that when the service is updated, the image is replaced with a completely new image containing the updated features.
 
@@ -63,7 +63,7 @@ This may sound cool or neat, but it is more than that: *it’s novel*. This has 
 
 The key to making the system work is a new, domain-specific-language (DSL) and set of standards that are used by developers to define the rules and requirements of their services. Run in the context of EmbassyOS, these rules and requirements appear as simple UI elements, such as inputs, toggles, and drop downs, and they are enforced by validations and clear user instructions. Using this system, what previously required involved time and expertise, can now be done by anyone in a matter of seconds.
 
-This DSL is utilized in the :ref:`config rules <config_rules>` and :ref:`dependencies <dependencies>` key in the service manifest.
+This DSL is utilized in the :ref:`config rules <config_rules>` and :ref:`dependencies <service-dependencies>` key in the service manifest.
 
 Manifest
 ........
@@ -83,7 +83,7 @@ There is nothing you need to do as a developer to enable the service to run over
 Config
 ......
 
-Most self-hosted applications require the user to tell the app how to behave using a config file in a specific format, environment variables, command-line arguments, or some combination of these inputs. One of the coolest features of EmbassyOS is that, when packaged correctly, the app's :ref:`configuration <service_config>` will be available to the user as a slick GUI that always produces a valid configuration no matter how little experience or skill the user has.
+Most self-hosted applications require the user to tell the app how to behave using a config file in a specific format, environment variables, command-line arguments, or some combination of these inputs. One of the coolest features of EmbassyOS is that, when packaged correctly, the app's :ref:`configuration <service-config>` will be available to the user as a slick GUI that always produces a valid configuration no matter how little experience or skill the user has.
 
 With EmbassyOS, this means a service wrappers' configuration requires a particular format and rule structure to ensure it integrates smoothly with the user interface. This format enables clean handling of improper values and configuration dependencies.
 

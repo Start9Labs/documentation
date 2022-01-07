@@ -13,6 +13,7 @@ An overview of Services and Marketplaces on EmbassyOS.
   service-install
   service-config
   service-instructions
+  service-properties
   service-actions
   service-interfaces
   service-logs

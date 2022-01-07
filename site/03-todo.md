@@ -1,6 +1,7 @@
 # ToDo
 
 - Transfer HTML or refactor: Roadmap
+- Document diagnostic UI
 - Update principles, privacy, about, etc
 - Footer links need update (or removal?)
 - Add screenshots and details
@@ -9,34 +10,21 @@
 - There are many issues that should be closed by 0.3 docs release, check that this is the case (some issues await new processes in order to test)
 - Update all guides in services
 - Launch versioned site/docs to start9.com
-- Address build errors after versioning is live
+- Address build errors
 
-<!-- Original Layout (deprecated)
+<!-- Checklist
 # User Manual
 - Getting Started
     - Introduction
     - Purchasing
     - Initial Setup
     - Device-specific Setup Guides <label links with connectivity, performance, reliability, or tuning> - **ASK LUCY ABOUT "BADGES?"**
-        - Linux
-        - Mac
-        - Windows
-        - Android
-        - iOS
+            - Change to topic or hero boxes
+            - (after release) create badges
 - Walkthrough
     - EmbassyOS Overview
     - Updating EOS
-- Services
-    - Service Marketplace <link to marketplace>
-    - Managing Services
-        - Install / Uninstall
-        - Instructions
-        - Interfaces
-        - Config
-        - Backups
-        - Properties
-        - Logs
-        - Dependencies
+
 - Configuration
         - Basic Config
             - Name Your Embassy
@@ -95,29 +83,14 @@
     - Embassy
         - Hardware
         - Software
-    - Services
 
-# Knowledgebase
+# Learn
     - Concepts
-        - Open Source
-        - Self-Hosting
-        - Start9
-        - EmbassyOS
-        - Bitcoin/Lightning
-        - Networks
-            - LAN
-            - SSL
-            - Tor
     - FAQ
-        - General
         - Embassy
             - Device
             - OS
             - DIY
-        - Basic Usage
-        - Services
-        - Bitcoin
-        - aLightning Network
 
 # Developer Documentation
     - Service Packaging Guide

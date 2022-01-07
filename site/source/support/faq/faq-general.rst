@@ -24,7 +24,9 @@ One thing is for certain though: if you control your server, then you control yo
 
 Why do I care?
 --------------
-As an example, let's talk about the password manager, Bitwarden. It may help convey the concept of a personal server. Currently, when you use Bitwarden, your passwords are stored on a physical device (aka server) owned and operated by the Bitwarden team. Your phone or laptop sends requests to their server when you want to do anything: create an account, create a new password, retrieve existing passwords, etc. Your passwords are stored on their device, encrypted with your Bitwarden password. They are the custodian of your passwords, similar to getting a safe deposit box at the bank. The bank keeps your valuables in their vault, presumably they don't know what's in the box, and any time you want access to your box, you ask the bank for permission. This is exactly how a hosted Bitwarden experience works, as well as just about everything on the internet. When you install Bitwarden on your Embassy, by contrast, it's like building your own safe deposit box in a private bunker whose location is only known to you and whose keys only you posses. You create an account with yourself, store your passwords with yourself, etc. You are your own custodian. This same concept can be applied to just about everything on the Internet, without losing the convenience of the custodial model, which is what we are out to accomplish. This may sound cool, or neat, but it is so much more than that. The custodial data model is amongst the greatest threats to human liberty the world has ever seen.
+As an example, let's talk about the password manager, Bitwarden. It may help convey the concept of a personal server. Currently, when you use Bitwarden, your passwords are stored on a physical device (aka server) owned and operated by the Bitwarden team. Your phone or laptop sends requests to their server when you want to do anything: create an account, create a new password, retrieve existing passwords, etc. Your passwords are stored on their device, encrypted with your Bitwarden password. They are the custodian of your passwords, similar to getting a safe deposit box at the bank. The bank keeps your valuables in their vault, presumably they don't know what's in the box, and any time you want access to your box, you ask the bank for permission. This is exactly how a hosted Bitwarden experience works, as well as just about everything on the internet.
+
+When you install Bitwarden on your Embassy, by contrast, it's like building your own safe deposit box in a private bunker whose location is only known to you and whose keys only you posses. You create an account with yourself, store your passwords with yourself, etc. You are your own custodian. This same concept can be applied to just about everything on the Internet, without losing the convenience of the custodial model, which is what we are out to accomplish. This may sound cool, or neat, but it is so much more than that. The custodial data model is amongst the greatest threats to human liberty the world has ever seen.
 
 This `podcast <https://www.youtube.com/watch?v=aylDowaSdzU&t=270s>`_ may help expound upon why this is important.
 
@@ -44,7 +46,7 @@ The list of services will grow rapidly over the coming months, such that many th
 
 What is EmbassyOS?
 ------------------
-EmbassyOS is a new kind of Operating System (OS). It is built from the ground up to allow anyone to easily run their own ‘cloud,’ become independent from Big Tech, and own their own data. EmbassyOS allows anyone to easily self-host their own software services.
+EmbassyOS is a new kind of Operating System (OS). It is built from the ground up to allow anyone to easily run their own "cloud," become independent from Big Tech, and own their own data. EmbassyOS allows anyone to easily self-host their own software services.
 
 EmbassyOS is a custom-built Linux distribution, which is a stripped down and beefed up version of `Raspbian Buster Lite OS <https://www.raspberrypi.org/software/operating-systems/>`_, along with a suite of software tools which make it easy to:
 
@@ -62,7 +64,7 @@ The .s9pk extension is Start9's custom package format based on tar. It encompass
 
 What are EmbassyOS Services?
 ----------------------------
-A Service can be any piece of software added to the Marketplace.  All services are "self-hosted," meaning that you are in complete control of your data.  This means you can run your own "cloud!"  Learn more about managing services :ref:`here <managing-services>` and see our currently :ref:`Available Services <available-services>`.
+A Service can be any piece of software added to the Marketplace.  All services are "self-hosted," meaning that you are in complete control of your data.  This means you can run your own "cloud!"  Learn more about managing services :ref:`here <managing-services>` and see our currently :ref:`Available Services <service-marketplace>`.
 
 Does the Embassy ship worldwide?
 --------------------------------

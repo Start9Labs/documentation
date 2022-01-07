@@ -1,7 +1,7 @@
 .. _overview:
 
 =====================
-Overview of EmbassyOS - ***NEED SCREENSHOTS / DETAILS***
+Overview of EmbassyOS
 =====================
 
 .. _services-tab:
@@ -11,8 +11,13 @@ Services Tab
 
 The Services Tab will show you all of your currently installed :ref:`Services<services>`, or in the case of a fresh install, no Services.
 
-Services
-========
+    .. figure:: /_static/images/walkthrough/servicestab.svg
+        :width: 60%
+
+Click on any service in order to see its :ref:`Service Page<service-page>`.
+
+    .. figure:: /_static/images/walkthrough/servicepage.svg
+        :width: 60%
 
 .. _embassy-tab:
 
@@ -21,22 +26,25 @@ Embassy Tab
 
 The Embassy Tab is where you can perform :ref:`Backups<backups>`, get Insights into EOS, change some basic Settings, and Power cycle your device if necessary.
 
+    .. figure:: /_static/images/walkthrough/embassytab.svg
+        :width: 60%
+
 .. _backups:
 
 Backups
 =======
 
-Do the backups
+One of the most important actions you can do on your Embassy is to keep a regular backup of your data.  See the following page on :ref:`Backups<backup>`, and select your device for more details.
 
 Insights
 ========
 
-Get the insights
+The Insights section gives you basic information on your Embassy, monitoring of system resources / temperature, and logs for debugging.
 
 Settings
 ========
 
-Set the things
+The Settings section lets you change preferences, and manage `Connectivity` and Active Sessions.  See the documentation on :ref:`Configuration<config>` for more details.
 
 Power
 =====
@@ -51,7 +59,7 @@ Restart
 Shutdown
 ........
 
-#. Be patient while services shut down. A *tune* will play, indicating the shutdown is complete.
+#. Be patient while services shut down, it may take some minutes. A *tune* will play, indicating the shutdown is complete.
 #. It is now safe to unplug the Embassy from power and the ethernet cable, if connected.
 
 .. note:: After a shutdown, the *only* way to turn your Embassy back on is to unplug it and plug it back in. As such, we do not recommend shutting down your Embassy when you are not physically near it. Instead, you should use the restart option.
@@ -61,7 +69,10 @@ Shutdown
 Marketplace Tab
 ---------------
 
-The Marketplace Tab is obviously the home of the Marketplace, where you can install new Services, or manange existing ones.
+The Marketplace Tab is obviously the home of the Marketplace, where you can search out and install new Services, or manange existing ones.  You can view our live Marketplace `here <marketplace.start9.com>`_.
+
+    .. figure:: /_static/images/walkthrough/markettab.svg
+        :width: 60%
 
 Marketplace
 ===========
@@ -71,12 +82,7 @@ Marketplace
 Notifications Tab
 -----------------
 
-The Notifications Tab is where you can view and manage Notifications produced by EOS and your Services
+The Notifications Tab is where you can view and manage information produced by EOS and your Services that may need your attention.  You can clear these individually, or all at once with ``Delete All`` in the top right.
 
-Notifications
-=============
-
-* successful or failed EmbassyOS updates
-* successful or failed service installations
-* successful or failed service backups
-* successful or failed service updates
+    .. figure:: /_static/images/walkthrough/notiftab.svg
+        :width: 60%
