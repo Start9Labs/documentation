@@ -10,5 +10,5 @@ Here, you can customize your Embassy with advanced configuration, setup external
   diy
   migrating
   advanced-config/index
-  embassy-os
+  tune-embassy-os
   service-guides/index

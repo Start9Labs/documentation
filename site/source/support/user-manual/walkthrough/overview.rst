@@ -9,7 +9,7 @@ Overview of EmbassyOS
 Services Tab
 ------------
 
-The Services Tab will show you all of your currently installed :ref:`Services<services>`, or in the case of a fresh install, no Services.
+The Services Tab will show you all of your currently installed :ref:`Services<services>`, or in the case of a fresh install, no Services.  You can reorder this layout to your liking with the ``Reorder`` button in the top right.  You can see a demo of this :ref:`here<reorder>`.
 
     .. figure:: /_static/images/walkthrough/servicestab.svg
         :width: 60%
@@ -29,12 +29,10 @@ The Embassy Tab is where you can perform :ref:`Backups<backups>`, get Insights i
     .. figure:: /_static/images/walkthrough/embassytab.svg
         :width: 60%
 
-.. _backups:
-
 Backups
 =======
 
-One of the most important actions you can do on your Embassy is to keep a regular backup of your data.  See the following page on :ref:`Backups<backup>`, and select your device for more details.
+One of the most important actions you can do on your Embassy is to keep a regular backup of your data.  See the following page on :ref:`Backups<backup>`, and select your device for more details.  In this section, you can create, and restore from, backups.
 
 Insights
 ========
@@ -45,6 +43,8 @@ Settings
 ========
 
 The Settings section lets you change preferences, and manage `Connectivity` and Active Sessions.  See the documentation on :ref:`Configuration<config>` for more details.
+
+.. _power:
 
 Power
 =====

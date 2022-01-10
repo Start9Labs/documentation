@@ -1,7 +1,7 @@
 .. _forgot-password:
 
 ===============
-Forgot Password - ***NEEDS UPDATING***
+Forgot Password
 ===============
 
 There is currently no way to reset you Embassy master password through a standard UI flow.
@@ -14,65 +14,75 @@ If you already have :ref:`SSH keys registered with your Embassy<ssh-setup>` **OR
 SSH
 ===
 
-  * Use the command line to gain SSH access to your Embassy::
+#. Use the command line to gain SSH access to your Embassy, replacing ``[network-id]`` with your Embassy's unique ID:
 
-      ssh pi@start9-[network-id].local
+    .. code-block:: bash
 
-  * Check if you have sqlite3 installed. If not, install it::
+        ssh pi@embassy-[network-id].local
 
-      which sqlite3
-      sudo apt install sqlite3
+#. Check if you have sqlite3 installed (with ``which``). If not, install it (with ``apt``):
 
-  * Access the sqlite3 terminal::
+    .. code-block:: bash
 
-      sudo sqlite3 /root/agent/start9_agent.sqlite3
+        which sqlite3
+        sudo apt install sqlite3
 
-  * Run::
+#. Access the sqlite3 terminal:
 
-      delete from account;
-      .quit
+    .. code-block:: bash
 
-  * Exit the SSH session::
+        sudo sqlite3 /root/agent/start9_agent.sqlite3
 
-      exit
+#. Run:
 
-  * You can now use the Start9 Setup App to reclaim your Embassy and set a new password.
+    .. code-block:: bash
 
-.. warning:: Running setup process will generate new certificate and Tor address for your Embassy.
+        delete from account;
+        .quit
+
+#. Exit the SSH session:
+
+    .. code-block:: bash
+
+        exit
+
+    .. warning:: Running setup process will generate new certificate and Tor address for your Embassy.
+
+#. You can now visit ``embassy.local`` to reclaim your Embassy and set a new password.
 
 Linux
 =====
 
-  * Shut down your Embassy, disconnect from power, and remove the microSD card.
-  * Insert the microSD card into your Linux computer and mount the drive::
+#. Shut down your Embassy, disconnect from power, and remove the microSD card.
+#. Insert the microSD card into your Linux computer and mount the drive::
 
       mount [drive] [mount folder]
 
-  * Check if you have sqlite3 installed. If not, install it::
+#. Check if you have sqlite3 installed. If not, install it::
 
       which sqlite3
       sudo apt install sqlite3
 
-  * Access the sqlite3 terminal::
+#. Access the sqlite3 terminal::
 
       sudo sqlite3 /root/agent/start9_agent.sqlite3
 
-  * Run::
+#. Run::
 
       delete from account;
       .quit
 
-  * Un-mount the microSD card::
+#. Un-mount the microSD card::
 
       umount [mount folder]
 
-  * Return the microSD card to your Embassy and power it on.
-  * You can now use the Start9 Setup App to reclaim your Embassy and set a new password.
+#. Return the microSD card to your Embassy and power it on.
 
-.. warning:: Running setup process will generate new certificate and Tor address for your Embassy.
+    .. warning:: Running setup process will generate new certificate and Tor address for your Embassy.
 
+#. You can now visit ``embassy.local`` to reclaim your Embassy and set a new password.
 
 No SSH/Linux
 ------------
 
-You must factory reset your device by re-installing EmbassyOS, resulting in permanent loss of data. Visit the `image downloader <https://images.start9labs.com/download>`_ to obtain a new EmbassyOS image, then follow the `installation instructions </getting-started/diy.html#installing-embassyos>`_.
+You must factory reset your device by re-installing EmbassyOS, resulting in permanent loss of data. Visit the `image downloader <https://images.start9labs.com/>`_ to obtain a new EmbassyOS image, then follow the :ref:`Initial Setup <initial-setup>` guide.

@@ -29,6 +29,8 @@ Here you can change the name of your Embassy!
   :width: 60%
   :alt: Rename Embassy
 
+.. _reorder:
+
 Reorder Service Page
 --------------------
 
