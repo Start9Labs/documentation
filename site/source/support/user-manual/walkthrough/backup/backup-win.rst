@@ -11,15 +11,15 @@ Remote Backups
 
 #. Create a folder
 #. Right click the folder
-#. select "properties"
-#. click the share tab
-#. click share...
-#. select a user you want to use for login, or select everyone
-#. click share
-#. enter your computer name into the hostname field in embassy ui (the name is shown after a \\ in the windows ui)
-#. enter the path that is shown after the hostname in the windows ui into the path field
-#. enter your username for the windows computer
-#. enter the password for the windows computer
+#. Select "properties"
+#. Click the share tab
+#. Click share...
+#. Select a user you want to use for login, or select everyone
+#. Click share
+#. Enter your computer name into the hostname field in embassy ui (the name is shown after a \\ in the windows ui)
+#. Enter the path that is shown after the hostname in the windows ui into the path field
+#. Enter your username for the windows computer
+#. Enter the password for the windows computer
 
 Local Backups
 -------------

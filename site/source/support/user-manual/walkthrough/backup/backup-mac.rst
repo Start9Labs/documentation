@@ -9,17 +9,17 @@ There are 2 options for backing up your Embassy and all its service data.  You c
 Remote Backups
 --------------
 
-#. go to system settings
-#. click sharing
-#. click file sharing
-#. click the + under shared folders
-#. add a folder
-#. click options
-#. enable Windows file sharing for the user you would like to use to authenticate
-#. click done
-#. enter the name of your macbook, as shown in the computer name field at the top of the sharing page into the hostname field in embassy ui
-#. enter the name of the folder as shown in the shared folders section as the path
-#. enter your macbook username and password for the user that you enabled windows file sharing for
+#. Go to system settings
+#. Click sharing
+#. Click file sharing
+#. Click the + under shared folders
+#. Add a folder
+#. Click options
+#. Enable Windows file sharing for the user you would like to use to authenticate
+#. Click done
+#. Enter the name of your macbook, as shown in the computer name field at the top of the sharing page into the hostname field in embassy ui
+#. Enter the name of the folder as shown in the shared folders section as the path
+#. Enter your macbook username and password for the user that you enabled windows file sharing for
 
 Local Backups
 -------------
