@@ -18,13 +18,10 @@
     - Introduction
     - Purchasing
     - Initial Setup
-    - Device-specific Setup Guides <label links with connectivity, performance, reliability, or tuning> - **ASK LUCY ABOUT "BADGES?"**
+    - Device-specific Setup Guides <label links with connectivity, performance, reliability, or tuning>
             - Change to topic or hero boxes
             - (after release) create badges
 - Configuration
-        - Basic Config
-            - Name Your Embassy
-            - WiFi Setup
         - Tor Setup
             - Desktop
                 - Linux
@@ -101,4 +98,6 @@
     - Service Packaging Walkthrough (Hello-World Example)
     - Development FAQ
         - Contributing
-        - Service Packaging -->
+        - Service Packaging
+
+-->
