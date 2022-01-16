@@ -4,24 +4,32 @@
 Windows
 =======
 
-.. note:: Please see Window's :ref:`Known Limitations<lim-windows>` to understand what is currently not possible on these devices
+.. note:: Please see Window's :ref:`Known Limitations<lim-windows>` to understand what is currently not possible on these devices.
 
-LAN Setup (Connectivity, Performance)
--------------------------------------
+.. topic-box::
+    :title: LAN Setup (Connectivity, Performance)
+    :link: https://start9.com/latest/support/user-manual/configuration/lan-setup/lan-windows
+    :anchor: Setup
 
-`Setup LAN Access <https://docs.start9.com/support/user-manual/configuration/lan-setup/lan-windows>`_ for a fast and secure connection while on your Embassy's local network.
+    For a fast and secure connection while on your Embassy's local network
 
-Tor Setup (Connectivity)
-------------------------
+.. topic-box::
+    :title: Tor Setup (Connectivity)
+    :link: https://start9.com/latest/support/user-manual/configuration/tor-setup/tor-os/tor-windows
+    :anchor: Setup
 
-`Setup Tor <https://docs.start9.com/support/user-manual/configuration/tor-setup/tor-os/tor-windows>`_ to run natively (in the background) on your device.  This will allow you to use applications on your Windows machine via the :ref:`Tor Network<tor>` so they can communicate with your Embassy.
+    Run Tor natively (in the background) on your device.  This will allow you to use applications on your Windows machine via the Tor Network so they can communicate with your Embassy.
 
-Tor Firefox Config (Connectivity)
----------------------------------
+.. topic-box::
+    :title: Tor Firefox Config (Connectivity)
+    :link: https://start9.com/latest/support/user-manual/configuration/tor-setup/tor-firefox/torff-windows
+    :anchor: Configure
 
-`Configure Firefox <https://docs.start9.com/support/user-manual/configuration/tor-setup/tor-firefox/torff-windows>`_ to be able to use the :ref:`Tor Network<tor>` so that you can reach ``.onion`` sites without needing to change browsers.
+    Configure Firefox to use the Tor Network so that you can reach ``.onion`` sites without needing to change browsers.
 
-Embassy Backups (Reliability)
------------------------------
+.. topic-box::
+    :title: Embassy Backups (Resilience)
+    :link: https://start9.com/latest/support/user-manual/walkthrough/backup/backup-win
+    :anchor: Backup
 
-`Configure Remote Backup <https://docs.start9.com/support/user-manual/walkthrough/backup/backup-win>`_ of your Embassy to your Windows machine.  **Backups are supremely important** as they ensure redundancy of your data for convenience, as well as preventing loss in case of disaster.
+    Configure remote backups of your Embassy to your Windows machine.  **Backups are supremely important** as they ensure redundancy of your data for convenience, as well as preventing loss in case of disaster.

@@ -34,6 +34,18 @@ Services
 --------
 The server-side software available on EmbassyOS are referred to as "Services."  It's important to distinguish the difference between *services* and *applications*.  Applications are generally *client-side*.  This means that they are either standalone software, or they reach out to a server in order to operate.  Services are *server-side*.  These generally run 24/7, waiting for commands from a user via an application.
 
+.. _sessions:
+
+Session
+-------
+A session is simply a logged-in connection to your Embassy.  You can view your :ref:`Active Sessions<active-sessions>`, and kill one if you suspect it is not legitimate, or no longer use it.
+
+.. _service-container:
+
+Service Container
+-----------------
+Each service is compartmentalilzed into its own "container," at this time, this normally means a `Docker <docker.com>`_ container.  There are several reasons for this, including security, ease of use, and maintenance.
+
 .. _service-dependencies:
 
 Dependencies
@@ -70,3 +82,5 @@ Health Checks
 One of the most critical duties of a sysadmin or devops engineer is to build systems to monitor health. For example, a simple health check that monitors the availability of an LND node could mean the difference between that node having a poor reputation or a great one. Sometimes, it is not obvious when a service is unhealthy, especially since “health” is a subjective term depending on the subject. For example, is your Bitcoin node “healthy” if it is not fully synced? Is it healthy if the user interface is unreachable but everything else is working ok?
 
 In EmbassyOS 0.3.0, package developers define what constitutes health and implement health checks according to subjective criteria that are then displayed to the user in easily digestible messages, complete with icons and colors. Even better, health checks are completely arbitrary and turing complete, meaning they can include anything, including config options and internal or external dependencies! For example, a Lightning wallet package developer could say “this service is only healthy if (1) it is fully synced, (2) Bitcoin is fully synced, (3) LND is fully synced, and (4) if and only if the user has opted for real-time pricing from a third party website, that third party website must be reachable.” Enormous power.
+
+

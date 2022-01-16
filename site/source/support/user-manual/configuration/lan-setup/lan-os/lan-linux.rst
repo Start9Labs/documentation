@@ -1,7 +1,7 @@
 .. _lan-linux:
 
 =====
-Linux - ***UPDATE SCREENS***
+Linux
 =====
 
 Nothing specific needs to be configured for this environment, so you just need the certificate from your Embassy.

@@ -4,7 +4,7 @@
 SSH Setup
 =========
 
-.. warning:: This is an advanced feature and should be used with caution. Start9 is not responsible for any damage you might cause through SSH access.
+.. warning:: This is an advanced feature and should be used with caution. Start9 is not responsible for any damage you might cause while using SSH access.
 
 Connecting via CLI (Linux / Mac)
 --------------------------------

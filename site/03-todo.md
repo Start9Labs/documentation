@@ -1,16 +1,18 @@
 # ToDo
 
-- Transfer HTML or refactor: Roadmap
-- Document diagnostic UI
-- Update principles, privacy, about, etc
-- Footer links need update (or removal?)
-- Add screenshots and details
-- Verify ALL links and TOCs
-- Add / verify ALL links in the UI go to the right place in docs
-- There are many issues that should be closed by 0.3 docs release, check that this is the case (some issues await new processes in order to test)
-- Update all guides in services
-- Launch versioned site/docs to start9.com
-- Address build errors
+- [ ] Refactor and update Roadmap
+- [ ] Document colours
+- [ ] Document diagnostic UI
+- [ ] Update principles, privacy, about, etc
+- [ ] Footer links need update (or removal?)
+- [ ] Add screenshots and details
+- [ ] Verify ALL links and TOCs
+    - [ ] Check all menus behave and display as expected
+- [ ] Add / verify ALL links in the UI go to the right place in docs
+- [ ] Update all guides in service repos
+- [ ] Address build errors
+- [ ] Launch versioned site/docs to start9.com
+- [ ] There are many issues that should be closed by 0.3 docs release, check that this is the case (some issues await new processes in order to test)
 
 <!-- Checklist
 # User Manual
@@ -22,33 +24,25 @@
             - Change to topic or hero boxes
             - (after release) create badges
 - Configuration
-        - Tor Setup
-            - Desktop
-                - Linux
-                - Mac
-                - Windows
-            - Mobile
-                - Android
-                - iOS
-            - Browser
-                - FF Desktop
-                - FF Mobile
-        - LAN Setup
-            - Desktop
-                - Linux
-                - Mac
-                - Windows
-            - Mobile
-                - Android
-                - iOS
-        - Platform Limitations
-            - Desktop
-                - Linux
-                - Mac
-                - Windows
-            - Mobile
-                - Android
-                - iOS
+    - Tor Setup
+        - Desktop
+            - Linux
+            - Mac
+            - Windows
+        - Mobile
+            - Android
+            - iOS
+        - Browser
+            - FF Desktop
+            - FF Mobile
+    - LAN Setup
+        - Desktop
+            - Linux
+            - Mac
+            - Windows
+        - Mobile
+            - Android
+            - iOS
 - Tuning
     - DIY Guide
         - Hardware
@@ -57,34 +51,19 @@
         - From Umbrel
     - Advanced Configurations
         - SSH over Tor
-        - Exec into a Service
     - EmbassyOS
     - Service-specific Guides
-        - Connecting External Services
-            - Bitcoin Wallets
-                - FullyNoded
-                - Specter
-                - Sparrow
-            - Lightning Wallets
-                - Spark
-                - Zap
-                - Zeus
-- Troubleshooting
-    - Connection
-    - Embassy
-        - Hardware
-        - Software
-
 # Learn
     - Concepts
-    - FAQ
+    - FAQ - remove anything no longer relevant in 0.3
         - Embassy
             - Device
             - OS
             - DIY
-
 # Developer Documentation
-    - Service Packaging Guide
+    - embassyd
+    - embassy-sdk
+    - Service Packaging Spec
         - Overview
         - Wrapper
         - Manifest
@@ -99,5 +78,4 @@
     - Development FAQ
         - Contributing
         - Service Packaging
-
 -->
