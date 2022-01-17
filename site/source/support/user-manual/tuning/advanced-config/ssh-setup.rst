@@ -6,6 +6,8 @@ SSH Setup
 
 .. warning:: This is an advanced feature and should be used with caution. Start9 is not responsible for any damage you might cause while using SSH access.
 
+.. tip:: An ED25519 key is strongly recommended.  If you have issues with any other type of key, please consider using an ED25519.
+
 Connecting via CLI (Linux / Mac)
 --------------------------------
 

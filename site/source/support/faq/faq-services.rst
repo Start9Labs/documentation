@@ -4,10 +4,6 @@
 Services FAQ
 ============
 
-My Embassy is set up, now what?
--------------------------------
-You can now access your Embassy and find the Services you want from the "Marketplace" tab, then clicking "Install."  The Service will let you know if you need any "dependencies," or pre-requisite Services, first.  After you have a Service installed, don't forget to "Start" the service.
-
 What if I cannot connect to a Service?
 --------------------------------------
 Please make sure the service is started by viewing it in the Services tab in the Embassy dashboard menu. A green indicator bar should be visible.
@@ -18,7 +14,7 @@ Potentially. The PiHole service is on the roadmap.
 
 Will there be a VPN?
 --------------------
-We are looking into adding as a Wireguard service for VPN access when you are not home.  A client-to-client VPN may also be possible.
+We are looking into adding Wireguard as a service for VPN access when you are not home.  A client-to-client Embassy VPN may also be possible.
 
 Will there be an email server?
 ------------------------------
@@ -26,7 +22,7 @@ We do hope to add this functionality one day, however it has some technical chal
 
 Can the Embassy run 'X' Service??
 ---------------------------------
-Potentially. Here is a `comprehensive list <https://github.com/awesome-selfhosted/awesome-selfhosted>`_ of self-hosted services, any of which can theoretically be run on the Embassy.
+Potentially. Here is a `comprehensive list <https://github.com/awesome-selfhosted/awesome-selfhosted>`_ of self-hosted services, any of which can theoretically be run on EmbassyOS.
 To get a general idea of what is required of an app, answer these questions:
 
 1. Is it designed to be self-hosted?
@@ -37,21 +33,21 @@ To get a general idea of what is required of an app, answer these questions:
 
 If all answers are yes, then it can run on EmbassyOS.
 
-Packing up a service for the Embassy does not require extensive development skills. If you are interested in doing do, please see our service packaging guide :ref:`here <service_package_overview>`.
+Packing up a service for the Embassy does not require extensive development skills. If you are interested in doing do, please see our :ref:`Developer Docs<dev-docs>`.
 
-We are aggressively moving away from service development in favor of a more community driven approach. Meaning you, an app development team, or anyone else on Earth, can bring the Service they want to the Embassy Marketplace. You don't need our permission.
+We are aggressively moving away from service development in favor of a more community driven approach. Meaning you, an app development team, or anyone else on Earth, can bring the Service they want to an Embassy Marketplace. You don't need our permission.
 
 Does the Embassy operate as a Tor relay node?
 ---------------------------------------------
-No, currently it is not, but we plan to add that functionality in the future.
+No, currently it does not, but we plan to add that functionality in the near future.
 
 Are files on File browser encrypted on disk?
 --------------------------------------------
 No, not currently.
 
-Can I use my CUPS instance with other people? How does that work?
------------------------------------------------------------------
-Cups does not have multiple accounts support. Each person would need their own Embassy. We are considering adding multi-account support to Cups, but it's just not a priority at the moment.
+Can others use my Cups instance? How does that work?
+----------------------------------------------------
+Cups does not have multiple accounts support. Each person would need their own Embassy. We are considering adding multi-account support to Cups, but it's not a priority at the moment.
 
 How can I fix issues with Sphinx?
 ---------------------------------
@@ -70,11 +66,13 @@ Can the browser extension be used with Bitwarden hosted on the embassy?
 -----------------------------------------------------------------------
 Yes, but only in a tor-enabled browser.  Just add your .onion address as the server in the extension.  Make sure that http:// is at the beginning, and NOT https://, as this will not work.
 
+You can use your .local address, but remember that you will only be able to sync when on your :ref:`LAN<lan>`.
+
 I want to use BTCPayServer on my website, but Tor is the only option, how can visitors access my BTCPay on clearnet?
 --------------------------------------------------------------------------------------------------------------------
-As the Embassy produces a Tor Hidden Service for each service, BTCPayServer is only available via Tor by default.  For a brick and mortar business, this is no problem as you can use your own device for a customer to pay you on.  If you run your own website, it is possible to set up a reverse proxy in order to serve BTCPay content to your clearnet visitors.  A guide to doing this is available in the `BTCPayServer docs <https://docs.btcpayserver.org/ReverseProxyToTor/>`_.
+As the Embassy produces a Tor Hidden Service for each service, BTCPayServer is only available via Tor by default.  For a brick and mortar business, this is no problem as you can use your own device for a customer to pay you on.  If you run your own website, it is possible to set up a reverse proxy in order to serve BTCPay content to your clearnet visitors.  A guide to doing this is available in the `BTCPayServer docs <https://docs.btcpayserver.org/Deployment/ReverseProxyToTor/#reverse-proxy-to-tor/>`_.
 
-We understand that this can be a frustrating limitation, and adding clearnet support is high on our list of priorities for the Embassy.  This will allow a number of services to have better interoperability with the broader Web.
+We understand that this can be a frustrating limitation, and adding clearnet support is high on our list of priorities for EmbassyOS.  This will allow a number of services to have better interoperability with the broader Web.
 
 I'm having issues connecting to users or rooms in Matrix/Synapse, what can I do?
 --------------------------------------------------------------------------------
@@ -84,7 +82,7 @@ Please reach out to us if you are still unable to connect.
 
 My Element desktop client stopped working after an OS update, what is happening?
 --------------------------------------------------------------------------------
-If you had to create a custom destkop shortcut, it is likely that this was reset with the system update, so you'll just need to remake it.
+If you had to create a custom destkop shortcut, it is likely that this was reset with the system update, so you'll just need to remake it.  This happens most often on Windows.
 
 I don't see an answer to my question regarding a certain service.  Is there more documentation?
 -----------------------------------------------------------------------------------------------

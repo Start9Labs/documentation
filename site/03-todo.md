@@ -27,7 +27,6 @@
 - Configuration
     - Tor Setup
         - Desktop
-            - Linux
             - Mac
             - Windows
         - Mobile
@@ -56,7 +55,6 @@
     - Service-specific Guides
 # Learn
     - Concepts
-    - FAQ - remove anything no longer relevant in 0.3
         - Embassy
             - Device
             - OS

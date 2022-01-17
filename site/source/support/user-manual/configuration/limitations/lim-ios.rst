@@ -19,3 +19,7 @@ The lack of Tor support on iOS means that Element/Matrix cannot be run on an iPh
 Workarounds
 ===========
 None currently known.
+
+Spark Wallet
+------------
+Unfortunately, Spark cannot currently be used in Consulate.  This issue is being tracked `here <https://github.com/Start9Labs/consulate-ios/issues/30>`__.

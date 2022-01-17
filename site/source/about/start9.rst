@@ -4,13 +4,41 @@
 Start9 Labs
 ===========
 
-Start9 Labs is a small, but rapidly growing team of passionate builders.  We are based in Denver, Colorado, but have team members around the world.
+Privacy and free speech are fundamental human rights and essential ingredients for a free society. Human history demonstrates that, when entrusted to others, these rights are invariably denied, resulting in great suffering. As such, it is necessary for individuals to protect their own privacy and right to speak freely. Fortunately, modern technologies, in the form of personal computers, encryption, and open, decentralized network protocols such as the Internet and Bitcoin, make this a real possibility. What is needed is a revolution in personal computing away from the current, hosted, custodial model that breeds dependency and corruption, towards a decentralized model, where individuals have absolute control over their data and communications.
+
+.. _mission:
+
+The Mission
+-----------
+To afford individuals sovereign control over their computers.
+
+.. _values:
+
+Values
+------
+Decentralization - While centralized services can offer some efficiency gains, the costs are simply too high.  Decentralized systems afford more power (and responsibility) to the users.  
+
+Openness
+Community
+Dignity
+Independence
+
+.. _virtues:
+
+Virtues
+-------
+Audacity
+Tenacity
+Excellence
+Courtesy
+Generosity
+Fortitude
+Integrity
 
 .. _start9-origin:
 
-"The Origin of “Start9”
------------------------
-
+"The Origin of “Start9” (the name)
+----------------------------------
 Pokemon is a game for Gameboy. Twitch is a live video streaming app. “Twitch Plays Pokemon” was a popular phenomenon where Twitch users would collaborate to play a SHARED game of Pokemon on Gameboy. Here’s how it worked:
 
 Participants would use the Twitch message board to enter commands that then got executed in the gameplay. For example, if someone entered the command "right”, that would cause the player to move 1 space to the right. Commands would execute immediately after they were received, and anyone could enter a valid command at any time. You can think of Twitch Plays Pokemon as the more practical equivalent of placing a Gameboy in the middle of a crowded room and telling everyone to push buttons at the same time. As you might expect, the gameplay of Twitch Plays Pokemon was quite “twitchy”, but in a very "infinite monkey theory" way, progress could eventually be made.

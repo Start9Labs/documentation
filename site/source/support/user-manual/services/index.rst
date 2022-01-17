@@ -1,4 +1,4 @@
-.. _services-index:
+.. _services:
 
 ========
 Services

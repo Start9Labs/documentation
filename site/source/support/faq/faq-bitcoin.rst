@@ -6,33 +6,32 @@ Bitcoin FAQ
 
 Why does the Bitcoin service take so long to be ready?
 ------------------------------------------------------
-On first install, the Bitcoin service must verify the entire history of transactions in order to verify transactions going forward.  This can take approximately a week depending on your internet connection.  You can continue to use the Embassy normally in the meantime.
+On first install, the Bitcoin service must verify the entire history of transactions in order to verify transactions going forward.  This can take up to a week depending on your internet connection.  On a fast connection, you can expect 3-4 days.  You can continue to use your Embassy normally in the meantime.
 You can learn more about the Initial Block Download in `this video <https://www.youtube.com/watch?v=OrYDehC-8TU>`_.
+
+.. youtube:: OrYDehC-8TU
 
 Can the IBD (Initial Block Download) be made faster?  Or can wait times be improved?
 ------------------------------------------------------------------------------------
-We have improvements on the way in mid-2021 to vastly improve the painful sync times, without sacrificing trust minimization.
+IBD was made significantly faster with the new hardware scheme of version 0.3.0 and up.  Going forward the only way to improve IBD speeds will be on more powerful hardware, which we are investigating.
 
-I'm getting this error: unable to connect to bitcoind: -28: Loading block index... What do I do?
-------------------------------------------------------------------------------------------------
-The block index error is normal and goes away after the Bitcoin blockchain has synced.  If you have completed the Initial Blockchain Download (IBD), this will be a few minutes at most.
-
-Does the Embassy run a full archival Bitcoin node?
---------------------------------------------------
-The Embassy runs a full node, but does not run a full *archival* node, it's pruned. This means it does not store the entire Blockchain.  As it syncs, it discards blocks and transactions it does not need.
-It is fully validating and verifying consensus all the way from Genesis. Really, the only reason to store the entire Blockchain is if you want to run a block explorer.  Learn more here: :ref:`node`.  All this being said, it will be possible to run a full archival node on the Embassy in mid-2021, bringing this additional functionality to those that would like it.
+Does the Embassy run a full archival Bitcoin node or a pruned one?
+------------------------------------------------------------------
+Previous Embassy versions (pre-0.3.0) only allowed a pruned node, but the option is now yours.  In the Bitcoin Config, find the section on pruning, and set to 'Manual' or 'Automatic' to to prune to specified sizes, or turn pruning off entirely for a full archival node.  Please keep in mind that a full archival node will take up between 400-500GB of your drive as of 2022.
 
 What actions, specifically, are only possible with an archival, or ‘unpruned’ node?
 -----------------------------------------------------------------------------------
 The more sophisticated the blockchain analysis being done is, the more index data is required, which will increase the system resources required.  For example, if you wanted to run a block explorer, you would require not only a full archival node, but also a full transaction index.  So, specifically, at this time, a full archival node is required for running an Electrum server, a block explorer, and for doing advanced chain analysis in general.
 
+Many wallets also do not yet support pruned nodes, which is one big reason that we added the archival option.  Archival nodes currently have a lot more wallet integration options.
+
 Is it insecure to run a pruned node?
 ------------------------------------
-As a user, pruned nodes and archival nodes provide you the same security.  In a larger sense, if 100% of people ran pruned nodes, the security of the network could be in dire circumstances and be put at risk if no nodes kept history, as then no one could bootstrap new nodes.  The reality however, is that most Embassy owners are new node operators, so there is no net systemic risk introduced.
+As a user, pruned nodes and archival nodes provide you the same security.  In a larger sense, if 100% of people ran pruned nodes, the security of the network could be in dire circumstances and be put at risk if no nodes kept history, as then no one could bootstrap new nodes.  The reality however, is that most Embassy owners are new node operators, so there is no net systemic risk introduced if users decide to run a pruned node.
 
 The Bitcoin Service is different from the GUI version I am used to using (bitcoin-qt).  How do I use this like I used to?
 -------------------------------------------------------------------------------------------------------------------------
-At present, the Embassy does not offer its own node visualization tool. You can view certain properties about your node inside the "Properties" section, but not in an animated GUI. If you want to use bitcoin-cli, you may do so by adding an SSH key onto your Embassy and exec-ing into the bitcoind docker container. Otherwise, the main way to actually *use* your node is through a wallet. The QT GUI is not usable because it cannot be served through the browser (which is necessary here), and last we checked, the QT desktop client was incapable of connecting to a remote node over Tor. As far as we are aware, the only wallets that support this are Specter, Fully Noded, and Sparrow.
+At present, the Embassy does not offer its own node visualization tool. You can view certain properties about your node inside the "Properties" section, but not in an animated GUI. If you want to use bitcoin-cli, you may do so by adding an SSH key onto your Embassy and :ref:`exec-ing into the bitcoind docker container<service-container>`. Otherwise, the main way to actually *use* your node is through a wallet. The QT GUI is not usable because it cannot be served through the browser (which is necessary here), and last we checked, the QT desktop client was incapable of connecting to a remote node over Tor.
 
 Is a wallet vulnerable to hacking if it’s always online??
 ---------------------------------------------------------
@@ -60,23 +59,13 @@ It is helpful to think of the Bitcoin Core service on the Embassy as your own pe
 There are modern wallets that have the ability to use your personal Bitcoin node as a source of truth, and with the advantages of additional security and advanced features. This also follows the Linux mantra of "do one thing and do it well."  The recommended way to use Bitcoin with your Embassy’s Bitcoin node is with an external wallet.  
 The available wallets are listed in the following FAQ.
 
-Which wallets can I use that sync with my Embassy Bitcoin node?
----------------------------------------------------------------
-The only currently available external options are FullyNoded and Specter.  Within the Embassy, BTCPayServer is available, which offers a wallet that is automatically connected to your Embassy's Bitcoin Core node.  Keep in mind that this first and foremost a payment gateway, rather than a personal wallet.  Unforutnately, this is still not a popular functionality in Bitcoin wallets.  We are in communication with several wallet developers about adding Tor full node support.  
-
-What Lightning wallets can I use that sync with my Embassy?
------------------------------------------------------------
-Spark, Zap, and Zeus.
+Which wallets can I use that sync with my Embassy Bitcoin and/or Lightning nodes?
+---------------------------------------------------------------------------------
+Please see the :ref:`Service Guides<service-guides>` for all the current options.
 
 Is BlueWallet an option?
 ------------------------
 BlueWallet requires a separate backend service called LNDHub, which is not available on the Embassy at this time.
-
-Is there a guide for connecting Specter Wallet to my Embassy?
--------------------------------------------------------------
-There is.  Please follow the integration guide `here <https://github.com/Start9Labs/bitcoind-wrapper/tree/master/docs/integrations/specter>`_ and select the tutorial based on your operating system.
-
-More guides, particularly in video form, are forthcoming.
 
 I want to use my hardware signer, such as Coldcard or Trezor, with my Embassy.  How does this work?
 ---------------------------------------------------------------------------------------------------
@@ -93,5 +82,3 @@ You would use your hardware signer with your wallet, then instruct that wallet t
 - Signers are for generating and storing keys, as well as signing transactions.
 
 The reason there is so much confusion about these 3 concepts is that the Bitcoin Core Node comes with its own Wallet (which you should not use), and that wallet is also a signer. In fact, most wallets double as signers, and most wallets do NOT support connecting to your own node. So, most wallets are actually serving as a wallet, a node, and a signer, which might be convenient, but it is neither trustless nor maximally secure. Ideally, you are using a wallet that supports both integrating with a hardware signer (like Coldcard or Trezor) AND a backend node (like on the Embassy).
-
-Please note: of the wallets listed (Specter/Sparrow/Electrum), only Specter is currently able to use Embassy as it's node, but the other two should be available soon.

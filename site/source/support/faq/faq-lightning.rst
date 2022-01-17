@@ -26,8 +26,8 @@ The commitment fees are automatically negotiated every few blocks with your peer
 
 What would happen if I shut down an Embassy that is running a Lightning node with open channels?
 ------------------------------------------------------------------------------------------------
-It is REALLY IMPORTANT to understand that if Lightning services are shut off for long periods of time (days on end) it is possible for your peers to cheat you out of money. If you are not prepared to LOSE ALL THE MONEY IN YOUR CHANNELS, KEEP YOUR NODE RUNNING.
-That said, malicious actors on the network right now are probably sparse. However, you are still open to that risk if you do not keep your node online.
+It is REALLY IMPORTANT to understand that if Lightning services are shut off for long periods of time (several days or more) it is possible for your peers to cheat you out of money. If you are not prepared to LOSE ALL THE MONEY IN YOUR CHANNELS, KEEP YOUR NODE RUNNING.
+That said, malicious actors on the network right now are probably sparse, and you may choose to only open channels with friends that may be a lot nicer to you if your node is not active.
 
 Is there a solution to this?
 ----------------------------
@@ -37,19 +37,17 @@ Is it possible to run c-lightning and lnd parallel on the Embassy?
 ------------------------------------------------------------------
 Yes, you may run both.  They will operate in their own environments and allow you to run services that depend on either.
 
-How do I connect my Spark mobile app to the Embassy Spark server?
+How do I connect my Lightning wallet or mobile app to my Embassy?
 -----------------------------------------------------------------
-To use a Spark client, you still need to have Spark installed on the Embassy (which ‘serves’ Spark). Then, under Properties, there is a "Pairing URL". The first part of this is the server URL, and the end portion of it is the access key.
+Please see the :ref:`Service Guides<service-guides>` section for more details.
 
-Unfortunately, Spark cannot currently be used in Consulate.  This issue is being tracked `here <https://github.com/Start9Labs/consulate-ios/issues/30>`__.
-
-Are my addresses, channels, and balances all stored in LND or in RTL?
----------------------------------------------------------------------
-This is all on LND, and RTL is just a GUI for accessing LND.  On-chain balance is also part of the LND backup.
+Are my addresses, channels, and balances all stored in LND or in RTL?  C-Lightning or Spark, etc?
+-------------------------------------------------------------------------------------------------
+This is all on LND, including on-chain funds, and RTL (or ThunderhHub, Zap, etc) is just a GUI for accessing LND.  Same for C-Lightning, it contains all funds, channels, etc, and Spark, Zeus, etc are just GUIs to interface with the node.
 
 How do I find my LND seed so I can write it down to backup?
 -----------------------------------------------------------
-All LND backups are best done via the Embassy backup flow.  It is not supported to use a seed as backup; LND does not expose this. Everything crucial is backed up by our backup system so you do not need your seed.  The seed is ONLY for the onchain wallet and does not backup your channel state.
+All LND backups are best done via Embassy's backup flow.  It is not supported to use a seed as backup; LND does not expose this. Everything crucial is backed up by our backup system so you do not need your seed.  The seed is ONLY for the onchain wallet and does not backup your channel state.
 
 To clarify some of the reasons for this choice:
 
@@ -59,11 +57,15 @@ So, what is the LND seed *for*? In short, the seed is only used for the Layer1 p
 
 Is there a way to use the channel backups made within RTL?
 ----------------------------------------------------------
-The only backup flow we officially support is through the Embassy backup system. This does include the channel backups created automatically by LND, but it must be understood that backups in Lightning are very different than they are on Layer 1 Bitcoin. If you restore from backup all your channels will close, and there is a potential, albeit small, probability for you to lose funds.
+The only backup flow we officially support is through Embassy's backup system. This does include the channel backups created automatically by LND, but it must be understood that backups in Lightning are very different than they are on Layer 1 Bitcoin. If you restore from backup all your channels will close, and there is a potential, albeit small, probability for you to lose funds.
 
 When attempting to add new peer, RTL says "server is still in the process of starting," but chain state seems to be fully up to date.  What can I do?
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 Check the LND logs, it can take a while to bootstrap, and starting RTL before this completes could cause errors.
+
+I get an error ("Unlock Wallet Failed") when trying to log in to RTL, what can I do?
+------------------------------------------------------------------------------------
+Stop and Restart the Service.
 
 "Server is still in the process of starting," but LND and RTL are running.  How can I address this?
 ---------------------------------------------------------------------------------------------------
@@ -75,7 +77,7 @@ LND is waiting for Bitcoin to completely sync, and then needs to catch up on blo
 
 What's the best way to move a small lightning balance?
 ------------------------------------------------------
-It is possible to have lightning balances that are so low that they will not (or barely will) cover the on-chain fees to recoup into an on-chain wallet.
+It is possible to have lightning balances that are so low that they will not (or barely will) cover the on-chain fees to recoup into an on-chain wallet.  If possible, move them to another Lightning node.
 
 Why are Lightning Network backups and moves so complicated?
 -----------------------------------------------------------
