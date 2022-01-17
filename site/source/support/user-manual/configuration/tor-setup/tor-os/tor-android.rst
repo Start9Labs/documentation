@@ -11,7 +11,7 @@ Some apps, such as :ref:`Tor Browser<tor-browser>`, have Tor built in. They do n
 Running Orbot
 -------------
 
-Orbot is a system wide proxy for your Android or Graphene device that enables communications over Tor.
+Orbot is a system wide proxy for your Android device that enables communications over Tor.
 
 1. Download Orbot from the `Play Store <https://play.google.com/store/apps/details?id=org.torproject.android>`_ , or from `F-Droid <https://f-droid.org/packages/org.torproject.android>`_.
 
