@@ -4,9 +4,11 @@
 iOS
 ===
 
-.. note:: Please see iOS's :ref:`Known Limitations<lim-ios>` to understand what is currently not possible on these devices
+.. tip:: Please see iOS's :ref:`Known Limitations<lim-ios>` to understand what is currently not possible on these devices
 
-LAN Setup (Connectivity, Performance)
--------------------------------------
+.. topic-box::
+    :title: LAN Setup (Connectivity, Performance)
+    :link: https://start9.com/latest/support/user-manual/configuration/lan-setup/lan-ios
+    :anchor: Setup
 
-`Setup LAN Access <docs.start9.com/user-manual/configuration/lan-setup/lan-ios>`_ for a fast and secure connection while on your Embassy's local network.
+    For a fast and secure connection while on your Embassy's local network

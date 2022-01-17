@@ -9,11 +9,12 @@
 - [ ] Verify ALL links (especially in device guides as they are all external)
     - [ ] Check all menus behave and display as expected
     - [ ] Verify all TOCs, etc
-- [ ] Add / verify ALL links in the UI go to the right place in docs
+- [ ] Add / verify ALL links in the **UI** go to the right place in docs
 - [ ] Update all guides in service repos
 - [ ] Address build errors
 - [ ] Launch versioned site/docs to start9.com
 - [ ] There are many issues that should be closed by 0.3 docs release, check that this is the case (some issues await new processes in order to test)
+- [ ] Below checklist
 
 <!-- Checklist
 # User Manual
@@ -26,23 +27,18 @@
             - (after release) create badges
 - Configuration
     - Tor Setup
-        - Desktop
-            - Mac
-            - Windows
-        - Mobile
-            - Android
-            - iOS
-        - Browser
-            - FF Desktop
-            - FF Mobile
+        - Mac
+        - Windows
+        - Android
+        - FF OS
+        - FF Mobile
     - LAN Setup
-        - Desktop
-            - Linux
-            - Mac
-            - Windows
-        - Mobile
-            - Android
-            - iOS
+        - Linux
+        - Mac
+        - Windows
+        - Android
+        - iOS
+        - Browsers
 - Tuning
     - DIY Guide
         - Hardware
@@ -51,16 +47,8 @@
         - From Umbrel
     - Advanced Configurations
         - SSH over Tor
-    - EmbassyOS
     - Service-specific Guides
-# Learn
-    - Concepts
-        - Embassy
-            - Device
-            - OS
-            - DIY
 # Developer Documentation
-    - embassyd
     - embassy-sdk
     - Service Packaging Spec
         - Overview

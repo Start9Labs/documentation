@@ -4,7 +4,7 @@
 Windows
 =======
 
-.. note:: Please see Window's :ref:`Known Limitations<lim-windows>` to understand what is currently not possible on these devices.
+.. tip:: Please see Window's :ref:`Known Limitations<lim-windows>` to understand what is currently not possible on these devices.
 
 .. topic-box::
     :title: LAN Setup (Connectivity, Performance)

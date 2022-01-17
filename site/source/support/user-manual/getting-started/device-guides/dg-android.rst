@@ -4,14 +4,26 @@
 Android
 =======
 
-.. note:: Please see Android's :ref:`Known Limitations<lim-android>` to understand what is currently not possible on these devices
+.. tip:: Please see Android's :ref:`Known Limitations<lim-android>` to understand what is currently not possible on these devices
 
-Tor Setup (Connectivity)
-------------------------
 
-`Setup Tor <docs.start9.com/user-manual/configuration/tor-setup/tor-os/tor-android>`_ to run natively (in the background) on your device.  This will allow you to use applications on your Android via the :ref:`Tor Network<tor>` so they can communicate with your Embassy.
+.. topic-box::
+    :title: LAN Setup (Connectivity, Performance)
+    :link: https://start9.com/latest/support/user-manual/configuration/lan-setup/lan-android
+    :anchor: Setup
 
-Tor Firefox Config (Connectivity)
----------------------------------
+    For a fast and secure connection while on your Embassy's local network
 
-`Configure Firefox <docs.start9.com/user-manual/configuration/tor-setup/tor-firefox/torff-android>`_ to be able to use the :ref:`Tor Network<tor>` so that you can reach ``.onion`` sites without needing to change browsers.
+.. topic-box::
+    :title: Tor Setup (Connectivity)
+    :link: https://start9.com/latest/support/user-manual/configuration/tor-setup/tor-os/tor-android
+    :anchor: Setup
+
+    Run Tor natively (in the background) on your device.  This will allow you to use applications on your Windows machine via the Tor Network so they can communicate with your Embassy.
+
+.. topic-box::
+    :title: Tor Firefox Config (Connectivity)
+    :link: https://start9.com/latest/support/user-manual/configuration/tor-setup/tor-firefox/torff-android
+    :anchor: Configure
+
+    Configure Firefox to use the Tor Network so that you can reach ``.onion`` sites without needing to change browsers.
