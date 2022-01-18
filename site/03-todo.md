@@ -14,17 +14,13 @@
 - [ ] Address build errors
 - [ ] Launch versioned site/docs to start9.com
 - [ ] There are many issues that should be closed by 0.3 docs release, check that this is the case (some issues await new processes in order to test)
-- [ ] Below checklist
+- [ ] Below checklist (wiped as completed)
 
 <!-- Checklist
 # User Manual
 - Getting Started
-    - Introduction
-    - Purchasing
     - Initial Setup
-    - Device-specific Setup Guides <label links with connectivity, performance, reliability, or tuning>
-            - Change to topic or hero boxes
-            - (after release) create badges
+    - Device-specific Guides <connectivity, performance, resilience and/or tuning> - (after release) create badges for topic boxes
 - Configuration
     - Tor Setup
         - Mac
@@ -41,28 +37,17 @@
         - Browsers
 - Tuning
     - DIY Guide
-        - Hardware
-        - EmbassyOS
-    - Migrating to Embassy
-        - From Umbrel
-    - Advanced Configurations
+    - Advanced Config
         - SSH over Tor
     - Service-specific Guides
+- Alt Market Build Guide
 # Developer Documentation
     - embassy-sdk
     - Service Packaging Spec
-        - Overview
-        - Wrapper
-        - Manifest
-        - Docker
-        - Makefile
-        - Config
-        - Properties
-        - Instructions
-        - Backups
-        - Submission Process
     - Service Packaging Walkthrough (Hello-World Example)
     - Development FAQ
         - Contributing
         - Service Packaging
+# About
+    - Mission / values
 -->

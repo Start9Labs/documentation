@@ -44,7 +44,7 @@ A session is simply a logged-in connection to your Embassy.  You can view your :
 
 Service Container
 -----------------
-Each service is compartmentalilzed into its own "container," at this time, this normally means a `Docker <docker.com>`_ container.  There are several reasons for this, including security, ease of use, and maintenance.
+Each service is compartmentalilzed into its own "container," at this time, this normally means a `Docker <https://docker.com>`_ container.  There are several reasons for this, including security, ease of use, and maintenance.
 
 .. _service-dependencies:
 
