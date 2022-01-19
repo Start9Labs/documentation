@@ -22,11 +22,11 @@
   <div class="grid-x grid-margin-x">
 
 .. topic-box::
-  :title: Docs
+  :title: Getting Started
   :link: getting-started
   :icon: scylla-icon scylla-icon--knowledge-base
   :class: large-6
-  :anchor: Get Started
+  :anchor: Begin
 
   Dive into the Embassy documentation and other helpful guides
 
