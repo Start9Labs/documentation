@@ -68,7 +68,7 @@
 
 .. topic-box::
   :title: FAQ
-  :link: support
+  :link: support/FAQ
   :icon: scylla-icon scylla-icon--search
   :class: large-6
   :anchor: Get answers
