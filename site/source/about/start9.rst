@@ -30,15 +30,15 @@ Independence - In order for individuals to have symbiotic relationships, it is i
 
 Virtues
 -------
-Audacity - Start9 will not just produce a freedom-oriented technology stack, it will do so **boldly**.  We will not apologize for, nor shy away from the disruptions that our tools will create in the industry.  
+Audacity - Start9 will not just produce a freedom-oriented technology stack, it will do so **boldly**.  We will not apologize for, nor shy away from the disruptions that our tools will create in the industry.
 
-Tenacity - Start9 is determined to manifest our values in the world and will do so ferociously.  We will create resilient tools and push the boundaries of what is possible for individually-controlled tools.  
+Tenacity - Start9 is determined to manifest our values in the world and will do so ferociously.  We will create resilient tools and push the boundaries of what is possible for individually-controlled tools.
 
 Excellence - We will create the best possible tools that we can, period.  We will often release a MVP (Minimum Viable Product) to prove a concept and then improve upon it, but we will never release a half-baked solution.  "Do it right, or don't do it at all."
 
 Courtesy - When interacting with a team member, you will always be treated with kindness and empathy.  We endeavour to empower people through education, regardless of their technical skill level.  If you ever feel that you were not treated courteously, please let a team member know.
 
-Generosity - 
+Generosity -
 
 Fortitude - Start9 fully expects to encounter adversity in the course of duty to its mission.  We will face this with courage and persistance against all odds and never back down.
 
