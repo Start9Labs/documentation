@@ -60,7 +60,7 @@ To utilize Tor, most apps require that Orbot be running in VPN mode.
 
 2. Launch Orbot and toggle VPN Mode on:
 
-.. figure:: /_static/images/tor/orbot_vpn.png
+.. figure:: /_static/images/tor/orbot0.png
   :width: 50%
   :alt: Orbot vpn mode
 
@@ -68,14 +68,14 @@ To utilize Tor, most apps require that Orbot be running in VPN mode.
 
 Under `Tor-Enabled Apps`, click the gear icon and add apps you want to utilize Tor.
 
-.. figure:: /_static/images/tor/orbot_apps.png
+.. figure:: /_static/images/tor/orbot1.png
   :width: 50%
   :alt: Orbot apps
 
 Examples of applications that need this feature are:
 
 - Bitwarden
-- Zap
+- Element
 - Zeus
 
 You can also add the following browsers to the Tor-Enabled Apps list to easily access Tor addresses (`.onion` URLs):
