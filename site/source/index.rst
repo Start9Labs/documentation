@@ -22,11 +22,11 @@
   <div class="grid-x grid-margin-x">
 
 .. topic-box::
-  :title: Docs
+  :title: Getting Started
   :link: getting-started
   :icon: scylla-icon scylla-icon--knowledge-base
   :class: large-6
-  :anchor: Get Started
+  :anchor: Begin
 
   Dive into the Embassy documentation and other helpful guides
 
@@ -40,13 +40,22 @@
   Get started with learning how to use EmbassyOS
 
 .. topic-box::
+  :title: Guides
+  :link: misc-guides
+  :icon: scylla-icon scylla-icon--docs
+  :class: large-6
+  :anchor: View
+
+  Setup your devices and Embassy for better connectivity and performance
+
+.. topic-box::
   :title: Support
   :link: support
   :icon: scylla-icon scylla-icon--support
   :class: large-6
   :anchor: Get help
 
-  View the FAQ and find answers to your questions
+  Learn about or troubleshoot your Embassy
 
 .. topic-box::
   :title: Contribute
@@ -56,6 +65,15 @@
   :anchor: Get started
 
   Use your skills to add to the Start9 ecosystem
+
+.. topic-box::
+  :title: FAQ
+  :link: support
+  :icon: scylla-icon scylla-icon--search
+  :class: large-6
+  :anchor: Get answers
+
+  Find answers to common questions
 
 .. .. topic-box::
 ..   :title: Learn
