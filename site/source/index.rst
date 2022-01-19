@@ -42,7 +42,7 @@
 .. topic-box::
   :title: Guides
   :link: misc-guides
-  :icon: scylla-icon scylla-icon--networking
+  :icon: scylla-icon scylla-icon--docs
   :class: large-6
   :anchor: View
 
@@ -55,7 +55,7 @@
   :class: large-6
   :anchor: Get help
 
-  View the FAQ and find answers to your questions
+  Learn about or troubleshoot your Embassy
 
 .. topic-box::
   :title: Contribute
@@ -65,6 +65,15 @@
   :anchor: Get started
 
   Use your skills to add to the Start9 ecosystem
+
+.. topic-box::
+  :title: FAQ
+  :link: support
+  :icon: scylla-icon scylla-icon--search
+  :class: large-6
+  :anchor: Get answers
+
+  Find answers to common questions
 
 .. .. topic-box::
 ..   :title: Learn
