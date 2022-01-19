@@ -40,6 +40,15 @@
   Get started with learning how to use EmbassyOS
 
 .. topic-box::
+  :title: Guides
+  :link: misc-guides
+  :icon: scylla-icon scylla-icon--networking
+  :class: large-6
+  :anchor: View
+
+  Setup your devices and Embassy for better connectivity and performance
+
+.. topic-box::
   :title: Support
   :link: support
   :icon: scylla-icon scylla-icon--support
