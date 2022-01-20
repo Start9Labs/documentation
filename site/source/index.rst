@@ -40,7 +40,7 @@
   Get started with learning how to use EmbassyOS
 
 .. topic-box::
-  :title: Guides
+  :title: Misc Guides
   :link: misc-guides
   :icon: scylla-icon scylla-icon--docs
   :class: large-6
