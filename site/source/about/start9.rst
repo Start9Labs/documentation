@@ -10,35 +10,44 @@ Privacy and free speech are fundamental human rights and essential ingredients f
 
 The Mission
 -----------
-To afford individuals sovereign control over their computers.
+To accelerate the transition of power back to the individual via technology
 
 .. _values:
 
 Values
 ------
-Decentralization - While centralized services can offer some efficiency gains, the costs are simply too high.  Decentralized systems afford more power (and responsibility) to the users.  
+Decentralization - While centralization can offer some efficiency gains, the costs are simply too high.  Decentralized systems afford more power (and responsibility) to the users.  More nodes of control means more accountability on each node.  Start9 will make it easier for anyone to act as a "check and balance" in the Internet, as opposed to being a passive "user" at the whims of more powerful entities.
 
-Openness
-Community
-Dignity
-Independence
+Openness - The power of open systems has been well proven over the years.  Start9 will, to the best of our ability, keep our code, processes, and intentions transparant.  This allows others to assist in this tremendous undertaking, or audit what we are doing to make sure it is in line with our Mission, Values, and Virtues.
+
+Community - Start9 IS the community.  Start9 will help build a worldwide movement of empowered individuals for the cause of freedom through technology.  Start9 will lead by example, without desire for control.  This will always be as important as our technology itself.
+
+Dignity - Start9 strongly believes that respect is a basic decency that each individual deserves, regardless of their background or circumstance.  We will do our best to treat all users in a timely, upstanding manner.
+
+Independence - In order for individuals to have symbiotic relationships, it is important that they not have an unhealthy reliance on one another.  Start9 will help its users "Declare Digital Independence" from 'Big Tech' by giving them back control over their data and software.  From this position, users will decide when and how they want to share their data, receive data from others, communicate, and transact.  This will help bring balance to the digital realm, as well as the physical.
 
 .. _virtues:
 
 Virtues
 -------
-Audacity
-Tenacity
-Excellence
-Courtesy
-Generosity
-Fortitude
-Integrity
+Audacity - Start9 will not just produce a freedom-oriented technology stack, it will do so **boldly**.  We will not apologize for, nor shy away from the disruptions that our tools will create in the industry.  
+
+Tenacity - Start9 is determined to manifest our values in the world and will do so ferociously.  We will create resilient tools and push the boundaries of what is possible for individually-controlled tools.  
+
+Excellence - We will create the best possible tools that we can, period.  We will often release a MVP (Minimum Viable Product) to prove a concept and then improve upon it, but we will never release a half-baked solution.  "Do it right, or don't do it at all."
+
+Courtesy - When interacting with a team member, you will always be treated with kindness and empathy.  We endeavour to empower people through education, regardless of their technical skill level.  If you ever feel that you were not treated courteously, please let a team member know.
+
+Generosity - 
+
+Fortitude - Start9 fully expects to encounter adversity in the course of duty to its mission.  We will face this with courage and persistance against all odds and never back down.
+
+Integrity - With help from the community, Start9 will stay accountable and dedicated to the words written on this page.  Honesty and fairness will remain paramount in any decision we make.
 
 .. _start9-origin:
 
-"The Origin of “Start9” (the name)
-----------------------------------
+The Origin of “Start9” (the name)
+---------------------------------
 Pokemon is a game for Gameboy. Twitch is a live video streaming app. “Twitch Plays Pokemon” was a popular phenomenon where Twitch users would collaborate to play a SHARED game of Pokemon on Gameboy. Here’s how it worked:
 
 Participants would use the Twitch message board to enter commands that then got executed in the gameplay. For example, if someone entered the command "right”, that would cause the player to move 1 space to the right. Commands would execute immediately after they were received, and anyone could enter a valid command at any time. You can think of Twitch Plays Pokemon as the more practical equivalent of placing a Gameboy in the middle of a crowded room and telling everyone to push buttons at the same time. As you might expect, the gameplay of Twitch Plays Pokemon was quite “twitchy”, but in a very "infinite monkey theory" way, progress could eventually be made.
