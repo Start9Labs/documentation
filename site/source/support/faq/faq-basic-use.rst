@@ -29,7 +29,7 @@ Can I move my Embassy to another location?  What happens when I do this?
 ------------------------------------------------------------------------
 Yes, you can move the Embassy to another network.  Your service tor addresses will remain the same.  Remember that you can only access via LAN if you are accessing with a device on the same network as your Embassy.
 
-What’s the advantage of using the .local address over the .onion address?
+What's the advantage of using the .local address over the .onion address?
 -------------------------------------------------------------------------
 If you are in your home/office network with an Embassy, it is both faster and more private since the connection never leaves your household/office.  The downside is that it won’t work if you’re on the go.
 
@@ -39,7 +39,7 @@ Unfortunately, no.  The Tor Browser requires all web visits to first enter the T
 
 Can I use .local addresses on Android?
 --------------------------------------
-This will depend on your Android device.  This support was added in Android 12, but may not yet be added to custom ROMs, such as Calyx, Graphene, or Lineage.  Please see :ref:`Android Limitations<lim-android>` for more deatils.  
+This will depend on your Android device.  This support was added in Android 12, but may not yet be added to custom ROMs, such as Calyx, Graphene, or Lineage.  Please see :ref:`Android Limitations<lim-android>` for more deatils.
 
 Can I have multiple users on my Embassy?
 ----------------------------------------
@@ -61,7 +61,7 @@ This can be useful, as you may want to wipe a service and start anew. For exampl
 
 Do I need to delete existing backups before doing a new backup? Or does a new backup override the old backup?
 -------------------------------------------------------------------------------------------------------------
-No, you don’t need to delete the old backups. The technology we use updates the existing backup.
+No, you don't need to delete the old backups. The technology we use updates the existing backup.
 
 Can I clone my Embassy SSD for backup purposes?
 -----------------------------------------------

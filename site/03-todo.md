@@ -1,9 +1,8 @@
 # ToDo
 
 - [ ] Refactor and update Roadmap
-- [ ] Document colours
 - [ ] Document diagnostic UI
-- [ ] Update principles, privacy, about, etc
+- [ ] Document Bug Reporting
 - [ ] Footer links need update (or removal?)
 - [ ] Add screenshots and details
 - [ ] Verify ALL links (especially in device guides as they are all external)
@@ -16,22 +15,18 @@
 - [ ] There are many issues that should be closed by 0.3 docs release, check that this is the case (some issues await new processes in order to test)
 - [ ] Below checklist (wiped as completed)
 
-<!-- Checklist
-# User Manual
 - Getting Started
     - Initial Setup
-    - Device-specific Guides <connectivity, performance, resilience and/or tuning> - (after release) create badges for topic boxes
+    - Device-specific Guides <connectivity, performance, resilience and/or tuning>
+        - (after release) create badges for topic boxes
 - Configuration
     - Tor Setup
         - Mac
-        - Windows
         - Android
         - FF OS
         - FF Mobile
     - LAN Setup
-        - Linux
         - Mac
-        - Windows
         - Android
         - iOS
         - Browsers
@@ -40,7 +35,6 @@
     - Advanced Config
         - SSH over Tor
     - Service-specific Guides
-- Alt Market Build Guide
 # Developer Documentation
     - embassy-sdk
     - Service Packaging Spec
@@ -48,6 +42,6 @@
     - Development FAQ
         - Contributing
         - Service Packaging
+- Alt Market Build Guide
 # About
     - Mission / values
--->

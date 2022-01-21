@@ -20,9 +20,11 @@ What if I can't connect to my Embassy?
 --------------------------------------
 Please ensure your phone / computer is connected to the same wired or wireless network as your Embassy.  Be careful that you are not on a separate or "guest" network.
 
+.. _why-bonjour:
+
 Why do I need the Bonjour service (Windows)?
 --------------------------------------------
-Because a major use case of Bonjour is wireless printing over the LAN, but your Windows machine can also use Bonjour to discover and connect with other devices on the LAN. In this case the Embassy.
+A major use-case of Bonjour is wireless printing over the LAN, but your Windows machine can also use Bonjour to discover and connect with other devices on the :ref:`Local Network<lan>`. In this case your Embassy.  If Windows were to add support for reaching ``.local`` addresses, as is done in Linux and Mac, this would no longer be necessary.
 
 My Tor sites aren't loading, what should I do?
 ----------------------------------------------

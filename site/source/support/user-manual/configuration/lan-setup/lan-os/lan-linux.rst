@@ -4,24 +4,22 @@
 Linux
 =====
 
-Nothing specific needs to be configured for this environment, so you just need the certificate from your Embassy.
+Nothing specific needs to be configured for the Linux environment, so you just need to download the certificate from your Embassy.
 
 #. Visit your Embassy at its Tor Address.
 
-#. Navigate to --> Embassy --> Connect Over LAN
+    .. note:: Using this encrypted Tor connection is required for security reasons.
 
-   .. figure:: /_static/images/embassy_lan_setup.png
+#. Navigate to the :ref:`Embassy tab<embassy-tab>` -> Settings -> LAN
+
+   .. figure:: /_static/images/embassy_lan_setup.svg
     :width: 90%
     :alt: LAN setup menu item
 
-    Select the "Connect over LAN" menu item
+#. Click "Download Root CA". This will prompt a download to save the certificate file to your machine.
 
-#. Select the "Root Certificate Authority" sub menu. This will prompt a download to save the certificate file to your machine.
-
-   .. figure:: /_static/images/secure_lan_setup_page.png
+   .. figure:: /_static/images/embassy_lan_setup0.svg
     :width: 90%
     :alt: LAN setup page
 
-    Select the "Root Certificate Authority" sub menu
-
-Then open your favorite browser to import this certificate and follow the steps for :ref:`browser setup <browser-setup>`.
+Then open your favorite browser to import this certificate and follow the steps for :ref:`browser setup <lan-browser>`.
