@@ -1,7 +1,7 @@
 .. _basic-config:
 
 ===================
-Basic Configuration - ***NEEDS BUG REPORT LINK***
+Basic Configuration
 ===================
 
 .. _auto-reporting:
@@ -9,7 +9,7 @@ Basic Configuration - ***NEEDS BUG REPORT LINK***
 Automatically Report Bugs
 -------------------------
 
-You are asked at first setup if you would like to provide bug reports to Start9.  You can edit that setting here if you change your mind.  This data is anonymous and you can see exactly what is collected `here<>`.
+You are asked at first setup if you would like to provide bug reports to Start9.  You can edit that setting here if you change your mind.  This data is anonymous and you can see exactly what is collected :ref:`here<error-logs>`.
 
 1. As in the :ref:`Set Device Name<device-name>` steps above, go to the ``Embasssy`` tab, then under ``Settings``, click ``Preferences``
 2. Click ``Auto Report Bugs`` and either ``Enable`` or ``Disable``

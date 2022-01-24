@@ -1,8 +1,8 @@
 .. _dg-ios:
 
-===
-iOS
-===
+==========
+iOS Guides
+==========
 
 .. tip:: Please see iOS's :ref:`Known Limitations<lim-ios>` to understand what is currently not possible on these devices
 

@@ -11,7 +11,11 @@ Embassy is making noises
 ========================
 The plug and play Embassy sold by Start9 has no moving parts, so the only noises it should ever make would come from its internal speaker.  The following is a list of all possible sounds:
 
-#.
+#. 
+
+Embassy boots into "Diagnostic Mode"
+====================================
+Diagnostic Mode is a new UI that will launch in the event that no drive, or an incorrect drive (such as one from another Embassy) has been plugged into Embassy.  Simply plug your external drive in and reboot (power off and on again).
 
 Embassy will not boot
 =====================

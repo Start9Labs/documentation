@@ -1,8 +1,6 @@
 # ToDo
 
 - [ ] Refactor and update Roadmap
-- [ ] Document diagnostic UI
-- [ ] Document Bug Reporting
 - [ ] Footer links need update (or removal?)
 - [ ] Add screenshots and details
 - [ ] Verify ALL links (especially in device guides as they are all external)
@@ -42,13 +40,12 @@
     - Development FAQ
         - Contributing
         - Service Packaging
+
 - Alt Market Build Guide
-# About
-    - Mission / values
+- Mission / values
 - Backups
     - CIFS
         - OS guides for CIFS
     - Local
 - Migrations
-- Bug reports
-- Diag UI
+- Possible sounds in troubleshooting (and walkthrough?)

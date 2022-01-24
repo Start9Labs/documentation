@@ -11,9 +11,9 @@ User Manual
    getting-started/index
    walkthrough/index
    configuration/index
-   troubleshooting/index
    tuning/index
    services/index
+   troubleshooting/index
 
 .. panel-box::
   :title: Overview
