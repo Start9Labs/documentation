@@ -3,3 +3,4 @@
 build-send.sh
 site/_build
 .env
+site/_utils/docsearch*
