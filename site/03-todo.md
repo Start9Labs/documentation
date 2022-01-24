@@ -4,7 +4,7 @@
 - [ ] Footer links need update (or removal?)
 - [ ] Add screenshots and details
 - [ ] Verify ALL links (especially in device guides as they are all external)
-    - [ ] Check all menus behave and display as expected
+    - [ ] Check all menus behave and display as expected (issues cut)
     - [ ] Verify all TOCs, etc
 - [ ] Add / verify ALL links in the **UI** go to the right place in docs
 - [ ] Update all guides in service repos

@@ -1,7 +1,7 @@
 .. _diy:
 
 =========
-DIY Guide - ***CHECK BUILD GUIDE LINK WHEN ON MASTER, ADD PHOTOS OF HARDWARE SETUP***
+DIY Guide
 =========
 
 .. figure:: /_static/images/diy/pi.png
@@ -69,7 +69,7 @@ Depending on your Internet speed, the download should take between 5 and 30 minu
 Getting EmbassyOS: Building from Source
 .......................................
 
-If you prefer to build EmbassyOS from source, you can do so following our guide `here <https://github.com/Start9Labs/embassy-os/tree/master/build>`_.
+If you prefer to build EmbassyOS from source, you can do so following our guide on the `Start9 GitHub <https://github.com/Start9Labs/embassy-os/tree/master/build>`_.
 
 Installing EmbassyOS
 --------------------

@@ -10,8 +10,8 @@ Developer Docs
 
    dev-faq/index
    dev-tools/index
-   service-packaging/index
    packaging-example
+   service-packaging/index
 
 .. panel-box::
   :title: Overview

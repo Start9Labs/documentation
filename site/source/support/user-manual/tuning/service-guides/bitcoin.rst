@@ -1,7 +1,7 @@
 .. _bitcoin:
 
 =======
-Bitcoin - **NEED GUIDES WRITTEN (in bitcoind repo?)**
+Bitcoin
 =======
 
 Here you will find guides on how to connect different kinds of Bitcoin wallets (hardware and software) to your Embassy node, to complete your sovereign Bitcoin stack!

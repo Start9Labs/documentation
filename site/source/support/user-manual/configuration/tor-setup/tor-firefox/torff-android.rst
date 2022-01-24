@@ -1,7 +1,7 @@
 .. _torff-android:
 
 =======
-Android - ***NEEDS UPDATED***
+Android
 =======
 
 .. caution::

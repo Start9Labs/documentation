@@ -25,7 +25,7 @@ The following will guide you through the prerequisite configuration to backup to
 
         #. Click ``Add the permissions automatically``
 
-        #. That's it!  Now you can make encrypted backups to your own, private "cloud" by using the :ref:`Backup flow<backups>`` in the Embassy UI.
+        #. That's it!  Now you can make encrypted backups to your own, private "cloud" by using the :ref:`Backup flow<backups>` in the Embassy UI.
 
             .. figure:: /_static/images/
 

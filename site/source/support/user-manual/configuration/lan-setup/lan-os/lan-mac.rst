@@ -30,7 +30,7 @@ Mac
 
     Open with "Keychain Access" and select "OK"
 
-#. Enter your computer password when prompted. It will be imported into your computer’s keychain.
+#. Enter your computer password when prompted. It will be imported into your computer's keychain.
 
    .. figure:: /_static/images/ssl/macos/certificate_untrusted.png
     :width: 90%
@@ -62,4 +62,4 @@ Mac
 
     Trusted Embassy Local CA certificate
 
-#. Open your favorite browser to import this certificate and follow the steps for :ref:`browser setup <browser-setup>`.
+#. Open your favorite browser to import this certificate and follow the steps for :ref:`browser setup <lan-browser>`.
