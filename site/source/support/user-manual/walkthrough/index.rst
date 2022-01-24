@@ -11,7 +11,8 @@ An overview of EmbassyOS general capabilities.
 
   overview
   updates
-  backup/index
+  backups
   password
+  sessions
 
 

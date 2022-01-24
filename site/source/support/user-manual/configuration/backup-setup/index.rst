@@ -1,4 +1,4 @@
-.. _backup:
+.. _backup-setup:
 
 =======
 Backups

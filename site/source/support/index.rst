@@ -30,7 +30,7 @@
   :class: large-4
   :anchor: View
 
-  All you need to be an owner/operator of your own self-hosted software
+  All you need to be the owner/operator of your own self-hosted software
 
 .. topic-box::
   :title: FAQ
