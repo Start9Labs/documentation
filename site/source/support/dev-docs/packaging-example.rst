@@ -6,7 +6,7 @@ Service Packaging Example
 
 A rough walkthrough of how to package a service using our example `hello-world-wrapper <https://github.com/Start9Labs/hello-world-wrapper>`_.
 
-Welcome!  The following guide will provide the prerequisites, introduce a brief overview of the packaging process, use an example demonstrating how to package a service, and finally describe the submission process.  This essentially describes how you can take an existing app (or one you have written yourself), and wrap it up into an ``s9pk`` such that it can be added to an EmbassyOS (EOS) Marketplace!  The ``s9pk`` is the final product, which is the portable version of a package that is understood by EOS, and can be distributed to any EOS users either directly, or via a Marketplace.
+Welcome!  The following guide will provide the prerequisites, introduce a brief overview of the packaging process, use an example demonstrating how to package a service, and finally, describe the submission process.  This essentially describes how you can take an existing app (or one you have written yourself), and wrap it up into an ``s9pk`` such that it can be added to an EmbassyOS (EOS) Marketplace!  The ``s9pk`` is the final product, which is the portable version of a package that is understood by EOS, and can be distributed to any EOS users either directly, or via a Marketplace.
 
 Pre-requisites
 --------------
@@ -19,12 +19,12 @@ It is **HIGHLY RECOMMENDED** to have a copy of EmbassyOS for testing your packag
 There are 3 options for this:
     #. Build from `source <https://github.com/Start9Labs/embassy-os/build>`_
     #. Follow the :ref:`DIY guide <diy>` to build on a Raspberry Pi
-    #. :ref:`Purchse <purchasing>` a device or copy of the OS
+    #. :ref:`Purchase <purchasing>` a device or copy of the OS
 
 Development Environment
 =======================
 
-Once you have EOS installed, you'll want to set up your development system with the necessary software.
+Once you have EOS installed, you'll want to set up your development system set up with the necessary software.
 
 At minimum you will need the following:
     #. `Docker <https://docs.docker.com/get-docker>`_
@@ -45,11 +45,11 @@ Components
 
 Simply, the package is made up of the following parts:
     1. Image - Each service is running in a Docker image.  Best results will come from an arm based linux; [Alpine](https://www.alpinelinux.org/) is highly recommended.
-    2. Volume - Each service gets a volume, allocated by EOS.  The volume directory (for seeding data into the volume) is required: /root/volumes/<service-id>
-    3. Dependencies - Rules and requirements of your service, which appear as simple UI elements, such as inputs, toggles, and drop-downs.  These are enforced by validations and clear user instructions.  EmbassyOS has a unique and powerful system for managing dependencies which allows anyone to have the power of systems administrators without the advanced skillset.
-    4. Manifest - Describes the service and its requirements.  This is for the marketplace listing, install considerations, license, donation address, and dependency requirements, and additional info.
+    2. Volume - Each service gets a volume, allocated by EOS.  This is the filesystem where the service data will be stored and mounted by the container. The volume directory within EOS (for seeding data into the volume) is located at `/embassy-data/package-data/volumes/<service-id>`
+    3. Dependencies - Rules and requirements of your service, which appear as UI elements, such as inputs, toggles, and drop-downs.  These are enforced by validations and clear user instructions.  EmbassyOS has a unique and powerful system for managing dependencies which allows anyone to have the power of systems administrators without an advanced skillset.
+    4. Manifest - Describes the service and its requirements.  This file describes the marketplace listing, installation considerations, configuration and dependency requirements, health checks, backups and additional info.
     5. Config - EOS makes a service's configuration available to the user in the GUI and must be valid regardless of user skill.
-    6. .s9pk Bundle - The image, config, manifest, and icon files get bundled into a .s9pk package.  This is the file a user downloads from the Marketplace, at which point EOS un-packages and installs the service.
+    6. .s9pk Bundle - The image, manifest, license, icon, and instruction files get bundled into a .s9pk package. Optional additional assets for use with system images can also be bundled. This is the file a user downloads from the Marketplace, at which point EOS uses to unpack assets and install the service.
 
 Check :ref:`here <service_package_overview>` for a detailed overview of package components.
 
@@ -69,7 +69,9 @@ Simply run:
 Example - Hello World
 ---------------------
 
-Okay, let's actually package a service!  For this example, we're going to use an example service `Hello World <https://github.com/Start9Labs/hello-world>`_.  This repository can also be used as a template to quickly get started with your service.  This will give a good overview of service packaging, but obviously your app will be different.  This will assume a Linux development environment with all the recommended dependencies listed above.  To get started quickly, we'll use Start9's wrapper template.
+Okay, let's actually package a service!  For this example, we're going to use an example service `Hello World <https://github.com/Start9Labs/hello-world>`_.  This repository can also be used as a template to quickly get started with your service.  The guide will provide good overview of service packaging, but obviously your app will be different, so don't hesitate to reach out to our community `dev chat <https://matrix.to/#/#community-dev:matrix.start9labs.com>`_ with questions.  
+
+The commands below assume a Linux development environment with all the recommended dependencies listed above installed.  To get started quickly, we'll use Start9's wrapper template.
 
 Clone the Template Repo and Edit the Manifest
 =============================================
@@ -249,7 +251,7 @@ For details on all the different possible dependency, type, and subtype definiti
 Edit the Dockerfile and Entrypoint
 ==================================
 
-Next, it's time to edit the ``Dockerfile``.  This defines how to build the image for the package by declaring the environment, building stages, and mounting the package to the volume specified in the ``manifest``.
+Next, it's time to edit the ``Dockerfile``.  This defines how to build the image for the package by declaring the environment, building stages, and copying any binaries or assets needed to run the service or its health checks to the image filesystem.
 
 1. We start by importing a base image, in this case Alpine, as recommended.
 
@@ -274,7 +276,7 @@ Next, it's time to edit the ``Dockerfile``.  This defines how to build the image
   ADD ./docker_entrypoint.sh /usr/local/bin/docker_entrypoint.sh
   RUN chmod a+x /usr/local/bin/docker_entrypoint.sh
 
-4. Next we set a working directory, expose a port, and set the location of the entrypoint.
+1. Next, we set a working directory, and set the location of the entrypoint. Exposing ports is not necessary for EOS, but its often useful to leave this line for clarity. 
 
 .. code:: docker
 
@@ -306,7 +308,7 @@ Next, it's time to edit the ``Dockerfile``.  This defines how to build the image
 Docker Entrypoint
 =================
 
-1. Okay, let's move on to our ``docker_entrypoint.sh`` file.  This is a script that defines what to do when the service starts.  It will need to complete any environment setup (such as folder substructure), sets any environment variables, and executes the run command.  It's also PID 1 in the docker container, so it does all of the signal handling and container exits when it is stopped/exits.  If you have built a ``configurator``, it will also execute here.  Let's take a look at our (extremely basic) Hello World example:
+1. Okay, let's move on to our ``docker_entrypoint.sh`` file.  This is a script that defines what to do when the service starts, and often acts as an init system.  It will need to complete any environment setup (such as folder substructure), set any environment variables, and execute the run command.  It's also PID 1 in the docker container, so it does all of the signal handling and container exits when it is stopped/exits.  If you have built a ``configurator``, this will also need to be called to execute here.  Let's take a look at our (extremely basic) Hello World example:
 
 .. code:: bash
 
@@ -316,7 +318,7 @@ Docker Entrypoint
 
   exec tini hello-world
 
-2. We've defined the file, exported the IP address, and run the program.
+2. We've defined the file, exported the IP address of the Embassy (host), and run the program.
 
 For a more detailed ``docker_entrypoint.sh``, please check out the `filebrowser-wrapper <https://github.com/Start9Labs/filebrowser-wrapper/blob/master/docker_entrypoint.sh>`_.  Additional details on the ``Dockerfile`` and ``docker_entrypoint`` can be found `here <https://docs.start9.com/contributing/services/docker.html>`_.
 
@@ -325,7 +327,7 @@ Makefile (Optional)
 
 Here, we will create a ``Makefile``, which is optional, but recommended as it outlines the build and streamlines additional developer contributions.  Alternatively, you could use ``nix``, ``bash``, ``python``, ``perl``, ``ruby``, etc instead of ``make`` for build orchestration.
 
-Our example ``Makefile`` is agin fairly simple for Hello World.  Let's take a look:
+Our example ``Makefile`` is again fairly simple for Hello World.  Let's take a look:
 
 .. code-block:: Makefile
 
@@ -364,7 +366,7 @@ Our example ``Makefile`` is agin fairly simple for Hello World.  Let's take a lo
 
     .DELETE_ON_ERROR:
 
-3. The ``all`` step is run when the ``make`` command is issued.  This attempts the ``verify`` step, which requires that the ``hello-world.s9pk`` must first be built, which first requires the ``image.tar``, and so on.  Meaning each step essentially requires the next .
+3. The ``all`` step is run when the ``make`` command is issued.  This attempts the ``verify`` step, which requires that the ``hello-world.s9pk`` must first be built, which first requires the ``image.tar``, and so on.  In this case, each step requires the next and each step indicates the necessary existence of a file. If an indicated file has been altered, such as the `docker_entrypoint.sh`, then any step that contains this file will be rebuilt. 
 
 4. So the ``.s9pk`` is created with the ``embassy-sdk pack`` command, supplied with the ``manifest``, ``config_spec``, previously created ``image.tar``, and ``instructions.md``.  Your project may likely also contain a ``config_rules`` file.  Some of these files we have not yet edited, but that will come shortly.
 
@@ -375,7 +377,10 @@ For more details on creating a ``Makefile`` for your project, please check :ref:
 Service Config Specification and Rules
 ======================================
 
-Most self-hosted packages require a configuration.  With EmbassyOS, these config options are provided to the user in a friendly GUI, and invalid configs are not permitted.  This allows the user to manage their software without a lot of technical skill, and minimal risk of borking their software.  Two files are created in this process:
+Most self-hosted packages require a configuration.  With EmbassyOS, these config options are provided to the user in a friendly GUI, and invalid configs are not permitted.  This allows the user to manage their software without a lot of technical skill, and minimal risk of borking their software.
+
+In the config section of the `manifest`, you can
+Two files are created in this process:
 
 ``config_spec.yaml`` for specifying all the config options your package depends on to run
 
