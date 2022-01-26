@@ -1,7 +1,7 @@
 .. _tor-firefox:
 
 ====================
-Using Tor on Firefox
+Setup Tor on Firefox
 ====================
 
 .. caution::  This guide assumes you are already :ref:`running Tor on your phone or computer<running-tor>`.

@@ -18,17 +18,11 @@
     - Device-specific Guides <connectivity, performance, resilience and/or tuning>
         - (after release) create badges for topic boxes
 - Configuration
-    - Tor Setup
-        - Mac
-        - Android
-        - FF OS
-        - FF Mobile
     - LAN Setup
         - Mac
         - Android
-        - iOS
         - Browsers
-- Tuning
+- Tunin
     - DIY Guide
     - Advanced Config
         - SSH over Tor
@@ -45,7 +39,7 @@
 - Mission / values
 - Backups
     - CIFS
-        - OS guides for CIFS
+        - OS guides for CIFS (screens)
     - Local
 - Migrations
 - Possible sounds in troubleshooting (and walkthrough?)

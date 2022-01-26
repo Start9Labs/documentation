@@ -44,13 +44,22 @@ brew install poetry
 git clone https://github.com/Start9Labs/documentation.git && cd documentation
 ```
 
-1. Install theme submodule:
+2. Install theme submodule:
 
 ```
 git submodule update --init
 ```
 
-1. Navigate to the `site` folder and start the project:
+3. (Optional, if you have an older build that needs to be updated) Navigate to `sphinx-scylladb-theme`, update and build with:
+
+```
+cd sphinx-scylladb-theme
+git pull
+npm i
+npm run build
+```
+
+4. Navigate to the `site` folder and start the project:
 
 ```
 cd site
@@ -76,7 +85,7 @@ Click on the "Issues" tab in the top navbar. Provide a good title and describe c
 
 ### Submitting a pull request
 
-Click on the "Pull requests" tab in the top navbar. Select the green "New pull request button" in the top right section. Select your branch for the compare dropdown, and master as the base. Provide an appropriate title and summary of the changes in the pull request description. Changes will be reviewed and merged when satisfactory. 
+Click on the "Pull requests" tab in the top navbar. Select the green "New pull request button" in the top right section. Select your branch for the compare dropdown, and master as the base. Provide an appropriate title and summary of the changes in the pull request description. Changes will be reviewed and merged when satisfactory.
 
 ## Helpful Resources
 

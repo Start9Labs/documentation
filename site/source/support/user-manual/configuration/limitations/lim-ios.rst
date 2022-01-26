@@ -6,11 +6,11 @@ iOS Known Limitations
 
 Tor
 ---
-It is not currently possible to run Tor natively (in the background) on iOS.  The best chance for this functionality coming to iOS is via the `iCepa Project <https://github.com/iCepa>`_.
+It is not currently possible to run Tor natively (in the background) on iOS.  The best chance for this functionality coming to iOS in the future is via the `iCepa Project <https://github.com/iCepa>`_.
 
 Workarounds
 ===========
-The only way to use Tor on iOS is with apps that come with Tor built-in, such as :ref:`Zap Wallet <zap>`.
+The only way to use Tor (in the background) on iOS is with apps that come with Tor built-in, such as :ref:`Zap Wallet <zap>`.  For visiting Embassy UI Tor sites, you may use `Onion Browser <https://apps.apple.com/us/app/onion-browser/id519296448>`_ or `Start9's Consulate <https://apps.apple.com/us/app/start9-consulate-browser/id1528124570>`_ application.
 
 Matrix
 ------
@@ -18,7 +18,7 @@ The lack of Tor support on iOS means that Element/Matrix cannot be run on an iPh
 
 Workarounds
 ===========
-None currently known.
+None currently known, but may be solved with forthcoming "clearnet" support on EmbassyOS.
 
 Spark Wallet
 ------------

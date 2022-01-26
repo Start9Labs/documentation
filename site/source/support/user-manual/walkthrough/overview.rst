@@ -32,7 +32,7 @@ The Embassy Tab is where you can perform :ref:`Backups<backups>`, get Insights i
 Backups
 =======
 
-One of the most important actions you can do on your Embassy is to keep a regular backup of your data.  See the following page on :ref:`Backups<backup>`, and select your device for more details.  In this section, you can create, and restore from, backups.
+One of the most important actions you can do on your Embassy is to keep a regular backup of your data.  See the page on :ref:`Backups<backups>`, and select your device for more details.  In this section, you can create, and restore from, backups.
 
 Insights
 ========

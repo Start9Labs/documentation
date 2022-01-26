@@ -15,33 +15,35 @@ Once Tor is setup on your system, you can proceed to setup Firefox:
 
 3. Navigate to ``about:config`` in the Firefox URL bar.
 
-.. figure:: /_static/images/tor/about_config.png
-  :width: 50%
-  :alt: Firefox about config
+  .. figure:: /_static/images/tor/about_config.svg
+    :width: 50%
+    :alt: Firefox about config
 
 4. You are going to have to change a few options in here. First, type ``network.proxy.type`` into the search bar, and set the value to ``2``.
 
-.. figure:: /_static/images/tor/network_proxy_type.png
-  :width: 50%
-  :alt: Firefox network proxy type setting screenshot
+  .. figure:: /_static/images/tor/network_proxy_type.svg
+    :width: 50%
+    :alt: Firefox network proxy type setting screenshot
 
 5. Search for ``network.proxy.autoconfig_url``, and set the value to ``file:///storage/emulated/0/Download/proxy.pac``.
 
-.. figure:: /_static/images/tor/autoconfig_url.png
-  :width: 50%
-  :alt: Firefox autoconfig url setting screenshot
+  .. note:: For newer Android's, and those running CalyxOS, it may be necessary to place the file within the application's ``data`` folder, such as ``file:///storage/emulated/0/Android/data/org.mozilla.firefox_beta/files/Download/proxy.pac``.  Please reach out to support if you have issues.
+
+  .. figure:: /_static/images/tor/autoconfig_url.svg
+    :width: 50%
+    :alt: Firefox autoconfig url setting screenshot
 
 6. Search for ``network.proxy.socks_remote_dns``, and set the value to ``true``.
 
-.. figure:: /_static/images/tor/socks_remote_dns.png
-  :width: 50%
-  :alt: Firefox socks remote dns setting screenshot
+  .. figure:: /_static/images/tor/socks_remote_dns.svg
+    :width: 50%
+    :alt: Firefox socks remote dns setting screenshot
 
 7. Search for ``dom.securecontext.whitelist_onions`` and set the value to ``true``.
 
-.. figure:: /_static/images/tor/firefox_whitelist_mobile.png
-  :width: 50%
-  :alt: Firefox whitelist onions screenshot
+  .. figure:: /_static/images/tor/firefox_whitelist_mobile.svg
+    :width: 50%
+    :alt: Firefox whitelist onions screenshot
 
-8. Restart Firefox, and you’re all set! You should now be able to navigate to `.onion` URLs in Firefox. This means you can bookmark Cups Messenger, and use your Bitwarden Tor address in the `Bitwarden Password Manager <https://play.google.com/store/apps/details?id=com.x8bit.bitwarden&hl=en_US&gl=US>`_ native application.
+8. Restart Firefox, and you're all set! You should now be able to navigate to `.onion` URLs in Firefox. This means you can bookmark Cups Messenger, or other Embassy ``.onion`` addresses, as well as use the :ref:`Bitwarden<vaultwarden>` browser extension.
 
