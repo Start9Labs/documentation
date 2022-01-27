@@ -25,4 +25,4 @@ Replacing ``<LAN URL>`` with your Embassy's LAN (``embassy-xxxxxxx.local``) addr
 Connecting via SSH on Windows, using PuTTY
 ------------------------------------------
 
-One of our community members, @brewsbitcoin, has put together this guide for connecting via PuTTY on Windows: https://medium.com/@brewsbitcoin/ssh-to-start9-embassy-from-windows-4a4e17891b5a
+One of our community members, `@brewsbitcoin <https://twitter.com/brewsbitcoin>`_ (https://brewsbitcoin.com/), has put together this `Guide <https://medium.com/@brewsbitcoin/ssh-to-start9-embassy-from-windows-4a4e17891b5a>`_ for connecting via PuTTY on Windows.

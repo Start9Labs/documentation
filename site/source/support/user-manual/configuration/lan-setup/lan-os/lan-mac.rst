@@ -4,62 +4,52 @@
 Mac
 ===
 
-#. Visit your Embassy at its Tor Address.
+#. Visit your Embassy at its Tor Address (for security purposes), and navigate to the :ref:`Embassy tab<embassy-tab>` -> LAN
 
-#. Navigate to --> Embassy --> Connect Over LAN
+    .. figure:: /_static/images/ssl/macos/embassy_lan_setup.svg
+        :width: 60%
+        :alt: LAN setup menu item
 
-   .. figure:: /_static/images/embassy_lan_setup.png
-    :width: 90%
-    :alt: LAN setup menu item
+#. Click "Download Root CA". This will prompt a download to save the certificate file to your machine.
 
-    Select the "Connect over LAN" menu item
+    .. figure:: /_static/images/ssl/macos/embassy_lan_setup0.svg
+        :width: 60%
+        :alt: LAN setup page
 
-#. Select the "Root Certificate Authority" sub menu. This will prompt a download to save the certificate file to your machine.
+#. Select the option to ``Open with`` "Keychain Access" and select ``OK``. If you choose to save the file, double click on it once downloaded.
 
-   .. figure:: /_static/images/secure_lan_setup_page.png
-    :width: 90%
-    :alt: LAN setup page
+    .. figure:: /_static/images/ssl/macos/embassy_lan_setup1.svg
+        :width: 60%
+        :alt: LAN setup prompt
 
-    Select the "Root Certificate Authority" sub menu
+#. Enter your computer password when prompted. It will be imported into your mac's keychain.
 
-#. Select the option to open your key with Keychain Access. If you choose to save file, double click on it once downloaded.
+    .. figure:: /_static/images/ssl/macos/certificate_untrusted.svg
+        :width: 60%
+        :alt: Keychain access import menu
 
-   .. figure:: /_static/images/secure_lan_setup_prompt.png
-    :width: 90%
-    :alt: LAN setup prompt
+        Keychain access import menu
 
-    Open with "Keychain Access" and select "OK"
+    .. note:: If the keychain console did not open, press "Command + spacebar" and type “Keychain Access”, and hit enter to open it.
 
-#. Enter your computer password when prompted. It will be imported into your computer's keychain.
+#. Navigate to the "System" tab on the left, find the certificate entitled “Embassy Local Root CA”, and double click on this certificate. A second window will pop up.
 
-   .. figure:: /_static/images/ssl/macos/certificate_untrusted.png
-    :width: 90%
-    :alt: Keychain access import menu
+#. Open the “Trust” dropdown and select “Always Trust” from the dropdown next to “When using this certificate”.
 
-    Keychain access import menu
+    .. figure:: /_static/images/ssl/macos/always_trust.svg
+        :width: 60%
+        :alt: Keychain submenu
 
-#. If the keychain console did not open, press "Command + spacebar" and type “Keychain Access”, and hit enter to open it.
-
-#. Navigate to the "System" tab and find the certificate entitled “Embassy Local Root CA”.
-
-#. Double click on this certificate. A second window will pop up.
-
-#. Open the “Trust” dropdown and select “Always Trust” from the dropdown next to “when using this certificate”.
-
-   .. figure:: /_static/images/ssl/macos/always_trust.png
-    :width: 90%
-    :alt: Keychain submenu
-
-    Select "Always trust" under SSL dropdown for Embassy Local CA
+        Select "Always trust" under the "Trust" dropdown for Embassy Local CA
 
 #. Close this window and enter your password to apply the settings.
 
 #. The “Embassy Local Root CA” cert will now read “This certificate is marked as trusted for all users” in Keychain Access.
 
-   .. figure:: /_static/images/ssl/macos/certificate_trusted.png
-    :width: 90%
-    :alt: Keychain menu trusted certificate
+    .. figure:: /_static/images/ssl/macos/certificate_trusted.svg
+        :width: 60%
+        :alt: Keychain menu trusted certificate
 
-    Trusted Embassy Local CA certificate
+        Trusted Embassy Local CA certificate
 
-#. Open your favorite browser to import this certificate and follow the steps for :ref:`browser setup <lan-browser>`.
+#. Open your favorite browser and follow the steps for :ref:`browser setup <lan-browser>` to complete LAN setup.

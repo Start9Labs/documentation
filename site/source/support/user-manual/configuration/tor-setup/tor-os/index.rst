@@ -1,8 +1,8 @@
 .. _tor-os:
 
-=====================
-Setup Tor for Devices
-=====================
+===================
+Tor Setup - Devices
+===================
 
 Select your Operating System to setup Tor to run in the background (natively) of any device that you might want to use to access your Embassy with remotely.
 

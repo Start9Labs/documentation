@@ -4,15 +4,19 @@
 Firefox
 =======
 
-#. Navigate to your Firefox Settings in a new tab.
+#. Open Firefox and in a new tab select ``Settings`` from the right-hand hamburger menu:
+
+    .. figure:: /_static/images/tor/os_ff_settings.svg
+            :width: 30%
+            :alt: Firefox options screenshot
 
 #. Select “Privacy and Security” from the left hand navigation menu.
 
 #. Scroll all the way to the bottom of the page and select “View Certificates”.
 
-   .. figure:: /_static/images/ssl/browser/firefox_security_settings.png
-    :width: 90%
-    :alt: Firefox security settings
+    .. figure:: /_static/images/ssl/browser/firefox_security_settings.svg
+        :width: 80%
+        :alt: Firefox security settings
 
     Firefox privacy and security settings page
 
@@ -22,18 +26,14 @@ Firefox
 
 #. When prompted, check “Trust this CA to identity websites” and select “OK”.
 
-   .. figure:: /_static/images/ssl/browser/firefox_security_settings.png
-    :width: 90%
-    :alt: Firefox import cert
+    .. figure:: /_static/images/ssl/browser/firefox_view_certs.svg
+        :width: 80%
+        :alt: Firefox import cert
 
     Firefox import certificate page
 
-#. Ensure the “Embassy Local Root CA” exists under “Start9 Labs”.
-
-#. Click “OK” to save.
+#. Ensure the “Embassy Local Root CA” exists under “Start9 Labs”.  Then click “OK” to save.
 
 #. Open a new tab in Firefox to apply the changes. If this does not work, quit and restart Firefox.
 
-#. Navigate to the LAN address provided in the Setup App.
-
-#. You can now securely navigate to your Embassy over HTTPS!
+#. Navigate to the LAN address provided at setup, or in the :ref:`Embassy tab<embassy-tab>` -> LAN.  You can now securely navigate to your Embassy over HTTPS!

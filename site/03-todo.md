@@ -19,9 +19,10 @@
         - (after release) create badges for topic boxes
 - Configuration
     - LAN Setup
-        - Mac
-        - Android
-        - Browsers
+        - Android - Screenshots of LAN setup and verify steps on an Android 12+ device
+        - Brave
+        - Chrome
+        - Firefox
 - Tunin
     - DIY Guide
     - Advanced Config
@@ -41,5 +42,8 @@
     - CIFS
         - OS guides for CIFS (screens)
     - Local
+    - Restore from backup
 - Migrations
 - Possible sounds in troubleshooting (and walkthrough?)
+- Verify LAN setup steps on a Mac
+- Verify Tor setup steps on a Mac

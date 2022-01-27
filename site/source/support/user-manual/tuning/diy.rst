@@ -4,7 +4,7 @@
 DIY Guide
 =========
 
-.. figure:: /_static/images/diy/pi.png
+.. figure:: /_static/images/diy/pi.svg
   :width: 40%
   :alt: Raspberry Pi
 
@@ -49,7 +49,7 @@ Hardware: Assembly
 
 #. Insert mini speaker/buzzer into GPIO pins 6/8/10/12 with the word "speaker" facing out, `away from the board`.
 
-   .. figure:: /_static/images/diy/pins.png
+   .. figure:: /_static/images/diy/pins.svg
     :width: 60%
     :alt: Speaker board spec
 
@@ -83,7 +83,7 @@ Whether you purchase EmbassyOS from us or build it yourself, you need to flash i
 #. Click `Select Target`, then find and select your micro SD card.
 #. Click `Flash!` You may be asked to (1) approve the unusually large disk target or (2) enter your password. Both are normal.
 
-   .. figure:: /_static/images/diy/balena.png
+   .. figure:: /_static/images/diy/balena.svg
     :width: 60%
     :alt: Balena Etcher Dashboard
 

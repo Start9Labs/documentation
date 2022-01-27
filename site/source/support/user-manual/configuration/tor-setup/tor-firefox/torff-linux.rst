@@ -28,7 +28,6 @@ Linux
       :width: 30%
       :alt: Firefox options screenshot
 
-
 #. Search for the term “proxy” in the search bar in the upper right, then select the button that says ``Settings…``:
 
     .. figure:: /_static/images/tor/firefox_search.svg
