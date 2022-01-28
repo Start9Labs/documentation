@@ -1,34 +1,31 @@
 # ToDo
-
 - [ ] Refactor and update Roadmap
 - [ ] Footer links need update (or removal?)
 - [ ] Add screenshots and details
 - [ ] Verify ALL links (especially in device guides as they are all external)
     - [ ] Check all menus behave and display as expected (issues cut)
     - [ ] Verify all TOCs, etc
-- [ ] Add / verify ALL links in the **UI** go to the right place in docs
+    - [ ] Add / verify ALL links in the **UI** go to the right place in docs
 - [ ] Update all guides in service repos
 - [ ] Address build errors
 - [ ] Launch versioned site/docs to start9.com
-- [ ] There are many issues that should be closed by 0.3 docs release, check that this is the case (some issues await new processes in order to test)
-- [ ] Below checklist (wiped as completed)
-
-- Getting Started
+- [ ] There are many issues that should be closed by 0.3 docs release (some issues await new processes in order to test)
+- [ ] Getting Started
     - Initial Setup
     - Device-specific Guides <connectivity, performance, resilience and/or tuning>
         - (after release) create badges for topic boxes
-- Configuration
+- [ ] Configuration
     - LAN Setup
         - Android - Screenshots of LAN setup and verify steps on an Android 12+ device
         - Brave
         - Chrome
         - Firefox
-- Tunin
+- [ ] Tuning
     - DIY Guide
     - Advanced Config
         - SSH over Tor
     - Service-specific Guides
-# Developer Documentation
+- [ ] Developer Documentation
     - embassy-sdk
     - Service Packaging Spec
     - Service Packaging Walkthrough (Hello-World Example)
@@ -36,14 +33,14 @@
         - Contributing
         - Service Packaging
 
-- Alt Market Build Guide
-- Mission / values
-- Backups
+- [ ] Alt Market Build Guide
+- [ ] Mission / values
+- [ ] Backups
     - CIFS
         - OS guides for CIFS (screens)
     - Local
     - Restore from backup
-- Migrations
-- Possible sounds in troubleshooting (and walkthrough?)
-- Verify LAN setup steps on a Mac
-- Verify Tor setup steps on a Mac
+- [ ] Migrations
+- [ ] Possible sounds in troubleshooting (and walkthrough?)
+- [ ] Verify LAN setup steps on a Mac
+- [ ] Verify Tor setup steps on a Mac

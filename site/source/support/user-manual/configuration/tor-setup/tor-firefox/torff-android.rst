@@ -27,7 +27,7 @@ Once Tor is setup on your system, you can proceed to setup Firefox:
 
 5. Search for ``network.proxy.autoconfig_url``, and set the value to ``file:///storage/emulated/0/Download/proxy.pac``.
 
-  .. note:: For newer Android's, and those running CalyxOS, it may be necessary to place the file within the application's ``data`` folder, such as ``file:///storage/emulated/0/Android/data/org.mozilla.firefox_beta/files/Download/proxy.pac``.  Please reach out to support if you have issues.
+  .. caution:: For some platforms, such as Calyx/Graphene on a Pixel 5/6, it may be necessary to place the file within the application's ``data`` folder, such as ``file:///storage/emulated/0/Android/data/org.mozilla.firefox_beta/files/Download/proxy.pac``.  Furthermore, the stock file explorer app may not let you do this, so you might have to get a new one, such as `Explorer <https://play.google.com/store/apps/details?id=com.speedsoftware.explorer&hl=en_US&gl=US>`_.  Please reach out to support if you have issues.
 
   .. figure:: /_static/images/tor/autoconfig_url.svg
     :width: 50%
