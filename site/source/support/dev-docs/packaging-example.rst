@@ -4,6 +4,10 @@
 Service Packaging Example
 =========================
 
+.. contents::
+   :depth: 4
+   :local:
+
 A rough walkthrough of how to package a service using our example `hello-world-wrapper <https://github.com/Start9Labs/hello-world-wrapper>`_.
 
 Welcome!  The following guide will provide the prerequisites, introduce a brief overview of the packaging process, use an example demonstrating how to package a service, and finally, describe the submission process.  This essentially describes how you can take an existing app (or one you have written yourself), and wrap it up into an ``s9pk`` such that it can be added to an EmbassyOS (EOS) Marketplace!  The ``s9pk`` is the final product, which is the portable version of a package that is understood by EOS, and can be distributed to any EOS users either directly, or via a Marketplace.
@@ -29,13 +33,13 @@ Once you have EOS installed, you'll want to set up your development system set u
 At minimum you will need the following:
     #. `Docker <https://docs.docker.com/get-docker>`_
     #. `Docker-buildx <https://docs.docker.com/buildx/working-with-buildx/>`_
-    #. ***PLACEHOLDER FOR EOS-SDK***
+    #. `Embassy-SDK <https://github.com/Start9Labs/embassy-os/tree/master/backend>`_
 
 The following are recommended:
     #. `Cargo <https://doc.rust-lang.org/cargo/>`_
     #. `yq <https://mikefarah.gitbook.io/yq/>`_ (version 4)
     #. `make <https://www.gnu.org/software/make/>`_
-    #. rust-musl-cross (***PLACEHOLDER FOR NEW MUSL-CROSS REPO***) (For cross compiling Rust to Alpine, not needed otherwise)
+    #. `rust-musl-cross <https://github.com/Start9Labs/rust-musl-cross>`_ (For cross compiling Rust to Alpine, not needed otherwise)
 
 Overview
 --------
@@ -69,7 +73,7 @@ Simply run:
 Example - Hello World
 ---------------------
 
-Okay, let's actually package a service!  For this example, we're going to use an example service `Hello World <https://github.com/Start9Labs/hello-world>`_.  This repository can also be used as a template to quickly get started with your service.  The guide will provide good overview of service packaging, but obviously your app will be different, so don't hesitate to reach out to our community `dev chat <https://matrix.to/#/#community-dev:matrix.start9labs.com>`_ with questions.  
+Okay, let's actually package a service!  For this example, we're going to use an example service `Hello World <https://github.com/Start9Labs/hello-world>`_.  This repository can also be used as a template to quickly get started with your service.  The guide will provide good overview of service packaging, but obviously your app will be different, so don't hesitate to reach out to our community `dev chat <https://matrix.to/#/#community-dev:matrix.start9labs.com>`_ with questions.
 
 The commands below assume a Linux development environment with all the recommended dependencies listed above installed.  To get started quickly, we'll use Start9's wrapper template.
 
@@ -276,7 +280,7 @@ Next, it's time to edit the ``Dockerfile``.  This defines how to build the image
   ADD ./docker_entrypoint.sh /usr/local/bin/docker_entrypoint.sh
   RUN chmod a+x /usr/local/bin/docker_entrypoint.sh
 
-1. Next, we set a working directory, and set the location of the entrypoint. Exposing ports is not necessary for EOS, but its often useful to leave this line for clarity. 
+1. Next, we set a working directory, and set the location of the entrypoint. Exposing ports is not necessary for EOS, but its often useful to leave this line for clarity.
 
 .. code:: docker
 
@@ -366,7 +370,7 @@ Our example ``Makefile`` is again fairly simple for Hello World.  Let's take a l
 
     .DELETE_ON_ERROR:
 
-3. The ``all`` step is run when the ``make`` command is issued.  This attempts the ``verify`` step, which requires that the ``hello-world.s9pk`` must first be built, which first requires the ``image.tar``, and so on.  In this case, each step requires the next and each step indicates the necessary existence of a file. If an indicated file has been altered, such as the `docker_entrypoint.sh`, then any step that contains this file will be rebuilt. 
+3. The ``all`` step is run when the ``make`` command is issued.  This attempts the ``verify`` step, which requires that the ``hello-world.s9pk`` must first be built, which first requires the ``image.tar``, and so on.  In this case, each step requires the next and each step indicates the necessary existence of a file. If an indicated file has been altered, such as the `docker_entrypoint.sh`, then any step that contains this file will be rebuilt.
 
 4. So the ``.s9pk`` is created with the ``embassy-sdk pack`` command, supplied with the ``manifest``, ``config_spec``, previously created ``image.tar``, and ``instructions.md``.  Your project may likely also contain a ``config_rules`` file.  Some of these files we have not yet edited, but that will come shortly.
 
@@ -473,9 +477,13 @@ These are stored in ``assets/compat/`` for 0.2.x compatibility, and in ``/assets
 
 We essentially have 2 config options (homepage and subdomains), with all of their specifications nested below them.  Looking at the homepage, it contains a ``union`` type, which is a necessary dependency, which can be of 5 variants (welcome, index, filebrowser, redirect, or fuck-off).  The below images show how this is displayed in the UI.
 
-***IMAGE PLACEHODLER***
+  .. figure:: /_static/images/dev/pages0.svg
+    :width: 60%
+    :alt: Pages Config
 
-***IMAGE PLACEHODLER***
+  .. figure:: /_static/images/dev/pages1.svg
+    :width: 60%
+    :alt: Pages Union
 
 For all the possible types, please check our :ref:`Service Config Spec <service_config>`.
 
@@ -501,7 +509,9 @@ Instructions
 
 Instructions are the basic directions or any particular details that you would like to convey to the user to help get them on their way.  Each wrapper repo should contain a ``docs`` directory which can include anything you'd like, but specifically if you include an ``instructions.md`` file, formatted in Markdown language, it will be displayed simply for the user as shown below.
 
-***PLACEHOLDER FOR IMAGE***
+  .. figure:: /_static/images/dev/instructions.svg
+    :width: 60%
+    :alt: Instructions
 
 You can find the ``instructions.md`` file for Embassy Pages `here <https://github.com/Start9Labs/embassy-pages-wrapper/tree/master/docs>`_ if you are interested.
 

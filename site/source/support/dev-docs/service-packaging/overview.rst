@@ -4,6 +4,10 @@
 Service Package Overview
 ========================
 
+.. contents::
+   :depth: 2
+   :local:
+
 There are several main components that comprise a service package for EmbassyOS. This overview will introduce them and following sections will dive into technical specifics.
 
 First, let's get your system setup with the necessary software dependencies.
@@ -14,7 +18,7 @@ Environment Setup
 At minimum, ``docker``, ``docker-buildx``, and ``appmgr`` are required. The rest of the recommendations serve to optimize the build process.
 
 Recommended Dependencies
-........................
+========================
 
     `docker <https://docs.docker.com/get-docker>`_
 
@@ -34,7 +38,7 @@ Package Components
 ------------------
 
 Image
-.....
+=====
 
 Each service boils down to a Docker image. We're not going to dive into Docker specifics in this guide, since there exists tons of `resources <https://docs.docker.com/>`_ for developing with this containerization tool.
 
@@ -43,7 +47,7 @@ Because the service ultimately runs on a Raspberry Pi, the created Docker image 
 The image is immutable, meaning that when the service is updated, the image is replaced with a completely new image containing the updated features.
 
 Volume
-......
+======
 
 Each service application gets a volume allocated to it by EmbassyOS. All service application data is stored in this directory and is persisted across updates.
 
@@ -53,7 +57,7 @@ The volume directory (for seeding data into the volume) is typically: ``/root/vo
     Any files that are in the image at the volume path will be overwritten when a backup restore occurs.
 
 Dependencies
-............
+============
 
 When it comes to running your own server, managing dependencies is perhaps the most difficult part. The term "dependency hell" emerged from this sentiment. Even the best developers have lost significant amounts of time trying to find, correct, or clarify documentation for dependencies or dependency configuration. Individuals who manage their own servers have specific technical skills and are willing to devote the time and effort necessary to maintain them. Companies have entire departments dedicated to this feat.
 
@@ -66,7 +70,7 @@ The key to making the system work is a new, domain-specific-language (DSL) and s
 This DSL is utilized in the :ref:`config rules <config_rules>` and :ref:`dependencies <service-dependencies>` key in the service manifest.
 
 Manifest
-........
+========
 
 This file describes the service and its requirements. It is used to:
 
@@ -81,19 +85,19 @@ For instance, `LND displays alerts <https://github.com/Start9Labs/lnd-wrapper/bl
 There is nothing you need to do as a developer to enable the service to run over Tor. This is *completely* handled by EmbassyOS - a Tor address will be automatically generated and an Nginx server configured (if a client application) when the service is installed. Just define which version of Tor your service needs in this manifest file!
 
 Config
-......
+======
 
 Most self-hosted applications require the user to tell the app how to behave using a config file in a specific format, environment variables, command-line arguments, or some combination of these inputs. One of the coolest features of EmbassyOS is that, when packaged correctly, the app's :ref:`configuration <service-config>` will be available to the user as a slick GUI that always produces a valid configuration no matter how little experience or skill the user has.
 
 With EmbassyOS, this means a service wrappers' configuration requires a particular format and rule structure to ensure it integrates smoothly with the user interface. This format enables clean handling of improper values and configuration dependencies.
 
 .s9pk Bundle
-............
+============
 
 The configuration and manifest files get bundled into the ``.s9pk`` package, which is `built using appmgr <https://github.com/Start9Labs/embassy-os/tree/master/appmgr>`_. Each new version release should include the updated version of these files re-bundled into a new binary. This is the file that will be downloaded from the marketplace. Upon user initiation, EmbassyOS then un-packages and installs the service.
 
 Hello World Example
-...................
+===================
 
 For reference, the `Hello world <https://github.com/Start9Labs/hello-world-wrapper>`_ repository should be used as an example. A project template can be cloned using the "Use this template" button in GitHub.  For a detailed walkthrough of this example, please see the :ref:`Packaging Example<packaging-example>`.
 

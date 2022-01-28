@@ -1,8 +1,12 @@
 .. _recover-02x:
 
 ===================================
-Migrate Embassy from Versions 0.2.x - **NEEDS SCREENS**
+Migrate Embassy from Versions 0.2.x
 ===================================
+
+.. contents::
+   :depth: 4
+   :local:
 
 Migrate Embassy Series 0.2.x Data
 ---------------------------------

@@ -6,47 +6,37 @@ Embassy-SDK
 
 .. warning:: This is for developers only!! Anything you do while SSH'd into your Embassy is NOT SUPPORTED, unless under the guidance of a Start9 technician.
 
-.. When interacting with Embassy directly, you will invariably want to use ``embassy-cli``.  Embassy-CLI can control EmbassyOS in many of the same ways that the UI can, but with finer controls and deeper insights.
+You can install to your system by running the following from you ``embassy-os`` directory:
 
-.. In order to use Embassy-CLI, you will first need to authorize yourself with the following command...
+    .. code-block:: bash
 
-..     .. code-block:: bash
-
-..         embassy-cli auth login
-
-..     and enter your Embassy Master Password at the prompt.
+        cargo install --bin=embassy-sdk --path=. --no-default-features --verbose
 
 
-.. You can enter ``embassy-cli help`` or ``embassy-cli <option> help`` to get an overview of capabilities:
+You can enter ``embassy-sdk help`` or ``embassy-sdk <option> help`` to get an overview of capabilities:
 
-..     .. code-block:: bash
+    .. code-block:: bash
 
-..         Embassy CLI
+        embassy-sdk --help
+        Embassy SDK
 
-..         USAGE:
-..             embassy-cli [OPTIONS] <SUBCOMMAND>
+        USAGE:
+            embassy-sdk [OPTIONS] <SUBCOMMAND>
 
-..         FLAGS:
-..                 --help       Prints help information
-..             -V, --version    Prints version information
+        FLAGS:
+            -h, --help       Prints help information
+            -V, --version    Prints version information
 
-..         OPTIONS:
-..             -c, --config <config>
-..             -h, --host <host>
-..             -p, --proxy <proxy>
+        OPTIONS:
+            -c, --config <config>
 
-..         SUBCOMMANDS:
-..             auth            Login/logout and manage sessions
-..             backup          Manage backups
-..             db              Interact with the Database
-..             disk            Information on the external drive
-..             echo            Echoes
-..             git-info        Print the current git hash
-..             help            Prints this message or the help of the given subcommand(s)
-..             inspect         Details on services and their components
-..             net             Network information
-..             notification    Control UI notifications
-..             package         Interact with packages
-..             server          EmbassyOS operations and information
-..             ssh             Manage SSH keys
-..             wifi            Manage WiFi networks
+        SUBCOMMANDS:
+            git-info    Print current git hash
+            help        Prints this message or the help of the given subcommand(s)
+            init        Initialize
+            inspect     Inspect a .s9pk
+            pack        Package a service into the .s9pk format
+            verify      Verify a .s9pk is valid
+
+
+Please visit https://github.com/Start9Labs/embassy-os/tree/master/backend for more details

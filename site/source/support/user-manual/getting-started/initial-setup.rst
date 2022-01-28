@@ -1,7 +1,7 @@
 .. _initial-setup:
 
 =============
-Initial Setup - ***COMPACT / SIMPLIFY??***
+Initial Setup
 =============
 
 Connect and Power Up
