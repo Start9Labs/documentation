@@ -1,21 +1,10 @@
 .. _support:
 
-.. title:: Support
-
-.. raw:: html
-
-  <div class="landing landing--floating">
-
-.. hero-box::
-  :title: Get Help
-  :button_icon: scylla-icon scylla-icon--monitoring
-  :image: /_static/img/eos_0.3.0.png
+=======
+Support
+=======
 
   Here you will find help on how to use your devices, answers to frequently asked questions, and documentation for developers.
-
-.. raw:: html
-
-  <div class="landing__content landing__content">
 
 .. raw:: html
 
@@ -63,10 +52,6 @@
 
   </div></div>
 
-.. raw:: html
-
-  </div></div>
-
 .. This is for the side navigation display
 .. toctree::
   :maxdepth: 1
@@ -75,4 +60,3 @@
   user-manual/index
   faq/index
   dev-docs/index
-

@@ -1,21 +1,10 @@
 .. _learn:
 
-.. title:: Learn
-
-.. raw:: html
-
-  <div class="landing landing--floating">
-
-.. hero-box::
-  :title: Learn
-  :button_icon: scylla-icon scylla-icon--monitoring
-  :image: /_static/img/eos_0.3.0.png
+=====
+Learn
+=====
 
   Here you will find information on concepts that will help you understand the technologies used by and relevant to your device, as well as find answers to common questions, and a video library with a wide array of content, from educational to how-to.
-
-.. raw:: html
-
-  <div class="landing__content landing__content">
 
 .. raw:: html
 
@@ -63,9 +52,6 @@
 
   </div></div>
 
-.. raw:: html
-
-  </div></div>
 
 .. This is for the side navigation display
 .. toctree::
@@ -74,6 +60,3 @@
 
    concepts/index
    media/index
-  
-  
-..  faq/index

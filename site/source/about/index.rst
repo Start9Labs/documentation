@@ -1,21 +1,10 @@
 .. _about:
 
-.. title:: About Start9 Labs
-
-.. raw:: html
-
-  <div class="landing landing--floating">
-
-.. hero-box::
-  :title: About Start9 Labs
-  :button_icon: scylla-icon scylla-icon--monitoring
-  :image: /_static/img/eos_0.3.0.png
+=====
+About
+=====
 
   Here you will find out how to join the community and give back!
-
-.. raw:: html
-
-  <div class="landing__content landing__content">
 
 .. raw:: html
 
@@ -76,10 +65,6 @@
   :anchor: Reach out
 
    An overview of the ideas and technologies surrounding Start9 Labs and Embassy.
-
-.. raw:: html
-
-  </div></div>
 
 .. raw:: html
 
