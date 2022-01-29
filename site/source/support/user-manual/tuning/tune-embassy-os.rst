@@ -1,8 +1,8 @@
 .. _tune-embassy-os:
 
-=====================
-Customizing EmbassyOS
-=====================
+===============
+Customizing EOS
+===============
 
 .. _device-name:
 

@@ -1,8 +1,8 @@
 .. _service_package_overview:
 
-========================
-Service Package Overview
-========================
+==================
+Packaging Overview
+==================
 
 .. contents::
    :depth: 2

@@ -1,8 +1,8 @@
 .. _dg-windows:
 
-==============
-Windows Guides
-==============
+=======
+Windows
+=======
 
 .. tip:: Please see Window's :ref:`Known Limitations<lim-windows>` to understand what is currently not possible on these devices.
 

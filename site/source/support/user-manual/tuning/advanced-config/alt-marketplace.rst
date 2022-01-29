@@ -1,8 +1,8 @@
 .. _alt-marketplace:
 
-=======================
-Alternative Marketplace
-=======================
+===============
+Alt Marketplace
+===============
 
 EmbassyOS supports accessing alternative marketplaces.
 

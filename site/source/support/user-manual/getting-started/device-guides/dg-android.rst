@@ -1,8 +1,8 @@
 .. _dg-android:
 
-==============
-Android Guides
-==============
+=======
+Android
+=======
 
 .. tip:: Please see Android's :ref:`Known Limitations<lim-android>` to understand what is currently not possible on these devices
 

@@ -1,8 +1,8 @@
 .. _advanced-config:
 
-======================
-Advanced Configuration
-======================
+===============
+Advanced Config
+===============
 
 Custom options for folks that "know what they're doing."
 

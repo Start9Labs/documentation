@@ -1,8 +1,8 @@
 .. _exec-service-container:
 
-=========================
-Enter a Service Container
-=========================
+==================
+Service Containers
+==================
 
 For simplicity, EmbassyOS is designed to be completely operated via the :ref:`WebUI<web-ui>`, however, your device belongs to you and if you want to "lift the hood" and access the internals of the software, you may do so.  This guide will show you how to enter a Service's :ref:`container<containers>` in order to directly interface with it and issue commands.
 

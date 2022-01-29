@@ -11,8 +11,8 @@ Answers to Frequently Asked Questions from Embassy users
 
   faq-general
   faq-030
-  faq-basic-use
   faq-troubleshooting
+  faq-basic-use
   faq-embassy
   faq-services
   faq-bitcoin

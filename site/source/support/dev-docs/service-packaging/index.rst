@@ -1,8 +1,8 @@
 .. _service-packaging-spec:
 
-===============================
-Service Packaging Specification
-===============================
+======================
+Service Packaging Spec
+======================
 
 Welcome! If you are here, you are interested in becoming part of the mission to change the future of personal computing. This guide will take you through the process of packaging a service for EmbassyOS, a novel, self-hosted, sovereign computing platform.
 

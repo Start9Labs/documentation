@@ -1,8 +1,8 @@
 .. _dg-mac:
 
-==========
-Mac Guides
-==========
+===
+Mac
+===
 
 .. tip:: Please see Mac's :ref:`Known Limitations<lim-mac>` to understand what is currently not possible on these devices
 

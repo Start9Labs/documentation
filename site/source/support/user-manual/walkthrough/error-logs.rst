@@ -1,8 +1,8 @@
 .. _error-logs:
 
-=============================
-Anonymous Error Log Reporting
-=============================
+===================
+Error Log Reporting
+===================
 
 When you fire up your Embassy for the first time, you will be greeted with a modal asking you if you would be willing to provide your error logs to Start9 to assist us in improving EmbassyOS and its ecosystem.  The decision to send or retain this data is 100% yours.  Below are details to aid you in determining your choice.
 

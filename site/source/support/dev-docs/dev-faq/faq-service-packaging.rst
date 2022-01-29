@@ -4,9 +4,9 @@
    :depth: 3
    :local:
 
-=====================
-Service Packaging FAQ
-=====================
+=============
+Packaging FAQ
+=============
 
 Do I need programming experience to package a service for EmbassyOS?
 --------------------------------------------------------------------

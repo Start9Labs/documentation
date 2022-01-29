@@ -1,8 +1,8 @@
 .. _lim-windows:
 
-=========================
-Windows Known Limitations
-=========================
+=======
+Windows
+=======
 
 Windows10 has no known limitations in regard to Embassy at this time.
 

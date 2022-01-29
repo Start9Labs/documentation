@@ -1,8 +1,8 @@
 .. _service-overview:
 
-=================
-Services Overview
-=================
+========
+Overview
+========
 
 Services are very similar to Applications on a mobile device.  The biggest differences are that they are often designed to run constantly, with 24/7 availability for when a user requires them.  This is why they are called :ref:`Services<services>`, they are always ready to serve users!
 

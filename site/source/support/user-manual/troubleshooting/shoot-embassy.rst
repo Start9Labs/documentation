@@ -1,8 +1,8 @@
 .. _shoot-embassy:
 
-=======================
-Troubleshooting Embassy
-=======================
+=======
+Embassy
+=======
 
 Hardware
 --------

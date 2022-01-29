@@ -1,8 +1,8 @@
 .. _lim-android:
 
-=========================
-Android Known Limitations
-=========================
+=======
+Android
+=======
 
 Local Access
 ------------

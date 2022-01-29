@@ -1,8 +1,8 @@
 .. _dg-linux:
 
-============
-Linux Guides
-============
+=====
+Linux
+=====
 
 .. tip:: Please see Linux's :ref:`Known Limitations<lim-linux>` to understand what is currently not possible on these devices
 

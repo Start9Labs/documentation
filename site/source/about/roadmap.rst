@@ -4,10 +4,11 @@
 Roadmap
 =======
 
-Probably needs to actually be an html page that is linked to from "About"
+Under Construction
+------------------
 
+Please pardon our dust...
 
-Also badly needs updating
 
 .. .. raw:: html
 

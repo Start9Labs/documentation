@@ -1,8 +1,8 @@
 .. _faq-contributing:
 
-============
-Contributing
-============
+================
+Contributing FAQ
+================
 
 We ❤️ contributions!
 

@@ -1,8 +1,8 @@
 .. _overview:
 
-=====================
-Overview of EmbassyOS
-=====================
+==================
+EmbassyOS Overview
+==================
 
 .. _services-tab:
 

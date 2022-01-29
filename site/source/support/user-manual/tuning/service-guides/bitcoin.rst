@@ -32,26 +32,42 @@ You can also drop into a shell using::
 
 and then enter ``bitcoin-cli`` commands.  When you are finished, simply type ``exit``.
 
+Software Wallets
+----------------
+
 .. _electrum:
 
 Electrum
---------
+========
+
+Available for
+.............
+-Linux
 
 **UNTESTED**
 
 .. _fully-noded:
 
 FullyNoded
-----------
+==========
 
-.. note:: Mac only
+.. note:: Mac / iOS only
+
+**UNTESTED**
+
+.. _ledger-live:
+
+Ledger Live
+===========
+
+.. tip:: Built for use with Ledger hardware devices
 
 **UNTESTED**
 
 .. _samourai:
 
 Samourai
---------
+========
 
 .. note:: Android only
 
@@ -60,33 +76,25 @@ Samourai
 .. _sparrow:
 
 Sparrow
--------
+=======
 
 **UNTESTED**
 
 .. _specter:
 
 Specter
--------
+=======
 
 Current - https://github.com/Start9Labs/bitcoind-wrapper/tree/master/docs/integrations/specter
 
 **UNTESTED**
 
-.. _trezor:
+.. _trezor-suite:
 
 Trezor Suite
-------------
+============
 
 .. tip:: Built for use with Trezor hardware devices
 
 **UNTESTED**
 
-.. _ledger:
-
-Ledger Live
------------
-
-.. tip:: Built for use with Ledger hardware devices
-
-**UNTESTED**

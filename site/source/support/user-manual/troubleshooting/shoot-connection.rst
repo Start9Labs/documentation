@@ -1,8 +1,8 @@
 .. _shoot-connection:
 
-===========================
-Troubleshooting Connections
-===========================
+===========
+Connections
+===========
 
 During initial setup, I am unable to connect to ``embassy.local``.
 ------------------------------------------------------------------

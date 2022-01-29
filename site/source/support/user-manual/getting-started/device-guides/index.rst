@@ -1,8 +1,8 @@
 .. _device-guides:
 
-======================
-Device-Specific Guides
-======================
+=============
+Device Guides
+=============
 
 Guides to get connected with or improve your Embassy by device-type.
 
