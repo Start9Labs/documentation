@@ -28,7 +28,7 @@ There are 3 options for this:
 Development Environment
 =======================
 
-Once you have EOS installed, you'll want to set up your development system set up with the necessary software.
+Once you have EOS installed, you'll want to get your development system set up with the necessary software.
 
 At minimum you will need the following:
     #. `Docker <https://docs.docker.com/get-docker>`_

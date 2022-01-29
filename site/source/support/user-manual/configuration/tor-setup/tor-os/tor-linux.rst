@@ -30,7 +30,7 @@ Linux
 
                 sudo systemctl restart tor
 
-    .. group-tab:: Arch / Manjaro / Garuda
+    .. group-tab:: Arch / Garuda / Manjaro
 
         Simply install Tor with:
 

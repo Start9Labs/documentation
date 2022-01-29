@@ -1,12 +1,12 @@
-.. _software:
+.. .. _software:
 
-===================
-Associated Software
-===================
+.. ===================
+.. Associated Software
+.. ===================
 
-.. _firefox:
+.. .. _firefox:
 
-Firefox
--------
+.. Firefox
+.. -------
 
-firefox.com
+.. firefox.com

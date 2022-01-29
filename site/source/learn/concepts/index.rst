@@ -13,5 +13,5 @@ An overview of the ideas and technologies surrounding Start9 Labs and Embassy
   networks
   self-hosting
   embassy
-  software
+  .. software
   bitcoin-lightning

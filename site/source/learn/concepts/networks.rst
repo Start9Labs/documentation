@@ -38,7 +38,7 @@ This domain is not broadcast outside of your local network, so it is as private 
 
 SSL
 ---
-Visiting websites on the Tor network is slow. We wanted to provide a better option to access the Embassy at home. That’s why we created an address for the Embassy that can be accessed on your Local Area Network.
+Visiting websites on the Tor network is slow. We wanted to provide a better option to access the Embassy at home. That's why we created an address for the Embassy that can be accessed on your Local Area Network.
 
 By default, this ``.local`` address is served like a regular website, over HTTP. Browsers make it noticeable when visiting a site over HTTP in the URL bar - it could be red, show an unlocked lock, or warn that the connection is not secure.
 

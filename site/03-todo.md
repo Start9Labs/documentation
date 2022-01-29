@@ -1,35 +1,28 @@
 # ToDo
-- [ ] Refactor and update Roadmap
-- [ ] Footer links need update (or removal?)
-- [ ] Add screenshots and details
-- [ ] Verify ALL links (especially in device guides as they are all external)
-    - [ ] Check all menus behave and display as expected (issues cut)
-    - [ ] Verify all TOCs, etc
-    - [ ] Add / verify ALL links in the **UI** go to the right place in docs
-- [ ] Update all guides in service repos
-- [ ] Address build errors
-- [ ] Launch versioned site/docs to start9.com
-- [ ] There are many issues that should be closed by 0.3 docs release (some issues await new processes in order to test)
-- [ ] Getting Started
-    - Initial Setup
-    - Device-specific Guides <connectivity, performance, resilience and/or tuning>
-        - (after release) create badges for topic boxes
-- [ ] Configuration
-    - LAN Setup
-        - Android - Screenshots of LAN setup and verify steps on an Android 12+ device
-        - Chrome
-        - Firefox
-- [ ] Tuning
-    - DIY Guide
+- LAN Setup - Android - Screenshots of LAN setup and verify steps on an Android 12+ device
+- Update all guides in service repos
     - Service-specific Guides
-- [ ] Alt Market Build Guide
-- [ ] Mission / values
-- [ ] Backups
+- Verify LAN setup steps on a Mac
+- Verify Tor setup steps on a Mac
+- Add / verify ALL links in the **UI** go to the right place in docs
+- Address build errors
+
+# BLOCKED:
+- Mission / values
+- Initial Setup
+- DIY Guide
+- Possible sounds in troubleshooting (and walkthrough?)
+- Migrations
+- Backups
     - CIFS
         - OS guides for CIFS (screens)
     - Local
     - Restore from backup
-- [ ] Migrations
-- [ ] Possible sounds in troubleshooting (and walkthrough?)
-- [ ] Verify LAN setup steps on a Mac
-- [ ] Verify Tor setup steps on a Mac
+- Alt Market Build Guide
+- Refactor and update Roadmap
+- Launch versioned site/docs to start9.com
+- Verify ALL links (especially in device guides as they are all external)
+
+# AFTER PUBLISHING:
+- Create badges for device guide topic boxes <connectivity, performance, resilience and/or tuning>
+- There are many issues that should be closed by 0.3 docs release (some issues await new processes in order to test)

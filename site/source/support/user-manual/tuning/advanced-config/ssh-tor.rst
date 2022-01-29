@@ -4,6 +4,8 @@
 SSH Over Tor
 ============
 
+.. warning:: This is an advanced feature and should be used with caution. Start9 is not responsible for any damage you might cause while using SSH access.
+
 .. note:: The following guide requires that you have already added an `SSH key to your Embassy<ssh-setup>`.
 
 This is currently only supported on Linux, but may work on Windows with `Torifier <https://torifier.com/>`_.
@@ -21,7 +23,7 @@ Setup
 
                 apt install torsocks
 
-        .. group-tab:: Arch / Manjaro / Garuda
+        .. group-tab:: Arch / Garuda / Manjaro
 
             .. code-block:: bash
 
@@ -33,7 +35,7 @@ Setup
 
         ssh root@embassy-xxxxxxx.local
 
-#. Add the following 2 lines to ``/etc/tor/torrc`` **EITHER** by using your preferred text editor:
+#. Add the following 2 lines to ``/etc/tor/torrc`` **EITHER** by using your preferred text editor (such as ``nano`` or ``vim``):
 
     ``HiddenServiceDir /var/lib/tor/ssh``
     ``HiddenServicePort 22 127.0.0.1:22``
