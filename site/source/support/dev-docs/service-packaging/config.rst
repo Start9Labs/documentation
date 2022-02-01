@@ -29,7 +29,7 @@ Config Spec
 Overview
 ........
 
-.. figure:: /_static/images/service/bitcoin_config.png
+.. figure:: /_static/images/services/config.svg
   :width: 80%
   :alt: Bitcoin Config
 

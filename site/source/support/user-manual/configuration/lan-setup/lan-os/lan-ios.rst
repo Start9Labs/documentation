@@ -14,13 +14,13 @@ iOS
 
    #. In the ``Embassy`` tab in your Embassy, under ``Settings`` -> ``LAN``
 
-      .. figure:: /_static/images/embassy_lan_setup.svg
+      .. figure:: /_static/images/ssl/embassy_lan_setup.svg
          :width: 60%
          :alt: LAN setup menu item
 
 #. Select ``Download Root CA``. Clicking this will prompt you to “Save to device”.
 
-   .. figure:: /_static/images/embassy_lan_setup0.svg
+   .. figure:: /_static/images/ssl/embassy_lan_setup0.svg
       :width: 60%
       :alt: LAN setup page
 
@@ -29,7 +29,7 @@ iOS
    .. note::
         If you have changed the default browser from Safari to Brave, the following auto save certificate to device flow will *not* work. Safari, Firefox, and Chrome work as expected. We recommend you temporarily use one of these browsers to complete this action.
 
-   .. figure:: /_static/images/ssl/mobile/ssl_certificate_install_page.svg
+   .. figure:: /_static/images/ssl/ios/ssl_certificate_install_page.svg
     :width: 40%
     :alt: Certificate install page
 
@@ -37,17 +37,17 @@ iOS
 
 #. Go to Settings on your iOS device.
 
-   .. figure:: /_static/images/ssl/mobile/ssl_ipad_general_settings.svg
+   .. figure:: /_static/images/ssl/ios/ssl_ipad_general_settings.svg
     :width: 40%
     :alt: General settings
 
 #. Navigate to *General > Profile(s) > Downloaded Profile > Install*.
 
-   .. figure:: /_static/images/ssl/mobile/ssl_ipad_profiles.svg
+   .. figure:: /_static/images/ssl/ios/ssl_ipad_profiles.svg
     :width: 40%
     :alt: Profiles
 
-   .. figure:: /_static/images/ssl/mobile/ssl_ipad_install_profile.svg
+   .. figure:: /_static/images/ssl/ios/ssl_ipad_install_profile.svg
     :width: 40%
     :alt: Install profile
 
@@ -57,7 +57,7 @@ iOS
 
 #. Next, navigate to *General > About > Certificate Trust Settings*.
 
-   .. figure:: /_static/images/ssl/mobile/ssl_ipad_cert_trust_settings.svg
+   .. figure:: /_static/images/ssl/ios/ssl_ipad_cert_trust_settings.svg
     :width: 40%
     :alt: Certificate trust settings
 
@@ -65,7 +65,7 @@ iOS
 
 #. Enable full trust for root certificates.
 
-   .. figure:: /_static/images/ssl/mobile/ssl_ipad_cert_trust.svg
+   .. figure:: /_static/images/ssl/ios/ssl_ipad_cert_trust.svg
     :width: 40%
     :alt: Enable full trust
 

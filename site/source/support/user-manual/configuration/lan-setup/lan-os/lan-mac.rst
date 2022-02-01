@@ -6,19 +6,19 @@ Mac
 
 #. Visit your Embassy at its Tor Address (for security purposes), and navigate to the :ref:`Embassy tab<embassy-tab>` -> LAN
 
-    .. figure:: /_static/images/ssl/macos/embassy_lan_setup.svg
+    .. figure:: /_static/images/ssl/embassy_lan_setup.svg
         :width: 60%
         :alt: LAN setup menu item
 
 #. Click "Download Root CA". This will prompt a download to save the certificate file to your machine.
 
-    .. figure:: /_static/images/ssl/macos/embassy_lan_setup0.svg
+    .. figure:: /_static/images/ssl/embassy_lan_setup0.svg
         :width: 60%
         :alt: LAN setup page
 
 #. Select the option to ``Open with`` "Keychain Access" and select ``OK``. If you choose to save the file, double click on it once downloaded.
 
-    .. figure:: /_static/images/ssl/macos/embassy_lan_setup1.svg
+    .. figure:: /_static/images/ssl/embassy_lan_setup1.svg
         :width: 60%
         :alt: LAN setup prompt
 
