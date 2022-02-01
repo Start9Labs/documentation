@@ -41,7 +41,11 @@ Hardware: Components
 #. `GPIO mini speaker/buzzer <https://www.amazon.com/Corporate-Computer-Motherboard-Internal-Speaker/dp/B01527H4W2/>`_ (These often sell out, please let us know if this link needs to be refreshed)
 #. Ethernet cable
 #. MicroSD → USB adapter (or you may have a microSD port on your computer)
-#. An external drive (1TB minimum, 2TB SSD recommended), or an `internal drive <https://www.amazon.com/Crucial-MX500-NAND-SATA-Internal/dp/B078211KBB>`_ with an `USB enclosure <https://www.amazon.com/gp/product/B07T9D8F6C>`_, as sold with our upgrade kits. MUST CONNECT OVER USB 3.0
+#. An external drive (1TB minimum, 2TB SSD recommended), or an `internal drive <https://www.amazon.com/Crucial-MX500-NAND-SATA-Internal/dp/B078211KBB>`_ with an `USB enclosure <https://www.amazon.com/gp/product/B07T9D8F6C>`_, as sold with our upgrade kits. MUST CONNECT OVER USB 3.0!
+
+    - Currently the only tested and supported external drives are the Samsung T5 and T7
+
+  .. tip:: Alternatively, you may build with the Geekworm setup and internal M.2 drive as described in this `guide <https://start9dave.substack.com/p/diy-build>`_, which has been tested to work, but is not currently supported.
 
 Hardware: Assembly
 ..................
