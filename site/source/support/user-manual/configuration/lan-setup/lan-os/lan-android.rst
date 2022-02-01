@@ -26,10 +26,12 @@ If you are running Android 12+ (not yet available on Calyx/Graphene), you can se
 
     .. figure:: /_static/images/ssl/android/droidLAN0.svg
         :width: 30%
-        Install certificate
+        :alt: Install certificate
 
 #. To setup in Firefox, enter ``about:config`` in URL bar, search for "security.enterprise_roots.enabled", and set to ``true``
 
     .. figure:: /_static/images/ssl/android/droidLAN1.svg
         :width: 30%
-        Firefox about:config
+        :alt: Firefox about:config
+
+#. That's it!  You may now browse the ``.local`` addresses on your Embassy.

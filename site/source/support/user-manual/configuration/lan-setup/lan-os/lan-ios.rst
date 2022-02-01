@@ -73,5 +73,3 @@ iOS
 
 #. Test that this process worked successfully by navigating to the LAN address provided from one of the locations listed under Step 1 at the top of this page. You should not see warnings about the security of this site in your browser (if you do, setup was not successful).
 
-
-

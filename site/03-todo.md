@@ -1,5 +1,4 @@
 # TODO
-- LAN Setup - Android - Screenshots of LAN setup and verify steps on an Android 12+ device (see below)
 - Update all guides in service repos
     - Service-specific Guides (link to wrapper repos)
 - Verify LAN and Tor setup steps on a Mac
@@ -16,6 +15,7 @@
         - OS guides for CIFS (screens)
     - Local
     - Restore from backup
+- Alt Market Switching
 - Alt Market Build Guide
 - Refactor and update Roadmap
 - Launch versioned site/docs to start9.com
@@ -25,3 +25,5 @@
 - Create badges for device guide topic boxes <connectivity, performance, resilience and/or tuning>
 - There are many issues that should be closed by 0.3 docs release (some issues await new processes in order to test)
 - Email signup
+
+Need service properties image in packaging spec

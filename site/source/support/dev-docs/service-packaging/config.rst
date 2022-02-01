@@ -1,11 +1,11 @@
 .. _service-config:
 
-============================
-Service Config Specification
-============================
+=====================
+Service Configuration
+=====================
 
-Overview
---------
+Introduction
+------------
 
 Most self-hosted applications require the user to tell the app how to behave using a config file in a specific format, environment variables, command-line arguments, or some combination of these inputs. One of the coolest features of EmbassyOS is that, when packaged correctly, the app's configuration will be available to the user as a slick GUI that always produces a valid configuration no matter how little experience or skill the user has.
 
@@ -27,11 +27,11 @@ Config Spec
 -----------
 
 Overview
-........
+========
 
-.. figure:: /_static/images/services/config.svg
+.. figure:: /_static/images/services/service5.svg
   :width: 80%
-  :alt: Bitcoin Config
+  :alt: Synapse Config
 
 This file defines the structure of configuration options your service depends on to run. It additionally can include configuration options that users might want to enable for more advanced or customized usage. Ultimately, these values influence the UI elements for a user to interact with. Specifically, they evaluate to the options available when managing a service, such as:
 
@@ -40,16 +40,16 @@ This file defines the structure of configuration options your service depends on
 - Whenever a user edits a service config
 - When config pointers get updated
 
-The neat part about this file is that each ValueSpec type gets translated into a specific front end component. For instance, boolean values display as a toggle button.
+The neat part about this file is that each ValueSpec type gets translated into a specific front end component. For instance, boolean values display as a toggle button, such as in the Synapse exmple of ``Enable Registration``.
 
-.. figure:: /_static/images/service/boolean_toggle.png
+.. figure:: /_static/images/services/synapseconfig.svg
   :width: 80%
   :alt: Example boolean toggle
 
 Another advantage is the ability to define default values. These values automatically get populated if the user selects the ``Default`` option when setting up a service in ``Needs Config`` state. This is super convenient for users who want to get up and running quickly.
 
 Types
-.....
+=====
 
 ConfigSpec Type:
 
@@ -60,7 +60,7 @@ ConfigSpec Type:
     ValueSpec Type: Boolean | Enum | List | Number | Object | String | Union | Pointer (see below for details)
 
 Implementation Guide
-....................
+====================
 
 The following section contains implementation specifications for the ``config_spec.yaml`` file.
 
@@ -92,7 +92,7 @@ The following section contains implementation specifications for the ``config_sp
 .. _boolean:
 
 Boolean
-^^^^^^^
+.......
 
 Config value specification denoted as a boolean value. A default value is required.
 
@@ -119,7 +119,7 @@ Example:
 .. _enum:
 
 Enum
-^^^^
+....
 
 Config value specification denoted as an enum value. Enums values must be a unique set. If no default is provided, ``null`` will be the assumed value.
 
@@ -150,7 +150,7 @@ ValueSpec Type:
 .. _list:
 
 List
-^^^^
+....
 
 The list type describes an array of values. The values must consist of the same subtype, which can be any of the ValueSpec types available in the EmbassyOS config specification.
 Lists of any type do not contain the default for each item in list. The list *itself* can have a default. If no default is provided, ``null`` will be the assumed value.
@@ -201,7 +201,7 @@ Example:
 .. _number:
 
 Number
-^^^^^^
+......
 
 A number value within an optionally defined range. Nullable field is required. If ``nullable`` is true, the default is assumed to be ``null`` if it is not provided.
 
@@ -235,7 +235,7 @@ Example:
 .. _object:
 
 Object Type
-^^^^^^^^^^^
+...........
 
 A nested representation of a ConfigSpec. The object type takes the same structure under the ``spec`` key as a ConfigSpec: a key indicates the field name, and the value denotes the ValueSpec type for that field.
 
@@ -303,7 +303,7 @@ Example:
 .. _string:
 
 String
-^^^^^^
+......
 
 There are various options for string values. They can optionally be marked as copyable or masked, such as for passwords, which will reflect the UI element display. A pattern, expressed in regex, can be denoted. If it exists, this field requires both the pattern type (ie. Regex) and pattern description (ie. an explanation of the pattern requirements).
 
@@ -362,7 +362,7 @@ Examples:
 .. _pointer:
 
 Pointer
-^^^^^^^
+.......
 
 The pointer type *points* to a config value on another service installed on EmbassyOS (ie. app subtype) or to the EmbassyOS system (ie. system subtype). When pointing to another service, the ``index`` field indicates the path to the desired config variable.
 
@@ -398,7 +398,8 @@ Example:
 .. _union:
 
 Union
-^^^^^
+.....
+
 This type describes a necessary dependency. Multiple variants can be expressed to enable the user the option to connect to another service (internal dependency) or outside source (external dependency).
 
 For example, the Bitcoin Proxy service is united with an instance of Bitcoin. Three variants are defined: internal, external, and a quick connect. In this case, internal refers to the Bitcoin Core instance running on EmbassyOS, and defines the RPC credentials necessary for connecting; external refers to a Bitcoin Core node running on a different device, and defines the RPC credentials necessary for connecting; quick connect refers to yet another method of connecting to a Bitcoin Core node, optimized for convenience.

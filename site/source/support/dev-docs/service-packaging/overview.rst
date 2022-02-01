@@ -15,7 +15,7 @@ First, let's get your system setup with the necessary software dependencies.
 Environment Setup
 -----------------
 
-At minimum, ``docker``, ``docker-buildx``, and ``appmgr`` are required. The rest of the recommendations serve to optimize the build process.
+At minimum, ``docker``, ``docker-buildx``, and ``embassy-sdk`` are required. The rest of the recommendations serve to optimize the build process.
 
 Recommended Dependencies
 ========================
@@ -24,7 +24,7 @@ Recommended Dependencies
 
     `docker-buildx <https://docs.docker.com/buildx/working-with-buildx/>`_
 
-    `appmgr <https://github.com/Start9Labs/embassy-os/tree/master/appmgr>`_
+    `embassy-sdk <https://github.com/Start9Labs/embassy-os/tree/master/backend>`_
 
     `cargo <https://doc.rust-lang.org/cargo/>`_
 
@@ -46,26 +46,25 @@ Because the service ultimately runs on a Raspberry Pi, the created Docker image 
 
 The image is immutable, meaning that when the service is updated, the image is replaced with a completely new image containing the updated features.
 
-Volume
-======
+Volumes
+=======
 
-Each service application gets a volume allocated to it by EmbassyOS. All service application data is stored in this directory and is persisted across updates.
+Each service application gets one or more volumes allocated to it by EmbassyOS. All service application data is stored in this directory and is persisted across updates.
 
-The volume directory (for seeding data into the volume) is typically: ``/root/volumes/<service-id>``.
+The default volume directory (for seeding data into the volume) is typically: ``/root/volumes/<service-id>``.
 
-.. warning::
-    Any files that are in the image at the volume path will be overwritten when a backup restore occurs.
+.. warning:: Any files that are in the image at the volume path will be overwritten when a backup restore occurs.
 
 Dependencies
 ============
 
-When it comes to running your own server, managing dependencies is perhaps the most difficult part. The term "dependency hell" emerged from this sentiment. Even the best developers have lost significant amounts of time trying to find, correct, or clarify documentation for dependencies or dependency configuration. Individuals who manage their own servers have specific technical skills and are willing to devote the time and effort necessary to maintain them. Companies have entire departments dedicated to this feat.
+When it comes to running your own server, managing dependencies is perhaps the most difficult part. The term "dependency hell" emerged from this sentiment. Even the best developers have lost significant amounts of time trying to find, correct, or clarify documentation for dependencies or dependency configuration. Individuals who manage their own servers have specific technical skills and are willing to devote the time and effort necessary to maintain them. Companies have entire departments dedicated to this task.
 
 Some other personal server products aimed at non-technical individuals tackle this problem by simply hard coding dependencies. Since EmbassyOS is a platform for running all open-source, self-hosted software, it is not possible to hard code every possible service, service dependency, and service dependency configuration forever. Instead, Start9 built a new, unprecedented operating system that touts a generalized, intuitive approach to dependency management and service configuration. EmbassyOS enables users to easily and selectively install, uninstall, and update any service they want without getting stuck in dependency hell.
 
-This may sound cool or neat, but it is more than that: *it’s novel*. This has never been done before.
+This may sound cool or neat, but it is more than that: *it's novel*. This has never been done before.
 
-The key to making the system work is a new, domain-specific-language (DSL) and set of standards that are used by developers to define the rules and requirements of their services. Run in the context of EmbassyOS, these rules and requirements appear as simple UI elements, such as inputs, toggles, and drop downs, and they are enforced by validations and clear user instructions. Using this system, what previously required involved time and expertise, can now be done by anyone in a matter of seconds.
+The key to making the system work is a new, domain-specific-language (DSL) and set of standards that are used by developers to define the rules and requirements of their services. Run in the context of EmbassyOS, these rules and requirements appear as simple UI elements, such as inputs, toggles, and drop downs, and they are enforced by validations and clear user instructions. Using this system, what previously required serious time and expertise, can now be done by anyone in a matter of seconds.
 
 This DSL is utilized in the :ref:`config rules <config_rules>` and :ref:`dependencies <service-dependencies>` key in the service manifest.
 
@@ -82,7 +81,7 @@ Each time a service is updated, the manifest should be updated to include the ne
 
 For instance, `LND displays alerts <https://github.com/Start9Labs/lnd-wrapper/blob/master/manifest.yaml#L28>`_  around restoration since data will be overwritten.
 
-There is nothing you need to do as a developer to enable the service to run over Tor. This is *completely* handled by EmbassyOS - a Tor address will be automatically generated and an Nginx server configured (if a client application) when the service is installed. Just define which version of Tor your service needs in this manifest file!
+There is nothing you need to do as a developer to enable the service to run over Tor/LAN. This is *completely* handled by EmbassyOS - a Tor and LAN address will be automatically generated and an Nginx server configured (if a client application) when the service is installed.
 
 Config
 ======
@@ -94,7 +93,7 @@ With EmbassyOS, this means a service wrappers' configuration requires a particul
 .s9pk Bundle
 ============
 
-The configuration and manifest files get bundled into the ``.s9pk`` package, which is `built using appmgr <https://github.com/Start9Labs/embassy-os/tree/master/appmgr>`_. Each new version release should include the updated version of these files re-bundled into a new binary. This is the file that will be downloaded from the marketplace. Upon user initiation, EmbassyOS then un-packages and installs the service.
+The configuration and manifest files get bundled into the ``.s9pk`` package, which is `built using embassy-sdk <https://github.com/Start9Labs/embassy-os/tree/master/backend>`_. Each new version release should include the updated version of these files re-bundled into a new binary. This is the file that will be downloaded from the marketplace. When the user clicks the service's "Install" button, EmbassyOS unpacks and installs the service.
 
 Hello World Example
 ===================

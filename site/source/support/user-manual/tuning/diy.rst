@@ -37,7 +37,7 @@ Hardware: Components
 
     .. caution:: If you prefer to use a fan, **DO NOT** use the official Raspberry Pi fan, as it requires the same GPIO pins as the audio speaker. Instead, we recommend `this fan <https://www.amazon.com/Raspberry-iUniker-30x30x7mm-Brushless-RetroFlag/dp/B076H3TKBP/>`_.
 
-#. A `16GB microSD card <https://amazon.com/SanDisk-Endurance-microSDXC-Adapter-Monitoring/dp/B07NY23WBG/>`_ (no need for bigger). If you have ABSOLUTELY NO data to migrate, you may choose to re-use the card already in your Embassy.
+#. A `16GB microSD card <https://amazon.com/SanDisk-Endurance-microSDXC-Adapter-Monitoring/dp/B07NY23WBG/>`_ (no need for bigger). If you have ABSOLUTELY NO data to migrate (from an Embassy v0.2.x), you may choose to re-use the card already in your Embassy.
 #. `GPIO mini speaker/buzzer <https://www.amazon.com/Corporate-Computer-Motherboard-Internal-Speaker/dp/B01527H4W2/>`_ (These often sell out, please let us know if this link needs to be refreshed)
 #. Ethernet cable
 #. MicroSD → USB adapter (or you may have a microSD port on your computer)

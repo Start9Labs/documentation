@@ -1,8 +1,8 @@
 .. _service_docker:
 
-==================
-Service Dockerfile
-==================
+==========
+Dockerfile
+==========
 
 Dockerfile
 ----------
@@ -12,7 +12,7 @@ The Dockerfile is responsible for mounting the service application to whatever v
 
 Since the build requires specific arm runtime environments, these base images can be imported into the Dockerfile as a starting point so the base system does not need to be completely redefined. This enables importing a specific build environment version that encapsulates any necessary libraries for running the service build, eg. golang, rust.
 
-For instance: 
+For instance:
 
 ``FROM alpine:3.12``
 

@@ -1,12 +1,10 @@
 .. _service_makefile:
 
-================
-Service Makefile
-================
+========
+Makefile
+========
 
-.. note::
-
-    *This file is optional*
+.. note:: *This file is optional*
 
 A Makefile serves as a convenience for outlining the build. This helps streamline additional developer contributions to the project. Please reference the GNU `documentation <https://www.gnu.org/software/make/manual/html_node/Introduction.html>`_ for implementation details.
 

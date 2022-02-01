@@ -1,8 +1,8 @@
 .. _service_manifest:
 
-================
-Service Manifest
-================
+========
+Manifest
+========
 
 Overview
 --------
@@ -82,7 +82,7 @@ Below are the types and sub-type definitions, with necessary elaborations. Any i
     # A map of dependent services, see below for more details
     dependencies: Dependencies
 
-.. _dependencies:
+.. _dependencies-spec:
 
 Dependencies
 ------------
@@ -122,7 +122,7 @@ The service ``btc-rpc-proxy`` is a dependency of the service ``c-lightning``. ``
     Dependency config rules are processed in order.
 
 Type definitions
-................
+================
 
 Types for ``manifest.yaml`` fields:
 
@@ -175,12 +175,12 @@ Types for ``manifest.yaml`` fields:
 :raw-html:`<br />`
 
 Examples
-........
+========
 
 Actual ``manifest.yaml`` files for existing services:
 
 LND
-^^^
+...
 
 .. code:: yaml
 
@@ -313,7 +313,7 @@ LND
                 to-value: true
 
 Cups
-^^^^
+....
 
 .. code:: yaml
 

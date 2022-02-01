@@ -1,8 +1,8 @@
 .. _service_wrapper:
 
-===============
-Service Wrapper
-===============
+=======
+Wrapper
+=======
 
 Each service is bound with a wrapper repository, which contains everything you need to build a service.
 

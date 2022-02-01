@@ -30,12 +30,14 @@ You can check this expansive list if you are in search of ideas: `Awesome Self-H
 
 What if I don't need a Config in my service?
 --------------------------------------------
-Config files can be empty( ``{}`` ), if you do not require config.
+Config files can be empty( ``{}`` ), if you do not require config.  `File Browser <https://github.com/Start9Labs/filebrowser-wrapper/blob/master/config_spec.yaml>`_ is an example of a service with no Config.
 
 How can my service access the data directory of another service?
 ----------------------------------------------------------------
 #. Provider service needs to expose datadir to other services on embassy
 #. Consumer services needs to list the provider service as a dependency AND set a particular config value, stating that it wants data from that particular service
+
+
 
 The guide says that a Makefile is optional, why is this?
 --------------------------------------------------------
