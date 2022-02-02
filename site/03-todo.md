@@ -25,5 +25,3 @@
 - Create badges for device guide topic boxes <connectivity, performance, resilience and/or tuning>
 - There are many issues that should be closed by 0.3 docs release (some issues await new processes in order to test)
 - Email signup
-
-Need service properties image in packaging spec

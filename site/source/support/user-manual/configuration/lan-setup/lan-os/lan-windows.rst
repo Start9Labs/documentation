@@ -22,13 +22,13 @@ Unfortunately, Windows does not have mDNS support built-in, which is necessary i
 
 #. Navigate to the :ref:`Embassy tab<embassy-tab>` -> Settings -> LAN
 
-   .. figure:: /_static/images/embassy_lan_setup.svg
+   .. figure:: /_static/images/ssl/embassy_lan_setup.svg
     :width: 90%
     :alt: LAN setup menu item
 
 #. Click "Download Root CA". This will prompt a download to save the certificate file to your machine.
 
-   .. figure:: /_static/images/embassy_lan_setup0.svg
+   .. figure:: /_static/images/ssl/embassy_lan_setup0.svg
     :width: 90%
     :alt: LAN setup page
 

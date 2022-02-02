@@ -1,8 +1,8 @@
 .. _service-config:
 
-=====================
-Service Configuration
-=====================
+=============
+Configuration
+=============
 
 Introduction
 ------------

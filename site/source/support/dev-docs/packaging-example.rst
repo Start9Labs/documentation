@@ -57,7 +57,7 @@ The package is made up of the following parts:
     #. License - The Open Source license of the service wapper.
     #. Icon - Image used to identify the service in the UI.
 
-The ``.s9pk`` is the image, manifest, license, icon, and instructions files bundled into a .s9pk package. Optional additional assets for use with system images can also be bundled. This is the file a user downloads from the Marketplace, at which point EOS uses to unpack assets and install the service.
+The ``.s9pk`` is the image, manifest, license, icon, and instructions files bundled into a package. Optional additional assets for use with system images can also be bundled. This is the file a user downloads from the Marketplace, at which point EOS uses to unpack assets and install the service.
 
 Check :ref:`here <service_package_overview>` for a detailed overview of package components.
 
@@ -66,7 +66,7 @@ Service Wrapper Repo and Submodules
 
 See :ref:`here <service_wrapper>` for how to structure your service wrapper's git repository.
 
-Git submodules allow the use of another project while in the working project directory.  In this case, you can use an existing app's git repo in order to source its code into your service wrapper.
+Git submodules allow the use of another project while in the working project directory.  In this case, you can use an existing app's git repo in order to source its code in your service wrapper.  You can add the submodule into the wrapper so that you can build the submodule and also track the exact code you're building.
 
 Simply run:
 
