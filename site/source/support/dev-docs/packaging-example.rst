@@ -316,7 +316,7 @@ Next, it's time to edit the ``Dockerfile``.  This defines how to build the image
 Docker Entrypoint
 =================
 
-#. Okay, let's move on to our ``docker_entrypoint.sh`` file.  This is a script that defines what to do when the service starts, and often acts as an init system.  It will need to complete any environment setup (such as folder substructure), set any environment variables, and execute the run command.  It's also PID 1 in the docker container, so it does all of the signal handling and container exits when it is stopped/exits.  If you have built a ``configurator``, this will also need to be called to execute here.  Let's take a look at our (extremely basic) Hello World example:
+#. Okay, let's move on to our ``docker_entrypoint.sh`` file.  This is a script that defines what to do when the service starts, and often acts as an init system.  It will need to complete any environment setup (such as folder substructure), set any environment variables, and execute the run command.  It's also PID 1 in the docker container, so it does all of the signal handling and container exits when it is stopped/exits.  If you have built a "configurator," this will also need to be called to execute here.  More on configurators below.  Let's take a look at our (extremely basic) Hello World example:
 
   .. code:: bash
 
@@ -329,6 +329,17 @@ Docker Entrypoint
 #. We've defined the file, exported the IP address of the Embassy (host), and run the program.
 
 For a more detailed ``docker_entrypoint.sh``, please check out the `filebrowser-wrapper <https://github.com/Start9Labs/filebrowser-wrapper/blob/master/docker_entrypoint.sh>`_.  Additional details on the ``Dockerfile`` and ``docker_entrypoint`` can be found `here <https://docs.start9.com/contributing/services/docker.html>`_.
+
+Configurators
+.............
+
+- Broadly, a "configurator" is any code that translates the configuration coming from the OS to a format the service can understand. Technically all services with a config have one of these (so, most services on Embassy). The configurator also writes the stats.yaml file, which is used in properties.
+
+- Narrowly, a configurator is a piece of code separate from the docker_entrypoint.sh script, that does the same as the task above. If you can configure the service in bash, inside the docker_entrypoint.sh script, then you don't need a separate piece of code called "configurator", as we have in LND, CL, and synapse, for example. You might want to create a separate configurator if configuring your service would be complicated or impossible in bash. In the case of CL and LND (and bitcoind, where the configurator is actually called a "manager"), the configurator actually has a long-running element that runs concurrently with the service itself.
+
+There's really no reason a service has to be engineered in this manner. It's really up to the package maintainer how they want to accomplish translation of the config and implementing the properties action, which doesn't even require a stats.yaml file as of 0.3.
+
+You can check out an example configurator in the `BitcoinD Wrapper <https://github.com/Start9Labs/bitcoind-wrapper/tree/master/manager>`_, which in this case is called a manager.
 
 Makefile (Optional)
 ===================
