@@ -15,7 +15,7 @@ You are asked at first setup if you would like to provide bug reports to Start9.
 
 #. Click ``Auto Report Bugs`` and either ``Enable`` or ``Disable``
 
-    .. figure:: /_static/images/config/basic-config3.svg
+    .. figure:: /_static/images/config/basic-config3.png
       :width: 60%
       :alt: Automatically Report Bugs
 
@@ -30,6 +30,6 @@ Automatic check for updates enables you to choose whether you want to be informe
 
 #. Click ``Automatically Check for Updates`` and either ``Enable`` or ``Disable``
 
-    .. figure:: /_static/images/config/basic-config4.svg
+    .. figure:: /_static/images/config/basic-config4.png
       :width: 60%
       :alt: Automatically Report Bugs

@@ -27,7 +27,7 @@ The following will guide you through the prerequisite configuration to backup to
 
         #. That's it!  Now you can make encrypted backups to your own, private "cloud" by using the :ref:`Backup flow<backups>` in the Embassy UI.
 
-            .. figure:: /_static/images/TODO.svg
+            .. figure:: /_static/images/TODO.png
 
 
     .. group-tab:: Other Linux

@@ -29,7 +29,7 @@ Config Spec
 Overview
 ========
 
-.. figure:: /_static/images/services/service5.svg
+.. figure:: /_static/images/services/service5.png
   :width: 80%
   :alt: Synapse Config
 
@@ -42,7 +42,7 @@ This file defines the structure of configuration options your service depends on
 
 The neat part about this file is that each ValueSpec type gets translated into a specific front end component. For instance, boolean values display as a toggle button, such as in the Synapse exmple of ``Enable Registration``.
 
-.. figure:: /_static/images/services/synapseconfig.svg
+.. figure:: /_static/images/services/synapseconfig.png
   :width: 80%
   :alt: Example boolean toggle
 

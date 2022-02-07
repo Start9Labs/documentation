@@ -6,7 +6,7 @@ Firefox
 
 #. Open Firefox and in a new tab select ``Settings`` from the right-hand hamburger menu:
 
-    .. figure:: /_static/images/tor/os_ff_settings.svg
+    .. figure:: /_static/images/tor/os_ff_settings.png
             :width: 30%
             :alt: Firefox options screenshot
 
@@ -14,7 +14,7 @@ Firefox
 
 #. Scroll all the way to the bottom of the page and select “View Certificates”.
 
-    .. figure:: /_static/images/ssl/browser/firefox_security_settings.svg
+    .. figure:: /_static/images/ssl/browser/firefox_security_settings.png
         :width: 80%
         :alt: Firefox security settings
 
@@ -26,7 +26,7 @@ Firefox
 
 #. When prompted, check “Trust this CA to identity websites” and select “OK”.
 
-    .. figure:: /_static/images/ssl/browser/firefox_view_certs.svg
+    .. figure:: /_static/images/ssl/browser/firefox_view_certs.png
         :width: 80%
         :alt: Firefox import cert
 

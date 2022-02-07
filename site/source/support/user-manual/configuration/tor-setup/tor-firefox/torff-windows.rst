@@ -10,7 +10,7 @@ Windows
 
 #. Search for ``dom.securecontext.whitelist_onions`` and set the value to ``true``.
 
-    .. figure:: /_static/images/tor/firefox_whitelist.svg
+    .. figure:: /_static/images/tor/firefox_whitelist.png
       :width: 60%
       :alt: Firefox whitelist onions screenshot
 
@@ -24,14 +24,14 @@ Windows
 
 #. Now, back in your Firefox web browser, select ``Options`` from the right-hand hamburger menu:
 
-    .. figure:: /_static/images/tor/firefox_options_windows.svg
+    .. figure:: /_static/images/tor/firefox_options_windows.png
       :width: 60%
       :alt: Firefox options screenshot
 
 
 #. Search for the term “proxy” in the search bar in the upper right, then select the button that says ``Settings…``:
 
-    .. figure:: /_static/images/tor/firefox_search.svg
+    .. figure:: /_static/images/tor/firefox_search.png
       :width: 60%
       :alt: Firefox search screenshot
 
@@ -43,7 +43,7 @@ Windows
 
 #. Then, check the box labeled ``Proxy DNS when using SOCKS v5``:
 
-    .. figure:: /_static/images/tor/firefox_proxy.svg
+    .. figure:: /_static/images/tor/firefox_proxy.png
       :width: 60%
       :alt: Firefox proxy settings screenshot
 

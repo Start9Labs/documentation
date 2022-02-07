@@ -8,19 +8,19 @@ Brave
 
 #. Open a new tab in Brave and Navigate to ``Settings`` from the top-right hamburger menu.
 
-    .. figure:: /_static/images/ssl/browser/brave_settings.svg
+    .. figure:: /_static/images/ssl/browser/brave_settings.png
         :width: 30%
         :alt: Brave settings page
 
 #. On the left hand sidebar, select the Security and Privacy section, then the Security menu item.
 
-    .. figure:: /_static/images/ssl/browser/brave_security.svg
+    .. figure:: /_static/images/ssl/browser/brave_security.png
         :width: 60%
         :alt: Brave Security and Privacy settings
 
 #. At the bottom of the section, select "Manage Certificates".
 
-    .. figure:: /_static/images/ssl/browser/brave_security_settings.svg
+    .. figure:: /_static/images/ssl/browser/brave_security_settings.png
         :width: 60%
         :alt: Brave Security settings page
 
@@ -31,7 +31,7 @@ Brave
 #. If you do not see "org-Start9"in the list, ensure the certificate is properly set up on your computer system.  Otherwise, click “Import” and open the downloaded ``Embassy Local Root CA.crt`` file on your device. If you cannot find this, make sure you completed the :ref:`device setup steps <lan-os>`.
 
 
-    .. figure:: /_static/images/ssl/browser/brave_view_certs.svg
+    .. figure:: /_static/images/ssl/browser/brave_view_certs.png
         :width: 60%
         :alt: Brave Manage Certificates sub-menu on MacOS
 

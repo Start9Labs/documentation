@@ -10,19 +10,19 @@ Chrome
 
 #. Open a new tab in Chrome and navigate to ``chrome://settings/certificates``.
 
-    .. figure:: /_static/images/ssl/browser/chrome_settings.svg
+    .. figure:: /_static/images/ssl/browser/chrome_settings.png
         :width: 60%
         :alt: Chrome Certificates Settings page
 
 #. Click on the "Authorities" tab.
 
-    .. figure:: /_static/images/ssl/browser/chrome_authorities.svg
+    .. figure:: /_static/images/ssl/browser/chrome_authorities.png
         :width: 60%
         :alt: Chrome Certificate Authorities page
 
 #. You will **EITHER** see "org-Start9" with a trusted “Embassy Local Root CA” listed under it,
 
-    .. figure:: /_static/images/ssl/browser/chrome_s9ca.svg
+    .. figure:: /_static/images/ssl/browser/chrome_s9ca.png
         :width: 60%
         :alt: Start9 Certificate Authority
 
@@ -32,7 +32,7 @@ Chrome
 
 #. If you do not see "org-Start9"in the list, ensure the certificate is properly set up on your computer system.  Otherwise, click “Import” and open the downloaded ``Embassy Local Root CA.crt`` file on your device. If you cannot find this, make sure you completed the :ref:`device setup steps <lan-os>`.
 
-    .. figure:: /_static/images/ssl/browser/chrome_trust.svg
+    .. figure:: /_static/images/ssl/browser/chrome_trust.png
         :width: 60%
         :alt: Trust the CA
 
@@ -42,7 +42,7 @@ Chrome
 
     .. tip:: You may need to restart the browser
 
-    .. figure:: /_static/images/ssl/browser/chrome_https.svg
+    .. figure:: /_static/images/ssl/browser/chrome_https.png
         :width: 60%
         :alt: Success
 

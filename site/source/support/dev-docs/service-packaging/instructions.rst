@@ -8,7 +8,7 @@ Within each wrapper repository should exist a ``docs`` directory. This folder sh
 
 If an ``instructions.md`` file is included, this markdown formatted file will be rendered in the "Instructions" section within the service page on EmbassyOS:
 
-  .. figure:: /_static/images/services/service-instruct.svg
+  .. figure:: /_static/images/services/service-instruct.png
     :width: 80%
     :alt: Embassy Pages Instructions
 

@@ -21,25 +21,25 @@ Orbot is a system wide proxy for your Android device that enables communications
 
 3. Open the kebab menu in the upper right hand corner and select `Settings`:
 
-  .. figure:: /_static/images/tor/orbot_menu.svg
+  .. figure:: /_static/images/tor/orbot_menu.png
     :width: 50%
     :alt: Orbot menu
 
 4. Make sure the options for `Start Orbot on Boot` and `Allow Background Starts` are checked:
 
-  .. figure:: /_static/images/tor/orbot_settings.svg
+  .. figure:: /_static/images/tor/orbot_settings.png
     :width: 50%
     :alt: Orbot settings
 
 5. Go back, and tap start:
 
-  .. figure:: /_static/images/tor/orbot_start.svg
+  .. figure:: /_static/images/tor/orbot_start.png
     :width: 50%
     :alt: Orbot start
 
 6. Orbot will start up the Tor service. Once complete, you will see:
 
-  .. figure:: /_static/images/tor/orbot_started.svg
+  .. figure:: /_static/images/tor/orbot_started.png
     :width: 50%
     :alt: Orbot started
 
@@ -54,7 +54,7 @@ To utilize Tor, some apps require that Orbot be running in VPN mode.  This means
 
    ``Settings > Network & Internet > Advanced > Private DNS > Off``
 
-  .. figure:: /_static/images/tor/private_dns_off.svg
+  .. figure:: /_static/images/tor/private_dns_off.png
     :width: 50%
     :alt: Private DNS off
 
@@ -62,7 +62,7 @@ To utilize Tor, some apps require that Orbot be running in VPN mode.  This means
 
 2. Launch Orbot and toggle VPN Mode on:
 
-  .. figure:: /_static/images/tor/orbot_vpn.svg
+  .. figure:: /_static/images/tor/orbot_vpn.png
     :width: 50%
     :alt: Orbot vpn mode
 
@@ -70,7 +70,7 @@ To utilize Tor, some apps require that Orbot be running in VPN mode.  This means
 
 Under `Tor-Enabled Apps`, click the gear icon and add apps you want to utilize Tor.
 
-  .. figure:: /_static/images/tor/orbot_apps.svg
+  .. figure:: /_static/images/tor/orbot_apps.png
     :width: 50%
     :alt: Orbot apps
 

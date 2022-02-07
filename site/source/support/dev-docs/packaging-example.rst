@@ -492,11 +492,11 @@ These are stored in ``assets/compat/`` for 0.2.x compatibility, and in ``/assets
 
 We essentially have 2 config options (homepage and subdomains), with all of their specifications nested below them.  Looking at the homepage, it contains a ``union`` type, which is a necessary dependency, which can be of 5 variants (welcome, index, filebrowser, redirect, or fuck-off).  The below images show how this is displayed in the UI.
 
-  .. figure:: /_static/images/dev/pages0.svg
+  .. figure:: /_static/images/dev/pages0.png
     :width: 60%
     :alt: Pages Config
 
-  .. figure:: /_static/images/dev/pages1.svg
+  .. figure:: /_static/images/dev/pages1.png
     :width: 60%
     :alt: Pages Union
 
@@ -524,7 +524,7 @@ Instructions
 
 Instructions are the basic directions or any particular details that you would like to convey to the user to help get them on their way.  Each wrapper repo should contain a ``docs`` directory which can include anything you'd like, but specifically if you include an ``instructions.md`` file, formatted in Markdown language, it will be displayed simply for the user as shown below.
 
-  .. figure:: /_static/images/dev/instructions.svg
+  .. figure:: /_static/images/dev/instructions.png
     :width: 60%
     :alt: Instructions
 

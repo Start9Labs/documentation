@@ -15,13 +15,13 @@ Once Tor is setup on your system, you can proceed to setup Firefox:
 
 3. Navigate to ``about:config`` in the Firefox URL bar.
 
-  .. figure:: /_static/images/tor/about_config.svg
+  .. figure:: /_static/images/tor/about_config.png
     :width: 50%
     :alt: Firefox about config
 
 4. You are going to have to change a few options in here. First, type ``network.proxy.type`` into the search bar, and set the value to ``2``.
 
-  .. figure:: /_static/images/tor/network_proxy_type.svg
+  .. figure:: /_static/images/tor/network_proxy_type.png
     :width: 50%
     :alt: Firefox network proxy type setting screenshot
 
@@ -29,19 +29,19 @@ Once Tor is setup on your system, you can proceed to setup Firefox:
 
   .. caution:: For some platforms, such as Calyx/Graphene on a Pixel 5/6, it may be necessary to place the file within the application's ``data`` folder, such as ``file:///storage/emulated/0/Android/data/org.mozilla.firefox_beta/files/Download/proxy.pac``.  Furthermore, the stock file explorer app may not let you do this, so you might have to get a new one, such as `Explorer <https://play.google.com/store/apps/details?id=com.speedsoftware.explorer&hl=en_US&gl=US>`_.  Please reach out to support if you have issues.
 
-  .. figure:: /_static/images/tor/autoconfig_url.svg
+  .. figure:: /_static/images/tor/autoconfig_url.png
     :width: 50%
     :alt: Firefox autoconfig url setting screenshot
 
 6. Search for ``network.proxy.socks_remote_dns``, and set the value to ``true``.
 
-  .. figure:: /_static/images/tor/socks_remote_dns.svg
+  .. figure:: /_static/images/tor/socks_remote_dns.png
     :width: 50%
     :alt: Firefox socks remote dns setting screenshot
 
 7. Search for ``dom.securecontext.whitelist_onions`` and set the value to ``true``.
 
-  .. figure:: /_static/images/tor/firefox_whitelist_mobile.svg
+  .. figure:: /_static/images/tor/firefox_whitelist_mobile.png
     :width: 50%
     :alt: Firefox whitelist onions screenshot
 

@@ -17,13 +17,13 @@ Install Homebrew
 
 #. You will be prompted for your system password before installation; proceed with entering your password.  You may be asked more than once.
 
-    .. figure:: /_static/images/tor/install_homebrew.svg
+    .. figure:: /_static/images/tor/install_homebrew.png
         :width: 80%
         :alt: Homebrew installation
 
 #. You will be notified which directories Homebrew is going to create, hit :code:`RETURN`:
 
-    .. figure:: /_static/images/tor/install_homebrew1.svg
+    .. figure:: /_static/images/tor/install_homebrew1.png
         :width: 80%
         :alt: Homebrew installation
 
@@ -46,7 +46,7 @@ Install Tor
 
     Once it is finished you have the following options:
 
-    .. figure:: /_static/images/tor/install_tor.svg
+    .. figure:: /_static/images/tor/install_tor.png
         :width: 80%
         :alt: Tor installation
 

@@ -15,5 +15,5 @@ Un-installing
 
 To remove a service, navigate to the :ref:`Services tab<services-tab>` *> [Service Name] > Actions > Uninstall*.
 
-    .. figure:: /_static/images/services/acts.svg
+    .. figure:: /_static/images/services/acts.png
         :width: 60%

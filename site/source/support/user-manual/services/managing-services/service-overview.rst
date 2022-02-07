@@ -11,7 +11,7 @@ Services are very similar to Applications on a mobile device.  The biggest diffe
 The Service Page
 ----------------
 
-.. figure:: /_static/images/services/service8.svg
+.. figure:: /_static/images/services/service8.png
     :width: 60%
 
     The Service Page
@@ -20,7 +20,7 @@ In the image above, we see an example of a Service's homescreen, where you can a
 
 Below, we highlight the quick, need-to-know information of a Service that a user will want to see right away.
 
-.. figure:: /_static/images/services/service00.svg
+.. figure:: /_static/images/services/service00.png
     :width: 60%
 
 .. _service-status:

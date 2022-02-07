@@ -31,7 +31,7 @@ Setup Your Embassy
 
 2. Visit ``embassy.local`` from your web browser. You will be prompted to enter your :ref:`Product Key<product-key>`.  This is found on the bottom side of your device.
 
-.. figure:: /_static/images/setup/setup0.svg
+.. figure:: /_static/images/setup/setup0.png
     :width: 60%
     :alt: Enter Product Key
 
@@ -42,19 +42,19 @@ Setup Your Embassy
 
 3. Next, select "Start Fresh" if this is your first time using an Embassy.  If you'd like to "Recover" from an existing Embassy, please follow the guide for :ref:`versions 0.2.x <recover-02x>` or :ref:`versions 0.3.x <recover-03x>`.
 
-.. figure:: /_static/images/setup/setup1.svg
+.. figure:: /_static/images/setup/setup1.png
     :width: 60%
     :alt: Fresh Install
 
 4. Select your storage drive.  You should only have one drive plugged into your Embassy at this time, but always verify it is what you expect before clicking (such as, is it a 1TB drive?)
 
-.. figure:: /_static/images/setup/setup2.svg
+.. figure:: /_static/images/setup/setup2.png
     :width: 60%
     :alt: Select Drive
 
 5. Create your *permanent* master password and complete setup.
 
-.. figure:: /_static/images/setup/setup3.svg
+.. figure:: /_static/images/setup/setup3.png
     :width: 60%
     :alt: Enter a New Password
 
@@ -73,7 +73,7 @@ Setup Your Embassy
 
 6. That's it!
 
-.. figure:: /_static/images/setup/setup4.svg
+.. figure:: /_static/images/setup/setup4.png
     :width: 60%
     :alt: Setup Complete
 
@@ -82,7 +82,7 @@ Your Embassy is now hosted on the private web!  After setup is complete you will
 Enjoy!
 ------
 
-.. figure:: /_static/images/setup/setup5.svg
+.. figure:: /_static/images/setup/setup5.png
     :width: 60%
     :alt: Fresh Embassy
 

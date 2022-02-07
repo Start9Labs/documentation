@@ -8,5 +8,5 @@ Every time a login is made with Embassy, such as from a web browser on your lapt
 
 To end a session, simply click ``Kill`` to the right of your selection.
 
-    .. figure:: /_static/images/walkthrough/sessions0.svg
+    .. figure:: /_static/images/walkthrough/sessions0.png
         :width: 60%

@@ -6,7 +6,7 @@ Properties
 
 The output of this step is a file titled ``stats.yaml``. This file contains a mapping of the values that will be displayed in the ``Properties`` section in a service's menu.
 
-.. figure:: /_static/images/services/service-properties.svg
+.. figure:: /_static/images/services/service-properties.png
   :width: 80%
   :alt: Service Properties
 

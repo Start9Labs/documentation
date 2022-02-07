@@ -6,7 +6,7 @@ Windows
 
 #. Unfortunately, `The Tor Project <https://torproject.org>`_ no longer publishes a standalone Tor binary for Windows, so the recommended way to get it is with the Tor Browser Bundle. You can download it `here <https://www.torproject.org/download/>`_.
 
-   .. figure:: /_static/images/tor/tor_download_windows.svg
+   .. figure:: /_static/images/tor/tor_download_windows.png
     :width: 80%
     :alt: Tor download
 
@@ -16,7 +16,7 @@ Windows
 
 #. Once you have selected a language, you should see a menu like this:
 
-   .. figure:: /_static/images/tor/tor_windows_install.svg
+   .. figure:: /_static/images/tor/tor_windows_install.png
     :width: 80%
     :alt: Tor install wizard
 
@@ -42,7 +42,7 @@ Windows
 
 #. When you run this, it should look something like this:
 
-   .. figure:: /_static/images/tor/tor_windows_terminal.svg
+   .. figure:: /_static/images/tor/tor_windows_terminal.png
     :width: 80%
     :alt: Tor windows terminal
 

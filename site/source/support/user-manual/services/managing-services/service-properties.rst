@@ -6,7 +6,7 @@ Properties
 
 Properties can contain both static and dynamic information about a service. They could be almost anything: a default username/password, an invite code, or a list of peers - anything the service developer thought might be useful.
 
-    .. figure:: /_static/images/services/props.svg
+    .. figure:: /_static/images/services/props.png
         :width: 60%
 
 To view the instructions for a particular service, navigate to the :ref:`Services tab <services-tab>` *> [Service Name] > Properties*.
