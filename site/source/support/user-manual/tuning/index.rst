@@ -10,7 +10,6 @@ Here, you can customize your Embassy with advanced configuration, setup external
   :maxdepth: 2
 
   diy
-  .. migrating
   advanced-config/index
   tune-embassy-os
   service-guides/index

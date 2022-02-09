@@ -14,7 +14,7 @@ If an ``instructions.md`` file is included, this markdown formatted file will be
 
 Below is the markdown file for Embassy Pages' instructions, as shown above:
 
-  .. code-block:: markdown
+  .. code-block::
 
     # Embassy Pages
 
@@ -30,10 +30,10 @@ Below is the markdown file for Embassy Pages' instructions, as shown above:
     ## Instructions
 
     1. Inside `Config`, you can easily change the behavior of your Homepage to serve:
-      1. A list of hyperlinks to all your Subdomains
-      2. A personal web page
-      3. An automatic redirect to a Subdomain
-      4. A static web page that tells anyone visiting it to fuck off, politely.
+      a. A list of hyperlinks to all your Subdomains
+      b. A personal web page
+      c. An automatic redirect to a Subdomain
+      d. A static web page that tells anyone visiting it to fuck off, politely.
 
     2. Inside `Config`, you can create one or more Subdomains, giving each a unique name.
 

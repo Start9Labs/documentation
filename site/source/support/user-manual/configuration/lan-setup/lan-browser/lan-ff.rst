@@ -22,7 +22,7 @@ Firefox
 
 #. Select the "Authorities" tab from the "Certificate Manager".
 
-#. Click “Import” and open the downloaded ``Embassy Local Root CA.crt`` file on your device. If you cannot find this, make sure you completed the :ref:`device setup steps <ssl-setup>`.
+#. Click “Import” and open the downloaded ``Embassy Local Root CA.crt`` file on your device. If you cannot find this, make sure you completed the :ref:`device setup steps <lan-setup>`.
 
 #. When prompted, check “Trust this CA to identity websites” and select “OK”.
 
