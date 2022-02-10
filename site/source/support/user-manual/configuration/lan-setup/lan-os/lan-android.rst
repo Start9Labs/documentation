@@ -28,10 +28,6 @@ If you are running Android 12+ (not yet available on Calyx/Graphene), you can se
         :width: 30%
         :alt: Install certificate
 
-#. To setup in Firefox, enter ``about:config`` in URL bar, search for "security.enterprise_roots.enabled", and set to ``true``
-
-    .. figure:: /_static/images/ssl/android/droidLAN1.png
-        :width: 30%
-        :alt: Firefox about:config
+#. To setup in Firefox Beta or Fennec, go to Settings -> About -> tap the logo several times until it says "Debug menu enabled." Then return to Settings -> Secret Settings and toggle on "Use third party CA certificates."
 
 #. That's it!  You may now browse the ``.local`` addresses on your Embassy.

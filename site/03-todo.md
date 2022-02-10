@@ -1,6 +1,5 @@
 # TODO
 - Update all guides in service repos (link to wrapper repos in service guides)
-    - Bitcoin
     - Lightning
 - Verify LAN and Tor setup steps on a Mac
 - Refactor and update Roadmap
