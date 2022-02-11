@@ -33,8 +33,3 @@ Example
 -------
 
 The `LND wrapper <https://github.com/Start9Labs/lnd-wrapper/blob/master/Dockerfile>`_ features a well defined Dockerfile, for example.
-
-.. role:: raw-html(raw)
-    :format: html
-
-:raw-html:`<br />`

@@ -39,10 +39,6 @@ How can my service access the data directory of another service?
 
 Check out `LND <https://github.com/Start9Labs/lnd-wrapper/blob/master/manifest.yaml>`_ and `RTL <https://github.com/Start9Labs/ride-the-lightning-wrapper/blob/master/manifest.yaml>`_ as an example.
 
-The guide says that a Makefile is optional, why is this?
---------------------------------------------------------
-The ``Makefile`` simplifies the development process by putting all your build steps into one place so that you can simply use the ``make`` to build with.  A ``Makefile`` is not required however, and you may instead choose to use something like ``nix``, ``bash``, ``perl``, ``python``, or ``ruby`` for your build orchestration.
-
 Why am I getting the error "No rule to make target yq, needed by manifest.yaml?"
 --------------------------------------------------------------------------------
-This is the message you get when you're missing the executable on your ``$PATH``.
+This is the message you get when you're missing the yq executable on your ``$PATH``. You can find details to `install yq here <https://github.com/mikefarah/yq#install>`_.`

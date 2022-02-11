@@ -22,8 +22,3 @@ Ultimately, ``/datadir/.backupignore`` gets populated with:
 
     /root/volumes/btcpayserver/start9/public
     /root/volumes/btcpayserver/start9/shared
-
-.. role:: raw-html(raw)
-    :format: html
-
-:raw-html:`<br />`
