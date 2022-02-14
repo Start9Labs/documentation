@@ -1,16 +1,17 @@
 .. _embassy-sdk:
 
-===========
-Embassy-SDK
-===========
+================================
+Embassy Software Development Kit
+================================
 
 .. warning:: This is for developers only!! Anything you do while SSH'd into your Embassy is NOT SUPPORTED, unless under the guidance of a Start9 technician.
 
-You can install to your system by running the following from you ``embassy-os`` directory:
+You can install to your system by running the following from your ``embassy-os`` directory:
 
     .. code-block:: bash
 
-        cargo install --bin=embassy-sdk --path=. --no-default-features --verbose
+        cd backend
+        ./install-sdk.sh
 
 
 You can enter ``embassy-sdk help`` or ``embassy-sdk <option> help`` to get an overview of capabilities:

@@ -1,8 +1,8 @@
 .. _embassy-cli:
 
-===========
-Embassy-CLI
-===========
+==============================
+Embassy Command Line Interface
+==============================
 
 .. warning:: This is for advanced users only!! Anything you do while SSH'd into your Embassy is NOT SUPPORTED, unless under the guidance of a Start9 technician.
 
