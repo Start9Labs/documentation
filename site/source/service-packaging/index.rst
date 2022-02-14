@@ -54,7 +54,7 @@ Service Packaging Overview
   :class: large-4
   :anchor: View
 
-  Discover details about Start9's Software Development Kit
+  Discover details about the Start9 Software Development Kit
 
 .. topic-box::
   :title: Full Specification

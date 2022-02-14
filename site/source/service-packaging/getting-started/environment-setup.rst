@@ -6,7 +6,7 @@ Packaging Environment Setup
 
 To get started packaging a service for EmbassyOS, some basic knowledge of software development is required. Don't worry if you are inexperienced, we will provide enough context to get you started, and you can always reach out with questions.
 
-If you are already an experienced developer, :ref:`jump ahead <quick-start>`.
+If you are already an experienced developer, :ref:`jump ahead <environment-quick-start>`.
 
 The only system requirements are `Docker <https://docs.docker.com/get-docker>`_ and `Cargo <https://doc.rust-lang.org/cargo/>`_ (Rust package manager).
 
@@ -86,7 +86,7 @@ While not strictly necessary, having a running instance of EmbassyOS is recommen
 
 You can acquire EmbassyOS by :ref:`purchasing <purchasing>` or following the :ref:`DIY guide <diy>`.
 
-.. _quick-start:
+.. _environment-quick-start:
 
 Quick Start Environment Setup
 -----------------------------

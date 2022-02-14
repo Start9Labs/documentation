@@ -1,4 +1,4 @@
-.. _quick-start:
+.. _packaging-quick-start:
 
 =====================
 Packaging Quick Start

@@ -1,84 +1,77 @@
-.. _configuration:
+.. _config_spec:
 
-=============
-Configuration
-=============
+===========
+Config Spec
+===========
 
 Introduction
 ============
 
-Most self-hosted applications require the user to tell the app how to behave using a config file in a specific format, environment variables, command-line arguments, or some combination of these inputs. One of the coolest features of EmbassyOS is that, when packaged correctly, the app's configuration will be available to the user as a slick GUI that always produces a valid configuration no matter how little experience or skill the user has.
+Most self-hosted applications require the user to tell the application how to behave using a config file in a specific format, environment variables, command-line arguments, or some combination of these inputs. One of the coolest features of EmbassyOS is that the services' configuration will be available to the user as a slick GUI that always produces a valid configuration no matter how little experience or skill the user has.
 
-With EmbassyOS, this means a service wrappers' configuration requires a particular format and rule structure to ensure it integrates smoothly with the user interface. This format enables clean handling of improper values and dependency management.
+With EmbassyOS, this means a services' configuration requires a file to define the particular format to ensure it integrates smoothly with the user interface. This format enables clean handling of improper values and dependency management.
 
-The outcome of this step is two files:
+This file defines the *structure* of the service's native config and should be curated according to the ``ConfigSpec`` type, which is a detailed mapping of the configuration options with acceptable values, defined patterns, and defaults.
 
-:ref:`config_spec.yaml <config_spec>`
+For example, if the user chooses config option A, then config option B must be between 5 and 10. This enables a simple GUI configuration experience, complete with validations and protections, for users. They do not have to worry about the consequences of a wrong value or manually editing a config file.
 
-:ref:`config_rules.yaml <config_rules>`
+Purpose
+=======
 
-These files contain a detailed mapping of configuration options with acceptable values, defaults, and relational rule-sets.
+The ``ConfigSpec`` exists primarily an input specification and secondarily for input validation. 
 
-For example, if the user chooses config option A, then config option B must be between 5 and 10. This enables a simple GUI configuration experience, complete with validations and protections, for users. They do not have to worry about the consequences of a wrong value in a ``.conf`` file.
-
-.. _config_spec:
-
-Config Spec
-===========
 
 .. figure:: /_static/images/services/service5.png
   :width: 80%
   :alt: Synapse Config
 
-This file defines the structure of configuration options your service depends on to run. It additionally can include configuration options that users might want to enable for more advanced or customized usage. Ultimately, these values influence the UI elements for a user to interact with. Specifically, they evaluate to the options available when managing a service, such as:
+
+The file containing the ``ConfigSpec`` defines the structure of configuration options your service depends on to run. It additionally can include configuration options that users might want to enable for more advanced or customized usage. Ultimately, these values influence the UI elements for a user to interact with. Specifically, they evaluate to the options available when managing a service, such as:
 
 - Prior to service installation when the user needs to be made aware of any necessary dependency configurations
 - When the user installs a service and the service is in the "Needs Config" state
 - Whenever a user edits a service config
 - When config pointers get updated
 
-The neat part about this file is that each ValueSpec type gets translated into a specific front end component. For instance, boolean values display as a toggle button, such as in the Synapse exmple of ``Enable Registration``.
+The neat part about this file is that each ``ValueSpec`` type gets translated into a specific front end component. For instance, boolean values display as a toggle button, such as in the Synapse example of ``Enable Registration``.
 
 .. figure:: /_static/images/services/synapseconfig.png
   :width: 80%
   :alt: Example boolean toggle
 
-Another advantage is the ability to define default values. These values automatically get populated if the user selects the ``Default`` option when setting up a service in ``Needs Config`` state. This is super convenient for users who want to get up and running quickly.
+Another advantage is the ability to define default values. These values automatically get populated if the user selects the ``Default`` option when setting up a service in ``Needs Config`` state. This is incredibly convenient for users who want to get up and running quickly.
 
-Types
------
+Implementation
+==============
 
-ConfigSpec Type:
+The following section contains implementation specifications for the structure of the file containing the ``ConfigSpec``. This config specification if of the type:
 
-.. code::
+.. code-block::
+    :caption: ConfigSpec
 
     key: ValueSpec
 
-    ValueSpec Type: Boolean | Enum | List | Number | Object | String | Union | Pointer (see below for details)
+    ValueSpec Type: Boolean | Enum | List | Number | Object | String | Union | Pointer
 
-Implementation Guide
---------------------
 
-The following section contains implementation specifications for the ``config_spec.yaml`` file.
-
-- All keys are ``kebab-case`` strings, which correspond to the service (app) id
+- All keys are ``kebab-case`` strings, which correspond to the package id
 - All values are one the following specs (ie. ``ValueSpec`` type):
 
-    :ref:`boolean <boolean>`
+    - :ref:`boolean <boolean>`
 
-    :ref:`enum <enum>`
+    - :ref:`enum <enum>`
 
-    :ref:`list <list>`
+    - :ref:`list <list>`
 
-    :ref:`number <number>`
+    - :ref:`number <number>`
 
-    :ref:`object <object>`
+    - :ref:`object <object>`
 
-    :ref:`string <string>`
+    - :ref:`string <string>`
 
-    :ref:`union <union>`
+    - :ref:`union <union>`
 
-    :ref:`pointer <pointer>`
+    - :ref:`pointer <pointer>`
 
 - In the examples for each value spec type below, ``Option`` means the key is optional. Otherwise, the key is required.
 - Descriptions are optional, but recommended
@@ -86,24 +79,29 @@ The following section contains implementation specifications for the ``config_sp
 - Find a complete example :ref:`here <example_config_spec>`
 - Change warning text displays when the value is altered
 
+Specs
+=====
+
+These are the possible value types with examples for each key of the config specification.
+
 .. _boolean:
 
 Boolean
-.......
+-------
 
 Config value specification denoted as a boolean value. A default value is required.
 
-``ValueSpec`` Type:
-
-.. code::
+.. code-block::
+    :caption: ValueSpec Type
 
     type: boolean
     name: String
     description: Option<String>
-    change-warning: Option<String>
+    warning: Option<String>
     default: Boolean
 
-Example:
+Example
+^^^^^^^^
 
 .. code:: yaml
 
@@ -116,20 +114,23 @@ Example:
 .. _enum:
 
 Enum
-....
+----
 
 Config value specification denoted as an enum value. Enums values must be a unique set. If no default is provided, ``null`` will be the assumed value.
 
-ValueSpec Type:
-
-.. code::
+.. code-block::
+    :caption: ValueSpec Type
 
     type: enum
     name: String
     description: Option<String>
-    change-warning: Option<String>
+    warning: Option<String>
     default: Option<Enum>
     values: Set<String>
+
+
+Example
+^^^^^^^
 
 .. code:: yaml
 
@@ -147,7 +148,7 @@ ValueSpec Type:
 .. _list:
 
 List
-....
+----
 
 The list type describes an array of values. The values must consist of the same subtype, which can be any of the ValueSpec types available in the EmbassyOS config specification.
 Lists of any type do not contain the default for each item in list. The list *itself* can have a default. If no default is provided, ``null`` will be the assumed value.
@@ -166,19 +167,19 @@ eg:
 
     [0,*) - all numbers to infinity including 0
 
-ValueSpec Type:
-
-.. code::
+.. code-block::
+    :caption: ValueSpec Type
 
     type: list
     name: String
     description: Option<String>
-    subtype: enum || number || object || string || union
+    subtype: Enum<enum | number | object | string | union>
     range: NumRange<unsigned integer>
     spec: ValueSpec
     default: ValueSpec
 
 Example:
+^^^^^^^^
 
 .. code:: yaml
 
@@ -198,13 +199,12 @@ Example:
 .. _number:
 
 Number
-......
+------
 
 A number value within an optionally defined range. Nullable field is required. If ``nullable`` is true, the default is assumed to be ``null`` if it is not provided.
 
-ValueSpec Type:
-
-.. code::
+.. code-block::
+    :caption: ValueSpec Type
 
     type: number
     name: String
@@ -216,7 +216,8 @@ ValueSpec Type:
     integral: Boolean
     units: Option<String>
 
-Example:
+Example
+^^^^^^^
 
 .. code:: yaml
 
@@ -232,31 +233,26 @@ Example:
 .. _object:
 
 Object Type
-...........
+-----------
 
-A nested representation of a ConfigSpec. The object type takes the same structure under the ``spec`` key as a ConfigSpec: a key indicates the field name, and the value denotes the ValueSpec type for that field.
+A nested representation of a ``ConfigSpec``. The object type takes the same structure under the ``spec`` key as a ``ConfigSpec``: a key indicates the field name, and the value denotes the ``ValueSpec`` type for that field.
 
-There is no default option for the object type. Rather, the option ``null-by-default`` should be used to indicate the default as ``null``. If null by default is true, nullable must be true. If null by default is false, nullable could be either.
-
-``unique-by`` indicates whether duplicates can be permitted in the list.
-
-ValueSpec Type:
-
-.. code::
+.. code-block::
+    :caption: ValueSpec Type
 
     type: object
     name: String
     description: Option<String>
-    change-warning: Option<String>
-    nullable: Boolean
-    null-by-default: Boolean
+    warning: Option<String>
     display-as: Option<String>
+    # indicates whether duplicates can be permitted
     unique-by: UniqueBy
     spec: ConfigSpec
 
     type UniqueBy = null | string | { any: UniqueBy[] } | { all: UniqueBy[] }
 
-Example:
+Example
+^^^^^^^
 
 .. code:: yaml
 
@@ -300,35 +296,36 @@ Example:
 .. _string:
 
 String
-......
+------
 
 There are various options for string values. They can optionally be marked as copyable or masked, such as for passwords, which will reflect the UI element display. A pattern, expressed in regex, can be denoted. If it exists, this field requires both the pattern type (ie. Regex) and pattern description (ie. an explanation of the pattern requirements).
 
 If the default type is ``Entropy``, the charset can optionally specify an inclusive ranged character set (ie. "a-f,0-9").
 
-ValueSpec Type:
-
-.. code::
+.. code-block::
+    :caption: ValueSpec Type
 
     type: string
     name: String
     description: Option<String>
-    change-warning: Option<String>
-    copyable: Option<boolean>
+    warning: Option<String>
     masked: Option<boolean>
+    copyable: Option<boolean>
+    # Placeholder text in UI input box
+    placeholder: Option<String>
     nullable: Boolean
     default: String | Entropy
     pattern: Option<Regex>
     pattern-description: Option<String>
 
-Entropy Type:
-
-.. code::
+.. code-block::
+    :caption: Entropy Type
 
     charset: Option<String>
     len: integer
 
-Examples:
+Examples
+^^^^^^^^
 
 .. code::
 
@@ -338,7 +335,7 @@ Examples:
         description: Color value for the Lightning Network
         nullable: false
         pattern: "[0-9a-fA-F]{6}"
-        patternDescription: |
+        pattern-description: |
                 Must be a valid 6 digit hexadecimal RGB value. The first two digits are red, middle two are green and final two are
                 blue
         default:
@@ -359,19 +356,18 @@ Examples:
 .. _pointer:
 
 Pointer
-.......
+--------
 
-The pointer type *points* to a config value on another service installed on EmbassyOS (ie. app subtype) or to the EmbassyOS system (ie. system subtype). When pointing to another service, the ``index`` field indicates the path to the desired config variable.
+The pointer type *points* to a config value on another service installed on EmbassyOS (ie. package subtype) or to the EmbassyOS system (ie. system subtype). When pointing to another service, the ``index`` field indicates the path to the desired config variable.
 
-ValueSpec Type:
-
-.. code::
+.. code-block::
+    :caption: ValueSpec Type
 
     type: pointer
     name: String
     description: Option<String>
-    change-warning: Option<String>
-    subtype: app | system
+    warning: Option<String>
+    subtype: Enum< package | system>
     package-id: String (*always* kebab case)
     target: AppPointerSpecVariants | SystemPointerSpecVariants
     index: Option<String> (dependent on target being AppPointerSpecVariants)
@@ -379,7 +375,8 @@ ValueSpec Type:
     AppPointerSpecVariants = TorAddress | TorKey | Config
     SystemPointerSpecVariants = HostIp
 
-Example:
+Example
+^^^^^^^
 
 .. code::
 
@@ -387,7 +384,7 @@ Example:
         type: pointer
         name: RPC Username
         description: The username for the RPC user for Bitcoin Core
-        subtype: app
+        subtype: package
         package-id: bitcoind
         target: config
         index: "rpc.username"
@@ -395,7 +392,7 @@ Example:
 .. _union:
 
 Union
-.....
+-----
 
 This type describes a necessary dependency. Multiple variants can be expressed to enable the user the option to connect to another service (internal dependency) or outside source (external dependency).
 
@@ -405,9 +402,8 @@ Default is required and corresponds to one of the variants.
 
 ``Tag`` is the key that will be rendered on the UI element.
 
-ValueSpec Type;
-
-.. code::
+.. code-block::
+    :caption: ValueSpec Type
 
     type: union
     name: String
@@ -419,9 +415,8 @@ ValueSpec Type;
     display-as: Option<String>
     unique-by: any | all | exactly | notUnique
 
-Tag Type:
-
-.. code::
+.. code-block::
+    :caption: Tag Type
 
     id: String
     name: String
@@ -430,7 +425,8 @@ Tag Type:
 
 .. _example_config_spec:
 
-Example:
+Example
+^^^^^^^
 
 .. code:: yaml
 
@@ -492,117 +488,3 @@ Example:
                     nullable: false
                     pattern: 'btcstandup://[^:]*:[^@]*@[a-zA-Z0-9.-]+:[0-9]+(/(\?(label=.+)?)?)?'
                     patternDescription: Must be a valid Quick Connect URL. For help, check out https://github.com/BlockchainCommons/Gordian/blob/master/Docs/Quick-Connect-API.md
-
-
-.. _config_rules:
-
-Config Rules
-============
-
-This file defines the configuration rules, or the rule-set that defines dependencies between config variables. In practice, config rules are for auto-configuring self dependencies. Self dependencies are internal dependencies of a service, such as if the setting of one config variable informs the option of another setting. These "dependencies" are configured as rules.
-
-A rule is a boolean expression that we demand to be true. It is not true if the expression fails the rule parser.
-
-They follow the `Backus–Naur <https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form>`_ meta-syntax for writing rules.
-
-Rules are composed of two main concepts:
-
-* Variables - accessor into a configuration
-* Terms - either a variable or type literal (ie. a boolean term is a boolean variable, a boolean expression, or a comparison operation between numbers or strings)
-
-Variables can be booleans, numbers, or strings, and have a different syntax depending on the type. These type annotations check your config rules against your config spec and throw an error if invalid.
-
-- ``?`` - Casts to boolean value. If the value is not a boolean, this notes whether or not the value is null.
-- ``#`` - Treat the value as a number. If it is not a number, the value will be parsed as NaN. String numbers are not currently supported.
-- ``'`` - Cast the value into a string. Applies to any value except for an object or a list.
-- ``!`` - Equals not.
-
-.. note::
-    Config rules are processed in order.
-
-If application does not satisfy a rule, a set of suggestions should be provided. These suggestions are in the form of the operation to preform:
-
-    - ``Set`` - set the value
-
-    - ``Push`` - add to the value (such as to a list)
-
-    - ``Delete`` - delete the value
-
-.. code:: typescript
-
-    enum SuggestionVariant = Set | Delete | Push
-
-    interface Set {
-        var: String, // fully qualified path without typecast
-        // one of the following three variants are required
-        to: Option<String> // a string expression, use when tying another config value
-        to-value: Option<String>
-        to-entropy: Option<{
-            charset: String (eg. 'a-z,A-Z,0-9')
-            len: Number
-        }>
-    }
-
-    interface Delete {
-        src: String, // path to key - removes if in a list
-    }
-
-    interface Push {
-        to: String,
-        value: String, // string literal of value to be set
-    }
-
-Set Examples:
-
-.. code:: yaml
-
-    - SET:
-        # the key in config you want to set
-        var: 'users.[first(item => ''item.name = "c-lightning")].password'
-        # the value in config that you will set
-        to-entropy:
-            charset: "a-z,A-Z,0-9"
-            len: 22
-
-    - SET:
-        var: 'users.[first(item => ''item.name = "c-lightning")].fetch-blocks'
-        to-value: true
-
-
-Push Examples:
-
-.. code:: yaml
-
-    - PUSH:
-        to: "users"
-        value:
-            name: c-lightning
-            allowed-calls: []
-
-    - PUSH:
-        to: 'users.[first(item => ''item.name = "c-lightning")].allowed-calls'
-        value: "getnetworkinfo"
-
-Full example from `c-lightning manifest <https://github.com/Start9Labs/c-lightning-wrapper/blob/master/manifest.yaml>`_:
-
-.. code:: yaml
-
-    config:
-        - rule: '''users.*.name = "c-lightning"'
-        description: 'Must have an RPC user named "c-lightning"'
-        suggestions:
-            - PUSH:
-                to: "users"
-                value:
-                    name: c-lightning
-                    allowed-calls: []
-            - SET:
-                var: 'users.[first(item => ''item.name = "c-lightning")].password'
-                to-entropy:
-                    charset: "a-z,A-Z,0-9"
-                    len: 22
-
-.. role:: raw-html(raw)
-    :format: html
-
-:raw-html:`<br />`

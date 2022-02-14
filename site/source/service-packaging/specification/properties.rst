@@ -6,13 +6,34 @@ Properties
 
 The output of this step is a file titled ``stats.yaml``. This file contains a mapping of the values that will be displayed in the ``Properties`` section in a service's menu.
 
+Due to the fact that config variables are only available when the service is running, this file can only be populated at runtime.
+
 .. figure:: /_static/images/services/service-properties.png
   :width: 80%
   :alt: Service Properties
 
   Service Properties
 
-Due to the fact that config variables are only available when the service is running, this file can only be populated at runtime. In services Start9 has wrapped or created, we typically handle this in ``configurator/src/main.rs``. This file is essentially a script that acquires the necessary values at runtime from config (eg. ``/root/.lnd/start9/config.yaml``), and dynamically populating them to the ``stats.yaml`` file, marking each value with the appropriate keys for UI display (ie. masked or copyable). The configurator is executed in the ``docker_entrypoint.sh`` file.
+
+.. code:: typescript
+
+  :caption: Properties Type
+
+    interface PropertiesString {
+      type: 'string'
+      name: string
+      value: string
+      description: string | null
+      copyable: boolean
+      qr: boolean
+      masked: boolean
+    }
+
+    interface PropertiesObject {
+      type: 'object'
+      name: string
+      value: PropertiesObject | PropertiesString
+    }
 
 Example
 -------
