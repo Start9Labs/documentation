@@ -12,6 +12,7 @@ The following guides provide an in depth overview of the full capabilities avail
   overview
   wrapper
   manifest
+  emver
   docker
   makefile
   config

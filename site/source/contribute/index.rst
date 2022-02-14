@@ -15,38 +15,38 @@ Contribute
 .. topic-box::
   :title: Teach
   :link: teach
-  :icon: scylla-icon scylla-icon--knowledge-base
+  :icon: scylla-icon scylla-icon--tech-talks
   :class: large-4
-  :anchor: Learn
+  :anchor: Join the movement
 
-   An overview of the ideas and technologies surrounding Start9 Labs and Embassy.
+  Share your knowledge with the community.
 
 .. topic-box::
   :title: Provide Support
   :link: provide-support
-  :icon: scylla-icon scylla-icon--knowledge-base
+  :icon: scylla-icon scylla-icon--support
   :class: large-4
-  :anchor: Learn
+  :anchor: Help
 
-   An overview of the ideas and technologies surrounding Start9 Labs and Embassy.
+  Learn how you can help provide community support.
 
 .. topic-box::
   :title: Decentralize
   :link: decentralize
-  :icon: scylla-icon scylla-icon--knowledge-base
+  :icon: scylla-icon scylla-icon--cloud
   :class: large-4
-  :anchor: Learn
+  :anchor: View
 
-   An overview of the ideas and technologies surrounding Start9 Labs and Embassy.
+  See how you can aid in decentralizing our architecture.
 
 .. topic-box::
   :title: Promote
   :link: promote
-  :icon: scylla-icon scylla-icon--knowledge-base
+  :icon: scylla-icon scylla-icon--summit
   :class: large-4
-  :anchor: Learn
+  :anchor: Join
 
-   An overview of the ideas and technologies surrounding Start9 Labs and Embassy.
+  Become an affiliate and help promote Start9.
 
 .. raw:: html
 

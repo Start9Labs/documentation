@@ -6,9 +6,15 @@ Advanced Packaging Overview
 
 This section included advanced commands for working with packages in EmbassyOS.
 
+.. raw:: html
+
+  <div class="topics-grid grid-container full">
+
+  <div class="grid-x grid-margin-x">
+
 .. topic-box::
   :title: Developer Tools
-  :link: dev-tools/index
+  :link: dev-tools
   :icon: scylla-icon scylla-icon--developers-blog
   :class: large-4
   :anchor: View

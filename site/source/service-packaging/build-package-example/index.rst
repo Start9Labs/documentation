@@ -17,7 +17,7 @@ We'll create a web application that produces a hello world page. This web applic
 4. Create a hosted repository which will contain all the service components
 5. Create the packaged service file
 
-You can find the complete service code referenced in this guide on `GitHub <https://github.com/Start9Labs/hello-world-wrapper>`_.
+You can find the `complete code <https://github.com/Start9Labs/hello-world-wrapper>`_ referenced in this guide on GitHub.
 
 Download required tools
 =======================
@@ -43,9 +43,10 @@ For this example, we are going to create a simple Rust project that serves a sta
     cargo init
     touch src/index.html
 
-In `index.html` add:
+In ``index.html`` add:
 
 .. code:: html
+
     <html>
     <head>
         <title>Hello World!</title>
@@ -55,7 +56,7 @@ In `index.html` add:
     </body>
     </html>
 
-In `main.rs` add:
+In ``main.rs`` add:
 
 .. code:: rust
 
@@ -88,7 +89,7 @@ In `main.rs` add:
     }
 
 
-That's it! We have the code for our service.
+**That's it!** We now have the code for our service.
 
 Let's build and run it!
 
@@ -99,7 +100,7 @@ Let's build and run it!
     # start the executable
     target/debug/hello-world
 
-Visit `localhost:80` to see your running web page!
+Visit `<http://localhost:80>`_ to see your running web page!
 
 Build for RaspberryPi
 ======================
@@ -145,27 +146,27 @@ Now that we have our code properly built/compiled, we can create a Dockerfile. T
 
 In other words, the Dockerfile serves as a recipe for creating a Docker image, from which Docker containers are spun up. This is ultimately what runs an instance of your service on the Embassy.
 
-#. Create the necessary Docker files:
+1. Create the necessary Docker files:
 
   .. code:: bash
 
       touch Dockerfile
       touch docker_entrypoint.sh
 
-#. We start by importing a base image, in this case Alpine, as recommended.
+2. We start by importing a base image, in this case Alpine, as recommended.
 
   .. code:: docker
 
     FROM arm64v8/alpine:3.12
 
-#. Next, we issue some commands to setup the filesystem. Here we update repositories and install required system packages.
+3. Next, we issue some commands to setup the filesystem. Here we update repositories and install required system packages.
 
   .. code:: docker
 
     RUN apk update
     RUN apk add tini
 
-#. Next, we add the cross-compiled binary of ``hello-world`` to ``/usr/local/bin/`` and add the ``docker_entrypoint.sh`` file from the project root.  Then, we set permissions for ``docker_entrypoint.sh``.
+4. Next, we add the cross-compiled binary of ``hello-world`` to ``/usr/local/bin/`` and add the ``docker_entrypoint.sh`` file from the project root.  Then, we set permissions for ``docker_entrypoint.sh``.
 
   .. code:: docker
 
@@ -173,7 +174,7 @@ In other words, the Dockerfile serves as a recipe for creating a Docker image, f
     ADD ./docker_entrypoint.sh /usr/local/bin/docker_entrypoint.sh
     RUN chmod a+x /usr/local/bin/docker_entrypoint.sh
 
-#. Next, we set a working directory, and set the location of the entrypoint. Exposing ports is not necessary for EOS, but its often useful to leave this line for quick reference and clarity.
+5. Next, we set a working directory, and set the location of the entrypoint. Exposing ports is not necessary for EOS, but its often useful to leave this line for quick reference and clarity.
 
   .. code:: docker
 
@@ -183,7 +184,8 @@ In other words, the Dockerfile serves as a recipe for creating a Docker image, f
 
     ENTRYPOINT ["/usr/local/bin/docker_entrypoint.sh"]
 
-#. That's it! Let's take a look at our final ``Dockerfile``:
+6. **That's it!** Let's take a look at our final ``Dockerfile``:
+
 .. code:: docker
 
     FROM arm64v8/alpine:3.12
@@ -202,7 +204,7 @@ In other words, the Dockerfile serves as a recipe for creating a Docker image, f
 
     ENTRYPOINT ["/usr/local/bin/docker_entrypoint.sh"]
 
-#. Finally, add the following code to the `docker_entrypoint.sh`:
+7. Finally, add the following code to the ``docker_entrypoint.sh``:
 
 .. code:: bash
 
@@ -239,10 +241,10 @@ Let's create a yaml manifest file for our hello-world project:
 
     touch manifest.yaml
 
-And populate it with the following example manifest:
+And populate it with the following example manifest (see the line comments for a description of each key and view the full :ref:`type specification here <service_manifest>`):
 
 .. code:: yaml
-
+    
     # The package identifier used by the OS
     id: hello-world 
     # A human readable service title
@@ -326,10 +328,10 @@ And populate it with the following example manifest:
             entrypoint: compat
             # Any arguments that need to be passed into the run command
             args:
-              - config
-              - get
-              - /root
-              - "/mnt/assets/config_spec.yaml"
+            - config
+            - get
+            - /root
+            - "/mnt/assets/config_spec.yaml"
             # The locations at which to mount the specified Docker images
             mounts:
                 compat: /mnt/assets
@@ -343,11 +345,11 @@ And populate it with the following example manifest:
         system: true
         entrypoint: compat
         args:
-          - config
-          - set
-          - hello-world
-          - /root
-          - "/mnt/assets/config_rules.yaml"
+        - config
+        - set
+        - hello-world
+        - /root
+        - "/mnt/assets/config_rules.yaml"
         mounts:
             compat: /mnt/assets
             main: /root
@@ -399,8 +401,8 @@ And populate it with the following example manifest:
             ui: true
             # Denotes the protocol specifications used by this interface
             protocols:
-              - tcp
-              - http
+            - tcp
+            - http
     # Alerts: omitting these will result in using the default alerts in EmbassyOS, except for start, which has no default.
     alerts:
         install-alert: This is an alert that will present before the user installs this service
@@ -410,32 +412,37 @@ And populate it with the following example manifest:
     # Specifies how backups should be run for this service. The default EmbassyOS provided option is to use the duplicity backup library on a system image (compat)
     backup:
         create:
+            # Currently, only docker actions are supported.
             type: docker
+            # The docker image to use. In this case, a pre-loaded system image called compat
             image: compat
+            # Required if the action uses a system image. The default value is false. 
             system: true 
+            # The executable to run the command to begin the backup create process
             entrypoint: compat 
-            # Arguments to pass into the entrypoint. In this example, the full command run will be: `compat duplicity hello-world /mnt/backup /root/data`
+            # Arguments to pass into the entrypoint executable. In this example, the full command run will be: `compat duplicity hello-world /mnt/backup /root/data`
             args: 
-              - duplicity
-              - hello-world
-              - /mnt/backup
-              # For duplicity, the backup mount point needs to be something other than `/root`, so we default to `/root/data`
-              - /root/data
+            - duplicity
+            - hello-world
+            - /mnt/backup
+            # For duplicity, the backup mount point needs to be something other than `/root`, so we default to `/root/data`
+            - /root/data
             mounts:
                 # BACKUP is the default volume that is used for backups. This is whatever backup drive is mounted to the device, or a network filesystem.  
                 # The value here donates where the mount point will be. The backup drive is mounted to this location.
                 BACKUP: "/mnt/backup" 
                 main: "/root"
+        # The action to execute the backup restore functionality. Details for the keys below are the same as above.
         restore:
             type: docker
             image: compat
             system: true
             entrypoint: compat
             args:
-              - duplicity
-              - hello-world
-              - /root/data
-              - /mnt/backup
+            - duplicity
+            - hello-world
+            - /root/data
+            - /mnt/backup
             mounts:
                 BACKUP: "/mnt/backup"
                 main: "/root"
@@ -448,7 +455,7 @@ And populate it with the following example manifest:
         A warning message indicating and potential dangers associated with the action
         # Indicates what state the service can be in while executing the action
         allowed-statuses:
-          - running
+        - running
         # Defines how the action is run
         implementation:
             type: docker
@@ -459,7 +466,6 @@ And populate it with the following example manifest:
             inject: true
             # Required - valid values are yaml, toml, json
             io-format: json
-
 
 Instructions
 ============
@@ -485,7 +491,7 @@ License
 
 Start9 ensures that the proper license is displayed for all open source software running on an EmbassyOS platform. Let's make sure to include the full open source license so users can view the distribution permissions of your service, among other licensing details.
 
-The name and location of this file should be specified in the `assets.license` section of the Manifest. The default value if not specified is `LICENSE`, located in the root of the project folder.
+The name and location of this file should be specified in the ``assets.license`` section of the Manifest. The default value if not specified is ``LICENSE``, located in the root of the project folder.
 
 .. code:: bash
 
@@ -496,7 +502,7 @@ Icon
 
 Icons are displayed throughout the EmbassyUI to reference to your service.
 
-Simply add the icon file to the root of the project directory. The icon file can be named anything, but this must be specified in the `assets.icon` section of the Manifest. The default filename the SDk looks for when packaging the service assets is `icon.png`.
+Simply add the icon file to the root of the project directory. The icon file can be named anything, but this must be specified in the ``assets.icon`` section of the Manifest. The default filename the SDk looks for when packaging the service assets is ``icon.png``.
 
 .. code:: bash
 
@@ -505,9 +511,9 @@ Simply add the icon file to the root of the project directory. The icon file can
 Package into s9pk
 =================
 
-We now have all of the necessary components to package the service into the format needed for the OS. This format is a custom filetype with an extension of `.s9pk`, short for Start9 Package. 
+We now have all of the necessary components to package the service into the format needed for the OS. This format is a custom filetype with an extension of ``.s9pk``, short for Start9 Package. 
 
-To package all components into an `.s9pk`, run the following command from the root of your project directory:
+To package all components into an ``.s9pk``, run the following command from the root of your project directory:
 
 .. code:: bash
 
@@ -521,7 +527,7 @@ Let's also make sure to verify the validity of the package:
 
 If anything goes wrong, an error message will indicate the missing component or other failure.
 
-That's it!
+**That's it!**
 
 Wrapper Repo
 ============
@@ -542,13 +548,13 @@ If you want to proceed from scratch, follow these steps:
         cd hello-world-wrapper
 
 
-3. Include the `hello-world` project in the wrapper repo. It can either be included directly, or it can be hosted separately. If it is hosted separately, it should be included as a `git submodule <https://git-scm.com/book/en/v2/Git-Tools-Submodules>`_ within the wrapper repository:
+3. Include the ``hello-world`` project in the wrapper repo. It can either be included directly, or it can be hosted separately. If it is hosted separately, it should be included as a `git submodule <https://git-scm.com/book/en/v2/Git-Tools-Submodules>`_ within the wrapper repository:
 
     .. code:: bash
 
         git submodule add <link_to_source_project>
 
-4. Edit the `.gitignore` file to include the `.s9pk` file and `image.tar` bundle. This will exclude these files from being published remotely, as they can be large or binary representations.
+4. Edit the ``.gitignore`` file to include the ``.s9pk`` file and ``image.tar`` bundle. This will exclude these files from being published remotely, as they can be large or binary representations.
 
     .. code:: bash
 
@@ -593,7 +599,7 @@ For convenience and repeatability, let's combine all of these commands into a Ma
 
     touch Makefile
 
-1. Add the build rule with the target executable as the key, including a list of dependencies needed to build the target file. In this case, the `hello-world` binary compiled for aarch is the target, and the dependencies are the hello-world source files needed to compile this binary:
+1. Add the build rule with the target executable as the key, including a list of dependencies needed to build the target file. In this case, the ``hello-world`` binary compiled for aarch is the target, and the dependencies are the hello-world source files needed to compile this binary:
 
     .. code:: bash
 
@@ -609,7 +615,7 @@ For convenience and repeatability, let's combine all of these commands into a Ma
         image.tar: Dockerfile docker_entrypoint.sh hello-world/target/aarch64-unknown-linux-musl/release/hello-world
             DOCKER_CLI_EXPERIMENTAL=enabled docker buildx build --tag start9/hello-world/main:$(VERSION) --platform=linux/arm64 -o type=docker,dest=image.tar .
 
-3. Next, add the step for building the `s9pk` package, with the `hello-world.s9pk` as the target, and all the component files as the dependencies:
+3. Next, add the step for building the ``s9pk`` package, with the ``hello-world.s9p`k` as the target, and all the component files as the dependencies:
 
     .. code:: bash
 
@@ -635,15 +641,15 @@ For convenience and repeatability, let's combine all of these commands into a Ma
          	rm -f image.tar
          	rm -f hello-world.s9pk
 
-6. Finally, add the `all` make target.
+6. Finally, add the ``all`` make target.
 
     .. code:: bash
 
         all: verify
 
-    This serves as the entrypoint to build multiple targets, which we have in this case. When the `make` command is invoked here, it looks for the "verify" target. Since the "verify" target depends on the "hello-world.s9pk" target, make then runs this target. It continues down this graph until the first target and its dependencies are satisfied, then works its way back up. The final output of this Makefile is the `image.tar` and `hello-world.s9pk` files.
+    This serves as the entrypoint to build multiple targets, which we have in this case. When the ``make`` command is invoked here, it looks for the "verify" target. Since the "verify" target depends on the "hello-world.s9pk" target, make then runs this target. It continues down this graph until the first target and its dependencies are satisfied, then works its way back up. The final output of this Makefile is the ``image.tar`` and ``hello-world.s9pk`` files.
 
-That's it! Our completed Makefile looks like this:
+**That's it!** Our completed Makefile looks like this:
 
 .. code:: make
 
@@ -697,7 +703,7 @@ Now that we have a process for iterating on producing a valid package for Embass
     #. Click on + Add new key
     #. Paste pubkey from clipboard 
  
-3. Copy the `hello-world.s9pk` to the Embassy device:
+3. Copy the ``hello-world.s9pk`` to the Embassy device:
 
     .. code:: bash
 
@@ -719,7 +725,7 @@ Now that we have a process for iterating on producing a valid package for Embass
         embassy-cli auth login
         embassy-cli package install hello-world.s9pk
 
-Congratulations! You have successfully created and installed a package you created onto EmbassyOS. The package should now be viewable in the "Services" tab in EmbassyUI.
+**Congratulations!** You have successfully created and installed a package you created onto EmbassyOS. The package should now be viewable in the "Services" tab in EmbassyUI.
 
 From here, you can play with viewing the results of your Manifest file settings, such as config, actions, interfaces, health checks, etc. You can also view the logs of your service right in the UI!
 

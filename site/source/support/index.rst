@@ -15,7 +15,7 @@ Support
 .. topic-box::
   :title: User Manual
   :link: user-manual
-  :icon: scylla-icon scylla-icon--knowledge-base
+  :icon: scylla-icon scylla-icon--docs
   :class: large-4
   :anchor: View
 
@@ -31,13 +31,13 @@ Support
   Answers to Frequently Asked Questions from Embassy users
 
 .. topic-box::
-  :title: Developer Documentation
-  :link: dev-docs
+  :title: Service Packaging
+  :link: ../service-packaging
   :icon: scylla-icon scylla-icon--open-source
   :class: large-4
   :anchor: Build
 
-  Tools and guides for developers
+  Tools and guides for service packagers
 
 .. topic-box::
   :title: Community Channels
@@ -59,4 +59,3 @@ Support
 
   user-manual/index
   faq/index
-  dev-docs/index

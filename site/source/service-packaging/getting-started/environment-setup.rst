@@ -15,7 +15,7 @@ Of course, there are additional recommendations that would streamline your devel
 Code Editor
 ===========
 
-A code editor is recommended since you will, after all, be writing code! We are fans of`Visual Studio Code <https://code.visualstudio.com/>`_ . Visual Studio Code is a free, batteries-included text editor made by Microsoft.
+A code editor is recommended since you will, after all, be writing code! We are fans of `Visual Studio Code <https://code.visualstudio.com/>`_ . Visual Studio Code is a free, batteries-included text editor made by Microsoft.
 
 Terminal / CLI
 ==============
@@ -81,7 +81,7 @@ EmbassyOS
 
 While not strictly necessary, having a running instance of EmbassyOS is recommended to test installing, running, configuring, and using your package. Without this component, you will have to coordinate with Start9's internal development team to test. ... TODO add more
 
-You can acquire EmbassyOS by :ref:`Purchase <purchasing>` or following the :ref:`DIY guide <diy>`. 
+You can acquire EmbassyOS by :ref:`purchasing <purchasing>` or following the :ref:`DIY guide <diy>`. 
 
 .. _quick-start:
 Quick Start Environment Setup
@@ -89,5 +89,5 @@ Quick Start Environment Setup
 - `Docker <https://docs.docker.com/get-docker>`_ 
 - `Docker buildx <https://docs.docker.com/buildx/working-with-buildx/>`_
 - `Cargo <https://doc.rust-lang.org/cargo/getting-started/installation.html>`_
-- `EmbassyOS <https://github.com/Start9Labs/embassy-os>`
+- `EmbassyOS <https://github.com/Start9Labs/embassy-os>`_
 - `Embassy SDK <https://github.com/Start9Labs/embassy-os/blob/master/backend/install-sdk.sh>`_

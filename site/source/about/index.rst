@@ -15,56 +15,56 @@ About
 .. topic-box::
   :title: Start9 Labs
   :link: start9
-  :icon: scylla-icon scylla-icon--knowledge-base
+  :icon: scylla-icon scylla-icon--comparison
   :class: large-4
-  :anchor: Principles
+  :anchor: View
 
-   An overview of the ideas and technologies surrounding Start9 Labs and Embassy.
+  Get acquainted with the Start9 principles.
 
 .. topic-box::
   :title: Roadmap
   :link: roadmap
-  :icon: scylla-icon scylla-icon--knowledge-base
+  :icon: scylla-icon scylla-icon--roadmap
   :class: large-4
-  :anchor: View
+  :anchor: See what's coming
 
-   An overview of the ideas and technologies surrounding Start9 Labs and Embassy.
+  Check out the ambitious future of Start9.
 
 .. topic-box::
-  :title: Privacy
+  :title: Privacy Policy
   :link: privacy
-  :icon: scylla-icon scylla-icon--knowledge-base
+  :icon: scylla-icon scylla-icon--release-note
   :class: large-4
   :anchor: View
 
-   An overview of the ideas and technologies surrounding Start9 Labs and Embassy.
+  Take a look at our privacy policy.
 
 .. topic-box::
   :title: License
   :link: license
-  :icon: scylla-icon scylla-icon--knowledge-base
+  :icon: scylla-icon scylla-icon--whitepapers
   :class: large-4
   :anchor: View
 
-   An overview of the ideas and technologies surrounding Start9 Labs and Embassy.
+  Read our product license agreement.
 
 .. topic-box::
   :title: Jobs
   :link: jobs
-  :icon: scylla-icon scylla-icon--knowledge-base
+  :icon: scylla-icon scylla-icon--about-team
   :class: large-4
-  :anchor: View
+  :anchor: Join us
 
-   An overview of the ideas and technologies surrounding Start9 Labs and Embassy.
+  See what open jobs we have available.
 
 .. topic-box::
   :title: Contact Us
   :link: contact
-  :icon: scylla-icon scylla-icon--knowledge-base
+  :icon: scylla-icon scylla-icon--contact-us
   :class: large-4
   :anchor: Reach out
 
-   An overview of the ideas and technologies surrounding Start9 Labs and Embassy.
+  Get in touch with any questions, concerns, or feedback. Your input is always welcome!
 
 .. raw:: html
 

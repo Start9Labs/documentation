@@ -15,7 +15,7 @@ Learn
 .. topic-box::
   :title: Concepts
   :link: concepts
-  :icon: scylla-icon scylla-icon--knowledge-base
+  :icon: scylla-icon scylla-icon--operator
   :class: large-4
   :anchor: Learn
 
@@ -33,7 +33,7 @@ Learn
 .. topic-box::
   :title: Videos
   :link: https://youtube.com/c/Start9
-  :icon: scylla-icon scylla-icon--monitoring
+  :icon: scylla-icon scylla-icon--training
   :class: large-4
   :anchor: Watch
 
@@ -42,7 +42,7 @@ Learn
 .. topic-box::
   :title: Media
   :link: media
-  :icon: scylla-icon scylla-icon--monitoring
+  :icon: scylla-icon scylla-icon--news
   :class: large-4
   :anchor: View
 

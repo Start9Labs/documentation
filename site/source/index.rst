@@ -77,7 +77,7 @@
 
 .. topic-box::
   :title: SDK
-  :link: support/dev-docs
+  :link: service-packaging
   :icon: scylla-icon scylla-icon--open-source
   :class: large-3
   :anchor: View
@@ -119,6 +119,7 @@
   learn/index
   contribute/index
   about/index
+  service-packaging/index
 
 .. raw:: html
 

@@ -22,7 +22,7 @@ Service Packaging Overview
 
 .. topic-box::
   :title: Getting Started
-  :link: packaging-getting-started
+  :link: getting-started
   :icon: scylla-icon scylla-icon--nsql-guides
   :class: large-4
   :anchor: View
@@ -40,7 +40,7 @@ Service Packaging Overview
 
 .. topic-box::
   :title: Packaging Quick Start
-  :link: packaging-quick-start
+  :link: getting-started/quick-start
   :icon: scylla-icon scylla-icon--roadmap
   :class: large-4
   :anchor: Begin
@@ -49,7 +49,7 @@ Service Packaging Overview
 
 .. topic-box::
   :title: SDK
-  :link: sdk
+  :link: getting-started/sdk
   :icon: scylla-icon scylla-icon--apps
   :class: large-4
   :anchor: View
@@ -58,7 +58,7 @@ Service Packaging Overview
 
 .. topic-box::
   :title: Full Specification
-  :link: packaging-specification
+  :link: specification
   :icon: scylla-icon scylla-icon--glossary
   :class: large-4
   :anchor: View
@@ -67,7 +67,7 @@ Service Packaging Overview
 
 .. topic-box::
   :title: Advanced Guides
-  :link: advanced/index
+  :link: advanced
   :icon: scylla-icon scylla-icon--integrations
   :class: large-4
   :anchor: View
