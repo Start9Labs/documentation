@@ -15,7 +15,6 @@
     - Restore from backup
 - Mission / values
 - Synology
-- EMVER, Deps Dev Docs
 
 # BLOCKED:
 - Possible sounds in troubleshooting (and walkthrough?)
