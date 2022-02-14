@@ -5,7 +5,7 @@ Configuration
 =============
 
 Introduction
-------------
+============
 
 Most self-hosted applications require the user to tell the app how to behave using a config file in a specific format, environment variables, command-line arguments, or some combination of these inputs. One of the coolest features of EmbassyOS is that, when packaged correctly, the app's configuration will be available to the user as a slick GUI that always produces a valid configuration no matter how little experience or skill the user has.
 
@@ -24,10 +24,7 @@ For example, if the user chooses config option A, then config option B must be b
 .. _config_spec:
 
 Config Spec
------------
-
-Overview
-========
+===========
 
 .. figure:: /_static/images/services/service5.png
   :width: 80%
@@ -49,7 +46,7 @@ The neat part about this file is that each ValueSpec type gets translated into a
 Another advantage is the ability to define default values. These values automatically get populated if the user selects the ``Default`` option when setting up a service in ``Needs Config`` state. This is super convenient for users who want to get up and running quickly.
 
 Types
-=====
+-----
 
 ConfigSpec Type:
 
@@ -60,7 +57,7 @@ ConfigSpec Type:
     ValueSpec Type: Boolean | Enum | List | Number | Object | String | Union | Pointer (see below for details)
 
 Implementation Guide
-====================
+--------------------
 
 The following section contains implementation specifications for the ``config_spec.yaml`` file.
 
@@ -103,7 +100,7 @@ Config value specification denoted as a boolean value. A default value is requir
     type: boolean
     name: String
     description: Option<String>
-    changeWarning: Option<String>
+    change-warning: Option<String>
     default: Boolean
 
 Example:
@@ -130,7 +127,7 @@ ValueSpec Type:
     type: enum
     name: String
     description: Option<String>
-    changeWarning: Option<String>
+    change-warning: Option<String>
     default: Option<Enum>
     values: Set<String>
 
@@ -212,7 +209,7 @@ ValueSpec Type:
     type: number
     name: String
     description: Option<String>
-    changeWarning: Option<String>
+    change-warning: Option<String>
     default: Boolean
     nullable: Boolean
     range: Option<NumRange<64 bit floating point>>
@@ -250,7 +247,7 @@ ValueSpec Type:
     type: object
     name: String
     description: Option<String>
-    changeWarning: Option<String>
+    change-warning: Option<String>
     nullable: Boolean
     null-by-default: Boolean
     display-as: Option<String>
@@ -316,7 +313,7 @@ ValueSpec Type:
     type: string
     name: String
     description: Option<String>
-    changeWarning: Option<String>
+    change-warning: Option<String>
     copyable: Option<boolean>
     masked: Option<boolean>
     nullable: Boolean
@@ -373,13 +370,13 @@ ValueSpec Type:
     type: pointer
     name: String
     description: Option<String>
-    changeWarning: Option<String>
+    change-warning: Option<String>
     subtype: app | system
-    app-id: String (*always* kebab case)
+    package-id: String (*always* kebab case)
     target: AppPointerSpecVariants | SystemPointerSpecVariants
     index: Option<String> (dependent on target being AppPointerSpecVariants)
 
-    AppPointerSpecVariants = LanAddress | TorAddress | TorKey | Config
+    AppPointerSpecVariants = TorAddress | TorKey | Config
     SystemPointerSpecVariants = HostIp
 
 Example:
@@ -391,7 +388,7 @@ Example:
         name: RPC Username
         description: The username for the RPC user for Bitcoin Core
         subtype: app
-        app-id: bitcoind
+        package-id: bitcoind
         target: config
         index: "rpc.username"
 
@@ -415,7 +412,7 @@ ValueSpec Type;
     type: union
     name: String
     description: Option<String>
-    changeWarning: Option<String>
+    change-warning: Option<String>
     default: Boolean
     tag: Tag
     variants: Map<String, ConfigSpec>
@@ -455,13 +452,6 @@ Example:
         default: internal
         variants:
             internal:
-                address:
-                    type: pointer
-                    name: Local Address
-                    description: The LAN IP address of your Bitcoin Core service
-                    subtype: app
-                    app-id: bitcoind
-                    target: lan-address
                 user:
                     type: pointer
                     name: RPC Username
@@ -507,7 +497,7 @@ Example:
 .. _config_rules:
 
 Config Rules
-------------
+============
 
 This file defines the configuration rules, or the rule-set that defines dependencies between config variables. In practice, config rules are for auto-configuring self dependencies. Self dependencies are internal dependencies of a service, such as if the setting of one config variable informs the option of another setting. These "dependencies" are configured as rules.
 

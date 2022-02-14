@@ -209,11 +209,11 @@ And populate it with the following example manifest (see the line comments for a
             entrypoint: compat 
             # Arguments to pass into the entrypoint executable. In this example, the full command run will be: `compat duplicity hello-world /mnt/backup /root/data`
             args: 
-            - duplicity
-            - hello-world
-            - /mnt/backup
-            # For duplicity, the backup mount point needs to be something other than `/root`, so we default to `/root/data`
-            - /root/data
+              - duplicity
+              - hello-world
+              - /mnt/backup
+              # For duplicity, the backup mount point needs to be something other than `/root`, so we default to `/root/data`
+              - /root/data
             mounts:
                 # BACKUP is the default volume that is used for backups. This is whatever backup drive is mounted to the device, or a network filesystem.  
                 # The value here donates where the mount point will be. The backup drive is mounted to this location.
@@ -226,10 +226,10 @@ And populate it with the following example manifest (see the line comments for a
             system: true
             entrypoint: compat
             args:
-            - duplicity
-            - hello-world
-            - /root/data
-            - /mnt/backup
+              - duplicity
+              - hello-world
+              - /root/data
+              - /mnt/backup
             mounts:
                 BACKUP: "/mnt/backup"
                 main: "/root"
@@ -239,10 +239,10 @@ And populate it with the following example manifest (see the line comments for a
         name: Hello World Action
         description: A description that describes what the action will accomplish.
         warning: |
-        A warning message indicating and potential dangers associated with the action
+          A warning message indicating and potential dangers associated with the action
         # Indicates what state the service can be in while executing the action
         allowed-statuses:
-        - running
+          - running
         # Defines how the action is run
         implementation:
             type: docker

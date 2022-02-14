@@ -8,13 +8,11 @@ Each service is bound with a wrapper repository, which contains everything you n
 
 The purpose of this repo is:
 
-- Denote any dependencies required to run and build the project
-- To define the necessary, ``config_rules.yaml``, ``config_spec.yaml`` and ``manifest.yaml`` options
+- To define the necessary Manifest and configuration options (ie. config spec and rules)
 - To build the project into the ``.s9pk`` format digestible to EmbassyOS
 - Link to the source project as a git submodule
-- Define the docker file for running the project on EmbassyOS
+- Define the Dockerfile for running the project on EmbassyOS
 - Provide documentation for the project, especially user runbook instructions
-- symlink of ``instructions.md`` from ``docs`` directory to wrapper repo root, if included
 
 File Structure
 --------------
@@ -23,20 +21,30 @@ The project structure should be used as a model:
 
 .. code-block:: bash
 
-    ├── Dockerfile
-    ├── Makefile (optional)
-    ├── README.md
-    ├── config_rules.yaml
-    ├── config_spec.yaml
-    ├── <submodule_project_dir>
-    ├── docker_entrypoint.sh
-    ├── docs
-    │   └── instructions.md
-    └── manifest.yaml
+        ├── Dockerfile
+        ├── LICENSE
+        ├── Makefile
+        ├── README.md
+        ├── assets
+        │   └── compat
+        │       ├── config_rules.yaml
+        │       └── config_spec.yaml
+        ├── docker_entrypoint.sh
+        ├── <submodule-project>
+        ├── <package-id>>.s9pk
+        ├── icon.png
+        ├── image.tar
+        ├── instructions.md
+        └── manifest.yaml
+
 
 Submodule
 ---------
 
-`Git submodules <https://www.git-scm.com/book/en/v2/Git-Tools-Submodules>`_ allow use of another project while in the working project directory. Setting up this feature enables linking of the source service repository so that its context is available.  The submodule is added into the wrapper so that the wrapper can build the submodule and also track the exact code that's being built.
+`Git submodules <https://www.git-scm.com/book/en/v2/Git-Tools-Submodules>`__ allow use of another project while in the working project directory. Setting up this feature enables linking of the source service repository so that its context is available.  The submodule is added into the wrapper so that the wrapper can build the submodule and also track the exact code that's being built.
 
-Run ``git submodule add <link_to_source_project>``
+Run:
+
+.. code:: bash
+    
+    git submodule add <link_to_source_project>

@@ -9,15 +9,14 @@ The following guides provide an in depth overview of the full capabilities avail
 .. toctree::
   :hidden:
 
-  overview
   docker
   manifest
-  emver
   config
   properties
   dependencies
   backups
   instructions
+  package
   wrapper
   makefile
   submission

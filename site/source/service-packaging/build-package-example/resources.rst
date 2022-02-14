@@ -16,6 +16,11 @@ When you have built and tested your project for EmbassyOS, please send Start9 a 
 
 If you are deploying to an alternative marketplace, please shout it out in our community channels!
 
+Additional Options
+------------------
+
+Properties - TODO
+
 References
 ----------
 

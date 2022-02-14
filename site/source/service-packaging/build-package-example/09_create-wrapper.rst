@@ -4,7 +4,9 @@
 Step 9 - Create Wrapper Repo
 ============================
 
-In order for the Start9 team to review your package for submission to the Start9 Marketplace, we ask that you create a wrapper repository for the project and its components. Let's do that for our hello-world service.
+In order for the Start9 team to review your package for submission to the Start9 Marketplace, we ask that you create a wrapper repository for the project and its components. This repo should contain everything you need to build the service.
+
+Let's do that for our hello-world service.
 
 For a quick start convenience, Start9 has made the finalized version of the `hello-world-wrapper <https://github.com/Start9Labs/hello-world-wrapper>`_ available as a *GitHub template*. Clicking "Use this template" in that repository will clone the entire contents to a specified location. Each file will still have to be manually edited to reflect the changes necessary for your service.
 

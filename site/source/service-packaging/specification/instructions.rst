@@ -1,12 +1,12 @@
 .. _service_instructions:
 
-===================
-Instructions & Docs
-===================
+============
+Instructions
+============
 
-Within each wrapper repository should exist a ``docs`` directory. This folder should include any pertinent documentation, instructions, external integrations, or other details about the service that users or developers might find relevant.
+Within each wrapper repository, a file should exist that includes instructions for a service. This file should include any pertinent documentation, instructions, external integrations, or other details about the service that users or developers might find relevant.
 
-If an ``instructions.md`` file is included, this markdown formatted file will be rendered in the "Instructions" section within the service page on EmbassyOS:
+This markdown formatted file will be rendered in the "Instructions" section within the service page on EmbassyOS:
 
   .. figure:: /_static/images/services/service-instruct.png
     :width: 80%

@@ -15,7 +15,7 @@ This purpose of this file is to:
 - Read the docker container and build the project
 - Build all prerequisites for running the docker file
 - Build all dependencies
-- Package ``config_rules.yaml``, ``config_spec.yaml``, ``manifest.yaml``, and ``image.tar`` into an ``.s9pk`` extension by invoking ``appmgr``.
+- Package assets and docker image using ``embassy-sdk pack``
 
 Example
 -------

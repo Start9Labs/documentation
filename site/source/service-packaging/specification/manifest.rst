@@ -19,12 +19,12 @@ Each time a service is updated, the Manifest should be updated to include the ne
 
 There is nothing you need to do as a developer to set up Tor for running a service. This is *completely* handled by EmbassyOS - a Tor address will be automatically generated when the service is installed. Just define an interface with a tor config in the Manifest file. You do, however, need to ensure the service is in fact capable of running over Tor.
 
-The Manifest is also responsible for outlining service :ref:`dependencies <dependencies>`. By defining rules using the :ref:`EmbassyOS DSL specification <config_rules>`, users can easily and selectively install, uninstall, and update any service without getting stuck in dependency hell. EmbassyOS presents this information in a polished install/uninstall/update wizard, so there's no need for editing configuration files or jumping into the command line. For you as a developer, this simply means populating this key in the manifest!
+The Manifest is also responsible for outlining service :ref:`dependencies <dependencies-spec>`. By defining rules using the :ref:`EmbassyOS DSL specification <config_rules>`, users can easily and selectively install, uninstall, and update any service without getting stuck in dependency hell. EmbassyOS presents this information in a polished install/uninstall/update wizard, so there's no need for editing configuration files or jumping into the command line. For you as a developer, this simply means populating this key in the manifest!
 
 Formatting
 ----------
 
-- Serialization language:``.yaml``
+- Serialization language:``yaml | toml | json``
 - Case style: ``kebab-case``
 
 Type definitions
@@ -228,79 +228,6 @@ Below are the types and sub-type definitions, with necessary elaborations. Any i
             # Required - valid values are yaml, toml, json
             io-format: Enum<yaml|json|toml>
 
-.. _dependencies-spec:
-
-Dependencies
-------------
-
-Many services depend on other libraries and services on EmbassyOS (such as Bitcoin), sometimes even a particular version of those services, which need to be specified by the developers so that EmbassyOS can handle installing these dependencies under the hood.
-
-The key of each field in the dependencies object is the lowercase, kebab-case app ID of the service that is depended on. Each dependency contains a set of rules that need to be fulfilled as true if the dependency is to be properly installed. The "config rules" here are for auto-configuring dependencies - the action defined by the rule will be executed if the service is auto configured with defaults during initial setup. This simplifies and streamlines the user experience. The interface should provide suggestions for the behavior if the denoted rule cannot be met with previous configurations.
-
-Let's take this snippet for example:
-
-.. code:: yaml
-
-    ...
-    btc-rpc-proxy:
-        version: ">=0.3.2.1 <0.4.0"
-        requirement:
-        type: "opt-in"
-        how: Can alternatively configure an external bitcoind node.
-        critical: false
-        description: Used to fetch validated blocks.
-        config:
-            check:
-                type: docker
-                image: compat
-                system: true
-                entrypoint: compat
-                args:
-                - dependency
-                - check
-                - btcpayserver
-                - "btc-rpc-proxy"
-                - /datadir
-                - "/mnt/assets/btc-rpc-proxy_config_rules.yaml"
-                mounts:
-                    main: /datadir
-                    compat: /mnt/assets
-                io-format: yaml
-        auto-configure:
-            type: docker
-            image: compat
-            system: true
-            entrypoint: compat
-            args:
-              - dependency
-              - "auto-configure"
-              - btcpayserver
-              - "btc-rpc-proxy"
-              - /datadir
-              - "/mnt/assets/btc-rpc-proxy_config_rules.yaml"
-            mounts:
-                main: /datadir
-                compat: /mnt/assets
-            io-format: yaml
-    ...
-
-.. role:: raw-html(raw)
-    :format: html
-
-:raw-html:`<br />`
-
-TODO update for accuracy
-
-The service ``btc-rpc-proxy`` is a dependency of the service ``c-lightning``. ``c-lightning`` requires it to be installed at a version >=0.3.2.1 but <0.4.0. There exists a rule that states the config option ``user.name`` must be equal to "c-lightning". If this value does not exist for ``user.name`` when accessed, ``PUSH`` the value "c-lighting" to the field. This all takes place during the initial service configuration, before the service is started for the first time.
-
-.. note::
-    Dependency config rules are processed in order.
-
-Type definitions
-================
-
-Types for ``manifest.yaml`` fields: TODO check accuracy
-
 .. code:: typescript
 
     interface Dependencies [{
@@ -308,11 +235,23 @@ Types for ``manifest.yaml`` fields: TODO check accuracy
     }]
 
     interface DepInfo {
-        version: String // ie. 0.11.1.1
-        optional?: String,
+        version: VersionRange // ie. ^0.11.1.1
+        requirement: Enum<"opt-in"|"opt-out"|"required">,
         description?: String,
-        config: [ConfigRule],
-        ],
+        config: Optional<{
+            check: ActionImplementation,
+            auto-configure: ActionImplementation,
+        }>,
+    }
+
+    interface ActionImplementation {
+       image: String,
+       system: Bool,
+       entrypoint: String,
+       args: List<String>,
+       mounts: Map<VolumeId, Path>,
+       io_format: Option<Enum<json|yaml|toml>>,
+       inject: Bool,
     }
 
     interface ConfigRule {
