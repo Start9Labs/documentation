@@ -50,7 +50,7 @@ We decided to have the Embassy act as a Certificate Authority. It creates a self
 
 When you setup SSL for your Embassy and device, the certificate communicates to the client (a browser) that the server (the Embassy) demonstrated ownership of the domain (the ``embassy-xxxxxxxx.local`` address) to the certificate authority (created on the Embassy) at the time of certificate issuance (during the setup process). The Embassy dashboard can then be accessed from a home network (LAN) using a secure HTTPS connection!
 
-For more information on how to setup your devices to enable this feature visit :ref:`ssl-setup`.
+For more information on how to setup your devices to enable this feature visit :ref:`lan-setup`.
 
 
 .. _tor:
@@ -81,4 +81,4 @@ Tor Hidden Service
 ------------------
 A Tor Hidden Service is essentially just software or a website that is only broadcast on the Tor network.  These are identified by a long, random public key, and end with the ``.onion`` suffix.  For example, you can visit http://privacy34kn4ez3y3nijweec6w4g54i3g54sdv7r5mr6soma3w4begyd.onion to view the Start9 homepage on Tor.
 
-In order to reach a Hidden Service, you must use a browser that can handle ``.onion`` domains, such as `The Tor Browser <https://www.torproject.org/download/>`_ or by configuring :ref:`Firefox <>` ***REF NEEDED***.
+In order to reach a Hidden Service, you must use a browser that can handle ``.onion`` domains, such as `The Tor Browser <https://www.torproject.org/download/>`_ or by configuring :ref:`Firefox <tor-firefox>`.

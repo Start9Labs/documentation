@@ -33,7 +33,7 @@ To get a general idea of what is required of an app, answer these questions:
 
 If all answers are yes, then it can run on EmbassyOS.
 
-Packing up a service for the Embassy does not require extensive development skills. If you are interested in doing do, please see our :ref:`Developer Docs<dev-docs>`.
+Packing up a service for the Embassy does not require extensive development skills. If you are interested in doing do, please see our :ref:`Service Packaging Overview <service-packaging>`.
 
 We are aggressively moving away from service development in favor of a more community driven approach. Meaning you, an app development team, or anyone else on Earth, can bring the Service they want to an Embassy Marketplace. You don't need our permission.
 
@@ -96,4 +96,4 @@ By reading the descriptions in the link above, as well as doing some extra searc
 
 We translated much of (but not all of) the tons of options into a clean and easy-to-use GUI with toggles, dropdowns, inputs, etc, which is what you're seeing in your config screen. If you notice the little "?" icons on the left of each option, clicking them will provide a brief description as to what the option does. Also, our config GUI restricts the possible values you can enter such that you don't accidentally crash Bitcoin. That said, be very careful about just randomly changing things, lest your node starts to behave strangely.
 
-You can also check out our :ref:`Service Config Spec <service_config>` documentation for further details.
+You can also check out our :ref:`Service Config Spec <configuration>` documentation for further details.

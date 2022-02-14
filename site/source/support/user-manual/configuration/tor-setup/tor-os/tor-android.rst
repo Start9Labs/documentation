@@ -8,7 +8,7 @@ Some apps, such as :ref:`Tor Browser<tor-browser>`, have Tor built in. They do n
 
   .. youtube:: b__mVfN-BP8
 
-  Running Orbot
+Running Orbot
 -------------
 
 Orbot is a system wide proxy for your Android device that enables communications over Tor.

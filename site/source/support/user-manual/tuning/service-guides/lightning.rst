@@ -8,7 +8,7 @@ Check out our `Getting Started with Lightning video <https://www.youtube.com/wat
 
     .. youtube:: KhU_sTiaN8w
 
-.. _blue-wallet::
+.. _blue-wallet-lightning:
 
 BlueWallet
 ----------

@@ -27,4 +27,4 @@ Local Backups
 #. With Embassy powered down, plug in your external drive to the powered hub if you are using one, or directly into Embassy's available USB 3.0 (blue) slot if it is externally powered.
 #. Plug in power to your hub or drive
 #. Boot Embassy and go to ``Embassy`` -> ``Create Backup``
-#.
+

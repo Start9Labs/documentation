@@ -28,7 +28,7 @@ If you purchase a device from us, this is printed on the bottom of your Embassy.
 
 The first and foremost use of the Product Key is to encrypt data that is sent to Embassy at :ref:`Initial Setup<initial-setup>`.  There are several other usecases.  Start9 keeps an anonymous database of all Product Keys that have been purchased by us (ZERO additional data is associated) so that we can verify someone is a "paid user."  Currently this is just to allow someone to get a new copy of the EOS image if they have a problem, but in future we intend to give added bonuses to customers who have chosen to pay us for a copy of the software.
 
-.. _services:
+.. _services-eos:
 
 Services
 --------

@@ -10,13 +10,14 @@ The following guides provide an in depth overview of the full capabilities avail
   :hidden:
 
   overview
-  wrapper
+  docker
   manifest
   emver
-  docker
-  makefile
   config
   properties
-  instructions
+  dependencies
   backups
+  instructions
+  wrapper
+  makefile
   submission

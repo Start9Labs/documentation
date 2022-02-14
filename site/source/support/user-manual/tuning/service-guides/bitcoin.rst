@@ -1,4 +1,4 @@
-.. _bitcoin:
+.. _bitcoin-service:
 
 =======
 Bitcoin
@@ -73,7 +73,7 @@ Available For
 
 Instructions
 ............
-Follow the `guide <https://github.com/start9labs/bitcoind-wrapper/docs/integrations/sparrow/guide.md>`_.
+Follow the `guide <https://github.com/start9labs/bitcoind-wrapper/docs/integrations/sparrow/guide.md>`__.
 
 .. _specter:
 
@@ -88,7 +88,7 @@ Available For
 
 Instructions
 ............
-Follow the `guide <https://github.com/Start9Labs/bitcoind-wrapper/tree/master/docs/integrations/specter>`_.
+Follow the `guide <https://github.com/Start9Labs/bitcoind-wrapper/tree/master/docs/integrations/specter>`__.
 
 .. _trezor-suite:
 
@@ -115,7 +115,7 @@ Instructions for accessing the bitcoind service in order to issue commands direc
 
 .. tip:: For example ``sudo docker exec bitcoind bitcoin-cli getnetworkinfo``
 
-A list of possible commands can be found `here <https://chainquery.com/bitcoin-cli>`_.
+A list of possible commands can be found `here <https://chainquery.com/bitcoin-cli>`__.
 
 You can also drop into a shell using::
 

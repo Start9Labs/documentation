@@ -24,6 +24,8 @@ We recommend using the build in terminal as a command line interface (CLI) for y
 
 If you are new to the command line, Ionic has published this awesome `guide <https://ionicframework.com/blog/new-to-the-command-line/>`_ to get you started.
 
+.. _environment-setup-git:
+
 Git
 ===
 
@@ -50,11 +52,12 @@ Cargo
 
 Cargo is the package management solution for the Rust programming language. It will install Rust to your system, and provide the required environment to build the Embassy SDK for packaging your service into the required format needed by EmbassyOS. 
 
-Installation instructions for Cargo can be found `here <https://doc.rust-lang.org/cargo/getting-started/installation.html>`_.
+Installation instructions for Cargo can be found `here <https://doc.rust-lang.org/cargo/getting-started/installation.html>`__.
 
 To verify the installation, open a terminal window and run:
 
 .. code:: bash
+
     cargo --version
 
 SDK
@@ -84,10 +87,11 @@ While not strictly necessary, having a running instance of EmbassyOS is recommen
 You can acquire EmbassyOS by :ref:`purchasing <purchasing>` or following the :ref:`DIY guide <diy>`. 
 
 .. _quick-start:
+
 Quick Start Environment Setup
 =============================
 - `Docker <https://docs.docker.com/get-docker>`_ 
 - `Docker buildx <https://docs.docker.com/buildx/working-with-buildx/>`_
-- `Cargo <https://doc.rust-lang.org/cargo/getting-started/installation.html>`_
+- `Cargo <https://doc.rust-lang.org/cargo/getting-started/installation.html>`__
 - `EmbassyOS <https://github.com/Start9Labs/embassy-os>`_
 - `Embassy SDK <https://github.com/Start9Labs/embassy-os/blob/master/backend/install-sdk.sh>`_

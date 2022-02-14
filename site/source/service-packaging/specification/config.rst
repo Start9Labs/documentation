@@ -1,4 +1,4 @@
-.. _service-config:
+.. _configuration:
 
 =============
 Configuration

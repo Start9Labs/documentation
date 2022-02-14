@@ -42,7 +42,7 @@ Image
 
 Each service boils down to a Docker image. We're not going to dive into Docker specifics in this guide, since there exists tons of `resources <https://docs.docker.com/>`_ for developing with this containerization tool.
 
-Because the service ultimately runs on a Raspberry Pi, the created Docker image should be a snapshot of an arm based linux environment. The service image is then mounted to the EmbassyOS image during installation. This path is defined in the :ref:`manifest <service-manifest>` configuration file.
+Because the service ultimately runs on a Raspberry Pi, the created Docker image should be a snapshot of an arm based linux environment. The service image is then mounted to the EmbassyOS image during installation. This path is defined in the :ref:`manifest <service_manifest>` configuration file.
 
 The image is immutable, meaning that when the service is updated, the image is replaced with a completely new image containing the updated features.
 
@@ -98,7 +98,7 @@ The configuration and manifest files get bundled into the ``.s9pk`` package, whi
 Hello World Example
 ===================
 
-For reference, the `Hello world <https://github.com/Start9Labs/hello-world-wrapper>`_ repository should be used as an example. A project template can be cloned using the "Use this template" button in GitHub.  For a detailed walkthrough of this example, please see the :ref:`Packaging Example<packaging-example>`.
+For reference, the `Hello World <https://github.com/Start9Labs/hello-world-wrapper>`__ repository should be used as an example. A project template can be cloned using the "Use this template" button in GitHub.  For a detailed walkthrough of this example, please see the :ref:`Packaging Example <build-package-example>`.
 
 
 .. role:: raw-html(raw)
