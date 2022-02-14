@@ -7,7 +7,6 @@
 .. hero-box::
   :title: Documentation
   :button_icon: scylla-icon scylla-icon--monitoring
-  :image: /_static/img/docs_icon.svg
 
   Here you will find guidance and information about the Start9 Embassy personal server and its operating system, EmbassyOS.
 
