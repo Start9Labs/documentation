@@ -23,7 +23,7 @@ To see a list of all available commands provided, run the following from an term
 embassy-sdk init
 ----------------
 
-Initialized the developer key for interacting with the SDK
+Initialize the developer key for interacting with the SDK.
 
 By default, this creates the developer key at `/etc/embassy`. You might need to change ownership of this folder depending on your system permissions.
 
@@ -54,7 +54,7 @@ This command takes the necessary package components and assembles them into the 
 - License
 - Icon
 
-If this command fails, the error response will indicate which component is missing. 
+If this command fails, the error response will indicate which component is missing.
 
 embassy-sdk verify
 -------------------
@@ -84,10 +84,10 @@ This command contains several utilities for reading components once packaged int
 It contains the following subcommands, and requires the path to the `<pacakge-id>.s9pk` file as the last argument:
 
 - docker-images
-- hash 
-- icon 
-- instructions 
-- license  
+- hash
+- icon
+- instructions
+- license
 - manifest
 
 For example:

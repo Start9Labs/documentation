@@ -4,7 +4,7 @@
 Step 4 - Build with Docker
 ==========================
 
-Now that we have our code properly built/compiled, we can create a Dockerfile. This file defines how to build the Docker image for the service by declaring the environment, building stages, and copying any binaries or assets needed to run the service to the Docker image filesystem. 
+Now that we have our code properly built/compiled, we can create a Dockerfile. This file defines how to build the Docker image for the service by declaring the environment, building stages, and copying any binaries or assets needed to run the service to the Docker image filesystem.
 
 In other words, the Dockerfile serves as a recipe for creating a Docker image, from which Docker containers are spun up. This is ultimately what runs an instance of your service on the Embassy.
 
@@ -15,7 +15,7 @@ In other words, the Dockerfile serves as a recipe for creating a Docker image, f
       touch Dockerfile
       touch docker_entrypoint.sh
 
-2. We start by importing a base image, in this case Alpine, as recommended.
+2. We'll start editing the ``Dockerfile`` by importing a base image, in this case Alpine, as recommended.
 
   .. code:: docker
 
@@ -26,7 +26,7 @@ In other words, the Dockerfile serves as a recipe for creating a Docker image, f
   .. code:: docker
 
     RUN apk update
-    RUN apk add tini
+    RUN apk add tini curl
 
 4. Next, we add the cross-compiled binary of ``hello-world`` to ``/usr/local/bin/`` and add the ``docker_entrypoint.sh`` file from the project root.  Then, we set permissions for ``docker_entrypoint.sh``.
 

@@ -62,7 +62,7 @@ This guide will take you through the fundamentals of packaging a service for Emb
 
 .. topic-box::
   :title: Step 7
-  :link: environment-setup
+  :link: 07_create-s9pk
   :class: large-4
   :anchor: View
 

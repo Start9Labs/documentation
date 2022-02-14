@@ -1,4 +1,4 @@
-.. _packaging-quick-start:
+.. _quick-start:
 
 =====================
 Packaging Quick Start
@@ -21,7 +21,7 @@ Packaging
 10. Package all components into s9pk using embassy-sdk
 11. Verify package components using embassy-sdk
 12. Create a wrapper repository on GitHub to host all package assets for review
-13. (Optional) Add all package build steps to a Makefile for replicability 
+13. (Optional) Add all package build steps to a Makefile for replicability
 
 Testing:
 --------
