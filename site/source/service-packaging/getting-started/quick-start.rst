@@ -1,0 +1,33 @@
+.. _packaging-quick-start:
+
+=====================
+Packaging Quick Start
+=====================
+
+This guide outlines a checklist of steps to complete in order to package a service for EmbassyOS. For a more in depth example, visit the :ref:`build your first package <build-package-example>` guide.
+
+Packaging
+---------
+
+1. Create or select project
+2. Build project
+3. Cross compile for armv8/aarch64 if necessary
+4. Create Dockerfile and docker entrypoint file
+5. Add build steps, compiled executables, assets, etc in Dockerfile and specify run command in docker entrypoint, handling signal exiting if the service does not already do this gracefully
+6. Create Manifest file
+7. Create instructions file
+8. Create icon file
+9. Add license
+10. Package all components into s9pk using embassy-sdk
+11. Verify package components using embassy-sdk
+12. Create a wrapper repository on GitHub to host all package assets for review
+13. (Optional) Add all package build steps to a Makefile for replicability
+
+Testing:
+--------
+
+1. Sideload ``<package-id>.s9pk`` onto an Embassy
+2. Install package using embassy-cli
+3. Start package using embassy-cli, or in the UI
+4. Check logs to see if errors
+5. Ensure service is reachable/launchable

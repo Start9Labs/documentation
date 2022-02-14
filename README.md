@@ -25,8 +25,46 @@ The [extension](https://github.com/Holzhaus/sphinx-multiversion) used to build d
 
 ## Dependencies
 
+Install [python3] (https://www.python.org/downloads/)
+Install [poetry] (https://python-poetry.org/docs/)
 Install [pyenv](https://github.com/pyenv/pyenv)
 
+For installations with MacOS:
+
+```
+brew install python3
+brew install poetry
+```
+
+## Project Setup
+
+1. Clone this repository and enter the project folder:
+
+```
+git clone https://github.com/Start9Labs/documentation.git && cd documentation
+```
+
+2. Install theme submodule:
+
+```
+git submodule update --init
+```
+
+3. (Optional, if you have an older build that needs to be updated) Navigate to `sphinx-scylladb-theme`, update and build with:
+
+```
+cd sphinx-scylladb-theme
+git pull
+npm i
+npm run build
+```
+
+4. Navigate to the `site` folder and start the project:
+
+```
+cd site
+make clean && make preview
+```
 ## Development
 
 When editing these files, begin a livereload environment by running `make preview` while in the `./site/` directory.
@@ -47,7 +85,7 @@ Click on the "Issues" tab in the top navbar. Provide a good title and describe c
 
 ### Submitting a pull request
 
-Click on the "Pull requests" tab in the top navbar. Select the green "New pull request button" in the top right section. Select your branch for the compare dropdown, and master as the base. Provide an appropriate title and summary of the changes in the pull request description. Changes will be reviewed and merged when satisfactory. 
+Click on the "Pull requests" tab in the top navbar. Select the green "New pull request button" in the top right section. Select your branch for the compare dropdown, and master as the base. Provide an appropriate title and summary of the changes in the pull request description. Changes will be reviewed and merged when satisfactory.
 
 ## Helpful Resources
 

@@ -32,6 +32,7 @@ needs_sphinx = "1.8"
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.todo",
+    "sphinx.ext.viewcode",
     "sphinx.ext.mathjax",
     "sphinx.ext.extlinks",
     "sphinx_scylladb_theme",
@@ -69,7 +70,7 @@ notfound_template = "404.html"
 TAGS = []
 smv_tag_whitelist = multiversion_regex_builder(TAGS)
 # Whitelist pattern for branches (set to None to ignore all branches)
-BRANCHES = ["versioning", "master"]
+BRANCHES = ["integration/0.3.0", "master"]
 smv_branch_whitelist = multiversion_regex_builder(BRANCHES)
 # Defines which version is considered to be the latest stable version.
 # Must be listed in smv_tag_whitelist or smv_branch_whitelist.
@@ -96,7 +97,7 @@ html_theme_options = {
     "banner_button_text": "Learn more",
     "banner_button_url": "https://docs.start9.com/latest",
     "banner_icon_path": "_static/logo.png",
-    "banner_title_text": "Start9 Docs 0.3.0 is now released 🥳",
+    "banner_title_text": "Start9 0.3.0 is now released 🥳",
     "hide_edit_this_page_button": "false",
     "hide_sidebar_index": "true",
     "hide_banner": "true",
@@ -105,7 +106,6 @@ html_theme_options = {
     "github_repository": "Start9Labs/documentation",
     "site_description": "Start9 Product Documentation and Education Guides",
 }
-
 
 # Last updated format
 html_last_updated_fmt = "%d %b %Y"
@@ -117,10 +117,10 @@ templates_path = ['_templates']
 html_sidebars = {"**": ["side-nav.html"]}
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "Start9Documentationdoc"
+htmlhelp_basename = "Start9Documentation"
 
 # URL which points to the root of the HTML documentation.
-html_baseurl = "https://docs.start9.com"
+html_baseurl = "https://start9.com"
 
 # Dictionary of values to pass into the template engine’s context for all pages
 html_context = {"html_baseurl": html_baseurl}
@@ -135,3 +135,5 @@ html_logo = "_static/logo.png"
 html_title = "Docs"
 
 html_favicon = "_static/favicon.ico"
+
+html_js_files = ["custom.js"]

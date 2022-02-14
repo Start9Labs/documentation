@@ -1,19 +1,61 @@
+.. _support:
+
+=======
 Support
 =======
 
+  Here you will find help on how to use your devices, answers to frequently asked questions, and documentation for developers.
+
+.. raw:: html
+
+  <div class="topics-grid grid-container full">
+
+  <div class="grid-x grid-margin-x">
+
+.. topic-box::
+  :title: User Manual
+  :link: user-manual
+  :icon: scylla-icon scylla-icon--docs
+  :class: large-4
+  :anchor: View
+
+  All you need to be the owner/operator of your own self-hosted software
+
+.. topic-box::
+  :title: FAQ
+  :link: faq
+  :icon: scylla-icon scylla-icon--monitoring
+  :class: large-4
+  :anchor: Get Answers
+
+  Answers to Frequently Asked Questions from Embassy users
+
+.. topic-box::
+  :title: Service Packaging
+  :link: ../service-packaging
+  :icon: scylla-icon scylla-icon--open-source
+  :class: large-4
+  :anchor: Build
+
+  Tools and guides for service packagers
+
+.. topic-box::
+  :title: Community Channels
+  :link: ../about/contact
+  :icon: scylla-icon scylla-icon--networking
+  :class: large-4
+  :anchor: Join us
+
+  Network with the community to get help and offer your skills and insights to the cause!
+
+.. raw:: html
+
+  </div></div>
+
+.. This is for the side navigation display
 .. toctree::
-   :maxdepth: 2
-   :hidden:
+  :maxdepth: 1
+  :hidden:
 
-   FAQ/index
-   concepts
-   contact
-
-.. panel-box::
-  :title: Overview
-  :id: support
-  :class: my-panel
-
-  * :doc:`FAQ <FAQ/index>` - Comprehensive source of Frequently Asked Questions
-  * :doc:`Concepts <concepts>` - Familiarize yourself with concepts related to EmbassyOS
-  * :doc:`Contact <contact>` - Get in touch with further questions
+  user-manual/index
+  faq/index
