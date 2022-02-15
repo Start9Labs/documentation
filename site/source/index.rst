@@ -112,3 +112,17 @@
   misc-guides/index
   contributing/index
   support/index
+
+.. raw:: html
+
+  <div class="grid-container subscribe">
+    <h2>Want the latest?</h2>
+    <p class="subscribe__heading-subheading">subscribe to our mailing list</p>
+    <div class="subscribe-form">
+      <form id="subscribe">
+        <input class="subscribe-input" type="email" id="newsletter_email" name="email" placeholder="Enter email" required>
+        <input class="button--reverse" type="submit" value="subscribe">
+      </form>
+      <div class="padding-top-1" id="subscription_msg" class="hidden"></div>
+    </div>
+  </div>
