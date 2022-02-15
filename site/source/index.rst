@@ -128,7 +128,7 @@
     <p class="subscribe__heading-subheading">subscribe to our mailing list</p>
     <div class="subscribe-form">
       <form id="subscribe">
-        <input type="email" id="newsletter_email" name="email" placeholder="Enter email" required>
+        <input class="subscribe-input" type="email" id="newsletter_email" name="email" placeholder="Enter email" required>
         <input class="button--reverse" type="submit" value="subscribe">
       </form>
       <div class="padding-top-1" id="subscription_msg" class="hidden"></div>
