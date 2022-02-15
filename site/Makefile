@@ -1,5 +1,5 @@
 # You can set these variables from the command line.
-POETRY        = $(HOME)/.poetry/bin/poetry
+POETRY        = $(shell which poetry)
 SPHINXOPTS    = -j auto
 SPHINXBUILD   = $(POETRY) run sphinx-build
 PAPER         =
