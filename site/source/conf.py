@@ -70,7 +70,7 @@ notfound_template = "404.html"
 TAGS = []
 smv_tag_whitelist = multiversion_regex_builder(TAGS)
 # Whitelist pattern for branches (set to None to ignore all branches)
-BRANCHES = ["integration/0.3.0", "master"]
+BRANCHES = ["0.2.x", "master"]
 smv_branch_whitelist = multiversion_regex_builder(BRANCHES)
 # Defines which version is considered to be the latest stable version.
 # Must be listed in smv_tag_whitelist or smv_branch_whitelist.
@@ -101,7 +101,7 @@ html_theme_options = {
     "hide_edit_this_page_button": "false",
     "hide_sidebar_index": "true",
     "hide_banner": "true",
-    "hide_version_dropdown": ["master"],
+    "hide_version_dropdown": [],
     "github_issues_repository": "Start9Labs/documentation",
     "github_repository": "Start9Labs/documentation",
     "site_description": "Start9 Product Documentation and Education Guides",
