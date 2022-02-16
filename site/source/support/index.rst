@@ -4,7 +4,7 @@
 Support
 =======
 
-  View frequently asked questions or contact support.
+  View frequently asked questions, troubleshoot common issues, or contact support.
 
 .. raw:: html
 
