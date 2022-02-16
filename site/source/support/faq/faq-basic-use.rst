@@ -23,7 +23,7 @@ Check out the `docs <https://docs.start9.com/user-manual/general/forgot-password
 
 My Embassy is set up, now what?
 -------------------------------
-Check out our :ref:`Walkthrough<walkthrough>` for some details on your Embassy.  You can now access your Embassy and find the Services you want from the "Marketplace" tab, then clicking "Install."  The Service will let you know if you need any "dependencies," or pre-requisite Services, first.  After you have a Service installed, don't forget to "Start" the service.  Check out :ref:`Services<services>` for more info.
+Check out the :ref:`Dashboard Overview<dashboard-overview>` for some details on your Embassy.  You can now access your Embassy and find the Services you want from the "Marketplace" tab, then clicking "Install."  The Service will let you know if you need any "dependencies," or pre-requisite Services, first.  After you have a Service installed, don't forget to "Start" the service.
 
 Can I move my Embassy to another location?  What happens when I do this?
 ------------------------------------------------------------------------

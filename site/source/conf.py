@@ -16,8 +16,8 @@ sys.path.insert(0, os.path.abspath('..'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'Start9 Docs'
-copyright = str(date.today().year) + ",  Start9 Labs, Inc. All rights reserved."
+project = 'Start9'
+copyright = str(date.today().year) + ",  Start9 Labs, Inc."
 author = u"Start9 Contributors"
 
 
@@ -92,18 +92,18 @@ html_theme = "sphinx_scylladb_theme"
 html_theme_path = ["../../sphinx-scylladb-theme"]
 
 html_theme_options = {
-    "hide_sidebar_index": "true",
-    "conf_py_path": "docs/source/",
+    "conf_py_path": "site/source/",
     "banner_button_text": "Learn more",
     "banner_button_url": "https://docs.start9.com/latest",
     "banner_title_text": "EmbassyOS 0.3.0 is now released 🥳",
+    "hide_banner": "false",
     "hide_edit_this_page_button": "false",
     "hide_sidebar_index": "true",
-    "hide_banner": "false",
     "hide_version_dropdown": [],
     "github_issues_repository": "Start9Labs/documentation",
     "github_repository": "Start9Labs/documentation",
-    "site_description": "Start9 Product Documentation and Education Guides",
+    "navigation_depth": 3,
+    "site_description": "Start9 sovereign computing with Embassy personal server",
 }
 
 # Last updated format

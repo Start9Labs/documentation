@@ -50,26 +50,20 @@ git clone https://github.com/Start9Labs/documentation.git && cd documentation
 git submodule update --init
 ```
 
-3. (Optional, if you have an older build that needs to be updated) Navigate to `sphinx-scylladb-theme`, update and build with:
-
-```
-cd sphinx-scylladb-theme
-git pull
-npm i
-npm run build
-```
-
-4. Navigate to the `site` folder and start the project:
+3. Navigate to the `site` folder and start the project:
 
 ```
 cd site
 make clean && make preview
 ```
+
 ## Development
 
 When editing these files, begin a livereload environment by running `make preview` while in the `./site/` directory.
 
 When editing any css or table of contents organization changes, the livereload environment must be ended and `make clean` run before starting `make preview` again.
+
+If you edit something inside `sphinx-scylladb-theme`, you will need to `cd` into that directory and run `npm run build`.
 
 ### Versioning
 - Build for versioning (must be on master) branch: `make multiversion`

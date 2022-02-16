@@ -4,7 +4,7 @@
 Contribute
 ==========
 
-  Here you will find out how to join the community and give back!
+  Join the community and get involved!
 
 .. raw:: html
 

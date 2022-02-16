@@ -4,7 +4,7 @@
 About
 =====
 
-  Here you will find out how to join the community and give back!
+  Learn about Start9.
 
 .. raw:: html
 
@@ -13,13 +13,13 @@ About
   <div class="grid-x grid-margin-x">
 
 .. topic-box::
-  :title: Start9 Labs
+  :title: Mission and Values
   :link: start9
   :icon: scylla-icon scylla-icon--comparison
   :class: large-4
   :anchor: View
 
-  Get acquainted with the Start9 principles.
+  Get acquainted with Start9.
 
 .. topic-box::
   :title: Roadmap
@@ -57,15 +57,6 @@ About
 
   See what open jobs we have available.
 
-.. topic-box::
-  :title: Contact Us
-  :link: contact
-  :icon: scylla-icon scylla-icon--contact-us
-  :class: large-4
-  :anchor: Reach out
-
-  Get in touch with any questions, concerns, or feedback. Your input is always welcome!
-
 .. raw:: html
 
   </div></div>
@@ -81,4 +72,3 @@ About
    license
    team
    jobs
-   contact
