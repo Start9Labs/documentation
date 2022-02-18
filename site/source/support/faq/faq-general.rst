@@ -69,7 +69,7 @@ The .s9pk extension is Start9's custom package format based on tar. It encompass
 
 What are EmbassyOS Services?
 ----------------------------
-A Service can be any piece of software added to the Marketplace.  All services are "self-hosted," meaning that you are in complete control of your data.  This means you can run your own "cloud!"  Learn more about managing services :ref:`here <managing-services>` and see our currently :ref:`Available Services <service-marketplace>`.
+A Service can be any piece of software added to the Marketplace.  All services are "self-hosted," meaning that you are in complete control of your data.  This means you can run your own "cloud!"  Learn more about managing services :ref:`here <managing-services>` and see our currently `Available Services <https://marketplace.start9.com/>`_.
 
 Does the Embassy ship worldwide?
 --------------------------------

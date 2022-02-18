@@ -33,7 +33,7 @@ To get a general idea of what is required of an app, answer these questions:
 
 If all answers are yes, then it can run on EmbassyOS.
 
-Packing up a service for the Embassy does not require extensive development skills. If you are interested in doing do, please see our :ref:`Service Packaging Overview <service-packaging>`.
+Packing up a service for the Embassy does not require extensive development skills. If you are interested in doing do, please see our :ref:`Developer Docs <developer-docs>`.
 
 We are aggressively moving away from service development in favor of a more community driven approach. Meaning you, an app development team, or anyone else on Earth, can bring the Service they want to an Embassy Marketplace. You don't need our permission.
 
