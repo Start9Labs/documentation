@@ -1,4 +1,4 @@
-.. _cifs-win:
+.. _cifs-windows:
 
 =======
 Windows

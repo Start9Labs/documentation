@@ -1,4 +1,4 @@
-.. _cifs-lin:
+.. _cifs-linux:
 
 =====
 Linux

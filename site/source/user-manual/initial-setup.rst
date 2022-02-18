@@ -40,7 +40,7 @@ Connecting
 
     The product key is used to discover your Embassy's IP address on the Local Area Network using a hashing function and a protocol named :ref:`MDNS (or Zeroconf) <mdns>`.
 
-3. Next, select "Start Fresh" if this is your first time using an Embassy.  If you'd like to "Recover" from an existing Embassy, please follow the guide for :ref:`versions 0.2.x <recover-02x>` or :ref:`versions 0.3.x <recover-03x>`.
+3. Next, select "Start Fresh" if this is your first time using an Embassy.  If you'd like to "Recover" from an existing Embassy, please follow the guide for :ref:`versions 0.2.x <migrate-02>` or :ref:`versions 0.3.x <backup-restore>`.
 
 .. figure:: /_static/images/setup/setup1.png
     :width: 60%

@@ -120,8 +120,8 @@
   support/index
   learn/index
   contribute/index
-  about/index
   developer-docs/index
+  about/index
 
 .. raw:: html
 
