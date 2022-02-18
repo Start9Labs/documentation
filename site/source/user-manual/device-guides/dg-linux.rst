@@ -4,6 +4,8 @@
 Linux
 =====
 
+To optimize your device for use with your Embassy, it is recommended to complete all of the following guides.
+
 .. tip:: Please see Linux's :ref:`Known Limitations<lim-linux>` to understand what is currently not possible on these devices
 
 * :ref:`Connecting over LAN <lan-linux>` - For a fast and secure connection while on your Embassy's local network

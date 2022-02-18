@@ -13,15 +13,16 @@ Welcome to the EmbassyOS user manual. Here you will discover all that you Embass
   initial-setup
   connecting/index
   dashboard-overview
-  customize
+  updating
   backups/index
+  forgot-password
+  customize
   managing-services/index
   service-guides/index
   sessions
   wifi
   ssh
+  diy
   alt-marketplaces
-  updating
-  forgot-password
+  migrate-02
   device-guides/index
-  misc-guides/index

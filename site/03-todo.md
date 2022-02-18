@@ -7,26 +7,28 @@
 - Add / verify ALL links in the **UI** go to the right place in docs
 - Initial Setup
 - Alt Market Switching
-- Migration / Recovery
+- Migration
 - Backups
-    - CIFS
+    - LAN
         - OS guides for CIFS
-    - Local
+    - Physical
+    - Synology
     - Restore from backup
+    - Recover from 0.3 drive
 - Mission / values
-- Synology
+- Verify ALL links (especially in device guides as they are all external)
+- Fontawesome - Tor box (connecting) needs icon - device guides need OS icons
 
 # BLOCKED:
 - Possible sounds in troubleshooting (and walkthrough?)
 - Alt Market Build Guide
-- Launch versioned site/docs to start9.com
-- Verify ALL links (especially in device guides as they are all external)
 
 # AFTER PUBLISHING:
 - Create badges for device guide topic boxes <connectivity, performance, resilience and/or tuning>
 - Close all relevant issues (some await new processes in order to test)
 - Migrate from other server projects / nodes (currently punted)
 - Breakout Bitcoin / Lightning integrations into their own individual pages
+- Connecting LAN/Tor nesting isn't great
 
 Go to the Synology UI > Control Panel > Shared Folder > select the folder you want to use > Permissions tab > make sure that you have read/write permissions for the user you're going to be logging in as (probably unnecessary but I made a separate user for this to keep things segregated) > Save
 Then go to the Synology UI > Control Panel > File Services > SMB Tab > Click the SMB drop down button if it isn't already selected > Ensure that "Enable SMB service" is checked.

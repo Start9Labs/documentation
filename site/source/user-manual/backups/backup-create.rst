@@ -9,8 +9,8 @@ There are 2 options for backing up your Embassy and service data:
 1. Use a Shared Network Folder (recommended) on another device that connected to the same network as your Embassy, such as a laptop/desktop or external drive that is plugged into your laptop/desktop.
 2. Use a physical drive, which must be externally powered or plugged into a powered USB hub.
 
-Shared Network Folder
----------------------
+LAN Backups
+-----------
 
 This is the recommended approach for creating backups.
 
@@ -53,11 +53,18 @@ This is the recommended approach for creating backups.
     .. figure:: /_static/images/config/embassy_backup4.png
         :width: 60%
 
-Physical Drive
---------------
+Physical Backups
+----------------
+
+You may use a drive by attaching to Embassy directly if you prefer.
+
+.. caution:: If using the Raspberry Pi, you MUST use external power to attach a physical drive in order to prevent any data corruption due to power constraints.
 
 #. If your drive is self-powered, you can plug it directly into your Embassy USB 3.0 (blue) slot. If not, first plug the drive into a powered USB hub, then plug the hub into your Embassy USB 3.0 slot.
 
 #. Go to ``Embassy`` -> ``Create Backup``
+
+    .. figure:: /_static/images/config/physical-backup0.png
+        :width: 60%
 
 #. Select the drive

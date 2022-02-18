@@ -4,6 +4,8 @@
 Android
 =======
 
+To optimize your device for use with your Embassy, it is recommended to complete all of the following guides.
+
 .. tip:: Please see Android's :ref:`Known Limitations<lim-android>` to understand what is currently not possible on these devices
 
 * :ref:`Connecting over LAN <lan-android>` - For a fast and secure connection while on your Embassy's local network

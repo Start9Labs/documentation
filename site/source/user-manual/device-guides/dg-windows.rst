@@ -4,6 +4,8 @@
 Windows
 =======
 
+To optimize your device for use with your Embassy, it is recommended to complete all of the following guides.
+
 .. tip:: Please see Window's :ref:`Known Limitations<lim-windows>` to understand what is currently not possible on these devices.
 
 * :ref:`Connecting over LAN <lan-windows>` - For a fast and secure connection while on your Embassy's local network
