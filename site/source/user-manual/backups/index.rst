@@ -31,7 +31,7 @@ In addition to safekeeping of a good master password, maintaining good backups a
   Restore Embassy from a previous backup.
 
 .. topic-box::
-  :title: SNF Setup
+  :title: LAN Backup Setup
   :link: cifs-setup/index
   :icon: scylla-icon scylla-icon--networking
   :class: large-5

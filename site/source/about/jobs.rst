@@ -4,7 +4,7 @@
 Open Positions
 ==============
 
-Please check back soon!!
+Please check back soon
 
 .. Get a jerb ya bum
 

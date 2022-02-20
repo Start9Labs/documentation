@@ -12,3 +12,4 @@ Click your platform for detailed instructions on how to create a Shared Network 
   cifs-linux
   cifs-mac
   cifs-windows
+  cifs-synology
