@@ -101,6 +101,13 @@
 
 ..   Build from source with our DIY guide
 
+.. raw:: html
+
+  </div></div>
+
+.. raw:: html
+
+  </div></div>
 
 .. This is for the side navigation display
 .. toctree::
