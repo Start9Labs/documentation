@@ -1,18 +1,15 @@
 # TODO
-- Migration
-- Backups
-    - OS guides for CIFS/LAN
-    - Recover from 0.3 drive
+- OS guides for CIFS/LAN (screens)
+- Recover from 0.3 drive
 - Add / verify ALL links in the **UI** go to the right place in docs
 - Fontawesome - Tor box (connecting) needs icon - device guides need OS icons
 - Initial Setup
-- Guides
-    - Lightning (Zeus)
-    - Vaultwarden needs screens
+- Lightning Guides (Zeus)
+- Vaultwarden guide (screens)
 - Refactor and update Roadmap
 
 # BLOCKED:
-- Possible sounds in troubleshooting (and overview?)
+- Possible sounds in troubleshooting (and overview / update migrate with links)
 - Alt Market Build Guide
 
 # AFTER PUBLISHING:
