@@ -31,13 +31,13 @@ In addition to safekeeping of a good master password, maintaining good backups a
   Restore Embassy from a previous backup.
 
 .. topic-box::
-  :title: LAN Backup Setup
+  :title: LAN Shared Folder Setup
   :link: cifs-setup/index
   :icon: scylla-icon scylla-icon--networking
   :class: large-5
   :anchor: Setup
 
-  Setup a Shared Network Folder on your laptop/desktop.
+  Setup a Shared Network Folder on a desktop, laptop, or drive on your local network.
 
 .. raw:: html
 
@@ -49,4 +49,4 @@ In addition to safekeeping of a good master password, maintaining good backups a
 
   backup-create
   backup-restore
-  SNF Setup<cifs-setup/index>
+  cifs-setup/index
