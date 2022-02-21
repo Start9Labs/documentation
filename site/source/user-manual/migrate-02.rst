@@ -97,14 +97,14 @@ Power Up
 
    .. note:: If it does not show up, please power down Embassy, unplug it, plug it back in, and boot Embassy again
 
-#. If this drive is not empty, you will see a warning first. If you are happy to proceed, click ``Continue``.
+#. If this drive is not empty, you will see a warning first, indicating all data will be overwritten. If you are happy to proceed, click ``Continue``.
 
    .. figure:: /_static/images/setup/migrate4.png
       :width: 60%
 
 #. You will now need to make a password for your Embassy. It needs to be a strong password. This password protects your Embassy. It can be the same one that you used prior to migration, or a new one.  Either way, make it strong, and make a backup of it.  Without this you will **LOSE ALL ACCESS** to your Embassy!
 
-#. Embassy will now recover all your data from your old Embassy and once finished, you will hear <this>.
+#. Embassy will now recover all your data from your old Embassy and once finished, you will hear a _bep_, followed by a _chime_.
 
    .. figure:: /_static/images/setup/migrate5.png
       :width: 60%
@@ -114,7 +114,7 @@ Power Up
    .. figure:: /_static/images/setup/migrate6.png
       :width: 60%
 
-#. To use LAN safely, the SSL certificate will need to be added to whatever device you are using to access. This can be downloaded by clicking on ``Download root CA`` and installed by following the instructions <here>.
+#. To use LAN safely, the SSL certificate will need to be added to whatever device you are using to access. This can be downloaded by clicking on ``Download root CA`` and installed by following the :ref:`instructions<lan-setup>`.
 
 #. You can now log in to your Embassy via Tor or LAN, and you will be given the option of recovering your data on a service-by-service basis.
 

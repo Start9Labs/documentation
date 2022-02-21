@@ -1,6 +1,5 @@
 # TODO
-- OS guides for CIFS/LAN (screens)
-- Recover from 0.3 drive
+- CIFS/LAN OS guides (screens)
 - Add / verify ALL links in the **UI** go to the right place in docs
 - Fontawesome - Tor box (connecting) needs icon - device guides need OS icons
 - Initial Setup

@@ -25,4 +25,5 @@ Welcome to the EmbassyOS user manual. Here you will discover all that you Embass
   diy
   alt-marketplaces
   migrate-02
+  recover-03
   device-guides/index
