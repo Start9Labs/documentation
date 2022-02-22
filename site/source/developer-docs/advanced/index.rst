@@ -1,8 +1,8 @@
 .. _advanced-packaging:
 
-===========================
-Advanced Packaging Overview 
-===========================
+========
+Advanced
+========
 
 This section included advanced commands for working with packages in EmbassyOS.
 

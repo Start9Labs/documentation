@@ -1,8 +1,8 @@
 .. _build-package-example:
 
-========================
-Build Your First Package
-========================
+===============
+Build a Package
+===============
 
 This guide will take you through the fundamentals of packaging a service for EmbassyOS by creating a real service. Let's get started!
 
