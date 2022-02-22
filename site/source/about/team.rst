@@ -1,7 +1,7 @@
 .. _team:
 
-===============
-The Start9 Team
-===============
+========
+The Team
+========
 
-Please check back soon!!
+Please check back soon

@@ -9,8 +9,8 @@ There are 2 options for backing up your Embassy and service data:
 1. Use a Shared Network Folder (recommended) on another device that connected to the same network as your Embassy, such as a laptop/desktop or external drive that is plugged into your laptop/desktop.
 2. Use a physical drive, which must be externally powered or plugged into a powered USB hub.
 
-Shared Network Folder
----------------------
+LAN Backups
+-----------
 
 This is the recommended approach for creating backups.
 
@@ -29,7 +29,7 @@ This is the recommended approach for creating backups.
 #. Fill in the following fields:
 
     * Hostname - This is the hostname of the machine that your folder or drive is located on
-    * Path - This is the directory path to the shared folder.  If you setup Samba yourself (Linux), this may be the name of the share in your samba config file and not the path.
+    * Path - This is the directory path to the shared folder.  If you configured Samba yourself (Linux), this is the ``comment`` (name of the share in your samba config file) and not the path.
     * Username - This is the user on the remote machine that you used to create the shared directory
     * Password - This is your user (from above) password
 
@@ -53,11 +53,34 @@ This is the recommended approach for creating backups.
     .. figure:: /_static/images/config/embassy_backup4.png
         :width: 60%
 
-Physical Drive
---------------
+Physical Backups
+----------------
 
-#. If your drive is self-powered, you can plug it directly into your Embassy USB 3.0 (blue) slot. If not, first plug the drive into a powered USB hub, then plug the hub into your Embassy USB 3.0 slot.
+You may use a drive by attaching to Embassy directly if you prefer.  The recommended format at this time is ``exFAT``.
 
-#. Go to ``Embassy`` -> ``Create Backup``
+.. caution:: If using the Raspberry Pi, you MUST use external power to attach a physical drive in order to prevent any data corruption due to power constraints.
 
-#. Select the drive
+#. First, go to ``Embassy`` -> ``Create Backup``
+
+    .. figure:: /_static/images/config/physical-backup0.png
+        :width: 60%
+
+#. Plug drive USB cable into Embassy.  If your drive is self-powered, you can plug it directly into your Embassy USB 3.0 (blue) slot. If not, first plug the drive into a powered USB hub, then plug the hub into your Embassy USB 3.0 slot.  Then you may power it up.
+
+#. Press ``Refresh`` in the top-right corner, and select your drive when it appears.
+
+    .. figure:: /_static/images/config/physical-backup1.png
+        :width: 60%
+
+    .. figure:: /_static/images/config/physical-backup2.png
+        :width: 60%
+
+#. Enter your password to continue with the backup.
+
+    .. figure:: /_static/images/config/physical-backup3.png
+        :width: 60%
+
+After backup, you will receive a notice that the backup is complete, and you will see the latest backup date appear on the Embassy tab.
+
+    .. figure:: /_static/images/config/physical-backup4.png
+        :width: 60%

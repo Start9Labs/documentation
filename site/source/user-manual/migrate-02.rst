@@ -78,21 +78,43 @@ Power Up
 
 #. You will be asked to enter a product key.  This can be located on the bottom of your Embassy if you purchased, or in the repository folder if you built from source.
 
+   .. figure:: /_static/images/setup/migrate0.png
+      :width: 60%
+
+
 #. Once entered, select ``Recover`` then select the microSD card - this will be labelled ``rootfs``.
+
+   .. figure:: /_static/images/setup/migrate1.png
+      :width: 60%
+
+   .. figure:: /_static/images/setup/migrate2.png
+      :width: 60%
 
 #. On the next page you will be asked to select a storage device - here you should select your SSD.
 
-.. note:: If it does not show up, please power down Embassy, unplug it, plug it back in, and boot Embassy again
+   .. figure:: /_static/images/setup/migrate3.png
+      :width: 60%
 
-#. If this drive is not empty, you will see a warning first. If you are happy to proceed, click ``Continue``.
+   .. note:: If it does not show up, please power down Embassy, unplug it, plug it back in, and boot Embassy again
 
-#. You will now need to make a password for your Embassy. It needs to be a strong password. This password protects your Embassy. It can be the same one that you used prior to migration, or a different one.
+#. If this drive is not empty, you will see a warning first, indicating all data will be overwritten. If you are happy to proceed, click ``Continue``.
 
-#. Embassy will now recover all your data from your old Embassy and once finished, you will hear <this>.
+   .. figure:: /_static/images/setup/migrate4.png
+      :width: 60%
 
-#. Now you will be provided with both a Tor and LAN address with which you can access your Embassy. Please make a note of these.
+#. You will now need to make a password for your Embassy. It needs to be a strong password. This password protects your Embassy. It can be the same one that you used prior to migration, or a new one.  Either way, make it strong, and make a backup of it.  Without this you will **LOSE ALL ACCESS** to your Embassy!
 
-#. To use LAN safely, the SSL certificate will need to be added to whatever device you are using to access. This can be downloaded by clicking on ``Download root CA`` and installed by following the instructions <here>.
+#. Embassy will now recover all your data from your old Embassy and once finished, you will hear a _bep_, followed by a _chime_.
+
+   .. figure:: /_static/images/setup/migrate5.png
+      :width: 60%
+
+#. Now you will be provided with both a Tor and LAN address with which you can access your Embassy. A file download will contain this important information, which you should keep somewhere safe.  It is also a good idea to make bookmarks on the devices that you will use to access your Embassy.
+
+   .. figure:: /_static/images/setup/migrate6.png
+      :width: 60%
+
+#. To use LAN safely, the SSL certificate will need to be added to whatever device you are using to access. This can be downloaded by clicking on ``Download root CA`` and installed by following the :ref:`instructions<lan-setup>`.
 
 #. You can now log in to your Embassy via Tor or LAN, and you will be given the option of recovering your data on a service-by-service basis.
 

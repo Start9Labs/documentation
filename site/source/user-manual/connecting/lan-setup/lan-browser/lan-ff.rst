@@ -32,7 +32,7 @@ Firefox
 
     Firefox import certificate page
 
-#. Ensure the “Embassy Local Root CA” exists under “Start9 Labs”.  Then click “OK” to save.
+#. Ensure the “Embassy Local Root CA” exists under “Start9 Labs”.  If it does not appear, you may need to close the Certificates pop-up and re-open to refresh the list.  Then click “OK” to save.
 
 #. Open a new tab in Firefox to apply the changes. If this does not work, quit and restart Firefox.
 

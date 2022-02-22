@@ -33,7 +33,7 @@ Connecting
   </div></div>
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :hidden:
 
    lan-setup/index
