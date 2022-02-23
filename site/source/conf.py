@@ -95,7 +95,7 @@ html_theme_options = {
     "conf_py_path": "site/source/",
     "banner_button_text": "Learn more",
     "banner_button_url": "https://docs.start9.com/latest",
-    "banner_title_text": "EmbassyOS 0.3.0 is now released 🥳",
+    "banner_title_text": "EmbassyOS 0.3.0 is now available 🥳",
     "hide_banner": "false",
     "hide_edit_this_page_button": "false",
     "hide_sidebar_index": "true",

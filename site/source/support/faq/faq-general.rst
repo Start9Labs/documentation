@@ -62,7 +62,7 @@ It includes:
 * a custom application management layer, specialized for installing, running, and backing up .s9pk packaged services
 * a layer responsible for Embassy specific operations, such as Tor, Backups, and Notifications
 * a system of :ref:`Health Checks<health-checks>` for simple monitoring
-* an SDK for developers, including an :ref:`Actions API<actions>` to simplify complex operations for the common user
+* an SDK for developers, including an "Actions" API to simplify complex operations for the common user
 * and much, much more.  Please see the corresponding :ref:`Concepts<embassy-os>` section.
 
 The .s9pk extension is Start9's custom package format based on tar. It encompasses the necessary components to compress, host, and install a service on a Marketplace.

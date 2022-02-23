@@ -1,10 +1,8 @@
 .. _cifs-mac:
 
-===
-Mac
-===
-
-The following will guide you through the prerequisite configuration to backup to a Mac machine or an external drive that is attached to a Mac machine.
+===================================
+Creating a LAN Shared Folder on Mac
+===================================
 
 #. Go to system settings
 

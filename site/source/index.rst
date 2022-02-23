@@ -10,7 +10,7 @@
   :button_text: Purchase Embassy
   :image: /_static/img/eos_0.3.0.png
 
-  Here you will find information about Start9, EmbassyOS, and the era of sovereign computing.
+  Here you will find information about Start9, EmbassyOS, and the era of sovereign computing. Anyone can do it. No one can stop it.
 
 .. raw:: html
 
@@ -33,7 +33,7 @@
 
 .. topic-box::
   :title: DIY
-  :link: user-manual/misc-guides/diy
+  :link: diy
   :icon: scylla-icon scylla-icon--integrations
   :class: large-4
   :anchor: Get started
@@ -116,6 +116,9 @@
   :maxdepth: 3
   :hidden:
 
+  Purchase <https://store.start9.com>
+  diy
+  Marketplace <https://marketplace.start9.com>
   user-manual/index
   support/index
   learn/index

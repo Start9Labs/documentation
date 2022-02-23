@@ -13,7 +13,7 @@ In addition to safekeeping of a good master password, maintaining good backups a
   <div class="grid-x grid-margin-x">
 
 .. topic-box::
-  :title: Create
+  :title: Create Backup
   :link: backup-create
   :icon: scylla-icon scylla-icon--memory-management
   :class: large-5
@@ -22,7 +22,7 @@ In addition to safekeeping of a good master password, maintaining good backups a
   Create an encrypted backup of Embassy.
 
 .. topic-box::
-  :title: Restore
+  :title: Restore from Backup
   :link: backup-restore
   :icon: scylla-icon scylla-icon--comparison
   :class: large-5

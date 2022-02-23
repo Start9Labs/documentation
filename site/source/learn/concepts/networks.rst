@@ -14,7 +14,7 @@ Devices on a LAN are private and protected, such that only devices connected to 
 
 Your Embassy hosts itself on the LAN and is reachable by visiting its ``embassy.local`` URL in the browser while also connected to the LAN.
 
-.. note:: Any device connected to a LAN can inspect all communications on that LAN. To avoid snooping, your Embassy's LAN communications are encrypted using :ref:`ssl`, which requires :ref:`additional setup <lan-setup>`.
+.. note:: Any device connected to a LAN can inspect all communications on that LAN. To avoid snooping, your Embassy's LAN communications are encrypted using :ref:`ssl`, which requires :ref:`additional setup <connecting-lan>`.
 
 .. _lan-cert:
 
@@ -50,7 +50,7 @@ We decided to have the Embassy act as a Certificate Authority. It creates a self
 
 When you setup SSL for your Embassy and device, the certificate communicates to the client (a browser) that the server (the Embassy) demonstrated ownership of the domain (the ``embassy-xxxxxxxx.local`` address) to the certificate authority (created on the Embassy) at the time of certificate issuance (during the setup process). The Embassy dashboard can then be accessed from a home network (LAN) using a secure HTTPS connection!
 
-For more information on how to setup your devices to enable this feature visit :ref:`lan-setup`.
+For more information on how to setup your devices to enable this feature visit :ref:`connecting-lan`.
 
 
 .. _tor:

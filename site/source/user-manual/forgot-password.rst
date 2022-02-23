@@ -4,21 +4,18 @@
 Forgot Password
 ===============
 
-There is currently no way to reset you Embassy master password through a standard UI flow.
+.. note:: There is currently no way to reset you Embassy master password through a standard UI flow.
 
-SSH/Linux
+Using SSH
 ---------
 
-If you already have :ref:`SSH keys registered with your Embassy<ssh>` **OR** you have access to a Linux computer, you can reset your Embassy password without losing any data.
-
-SSH
-===
+.. note:: Resetting you password with SSH only possible if you have already :ref:`set up SSH<ssh>` on your Embassy. 
 
 #. Use the command line to gain SSH access to your Embassy, replacing ``[network-id]`` with your Embassy's unique ID:
 
     .. code-block:: bash
 
-        ssh pi@embassy-[network-id].local
+        ssh root@embassy-[network-id].local
 
 #. Check if you have sqlite3 installed (with ``which``). If not, install it (with ``apt``):
 
@@ -48,10 +45,10 @@ SSH
 
     .. warning:: Running setup process will generate new certificate and Tor address for your Embassy.
 
-#. You can now visit ``embassy.local`` to reclaim your Embassy and set a new password.
+#. You can now visit http://embassy.local to reclaim your Embassy and set a new password.
 
-Linux
-=====
+Using a Linux Computer
+----------------------
 
 #. Shut down your Embassy, disconnect from power, and remove the microSD card.
 #. Insert the microSD card into your Linux computer and mount the drive::
@@ -80,7 +77,7 @@ Linux
 
     .. warning:: Running setup process will generate new certificate and Tor address for your Embassy.
 
-#. You can now visit ``embassy.local`` to reclaim your Embassy and set a new password.
+#. You can now visit http://embassy.local to reclaim your Embassy and set a new password.
 
 No SSH/Linux
 ------------
