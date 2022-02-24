@@ -9,7 +9,7 @@ Community Channels
 
 * `Telegram <https://t.me/start9_labs>`_ - Primary community channel
 
-* `Matrix <https://matrix.to/#/#community:matrix.start9labs.com>`_ - Community channel tht will gradually replace Telegram.
+* `Matrix <https://matrix.to/#/#community:matrix.start9labs.com>`_ - Community channel that will gradually replace Telegram.
 
 * `Matrix Dev <https://matrix.to/#/#community-dev:matrix.start9labs.com>`_ - Primary channel for collaboration on EmbassyOS development and service packaging.
 

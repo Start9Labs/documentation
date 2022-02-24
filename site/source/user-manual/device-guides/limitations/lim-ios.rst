@@ -8,7 +8,7 @@ Tor
 ---
 It is not currently possible to run Tor natively (in the background) on iOS. This means that many iOS apps will be unable to connect to your Embassy. The best chance for a Tor background process on iOS in the future is via the `iCepa Project <https://github.com/iCepa>`_.
 
-Many apps, such as :ref:`Fully Noded <fully-noded>` and :ref:`Zap <zap>`, support Tor natively. And any Embassy service that has a Tor UI can be accessed using `Onion Browser <https://apps.apple.com/us/app/onion-browser/id519296448>`_.
+Many apps, such as :ref:`Fully Noded <fully-noded>` and :ref:`Zap <zap>`, support Tor natively, and any Embassy service that has a Tor UI can be accessed using `Onion Browser <https://apps.apple.com/us/app/onion-browser/id519296448>`_.
 
 Matrix
 ------

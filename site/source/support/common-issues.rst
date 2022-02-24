@@ -45,7 +45,7 @@ I am unable to reach Embassy via it's ``xxxxxxxxxxxxxxxxxx.onion`` (Tor) address
             #. If you are not yet running a Tor daemon on your device, follow :ref:`these instructions <tor-os>`. If you are already running a Tor daemon, restart it, or in the case of Android, restart your phone.
             #. If you are using Firefox, ensure it has been :ref:`properly configured <tor-firefox>` to work with .onion URLS.
     #. **If Tor Browser does not work** - It means there is an issue with your Embassy.
-        #. **Test** - Try visiting your Embassy over LAN from a non-Tor browser such as Firefox, Chrome, or Safari.
+        #. **Test** - Try visiting your Embassy over :ref:`LAN<connecting-lan>` from a non-Tor browser such as Firefox, Chrome, or Safari.
             #. **If LAN works** - it means the issue is an issue with Tor on your Embassy.
                 #. **Solutions**
                     #. Wait an hour or so to allow Tor on your Embassy to fix itself.
