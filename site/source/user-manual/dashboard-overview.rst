@@ -21,30 +21,30 @@ Use this tab to customize and manage your Embassy.
         :width: 60%
 
 Backups
-........
+=======
 
 The Backups section allows you to create and restore :ref:`Embassy backups <backups>`.
 
 Settings
-........
+========
 
 The Settings section gives you access to :ref:`EmbassyOS Updates <updating-eos>`, Device Preferences, :ref:`connecting-lan`, :ref:`ssh`, :ref:`wifi`, and :ref:`alt-marketplaces`.
 
 Insights
-........
+========
 
 The Insights section gives you basic information on your Embassy, monitoring of system resources / temperature, and logs for debugging.
 
 Support
-.......
+=======
 
 The Support section provides links to frequently asked questions as well as Start9 and community contact information.
 
 Power
-.....
+=====
 
 * **Restart**
-  
+
     * Be patient while services shut down. A *tune* will play, indicating the shutdown is complete.
     * A gentle *bep* will sound when the Embassy is powered back on.
     * A *chime* will sound when the Embassy is ready to use.  Please be patient as a Restart will take some time.

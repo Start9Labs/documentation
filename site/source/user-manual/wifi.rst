@@ -4,7 +4,7 @@
 Setting up WiFi
 ===============
 
-Although a wired (ethernet) connection for best performance, you can connect your Embassy with a wireless connection if you prefer. Follow the directions below to add one or more WiFi networks to you Embassy.
+Although a wired (ethernet) connection is recommended for best performance, you can connect your Embassy with a wireless connection if you prefer. Follow the directions below to add one or more WiFi networks to you Embassy.
 
 #. Go to *Embassy > WiFi*.
 
@@ -32,7 +32,7 @@ Although a wired (ethernet) connection for best performance, you can connect you
     :width: 60%
     :alt: Enter Credentials
 
-#. If you clicked "Save for Later", the network it will appear in the list, unconnected. If you selected "Save and Connect", the network will attempt to connect and show a green checkmark upon success.
+#. If you clicked "Save for Later", the network will appear in the list, unconnected. If you selected "Save and Connect", the network will attempt to connect and show a green checkmark upon success.
 
    .. figure:: /_static/images/config/wifi4.png
     :width: 60%

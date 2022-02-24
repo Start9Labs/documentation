@@ -22,7 +22,7 @@ Name Your Device
 Reorder Services
 ----------------
 
-#. In the "Services" tab, and click "Reorder" in the top right.
+#. In the "Services" tab, click "Reorder" in the top right.
 
     .. figure:: /_static/images/walkthrough/reorder0.png
       :width: 60%

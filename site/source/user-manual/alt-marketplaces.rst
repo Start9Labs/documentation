@@ -4,7 +4,7 @@
 Alt Marketplaces
 ================
 
-It is critical to Start9's mission that Start9 does **not** be a central point of failure. The Marketplace is a critical piece of infrastructure and therefore EmbassyOS supports accessing alternative marketplaces.
+It is critical to Start9's mission that Start9 is **not** a central point of failure. The Marketplace is a critical piece of infrastructure and therefore EmbassyOS supports accessing alternative marketplaces.
 
 .. caution:: Start9 is not responsible for issues encountered when downloading services from alternative marketplaces, and cannot provide support for services that are not from our official marketplace. Here be dragons!!
 
