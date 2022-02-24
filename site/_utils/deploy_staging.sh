@@ -1,18 +1,13 @@
 #!/bin/bash
+set -e
 
-# Copy contents
-mkdir gh-pages
-cp -r ./docs/_build/dirhtml/. gh-pages
+echo "FILTER: make multiversion"
+make clean && make multiversion
 
-# Create gh-pages branch
-cd gh-pages
-git init
-git config --local user.email "dev@start9labs.com"
-git config --local user.name "Start9 Dev"
-git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-git checkout -b gh-pages
+echo "FILTER: scp build"
+scp -r _build/* root@staging.start9labs.com:/var/www/html/staging.start9labs.com
 
-# Deploy
-git add .
-git commit -m "Publish docs" || true
-git push origin gh-pages --force
+echo "FILTER: ssh restart nginx and tor"
+ssh root@staging.start9labs.com "systemctl reload nginx && systemctl reload tor"
+
+echo "FILTER: fin"
