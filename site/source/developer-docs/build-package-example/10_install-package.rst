@@ -19,10 +19,10 @@ Now that we have a process for iterating on producing a valid package for Embass
 
 2. On an Embassy device, enter the ssh pubkey into your SSH settings:
 
-    #. Click on Embassy in the menu
-    #. Click on SSH under SETTINGS
-    #. Click on + Add new key
-    #. Paste pubkey from clipboard 
+    1. Click on Embassy in the menu
+    2. Click on SSH under SETTINGS
+    3. Click on + Add new key
+    4. Paste pubkey from clipboard 
  
 3. Copy the ``hello-world.s9pk`` to the Embassy device:
 
@@ -52,14 +52,14 @@ From here, you can play with viewing the results of your Manifest file settings,
 
 In order to verify your service is functioning as expected:
 
-- Ensure your service is in "Running" state
-- Make sure there are no apparent errors or warnings in the logs
-- Ensure each UI component renders as expected:
-  - Instructions
-  - Config
-  - Properties
-  - Actions
-  - Interfaces
-  - Marketplace listing
-  - Donation
-- Launch or use your service in the intended way and make sure all aspects function 
+   - Ensure your service is in "Running" state
+   - Make sure there are no apparent errors or warnings in the logs
+   - Ensure each UI component renders as expected:
+       - Instructions
+       - Config
+       - Properties
+       - Actions
+       - Interfaces
+       - Marketplace listing
+       - Donation
+   - Launch or use your service in the intended way and make sure all aspects function 

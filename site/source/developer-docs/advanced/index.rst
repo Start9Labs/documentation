@@ -36,7 +36,7 @@ This section included advanced commands for working with packages in EmbassyOS.
 
 .. This is for the side navigation display
 .. toctree::
-  :maxdepth: 1
+  :maxdepth: 2
   :hidden:
 
   dev-tools/index

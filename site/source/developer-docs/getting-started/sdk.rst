@@ -49,10 +49,10 @@ embassy-sdk pack
 
 This command takes the necessary package components and assembles them into the `s9pk` file format needed to install a service on EmbassyOS. It expects the following files to exist:
 
-- Manifest
-- Instructions
-- License
-- Icon
+    - Manifest
+    - Instructions
+    - License
+    - Icon
 
 If this command fails, the error response will indicate which component is missing.
 
@@ -61,11 +61,11 @@ embassy-sdk verify
 
 This command verifies aspects about the components assembled into the `s9pk`, such as:
 
-- Ensures that all mounts are real volumes in the manifest
-- Ensures all cert volumes point to real interfaces in the manifest
-- Ensures all actions refer to real images in the manifest
-- Ensures all images are tagged correctly in the manifest
-- Ensures the icon is less than 100KB
+    - Ensures that all mounts are real volumes in the manifest
+    - Ensures all cert volumes point to real interfaces in the manifest
+    - Ensures all actions refer to real images in the manifest
+    - Ensures all images are tagged correctly in the manifest
+    - Ensures the icon is less than 100KB
 
 It should be run _after_ `embassy-sdk pack` in order to verify the validity of each component.
 
@@ -83,12 +83,12 @@ This command contains several utilities for reading components once packaged int
 
 It contains the following subcommands, and requires the path to the `<pacakge-id>.s9pk` file as the last argument:
 
-- docker-images
-- hash
-- icon
-- instructions
-- license
-- manifest
+    - docker-images
+    - hash
+    - icon
+    - instructions
+    - license
+    - manifest
 
 For example:
 

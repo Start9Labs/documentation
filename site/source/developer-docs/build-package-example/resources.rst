@@ -21,11 +21,11 @@ References
 
 Below are links to working examples of more advanced configurations for current Embassy services. They might serve as a starting point or reference during your development process: 
 
-- Detailed ``docker_entrypoint.sh`` - `Filebrowser <https://github.com/Start9Labs/filebrowser-wrapper/blob/master/docker_entrypoint.sh>`_
-- Optional dependencies - `BTCPay Server <https://github.com/Start9Labs/btcpayserver-wrapper/blob/master/assets/compat/dependencies.yaml>`__
-- Config spec - `BTCPay Server <https://github.com/Start9Labs/btcpayserver-wrapper/blob/master/assets/compat/config_spec.yaml>`__
-- Config rules - `BTC RPC Proxy <https://github.com/Start9Labs/btc-rpc-proxy-wrapper/blob/master/assets/compat/config_rules.yaml>`__
-- Multiple dependencies - `BTCPay Server <https://github.com/Start9Labs/btcpayserver-wrapper/blob/master/manifest.yaml#L172-L187>`__
-- Actions - `BTCPay Server <https://github.com/Start9Labs/btcpayserver-wrapper/blob/master/actions/btcpay-admin.sh>`__
-- Health checks - `BTCPay Server <https://github.com/Start9Labs/btcpayserver-wrapper/blob/master/assets/utils/health_check.sh>`__
-- Alerts - `BTCPay Server <https://github.com/Start9Labs/btcpayserver-wrapper/blob/master/manifest.yaml#L207-L218>`__
+    - Detailed ``docker_entrypoint.sh`` - `Filebrowser <https://github.com/Start9Labs/filebrowser-wrapper/blob/master/docker_entrypoint.sh>`_
+    - Optional dependencies - `BTCPay Server <https://github.com/Start9Labs/btcpayserver-wrapper/blob/master/assets/compat/dependencies.yaml>`__
+    - Config spec - `BTCPay Server <https://github.com/Start9Labs/btcpayserver-wrapper/blob/master/assets/compat/config_spec.yaml>`__
+    - Config rules - `BTC RPC Proxy <https://github.com/Start9Labs/btc-rpc-proxy-wrapper/blob/master/assets/compat/config_rules.yaml>`__
+    - Multiple dependencies - `BTCPay Server <https://github.com/Start9Labs/btcpayserver-wrapper/blob/master/manifest.yaml#L172-L187>`__
+    - Actions - `BTCPay Server <https://github.com/Start9Labs/btcpayserver-wrapper/blob/master/actions/btcpay-admin.sh>`__
+    - Health checks - `BTCPay Server <https://github.com/Start9Labs/btcpayserver-wrapper/blob/master/assets/utils/health_check.sh>`__
+    - Alerts - `BTCPay Server <https://github.com/Start9Labs/btcpayserver-wrapper/blob/master/manifest.yaml#L207-L218>`__

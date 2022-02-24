@@ -16,8 +16,17 @@ Due to the fact that config variables are only available when the service is run
 
 
 .. code:: typescript
-
   :caption: Properties Type
+
+    interface Properties {
+      version: Enum<v1 | v2>,
+      data: Data,
+    }
+
+    interface Data {
+      # The key here is an string that describes the property appropriately 
+      <String> : PropertiesString | PropertiesObject
+    }
 
     interface PropertiesString {
       type: 'string'
@@ -38,7 +47,7 @@ Due to the fact that config variables are only available when the service is run
 Example
 -------
 
-A good example of the configurator producing the ``stats.yaml`` file can be found `here <https://github.com/Start9Labs/lnd-wrapper/blob/master/configurator/src/main.rs>`_.
+An example ``stats.yaml`` file generation can be found `here <https://github.com/Start9Labs/filebrowser-wrapper/blob/master/docker_entrypoint.sh#L15-L30>`__.
 
 .. role:: raw-html(raw)
     :format: html

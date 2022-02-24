@@ -1,8 +1,8 @@
 .. _environment-setup:
 
-===========================
-Packaging Environment Setup
-===========================
+=================
+Environment Setup
+=================
 
 To get started packaging a service for EmbassyOS, some basic knowledge of software development is required. Don't worry if you are inexperienced, we will provide enough context to get you started, and you can always reach out with questions.
 

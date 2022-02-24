@@ -37,7 +37,7 @@ Getting Started Overview
   :class: large-4
   :anchor: Begin
 
-  Quickly get started with concise packaging steps
+  Quickly get started with concise steps
 
 .. topic-box::
   :title: SDK

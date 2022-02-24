@@ -113,7 +113,7 @@
 
 .. This is for the side navigation display
 .. toctree::
-  :maxdepth: 3
+  :maxdepth: 4
   :hidden:
 
   Purchase <https://store.start9.com>
