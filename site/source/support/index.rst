@@ -4,13 +4,22 @@
 Support
 =======
 
-  View frequently asked questions, troubleshoot common issues, or contact support.
+View frequently asked questions, troubleshoot common issues, or contact support.
 
 .. raw:: html
 
   <div class="topics-grid grid-container full">
 
   <div class="grid-x grid-margin-x">
+
+.. topic-box::
+  :title: Common Issues
+  :link: common-issues
+  :icon: scylla-icon scylla-icon--monitoring
+  :class: large-5
+  :anchor: View
+
+  Explore common issues and their solutions
 
 .. topic-box::
   :title: FAQ
@@ -22,18 +31,9 @@ Support
   Answers to Frequently Asked Questions from Embassy users
 
 .. topic-box::
-  :title: Troubleshooting
-  :link: troubleshooting
-  :icon: scylla-icon scylla-icon--monitoring
-  :class: large-5
-  :anchor: View
-
-  Explore common problems and their solutions
-
-.. topic-box::
   :title: Contact
   :link: contact
-  :icon: scylla-icon scylla-icon--networking
+  :icon: scylla-icon scylla-icon--support
   :class: large-5
   :anchor: Get help
 
@@ -48,6 +48,6 @@ Support
   :maxdepth: 1
   :hidden:
 
+  common-issues
   faq/index
-  troubleshooting/index
   contact

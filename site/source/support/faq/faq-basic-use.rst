@@ -35,7 +35,7 @@ If you are in your home/office network with an Embassy, it is both faster and mo
 
 Can I use the .local addresses over the Tor Browser?
 ----------------------------------------------------
-Unfortunately, no.  The Tor Browser requires all web visits to first enter the Tor network. Once you have entered the Tor network there is no way to exit the Tor network in such a way that .local/mDNS addresses resolve.
+No. The Tor Browser requires all web visits to first enter the Tor network. Once you have entered the Tor network there is no way to exit the Tor network in such a way that .local/mDNS addresses resolve.
 
 Can I use .local addresses on Android?
 --------------------------------------
