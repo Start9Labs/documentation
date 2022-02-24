@@ -15,8 +15,8 @@ Due to the fact that config variables are only available when the service is run
   Service Properties
 
 
-.. code:: typescript
-  :caption: Properties Type
+.. code-block:: typescript
+    :caption: Properties Type
 
     interface Properties {
       version: Enum<v1 | v2>,

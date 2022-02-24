@@ -47,7 +47,7 @@ Claiming your Device
       :width: 60%
       :alt: Fresh Install
 
-    .. note:: The "Recover" button is used for :ref:`migrating from 0.2.x <migrate-02>` and :ref:`restoring from backup <backup-restore>`.
+    .. note:: The "Recover" button is used for :ref:`migrating from 0.2.x <upgrade-02>` and :ref:`restoring from backup <backup-restore>`.
 
 #. Select your storage drive. You should only have one drive plugged into your Embassy at this time, but always verify it is what you expect before clicking (such as, is it a 1TB drive?)
 

@@ -20,6 +20,7 @@ Hardware Requirements
 
 #. `SD card adapter <https://www.amazon.com/gp/product/B000WR3Z3A>`_ for getting data from your SD card.
 
+.. _migrate-02-instructions:
 Instructions
 ------------
 
@@ -46,6 +47,7 @@ Flashing
 
 .. tip:: The flashing software we recommend is `Balena Etcher <https://www.balena.io/etcher/>`_
 
+.. _migrate-02-migrate:
 Migrate Data
 ............
 
