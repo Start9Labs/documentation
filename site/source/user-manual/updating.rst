@@ -1,31 +1,59 @@
-.. _updates:
+.. _updating-eos:
 
-========
-Updating
-========
-
-Keeping current on Updates ensures a secure and performant system.
-
-.. _update-eos:
-
+==================
 Updating EmbassyOS
-------------------
+==================
 
-When an Operating System update is available, a big, beautiful banner will appear in the Marketplace as an announcement.  Simply click on this and follow the UI flow to update EmbassyOS.  It is recommended to keep EOS up to date for the latest security and performance patches, as well as to take advantage of new features.
+.. note:: EmbassyOS will **NEVER** update itself without your approval. But we highly recommended keeping EmbassyOS up to date for the latest security and performance patches, as well as to take advantage of new features.
 
-.. _auto-check-updates:
+How to Update
+-------------
 
-Enable Auto Check for Updates
------------------------------
+#. When a new version of EmbassyOS is available, a badge will appear on the "Embassy" tab.
+#. Go to *Embassy > Software Update*.
 
-#. Navigate to the ``Embassy`` tab -> ``Preferences``
-#. Click "Auto Check for Updates" and click Enable
-#. If there is an update available, you will be prompted to install it.
-#. While updating, your Embassy will emit a gentle chime every 20 seconds.
+    .. warning:: Ensure you have a stable Internet connection before beginning an OS update, and do not unplug your Embassy while EmbassyOS is downloading.
 
-.. note:: Ensure you have a stable Internet connection, and do not unplug your Embassy during an update. Updates usually complete within a few minutes, but depending on the size of the update and your Internet bandwidth, they can sometimes take up to an hour.
+#. Read the release notes and click "Begin Update".
+#. While the new version of EmbassyOS is downloading, you may continue to use your device as usual.
+#. Once the download is complete, you will be prompted to restart Embassy.
+#. After restart, you may be prompted to refresh the browser window.
 
-Manually Checking Updates
--------------------------
+Disabling Auto Check for Updates
+--------------------------------
 
-If you choose not to enable automatic update checks, service updates will still appear in the ``Updates`` tab of the Marketplace when ready.
+By default, Embassy will automatically check for available updates. To disable this check, do the following:
+
+#. Navigate to the *Embassy > Preferences*.
+#. Click "Auto Check for Updates" and click "Disable".
+
+    .. note:: With auth check for updates disabled, you will need to manually check for updates. This can be done by going to *Embassy > Software Update*.
+
+This guide will cover how to recover existing Embassy 0.3.x service and user data (on an SSD) to a new OS install (sd card).
+
+Manual Update by Re-flashing
+----------------------------
+
+#. Obtain the latest copy of EmbassyOS with your product key included, either by `downloading <https://images.start9/download>`_ or `building from source <https://github.com/Start9Labs/embassy-os/tree/master/build>`_.
+#. Flash the downloaded image to your microSD card.
+#. Insert the microSD card into your Embassy and power it on.
+
+    .. note:: Embassy will power up and then initialize, a process of less than 5 minutes if you purchased an image, or about 10-20 minutes if you built from source. Once complete you will hear a _bep_ to indicate it is initialized and then a _chime_ sound to indicate it is online.
+
+#. On your computer, open up a browser and go to http://embassy.local.
+#. When prompted, enter your Product Key:
+
+   .. figure:: /_static/images/setup/migrate0.png
+      :width: 60%
+
+#. Select "Recover".
+
+   .. figure:: /_static/images/setup/migrate1.png
+      :width: 60%
+
+#. Assuming you have you fully-intact EmbassyOS data drive plugged in, you will receive a popup declaring that a valid data drive has been detected. Click "Use Drive" from the pop-up. If you don't see the drive, you may get a message asking you to unplug, then plug back in the drive, and refresh the page.
+
+   .. figure:: /_static/images/setup/migrate3.png
+      :width: 60%
+
+@TODO get better image ^

@@ -4,95 +4,88 @@
 Initial Setup
 =============
 
-Powering On
------------
-
 Check out our quick setup video below, and follow along with the steps in this guide:
 
 .. youtube:: DmTlwp5_zvY
 
-1. Connect your Embassy to power and Internet, normally using an ethernet port on your home Internet router.
+Powering On
+-----------
 
-.. tip:: To avoid networking issues, it is recommended to use your primary router, not an extender or mesh router.
+#. Connect your Embassy to power and Ethernet.
 
-2. Plug in your external drive to one of the USB 3.0 (blue) ports on Embassy.
+    .. tip:: To avoid networking issues, it is recommended to use your `primary` router, not an extender or mesh router.
 
-Embassy will initialize, which may take 10-15min.  You will hear 2 distinct sounds:
+#. Insert your external drive to one of the blue USB 3.0 ports on Embassy.
 
-* "bep" - Starting up
-* "chime" - Embassy is ready
+#. You will hear 2 distinct sounds:
 
-Connecting
-----------
+    * "bep" - Starting up
+    * "chime" - Embassy is ready
+  
+    .. caution:: If you followed the DIY guide and built EmbassyOS from source code, it may take up to 20 minutes to first initialize.
 
-1. Ensure the device you are using (desktop/laptop or mobile) is connected to the same network as your router.
+Claiming your Device
+--------------------
 
-.. caution:: Sometimes a router will have a "guest WiFi network," which might be different than the network your Embassy is placed on via ethernet.
+#. Ensure the device you are using (desktop/laptop or mobile) is connected to the same network as your Embassy.
 
-2. Visit ``embassy.local`` from your web browser. You will be prompted to enter your :ref:`Product Key<product-key>`.  This is found on the bottom side of your device.
+    .. caution:: Sometimes a router will have a "guest WiFi network," which might be different than the network your Embassy is placed on via ethernet.
 
-.. figure:: /_static/images/setup/setup0.png
-    :width: 60%
-    :alt: Enter Product Key
+#. Visit http://embassy.local from your web browser. You will be prompted to enter your :ref:`Product Key<product-key>`. If you purchased a device from Start9, your Product Key is engraved on the bottom of your device.
 
-.. admonition:: Explanation
-    :class: toggle expand
+    .. figure:: /_static/images/setup/setup0.png
+      :width: 60%
+      :alt: Enter Product Key
 
-    The product key is used to discover your Embassy's IP address on the Local Area Network using a hashing function and a protocol named :ref:`MDNS (or Zeroconf) <mdns>`.
+    .. note::
 
-3. Next, select "Start Fresh" if this is your first time using an Embassy.  If you'd like to "Recover" from an existing Embassy, please follow the guide for :ref:`versions 0.2.x <migrate-02>` or :ref:`versions 0.3.x <backup-restore>`.
+      The product key is used to discover your Embassy's IP address on the Local Area Network using a hashing function and a protocol named :ref:`MDNS (or Zeroconf) <mdns>`.
 
-.. figure:: /_static/images/setup/setup1.png
-    :width: 60%
-    :alt: Fresh Install
+#. Select "Start Fresh"
 
-4. Select your storage drive.  You should only have one drive plugged into your Embassy at this time, but always verify it is what you expect before clicking (such as, is it a 1TB drive?)
+    .. figure:: /_static/images/setup/setup1.png
+      :width: 60%
+      :alt: Fresh Install
 
-.. figure:: /_static/images/setup/setup2.png
-    :width: 60%
-    :alt: Select Drive
+    .. note:: The "Recover" button is used for :ref:`migrating from 0.2.x <migrate-02>` and :ref:`restoring from backup <backup-restore>`.
 
-5. Create your *permanent* master password and complete setup.
+#. Select your storage drive. You should only have one drive plugged into your Embassy at this time, but always verify it is what you expect before clicking (such as, is it a 1TB drive?)
 
-.. figure:: /_static/images/setup/setup3.png
-    :width: 60%
-    :alt: Enter a New Password
+    .. figure:: /_static/images/setup/setup2.png
+      :width: 60%
+      :alt: Select Drive
 
-.. admonition:: Explanation
-    :class: toggle expand
+#. Create your *permanent* master password and click "Finish".
 
-    In this step, the setup process will provide your Embassy with three pieces of critical information:
+    .. warning:: There is currently no way to change your password. Choose a strong master password. Write it down. Store it somewhere safe. DO NOT LOSE IT. If you lose this password, you may be forced to reset the device, resulting in permanent loss of data.  **This one responsibility is the price of sovereignty.**
 
-    * An ed25519 private key. Used by the Embassy to create a .onion public address for encrypted and anonymous communication over Tor.
-    * A 4096 bit RSA private key. Used by the Embassy to create a SSL certificate for encrypted communication over LAN.
-    * A master password. Used by the Embassy to authenticate you as its owner.
+    .. figure:: /_static/images/setup/setup3.png
+      :width: 60%
+      :alt: Enter a New Password
 
-    All three secrets are packaged together and transmitted to the Embassy encrypted with its :ref:`Product Key<product-key>`.
+#. Your Embassy is now a private website on the private web! Continue to the section on :ref:`connecting` to learn more about using your Embassy over Tor and LAN.
 
-.. warning:: There is also currently no way to change your password. Choose a strong master password. Write it down. Store it somewhere safe. DO NOT LOSE IT. If you lose this password, you may be forced to reset the device, resulting in permanent loss of data.  **This one responsibility is the price of sovereignty.**
+    .. tip:: Click "Download This Page" to save your Embassy address and certificate info on your computer.
 
-6. That's it!
-
-.. figure:: /_static/images/setup/setup4.png
-    :width: 60%
-    :alt: Setup Complete
-
-Your Embassy is now hosted on the private web!  After setup is complete you will be presented with connection information.  You can view and manage your Embassy by visiting its unique Tor Address from any Tor-enabled browser, or by accessing it's ``.local`` address from your LAN (see :ref:`LAN Setup<lan-setup>` for assistance).
+    .. figure:: /_static/images/setup/setup4.png
+      :width: 60%
+      :alt: Setup Complete
 
 Troubleshooting
 ---------------
 
-Try these steps if you have any issues with setup.
+If you are experiencing issues with setup, try the following:
 
-    #. Confirm that the Embassy is plugged into both power and Ethernet, with the USB drive in a USB 3.0 (blue) slot.
-    #. Confirm the Embassy emitted two sounds when powering on: a bep and a chime.
-    #. Confirm you are entering the product key correctly and exactly.
-    #. Confirm your device you are using is not connected to a "Guest" network
-    #. Confirm your device is not using a VPN.
-    #. Try to refresh the ``embassy.local`` page.
-    #. Very rarely, a router may not support mDNS. In this case:
+#. Confirm that the Embassy is plugged into both power and Ethernet
+#. Confirm your SSD is plugged into one of the blue USB 3.0 slots.
+#. Confirm the Embassy emitted two sounds when powering on: a bep and a chime.
+#. Confirm you are entering the correct product key.
+#. Confirm your connecting device is **not** connected to a "Guest" network.
+#. Confirm your connecting device is not using a VPN.
+#. Refresh the embassy.local browser page.
+#. Very rarely, a router may not support mDNS. In this case:
 
     - On your desktop or laptop computer, navigate to your router configuration settings within the browser. This is usually an IP address such as 192.168.1.1. A simple web search will usually reveal how to access the router configuration settings for a particular brand.
     - Once in the router config settings, find the section that lists the devices on your network. You should see an item labeled "embassy". Take note of the associated IP address and enter it into your browser's URL field to enter the setup.
 
-If you are still having issues, please reach out to us for :ref:`Assistance<contact>`.
+If you are still having issues, please :ref:`contact support <contact>`.

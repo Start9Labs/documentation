@@ -12,7 +12,7 @@ If you still cannot connect, you can log into your router (the directions for wh
 
 I am unable to reach Embassy via it's ``embassy-xxxxxxxx.local`` (LAN) address
 ------------------------------------------------------------------------------
-Make sure you have successfully followed the :ref:`LAN Setup<lan-setup>` instructions for your device.  If you still cannot connect, make sure you are on the same network using the solution above.  If you are able to visit your Embassy via its IP address, then something is wrong in your LAN Setup.  Keep in mind that different devices have different methods of resolving ``.local`` addresses, and some devices, such as :ref:`Android<lim-android>`, lack the ability at an OS level.
+Make sure you have successfully followed the :ref:`LAN Setup<connecting-lan>` instructions for your device.  If you still cannot connect, make sure you are on the same network using the solution above.  If you are able to visit your Embassy via its IP address, then something is wrong in your LAN Setup.  Keep in mind that different devices have different methods of resolving ``.local`` addresses, and some devices, such as :ref:`Android<lim-android>`, lack the ability at an OS level.
 
 I am unable to reach Embassy via it's ``xxxxxxxxxxxxxxxxxx.onion`` (Tor) address
 --------------------------------------------------------------------------------

@@ -1,15 +1,15 @@
 .. _cifs-setup:
 
-=======================
-LAN Shared Folder Setup
-=======================
+============================
+Creating a LAN Shared Folder
+============================
 
-Click your platform for detailed instructions on how to create a Shared Network Folder on your local network (:ref:`LAN<lan>`).
+Click your platform for detailed instructions on how to create a LAN Shared Folder for creating backups.
 
 .. toctree::
   :maxdepth: 2
 
-  cifs-linux
-  cifs-mac
-  cifs-windows
-  cifs-synology
+  Linux <cifs-linux>
+  Mac <cifs-mac>
+  Windows <cifs-windows>
+  Synonogy <cifs-synology>

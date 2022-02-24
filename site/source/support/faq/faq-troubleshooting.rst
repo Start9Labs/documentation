@@ -32,7 +32,7 @@ This is most likely a transient networking issue that will correct itself in a f
 
 1. On Android/Orbot, the most common solution is to restart your Android device.
 
-2. Access your Embassy over :ref:`LAN <lan-setup>`, and restart it from the "Embassy" menu.
+2. Access your Embassy over :ref:`LAN <connecting-lan>`, and restart it from the "Embassy" menu.
 
 3. Restart your router.
 

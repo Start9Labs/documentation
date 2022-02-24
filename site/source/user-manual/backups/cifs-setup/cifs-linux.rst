@@ -1,10 +1,8 @@
 .. _cifs-linux:
 
-=====
-Linux
-=====
-
-The following will guide you through the prerequisite configuration to backup to a Linux machine or an external drive that is attached to a Linux machine.
+=====================================
+Creating a LAN Shared Folder on Linux
+=====================================
 
 .. tabs::
 

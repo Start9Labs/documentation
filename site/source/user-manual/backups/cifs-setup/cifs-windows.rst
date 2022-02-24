@@ -1,10 +1,8 @@
 .. _cifs-windows:
 
-=======
-Windows
-=======
-
-The following will guide you through the prerequisite configuration to backup to a Windows machine or an external drive that is attached to a Windows machine.
+=======================================
+Creating a LAN Shared Folder on Windows
+=======================================
 
 #. Create a folder
 

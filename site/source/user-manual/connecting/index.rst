@@ -11,22 +11,22 @@ Connecting
   <div class="grid-x grid-margin-x">
 
 .. topic-box::
-  :title: LAN
-  :link: lan-setup
+  :title: Connecting Over LAN
+  :link: connecting-lan
   :icon: scylla-icon scylla-icon--home
   :class: large-5
   :anchor: Setup
 
-  Connect to Embassy over your Local Area Network.
+  Local Area Network connections are fast and secure and do not even require Internet access.
 
 .. topic-box::
-  :title: Tor
-  :link: tor-setup
+  :title: Connecting Over Tor
+  :link: connecting-tor
   :icon: scylla-icon scylla-icon--tor
   :class: large-5
   :anchor: Setup
 
-  Connect to Embassy over the Tor network.
+  Leverage Tor to connect to your Embassy privately and anonymously from anywhere in the world.
 
 .. raw:: html
 
@@ -36,5 +36,5 @@ Connecting
    :maxdepth: 2
    :hidden:
 
-   lan-setup/index
-   tor-setup/index
+   Lan <connecting-lan/index>
+   Tor <connecting-tor/index>

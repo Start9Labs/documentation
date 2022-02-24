@@ -38,7 +38,7 @@ The server-side software available on EmbassyOS are referred to as "Services."  
 
 Session
 -------
-A session is simply a logged-in connection to your Embassy.  You can view your :ref:`Active Sessions<active-sessions>`, and kill one if you suspect it is not legitimate, or no longer use it.
+A session is simply a logged-in connection to your Embassy.  You can view your :ref:`Active Sessions<session-management>`, and kill one if you suspect it is not legitimate, or no longer use it.
 
 .. _service-container:
 
@@ -72,7 +72,7 @@ In EmbassyOS versions 0.2.x, each installed service received its own Tor hidden 
 
 Certain services, such as Bitcoin, actually have multiple interfaces. Bitcoin has an RPC interface, a P2P interface, and could potentially even have a graphical interface, such as a dashboard displaying important node information. Using the same URL for these various interfaces is not only confusing, it could potentially pose a security vulnerability. For example, a user may want to share their P2P interface address with someone for peering but not want to give out their UI address, which is for private use only.
 
-As such, EmbassyOS 0.3.0 permits services to have multiple interfaces, each receiving its own Tor address and/or LAN address. Users can then view and access all interfaces for a given service inside the new :ref:`Interfaces <service-interfaces>` section of the service dashboard.
+As such, EmbassyOS 0.3.0 permits services to have multiple interfaces, each receiving its own Tor address and/or LAN address. Users can then view and access all interfaces for a given service inside the "Interfaces" section of the service dashboard.
 
 
 .. _health-checks:
