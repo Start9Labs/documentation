@@ -1,6 +1,11 @@
 #!/bin/bash
 set -e
 
+if [ "$0" != "./_utils/deploy_staging.sh" ]; then
+	>&2 echo "Must be run from site directory"
+	exit 1
+fi
+
 echo "FILTER: make multiversion"
 make clean && make multiversion
 
