@@ -11,12 +11,55 @@ Embassy
 Embassy is the plug 'n' play hardware device sold by Start9.  The current iteration is a Raspberry Pi with an internal speaker in a custom, passively cooled case.  The Embassy comes pre-loaded with EmbassyOS.  Check out the video below to get a brief overview:
 
 .. youtube:: GfMvXJxYamw
+    :width: 100%
 
 .. _embassy-os:
 
 EmbassyOS
 ---------
 EmbassyOS (EOS) is a Linux-based operating system custom built for self-hosting open source software.  EOS has a range of features that allow anyone to run their own server software without needing all the traditionally required systems administration skills.  Advanced dependency management, sensibly defaulted configuration with customization, and minimal reliance on the developers are just a few; all wrapped into a sleek GUI that anyone can operate.  No command line required!
+
+.. _sounds:
+
+Embassy Sounds
+--------------
+EmbassyOS emits several sounds for user feedback and troubleshooting.  Below are the current possible sounds and their meaning:
+
+    .. raw:: HTML
+
+      <audio controls>
+        <source src="/_static/sounds/BEP.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    * "bep" - Starting up
+
+    .. raw:: HTML
+
+      <audio controls>
+        <source src="/_static/sounds/CHIME.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    * "chime" - Embassy is ready
+
+    .. raw:: HTML
+
+      <audio controls>
+        <source src="/_static/sounds/SHUTDOWN.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    * "shutdown" - Embassy is shutting down
+
+    .. raw:: HTML
+
+      <audio controls>
+        <source src="/_static/sounds/BEETHOVEN.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    * "Beethoven" - An error has occurred - check your Notifications for more info, or :ref:`Contact Support<contact>`
 
 .. _product-key:
 

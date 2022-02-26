@@ -39,7 +39,7 @@ Once Tor is setup on your system, you can proceed to setup Firefox:
     :width: 50%
     :alt: Firefox socks remote dns setting screenshot
 
-7. Search for ``dom.securecontext.whitelist_onions`` and set the value to ``true``.
+7. Search for ``dom.securecontext.allowlist_onions`` and set the value to ``true``.  On some older versions, this may be called ``dom.securecontext.whitelist_onions``.
 
   .. figure:: /_static/images/tor/firefox_whitelist_mobile.png
     :width: 50%

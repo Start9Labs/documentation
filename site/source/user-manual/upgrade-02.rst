@@ -33,6 +33,7 @@ Backing up
 If you're unsure how to do this - please follow `this <https://youtube.com/watch?v=_QJXgnE90ko>`_ guide.
 
 .. youtube:: _QJXgnE90ko
+   :width: 100%
 
 With your Embassy safely backed up, it's time to proceed with the migration.
 

@@ -13,6 +13,7 @@ How can I get started with Lightning and open my first channel?
 You can check out our `"Using Lightning" video <https://www.youtube.com/watch?v=rAvoUNsobws>`_ and learn the basics, including opening a channel with Start9.
 
 .. youtube:: KhU_sTiaN8w
+    :width: 100%
 
 Please remember to always open a "Private" channel with us, or your channel is likely to be closed.  Please don't hesitate to reach out to us with any questions.
 

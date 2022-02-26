@@ -7,6 +7,7 @@ Lightning
 Check out our `Getting Started with Lightning video <https://www.youtube.com/watch?v=KhU_sTiaN8w>`_ for an introduction to the Lightning Network using LND and RTL on Embassy!
 
     .. youtube:: KhU_sTiaN8w
+        :width: 100%
 
 .. _blue-wallet-lightning:
 

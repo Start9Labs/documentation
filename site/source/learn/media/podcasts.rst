@@ -7,6 +7,14 @@ Podcasts
 Podcasts featuring Start9 Labs and/or Embassy
 
 .. topic-box::
+    :title: February 24, 2022 - SLP352 Matt Hill
+    :link: https://stephanlivera.com/episode/352/
+    :image: https://i0.wp.com/stephanlivera.com/wp-content/uploads/2022/02/SLP352-WP-Thumbnail.png
+    :anchor: Stephan Livera Podcast
+
+    EmbassyOS & Making Self-Sovereignty Tech Cheaper Than The Alternatives
+
+.. topic-box::
     :title: January 25, 2022 - On The Record with Start9
     :link: https://www.youtube.com/watch?v=jMV_DWAMtmc
     :image: https://i3.ytimg.com/vi/jMV_DWAMtmc/maxresdefault.jpg

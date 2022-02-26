@@ -9,7 +9,7 @@ Vaultwarden
 Check out our `Vaultwarden video <https://www.youtube.com/watch?v=YcxxVHpm9j0>`_ for basic features and setup!
 
     .. youtube:: YcxxVHpm9j0
-
+        :width: 100%
 
 Web Vault
 ---------
@@ -89,12 +89,12 @@ Mac
 
 #. LAN
     #. First, be sure to :ref:`Setup LAN <lan-mac>` natively.
-    
+
     #. For LAN access, follow the LAN setup in the instructions below.  After completing setup, simply open Bitwarden and add your LAN address in the 'Settings' and login.
 
 #. Tor
     #. First, be sure to :ref:`Setup Tor <tor-mac>` natively.
-    
+
     #. Run the program with the flag ` --proxy-server=socks5://127.0.0.1:9050` behind it.  You can run this from a terminal, and if you'd like to use a shortcut, edit that shortcut file to include the flag.
 
 #. You can now log in to your vault.

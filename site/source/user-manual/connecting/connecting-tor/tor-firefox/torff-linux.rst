@@ -9,7 +9,7 @@ Configuring Firefox for Tor on Linux
 
 #. Open Firefox and enter ``about:config`` in the URL bar. Accept any warnings that may appear about accessing advanced settings.
 
-#. Search for ``dom.securecontext.whitelist_onions`` and set the value to ``true``.
+#. Search for ``dom.securecontext.allowlist_onions`` and set the value to ``true``.  On some older versions, this may be called ``dom.securecontext.whitelist_onions``.
 
     .. figure:: /_static/images/tor/firefox_whitelist.png
       :width: 60%

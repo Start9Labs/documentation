@@ -7,6 +7,7 @@ Initial Setup
 Check out our quick setup video below, and follow along with the steps in this guide:
 
 .. youtube:: DmTlwp5_zvY
+  :width: 100%
 
 Powering On
 -----------
@@ -19,9 +20,24 @@ Powering On
 
 #. You will hear 2 distinct sounds:
 
+    .. raw:: HTML
+
+      <audio controls>
+        <source src="/_static/sounds/BEP.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
     * "bep" - Starting up
+
+    .. raw:: HTML
+
+      <audio controls>
+        <source src="/_static/sounds/CHIME.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
     * "chime" - Embassy is ready
-  
+
     .. caution:: If you followed the DIY guide and built EmbassyOS from source code, it may take up to 20 minutes to first initialize.
 
 Claiming your Device

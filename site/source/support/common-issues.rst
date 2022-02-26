@@ -23,7 +23,7 @@ During initial setup, I am unable to connect to "embassy.local".
 
 * Confirm that your Embassy is plugged into both power and Ethernet.
 
-* Confirm the Embassy emitted two sounds when powering on: a bep and a chime.
+* Confirm the Embassy emitted two :ref:`sounds<sounds>` when powering on: a bep and a chime.
 
 * Confirm your phone is **not** connected to a “Guest” network
 

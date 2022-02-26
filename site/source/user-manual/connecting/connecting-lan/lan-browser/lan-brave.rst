@@ -24,6 +24,12 @@ Trust Embassy CA in Brave
         :width: 60%
         :alt: Brave Security settings page
 
+#. Click the "Authorities" tab
+
+    .. figure:: /_static/images/ssl/browser/brave-authorities.png
+        :width: 60%
+        :alt: Certificate Authorities
+
 #. If you see "org-Start9" with a trusted “Embassy Local Root CA” listed under it, open a new tab to apply the certificate. If this does not work, quit and restart Brave.
 
 #. If you do not see "org-Start9" in the list, click "Import" and open the downloaded "Embassy Local Root CA.crt" file on your device. Check the box for "Trust this certificate for identifying websites" and click "OK".

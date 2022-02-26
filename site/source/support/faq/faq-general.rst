@@ -31,6 +31,7 @@ When you install Bitwarden on your Embassy, by contrast, it's like building your
 This `podcast <https://www.youtube.com/watch?v=aylDowaSdzU>`_ may help expound upon why this is important.
 
 .. youtube:: aylDowaSdzU
+    :width: 100%
 
 How does Embassy work?
 ----------------------
@@ -57,7 +58,7 @@ EmbassyOS is a custom-built Linux distribution, which is a beefed up version of 
 * Upgrade your Embassy software with the latest features and security updates
 * Backup services, and restore from backups if needed
 
-It includes: 
+It includes:
 
 * a custom application management layer, specialized for installing, running, and backing up .s9pk packaged services
 * a layer responsible for Embassy specific operations, such as Tor, Backups, and Notifications

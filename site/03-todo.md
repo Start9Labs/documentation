@@ -5,7 +5,6 @@
 - Lightning Guides (Zeus)
 - Vaultwarden guide (screens)
 - Refactor and update Roadmap
-- BLOCKED: Possible sounds in troubleshooting (and link in overview / upgrade pages)
 
 # AFTER PUBLISHING:
 - Add any new video content

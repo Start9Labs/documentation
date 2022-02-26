@@ -10,6 +10,7 @@ On first install, the Bitcoin service must verify the entire history of transact
 You can learn more about the Initial Block Download in `this video <https://www.youtube.com/watch?v=OrYDehC-8TU>`_.
 
 .. youtube:: OrYDehC-8TU
+    :width: 100%
 
 Can the IBD (Initial Block Download) be made faster?  Or can wait times be improved?
 ------------------------------------------------------------------------------------
@@ -56,7 +57,7 @@ Bitcoin Core is a full node that also contains wallet functionality.  Some will 
 You can use the wallet in Bitcoin Core, however it is for advanced users and is only available in the command line via SSH.
 
 It is helpful to think of the Bitcoin Core service on the Embassy as your own personal Bitcoin Server. This is your own verified source of truth of the Bitcoin ledger, that requires no permission for you to set up and own. The job of your Bitcoin server is to verify that the transactions you want to make and receive are valid.
-There are modern wallets that have the ability to use your personal Bitcoin node as a source of truth, and with the advantages of additional security and advanced features. This also follows the Linux mantra of "do one thing and do it well."  The recommended way to use Bitcoin with your Embassy’s Bitcoin node is with an external wallet.  
+There are modern wallets that have the ability to use your personal Bitcoin node as a source of truth, and with the advantages of additional security and advanced features. This also follows the Linux mantra of "do one thing and do it well."  The recommended way to use Bitcoin with your Embassy’s Bitcoin node is with an external wallet.
 The available wallets are listed in the following FAQ.
 
 Which wallets can I use that sync with my Embassy Bitcoin and/or Lightning nodes?
