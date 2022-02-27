@@ -7,7 +7,7 @@ Upgrading from 0.2.x with an Upgrade Kit
 This guide will cover how to upgrade from EmbassyOS version 0.2.x to version 0.3.0.
 
 .. note::
-   If you purchased your own equipment please follow :ref:`this guide<upgrade-02>`. 
+   If you purchased your own equipment please follow :ref:`this guide<upgrade-diy>`. 
 
 .. _migrate-02-instructions:
 

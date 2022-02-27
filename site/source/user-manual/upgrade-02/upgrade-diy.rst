@@ -1,10 +1,10 @@
-.. _upgrade-02:
+.. _upgrade-diy:
 
-====================
-Upgrading from 0.2.x
-====================
+================================
+Upgrading with your own hardware
+================================
 
-This guide will cover how to upgrade from EmbassyOS version 0.2.x to version 0.3.0.
+This guide will cover how to upgrade from EmbassyOS version 0.2.x to version 0.3.0 with your own equipment.
 
 Hardware Requirements
 ---------------------
