@@ -15,4 +15,4 @@ Click your platform for detailed instructions on how to create a LAN Shared Fold
   Mac LAN Shared Folder <backup-mac>
   Windows  LAN Shared Folder <backup-windows>
   Synology  LAN Shared Folder <backup-synology>
-  Secondary Embassy Drive <backup-physical>
+  Physical Drive via Embassy <backup-physical>

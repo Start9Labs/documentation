@@ -1,8 +1,8 @@
 .. _backup-physical:
 
-================================
-Backup to Powered Physical Drive
-================================
+========================
+Backup to Physical Drive
+========================
 
 .. warning:: Create frequent backups to avoid loss of data!
 
