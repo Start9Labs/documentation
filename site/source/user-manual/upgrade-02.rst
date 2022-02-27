@@ -10,7 +10,7 @@ Hardware Requirements
 ---------------------
 
 .. note::
-   If you purchased the `upgrade kit <https://store.start9.com/collections/embassy/products/upgrade-kit>`_ from Start9, you can skip to :ref:`Instructions <migrate-02-instructions>`.
+   If you purchased the `upgrade kit <https://store.start9.com/collections/embassy/products/upgrade-kit>`_ from Start9, you should follow :ref:`this guide<upgrade-kit>`.
 
 #. `16GB microSD card <https://www.amazon.com/Sandisk-Ultra-Micro-UHS-I-Adapter/dp/B073K14CVB/>`_
 
@@ -39,9 +39,6 @@ With your Embassy safely backed up, it's time to proceed with the migration.
 
 Flashing
 ........
-
-.. note::
-   If you purchased the `upgrade kit <https://store.start9.com/collections/embassy/products/upgrade-kit>`_ from Start9, you can skip to :ref:`Migrate <migrate-02-migrate>`.
 
 #. Once you have all these you will need to download an 0.3.0 image from https://images.start9.com. This is free for all existing users. Anyone who is running 0.2.x who compiled it themselves will need to either compile 0.3.0 themselves or purchase an 0.3.0 image.
 
@@ -73,7 +70,7 @@ Power Up
 
 #. On your computer, open up a browser and go to http://embassy.local
 
-#. You will be asked to enter a product key.  This can be located on the bottom of your Embassy if you purchased, or in the repository folder if you built from source.
+#. You will be asked to enter your product key.  This can be located on the bottom of your Embassy if you purchased, or in the repository folder if you built from source.
 
    .. figure:: /_static/images/setup/migrate0.png
       :width: 60%
