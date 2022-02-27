@@ -1,8 +1,8 @@
 .. _upgrade-kit:
 
-========================================
-Upgrading from 0.2.x with an Upgrade Kit
-========================================
+======================
+Setup with Upgrade Kit
+======================
 
 This guide will cover how to upgrade from EmbassyOS version 0.2.x to version 0.3.0.
 
