@@ -1,9 +1,7 @@
-# TODO
-- CIFS/LAN OS guides (screens)
-- Fontawesome - Tor box (connecting) needs icon - device guides need OS icons
+- CIFS (mac/lin screens)
 - Initial Setup Video
-- Lightning Guides (Zeus)
 - Vaultwarden guide (screens)
+- Lightning Guides (Zeus)
 - Refactor and update Roadmap
 
 # AFTER PUBLISHING:
@@ -12,3 +10,4 @@
 - Create badges for device guide topic boxes <connectivity, performance, resilience and/or tuning>
 - Migrate from other server projects / nodes (currently punted)
 - Alt Market Build Guide (punted)
+- Fontawesome

@@ -13,31 +13,31 @@ In addition to safekeeping of a good master password, maintaining good backups a
   <div class="grid-x grid-margin-x">
 
 .. topic-box::
-  :title: Create Backup
+  :title: Setup Backups
+  :link: backup-setup
+  :icon: scylla-icon scylla-icon--comparison
+  :class: large-5
+  :anchor: Setup
+
+  Setup a Shared Network Folder on a desktop, laptop, or drive on your local network.
+
+.. topic-box::
+  :title: Backup
   :link: backup-create
-  :icon: scylla-icon scylla-icon--memory-management
+  :icon: scylla-icon scylla-icon--cloud
   :class: large-5
   :anchor: View
 
   Create an encrypted backup of Embassy.
 
 .. topic-box::
-  :title: Restore from Backup
+  :title: Restore
   :link: backup-restore
-  :icon: scylla-icon scylla-icon--comparison
+  :icon: scylla-icon scylla-icon--live-test
   :class: large-5
   :anchor: View
 
   Restore Embassy from a previous backup.
-
-.. topic-box::
-  :title: LAN Shared Folder Setup
-  :link: cifs-setup/index
-  :icon: scylla-icon scylla-icon--networking
-  :class: large-5
-  :anchor: Setup
-
-  Setup a Shared Network Folder on a desktop, laptop, or drive on your local network.
 
 .. raw:: html
 
@@ -47,6 +47,6 @@ In addition to safekeeping of a good master password, maintaining good backups a
   :maxdepth: 1
   :hidden:
 
+  backup-setup/index
   backup-create
   backup-restore
-  cifs-setup/index
