@@ -9,13 +9,8 @@ This guide will cover how to upgrade from EmbassyOS version 0.2.x to version 0.3
 .. note::
    If you purchased your own equipment please follow :ref:`this guide<upgrade-diy>`. 
 
-.. _migrate-02-instructions:
-
-Instructions
-------------
-
 Backing up
-..........
+----------
 
 .. caution:: It is prudent to back up your Embassy before migrating in case something doesn't work correctly, or there is an accident
 
@@ -27,7 +22,12 @@ If you're unsure how to do this - please follow `this <https://youtube.com/watch
 With your Embassy safely backed up, it's time to proceed with the migration.
 
 Migrating Data
-..............
+--------------
+
+You may like to follow along with this video for clarity while migrating:
+   .. youtube:: 2yXgkni95mg
+      :width: 100%
+
 
 #. Begin by going into your Embassy, stopping all running services, and shutting down the device in the Embassy tab.
 
@@ -42,11 +42,11 @@ Migrating Data
 #. Now the power cable can be connected and the Embassy powered up.
 
 Power Up
-........
+--------
 
 #. Embassy will power up and then initialize, a process of less than 5 minutes. Once complete you will hear a _bep_ to indicate it is initialized and then a _chime_ sound to indicate it is online.
 
-#. On your computer, open up a browser and go to http://embassy.local
+#. On your computer, open up a browser and go to https://embassy.local
 
 #. You will be prompted that your drive and your SD card reader needed to be reconfigured and asked to unplug them and replug them into your Embassy. Please do this and hit refresh.
 

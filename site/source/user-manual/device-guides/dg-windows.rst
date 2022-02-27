@@ -11,4 +11,4 @@ To optimize your device for use with your Embassy, it is recommended to complete
 * :ref:`lan-windows` - Trust your Embassy's Root Certificate Authority in order to securely connect over LAN.
 * :ref:`tor-windows` - Run Tor natively (in the background) on your Windows computer. This will allow you to use applications on your machine via the Tor Network so they can communicate with your Embassy.
 * :ref:`torff-windows` - Configure Firefox to use the Tor Network so that you can reach ".onion" sites without needing to change browsers.
-* :ref:`cifs-windows` - Configure a LAN Shared Folder on your Windows computer (or an external drive plugged into your Windows computer) in order to use it for Embassy backups.
+* :ref:`backup-windows` - Configure a LAN Shared Folder on your Windows computer (or an external drive plugged into your Windows computer) in order to use it for Embassy backups.

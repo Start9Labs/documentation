@@ -4,7 +4,7 @@
 Backups
 =======
 
-In addition to safekeeping of a good master password, maintaining good backups are among the few major responsibilities required to keep the benefits and freedom that come with self-hosting.
+In addition to the safe-keeping of a good master password, maintaining good backups is the major responsibility required to keep the benefits and freedom that come with self-hosting.
 
 .. raw:: html
 
@@ -19,25 +19,25 @@ In addition to safekeeping of a good master password, maintaining good backups a
   :class: large-5
   :anchor: Setup
 
-  Setup a Shared Network Folder on a desktop, laptop, or drive on your local network.
+  Choose your backup method and initialize it here first.
 
 .. topic-box::
-  :title: Backup
+  :title: Create Backup
   :link: backup-create
   :icon: scylla-icon scylla-icon--cloud
   :class: large-5
-  :anchor: View
+  :anchor: Backup
 
-  Create an encrypted backup of Embassy.
+  Create an encrypted backup of your Embassy data.
 
 .. topic-box::
-  :title: Restore
+  :title: Restore From Backup
   :link: backup-restore
   :icon: scylla-icon scylla-icon--live-test
   :class: large-5
-  :anchor: View
+  :anchor: Restore
 
-  Restore Embassy from a previous backup.
+  Restore your Embassy data from a previous backup.
 
 .. raw:: html
 

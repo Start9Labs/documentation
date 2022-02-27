@@ -4,7 +4,12 @@
 Backup to Mac
 =============
 
-Use this guide to setup a shared folder on your Mac, such that you may create encrypted, private backups of all your Embassy data.
+.. warning:: Create frequent backups to avoid loss of data!
+    
+Use this guide to setup a LAN Shared Folder on your Mac (or attached drive), such that you may create encrypted, private backups of all your Embassy data.
+
+Setup LAN Shared Folder
+-----------------------
 
 #. Go to system settings
 
@@ -24,6 +29,29 @@ Use this guide to setup a shared folder on your Mac, such that you may create en
 
 #. Enter your macbook username and password for the user that you enabled windows file sharing for
 
-That's it!  You can now create encrypted, private "cloud" backups of all your Embassy data to your Mac!!
+Connect Embassy
+---------------
 
-.. tip:: Keeping a strong password and making regular backups are the humble responsibilities of digital independence, remain ever vigilant!
+#. Go to *Embassy > Create Backup*.
+
+    .. figure:: /_static/images/config/embassy_backup.png
+        :width: 60%
+
+#. Click "Open".
+
+    .. figure:: /_static/images/config/embassy_backup0.png
+        :width: 60%
+
+#. Fill in the following fields:
+
+    * Hostname - This is the hostname of the machine that your shared folder is located on
+    * Path - This is the *name of the shared folder* you are using and **not** the full directory path
+    * Username - This is the user on the remote machine that you used to create the shared directory
+    * Password - This is your user (from above) password
+
+    .. figure:: /_static/images/config/embassy_backup1.png
+        :width: 60%
+
+#. Click "Save".
+
+That's it!  You can now create encrypted, private backups of all your Embassy data to your Mac or external drive!!

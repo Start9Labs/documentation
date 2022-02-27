@@ -1,10 +1,10 @@
 .. _backup-restore:
 
-=======
-Restore
-=======
+===================
+Restore From Backup
+===================
 
-#. Go to "Embassy" > "Restore From Backup".
+#. Go to *Embassy > Restore From Backup*.
 
     .. figure:: /_static/images/config/restore0.png
         :width: 60%

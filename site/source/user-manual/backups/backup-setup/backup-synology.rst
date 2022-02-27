@@ -1,10 +1,15 @@
-.. _cifs-synology:
+.. _backup-synology:
 
 ==================
 Backup to Synology
 ==================
 
+.. warning:: Create frequent backups to avoid loss of data!
+    
 .. note:: This guide was created by a Start9 community member.  This is not yet officially supported.  Please report any feedback that may help improve the process.
+
+Setup LAN Shared Folder
+-----------------------
 
 #. In Synology UI, go to *Control Panel > Shared Folder* and select the folder you want to use. Click "Permissions" and make sure you have read/write permissions for the user you're going to be logging in as. Click "Save".
 
@@ -16,4 +21,29 @@ Backup to Synology
 
 #. Back in Synonogy UI, click "File Station" and navigate so that you can see the the desired destination folder. Right click the folder, then *Properties > General*. Next to "Location" will be a folder location of the format ///, the / portion (so without the volume label) is the "Path" within the Embassy New Shared Folder dialog.
 
-.. tip:: Keeping a strong password and making regular backups are the humble responsibilities of digital independence, remain ever vigilant!
+Connect Embassy
+---------------
+
+#. Go to *Embassy > Create Backup*.
+
+    .. figure:: /_static/images/config/embassy_backup.png
+        :width: 60%
+
+#. Click "Open".
+
+    .. figure:: /_static/images/config/embassy_backup0.png
+        :width: 60%
+
+#. Fill in the following fields:
+
+    * Hostname - This is the hostname of the machine that your shared folder is located on
+    * Path - This is the "Share Name" (name of the share in your samba config) and **not** the full directory path
+    * Username - This is the user on the remote machine that you used to create the shared directory
+    * Password - This is your user (from above) password
+
+    .. figure:: /_static/images/config/embassy_backup1.png
+        :width: 60%
+
+#. Click "Save".
+
+That's it!  You can now create encrypted, private backups of all your Embassy data to your Linux machine or external drive!!
