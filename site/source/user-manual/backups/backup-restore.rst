@@ -1,8 +1,8 @@
 .. _backup-restore:
 
-==============
-Backup Restore
-==============
+=======
+Restore
+=======
 
 #. Go to *Embassy > Restore From Backup*.
 

@@ -22,7 +22,7 @@ Connecting
 .. topic-box::
   :title: Connecting Over Tor
   :link: connecting-tor
-  :icon: scylla-icon scylla-icon--tor
+  :icon: scylla-icon scylla-icon--networking
   :class: large-5
   :anchor: Setup
 

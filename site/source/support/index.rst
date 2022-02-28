@@ -15,7 +15,7 @@ View frequently asked questions, troubleshoot common issues, or contact support.
 .. topic-box::
   :title: Common Issues
   :link: common-issues
-  :icon: scylla-icon scylla-icon--monitoring
+  :icon: scylla-icon scylla-icon--knowledge-base
   :class: large-5
   :anchor: View
 

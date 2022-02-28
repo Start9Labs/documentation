@@ -20,25 +20,20 @@ Hardware Requirements
 
 #. `SD card adapter <https://www.amazon.com/gp/product/B000WR3Z3A>`_ for getting data from your SD card.
 
-.. _migrate-02-instructions:
-
-Instructions
-------------
-
 Backing up
-..........
+----------
 
 .. caution:: It is prudent to back up your Embassy before migrating in case something doesn't work correctly, or there is an accident
 
 If you're unsure how to do this - please follow `this <https://youtube.com/watch?v=_QJXgnE90ko>`_ guide.
 
-.. youtube:: _QJXgnE90ko
+.. youtube:: ySd8uFJTbvQ
    :width: 100%
 
 With your Embassy safely backed up, it's time to proceed with the migration.
 
 Flashing
-........
+--------
 
 #. Once you have all these you will need to download an 0.3.0 image from https://images.start9.com. This is free for all existing users. Anyone who is running 0.2.x who compiled it themselves will need to either compile 0.3.0 themselves or purchase an 0.3.0 image.
 
@@ -49,7 +44,11 @@ Flashing
 .. _migrate-02-migrate:
 
 Migrate Data
-............
+------------
+
+You may like to follow along with this video for clarity while migrating:
+   .. youtube:: 2yXgkni95mg
+      :width: 100%
 
 #. Begin by going into your Embassy, stopping all running services, and shutting down the device in the Embassy tab.
 
@@ -64,7 +63,7 @@ Migrate Data
 #. Now the power cable can be connected and the Embassy powered up.
 
 Power Up
-........
+--------
 
 #. Embassy will power up and then initialize, a process of less than 5 minutes if you purchased an image, or about 10-20 minutes if you built from source. Once complete you will hear a _bep_ to indicate it is initialized and then a _chime_ sound to indicate it is online.
 
@@ -111,5 +110,7 @@ Power Up
 #. To use LAN safely, the SSL certificate will need to be added to whatever device you are using to access. This can be downloaded by clicking on "Download root CA" and installed by following the :ref:`instructions<connecting-lan>`.
 
 #. You can now log in to your Embassy via Tor or LAN, and you will be given the option of recovering your data on a service-by-service basis.
+
+Please note that some services, such as LND, will have new Tor interfaces, and so you will need to add your new credentials to your integrations, such as Zap and Zeus wallets.
 
 .. note:: For those recovering Bitwarden - it is now called Vaultwarden.
