@@ -1,10 +1,8 @@
 .. _backup-linux:
 
-===============
-Backup to Linux
-===============
-
-.. warning:: Create frequent backups to avoid loss of data!
+=======================
+Linux LAN Shared Folder
+=======================
     
 Use this guide to setup a LAN Shared folder on your Linux machine, such that you may create encrypted, private backups of all your Embassy data.
 
@@ -123,4 +121,4 @@ Connect Embassy
 
 #. Click "Save".
 
-That's it!  You can now create encrypted, private backups of all your Embassy data to your Linux machine or external drive!!
+That's it!  You can now :ref:`Create<backup-create>` encrypted, private backups of all your Embassy data to your Linux machine or external drive!!

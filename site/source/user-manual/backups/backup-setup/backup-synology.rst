@@ -1,10 +1,8 @@
 .. _backup-synology:
 
-==================
-Backup to Synology
-==================
-
-.. warning:: Create frequent backups to avoid loss of data!
+==========================
+Synology LAN Shared Folder
+==========================
     
 .. note:: This guide was created by a Start9 community member.  This is not yet officially supported.  Please report any feedback that may help improve the process.
 
@@ -46,4 +44,4 @@ Connect Embassy
 
 #. Click "Save".
 
-That's it!  You can now create encrypted, private backups of all your Embassy data to your Linux machine or external drive!!
+That's it!  You can now :ref:`Create<backup-create>` encrypted, private backups of all your Embassy data to your Linux machine or external drive!!

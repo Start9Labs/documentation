@@ -1,19 +1,38 @@
-.. _backup-create:
+.. _backup:
 
-=============
-Create Backup
-=============
+======
+Backup
+======
 
 Backing up your Embassy is easy and secure. Backups are encrypted with your master password.
 
-#. Follow instructions for creating a :ref:`LAN Shared Folder<backup-setup>` (recommended) on your laptop/desktop or external drive.
+.. warning:: Create frequent backups to avoid loss of data!
+
+Setup Device
+------------
+
+Select your platform for detailed instructions on how to create a LAN Shared Folder for creating backups (recommended).  Otherwise, you may backup to a physical drive, attached in addition to your main Embassy SSD.
+
+.. toctree::
+  :maxdepth: 1
+
+  Linux LAN Shared Folder <backup-setup/backup-linux>
+  Mac LAN Shared Folder <backup-setup/backup-mac>
+  Windows  LAN Shared Folder <backup-setup/backup-windows>
+  Synology  LAN Shared Folder <backup-setup/backup-synology>
+  Physical Drive via Embassy <backup-setup/backup-physical>
+
+.. _backup-create:
+
+Create Backup
+-------------
 
 #. Go to *Embassy > Create Backup*
 
     .. figure:: /_static/images/config/embassy_backup.png
         :width: 60%
 
-#. You will see your previously created "cloud" (LAN Shared Folder) backup location (or :ref:`Secondary Drive<backup-physical>`) available.  Click it, then click "Create Backup".
+#. You will see your previously created LAN Shared Folder backup location (or Physical Drive) available.  Click it, then click "Create Backup".
 
     .. figure:: /_static/images/config/embassy_backup2.png
         :width: 60%
@@ -27,5 +46,3 @@ When the backup is complete, you will receive a notification.  If successful, yo
 
     .. figure:: /_static/images/config/embassy_backup4.png
         :width: 60%
-
-.. tip:: Keeping a strong password and making regular backups are the humble responsibilities of digital independence, remain ever vigilant!

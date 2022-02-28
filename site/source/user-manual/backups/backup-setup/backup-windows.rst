@@ -1,19 +1,15 @@
 .. _backup-windows:
 
-=================
-Backup to Windows
-=================
-
-.. warning:: Create frequent backups to avoid loss of data!
+=========================
+Windows LAN Shared Folder
+=========================
 
 Use this guide to setup a LAN Shared Folder on your Windows machine (or attached drive), such that you may create encrypted, private backups of all your Embassy data.
 
 Setup LAN Shared Folder
 -----------------------
 
-#. Create a folder, or select an existing one
-
-#. Right-click the folder and select "Properties"
+#. Create a folder, or select an existing one.  Right-click the folder and select "Properties"
 
     .. figure:: /_static/images/cifs/cifs-win0.png
         :width: 60%
@@ -63,8 +59,8 @@ Connect Embassy
     .. figure:: /_static/images/cifs/cifs-win6.png
         :width: 60%
 
-    - For "Hostname" - Enter your Windows computer name (this is shown after a \\ in Windows)
-    - For "Path" - Enter the "Path" that is shown after the "Hostname" in Windows
+    - For "Hostname" - Enter your Windows computer name (this is shown after a ``\\`` in Windows)
+    - For "Path" - Enter the "Path" that is shown after the ``HOSTNAME\`` in Windows
     - Enter your Windows username and password in the "User" and "Password" fields
 
-That's it!  You can now create encrypted, private backups of all your Embassy data to your Windows machine or external drive!!
+That's it!  You can now :ref:`Create<backup-create>` encrypted, private backups of all your Embassy data to your Windows machine or external drive!!

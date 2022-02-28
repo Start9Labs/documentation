@@ -111,4 +111,6 @@ Power Up
 
 #. You can now log in to your Embassy via Tor or LAN, and you will be given the option of recovering your data on a service-by-service basis.
 
+Please note that some services, such as LND, will have new Tor interfaces, and so you will need to add your new credentials to your integrations, such as Zap and Zeus wallets.
+
 .. note:: For those recovering Bitwarden - it is now called Vaultwarden.

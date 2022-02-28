@@ -13,15 +13,6 @@ In addition to the safe-keeping of a good master password, maintaining good back
   <div class="grid-x grid-margin-x">
 
 .. topic-box::
-  :title: Setup Backups
-  :link: backup-setup
-  :icon: scylla-icon scylla-icon--comparison
-  :class: large-5
-  :anchor: Setup
-
-  Choose your backup method and initialize it here first.
-
-.. topic-box::
   :title: Create Backup
   :link: backup-create
   :icon: scylla-icon scylla-icon--cloud
@@ -47,6 +38,5 @@ In addition to the safe-keeping of a good master password, maintaining good back
   :maxdepth: 1
   :hidden:
 
-  backup-setup/index
   backup-create
   backup-restore

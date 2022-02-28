@@ -1,33 +1,41 @@
 .. _backup-mac:
 
-=============
-Backup to Mac
-=============
+=====================
+Mac LAN Shared Folder
+=====================
 
-.. warning:: Create frequent backups to avoid loss of data!
-    
 Use this guide to setup a LAN Shared Folder on your Mac (or attached drive), such that you may create encrypted, private backups of all your Embassy data.
 
 Setup LAN Shared Folder
 -----------------------
+#. Either select or create a folder you would like to use to store your Embassy backups
 
-#. Go to system settings
+#. Go to "System Preferences" and click "Sharing"
 
-#. Click sharing
+    .. figure:: /_static/images/cifs/cifs-mac0.png
+        :width: 60%
 
 #. Click file sharing
 
-#. Click the + under shared folders
+    .. figure:: /_static/images/cifs/cifs-mac1.png
+        :width: 60%
 
-#. Add a folder and click options
+#. Click the "+" under "Shared Folders" and add the folder you would like to back up to
 
-#. Enable Windows file sharing for the user you would like to use to authenticate and click Done
+    .. figure:: /_static/images/cifs/cifs-mac2.png
+        :width: 60%
 
-#. Enter the name of your macbook, as shown in the computer name field at the top of the sharing page into the hostname field in embassy ui
+#. After selecting your folder, click "Options"
 
-#. Enter the name of the folder as shown in the shared folders section as the path
+    .. figure:: /_static/images/cifs/cifs-mac3.png
+        :width: 60%
 
-#. Enter your macbook username and password for the user that you enabled windows file sharing for
+#. Enable file sharing with "SMB" for the user you would like to use to authenticate and click "Done"
+
+    .. figure:: /_static/images/cifs/cifs-mac4.png
+        :width: 60%
+
+You'll need the "Computer Name," and the name of the "Shared Folder" you chose above, as well as your Mac username and password for the following section
 
 Connect Embassy
 ---------------
@@ -44,14 +52,14 @@ Connect Embassy
 
 #. Fill in the following fields:
 
-    * Hostname - This is the hostname of the machine that your shared folder is located on
+    * Hostname - This is the name of your Computer, as shown in the "Sharing" menu earlier
     * Path - This is the *name of the shared folder* you are using and **not** the full directory path
     * Username - This is the user on the remote machine that you used to create the shared directory
     * Password - This is your user (from above) password
 
-    .. figure:: /_static/images/config/embassy_backup1.png
+    .. figure:: /_static/images/cifs/cifs-mac5.png
         :width: 60%
 
 #. Click "Save".
 
-That's it!  You can now create encrypted, private backups of all your Embassy data to your Mac or external drive!!
+That's it!  You can now :ref:`Create<backup-create>` encrypted, private backups of all your Embassy data to your Mac or external drive!!
