@@ -1,12 +1,12 @@
 .. _faq-service-packaging:
 
-.. contents::
-   :depth: 3
-   :local:
-
 =============
 Packaging FAQ
 =============
+
+.. contents::
+  :depth: 2 
+  :local:
 
 Do I need programming experience to package a service for EmbassyOS?
 --------------------------------------------------------------------

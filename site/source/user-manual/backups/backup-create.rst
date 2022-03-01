@@ -4,6 +4,10 @@
 Backup
 ======
 
+.. contents::
+  :depth: 2 
+  :local:
+
 Backing up your Embassy is easy and secure. Backups are encrypted with your master password.
 
 .. warning:: Create frequent backups to avoid loss of data!

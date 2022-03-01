@@ -4,6 +4,10 @@
 Managing Services
 =================
 
+.. contents::
+  :depth: 2 
+  :local:
+
 EmbassyOS provides a rich interface for managing installed Services.
 
 Service Dashboard

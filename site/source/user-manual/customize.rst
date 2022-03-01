@@ -4,6 +4,10 @@
 Customize
 =========
 
+.. contents::
+  :depth: 2 
+  :local:
+
 Name Your Device
 ----------------
 

@@ -4,6 +4,10 @@
 Updating EmbassyOS
 ==================
 
+.. contents::
+  :depth: 2 
+  :local:
+
 .. note:: EmbassyOS will **NEVER** update itself without your approval. But we highly recommended keeping EmbassyOS up to date for the latest security and performance patches, as well as to take advantage of new features.
 
 How to Update

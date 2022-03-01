@@ -4,6 +4,10 @@
 Environment Setup
 =================
 
+.. contents::
+  :depth: 2 
+  :local:
+
 To get started packaging a service for EmbassyOS, some basic knowledge of software development is required. Don't worry if you are inexperienced, we will provide enough context to get you started, and you can always reach out with questions.
 
 If you are already an experienced developer, :ref:`jump ahead <environment-quick-start>`.

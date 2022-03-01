@@ -4,6 +4,10 @@
 Bitcoin
 =======
 
+.. contents::
+  :depth: 2 
+  :local:
+
 Here you will find guides on how to connect different kinds of Bitcoin wallets (hardware and software) to your Embassy node, to complete your sovereign Bitcoin stack!
 
 Tested Wallets

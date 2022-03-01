@@ -4,6 +4,10 @@
 Vaultwarden
 ===========
 
+.. contents::
+  :depth: 2 
+  :local:
+
 .. note:: The version of Bitwarden server used on the Embassy is a fork called "Vaultwarden."  Despite this, it still functions with several of the apps/integrations that are built for, and still named after, "Bitwarden."  We apologize for any confusion this may cause.
 
 Check out our `Vaultwarden video <https://www.youtube.com/watch?v=YcxxVHpm9j0>`_ for basic features and setup!

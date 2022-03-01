@@ -4,6 +4,10 @@
 Bitcoin and Lightning
 =====================
 
+.. contents::
+  :depth: 2 
+  :local:
+
 .. _bitcoin:
 
 Bitcoin

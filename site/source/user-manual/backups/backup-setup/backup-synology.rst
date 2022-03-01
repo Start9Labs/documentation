@@ -3,6 +3,10 @@
 ==========================
 Synology LAN Shared Folder
 ==========================
+
+.. contents::
+  :depth: 2 
+  :local:
     
 .. note:: This guide was created by a Start9 community member.  This is not yet officially supported.  Please report any feedback that may help improve the process.
 

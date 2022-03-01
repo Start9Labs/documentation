@@ -4,6 +4,10 @@
 Open Source
 ===========
 
+.. contents::
+  :depth: 2 
+  :local:
+
 The Internet itself was built on free and publicly available code, with the values of collaboration, peer review, communication, and openness built into its very foundation. This decentralized model evolved into the open source movement, which uses these values to discover new ways to solve problems across boundaries and industries.
 
 Open source software centered around the concept of user freedoms: freedom to see, modify, and redistribute the code to make it work for the user in whatever way they needed. It does not necessarily mean free to use. It means that the software will be better, cheaper, and more flexible if it is freely accessible, openly modifiable, and shared.

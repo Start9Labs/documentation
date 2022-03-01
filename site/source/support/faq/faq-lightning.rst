@@ -4,6 +4,10 @@
 The Lightning Network FAQ
 =========================
 
+.. contents::
+  :depth: 2 
+  :local:
+
 Why would I want to run a lightning node?
 -----------------------------------------
 The Lightning Network (LN) is a second 'layer,' built on top of the Bitcoin Protocol.  As a result all transactions on LN are backed up by the full security of the Bitcoin network.  Lightning is designed for instant payments between nodes, but similar to running a Bitcoin node, running your own is the only way to be sovereign.  When you have your own node, you will have the convenience of linking a Lightning wallet, for use on the go.  It is also possible to earn an income (granted a very small one at this time), if you are willing to learn how to become a 'routing node.'

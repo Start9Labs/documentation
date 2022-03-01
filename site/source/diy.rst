@@ -4,6 +4,10 @@
 DIY Guide
 =========
 
+.. contents::
+  :depth: 2 
+  :local:
+
 .. figure:: /_static/images/diy/pi.png
   :width: 40%
   :alt: Raspberry Pi

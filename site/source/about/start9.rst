@@ -4,6 +4,10 @@
 Start9 Labs
 ===========
 
+.. contents::
+  :depth: 2 
+  :local:
+
 Privacy and free speech are fundamental human rights and essential ingredients for a free society. Human history demonstrates that, when entrusted to others, these rights are invariably denied, resulting in great suffering. As such, it is necessary for individuals to protect their own privacy and right to speak freely. Fortunately, modern technologies, in the form of personal computers, encryption, and open, decentralized network protocols such as the Internet and Bitcoin, make this a real possibility. What is needed is a revolution in personal computing away from the current, hosted, custodial model that breeds dependency and corruption, towards a decentralized model, where individuals have absolute control over their data and communications.
 
 .. _mission:

@@ -4,6 +4,10 @@
 Privacy Policy
 ==============
 
+.. contents::
+  :depth: 2 
+  :local:
+
 General Principles
 ------------------
 

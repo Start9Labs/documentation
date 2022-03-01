@@ -4,6 +4,10 @@
 Services FAQ
 ============
 
+.. contents::
+  :depth: 2 
+  :local:
+
 What if I cannot connect to a Service?
 --------------------------------------
 Please make sure the service is started by viewing it in the Services tab in the Embassy dashboard menu. A green indicator bar should be visible.

@@ -4,6 +4,10 @@
 Windows LAN Shared Folder
 =========================
 
+.. contents::
+  :depth: 2 
+  :local:
+
 Use this guide to setup a LAN Shared Folder on your Windows machine (or attached drive), such that you may create encrypted, private backups of all your Embassy data.
 
 Setup LAN Shared Folder

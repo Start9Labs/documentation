@@ -4,6 +4,10 @@
 Resources
 =========
 
+.. contents::
+  :depth: 2 
+  :local:
+
 Get help
 --------
 

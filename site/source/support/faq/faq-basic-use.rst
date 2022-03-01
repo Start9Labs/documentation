@@ -4,6 +4,10 @@
 Basic Use FAQ
 =============
 
+.. contents::
+  :depth: 2 
+  :local:
+
 Is it easy to use?
 ------------------
 Yes!  The Embassy is designed to be plugged into power and internet, and after a short setup, is immediately ready to use.  Getting Services is as easy as getting apps for a smartphone.

@@ -4,6 +4,10 @@
 Dashboard Overview
 ==================
 
+.. contents::
+  :depth: 2 
+  :local:
+
 Services Tab
 ------------
 

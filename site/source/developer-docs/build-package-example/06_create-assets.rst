@@ -4,6 +4,10 @@
 6 - Create Assets
 =================
 
+.. contents::
+  :depth: 2 
+  :local:
+
 Each ``s9pk`` package contains a set of assets. They include:
 
 - Instructions

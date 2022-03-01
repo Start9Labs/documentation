@@ -4,6 +4,10 @@
 Embassy and EmbassyOS
 =====================
 
+.. contents::
+  :depth: 2 
+  :local:
+
 .. _embassy:
 
 Embassy

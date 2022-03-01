@@ -4,6 +4,10 @@
 General FAQ
 ===========
 
+.. contents::
+  :depth: 2 
+  :local:
+
 What is Start9Labs?
 -------------------
 Start9Labs is a small, but quickly growing group of builders based in Denver, CO that build Embassy and EmbassyOS.
