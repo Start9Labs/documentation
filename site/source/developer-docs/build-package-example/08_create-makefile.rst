@@ -1,8 +1,8 @@
 .. _packaging-makefile:
 
-========================
-Step 8 - Create Makefile
-========================
+===================
+8 - Create Makefile
+===================
 
 For convenience and repeatability, let's combine all of these commands into a Makefile. Then, we can use `make <https://www.gnu.org/software/make/>`_ to rebuild our project quickly. 
 

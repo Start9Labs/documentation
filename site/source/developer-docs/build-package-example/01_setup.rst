@@ -1,8 +1,8 @@
 .. _packaging-framework:
 
-==================
-Step 1 - Framework
-==================
+=============
+1 - Framework
+=============
 
 What we'll build
 ----------------

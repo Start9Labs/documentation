@@ -1,8 +1,8 @@
 .. _packaging-create-s9pk:
 
-=======================
-Step 7 - Format Package
-=======================
+==================
+7 - Format Package
+==================
 
 We now have all of the necessary components to package the service into the format needed for the OS. This format is a custom filetype with an extension of ``.s9pk``, short for Start9 Package. 
 
