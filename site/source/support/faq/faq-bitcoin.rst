@@ -4,6 +4,10 @@
 Bitcoin FAQ
 ===========
 
+.. contents::
+  :depth: 2 
+  :local:
+
 Why does the Bitcoin service take so long to be ready?
 ------------------------------------------------------
 On first install, the Bitcoin service must verify the entire history of transactions in order to verify transactions going forward.  This can take up to a week depending on your internet connection.  On a fast connection, you can expect 3-4 days.  You can continue to use your Embassy normally in the meantime.

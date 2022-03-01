@@ -1,8 +1,12 @@
 .. _packaging-framework:
 
-==================
-Step 1 - Framework
-==================
+=============
+1 - Framework
+=============
+
+.. contents::
+  :depth: 2 
+  :local:
 
 What we'll build
 ----------------

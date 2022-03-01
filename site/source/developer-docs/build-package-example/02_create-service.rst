@@ -1,8 +1,8 @@
 .. _packaging-create-service:
 
-=======================
-Step 2 - Create Service
-=======================
+==================
+2 - Create Service
+==================
 
 For this example, we are going to create a simple Rust project that serves a static web page. 
 

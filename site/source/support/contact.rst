@@ -4,6 +4,10 @@
 Contact Us
 ==========
 
+.. contents::
+  :depth: 2 
+  :local:
+
 Community Channels
 ------------------
 

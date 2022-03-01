@@ -4,6 +4,10 @@
 Common Issues
 =============
 
+.. contents::
+  :depth: 2 
+  :local:
+
 Sometimes things don't go as planned. Check here for solutions to common problems with your Embassy.
 
 Embassy will not boot

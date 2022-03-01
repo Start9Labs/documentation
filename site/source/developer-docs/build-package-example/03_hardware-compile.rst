@@ -1,8 +1,8 @@
 .. _packaging-compile-raspi:
 
-=======================
-Step 3 - Hardware Build
-=======================
+==================
+3 - Hardware Build
+==================
 
 EmbassyOS is run on the arm-v8 architecture, specifically the aarch64 state, for the RaspberryPi.
 

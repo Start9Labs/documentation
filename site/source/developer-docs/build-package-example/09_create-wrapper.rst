@@ -1,8 +1,8 @@
 .. _packaging-create-wrapper:
 
-=======================
-Step 9 - Create Wrapper
-=======================
+==================
+9 - Create Wrapper
+==================
 
 In order for the Start9 team to review your package for submission to the Start9 Marketplace, we ask that you create a wrapper repository for the project and its components. This repo should contain everything you need to build the service.
 

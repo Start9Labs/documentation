@@ -4,6 +4,10 @@
 Setup and Troubleshooting FAQ
 =============================
 
+.. contents::
+  :depth: 2 
+  :local:
+
 What do I do first?
 -------------------
 Please check out the :ref:`Initial Setup <initial-setup>` page, and follow the instructions.

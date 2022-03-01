@@ -4,6 +4,10 @@
 Setup with Upgrade Kit
 ======================
 
+.. contents::
+  :depth: 2 
+  :local:
+
 This guide will cover how to upgrade from EmbassyOS version 0.2.x to version 0.3.0.
 
 .. note::

@@ -4,6 +4,10 @@
 Forgot Password
 ===============
 
+.. contents::
+  :depth: 2 
+  :local:
+
 .. note:: There is currently no way to reset you Embassy master password through a standard UI flow.
 
 Using SSH

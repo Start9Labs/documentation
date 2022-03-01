@@ -4,6 +4,10 @@
 Contributing FAQ
 ================
 
+.. contents::
+  :depth: 2 
+  :local:
+
 We ❤️ contributions!
 
 Please follow the guide `here <https://github.com/Start9Labs/embassy-os/blob/master/CONTRIBUTING.md>`_ and reach out to the `Community Dev <https://matrix.to/#/#community-dev:matrix.start9labs.com>`_ channel on Matrix with any questions.

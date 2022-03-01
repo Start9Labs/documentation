@@ -4,6 +4,10 @@
 Using SSH
 =========
 
+.. contents::
+  :depth: 2 
+  :local:
+
 Creating an SSH Key
 -------------------
 

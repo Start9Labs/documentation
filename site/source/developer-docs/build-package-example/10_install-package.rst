@@ -1,8 +1,8 @@
 .. _packaging-install:
 
-=================
-Step 10 - Install
-=================
+============
+10 - Install
+============
 
 Now that we have a process for iterating on producing a valid package for EmbassyOS, let's load it onto an Embassy!
 

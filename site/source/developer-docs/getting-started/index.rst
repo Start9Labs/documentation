@@ -60,4 +60,4 @@ Getting Started Overview
 
   environment-setup
   sdk
-  quick-start
+  checklist

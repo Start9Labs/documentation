@@ -1,8 +1,12 @@
 .. _packaging-quick-start:
 
-=====================
-Packaging Quick Start
-=====================
+=========
+Checklist
+=========
+
+.. contents::
+  :depth: 2 
+  :local:
 
 This guide outlines a checklist of steps to complete in order to package a service for EmbassyOS. For a more in depth example, visit the :ref:`build your first package <build-package-example>` guide.
 

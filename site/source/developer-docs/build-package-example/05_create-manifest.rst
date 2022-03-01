@@ -1,8 +1,8 @@
 .. _packaging-create-manifest:
 
-========================
-Step 5 - Create Manifest
-========================
+===================
+5 - Create Manifest
+===================
 
 The Manifest file specifies the details EmbassyOS needs to operate a service. It is the connection point between your service and EmbassyOS. 
 

@@ -1,8 +1,8 @@
 .. _packaging-docker-build:
 
-=====================
-Step 4 - Docker Build
-=====================
+================
+4 - Docker Build
+================
 
 Now that we have our code properly built/compiled, we can create a Dockerfile. This file defines how to build the Docker image for the service by declaring the environment, building stages, and copying any binaries or assets needed to run the service to the Docker image filesystem.
 

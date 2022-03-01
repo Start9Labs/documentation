@@ -4,6 +4,10 @@
 Networks
 ========
 
+.. contents::
+  :depth: 2 
+  :local:
+
 .. _lan:
 
 LAN

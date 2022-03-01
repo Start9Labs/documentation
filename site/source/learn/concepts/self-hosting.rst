@@ -4,6 +4,10 @@
 Hosting
 =======
 
+.. contents::
+  :depth: 2 
+  :local:
+
 Client-Server Model
 -------------------
 
