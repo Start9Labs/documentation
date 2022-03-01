@@ -1,8 +1,8 @@
 .. _packaging-getting-started:
 
-========================
-Getting Started Overview
-========================
+===============
+Getting Started
+===============
 
   Select an option below to get started with packing a service for EmbassyOS.
 
@@ -31,15 +31,6 @@ Getting Started Overview
   Follow along to learn packaging fundamentals with an example 
 
 .. topic-box::
-  :title: Packaging Quick Start
-  :link: packaging-quick-start
-  :icon: scylla-icon scylla-icon--roadmap
-  :class: large-4
-  :anchor: Begin
-
-  Quickly get started with concise steps
-
-.. topic-box::
   :title: SDK
   :link: sdk
   :icon: scylla-icon scylla-icon--apps
@@ -48,6 +39,14 @@ Getting Started Overview
 
   Discover details about Start9's Software Development Kit
 
+.. topic-box::
+  :title: Checklist
+  :link: checklist
+  :icon: scylla-icon scylla-icon--roadmap
+  :class: large-4
+  :anchor: Begin
+
+  Quickly get started with concise steps
 
 .. raw:: html
 
