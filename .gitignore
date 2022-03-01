@@ -4,3 +4,4 @@ build-send.sh
 site/_build
 .env
 site/_utils/docsearch*
+site/_utils/deploy_prod.sh
