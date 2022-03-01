@@ -15,7 +15,7 @@ Due to the fact that config variables are only available when the service is run
   Service Properties
 
 
-.. code-block:: TypeScript
+.. code-block:: typescript
     :caption: Properties Type
 
     interface Properties {
