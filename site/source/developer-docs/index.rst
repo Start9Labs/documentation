@@ -39,15 +39,6 @@ Developer Docs
   Follow along to learn packaging fundamentals with an example 
 
 .. topic-box::
-  :title: Packaging Quick Start
-  :link: getting-started/quick-start
-  :icon: scylla-icon scylla-icon--roadmap
-  :class: large-4
-  :anchor: Begin
-
-  Quickly get started with concise packaging steps
-
-.. topic-box::
   :title: SDK
   :link: getting-started/sdk
   :icon: scylla-icon scylla-icon--apps
@@ -64,6 +55,15 @@ Developer Docs
   :anchor: View
 
   Detailed service packaging specification and advanced features
+
+.. topic-box::
+  :title: Packaging Checklist
+  :link: getting-started/checklist
+  :icon: scylla-icon scylla-icon--roadmap
+  :class: large-4
+  :anchor: Begin
+
+  A quick way to check your work
 
 .. topic-box::
   :title: Advanced Guides
