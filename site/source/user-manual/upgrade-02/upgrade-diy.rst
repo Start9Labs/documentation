@@ -31,7 +31,7 @@ Backing up
 
 If you're unsure how to do this - please follow `this <https://youtube.com/watch?v=_QJXgnE90ko>`_ guide.
 
-.. youtube:: ySd8uFJTbvQ
+.. youtube:: _QJXgnE90ko
    :width: 100%
 
 With your Embassy safely backed up, it's time to proceed with the migration.
@@ -51,7 +51,7 @@ Migrate Data
 ------------
 
 You may like to follow along with this video for clarity while migrating:
-   .. youtube:: 2yXgkni95mg
+   .. youtube:: ySd8uFJTbvQ
       :width: 100%
 
 #. Begin by going into your Embassy, stopping all running services, and shutting down the device in the Embassy tab.
