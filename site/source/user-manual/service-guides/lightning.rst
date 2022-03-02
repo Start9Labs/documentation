@@ -83,11 +83,11 @@ Available For
 - Android
 - iOS (Coming Soon)
 
-C-Lightning
-...........
+.. LND
+.. ...
+.. - Add a new Node of type "LND"
+.. - Scan the Connection String QR code (REST) from your LND service page > Properties
 
-LND
-...
+.. Spark
+.. .....
 
-Spark
-.....

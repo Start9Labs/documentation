@@ -28,10 +28,10 @@ BlueWallet
 
 .. _electrum:
 
-Electrum
-========
+.. Electrum
+.. ========
 
-.. warning:: UNTESTED
+.. .. warning:: UNTESTED
 
 .. _fully-noded:
 
@@ -50,12 +50,12 @@ Instructions
 
 .. _ledger-live:
 
-Ledger Live
-===========
+.. Ledger Live
+.. ===========
 
-.. tip:: Built for use with Ledger hardware devices
+.. .. tip:: Built for use with Ledger hardware devices
 
-.. warning:: UNTESTED
+.. .. warning:: UNTESTED
 
 .. _samourai:
 
@@ -96,12 +96,12 @@ Follow the `guide <https://github.com/Start9Labs/bitcoind-wrapper/tree/master/do
 
 .. _trezor-suite:
 
-Trezor Suite
-============
+.. Trezor Suite
+.. ============
 
-.. tip:: Built for use with Trezor hardware devices
+.. .. tip:: Built for use with Trezor hardware devices
 
-.. warning:: UNTESTED
+.. .. warning:: UNTESTED
 
 .. _bitcoin-cli:
 
