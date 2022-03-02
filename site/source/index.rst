@@ -8,7 +8,6 @@
   :title: Welcome
   :button_url: https://store.start9.com
   :button_text: Purchase Embassy
-  :image: /_static/img/eos_0.3.0.png
 
   Here you will find information about Start9, EmbassyOS, and the era of sovereign computing. Anyone can do it. No one can stop it.
 
