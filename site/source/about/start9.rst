@@ -28,9 +28,9 @@ Openness: Everyone should have permissionless access to computing resources and 
 
 Community: The human experience is richest when shared amongst individuals who possessing common beliefs, values, and activities, and that computers should facilitate the formation of communities.
 
-Privacy: There are four reasons that privacy is necessary for a free society and proper human existence: privacy (1) promotes creativity and experimentation by minimizing the risk of embarrassment; (2) protects valuable information from theft and extortion; (3) enables the diffusion of contrarian ideals and ideas (4) serves as an insurance policy against the future, in the event that was is acceptable today becomes unacceptable tomorrow.
+Privacy: There are four reasons that privacy is necessary for a free society and proper human existence: privacy (1) promotes creativity and experimentation by minimizing the risk of embarrassment; (2) protects valuable information from theft and extortion; (3) enables the diffusion of contrarian ideals and ideas; (4) serves as an insurance policy against the future, in the event that what is acceptable today becomes unacceptable tomorrow.
 
-Independence: Being dependent means being unable to survive on your own. Like a child, it means needing others and relying on them to provide for you, thus granting them power over you. A free and dignified human existence demands self-reliance, the ability to think and acts with efficacy to obtain one's needs.
+Independence: Being dependent means being unable to survive on your own. Like a child, it means needing others and relying on them to provide for you, thus granting them power over you. A free and dignified human existence demands self-reliance: the ability to think and act with efficacy to obtain one's needs.
 
 .. _virtues:
 
@@ -50,7 +50,7 @@ Generosity: providing beyond what is necessary or expected.
 
 Fortitude: Having courage in the face of pain or adversity.
 
-Integrity: The virtue the underlies all others. The quality of being whole and genuine, intact and unbroken, internally consistent, and adhering to principle in all cases.
+Integrity: The virtue that underlies all others. The quality of being whole and genuine, intact and unbroken, internally consistent, and adhering to principle in all cases.
 
 .. _start9-origin:
 
@@ -64,6 +64,6 @@ In an effort to streamline play, a new game mode was devised in which players wo
 
 To summarize: in Anarchy mode, everyone had equal influence over the game, but progress was slow and clunky. In Democracy mode, progress was fast and efficient, but colluding groups could marginalize individual participants and ruin the game for them.
 
-So…individual participants discovered a means of effective protest whenever Democracy mode became suffocating, but they could not garner enough votes to switch back to Anarchy mode. Someone would type the command “start9” into the comments. This command meant “open the start menu 9 times in a row”, which, as you might imagine, would be enormously disruptive if executed. The entire screen would be blocked by the start menu,  over and over. Typing “start9” was a participant's way of signaling to other participants that they felt marginalized by Democracy mode, and they were ready to fight back. If others felt the same, they could also begin typing “start9” - then, sure enough, “start9” would finally receive more votes than the colluding group's command, and the menu opening would begin. Every 4 seconds, the menu would open 9 times…again, and again, and again…until finally, the colluding group would be forced to either cooperate in reverting the game mode back to Anarchy mode or quit altogether.
+So… individual participants discovered a means of effective protest whenever Democracy mode became suffocating, but they could not garner enough votes to switch back to Anarchy mode. Someone would type the command “start9” into the comments. This command meant “open the start menu 9 times in a row”, which, as you might imagine, would be enormously disruptive if executed. The entire screen would be blocked by the start menu,  over and over. Typing “start9” was a participant's way of signaling to other participants that they felt marginalized by Democracy mode, and they were ready to fight back. If others felt the same, they could also begin typing “start9” - then, sure enough, “start9” would finally receive more votes than the colluding group's command, and the menu opening would begin. Every 4 seconds, the menu would open 9 times…again, and again, and again…until finally, the colluding group would be forced to either cooperate in reverting the game mode back to Anarchy mode or quit altogether.
 
 Playing in Anarchy mode was impractical, but people did not want to play a game where they had no voice, where a group of insiders had taken total control. And so “start9” became the battle cry of the individual, the out-group, a means of signaling to other individuals that it was time to fight back against the usurpers - to use their own rules against them, until there was no alternative but to return control to the individual participants.
