@@ -118,3 +118,5 @@ Power Up
 Please note that some services, such as LND, will have new Tor interfaces, and so you will need to add your new credentials to your integrations, such as Zap and Zeus wallets.
 
 .. note:: For those recovering Bitwarden - it is now called Vaultwarden.
+
+.. note:: For those recovering Bitcoin and changing to a full archival node: You will need to "Disable Pruning" in the config, and run the "Reindex Blockchain" Action
