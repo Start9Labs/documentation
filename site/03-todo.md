@@ -7,4 +7,3 @@
 - Migrate from other server projects / nodes (currently punted)
 - Alt Market Build Guide (punted)
 - Fontawesome
-git 
