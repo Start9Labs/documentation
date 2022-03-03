@@ -50,7 +50,7 @@ Power Up
 
 #. Embassy will power up and then initialize, a process of less than 5 minutes. Once complete you will hear a _bep_ to indicate it is initialized and then a _chime_ sound to indicate it is online.
 
-#. On your computer, open up a browser and go to https://embassy.local
+#. On your computer, open up a browser and go to http://embassy.local
 
 #. You will be prompted that your drive and your SD card reader needed to be reconfigured and asked to unplug them and replug them into your Embassy. Please do this and hit refresh.
 
