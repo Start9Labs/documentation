@@ -28,7 +28,7 @@
   :class: large-4
   :anchor: Buy now
 
-  Buy an Embassy from Start9.
+  Buy an Embassy from Start9
 
 .. topic-box::
   :title: DIY
@@ -37,7 +37,7 @@
   :class: large-4
   :anchor: Get started
 
-  Build your own Embassy.
+  Build your own Embassy
 
 .. topic-box::
   :title: Service Marketplace

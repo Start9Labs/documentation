@@ -96,7 +96,7 @@ html_theme_options = {
     "banner_button_text": "Learn more",
     "banner_button_url": "https://start9labs.medium.com/announcing-embassyos-0-3-0-f3d2d2ea016f",
     "banner_title_text": "EmbassyOS 0.3.0 is now available 🥳",
-    "hide_banner": "false",
+    "hide_banner": "true",
     "hide_edit_this_page_button": "false",
     "hide_sidebar_index": "true",
     "hide_version_dropdown": [],
