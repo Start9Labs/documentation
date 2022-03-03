@@ -5,13 +5,30 @@ Using SSH
 =========
 
 .. contents::
-  :depth: 2 
+  :depth: 2
   :local:
 
-Creating an SSH Key
--------------------
+Creating an SSH Key (Linux/Mac)
+-------------------------------
 
-@TODO
+#. Open a terminal and enter the following command, replacing the example email address with your own (or, alternatively, a comment):
+
+    .. code-block:: bash
+
+        ssh-keygen -t ed25519 -C "your_email@example.com"
+
+    You will be asked to ``Enter a file in which to save the key`` - we recommend you press ``Enter`` to use the default location
+
+#. Create a strong passphrase and save it somewhere safe, or press ``Enter`` for no passphrase
+
+#. Next, start your system's ``ssh-agent`` and add your key to it:
+
+    .. code-block:: bash
+
+        eval "$(ssh-agent -s)"
+        ssh-add ~/.ssh/id_ed25519
+
+    Note that if you changed the file name/location in step 1, you will need to use that file/path in this step
 
 Registering an SSH Key
 ----------------------
@@ -20,8 +37,8 @@ Registering an SSH Key
 #. Click "Add New Key".
 #. Paste in your SSH *public* key (created above) and click "Submit".
 
-Connecting via CLI on Linux/Mac
--------------------------------
+Connecting via CLI (Linux/Mac)
+------------------------------
 
 #. You can now access your Embassy from the command line (Linux and Mac) using:
 
@@ -31,10 +48,10 @@ Connecting via CLI on Linux/Mac
 
 Replacing ``<LAN URL>`` with your Embassy's LAN (``embassy-xxxxxxx.local``) address
 
-Connecting via PuTTY on Windows 
+Connecting via PuTTY on Windows
 -------------------------------
 
-@TODO
+We are in need of a Windows guide!  Please click the link at the top-right of this page to edit or :ref:`Contact us<contact>` if you would like to contribute!
 
 Using SSH Over Tor
 ------------------
