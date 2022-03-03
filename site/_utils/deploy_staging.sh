@@ -6,11 +6,14 @@ if [ "$0" != "./_utils/deploy_staging.sh" ]; then
 	exit 1
 fi
 
+echo "FILTER: build theme"
+cd ../sphinx-scylladb-theme && npm run build && cd ../site
+
 echo "FILTER: make multiversion"
 make clean && make multiversion
 
-echo "FILTER: scp build"
-scp -r _build/* root@staging.start9labs.com:/var/www/html/staging.start9labs.com
+echo "FILTER: rsync build"
+rsync -rzP --delete ./_build/ root@staging.start9labs.com:/var/www/html/staging.start9labs.com
 
 echo "FILTER: ssh restart nginx and tor"
 ssh root@staging.start9labs.com "systemctl reload nginx && systemctl reload tor"
