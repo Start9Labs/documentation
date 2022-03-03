@@ -46,7 +46,7 @@ To verify the installation, open a new terminal window and run:
 Docker
 ------
 
-`Docker <https://docs.docker.com/get-docker>`_ must be installed to your computer platform. It is needed to build an image for your package, which will be used to create the running instance of your package on EmbassyOS. In essence, it declares the necessary environment and building stages for your package to run.
+`Docker <https://docs.docker.com/get-docker>`_ must be installed on your computer. It is needed to build an image for your package, which will be used to create the running instance of your package on EmbassyOS. In essence, it declares the necessary environment and building stages for your package to run.
 
 We also recommend installing and using `Docker buildx <https://docs.docker.com/buildx/working-with-buildx/>`_, as this adds desirable new features to the Docker build experience. It is included by default with Docker Desktop for Windows and macOS.
 
@@ -74,6 +74,7 @@ To install the SDK:
 .. code:: bash
 
     git clone https://github.com/Start9Labs/embassy-os.git
+    cd embassy-os
     cd backend
     ./install-sdk.sh
 
