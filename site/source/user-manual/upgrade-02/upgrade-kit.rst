@@ -52,8 +52,6 @@ Power Up
 
 #. On your computer, open up a browser and go to http://embassy.local
 
-#. You will be prompted that your drive and your SD card reader needed to be reconfigured and asked to unplug them and replug them into your Embassy. Please do this and hit refresh.
-
 #. Next, you will be asked to select your old Embassy SD card - select rootfs
 
    .. figure:: /_static/images/setup/migrate2.png
