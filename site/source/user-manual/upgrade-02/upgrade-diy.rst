@@ -5,7 +5,7 @@ Using your own hardware
 =======================
 
 .. contents::
-  :depth: 2 
+  :depth: 2
   :local:
 
 This guide will cover how to upgrade from EmbassyOS version 0.2.x to version 0.3.0 with your own equipment.
@@ -115,8 +115,14 @@ Power Up
 
 #. You can now log in to your Embassy via Tor or LAN, and you will be given the option of recovering your data on a service-by-service basis.
 
-Please note that some services, such as LND, will have new Tor interfaces, and so you will need to add your new credentials to your integrations, such as Zap and Zeus wallets.
+IMPORTANT NOTES
+---------------
+- You may remove your 0.2.x SD Card once you reach the success page.  It is highly recommended to keep this card in a safe place for a few weeks to ensure your migrated Embassy is working smoothly.  After this you may wipe and repurpose the card however you wish.
 
-.. note:: For those recovering Bitwarden - it is now called Vaultwarden.
+- Do NOT use the old 0.2.x card again, unless instructed by a Start9 Support Tech, especially if you have funds on the Lightning Network, as it can lead to loss of funds!
 
-.. note:: For those recovering Bitcoin and changing to a full archival node: You will need to "Disable Pruning" in the config, and run the "Reindex Blockchain" Action, then restart the service
+- Please note that some services, such as LND, will have new Tor interfaces, and so you will need to add your new credentials to your integrations, such as Zap and Zeus wallets.
+
+- For those recovering Bitwarden - it is now called Vaultwarden.
+
+- For those recovering Bitcoin and changing to a full archival node: You will need to "Disable Pruning" in the config, and run the "Reindex Blockchain" Action, then restart the service upon completion of the sync.

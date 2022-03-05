@@ -5,7 +5,7 @@ Bitcoin
 =======
 
 .. contents::
-  :depth: 2 
+  :depth: 2
   :local:
 
 Here you will find guides on how to connect different kinds of Bitcoin wallets (hardware and software) to your Embassy node, to complete your sovereign Bitcoin stack!
@@ -77,7 +77,7 @@ Available For
 
 Instructions
 ............
-Follow the `guide <https://github.com/start9labs/bitcoind-wrapper/docs/integrations/sparrow/guide.md>`__.
+Follow the `guide <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/docs/integrations/sparrow/guide.md>`__.
 
 .. _specter:
 
@@ -92,7 +92,7 @@ Available For
 
 Instructions
 ............
-Follow the `guide <https://github.com/Start9Labs/bitcoind-wrapper/tree/master/docs/integrations/specter>`__.
+Follow the `guide <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/docs/integrations/sparrow/guide.md>`__.
 
 .. _trezor-suite:
 

@@ -5,13 +5,13 @@ Initial Setup
 =============
 
 .. contents::
-  :depth: 2 
+  :depth: 2
   :local:
 
-Check out our quick setup video below, and follow along with the steps in this guide:
+.. Check out our quick setup video below, and follow along with the steps in this guide:
 
-.. youtube:: DmTlwp5_zvY
-  :width: 100%
+.. .. youtube:: DmTlwp5_zvY
+..   :width: 100%
 
 .. raw:: html
 
