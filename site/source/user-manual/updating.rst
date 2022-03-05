@@ -5,7 +5,7 @@ Updating EmbassyOS
 ==================
 
 .. contents::
-  :depth: 2 
+  :depth: 2
   :local:
 
 .. note:: EmbassyOS will **NEVER** update itself without your approval. But we highly recommended keeping EmbassyOS up to date for the latest security and performance patches, as well as to take advantage of new features.
@@ -57,7 +57,5 @@ Manual Update by Re-flashing
 
 #. Assuming you have you fully-intact EmbassyOS data drive plugged in, you will receive a popup declaring that a valid data drive has been detected. Click "Use Drive" from the pop-up. If you don't see the drive, you may get a message asking you to unplug, then plug back in the drive, and refresh the page.
 
-   .. figure:: /_static/images/setup/migrate3.png
+   .. figure:: /_static/images/setup/use-drive.png
       :width: 60%
-
-@TODO get better image ^
