@@ -57,6 +57,11 @@ Power Up
    .. figure:: /_static/images/setup/migrate2.png
       :width: 60%
 
+#. You will now be prompted to enter your Product key
+
+   .. figure:: /_static/images/setup/migrate0.png
+      :width: 60%
+
 #. On the next page you will be asked to select a storage device - here you should select your SSD.
 
    .. figure:: /_static/images/setup/migrate3.png
