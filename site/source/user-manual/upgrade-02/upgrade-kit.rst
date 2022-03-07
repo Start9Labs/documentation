@@ -16,7 +16,7 @@ This guide will cover how to upgrade from EmbassyOS version 0.2.x to version 0.3
 Backing up
 ----------
 
-We recommend creating fresh backups of your 0.2.x services before getting started with you upgrade kit.
+We recommend creating fresh backups of your 0.2.x services before getting started with your upgrade kit.
 
 *Please don't use the microSD card we sent you as a backup device!*
 
