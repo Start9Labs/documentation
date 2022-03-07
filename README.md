@@ -25,8 +25,8 @@ The [extension](https://github.com/Holzhaus/sphinx-multiversion) used to build d
 
 ## Dependencies
 
-Install [python3] (https://www.python.org/downloads/)
-Install [poetry] (https://python-poetry.org/docs/)
+Install [python3](https://www.python.org/downloads/)
+Install [poetry](https://python-poetry.org/docs/)
 Install [pyenv](https://github.com/pyenv/pyenv)
 
 For installations with MacOS:
