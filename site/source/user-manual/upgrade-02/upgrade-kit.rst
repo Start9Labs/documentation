@@ -18,7 +18,8 @@ Backing up
 
 We recommend creating fresh backups of your 0.2.x services before getting started with your upgrade kit.
 
-*Please don't use the microSD card we sent you as a backup device!*
+.. warning::
+   *Please don't use the microSD card we sent you as a backup device!*
 
 Migrating Data
 --------------
