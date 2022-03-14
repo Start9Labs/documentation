@@ -358,7 +358,7 @@ Examples
 Pointer
 --------
 
-The pointer type *points* to a config value on another service installed on EmbassyOS (ie. package subtype) or to the EmbassyOS system (ie. system subtype). When pointing to another service, the ``index`` field indicates the path to the desired config variable.
+The pointer type *points* to a config value on another service installed on EmbassyOS (ie. package subtype) or to the EmbassyOS system (ie. system subtype). When pointing to another service, the ``selector`` field indicates the path to the desired config variable.
 
 .. code-block::
     :caption: ValueSpec Type
@@ -370,7 +370,7 @@ The pointer type *points* to a config value on another service installed on Emba
     subtype: Enum< package | system>
     package-id: String (*always* kebab case)
     target: AppPointerSpecVariants | SystemPointerSpecVariants
-    index: Option<String> (dependent on target being AppPointerSpecVariants)
+    selector: Option<String> (dependent on target being AppPointerSpecVariants)
 
     AppPointerSpecVariants = TorAddress | TorKey | Config
     SystemPointerSpecVariants = HostIp
@@ -387,7 +387,7 @@ Example
         subtype: package
         package-id: bitcoind
         target: config
-        index: "rpc.username"
+        selector: "rpc.username"
 
 .. _union:
 
