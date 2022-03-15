@@ -24,14 +24,6 @@ Hardware Requirements
 
 #. `SD card adapter <https://www.amazon.com/gp/product/B000WR3Z3A>`_ for getting data from your SD card.
 
-Backing up
-----------
-
-We recommend creating fresh backups of your 0.2.x services before getting started with your upgrade kit.
-
-.. warning::
-   *Please don't use the microSD card we sent you as a backup device!*
-
 Flashing
 --------
 
