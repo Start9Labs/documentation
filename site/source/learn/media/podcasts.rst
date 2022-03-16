@@ -7,6 +7,22 @@ Podcasts
 Podcasts featuring Start9 Labs and/or Embassy
 
 .. topic-box::
+    :title: March 14, 2022 - Episode #3052
+    :link: https://www.thesurvivalpodcast.com/digital-sovereign
+    :image: http://survivalpodcast.net/store/images/tspmsblogo.png
+    :anchor: The Survival Podcast
+
+    Matt Hill on Total Digital Sovereignty
+
+.. topic-box::
+    :title: March 11, 2022 - Ernest Hancock interviews David Croisant
+    :link: https://www.freedomsphoenix.com/Media/322001-2022-03-10-2022-03-11-ernest-hancock-interviews-david-croisant-start9-labs.htm
+    :image: https://is2-ssl.mzstatic.com/image/thumb/Podcasts/62/f0/38/ps.tbxsjaqa.jpg/626x0w.webp
+    :anchor: Declare Your Independence
+
+    David Croisant (Start9 Labs) comes on to talk about EmbassyOS version 0.3.0, "self-hosting," freedom tech, "Uncle Jim" model, rebuilding the Internet, pirate communications, etc...
+
+.. topic-box::
     :title: February 24, 2022 - SLP352 Matt Hill
     :link: https://stephanlivera.com/episode/352/
     :image: https://i0.wp.com/stephanlivera.com/wp-content/uploads/2022/02/SLP352-WP-Thumbnail.png
