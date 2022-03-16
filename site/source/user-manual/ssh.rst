@@ -51,7 +51,7 @@ Replacing ``<LAN URL>`` with your Embassy's LAN (``embassy-xxxxxxx.local``) addr
 Connecting via PuTTY on Windows
 -------------------------------
 
-We are in need of a Windows guide!  Please click the link at the top-right of this page to edit or :ref:`Contact us<contact>` if you would like to contribute!
+Community member `BrewsBitcoin <https://brewsbitcoin.com>`_ has created `a guide for connecting via SSH using PuTTY on Windows. <https://medium.com/@brewsbitcoin/ssh-to-start9-embassy-from-windows-4a4e17891b5a>`_
 
 Using SSH Over Tor
 ------------------
