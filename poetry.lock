@@ -276,7 +276,7 @@ testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "requests", "xm
 
 [[package]]
 name = "pytz"
-version = "2021.3"
+version = "2022.1"
 description = "World timezone definitions, modern and historical"
 category = "main"
 optional = false
@@ -457,7 +457,7 @@ sphinx = ">=1.2"
 
 [[package]]
 name = "sphinx-tabs"
-version = "3.3.0"
+version = "3.3.1"
 description = "Tabbed views for Sphinx"
 category = "main"
 optional = false
@@ -760,8 +760,8 @@ pytest = [
     {file = "pytest-5.4.3.tar.gz", hash = "sha256:7979331bfcba207414f5e1263b5a0f8f521d0f457318836a7355531ed1a4c7d8"},
 ]
 pytz = [
-    {file = "pytz-2021.3-py2.py3-none-any.whl", hash = "sha256:3672058bc3453457b622aab7a1c3bfd5ab0bdae451512f6cf25f64ed37f5b87c"},
-    {file = "pytz-2021.3.tar.gz", hash = "sha256:acad2d8b20a1af07d4e4c9d2e9285c5ed9104354062f275f3fcd88dcef4f1326"},
+    {file = "pytz-2022.1-py2.py3-none-any.whl", hash = "sha256:e68985985296d9a66a881eb3193b0906246245294a881e7c8afe623866ac6a5c"},
+    {file = "pytz-2022.1.tar.gz", hash = "sha256:1e760e2fe6a8163bc0b3d9a19c4f84342afa0a2affebfaa84b01b978a02ecaa7"},
 ]
 pyyaml = [
     {file = "PyYAML-5.4.1-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:3b2b1824fe7112845700f815ff6a489360226a5609b96ec2190a45e62a9fc922"},
@@ -841,8 +841,8 @@ sphinx-sitemap = [
     {file = "sphinx-sitemap-2.1.0.tar.gz", hash = "sha256:ba3576f38e8d1cabde483dabed2cc2b958af85ff97f2a4442f990b02e967d6a5"},
 ]
 sphinx-tabs = [
-    {file = "sphinx-tabs-3.3.0.tar.gz", hash = "sha256:3ffab6695b8b7cf252616af1a974e4d3c2d60f633debff373535c008e1e89f7f"},
-    {file = "sphinx_tabs-3.3.0-py3-none-any.whl", hash = "sha256:7a7d20f1035c72c1862f641e81118cd5eedb726453142e7a726dda861b118f34"},
+    {file = "sphinx-tabs-3.3.1.tar.gz", hash = "sha256:d10dd7fb2700329b8e5948ab9f8e3ef54fff30f79d2e42cfd1b0089ae26e8c5e"},
+    {file = "sphinx_tabs-3.3.1-py3-none-any.whl", hash = "sha256:73209aa769246501f6de9e33051cfd2d54f5900e0cc28a63367d8e4af4c0db5d"},
 ]
 sphinxcontrib-applehelp = [
     {file = "sphinxcontrib-applehelp-1.0.2.tar.gz", hash = "sha256:a072735ec80e7675e3f432fcae8610ecf509c5f1869d17e2eecff44389cdbc58"},
