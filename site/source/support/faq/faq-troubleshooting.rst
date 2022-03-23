@@ -5,7 +5,7 @@ Setup and Troubleshooting FAQ
 =============================
 
 .. contents::
-  :depth: 2 
+  :depth: 2
   :local:
 
 What do I do first?
@@ -60,4 +60,4 @@ Unfortunately, Brave does not treat .onion addresses in a 'secure context.'  Thi
 
 Is it true that my device has some limited functionality in regard to Embassy?
 ------------------------------------------------------------------------------
-The short answer is maybe, but there are workarounds for most limitations.  Please see the :ref:`Limitations<limitations>` page for details on your device.
+The short answer is probably not, and there are workarounds for most limitations.  Please see the :ref:`Limitations<limitations>` page for details on your device.

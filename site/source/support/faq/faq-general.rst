@@ -5,7 +5,7 @@ General FAQ
 ===========
 
 .. contents::
-  :depth: 2 
+  :depth: 2
   :local:
 
 What is Start9Labs?
@@ -123,7 +123,8 @@ I want to help, but I'm not a developer.  Are there any ways for non-coders to c
 ------------------------------------------------------------------------------------------
 1. Shill it to everyone and create awareness
 2. Answer questions from new users in the community channels
-3. Make tutorial videos
+3. Make tutorial videos, blog posts, or reviews
 4. Write instruction manuals or commit to the docs
+5. Make memes, images, or other minimalistic content
 
 Check out the :ref:`Contribute<contribute>` section of this site for more details.

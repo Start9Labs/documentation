@@ -5,7 +5,7 @@ Basic Use FAQ
 =============
 
 .. contents::
-  :depth: 2 
+  :depth: 2
   :local:
 
 Is it easy to use?
@@ -19,7 +19,7 @@ Yes! No special skills or knowledge are required to host all your own services a
 
 Can I run multiple Embassies?
 -----------------------------
-Yes, but there is currently no way to synchronize or federate them.  We are working on ways to make this possible in the future.
+Yes, but there is currently no way to synchronize or federate them.  We are working on ways to make this possible in the future.  At the service level, however, some data can be shared or made redundant.
 
 What if I forget my Embassy password?
 -------------------------------------
@@ -49,8 +49,8 @@ Can I have multiple users on my Embassy?
 ----------------------------------------
 Currently, the Embassy itself is designed for a single user. There is no way to grant others access to your Embassy without sharing your personal, master password, which is not recommended. There are certain services, however, such as Bitwarden, File Browser, and Mastodon, that do support multiple users (aka multi-tenancy, aka the Uncle Jim model) where people who trust you (and vice versa) can create their own, personal accounts for these services on your Embassy. Just remind them that they are trusting you with their data, and that it might be preferable for them to take the final leap of self-sovereignty and get an Embassy of their own.
 
-What can I do if I am having issues connecting to an Android app over Tor?
---------------------------------------------------------------------------
+What can I do if I am having issues connecting to a mobile app over Tor?
+------------------------------------------------------------------------
 Unfortunately, Orbot can be finicky.  The best solution to Android issues is normally to restart Orbot, or to reboot the phone.  This will solve most common problems.
 
 What can I do if I am having issues connecting with Consulate?
