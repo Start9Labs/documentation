@@ -4,7 +4,11 @@
 Trusting Embassy CA on Mac
 ==========================
 
-#. Locate your Embassy's Root CA, right click, then click *Open with > Keychain Access*.
+.. note:: Using Tor to download your LAN certificate is required for security reasons
+
+#. Using a Tor browser of your choice, visit your Embassy and download your LAN certificate from the *Embassy tab > LAN > Download Root CA*
+
+#. Navigate to your Embassy's Root CA that you just downloaded, right click, then click *Open with > Keychain Access*.
 
     .. figure:: /_static/images/ssl/embassy_lan_setup1.png
         :width: 60%

@@ -6,6 +6,10 @@ Trusting Embassy CA On Windows
 
 Unfortunately, Windows does not have mDNS support built-in, which is necessary in order to visit .local addresses, so we recommend using the Bonjour service. Check out this :ref:`FAQ answer<why-bonjour>` for details.
 
+.. note:: Using Tor to download your LAN certificate is required for security reasons
+
+#. Using a Tor browser of your choice, visit your Embassy and download your LAN certificate from the *Embassy tab > LAN > Download Root CA*
+
 #. Install `Bonjour Print Services <https://support.apple.com/kb/DL999>`_ on your Windows machine.
 
    .. tip::  If you are experiencing issues after installing Bonjour, you might have had a previous or failed install. To fix:

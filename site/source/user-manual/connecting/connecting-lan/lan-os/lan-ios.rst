@@ -4,6 +4,36 @@
 Trusting Embassy CA on iOS
 ==========================
 
+iOS 15+
+-------
+
+.. note:: Using Tor to download your LAN certificate is required for security reasons
+
+#. Using a Tor browser, such as Onion Browser, navigate to your Embassy and tap your LAN certificate from the *Embassy tab > LAN > Download Root CA*, then tap "Open with"
+
+#. Tap "Save to files"
+
+#. Select "On my phone"
+
+#. Tap "Save"
+
+#. Go to "Settings"
+
+#. Tap "Profile downloaded"
+
+#. Tap "Install"
+
+#. Tap "Install" again on the Warning screen, you may need to enter your password
+
+#. Tap "Done"
+
+#. Go to "Settings" again, then select "General" > "About" > "Certificate Trust Settings"
+
+#. Toggle your Embassy's cert to *Green*
+
+iOS 14 and Lower
+----------------
+
 #. On your iOS device, go to *Settings > General > Profiles*. Under "Downloaded Profile", click "Embassy Local Root CA"
 
    .. figure:: /_static/images/ssl/ios/ssl_ipad_profiles.png
