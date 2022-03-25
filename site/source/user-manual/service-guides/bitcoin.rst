@@ -115,14 +115,14 @@ Instructions for accessing the bitcoind service in order to issue commands direc
 1. First, you will need SSH access.  Please see the :ref:`setup instructions <ssh>` for details.
 2. Access your Embassy and then you can interact with the bitcoind docker container using the following syntax::
 
-    sudo docker exec bitcoind bitcoin-cli COMMAND
+    sudo docker exec -ti bitcoind.embassy bitcoin-cli COMMAND
 
-.. tip:: For example ``sudo docker exec bitcoind bitcoin-cli getnetworkinfo``
+.. tip:: For example ``sudo docker exec -ti bitcoind.embassy bitcoin-cli getnetworkinfo``
 
 A list of possible commands can be found `here <https://chainquery.com/bitcoin-cli>`__.
 
 You can also drop into a shell using::
 
-    sudo docker exec -it bitcoind bash
+    sudo docker exec -ti bitcoind.embassy bash
 
 and then enter ``bitcoin-cli`` commands.  When you are finished, simply type ``exit``...
