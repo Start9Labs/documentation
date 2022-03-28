@@ -57,6 +57,14 @@ In ``main.rs`` add:
         }
     }
 
+And in ``Cargo.toml``, make sure your dependencies section looks like this:
+
+.. code:: toml
+
+    [dependencies]
+    hyper = { version = "0.14.4", features = ["server", "http1", "http2", "tcp", "stream"] }
+    tokio = { version = "1.4.0", features = ["full"] }
+
 
 **That's it!** We now have the code for our service.
 
