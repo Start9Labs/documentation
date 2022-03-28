@@ -57,7 +57,7 @@ In ``main.rs`` add:
         }
     }
 
-And in ``Cargo.toml``, make sure your dependencies section looks like this:
+Finally, in our ``Cargo.toml``, we need to add some dependencies, which will look like this:
 
 .. code:: toml
 
