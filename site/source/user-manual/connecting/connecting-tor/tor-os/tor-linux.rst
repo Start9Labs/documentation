@@ -70,6 +70,8 @@ Running Tor on Linux
 
             - Fedora:
 
+            .. tip:: Latest Fedora versions have Tor package available for installation:
+
             .. code-block:: bash
 
                 [Tor]
@@ -80,8 +82,14 @@ Running Tor on Linux
                 gpgkey=https://rpm.torproject.org/fedora/public_gpg.key
                 cost=100
 
-        #. Then install the Tor package:
+        #. Install the Tor package:
 
             .. code-block:: bash
 
                 sudo dnf install tor
+
+        #. Then enable tor service:
+
+            .. code-block:: bash
+
+                sudo systemctl enable --now tor
