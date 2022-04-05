@@ -87,4 +87,4 @@ Whether you purchase EmbassyOS from us or build it yourself, you'll need to flas
     .. warning:: Be certain you have selected the correct target microSD card. Whatever target you select will be completely erased and replaced with EmbassyOS.
 
 #. Click "Flash!". You may be asked to (1) approve the unusually large disk target or (2) enter your password. Both are normal.
-#. After the flash completes, you may remove the micro SD, insert it into your Embassy, and continue to the :ref:`Initial Setup <initial-setup>` instructions.
+#. After the flash completes, you may remove the micro SD from the adapter, insert it into your Embassy's SD card slot, and continue to the :ref:`Initial Setup <initial-setup>` instructions.
