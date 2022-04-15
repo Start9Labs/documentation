@@ -14,49 +14,6 @@ Read more about our :ref:`vision<start9>`, or check out this `podcast <https://w
 Open Positions
 --------------
 
-Social Media and Content Marketing Lead
-=======================================
-
-The goal is omnipresence: Twitter threads, TikTok skits, YouTube videos, blog posts, podcasts. Any thread, conversation, or debate about Bitcoin/Lightning nodes, data privacy, or sovereign technology - Start9 is there. From shit posting on Twitter to extended essays on the moral justification for Stateless money, Start9 is a voice for freedom and for the sovereign individual.
-
-Job Description
-...............
-
-- Work with CEO on content strategy
-- Identify opportunities to grow and foster the Start9 community
-- Manage social media accounts
-- Meme at will
-- Triage support issues that arise in public forums or DMs
-- Manage content pipelines of Start9 team members and coordinate publication for optimal engagement
-
-Requirements
-............
-
-- Passion for Bitcoin and sovereign technology
-- Excellent written communication skills
-- Good sense of humor
-- Organized
-- Familiarity with various platforms and how to optimize visibility and engagement on them
-- In tune with the cultures and trends of Start9's markets
-
-Benefits
-........
-
-- Competitive salary
-- Performance-based bonuses
-- A healthy equity package. You're still early!
-- Work from anywhere in the world, including our Denver office
-- Health and dental insurance
-- Budget for new computer
-- Attend conferences
-- Team retreats!
-
-How to Apply
-............
-
-Email us at jobs@start9labs.com with your resume and any other information you think we should know about you.
-
-
 Community Manager and Technical Support Engineer
 ================================================
 
