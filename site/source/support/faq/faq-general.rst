@@ -90,7 +90,7 @@ Yes.
 
 Is the software Open Source?
 ----------------------------
-Yes! EmbassyOS is open source under the `Start9 Personal Use License <https://start9.com/license>`_.  Some of our other projects are currently open sourced under MIT. You can find these in the Start9 `GitHub repository <https://github.com/Start9Labs>`_.
+Yes! EmbassyOS is open source under the `Start9 Personal Use License <https://start9.com/latest/about/license>`_.  Some of our other projects are currently open sourced under MIT. You can find these in the Start9 `GitHub repository <https://github.com/Start9Labs>`_.
 
 Can you tell me about the License?
 ----------------------------------
