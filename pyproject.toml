@@ -12,11 +12,10 @@ recommonmark = "0.5.0"
 sphinx-scylladb-theme = "1.2.1"
 sphinx-sitemap = "2.1.0"
 Sphinx = "4.5"
-sphinx-multiversion-scylla = "0.2.11"
+sphinx-multiversion-scylla = "0.2.10"
 beautifulsoup4 = "^4.9.3"
 sphinx-tabs = "^3.1.0"
 sphinxcontrib-youtube = "^1.0.1"
-
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
