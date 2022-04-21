@@ -6,17 +6,16 @@ authors = ["elvece <lucy@start9labs.com>, kn0wmad <david@start9labs.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-pyyaml = "^5.3"
+pyyaml = "6.0"
 pygments = "^2.7.4"
 recommonmark = "0.5.0"
-sphinx-scylladb-theme = "1.0.6"
+sphinx-scylladb-theme = "1.2.1"
 sphinx-sitemap = "2.1.0"
-Sphinx = "^2.4.4"
-sphinx-multiversion-scylla = "0.2.6"
+Sphinx = "4.5"
+sphinx-multiversion-scylla = "0.2.10"
 beautifulsoup4 = "^4.9.3"
 sphinx-tabs = "^3.1.0"
 sphinxcontrib-youtube = "^1.0.1"
-
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
