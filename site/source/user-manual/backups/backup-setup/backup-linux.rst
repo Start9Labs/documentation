@@ -10,6 +10,10 @@ Linux LAN Shared Folder
     
 Use this guide to setup a LAN Shared folder on your Linux machine, such that you may create encrypted, private backups of all your Embassy data.
 
+Video Guide:
+   .. youtube:: LLIMC5P3NdY
+      :width: 100%
+
 Setup LAN Shared Folder
 -----------------------
 
