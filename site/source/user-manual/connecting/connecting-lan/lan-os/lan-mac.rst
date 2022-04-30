@@ -33,3 +33,7 @@ Trusting Embassy CA on Mac
     .. figure:: /_static/images/ssl/macos/certificate_trusted.png
         :width: 60%
         :alt: Keychain menu trusted certificate
+
+No additional setup is required for most browsers and you will be able to safely connect over LAN. 
+
+If you wish to use Firefox (recommended) please follow the instructions :ref:`here <lan-ff>`.
