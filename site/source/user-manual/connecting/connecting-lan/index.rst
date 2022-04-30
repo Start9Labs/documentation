@@ -37,7 +37,9 @@ First instruct your **operating system** to trust your Embassy's Root CA.
 
       lan-os/index
 
-Then instruct your **browser** to trust your Embassy's Root CA.
+Then instruct your **browser** to trust your Embassy's Root CA. 
+
+    .. note:: On a Mac - this is only necessary on Firefox. Brave, Chrome and Safari will already work.
 
     .. toctree::
       :maxdepth: 2
