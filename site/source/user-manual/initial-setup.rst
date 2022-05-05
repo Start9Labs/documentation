@@ -17,6 +17,10 @@ Initial Setup
 
   <br>
 
+Video Guide:
+    .. youtube:: cWFLUH6jrqA
+      :width: 100%
+
 Powering On
 -----------
 
