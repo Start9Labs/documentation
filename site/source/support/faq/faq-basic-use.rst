@@ -23,7 +23,7 @@ Yes, but there is currently no way to synchronize or federate them.  We are work
 
 What if I forget my Embassy password?
 -------------------------------------
-Check out the `docs <https://start9.com/user-manual/general/forgot-password.html>`_ on forgot password, and let us know if you have any additional questions.  All your services and data will remain.
+Check out the :ref:`Forgot Password<forgot-password>` section of these docs, and let us know if you have any additional questions.  All your services and data will remain.
 
 My Embassy is set up, now what?
 -------------------------------
@@ -49,9 +49,11 @@ Can I have multiple users on my Embassy?
 ----------------------------------------
 Currently, the Embassy itself is designed for a single user. There is no way to grant others access to your Embassy without sharing your personal, master password, which is not recommended. There are certain services, however, such as Bitwarden, File Browser, and Mastodon, that do support multiple users (aka multi-tenancy, aka the Uncle Jim model) where people who trust you (and vice versa) can create their own, personal accounts for these services on your Embassy. Just remind them that they are trusting you with their data, and that it might be preferable for them to take the final leap of self-sovereignty and get an Embassy of their own.
 
-What can I do if I am having issues connecting to an Android app over Tor?
---------------------------------------------------------------------------
-Unfortunately, Orbot can be finicky.  The best solution to Android issues is normally to restart Orbot, or to reboot the phone.  This will solve most common problems.
+Multi-tenancy is a high priority for the upcoming Embassy:Pro device.
+
+What can I do if I am having issues connecting to a mobile app over Tor?
+------------------------------------------------------------------------
+Unfortunately, Orbot can be finicky.  The best solution to connection issues is normally to restart Orbot, or to reboot the phone.  This will solve most common problems.
 
 What can I do if I am having issues connecting with Consulate?
 --------------------------------------------------------------
@@ -65,7 +67,7 @@ This can be useful, as you may want to wipe a service and start anew. For exampl
 
 Do I need to delete existing backups before doing a new backup? Or does a new backup override the old backup?
 -------------------------------------------------------------------------------------------------------------
-No, you don't need to delete the old backups. The technology we use updates the existing backup.
+No, you don't need to delete the old backups. The technology we use updates the existing backup.  This is known as a "diff-based" model, where the "difference" in backups is what is recorded.
 
 Can I clone my Embassy SSD for backup purposes?
 -----------------------------------------------

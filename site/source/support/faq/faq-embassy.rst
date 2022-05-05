@@ -10,7 +10,7 @@ Embassy FAQ
 
 Can I run EmbassyOS on a VPS or VM?
 -----------------------------------
-Yes, but we currently advise against this. It is designed to be used on a RaspberryPi, and at the moment this is the only supported way to run EOS.
+Possibly, but we currently advise against this. It is designed to be used on a RaspberryPi, and at the moment this is the only supported way to run EOS.
 
 Is it possible to use the EmbassyOS on my own hardware?
 -------------------------------------------------------
@@ -22,13 +22,17 @@ Do I plug the Embassy into my computer?
 ---------------------------------------
 No.  The Embassy only needs to be plugged into power and internet, just like your router.  You can set it up right by your router and, similar to a router, generally forget about it.
 
+Do I plug in a monitor, keyboard, and mouse?
+--------------------------------------------
+No.  Embassy is headless (has no display), and is accessed via the web browser.
+
 How much storage does the Embassy have?
 ---------------------------------------
-Currently, the Embassy ships with a 128gb of storage.
+Currently, the Embassy ships with a 1 or 2TB SSD, but you may use a larger drive if you prefer.  We advise against HDDs at this time for perfomance reasons.
 
 Are my Internet requests anonymous and secure?
 ----------------------------------------------
-EmbassyOS and every service on Embassy serve their own Tor Hidden Services with unique Tor addresses. The private keys used to create these addresses are generated on your phone or computer when you first set up Embassy. No one, not even Start9, has any idea what your Tor addresses are, let alone the password(s) you choose to authenticate with them.
+EmbassyOS and every service on our Marketplace serve their own Tor Hidden Services with unique Tor addresses. The private keys used to create these addresses are generated on your phone or computer when you first set up Embassy. No one, not even Start9, has any idea what your Tor addresses are, let alone the password(s) you choose to authenticate with them.
 
 Does Start9 have access to my Embassy's encryption keys?
 --------------------------------------------------------
@@ -36,7 +40,7 @@ No.  Your keys are generated on your device using the password you create so we 
 
 Can multiple Embassies be setup to run redundantly in physically separate locations?
 ------------------------------------------------------------------------------------
-Soon (tm).  Currently no, be we have plans for a feature that will enable Embassies to provide encrypted, automated backup services for one another.
+Currently no, but we have plans for a feature that will enable Embassies to provide encrypted, automated backup services for one another.
 
 How does the Embassy compare to other Bitcoin nodes or personal servers?
 ------------------------------------------------------------------------
@@ -45,15 +49,15 @@ The cheapest way to run a Bitcoin/Lightning node is to buy a Raspberry Pi (or eq
 Would you consider (Umbrel, Nodl, RoninDojo, etc) a competitor to you guys, or are they different enough to be compatible?
 --------------------------------------------------------------------------------------------------------------------------
 Other node devices are competitors, and there are distinct trade-offs to each platform, but we are definitely moving toward the same future, which is a win for everyone!
-We are taking more a general approach to all of open-source, hosted software, including Bitcoin/Lightning. They are more Bitcoin/Lightning oriented.
+We are taking more a general approach to all of open-source, hosted software, including Bitcoin/Lightning. The aforementioned examples are more Bitcoin/Lightning focused.
 
 Is a more powerful device in the works??
 ----------------------------------------
-Yes, and EmbassyOS will eventually be capable of running on lots of different hardware, such as an old desktop.  We want EmbassyOS to be widely available.
+Yes, we are now taking `pre-orders <https://store.start9.com/products/embassy-2>`_ for the Embassy:Pro, which will be the new standard in personal servers!  Additionally, EmbassyOS will eventually be capable of running on lots of different hardware, such as an old desktop.  We want EmbassyOS to be widely available and accessible.
 
-I heard on an old podcast that there will be an Embassy Two, to be launched in 2021.  Is there an ETA on this?
---------------------------------------------------------------------------------------------------------------
-R&D is in progress, but obviously 2021 was not the year for this.  Check our :ref:`Community Channels<contact>` for the latest updates.
+Is there an ETA on the Embassy:Pro?
+-----------------------------------
+R&D is in progress, and we have already secured the hardware.  We anticipate shipping in Q3 2022.  Check our :ref:`Community Channels<contact>` for the latest updates.
 
 Can I mine Bitcoin with this?
 -----------------------------
@@ -61,13 +65,13 @@ No, you can not.
 
 Does the Embassy only work over Tor? No http or VPN?
 ----------------------------------------------------
-Embassy's current primary communication is over Tor. In many cases we use HTTP over Tor (they are not mutually exclusive), you can see this by navigating to the Tor address in a browser and see the “http” in front of it.  A VPN is a feature we’re exploring as an alternative to Tor to make things faster without meaningfully impacting privacy.  You can also connect directly via LAN if you are on the same network as your device.
+Embassy's current primary communication is over Tor. In many cases we use HTTP over Tor (they are not mutually exclusive), you can see this by navigating to the Tor address in a browser and see the “http” in front of it.  A VPN is a feature we're exploring as an alternative to Tor to make things faster without meaningfully impacting privacy.  You can also connect directly via LAN if you are on the same network as your device.
 
 What if someone gets physical access to my device, can they read the contents? Is it encrypted?
 -----------------------------------------------------------------------------------------------
-The device is currently not currently protected in that way. Someone with physical access to the device can get full access to everything on it.
+The data is currently encrypted at rest, but not in a way that would prevent a sophisticated attacker from accessing it.  This is a step towards better security in the near future.
 
-Apps like Bitwarden, however, do not store plaintext information, so your passwords will not be compromised unless they know your master password.
+Services like Bitwarden, however, do not store plaintext information, so your passwords will not be compromised unless they know your master password.
 
 Why http and not https for .onion websites?
 -------------------------------------------

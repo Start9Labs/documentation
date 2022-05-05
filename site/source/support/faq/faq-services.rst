@@ -14,11 +14,11 @@ Please make sure the service is started by viewing it in the Services tab in the
 
 Can it be used as a firewall?
 -----------------------------
-Potentially. The PiHole service is on the roadmap.
+Potentially. The PiHole service is on our wishlist.
 
 Will there be a VPN?
 --------------------
-We are looking into adding Wireguard as a service for VPN access when you are not home.  A client-to-client Embassy VPN may also be possible.
+We are looking into adding Wireguard as a service for VPN access when you are not home.  A client-to-client Embassy VPN may also be possible in the future.
 
 Will there be an email server?
 ------------------------------
@@ -45,9 +45,9 @@ Does the Embassy operate as a Tor relay node?
 ---------------------------------------------
 No, currently it does not, but we plan to add that functionality in the near future.
 
-Are files on File browser encrypted on disk?
+Are files on File Browser encrypted on disk?
 --------------------------------------------
-No, not currently.
+Yes, but not in a way that would prevent a sophisticated attacker.
 
 Can others use my Cups instance? How does that work?
 ----------------------------------------------------

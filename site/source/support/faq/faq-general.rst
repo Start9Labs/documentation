@@ -14,7 +14,7 @@ Start9Labs is a small, but quickly growing group of builders based in Denver, CO
 
 What is the Embassy?
 --------------------
-Embassy is a "shelf-top" computer built using a `Raspberry Pi <https://www.raspberrypi.org/products/raspberry-pi-4-model-b/>`_ for hardware and running EmbassyOS software.
+Embassy is a "shelf-top" personal server built using a `Raspberry Pi <https://www.raspberrypi.org/products/raspberry-pi-4-model-b/>`_ for hardware and running EmbassyOS software.
 
 The internet as we know it is organized into questioners, or clients, and answerers, or servers. When you open a mobile email app, say Gmail, the app (client) begins asking questions: "have I received new mail?", "what are my last 50 messages?", "what drafts am I in the midst of writing?", and so on. Your app's questions are sent to and heard by a Google-run server which then provides answers back to the client and are subsequently displayed to the screen.
 
@@ -55,7 +55,7 @@ What is EmbassyOS?
 ------------------
 EmbassyOS is a new kind of Operating System (OS). It is built from the ground up to allow anyone to easily run their own "cloud," become independent from Big Tech, and own their own data. EmbassyOS allows anyone to easily host their own software services.
 
-EmbassyOS is a custom-built Linux distribution, which is a beefed up version of `Ubuntu Server OS <https://ubuntu.com/server>`_, along with a suite of software tools which make it easy to:
+EmbassyOS is a custom-built Linux distribution, which is a beefed up version of `Raspberry Pi OS <https://www.raspberrypi.com/software/operating-systems/>`_, along with a suite of software tools which make it easy to:
 
 * Install, uninstall, and upgrade services from a Marketplace (similar to your phone's app store)
 * Manage and run services that YOU own and control
@@ -74,11 +74,11 @@ The .s9pk extension is Start9's custom package format based on tar. It encompass
 
 What are EmbassyOS Services?
 ----------------------------
-A Service can be any piece of software added to the Marketplace.  All services are "self-hosted," meaning that you are in complete control of your data.  This means you can run your own "cloud!"  Learn more about managing services :ref:`here <managing-services>` and see our currently `Available Services <https://marketplace.start9.com/>`_.
+A Service can be any piece of software added to the Marketplace.  Unlike "apps," services are (usually) "server-side" software, meaning they are intended to run 24/7/365 and listen for requests from your clients (apps).  All services are "self-hosted," meaning that you are in complete control of your data.  This means you can run your own "cloud!"  Learn more about managing services :ref:`here <managing-services>` and see our currently `Available Services <https://marketplace.start9.com/>`_.
 
 Does the Embassy ship worldwide?
 --------------------------------
-No.  We ship everywhere that DHL ships, with the unfortunate exception of Europe, where the VAT and Customs are so ridiculous that they cost as much as Embassy itself or more.  Please consider buying your hardware locally, and purchasing EmbassyOS as a download from us instead.
+No.  We ship everywhere that DHL ships, with the unfortunate exception of Europe, where the VAT and Customs are so ridiculous that they cost as much as Embassy itself or more.  Please consider buying your hardware locally, and purchasing EmbassyOS as a download from us instead.  Please see the :ref:`DIY<diy>` page for details.
 
 Does the Embassy have international electrical plugs?
 -----------------------------------------------------

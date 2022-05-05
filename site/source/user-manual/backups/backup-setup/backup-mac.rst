@@ -8,9 +8,8 @@ Mac LAN Shared Folder
   :depth: 2 
   :local:
 
-Use this guide to setup a LAN Shared Folder on your Mac (or attached drive), such that you may create encrypted, private backups of all your Embassy data.
+Check out the video below, and follow along with the steps in this guide to setup a LAN Shared Folder on your Mac (or attached drive), such that you may create encrypted, private backups of all your Embassy data.
 
-Video Guide:
    .. youtube:: Uv7ul6ZKW5k
       :width: 100%
 
