@@ -4,6 +4,10 @@
 Trusting Embassy CA on Mac
 ==========================
 
+Video Guide:
+   .. youtube:: sErA23Ii5To 
+    :width: 100%
+
 #. Locate your Embassy's Root CA, right click, then click *Open with > Keychain Access*.
 
     .. figure:: /_static/images/ssl/embassy_lan_setup1.png
