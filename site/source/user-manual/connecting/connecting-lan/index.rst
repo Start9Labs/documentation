@@ -11,6 +11,13 @@ Whenever you are connected the same Local Area Network (LAN) as your Embassy (i.
 Download Root CA
 ----------------
 
+Video Guide:
+
+  .. youtube:: aZYGVFBicbs
+    :width: 100%
+
+
+
 First, download your Embassy's Root CA. There are two way to accomplish this:
 
 Option 1
