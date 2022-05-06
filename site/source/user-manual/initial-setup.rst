@@ -8,16 +8,8 @@ Initial Setup
   :depth: 2
   :local:
 
-.. Check out our quick setup video below, and follow along with the steps in this guide:
+Check out the video below, and follow along with the steps in this guide to setup your new Embassy!
 
-.. .. youtube:: DmTlwp5_zvY
-..   :width: 100%
-
-.. raw:: html
-
-  <br>
-
-Video Guide:
     .. youtube:: cWFLUH6jrqA
       :width: 100%
 

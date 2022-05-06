@@ -1,4 +1,4 @@
-.. _lightning:
+.. _lightning-service:
 
 =========
 Lightning

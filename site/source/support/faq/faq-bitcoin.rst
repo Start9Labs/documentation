@@ -18,15 +18,15 @@ You can learn more about the Initial Block Download in `this video <https://www.
 
 Can the IBD (Initial Block Download) be made faster?  Or can wait times be improved?
 ------------------------------------------------------------------------------------
-IBD was made significantly faster with the new hardware scheme of version 0.3.0 and up.  Going forward the only way to improve IBD speeds will be on more powerful hardware, which we are investigating.
+IBD was made significantly faster with the new hardware scheme of version 0.3.0 and up.  Going forward the only way to improve IBD speeds will be on more powerful hardware, such as the upcoming Embassy:Pro.
 
 Does the Embassy run a full archival Bitcoin node or a pruned one?
 ------------------------------------------------------------------
 Previous Embassy versions (pre-0.3.0) only allowed a pruned node, but the option is now yours.  In the Bitcoin Config, find the section on pruning, and set to 'Manual' or 'Automatic' to to prune to specified sizes, or turn pruning off entirely for a full archival node.  Please keep in mind that a full archival node will take up between 400-500GB of your drive as of 2022.
 
-What actions, specifically, are only possible with an archival, or ‘unpruned’ node?
+What actions, specifically, are only possible with an archival, or 'unpruned' node?
 -----------------------------------------------------------------------------------
-The more sophisticated the blockchain analysis being done is, the more index data is required, which will increase the system resources required.  For example, if you wanted to run a block explorer, you would require not only a full archival node, but also a full transaction index.  So, specifically, at this time, a full archival node is required for running an Electrum server, a block explorer, and for doing advanced chain analysis in general.
+Generally, the more sophisticated the blockchain analysis being done is, the more index data is required, which will increase the system resources required.  For example, if you wanted to run a block explorer (such as Mempool.Space), you would require not only a full archival node, but also a full transaction index.  So, specifically, at this time, a full archival node is required for running an Electrum server, a block explorer, and for doing advanced chain analysis in general.
 
 Many wallets also do not yet support pruned nodes, which is one big reason that we added the archival option.  Archival nodes currently have a lot more wallet integration options.
 
@@ -38,7 +38,7 @@ The Bitcoin Service is different from the GUI version I am used to using (bitcoi
 -------------------------------------------------------------------------------------------------------------------------
 At present, the Embassy does not offer its own node visualization tool. You can view certain properties about your node inside the "Properties" section, but not in an animated GUI. If you want to use bitcoin-cli, you may do so by adding an SSH key onto your Embassy and :ref:`exec-ing into the bitcoind docker container<service-container>`. Otherwise, the main way to actually *use* your node is through a wallet. The QT GUI is not usable because it cannot be served through the browser (which is necessary here), and last we checked, the QT desktop client was incapable of connecting to a remote node over Tor.
 
-Is a wallet vulnerable to hacking if it’s always online??
+Is a wallet vulnerable to hacking if it's always online??
 ---------------------------------------------------------
 Funds are not stored on the node typically.  The node simply serves as a source of truth for the state of the blockchain.  Attacks depend on where the keys are and where the signing happens. You can use something like a hardware wallet for better security.  Though, to be fair, a lot of attacks depend on you or your machine being targeted specifically, and a whole bunch of attack vectors are highly theoretical and obscure.
 Most successful attacks seem to be either fake/doctored software or a social attack (tricking you into installing some malware or giving your seed outright or something like that).
@@ -66,7 +66,7 @@ The available wallets are listed in the following FAQ.
 
 Which wallets can I use that sync with my Embassy Bitcoin and/or Lightning nodes?
 ---------------------------------------------------------------------------------
-Please see the :ref:`Service Guides<service-guides>` for all the current options.
+Please see the :ref:`Bitcoin Service Guides<bitcoin-service>` for all the current options.
 
 Is BlueWallet an option?
 ------------------------

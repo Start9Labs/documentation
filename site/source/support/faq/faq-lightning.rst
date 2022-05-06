@@ -44,7 +44,7 @@ Yes, you may run both.  They will operate in their own environments and allow yo
 
 How do I connect my Lightning wallet or mobile app to my Embassy?
 -----------------------------------------------------------------
-Please see the :ref:`Service Guides<service-guides>` section for more details.
+Please see the :ref:`Lightning Service Guides<lightning-service>` section for more details.
 
 Are my addresses, channels, and balances all stored in LND or in RTL?  C-Lightning or Spark, etc?
 -------------------------------------------------------------------------------------------------

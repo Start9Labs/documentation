@@ -14,40 +14,5 @@ Read more about our :ref:`vision<start9>`, or check out this `podcast <https://w
 Open Positions
 --------------
 
-Community Manager and Technical Support Engineer
-================================================
-
-At Start9, community and support are one in the same. We take enormous pride in our wonderful community of passionate, freedom-loving individuals as well as providing the best customer support in the world; not just in the Bitcoin node, personal server, sovereign tech industry, but anywhere. In addition to creating innovative products that actually work, we believe that building community and providing excellent support will be the key to our ongoing success. We are available, responsive, thorough, and generous in our interactions with community members and customers.
-
-Job Description
-...............
-
-- Strategize with Community and Support Lead
-- Educate community members about Start9 and our products
-- Work with customers 1-1 to resolve technical issues, including engaging Start9 developers when necessary
-- Add to the FAQ and technical docs
-
-Requirements
-............
-
-- Passion for spreading Bitcoin and sovereign technology
-- Excellent communication skills, including teaching
-- Experience with command line, linux, self-hosting, and IT
-- High in empathy and patience
-
-Benefits
-........
-
-- Competitive salary
-- Performance-based bonuses
-- A healthy equity package. You're still early!
-- Work from anywhere in the world, including our Denver office
-- Health and dental insurance
-- Budget for new computer
-- Attend conferences
-- Team retreats!
-
-How to Apply
-............
-
-Email us at jobs@start9labs.com with your resume and any other information you think we should know about you.
+We are growing fast, please check back soon!
+============================================
