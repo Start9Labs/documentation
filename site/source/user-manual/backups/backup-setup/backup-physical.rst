@@ -6,6 +6,9 @@ Backup to Physical Drive
 
 .. warning:: Create frequent backups to avoid loss of data!
 
+.. youtube:: KJRO9wGOOVw
+    :width: 100%
+
 The recommended method of backup (including with external drives) is to setup a :ref:`LAN Shared Folder<backup>` via your OS.  However, you may use a powered external drive, or external drive via a powered USB 3.0 hub, connected directly to your Embassy if you prefer.
 
 .. warning:: If you still choose to plug into your Embassy, this drive MUST have external power, or be connected via a powered USB hub in order to prevent any data corruption due to power constraints!
