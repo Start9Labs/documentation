@@ -66,7 +66,7 @@ After building your device, you need a copy of EmbassyOS.
 
 * **Purchasing from Start9** - You can purchase a copy of EmbassyOS `here <https://store.start9.com/collections/embassy/products/embassyos-software-download>`_. This is by far the easiest path to get up and running.
 
-* **Building from Source** - If you prefer to build EmbassyOS from source, Following `this guide <https://github.com/Start9Labs/embassy-os/tree/master/build>`_.
+* **Building from Source** - If you prefer to build EmbassyOS from source, Following `this guide <https://start9labs.medium.com/compiling-embassyos-v0-3-in-ubuntu-406b8b8fd6c2>`_.
 
 Installing EmbassyOS
 --------------------
