@@ -8,7 +8,7 @@ For this example, we are going to create a simple Rust project that serves a sta
 
 .. code:: bash
 
-    mkdir hello-world
+    mkdir hello-world && cd hello-world
     cargo init
     touch src/index.html
 
