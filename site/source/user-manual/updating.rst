@@ -38,7 +38,7 @@ This guide will cover how to recover existing Embassy 0.3.x service and user dat
 Manual Update by Re-flashing
 ----------------------------
 
-#. Obtain the latest copy of EmbassyOS with your product key included, either by `downloading <https://images.start9/download>`_ or `building from source <https://github.com/Start9Labs/embassy-os/tree/master/build>`_.
+#. Obtain the latest copy of EmbassyOS with your product key included, either by `downloading <https://images.start9.com>`_ or `building from source <https://github.com/Start9Labs/embassy-os/tree/master/build>`_.
 #. Flash the downloaded image to your microSD card.
 #. Insert the microSD card into your Embassy and power it on.
 
