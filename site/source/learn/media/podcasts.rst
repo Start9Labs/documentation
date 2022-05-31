@@ -7,6 +7,14 @@ Podcasts
 Podcasts featuring Start9 Labs and/or Embassy
 
 .. topic-box::
+    :title: May 20, 2022 -  Bitcoin & Owning Your Data with David Croisant
+    :link: https://www.djvalerieblove.com/podcast/episode/2ac26d06/david-croisant-building-a-new-internet-with-personal-servers-from-start-9-labs
+    :image: https://pbcdn1.podbean.com/imglogo/image-logo/8790485/Copy_of_image_podcast_cover_1400_1400_px__j5c7bk.png
+    :anchor: Bitcoin, Peace, and Music
+
+    David Croisant - Building a New Internet with Personal Servers from Start9 Labs
+
+.. topic-box::
     :title: March 14, 2022 - Episode #3052
     :link: https://www.thesurvivalpodcast.com/digital-sovereign
     :image: http://survivalpodcast.net/store/images/tspmsblogo.png

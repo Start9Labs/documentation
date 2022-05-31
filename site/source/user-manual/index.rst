@@ -15,7 +15,7 @@ Welcome to the EmbassyOS user manual. Here you will discover all that you Embass
   dashboard-overview
   updating
   backups/index
-  forgot-password
+  .. forgot-password
   customize
   managing-services
   service-guides/index
