@@ -39,6 +39,15 @@ View frequently asked questions, troubleshoot common issues, or contact support.
 
   Get help from Start9 and the community directly
 
+.. topic-box::
+  :title: External Support
+  :link: external-support
+  :icon: scylla-icon scylla-icon--support
+  :class: large-5
+  :anchor: Get help
+
+  Get help for third party apps that connect to your Embassy services
+
 .. raw:: html
 
   </div></div>
@@ -51,3 +60,4 @@ View frequently asked questions, troubleshoot common issues, or contact support.
   common-issues
   faq/index
   contact
+  external-support
