@@ -42,7 +42,7 @@ View frequently asked questions, troubleshoot common issues, or contact support.
 .. topic-box::
   :title: External Support
   :link: external-support
-  :icon: scylla-icon scylla-icon--support
+  :icon: scylla-icon scylla-icon--mail-list
   :class: large-5
   :anchor: Get help
 
