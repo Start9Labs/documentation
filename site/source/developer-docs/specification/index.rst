@@ -109,5 +109,6 @@ The following guides provide an in depth overview of the full capabilities avail
   package
   wrapper
   makefile
+  js-procedure
   submission
   compat/index
