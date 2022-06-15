@@ -92,7 +92,7 @@ Available For
 
 Instructions
 ............
-Follow the `guide <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/docs/integrations/sparrow/guide.md>`__.
+Follow the guide for `MacOS <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/docs/integrations/specter/macos.md>`__ or `Windows <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/docs/integrations/specter/windows.md>`__.
 
 .. _trezor-suite:
 
