@@ -31,7 +31,7 @@ Configuring Firefox for Tor on Mac
 
     .. code-block::
 
-      wget -P /opt/homebrew/etc/tor https://registry.start9labs.com/sys/proxy.pac
+      wget -P /opt/homebrew/bin/tor https://registry.start9labs.com/sys/proxy.pac
 
 #. Now, back in your Firefox web browser, select ``Settings`` from the right-hand hamburger menu:
 
@@ -55,7 +55,7 @@ Configuring Firefox for Tor on Mac
 
     .. code-block::
 
-      file:///opt/homebrew/etc/tor/proxy.pac
+      file:///opt/homebrew/bin/tor/proxy.pac
 
 #. Then, check the box labeled ``Proxy DNS when using SOCKS v5``:
 
