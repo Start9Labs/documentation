@@ -8,6 +8,8 @@ Contact Us
   :depth: 2 
   :local:
 
+.. _community-channels:
+
 Community Channels
 ------------------
 
