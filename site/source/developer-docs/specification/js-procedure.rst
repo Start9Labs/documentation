@@ -41,8 +41,13 @@ Note: Not all the exports are needed unless one uses the following configuration
     export const properties: ExpectedExports.properties = todo;
     /** Fill this out when manifest @ dependencies.<packageName>.config.check.type = script AND dependencies.<packageName>.config.auto-configure.type = script  */
     export const dependencies: ExpectedExports.dependencies = todo;
+    /** Fill this out when manifest @ health-checks.<packageName>.type = script  */
+    export const health: ExpectedExports.health = todo;
 
+    /** Fill this out when manifest @ migrations.<from/to>.<emver>.type = script
+    export const migration: ExpectedExports.migration = todo;
 
+Coming soon: Actions, Backups
 
 Syncthing Example
 -----------------
