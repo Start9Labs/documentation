@@ -20,9 +20,9 @@ The location of the procedures will exists at scripts/embassy.js of where we are
 Template for Embassy.ts
 ----------------
 
-For our example we will assume that this file will exist at scripts/embassy.ts, but this is only needed for the following commands. It could exists any where in the project.
+For our example template we will assume that this file will exist at scripts/embassy.ts, but this is only needed for the following commands. It could exists any where in the project.
 Here lies the template that one should run a ``deno bundle scripts/embassy.ts scripts/embassy.js`` to compile our file into the embassy file that our embassy packer will use. The location of the js is important, and can't be changed.
-Would recommended something like the deno for the vs code, so one can use the language server to hover over the types and get the living documentation or possible values.
+Would recommended something like the deno for the vs code, so one can use the language server to hover over the types and get the living documentation or possible values. And in the examples we use the Deno to bundle and check the ts.
 
 Note: Not all the exports are needed unless one uses the following configuration settings in ``manifest.yaml``
 
@@ -43,7 +43,6 @@ Note: Not all the exports are needed unless one uses the following configuration
     export const dependencies: ExpectedExports.dependencies = todo;
     /** Fill this out when manifest @ health-checks.<packageName>.type = script  */
     export const health: ExpectedExports.health = todo;
-
     /** Fill this out when manifest @ migrations.<from/to>.<emver>.type = script
     export const migration: ExpectedExports.migration = todo;
 
@@ -60,8 +59,8 @@ Syncthing Example
 -----------------
 
 
-- `Manifest <https://github.com/Start9Labs/bitcoind-wrapper/blob/feat/js-procedure/manifest.yaml>`__
-- `Procedures <https://github.com/Start9Labs/bitcoind-wrapper/blob/feat/js-procedure/scripts/embassy.ts>`__
+- `Manifest <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/manifest.yaml>`__
+- `Procedures <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/scripts/embassy.ts>`__
 
 Core Lightning Example
 ----------------------
