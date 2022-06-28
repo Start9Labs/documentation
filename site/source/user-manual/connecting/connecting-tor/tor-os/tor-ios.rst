@@ -6,8 +6,6 @@ Running Tor on iOS
 
 *Orbot has been released for iOS so it is now possible to run Tor natively on iOS.*
 
- .. Note:: For alternative instructions / the old method, please see :ref:`iOS Limitations<lim-ios>` for details.
-
 1. Download and install `Orbot from the Apple appstore <https://apps.apple.com/us/app/orbot/id1609461599>`_.
 2. Open Orbot
 3. Select Settings
