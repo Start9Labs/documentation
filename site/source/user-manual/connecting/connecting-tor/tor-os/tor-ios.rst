@@ -11,7 +11,7 @@ Running Tor on iOS
 1. Download and install `Orbot from the Apple appstore <https://apps.apple.com/us/app/orbot/id1609461599>`_.
 2. Open Orbot
 3. Select Settings
-4. Configure Orbot as follows:
+4. Activate the "Disable Orbot for non-onion traffic" setting:
   
   .. figure:: /_static/images/tor/ios-orbot-settings-oniononlymode.png
     :width: 50%
