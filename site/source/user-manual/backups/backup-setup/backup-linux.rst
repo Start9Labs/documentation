@@ -70,26 +70,26 @@ Setup LAN Shared Folder
         #. Install Samba if it is not already installed.
 
             * ``sudo pacman -S samba``                                      For Arch
-            * ``sudo apt install samba``                                    For Debian
+            * ``sudo apt install samba``                                    For Debian-based distros (Pop-OS, etc)
             * ``sudo yum install samba``                                    For CentOS/Redhat
             * ``sudo dnf install samba``                                    For Fedora
 
-        #. Create a directory to share or choose an existing one and make note of its location (path).  For this example, it will be called ``test-backup`` and located at ``/home/user/test-backup``
+        #. Create a directory to share or choose an existing one and make note of its location (path).  For this example, we will call the share ``backup-share`` and its corresponding shared directory will be located at ``/home/user/embassy-backup``
 
-        #. Configure Samba, by adding the following to the end of the ``/etc/samba/smb.conf`` file:
+        #. Configure Samba by adding the following to the end of the ``/etc/samba/smb.conf`` file:
 
             .. code-block::
 
-                [test-share]
-                    path = /home/user/test-backup
-                    create mask = 0666
-                    directory mask = 0777
+                [backup-share]
+                    path = /home/user/embassy-backup
+                    create mask = 0600
+                    directory mask = 0700
                     read only = no
                     guest ok = no
 
             Where:
 
-            - ``[test-share]`` is the *Share Name*, or title of the entry, and can be called anything you'd like
+            - ``[backup-share]`` is the *Share Name*, or title of the entry, and can be called anything you'd like
             - ``path`` should be the path to the directory you created earlier
 
             Copy the remainder of the entry exactly as it is
@@ -100,7 +100,7 @@ Setup LAN Shared Folder
 
                     sudo smbpasswd -a YOUR-USER
 
-                Create a password and keep it somewhere safe, such as Vaultwarden
+                This creates a password for the Local Network Share.  Keep it somewhere safe, such as Vaultwarden.
 
 
 Connect Embassy
@@ -120,8 +120,8 @@ Connect Embassy
 
     * Hostname - This is the hostname of the machine that your shared folder is located on
     * Path - This is the "Share Name" (name of the share in your samba config) and **not** the full directory path
-    * Username - This is the user on the remote machine that you used to create the shared directory
-    * Password - This is your user (from above) password
+    * Username - This is your Linux username on the remote machine that you used to create the shared directory
+    * Password - This is the password you set above using ``smbpasswd``
 
     .. figure:: /_static/images/config/embassy_backup1.png
         :width: 60%
