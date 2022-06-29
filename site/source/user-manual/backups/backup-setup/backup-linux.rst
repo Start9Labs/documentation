@@ -81,7 +81,7 @@ Setup LAN Shared Folder
             .. code-block::
 
                 [backup-share]
-                    path = /home/user/embassy-backup
+                    path = "/home/user/embassy-backup"
                     create mask = 0600
                     directory mask = 0700
                     read only = no
