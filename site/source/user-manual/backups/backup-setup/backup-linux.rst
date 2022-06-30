@@ -24,7 +24,7 @@ Setup LAN Shared Folder
 
         .. raw:: html
 
-            <br/>
+            <br/><br/>
 
         #. Install Samba if you have not already:
 
