@@ -125,7 +125,7 @@ Connect Embassy
 #. Fill in the following fields:
 
     * Hostname - This is the hostname of the machine that your shared folder is located on
-    * Path - This is the "Share Name" (name of the share in your samba config) and **not** the full directory path
+    * Path - This is the "Share Name" (name of the share in your samba config) and **not** the full directory path.  In this guide we used: backup-share
     * Username - This is your Linux username on the remote machine that you used to create the shared directory
     * Password - This is the password you set above using ``smbpasswd``
 
