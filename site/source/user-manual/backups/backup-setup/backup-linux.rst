@@ -11,6 +11,8 @@ Linux LAN Shared Folder
 Setup LAN Shared Folder
 -----------------------
 
+.. note:: This guide is for Ubuntu only.  For different distros such as Arch, Debian, Pop-OS, PureOS, etc, click "Other Linux" below.
+
 .. tabs::
 
     .. group-tab:: Ubuntu
@@ -74,7 +76,7 @@ Setup LAN Shared Folder
         #. Install Samba if it is not already installed.
 
             * ``sudo pacman -S samba``                                      For Arch
-            * ``sudo apt install samba``                                    For Debian-based distros (Pop-OS, etc)
+            * ``sudo apt install samba``                                    For Debian-based distros (Pop-OS, PureOS, etc)
             * ``sudo yum install samba``                                    For CentOS/Redhat
             * ``sudo dnf install samba``                                    For Fedora
 
