@@ -10,8 +10,6 @@ For macOS running on ARM chips (ie. newer macs):
 Install Homebrew
 ----------------
 
-.. warning:: macOS Homebrew running natively on M1/Apple Silicon/ARM has partial functionality. Therefore, some additional steps are needed to setup Homebrew.
-
 #. Open a command line editor (Terminal), and run the following commands:
 
     .. code-block::
