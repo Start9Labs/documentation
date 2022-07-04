@@ -23,7 +23,7 @@ Yes, but there is currently no way to synchronize or federate them.  We are work
 
 What if I forget my Embassy password?
 -------------------------------------
-Check out the :ref:`Forgot Password<forgot-password>` section of these docs, and let us know if you have any additional questions.  All your services and data will remain.
+Password reset flow is coming in the eOS v0.3.1 release! If you need to reset your password in the meantime, please contact support.
 
 My Embassy is set up, now what?
 -------------------------------
