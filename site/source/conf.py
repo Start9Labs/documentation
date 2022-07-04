@@ -136,3 +136,5 @@ html_title = "Docs"
 html_favicon = "_static/favicon.ico"
 
 html_js_files = ["custom.js"]
+
+# exclude_patterns = ['user-manual/forgot-password.rst']

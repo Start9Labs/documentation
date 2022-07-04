@@ -53,7 +53,7 @@ Ride the Lightning
 * Official Support:
 
   * https://twitter.com/RTL_App
-  * https://twitter.com/Suheb__
+  * `https://twitter.com/Suheb__ <https://twitter.com/Suheb__>` _`
 
 * Community Support: https://github.com/Ride-The-Lightning/RTL/discussions
 
