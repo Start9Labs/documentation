@@ -48,6 +48,15 @@ Contribute
 
   Become an affiliate and help promote Start9.
 
+.. topic-box::
+  :title: Jobs
+  :link: jobs
+  :icon: scylla-icon scylla-icon--about-team
+  :class: large-4
+  :anchor: Join us
+
+  See our available positions.
+
 .. raw:: html
 
   </div></div>

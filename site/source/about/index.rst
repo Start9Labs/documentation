@@ -55,7 +55,7 @@ About
   :class: large-4
   :anchor: Join us
 
-  See what open jobs we have available.
+  See our available positions.
 
 .. raw:: html
 

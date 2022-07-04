@@ -1,3 +1,4 @@
+.. _jobs:
 
 ===========
 Join Start9
