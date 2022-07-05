@@ -11,7 +11,7 @@ Linux LAN Shared Folder
 Setup LAN Shared Folder
 -----------------------
 
-.. note:: This guide is for Ubuntu only.  For different distros such as Arch, Debian, Pop-OS, PureOS, etc, click "Other Linux" below.
+.. note:: This guide is for Ubuntu only.  For Linux Mint, click on "Mint", or for different distros such as Arch, Debian, Pop-OS, PureOS, etc, click "Other Linux" below.
 
 .. tabs::
 
@@ -30,15 +30,15 @@ Setup LAN Shared Folder
 
             .. code-block::
 
-                sudo apt install samba
+                sudo apt install samba && sudo systemctl enable smbd
 
-        #. Add your user to samba, replacing ``YOUR-USER`` with your Linux username.
+        #. Add your user to samba, replacing ``YOUR_LINUX_USERNAME`` with your Linux username.
 
             .. code-block:: bash
 
-                sudo smbpasswd -a YOUR-USER
+                sudo smbpasswd -a YOUR_LINUX_USERNAME
 
-            Create a password and keep it somewhere safe, such as Vaultwarden
+            First you will be prompted for your linux password, then you will be asked to create a new SMB password for the user with permission to write to your new backup share.  Keep it somewhere safe, such as Vaultwarden.
 
         #. Right-click the folder that you want to backup to (or create a new one) and click "Properties"
 
@@ -69,6 +69,38 @@ Setup LAN Shared Folder
 
             .. figure:: /_static/images/cifs/cifs-lin4.png
                 :width: 60%
+
+
+    .. group-tab:: Mint
+
+        #. Install Samba if you have not already:
+
+            .. code-block::
+
+                sudo apt install samba && sudo systemctl enable smbd
+
+        #. Add your user to samba, replacing ``YOUR_LINUX_USERNAME`` with your Linux username.
+
+            .. code-block:: bash
+
+                sudo usermod -a -G sambashare YOUR_LINUX_USERNAME
+                sudo smbpasswd -a YOUR_LINUX_USERNAME
+
+            First you will be prompted for your linux password, then you will be asked to create a new SMB password for the user with permission to write to your new backup share.  Keep it somewhere safe, such as Vaultwarden.
+
+        #. Right-click the folder that you want to backup to (or create a new one, eg. ``embassy-backup``) and click "Sharing Options"
+
+            .. figure:: /_static/images/cifs/cifs-mint0.png
+                :width: 60%
+        
+        #. Enter a Share name consisting of 12 or fewer characters and click "Create Share"
+
+            .. figure:: /_static/images/cifs/cifs-mint1.png
+                :width: 60%
+
+            - You may rename the "Share", if you prefer - **remember this name**, you will need it later in your EmbassyUI.  In this example, we call it ``backup-share``
+
+            - (Optional) Create a description in the "Comment" section
 
 
     .. group-tab:: Other Linux
