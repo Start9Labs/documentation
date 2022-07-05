@@ -29,22 +29,22 @@ Note: Not all the exports are needed unless one uses the following configuration
 
 .. code:: typescript
 
-    import { ExpectedExports } from "https://start9.com/procedure/types.0.3.1.d.ts";
+    import { types as T } from "https://deno.land/x/embassyd_sdk@v0.3.1.0.3/mod.ts";
 
     /** Anywhere this exists one needs to implement */
     let todo: any;
     /** Fill this out when manifest @ config.get.type = script */
-    export const getConfig: ExpectedExports.getConfig = todo;
+    export const getConfig: T.ExpectedExports.getConfig = todo;
     /** Fill this out when manifest @ config.set.type = script */
-    export const setConfig: ExpectedExports.setConfig = todo;
+    export const setConfig: T.ExpectedExports.setConfig = todo;
     /** Fill this out when manifest @ properties.type = script */
-    export const properties: ExpectedExports.properties = todo;
+    export const properties: T.ExpectedExports.properties = todo;
     /** Fill this out when manifest @ dependencies.<packageName>.config.check.type = script AND dependencies.<packageName>.config.auto-configure.type = script  */
-    export const dependencies: ExpectedExports.dependencies = todo;
+    export const dependencies: T.ExpectedExports.dependencies = todo;
     /** Fill this out when manifest @ health-checks.<packageName>.type = script  */
-    export const health: ExpectedExports.health = todo;
+    export const health: T.ExpectedExports.health = todo;
     /** Fill this out when manifest @ migrations.<from/to>.<emver>.type = script
-    export const migration: ExpectedExports.migration = todo;
+    export const migration: T.ExpectedExports.migration = todo;
 
 Coming soon: Actions, Backups
 
