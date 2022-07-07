@@ -37,6 +37,14 @@ The following guides provide an in depth overview of the full capabilities avail
   Learn the purpose and utility of a config specification.
 
 .. topic-box::
+  :title: JS Procedures
+  :link: js-procedures
+  :class: large-4
+  :anchor: Begin
+
+  Learn how to use this operation configuration library. 
+
+.. topic-box::
   :title: Properties
   :link: properties
   :class: large-4
