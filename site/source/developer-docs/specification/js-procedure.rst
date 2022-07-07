@@ -1,66 +1,91 @@
-.. _service_manifest:
+.. _js_procedure:
 
-========
-Js Procedure
-========
+============
+JS Procedure
+============
+
+Prerequisites
+-------------
+
+An understating of programming with JavaScript and a basic understanding of TypeScript and the ecosystem of imports.
+
+System requirements
+-------------------
+
+  - `Deno <https://deno.land/>`__ (recommended) - If you use VSCode as an IDE, you can simply install the Deno extension.
 
 Overview
 --------
 
-Procedure: A procedure is ran during times that we would like to do an operation. An operation would includes such things as getting the configuration, or setting them. 
+The purpose for using JS procedures is to easily code rules for configuring a service and its dependencies, for writing migrations, properties, and health checks. Using this SDK library, service packagers can define how to run these processes in the service manifest. 
 
-Effects: https://start9.com/procedure/types.0.3.1.d.ts From this file the effects are passed to the js procedures to allow the js/ts to read/write to files and make some logging.
+.. note::
+    
+    Coming Soon! JS procedures for Actions and Backups
 
-The reason to use this is that when one would like to have a procedure, one has to have a docker file or a js function in the ``embassy.js``. The js runs faster than the docker since we don't have to wait for a docker instance to be spun up. And one doesn't have to learn the magic implicit rules in the compat image of docker,
-nor figure out how to create the dockerfile and how to run the docker image with magic configs that are not in our specs.
+Why use this
+-------------
 
-The location of the procedures will exists at scripts/embassy.js of where we are packing from.
+Terms:
 
+**Procedure**: A procedure is run during times that we would like to do an operation. An operation would include actions such as getting or setting a service's configuration file.
 
-Template for Embassy.ts
-----------------
+**Effects**: A TypeScript object that is used to interact with EmbassyOS. See the `full definition here <https://deno.land/x/embassyd_sdk@v0.3.1.0.5/types.ts>`__.
 
-For our example template we will assume that this file will exist at scripts/embassy.ts, but this is only needed for the following commands. It could exists any where in the project.
-Here lies the template that one should run a ``deno bundle scripts/embassy.ts scripts/embassy.js`` to compile our file into the embassy file that our embassy packer will use. The location of the js is important, and can't be changed.
-Would recommended something like the deno for the vs code, so one can use the language server to hover over the types and get the living documentation or possible values. And in the examples we use the Deno to bundle and check the ts.
+This new process enabled faster service configuration operations. Previously, Docker was used to preform these actions; however, Docker containers took a long time to spin up.
 
-Note: Not all the exports are needed unless one uses the following configuration settings in ``manifest.yaml``
+We use procedures so a service be customized in the UI and interact with the underlying package without needing software development experience.
 
+How to Setup
+-------------
 
-.. code:: typescript
+1. In the wrapper project root, create a file named `scripts/embassy.ts`. For our example template we will assume that this file will exist at this location, but it could exists anywhere in the project.
+2. Copy and paste the template below, keeping the necessary sections for your project.
 
-    import { types as T } from "https://deno.land/x/embassyd_sdk@v0.3.1.0.3/mod.ts";
+    .. code:: javascript
 
-    /** Anywhere this exists one needs to implement */
-    let todo: any;
-    /** Fill this out when manifest @ config.get.type = script */
-    export const getConfig: T.ExpectedExports.getConfig = todo;
-    /** Fill this out when manifest @ config.set.type = script */
-    export const setConfig: T.ExpectedExports.setConfig = todo;
-    /** Fill this out when manifest @ properties.type = script */
-    export const properties: T.ExpectedExports.properties = todo;
-    /** Fill this out when manifest @ dependencies.<packageName>.config.check.type = script AND dependencies.<packageName>.config.auto-configure.type = script  */
-    export const dependencies: T.ExpectedExports.dependencies = todo;
-    /** Fill this out when manifest @ health-checks.<packageName>.type = script  */
-    export const health: T.ExpectedExports.health = todo;
-    /** Fill this out when manifest @ migrations.<from/to>.<emver>.type = script
-    export const migration: T.ExpectedExports.migration = todo;
+        import { types as T } from "https://deno.land/x/embassyd_sdk@v0.3.1.0.5/mod.ts";
 
-Coming soon: Actions, Backups
+        /** Anywhere this exists one needs to implement */
+        let todo: any;
+        /** Fill this out when manifest @ config.get.type = script */
+        export const getConfig: T.ExpectedExports.getConfig = todo;
+        /** Fill this out when manifest @ config.set.type = script */
+        export const setConfig: T.ExpectedExports.setConfig = todo;
+        /** Fill this out when manifest @ properties.type = script */
+        export const properties: T.ExpectedExports.properties = todo;
+        /** Fill this out when manifest @ dependencies.<packageName>.config.check.type = script AND dependencies.<packageName>.config.auto-configure.type = script  */
+        export const dependencies: T.ExpectedExports.dependencies = todo;
+        /** Fill this out when manifest @ health-checks.<packageName>.type = script  */
+        export const health: T.ExpectedExports.health = todo;
+        /** Fill this out when manifest @ migrations.<from/to>.<emver>.type = script
+        export const migration: T.ExpectedExports.migration = todo;
+
+        Note: Not all the exports are needed unless one uses the following configuration settings in ``manifest.yaml``
+
+3. Modify service manifest to use the script type like so:
+
+    .. code:: yaml
+
+        config:
+            get:
+                type: script
+            set:
+                type: script
+
+4. Fill in the todos in the above template to match the expected Effect parameter defined by the `exported type <https://deno.land/x/embassyd_sdk@v0.3.1.0.3/types.ts#L32> `__. This type describes how to call functions that interact with EmbassyOS.
+5. In the build process for packaging the final s9pk, include the following step. **The location of the js is important, and can't be changed**. It must exist at `scripts/embassy.js`in the root of the project's wrapper repository.
+
+    .. code:: bash
+
+        deno bundle scripts/embassy.ts scripts/embassy.js
+
 
 Syncthing Example
 -----------------
-
 
 - `Manifest <https://github.com/Start9Labs/syncthing-wrapper/blob/master/manifest.yaml>`__
 - `Procedures <https://github.com/Start9Labs/syncthing-wrapper/blob/master/scripts/embassy.ts>`__
-
-Syncthing Example
------------------
-
-
-- `Manifest <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/manifest.yaml>`__
-- `Procedures <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/scripts/embassy.ts>`__
 
 Core Lightning Example
 ----------------------
