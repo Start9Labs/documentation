@@ -35,12 +35,12 @@ During initial setup, I am unable to connect to "embassy.local".
 
 If you still cannot connect, try logging into your router (the directions for which can be found with a simple web search for your router model and 'how to log in'). Once you are in your router, find the device labeled 'Embassy,' and visit it's associated IP address, which will look something like: ``192.168.1.9``
 
-I am unable to reach Embassy via it's ``embassy-xxxxxxxx.local`` (LAN) address
+I am unable to reach Embassy via it's embassy-xxxxxxxx.local (LAN) address
 ------------------------------------------------------------------------------
 
 Make sure you have successfully followed the :ref:`LAN Setup<connecting-lan>` instructions for your device. If you still cannot connect, try all the solution listed under :ref:`initial setup <setup-troubleshoot>`.
 
-I am unable to reach Embassy via it's ``xxxxxxxxxxxxxxxxxx.onion`` (Tor) address
+I am unable to reach Embassy via it's xxxxxxxxxxxxxxxxxx.onion (Tor) address
 --------------------------------------------------------------------------------
 
 #. **Test** - Try connecting to your Embassy using the official :ref:`Tor Browser <tor-browser>`.
