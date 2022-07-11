@@ -38,7 +38,7 @@ The following guides provide an in depth overview of the full capabilities avail
 
 .. topic-box::
   :title: JS Procedures
-  :link: js-procedures
+  :link: js-procedure
   :class: large-4
   :anchor: Begin
 
