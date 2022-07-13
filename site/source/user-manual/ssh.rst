@@ -44,7 +44,7 @@ Connecting via CLI (Linux/Mac)
 
     .. code-block:: bash
 
-        ssh root@<LAN URL>
+        ssh start9@<LAN URL>
 
 Replacing ``<LAN URL>`` with your Embassy's LAN (``embassy-xxxxxxx.local``) address
 
@@ -71,13 +71,13 @@ Setup
 
             .. code-block:: bash
 
-                apt install torsocks
+                sudo apt install torsocks
 
         .. group-tab:: Arch / Garuda / Manjaro
 
             .. code-block:: bash
 
-                pacman -S torsocks
+                sudo pacman -S torsocks
 
 #. SSH in:
 
@@ -85,7 +85,13 @@ Setup
 
     .. code-block:: bash
 
-        ssh root@embassy-xxxxxxx.local
+        ssh start9@embassy-xxxxxxx.local
+
+#. Elevate yourself to root for the rest of the ssh session:
+
+    .. code-block:: bash
+
+        sudo bash
 
 #. Using Vim or Nano, add the following 2 lines to ``/etc/tor/torrc``
 
@@ -119,4 +125,4 @@ To log in, simply use the following command, using the ".onion" hostname you pri
 
     .. code-block::
 
-        torsocks ssh root@xxxxxxxxxxxxxxxxx.onion
+        torsocks ssh start9@xxxxxxxxxxxxxxxxx.onion
