@@ -12,11 +12,11 @@ Trust Embassy CA in Brave
         :width: 30%
         :alt: Brave settings page
 
-#. On the left hand sidebar, select the "Security and Privacy" section, then the "Security" menu item.
+#. On the left hand sidebar, select the "Privacy and security" section, then the "Security" menu item.
 
     .. figure:: /_static/images/ssl/browser/brave_security.png
         :width: 60%
-        :alt: Brave Security and Privacy settings
+        :alt: Brave Privacy and security settings
 
 #. At the bottom of the section, select "Manage Certificates".
 
