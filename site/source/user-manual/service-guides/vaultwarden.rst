@@ -51,7 +51,7 @@ You will need to :ref:`Setup Tor <tor-android>` on your device first.
 
 #. Visit your app store of choice and download the Bitwarden app.  Once downloaded and installed, let's go into Orbot, and add the app to the VPN apps list.  You may need to hit the refresh button in the top left to get it to populate.
 
-#. Next, enter the Bitwarden app.  You'll be greeted with a log-in screen, and just like in the extension, you can go to the top left gear icon to enter the Settings.  You'll need to enter your LAN address from your Embassy, so you can copy-paste it over to your phone, or type it in by hand.  Don't forget to ensure the prefix is ``http://`` and NOT ``https://``.  Hit save, and you'll be returned to the log-in screen.
+#. Next, enter the Bitwarden app.  You'll be greeted with a log-in screen, and just like in the extension, you can go to the top left gear icon to enter the Settings.  You'll need to enter your Tor address from your Embassy, so you can copy-paste it over to your phone, or type it in by hand.  Don't forget to ensure the prefix is ``http://`` and NOT ``https://``.  Hit save, and you'll be returned to the log-in screen.
 
 #. Go ahead and tap 'Log In,' enter your credentials, and you can access your Bitwarden app / Vaultwarden server.
 
@@ -80,7 +80,7 @@ First, be sure to :ref:`Setup Tor <tor-linux>` natively.
 
 #. Download the `Bitwarden Desktop app <https://bitwarden.com/download/>`_.  Depending on your Linux distribution and preference, you may want the AppImage, Deb, Snap, etc.  You can also check your favorite package manager.
 
-#. Run the program with the flag ` --proxy-server=socks5://127.0.0.1:9050` behind it.  You can run this from a terminal, and if you'd like to use a shortcut, edit that shortcut file to include the flag.
+#. Run the program with the flag ``--proxy-server=socks5://127.0.0.1:9050`` behind it.  You can run this from a terminal, and if you'd like to use a shortcut, edit that shortcut file to include the flag.
 
 #. As with the other solutions above, click the 'Settings' icon, and enter your Vaultwarden Tor address.  You can then log in to your vault.
 
@@ -99,7 +99,7 @@ Mac
 #. Tor
     #. First, be sure to :ref:`Setup Tor <tor-mac>` natively.
 
-    #. Run the program with the flag ` --proxy-server=socks5://127.0.0.1:9050` behind it.  You can run this from a terminal, and if you'd like to use a shortcut, edit that shortcut file to include the flag.
+    #. Run the program with the flag ``--proxy-server=socks5://127.0.0.1:9050`` behind it.  You can run this from a terminal, and if you'd like to use a shortcut, edit that shortcut file to include the flag.
 
 #. You can now log in to your vault.
 
@@ -110,6 +110,6 @@ Windows
 
 #. Follow the Tor setup in the instructions below.  Make sure the Bitwarden directory is located in your user's directory (C:\Users\YOURUSER\AppData\Local\Bitwarden).  This is because you need permission to run over a proxy.  You can make a shortcut wherever you'd like.
 
-#. Right-click the shortcut and click 'Properties.'  Add the flag ` --proxy-server=socks5://127.0.0.1:9050` to the end of the 'Target' field.  Click 'Apply,' then 'OK.'  Close Properties and launch the shortcut.
+#. Right-click the shortcut and click 'Properties.'  Add the flag ``--proxy-server=socks5://127.0.0.1:9050`` to the end of the 'Target' field.  Click 'Apply,' then 'OK.'  Close Properties and launch the shortcut.
 
 #. As with the other solutions above, click the 'Settings' icon, and enter your Vaultwarden Tor address.  You can then log in to your vault.
