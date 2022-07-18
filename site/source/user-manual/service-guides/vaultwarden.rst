@@ -108,7 +108,7 @@ Windows
 
 #. Download the `Bitwarden Desktop app <https://bitwarden.com/download/>`_.
 
-#. Follow the Tor setup in the instructions below.  Make sure the Bitwarden directory is located in your user's directory (C:\Users\YOURUSER\AppData\Local\Bitwarden).  This is because you need permission to run over a proxy.  You can make a shortcut wherever you'd like.
+#. Follow the Tor setup in the instructions below.  Make sure the Bitwarden directory is located in your user's directory, ``C:\Users\YOURUSER\AppData\Local\Bitwarden``.  This is because you need permission to run over a proxy.  You can make a shortcut wherever you'd like.
 
 #. Right-click the shortcut and click 'Properties.'  Add the flag ``--proxy-server=socks5://127.0.0.1:9050`` to the end of the 'Target' field.  Click 'Apply,' then 'OK.'  Close Properties and launch the shortcut.
 
