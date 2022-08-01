@@ -64,7 +64,7 @@ Getting EmbassyOS
 
 After building your device, you need a copy of EmbassyOS.
 
-* Visit `images.start9.com <https://images.start9.com>`_ and enter the product key ``XXXXXXXX`` (all caps) to download an image of EmbassyOS.
+* Visit `images.start9.com <https://images.start9.com>`_ and enter the product key ``xxxxxxxx`` (all lower case) to download an image of EmbassyOS.
 
 Installing EmbassyOS
 --------------------
