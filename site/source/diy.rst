@@ -41,11 +41,11 @@ Parts
 
     .. warning:: If you prefer to use a fan, **do not** use the official Raspberry Pi fan, as it requires the same GPIO pins as the audio speaker. Instead, we recommend `this fan <https://www.amazon.com/Raspberry-iUniker-30x30x7mm-Brushless-RetroFlag/dp/B076H3TKBP/>`_.
 
-* A `16GB microSD card <https://amazon.com/SanDisk-Endurance-microSDXC-Adapter-Monitoring/dp/B07NY23WBG/>`_ (no need for bigger).
+* A `32GB microSD card <https://www.amazon.com/dp/B07P14QHB7>`_ (no need for bigger).
 * `GPIO mini speaker/buzzer <https://www.amazon.com/Corporate-Computer-Motherboard-Internal-Speaker/dp/B01527H4W2/>`_ (These often sell out, please let us know if this link needs to be refreshed)
 * Ethernet cable
 * MicroSD to USB adapter (or you may have a microSD port on your computer)
-* SSD (minimum 1TB) that `connects over USB 3.0` This can be an `external drive <https://www.samsung.com/us/computing/memory-storage/portable-solid-state-drives/>`_, or an `internal drive <https://www.amazon.com/Crucial-MX500-NAND-SATA-Internal/dp/B078211KBB>`_ with an `USB enclosure <https://www.amazon.com/gp/product/B07T9D8F6C>`_. Currently the only tested and supported external drives are the Samsung T5 and T7
+* SSD (minimum 1TB) that `connects over USB 3.0` This can be an `external drive <https://www.samsung.com/us/computing/memory-storage/portable-solid-state-drives/>`_, or an `internal drive <https://www.amazon.com/Crucial-MX500-NAND-SATA-Internal/dp/B078211KBB>`_ with an `USB enclosure <https://www.amazon.com/gp/product/B01LY97QE8>`_. Currently the only tested and supported external drives are the Samsung T5 and T7
 
 Assembly
 ........
@@ -64,9 +64,7 @@ Getting EmbassyOS
 
 After building your device, you need a copy of EmbassyOS.
 
-* **Purchasing from Start9** - You can purchase a copy of EmbassyOS `here <https://store.start9.com/collections/embassy/products/embassyos-software-download>`_. This is by far the easiest path to get up and running.
-
-* **Building from Source** - If you prefer to build EmbassyOS from source, you can follow `this guide <https://start9labs.medium.com/compiling-embassyos-v0-3-in-ubuntu-406b8b8fd6c2>`_.
+* Visit `images.start9.com <https://images.start9.com>`_ and enter the product key ``XXXXXXXX`` (all caps) to download an image of EmbassyOS.
 
 Installing EmbassyOS
 --------------------
@@ -82,7 +80,7 @@ Whether you purchase EmbassyOS from us or build it yourself, you'll need to flas
       :alt: Balena Etcher Dashboard
 
 #. Click "Select Image" and select your downloaded copy of EmbassyOS.
-#. Click "Select Target" and select your 16GB microSD card.
+#. Click "Select Target" and select your 32GB microSD card.
 
     .. warning:: Be certain you have selected the correct target microSD card. Whatever target you select will be completely erased and replaced with EmbassyOS.
 
