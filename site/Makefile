@@ -54,6 +54,7 @@ linkcheck: setup
 
 .PHONY: multiversion
 multiversion: setup
+	git diff --quiet || >&2 echo "\033[31;1;4mWARNING: Uncommitted changes will not be included in ./_build\033[0m"
 	@mkdir -p $(HOME)/.cache/pypoetry/virtualenvs
 	$(POETRY) run sphinx-multiversion source $(BUILDDIR)/dirhtml
 	@echo
