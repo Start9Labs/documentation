@@ -13,14 +13,14 @@ Using Firefox
 
 .. tip:: This is recommended way to connect to your Embassy over Tor, but it requires some additional steps.
 
-#. Run Tor on your connecting device.
+#. Run Tor (**not Tor Browser**) in the background on your connecting device.
 
     .. toctree::
       :maxdepth: 2
 
       tor-os/index
 
-#. Configure Firefox
+#. Configure Firefox to handle *.onion* URLs.
 
     .. toctree::
       :maxdepth: 2
@@ -31,12 +31,12 @@ Using Firefox
 Using TorBrowser
 -------------------
 
-.. caution::  TorBrowser is an all-in-one Tor+Firefox solution that will allow you to use your Embassy's .onion URL without any manual configuration, however *all* connections are proxied via Tor, so you will not be able to access your Embassy's .local LAN address with it.  `Using Firefox <#using-firefox>`_ is recommended over TorBrowser.
+.. caution::  Tor Browser will allow you to use your Embassy's .onion URL without any manual configuration, however *all* connections are proxied via Tor, so you will not be able to access your Embassy's .local LAN address with it.  `Using Firefox <#using-firefox>`_ is recommended over TorBrowser.
 
 * Linux, Mac, Windows, Android
 
-    * Download & Install `Tor Browser <https://torproject.org/download/>`_
+    * `Tor Browser <https://torproject.org/download/>`_
 
-* iOS has no TorBrowser
+* iOS
 
-    * Use `Orbot & FireFox <tor-firefox/torff-ios>`_
+    * iOS lacks a well-functioning Tor Browser. Use `Firefox <tor-firefox/torff-ios>`_
