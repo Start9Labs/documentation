@@ -31,7 +31,7 @@ Using Firefox
 Using TorBrowser
 -------------------
 
-TorBrowser is an all-in-one Tor+Firefox solution that will allow you to use your Embassy's .onion URL without any manual configuration, however *all* connections are proxied via Tor, so you will not be able to access your Embassy's .local LAN address with it.  `Using Firefox<#using-firefox>` is recommended over TorBrowser.
+.. caution::  TorBrowser is an all-in-one Tor+Firefox solution that will allow you to use your Embassy's .onion URL without any manual configuration, however *all* connections are proxied via Tor, so you will not be able to access your Embassy's .local LAN address with it.  `Using Firefox <#using-firefox>`_ is recommended over TorBrowser.
 
 * Linux, Mac, Windows, Android
 
@@ -39,4 +39,4 @@ TorBrowser is an all-in-one Tor+Firefox solution that will allow you to use your
 
 * iOS has no TorBrowser
 
-    * Use `Orbot & FireFox <tor-firefox/torff-ios.html>`
+    * Use `Orbot & FireFox <tor-firefox/torff-ios>`_
