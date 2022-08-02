@@ -14,5 +14,5 @@ Once you have completed native :ref:`Tor Setup<tor-os>`, you can configure Firef
   Linux <torff-linux>
   Mac <torff-mac>
   Windows <torff-windows>
-  Android/Graphene/Calyx <torff-android>
+  Android/Calyx/Graphene <torff-android>
   iOS <torff-ios>

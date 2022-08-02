@@ -8,20 +8,6 @@ You can connect to your Embassy from anywhere in the world, privately and anonym
 
 .. note:: Tor connection can sometimes be unreliable and have higher latency than normal internet connections.
 
-Using a Tor Browser
--------------------
-
-The fastest, easiest way to connect to your Embassy over Tor is to download a Tor-enabled browser and visit your Embassy's .onion URL. We recommend:
-
-* Linux, Mac, Windows, Android
-
-    * `Tor Browser <https://torproject.org/download/>`_
-    * `Brave <https://brave.com>`_ (requires using Tor tabs)
-
-* iOS
-
-    * `Onion Browser <https://apps.apple.com/us/app/onion-browser/id519296448>`_
-
 Using Firefox
 -------------
 
@@ -40,3 +26,17 @@ Using Firefox
       :maxdepth: 2
 
       tor-firefox/index
+
+
+Using TorBrowser
+-------------------
+
+TorBrowser is an all-in-one Tor+Firefox solution that will allow you to use your Embassy's .onion URL without any manual configuration, however *all* connections are proxied via Tor, so you will not be able to access your Embassy's .local LAN address with it.  `Using Firefox<#using-firefox>` is recommended over TorBrowser.
+
+* Linux, Mac, Windows, Android
+
+    * Download & Install `Tor Browser <https://torproject.org/download/>`_
+
+* iOS has no TorBrowser
+
+    * Use `Orbot & FireFox <tor-firefox/torff-ios.html>`
