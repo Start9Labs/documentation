@@ -8,7 +8,7 @@ Start9 Labs
   :depth: 2 
   :local:
 
-Privacy and free speech are fundamental human rights and essential ingredients for a free society. Human history demonstrates that, when entrusted to others, these rights are invariably denied, resulting in great suffering. As such, it is necessary for individuals to protect their own privacy and right to speak freely. Fortunately, modern technologies, in the form of personal computers, encryption, and open, decentralized network protocols such as the Internet and Bitcoin, make this a real possibility. What is needed is a revolution in personal computing away from the current, hosted, custodial model that breeds dependency and corruption, towards a decentralized model, where individuals have absolute control over their data and communications.
+Privacy and free speech are fundamental human rights and essential ingredients for a free society. Human history demonstrates that, when entrusted to others, these rights are invariably denied, resulting in great suffering. As such, it is necessary for individuals to protect their own privacy and right to speak freely. Fortunately, modern technologies, in the form of personal computers, encryption, and open, decentralized network protocols such as the Internet and Bitcoin, make this a real possibility. What is needed is a revolution in personal computing away from the current, custodial model that breeds dependency and corruption, towards a decentralized model, where individuals have absolute control over their data and communications.
 
 .. _mission:
 
@@ -26,7 +26,7 @@ Decentralization: Centralized systems act as single points of failure and are su
 
 Openness: Everyone should have permissionless access to computing resources and tools, unrestricted by geography, ethnicity, or belief.
 
-Community: The human experience is richest when shared amongst individuals who possessing common beliefs, values, and activities, and that computers should facilitate the formation of communities.
+Community: The human experience is richest when shared amongst individuals who possess common beliefs, values, and activities, and computers should facilitate the formation of such communities.
 
 Privacy: There are four reasons that privacy is necessary for a free society and proper human existence: privacy (1) promotes creativity and experimentation by minimizing the risk of embarrassment; (2) protects valuable information from theft and extortion; (3) enables the diffusion of contrarian ideals and ideas; (4) serves as an insurance policy against the future, in the event that what is acceptable today becomes unacceptable tomorrow.
 
@@ -50,7 +50,7 @@ Generosity: providing beyond what is necessary or expected.
 
 Fortitude: Having courage in the face of pain or adversity.
 
-Integrity: The virtue that underlies all others. The quality of being whole and genuine, intact and unbroken, internally consistent, and adhering to principle in all cases.
+Integrity: The virtue that underlies all others. The quality of being whole and genuine, intact and unbroken, internally consistent, and adhering to principles in all cases.
 
 .. _start9-origin:
 
