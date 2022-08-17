@@ -4,7 +4,7 @@
 About
 =====
 
-  Learn about Start9.
+  Learn about the Start9 ethos, team, policies, and future plans.
 
 .. raw:: html
 
@@ -21,14 +21,13 @@ About
 
   Get acquainted with Start9.
 
-.. topic-box::
-  :title: Roadmap
-  :link: roadmap
-  :icon: scylla-icon scylla-icon--roadmap
-  :class: large-4
-  :anchor: See what's coming
+  .. :title: Roadmap
+  .. :link: roadmap
+  .. :icon: scylla-icon scylla-icon--roadmap
+  .. :class: large-4
+  .. :anchor: See what's coming
 
-  Check out the ambitious future of Start9.
+  .. Check out our ambitious future.
 
 .. topic-box::
   :title: Privacy Policy
@@ -67,8 +66,8 @@ About
    :hidden:
 
    start9
-   roadmap
    privacy
    license
-   team
    jobs
+  ..  roadmap
+  ..  team
