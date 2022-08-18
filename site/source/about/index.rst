@@ -69,5 +69,3 @@ About
    privacy
    license
    jobs
-  ..  roadmap
-  ..  team

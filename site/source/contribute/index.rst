@@ -13,49 +13,49 @@ Contribute
   <div class="grid-x grid-margin-x">
 
 .. topic-box::
-  :title: Teach
-  :link: teach
+  :title: Create Content
+  :link: content
   :icon: scylla-icon scylla-icon--tech-talks
   :class: large-4
-  :anchor: Join the movement
+  :anchor: Make
 
-  Share your knowledge with the community.
+  Share your knowledge with the community and amplify the signal.
 
 .. topic-box::
   :title: Provide Support
   :link: provide-support
   :icon: scylla-icon scylla-icon--support
   :class: large-4
-  :anchor: Help
+  :anchor: Assist
 
-  Learn how you can help provide community support.
+  Help guide community members that are earlier in their path than you.
 
 .. topic-box::
-  :title: Decentralize
+  :title: Decentralize the Ecosystem
   :link: decentralize
   :icon: scylla-icon scylla-icon--cloud
   :class: large-4
-  :anchor: View
+  :anchor: Build
 
-  See how you can aid in decentralizing our architecture.
+  Help create the new Internet by bootstrapping necessary infrastructure.
 
 .. topic-box::
-  :title: Promote
+  :title: Promote Start9
   :link: promote
   :icon: scylla-icon scylla-icon--summit
   :class: large-4
-  :anchor: Join
+  :anchor: Shill
 
-  Become an affiliate and help promote Start9.
+  Become an affiliate and help propagate the message to your audience.
 
 .. topic-box::
-  :title: Jobs
+  :title: Join the Team
   :link: jobs
   :icon: scylla-icon scylla-icon--about-team
   :class: large-4
-  :anchor: Join us
+  :anchor: Work
 
-  See our available positions.
+  Check for available core Start9 team positions or contracts.
 
 .. raw:: html
 
@@ -66,7 +66,7 @@ Contribute
    :maxdepth: 2
    :hidden:
 
-   teach
+   content
    provide-support
    decentralize
    promote
