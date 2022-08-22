@@ -62,7 +62,7 @@ Enable Tor Systemwide
 
         sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
 
-#. Enable proxy autoconfig file:
+#. Enable proxy autoconfig file (This will download the Start9 standard proxy config file. You can use your own if you prefer):
 
     .. code-block::
 
