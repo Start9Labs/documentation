@@ -104,6 +104,6 @@ Enable Tor System-wide
         :width: 80%
         :alt: Apply proxy
 
-Done! You have now enabled system wide Tor potential.
+Done! You have now enabled system-wide Tor potential.
 
 If you'd like to setup Firefox to use Tor you can follow  :ref:`this guide<torff-mac>`.
