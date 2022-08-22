@@ -53,7 +53,7 @@ Install Tor
 
 This will start Tor and ensure that it is always running, even after a restart.  See the `Tor Project docs <https://2019.www.torproject.org/docs/tor-doc-osx.html.en>`_ for more details.
 
-Enable Tor Systemwide
+Enable Tor System-wide
 ----------------------
 
 #. Now enable apache service:

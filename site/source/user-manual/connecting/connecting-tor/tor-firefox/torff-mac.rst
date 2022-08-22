@@ -15,7 +15,7 @@ Configuring Firefox for Tor on Mac
     :width: 60%
     :alt: Firefox whitelist onions screenshot
 
-#. Now, if you've enabled Tor systemwide search for ``security.enterprise_roots.enabled`` and set the value to ``true``.
+#. Now, if you've enabled Tor system-wide search for ``security.enterprise_roots.enabled`` and set the value to ``true``.
 
    .. figure:: /_static/images/tor/enterprise_roots.png
     :width: 60%
