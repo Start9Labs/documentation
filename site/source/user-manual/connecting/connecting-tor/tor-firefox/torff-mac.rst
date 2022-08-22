@@ -15,6 +15,12 @@ Configuring Firefox for Tor on Mac
     :width: 60%
     :alt: Firefox whitelist onions screenshot
 
+#. Now, if you've enabled Tor systemwide search for ``security.enterprise_roots.enabled`` and set the value to ``true``.
+
+   .. figure:: /_static/images/tor/enterprise_roots.png
+    :width: 60%
+    :alt: Firefox whitelist onions screenshot
+
 #. Download a `Proxy Auto Config` file to inform Firefox how to use the Tor daemon running on your computer. You can get Start9's standard file by opening the ``Terminal`` App on your Mac. You can find it in your list of Applications.  In the terminal, enter:
 
     .. code-block::

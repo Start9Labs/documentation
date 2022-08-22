@@ -80,13 +80,11 @@ Enable Tor Systemwide
         :width: 80%
         :alt: Select Network
 
-#. If using WiFi, select WiFi on the left panel and click "Advanced":
+#. In this example, we'll select WiFi on the left panel. If you're using Ethernet, click that instead. Next click "Advanced":
 
     .. figure:: /_static/images/tor/wifi_click_advanced.png
         :width: 80%
         :alt: Click Advanced
-
-    .. note:: If you ever switch to using Ethernet, you will need to repeat the above step and subsequent steps for your Ethernet adaptor.
 
 #. Select "Proxies":
 
