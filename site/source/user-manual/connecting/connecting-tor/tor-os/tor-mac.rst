@@ -44,11 +44,6 @@ Install Tor
 
         brew install tor
 
-    Once it is finished you have the following options:
-
-    .. figure:: /_static/images/tor/install_tor.png
-        :width: 80%
-        :alt: Tor installation
 
 #. Then run Tor with:
 
@@ -57,3 +52,60 @@ Install Tor
         brew services start tor
 
 This will start Tor and ensure that it is always running, even after a restart.  See the `Tor Project docs <https://2019.www.torproject.org/docs/tor-doc-osx.html.en>`_ for more details.
+
+Enable Tor Systemwide
+----------------------
+
+#. Now enable apache service:
+
+    .. code-block::
+
+        sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
+
+#. Enable proxy autoconfig file:
+
+    .. code-block::
+
+        sudo curl https://registry.start9labs.com/sys/proxy.pac --output /Library/WebServer/Documents/proxy.pac
+
+#. Go to system preferences:
+
+    .. figure:: /_static/images/tor/systemprefs.png
+        :width: 40%
+        :alt: System Preferences
+
+#. Click on Network:
+
+    .. figure:: /_static/images/tor/network.png
+        :width: 80%
+        :alt: Select Network
+
+#. If using WiFi, select WiFi on the left panel and click "Advanced":
+
+    .. figure:: /_static/images/tor/wifi_click_advanced.png
+        :width: 80%
+        :alt: Click Advanced
+
+    .. note:: If you ever switch to using Ethernet, you will need to repeat the above step and subsequent steps for your Ethernet adaptor.
+
+#. Select "Proxies":
+
+    .. figure:: /_static/images/tor/proxys.png
+        :width: 80%
+        :alt: Select Proxys
+
+#. Select "Automatic Proxy Configuration", add this URL: http://localhost/proxy.pac then click "OK"
+
+    .. figure:: /_static/images/tor/entertorproxyURL.png
+        :width: 80%
+        :alt: Select Automatic proxy config and enter URL
+
+#. Finally, click "Apply"
+
+    .. figure:: /_static/images/tor/applyproxy.png
+        :width: 80%
+        :alt: Apply proxy
+
+Done! You have now enabled system wide Tor potential.
+
+If you'd like to setup Firefox to use Tor you can follow  :ref:`this guide<torff-mac>`.
