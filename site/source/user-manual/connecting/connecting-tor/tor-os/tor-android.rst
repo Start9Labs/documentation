@@ -44,7 +44,7 @@ Orbot is a system wide proxy for your Android device that enables communications
     :width: 50%
     :alt: Orbot started
 
-7. That's it, you're now running a Tor client on your Android device! Certain apps, such as Firefox, Fennec, and DuckDuckGo will now just work. Other apps, however, require that Orbot be running VPN mode.
+7. That's it, you're now running a Tor client on your Android device! Certain apps, such as Firefox, Fennec, and DuckDuckGo will now work after you configure them to use Tor's local proxy.  Other apps do not have sophisticated proxy configurations and require that Orbot be running in VPN mode.
 
 Orbot VPN mode
 --------------
@@ -78,9 +78,11 @@ Under `Tor-Enabled Apps`, click the gear icon and add apps you want to utilize T
 Examples of applications that need this feature are:
 
 - Bitwarden
-- Element (Matrix)
+- Element (Matrix client)
 
 You can also add the following browsers to the Tor-Enabled Apps list to easily access Tor addresses (`.onion` URLs):
 
 - Chrome
 - Vanadium
+
+  .. caution:: Pushing apps through Orbot's VPN mode will allow you to access .onion URLs, however, all other traffic will also go through Tor.  This means connections to some sites may be blocked by site operators' fraud prevention measures, especially e-commerce sites where credit cards are used.  Proceed with caution especially for Web Browsers.

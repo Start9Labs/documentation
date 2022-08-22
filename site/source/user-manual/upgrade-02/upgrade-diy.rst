@@ -16,11 +16,11 @@ Hardware Requirements
 .. note::
    If you purchased the `upgrade kit <https://store.start9.com/collections/embassy/products/upgrade-kit>`_ from Start9, you should follow :ref:`this guide<upgrade-kit>`.
 
-#. `16GB microSD card <https://www.amazon.com/Sandisk-Ultra-Micro-UHS-I-Adapter/dp/B073K14CVB/>`_
+#. `32GB microSD card <https://www.amazon.com/dp/B07P14QHB7/>`_
 
 #. `1TB solid state drive <https://www.amazon.com/Crucial-MX500-NAND-SATA-Internal/dp/B078211KBB>`_ minimum, 2TB+ recommended.
 
-#. `Connector <https://www.amazon.com/Sabrent-2-5-Inch-Adapter-Optimized-EC-SSHD/dp/B011M8YACM/ref=sr_1_3?crid=IP9CVCE40BLN&keywords=usb+sabrent+ssd&qid=1640909042&sprefix=usb+sabrent+s%2Caps%2C192&sr=8-3>`_ or `enclosure <https://www.amazon.com/gp/product/B07T9D8F6C>`_ for your drive.
+#. `Connector <https://www.amazon.com/Sabrent-2-5-Inch-Adapter-Optimized-EC-SSHD/dp/B011M8YACM>`_ or `enclosure <https://www.amazon.com/gp/product/B07T9D8F6C>`_ for your drive.
 
 #. `SD card adapter <https://www.amazon.com/gp/product/B000WR3Z3A>`_ for getting data from your SD card.
 

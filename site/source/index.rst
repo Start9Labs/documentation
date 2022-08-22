@@ -124,6 +124,7 @@
   contribute/index
   developer-docs/index
   about/index
+  umbrel-compare
 
 .. raw:: html
 

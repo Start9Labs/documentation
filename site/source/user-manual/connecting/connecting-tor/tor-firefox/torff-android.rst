@@ -27,7 +27,7 @@ Once Tor is setup on your system, you can proceed to setup Firefox:
 
 5. Search for ``network.proxy.autoconfig_url``, and set the value to ``file:///storage/emulated/0/Download/proxy.pac``.
 
-  .. caution:: For some platforms, such as Calyx/Graphene on a Pixel 5/6, it may be necessary to place the file within the application's ``data`` folder, such as ``file:///storage/emulated/0/Android/data/org.mozilla.firefox_beta/files/Download/proxy.pac``.  Furthermore, the stock file explorer app may not let you do this, so you might have to get a new one, such as `Explorer <https://play.google.com/store/apps/details?id=com.speedsoftware.explorer&hl=en_US&gl=US>`_.  Please reach out to support if you have issues.
+  .. caution:: No variation of this will work on LineageOS.  For some platforms, such as Calyx/Graphene on a Pixel 5/6, it may be necessary to place the file within the application's ``data`` folder, such as ``file:///storage/emulated/0/Android/data/org.mozilla.firefox_beta/files/Download/proxy.pac``.  Furthermore, the stock file explorer app may not let you do this, so you might have to get a new one, such as `Explorer <https://play.google.com/store/apps/details?id=com.speedsoftware.explorer&hl=en_US&gl=US>`_.  Please reach out to support if you have issues.
 
   .. figure:: /_static/images/tor/autoconfig_url.png
     :width: 50%
@@ -39,9 +39,9 @@ Once Tor is setup on your system, you can proceed to setup Firefox:
     :width: 50%
     :alt: Firefox socks remote dns setting screenshot
 
-7. Search for ``dom.securecontext.allowlist_onions`` and set the value to ``true``.  On some older versions, this may be called ``dom.securecontext.whitelist_onions``.
+7. Search for ``dom.securecontext.allowlist_onions`` and set the value to ``true``.
 
-  .. figure:: /_static/images/tor/firefox_whitelist_mobile.png
+  .. figure:: /_static/images/tor/firefox_allowlist_mobile.png
     :width: 50%
     :alt: Firefox whitelist onions screenshot
 

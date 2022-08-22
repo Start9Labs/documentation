@@ -9,7 +9,7 @@ Configuring Firefox for Tor on Mac
 
 #. Open Firefox and enter ``about:config`` in the URL bar. Accept any warnings that may appear about accessing advanced settings.
 
-#. Search for ``dom.securecontext.allowlist_onions`` and set the value to ``true``.  On some older versions, this may be called ``dom.securecontext.whitelist_onions``.
+#. Search for ``dom.securecontext.allowlist_onions`` and set the value to ``true``.
 
    .. figure:: /_static/images/tor/firefox_whitelist_mac.png
     :width: 60%
@@ -37,7 +37,7 @@ Configuring Firefox for Tor on Mac
 
     .. code-block::
 
-      wget -P /opt/homebrew/etc/tor https://registry.start9labs.com/sys/proxy.pac
+      wget -P /opt/homebrew/bin/tor https://registry.start9labs.com/sys/proxy.pac
 
 #. Now, back in your Firefox web browser, select ``Settings`` from the right-hand hamburger menu:
 
@@ -61,7 +61,7 @@ Configuring Firefox for Tor on Mac
 
     .. code-block::
 
-      file:///opt/homebrew/etc/tor/proxy.pac
+      file:///opt/homebrew/bin/tor/proxy.pac
 
 #. Then, check the box labeled ``Proxy DNS when using SOCKS v5``:
 
