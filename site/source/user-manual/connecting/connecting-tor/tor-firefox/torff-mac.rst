@@ -11,7 +11,13 @@ Configuring Firefox for Tor on Mac
 
 #. Search for ``dom.securecontext.allowlist_onions`` and set the value to ``true``.
 
-   .. figure:: /_static/images/tor/firefox_allowlist.png
+   .. figure:: /_static/images/tor/firefox_whitelist_mac.png
+    :width: 60%
+    :alt: Firefox whitelist onions screenshot
+
+#. Now, if you've enabled Tor system-wide search for ``security.enterprise_roots.enabled`` and set the value to ``true``.
+
+   .. figure:: /_static/images/tor/enterprise_roots.png
     :width: 60%
     :alt: Firefox whitelist onions screenshot
 
