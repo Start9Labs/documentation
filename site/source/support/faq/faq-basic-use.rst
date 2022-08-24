@@ -23,7 +23,7 @@ Yes, but there is currently no way to synchronize or federate them.  We are work
 
 What if I forget my Embassy password?
 -------------------------------------
-Password reset flow is coming in the eOS v0.3.1 release! If you need to reset your password in the meantime, please contact support.
+Please follow the :ref:`password reset guide<password-reset>`.
 
 My Embassy is set up, now what?
 -------------------------------
@@ -55,10 +55,6 @@ What can I do if I am having issues connecting to a mobile app over Tor?
 ------------------------------------------------------------------------
 Unfortunately, Orbot can be finicky.  The best solution to connection issues is normally to restart Orbot, or to reboot the phone.  This will solve most common problems.
 
-What can I do if I am having issues connecting with Consulate?
---------------------------------------------------------------
-In the top right menu, select 'Clear Cache.'  If this does not solve the problem, delete the bookmarked site entirely, then re-add it.  This will solve most connection issues.
-
 If I uninstall a service, then re-install it, does any data remain?
 -------------------------------------------------------------------
 No.  When uninstalling a service, you completely destroy everything associated with it.  This is because each service runs in it's own 'container', which includes all the required software and operating system environment that it needs to function.  When uninstalling, this container is wiped from your Embassy's system, and with it, any associated service data that you have not backed up.
@@ -71,11 +67,11 @@ No, you don't need to delete the old backups. The technology we use updates the 
 
 Can I clone my Embassy SSD for backup purposes?
 -----------------------------------------------
-.. warning:: **DO NOT do this if you are running LND or c-lightning**. If you clone the SSD, then go back to running LND or c-lightning, and you *ever* try to restore the SSD, there is a good chance you will lose *all your channel funds*. Also, if you try to use the SSD for a 2nd Embassy, that will also result in loss of funds. This has nothing to do with Start9 or the Embassy; it is inherent to the architecture of Lightning.
+.. warning:: **DO NOT do this if you are running LND or CLN**. If you clone the SSD, then go back to running LND or CLN, and you *ever* try to restore the SSD, there is a good chance you will lose *all your channel funds*. Also, if you try to use the SSD for a 2nd Embassy, that will also result in loss of funds. This has nothing to do with Start9 or the Embassy; it is inherent to the architecture of Lightning.
 
 It is neither necessary, nor recommended to do this.  The backup solution available in EmbassyOS (v0.3.0+) allows all data to be written to another drive remotely, and this can mean another SSD, attached to a computer on your network.  You may also do a backup to a local drive if it has external power.  Please follow the directions in the backup UI for more details.
 
-Why would I even buy this when I can just build it for free??
+Why would I even buy this when I can just build it for free?
 -------------------------------------------------------------
 (1) White glove support. Because each Embassy comes with a unique product key engraved on it, and we have a record of all product keys, we can ask the user to verify their product key in order to receive a higher tier of support, such as phone calls.
 

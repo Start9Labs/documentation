@@ -22,7 +22,7 @@ Yes, the Embassy's case is actually doing 'double duty' as a heat sync.  This me
 
 I'm trying to migrate my old Embassy data, but the device won't boot.  What do I do?
 ------------------------------------------------------------------------------------
-Remove the external drive and sd card adapter if they are plugged in.  Boot the device with just the new (16GB) sd card inserted.  After you hear the start-up sounds, you may plug in the external drive and old (128GB) sd card.
+Remove the external drive and sd card adapter if they are plugged in.  Boot the device with just the new (32GB) sd card inserted.  After you hear the start-up sounds, you may plug in the external drive and old (128GB) sd card.
 
 I cannot reach embassy.local after hearing the start-up sounds from Embassy.  What do I do?
 -------------------------------------------------------------------------------------------
@@ -62,11 +62,7 @@ Can I use my Embassy from behind a VPN, for example, if my router has a built-in
 -------------------------------------------------------------------------------------
 While this is possible, it adds complexity, which may lead to problems.  You will need to understand the setup of your router/VPN and how it supports (or doesn't support) Tor/LAN connections.
 
-If you are having trouble with this, you might consider letting the Embassy out "in the clear," since everything is broadcast exclusively across the Tor network, offering a high level of privacy.
-
-Why am I having trouble using my Embassy via the Brave browser?
----------------------------------------------------------------
-Unfortunately, Brave does not treat .onion addresses in a 'secure context.'  This is a well-known issue in Brave that is being tracked `here <https://github.com/brave/brave-browser/issues/13834>`_.
+If you are having trouble with this, you might consider letting the Embassy out "in the clear," since all services are accessible over the Tor network, offering a high level of privacy.
 
 Is it true that my device has some limited functionality in regard to Embassy?
 ------------------------------------------------------------------------------

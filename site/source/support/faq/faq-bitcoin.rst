@@ -47,13 +47,7 @@ Even if your wallet is plugged into your Embassy, whether your wallet is hot or 
 
 How does Bitcoin Proxy request (and verify) data when that data is needed by some app using it?
 -----------------------------------------------------------------------------------------------
-Proxy fetches blocks from your pruned node if it still has them, and fetches them from peers when it does not.  Proxy can ensures the fetched block is valid by comparing it to its header, which is retained by the pruned node.  The header is a product of the hash of the block itself, amongst other things, so it can't be tampered with.
-
-What is the difference between the Bitcoin Wallet Tracker and the Electrum Personal Server?
--------------------------------------------------------------------------------------------
-Bitcoin Wallet Tracker and Electrum Personal Server are 2 services that do the same thing, similar to bitcoind vs btcd, or lnd vs c-lightning.
-Both work with your Bitcoin node to provide a richer set of information to wallets than could be done with bitcoind alone.  They are basically identical in purpose, their differences are notably in the software memory requirements and how snappily they can answer the same questions.
-Electrum (and some other wallets) require more than just a Bitcoin node to run in a sovereign way, they require an “Electrum Server”. Both Electrum Personal Server and Bitcoin Wallet Tracker are “Electrum servers”.
+Proxy fetches blocks from your pruned node if it still has them, and fetches them from peers when it does not.  Proxy can ensure the fetched block is valid by comparing it to its header, which is retained by the pruned node.  The header is a product of the hash of the block itself, amongst other things, so it can't be tampered with.
 
 How do I use Bitcoin Core as a wallet?
 --------------------------------------
@@ -61,7 +55,7 @@ Bitcoin Core is a full node that also contains wallet functionality.  Some will 
 You can use the wallet in Bitcoin Core, however it is for advanced users and is only available in the command line via SSH.
 
 It is helpful to think of the Bitcoin Core service on the Embassy as your own personal Bitcoin Server. This is your own verified source of truth of the Bitcoin ledger, that requires no permission for you to set up and own. The job of your Bitcoin server is to verify that the transactions you want to make and receive are valid.
-There are modern wallets that have the ability to use your personal Bitcoin node as a source of truth, and with the advantages of additional security and advanced features. This also follows the Linux mantra of "do one thing and do it well."  The recommended way to use Bitcoin with your Embassy’s Bitcoin node is with an external wallet.
+There are modern wallets that have the ability to use your personal Bitcoin node as a source of truth, and with the advantages of additional security and advanced features. This also follows the Unix mantra of "do one thing and do it well."  The recommended way to use Bitcoin with your Embassy’s Bitcoin node is with an external wallet.
 The available wallets are listed in the following FAQ.
 
 Which wallets can I use that sync with my Embassy Bitcoin and/or Lightning nodes?
