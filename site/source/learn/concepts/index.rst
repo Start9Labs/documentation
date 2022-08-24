@@ -4,7 +4,9 @@
 Concepts
 ========
 
-An overview of the ideas and technologies surrounding Start9 Labs and Embassy
+An overview of the ideas and technologies surrounding Start9 Labs and Embassy.
+
+:ref:`Start9 Labs<start9>` and our :ref:`Embassy<embassy>` products (powered by :ref:`EmbassyOS<embassy-os>`) "stand on the shoulders of giants."  Over the past several decades, technologies have been developed by individuals and companies without which these ground-breaking devices could not exist.  Below you will find some select ideas and software which will help you understand what Embassy is and how it works.
 
 .. toctree::
   :maxdepth: 2
