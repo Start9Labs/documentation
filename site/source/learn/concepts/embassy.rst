@@ -1,33 +1,39 @@
 .. _embassy-concepts:
 
 =====================
-Embassy and EmbassyOS
+Embassy Devices & EOS
 =====================
 
 .. contents::
   :depth: 2 
   :local:
 
-.. _embassy:
-
-Embassy
--------
-Embassy is the plug 'n' play hardware device sold by Start9.  The current iteration is a Raspberry Pi with an internal speaker in a custom, passively cooled case.  The Embassy comes pre-loaded with EmbassyOS.  Check out the video below to get a brief overview:
-
 .. youtube:: GfMvXJxYamw
     :width: 100%
+
+.. _embassy:
+
+Embassy One
+-----------
+Embassy One is a plug 'n' play hardware device, based on the `Raspberry Pi <https://www.raspberrypi.org/>`_, assembled in-house by Start9.  The current iteration features an internal SSD, speaker, active cooling, and power management in a custom AIO (all-in-one) case.  Embassy One comes pre-loaded with :ref:`EmbassyOS<embassy-os>`.  For more details, check out the `tech specs <https://store.start9.com/collections/embassy/products/embassy>`_.
+
+Embassy Pro
+-----------
+Embassy Pro is a plug 'n' play hardware device, based on the `Librem Mini <https://puri.sm/products/librem-mini/>`_, built by `Purism <https://puri.sm/about/>`_.  The Pro features a custom-built circuit board with active cooling, and an open-source firmware / boot stack.  Embassy Pro comes pre-loaded with :ref:`EmbassyOS<embassy-os>`.  For more details, check out the `tech specs <https://store.start9.com/products/embassy-2>`_.
 
 .. _embassy-os:
 
 EmbassyOS
 ---------
-EmbassyOS (EOS) is a Linux-based operating system custom built for self-hosting open source software.  EOS has a range of features that allow anyone to run their own server software without needing all the traditionally required systems administration skills.  Advanced dependency management, sensibly defaulted configuration with customization, and minimal reliance on the developers are just a few; all wrapped into a sleek GUI that anyone can operate.  No command line required!
+EmbassyOS (EOS) is a Linux-based operating system custom built for self-hosting open source software.  EOS has a range of features that allow anyone to run their own server software without needing all of the traditionally required systems administration skills.  Features such as advanced dependency management, sensible default configuration with potential for customization, and a sleek GUI make for a smooth user experience with minimal reliance on the developers for people with all levels of technical expertise.
+
+Currently, 2 builds of EOS exist, one for the ARM architecture (Embassy One) and one for x86 (Embassy Pro).  We currently only support the Raspberry Pi and Librem Mini hardware platforms, however with some minor tweaking, our builds should work on many other ARM and x86 devices.  We hope to officially support more platforms soon, and we highly encourage hacking and community builds!  Drop in our :ref:`community channels<contact>` to learn more and collaborate!!
 
 .. _sounds:
 
 Embassy Sounds
 --------------
-EmbassyOS emits several sounds for user feedback and troubleshooting.  Below are the current possible sounds and their meaning:
+EmbassyOS emits several sounds for user feedback and troubleshooting.  Below is the current library of potential sounds and their prospective meaning:
 
     .. raw:: HTML
 
@@ -36,7 +42,7 @@ EmbassyOS emits several sounds for user feedback and troubleshooting.  Below are
         Your browser does not support the audio element.
       </audio>
 
-    * "bep" - Starting up
+    * "bep" - Embassy is starting up
 
     .. raw:: HTML
 
@@ -63,17 +69,7 @@ EmbassyOS emits several sounds for user feedback and troubleshooting.  Below are
         Your browser does not support the audio element.
       </audio>
 
-    * "Beethoven" - An error has occurred - check your Notifications for more info, or :ref:`Contact Support<contact>`
-
-.. _product-key:
-
-EmbassyOS Product Key
----------------------
-Whether you purchase a device, download an image, or build yourself from source, every copy of EmbassyOS has it's own unique Product Key, which is generated with the creation of each EOS image.
-
-If you purchase a device from us, this is printed on the bottom of your Embassy.  If you purchase a download, we provide you the key.  If you build from source, the key is created during the build.
-
-The first and foremost use of the Product Key is to encrypt data that is sent to Embassy at :ref:`Initial Setup<initial-setup>`.  There are several other usecases.  Start9 keeps an anonymous database of all Product Keys that have been purchased by us (ZERO additional data is associated) so that we can verify someone is a "paid user."  Currently this is just to allow someone to get a new copy of the EOS image if they have a problem, but in future we intend to give added bonuses to customers who have chosen to pay us for a copy of the software.
+    * "Beethoven" - An error has occurred.  Check your "Notifications" tab for more info, or :ref:`Contact Support<contact>`
 
 .. _services-eos:
 
