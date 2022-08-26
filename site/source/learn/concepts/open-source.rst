@@ -25,9 +25,7 @@ Open Source ideas explained in `Lego <https://www.youtube.com/watch?v=a8fHgx9mE5
 
 Dependencies
 ------------
-A software dependency is a code library or package that is reused in a new piece of software. The benefit of software dependencies is that they allow developers to more quickly deliver software by building on previous work.
-
-Software may even require its dependency to be *configured* in a particular way.
+A software dependency is a code library or package that is reused in a new piece of software. The benefit of software dependencies is that they allow developers to more quickly deliver software by building on previous work.  Software may even require its dependency to be configured in a particular way.
 
 Traditionally, managing dependencies has been a massive headache and has served as a huge barrier to running a personal server. But no more! The EmbassyOS dependency management system makes the process simple and accesible.
 
