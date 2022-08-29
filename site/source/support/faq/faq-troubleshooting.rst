@@ -22,7 +22,7 @@ Yes, the Embassy's case is actually doing 'double duty' as a heat sync.  This me
 
 I'm trying to migrate my old Embassy data, but the device won't boot.  What do I do?
 ------------------------------------------------------------------------------------
-Remove the external drive and sd card adapter if they are plugged in.  Boot the device with just the new (16GB) sd card inserted.  After you hear the start-up sounds, you may plug in the external drive and old (128GB) sd card.
+Remove the external drive and sd card adapter if they are plugged in.  Boot the device with just the new (32GB) sd card inserted.  After you hear the start-up sounds, you may plug in the external drive and old (128GB) sd card.
 
 I cannot reach embassy.local after hearing the start-up sounds from Embassy.  What do I do?
 -------------------------------------------------------------------------------------------
@@ -56,17 +56,13 @@ Nothing special is required, however, it is best practice to use good passwords,
 
 What if I have an unique network issue, for example, with a firewall?
 ---------------------------------------------------------------------
-The Embassy is designed to work as simply as possible, for as many as possible, while providing the ability to self-host in a private manner.  If you have an agressive or custom firewall, or other custom network settings, there is a good chance that addtional configuration may be necessary.  We will continue to learn about custom networking issues, update our docs with resources, and help in the :ref:`Community Channels <contact>` to the best of our ability.
+Embassy is designed to work as simply as possible, for as many as possible, while providing the ability to self-host in a private manner.  If you have an agressive or custom firewall, or other custom network settings, there is a good chance that addtional configuration may be necessary.  We will continue to learn about custom networking issues, update our docs with resources, and help in the :ref:`Community Channels <contact>` to the best of our ability.
 
 Can I use my Embassy from behind a VPN, for example, if my router has a built-in VPN?
 -------------------------------------------------------------------------------------
 While this is possible, it adds complexity, which may lead to problems.  You will need to understand the setup of your router/VPN and how it supports (or doesn't support) Tor/LAN connections.
 
-If you are having trouble with this, you might consider letting the Embassy out "in the clear," since everything is broadcast exclusively across the Tor network, offering a high level of privacy.
-
-Why am I having trouble using my Embassy via the Brave browser?
----------------------------------------------------------------
-Unfortunately, Brave does not treat .onion addresses in a 'secure context.'  This is a well-known issue in Brave that is being tracked `here <https://github.com/brave/brave-browser/issues/13834>`_.
+If you are having trouble with this, you might consider letting Embassy out "in the clear," since all services are accessible over the Tor network, offering a high level of privacy.
 
 Is it true that my device has some limited functionality in regard to Embassy?
 ------------------------------------------------------------------------------

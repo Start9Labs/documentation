@@ -77,7 +77,7 @@ Claiming your Device
 
 #. Create your *permanent* master password and click "Finish".
 
-    .. warning:: There is currently no way to change your password. Choose a strong master password. Write it down. Store it somewhere safe. DO NOT LOSE IT. If you lose this password, you may be forced to reset the device, resulting in permanent loss of data.  **This one responsibility is the price of sovereignty.**
+    .. warning:: Choose a strong master password.  Write it down.  Store it somewhere safe.  DO NOT LOSE IT.
 
     .. figure:: /_static/images/setup/setup3.png
       :width: 60%
