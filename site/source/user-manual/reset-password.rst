@@ -9,7 +9,7 @@ Reset Your Password
   :local:
 
 #. Obtain the latest copy of EmbassyOS with your product key included, by `downloading it from Github <https://github.com/Start9Labs/embassy-os/releases/latest>`_.
-#. Flash the downloaded image to your microSD card, using `this guide <../flashing>`_.
+#. Flash the downloaded image to your microSD card, using `this guide <flashing>`.
 #. Insert the microSD card into your Embassy and power it on.
 
     .. note:: Embassy will power up and then initialize.  Once complete, you will hear a _bep_ to indicate it is initialized and then a _chime_ sound to indicate it is online.

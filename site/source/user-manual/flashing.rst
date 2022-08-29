@@ -9,7 +9,7 @@ Getting EmbassyOS
 
 After building your device, you need a copy of EmbassyOS.
 
-* Visit the `latest EmbassyOS release page on Github <https://github.com/Start9Labs/embassy-os/releases/latest>`_ to download an image of EmbassyOS.
+* Visit the `latest EmbassyOS release page on Github <https://github.com/Start9Labs/embassy-os/releases/latest>`_ to download an image of EmbassyOS.  It is `eos.tar.gz`.
 
 Installing EmbassyOS
 --------------------
