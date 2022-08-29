@@ -1,3 +1,9 @@
+.. _flashing:
+
+========
+Flashing
+========
+
 Getting EmbassyOS
 -----------------
 
