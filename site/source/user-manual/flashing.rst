@@ -9,7 +9,7 @@ Getting EmbassyOS
 
 After building your device, you need a copy of EmbassyOS.
 
-* Visit `images.start9.com <https://images.start9.com>`_ and enter the product key ``xxxxxxxx`` (all lower case) to download an image of EmbassyOS.
+* Visit the `latest EmbassyOS release page on Github <https://github.com/Start9Labs/embassy-os/releases/latest>`_ to download an image of EmbassyOS.
 
 Installing EmbassyOS
 --------------------
@@ -30,4 +30,4 @@ Whether you download EmbassyOS from our image server or build it yourself, you'l
     .. warning:: Be certain you have selected the correct target microSD card. Whatever target you select will be completely erased and replaced with EmbassyOS.
 
 #. Click "Flash!". You may be asked to (1) approve the unusually large disk target or (2) enter your password. Both are normal.
-#. After the flash completes, you may remove the micro SD from the adapter, insert it into your Embassy's SD card slot, and continue to the :ref:`Initial Setup <initial-setup>` instructions.
+#. After the flash completes, you may remove the micro SD from the adapter, insert it into your Embassy's SD card slot, and continue to the :ref:`Initial Setup <initial-setup>` or :ref:`Update by reflashing <manual-update>` instructions.
