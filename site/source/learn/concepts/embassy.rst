@@ -115,7 +115,7 @@ In EmbassyOS, each installed service creates its own Tor Hidden Service URL. For
 
 Certain services, such as Bitcoin, actually have multiple interfaces. Bitcoin has an RPC interface, a P2P interface, and could potentially even have a graphical interface, such as a dashboard displaying important node information. Using the same URL for these various interfaces is not only confusing, but it could also potentially pose a security vulnerability. For example, a user may want to share their P2P interface address with someone for peering, but would not want to give out their UI address, which is for private use only.
 
-As such, EmbassyOS 0.3.0 permits services to have multiple interfaces, each receiving its own Tor address and/or LAN address. Users can then view and access all interfaces for a given service inside the "Interfaces" section of the service dashboard.
+As such, EmbassyOS permits services to have multiple interfaces, each receiving its own Tor address and/or LAN address. Users can then view and access all interfaces for a given service inside the "Interfaces" section of the service dashboard.
 
 .. _health-checks:
 

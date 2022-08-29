@@ -21,4 +21,4 @@ Community Channels
 4. If you would like to take on a more significant role in Support, please reach out to us at support@start9labs.com, or in one of our :ref:`Community Channels <contact>`.
 
     - We are working on a volunteer program, which we eventually hope to incentivize.
-    - It is also a foot in the door with Start9, where we are often growing and in need of new members.
+    - It is also a foot in the door with Start9, where we are always growing and often in need of new team members.
