@@ -1,7 +1,7 @@
 .. _team:
 
-========
-The Team
-========
+===========
+Start9 Team
+===========
 
 Please check back soon
