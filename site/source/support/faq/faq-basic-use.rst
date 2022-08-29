@@ -73,7 +73,7 @@ It is neither necessary, nor recommended to do this.  The backup solution availa
 
 Why would I even buy this when I can just build it for free?
 ------------------------------------------------------------
-(1) White glove support, of a higher tier and priority, in your preferred format, from email to text chat to screen sharing conference calls.
+(1) You will get white glove support in your preferred format, from email to text chat to screen sharing conference calls.
 
 (2) Supporting the project. Buying an Embassy from Start9 is your way of supporting the development of the project. And it's not just out of gratitude, but rather, a recognition that if the project isn't funded, the cool software stops coming.
 
