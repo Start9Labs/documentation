@@ -15,6 +15,8 @@ Welcome to the EmbassyOS user manual. Here you will discover all that your Embas
   dashboard-overview
   updating
   backups/index
+  flashing
+  reset-password
   customize
   managing-services
   service-guides/index
