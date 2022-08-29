@@ -16,7 +16,7 @@ Installing EmbassyOS
 
 Whether you download EmbassyOS from our image server or build it yourself, you'll need to flash it onto a microSD card.
 
-#. Download `balenaEtcher <https://www.balena.io/etcher/>`_ onto your Mac, Windows, or Linux computer.
+#. Download `balenaEtcher <https://www.balena.io/etcher/>`_ onto your Linux, Mac, or Windows computer.
 #. Insert the microSD card into your computer, either directly or using an adapter.
 #. Open balenaEtcher.
 

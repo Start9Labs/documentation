@@ -8,7 +8,7 @@ Reset Your Password
   :depth: 2
   :local:
 
-#. Obtain the latest copy of EmbassyOS with your product key included, by `downloading it from our image server <https://images.start9.com/>`_.
+#. Obtain the latest copy of EmbassyOS with your product key included, by `downloading it from Github <https://github.com/Start9Labs/embassy-os/releases/latest>`_.
 #. Flash the downloaded image to your microSD card, using `this guide <../flashing>`_.
 #. Insert the microSD card into your Embassy and power it on.
 

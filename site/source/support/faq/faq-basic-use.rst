@@ -23,7 +23,7 @@ Yes, but there is currently no way to synchronize or federate them.  We are work
 
 What if I forget my Embassy password?
 -------------------------------------
-Please follow the :ref:`password reset guide<password-reset>`.
+Please follow the :ref:`password reset guide<reset-password>`.
 
 My Embassy is set up, now what?
 -------------------------------
@@ -72,8 +72,8 @@ Can I clone my Embassy SSD for backup purposes?
 It is neither necessary, nor recommended to do this.  The backup solution available in EmbassyOS (v0.3.0+) allows all data to be written to another drive remotely, and this can mean another SSD, attached to a computer on your network.  You may also do a backup to a local drive if it has external power.  Please follow the directions in the backup UI for more details.
 
 Why would I even buy this when I can just build it for free?
--------------------------------------------------------------
-(1) White glove support. Because each Embassy comes with a unique product key engraved on it, and we have a record of all product keys, we can ask the user to verify their product key in order to receive a higher tier of support, such as phone calls.
+------------------------------------------------------------
+(1) White glove support, of a higher tier and priority, in your preferred format, from email to text chat to screen sharing conference calls.
 
 (2) Supporting the project. Buying an Embassy from Start9 is your way of supporting the development of the project. And it's not just out of gratitude, but rather, a recognition that if the project isn't funded, the cool software stops coming.
 
@@ -82,3 +82,7 @@ Why would I even buy this when I can just build it for free?
 Bottom line...We are charging a very marginal rate for something incredibly powerful, and we think the convenience of a plug-and-play device, free service marketplace, and free white glove support is where the money is. Anyone could build their own couches too, but here is a reason furniture stores exist. How much is your time worth?
 
 The fastest way to get support is via our :ref:`Community channels<contact>`.  You can also `email us <support@start9labs.com>`_.  Please do not hesitate to reach out!
+
+I bought an Embassy before Q3 2022 and it came with a 'product key,' what is that?
+----------------------------------------------------------------------------------
+This will entitle you to white glove support as well as future benefits yet to be announced.

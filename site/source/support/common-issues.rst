@@ -43,7 +43,7 @@ Make sure you have successfully followed the :ref:`LAN Setup<connecting-lan>` in
 I am unable to reach Embassy via it's xxxxxxxxxxxxxxxxxx.onion (Tor) address
 --------------------------------------------------------------------------------
 
-#. **Test** - Try connecting to your Embassy using the officially preferred  :ref:`Tor Browser <tor-browser>`.
+#. **Test** - Try connecting to your Embassy using the preferred :ref:`Tor Browser <tor-browser>`.
 
     #. **If Tor Browser works** - It means the issue is either with the Tor daemon on your device or with the browser settings.
 
