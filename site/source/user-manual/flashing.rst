@@ -14,7 +14,7 @@ After building your device, you need a copy of EmbassyOS.
 Installing EmbassyOS
 --------------------
 
-Whether you download EmbassyOS from our image server or build it yourself, you'll need to flash it onto a microSD card.
+Once you have the EmbassyOS image, you will need to flash it onto a microSD card.
 
 #. Download `balenaEtcher <https://www.balena.io/etcher/>`_ onto your Linux, Mac, or Windows computer.
 #. Insert the microSD card into your computer, either directly or using an adapter.
