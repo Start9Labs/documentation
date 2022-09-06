@@ -91,7 +91,7 @@ Setup
 
     .. code-block:: bash
 
-        sudo bash
+        sudo -i
 
 #. Using Vim or Nano, add the following 2 lines to ``/etc/tor/torrc``
 

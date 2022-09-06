@@ -27,9 +27,9 @@ Hardware Requirements
 Flashing
 --------
 
-#. Once you have all these you will need to download an 0.3.0 image from https://images.start9.com. This is free for all existing users. Anyone who is running 0.2.x who compiled it themselves will need to either compile 0.3.0 themselves or purchase an 0.3.0 image.
+#. Once you have all these you will need to download an 0.3.0 image from https://images.start9.com. This is free for all existing users. Anyone who is running 0.2.x who compiled it themselves will need to either compile 0.3.0 themselves or download an 0.3.0 image.
 
-#. Once you have the image, flash it on to the 16GB SD card - the new one, **NOT** the one currently in your Embassy!
+#. Once you have the image, flash it on to the 32GB SD card - the new one, **NOT** the one currently in your Embassy!
 
 .. tip:: The flashing software we recommend is `Balena Etcher <https://www.balena.io/etcher/>`_
 
@@ -50,14 +50,14 @@ You may like to follow along with this video for clarity while migrating:
 
 #. Then take the new SD card with 0.3.0 on it and place it into the microSD card slot on your Embassy (not into the adaptor - that is for the old SD card!)
 
-#. Next, plug the SSD into one of the USB 3.0 ports (blue) on your Embassy, then reconnect the Ethernet cable if not already connected.
+#. Next, plug the SSD into one of the USB 3.0 (blue) ports on your Embassy, then reconnect the Ethernet cable if not already connected.
 
 #. Now the power cable can be connected and the Embassy powered up.
 
 Power Up
 --------
 
-#. Embassy will power up and then initialize, a process of less than 5 minutes if you purchased an image, or about 10-20 minutes if you built from source. Once complete you will hear a _bep_ to indicate it is initialized and then a _chime_ sound to indicate it is online.
+#. Embassy will power up and then initialize, a process of less than 5 minutes if you downloaded the image, or about 10-20 minutes if you built from source. Once complete you will hear a _bep_ to indicate it is initialized and then a _chime_ sound to indicate it is online.
 
 #. On your computer, open up a browser and go to http://embassy.local
 
@@ -87,14 +87,14 @@ Power Up
    .. figure:: /_static/images/setup/migrate4.png
       :width: 60%
 
-#. You will now need to make a password for your Embassy. It needs to be a strong password. This password protects your Embassy. It can be the same one that you used prior to migration, or a new one.  Either way, make it strong, and make a backup of it.  Without this you will **LOSE ALL ACCESS** to your Embassy!
+#. You will now need to make a password for your Embassy. It needs to be a strong password. This password protects your Embassy. It can be the same one that you used prior to migration, or a new one.  Either way, make it strong, and make a backup of it.
 
 #. Embassy will now recover all your data from your old Embassy and once finished, you will hear a _bep_, followed by a _chime_.
 
    .. figure:: /_static/images/setup/migrate5.png
       :width: 60%
 
-#. Now you will be provided with both a Tor and LAN address with which you can access your Embassy. A file download will contain this important information, which you should keep somewhere safe.  It is also a good idea to make bookmarks on the devices that you will use to access your Embassy.
+#. Now you will be provided with both a Tor and LAN address with which you can access your Embassy. A file offered for download will contain this important information, which you should keep somewhere safe.  It is also a good idea to make bookmarks on the devices that you will use to access your Embassy.
 
    .. figure:: /_static/images/setup/migrate6.png
       :width: 60%
