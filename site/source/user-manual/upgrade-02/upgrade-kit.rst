@@ -27,7 +27,7 @@ You may like to follow along with this video for clarity while migrating:
 
 #. Next, remove the OLD SD card that is in your Embassy and place it into the SD card adaptor, and then connect the adaptor to any USB port on your Embassy.
 
-#. Then take the NEW 16GB microSD card with 0.3.0 on it and place it into the microSD card slot on your Embassy. Be careful not to confuse the two microSD cards!
+#. Then take the NEW 32GB microSD card with 0.3.0 on it and place it into the microSD card slot on your Embassy. Be careful not to confuse the two microSD cards!
 
 #. Next, plug the SSD into one of the USB 3.0 ports (the blue ones) on your Embassy, then reconnect the Ethernet cable if not already connected.
 
@@ -57,7 +57,7 @@ Power Up
 
    .. note:: If it does not show up, please power down Embassy, unplug it, plug it back in, and boot Embassy again
 
-#. You will now need to make a password for your Embassy. It needs to be a strong password. This password protects your Embassy. It can be the same one that you used prior to migration, or a new one.  Either way, make it strong, and make a backup of it.  Without this you will **LOSE ALL ACCESS** to your Embassy!
+#. You will now need to make a password for your Embassy. It needs to be a strong password. This password protects your Embassy. It can be the same one that you used prior to migration, or a new one.  Either way, make it strong, and make a backup of it.
 
 #. Embassy will now recover all your data from your old Embassy and once finished, you will hear a _bep_, followed by a _chime_.
 
