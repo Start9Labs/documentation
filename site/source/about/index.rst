@@ -62,12 +62,10 @@ About
 
 .. This is for the side navigation display
 .. toctree::
-   :maxdepth: 2
-   :hidden:
+  :maxdepth: 2
+  :hidden:
 
-   start9
-   privacy
-   license
-   jobs
-  ..  roadmap
-  ..  team
+  start9
+  privacy
+  license
+  jobs

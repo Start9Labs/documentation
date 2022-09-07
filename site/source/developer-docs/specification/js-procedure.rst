@@ -73,8 +73,8 @@ How to Setup
             set:
                 type: script
 
-4. Fill in the todos in the above template to match the expected Effect parameter defined by the `exported type <https://deno.land/x/embassyd_sdk@v0.3.1.0.3/types.ts#L32> `__. This type describes how to call functions that interact with EmbassyOS.
-5. In the build process for packaging the final s9pk, include the following step. **The location of the js is important, and can't be changed**. It must exist at `scripts/embassy.js`in the root of the project's wrapper repository.
+4. Fill in the todos in the above template to match the expected Effect parameter defined by the `exported type <https://deno.land/x/embassyd_sdk@v0.3.1.0.3/types.ts#L32>`_. This type describes how to call functions that interact with EmbassyOS.
+5. In the build process for packaging the final s9pk, include the following step. **The location of the js is important, and can't be changed**. It must exist at `scripts/embassy.js` in the root of the project's wrapper repository.
 
     .. code:: bash
 

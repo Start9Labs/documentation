@@ -75,6 +75,7 @@ FullyNoded
  
   #. In Fully Noded, go to `Settings > Node Manager > +`
   #. Enter your Bitcoin Core credentials. You can do this in one of two ways:
+
     (A) Use Fully Noded to scan your QuickConnect QR code (located in `Services > Bitcoin Core > properties`); or 
     (B) copy/paste your Bitcoin Core Tor Address (located in `Services > Bitcoin Core > Interfaces`) with :8332 appended, as well as you rpc username and password (located in `Services > Bitcoin Core > Config > RPC Settings`).
 
@@ -156,9 +157,11 @@ Bitcoin-Cli
  .. warning:: This is an advanced feature and should be used with caution. Start9 is not responsible for any damage you might cause through SSH access.
  
  #. First, you will need SSH access.  Please see the :ref:`setup instructions <ssh>` for details.
- #. Access your Embassy and then you can interact with the bitcoind docker container using the following syntax::
- 
-    sudo docker exec -ti bitcoind.embassy bitcoin-cli COMMAND
+ #. Access your Embassy and then you can interact with the bitcoind docker container using the following syntax:
+
+  .. code-block:: bash
+    
+      sudo docker exec -ti bitcoind.embassy bitcoin-cli COMMAND
  
  .. tip:: For example ``sudo docker exec -ti bitcoind.embassy bitcoin-cli getnetworkinfo``
  
