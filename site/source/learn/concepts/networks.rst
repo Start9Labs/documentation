@@ -24,7 +24,7 @@ Your Embassy is hosted on the LAN and is reachable by visiting its ``embassy.loc
 
 LAN Certificate
 ---------------
-When you visit an SSL website (one with the https prefix), the connection is secured using SSL/TSL encryption. The website will present your browser with an SSL certificate showing that the owner of the website has been authenticated by a recognized Certificate Authority (CA). In the case of your Embassy, you are the CA and this certificate is self-signed!
+When you visit an SSL website (one with the ``https://`` prefix), the connection is secured using SSL/TLS encryption. The website will present your browser with an SSL certificate showing that the owner of the website has been authenticated by a recognized Certificate Authority (CA).  In the case of your Embassy, **you** are the CA, and **you** sign your own certificate.  No third party required!
 
 Your certificate is created when you initially setup your Embassy, or migrate to a new version of the OS, such as 0.3.0.
 

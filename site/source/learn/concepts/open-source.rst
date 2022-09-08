@@ -31,4 +31,4 @@ Traditionally, managing dependencies has been a massive headache and has served 
 
 If a service has one or more dependencies, or a dependency needs to be configured in a particular way, your Embassy device will inform you and provide an automated solution, giving details of what will be done so you can make an informed decision before taking action.
 
-Sometimes, a dependency can be satisfied in multiple ways. For example, Lightning has a dependency on Bitcoin. However, this does not necessarily mean you need to have Bitcoin installed on your Embassy. You could just as easily configure Lightning to use another Bitcoin node located somewhere else!
+Sometimes, a dependency can be satisfied in multiple ways. For example, Lightning has a dependency on Bitcoin. This does not necessarily mean you need to have Bitcoin installed on your Embassy. You could just as easily configure Lightning to use another Bitcoin node located somewhere else!
