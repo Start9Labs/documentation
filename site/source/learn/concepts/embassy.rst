@@ -15,11 +15,11 @@ Embassy Devices & EOS
 
 Embassy One
 -----------
-Embassy One is a plug 'n' play hardware device, based on the `Raspberry Pi <https://www.raspberrypi.org/>`_, assembled in-house by Start9.  The current iteration features an internal SSD, speaker, active cooling, and power management in a custom AIO (all-in-one) case.  Embassy One comes pre-loaded with :ref:`EmbassyOS<embassy-os>`.  For more details, check out the `tech specs <https://store.start9.com/collections/embassy/products/embassy>`_.
+Embassy One is a plug 'n' play hardware device, based on the `Raspberry Pi <https://www.raspberrypi.org/>`_, assembled in-house by Start9.  The current iteration features an internal SSD, speaker, active cooling, and power management in a custom AIO (all-in-one) case.  Embassy One comes pre-loaded with :ref:`EmbassyOS<embassy-os>`.  For more details, check out the `Embassy One tech specs <https://store.start9.com/collections/embassy/products/embassy>`_.
 
 Embassy Pro
 -----------
-Embassy Pro is a plug 'n' play hardware device, based on the `Librem Mini <https://puri.sm/products/librem-mini/>`_, built by `Purism <https://puri.sm/about/>`_.  The Pro features a custom-built circuit board with active cooling, and an open-source firmware / boot stack.  Embassy Pro comes pre-loaded with :ref:`EmbassyOS<embassy-os>`.  For more details, check out the `tech specs <https://store.start9.com/products/embassy-2>`_.
+Embassy Pro is a plug 'n' play hardware device, based on the `Librem Mini <https://puri.sm/products/librem-mini/>`_, built by `Purism <https://puri.sm/about/>`_.  The Pro features a custom-built circuit board with active cooling, and an open-source firmware / boot stack.  Embassy Pro comes pre-loaded with :ref:`EmbassyOS<embassy-os>`.  For more details, check out the `Embassy Pro tech specs <https://store.start9.com/products/embassy-2>`_.
 
 .. _embassy-os:
 
@@ -79,15 +79,15 @@ The server-side software available on EmbassyOS are referred to as "Services."  
 
 .. _sessions:
 
-Session
--------
+Sessions
+--------
 A session is simply a logged-in connection to your Embassy.  You can view your :ref:`Active Sessions<session-management>`, and kill one if you suspect it is not legitimate, or no longer use it.
 
 .. _service-container:
 
 Service Container
 -----------------
-Each service is compartmentalized into its own "container," at this time, this normally means a `Docker <https://docker.com>`_ container.  There are several reasons for this, including security, ease of use, and maintenance.
+Each service is compartmentalized into its own "container."  At this time, this normally means a `Docker <https://docker.com>`_ container, however EmbassyOS is modular and other options will be available soon.  There are several reasons for doing this, including security, ease of use, and maintenance.
 
 .. _service-dependencies:
 
@@ -105,7 +105,7 @@ Sometimes, a dependency can be satisfied in multiple ways. For example, Lightnin
 
 Web User Interface (UI)
 -----------------------
-A User Interface (UI) is, as the name suggests, the way in which the user interacts with some software.  Typically this is achieved through a graphical interface (GUI).  A WebUI is a website that is served specifically for a user to issue commands or view data.  A great example of this is EmbassyOS itself, which serves a WebUI for the user to add/remove services, make configurations, etc.  This is your main point of contact with EOS.
+A User Interface (UI) is the way in which the user interacts with some software.  Typically, this is achieved through a graphical interface (GUI).  A WebUI is a website that is served specifically for a user to issue commands or view data.  A great example of this is EmbassyOS itself, which serves a WebUI for the user to add/remove services, make configurations, etc.  This is your main point of contact with EOS.
 
 .. _interfaces:
 

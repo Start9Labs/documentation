@@ -20,7 +20,7 @@ Bitcoin Node
 ------------
 The Embassy can optionally run a Bitcoin node.  When most people say "Bitcoin node" what they mean is a "validating node", meaning that the node is capable of enforcing the consensus rules of Bitcoin by accepting, validating, and relaying every transaction and block produced by the network. Fully validating nodes are necessary for Bitcoin to exist and function properly.  They protect the network from attackers attempting to bypass the consensus rules.  When you run a Bitcoin node, you are "being your own bank."  
 
-A video explaining the importance of running a node can be found `here <https://www.youtube.com/watch?v=oX0Yrv-6jVs>`_.
+Here is a video explaining the importance of `running a node <https://www.youtube.com/watch?v=oX0Yrv-6jVs>`_.
 
 .. _btc-wallets:
 
@@ -40,6 +40,6 @@ The word "wallet" has come to mean a lot of things in Bitcoin world, depending o
 
 Lightning Network
 -----------------
-The Lightning Network is a "payment layer" that sits on top of the Bitcoin blockchain, which it uses for final settlement. This allows Bitcoin to scale without affecting the security of the protocol layer.  It is easiest to think of Lightning Network as a system that allows anyone to use their Bitcoin to have a running tab (think bar tab) of money they owe each other.  For example, 2 friends may have a "channel" (tab) between them that they use for exchanging value.  The channel keeps track of who owes what. Those payments can be settled at any time on the Bitcoin blockchain if either or both parties decide to close out.  One big incentive to use Lightning is that payments are extremely fast and fees are extremely low.  You can find an introductory video explanation `here <https://www.youtube.com/watch?v=rrr_zPmEiME>`_.
+The Lightning Network is a "payment layer" that sits on top of the Bitcoin blockchain, which it uses for final settlement. This allows Bitcoin to scale without affecting the security of the protocol layer.  It is easiest to think of Lightning Network as a system that allows anyone to use their Bitcoin to have a running tab (think bar tab) of money they owe each other.  For example, 2 friends may have a "channel" (tab) between them that they use for exchanging value.  The channel keeps track of who owes what. Those payments can be settled at any time on the Bitcoin blockchain if either or both parties decide to close out.  One big incentive to use Lightning is that payments are extremely fast and fees are extremely low.  Check out this `introductory video explanation <https://www.youtube.com/watch?v=rrr_zPmEiME>`_.
 
-You can learn more about Lightning `here <https://lopp.net/lightning>`_.
+`Learn more about Lightning <https://lopp.net/lightning>`_.

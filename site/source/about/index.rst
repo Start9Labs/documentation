@@ -74,8 +74,8 @@ About
   :maxdepth: 2
   :hidden:
 
-   start9
-   privacy
-   license
-   jobs
-   contact
+  start9
+  privacy
+  license
+  jobs
+  contact
