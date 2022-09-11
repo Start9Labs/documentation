@@ -7,6 +7,14 @@ Podcasts
 Podcasts featuring Start9 Labs and/or Embassy
 
 .. topic-box::
+    :title: September 7, 2022 -  How Bitcoin Nodes End Censorship on the Internet
+    :link: https://bitcointv.com/w/hJcvVJEf5CEbXaTdKghjsw
+    :image: https://simplybitcoin.tv/assets/images/image01.png
+    :anchor: Simply Bitcoin
+
+    Matt Hill - The future of computing, decentralizing the internet, censorship, and sovereign computing
+
+.. topic-box::
     :title: May 20, 2022 -  Bitcoin & Owning Your Data with David Croisant
     :link: https://www.djvalerieblove.com/podcast/episode/2ac26d06/david-croisant-building-a-new-internet-with-personal-servers-from-start-9-labs
     :image: https://pbcdn1.podbean.com/imglogo/image-logo/8790485/Copy_of_image_podcast_cover_1400_1400_px__j5c7bk.png

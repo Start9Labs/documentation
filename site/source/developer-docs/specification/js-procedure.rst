@@ -1,4 +1,4 @@
-.. _js_procedure:
+.. _js-procedure:
 
 ============
 JS Procedure
@@ -58,10 +58,10 @@ How to Setup
         export const dependencies: T.ExpectedExports.dependencies = todo;
         /** Fill this out when manifest @ health-checks.<packageName>.type = script  */
         export const health: T.ExpectedExports.health = todo;
-        /** Fill this out when manifest @ migrations.<from/to>.<emver>.type = script
+        /** Fill this out when manifest @ migrations.<from/to>.<emver>.type = script */
         export const migration: T.ExpectedExports.migration = todo;
 
-        Note: Not all the exports are needed unless one uses the following configuration settings in ``manifest.yaml``
+.. note:: Not all the exports are needed unless one uses the following configuration settings in ``manifest.yaml``
 
 3. Modify service manifest to use the script type like so:
 

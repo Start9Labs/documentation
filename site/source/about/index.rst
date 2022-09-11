@@ -56,6 +56,15 @@ About
 
   See our available positions.
 
+.. topic-box::
+  :title: Contact
+  :link: contact
+  :icon: scylla-icon scylla-icon--support
+  :class: large-5
+  :anchor: Get help
+
+  Get help from Start9 and the community directly
+
 .. raw:: html
 
   </div></div>
@@ -69,3 +78,4 @@ About
   privacy
   license
   jobs
+  contact
