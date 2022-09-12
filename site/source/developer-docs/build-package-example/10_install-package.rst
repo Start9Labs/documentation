@@ -29,19 +29,19 @@ Now that we have a process for iterating on producing a valid package for Embass
     .. code:: bash
 
         # Confirm you can ssh into your Embassy
-        ssh root@<lan-url>
+        ssh start9@<lan-url>
         # Log out of Embassy SSH session
         exit
 
-        scp <package-id>.s9pk ssh root@<lan-url>:/working/directory/path
+        scp <package-id>.s9pk ssh start9@<lan-url>:/working/directory/path
 
-        eg. scp hello-world.s9pk ssh root@embassy-12345678.local:/root
+        eg. scp hello-world.s9pk ssh start9@embassy-12345678.local:~
 
 4. Finally, install the package on an Embassy device:
 
     .. code:: bash
 
-        ssh root@<lan-url>
+        ssh start9@<lan-url>
         # log in to the command line interface using the Embassy password
         embassy-cli auth login
         embassy-cli package install hello-world.s9pk
