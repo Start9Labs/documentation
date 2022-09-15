@@ -57,7 +57,7 @@ Configuring Firefox for Tor on Mac
 
       file:///usr/local/etc/tor/proxy.pac
 
-    or (depending on which command you entered in step 3):
+    or (depending on which command you entered in step 4):
 
     .. code-block::
 
