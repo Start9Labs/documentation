@@ -10,6 +10,7 @@ These guides will help you to setup external tools to connect or interact with s
   :maxdepth: 1
 
   bitcoin
+  blockchain-copy
   lightning
   matrix
   vaultwarden
