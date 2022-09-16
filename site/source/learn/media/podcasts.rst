@@ -7,6 +7,14 @@ Podcasts
 Podcasts featuring Start9 Labs and/or Embassy
 
 .. topic-box::
+    :title: September 16, 2022 -  RaspiFUD or fact? Bitcoin nodes and security
+    :link: https://stephanlivera.com/episode/414/
+    :image: https://i0.wp.com/stephanlivera.com/wp-content/uploads/2022/09/SLP414-1.png
+    :anchor: Stephan Livera Podcast
+
+    Matt Hill of Start9 rejoins me on the show to chat about the recent show on Bitcoin nodes with K3tan.
+
+.. topic-box::
     :title: September 7, 2022 -  How Bitcoin Nodes End Censorship on the Internet
     :link: https://bitcointv.com/w/hJcvVJEf5CEbXaTdKghjsw
     :image: https://simplybitcoin.tv/assets/images/image01.png
