@@ -11,7 +11,7 @@ Blockchain Migration
 If you have already synced the Bitcoin blockchain to the tip on one Embassy, and would like to skip IBD on another Embassy, follow this guide.
 
 .. note:: The following guide requires that you have already :ref:`setup SSH on both Embassies<ssh>`.
-  In this guide, we will refer to your synced Embassy as embassy-AAAAAAA.local and the Embassy with no Bitcoin synced as embassy-BBBBBBB.local.  Of course, please replace AAAAAAA and BBBBBBB with your appropriate embassies' names.
+  In this guide, we will refer to your synced Embassy as embassy-AAAAAAA.local and the Embassy with no Bitcoin synced as embassy-BBBBBBB.local.  Of course, please replace AAAAAAA and BBBBBBB with your appropriate Embassies' names.
 
 **Log into Embassy with synced blockchain**
 
@@ -30,7 +30,7 @@ If you have already synced the Bitcoin blockchain to the tip on one Embassy, and
 
     .. figure:: /_static/images/walkthrough/ssh_key_add.jpg
 
-#. Back on the shell of embassy-AAAAAAA, do the following (note the embassy-BBBBBBB.local replacement you will need to do in the rsync command before you perform it):
+#. Back on the shell of embassy-AAAAAAA, do the following (don't forget to replace embassy-BBBBBBB.local in the rsync command before you perform it):
 
     .. code-block:: bash
 
