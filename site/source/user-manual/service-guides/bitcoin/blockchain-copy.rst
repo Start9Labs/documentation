@@ -1,4 +1,4 @@
-.. _copy-bitcoin-blockchain:
+.. _blockchain-copy:
 
 ====================
 Blockchain Migration
@@ -15,7 +15,9 @@ If you have already synced the Bitcoin blockchain to the tip on one Embassy, and
 
 **Log into Embassy with synced blockchain**
 
-#. :ref:`Open an ssh session <connecting-via-ssh>` to your Embassy with the synced chain
+#. Stop the Bitcoin Core service on `https://embassy-AAAAAAA.local` (Services > Bitcoin Core > Stop)
+
+#. :ref:`Open an ssh session <connecting-via-ssh>` to your Embassy with the synced chain (embassy-AAAAAAAA.local)
 
 #. Once at the shell, perform the following commands
 
@@ -30,7 +32,7 @@ If you have already synced the Bitcoin blockchain to the tip on one Embassy, and
 
     .. figure:: /_static/images/walkthrough/ssh_key_add.jpg
 
-#. Back on the shell of embassy-AAAAAAA, do the following (don't forget to replace embassy-BBBBBBB.local in the rsync command before you perform it):
+#. Back on the shell of embassy-AAAAAAA.local, do the following (don't forget to replace embassy-BBBBBBB.local in the rsync command before you perform it):
 
     .. code-block:: bash
 
@@ -44,4 +46,8 @@ If you have already synced the Bitcoin blockchain to the tip on one Embassy, and
         rm .ssh/embassy2.key*
         exit
 
-#. Log into https://embassy-BBBBBBB.local and install, configure, and then start your Bitcoin Core service.  You should see it begin at 99%+ pre-synced.
+#. Log into `https://embassy-BBBBBBB.local` and install, configure, and then start your Bitcoin Core service.  You should see it begin at 99%+ pre-synced.
+
+#. You can now restart your Bitcoin Core service on `https://embassy-AAAAAAA.local` (Services > Bitcoin Core > Start)
+
+.. _bitcoin-service:
