@@ -1,8 +1,8 @@
-.. _bitcoin-service:
+.. _bitcoin-integrations:
 
-=======
-Bitcoin
-=======
+====================
+Bitcoin Integrations
+====================
 
 .. contents::
   :depth: 2
@@ -145,30 +145,3 @@ Trezor Suite
  **Instructions**
   
   Follow the `guide <https://github.com/Start9Labs/electrs-wrapper/blob/master/docs/integrations/trezor/guide.md>`__.
-
-
-.. _bitcoin-cli:
-
-Bitcoin-Cli
------------
-
- Instructions for accessing the bitcoind service in order to issue commands directly.
- 
- .. warning:: This is an advanced feature and should be used with caution. Start9 is not responsible for any damage you might cause through SSH access.
- 
- #. First, you will need SSH access.  Please see the :ref:`setup instructions <ssh>` for details.
- #. Access your Embassy and then you can interact with the bitcoind docker container using the following syntax:
-
-  .. code-block:: bash
-    
-      sudo docker exec -ti bitcoind.embassy bitcoin-cli COMMAND
- 
- .. tip:: For example ``sudo docker exec -ti bitcoind.embassy bitcoin-cli getnetworkinfo``
- 
- A list of possible commands can be found `here <https://chainquery.com/bitcoin-cli>`__.
- 
- You can also drop into a shell using::
- 
-    sudo docker exec -ti bitcoind.embassy bash
-
- and then enter ``bitcoin-cli`` commands.  When you are finished, simply type ``exit``...

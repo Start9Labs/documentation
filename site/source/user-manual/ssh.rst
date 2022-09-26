@@ -61,6 +61,8 @@ Registering an SSH Key
 
 You are now ready to SSH into your Embassy!
 
+.. _connecting-via-ssh:
+
 Connecting via CLI (Linux/Mac)
 ------------------------------
 

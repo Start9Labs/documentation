@@ -9,7 +9,7 @@ These guides will help you to setup external tools to connect or interact with s
 .. toctree::
   :maxdepth: 1
 
-  bitcoin
+  bitcoin/index
   lightning
   matrix
   vaultwarden
