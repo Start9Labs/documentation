@@ -13,11 +13,15 @@ If you have already synced the Bitcoin blockchain to the tip on one Embassy, and
 .. note:: The following guide requires that you have already :ref:`setup SSH on both Embassies<ssh>`.
   In this guide, we will refer to your synced Embassy as embassy-AAAAAAA.local and the Embassy with no Bitcoin synced as embassy-BBBBBBB.local.  Of course, please replace AAAAAAA and BBBBBBB with your appropriate Embassies' names.
 
-**Log into Embassy with synced blockchain**
+**Install but don't start Bitcoin Core on the blockchain-less Embassy**
+
+#. Log into `https://embassy-BBBBBBB.local` and install Bitcoin Core (Marketplace > Bitcoin > Bitcoin Core > Install).  Do *NOT* yet `CONFIGURE` or `START` Bitcoin Core.
+
+**Prep your Embassy with the synced blockchain**
 
 #. Stop the Bitcoin Core service on `https://embassy-AAAAAAA.local` (Services > Bitcoin Core > Stop)
 
-#. :ref:`Open an ssh session <connecting-via-ssh>` to your Embassy with the synced chain (embassy-AAAAAAAA.local)
+#. :ref:`Open an ssh session <connecting-via-ssh>` to embassy-AAAAAAAA.local
 
 #. Once at the shell, perform the following commands
 
@@ -28,7 +32,7 @@ If you have already synced the Bitcoin blockchain to the tip on one Embassy, and
         chmod 600 .ssh/embassy2.key*
         cat .ssh/embassy2.key.pub
 
-#. Copy the output from the cat command into embassy-BBBBBBB's **Embassy -> SSH -> Add New Key** text field:
+#. Copy the output from the cat command into embassy-BBBBBBB's `Embassy > SSH > Add New Key` text field:
 
     .. figure:: /_static/images/walkthrough/ssh_key_add.jpg
 
@@ -46,7 +50,7 @@ If you have already synced the Bitcoin blockchain to the tip on one Embassy, and
         rm .ssh/embassy2.key*
         exit
 
-#. Log into `https://embassy-BBBBBBB.local` and install, configure, and then start your Bitcoin Core service.  You should see it begin at 99%+ pre-synced.
+#. Switch back to `https://embassy-BBBBBBB.local`, selecting `Services > Bitcoin Core`, `CONFIGURE`, then `SAVE` and start your Bitcoin Core service.  You should see it begin at 99%+ pre-synced.
 
 #. You can now restart your Bitcoin Core service on `https://embassy-AAAAAAA.local` (Services > Bitcoin Core > Start)
 
