@@ -64,7 +64,7 @@ Getting EmbassyOS
 
 After building your device, you need a copy of EmbassyOS.
 
-* Visit `images.start9.com <https://images.start9.com>`_ and enter the product key ``xxxxxxxx`` (all lower case) to download an image of EmbassyOS.
+* Download the latest release of EmbassyOS from `our github <https://github.com/start9labs/embassy-os/releases/latest>`_, scroll to the Assets section, and download eos.tar.gz.
 
 Installing EmbassyOS
 --------------------

@@ -51,37 +51,35 @@ Claiming your Device
 
     .. caution:: Sometimes a router will have a "guest WiFi network," which might be different than the network your Embassy is placed on via ethernet.
 
-#. Visit http://embassy.local from your web browser. You will be prompted to enter your :ref:`Product Key<product-key>`. If you purchased a device from Start9, your Product Key is engraved on the bottom of your device.
-
-    .. figure:: /_static/images/setup/setup0.png
-      :width: 60%
-      :alt: Enter Product Key
-
-    .. note::
-
-      The product key is used to discover your Embassy's IP address on the Local Area Network using a hashing function and a protocol named :ref:`MDNS (or Zeroconf) <mdns>`.
+#. Visit http://embassy.local from your web browser.
 
 #. Select "Start Fresh"
 
-    .. figure:: /_static/images/setup/setup1.png
+    .. figure:: /_static/images/setup/screen0-startfresh_or_recover.jpg
       :width: 60%
       :alt: Fresh Install
 
-    .. note:: The "Recover" button is used for :ref:`migrating from 0.2.x <upgrade-02>` and :ref:`restoring from backup <backup-restore>`.
+    .. note:: The "Recover" button is used for :ref:`migrating from 0.2.x <upgrade-02>` or :ref:`restoring from backup <backup-restore>`.
 
 #. Select your storage drive. You should only have one drive plugged into your Embassy at this time, but always verify it is what you expect before clicking (such as, is it a 1TB drive?)
 
-    .. figure:: /_static/images/setup/setup2.png
+    .. figure:: /_static/images/setup/screen4-select_storage.jpg
       :width: 60%
       :alt: Select Drive
 
-#. Create your *permanent* master password and click "Finish".
+#. Create a master password for your Embassy and click "Finish".
 
     .. warning:: Choose a strong master password.  Write it down.  Store it somewhere safe.  DO NOT LOSE IT.
 
-    .. figure:: /_static/images/setup/setup3.png
+   .. figure:: /_static/images/setup/screen5-set_password.jpg
       :width: 60%
       :alt: Enter a New Password
+
+#. The drive will be initialized for a few minutes
+
+    .. figure:: /_static/images/setup/screen6-storage_initialize.jpg
+      :width: 60%
+      :alt: SSD Initialization
 
 #. Your Embassy is now a private website on the private web! Continue to the section on :ref:`connecting` to learn more about using your Embassy over Tor and LAN.
 
