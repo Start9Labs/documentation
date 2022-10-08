@@ -8,7 +8,7 @@ Using your own hardware
   :depth: 2
   :local:
 
-This guide will cover how to upgrade from EmbassyOS version 0.2.x to version 0.3.0 with your own equipment.
+This guide will cover how to upgrade from EmbassyOS version 0.2.x to version 0.3.x with your own equipment.
 
 Hardware Requirements
 ---------------------
@@ -20,14 +20,14 @@ Hardware Requirements
 
 #. `1TB solid state drive <https://www.amazon.com/Crucial-MX500-NAND-SATA-Internal/dp/B078211KBB>`_ minimum, 2TB+ recommended.
 
-#. `Connector <https://www.amazon.com/Sabrent-2-5-Inch-Adapter-Optimized-EC-SSHD/dp/B011M8YACM>`_ or `enclosure <https://www.amazon.com/gp/product/B07T9D8F6C>`_ for your drive.
+#. `Connector <https://www.amazon.com/Sabrent-2-5-Inch-Adapter-Optimized-EC-SSHD/dp/B011M8YACM>`_ or `enclosure <https://www.amazon.com/gp/product/B01LY97QE8>`_ for your drive.
 
 #. `SD card adapter <https://www.amazon.com/gp/product/B000WR3Z3A>`_ for getting data from your SD card.
 
 Flashing
 --------
 
-#. Once you have all these you will need to download an 0.3.0 image from https://images.start9.com. This is free for all existing users. Anyone who is running 0.2.x who compiled it themselves will need to either compile 0.3.0 themselves or download an 0.3.0 image.
+#. Once you have all these you will need to download the latest 0.3 image from `our github <https://github.com/start9labs/embassy-os/releases/latest>`_, scroll to the Assets section, and download `eos.tar.gz`.
 
 #. Once you have the image, flash it on to the 32GB SD card - the new one, **NOT** the one currently in your Embassy!
 
@@ -48,7 +48,7 @@ You may like to follow along with this video for clarity while migrating:
 
 #. Next, remove the SD card that is in your Embassy and place it into the SD card adaptor, and then connect the adaptor to a USB port on your Embassy.
 
-#. Then take the new SD card with 0.3.0 on it and place it into the microSD card slot on your Embassy (not into the adaptor - that is for the old SD card!)
+#. Then take the new SD card with 0.3 on it and place it into the microSD card slot on your Embassy (not into the adaptor - that is for the old SD card!)
 
 #. Next, plug the SSD into one of the USB 3.0 (blue) ports on your Embassy, then reconnect the Ethernet cable if not already connected.
 
@@ -57,44 +57,43 @@ You may like to follow along with this video for clarity while migrating:
 Power Up
 --------
 
-#. Embassy will power up and then initialize, a process of less than 5 minutes if you downloaded the image, or about 10-20 minutes if you built from source. Once complete you will hear a _bep_ to indicate it is initialized and then a _chime_ sound to indicate it is online.
+#. Embassy will power up and then initialize, a process of less than 5 minutes if you downloaded the image, or about 10-20 minutes if you built from source.  Once complete you will hear a _bep_ to indicate it is initialized and then a _chime_ sound to indicate it is online.
 
 #. On your computer, open up a browser and go to http://embassy.local
 
-#. You will be asked to enter your product key.  This can be located on the bottom of your Embassy if you purchased, or in the repository folder if you built from source.
+#. Pick `Recover`
 
-   .. figure:: /_static/images/setup/migrate0.png
+   .. figure:: /_static/images/setup/screen0-startfresh_or_recover.jpg
       :width: 60%
 
+#. Next, pick `Restore From Backup`
 
-#. Once entered, select "Recover" then select the microSD card - this will be labelled ``rootfs``.
-
-   .. figure:: /_static/images/setup/migrate1.png
+   .. figure:: /_static/images/setup/screen1-restore_or_useexisting.jpg
       :width: 60%
 
-   .. figure:: /_static/images/setup/migrate2.png
+#. You will be asked to select your old Embassy SD card - select rootfs
+
+   .. figure:: /_static/images/setup/screen3-restore_drive.jpg
       :width: 60%
 
 #. On the next page you will be asked to select a storage device - here you should select your SSD.
 
-   .. figure:: /_static/images/setup/migrate3.png
+   .. figure:: /_static/images/setup/screen4-select_storage.jpg
       :width: 60%
 
-   .. note:: If it does not show up, please power down Embassy, unplug it, plug it back in, and boot Embassy again
-
-#. If this drive is not empty, you will see a warning first, indicating all data will be overwritten. If you are happy to proceed, click "Continue".
-
-   .. figure:: /_static/images/setup/migrate4.png
-      :width: 60%
+   .. note:: If your SSD does not show up, unplug it from the USB port and plug it back in a different USB 3.0 (blue) port
 
 #. You will now need to make a password for your Embassy. It needs to be a strong password. This password protects your Embassy. It can be the same one that you used prior to migration, or a new one.  Either way, make it strong, and make a backup of it.
 
-#. Embassy will now recover all your data from your old Embassy and once finished, you will hear a _bep_, followed by a _chime_.
-
-   .. figure:: /_static/images/setup/migrate5.png
+   .. figure:: /_static/images/setup/screen5-set_password.jpg
       :width: 60%
 
-#. Now you will be provided with both a Tor and LAN address with which you can access your Embassy. A file offered for download will contain this important information, which you should keep somewhere safe.  It is also a good idea to make bookmarks on the devices that you will use to access your Embassy.
+#. Embassy will now recover all your data from your old Embassy and once finished, you will hear a _bep_, followed by a _chime_.
+
+   .. figure:: /_static/images/setup/screen6-storage_initialize.jpg
+      :width: 60%
+
+#. Now you will be provided with both a Tor and LAN address with which you can access your Embassy. A file download will contain this important information, which you should keep somewhere safe.  It is also a good idea to make bookmarks on the devices that you will use to access your Embassy.
 
    .. figure:: /_static/images/setup/migrate6.png
       :width: 60%
