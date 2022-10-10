@@ -78,7 +78,7 @@ Claiming your Device
 
     .. tip:: Click "Download This Page" to save your Embassy address and certificate info on your computer.
 
-    .. figure:: /_static/images/setup/setup4.png
+    .. figure:: /_static/images/setup/screen7-startfresh_complete.jpg
       :width: 60%
       :alt: Setup Complete
 

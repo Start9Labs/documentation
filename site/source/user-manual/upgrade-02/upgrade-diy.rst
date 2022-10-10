@@ -95,7 +95,7 @@ Power Up
 
 #. Now you will be provided with both a Tor and LAN address with which you can access your Embassy. A file download will contain this important information, which you should keep somewhere safe.  It is also a good idea to make bookmarks on the devices that you will use to access your Embassy.
 
-   .. figure:: /_static/images/setup/migrate6.png
+   .. figure:: /_static/images/setup/screen7-upgrade_complete.jpg
       :width: 60%
 
 #. To use LAN safely, the SSL certificate will need to be added to whatever device you are using to access. This can be downloaded by clicking on "Download root CA" and installed by following the :ref:`instructions<connecting-lan>`.
