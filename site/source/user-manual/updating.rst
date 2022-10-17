@@ -21,7 +21,16 @@ How to Update
 #. Read the release notes and click "Begin Update".
 #. While the new version of EmbassyOS is downloading, you may continue to use your device as usual.
 #. Once the download is complete, you will be prompted to restart Embassy.
-#. After restart, you may be prompted to refresh the browser window.
+#. After restart, but before the web interface becomes available again, there may be a brief upgrade period of up to thirty minutes where data is transitioned.  You will hear this sound every ten seconds until the upgrade is complete:
+
+    .. raw:: HTML
+
+        <audio controls>
+          <source src="/_static/sounds/UPDATING.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+   **Do not unplug or otherwise power off the embassy during this period.**
+#. Next, you may be prompted to refresh the browser window.
 
 Disabling Auto Check for Updates
 --------------------------------
@@ -46,18 +55,41 @@ Manual Update by Re-flashing
 
     .. note:: Embassy will power up and then initialize, a process of less than 5 minutes if you purchased an image, or about 10-20 minutes if you built from source. Once complete you will hear a _bep_ to indicate it is initialized and then a _chime_ sound to indicate it is online.
 
-#. On your computer, open up a browser and go to http://embassy.local.
-#. When prompted, enter your Product Key:
+#. On your computer, open up a browser and go to http://embassy.local
 
-   .. figure:: /_static/images/setup/migrate0.png
+#. Select "Recover"
+
+   .. figure:: /_static/images/setup/screen0-startfresh_or_recover.jpg
       :width: 60%
 
-#. Select "Recover".
+#. Select "Use Existing Drive"
 
-   .. figure:: /_static/images/setup/migrate1.png
+   .. figure:: /_static/images/setup/screen3-use_existing.jpg
       :width: 60%
 
-#. Assuming you have you fully-intact EmbassyOS data drive plugged in, you will receive a popup declaring that a valid data drive has been detected. Click "Use Drive" from the pop-up. If you don't see the drive, you may get a message asking you to unplug, then plug back in the drive, and refresh the page.
+#. Assuming you have you fully-intact EmbassyOS data drive plugged in, it will be automatically detected and begin the upgrade.
 
-   .. figure:: /_static/images/setup/use-drive.png
+   .. raw:: HTML
+
+      <audio controls>
+        <source src="/_static/sounds/UPDATING.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <br />This sound will play every ten seconds until the upgrade is done.  <b>Do not unplug or otherwise power off the embassy during this period.</b><br /><br />
+
+#. Create a master password for your Embassy and click "Finish".
+
+    .. warning:: Choose a strong master password.  If you don't wish to change your password from the previous version, just set it to the same thing it was before you began the upgrade.  Write this password down.  Store it somewhere safe.  DO NOT LOSE IT.
+
+   .. figure:: /_static/images/setup/screen5-set_password.jpg
       :width: 60%
+      :alt: Create A Password
+
+#. Your Embassy is now on the new version and the old version's data has been migrated to it!  Continue to the section on :ref:`connecting` to learn more about using your Embassy over Tor and LAN.
+
+    .. tip:: You will see the following screen and also be prompted to save your Embassy address and certificate info on your computer.  We recommand you backup this html file somewhere safe so that you can reference it if you ever need to connect to your Embassy from a new computer.
+
+    .. figure:: /_static/images/setup/screen7-startfresh_complete.jpg
+      :width: 60%
+      :alt: Setup Complete

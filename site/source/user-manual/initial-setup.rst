@@ -15,7 +15,16 @@ Powering On
 
     .. tip:: To avoid networking issues, it is recommended to use your `primary` router, not an extender or mesh router.
 
-#. You will hear 2 distinct sounds:
+    .. caution:: If there is something wrong with your hardware setup, such as ethernet being unavailable, you will hear this sound:
+      
+      .. raw:: HTML
+
+        <audio controls>
+          <source src="/_static/sounds/FLATLINE.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+#. If all is well, you will hear 2 distinct sounds:
 
     .. raw:: HTML
 
