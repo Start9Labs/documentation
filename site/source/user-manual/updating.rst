@@ -53,7 +53,7 @@ Manual Update by Re-flashing
 #. `Flash the downloaded image <../flashing>`_ to your microSD card.
 #. Insert the microSD card into your Embassy and power it on.
 
-    .. note:: Embassy will power up and then initialize, a process of less than 5 minutes if you purchased an image, or about 10-20 minutes if you built from source. Once complete you will hear a _bep_ to indicate it is initialized and then a _chime_ sound to indicate it is online.
+    .. note:: Embassy will power up and then initialize, a process of less than 5 minutes if you downloaded an image, or about 10-20 minutes if you built from source. Once complete you will hear a _bep_ to indicate it is initialized and then a _chime_ sound to indicate it is online.
 
 #. On your computer, open up a browser and go to http://embassy.local
 
