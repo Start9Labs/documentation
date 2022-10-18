@@ -8,6 +8,8 @@ Blockchain Migration
   :depth: 2
   :local:
 
+.. warning:: This is an advanced feature and should be used with caution.  Start9 is not responsible for any damage you might cause through SSH access.
+
 If you have already synced the Bitcoin blockchain to the tip on one Embassy, and would like to skip IBD on another Embassy, follow this guide.
 
 .. note:: The following guide requires that you have already :ref:`setup SSH on both Embassies<ssh>`.
