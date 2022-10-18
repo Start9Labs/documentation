@@ -78,7 +78,7 @@ Manual Update by Re-flashing
 
       <br />This sound will play every ten seconds until the upgrade is done.  <b>Do not unplug or otherwise power off the embassy during this period.</b><br /><br />
 
-#. Create a master password for your Embassy and click "Finish".
+#. Create a master password for your Embassy and click "Finish."
 
     .. warning:: Choose a strong master password.  If you don't wish to change your password from the previous version, just set it to the same thing it was before you began the upgrade.  Write this password down.  Store it somewhere safe.  DO NOT LOSE IT.
 
