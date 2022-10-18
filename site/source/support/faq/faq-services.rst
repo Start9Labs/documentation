@@ -66,6 +66,11 @@ What is happening if I cannot connect with another user on Mastodon?
 You can only follow someone who has an account on a Mastodon server that supports Tor. It is a new feature, so many instances do not have it yet.
 Other issues are typically related to the tor connection, check your tor daemon, orbot, or try to restart the service.
 
+What does it mean when Vaultwarden says "This browser requires HTTPS to use the web vault" upon creating an account or loging in to my Vaultwarden onion?
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+You will need to tell your browser to treat .onion URLs as a "secure context".  We recommend you :ref:`setup Firefox like this<tor-firefox>`.
+
 Can the browser extension be used with Bitwarden hosted on the embassy?
 -----------------------------------------------------------------------
 Yes, but only in a tor-enabled browser.  Just add your .onion address as the server in the extension.  Make sure that http:// is at the beginning, and NOT https://, as this will not work.
