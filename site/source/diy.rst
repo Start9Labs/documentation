@@ -14,64 +14,89 @@ DIY Guide
 
   Raspberry Pi Board
 
-By popular demand, we are pleased to present this "Do it Yourself" (DIY) guide for the Start9 Embassy personal server!
+Start9 is committed to ensuring that embassyOS is accessible.  It will always be possible to build a comprable device to those sold in the Start9 Store.  You can use the following guide to build your own Embassy One with readily available hardware.  If any links are broken or sold out, please :ref:`let us know<contact>`.
 
 Motivation
 ----------
-
 There are several reasons you might prefer to build your own Embassy instead of purchasing one from us:
 
   #. You already own the necessary hardware and would like to re-purpose it.
-  #. You live outside the US and want to save on shipping costs.
+  #. You want to save on shipping or import costs to your location.
   #. You do not trust Start9's supply chain.
   #. You do not want to share your shipping address.
-  #. You just like building things.
+  #. You like building things.
 
 Hardware
 --------
-
 The first thing you'll need to do is gather the hardware and assemble it.
 
 Parts
-.....
+=====
+#. `Geekworm NASPi v2.0 <https://geekworm.com/products/geekworm-naspi-2-5-sata-hdd-ssd-kit-for-raspberry-pi-4-model-b?_pos=2&_sid=06be31b61&_ss=r&variant=39426059731032>`_ ~$60 USD
 
-* `Raspberry Pi 4B (8GB) <https://raspberrypi.org/products/raspberry-pi-4-model-b/?variant=raspberry-pi-4-model-b-8gb>`_
-* `Power supply for Raspberry Pi 4B <https://raspberrypi.org/products/type-c-power-supply/>`_ Make sure this is at minimum 15w and 3a.
-* Case for Raspberry Pi 4B (`passive cooling <https://www.amazon.com/Geekworm-Raspberry-Aluminum-Passive-Heatsink/dp/B07Z6FYHCH/>`_ is recommended).  This means no moving parts and no noise.
+    - It is important to get the 2.0 version as it has the ability to power back on automatically following a power outage.
+    - MAKE SURE YOU GET THE CORRECT POWER SUPPLY FOR YOUR REGION
 
-    .. warning:: If you prefer to use a fan, **do not** use the official Raspberry Pi fan, as it requires the same GPIO pins as the audio speaker. Instead, we recommend `this fan <https://www.amazon.com/Raspberry-iUniker-30x30x7mm-Brushless-RetroFlag/dp/B076H3TKBP/>`_.
+#. `Raspberry Pi 4 (8GB RAM model) <https://www.amazon.com/LANDZO-Raspberry-Pi-Model-8gb/dp/B08R87H4RR/>`_ ~$75-200 USD
 
-* A `32GB microSD card <https://www.amazon.com/dp/B07P14QHB7>`_ (no need for bigger).
-* `GPIO mini speaker/buzzer <https://www.amazon.com/Corporate-Computer-Motherboard-Internal-Speaker/dp/B01527H4W2/>`_ (These often sell out, please let us know if this link needs to be refreshed)
-* Ethernet cable
-* MicroSD to USB adapter (or you may have a microSD port on your computer)
-* SSD (minimum 1TB) that `connects over USB 3.0` This can be an `external drive <https://www.samsung.com/us/computing/memory-storage/portable-solid-state-drives/>`_, or an `internal drive <https://www.amazon.com/Crucial-MX500-NAND-SATA-Internal/dp/B078211KBB>`_ with an `USB enclosure <https://www.amazon.com/gp/product/B01LY97QE8>`_. Currently the only tested and supported external drives are the Samsung T5 and T7
+    - These have more than doubled in price in 2022. You may want to shop around, or buy used if need be.
+
+#. `Internal SSD (1TB minimum) <https://www.amazon.com/Crucial-MX500-NAND-SATA-Internal/dp/B078211KBB>`_ ~$80 USD+
+
+    - 1TB minimum is recommended, however this all depends on your use-case.
+    - 1TB is plenty for a full Bitcoin/Lightning stack OR a good amount of file storage, but not both if you want your device to be useful for years to come. 2TB or more is recommended if it is in your budget.  You can always upgrade this later, and storage keeps getting cheaper.
+
+#. `SD Card (32GB) <https://www.amazon.com/dp/B07P14QHB7>`_ ~$10 USD
+
+    - A larger size is not necessary as it adds no benefit.
+
+#. `Ethernet Cable (Cat5 or Cat6) <https://www.amazon.com/Monoprice-Flexboot-Ethernet-Patch-Cable/dp/B00AJHBZLM/>`_ ~$2 USD
+
+    - You may have one laying around. Keep in mind the length you will require, e.g., how far away will your Embassy be from your router? 3-6ft is normally plenty.
+
+#. `Speaker <https://www.amazon.com/Corporate-Computer-Motherboard-Internal-Speaker/dp/B01527H4W2/>`_ ~$5 USD
+
+    - Not strictly required, but HIGHLY recommended.
+
+#. `2-Pin Male-to-Male Power Wire <https://geekworm.com/products/usb3-0-connector?variant=33744636674136>`_ ~$5 USD
+
+    - Required if using a speaker or Noctua fan.
+
+#. (Optional) `Noctua NF-A4x10 5v Fan (Get all below) <https://www.amazon.com/Noctua-Cooling-Bearing-NF-A4X10-FLX-5V/dp/B00NEMGCIA/>`_ ~$15 USD
+
+    - Recommended over the less-than-great Geekworm factory fan.
+    - None of the included screws are long enough, so you will need 2 screws (M3-.50x12), available online or at any hardware store for <$1 USD.
+    - 2x Male-to-Female jumper wires - unfortunately these only come in high quantities, so you may want to organize a group buy. ~$9
+
+#. (Optional) MicroSD to USB adapter
+
+    - For flashing the OS. Not necessary if you have a way to mount an SD card already, such as an SD card slot on a laptop.
+
+Estimated total cost:
+
+    - ~$375-460+ with 1-2TB of storage
 
 Assembly
-........
+========
+You can follow along with this `written guide <https://start9dave.substack.com/p/embassy-one-diy-guide>`_ and/or our assembly video below:
 
-#. Insert mini speaker/buzzer into GPIO pins 6/8/10/12 with the word "speaker" facing out, `away from the board`.
+  .. youtube:: Z1EW1TVgtow
+    :width: 100%
 
-    .. figure:: /_static/images/diy/pins.png
-      :width: 60%
-      :alt: Speaker board spec
-
-#. Place the Raspberry Pi 4 board (with speaker attached), into its case.
-#. Plug in the external drive to one of the USB 3.0 (blue) slots
 
 Getting EmbassyOS
 -----------------
-
 After building your device, you need a copy of EmbassyOS.
 
-* Download the latest release of EmbassyOS from `our github <https://github.com/start9labs/embassy-os/releases/latest>`_, scroll to the Assets section, and download eos.tar.gz.
+    - Download the latest release of EmbassyOS from `our github <https://github.com/start9labs/embassy-os/releases/latest>`_, scroll to the Assets section, and download eos.tar.gz.
+    - This will soon be available as a more convenient download from our website.
 
 Installing EmbassyOS
 --------------------
-
 Whether you purchase EmbassyOS from us or build it yourself, you'll need to flash it onto a microSD card.
 
 #. Download `balenaEtcher <https://www.balena.io/etcher/>`_ onto your Mac, Windows, or Linux computer.
+
 #. Insert the microSD card into your computer, either directly or using an adapter.
 #. Open balenaEtcher.
 
@@ -86,3 +111,10 @@ Whether you purchase EmbassyOS from us or build it yourself, you'll need to flas
 
 #. Click "Flash!". You may be asked to (1) approve the unusually large disk target or (2) enter your password. Both are normal.
 #. After the flash completes, you may remove the micro SD from the adapter, insert it into your Embassy's SD card slot, and continue to the :ref:`Initial Setup <initial-setup>` instructions.
+
+Upgrading from an External Drive Setup
+--------------------------------------
+If you already have an Embassy with an external drive, you can follow along from the `written guide appendix <https://start9dave.substack.com/i/68242394/appendix-transfer-embassy-from-existing-case>`_ and/or check out the video below:
+
+  .. youtube:: 355BENA42s8
+    :width: 100%
