@@ -13,15 +13,15 @@ After building your device, you need a copy of EmbassyOS.
 Uncompressing the image (eos.tar.gz)
 ------------------------------------
 
-#. In Linux, open a terminal and run
+* In Linux, open a terminal and run
 
     .. code-block::
 
        tar -xzvf eos.img.gz
 
-#. In Windows download `7zip <https://www.7-zip.org/>`_ and use it to extract the image.
+* In Windows download `7zip <https://www.7-zip.org/>`_ and use it to extract the image.
 
-#. On Mac right click eos.tar.gz, click "open with" and click Unarchive
+* On Mac right click eos.tar.gz, click "open with" and click Unarchive
 
    .. figure:: /_static/images/unarchive.png
     :width: 40%
@@ -47,4 +47,4 @@ Once you have the EmbassyOS image, you will need to flash it onto a microSD card
     .. warning:: Be certain you have selected the correct target microSD card. Whatever target you select will be completely erased and replaced with EmbassyOS.
 
 #. Click "Flash!". You may be asked to (1) approve the unusually large disk target or (2) enter your password. Both are normal.
-#. After the flash completes, you may remove the micro SD from the adapter, insert it into your Embassy's SD card slot, and continue to the :ref:`Initial Setup <initial-setup>` or :ref:`Update by reflashing <manual-update>` instructions.
+#. After the flash completes, you may remove the newly flashed micro SD card from any adapter, insert it into your Embassy's SD card slot, and continue to the :ref:`Initial Setup <initial-setup>` or :ref:`Update by reflashing <manual-update>` instructions.
