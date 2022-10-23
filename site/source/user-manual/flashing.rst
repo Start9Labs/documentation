@@ -10,22 +10,21 @@ After building your device, you need a copy of EmbassyOS.
 
 * Visit the `latest EmbassyOS release page on Github <https://github.com/Start9Labs/embassy-os/releases/latest>`_ to download an image of EmbassyOS.  It is `eos.tar.gz`.
 
-Uncompressing the image (eos.tar.gz)
-------------------------------------
+Extracting the image (eos.tar.gz)
+---------------------------------
 
-* In Linux, open a terminal and run
+* On Linux, open a terminal and run
 
     .. code-block::
 
        tar -xzvf eos.img.gz
-
-* In Windows download `7zip <https://www.7-zip.org/>`_ and use it to extract the image.
 
 * On Mac right click eos.tar.gz, click "open with" and click Unarchive
 
    .. figure:: /_static/images/unarchive.png
     :width: 40%
 
+* On Windows download `7zip <https://www.7-zip.org/>`_ and use it to extract the image.
 
 In all cases you should be left with the file eos.img
 
