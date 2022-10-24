@@ -51,6 +51,10 @@ Would you consider (Umbrel, Nodl, RoninDojo, etc) a competitor to Embassy, or ar
 Other node devices are competitors, and there are distinct trade-offs to each platform, but we are definitely moving toward the same future, which is a win for everyone!
 We are taking more a general approach to all of open-source, hosted software, including Bitcoin/Lightning. The aforementioned examples are more Bitcoin/Lightning focused.
 
+How can I migrate from Umbrel to Embassy and keep my lightning channels intact?
+-------------------------------------------------------------------------------
+We've created a guide to help you `transform your Umbrel's bitcoin stack into an Embassy <https://start9labs.medium.com/transform-your-umbrel-into-an-embassy-without-losing-your-lightning-channels-3cacbcbd41cf>`_.
+
 Is a more powerful device in the works??
 ----------------------------------------
 Yes, we are now taking `pre-orders <https://store.start9.com/products/embassy-2>`_ for Embassy Pro, which will be the new standard in personal servers!  Additionally, EmbassyOS will eventually be capable of running on lots of different hardware, such as an old desktop.  We want EmbassyOS to be widely available and accessible.
