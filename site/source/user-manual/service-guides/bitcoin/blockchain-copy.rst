@@ -30,6 +30,7 @@ If you have already synced the Bitcoin blockchain to the tip on one Embassy, and
     .. code-block:: bash
 
         sudo -i
+        mkdir -m 0700 -p .ssh
         ssh-keygen -t ed25519 -N '' -f .ssh/embassy2.key
         chmod 600 .ssh/embassy2.key*
         cat .ssh/embassy2.key.pub
