@@ -16,7 +16,7 @@ If you get stuck or are having issues debugging why your service is not packagin
 Submission Process
 ------------------
 
-When you have built and tested your project for EmbassyOS, please send Start9 a submission to dev@start9labs.com with a link to the wrapper repository. After being reviewed for security and compatibility, the service will be deployed to the Start9 Marketplace and available for all EmbassyOS users to download.
+When you have built and tested your project for embassyOS, please send Start9 a submission to dev@start9labs.com with a link to the wrapper repository. After being reviewed for security and compatibility, the service will be deployed to the Start9 Marketplace and available for all embassyOS users to download.
 
 If you are deploying to an alternative marketplace, please shout it out in our community channels!
 

@@ -12,7 +12,7 @@ Email us at jobs@start9labs.com with your resume and any other information you t
 About Start9
 ------------
 
-Our mission at Start9 is to eliminate the need for trusted 3rd parties in the human/computer relationship. Our flagship product, EmbassyOS, is the most advanced, secure, and reliable personal server operating system in the world, making it possible for anyone to host their own software and data. One brick at a time, we will help construct an open and decentralized computing platform for humanity's future, one where sovereign individuals control their own data and the flow of information, as well as the abundance of intelligent devices that will come to engulf the human experience.
+Our mission at Start9 is to eliminate the need for trusted 3rd parties in the human/computer relationship. Our flagship product, embassyOS, is the most advanced, secure, and reliable personal server operating system in the world, making it possible for anyone to host their own software and data. One brick at a time, we will help construct an open and decentralized computing platform for humanity's future, one where sovereign individuals control their own data and the flow of information, as well as the abundance of intelligent devices that will come to engulf the human experience.
 
 Read more about our :ref:`company and vision<start9>`, or check out this `podcast <https://www.thesurvivalpodcast.com/digital-sovereign>`_.
 
@@ -48,7 +48,7 @@ Frontend Developer (JS)
 
 We are seeking a JS developer who is skilled with CSS and cares deeply about crafting beautiful user interfaces.
 
-Start9 frontend devs leverage Angular, Typescript, and RXJS to deliver clean, modular, and performant codebases. The `EmbassyOS frontend codebase <https://github.com/Start9Labs/embassy-os/tree/master/frontend>`_ uses websockets and Start9's own nonce-based PatchDB to create a real-time sync and state management system with the backend. The user feels "plugged in" to their server, even if they are on the other side of the world.
+Start9 frontend devs leverage Angular, Typescript, and RXJS to deliver clean, modular, and performant codebases. The `embassyOS frontend codebase <https://github.com/Start9Labs/embassy-os/tree/master/frontend>`_ uses websockets and Start9's own nonce-based PatchDB to create a real-time sync and state management system with the backend. The user feels "plugged in" to their server, even if they are on the other side of the world.
 
 Requirements:
 
@@ -63,7 +63,7 @@ Requirements:
 Backend Developer (Rust)
 ========================
 
-We are seeking a Rust developer to contribute to the `EmbassyOS backend codebase <https://github.com/Start9Labs/embassy-os/tree/master/backend>`_. The EmbassyOS backend is a novel and highly performant container management system that affords users granular control over applications running on their personal server.
+We are seeking a Rust developer to contribute to the `embassyOS backend codebase <https://github.com/Start9Labs/embassy-os/tree/master/backend>`_. The embassyOS backend is a novel and highly performant container management system that affords users granular control over applications running on their personal server.
 
 Requirements:
 
@@ -82,7 +82,7 @@ Bonus:
 Product Designer
 ================
 
-We are seeking a passionate product designer to lead UI/UX design at Start9, including our website, EmbassyOS, and ancillary products and marketing materials. Until now, Start9 devs have leaned heavily on stock html/css components with minimal styling. We are now determiend to step up our design game and need an expert to lead the charge.
+We are seeking a passionate product designer to lead UI/UX design at Start9, including our website, embassyOS, and ancillary products and marketing materials. Until now, Start9 devs have leaned heavily on stock html/css components with minimal styling. We are now determiend to step up our design game and need an expert to lead the charge.
 
 Requirements
 

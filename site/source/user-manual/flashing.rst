@@ -4,33 +4,57 @@
 Flashing
 ========
 
-Getting EmbassyOS
+Getting embassyOS
 -----------------
-After building your device, you need a copy of EmbassyOS.
+After building your device, you need a copy of embassyOS.
 
-* Visit the `latest EmbassyOS release page on Github <https://github.com/Start9Labs/embassy-os/releases/latest>`_ to download an image of EmbassyOS.  It is `eos.tar.gz`.
+* Visit the `latest embassyOS release page on Github <https://github.com/Start9Labs/embassy-os/releases/latest>`_ to download an image of embassyOS.  It is ``eos.tar.gz`` for Linux/Mac and ``eos.zip`` for Windows.
 
-Extracting the image (eos.tar.gz)
----------------------------------
+Extracting the image
+--------------------
 
-* On Linux, open a terminal and run
+Linux
+=====
+#. Download the ``eos.tar.gz`` file and open a terminal in the directory you save it to
+#. (Optional, but recommended) Verify the checksum against the one listed on GitHub:
+
+    .. code-block::
+
+        sha256sum eos.img.gz
+
+#. Extract with:
 
     .. code-block::
 
        tar -xzvf eos.img.gz
 
-* On Mac right click eos.tar.gz, click "open with" and click Unarchive
+Mac
+===
+#. Download the ``eos.tar.gz`` file
+#. (Optional, but recommended) Verify the checksum against the one listed on GitHub:
 
-   .. figure:: /_static/images/unarchive.png
-    :width: 40%
+    .. code-block::
 
-* On Windows download `7zip <https://www.7-zip.org/>`_ and use it to extract the image.
+        openssl dgst -sha256 eos.img.gz
 
-In all cases you should be left with the file eos.img
+#. Right-click eos.tar.gz, click "open with," then click Archive Utility to extract
+
+Windows
+=======
+#. Download the ``eos.zip`` file
+#. (Optional, but recommended) Verify the checksum against the one listed on GitHub:
+
+    .. code-block::
+
+        Get-FileHash eos.zip
+
+#. Right-click eos.zip and click "Extract all"
+
+In all cases you will be left with the file ``eos.img``
 
 Installing embassyOS
 --------------------
-Once you have the EmbassyOS image, you will need to flash it onto a microSD card.
+Once you have the embassyOS image, you will need to flash it onto a microSD card.
 
 #. Download `balenaEtcher <https://www.balena.io/etcher/>`_ onto your Linux, Mac, or Windows computer.
 #. Insert the microSD card into your computer, either directly or using an adapter.
@@ -43,7 +67,7 @@ Once you have the EmbassyOS image, you will need to flash it onto a microSD card
 #. Click "Select Image" and select eos.img.
 #. Click "Select Target" and select your 32GB microSD card.
 
-    .. warning:: Be certain you have selected the correct target microSD card. Whatever target you select will be completely erased and replaced with EmbassyOS.
+    .. warning:: Be certain you have selected the correct target microSD card. Whatever target you select will be completely erased and replaced with embassyOS.
 
 #. Click "Flash!". You may be asked to (1) approve the unusually large disk target or (2) enter your password. Both are normal.
 #. After the flash completes, you may remove the newly flashed micro SD card from any adapter, insert it into your Embassy's SD card slot, and continue to the :ref:`Initial Setup <initial-setup>` or :ref:`Update by reflashing <manual-update>` instructions.

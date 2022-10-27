@@ -4,7 +4,7 @@
 5 - Create Manifest
 ===================
 
-The Manifest file specifies the details EmbassyOS needs to operate a service. It is the connection point between your service and EmbassyOS. 
+The Manifest file specifies the details embassyOS needs to operate a service. It is the connection point between your service and embassyOS. 
 
 In this file, values and actions exist for:
 
@@ -36,10 +36,10 @@ And populate it with the following example manifest (see the line comments for a
     id: hello-world 
     # A human readable service title
     title: "Hello World"
-    # Service version - accepts up to four digits, where the last confirms to revisions necessary for EmbassyOS - see documentation: https://github.com/Start9Labs/emver-rs
+    # Service version - accepts up to four digits, where the last confirms to revisions necessary for embassyOS - see documentation: https://github.com/Start9Labs/emver-rs
     version: 0.3.0
     # Release notes for the update - can be a string, paragraph or URL
-    release-notes: "Upgrade to EmbassyOS v0.3.0"
+    release-notes: "Upgrade to embassyOS v0.3.0"
     # The type of license for the project. Include the LICENSE in the root of the project directory. A license is required for a Start9 package.
     license: mit
     # The Start9 wrapper repository URL for the package. This repo contains the manifest file (this), any scripts necessary for configuration, backups, actions, or health checks (more below). This key must exist. But could be embedded into the source repository. 
@@ -52,9 +52,9 @@ And populate it with the following example manifest (see the line comments for a
     marketing-site: "https://start9.com/"
     # The series of commands to build the project into an s9pk for arm64/v8. In this case we are using a Makefile with the simple build command "make".
     build: ["make"]
-    # Minimum required version of EmbassyOS
+    # Minimum required version of embassyOS
     min-os-version: "0.3.0"
-    # Human readable descriptors for the service. These are used throughout the EmbassyOS user interface, primarily in the marketplace.
+    # Human readable descriptors for the service. These are used throughout the embassyOS user interface, primarily in the marketplace.
     description:
     # This is the first description visible to the user in the marketplace.
     short: Example service
@@ -190,13 +190,13 @@ And populate it with the following example manifest (see the line comments for a
             protocols:
             - tcp
             - http
-    # Alerts: omitting these will result in using the default alerts in EmbassyOS, except for start, which has no default.
+    # Alerts: omitting these will result in using the default alerts in embassyOS, except for start, which has no default.
     alerts:
         install-alert: This is an alert that will present before the user installs this service
         uninstall-alert: This is an alert that will present before the user uninstalls this service
         restore-alert: This is an alert that will present before the user restores this service from Embassy backup
         start-alert: This is an alert that will present before the user starts this service
-    # Specifies how backups should be run for this service. The default EmbassyOS provided option is to use the duplicity backup library on a system image (compat)
+    # Specifies how backups should be run for this service. The default embassyOS provided option is to use the duplicity backup library on a system image (compat)
     backup:
         create:
             # Currently, only docker actions are supported.

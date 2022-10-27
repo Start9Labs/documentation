@@ -9,9 +9,9 @@ Each service is bound with a wrapper repository, which contains everything you n
 The purpose of this repo is:
 
 - To define the necessary Manifest and configuration options (ie. config spec and rules)
-- To build the project into the ``.s9pk`` format digestible to EmbassyOS
+- To build the project into the ``.s9pk`` format digestible to embassyOS
 - Link to the source project as a git submodule
-- Define the Dockerfile for running the project on EmbassyOS
+- Define the Dockerfile for running the project on embassyOS
 - Provide documentation for the project, especially user runbook instructions
 
 File Structure

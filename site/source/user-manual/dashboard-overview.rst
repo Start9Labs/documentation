@@ -32,7 +32,7 @@ The Backups section allows you to create and restore :ref:`Embassy backups <back
 Settings
 ========
 
-The Settings section gives you access to :ref:`EmbassyOS Updates <updating-eos>`, Device Preferences, :ref:`connecting-lan`, :ref:`ssh`, :ref:`wifi`, and :ref:`alt-marketplaces`.
+The Settings section gives you access to :ref:`embassyOS Updates <updating-eos>`, Device Preferences, :ref:`connecting-lan`, :ref:`ssh`, :ref:`wifi`, and :ref:`alt-marketplaces`.
 
 Insights
 ========
@@ -75,7 +75,7 @@ Use this tab to access your preferred Marketplace, where you can discover and in
 Notifications Tab
 -----------------
 
-Notifications issued by EmbassyOS will appear in this tab. You can delete these notifications individually or all at once by clicking "Delete All".
+Notifications issued by embassyOS will appear in this tab. You can delete these notifications individually or all at once by clicking "Delete All".
 
     .. figure:: /_static/images/walkthrough/notiftab.png
         :width: 60%

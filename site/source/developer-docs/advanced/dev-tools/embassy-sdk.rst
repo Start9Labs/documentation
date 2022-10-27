@@ -40,4 +40,4 @@ You can enter ``embassy-sdk help`` or ``embassy-sdk <option> help`` to get an ov
             verify      Verify a .s9pk is valid
 
 
-Please visit the `EmbassyOS backend <https://github.com/Start9Labs/embassy-os/tree/master/backend>`_ for more details
+Please visit the `embassyOS backend <https://github.com/Start9Labs/embassy-os/tree/master/backend>`_ for more details

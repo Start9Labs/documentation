@@ -9,7 +9,7 @@
   :button_url: https://store.start9.com
   :button_text: Purchase Embassy
 
-  Here you will find information about Start9, EmbassyOS, and the era of sovereign computing. Anyone can do it. No one can stop it.
+  Here you will find information about Start9, embassyOS, and the era of sovereign computing. Anyone can do it. No one can stop it.
 
 .. raw:: html
 

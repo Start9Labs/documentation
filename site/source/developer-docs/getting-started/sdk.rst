@@ -6,7 +6,7 @@ Embassy SDK
 
 Embassy SDK, or Software Development Kit, is a CLI (Command Line Interface) tool that aids in building and packaging services you wish to deploy to the Embassy.
 
-It mainly helps you validate that the necessary components of your package exist, and package all of those components into a special file type that is understood by EmbassyOS.
+It mainly helps you validate that the necessary components of your package exist, and package all of those components into a special file type that is understood by embassyOS.
 
 To install, checkout the SDK step in :ref:`setting up your environment <environment-setup>`.
 
@@ -47,7 +47,7 @@ And load it by running:
 embassy-sdk pack
 ----------------
 
-This command takes the necessary package components and assembles them into the `s9pk` file format needed to install a service on EmbassyOS. It expects the following files to exist:
+This command takes the necessary package components and assembles them into the `s9pk` file format needed to install a service on embassyOS. It expects the following files to exist:
 
     - Manifest
     - Instructions

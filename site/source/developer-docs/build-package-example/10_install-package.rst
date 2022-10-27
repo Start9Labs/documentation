@@ -4,7 +4,7 @@
 10 - Install
 ============
 
-Now that we have a process for iterating on producing a valid package for EmbassyOS, let's load it onto an Embassy!
+Now that we have a process for iterating on producing a valid package for embassyOS, let's load it onto an Embassy!
 
 1. First, generate an ssh key for the Embassy:
 
@@ -46,7 +46,7 @@ Now that we have a process for iterating on producing a valid package for Embass
         embassy-cli auth login
         embassy-cli package install hello-world.s9pk
 
-**Congratulations!** You have successfully created and installed a package you created onto EmbassyOS. The package should now be viewable in the "Services" tab in EmbassyUI.
+**Congratulations!** You have successfully created and installed a package you created onto embassyOS. The package should now be viewable in the "Services" tab in EmbassyUI.
 
 From here, you can play with viewing the results of your Manifest file settings, such as config, actions, interfaces, health checks, etc. You can also view the logs of your service right in the UI!
 

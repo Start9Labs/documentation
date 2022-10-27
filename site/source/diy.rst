@@ -83,17 +83,16 @@ You can follow along with this `written guide <https://start9dave.substack.com/p
   .. youtube:: Z1EW1TVgtow
     :width: 100%
 
-
-Getting EmbassyOS
+Getting embassyOS
 -----------------
-After building your device, you need a copy of EmbassyOS.
+After building your device, you need a copy of embassyOS.
 
-    - Download the latest release of EmbassyOS from `our github <https://github.com/start9labs/embassy-os/releases/latest>`_, scroll to the Assets section, and download eos.tar.gz.
+    - Download the latest release of embassyOS from `our github <https://github.com/start9labs/embassy-os/releases/latest>`_, scroll to the Assets section, and download eos.tar.gz.
     - This will soon be available as a more convenient download from our website.
 
-Installing EmbassyOS
+Installing embassyOS
 --------------------
-Whether you purchase EmbassyOS from us or build it yourself, you'll need to flash it onto a microSD card.
+Whether you purchase embassyOS from us or build it yourself, you'll need to flash it onto a microSD card.
 
 #. Download `balenaEtcher <https://www.balena.io/etcher/>`_ onto your Mac, Windows, or Linux computer.
 
@@ -104,10 +103,10 @@ Whether you purchase EmbassyOS from us or build it yourself, you'll need to flas
       :width: 60%
       :alt: Balena Etcher Dashboard
 
-#. Click "Select Image" and select your downloaded copy of EmbassyOS.
+#. Click "Select Image" and select your downloaded copy of embassyOS.
 #. Click "Select Target" and select your 32GB microSD card.
 
-    .. warning:: Be certain you have selected the correct target microSD card. Whatever target you select will be completely erased and replaced with EmbassyOS.
+    .. warning:: Be certain you have selected the correct target microSD card. Whatever target you select will be completely erased and replaced with embassyOS.
 
 #. Click "Flash!". You may be asked to (1) approve the unusually large disk target or (2) enter your password. Both are normal.
 #. After the flash completes, you may remove the micro SD from the adapter, insert it into your Embassy's SD card slot, and continue to the :ref:`Initial Setup <initial-setup>` instructions.

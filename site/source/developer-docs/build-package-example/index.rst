@@ -4,7 +4,7 @@
 Build a Package
 ===============
 
-This guide will take you through the fundamentals of packaging a service for EmbassyOS by creating a real service. Let's get started!
+This guide will take you through the fundamentals of packaging a service for embassyOS by creating a real service. Let's get started!
 
 .. raw:: html
 
@@ -90,7 +90,7 @@ This guide will take you through the fundamentals of packaging a service for Emb
   :class: large-4
   :anchor: View
 
-  Install packaged service on EmbassyOS
+  Install packaged service on embassyOS
 
 .. topic-box::
   :title: Resources
