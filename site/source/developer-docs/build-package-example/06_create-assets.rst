@@ -36,7 +36,7 @@ And add the following code to the file:
 License
 -------
 
-Start9 ensures that the proper license is displayed for all open source software running on an EmbassyOS platform. Let's make sure to include the full open source license so users can view the distribution permissions of your service, among other licensing details.
+Start9 ensures that the proper license is displayed for all open source software running on an embassyOS platform. Let's make sure to include the full open source license so users can view the distribution permissions of your service, among other licensing details.
 
 The name and location of this file should be specified in the ``assets.license`` section of the Manifest. The default value if not specified is ``LICENSE``, located in the root of the project folder.
 

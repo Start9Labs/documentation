@@ -8,7 +8,7 @@ Environment Setup
   :depth: 2 
   :local:
 
-To get started packaging a service for EmbassyOS, some basic knowledge of software development is required. Don't worry if you are inexperienced, we will provide enough context to get you started, and you can always reach out with questions.
+To get started packaging a service for embassyOS, some basic knowledge of software development is required. Don't worry if you are inexperienced, we will provide enough context to get you started, and you can always reach out with questions.
 
 If you are already an experienced developer, :ref:`jump ahead <environment-quick-start>`.
 
@@ -46,7 +46,7 @@ To verify the installation, open a new terminal window and run:
 Docker
 ------
 
-`Docker <https://docs.docker.com/get-docker>`_ must be installed on your computer. It is needed to build an image for your package, which will be used to create the running instance of your package on EmbassyOS. In essence, it declares the necessary environment and building stages for your package to run.
+`Docker <https://docs.docker.com/get-docker>`_ must be installed on your computer. It is needed to build an image for your package, which will be used to create the running instance of your package on embassyOS. In essence, it declares the necessary environment and building stages for your package to run.
 
 We also recommend installing and using `Docker buildx <https://docs.docker.com/buildx/working-with-buildx/>`_, as this adds desirable new features to the Docker build experience. It is included by default with Docker Desktop for Windows and macOS.
 
@@ -54,7 +54,7 @@ We also recommend installing and using `Docker buildx <https://docs.docker.com/b
 Cargo
 -----
 
-Cargo is the package management solution for the Rust programming language. It will install Rust to your system, and provide the required environment to build the Embassy SDK for packaging your service into the required format needed by EmbassyOS.
+Cargo is the package management solution for the Rust programming language. It will install Rust to your system, and provide the required environment to build the Embassy SDK for packaging your service into the required format needed by embassyOS.
 
 Installation instructions for Cargo can be found `here <https://doc.rust-lang.org/cargo/getting-started/installation.html>`__.
 
@@ -67,7 +67,7 @@ To verify the installation, open a terminal window and run:
 SDK
 ---
 
-EmbassyOS provides a :ref:`software development kit <sdk>` embedded in its environment. You do not need a running instance of EmbassyOS to use this component, it can be installed on any computer platform.
+embassyOS provides a :ref:`software development kit <sdk>` embedded in its environment. You do not need a running instance of embassyOS to use this component, it can be installed on any computer platform.
 
 To install the SDK:
 
@@ -81,10 +81,10 @@ To verify the installation, open a terminal window and run:
 
     embassy-sdk --version
 
-EmbassyOS
+embassyOS
 ---------
 
-While not strictly necessary, having a running instance of EmbassyOS is recommended to test installing, running, configuring, and using your package. Without this component, you will have to coordinate with Start9's internal development team to test.
+While not strictly necessary, having a running instance of embassyOS is recommended to test installing, running, configuring, and using your package. Without this component, you will have to coordinate with Start9's internal development team to test.
 
 .. _environment-quick-start:
 
@@ -93,5 +93,5 @@ Quick Start Environment Setup
 - `Docker <https://docs.docker.com/get-docker>`_
 - `Docker buildx <https://docs.docker.com/buildx/working-with-buildx/>`_
 - `Cargo <https://doc.rust-lang.org/cargo/getting-started/installation.html>`__
-- `EmbassyOS <https://github.com/Start9Labs/embassy-os>`_
+- `embassyOS <https://github.com/Start9Labs/embassy-os>`_
 - `Embassy SDK <https://github.com/Start9Labs/embassy-os/blob/master/backend/install-sdk.sh>`_

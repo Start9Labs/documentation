@@ -6,7 +6,7 @@ Embassy Daemon
 
 .. warning:: This is for advanced users only!! Anything you do while SSH'd into your Embassy is NOT SUPPORTED, unless under the guidance of a Start9 technician.
 
-``embassyd`` is the daemon that runs everything that could be considered EmbassyOS.
+``embassyd`` is the daemon that runs everything that could be considered embassyOS.
 
 When SSH'd into your Embassy, you may see the status of EmbassyD with the following:
 

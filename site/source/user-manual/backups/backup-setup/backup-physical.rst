@@ -30,7 +30,7 @@ The recommended method of backup (including with external drives) is to setup a 
     .. figure:: /_static/images/config/physical-backup2.png
         :width: 60%
 
-#. Enter your EmbassyOS master password.
+#. Enter your embassyOS master password.
 
     .. figure:: /_static/images/config/physical-backup3.png
         :width: 60%

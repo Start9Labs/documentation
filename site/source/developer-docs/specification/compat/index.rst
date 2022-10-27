@@ -4,9 +4,9 @@
 Compat Image
 ============
 
-With the release of EmbassyOS v0.3.0, system utility Docker images are preloaded for service packager convenience. 
+With the release of embassyOS v0.3.0, system utility Docker images are preloaded for service packager convenience. 
 
-The ``Compat`` image is a backwards compatible Docker image that hosts EmbassyOS features used in the v0.2.x series. It was created as a convenience for service packagers to help migrate their service configurations from 0.2.x to 0.3.0. 
+The ``Compat`` image is a backwards compatible Docker image that hosts embassyOS features used in the v0.2.x series. It was created as a convenience for service packagers to help migrate their service configurations from 0.2.x to 0.3.0. 
 
 It exposes functionality to make use of:
 

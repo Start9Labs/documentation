@@ -4,7 +4,7 @@
 Service Containers
 ==================
 
-For simplicity, EmbassyOS is designed to be completely operated via the :ref:`WebUI <web-ui>`, however, your device belongs to you and if you want to "lift the hood" and access the internals of the software, you may do so.  This guide will show you how to enter a Service's Docker container in order to directly interface with it and issue commands.
+For simplicity, embassyOS is designed to be completely operated via the :ref:`WebUI <web-ui>`, however, your device belongs to you and if you want to "lift the hood" and access the internals of the software, you may do so.  This guide will show you how to enter a Service's Docker container in order to directly interface with it and issue commands.
 
 .. warning:: The following guide is for those that have advanced command line skills, or those who are being guided by a Start9 support technician.  Nothing you do inside a container is supported unless under the direction of Start9.  Here be dragons!!
 

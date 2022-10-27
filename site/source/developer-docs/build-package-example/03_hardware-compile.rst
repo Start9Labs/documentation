@@ -4,7 +4,7 @@
 3 - Hardware Build
 ==================
 
-EmbassyOS is run on the arm-v8 architecture, specifically the aarch64 state, for the RaspberryPi.
+embassyOS is run on the arm-v8 architecture, specifically the aarch64 state, for the RaspberryPi.
 
 Depending on the programming language or libraries used in a project, you might need to set up an environment to *cross compile* the executable for this runtime environment.
 

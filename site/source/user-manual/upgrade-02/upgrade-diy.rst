@@ -8,7 +8,7 @@ Using your own hardware
   :depth: 2
   :local:
 
-This guide will cover how to upgrade from EmbassyOS version 0.2.x to version 0.3.x with your own equipment.
+This guide will cover how to upgrade from embassyOS version 0.2.x to version 0.3.x with your own equipment.
 
 Hardware Requirements
 ---------------------

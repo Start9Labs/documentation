@@ -27,7 +27,7 @@ Ride the Lightning
 
 Available For
 .............
-- EmbassyOS
+- embassyOS
 
 See the video at the top of this page for an intro to Lightning using RTL.
 
@@ -41,7 +41,7 @@ Spark
 Available For
 .............
 - Android
-- EmbassyOS
+- embassyOS
 - iOS
 
 To use a Spark client, you still need to have Spark installed on the Embassy.  The Spark service on Embassy is both a server (background service) and a client (the :ref:`Web UI<web-ui>`).  Under Properties, there is a "Pairing URL". The first part of this is the server URL, and the end portion of it is the access key.
@@ -53,7 +53,7 @@ Thunderhub
 
 Available For
 .............
-- EmbassyOS
+- embassyOS
 
 Download from your Embassy's Marketplace and follow the included Instructions.
 

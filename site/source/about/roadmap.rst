@@ -36,7 +36,7 @@ Please pardon our dust...
 
 ..             <div class="cd-timeline-content">
 ..             <h2>early days</h2>
-..             <h3>EmbassyOS v0.1.0</h3>
+..             <h3>embassyOS v0.1.0</h3>
 ..                 <ul class="content-skills">
 ..                 <li>Services Marketplace</li>
 ..                 <li>One-click installs of open source, self-hosted software</li>
@@ -144,7 +144,7 @@ Please pardon our dust...
 ..             </div>
 
 ..             <div class="cd-timeline-content">
-..             <h2>rebirth of embassyos</h2>
+..             <h2>rebirth of embassyOS</h2>
 ..             <h3>EOS v0.3.0</h3>
 ..             <ul class="content-skills">
 ..                 <li>Complete OS overhaul</li>

@@ -4,7 +4,7 @@
 Advanced
 ========
 
-This section included advanced commands for working with packages in EmbassyOS.
+This section included advanced commands for working with packages in embassyOS.
 
 .. raw:: html
 
@@ -19,7 +19,7 @@ This section included advanced commands for working with packages in EmbassyOS.
   :class: large-4
   :anchor: View
 
-  EmbassyOS developer CLI tools
+  embassyOS developer CLI tools
 
 .. topic-box::
   :title: Service Containers

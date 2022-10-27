@@ -4,7 +4,7 @@
 Getting Started
 ===============
 
-  Select an option below to get started with packing a service for EmbassyOS.
+  Select an option below to get started with packing a service for embassyOS.
 
 .. raw:: html
 

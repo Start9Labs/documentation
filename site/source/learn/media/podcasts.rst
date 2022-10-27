@@ -44,7 +44,7 @@ Podcasts featuring Start9 Labs and/or Embassy
     :image: https://is2-ssl.mzstatic.com/image/thumb/Podcasts/62/f0/38/ps.tbxsjaqa.jpg/626x0w.webp
     :anchor: Declare Your Independence
 
-    David Croisant (Start9 Labs) comes on to talk about EmbassyOS version 0.3.0, "self-hosting," freedom tech, "Uncle Jim" model, rebuilding the Internet, pirate communications, etc...
+    David Croisant (Start9 Labs) comes on to talk about embassyOS version 0.3.0, "self-hosting," freedom tech, "Uncle Jim" model, rebuilding the Internet, pirate communications, etc...
 
 .. topic-box::
     :title: February 24, 2022 - SLP352 Matt Hill
@@ -52,7 +52,7 @@ Podcasts featuring Start9 Labs and/or Embassy
     :image: https://i0.wp.com/stephanlivera.com/wp-content/uploads/2022/02/SLP352-WP-Thumbnail.png
     :anchor: Stephan Livera Podcast
 
-    EmbassyOS & Making Self-Sovereignty Tech Cheaper Than The Alternatives
+    embassyOS & Making Self-Sovereignty Tech Cheaper Than The Alternatives
 
 .. topic-box::
     :title: January 25, 2022 - On The Record with Start9
@@ -60,7 +60,7 @@ Podcasts featuring Start9 Labs and/or Embassy
     :image: https://i3.ytimg.com/vi/jMV_DWAMtmc/maxresdefault.jpg
     :anchor: On The Record
 
-    Start9 demo the latest version of EmbassyOS
+    Start9 demo the latest version of embassyOS
 
 .. topic-box::
     :title: November 29, 2021 - Episode #101: Securing your own data with Matt Hill of Start9
@@ -71,8 +71,8 @@ Podcasts featuring Start9 Labs and/or Embassy
     In this episode Brandon and Dag speak with Matt Hill of Start9 Labs about securing your own data with Embassy
 
 .. topic-box::
-    :title: November 22, 2021 - Episode #287: EmbassyOS v0.3.0, building out the independent stack, and philosophy with Matt Hill
-    :link: https://talesfromthecrypt.libsyn.com/287-embassyos-v030-building-out-the-independent-stack-and-philosophy-with-matt-hill
+    :title: November 22, 2021 - Episode #287: embassyOS v0.3.0, building out the independent stack, and philosophy with Matt Hill
+    :link: https://talesfromthecrypt.libsyn.com/287-embassyOS-v030-building-out-the-independent-stack-and-philosophy-with-matt-hill
     :image: https://assets.libsyn.com/secure/content/63745304
     :anchor: Tales From The Crypt
 
@@ -113,7 +113,7 @@ Podcasts featuring Start9 Labs and/or Embassy
 .. topic-box::
     :title: July 13, 2021 - Matt Hill and Vlad Costea
     :link: https://bitcoin-takeover.com/s4-e5-matt-hill-on-the-philosophy-of-sovereignty/
-    :image: https://i2.wp.com/bitcoin-takeover.com/wp-content/uploads/2021/07/BTCTKVR-S9-E5-Matt-Hill-Start9-Labs-EmbassyOS-Embassy-OS-Sovereignty-Node-in-a-Box-Bitcoin-Lightning-Takeover.jpg?w=1920&ssl=1
+    :image: https://i2.wp.com/bitcoin-takeover.com/wp-content/uploads/2021/07/BTCTKVR-S9-E5-Matt-Hill-Start9-Labs-embassyOS-Embassy-OS-Sovereignty-Node-in-a-Box-Bitcoin-Lightning-Takeover.jpg?w=1920&ssl=1
     :anchor: Bitcoin Takeover
 
     Bitcoin Takeover S4 E5: Matt Hill on the Philosophy of Sovereignty

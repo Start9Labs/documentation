@@ -26,7 +26,7 @@ We do hope to add this functionality one day, however it has some technical chal
 
 Can the Embassy run 'X' Service??
 ---------------------------------
-Potentially. Here is a `comprehensive list <https://github.com/awesome-selfhosted/awesome-selfhosted>`_ of self-hosted services, any of which can theoretically be run on EmbassyOS.
+Potentially. Here is a `comprehensive list <https://github.com/awesome-selfhosted/awesome-selfhosted>`_ of self-hosted services, any of which can theoretically be run on embassyOS.
 To get a general idea of what is required of an app, answer these questions:
 
 1. Is it designed to be self-hosted?
@@ -35,7 +35,7 @@ To get a general idea of what is required of an app, answer these questions:
 4. Does it ship with it's own web interface? Or is there a Tor-enabled client app?
 5. Is there someone willing to put in the time to package it up?
 
-If all answers are yes, then it can run on EmbassyOS.
+If all answers are yes, then it can run on embassyOS.
 
 Packing up a service for the Embassy does not require extensive development skills. If you are interested in doing do, please see our :ref:`Developer Docs <developer-docs>`.
 
@@ -80,7 +80,7 @@ I want to use BTCPayServer on my website, but Tor is the only option, how can vi
 --------------------------------------------------------------------------------------------------------------------
 As the Embassy produces a Tor Hidden Service for each service, BTCPayServer is only available via Tor by default.  For a brick and mortar business, this is no problem as you can use your own device for a customer to pay you on.  If you run your own website, it is possible to set up a reverse proxy in order to serve BTCPay content to your clearnet visitors.  A guide to doing this is available in the `BTCPayServer docs <https://docs.btcpayserver.org/Deployment/ReverseProxyToTor/#reverse-proxy-to-tor/>`_.
 
-We understand that this can be a frustrating limitation, and adding clearnet support is high on our list of priorities for EmbassyOS.  This will allow a number of services to have better interoperability with the broader Web.
+We understand that this can be a frustrating limitation, and adding clearnet support is high on our list of priorities for embassyOS.  This will allow a number of services to have better interoperability with the broader Web.
 
 I'm having issues connecting to users or rooms in Matrix/Synapse, what can I do?
 --------------------------------------------------------------------------------

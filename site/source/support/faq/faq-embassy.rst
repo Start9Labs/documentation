@@ -8,15 +8,15 @@ Embassy FAQ
   :depth: 2 
   :local:
 
-Can I run EmbassyOS on a VPS or VM?
+Can I run embassyOS on a VPS or VM?
 -----------------------------------
 Possibly, but we currently advise against this. It is designed to be used on a RaspberryPi, and at the moment this is the only supported way to run EOS.
 
-Is it possible to use EmbassyOS on my own hardware?
+Is it possible to use embassyOS on my own hardware?
 ---------------------------------------------------
 Yes! The :ref:`DIY Guide <diy>` will take you through the setup steps. This option is great for people who already own the necessary hardware or who live outside the US and want to save on shipping and customs fees.
 
-Additionally, EmbassyOS is available for you to download or build from source under the Start9 Personal Use :ref:`License<license>`, for free.  The caveat is that you will miss out on the perks that come along with purchasing from us, such as white-glove support, and others, which will grow over time.
+Additionally, embassyOS is available for you to download or build from source under the Start9 Personal Use :ref:`License<license>`, for free.  The caveat is that you will miss out on the perks that come along with purchasing from us, such as white-glove support, and others, which will grow over time.
 
 Do I plug my Embassy into my computer?
 ---------------------------------------
@@ -32,7 +32,7 @@ Currently, Embassy ships with a 1 or 2TB SSD, but you may use a larger drive if 
 
 Are my Internet requests anonymous and secure?
 ----------------------------------------------
-EmbassyOS and every service on our Marketplace serve their own Tor Hidden Services with unique Tor addresses. The private keys used to create these addresses are generated on your phone or computer when you first set up Embassy. No one, not even Start9, has any idea what your Tor addresses are, let alone the password(s) you choose to authenticate with them.
+embassyOS and every service on our Marketplace serve their own Tor Hidden Services with unique Tor addresses. The private keys used to create these addresses are generated on your phone or computer when you first set up Embassy. No one, not even Start9, has any idea what your Tor addresses are, let alone the password(s) you choose to authenticate with them.
 
 Does Start9 have access to my Embassy's encryption keys?
 --------------------------------------------------------
@@ -59,7 +59,7 @@ Alternatively, if you have an Umbrel and an Embassy and they're on the same netw
 
 Is a more powerful device in the works??
 ----------------------------------------
-Yes, we are now taking `pre-orders <https://store.start9.com/products/embassy-2>`_ for Embassy Pro, which will be the new standard in personal servers!  Additionally, EmbassyOS will eventually be capable of running on lots of different hardware, such as an old desktop.  We want EmbassyOS to be widely available and accessible.
+Yes, we are now taking `pre-orders <https://store.start9.com/products/embassy-2>`_ for Embassy Pro, which will be the new standard in personal servers!  Additionally, embassyOS will eventually be capable of running on lots of different hardware, such as an old desktop.  We want embassyOS to be widely available and accessible.
 
 Is there an ETA on the Embassy Pro release date?
 ------------------------------------------------

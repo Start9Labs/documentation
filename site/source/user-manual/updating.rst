@@ -1,25 +1,25 @@
 .. _updating-eos:
 
 ==================
-Updating EmbassyOS
+Updating embassyOS
 ==================
 
 .. contents::
   :depth: 2
   :local:
 
-.. note:: EmbassyOS will **NEVER** update itself without your approval. But we highly recommended keeping EmbassyOS up to date for the latest security and performance patches, as well as to take advantage of new features.
+.. note:: embassyOS will **NEVER** update itself without your approval. But we highly recommended keeping embassyOS up to date for the latest security and performance patches, as well as to take advantage of new features.
 
 How to Update
 -------------
 
-#. When a new version of EmbassyOS is available, a badge will appear on the "Embassy" tab.
+#. When a new version of embassyOS is available, a badge will appear on the "Embassy" tab.
 #. Go to *Embassy > Software Update*.
 
-    .. warning:: Ensure you have a stable Internet connection before beginning an OS update, and do not unplug your Embassy while EmbassyOS is downloading.
+    .. warning:: Ensure you have a stable Internet connection before beginning an OS update, and do not unplug your Embassy while embassyOS is downloading.
 
 #. Read the release notes and click "Begin Update".
-#. While the new version of EmbassyOS is downloading, you may continue to use your device as usual.
+#. While the new version of embassyOS is downloading, you may continue to use your device as usual.
 #. Once the download is complete, you will be prompted to restart Embassy.
 #. After restart, but before the web interface becomes available again, there may be a brief upgrade period of up to thirty minutes where data is transitioned.  You will hear this sound every ten seconds until the upgrade is complete:
 
@@ -29,7 +29,10 @@ How to Update
           <source src="/_static/sounds/UPDATING.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
-   **Do not unplug or otherwise power off the embassy during this period.**
+
+
+  **Do not unplug or otherwise power off the embassy during this period.**
+
 #. Next, you may be prompted to refresh the browser window.
 
 Disabling Auto Check for Updates
@@ -49,7 +52,7 @@ This guide will cover how to recover existing Embassy 0.3.x service and user dat
 Manual Update by Re-flashing
 ----------------------------
 
-#. Obtain the latest copy of EmbassyOS with your product key included, either by `downloading <https://github.com/Start9Labs/embassy-os/releases/latest>`_ or `building from source <https://github.com/Start9Labs/embassy-os/tree/latest/build>`_.
+#. Obtain the latest copy of embassyOS with your product key included, either by `downloading <https://github.com/Start9Labs/embassy-os/releases/latest>`_ or `building from source <https://github.com/Start9Labs/embassy-os/tree/latest/build>`_.
 #. `Flash the downloaded image <../flashing>`_ to your microSD card.
 #. Insert the microSD card into your Embassy and power it on.
 
@@ -67,7 +70,7 @@ Manual Update by Re-flashing
    .. figure:: /_static/images/setup/screen3-use_existing.jpg
       :width: 60%
 
-#. Assuming you have you fully-intact EmbassyOS data drive plugged in, it will be automatically detected and begin the upgrade.
+#. Assuming you have you fully-intact embassyOS data drive plugged in, it will be automatically detected and begin the upgrade.
 
    .. raw:: HTML
 

@@ -61,7 +61,7 @@ In other words, the Dockerfile serves as a recipe for creating a Docker image, f
 
     WORKDIR /root
 
-    # not necessary for EmbassyOS, but often left for quick reference and clarity
+    # not necessary for embassyOS, but often left for quick reference and clarity
     EXPOSE 80
 
     ENTRYPOINT ["/usr/local/bin/docker_entrypoint.sh"]

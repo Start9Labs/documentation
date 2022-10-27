@@ -69,7 +69,7 @@ Can I clone my Embassy SSD for backup purposes?
 -----------------------------------------------
 .. warning:: **DO NOT do this if you are running LND or CLN**. If you clone the SSD, then go back to running LND or CLN, and you *ever* try to restore the SSD, there is a good chance you will lose *all your channel funds*. Also, if you try to use the SSD for a 2nd Embassy, that will also result in loss of funds. This has nothing to do with Start9 or the Embassy; it is inherent to the architecture of Lightning.
 
-It is neither necessary, nor recommended to do this.  The backup solution available in EmbassyOS (v0.3.0+) allows all data to be written to another drive remotely, and this can mean another SSD, attached to a computer on your network.  You may also do a backup to a local drive if it has external power.  Please follow the directions in the backup UI for more details.
+It is neither necessary, nor recommended to do this.  The backup solution available in embassyOS (v0.3.0+) allows all data to be written to another drive remotely, and this can mean another SSD, attached to a computer on your network.  You may also do a backup to a local drive if it has external power.  Please follow the directions in the backup UI for more details.
 
 Why would I even buy this when I can just build it for free?
 ------------------------------------------------------------

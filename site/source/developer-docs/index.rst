@@ -4,13 +4,13 @@
 Developer Docs
 ==============
 
-  Welcome to Service Packaging for EmbassyOS!
+  Welcome to Service Packaging for embassyOS!
   
   If you are here, you are interested in becoming part of the mission to change the future of personal computing.
 
-  The guides below provide the fundamentals that will take you through the process of packing a service for EmbassyOS. Services are any open source project (application) that can be run on a self-hosted platform, independent of third parties. 
+  The guides below provide the fundamentals that will take you through the process of packing a service for embassyOS. Services are any open source project (application) that can be run on a self-hosted platform, independent of third parties. 
   
-  By configuring and packaging a project according to these guides, it can be installed on EmbassyOS so that users can interact with  the service without needing any technical expertise.
+  By configuring and packaging a project according to these guides, it can be installed on embassyOS so that users can interact with  the service without needing any technical expertise.
 
   Let's get started!
 

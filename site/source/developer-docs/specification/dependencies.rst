@@ -9,18 +9,18 @@ Background
 
 When it comes to running your own server, managing dependencies is perhaps the most difficult part. The term "dependency hell" emerged from this sentiment. Even the best developers have lost significant amounts of time trying to find, correct, or clarify documentation for dependencies or dependency configuration. Individuals who manage their own servers have specific technical skills and are willing to devote the time and effort necessary to maintain them. Companies have entire departments dedicated to this task.
 
-Some other personal server products aimed at non-technical individuals tackle this problem by simply hard coding dependencies. Since EmbassyOS is a platform for running all open-source, self-hosted software, it is not possible to hard code every possible service, service dependency, and service dependency configuration forever. Instead, Start9 built a new, unprecedented operating system that touts a generalized, intuitive approach to dependency management and service configuration. EmbassyOS enables users to easily and selectively install, uninstall, and update any service they want without getting stuck in dependency hell.
+Some other personal server products aimed at non-technical individuals tackle this problem by simply hard coding dependencies. Since embassyOS is a platform for running all open-source, self-hosted software, it is not possible to hard code every possible service, service dependency, and service dependency configuration forever. Instead, Start9 built a new, unprecedented operating system that touts a generalized, intuitive approach to dependency management and service configuration. embassyOS enables users to easily and selectively install, uninstall, and update any service they want without getting stuck in dependency hell.
 
 This may sound cool or neat, but it is more than that: *it's novel*. This has never been done before.
 
-The key to making the system work is a new, domain-specific-language (DSL) and set of standards that are used by developers to define the rules and requirements of their services. Run in the context of EmbassyOS, these rules and requirements appear as simple UI elements, such as inputs, toggles, and drop downs, and they are enforced by validations and clear user instructions. Using this system, what previously required serious time and expertise, can now be done by anyone in a matter of seconds.
+The key to making the system work is a new, domain-specific-language (DSL) and set of standards that are used by developers to define the rules and requirements of their services. Run in the context of embassyOS, these rules and requirements appear as simple UI elements, such as inputs, toggles, and drop downs, and they are enforced by validations and clear user instructions. Using this system, what previously required serious time and expertise, can now be done by anyone in a matter of seconds.
 
 This DSL is utilized in the :ref:`config rules <config_rules>` and :ref:`dependencies <service-dependencies>` key in the service manifest.
 
 Context
 -------
 
-Many services depend on other libraries and services on EmbassyOS (such as Bitcoin), sometimes even a particular version of those services. These need to be specified by the developers so that EmbassyOS can handle installing these dependencies under the hood.
+Many services depend on other libraries and services on embassyOS (such as Bitcoin), sometimes even a particular version of those services. These need to be specified by the developers so that embassyOS can handle installing these dependencies under the hood.
 
 Requirement
 -----------
@@ -38,7 +38,7 @@ Only the type of requirement must be defined. Requirement types include:
 Advanced Configuration
 ----------------------
 
-If a dependency requires a more advanced configuration, rule checks and auto configurations can be implemented. These functions utilize a preloaded Docker image within EmbassyOS entitled _compat_. This system utility provides the mechanisms for checking dependency configuration compatibility by providing a file with the defined rules as input.
+If a dependency requires a more advanced configuration, rule checks and auto configurations can be implemented. These functions utilize a preloaded Docker image within embassyOS entitled _compat_. This system utility provides the mechanisms for checking dependency configuration compatibility by providing a file with the defined rules as input.
 
 In this case, each dependency contains a set of rules that need to be fulfilled as true if the dependency is to be properly installed. The "config rules" here are for auto-configuring dependencies - the action defined by the rule will be executed if the service is auto configured with defaults during initial setup. This simplifies and streamlines the user experience. The interface should provide suggestions for the behavior if the denoted rule cannot be met with previous configurations.
 

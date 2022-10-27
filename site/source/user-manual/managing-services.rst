@@ -8,7 +8,7 @@ Managing Services
   :depth: 2 
   :local:
 
-EmbassyOS provides a rich interface for managing installed Services.
+embassyOS provides a rich interface for managing installed Services.
 
 Service Dashboard
 -----------------
@@ -25,7 +25,7 @@ The Service Dashboard provides quick insight into the status and health of your 
     * **Starting**: Service is in the process of starting up.
     * **Running**: Service is running.
 * **Launch UI**: If the service offer a User Interface (UI), and the UI is currently available, clicking this button will launch the UI in a new browser tab. Learn more about :ref:`Web UIs<web-ui>`.
-* **Health Checks**: This is a critical feature of EmbassyOS. Health Checks are configured by the service packager in order to quickly convey to the user what is happening with their service, as well as possible actions they may want to take. Learn more about :ref:`Health Checks <health-checks>`.
+* **Health Checks**: This is a critical feature of embassyOS. Health Checks are configured by the service packager in order to quickly convey to the user what is happening with their service, as well as possible actions they may want to take. Learn more about :ref:`Health Checks <health-checks>`.
 * **Dependencies**: Some services depend on the presence and proper configuration of other services to function. This section will inform you if all dependencies are satisfied and, if not, what to do about it. Learn more about :ref:`Dependencies <service-dependencies>`.
 * **Start / Stop**: Self-explanatory, use these buttons to start or stop a service.
 
@@ -53,7 +53,7 @@ Installing a Service
 Updating a Service
 ------------------
 
-.. note:: EmbassyOS will **NEVER** update a service without your consent.
+.. note:: embassyOS will **NEVER** update a service without your consent.
 
 To see if an update is available for a service, you can visit the *Updates* section of the Marketplace or by visiting its Marketplace listing.
 

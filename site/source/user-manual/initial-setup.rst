@@ -44,7 +44,7 @@ Powering On
 
     * "chime" - Embassy is ready
 
-    .. caution:: If you followed the DIY guide and built EmbassyOS from source code, it may take up to 20 minutes to first initialize.
+    .. caution:: If you followed the DIY guide and built embassyOS from source code, it may take up to 20 minutes to first initialize.
 
 Claiming your Device
 --------------------
