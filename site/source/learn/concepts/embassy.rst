@@ -1,7 +1,7 @@
 .. _embassy-concepts:
 
 =====================
-Embassy Devices & EOS
+Embassy Devices & eOS
 =====================
 
 .. contents::
@@ -25,9 +25,9 @@ Embassy Pro is a plug 'n' play hardware device, based on the `Librem Mini <https
 
 embassyOS
 ---------
-embassyOS (EOS) is a Linux-based operating system custom built for self-hosting open source software.  EOS has a range of features that allow anyone to run their own server software without needing all of the traditionally required systems administration skills.  Features such as advanced dependency management, sensible default configuration with potential for customization, and a sleek GUI make for a smooth user experience with minimal reliance on the developers for people with all levels of technical expertise.
+embassyOS (eOS) is a Linux-based operating system custom built for self-hosting open source software.  eOS has a range of features that allow anyone to run their own server software without needing all of the traditionally required systems administration skills.  Features such as advanced dependency management, sensible default configuration with potential for customization, and a sleek GUI make for a smooth user experience with minimal reliance on the developers for people with all levels of technical expertise.
 
-Currently, 2 builds of EOS exist, one for the ARM architecture (Embassy One) and one for x86 (Embassy Pro).  We currently only support the Raspberry Pi and Librem Mini hardware platforms, however with some minor tweaking, our builds should work on many other ARM and x86 devices.  We hope to officially support more platforms soon, and we highly encourage hacking and community builds!  Drop in our :ref:`community channels<contact>` to learn more and collaborate!!
+Currently, 2 builds of eOS exist, one for the ARM architecture (Embassy One) and one for x86 (Embassy Pro).  We currently only support the Raspberry Pi and Librem Mini hardware platforms, however with some minor tweaking, our builds should work on many other ARM and x86 devices.  We hope to officially support more platforms soon, and we highly encourage hacking and community builds!  Drop in our :ref:`community channels<contact>` to learn more and collaborate!!
 
 .. _sounds:
 
@@ -105,7 +105,7 @@ Sometimes, a dependency can be satisfied in multiple ways. For example, Lightnin
 
 Web User Interface (UI)
 -----------------------
-A User Interface (UI) is the way in which the user interacts with some software.  Typically, this is achieved through a graphical interface (GUI).  A WebUI is a website that is served specifically for a user to issue commands or view data.  A great example of this is embassyOS itself, which serves a WebUI for the user to add/remove services, make configurations, etc.  This is your main point of contact with EOS.
+A User Interface (UI) is the way in which the user interacts with some software.  Typically, this is achieved through a graphical interface (GUI).  A WebUI is a website that is served specifically for a user to issue commands or view data.  A great example of this is embassyOS itself, which serves a WebUI for the user to add/remove services, make configurations, etc.  This is your main point of contact with eOS.
 
 .. _interfaces:
 

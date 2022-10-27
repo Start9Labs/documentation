@@ -36,7 +36,7 @@ In other words, the Dockerfile serves as a recipe for creating a Docker image, f
     ADD ./docker_entrypoint.sh /usr/local/bin/docker_entrypoint.sh
     RUN chmod a+x /usr/local/bin/docker_entrypoint.sh
 
-5. Next, we set a working directory, and set the location of the entrypoint. Exposing ports is not necessary for EOS, but its often useful to leave this line for quick reference and clarity.
+5. Next, we set a working directory, and set the location of the entrypoint. Exposing ports is not necessary for eOS, but its often useful to leave this line for quick reference and clarity.
 
   .. code:: docker
 

@@ -57,7 +57,7 @@ Please pardon our dust...
 
 ..             <div class="cd-timeline-content">
 ..             <h2>laying the foundation</h2>
-..             <h3>EOS v0.2.0</h3>
+..             <h3>eOS v0.2.0</h3>
 ..                 <ul class="content-skills">
 ..                 <li>UI self-hosted on Embassy</li>
 ..                 <li>Automated dependency management</li>
@@ -82,7 +82,7 @@ Please pardon our dust...
 
 ..             <div class="cd-timeline-content">
 ..             <h2>forging lightning</h2>
-..             <h3>EOS v0.2.5</h3>
+..             <h3>eOS v0.2.5</h3>
 ..                 <ul class="content-skills">
 ..                 <li>Radical new dependency management and configuration system</li>
 ..                 </ul>
@@ -105,7 +105,7 @@ Please pardon our dust...
 
 ..             <div class="cd-timeline-content">
 ..             <h2>entering the fediverse</h2>
-..             <h3>EOS v0.2.10</h3>
+..             <h3>eOS v0.2.10</h3>
 ..                 <ul class="content-skills">
 ..                 <li>LAN support</li>
 ..                 <li>Service Actions</li>
@@ -145,7 +145,7 @@ Please pardon our dust...
 
 ..             <div class="cd-timeline-content">
 ..             <h2>rebirth of embassyOS</h2>
-..             <h3>EOS v0.3.0</h3>
+..             <h3>eOS v0.3.0</h3>
 ..             <ul class="content-skills">
 ..                 <li>Complete OS overhaul</li>
 ..                 <li>External drive support</li>
@@ -168,7 +168,7 @@ Please pardon our dust...
 
 ..             <div class="cd-timeline-content">
 ..             <h2>coming soon...</h2>
-..             <h3>EOS v0.3.x</h3>
+..             <h3>eOS v0.3.x</h3>
 ..             <ul class="content-skills">
 ..                 <li>Additional storage features</li>
 ..                 <li>Additional networking options</li>

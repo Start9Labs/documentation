@@ -10,7 +10,7 @@ Embassy FAQ
 
 Can I run embassyOS on a VPS or VM?
 -----------------------------------
-Possibly, but we currently advise against this. It is designed to be used on a RaspberryPi, and at the moment this is the only supported way to run EOS.
+Possibly, but we currently advise against this. It is designed to be used on a RaspberryPi, and at the moment this is the only supported way to run eOS.
 
 Is it possible to use embassyOS on my own hardware?
 ---------------------------------------------------
