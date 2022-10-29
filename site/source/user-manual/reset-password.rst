@@ -8,7 +8,7 @@ Reset Your Password
   :depth: 2
   :local:
 
-#. Obtain the latest copy of embassyOS by `downloading it from Github <https://github.com/Start9Labs/embassy-os/releases/latest>`_.  Under `Assets` near the bottom of the page, click to download eos.tar.gz.
+#. Obtain the latest copy of embassyOS by `downloading it from Github <https://github.com/Start9Labs/embassy-os/releases/latest>`_.  Under `Assets` near the bottom of the page, click to download eos.tar.gz (on Linux/MacOS) or eos.zip (on Windows).
 #. Flash the downloaded image to your microSD card, using :ref:`this guide <flashing>`.
 #. Insert the microSD card into your Embassy and power it on.
 

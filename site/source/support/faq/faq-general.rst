@@ -98,7 +98,7 @@ embassyOS is published under our own Start9 Non-Commercial License, which has si
 
 Is there a product warranty?
 ----------------------------
-Yes! The full warranty for a device purchased with us is located on the insert in the box (1 year).  Furthermore, Start9 commits, to the best of our ability, to serving Embassy users. We will resolve any issue encountered with our provided hardware or software in a personalized matter.  We strive to provide highly available, quality customer service.
+Yes! The full warranty for a device purchased from us is located on the insert in the box (1 year).  Furthermore, Start9 commits, to the best of our ability, to serving Embassy users. We will resolve any issue encountered with our provided hardware or software in a personalized manner.  We strive to provide highly available, quality customer service.
 
 What kind of Internet connection is required to use Embassy?
 ------------------------------------------------------------
@@ -115,9 +115,7 @@ What are you using for a store backend?  Do you store my data?
 Here is our exact situation currently:
 Embassy device sales are processed through Shopify, which we do not like, but it was expedient in the early days, especially for shipping, so we went with it. Aside from a master list of email addresses for those who have explicitly opted in to our mailing list, all customer data is contained within Shopify. We do not duplicate it anywhere. We are asking Shopify to delete our customer data, but they claim it will take upward of 3 months to comply and we of course have no guarantee the data will actually be deleted permanently. This is partly why we exist...as such, we will be moving off of Shopify and onto a self-hosted solution, where Start9 alone controls our customer data for Embassy purchases, which we will delete as a matter of policy following a short grace period after delivery.
 
-For embassyOS sales, we took the maximally private approach right out of the gate. When you buy embassyOS, the only thing we need is an email address, and you can only pay with bitcoin. That's it. Then, unless you have explicitly requested that we keep your email for mailing list purposes, we delete the email immediately upon transaction completion.
-
-So...in summary: (1) the shipping data we currently have is stored in Shopify (2) we are asking Shopify to delete all our customer data (3) we will be migrating off of Shopify (4) going forward, we alone will control customer data and will purge it regularly (5) you can always assemble the hardware yourself and just buy embassyOS from us with bitcoin, which only requires an email, which is gets purged immediately.
+In summary: (1) the shipping data we currently have is stored in Shopify (2) we are asking Shopify to delete all our customer data (3) we will be migrating off of Shopify (4) going forward, we alone will control customer data and will purge it regularly (5) you can always assemble the hardware yourself and just download embassyOS for free.
 
 I want to help, but I'm not a developer.  Are there any ways for non-coders to contribute?
 ------------------------------------------------------------------------------------------
