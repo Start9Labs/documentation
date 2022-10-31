@@ -53,7 +53,7 @@ Manual Update by Re-flashing
 ----------------------------
 
 #. Obtain the latest copy of embassyOS with your product key included, either by `downloading <https://github.com/Start9Labs/embassy-os/releases/latest>`_ or `building from source <https://github.com/Start9Labs/embassy-os/tree/latest/build>`_.
-#. `Flash the downloaded image <../flashing>`_ to your microSD card.
+#. :ref:`Flash the downloaded image <flashing>` to your microSD card.
 #. Insert the microSD card into your Embassy and power it on.
 
     .. note:: Embassy will power up and then initialize, a process of less than 5 minutes if you downloaded an image, or about 10-20 minutes if you built from source. Once complete you will hear a _bep_ to indicate it is initialized and then a _chime_ sound to indicate it is online.
