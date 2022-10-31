@@ -16,7 +16,7 @@ Is it possible to use embassyOS on my own hardware?
 ---------------------------------------------------
 Yes! The :ref:`DIY Guide <diy>` will take you through the setup steps. This option is great for people who already own the necessary hardware or who live outside the US and want to save on shipping and customs fees.
 
-Additionally, embassyOS is available for you to download or build from source under the Start9 Personal Use :ref:`License<license>`, for free.  The caveat is that you will miss out on the perks that come along with purchasing from us, such as white-glove support, and others, which will grow over time.
+Additionally, embassyOS is available for you to download or build from source under the Start9 Personal Use `License <https://start9.com/license>`_, for free.  The caveat is that you will miss out on the perks that come along with purchasing from us, such as white-glove support, and others, which will grow over time.
 
 Do I plug my Embassy into my computer?
 ---------------------------------------
@@ -49,7 +49,9 @@ The cheapest way to run a Bitcoin/Lightning node is to buy a Raspberry Pi (or eq
 Would you consider (Umbrel, Nodl, RoninDojo, etc) a competitor to Embassy, or are they different enough to be compatible?
 --------------------------------------------------------------------------------------------------------------------------
 Other node devices are competitors, and there are distinct trade-offs to each platform, but we are definitely moving toward the same future, which is a win for everyone!
-We are taking more a general approach to all of open-source, hosted software, including Bitcoin/Lightning. The aforementioned examples are more Bitcoin/Lightning focused.
+We are taking more a general approach to all of open-source, hosted software, including Bitcoin/Lightning. The aforementioned examples tend to be more Bitcoin/Lightning focused.
+
+Since it is often requested, we have put together an :ref:`Umbrel comparison guide<umbrel-compare>`
 
 How can I migrate from Umbrel to Embassy and keep my lightning channels intact?
 -------------------------------------------------------------------------------

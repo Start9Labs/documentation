@@ -48,15 +48,6 @@ Contribute
 
   Become an affiliate and help propagate the message to your audience.
 
-.. topic-box::
-  :title: Join the Team
-  :link: jobs
-  :icon: scylla-icon scylla-icon--about-team
-  :class: large-4
-  :anchor: Work
-
-  Check for available core Start9 team positions or contracts.
-
 .. raw:: html
 
   </div></div>
@@ -70,4 +61,3 @@ Contribute
    provide-support
    decentralize
    promote
-   jobs

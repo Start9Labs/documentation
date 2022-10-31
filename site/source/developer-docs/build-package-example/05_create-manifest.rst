@@ -47,7 +47,7 @@ And populate it with the following example manifest (see the line comments for a
     # The original project repository URL. There is no upstream repo in this example
     upstream-repo: "https://github.com/Start9Labs/hello-world-wrapper"
     # URL to the support site / channel for the project. This key can be omitted if none exists, or it can link to the original project repository issues.
-    support-site: "https://start9.com/"
+    support-site: "https://docs.start9.com/"
     # URL to the marketing site for the project. This key can be omitted if none exists, or it can link to the original project repository. 
     marketing-site: "https://start9.com/"
     # The series of commands to build the project into an s9pk for arm64/v8. In this case we are using a Makefile with the simple build command "make".

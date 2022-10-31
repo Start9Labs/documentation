@@ -33,10 +33,10 @@ Social Media
 Email
 -----
 
-* support@start9labs.com - for getting help with your Embassy and asking general questions about Start9.
+* support@start9.com - for getting help with your Embassy and asking general questions about Start9.
 
-* security@start9labs.com - for reporting sensitive information or security concerns.
+* security@start9.com - for reporting sensitive information or security concerns.
 
-* jobs@start9labs.com - for those interested in doing work for Start9.
+* jobs@start9.com - for those interested in doing work for Start9.
 
-* affiliate@start9labs.com - for those interested in becoming a Start9 affiliate.
+* affiliate@start9.com - for those interested in becoming a Start9 affiliate.

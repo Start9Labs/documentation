@@ -1,3 +1,5 @@
+:orphan:
+
 .. _jobs:
 
 ===========
@@ -7,14 +9,14 @@ Join Start9
 How to Apply
 ------------
 
-Email us at jobs@start9labs.com with your resume and any other information you think we should know about you.
+Email us at jobs@start9.com with your resume and any other information you think we should know about you.
 
 About Start9
 ------------
 
 Our mission at Start9 is to eliminate the need for trusted 3rd parties in the human/computer relationship. Our flagship product, embassyOS, is the most advanced, secure, and reliable personal server operating system in the world, making it possible for anyone to host their own software and data. One brick at a time, we will help construct an open and decentralized computing platform for humanity's future, one where sovereign individuals control their own data and the flow of information, as well as the abundance of intelligent devices that will come to engulf the human experience.
 
-Read more about our :ref:`company and vision<start9>`, or check out this `podcast <https://www.thesurvivalpodcast.com/digital-sovereign>`_.
+Read more about our `company and vision <https://start9.com/about>`_, or check out this `podcast <https://www.thesurvivalpodcast.com/digital-sovereign>`_.
 
 Benefits of working at Start9
 -----------------------------

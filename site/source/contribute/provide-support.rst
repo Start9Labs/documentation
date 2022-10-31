@@ -18,7 +18,7 @@ Community Channels
 
 3. Make your voice heard in the unofficial feedback forum: https://s9.altweb.me/
 
-4. If you would like to take on a more significant role in Support, please reach out to us at support@start9labs.com, or in one of our :ref:`Community Channels <contact>`.
+4. If you would like to take on a more significant role in Support, please reach out to us at support@start9.com, or in one of our :ref:`Community Channels <contact>`.
 
     - We are working on a volunteer program, which we eventually hope to incentivize.
     - It is also a foot in the door with Start9, where we are always growing and often in need of new team members.
