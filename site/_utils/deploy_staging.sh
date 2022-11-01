@@ -13,9 +13,9 @@ echo "FILTER: make multiversion"
 make clean && make multiversion
 
 echo "FILTER: rsync build"
-rsync -rzP --delete ./_build/dirhtml/ root@staging.start9labs.com:/var/www/html/staging.start9labs.com/dirhtml/
+rsync -rzP --delete ./_build/dirhtml/ root@staging.start9.com:/var/www/html/staging.start9labs.com/dirhtml/
 
 echo "FILTER: ssh restart nginx and tor"
-ssh root@staging.start9labs.com "systemctl reload nginx && systemctl reload tor"
+ssh root@staging.start9.com "systemctl reload nginx && systemctl reload tor"
 
 echo "FILTER: fin"

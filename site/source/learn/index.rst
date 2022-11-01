@@ -30,24 +30,6 @@ Learn
 
   Answers to Frequently Asked Questions from Embassy users.
 
-.. topic-box::
-  :title: Videos
-  :link: https://youtube.com/c/Start9
-  :icon: scylla-icon scylla-icon--training
-  :class: large-4
-  :anchor: Watch
-
-  Our video archives, with educational content, including how-tos and DIY guides.
-
-.. topic-box::
-  :title: Media
-  :link: media
-  :icon: scylla-icon scylla-icon--news
-  :class: large-4
-  :anchor: View
-
-  Check out interviews, podcasts, and articles featuring Start9 and Embassy.
-
 .. raw:: html
 
   </div></div>
@@ -59,4 +41,3 @@ Learn
    :hidden:
 
    concepts/index
-   media/index

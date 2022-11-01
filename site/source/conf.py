@@ -16,7 +16,7 @@ sys.path.insert(0, os.path.abspath('..'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'Start9'
+project = 'Start9 Docs'
 copyright = str(date.today().year) + ",  Start9 Labs, Inc."
 author = u"Start9 Contributors"
 
@@ -103,7 +103,7 @@ html_theme_options = {
     "github_issues_repository": "Start9Labs/documentation",
     "github_repository": "Start9Labs/documentation",
     "navigation_depth": 3,
-    "site_description": "Start9 sovereign computing with Embassy personal server",
+    "site_description": "Start9 documentation for sovereign computing with embassyOS",
 }
 
 # Last updated format
@@ -119,7 +119,7 @@ html_sidebars = {"**": ["side-nav.html"]}
 htmlhelp_basename = "Start9Documentation"
 
 # URL which points to the root of the HTML documentation.
-html_baseurl = "https://start9.com"
+html_baseurl = "https://docs.start9.com"
 
 # Dictionary of values to pass into the template engine’s context for all pages
 html_context = {"html_baseurl": html_baseurl}

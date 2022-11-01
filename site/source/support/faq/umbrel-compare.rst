@@ -1,3 +1,7 @@
+.. _umbrel-compare:
+
+:orphan:
+
 =================
 Umbrel Comparison
 =================

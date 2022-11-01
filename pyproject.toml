@@ -2,7 +2,7 @@
 name = "start9-docs"
 description = "Start9 Documentation"
 version = "0.1.0"
-authors = ["elvece <lucy@start9labs.com>, kn0wmad <david@start9labs.com>"]
+authors = ["elvece <lucy@start9.com>, kn0wmad <david@start9.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
