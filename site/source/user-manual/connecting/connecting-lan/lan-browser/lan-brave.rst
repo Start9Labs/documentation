@@ -8,7 +8,7 @@ Trust Embassy CA in Brave
 
 .. tabs::
 
-    .. group-tab:: Linux / MacOS
+    .. group-tab:: Linux / macOS
 
         #. Open a new tab in Brave and open to "Settings" from the top-right hamburger menu.
 
@@ -40,7 +40,7 @@ Trust Embassy CA in Brave
 
             .. figure:: /_static/images/ssl/browser/brave_view_certs.png
               :width: 60%
-              :alt: Brave Manage Certificates sub-menu on MacOS
+              :alt: Brave Manage Certificates sub-menu on macOS
 
 
     .. group-tab:: Windows
