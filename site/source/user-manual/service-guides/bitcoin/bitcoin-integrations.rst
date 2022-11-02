@@ -21,7 +21,7 @@ Blockstream Green
  - Android/CalyxOS/GrapheneOS/LineageOS
  - iOS
  - Linux
- - MacOS
+ - macOS
  - Windows
  
 **Instructions**
@@ -53,7 +53,7 @@ Electrum
 
   - Android/CalyxOS/GrapheneOS/LineageOS
   - Linux
-  - MacOS
+  - macOS
   - Windows
  
  **Instructions**
@@ -69,7 +69,7 @@ FullyNoded
  **Available For**
 
   - iOS
-  - MacOS
+  - macOS
 
  **Instructions**
  
@@ -105,7 +105,7 @@ Sparrow
  **Available For**
 
   - Linux
-  - MacOS
+  - macOS
   - Windows
  
  **Instructions**
@@ -121,12 +121,12 @@ Specter
  **Available For**
 
   - Linux
-  - MacOS
+  - macOS
   - Windows
  
  **Instructions**
 
-  Follow the guide for `MacOS <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/docs/integrations/specter/macos.md>`__ or `Windows <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/docs/integrations/specter/windows.md>`__.
+  Follow the guide for `macOS <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/docs/integrations/specter/macos.md>`__ or `Windows <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/docs/integrations/specter/windows.md>`__.
 
 
 .. _trezor-suite:
@@ -139,7 +139,7 @@ Trezor Suite
  **Available For**
 
   - Linux
-  - MacOS
+  - macOS
   - Windows
  
  **Instructions**

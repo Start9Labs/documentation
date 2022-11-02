@@ -4,4 +4,4 @@
 Mac
 ===
 
-MacOS has no known limitations in regard to Embassy.
+macOS has no known limitations in regard to Embassy.

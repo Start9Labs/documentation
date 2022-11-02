@@ -63,7 +63,7 @@ There are several services available on both platforms, but even so these platfo
 
 Umbrel uses docker containers to package up services, and can be done in any programming language. The only requirement is for the service to serve up a web page, as the regular user is never expected to have cli access on Umbrel.
 
-The docker containers can be tested on a dedicated Umbrel development environment, available for both Linux and MacOS, or can be tested directly on an Umbrel. Any dependencies on other services would need to be managed by the service author/developer.
+The docker containers can be tested on a dedicated Umbrel development environment, available for both Linux and macOS, or can be tested directly on an Umbrel. Any dependencies on other services would need to be managed by the service author/developer.
 
 Umbrel uses docker images pushed to Docker Hub to catalog services on the Umbrel marketplace. All services are bundled together in UmbrelOS releases, so once you submit a service to Umbrel, you would need to wait until the next UmbrelOS version release in order to see your service in the Umbrel marketplace.
 
