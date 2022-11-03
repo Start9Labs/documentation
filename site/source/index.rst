@@ -7,7 +7,7 @@
 .. hero-box::
   :title: Welcome
 
-  Here you will find documentation about embassyOS, including DIY guides, user manuals, and developer docs. Welcome to the era of sovereign computing. Anyone can do it. No one can stop it.
+  Here you will find information on embassyOS, including DIY guides, user manuals, and developer docs. Welcome to the era of sovereign computing. Anyone can do it. No one can stop it.
 
 .. raw:: html
 
@@ -47,15 +47,6 @@
   Read our FAQ and learn about platform concepts
 
 .. topic-box::
-  :title: Developer Docs
-  :link: developer-docs
-  :icon: scylla-icon scylla-icon--open-source
-  :class: large-4
-  :anchor: View
-
-  Package a service for the Embassy Marketplace
-
-.. topic-box::
   :title: Contribute
   :link: contribute
   :icon: scylla-icon scylla-icon--networking
@@ -64,6 +55,14 @@
 
   Use your skills to add to the Start9 ecosystem
 
+.. topic-box::
+  :title: Developer Docs
+  :link: developer-docs
+  :icon: scylla-icon scylla-icon--open-source
+  :class: large-4
+  :anchor: View
+
+  Package a service for the Embassy Marketplace
 
 .. raw:: html
 

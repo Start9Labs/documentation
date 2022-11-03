@@ -25,13 +25,13 @@ embassy-sdk init
 
 Initialize the developer key for interacting with the SDK.
 
-By default, this creates the developer key at `/etc/embassy`. You might need to change ownership of this folder depending on your system permissions.
+By default, this creates the developer key at `$HOME/embassy`. You might need to change ownership of this folder depending on your system permissions.
 
 .. code:: bash
 
     chown <user> /etc/embassy
 
-Alternatively, you can write a config file with your desired developer location, it simply needs the following format:
+Alternatively, you can write a config file with your desired developer key location, it simply needs the following format:
 
     .. code:: yaml
 
