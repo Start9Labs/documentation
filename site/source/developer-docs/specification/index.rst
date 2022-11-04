@@ -120,3 +120,4 @@ The following guides provide an in depth overview of the full capabilities avail
   js-procedure
   submission
   compat/index
+  checklist
