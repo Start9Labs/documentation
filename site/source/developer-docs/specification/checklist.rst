@@ -1,4 +1,4 @@
-.. _packaging-quick-start:
+.. _packaging-checklist:
 
 =========
 Checklist

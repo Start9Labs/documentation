@@ -62,7 +62,7 @@
   :class: large-4
   :anchor: View
 
-  Package a service for the Embassy Marketplace
+  Package a service for the Marketplace
 
 .. raw:: html
 

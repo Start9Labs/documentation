@@ -4,15 +4,7 @@
 Developer Docs
 ==============
 
-  Welcome to Service Packaging for embassyOS!
-  
-  If you are here, you are interested in becoming part of the mission to change the future of personal computing.
-
-  The guides below provide the fundamentals that will take you through the process of packing a service for embassyOS. Services are any open source project (application) that can be run on a self-hosted platform, independent of third parties. 
-  
-  By configuring and packaging a project according to these guides, it can be installed on embassyOS so that users can interact with  the service without needing any technical expertise.
-
-  Let's get started!
+  Welcome to the Service Packaging documentation for embassyOS.  If you are here, you have heard the call to help empower users with sovereign computing!
 
 .. raw:: html
 
@@ -21,56 +13,29 @@ Developer Docs
   <div class="grid-x grid-margin-x">
 
 .. topic-box::
-  :title: Getting Started
-  :link: getting-started
-  :icon: scylla-icon scylla-icon--nsql-guides
+  :title: Service Packaging
+  :link: packaging
+  :icon: scylla-icon scylla-icon--resource-center
   :class: large-4
-  :anchor: View
+  :anchor: Build
 
-  Set up your environment and follow along with an example
-
-.. topic-box::
-  :title: Build your first Package
-  :link: build-package-example
-  :icon: scylla-icon scylla-icon--open-source
-  :class: large-4
-  :anchor: Begin
-
-  Follow along to learn packaging fundamentals with an example 
-
-.. topic-box::
-  :title: SDK
-  :link: getting-started/sdk
-  :icon: scylla-icon scylla-icon--apps
-  :class: large-4
-  :anchor: View
-
-  Discover details about the Start9 Software Development Kit
+  A concise guide to Service Packaging
 
 .. topic-box::
   :title: Full Specification
   :link: specification
   :icon: scylla-icon scylla-icon--glossary
   :class: large-4
-  :anchor: View
+  :anchor: Read
 
   Detailed service packaging specification and advanced features
-
-.. topic-box::
-  :title: Packaging Checklist
-  :link: getting-started/checklist
-  :icon: scylla-icon scylla-icon--roadmap
-  :class: large-4
-  :anchor: Begin
-
-  A quick way to check your work
 
 .. topic-box::
   :title: Advanced Guides
   :link: advanced
   :icon: scylla-icon scylla-icon--integrations
   :class: large-4
-  :anchor: View
+  :anchor: Tinker
 
   Guides for implementing advanced service configurations
 
@@ -83,7 +48,6 @@ Developer Docs
   :maxdepth: 1
   :hidden:
 
-  getting-started/index
-  build-package-example/index
+  packaging
   specification/index
   advanced/index
