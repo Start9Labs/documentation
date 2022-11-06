@@ -40,7 +40,7 @@ Almost any type of open source software can be run on embassyOS. No matter what 
 
     - The interfaces supported are: HTTP, TCP, and REST APIs
 
-#. It can be compiled for ARM (``arm64v8``)
+#. It can be compiled for ARM (``arm64v8`` - namely, the Raspberry Pi) and/or x86_64 (``amd64`` - most desktops, laptops, and servers)
 #. It can be served over TOR
 #. It creates a container image that is optimized for size (under 1GB) to save device space and expedite installation time
 
@@ -199,7 +199,7 @@ After coding the build steps, build the Docker image using ``docker buildx``, re
 
         docker buildx build --tag start9/$(PKG_ID)/main:$(PKG_VERSION) --platform=linux/arm64 -o type=docker,dest=image.tar .
 
-The resulting ``image.tar`` artifact is the Docker image that needs to be included in the ``s9pk`` package. 
+The resulting ``docker-images/aarch64.tar`` or ``docker-images/x86_64.tar`` artifact (depending on if you used ``--platform=linux/arm64`` or ``--platform=linux/amd64`` is the Docker image that needs to be included in the ``s9pk`` package.
 
 .. _create-file-structure:
 
