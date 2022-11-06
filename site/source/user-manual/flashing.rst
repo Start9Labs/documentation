@@ -16,41 +16,37 @@ Extracting the image
 Linux
 =====
 #. Download the ``eos.tar.gz`` file and open a terminal in the directory you save it to
-#. (Optional, but recommended) Verify the checksum against the one listed on GitHub:
-
-    .. code-block::
-
-        sha256sum eos.img.gz
-
 #. Extract with:
 
     .. code-block::
 
-       tar -xzvf eos.img.gz
+       tar -xzvf eos.tar.gz
+
+#. (Optional, but recommended) Verify the checksum against the one listed on GitHub:
+
+    .. code-block::
+
+        sha256sum eos.img
 
 Mac
 ===
 #. Download the ``eos.tar.gz`` file
+#. Right-click eos.tar.gz, click "open with," then click Archive Utility to extract
 #. (Optional, but recommended) Verify the checksum against the one listed on GitHub:
 
     .. code-block::
 
-        openssl dgst -sha256 eos.img.gz
-
-#. Right-click eos.tar.gz, click "open with," then click Archive Utility to extract
+        openssl dgst -sha256 eos.img
 
 Windows
 =======
 #. Download the ``eos.zip`` file
+#. Right-click eos.zip and click "Extract all"
 #. (Optional, but recommended) Verify the checksum against the one listed on GitHub:
 
     .. code-block::
 
-        Get-FileHash eos.zip
-
-#. Right-click eos.zip and click "Extract all"
-
-In all cases you will be left with the file ``eos.img``
+        Get-FileHash eos.img
 
 Installing embassyOS
 --------------------
