@@ -14,7 +14,7 @@ DIY Guide
 
   Raspberry Pi Board
 
-Start9 is committed to ensuring that embassyOS is accessible.  It will always be possible to build a comprable device to those sold in the Start9 Store.  You can use the following guide to build your own Embassy One with readily available hardware.  If any links are broken or sold out, please :ref:`let us know<contact>`.
+Start9 is committed to ensuring that embassyOS is accessible.  It will always be possible to build a comprable device to those sold in the Start9 Store.  You can use the following guide to build your own Embassy One with readily available hardware.  If any links are broken or sold out, please `head to our forums<https://community.start9.com/>`_.
 
 Motivation
 ----------
