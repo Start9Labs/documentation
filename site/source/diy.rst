@@ -83,6 +83,10 @@ You can follow along with this `written guide <https://start9dave.substack.com/p
   .. youtube:: Z1EW1TVgtow
     :width: 100%
 
+.. raw:: html
+  
+  <br>
+  <br>
 
 Getting embassyOS
 -----------------
