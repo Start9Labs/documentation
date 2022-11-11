@@ -19,7 +19,7 @@ Embassy One is a plug 'n' play hardware device, based on the `Raspberry Pi <http
 
 Embassy Pro
 -----------
-Embassy Pro is a plug 'n' play hardware device, based on the `Librem Mini <https://puri.sm/products/librem-mini/>`_, built by `Purism <https://puri.sm/about/>`_.  The Pro features a custom-built circuit board with active cooling, and an open-source firmware / boot stack.  Embassy Pro comes pre-loaded with :ref:`embassyOS<embassy-os>`.  For more details, check out the `Embassy Pro tech specs <https://store.start9.com/products/embassy-2>`_.
+Embassy Pro is a plug 'n' play hardware device, based on the `Librem Mini <https://puri.sm/products/librem-mini/>`_, built by `Purism <https://puri.sm/about/>`_.  The Pro features a custom-built circuit board with active cooling, and an open-source firmware / boot stack.  Embassy Pro comes pre-loaded with :ref:`embassyOS<embassy-os>`.  For more details, check out the `Embassy Pro tech specs <https://store.start9.com/products/embassy-pro-presale>`_.
 
 .. _embassy-os:
 
