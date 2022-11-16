@@ -24,10 +24,51 @@ Hardware Requirements
 
 #. `SD card adapter <https://www.amazon.com/gp/product/B000WR3Z3A>`_ for getting data from your SD card.
 
+Downloading
+-----------
+
+#. Once you have all these you will need to download the latest 0.3 image from `our github <https://github.com/start9labs/embassy-os/releases/latest>`_, scroll to the Assets section, and download ``eos.tar.gz`` for Linux/Mac or ``eos.zip`` for Windows.
+
+Extracting the image
+--------------------
+
+Linux
+=====
+#. Download the ``eos.tar.gz`` file and open a terminal in the directory you save it to
+#. Extract with:
+
+    .. code-block::
+
+       tar -xzvf eos.tar.gz
+
+#. (Optional, but recommended) Verify the checksum against the one listed on GitHub:
+
+    .. code-block::
+
+        sha256sum eos.img
+
+Mac
+===
+#. Download the ``eos.tar.gz`` file
+#. Right-click eos.tar.gz, click "open with," then click Archive Utility to extract
+#. (Optional, but recommended) Verify the checksum against the one listed on GitHub:
+
+    .. code-block::
+
+        openssl dgst -sha256 eos.img
+
+Windows
+=======
+#. Download the ``eos.zip`` file
+#. Right-click eos.zip and click "Extract all"
+#. (Optional, but recommended) Verify the checksum against the one listed on GitHub:
+
+    .. code-block::
+
+        Get-FileHash eos.img
+
 Flashing
 --------
-
-#. Once you have all these you will need to download the latest 0.3 image from `our github <https://github.com/start9labs/embassy-os/releases/latest>`_, scroll to the Assets section, and download `eos.tar.gz`.
 
 #. Once you have the image, flash it on to the 32GB SD card - the new one, **NOT** the one currently in your Embassy!
 
