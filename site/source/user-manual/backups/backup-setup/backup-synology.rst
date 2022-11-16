@@ -13,8 +13,10 @@ Synology LAN Shared Folder
 Setup LAN Shared Folder
 -----------------------
 
-#. In Synology UI, go to *Control Panel > Shared Folder* and select the folder you want to use. Click "Permissions" and make sure you have read/write permissions for the user you're going to be logging in as. Click "Save".
+#. In Synology UI, go to *Control Panel > Shared Folder* and select the folder you want to use.
 
+    .. note:: Do not select "Use this shared folder" as folder encryption is not supported at this time
+        
 #. Back in Synology UI, go to *Control Panel > File Services > SMB* and click the SMB drop down button if it isn't already selected. Ensure that "Enable SMB service" is checked.
 
     .. note:: Under Advanced Settings on the same dropdown, "Min SMB protocol" was set to SMB2 and "Max SMB protocol set to SMB3" - this may or may not be necessary
