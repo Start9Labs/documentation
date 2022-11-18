@@ -13,6 +13,8 @@ After building your device, you need a copy of embassyOS.
 Extracting the image
 --------------------
 
+    .. warning:: Make sure you have at least 16gb available on your drive.
+
 Linux
 =====
 #. Download the ``eos.tar.gz`` file and open a terminal in the directory you save it to
