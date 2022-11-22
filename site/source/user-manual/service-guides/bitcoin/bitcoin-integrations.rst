@@ -110,7 +110,8 @@ Sparrow
  
  **Instructions**
  
-  Follow the `guide <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/docs/integrations/sparrow/guide.md>`__.
+  #. Install the `Electrs` service from the Start9 Marketplace on your Embassy
+  #. Follow this `guide <https://github.com/Start9Labs/electrs-wrapper/blob/master/docs/integrations/sparrow/guide.md>`__.
 
 
 .. _specter:

@@ -55,7 +55,7 @@ Since it is often requested, we have put together an :ref:`Umbrel comparison gui
 
 How can I migrate from Umbrel to Embassy and keep my lightning channels intact?
 -------------------------------------------------------------------------------
-We've created a guide to help you `transform your Umbrel's bitcoin stack into an Embassy <https://start9labs.medium.com/transform-your-umbrel-into-an-embassy-without-losing-your-lightning-channels-3cacbcbd41cf>`_.
+We've created a guide to help you `transform your Umbrel's bitcoin stack into an Embassy <https://community.start9.com/t/howto-migrate-from-umbrel-0-5-x-to-embassy/56>`_.
 
 Alternatively, if you have an Umbrel and an Embassy and they're on the same network, you can just select *Services > Lightning Network Daemon > Actions > Import from Umbrel* in your Embassy's web interface and your LND settings and channels will be automatically migrated.
 
