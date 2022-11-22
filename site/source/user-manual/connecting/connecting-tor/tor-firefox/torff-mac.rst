@@ -37,7 +37,7 @@ Configuring Firefox for Tor on Mac
 
     .. code-block::
 
-      wget -P /opt/homebrew/bin/tor https://registry.start9labs.com/sys/proxy.pac
+      wget -P /opt/homebrew/etc/tor https://registry.start9labs.com/sys/proxy.pac
 
 #. Now, back in your Firefox web browser, select ``Settings`` from the right-hand hamburger menu:
 

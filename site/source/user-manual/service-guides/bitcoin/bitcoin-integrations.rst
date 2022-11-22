@@ -110,7 +110,7 @@ Sparrow
  
  **Instructions**
  
-  Follow the `guide <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/docs/integrations/sparrow/guide.md>`__.
+  Follow the `guide <https://github.com/Start9Labs/electrs-wrapper/blob/master/docs/integrations/sparrow/guide.md>`__.
 
 
 .. _specter:
