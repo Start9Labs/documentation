@@ -70,4 +70,7 @@ Connect Embassy
     - For "Path" - Enter the "Path" that is shown after the ``HOSTNAME\`` in Windows
     - Enter your Windows username and password in the "User" and "Password" fields
 
+.. caution::
+    If you use a "PIN" to log in to Windows, keep in mind that your password needs to be the user's full password, NOT the PIN!
+
 That's it!  You can now :ref:`Create<backup-create>` encrypted, private backups of all your Embassy data to your Windows machine or external drive!!
