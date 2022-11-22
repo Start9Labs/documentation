@@ -111,7 +111,7 @@ Sparrow
  **Instructions**
  
   #. Install the `Electrs` service from the Start9 Marketplace on your Embassy
-  #. Follow the `guide <https://github.com/Start9Labs/electrs-wrapper/blob/master/docs/integrations/sparrow/guide.md>`__.
+  #. Follow this `guide <https://github.com/Start9Labs/electrs-wrapper/blob/master/docs/integrations/sparrow/guide.md>`__.
 
 
 .. _specter:
