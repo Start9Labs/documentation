@@ -11,7 +11,7 @@ Trusting Embassy CA on iOS
     :width: 40%
     :alt: Profiles
 
-#. Head to *Settings > General > VPN & Device Management
+#. Head to *Settings > General > VPN & Device Management*
 
    .. figure:: /_static/images/ssl/ios/settings_general_vpn.png
     :width: 40%
