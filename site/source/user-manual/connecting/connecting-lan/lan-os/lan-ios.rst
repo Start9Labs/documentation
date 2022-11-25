@@ -17,7 +17,7 @@ Trusting Embassy CA on iOS
     :width: 40%
     :alt: Profiles
 
-#. Locate the profile
+#. Locate the profile and tap on it
 
    .. figure:: /_static/images/ssl/ios/install_1.png
     :width: 40%
