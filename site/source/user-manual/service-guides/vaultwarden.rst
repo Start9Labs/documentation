@@ -64,7 +64,7 @@ You will need to :ref:`Setup LAN <lan-ios>` on your device first.
 
 #. Visit your app store and download the Bitwarden app.
 
-#. Next, enter the Bitwarden app.  You'll be greeted with a log-in screen, and just like in the extension, you can go to the top left gear icon to enter the Settings.  You'll need to enter your LAN address from your Embassy, so you can copy-paste it over to your phone, or type it in by hand.  Don't forget to ensure the prefix is ``https://``.  Hit save, and you'll be returned to the log-in screen.
+#. Next, enter the Bitwarden app.  You'll be greeted with a log-in screen, and just like in the extension, you can go to the top left gear icon to enter the Settings.  You'll need to enter your Vaultwarden LAN address from your Embassy, so you can copy-paste it over to your phone, or type it in by hand.  Don't forget to ensure the prefix is ``https://``.  Hit save, and you'll be returned to the log-in screen.
 
 #. Go ahead and tap 'Log In,' enter your credentials, and you can access your Bitwarden app / Vaultwarden server.
 
@@ -94,7 +94,7 @@ Mac
 #. LAN
     #. First, be sure to :ref:`Setup LAN <lan-mac>` natively.
 
-    #. For LAN access, follow the LAN setup in the instructions below.  After completing setup, simply open Bitwarden and add your LAN address in the 'Settings' and login.
+    #. For LAN access, follow the LAN setup in the instructions below.  After completing setup, simply open Bitwarden and add your Vaultwarden LAN address in the 'Settings' and login.
 
 #. Tor
     #. First, be sure to :ref:`Setup Tor <tor-mac>` natively.
