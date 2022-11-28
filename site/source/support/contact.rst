@@ -13,9 +13,11 @@ Contact Us
 Community Channels
 ------------------
 
-* `Telegram <https://t.me/start9_labs>`_ - Primary community channel
+* `Start9 Community Hub <https://community.start9.com>`_ - Primary repository for open source sovereign computing knowledge.  Start here.
 
-* `Matrix <https://matrix.to/#/#community:matrix.start9labs.com>`_ - Community channel that will gradually replace Telegram.
+* `Telegram <https://t.me/start9_labs>`_ - Primary instant messaging channel (now bridged to Matrix for convenience).
+
+* `Matrix <https://matrix.to/#/#community:matrix.start9labs.com>`_ - Community channel that will gradually replace Telegram (now bridged to Telegram for convenience).
 
 * `Matrix Dev <https://matrix.to/#/#community-dev:matrix.start9labs.com>`_ - Primary channel for collaboration on embassyOS development and service packaging.
 
