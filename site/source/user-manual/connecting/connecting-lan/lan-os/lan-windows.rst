@@ -74,7 +74,7 @@ Unfortunately, Windows does not have mDNS support built-in, which is necessary i
     :width: 90%
     :alt: Import cert wizard
 
-    Add downloaded certificate int he Certificate Import Wizard
+    Add downloaded certificate in the Certificate Import Wizard
 
 #. On the “Certificate Store” window, ensure that it says “Trusted Root Certificate Authorities” and click “Next”.
 
