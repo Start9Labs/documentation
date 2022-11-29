@@ -83,6 +83,11 @@ You can follow along with this `written guide <https://start9dave.substack.com/p
   .. youtube:: Z1EW1TVgtow
     :width: 100%
 
+.. raw:: html
+
+  <br>
+  <br>
+
 Getting embassyOS
 -----------------
 After building your device, you need a copy of embassyOS.
@@ -110,10 +115,3 @@ Next, you'll need to flash embassyOS onto a microSD card.
 
 #. Click "Flash!". You may be asked to (1) approve the unusually large disk target or (2) enter your password. Both are normal.
 #. After the flash completes, you may remove the micro SD from the adapter, insert it into your Embassy's SD card slot, and continue to the :ref:`Initial Setup <initial-setup>` instructions.
-
-Upgrading from an External Drive Setup
---------------------------------------
-If you already have an Embassy with an external drive, you can follow along from the `written guide appendix <https://start9dave.substack.com/i/68242394/appendix-transfer-embassy-from-existing-case>`_ and/or check out the video below:
-
-  .. youtube:: 355BENA42s8
-    :width: 100%
