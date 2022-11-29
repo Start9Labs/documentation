@@ -49,7 +49,7 @@ Embassy One
 Upgrade to Embassy Pro
 ----------------------
 
-You can migrate from an Embassy One to an Embassy Pro simply by shutting down your Embassy One, removing the SSD and connecting it your new Embassy Pro! 
+You can migrate from an Embassy One to an Embassy Pro simply by shutting down your Embassy One, removing the SSD and connecting it to your new Embassy Pro! 
 
 You can then migrate the data from your Embassy One to your Embassy Pro during :ref:`Initial setup. <initial-setup>`
 
