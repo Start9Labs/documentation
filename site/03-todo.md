@@ -1,8 +1,0 @@
-- Initial Setup Video
-- Vaultwarden guide (screens)
-- Lightning Guides (Zeus)
-- Refactor and update Roadmap
----
-- Breakout Bitcoin / Lightning integrations into their own individual pages(?)
-- Migrate from other server projects / nodes (currently punted)
-- Alt Market Build Guide (punted)
