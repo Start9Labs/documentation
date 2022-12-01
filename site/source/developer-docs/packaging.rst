@@ -8,7 +8,7 @@ Service Packaging
   :depth: 2 
   :local:
 
-Welcome! Thank you for your interest in contributing to the growing ecosystem of open software. We call the software applications that run on `embassyOS <https://github.com/start9labs/embassy-os>`_ "services."  This distinction is made to differentiate from "applications" (apps), which are generally run on a client, and used to access server-side software (services).  To run services on embassyOS, a package of file components needs to be composed. This guide will dive into the basic structure of how to compose this package.
+Welcome! Thank you for your interest in contributing to the growing ecosystem of open software. We call the software applications that run on :ref:`embassyOS<embassy-os>` "services."  This distinction is made to differentiate from "applications" (apps), which are generally run on a client, and used to access server-side software (services).  To run services on embassyOS, a package of file components needs to be composed. This guide will dive into the basic structure of how to compose this package.
 
 Check out the :ref:`glossary <glossary>` to get acquainted with unfamiliar terms.  The bottom of this guide also includes :ref:`support <packaging-support>` links, including a master checklist. 
 
@@ -240,7 +240,7 @@ The following files should be included in the service wrapper repository:
 
        - Build instructions to create the s9pk
     
-       - `Example <https://github.com/Start9Labs/hello-world-wrapper/blob/f44899be8523b784861aac92e43fe60f0bf219eb/Makefile#L1-L28>`_
+       - `Example MAKEFILE <https://github.com/Start9Labs/hello-world-wrapper/blob/f44899be8523b784861aac92e43fe60f0bf219eb/Makefile#L1-L28>`_
 
 - ``Dockerfile``
  
@@ -249,6 +249,7 @@ The following files should be included in the service wrapper repository:
        - Add here any prerequisite environment variables, files, or permissions
     
        - Examples:
+
         - `Using an existing docker image <https://github.com/kn0wmad/robosats-wrapper/blob/d4a0bd609ce18036dfd7ee57e88d437e54d8efb9/Dockerfile#L1>`_
         - `Implementing a database <https://github.com/Start9Labs/photoview-wrapper/blob/ba399208ebfaabeafe9bea0829f494aafeaa9422/Dockerfile#L3-L9>`_
         - `Using a submodule <https://github.com/Start9Labs/ride-the-lightning-wrapper/blob/3dfe28b13a3886ae2f685d10ef1ae79fc4617207/Dockerfile#L9-L28>`_
