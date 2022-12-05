@@ -70,7 +70,7 @@ notfound_template = "404.html"
 TAGS = []
 smv_tag_whitelist = multiversion_regex_builder(TAGS)
 # Whitelist pattern for branches (set to None to ignore all branches)
-BRANCHES = ["0.2.x", "0.3.1.x", "master"]
+BRANCHES = ["0.2.x", "0.3.1.x", "0.3.2.x", "master"]
 smv_branch_whitelist = multiversion_regex_builder(BRANCHES)
 # Defines which version is considered to be the latest stable version.
 # Must be listed in smv_tag_whitelist or smv_branch_whitelist.
