@@ -10,7 +10,9 @@ Android
 
 LAN Access
 ----------
-Android versions below 12 (as well as some custom ROMs, such as Graphene/Calyx) do not have native support for :ref:`mDNS<mdns>` and therefore cannot resolve ".local" addresses.
+Android versions below 12 do not have native support for :ref:`mDNS<mdns>` and therefore cannot resolve ".local" addresses.
+
+Custom ROMs such as GrapheneOS and Calyx have been updated to use versions 12 or higher and so work as expected.
 
 Tor Firefox on LineageOS
 ------------------------
