@@ -1,8 +1,8 @@
 .. _backup-synology:
 
-==========================
-Synology LAN Shared Folder
-==========================
+=======================
+Synology Network Folder
+=======================
 
 .. contents::
   :depth: 2 
@@ -10,8 +10,8 @@ Synology LAN Shared Folder
     
 .. note:: This guide was created by a Start9 community member.  This is not yet officially supported.  Please report any feedback that may help improve the process.
 
-Setup LAN Shared Folder
------------------------
+Setup Network Folder
+--------------------
 
 #. In Synology UI, go to *Control Panel > Shared Folder* and select the folder you want to use.
 

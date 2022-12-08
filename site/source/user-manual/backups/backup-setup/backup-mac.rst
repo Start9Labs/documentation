@@ -1,20 +1,20 @@
 .. _backup-mac:
 
-=====================
-Mac LAN Shared Folder
-=====================
+==================
+Mac network folder
+==================
 
 .. contents::
   :depth: 2 
   :local:
 
-Check out the video below, and follow along with the steps in this guide to setup a LAN Shared Folder on your Mac (or attached drive), such that you may create encrypted, private backups of all your Embassy data.
+Check out the video below, and follow along with the steps in this guide to setup a network folder on your Mac (or attached drive), such that you may create encrypted, private backups of all your Embassy data.
 
    .. youtube:: Uv7ul6ZKW5k
       :width: 100%
 
-Setup LAN Shared Folder
------------------------
+Setup network folder
+--------------------
 #. Either select or create a folder you would like to use to store your Embassy backups
 
 #. Go to "System Preferences" and click "Sharing"
