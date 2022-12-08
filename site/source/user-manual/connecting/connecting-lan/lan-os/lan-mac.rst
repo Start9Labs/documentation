@@ -14,6 +14,12 @@ Video Guide:
         :width: 60%
         :alt: LAN setup prompt
 
+#. In the resulting  box, choose "System" from the "Keychain" dropdown menu.  Then click "Add."
+
+    .. figure:: /_static/images/ssl/macos/mac-lan-setup0.png
+        :width: 60%
+        :alt: System Keychain
+
 #. Enter your computer password when prompted. It will be imported into your mac's keychain.
 
     .. figure:: /_static/images/ssl/macos/certificate_untrusted.png
