@@ -13,7 +13,7 @@ Check out the video below, and follow along with the steps in this guide to setu
    .. youtube:: Uv7ul6ZKW5k
       :width: 100%
 
-Setup network folder
+Setup Network Folder
 --------------------
 #. Either select or create a folder you would like to use to store your Embassy backups
 
