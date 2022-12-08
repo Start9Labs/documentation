@@ -17,6 +17,18 @@ The source code can be viewed on Purism's `firmware git repo <https://source.pur
 
     .. note:: You'll need a monitor and keyboard plugged into your Librem Mini for this operation
 
-#. Turn on the Librem Mini while pressing the ``ESC`` key on the keyboard repeatedly, until you see the following screen:
+#. Turn on the Librem Mini while pressing the ``ESC`` key on the keyboard repeatedly, until you see the PureBoot Bassic Boot Menu appear.
 
-    .. figure:: 
+#. Select "Options -->."
+
+#. Select "Flash/Update the BIOS".
+
+#. Select "Flash the firmware with a new ROM, erase settings."
+
+#. The system will ask if you want to proceed to flash the BIOS, select "Yes."
+
+#. Choose the file that we downloaded earlier: ``pureboot-librem_mini_v2-basic_usb_autoboot.rom.gz``.
+
+#. Confirm you want to proceed by selecting "Yes."
+
+#. The BIOS will be reflashed with the custom firmware.  This may take a few minutes.  When complete, remove the firmware USB (and insert your embassyOS USB if you are ready to install), then select "OK" to complete the process.
