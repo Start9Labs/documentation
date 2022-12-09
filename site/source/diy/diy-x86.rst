@@ -10,7 +10,7 @@ DIY Guide (x86)
 
 Start9 is committed to ensuring that embassyOS is accessible. This guide is to install embassyOS on most x86 platforms.  Start9's x86-based Embassy Pro is available for purchase on the `Start9 Store <https://store.start9.com/products/embassy-pro>`_.
 
-For help with this guide or to share your experience with other, please `head to our community forum <https://community.start9.com/>`_.  Want to support Sovereign Computing?  Please consider a `donation to Start9 <https://btcpay.start9.com/apps/2Et1JUmJnDwzKncfVBXvspeXiFsa/crowdfund>`_.
+For help with this guide or to share your experience with others, please `head to our community forum <https://community.start9.com/>`_.  Want to support Sovereign Computing?  Please consider a `donation to Start9 <https://btcpay.start9.com/apps/2Et1JUmJnDwzKncfVBXvspeXiFsa/crowdfund>`_.
 
 Hardware
 --------
