@@ -23,7 +23,7 @@
   :title: User Manual
   :link: user-manual
   :icon: scylla-icon scylla-icon--knowledge-base
-  :class: large-6
+  :class: large-4
   :anchor: View
 
   Get started with your Embassy
@@ -32,10 +32,19 @@
   :title: Support
   :link: support
   :icon: scylla-icon scylla-icon--support
-  :class: large-6
+  :class: large-4
   :anchor: Get help
 
   Find answers to your questions
+
+.. topic-box::
+  :title: DIY
+  :link: diy
+  :icon: scylla-icon scylla-icon--memory-management
+  :class: large-4
+  :anchor: Build your own
+
+  Guides for builders, hackers, and tinkerers
 
 .. topic-box::
   :title: Learn
@@ -44,7 +53,7 @@
   :class: large-4
   :anchor: Get started
 
-  Read our FAQ and learn about platform concepts
+  Read our FAQ, watch videos, and understand platform concepts
 
 .. topic-box::
   :title: Contribute
@@ -68,10 +77,6 @@
 
   </div></div>
 
-.. raw:: html
-
-  </div></div>
-
 .. This is for the side navigation display
 .. toctree::
   :maxdepth: 4
@@ -79,7 +84,7 @@
 
   user-manual/index
   support/index
+  diy/index
   learn/index
   contribute/index
   developer-docs/index
-  diy
