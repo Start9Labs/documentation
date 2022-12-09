@@ -7,13 +7,11 @@ This page is for existing Librem Mini owners ONLY.  This will allow you to flash
 
 The source code can be viewed on Purism's `firmware git repo <https://source.puri.sm/firmware/pureboot/-/tree/start9-intel-wifi>`_.
 
-.. note:: You will need a USB drive
+.. note:: You will need a USB drive, formatted FAT32
 
-#. Download the firmware from `Purism's git repository <https://source.puri.sm/firmware/releases/-/tree/master/librem_mini_v2/custom>`_.  It does not need to be extracted.
+#. Download the firmware (``pureboot-librem_mini_v2-basic_usb_autoboot.rom.gz``) from `Purism's git repository <https://source.puri.sm/firmware/releases/-/tree/master/librem_mini_v2/custom>`_ and extract it.
 
-    * ``pureboot-librem_mini_v2-basic_usb_autoboot.rom.gz``
-
-#. Copy or move the file onto your USB drive, then eject the drive and insert it into your (powered down) Librem Mini.  USB 3.0 (blue ports) are faster.
+#. Copy or move the resulting ``pureboot-librem_mini_v2-basic_usb_autoboot.rom`` file onto your USB drive, then eject the drive and insert it into your (powered down) Librem Mini.  USB 3.0 (blue ports) are faster.
 
     .. note:: You'll need a monitor and keyboard plugged into your Librem Mini for this operation
 
@@ -27,7 +25,7 @@ The source code can be viewed on Purism's `firmware git repo <https://source.pur
 
 #. The system will ask if you want to proceed to flash the BIOS, select "Yes."
 
-#. Choose the file that we downloaded earlier: ``pureboot-librem_mini_v2-basic_usb_autoboot.rom.gz``.
+#. Choose the file that we downloaded earlier: ``pureboot-librem_mini_v2-basic_usb_autoboot.rom``.
 
 #. Confirm you want to proceed by selecting "Yes."
 
