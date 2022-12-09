@@ -3,7 +3,7 @@
 ==============
 Flashing (x86)
 ==============
-This guide is for flashing embassyOS to a USB drive in order to install it to an x86 architecture device.  This will include most desktops, laptops, mini PCs, servers, and virtual machines.  For an up-to-date list of known-good hardware, please check out this `forum post <https://community.start9.com/t/known-good-hardware-master-list-hardware-capable-of-running-embassyos-v0-3-3/66/2>`_.
+This guide is for flashing embassyOS to a USB drive in order to install it to an x86 architecture device.  This will include most desktops, laptops, mini PCs, and servers.  For an up-to-date list of known-good hardware, please check out this `forum post <https://community.start9.com/t/known-good-hardware-master-list-hardware-capable-of-running-embassyos-v0-3-3/66/2>`_.
 
  .. note:: You will need a USB drive of at least 16GB in size
 
