@@ -1,14 +1,16 @@
-.. _diy-arm:
+.. _diy-pi:
 
 ===============
-DIY Guide (ARM)
+DIY Guide (Raspberry Pi)
 ===============
 
 .. contents::
     :depth: 2 
     :local:
 
-Start9 is committed to ensuring that embassyOS is accessible.  It will always be possible to build a comprable device to those sold by Start9.  You can use the following guide to build your own Embassy One, the Raspberry Pi-based device available from the `Start9 Store <store.start9.com>`_.  If any links are broken or sold out, or if you need help or want to share your experience, please `head to our forums <https://community.start9.com/>`_.  Want to support Sovereign Computing?  Please consider a `donation to Start9 <https://btcpay.start9.com/apps/2Et1JUmJnDwzKncfVBXvspeXiFsa/crowdfund>`_.
+Start9 is committed to ensuring that embassyOS is accessible.  It will always be possible to build your own Embassy similar to the ones we sell.  This guide is to build a device exactly like Start9's Embassy One, available for purchase on the `Start9 Store <https://store.start9.com/products/embassy-one>`_.
+
+For help with this guide or to share your experience with other, please `head to our community forum <https://community.start9.com/>`_.  Want to support Sovereign Computing?  Please consider a `donation to Start9 <https://btcpay.start9.com/apps/2Et1JUmJnDwzKncfVBXvspeXiFsa/crowdfund>`_.
 
     .. figure:: /_static/images/diy/pi.png
         :width: 40%
@@ -69,6 +71,10 @@ You can follow along with this `written guide <https://community.start9.com/t/di
     .. youtube:: Z1EW1TVgtow
         :width: 100%
 
+.. raw:: html
+
+    <div style="margin-bottom: 48px;">
+
 Flash and Install embassyOS
 ---------------------------
-After building your hardware build, you will need a copy of embassyOS.  Head over to our :ref:`Flashing (ARM) Guide <flashing-arm>` to complete your Embassy One build.
+After building your hardware build, you will need a copy of embassyOS.  Head over to our :ref:`Flashing (Raspberry Pi) Guide <flashing-pi>` to complete your Embassy One build.

@@ -3,11 +3,11 @@
 ===================
 Flashing (Firmware)
 ===================
-This page is for existing Librem Mini owners ONLY.  This will allow you to flash the custom firmware on your Librem to neutralize the Intel Management Engine (IME) and add embassyOS-specific tweaks to your system, such that it will operate just as an Embassy Pro bought from Start9 would.  If you need hardware and want all the benefits listed here, you'll have to `buy an Embassy Pro <https://store.start9.com>`_.
+This page is for existing Librem Mini owners ONLY.  This will allow you to flash the custom firmware on your Librem to neutralize the Intel Management Engine (IME) and add embassyOS-specific tweaks to your system, such that it will operate just as an Embassy Pro bought from Start9 would.  If you need hardware and want all the benefits listed here, you'll have to `buy an Embassy Pro <https://store.start9.com/products/embassy-pro>`_.
 
 The source code can be viewed on Purism's `firmware git repo <https://source.puri.sm/firmware/pureboot/-/tree/start9-intel-wifi>`_.
 
-.. note:: You will need a USB drive, formatted FAT32
+.. note:: USB drive *must* be formatted for FAT32
 
 #. Download the firmware (``pureboot-librem_mini_v2-basic_usb_autoboot.rom.gz``) from `Purism's git repository <https://source.puri.sm/firmware/releases/-/tree/master/librem_mini_v2/custom>`_ and extract it.
 

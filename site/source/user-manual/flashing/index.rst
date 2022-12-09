@@ -4,7 +4,7 @@
 Flashing
 ========
 
-Here you will find our flashing guides for ARM (Raspberry Pi) and x86 (most desktops, laptops, mini PCs, servers, etc) architectures. Librem Mini owners can use the firmware flashing guide to get embassyOS-specific firmware.
+Here you will find our flashing guides for Raspberry Pi and x86 (most desktops, laptops, mini PCs, servers, etc) architectures. Librem Mini owners can use the firmware flashing guide to get embassyOS-specific firmware.
 
 .. raw:: html
 
@@ -13,11 +13,11 @@ Here you will find our flashing guides for ARM (Raspberry Pi) and x86 (most desk
   <div class="grid-x grid-margin-x">
 
 .. topic-box::
-  :title: Flashing (ARM)
-  :link: flashing-arm
+  :title: Flashing (Raspberry Pi)
+  :link: flashing-pi
   :icon: scylla-icon scylla-icon--apps
   :class: large-4
-  :anchor: ARM Architecture
+  :anchor: View Guide
 
   Flash embassyOS for use on a Raspberry Pi
 
@@ -26,7 +26,7 @@ Here you will find our flashing guides for ARM (Raspberry Pi) and x86 (most desk
   :link: flashing-x86
   :icon: scylla-icon scylla-icon--overview
   :class: large-4
-  :anchor: x86 Architecture
+  :anchor: View Guide
 
   Flash embassyOS for use on an x86 machine
 
@@ -43,7 +43,7 @@ Here you will find our flashing guides for ARM (Raspberry Pi) and x86 (most desk
   :hidden:
   :maxdepth: 2
 
-  flashing-arm
+  flashing-pi
   flashing-x86
   flashing-firmware
 

@@ -3,7 +3,7 @@
 ===
 DIY
 ===
-Here you will find guides for building your own Embassy!  Currently, embassyOS is supported on the Raspberry Pi (ARM architecture), and on most desktops, laptops, mini PCs, servers, and virtualization solutions (x86).
+Here you will find guides for building your own Embassy!  Currently, embassyOS supports the Raspberry Pi and on most x86 platforms (desktops, laptops, mini PCs, servers, and virtual machines).
 
 Motivation
 ----------
@@ -22,11 +22,11 @@ There are several reasons you might prefer to build your own Embassy instead of 
   <div class="grid-x grid-margin-x">
 
 .. topic-box::
-  :title: DIY (ARM)
-  :link: diy-arm
+  :title: DIY (Raspberry Pi)
+  :link: diy-pi
   :icon: scylla-icon scylla-icon--apps
   :class: large-4
-  :anchor: ARM Architecture
+  :anchor: View Guide
 
   Build an Embassy using a Raspberry Pi
 
@@ -35,7 +35,7 @@ There are several reasons you might prefer to build your own Embassy instead of 
   :link: diy-x86
   :icon: scylla-icon scylla-icon--overview
   :class: large-4
-  :anchor: x86 Architecture
+  :anchor: View Guide
 
   Build an Embassy on an x86 machine
 
@@ -43,7 +43,7 @@ There are several reasons you might prefer to build your own Embassy instead of 
   :hidden:
   :maxdepth: 1
 
-  diy-arm
+  diy-pi
   diy-x86
 
 Appreciate what we're doing?  Please consider a `donation to Start9 <https://btcpay.start9.com/apps/2Et1JUmJnDwzKncfVBXvspeXiFsa/crowdfund>`_.

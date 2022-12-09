@@ -8,8 +8,9 @@ DIY Guide (x86)
     :depth: 2 
     :local:
 
-Start9 is committed to ensuring that embassyOS is accessible.  It will always be possible to build a comprable device to those sold in the `Start9 Store <https://store.start9.com>`_.  You can use the following guide to build your own Embassy with readily available hardware.  If you need help or want to share your experience, please `head to our forums <https://community.start9.com/>`_.  Want to support Sovereign Computing?  Please consider a `donation to Start9 <https://btcpay.start9.com/apps/2Et1JUmJnDwzKncfVBXvspeXiFsa/crowdfund>`_.
+Start9 is committed to ensuring that embassyOS is accessible. This guide is to install embassyOS on most x86 platforms.  Start9's x86-based Embassy Pro is available for purchase on the `Start9 Store <https://store.start9.com/products/embassy-pro>`_.
 
+For help with this guide or to share your experience with other, please `head to our community forum <https://community.start9.com/>`_.  Want to support Sovereign Computing?  Please consider a `donation to Start9 <https://btcpay.start9.com/apps/2Et1JUmJnDwzKncfVBXvspeXiFsa/crowdfund>`_.
 
 Hardware
 --------
@@ -21,12 +22,16 @@ With x86 support, embassyOS can now be run on a very wide array of hardware.  Yo
 
 Minimum OS Requirements
 .......................
+The specs below would be acceptable for an Embassy running minimal services with minimal storage needs
+
 - Single vCPU Core 2Ghz
 - 4GB RAM
 - 64GB Storage
 
 Recommended OS Requirements
 ...........................
+If you intend to run Bitcoin or store any meaningful amount of data, you will need
+
 - Quad-Core CPU 2.5Ghz+
 - 8GB+ RAM
 - 1TB+ Storage

@@ -1,9 +1,9 @@
-.. _flashing-arm:
+.. _flashing-pi:
 
 ==============
-Flashing (ARM)
+Flashing (Raspberry Pi)
 ==============
-This guide is for flashing embassyOS to a micro SD card in order to install it to an ARM architecture device, namel the Raspberry Pi.  Support for other ARM devices will come in future.  For an up-to-date list of known-good hardware, please check out this `forum post <https://community.start9.com/t/known-good-hardware-master-list-hardware-capable-of-running-embassyos-v0-3-3/66/2>`_.
+This guide is for flashing embassyOS to a micro SD card in order to install it on a Raspberry Pi.
 
  .. note:: You will need a micro SD card of at least 16GB in size, 32GB recommended
 
