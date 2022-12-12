@@ -36,7 +36,7 @@ Create Backup
     .. figure:: /_static/images/config/embassy_backup.png
         :width: 60%
 
-#. You will see your previously created network folder backup location (or Physical Drive) available.  Click it, then click "Create Backup".
+#. You will see your previously created Network Folder backup location (or Physical Drive) available.  Click it, then click "Create Backup".
 
     .. figure:: /_static/images/config/embassy_backup2.png
         :width: 60%
