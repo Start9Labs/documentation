@@ -46,14 +46,28 @@ Powering On
 
     .. caution:: If you followed the DIY guide and built embassyOS from source code, it may take up to 20 minutes to first initialize.
 
-Claiming your Device
---------------------
+You can either boot your Embassy with no monitor (headless mode) or with a monitor, mouse, and keyboard (kiosk mode).  The Embassy One (based on a Raspberry Pi) currently does not have the ability to do kiosk mode.  The Embassy One and the Embassy Pro (x86_64) both work in headless mode, as the local ethernet network must be available to setup your Embassy.
 
-#. Ensure the device you are using (desktop/laptop or mobile) is connected to the same network as your Embassy.
+Power the device on and select which mode you would like to continue in on the tab below:
 
-    .. caution:: Sometimes a router will have a "guest WiFi network," which might be different than the network your Embassy is placed on via ethernet.
+.. tabs::
 
-#. Visit http://embassy.local from your web browser.
+    .. group-tab:: Headless Mode
+    
+        Claiming your Device
+        --------------------
+        
+        Ensure the device you are using (desktop/laptop or mobile) is connected to the same network as your Embassy.
+        
+        .. caution:: Sometimes a router will have a "guest WiFi network," which might be different than the network your Embassy is placed on via ethernet.
+        
+        Visit http://embassy.local from your web browser.
+        
+    .. group-tab:: Kiosk Mode
+        
+        Once your Embassy boots, if you've attached a monitor, keyboard and mouse, you can set it up using the graphical kiosk mode.  A familiar browser interface will display the embassyOS setup page.
+
+        .. caution:: If you followed the DIY guide and your graphics card or monitor is unsupported hardware, you may not see the intended setup screen.  If so, simply click on the "Headless Mode" tab above.
 
 #. Select "Start Fresh"
 
@@ -61,15 +75,15 @@ Claiming your Device
       :width: 60%
       :alt: Fresh Setup
 
-    .. note:: The "Recover" button is used for :ref:`migrating from 0.2.x <upgrade-02>` or :ref:`restoring from backup <backup-restore>`.
+    .. note:: The "Recover" button is used for :ref:`migrating from 0.2.x <upgrade-02>`, :ref:`restoring from backup <backup-restore>`, transferring data from a disk used in an old Embassy into a new one, or simply attaching an old Embassy's data drive to a new setup.
 
-#. Select your storage drive. There should only be one drive in the list.
+#. Select your storage drive
 
     .. figure:: /_static/images/setup/screen4-select_storage.jpg
       :width: 60%
       :alt: Select Drive
 
-#. Create a master password for your Embassy and click "Finish".
+#. Create a master password for your Embassy and click "Finish"
 
     .. warning:: Choose a strong master password.  Write it down.  Store it somewhere safe.  DO NOT LOSE IT.
 
@@ -100,8 +114,8 @@ If you are experiencing issues with setup, try the following:
 #. Confirm the Embassy emitted two sounds when powering on: a bep and a chime
 #. Confirm your phone/computer is **not** connected to a "Guest" network
 #. Confirm your phone/computer is not using a VPN
-#. Refresh the embassy.local browser page
-#. Very rarely, a router may not support mDNS. In this case:
+#. Visit or Refresh the embassy.local page in a web browser
+#. Very rarely, your firewall settings may block mDNS. In this case:
 
     - From your browser, navigate to your router configuration settings. This is usually an IP address such as 192.168.1.1. A simple web search will usually reveal how to access the router configuration settings for a particular brand.
     - Once in the router config settings, find the section that lists the devices on your network. You should see an item labeled "embassy". Take note of the associated IP address and enter it into your browser's URL field to enter the setup.
