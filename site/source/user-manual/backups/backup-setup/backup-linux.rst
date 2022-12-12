@@ -17,7 +17,7 @@ Setup Network Folder
 
     .. group-tab:: Ubuntu
 
-        Check out the video below, and follow along with the steps in this guide to setup a network folder on your Linux machine, such that you may create encrypted, private backups of all your Embassy data.
+        Check out the video below, and follow along with the steps in this guide to setup a Network Folder on your Linux machine, such that you may create encrypted, private backups of all your Embassy data.
 
         .. youtube:: LLIMC5P3NdY
           :width: 100%
