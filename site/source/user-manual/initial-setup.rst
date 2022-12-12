@@ -97,11 +97,17 @@ Power the device on and select which mode you would like to continue in on the t
       :width: 60%
       :alt: SSD Initialization
 
-#. Your Embassy is now a private website on the private web! Continue to the section on :ref:`connecting` to learn more about using your Embassy over Tor and LAN.
+#. Your Embassy is now a private website on the private web!
 
-    .. tip:: Click "Download This Page" to save your Embassy address and certificate info on your computer.
+    .. tip:: If you used headless mode, click "Download This Page" to save your Embassy address and certificate info to your computer.
 
     .. figure:: /_static/images/setup/screen7-startfresh_complete.jpg
+      :width: 60%
+      :alt: Setup Complete
+
+#. Finally, you will be able to login to your newly setup Embassy.  Continue to the section on :ref:`connecting` to learn more about using your Embassy over Tor and LAN.
+
+    .. figure:: /_static/images/setup/screen9-startfresh_complete-savedfile-go_to_embassy_login.jpg
       :width: 60%
       :alt: Setup Complete
 
