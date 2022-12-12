@@ -20,10 +20,10 @@ Select your platform for detailed instructions on how to create a Network Folder
 .. toctree::
   :maxdepth: 1
 
-  Linux network folder <backup-setup/backup-linux>
-  Mac network folder <backup-setup/backup-mac>
-  Windows network folder <backup-setup/backup-windows>
-  Synology network folder <backup-setup/backup-synology>
+  Linux Network Folder <backup-setup/backup-linux>
+  Mac Network Folder <backup-setup/backup-mac>
+  Windows Network Folder <backup-setup/backup-windows>
+  Synology Network Folder <backup-setup/backup-synology>
   Physical Drive via Embassy <backup-setup/backup-physical>
 
 .. _backup-create:
