@@ -15,7 +15,7 @@ Backing up your Embassy is easy and secure. Backups are encrypted with your mast
 Setup Device
 ------------
 
-Select your platform for detailed instructions on how to create a network folder for creating backups (recommended).  Otherwise, you may backup to a physical drive, attached in addition to your main Embassy SSD.
+Select your platform for detailed instructions on how to create a Network Folder for creating backups (recommended).  Otherwise, you may backup to a physical drive, attached in addition to your main Embassy SSD.
 
 .. toctree::
   :maxdepth: 1
