@@ -1,15 +1,15 @@
 .. _backup-linux:
 
-=======================
-Linux LAN Shared Folder
-=======================
+====================
+Linux Network Folder
+====================
 
 .. contents::
   :depth: 2 
   :local:
 
-Setup LAN Shared Folder
------------------------
+Setup Network Folder
+--------------------
 
 .. note:: This guide is for Ubuntu only.  For Linux Mint, click on "Mint", or for different distros such as Arch, Debian, Pop-OS, PureOS, etc, click "Other Linux" below.
 
@@ -17,7 +17,7 @@ Setup LAN Shared Folder
 
     .. group-tab:: Ubuntu
 
-        Check out the video below, and follow along with the steps in this guide to setup a LAN Shared folder on your Linux machine, such that you may create encrypted, private backups of all your Embassy data.
+        Check out the video below, and follow along with the steps in this guide to setup a Network Folder on your Linux machine, such that you may create encrypted, private backups of all your Embassy data.
 
         .. youtube:: LLIMC5P3NdY
           :width: 100%
