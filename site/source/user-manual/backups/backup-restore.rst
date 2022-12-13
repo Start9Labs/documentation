@@ -9,12 +9,12 @@ Restore
     .. figure:: /_static/images/config/restore0.png
         :width: 60%
 
-#. Select existing backup from either LAN or Physical. In this example, we'll select a LAN backup.
+#. Select existing backup from either Network Folders or Physical. In this example, we'll select a Network Folder backup.
 
     .. figure:: /_static/images/config/restore1.png
         :width: 60%
 
-#. Click "Restore Backup" and enter your master password.
+#. Enter your master password.
 
     .. figure:: /_static/images/config/restore2.png
         :width: 60%
