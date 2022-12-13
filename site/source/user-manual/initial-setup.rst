@@ -13,16 +13,7 @@ Powering On
 
 #. Connect your Embassy to power and Ethernet.
 
-    .. tip:: To avoid networking issues, it is recommended to use your `primary` router, not an extender or mesh router.
-
-    .. caution:: If there is something wrong with your hardware setup, such as ethernet being unavailable, you will hear this sound:
-      
-      .. raw:: HTML
-
-        <audio controls>
-          <source src="/_static/sounds/FLATLINE.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
+.. _sounds-bepchime:
 
 #. If all is well, you will hear 2 distinct sounds:
 
@@ -44,7 +35,9 @@ Powering On
 
     * "chime" - Embassy is ready
 
-    .. caution:: If you followed the DIY guide and built embassyOS from source code, it may take up to 20 minutes to first initialize.
+    .. caution:: Glance through the :ref:`troubleshooting<setup-troubleshooting>` section if you hear any different sounds.
+      
+      If you followed the DIY guide and built embassyOS from source code, it may take up to 20 minutes to first initialize.
 
 You can either boot your Embassy with no monitor (headless mode) or with a monitor, mouse, and keyboard (kiosk mode).  The Embassy One (based on a Raspberry Pi) currently does not have the ability to do kiosk mode.  The Embassy One and the Embassy Pro (x86_64) both work in headless mode, as the local ethernet network must be available to setup your Embassy.
 
@@ -111,19 +104,32 @@ Power the device on and select which mode you would like to continue in on the t
       :width: 60%
       :alt: Setup Complete
 
+.. _setup-troubleshooting:
+
 Troubleshooting
 ---------------
 
 If you are experiencing issues with setup, try the following:
 
 #. Confirm that the Embassy is plugged into both power and Ethernet
-#. Confirm the Embassy emitted two sounds when powering on: a bep and a chime
+
+   - An ethernet network with DHCP server must be unavailable at setup.  Most routers provide one.  If such ethernet connectivity is not available, or there is another hardware issue, you may hear this sound:
+      
+      .. raw:: HTML
+
+        <audio controls>
+          <source src="/_static/sounds/FLATLINE.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+#. Confirm the Embassy emitted two sounds when powering on: :ref:`a bep and a chime<sounds-bepchime>`
 #. Confirm your phone/computer is **not** connected to a "Guest" network
 #. Confirm your phone/computer is not using a VPN
 #. Visit or Refresh the embassy.local page in a web browser
+#. To avoid networking issues, it is recommended to use your `primary` router, not an extender or mesh router.
 #. Very rarely, your firewall settings may block mDNS. In this case:
 
     - From your browser, navigate to your router configuration settings. This is usually an IP address such as 192.168.1.1. A simple web search will usually reveal how to access the router configuration settings for a particular brand.
     - Once in the router config settings, find the section that lists the devices on your network. You should see an item labeled "embassy". Take note of the associated IP address and enter it into your browser's URL field to enter the setup.
+    - In some cases, if you are working with a very old image of embassyOS, the device name will show up as `start9-shortcode`.  If this is the case, and you want to start fresh, wiping out the previous install and all data residing on it, :ref:`flash the newest version of embassyOS<flashing>`.
 
 If you are still having issues, please :ref:`contact support <contact>`.
