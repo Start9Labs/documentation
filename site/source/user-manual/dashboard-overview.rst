@@ -49,6 +49,8 @@ Use this tab to customize and manage your Embassy.
     .. figure:: /_static/images/walkthrough/systemtab.png
         :width: 60%
 
+Read below for a summary of each section within the System Tab.
+
 Backups
 =======
 
