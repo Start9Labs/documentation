@@ -14,45 +14,25 @@ How to Update
 -------------
 
 #. When a new version of embassyOS is available, a badge will appear on the "Embassy" tab.
-#. Go to *Embassy > Software Update*.
+#. Go to *System > Software Update*.
 
     .. warning:: Ensure you have a stable Internet connection before beginning an OS update, and do not unplug your Embassy while embassyOS is downloading.
 
 #. Read the release notes and click "Begin Update".
 #. While the new version of embassyOS is downloading, you may continue to use your device as usual.
 #. Once the download is complete, you will be prompted to restart Embassy.
-#. After restart, but before the web interface becomes available again, there may be a brief upgrade period of up to thirty minutes where data is transitioned.  You will hear this sound every ten seconds until the upgrade is complete:
-
-    .. raw:: HTML
-
-        <audio controls>
-          <source src="/_static/sounds/UPDATING.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-
-
+#. After restart, but before the web interface becomes available again, there may be an upgrade period of up to thirty minutes while data is transitioned.  
   **Do not unplug or otherwise power off the embassy during this period.**
-
-#. Next, you may be prompted to refresh the browser window.
-
-Disabling Auto Check for Updates
---------------------------------
-
-By default, Embassy will automatically check for available updates. To disable this check, do the following:
-
-#. Navigate to the *Embassy > Preferences*.
-#. Click "Auto Check for Updates" and click "Disable".
-
-    .. note:: With auth check for updates disabled, you will need to manually check for updates. This can be done by going to *Embassy > Software Update*.
-
-This guide will cover how to recover existing Embassy 0.3.x service and user data (on an SSD) to a new OS install (sd card).
+Next, you may be prompted to refresh the browser window.
 
 .. _manual-update:
 
 Manual Update by Re-flashing
 ----------------------------
 
-#. Obtain the latest copy of embassyOS with your product key included, either by `downloading <https://github.com/Start9Labs/embassy-os/releases/latest>`_ or `building from source <https://github.com/Start9Labs/embassy-os/tree/latest/build>`_.
+    .. tip:: This guide will cover how to recover existing Embassy 0.3.x service and user data with a newly flashed SD card or Embassy Pro.
+
+#. Obtain the latest copy of embassyOS either by `downloading <https://github.com/Start9Labs/embassy-os/releases/latest>`_ or `building from source <https://github.com/Start9Labs/embassy-os/tree/latest/build>`_.
 #. :ref:`Flash the downloaded image <flashing>` to your microSD card.
 #. Insert the microSD card into your Embassy and power it on.
 
@@ -62,37 +42,32 @@ Manual Update by Re-flashing
 
 #. Select "Recover"
 
-   .. figure:: /_static/images/setup/screen0-startfresh_or_recover.jpg
+   .. figure:: /_static/images/setup/screen0-startfresh_or_recover.png
       :width: 60%
 
 #. Select "Use Existing Drive"
 
-   .. figure:: /_static/images/setup/screen3-use_existing.jpg
+   .. figure:: /_static/images/setup/screen3-use_existing.png
       :width: 60%
 
-#. Assuming you have you fully-intact embassyOS data drive plugged in, it will be automatically detected and begin the upgrade.
+#. Select the drive you were using previously.
 
-   .. raw:: HTML
+   .. figure:: /_static/images/setup/screen4-use_existing_drive_selection.png
+      :width: 60%
 
-      <audio controls>
-        <source src="/_static/sounds/UPDATING.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-
-      <br />This sound will play every ten seconds until the upgrade is done.  <b>Do not unplug or otherwise power off the embassy during this period.</b><br /><br />
 
 #. Create a master password for your Embassy and click "Finish."
 
     .. warning:: Choose a strong master password.  If you don't wish to change your password from the previous version, just set it to the same thing it was before you began the upgrade.  Write this password down.  Store it somewhere safe.  DO NOT LOSE IT.
 
-   .. figure:: /_static/images/setup/screen5-set_password.jpg
+   .. figure:: /_static/images/setup/screen5-set_password.png
       :width: 60%
       :alt: Create A Password
 
 #. Your Embassy is now on the new version and the old version's data has been migrated to it!  Continue to the section on :ref:`connecting` to learn more about using your Embassy over Tor and LAN.
 
-    .. tip:: You will see the following screen and also be prompted to save your Embassy address and certificate info on your computer.  We recommand you backup this html file somewhere safe so that you can reference it if you ever need to connect to your Embassy from a new computer.
+    .. tip:: The "Go to Emassy Login" button will not be usable until you click download. The address information and root certificate contained in this download will not have changed from what you were using before this whole process so if you do not require it you can close this tab and simply go to your Embassy's Lan or Tor address.
 
-    .. figure:: /_static/images/setup/screen7-startfresh_complete.jpg
+    .. figure:: /_static/images/setup/setup_complete_pre_download.png
       :width: 60%
       :alt: Setup Complete
