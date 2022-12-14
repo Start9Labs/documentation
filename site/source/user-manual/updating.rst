@@ -21,7 +21,7 @@ How to Update
 #. Read the release notes and click "Begin Update".
 #. While the new version of embassyOS is downloading, you may continue to use your device as usual.
 #. Once the download is complete, you will be prompted to restart Embassy.
-#. After restart, but before the web interface becomes available again, there may be a brief upgrade period of up to thirty minutes where data is transitioned.  
+#. After restart, but before the web interface becomes available again, there may be an upgrade period of up to thirty minutes while data is transitioned.  
   **Do not unplug or otherwise power off the embassy during this period.**
 Next, you may be prompted to refresh the browser window.
 
