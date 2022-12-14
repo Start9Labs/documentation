@@ -13,16 +13,7 @@ Powering On
 
 #. Connect your Embassy to power and Ethernet.
 
-    .. tip:: To avoid networking issues, it is recommended to use your `primary` router, not an extender or mesh router.
-
-    .. caution:: If there is something wrong with your hardware setup, such as ethernet being unavailable, you will hear this sound:
-      
-      .. raw:: HTML
-
-        <audio controls>
-          <source src="/_static/sounds/FLATLINE.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
+.. _sounds-bepchime:
 
 #. If all is well, you will hear 2 distinct sounds:
 
@@ -44,16 +35,32 @@ Powering On
 
     * "chime" - Embassy is ready
 
-    .. caution:: If you followed the DIY guide and built embassyOS from source code, it may take up to 20 minutes to first initialize.
+    .. caution:: Glance through the :ref:`troubleshooting<setup-troubleshooting>` section if you hear any different sounds.
+      
+      If you followed the DIY guide and built embassyOS from source code, it may take up to 20 minutes to first initialize.
 
-Claiming your Device
---------------------
+You can either boot your Embassy with no monitor (headless mode) or with a monitor, mouse, and keyboard (kiosk mode).  The Embassy One (based on a Raspberry Pi) currently does not have the ability to do kiosk mode.  The Embassy One and the Embassy Pro (x86_64) both work in headless mode, as the local ethernet network must be available to setup your Embassy.
 
-#. Ensure the device you are using (desktop/laptop or mobile) is connected to the same network as your Embassy.
+Power the device on and select which mode you would like to continue in on the tab below:
 
-    .. caution:: Sometimes a router will have a "guest WiFi network," which might be different than the network your Embassy is placed on via ethernet.
+.. tabs::
 
-#. Visit http://embassy.local from your web browser.
+    .. group-tab:: Headless Mode
+    
+        Claiming your Device
+        --------------------
+        
+        Ensure the device you are using (desktop/laptop or mobile) is connected to the same network as your Embassy.
+        
+        .. caution:: Sometimes a router will have a "guest WiFi network," which might be different than the network your Embassy is placed on via ethernet.
+        
+        Visit http://embassy.local from your web browser.
+        
+    .. group-tab:: Kiosk Mode
+        
+        Once your Embassy boots, if you've attached a monitor, keyboard and mouse, you can set it up using the graphical kiosk mode.  A familiar browser interface will display the embassyOS setup page.
+
+        .. caution:: If you followed the DIY guide and your graphics card or monitor is unsupported hardware, you may not see the intended setup screen.  If so, simply click on the "Headless Mode" tab above.
 
 #. Select "Start Fresh"
 
@@ -61,15 +68,15 @@ Claiming your Device
       :width: 60%
       :alt: Fresh Setup
 
-    .. note:: The "Recover" button is used for :ref:`migrating from 0.2.x <upgrade-02>` or :ref:`restoring from backup <backup-restore>`.
+    .. note:: The "Recover" button is used for :ref:`migrating from 0.2.x <upgrade-02>`, :ref:`restoring from backup <backup-restore>`, transferring data from a disk used in an old Embassy into a new one, or simply attaching an old Embassy's data drive to a new setup.
 
-#. Select your storage drive. There should only be one drive in the list.
+#. Select your storage drive
 
     .. figure:: /_static/images/setup/screen4-select_storage.jpg
       :width: 60%
       :alt: Select Drive
 
-#. Create a master password for your Embassy and click "Finish".
+#. Create a master password for your Embassy and click "Finish"
 
     .. warning:: Choose a strong master password.  Write it down.  Store it somewhere safe.  DO NOT LOSE IT.
 
@@ -83,13 +90,21 @@ Claiming your Device
       :width: 60%
       :alt: SSD Initialization
 
-#. Your Embassy is now a private website on the private web! Continue to the section on :ref:`connecting` to learn more about using your Embassy over Tor and LAN.
+#. Your Embassy is now a private website on the private web!
 
-    .. tip:: Click "Download This Page" to save your Embassy address and certificate info on your computer.
+    .. tip:: If you used headless mode, click "Download This Page" to save your Embassy address and certificate info to your computer.
 
     .. figure:: /_static/images/setup/screen7-startfresh_complete.jpg
       :width: 60%
       :alt: Setup Complete
+
+#. Finally, you will be able to login to your newly setup Embassy.  Continue to the section on :ref:`connecting` to learn more about using your Embassy over Tor and LAN.
+
+    .. figure:: /_static/images/setup/screen9-startfresh_complete-savedfile-go_to_embassy_login.jpg
+      :width: 60%
+      :alt: Setup Complete
+
+.. _setup-troubleshooting:
 
 Troubleshooting
 ---------------
@@ -97,13 +112,24 @@ Troubleshooting
 If you are experiencing issues with setup, try the following:
 
 #. Confirm that the Embassy is plugged into both power and Ethernet
-#. Confirm the Embassy emitted two sounds when powering on: a bep and a chime
+
+   - An ethernet network with DHCP server must be available at setup.  Most routers provide one.  If such ethernet connectivity is not available, or there is another hardware issue, you may hear this sound:
+      
+      .. raw:: HTML
+
+        <audio controls>
+          <source src="/_static/sounds/FLATLINE.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+#. Confirm the Embassy emitted two sounds when powering on: :ref:`a bep and a chime<sounds-bepchime>`
 #. Confirm your phone/computer is **not** connected to a "Guest" network
 #. Confirm your phone/computer is not using a VPN
-#. Refresh the embassy.local browser page
-#. Very rarely, a router may not support mDNS. In this case:
+#. Visit or Refresh the embassy.local page in a web browser
+#. To avoid networking issues, it is recommended to use your `primary` router, not an extender or mesh router.
+#. Very rarely, your firewall settings may block mDNS. In this case:
 
     - From your browser, navigate to your router configuration settings. This is usually an IP address such as 192.168.1.1. A simple web search will usually reveal how to access the router configuration settings for a particular brand.
     - Once in the router config settings, find the section that lists the devices on your network. You should see an item labeled "embassy". Take note of the associated IP address and enter it into your browser's URL field to enter the setup.
+    - In some cases, if you are working with a very old image of embassyOS, the device name will show up as `start9-shortcode`.  If this is the case, and you want to start fresh, wiping out the previous install and all data residing on it, :ref:`flash the newest version of embassyOS<flashing>`.
 
 If you are still having issues, please :ref:`contact support <contact>`.
