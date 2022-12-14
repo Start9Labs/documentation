@@ -113,7 +113,7 @@ If you are experiencing issues with setup, try the following:
 
 #. Confirm that the Embassy is plugged into both power and Ethernet
 
-   - An ethernet network with DHCP server must be unavailable at setup.  Most routers provide one.  If such ethernet connectivity is not available, or there is another hardware issue, you may hear this sound:
+   - An ethernet network with DHCP server must be available at setup.  Most routers provide one.  If such ethernet connectivity is not available, or there is another hardware issue, you may hear this sound:
       
       .. raw:: HTML
 
