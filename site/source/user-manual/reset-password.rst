@@ -30,7 +30,7 @@ Reset Your Password
    .. figure:: /_static/images/setup/screen4-use_existing_drive_selection.png
       :width: 60%
 
-#. Enter and confirm a new password. The surrounding boxes will turn green once the passwords are long enough and they both match.
+#. Enter and confirm a new password. This time, save it somewhere safe!
 
    .. figure:: /_static/images/setup/screen5-set_password.jpg
       :width: 60%
