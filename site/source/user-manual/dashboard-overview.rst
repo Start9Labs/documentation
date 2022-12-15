@@ -23,7 +23,7 @@ When connecting it will look like this:
     .. figure:: /_static/images/walkthrough/connection_status_connecting.png
         :width: 60%
 
-When disconnected it will look like this:
+If you have no connection, it will look like this:
 
     .. figure:: /_static/images/walkthrough/connection_status_nointernet.png
         :width: 60%
