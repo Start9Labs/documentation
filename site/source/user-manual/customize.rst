@@ -11,13 +11,13 @@ Customize
 Name Your Device
 ----------------
 
-#. Go to the *Embassy > Preferences*.
+#. Go to *System > Set Device Name*.
 
     .. figure:: /_static/images/config/basic-config1.png
       :width: 60%
       :alt: Preferences
 
-#. Click "Device Name", set to desired name, and click ``Save``
+#. Enter the desired name and click ``Save``
 
     .. figure:: /_static/images/config/basic-config2.png
       :width: 60%
