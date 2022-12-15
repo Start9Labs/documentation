@@ -18,9 +18,14 @@ When connected it will look like this:
     .. figure:: /_static/images/walkthrough/connection_status_alive.png
         :width: 60%
 
+When connecting it will look like this:
+
+    .. figure:: /_static/images/walkthrough/connection_status_connecting.png
+        :width: 60%
+
 When disconnected it will look like this:
 
-    .. figure:: /_static/images/walkthrough/connection_status_dead.png
+    .. figure:: /_static/images/walkthrough/connection_status_nointernet.png
         :width: 60%
 
 Services Tab
