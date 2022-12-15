@@ -17,25 +17,31 @@ Reset Your Password
 
 #. Select "Recover".
 
-   .. figure:: /_static/images/setup/screen0-startfresh_or_recover.jpg
+   .. figure:: /_static/images/setup/screen0-startfresh_or_recover.png
       :width: 60%
 
 #. Select "Use Existing Drive".
 
-   .. figure:: /_static/images/setup/screen1-restore_or_useexisting.jpg
+   .. figure:: /_static/images/setup/screen3-use_existing.png
       :width: 60%
 
-#. Select your Embassy data drive
+#. Select your Embassy data drive.
 
-   .. figure:: /_static/images/setup/screen4-select_storage.jpg
+   .. figure:: /_static/images/setup/screen4-use_existing_drive_selection.png
       :width: 60%
 
-#. Enter and confirm a new password.  This time, save it somewhere safe!
+#. Enter and confirm a new password. The surrounding boxes will turn green once the passwords are long enough and they both match.
 
    .. figure:: /_static/images/setup/screen5-set_password.jpg
       :width: 60%
 
+#. Your Embassy will initialize again (all previous data will be recovered).
+
+   .. figure:: /_static/images/setup/screen6-storage_initialize.jpg
+      :width: 60%
+
 #. Your password change is complete!
 
-   .. figure:: /_static/images/setup/pw_reset-s6-reset_complete.jpg
+    .. tip:: The "Go to Emassy Login" button will not be usable until you click download. The address information and root certificate contained in this download will not have changed from what you were using before this whole process so if you do not require it you can close this tab and simply go to your Embassy's Lan or Tor address.
+   .. figure:: /_static/images/setup/setup_complete_pre_download.png
       :width: 60%
