@@ -11,7 +11,7 @@ Customize
 Name Your Device
 ----------------
 
-#. Go to the *System > Set Device Name*.
+#. Go to *System > Set Device Name*.
 
     .. figure:: /_static/images/config/basic-config1.png
       :width: 60%
