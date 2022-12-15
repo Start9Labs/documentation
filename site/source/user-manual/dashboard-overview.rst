@@ -8,6 +8,21 @@ Dashboard Overview
   :depth: 2 
   :local:
 
+Connection Status
+-----------------
+
+In the bottom left of your screen you can monitor whether or not you are connected to your Embassy.
+
+When connected it will look like this:
+
+    .. figure:: /_static/images/walkthrough/connection_status_alive.png
+        :width: 60%
+
+When disconnected it will look like this:
+
+    .. figure:: /_static/images/walkthrough/connection_status_dead.png
+        :width: 60%
+
 Services Tab
 ------------
 
@@ -19,7 +34,9 @@ Use this tab to view and access your installed services.
 Marketplace Tab
 ---------------
 
-Use this tab to access your preferred Marketplace, where you can discover and install new services, or update existing services. Check out the `live Marketplace <https://marketplace.start9.com>`_.
+Use this tab to access your preferred Marketplace, where you can discover and install new services, or update existing services. 
+
+Check out a live version of Start9's Official Marketplace `here <https://marketplace.start9.com>`_.
 
     .. figure:: /_static/images/walkthrough/markettab.png
         :width: 60%
@@ -59,7 +76,7 @@ The Backups section allows you to create and restore :ref:`Embassy backups <back
 Manage
 ======
 
-The Manage section gives you access to Device Preferences, :ref:`connecting-lan`, :ref:`ssh`, :ref:`wifi`, and Service Sideloading.
+The Manage section gives you access to :ref:`updating-eos`, Software Updates, Device Preferences, :ref:`connecting-lan`, :ref:`ssh`, :ref:`wifi`, and Service Sideloading.
 
 Insights
 ========
