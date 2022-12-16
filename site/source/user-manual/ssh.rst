@@ -43,15 +43,23 @@ Registering an SSH Key
 #. Click "Add New Key".
 #. Back in the terminal of your workstation, display and copy your SSH *public* key (created above):
 
+    On Mac simply copy your key to clipboard with:
+  
     .. code-block:: bash
 
-        cat ~/.ssh/id_ed25519.pub
+        pbcopy < ~/.ssh/id_ed25519.pub
 
-#. Copy the whole resulting line that looks similar to:
+    On Linux:
+  
+      .. code-block:: bash
 
-    .. code-block:: bash
+          cat ~/.ssh/id_ed25519.pub
 
-        ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINH3tqX71XsPlzYhhoo9CqAP2Yx7gsGTh43bQXr1zqoq user@ema.il
+    Copy the whole resulting line that looks similar to:
+
+      .. code-block:: bash
+
+          ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINH3tqX71XsPlzYhhoo9CqAP2Yx7gsGTh43bQXr1zqoq user@ema.il
 
 #. Paste that line into the `Add New Key` text field of your Embassy
 
