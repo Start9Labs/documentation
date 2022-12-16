@@ -44,8 +44,9 @@ Installing a Service
 
     .. figure:: /_static/images/services/service2.png
         :width: 60%
+        
 
-* You may click *View Service* at any time to view install progress.
+* You may click *View Installed* at any time to view install progress.
 
     .. figure:: /_static/images/services/service3.png
         :width: 60%
@@ -55,7 +56,13 @@ Updating a Service
 
 .. note:: embassyOS will **NEVER** update a service without your consent.
 
-To see if an update is available for a service, you can visit the *Updates* section of the Marketplace or by visiting its Marketplace listing.
+To see if an update is available for a service, you can visit the *Updates* tab or visit the service's Marketplace listing.
+
+    .. figure:: /_static/images/services/updatestab2.png
+        :width: 60%
+
+    .. figure:: /_static/images/services/update-marketplace-listing.png
+        :width: 60%
 
 If an update is available, simply click "Update" and confirm the action.
 
@@ -114,19 +121,6 @@ Properties can contain both static and dynamic information about a service. They
     * a **copy** icon for copying the value to your clipboard.
     * a **QR** icon for viewing the value as a QR code.
 
-Service Interfaces
-------------------
-
-Interfaces are URLs that an installed service uses to communicate in various ways with other software. Many Services will only have one interface, perhaps with a Tor and LAN address, to denote where it is hosted / accessed. Other services, such as Bitcoin or Lightning Nodes, may have several interfaces for different use cases.
-
-.. figure:: /_static/images/services/service-ints.png
-  :width: 60%
-
-* To view the Interfaces for a particular service, navigate to *Services > [Service Name] > Properties*. From there you can copy a URL to your clipboard for use with external software.
-
-.. figure:: /_static/images/services/service-ints0.png
-  :width: 60%
-
 Service Actions
 ---------------
 
@@ -148,6 +142,16 @@ Custom Actions
 ..............
 
 Service developers can define any number of arbitrary actions for their service.
+
+Service Interfaces
+------------------
+
+Interfaces are URLs that an installed service uses to communicate in various ways with other software. Many Services will only have one interface, perhaps with a Tor and LAN address, to denote where it is hosted / accessed. Other services, such as Bitcoin or Lightning Nodes, may have several interfaces for different use cases.
+
+.. figure:: /_static/images/services/service-ints.png
+  :width: 60%
+
+* To view the Interfaces for a particular service, go to *Services > [Service Name] > Interfaces*
 
 Service logs
 ------------
