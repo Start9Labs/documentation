@@ -6,7 +6,7 @@ Setting up WiFi
 
 Although a wired (ethernet) connection is recommended for best performance, you can connect your Embassy with a wireless connection if you prefer. Follow the directions below to add one or more WiFi networks to you Embassy.
 
-#. Go to *Embassy > WiFi*.
+#. Go to *System > WiFi*.
 
    .. figure:: /_static/images/config/wifi0.png
     :width: 60%
