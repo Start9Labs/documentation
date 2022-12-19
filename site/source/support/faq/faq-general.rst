@@ -51,9 +51,9 @@ The list of services will grow rapidly over the coming months and years, such th
 
 What is embassyOS?
 ------------------
-embassyOS is a new kind of Operating System (OS). It is built from the ground up to allow anyone to easily run their own "cloud," become independent from Big Tech, and own their own data. embassyOS allows anyone to easily host their own software services.
+embassyOS is a new kind of Operating System (OS). It is a Linux distribution based on `PureOS <https://pureos.net/>`_ that allows anyone to easily run their own "cloud," become independent from Big Tech, and own their own data. embassyOS allows anyone to easily host their own software services.
 
-embassyOS is a custom-built Linux distribution with a suite of software tools which make it easy to:
+embassyOS is a suite of software tools built from the ground up to make it easy to:
 
 * Install, uninstall, and upgrade services from a Marketplace (similar to your phone's app store)
 * Manage and run services that YOU own and control
@@ -76,7 +76,7 @@ A Service can be any piece of software added to the Marketplace.  Unlike "apps,"
 
 Does the Embassy ship worldwide?
 --------------------------------
-We ship everywhere that DHL ships.  Please consider that in some countries, the VAT and Customs fees are so ridiculous that they cost as much as Embassy itself or more.  You may wish to consider buying your hardware locally and building your own device instead.  Please see the :ref:`DIY<diy>` page for details.
+We ship everywhere that DHL ships.  Please consider that in some countries, the VAT and Customs fees are so ridiculous that they cost as much as Embassy itself or more.  You may wish to consider buying your hardware locally and building your own device, downloading embassyOS from our github, and `donating<https://donate.start9.com/>`_ to us.  Please see the :ref:`DIY<diy>` page for details.
 
 Does the Embassy have international electrical plugs?
 -----------------------------------------------------
