@@ -24,7 +24,7 @@ No.  Your Embassy only needs to be plugged into power and internet, just like yo
 
 Do I plug in a monitor, keyboard, and mouse?
 --------------------------------------------
-No.  Embassy is headless (has no display), and is accessed via the web browser.
+As of embassyOS v0.3.3 (December 2022), you can now hook up a monitor, keyboard and mouse to enter Kiosk mode to x86_64 computers.  The Raspberry Pi-based Embassy One is still headless (has no display), and is accessed via the web browser.
 
 How much storage does Embassy have?
 -----------------------------------
@@ -44,7 +44,7 @@ Currently no, but we have plans for a feature that will enable Embassies to prov
 
 How does Embassy compare to other Bitcoin nodes or personal servers?
 ------------------------------------------------------------------------
-The cheapest way to run a Bitcoin/Lightning node is to buy a Raspberry Pi (or equivalent), compile the software from source yourself, and host everything on Tor.  This takes even technical people significant time to accomplish. On the other end of the spectrum is something like Embassy, which "just works". In between is stuff like MyNode, Nodl, RoninDojo, Umbrel, and Raspiblitz, which all require some degree of command line effort and network configuration. The biggest benefit of Embassy is that it is infinitely extensible to all of open-source, self-hosted software. The service listing will expand enormously over time in ways the other platforms may choose not to, or have difficulty implementing.
+The cheapest way to run a Bitcoin/Lightning node is to buy a Raspberry Pi (or equivalent), download or compile embassyOS for free, and host everything on Tor.  This takes even technical people significant time to accomplish. On the other end of the spectrum is something like Embassy, which "just works". In between is stuff like MyNode, Nodl, RoninDojo, Umbrel, and Raspiblitz, which all require some degree of command line effort and network configuration. The biggest benefit of Embassy is that it is infinitely extensible to all of open-source, self-hosted software. The service listing will expand enormously over time in ways the other platforms may choose not to, or have difficulty implementing.
 
 Would you consider (Umbrel, Nodl, RoninDojo, etc) a competitor to Embassy, or are they different enough to be compatible?
 --------------------------------------------------------------------------------------------------------------------------

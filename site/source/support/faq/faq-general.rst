@@ -39,9 +39,9 @@ This `podcast <https://www.youtube.com/watch?v=aylDowaSdzU>`_ may help expound u
 
 How does Embassy work?
 ----------------------
-The current model Embassy runs on Raspberry Pi 4B hardware with a Cortex-a72 CPU, 8GB of RAM, has 2.4ghz and 5.0ghz IEEE 802.11AC wireless capabilities, an internal speaker for audio feedback of system operations, and an external SSD. It also features a high endurance MicroSD card, on which the operating system software is installed.
+The current model Embassy One runs on Raspberry Pi 4B hardware with a Cortex-a72 CPU, 8GB of RAM, has 2.4ghz and 5.0ghz IEEE 802.11AC wireless capabilities, ethernet, an internal speaker for audio feedback of system operations, and an SSD. It also features a high endurance MicroSD card, on which the operating system software is installed.  The Embassy Pro sports an Intel Core i7-10510U (Comet Lake), Active (fan) Cooling, 4 Cores, 8 Threads, 1.8GHz (up to 4.9GHz) (with Intel Management Engine disabled for enhanced privacy and security), Intel UHD Graphics 620, 32GB of RAM, a 2TB M.2 NVMe, and Intel ethernet and WiFi 6 AX200 (1Gbps+).  You could also bring your own hardware (on arm64 or x86_64 processors) and download embassyOS for free.
 
-embassyOS is based on Ubuntu Server and handles all operations of your Embassy device. This core element of the technology stack is what enables you to set up, login, access your Embassy’s dashboard, and install services.
+embassyOS is based on PureOS and handles all operations of your Embassy device. This core element of the technology stack is what enables you to set up, login, access your Embassy’s dashboard, and install services.
 
 One of these operations is creating and managing Tor addresses, which are uniquely attributed to each service you download, as well as to the Embassy device itself. You can see your uniquely generated Tor address when you complete the setup process using the Setup App. This address is how you view your Embassy’s dashboard, which is actually just a website served up from your Embassy itself! It is authenticated, of course, so only you can access it.
 
@@ -51,11 +51,15 @@ Once on Embassy's web page, you can choose what services to install. Then, each 
 
 The list of services will grow rapidly over the coming months and years, such that many things you currently do using cloud-based third party servers can be just as easily accomplished using your own personal cloud serving your own personal apps and storing your own private data. No trusted third parties at all.
 
+Do I have to buy hardware from Start9?
+--------------------------------------
+No, as of embassyOS v0.3.3, you can repurpose old hardware or bring your own server, and simply install embassyOS from a microSD card or USB thumb drive.  Arm64 and x86_64 computers are supported, as long as the disk you use supports GPT (the Gnu Partition Table) - which practically means any modern disk.  We strongly recommend an SSD for performance reasons, especially for the Bitcoin stack.
+
 What is embassyOS?
 ------------------
 embassyOS is a new kind of Operating System (OS). It is built from the ground up to allow anyone to easily run their own "cloud," become independent from Big Tech, and own their own data. embassyOS allows anyone to easily host their own software services.
 
-embassyOS is a custom-built Linux distribution, which is a beefed up version of `Raspberry Pi OS <https://www.raspberrypi.com/software/operating-systems/>`_, along with a suite of software tools which make it easy to:
+embassyOS is a custom-built Linux distribution, based on `PureOS <https://pureos.net/>`_, along with a suite of software tools which make it easy to:
 
 * Install, uninstall, and upgrade services from a Marketplace (similar to your phone's app store)
 * Manage and run services that YOU own and control
@@ -78,7 +82,7 @@ A Service can be any piece of software added to the Marketplace.  Unlike "apps,"
 
 Does the Embassy ship worldwide?
 --------------------------------
-No.  We ship everywhere that DHL ships, with the unfortunate exception of Europe, where the VAT and Customs are so ridiculous that they cost as much as Embassy itself or more.  Please consider buying your hardware locally, and purchasing embassyOS as a download from us instead.  Please see the :ref:`DIY<diy>` page for details.
+No.  We ship everywhere that DHL ships, with the unfortunate exception of Europe, where the VAT and Customs are so ridiculous that they cost as much as Embassy itself or more.  Please consider buying your hardware locally, downloading embassyOS from our github, and `donating<https://donate.start9.com/>`_ to us.  Please see the :ref:`DIY<diy>` page for details.
 
 Does the Embassy have international electrical plugs?
 -----------------------------------------------------
