@@ -28,7 +28,7 @@ Download it from html page you saved at the completion of :ref:`Initial Setup<in
 Option 2
 ........
 
-visit your Embassy over :ref:`Tor<connecting-tor>` and navigate to *Embassy > LAN*, then click "Download".
+Navigate to *System > LAN*, then click "Download Certificate".
 
     .. figure:: /_static/images/ssl/embassy_lan_setup.png
       :width: 60%
