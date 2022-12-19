@@ -4,6 +4,15 @@
 Initial Setup
 =============
 
+Check out the video below for a guide on setting up your Embassy!
+
+        .. youtube:: HI9WDq0tWm4
+          :width: 60%
+
+        .. raw:: html
+
+            <br/><br/>
+
 .. contents::
   :depth: 2
   :local:
