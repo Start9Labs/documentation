@@ -10,6 +10,12 @@ It is critical to Start9's mission that Start9 is **not** a central point of fai
 
 .. note:: Currently this change will only permit the downloading of *services* from alternative marketplaces. embassyOS itself may only be obtained from Start9.
 
-#. Go to *Embassy > Marketplace Settings*.
+#. Go to *Marketplace > Change*.
 
-#. Click "Add Alternative Marketplace" and enter the URL of your desired Marketplace. You may connect immediately, or save for later use.
+    .. figure:: /_static/images/marketplaces/marketplace-switch0.png
+        :width: 60%
+
+#. Click "Add custom registry" and enter the URL of your desired Marketplace. You may connect immediately, or save for later use.
+
+    .. figure:: /_static/images/marketplaces/marketplace-switch1.png
+        :width: 60%
