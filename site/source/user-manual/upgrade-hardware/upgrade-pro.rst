@@ -86,6 +86,8 @@ You will need a high quality USB-A to USB-A cable like `this <https://www.amazon
     .. figure:: /_static/images/setup/screen7-startfresh_complete.jpg
         :width: 60%
 
+    .. warning:: Do not unders any circumstances reassemble your Embassy One without wiping the SD card first and wiping the SSD during initial setup! If you do not this will cause serious problems! If you have lightning channels you will lose all your funds!
+
 Samsung T5/T7/alternative drives
 ================================
 
@@ -148,3 +150,5 @@ Samsung T5/T7/alternative drives
 
     .. figure:: /_static/images/setup/screen7-startfresh_complete.jpg
         :width: 60%
+
+    .. warning:: Do not unders any circumstances reassemble your Embassy One without wiping the SD card first and wiping the SSD during initial setup! If you do not this will cause serious problems! If you have lightning channels you will lose all your funds!
