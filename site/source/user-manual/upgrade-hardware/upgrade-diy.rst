@@ -27,7 +27,9 @@ Hardware Requirements
 Downloading
 -----------
 
-#. Once you have all these you will need to download the latest 0.3 image from `our github <https://github.com/start9labs/embassy-os/releases/latest>`_, scroll to the Assets section, and download ``eos.tar.gz`` for Linux/Mac or ``eos.zip`` for Windows.
+#. Once you have all these you will need to `download embassyOS v0.3.2.1 image from our github <https://github.com/Start9Labs/embassy-os/releases/tag/v0.3.2.1>`_, scroll to the Assets section, and download ``eos.tar.gz`` for Linux/Mac or ``eos.zip`` for Windows.
+
+.. warning:: Only use v0.3.2.1 to perform this upgrade.  Newer versions have deprecated the 02x to 03x flow, so you must choose this intermediate version first, then you can upgrade via the operating system to get to the latest version.
 
 Extracting the image
 --------------------
