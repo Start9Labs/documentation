@@ -96,6 +96,8 @@ I don't see an answer to my question regarding a certain service.  Is there more
 -----------------------------------------------------------------------------------------------
 While we are intent on providing the most friendly experience possible to our customers, ultimately it will be impossible for Start9 to create documentation and tutorials for every service we make available on the Embassy.  Each service *should* have its own documentation produced by the service developers themselves, and we will do our best keep track, consolidate, and link to it.  Also, much of the reason good tutorials don't exist is simply because no one in the community has taken the time to produce it.  If you come across something useful or write something up yourself, please let us know and we will promote it.  Otherwise we will do our best to answer questions as they arise and gradually build out tutorials where they are lacking.
 
+Please also check out these :ref:`external support channels <external-support>` for assistance.
+
 I want to understand in depth how a Service works and it's available configuration options.  Where can I go to learn more?
 --------------------------------------------------------------------------------------------------------------------------
 Depending on the app, the config options can be quite involved. Bitcoin Core, for example, has an enormous amount of complex options, almost none of which are useful to a normal user doing normal things. We chose some very sane defaults that should work for normal use cases. Here is an example config from the Bitcoin `GitHub <https://github.com/bitcoin/bitcoin/blob/master/share/examples/bitcoin.conf>`_.

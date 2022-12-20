@@ -10,7 +10,7 @@ Embassy FAQ
 
 Can I run embassyOS on a VPS or VM?
 -----------------------------------
-Possibly, but we currently advise against this. It is designed to be used on a RaspberryPi, and at the moment this is the only supported way to run eOS.
+Yes! The :ref:`DIY Guide <diy>` will take you through the setup steps.
 
 Is it possible to use embassyOS on my own hardware?
 ---------------------------------------------------
@@ -24,7 +24,7 @@ No.  Your Embassy only needs to be plugged into power and internet, just like yo
 
 Do I plug in a monitor, keyboard, and mouse?
 --------------------------------------------
-No.  Embassy is headless (has no display), and is accessed via the web browser.
+Typically, no.  It is not necessary or recommended to do this as embassyOS runs in "headless" mode - meaning that you will access it from your computer or mobile device.  However, we have recently added "Kiosk Mode," which allows the installation (and use) of embassyOS with a monitor/keyboard/mouse.  For directions on setting this up, please check out the :ref:`x86 DIY Guide <x86-diy>`.
 
 How much storage does Embassy have?
 -----------------------------------
@@ -43,13 +43,24 @@ Can multiple Embassies be setup to run redundantly in physically separate locati
 Currently no, but we have plans for a feature that will enable Embassies to provide encrypted, automated backup services for one another.
 
 How does Embassy compare to other Bitcoin nodes or personal servers?
-------------------------------------------------------------------------
-The cheapest way to run a Bitcoin/Lightning node is to buy a Raspberry Pi (or equivalent), compile the software from source yourself, and host everything on Tor.  This takes even technical people significant time to accomplish. On the other end of the spectrum is something like Embassy, which "just works". In between is stuff like MyNode, Nodl, RoninDojo, Umbrel, and Raspiblitz, which all require some degree of command line effort and network configuration. The biggest benefit of Embassy is that it is infinitely extensible to all of open-source, self-hosted software. The service listing will expand enormously over time in ways the other platforms may choose not to, or have difficulty implementing.
+--------------------------------------------------------------------
+The cheapest way to run a Bitcoin/Lightning node is to buy a Raspberry Pi (or equivalent), download or compile embassyOS for free, and host everything on Tor.  This takes even technical people significant time to accomplish. On the other end of the spectrum is something like Embassy, which "just works". In between is stuff like MyNode, Nodl, RoninDojo, Umbrel, and Raspiblitz, which all require some degree of command line effort and network configuration. The biggest benefit of Embassy is that it is infinitely extensible to all of open-source, self-hosted software. The service listing will expand enormously over time in ways the other platforms may choose not to, or have difficulty implementing.
 
 Would you consider (Umbrel, Nodl, RoninDojo, etc) a competitor to Embassy, or are they different enough to be compatible?
 --------------------------------------------------------------------------------------------------------------------------
 Other node devices are competitors, and there are distinct trade-offs to each platform, but we are definitely moving toward the same future, which is a win for everyone!
-We are taking more a general approach to all of open-source, hosted software, including Bitcoin/Lightning. The aforementioned examples tend to be more Bitcoin/Lightning focused.
+
+One difference with Start9 is that we began with a plan to create an OS for general-purpose sovereign hosting of server-side software.  No other project in the space (that we know of) started this way.  There's also no reason you can't use more than one device.  As an example, some users prefer Embassy for their data and RoninDojo for their Bitcoin stack.
+
+Some other things that embassyOS offers that others do not:
+
+- Graphical configuration of services (instead of command line)
+- System backups (pretty important)
+- Encrypted connection over the home network (https)
+- Health Checks for quick-glance understanding of the status of your services
+- Unique user experiences created by service-packagers, including "Actions" (custom commands at the click of a button!)
+
+From an architectural perspective, embassyOS is a true operating system, giving you the ability to understand and control what is going on.  Many other systems are black boxes offering little insight or agency to you. If something goes wrong, you'll have to put in your engineer hat and go command line diving. Lastly, our team is very responsive and helpful. We pride ourselves on providing incredible customer support.
 
 Since it is often requested, we have put together an :ref:`Umbrel comparison guide<umbrel-compare>`
 
@@ -59,17 +70,9 @@ We've created a guide to help you `transform your Umbrel's bitcoin stack into an
 
 Alternatively, if you have an Umbrel and an Embassy and they're on the same network, you can just select *Services > Lightning Network Daemon > Actions > Import from Umbrel* in your Embassy's web interface and your LND settings and channels will be automatically migrated.
 
-Is a more powerful device in the works??
-----------------------------------------
-Yes, we are now taking `pre-orders <https://store.start9.com/products/embassy-2>`_ for Embassy Pro, which will be the new standard in personal servers!  Additionally, embassyOS will eventually be capable of running on lots of different hardware, such as an old desktop.  We want embassyOS to be widely available and accessible.
-
-Is there an ETA on the Embassy Pro release date?
-------------------------------------------------
-R&D is in progress, and we have already secured the hardware.  We anticipate shipping in Q3 2022.  Check our :ref:`Community Channels<contact>` for the latest updates.
-
 Can I mine Bitcoin with this?
 -----------------------------
-No, you can not.
+You do **not** want to do that.  
 
 Does Embassy only work over Tor?  No http or VPN?
 -------------------------------------------------
@@ -77,7 +80,7 @@ Embassy's current primary communication is over Tor. In many cases we use HTTP o
 
 What if someone gets physical access to my device, can they read the contents? Is it encrypted?
 -----------------------------------------------------------------------------------------------
-The data is currently encrypted at rest, but not in a way that would prevent a sophisticated attacker from accessing it.  This is a step towards better security in the near future.
+The data is currently encrypted at rest, but not in a way that would prevent a sophisticated attacker from accessing it.  This is a step towards better security in the near future.  At-rest encryption on servers is a serious challenge, because of the need for remote availability.  For example, you may not be at home to enter an encryption password following a power outage, leaving you without access to your server.
 
 Services like Bitwarden, however, do not store plaintext information, so your passwords will not be compromised unless they know your master password.
 

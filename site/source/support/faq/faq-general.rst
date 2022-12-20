@@ -8,13 +8,13 @@ General FAQ
   :depth: 2 
   :local:
 
-What is Start9Labs?
--------------------
-Start9Labs is a small, but quickly growing group of builders based in Denver, CO that build Embassy and embassyOS.
-
-What is the Embassy?
+What is Start9 Labs?
 --------------------
-Embassy is a "shelf-top" personal server built using a `Raspberry Pi <https://www.raspberrypi.org/products/raspberry-pi-4-model-b/>`_ for hardware and running embassyOS software.
+Start9 Labs is a small, but quickly growing group of builders based in Denver, CO (with a global team) that build Embassy and embassyOS.
+
+What is Embassy?
+----------------
+Embassy is a "shelf-top" personal server running embassyOS software.
 
 The internet as we know it is organized into questioners, or clients, and answerers, or servers. When you open a mobile email app, say Gmail, the app (client) begins asking questions: "have I received new mail?", "what are my last 50 messages?", "what drafts am I in the midst of writing?", and so on. Your app's questions are sent to and heard by a Google-run server which then provides answers back to the client and are subsequently displayed to the screen.
 
@@ -39,11 +39,9 @@ This `podcast <https://www.youtube.com/watch?v=aylDowaSdzU>`_ may help expound u
 
 How does Embassy work?
 ----------------------
-The current model Embassy runs on Raspberry Pi 4B hardware with a Cortex-a72 CPU, 8GB of RAM, has 2.4ghz and 5.0ghz IEEE 802.11AC wireless capabilities, an internal speaker for audio feedback of system operations, and an external SSD. It also features a high endurance MicroSD card, on which the operating system software is installed.
+embassyOS (see next question) is based on Linux and handles all operations of your Embassy device. This core element of the technology stack is what enables you to set up, login, access your Embassy's dashboard, and install services.
 
-embassyOS is based on Ubuntu Server and handles all operations of your Embassy device. This core element of the technology stack is what enables you to set up, login, access your Embassy’s dashboard, and install services.
-
-One of these operations is creating and managing Tor addresses, which are uniquely attributed to each service you download, as well as to the Embassy device itself. You can see your uniquely generated Tor address when you complete the setup process using the Setup App. This address is how you view your Embassy’s dashboard, which is actually just a website served up from your Embassy itself! It is authenticated, of course, so only you can access it.
+One of these operations is creating and managing Tor addresses, which are uniquely attributed to each service you download, as well as to the Embassy device itself. You can see your uniquely generated Tor address when you complete the setup process using the Setup App. This address is how you view your Embassy's dashboard, which is actually just a website served up from your Embassy itself! It is authenticated, of course, so only you can access it.
 
 You can connect to and manage your Embassy from any mobile device, desktop computer, or laptop computer. This is accomplished right through the browser by visiting your Embassy's private and unique URL.
 
@@ -53,9 +51,9 @@ The list of services will grow rapidly over the coming months and years, such th
 
 What is embassyOS?
 ------------------
-embassyOS is a new kind of Operating System (OS). It is built from the ground up to allow anyone to easily run their own "cloud," become independent from Big Tech, and own their own data. embassyOS allows anyone to easily host their own software services.
+embassyOS is a new kind of Operating System (OS). It is a built from the ground up to allow anyone to easily run their own "cloud," become independent from Big Tech, and own their own data. embassyOS allows anyone to easily host their own software services.
 
-embassyOS is a custom-built Linux distribution, which is a beefed up version of `Raspberry Pi OS <https://www.raspberrypi.com/software/operating-systems/>`_, along with a suite of software tools which make it easy to:
+embassyOS is custom-built Linux distribution with a suite of software tools which make it easy to:
 
 * Install, uninstall, and upgrade services from a Marketplace (similar to your phone's app store)
 * Manage and run services that YOU own and control
@@ -70,7 +68,7 @@ It includes:
 * an SDK for developers, including an "Actions" API to simplify complex operations for the common user
 * and much, much more.  Please see the corresponding :ref:`Concepts<embassy-os>` section.
 
-The .s9pk extension is Start9's custom package format based on tar. It encompasses the necessary components to compress, host, and install a service on a Marketplace.
+The `.s9pk` extension is Start9's custom package format based on `tar`. It encompasses the necessary components to compress, host, and install a service on a Marketplace registry.
 
 What are embassyOS Services?
 ----------------------------
@@ -78,7 +76,7 @@ A Service can be any piece of software added to the Marketplace.  Unlike "apps,"
 
 Does the Embassy ship worldwide?
 --------------------------------
-No.  We ship everywhere that DHL ships, with the unfortunate exception of Europe, where the VAT and Customs are so ridiculous that they cost as much as Embassy itself or more.  Please consider buying your hardware locally, and purchasing embassyOS as a download from us instead.  Please see the :ref:`DIY<diy>` page for details.
+We ship everywhere that DHL ships.  Please consider that in some countries, the VAT and Customs fees are so ridiculous that they cost as much as Embassy itself or more.  You may wish to consider buying your hardware locally and building your own device, downloading embassyOS from our github, and `donating<https://donate.start9.com/>`_ to us.  Please see the :ref:`DIY<diy>` page for details.
 
 Does the Embassy have international electrical plugs?
 -----------------------------------------------------
@@ -116,6 +114,8 @@ Here is our exact situation currently:
 Embassy device sales are processed through Shopify, which we do not like, but it was expedient in the early days, especially for shipping, so we went with it. Aside from a master list of email addresses for those who have explicitly opted in to our mailing list, all customer data is contained within Shopify. We do not duplicate it anywhere. We are asking Shopify to delete our customer data, but they claim it will take upward of 3 months to comply and we of course have no guarantee the data will actually be deleted permanently. This is partly why we exist...as such, we will be moving off of Shopify and onto a self-hosted solution, where Start9 alone controls our customer data for Embassy purchases, which we will delete as a matter of policy following a short grace period after delivery.
 
 In summary: (1) the shipping data we currently have is stored in Shopify (2) we are asking Shopify to delete all our customer data (3) we will be migrating off of Shopify (4) going forward, we alone will control customer data and will purge it regularly (5) you can always assemble the hardware yourself and just download embassyOS for free.
+
+We are currently working on a better solution.
 
 I want to help, but I'm not a developer.  Are there any ways for non-coders to contribute?
 ------------------------------------------------------------------------------------------

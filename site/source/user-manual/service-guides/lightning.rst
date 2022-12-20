@@ -36,7 +36,7 @@ See the video at the top of this page for an intro to Lightning using RTL.
 Spark
 -----
 
-.. note:: Compatible with C-Lightning only
+.. note:: Compatible with Core Lightning (CLN) only
 
 Available For
 .............

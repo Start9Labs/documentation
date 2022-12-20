@@ -18,7 +18,7 @@ You can learn more about the Initial Block Download in `this video <https://www.
 
 Can the IBD (Initial Block Download) be made faster?  Or can wait times be improved?
 ------------------------------------------------------------------------------------
-IBD was made significantly faster with the new hardware scheme of version 0.3.0 and up.  Going forward the only way to improve IBD speeds will be on more powerful hardware, such as the upcoming Embassy:Pro.
+IBD was made significantly faster with the new hardware scheme of version 0.3.0 and up.  Going forward the only way to improve IBD speeds will be on more powerful hardware, such as Embassy Pro.
 
 Does the Embassy run a full archival Bitcoin node or a pruned one?
 ------------------------------------------------------------------
@@ -41,8 +41,9 @@ At present, the Embassy does not offer its own node visualization tool. You can 
 Is a wallet vulnerable to hacking if it's always online??
 ---------------------------------------------------------
 Funds are not stored on the node typically.  The node simply serves as a source of truth for the state of the blockchain.  Attacks depend on where the keys are and where the signing happens. You can use something like a hardware wallet for better security.  Though, to be fair, a lot of attacks depend on you or your machine being targeted specifically, and a whole bunch of attack vectors are highly theoretical and obscure.
+
 Most successful attacks seem to be either fake/doctored software or a social attack (tricking you into installing some malware or giving your seed outright or something like that).
-Keep in mind, however, the more value there is out there to steal, the more sophisticated attacks will get automated (bots, crawlers etc). So its not just the risk profile of today, but also tomorrow you have to consider.  That’s why something like a hardware wallet or dedicated mobile device for key signing is a good idea.
+Keep in mind, however, the more value there is out there to steal, the more sophisticated attacks will get automated (bots, crawlers etc). So its not just the risk profile of today, but also tomorrow you have to consider.  That's why something like a hardware wallet or dedicated mobile device for key signing is a good idea.
 Even if your wallet is plugged into your Embassy, whether your wallet is hot or cold depends on the hardware that stores the keys.
 
 How does Bitcoin Proxy request (and verify) data when that data is needed by some app using it?
@@ -61,10 +62,6 @@ The available wallets are listed in the following FAQ.
 Which wallets can I use that sync with my Embassy Bitcoin and/or Lightning nodes?
 ---------------------------------------------------------------------------------
 Please see the :ref:`Bitcoin Service Guides<bitcoin-service>` for all the current options.
-
-Is BlueWallet an option?
-------------------------
-BlueWallet requires a separate backend service called LNDHub, which is not available on the Embassy at this time.
 
 I want to use my hardware signer, such as Coldcard or Trezor, with my Embassy.  How does this work?
 ---------------------------------------------------------------------------------------------------
