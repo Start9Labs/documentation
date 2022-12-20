@@ -55,9 +55,6 @@ Power the device on and select which mode you would like to continue in on the t
 .. tabs::
 
     .. group-tab:: Headless Mode
-    
-        Claiming your Device
-        --------------------
         
         Ensure the device you are using (desktop/laptop or mobile) is connected to the same network as your Embassy.
         

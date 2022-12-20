@@ -43,5 +43,6 @@ Reset Your Password
 #. Your password change is complete!
 
     .. tip:: The "Go to Emassy Login" button will not be usable until you click download. The address information and root certificate contained in this download will not have changed from what you were using before this whole process so if you do not require it you can close this tab and simply go to your Embassy's Lan or Tor address.
+   
    .. figure:: /_static/images/setup/setup_complete_pre_download.png
       :width: 60%
