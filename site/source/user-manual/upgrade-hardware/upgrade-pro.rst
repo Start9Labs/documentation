@@ -59,7 +59,16 @@ You will need a high quality USB-A to USB-A cable like `this <https://www.amazon
     .. figure:: /_static/images/hardware-pics/pro-all-highlighted.jpg
        :width: 60%
 
-#. Connect the power to the NASPi.
+#. Connect the power to the NASPi - you will hear this sound and can ignore it:
+
+    .. raw:: HTML
+
+      <audio controls>
+        <source src="/_static/sounds/BEETHOVEN.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    * Beethoven's 5th
 
 #. Select the drive inside the NASPi (you may need to hit refresh):
 
