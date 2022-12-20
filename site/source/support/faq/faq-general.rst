@@ -51,9 +51,9 @@ The list of services will grow rapidly over the coming months and years, such th
 
 What is embassyOS?
 ------------------
-embassyOS is a new kind of Operating System (OS). It is a Linux distribution based on `PureOS <https://pureos.net/>`_ that allows anyone to easily run their own "cloud," become independent from Big Tech, and own their own data. embassyOS allows anyone to easily host their own software services.
+embassyOS is a new kind of Operating System (OS). It is a built from the ground up to allow anyone to easily run their own "cloud," become independent from Big Tech, and own their own data. embassyOS allows anyone to easily host their own software services.
 
-embassyOS is a suite of software tools built from the ground up to make it easy to:
+embassyOS is custom-built Linux distribution with a suite of software tools which make it easy to:
 
 * Install, uninstall, and upgrade services from a Marketplace (similar to your phone's app store)
 * Manage and run services that YOU own and control
