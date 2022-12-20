@@ -4,7 +4,7 @@
 Migrating From Embassy One to Embassy Pro (NASPi)
 =================================================
 
-This is for Embassy One users upgrading from a NASP (pictured below). If you're using a Samsung T5/T7 please jump :ref:`below <upgrade-hardware/upgrade-pro/Samsung T5/T7/alternative drives>`.
+This is for Embassy One users upgrading from a NASP (pictured below). If you're using a Samsung T5/T7 please jump :ref:`below <samsung-drives>`.
 
     .. figure:: /_static/images/hardware-pics/embassy-one.png
         :width: 60%
@@ -87,6 +87,8 @@ You will need a high quality USB-A to USB-A cable like `this <https://www.amazon
         :width: 60%
 
     .. warning:: Do not unders any circumstances reassemble your Embassy One without wiping the SD card first and wiping the SSD during initial setup! If you do not this will cause serious problems! If you have lightning channels you will lose all your funds!
+
+.. _samsung-drives:
 
 Samsung T5/T7/alternative drives
 ================================
