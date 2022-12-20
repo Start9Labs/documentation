@@ -18,7 +18,7 @@ Upgrade Hardware
   :class: large-5
   :anchor: Upgrade
 
-  This is for migrating from an Embassy One to and Embassy Pro
+  This is for migrating from an Embassy One to an Embassy Pro
 
 .. topic-box::
   :title: Upgrade to all-in-one NASPi case
