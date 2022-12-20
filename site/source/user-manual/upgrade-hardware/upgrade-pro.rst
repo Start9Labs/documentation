@@ -4,7 +4,7 @@
 Migrating From Embassy One to Embassy Pro (NASPi)
 =================================================
 
-This is for Embassy One users upgrading from a NASPi (pictured below). If you're using a Samsung T5/T7 please jump :ref:`below <samsung-drives>`.
+This is for Embassy One users upgrading from a NASPi (pictured below). If you're using a Samsung T5/T7 please go :ref:`here <samsung-drives>`.
 
     .. figure:: /_static/images/hardware-pics/embassy-one.png
         :width: 60%
