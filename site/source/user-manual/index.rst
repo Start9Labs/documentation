@@ -25,4 +25,4 @@ Welcome to the embassyOS user manual. Here you will discover all that your Embas
   ssh
   alt-marketplaces
   device-guides/index
-  upgrade-02/index
+  upgrade-hardware/index

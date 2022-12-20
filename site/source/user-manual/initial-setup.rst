@@ -20,9 +20,11 @@ Check out the video below for a guide on setting up your Embassy!
 Powering On
 -----------
 
+.. _sounds-bepchime:
+
 #. Connect your Embassy to power and Ethernet.
 
-.. _sounds-bepchime:
+
 
 #. If all is well, you will hear 2 distinct sounds:
 
