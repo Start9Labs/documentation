@@ -1,8 +1,8 @@
 .. _flashing-pi:
 
-==============
+========================
 Flashing (Raspberry Pi)
-==============
+=======================
 This guide is for flashing embassyOS to a micro SD card in order to install it on a Raspberry Pi.
 
  .. note:: You will need a micro SD card of at least 16GB in size, 32GB recommended
