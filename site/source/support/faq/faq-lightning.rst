@@ -38,17 +38,17 @@ Is there a solution to this?
 ----------------------------
 Yes, the concept of a Watchtower was originally conceptualized in the LN whitepaper.  A Watchtower is simply a lightning node to which you can give the authority to monitor transactions associated with your open payment channels.
 
-Is it possible to run c-lightning and lnd parallel on the Embassy?
-------------------------------------------------------------------
+Is it possible to run Core Lightning and LND in parallel on Embassy?
+--------------------------------------------------------------------
 Yes, you may run both.  They will operate in their own environments and allow you to run services that depend on either.
 
 How do I connect my Lightning wallet or mobile app to my Embassy?
 -----------------------------------------------------------------
 Please see the :ref:`Lightning Service Guides<lightning-service>` section for more details.
 
-Are my addresses, channels, and balances all stored in LND or in RTL?  C-Lightning or Spark, etc?
--------------------------------------------------------------------------------------------------
-This is all on LND, including on-chain funds, and RTL (or ThunderhHub, Zap, etc) is just a GUI for accessing LND.  Same for C-Lightning, it contains all funds, channels, etc, and Spark, Zeus, etc are just GUIs to interface with the node.
+Are my addresses, channels, and balances all stored in LND or in RTL?  Core Lightning or Spark, etc?
+----------------------------------------------------------------------------------------------------
+This is all on LND, including on-chain funds, and RTL (or ThunderhHub, Zap, etc) is just a GUI for accessing LND.  Same for Core Lightning, it contains all funds, channels, etc, and Spark, Zeus, etc are just GUIs to interface with the node.
 
 How do I find my LND seed so I can write it down to backup?
 -----------------------------------------------------------

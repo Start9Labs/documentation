@@ -43,7 +43,7 @@ Registering an SSH Key
 #. Click "Add New Key".
 #. Back in the terminal of your workstation, display and copy your SSH *public* key (created above):
 
-    On Mac simply copy your key to clipboard with:
+    On Mac simply copy your key to clipboard by typing the following into a terminal:
   
     .. code-block:: bash
 

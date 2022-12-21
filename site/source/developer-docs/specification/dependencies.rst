@@ -128,7 +128,7 @@ Optional Dependencies
 
 Configuring a service to have multiple optional dependencies is also possible. This can be done by defining a file that specifies the condition under which the dependency should become activated.
 
-For example, in BTCPay Server's config, a user can select either LND or C-lightning as an internal lightning node implementation. To do this, we define the following file:
+For example, in BTCPay Server's config, a user can select either LND or Core Lightning (CLN) as an internal lightning node implementation. To do this, we define the following file:
 
 .. code:: yaml
 
@@ -136,7 +136,7 @@ For example, in BTCPay Server's config, a user can select either LND or C-lightn
         condition: '''lightning.type = "lnd"'
         health_checks: []
     c-lightning:
-        condition: '''lightning.type = "c-lightning"'
+        condition: '''lightning.type = "core lightning"'
         health_checks: []
 
 This file gets passed in as an argument during BTCPay Server's config set function in its Manifest, shown `here <https://github.com/Start9Labs/btcpayserver-wrapper/blob/master/manifest.yaml#L86>`__.

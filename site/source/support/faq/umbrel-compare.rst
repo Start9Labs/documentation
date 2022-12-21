@@ -10,7 +10,7 @@ This post will attempt to do a deep dive into the features of the Umbrel 0.4.10 
 Definitions
 -----------
 
-Each platform will have different terminology, so let’s first agree on common terms so the comparisons can be easy to understand.
+Each platform will have different terminology, so let's first agree on common terms so the comparisons can be easy to understand.
 
 **Embassy “Service” vs Umbrel “App”**
 

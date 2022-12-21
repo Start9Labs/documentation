@@ -35,7 +35,7 @@ Yes, you can move the Embassy to another network.  Your service tor addresses wi
 
 What's the advantage of using the .local address over the .onion address?
 -------------------------------------------------------------------------
-If you are in your home/office network with an Embassy, it is both faster and more private since the connection never leaves your household/office.  The downside is that it won’t work if you’re on the go.
+If you are in your home/office network with an Embassy, it is both faster and more private since the connection never leaves your household/office.  The downside is that it won't work if you're on the go.
 
 Can I use the .local addresses over the Tor Browser?
 ----------------------------------------------------
@@ -43,13 +43,13 @@ No. The Tor Browser requires all web visits to first enter the Tor network. Once
 
 Can I use .local addresses on Android?
 --------------------------------------
-This will depend on your Android device.  This support was added in Android 12, but may not yet be added to custom ROMs, such as Calyx, Graphene, or Lineage.  Please see :ref:`Android Limitations<lim-android>` for more deatils.
+This will depend on your Android device.  This support was added in Android 12.  For custom ROMs, such as Calyx and Graphene, version 13 is required.
 
 Can I have multiple users on my Embassy?
 ----------------------------------------
 Currently, the Embassy itself is designed for a single user. There is no way to grant others access to your Embassy without sharing your personal, master password, which is not recommended. There are certain services, however, such as Bitwarden, File Browser, and Mastodon, that do support multiple users (aka multi-tenancy, aka the Uncle Jim model) where people who trust you (and vice versa) can create their own, personal accounts for these services on your Embassy. Just remind them that they are trusting you with their data, and that it might be preferable for them to take the final leap of self-sovereignty and get an Embassy of their own.
 
-Multi-tenancy is a high priority for the upcoming Embassy:Pro device.
+Multi-tenancy is a desired future OS feature.  Stay tuned.
 
 What can I do if I am having issues connecting to a mobile app over Tor?
 ------------------------------------------------------------------------
@@ -81,8 +81,8 @@ Why would I even buy this when I can just build it for free?
 
 Bottom line...We are charging a very marginal rate for something incredibly powerful, and we think the convenience of a plug-and-play device, free service marketplace, and free white glove support is where the money is. Anyone could build their own couches too, but here is a reason furniture stores exist. How much is your time worth?
 
-The fastest way to get support is via our :ref:`Community channels<contact>`.  You can also `email us <support@start9.com>`_.  Please do not hesitate to reach out!
+The fastest way to get support is via our :ref:`Community channels<contact>`.  Please do not hesitate to reach out!
 
 I bought an Embassy before Q3 2022 and it came with a 'product key,' what is that?
 ----------------------------------------------------------------------------------
-This will entitle you to white glove support as well as future benefits yet to be announced.
+This will entitle you to white glove support as well as future benefits yet to be announced.  Newer products ship with a similar (anonymous) key for these purposes.

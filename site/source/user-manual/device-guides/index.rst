@@ -7,7 +7,7 @@ Device Guides
 Guides to get connected with or improve your Embassy by device-type.
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 3
 
   dg-linux
   dg-mac
