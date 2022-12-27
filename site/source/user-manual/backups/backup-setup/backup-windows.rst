@@ -43,7 +43,7 @@ Setup Network Folder
             .. figure:: /_static/images/cifs/cifs-win4.png
                 :width: 60%
 
-#. You'll need the path from this screen (shown in gray under the "SharedFolder" folder), for the final step below.
+#. Note the share's name, "SharedFolder" displayed in black text in the example screenshot below, above the long hostname and Windows directory path in grey text, both highlighted in blue.  We will take the share's name and enter it in the final step below.
 
     .. figure:: /_static/images/cifs/cifs-win5.png
         :width: 60%
@@ -67,7 +67,7 @@ Connect Embassy
         :width: 60%
 
     - For "Hostname" - Enter your Windows computer name (this is shown after a ``\\`` in Windows)
-    - For "Path" - Enter the "Path" that is shown after the ``HOSTNAME\`` in Windows
+    - For "Path" - Enter the share name displayed in the Windows sharing dialog shown in Step 4 above.  In our example this would be, literally, ``SharedFolder``
     - Enter your Windows username and password in the "User" and "Password" fields
 
 .. caution::
