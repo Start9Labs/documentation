@@ -3,7 +3,11 @@
 ==========================
 Trusting Embassy CA on iOS
 ==========================
-#. Download the certiicate to your Downloads folder
+
+This applies to iOS v15 and v16.  For older versions, see the `v14 guide </0.3.1.x/user-manual/connecting/connecting-lan/lan-os/lan-ios>`_.
+
+
+#. Download the certificate to your Downloads folder
 
 #. Open your Downloads folder and click on the certificate
 
@@ -41,7 +45,7 @@ Trusting Embassy CA on iOS
     :width: 20%
     :alt: Profiles
 
-#. You should see this
+#. You should see green text with a check-mark saying "Verified" under the Profile Installed dialog. 
 
    .. figure:: /_static/images/ssl/ios/install_5.png
     :width: 20%
@@ -67,7 +71,7 @@ Trusting Embassy CA on iOS
     :width: 20%
     :alt: Profiles
 
-#. You certificate should now be installed and trusted
+#. Your certificate should now be installed and trusted:
 
    .. figure:: /_static/images/ssl/ios/trust_4.png
     :width: 20%

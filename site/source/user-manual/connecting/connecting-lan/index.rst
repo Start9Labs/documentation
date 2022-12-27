@@ -37,7 +37,7 @@ Navigate to *System > LAN*, then click "Download Certificate".
 Trust Root CA
 -------------
 
-First instruct your **operating system** to trust your Embassy's Root CA.
+First, instruct your **operating system** to trust your Embassy's Root CA.
 
     .. toctree::
       :maxdepth: 2
