@@ -3,6 +3,10 @@
 ==========================
 Trusting Embassy CA on iOS
 ==========================
+
+This applies to iOS v15 and v16.  For older versions, see the `v14 guide </0.3.1.x/user-manual/connecting/connecting-lan/lan-os/lan-ios>`_.
+
+
 #. Download the certificate to your Downloads folder
 
 #. Open your Downloads folder and click on the certificate
