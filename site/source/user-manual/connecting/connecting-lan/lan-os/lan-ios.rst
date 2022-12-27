@@ -71,7 +71,7 @@ This applies to iOS v15 and v16.  For older versions, see the `v14 guide </0.3.1
     :width: 20%
     :alt: Profiles
 
-#. You certificate should now be installed and trusted:
+#. Your certificate should now be installed and trusted:
 
    .. figure:: /_static/images/ssl/ios/trust_4.png
     :width: 20%
