@@ -15,7 +15,7 @@ Configuring Firefox for Tor on Mac
     :width: 60%
     :alt: Firefox whitelist onions screenshot
 
-#. Now, back in your Firefox web browser, select ``Settings`` from the right-hand hamburger menu:
+#. Now go to the right-hand hamburger menu and select ``Settings``:
 
    .. figure:: /_static/images/tor/os_ff_settings.png
     :width: 30%
