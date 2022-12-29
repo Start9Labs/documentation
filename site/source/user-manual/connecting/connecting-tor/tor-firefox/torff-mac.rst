@@ -15,30 +15,6 @@ Configuring Firefox for Tor on Mac
     :width: 60%
     :alt: Firefox whitelist onions screenshot
 
-#. Now, if you've enabled Tor system-wide search for ``security.enterprise_roots.enabled`` and set the value to ``true``.
-
-   .. figure:: /_static/images/tor/enterprise_roots.png
-    :width: 60%
-    :alt: Firefox whitelist onions screenshot
-
-#. Download a `Proxy Auto Config` file to inform Firefox how to use the Tor daemon running on your computer. You can get Start9's standard file by opening the ``Terminal`` App on your Mac. You can find it in your list of Applications.  In the terminal, enter:
-
-    .. code-block::
-
-      brew install wget
-
-    And then:
-
-    .. code-block::
-
-      wget -P /usr/local/etc/tor https://registry.start9labs.com/sys/proxy.pac
-
-    On new (M1) Macs this directory may not exist. If so, use this command:
-
-    .. code-block::
-
-      wget -P /opt/homebrew/etc/tor https://registry.start9labs.com/sys/proxy.pac
-
 #. Now, back in your Firefox web browser, select ``Settings`` from the right-hand hamburger menu:
 
    .. figure:: /_static/images/tor/os_ff_settings.png
@@ -51,17 +27,7 @@ Configuring Firefox for Tor on Mac
     :width: 60%
     :alt: Firefox search screenshot
 
-#. This should open a menu that will allow you to configure your proxy settings. Select ``Automatic proxy configuration URL`` and paste in the path to your PAC file from earlier, prefixed with ``file://``. For example:
-
-    .. code-block::
-
-      file:///usr/local/etc/tor/proxy.pac
-
-    or (depending on which command you entered in step 4):
-
-    .. code-block::
-
-      file:///opt/homebrew/bin/tor/proxy.pac
+#. This should open a menu that will allow you to configure your proxy settings. Select ``Use System Proxy Settings``
 
 #. Then, check the box labeled ``Proxy DNS when using SOCKS v5``:
 
