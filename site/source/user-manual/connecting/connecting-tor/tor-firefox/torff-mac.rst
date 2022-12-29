@@ -27,9 +27,9 @@ Configuring Firefox for Tor on Mac
     :width: 60%
     :alt: Firefox search screenshot
 
-#. This should open a menu that will allow you to configure your proxy settings. Select ``Use System Proxy Settings``
+#. Check the option labeled ``Use System Proxy Settings``
 
-#. Then, check the box labeled ``Proxy DNS when using SOCKS v5``:
+#. Check the box labeled ``Proxy DNS when using SOCKS v5``:
 
    .. figure:: /_static/images/tor/firefox_proxy.png
     :width: 60%
