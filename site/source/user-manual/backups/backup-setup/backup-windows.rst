@@ -51,7 +51,7 @@ Setup Network Folder
 Connect Embassy
 ---------------
 
-#. Return to your EmbassyUI, and go to *Embassy > Create Backup*
+#. Return to your EmbassyUI, and go to *System > Create Backup*
 
     .. figure:: /_static/images/config/embassy_backup.png
         :width: 60%
