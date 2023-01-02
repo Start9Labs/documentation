@@ -39,7 +39,7 @@ Creating an SSH Key (Linux/Mac)
 Registering an SSH Key
 ----------------------
 
-#. In your Embassy's web interface, navigate to *Embassy > SSH*.
+#. In your Embassy's web interface, navigate to *System > SSH*.
 #. Click "Add New Key".
 #. Back in the terminal of your workstation, display and copy your SSH *public* key (created above):
 
