@@ -47,7 +47,7 @@ You'll need the "Computer Name," and the name of the "Shared Folder" you chose a
 Connect Embassy
 ---------------
 
-#. Go to *Embassy > Create Backup*.
+#. Go to *System > Create Backup*.
 
     .. figure:: /_static/images/config/embassy_backup.png
         :width: 60%
