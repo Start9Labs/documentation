@@ -13,22 +13,36 @@ Check out our `Getting Started with Lightning video <https://www.youtube.com/wat
     .. youtube:: KhU_sTiaN8w
         :width: 100%
 
+.. _alby:
+
+Alby
+----
+.. note:: Currently LND only
+
+Available For
+.............
+- Chrome-based browsers
+- Firefox
+
+Make sure you are already :ref:`running Tor<connecting-tor>` on your system.
+
+#. Download the Alby extension by visiting the `Alby Github <https://github.com/getAlby/lightning-browser-extension#installation>`_, selecting your browser, and installing.
+#. On the Alby welcome screen, select "Get Started."
+#. Create a strong password and store it somewhere safe, like your Vaultwarden password manager.
+#. On the next screen, select Start9 Embassy.
+#. You'll now need to enter your LND Connect REST URL from your LND service page's "Properties" section.  Alby will warn that you are connecting over Tor - click "Continue."
+#. Once the connection is completed you will see a success page that displays the balance of your LND node in Sats.  You can now launch the tutorial and learn how to use Alby!
+
 .. _blue-wallet-lightning:
 
 BlueWallet
 ----------
-
-.. note:: Not available at this time - LNDHub is required
+.. note:: LNDHub is required - available via the LNBits service
 
 .. _rtl:
 
 Ride the Lightning
 ------------------
-
-Available For
-.............
-- embassyOS
-
 See the video at the top of this page for an intro to Lightning using RTL.
 
 .. _spark:
@@ -50,24 +64,18 @@ To use a Spark client, you still need to have Spark installed on the Embassy.  T
 
 Thunderhub
 ----------
-
-Available For
-.............
-- embassyOS
-
 Download from your Embassy's Marketplace and follow the included Instructions.
 
 .. _zap:
 
 Zap
 ---
+.. note:: Compatible with LND only
 
 Available For
 .............
 - Android
 - iOS
-
-.. note:: Compatible with LND only
 
 #. Download from your device's application store.
 #. Go to Settings and activate Tor.
@@ -83,8 +91,6 @@ Available For
 - Android
 - iOS
 
-.. note:: Compatible with LND only
-
 #. Download the Zeus: Bitcoin and Lightning wallet from your mobile device's application store.
 #. Open your Embassy's web interface and log in
 #. Select Services -> Lightning Network Daemon
@@ -96,6 +102,7 @@ Available For
 #. Scan the QR Code displayed on the Embassy's LND Connect REST URL screen
 
    .. note:: If you have trouble scanning it, bring your phone very close to the QR code until it fills the entire target square on your mobile device's QR code camera.
+    
 #. Zeus will fill in your node details based on the information in the QR code
 #. Click "SAVE NODE CONFIG"
 
