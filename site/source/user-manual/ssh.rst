@@ -11,7 +11,7 @@ Using SSH
 Creating an SSH Key (Linux/Mac)
 -------------------------------
 
-#. Open a terminal and enter the following command, replacing the example email address with your own (or, alternatively, a comment):
+#. Open a terminal and enter the following command:
 
     .. code-block:: bash
 
