@@ -15,7 +15,7 @@ Creating an SSH Key (Linux/Mac)
 
     .. code-block:: bash
 
-        ssh-keygen -t ed25519
+        ssh-keygen -t ed25519 -C "$USER@$HOSTNAME"
 
     You will be asked to ``Enter a file in which to save the key`` - we recommend you press ``Enter`` to use the default location
 
