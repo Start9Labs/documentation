@@ -13,9 +13,9 @@ Basic Config
 
 In the Config Menu you will be able to select one of the following options:
 
-    - If you select `LAN Only Connection` you will be able to use the Desktop Sync App with your .local address, but all Tor access will be disabled.  This is the default as it allows instant access from most systems, and easier setup for Tor integration later.  You will need to have the :ref:`Tor daemon running on your OS<tor-linux>` first.
+    - If you select `LAN Only Connection` you will be able to use the Desktop Sync App with your .local address, but all Tor access will be disabled.  This is the default as it allows instant access from most systems, and easier setup.  Make sure you have :ref:`LAN access setup<lan-linux>` on your system.
 
-    - If you select `Both LAN and Tor Connections` you will be able to use your browser to navigate to both .local and .onion addresses for your NextCloud instance. However, you will not be able to connect to your instance using the Desktop Sync App with your .local address, only your .onion address will work with this option. You will also need to change your sync app network settings to accept socks5 proxy connections, and Tor should be running on your device connecting.
+    - If you select `Both LAN and Tor Connections` you will be able to use your browser to navigate to both .local and .onion addresses for your NextCloud instance. However, you will not be able to connect to your instance using the Desktop Sync App with your .local address, only your .onion address will work with this option. You will also need to change your sync app's network settings to accept socks5 proxy connections, and :ref:`Tor must be running on your device<tor-linux>`.
 
 Desktop Integrations
 --------------------
@@ -36,11 +36,11 @@ For if your desktop environment does not support account integrations, or if you
 
 File Syncing - Nextcloud Desktop
 ================================
-This is Nextcloud's official client application for file syncing and account management.  It is typically available from your package manager (i.e. `apt`, `pacman`, or `rpm`) as `nextcloud` - or you can get the latest version from the `Download for Desktop <https://nextcloud.com/install/#install-clients>`_ section of Nextcloud's install page.
+This is Nextcloud's official client application for file syncing and account management.  It is available in your favorite package manager (usually as `nextcloud`).  You can also see this `full list of available packages <https://help.nextcloud.com/t/linux-packages-status/>`.   or you can get the latest version as an AppImage from the `Download for Desktop <https://nextcloud.com/install/#install-clients>`_ section of Nextcloud's website.
 
 LAN Setup
 .........
-Make sure you have first set up :ref:`LAN access for your OS<lan-linux>`.
+Make sure you have first set up :ref:`LAN access<lan-linux>`.
 
 1. Open the client and click "Log In"
 2. From your Embassy's Nextcloud Service page, go to "Interfaces" and copy the LAN address
@@ -54,7 +54,7 @@ Make sure you have first set up :ref:`LAN access for your OS<lan-linux>`.
 
 Tor Setup
 .........
-If you would like to setup a remote connection for your desktop client, you may do so here.  Make sure you have the :ref:`Tor daemon running on your OS<tor-linux>` first.
+You will first need to have the :ref:`Tor daemon running<tor-linux>`.
 
 1. First, enable Tor in the Nextcloud Config on Embassy, Services -> Nextcloud -> Config -> Connection Settings -> Connection Type -> LAN and Tor.
 2. On your desktop application. Click the account in the top left -> Settings, then in Settings, click Network, then "Specify proxy manually as" and "SOCKS5 proxy." Enter "127.0.0.1" for the Host and "9050" for the port.
