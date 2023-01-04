@@ -160,6 +160,7 @@ Check your environment setup by building a demo project and installing it to emb
 
         git clone https://github.com/Start9Labs/hello-world-wrapper.git
         cd hello-world-wrapper
+        git submodule update --init
     
 #. Build to create ``hello-world.s9pk``
     
