@@ -27,6 +27,7 @@ The specs below would be acceptable for an Embassy running minimal services with
 - Single vCPU Core 2Ghz
 - 4GB RAM
 - 64GB Storage
+- Ethernet port
 
 Recommended OS Requirements
 ...........................
