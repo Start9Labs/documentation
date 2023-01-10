@@ -54,48 +54,90 @@ This will start Tor and ensure that it is always running, even after a restart. 
 Enable Tor System-wide
 ----------------------
 
-#. Enable proxy autoconfig file (This will download the Start9 standard proxy config file. You can use your own if you prefer):
+.. tabs::
 
-    .. code-block::
+    .. group-tab:: Ventura
 
-        sudo curl https://registry.start9labs.com/sys/proxy.pac --output /Library/WebServer/Documents/proxy.pac
+        #. Enable proxy autoconfig file (This will download the Start9 standard proxy config file. You can use your own if you prefer):
 
-#. Go to system preferences:
+            .. code-block::
 
-    .. figure:: /_static/images/tor/systemprefs.png
-        :width: 40%
-        :alt: System Preferences
+                sudo curl https://registry.start9labs.com/sys/proxy.pac --output /Library/WebServer/Documents/proxy.pac
 
-#. Click on Network:
+        #. Go to System Settings:
 
-    .. figure:: /_static/images/tor/network.png
-        :width: 80%
-        :alt: Select Network
+            .. figure:: /_static/images/tor/systemSettings.png
+                :width: 40%
+                :alt: System Preferences
 
-#. In this example, we'll select WiFi on the left panel. If you're using Ethernet, click that instead. Next click "Advanced":
+        #. Click on *Network* and then select the interface on which you wish to enable Tor system-wide (both LAN and WiFi advised - do one then the other):
 
-    .. figure:: /_static/images/tor/wifi_click_advanced.png
-        :width: 80%
-        :alt: Click Advanced
+            .. figure:: /_static/images/tor/ventura-settings.png
+                :width: 80%
+                :alt: Select Network
 
-#. Select "Proxies":
+        #. Click *Details*:
 
-    .. figure:: /_static/images/tor/proxys.png
-        :width: 80%
-        :alt: Select Proxys
+            .. figure:: /_static/images/tor/ventura-network-advanced.png
+                :width: 80%
+                :alt: Click Advanced
 
-#. Select "Automatic Proxy Configuration", add this URL: **file:////Library/WebServer/Documents/proxy.pac** then click "OK"
+        #. Select *Proxies*, toggle *Automatic proxy configuration* and enter **file:////Library/WebServer/Documents/proxy.pac** then click *OK*:
 
-    .. figure:: /_static/images/tor/entertorproxyURL.png
-        :width: 80%
-        :alt: Select Automatic proxy config and enter URL
+            .. figure:: /_static/images/tor/ventura-proxies.png
+                :width: 80%
+                :alt: Select Proxys
 
-#. Finally, click "Apply"
+        Done! You have now enabled system-wide Tor potential.
 
-    .. figure:: /_static/images/tor/applyproxy.png
-        :width: 80%
-        :alt: Apply proxy
+        We advise going back to step three and repeating this for Wifi/LAN depending on which interface you haven't done yet.
 
-Done! You have now enabled system-wide Tor potential.
+        If you'd like to setup Firefox to use Tor you can follow  :ref:`this guide<torff-mac>`.
 
-If you'd like to setup Firefox to use Tor you can follow  :ref:`this guide<torff-mac>`.
+    .. group-tab:: Pre-Ventura
+
+        #. Enable proxy autoconfig file (This will download the Start9 standard proxy config file. You can use your own if you prefer):
+
+            .. code-block::
+
+                sudo curl https://registry.start9labs.com/sys/proxy.pac --output /Library/WebServer/Documents/proxy.pac
+
+        #. Go to System Preferences:
+
+            .. figure:: /_static/images/tor/systemprefs.png
+                :width: 40%
+                :alt: System Preferences
+
+        #. Click on Network:
+
+            .. figure:: /_static/images/tor/network.png
+                :width: 80%
+                :alt: Select Network
+
+        #. In this example, we'll select WiFi on the left panel. If you're using Ethernet, click that instead. Next click "Advanced":
+
+            .. figure:: /_static/images/tor/wifi_click_advanced.png
+                :width: 80%
+                :alt: Click Advanced
+
+        #. Select "Proxies":
+
+            .. figure:: /_static/images/tor/proxys.png
+                :width: 80%
+                :alt: Select Proxys
+
+        #. Select "Automatic Proxy Configuration", add this URL: **file:////Library/WebServer/Documents/proxy.pac** then click "OK"
+
+            .. figure:: /_static/images/tor/entertorproxyURL.png
+                :width: 80%
+                :alt: Select Automatic proxy config and enter URL
+
+        #. Finally, click "Apply"
+
+            .. figure:: /_static/images/tor/applyproxy.png
+                :width: 80%
+                :alt: Apply proxy
+
+        Done! You have now enabled system-wide Tor potential.
+
+        If you'd like to setup Firefox to use Tor you can follow  :ref:`this guide<torff-mac>`.
