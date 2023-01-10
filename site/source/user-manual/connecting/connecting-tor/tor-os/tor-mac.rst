@@ -114,7 +114,7 @@ Enable Tor System-wide
                 :width: 80%
                 :alt: Select Network
 
-        #. In this example, we'll select WiFi on the left panel. If you're using Ethernet, click that instead. Next click "Advanced" (We suggest returning to the step in order to do both Ethernet AND WiFi):
+        #. In this example, we'll select WiFi on the left panel. If you're using Ethernet, click that instead. Next click "Advanced" (We suggest returning to this step in order to do both Ethernet AND WiFi):
 
             .. figure:: /_static/images/tor/wifi_click_advanced.png
                 :width: 80%
