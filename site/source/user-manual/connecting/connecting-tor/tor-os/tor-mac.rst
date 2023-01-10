@@ -56,12 +56,6 @@ This will start Tor and ensure that it is always running, even after a restart. 
 Enable Tor System-wide
 ----------------------
 
-#. Now enable apache service:
-
-    .. code-block::
-
-        sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
-
 #. Enable proxy autoconfig file (This will download the Start9 standard proxy config file. You can use your own if you prefer):
 
     .. code-block::
@@ -92,7 +86,7 @@ Enable Tor System-wide
         :width: 80%
         :alt: Select Proxys
 
-#. Select "Automatic Proxy Configuration", add this URL: http://localhost/proxy.pac then click "OK"
+#. Select "Automatic Proxy Configuration", add this URL: **file:////Library/WebServer/Documents/proxy.pac** then click "OK"
 
     .. figure:: /_static/images/tor/entertorproxyURL.png
         :width: 80%
