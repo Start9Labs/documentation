@@ -4,19 +4,20 @@
 Trusting Embassy CA on Mac
 ==========================
 
-Video Guide:
-   .. youtube:: sErA23Ii5To 
-    :width: 100%
+#. In your Embassy, head to *System* -> *Lan* -> click *Download Certificate* and save it to your Mac.
 
-#. Locate your Embassy's Root CA, right click, then click *Open with > Keychain Access*.
-
-    .. figure:: /_static/images/ssl/embassy_lan_setup1.png
+    .. figure:: /_static/images/ssl/macos/mac-lan-setup0.png
         :width: 60%
         :alt: LAN setup prompt
 
+#. Locate the certificate and double click it.
+
+    .. figure:: /_static/images/ssl/macos/mac-lan-setup1.png
+        :width: 60%
+
 #. In the resulting  box, choose "System" from the "Keychain" dropdown menu.  Then click "Add."
 
-    .. figure:: /_static/images/ssl/macos/mac-lan-setup0.png
+    .. figure:: /_static/images/ssl/macos/mac-lan-setup2.png
         :width: 60%
         :alt: System Keychain
 
