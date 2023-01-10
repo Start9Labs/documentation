@@ -8,21 +8,31 @@ Nextcloud - Windows
   :depth: 2 
   :local:
 
-Basic Config
-------------
+Initial Config
+--------------
+During initial configuration, notice the setting called "Enable Tor".
 
-In the Config Menu you will be able to select one of the following options:
+  - If OFF: You can use Nextcloud from the browser or from any mobile or desktop client using its .local URL while connected to the same Local Area Network (LAN) as your Embassy. Note: .onion will not work at all.  Make sure you have setup :ref:`LAN access<lan-windows>` on your system.
+  
+  - If ON: You can use NextCloud from the browser by visiting its .onion or .local URL. You can also use Nextcloud from any mobile or desktop client using its .onion URL. Note: .local will not work from mobile or desktop clients.  Make sure you have :ref:`Tor running on your device<tor-windows>`.
 
-    - If you select `LAN Only Connection` you will be able to use the Desktop Sync App with your .local address, but all Tor access will be disabled.  This is the default as it allows instant access from most systems, and easier setup.  Make sure you have :ref:`LAN access setup<lan-windows>` on your system.
+The default is Off for two reasons:
 
-    - If you select `Both LAN and Tor Connections` you will be able to use your browser to navigate to both .local and .onion addresses for your NextCloud instance. However, you will not be able to connect to your instance using the Desktop Sync App with your .local address, only your .onion address will work with this option. You will also need to change your sync app's network settings to accept socks5 proxy connections, and :ref:`Tor must be running on your device<tor-windows>`.
+  1. Initial sync over LAN will be much faster.
+  2. To use Tor with Nextcloud's desktop clients, you must first change a setting in the desktop client that can only be changed if you are already logged in. In other words, you must first login over LAN in order to be able to login over Tor.
 
-Standalone Client
------------------
-The latest version of the official Nextcloud client is available on their `download page <https://nextcloud.com/install/#install-clients>`_.  This is for file syncing and account management.
+Desktop Integration
+-------------------
+If you prefer to use Microsoft's integrated Calendar and Contacts apps with your Windows machine, you can integrate directly.  First head into the top-right hand menu and click "Apps," then search for and install the Calendar and/or Contacts Apps.  From here, follow the `Official Nextcloud guide <https://docs.nextcloud.com/server/24/user_manual/en/groupware/sync_windows10.html>`_.
+
+Standalone Clients
+------------------
+File Syncing - Nextcloud Desktop
+================================
+This is Nextcloud's official client application for file syncing and account management.  The latest version of the official Nextcloud client is available on their `download page <https://nextcloud.com/install/#install-clients>`_.
 
 LAN Setup
-=========
+.........
 Make sure you have first set up :ref:`LAN access<lan-windows>`.
 
 1. Download the appropriate desktop client from https://nextcloud.com/install/#install-clients
@@ -37,7 +47,7 @@ Make sure you have first set up :ref:`LAN access<lan-windows>`.
 10. That's it! From this desktop client you will recieve notifications, control accounts and syncing, and quickly access your Apps' WebUI pages
 
 Tor Setup
-=========
+.........
 You will first need to have the :ref:`Tor daemon running<tor-windows>`.
 
 1. First, enable Tor in the Nextcloud Config on Embassy, Services -> Nextcloud -> Config -> Connection Settings -> Connection Type -> LAN and Tor.
@@ -47,6 +57,21 @@ You will first need to have the :ref:`Tor daemon running<tor-windows>`.
 5. This will launch your browser and prompt you to log in to your account. Log in and then grant access as we did for LAN.
 6. That's it! You may wish to set up some select folders for remote sync, but for large files, it is best to sync on LAN only, so you can "Skip folders configuration" on the resulting screen if you wish. Check your connection by clicking the newly created account in the client app.
 
-Desktop Integration
--------------------
-In order to sync calendars and contacts with your Windows machine, follow the `Official Nextcloud guide <https://docs.nextcloud.com/server/24/user_manual/en/groupware/sync_windows10.html>`_.
+Calendar & Contacts Syncing - Thunderbird
+=========================================
+If you wish to use a standalone client for Calendar and Contacts, we recommend Mozilla's `Thunderbird <https://www.thunderbird.net>`_.
+
+1. Install the Contacts and Calendar apps in Nextcloud.
+2. Make sure you are on Thunderbird version 102.3.0 or greater and then import your LAN certificate:
+
+    - :ref:`Download your certificate<connecting-lan>` and then add it in "Thunderbird -> Settings -> Privacy & Security -> Manage Certificates -> Authorities tab -> Import"
+    - Check the box for "This certificate can identify websites"
+
+3. Download the TBSync and Provider for CalDAV & CardDAV add-ons by searching for them in the "Tools -> Add-ons and Themes" menu.
+4. Go back to the "Tools -> Add-ons and Themes" menu and click the 'wrench' icon next to TBSync.
+5. Click "Account Actions" in the bottom left of the resulting screen, then "Add New Account -> CalDAV & CardDAV."
+6. Select "Automatic."
+7. Enter a name for your account, your nextcloud user name (found in Properties, default is 'embassy'), password (found in Properties), and server LAN address (found in Interfaces, ending in `.local`) - then click "Next."
+8.  After connecting, click "Finish."
+9.  In the resulting window, click "Enable and synchronize this account."
+10. Select the items you want to sync, such as contacts and a calendar. 

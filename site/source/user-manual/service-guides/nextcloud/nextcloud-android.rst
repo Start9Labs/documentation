@@ -7,16 +7,19 @@ Nextcloud - Android
 .. contents::
   :depth: 2 
   :local:
+Initial Config
+--------------
+During initial configuration, notice the setting called "Enable Tor".
 
-Basic Config
-------------
+  - If OFF: You can use Nextcloud from the browser or from any mobile or desktop client using its .local URL while connected to the same Local Area Network (LAN) as your Embassy. Note: .onion will not work at all.  Make sure you have setup :ref:`LAN access<lan-android>` on your system.
+  
+  - If ON: You can use NextCloud from the browser by visiting its .onion or .local URL. You can also use Nextcloud from any mobile or desktop client using its .onion URL. Note: .local will not work from mobile or desktop clients.  Make sure you have :ref:`Tor running on your device<tor-android>`.
 
-In the Config Menu you will be able to select one of the following options:
+The default is Off for two reasons:
 
-    - If you select `LAN Only Connection` you will be able to use the Desktop Sync App with your .local address, but all Tor access will be disabled.  This is the default as it allows instant access from most systems, and easier setup.  Make sure you have :ref:`LAN access setup<lan-android>` on your system.
-
-    - If you select `Both LAN and Tor Connections` you will be able to use your browser to navigate to both .local and .onion addresses for your NextCloud instance. However, you will not be able to connect to your instance using the Desktop Sync App with your .local address, only your .onion address will work with this option. You will also need to change your sync app's network settings to accept socks5 proxy connections, and :ref:`Tor must be running on your device<tor-android>`.
-
+  1. Initial sync over LAN will be much faster.
+  2. To use Tor with Nextcloud's desktop clients, you must first change a setting in the desktop client that can only be changed if you are already logged in. In other words, you must first login over LAN in order to be able to login over Tor.
+   
 Nextcloud App
 -------------
 The latest version of the official Nextcloud client is available on their `download page <https://nextcloud.com/install/#install-clients>`_.  This is for file syncing and account management.
@@ -49,4 +52,4 @@ You will first need to have the :ref:`Tor daemon running<tor-android>`.
 
 Device Integration
 ------------------
-In order to sync calendars and contacts with your Android device, follow the `Official Nextcloud guide <https://docs.nextcloud.com/server/24/user_manual/en/groupware/sync_android.html>`_.
+In order to sync calendars and contacts with your Android device, follow the `Official Nextcloud guide <https://docs.nextcloud.com/server/25/user_manual/en/groupware/sync_android.html>`_.
