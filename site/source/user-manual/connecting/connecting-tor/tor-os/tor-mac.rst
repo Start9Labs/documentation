@@ -70,7 +70,7 @@ Enable Tor System-wide
                 :width: 40%
                 :alt: System Preferences
 
-        #. Click on *Network* and then select the interface on which you wish to enable Tor system-wide (both LAN and WiFi advised - do one then the other):
+        #. Click on *Network* and then select the interface on which you wish to enable Tor system-wide (both Ethernet and WiFi advised - do one then the other):
 
             .. figure:: /_static/images/tor/ventura-settings.png
                 :width: 80%
@@ -90,7 +90,7 @@ Enable Tor System-wide
 
         Done! You have now enabled system-wide Tor potential.
 
-        We advise going back to step three and repeating this for Wifi/LAN depending on which interface you haven't done yet.
+        We advise going back to step three and repeating this for Wifi/Ethernet depending on which interface you haven't done yet.
 
         If you'd like to setup Firefox to use Tor you can follow  :ref:`this guide<torff-mac>`.
 
@@ -114,7 +114,7 @@ Enable Tor System-wide
                 :width: 80%
                 :alt: Select Network
 
-        #. In this example, we'll select WiFi on the left panel. If you're using Ethernet, click that instead. Next click "Advanced":
+        #. In this example, we'll select WiFi on the left panel. If you're using Ethernet, click that instead. Next click "Advanced" (We suggest returning to the step in order to do both Ethernet AND WiFi):
 
             .. figure:: /_static/images/tor/wifi_click_advanced.png
                 :width: 80%
@@ -139,5 +139,7 @@ Enable Tor System-wide
                 :alt: Apply proxy
 
         Done! You have now enabled system-wide Tor potential.
+
+        We suggest heading back to Step 4 and enabling Tor system-wide on Ethernet/WiFi now - whichever you did not do already.
 
         If you'd like to setup Firefox to use Tor you can follow  :ref:`this guide<torff-mac>`.
