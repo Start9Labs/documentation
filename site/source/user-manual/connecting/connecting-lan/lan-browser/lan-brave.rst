@@ -119,4 +119,4 @@ Trust Embassy CA in Brave
 
     .. group-tab:: Mac
 
-        #. No additional setup is required for Brave on MacOS
+       No additional setup is required for Brave on MacOS
