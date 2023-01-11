@@ -8,7 +8,9 @@ Vaultwarden
   :depth: 2 
   :local:
 
-.. note:: The version of Bitwarden server used on the Embassy is a fork called "Vaultwarden."  Despite this, it still functions with several of the apps/integrations that are built for, and still named after, "Bitwarden."  We apologize for any confusion this may cause.
+Vaultwarden is a self-hosted password manager, which means your passwords physically live on your Embassy. Be sure to create backups and keep them safe! If you lose your Embassy or uninstall Vaultwarden, and you have not made a backup, all your passwords will be lost forever.  If you currently have a *hosted* account with Bitwarden, you can export your data from that account and import it to your Vaultwarden service on Embassy using the built-in import/export features in any Bitwarden application.
+
+.. note:: The version of Bitwarden server used on the Embassy is a fork called "Vaultwarden."  It functions with all of the apps/integrations that are built for, and still named after, "Bitwarden."  We apologize for any confusion this may cause.
 
 Check out our `Vaultwarden video <https://www.youtube.com/watch?v=YcxxVHpm9j0>`_ for basic features and setup!
 
@@ -17,7 +19,6 @@ Check out our `Vaultwarden video <https://www.youtube.com/watch?v=YcxxVHpm9j0>`_
 
 Web Vault
 ---------
-
 1. First we will open up our Embassy and go to the Marketplace tab, select Vaultwarden, and install if you have not already done so.
 
 2. After install, click Configure.  A strong admin token has been securely created by your Embassy, but you may change it if you wish.  This can also be changed later.  Click save.  Click start to run the service.
@@ -30,9 +31,12 @@ Web Vault
 
 5. Back at the main page for your vault, let's do a quick example login.  We can setup a new folder here and save new login.  For our example, we're going to use our FileBrowser instance.  So click 'Add item,'  then we'll fill in some test information.  A name for the entry, a username, password, and the website we want to log in to.  Then click 'Save.'
 
+Accessing the Admin Console
+===========================
+You will find the Admin console by adding `/admin` to the end of your Vaultwarden WebUI URL, found in the "Interfaces" section of the Vaultwarden Service page.  You will be prompted for your "Admin Token," which is also found on your Vaultwarden Service page under "Properties."
+
 Browser Extension
 -----------------
-
 The Bitwarden browser extension will only work with Tor browser or Firefox, since those are the only two browsers capable of using Tor, or in other words, access .onion URLs. Brave Browser can also access .onion URLs, but only in special tabs, not in extension, so the Bitwarden extension will not work on Brave.
 
 1. If you choose Tor Browser, everything will just work right out of the box. If you choose Firefox, you will need to configure both your :ref:`device <tor-os>` and :ref:`Firefox <tor-firefox>` to use Tor.
