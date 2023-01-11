@@ -8,7 +8,7 @@ Trust Embassy CA in Brave
 
 .. tabs::
 
-    .. group-tab:: Linux / macOS
+    .. group-tab:: Linux
 
         #. Open a new tab in Brave and open to "Settings" from the top-right hamburger menu.
 
@@ -116,3 +116,7 @@ Trust Embassy CA in Brave
             .. figure:: /_static/images/ssl/windows/windows_certificates_caimport_step9.jpg
               :width: 40%
               :alt: Windows Certificates CA Cert Import Step 9
+
+    .. group-tab:: Mac
+
+       No additional setup is required for Brave on MacOS

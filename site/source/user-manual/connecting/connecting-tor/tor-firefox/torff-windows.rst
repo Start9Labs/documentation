@@ -22,7 +22,7 @@ Configuring Firefox for Tor on Windows
 
       C:\Program Files\Tor Browser\proxy.pac
 
-#. Now, back in your Firefox web browser, select "Options" from the right-hand hamburger menu:
+#. Now, back in your Firefox web browser, select "Settings" from the right-hand hamburger menu:
 
     .. figure:: /_static/images/tor/firefox_options_windows.png
       :width: 60%
@@ -42,7 +42,7 @@ Configuring Firefox for Tor on Windows
 
 #. Then, check the box labeled "Proxy DNS when using SOCKS v5":
 
-    .. figure:: /_static/images/tor/firefox_proxy.png
+    .. figure:: /_static/images/tor/firefox_proxy_windows.png
       :width: 60%
       :alt: Firefox proxy settings screenshot
 
