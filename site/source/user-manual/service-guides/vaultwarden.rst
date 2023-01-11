@@ -97,9 +97,7 @@ Mac
     #. For LAN access, follow the LAN setup in the instructions below.  After completing setup, simply open Bitwarden and add your Vaultwarden LAN address in the 'Settings' and login.
 
 #. Tor
-    #. First, be sure to :ref:`Setup Tor <tor-mac>` natively.
-
-    #. Run the program with the flag ``--proxy-server=socks5://127.0.0.1:9050`` behind it.  You can run this from a terminal, and if you'd like to use a shortcut, edit that shortcut file to include the flag.
+    Set up the system-wide proxy on your system with our :ref:`Tor guide<tor-mac>`.
 
 #. You can now log in to your vault.
 
