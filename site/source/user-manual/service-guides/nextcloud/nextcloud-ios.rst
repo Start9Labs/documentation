@@ -59,9 +59,9 @@ In order to sync calendars and contacts with your iOS device, follow the steps b
 
   .. note:: You will need to perform 2 individual setups, one for Calendar and one for Contacts.
 
-2. Select "Calendar" -> "Accounts" -> "Add Account" -> "Other."
+2. Select "Calendar" (or "Contacts") -> "Accounts" -> "Add Account" -> "Other" (return to this step after completing one in order to add the other).
 
-3. Select either CalDAV or CardDAV (return to this step after completing one in order to add the other), and enter the following fields:
+3. Select either CalDAV (for Calendar setup) or CardDAV (for Contacts setup), and enter the following fields:
 
   - Server - Enter your Nextcloud server LAN URL (found in "Interfaces" in the Nextcloud service page on your Embassy), and add `/remote.php/dav` after `.local`
   
@@ -73,4 +73,4 @@ In order to sync calendars and contacts with your iOS device, follow the steps b
 
 4. If you get a warning about verifying the server identity, it is safe to "Continue."  Add the apps you want to use, such as Calendars, Contacts, and/or Reminders, then tap "Save."
 
-  - That's it!  Go back to step 3 above to set up your other account (CalDAV / CardDAV)
+  - That's it!  Go back to step 2 above to set up your other account (CalDAV / CardDAV)
