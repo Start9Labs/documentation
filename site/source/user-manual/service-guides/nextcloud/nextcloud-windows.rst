@@ -21,9 +21,27 @@ The default is Off for two reasons:
   1. Initial sync over LAN will be much faster.
   2. To use Tor with Nextcloud's desktop clients, you must first change a setting in the desktop client that can only be changed if you are already logged in. In other words, you must first login over LAN in order to be able to login over Tor.
 
-Desktop Integration
--------------------
-If you prefer to use Microsoft's integrated Calendar and Contacts apps with your Windows machine, you can integrate directly.  First head into the top-right hand menu and click "Apps," then search for and install the Calendar and/or Contacts Apps.  From here, follow the `Official Nextcloud guide <https://docs.nextcloud.com/server/24/user_manual/en/groupware/sync_windows10.html>`_.
+Native Desktop Integration
+--------------------------
+If you prefer to use Microsoft's integrated Calendar and Contacts apps with your Windows machine, you can integrate directly.  First head into the top-righthand menu of your Nextcloud's WebUI and click "Apps," then search for and install the Calendar and/or Contacts Apps.  The steps below are adapted from the `Official Nextcloud guide <https://docs.nextcloud.com/server/24/user_manual/en/groupware/sync_windows10.html>`_.  Make sure you have first set up :ref:`LAN access<lan-windows>`.
+
+1. Launch the Windows Calendar app and click the gear icon (Settings), then select "Manage Accounts."
+
+2. Select "Add Account" and choose "iCloud" (don't worry, it won't *really* be iCloud).
+
+3. Enter an email, username and password. None of this information has to be valid and it will all be changed in the upcoming steps.  Click "Sign In" (or "Done" in Win10).
+
+4. In the "Manage Accounts" menu, click on the account just created and select "Change Settings," and then "Change mailbox sync settings" (at the bottom of the page).
+
+5. Scroll to the bottom again and fill in the following fields (as desired):
+
+  - Calendar Server (CalDAV) - This link can be copy-pasted by clicking your Nextcloud Calendar app's "Calendar Settings" in the bottom-left, then "Copy primary CalDAV address" at the bottom of the expanded menu.
+  
+  - Contacts Server (CardDAV) - This link can be copy-pasted by clicking your Nextcloud Contacts app's "Contacts Settings" in the bottom-left, then the kebab (3 dots) menu next to "Contacts," and finally "Copy Link" at the top of the resulting menu.
+
+6. Click "Done."
+
+  - You should now be able to sync your native Windows Contacts and/or Calendar apps with the associated Nextcloud apps.
 
 Standalone Clients
 ------------------

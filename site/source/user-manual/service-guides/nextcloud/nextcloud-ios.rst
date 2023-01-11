@@ -53,4 +53,24 @@ You will first need to have the :ref:`Tor daemon running<tor-ios>`.
 
 Device Integration
 ------------------
-In order to sync calendars and contacts with your iOS device, follow the `Official Nextcloud guide <https://docs.nextcloud.com/server/25/user_manual/en/groupware/sync_ios.html>`_.
+In order to sync calendars and contacts with your iOS device, follow the steps below, which are adapted from the `Official Nextcloud guide <https://docs.nextcloud.com/server/25/user_manual/en/groupware/sync_ios.html>`_.  First head into the top-righthand menu of your Nextcloud's WebUI and click "Apps," then search for and install the Calendar and/or Contacts Apps.
+
+1. Open the "Settings" app.
+
+  .. note:: You will need to perform 2 individual setups, one for Calendar and one for Contacts.
+
+2. Select "Calendar" -> "Accounts" -> "Add Account" -> "Other."
+
+3. Select either CalDAV or CardDAV (return to this step after completing one in order to add the other), and enter the following fields:
+
+  - Server - Enter your Nextcloud server LAN URL (found in "Interfaces" in the Nextcloud service page on your Embassy), and add `/remote.php/dav` after `.local`
+  
+  - User name - Your Nextcloud user (Default is "embassy")
+  
+  - Password - Your Nextcloud user's password (Default found in "Properties" in the Nextcloud service page on your Embassy)
+
+  - Description - Anything to describe this account, such as "Nextcloud CalDAV"
+
+4. If you get a warning about verifying the server identity, it is safe to "Continue."  Add the apps you want to use, such as Calendars, Contacts, and/or Reminders, then tap "Save."
+
+  - That's it!  Go back to step 3 above to set up your other account (CalDAV / CardDAV)

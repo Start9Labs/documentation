@@ -21,9 +21,30 @@ The default is Off for two reasons:
   1. Initial sync over LAN will be much faster.
   2. To use Tor with Nextcloud's desktop clients, you must first change a setting in the desktop client that can only be changed if you are already logged in. In other words, you must first login over LAN in order to be able to login over Tor.
 
-Desktop Integration
--------------------
-The smoothest experience will be using direct account integration with your Mac.  You can follow the `Official Nextcloud guide <https://docs.nextcloud.com/server/24/user_manual/en/groupware/sync_osx.html>`_ to get set up.
+Native Desktop Integration
+--------------------------
+The smoothest experience will be using direct account integration with your Mac.  First head into the top-righthand menu of your Nextcloud's WebUI and click "Apps," then search for and install the Calendar and/or Contacts Apps.  The steps below are adapted from the `Official Nextcloud guide <https://docs.nextcloud.com/server/24/user_manual/en/groupware/sync_osx.html>`_ and updated for the latest MacOS (Ventura).  Make sure you have first set up :ref:`LAN access<lan-mac>`.
+
+1. Open the "System Settings" and select "Internet Accounts," then click "Add Account."
+
+2. Select "Add Other Account"
+  
+  .. note:: You will need to perform 2 individual setups, one for Calendar and one for Contacts.
+
+3. Select CalDAV for Calendar setup OR CardDAV for Contacts setup.  If you want to do both, you will need to return to this step after finishing setup of the first.
+
+4. Select "Manual" from the "Account Type" dropdown menu and fill in the following fields:
+
+  - Username - The default user is "embassy," but this is your user within Nextcloud, so be sure it is the correct user if you have more than one
+  
+  - Password - In your Nextcloud WebUI, visit the top-righthand menu and select "Personal Settings" -> "Security."  At the bottom, under Devices & Sessions, create a new app password with a name of your choice, such as "MacCalDAV," and then copy the resulting password into your Mac's account config
+  
+  - Server Address - copy your LAN address from the "Interfaces" section of your Nextcloud service page then add `/remote.php/dav` after `.local`
+
+5. Click "Sign In."
+
+  - You can now select the apps you want to use on your Mac, such as Calendars, Reminders, or Contacts
+  - Return to Step 3 to continue setup
 
 Standalone Clients
 ------------------

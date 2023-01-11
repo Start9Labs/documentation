@@ -7,6 +7,7 @@ Nextcloud - Android
 .. contents::
   :depth: 2 
   :local:
+
 Initial Config
 --------------
 During initial configuration, notice the setting called "Enable Tor".
@@ -52,4 +53,28 @@ You will first need to have the :ref:`Tor daemon running<tor-android>`.
 
 Device Integration
 ------------------
-In order to sync calendars and contacts with your Android device, follow the `Official Nextcloud guide <https://docs.nextcloud.com/server/25/user_manual/en/groupware/sync_android.html>`_.
+In order to sync calendars and contacts with your Android device, follow the steps below, which are adapted from the `Official Nextcloud guide <https://docs.nextcloud.com/server/25/user_manual/en/groupware/sync_android.html>`_.  First head into the top-righthand menu of your Nextcloud's WebUI and click "Apps," then search for and install the Calendar and/or Contacts Apps.
+
+1. Download the WebDAV sync management client `DAVx5 <https://www.davx5.com/download/>`_ from your app store of choice, such as F-Droid or the Play Store.
+
+2. Add account:
+
+   - If you are on Android 12+ and already have the Nextcloud file-syncing app (recommended - guide above), then open it and enter the "Settings" menu from the top-lefthand hamburger (3 lines) menu.  Then under the section titled, "More," tap "Sync Calendar & Contacts."
+
+     - This will open Nextcloud's WebFlow login in a browser, where you will need to log in and "Grant Access" - you will then be returned to DAVx5
+     
+     - Set an account name when asked, then set "Contact Group Method" to "Groups are per-contact categories" - DAVx5 will close and Nextcloud will reappear.
+     
+     - Manually launch DAVx5 again and top on the account that was just created.  Grant access to Calendars and Contacts when requested, and optionally tasks, if you added that feature in setup.  Choose the address books and calendars you wish to sync and you're done!
+
+   - If you are NOT using the Nextcloud app already, then open DAVx5 and after going through the introduction (optionally selecting additional features), tap the "+" icon to add a new account, then select "Login with URL and user name," and fill in the following fields:
+
+     - Base URL - Enter your Nextcloud LAN address from "Interfaces" on your Nextcloud service page and add `/remote.php/dav` after `.local`
+
+     - User name - Your Nextcloud user (defaults are found in "Properties" on your Nextcloud service page)
+
+     - Password - Your Nextcloud user's password (defaults are found in "Properties" on your Nextcloud service page)
+
+     - If given the option, select "Groups are per-contact categories," then tap "Login."  Select the data you want to sync, grant access for contacts, calendars, and optionally tasks if you added that feature in setup.  That's it, you're done!
+
+.. tip:: You may also wish to add the ICSx5 <https://icsx5.bitfire.at/>`_ app, which allows subscription to remote WebCa or local iCal files (such as public event schedules, iCloud/Google calendars, etc).  It can be found in your favorite app store.
