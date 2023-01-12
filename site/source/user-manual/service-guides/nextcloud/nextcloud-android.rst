@@ -77,4 +77,4 @@ In order to sync calendars and contacts with your Android device, follow the ste
 
      - If given the option, select "Groups are per-contact categories," then tap "Login."  Select the data you want to sync, grant access for contacts, calendars, and optionally tasks if you added that feature in setup.  That's it, you're done!
 
-.. tip:: You may also wish to add the ICSx5 <https://icsx5.bitfire.at/>`_ app, which allows subscription to remote WebCa or local iCal files (such as public event schedules, iCloud/Google calendars, etc).  It can be found in your favorite app store.
+.. tip:: You may also wish to add the `ICSx5 <https://icsx5.bitfire.at/>`_ app, which allows subscription to remote WebCa or local iCal files (such as public event schedules, iCloud/Google calendars, etc).  It can be found in your favorite app store.
