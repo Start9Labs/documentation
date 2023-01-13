@@ -52,7 +52,7 @@ This is not the same as backing up services and recovering them onto a new Embas
 
 #. Now reassemble the case but **do not power it on yet**
 
-#. Flash the SSD with a fresh install of embassyOS - you can follow the flashing guide :ref:`here <flashing-pi>`
+#. Flash the micro SD card with a fresh install of embassyOS - you can follow the flashing guide :ref:`here <flashing-pi>`
 
 #. Once flashed, reinsert the SD card into the Embassy and reconnect the Ethernet cable, the USB adaptor and then power cable:
 
