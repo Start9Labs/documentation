@@ -105,5 +105,3 @@ This is not the same as backing up services and recovering them onto a new Embas
         :width: 60%
 
     .. warning:: Do not unders any circumstances use the old SSD to setup another Embassy unless you wipe it first or wipe it during the initial setup proecess! If you have lightning channels you could lose all your funds!
-
-.. _samsung-drives:
