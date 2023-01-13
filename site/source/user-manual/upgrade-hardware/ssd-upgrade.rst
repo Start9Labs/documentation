@@ -35,7 +35,7 @@ This is not the same as backing up services and recovering them onto a new Embas
     .. figure:: /_static/images/hardware-pics/bottom-screws.jpg
         :width: 50%
 
-#. Carefully slide the contents of the case out you should see the SSD:
+#. Carefully slide the contents of the case out.  You will see the SSD on the bottom of the assembly:
 
     .. figure:: /_static/images/hardware-pics/old-drive-exposed.jpg
         :width: 50%
