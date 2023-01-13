@@ -36,7 +36,7 @@ Upgrade Hardware
   :class: large-5
   :anchor: Upgrade
 
-  This is for if you want to replace/upgrade your SSD
+  This is for replacing or upgrading your SSD
 
 .. topic-box::
   :title: Upgrade Kit v0.2 - v0.3
