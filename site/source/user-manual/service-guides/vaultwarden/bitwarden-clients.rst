@@ -8,6 +8,8 @@ Bitwarden Clients
   :depth: 2 
   :local:
 
+.. _vaultwarden-webvault:
+
 There are many ways to connect to and use your Vaultwarden server.
 
 Web Vault
@@ -24,9 +26,11 @@ Web Vault
 
 5. Back at the main page for your vault, let's do a quick example login.  We can setup a new folder here and save new login.  For our example, we're going to use our FileBrowser instance.  So click 'Add item,'  then we'll fill in some test information.  A name for the entry, a username, password, and the website we want to log in to.  Then click 'Save.'
 
+.. _vaultwarden-admin:
+
 Accessing the Admin Console
 ===========================
-You will find the Admin console by adding `/admin` to the end of your Vaultwarden WebUI URL, found in the "Interfaces" section of the Vaultwarden Service page.  You will be prompted for your "Admin Token," which is also found on your Vaultwarden Service page under "Properties."
+You will find the Admin console by adding ``/admin`` to the end of your Vaultwarden WebUI URL, found in the "Interfaces" section of the Vaultwarden Service page.  You will be prompted for your "Admin Token," which is also found on your Vaultwarden Service page under "Properties."
 
 Browser Extension
 -----------------
