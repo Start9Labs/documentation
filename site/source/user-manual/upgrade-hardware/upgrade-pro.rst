@@ -9,7 +9,7 @@ This guide is for Embassy One users upgrading from a NASPi (pictured below). If 
     .. figure:: /_static/images/hardware-pics/embassy-one.png
         :width: 30%
 
-You will need a high quality USB-A to USB-A cable like `this <https://www.amazon.com/UGREEN-Transfer-Enclosures-Printers-Cameras/dp/B00P0E3954/?th=1>`_. Or a USB-A to USB-C cable like `this <https://www.amazon.com/AmazonBasics-Type-C-USB-Male-Cable/dp/B01GGKYKQM/?th=1>`_.
+You will need a high quality `USB-A to USB-A cable <https://www.amazon.com/UGREEN-Transfer-Enclosures-Printers-Cameras/dp/B00P0E3954/?th=1>`_, or a `USB-A to USB-C cable <https://www.amazon.com/AmazonBasics-Type-C-USB-Male-Cable/dp/B01GGKYKQM/?th=1>`_.
 
 #. Shutdown your Embassy One 
 

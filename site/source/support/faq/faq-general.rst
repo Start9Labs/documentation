@@ -76,7 +76,7 @@ A Service can be any piece of software added to the Marketplace.  Unlike "apps,"
 
 Does the Embassy ship worldwide?
 --------------------------------
-We ship everywhere that DHL ships.  Please consider that in some countries, the VAT and Customs fees are so ridiculous that they cost as much as Embassy itself or more.  You may wish to consider buying your hardware locally and building your own device, downloading embassyOS from our github, and `donating<https://donate.start9.com/>`_ to us.  Please see the :ref:`DIY<diy>` page for details.
+We ship everywhere that DHL ships.  Please consider that in some countries, the VAT and Customs fees are so ridiculous that they cost as much as Embassy itself or more.  You may wish to consider buying your hardware locally and building your own device, downloading embassyOS from our github, and `donating <https://donate.start9.com/>`_ to us.  Please see the :ref:`DIY<diy>` page for details.
 
 Does the Embassy have international electrical plugs?
 -----------------------------------------------------
