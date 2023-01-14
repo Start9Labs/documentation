@@ -13,4 +13,4 @@ These guides will help you to setup external tools to connect or interact with s
   lightning
   matrix
   nextcloud/index
-  vaultwarden
+  vaultwarden/index
