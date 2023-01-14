@@ -35,31 +35,59 @@ This is not the same as backing up services and recovering them onto a new Embas
     .. figure:: /_static/images/hardware-pics/bottom-screws.jpg
         :width: 50%
 
-#. Carefully slide the contents of the case out.  You will see the SSD on the bottom of the assembly:
+#. Carefully slide the contents of the case out and disassemble the Embassy by disconnecting the power wire and removing the 5 screws highlighted below:
+
+    .. figure:: /_static/images/hardware-pics/disassembly-0.png
+        :width: 50%
+
+#. This top section should lift off now and you'll be left with the SSD still attached. Remove the two screws shown below:
+
+    .. figure:: /_static/images/hardware-pics/disassembly-1.png
+        :width: 50%
+
+#. Now slide the **old** SSD off the connector:
 
     .. figure:: /_static/images/hardware-pics/old-drive-exposed.jpg
         :width: 50%
 
-#. Remove the SSD by disassembling the Embassy as necessary until you can detach the SSD, then connect it to an enclosure or adaptor as shown:
-
-    .. figure:: /_static/images/hardware-pics/old-drive-sabrent.jpg
-        :width: 50%
-
 #. Now take the **new** SSD, and connect it where the old one was:
 
-    .. figure:: /_static/images/hardware-pics/new-drive.jpg
+    .. figure:: /_static/images/hardware-pics/new-ssd-attach-0.png
         :width: 50%
 
-#. Now reassemble the case but **do not power it on yet**
+#. Secure the SSD with the two silver screws:
+
+    .. figure:: /_static/images/hardware-pics/disassembly-1.png
+        :width: 50%
+
+#. Reattach the 5 black screws here and reconnect the power wire:
+
+    .. figure:: /_static/images/hardware-pics/disassembly-0.png
+        :width: 50%
+
+#. Now reinsert the Embassy back into the case and reattach the bottom four black screws:
+
+    .. figure:: /_static/images/hardware-pics/bottom-screws.jpg
+        :width: 50%
+
+#. Reconnect the USB adaptor and back two black screws:
+
+    .. figure:: /_static/images/hardware-pics/back-screws-usb-loop.jpg
+        :width: 50%
 
 #. Flash the micro SD card with a fresh install of embassyOS - you can follow the flashing guide :ref:`here <flashing-pi>`
 
-#. Once flashed, reinsert the SD card into the Embassy and reconnect the Ethernet cable, the USB adaptor and then power cable:
+#. Once flashed, reinsert the micro SD card into the Embassy:
 
-    .. figure:: /_static/images/hardware-pics/plugged-in-front.jpg
+    .. figure:: /_static/images/hardware-pics/front-sd-card.jpg
         :width: 50%
 
+#. Reconnect the Ethernet cable, make sure the USB adaptor is connect and then finally connect the power cable:
+
     .. figure:: /_static/images/hardware-pics/plugged-in-back.jpg
+        :width: 50%
+
+    .. figure:: /_static/images/hardware-pics/plugged-in-front.jpg
         :width: 50%
 
 #. Head to http://embassy.local on any device on the same LAN
