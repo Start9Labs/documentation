@@ -35,7 +35,7 @@ This is not the same as backing up services and recovering them onto a new Embas
     .. figure:: /_static/images/hardware-pics/bottom-screws.jpg
         :width: 50%
 
-#. Carefully slide the contents of the case out and disassemble the Embassy by disconnecting the power wire and removing the 5 screws highlighted below:
+#. Carefully slide the contents of the case out and disassemble the Embassy by disconnecting the power wire and removing the 5 screws (and 4 brass spacers beneath the fan bracket) highlighted below:
 
     .. figure:: /_static/images/hardware-pics/disassembly-0.png
         :width: 50%
@@ -60,7 +60,7 @@ This is not the same as backing up services and recovering them onto a new Embas
     .. figure:: /_static/images/hardware-pics/disassembly-1.png
         :width: 50%
 
-#. Reattach the 5 black screws here and reconnect the power wire:
+#. Reattach the 4 brass spacers holding the Pi to the SSD board, followed by the 5 black screws to secure the fan bracket and power management board.  Then reconnect the power wire:
 
     .. figure:: /_static/images/hardware-pics/disassembly-0.png
         :width: 50%
