@@ -30,6 +30,15 @@ Upgrade Hardware
   This is for if you purchased a NASPi upgrade kit from us
 
 .. topic-box::
+  :title: Upgrade SSD
+  :link: ssd-upgrade
+  :icon: scylla-icon scylla-icon--benchmarks
+  :class: large-5
+  :anchor: Upgrade
+
+  This is for replacing or upgrading your SSD
+
+.. topic-box::
   :title: Upgrade Kit v0.2 - v0.3
   :link: upgrade-kit
   :icon: scylla-icon scylla-icon--getting-started
@@ -64,6 +73,7 @@ Upgrade Hardware
 
    Pro upgrade <upgrade-pro>
    NASPi upgrade <naspi-upgrade>
+   SSD upgrade <ssd-upgrade>
    Upgrade Kit <upgrade-kit>
    DIY Hardware <upgrade-diy>
 
