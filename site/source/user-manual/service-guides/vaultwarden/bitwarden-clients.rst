@@ -1,21 +1,16 @@
-.. _vaultwarden:
+.. _bitwarden-clients:
 
-===========
-Vaultwarden
-===========
+=================
+Bitwarden Clients
+=================
 
 .. contents::
   :depth: 2 
   :local:
 
-Vaultwarden is a self-hosted password manager, which means your passwords physically live on your Embassy. Be sure to create backups and keep them safe! If you lose your Embassy or uninstall Vaultwarden, and you have not made a backup, all your passwords will be lost forever.  If you currently have a *hosted* account with Bitwarden, you can export your data from that account and import it to your Vaultwarden service on Embassy using the built-in import/export features in any Bitwarden application.
+.. _vaultwarden-webvault:
 
-.. note:: The version of Bitwarden server used on the Embassy is a fork called "Vaultwarden."  It functions with all of the apps/integrations that are built for, and still named after, "Bitwarden."  We apologize for any confusion this may cause.
-
-Check out our `Vaultwarden video <https://www.youtube.com/watch?v=YcxxVHpm9j0>`_ for basic features and setup!
-
-    .. youtube:: YcxxVHpm9j0
-        :width: 100%
+There are many ways to connect to and use your Vaultwarden server.
 
 Web Vault
 ---------
@@ -31,9 +26,11 @@ Web Vault
 
 5. Back at the main page for your vault, let's do a quick example login.  We can setup a new folder here and save new login.  For our example, we're going to use our FileBrowser instance.  So click 'Add item,'  then we'll fill in some test information.  A name for the entry, a username, password, and the website we want to log in to.  Then click 'Save.'
 
+.. _vaultwarden-admin:
+
 Accessing the Admin Console
 ===========================
-You will find the Admin console by adding `/admin` to the end of your Vaultwarden WebUI URL, found in the "Interfaces" section of the Vaultwarden Service page.  You will be prompted for your "Admin Token," which is also found on your Vaultwarden Service page under "Properties."
+You will find the Admin console by adding ``/admin`` to the end of your Vaultwarden WebUI URL, found in the "Interfaces" section of the Vaultwarden Service page.  You will be prompted for your "Admin Token," which is also found on your Vaultwarden Service page under "Properties."
 
 Browser Extension
 -----------------
