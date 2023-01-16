@@ -6,12 +6,12 @@ Initial Setup
 
 Check out the video below for a guide on setting up your Embassy!
 
-        .. youtube:: HI9WDq0tWm4
-          :width: 60%
+    .. youtube:: HI9WDq0tWm4
+      :width: 60%
 
-        .. raw:: html
+    .. raw:: html
 
-            <br/><br/>
+        <br/><br/>
 
 .. contents::
   :depth: 2
@@ -23,8 +23,6 @@ Powering On
 .. _sounds-bepchime:
 
 #. Connect your Embassy to power and Ethernet.
-
-
 
 #. If all is well, you will hear 2 distinct sounds:
 
@@ -116,7 +114,6 @@ Power the device on and select which mode you would like to continue in on the t
 
 Troubleshooting
 ---------------
-
 If you are experiencing issues with setup, try the following:
 
 #. Confirm that the Embassy is plugged into both power and Ethernet
@@ -139,5 +136,17 @@ If you are experiencing issues with setup, try the following:
     - From your browser, navigate to your router configuration settings. This is usually an IP address such as 192.168.1.1. A simple web search will usually reveal how to access the router configuration settings for a particular brand.
     - Once in the router config settings, find the section that lists the devices on your network. You should see an item labeled "embassy". Take note of the associated IP address and enter it into your browser's URL field to enter the setup.
     - In some cases, if you are working with a very old image of embassyOS, the device name will show up as `start9-shortcode`.  If this is the case, and you want to start fresh, wiping out the previous install and all data residing on it, :ref:`flash the newest version of embassyOS<flashing>`.
+
+Raspberry Pi Lights
+-------------------
+The Raspberry Pi has 2 status lights.
+
+- Red - Power.  This will be on solid when powered up and running normally.
+- Green - SD Card.  This will display when there is SD Card activity, such as during OS installation.  It may be off, flashing, or on solid during normal operation.
+
+Embassy One (NASPi case) has 2 additional lights.
+
+- Blue power button - Power.  This will be on solid when powered up and running normally.
+- Blue drive light - SSD.  This will display when there is SSD activity.  It may be off, flashing, or on solid during normal operation. 
 
 If you are still having issues, please :ref:`contact support <contact>`.
