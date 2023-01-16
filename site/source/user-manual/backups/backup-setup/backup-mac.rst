@@ -60,12 +60,17 @@ Connect Embassy
 #. Fill in the following fields:
 
     * Hostname - This is the name of your Computer, as shown in the "Sharing" menu earlier
-    * Path - This is the *name of the shared folder* you are using and **not** the full directory path
+    * Path - This is the *name of the shared folder* you are using and **not** the full directory path.
+
+        .. tip:: If you copied the share name from the Mac computer and it contained a space, macOS will have replaced the space with the string "%20".  Please re-replace `%20` with a space in this `Path` field.
+
     * Username - This is the user on the remote machine that you used to create the shared directory
     * Password - This is your user (from above) password
 
     .. figure:: /_static/images/cifs/cifs-mac5.png
         :width: 60%
+
+    .. note:: If you are on MacOS Catalina (version 10.15.7), and the backup fails, please `see this Apple support thread <https://discussions.apple.com/thread/253970425>`_.  If the provided solution still doesn't work, SMB file sharing probably will not work for this old Mac.  Consider backing up to a USB thumb drive instead.
 
 #. Click "Save".
 
