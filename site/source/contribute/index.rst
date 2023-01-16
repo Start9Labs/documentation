@@ -28,7 +28,7 @@ Contribute
   :class: large-4
   :anchor: Assist
 
-  Help guide community members that are earlier in their path than you.
+  Help guide community members that are early in their sovereign journey.
 
 .. topic-box::
   :title: Decentralize the Ecosystem
