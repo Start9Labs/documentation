@@ -31,7 +31,7 @@ I cannot reach embassy.local after hearing the start-up sounds from Embassy.  Wh
 * Ensure that you are on the same network as your Embassy.  Check that it is not a "Guest" network in your router
 * Your browser might try to force https://embassy.local, delete the https:// prefix and try again with just embassy.local or http://embassy.local
 * Try a different browser, and note that Tor Browser cannot handle .local addresses
-* Turn off your VPN if you are using one (you may turn it back on after setup)
+* Turn off your VPN if you are using one (you may turn it back on after setup), or "allow LAN connections" if your VPN has such a setting.
 * If none of the above work, check your network setup, including your router settings if they are non-standard
 
 .. _why-bonjour:
