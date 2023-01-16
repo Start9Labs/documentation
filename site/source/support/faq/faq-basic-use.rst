@@ -21,6 +21,13 @@ Can I run multiple Embassies?
 -----------------------------
 Yes, but there is currently no way to synchronize or federate them.  We are working on ways to make this possible in the future.
 
+Can I still use my VPN?
+-----------------------
+The short answer is yes, but they can cause some conflicts when accessing your Embassy.  If you need to troubleshoot, turning off your VPN is a good place to start.  The following VPNs are known to not interfere witht the proper settings:
+
+- Mullvad - Go to "Settings -> VPN Settings -> Local Network Sharing" - enable this option to be able to access your Embassy's ``.local`` addresses.
+- ProtonVPN - Go to "Preferences -> Connection -> Allow LAN Connections" - enable this option to be able to access your Embassy's ``.local`` addresses.
+
 What if I forget my Embassy password?
 -------------------------------------
 Please follow the :ref:`password reset guide<reset-password>`.

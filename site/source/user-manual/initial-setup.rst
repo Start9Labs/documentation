@@ -131,7 +131,11 @@ If you are experiencing issues with setup, try the following:
         </audio>
 #. Confirm the Embassy emitted two sounds when powering on: :ref:`a bep and a chime<sounds-bepchime>`
 #. Confirm your phone/computer is **not** connected to a "Guest" network
-#. Confirm your phone/computer is not using a VPN
+#. Confirm your phone/computer is not using a VPN, or that if you are, it allows LAN connections, such as the options below:
+
+    - Mullvad - Go to "Settings -> VPN Settings -> Local Network Sharing"
+    - ProtonVPN - Go to "Preferences -> Connection -> Allow LAN Connections"
+
 #. Visit or Refresh the embassy.local page in a web browser
 #. To avoid networking issues, it is recommended to use your `primary` router, not an extender or mesh router.
 #. Very rarely, your firewall settings may block mDNS. In this case:

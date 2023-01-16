@@ -38,7 +38,7 @@ If you still cannot connect, try logging into your router (the directions for wh
 I am unable to reach Embassy via it's embassy-xxxxxxxx.local (LAN) address
 ------------------------------------------------------------------------------
 
-Make sure you have successfully followed the :ref:`LAN Setup<connecting-lan>` instructions for your device. If you still cannot connect, try all the solutions listed under :ref:`initial setup <setup-troubleshoot>`.
+Make sure you have successfully followed the :ref:`LAN Setup<connecting-lan>` instructions for your device. If you are using Windows, your problem is almost certainly with Bonjour - follow the directions to reinstall, even if you have already done so.  If you still cannot connect, try all the solutions listed under :ref:`initial setup <setup-troubleshoot>`.
 
 I am unable to reach Embassy via it's xxxxxxxxxxxxxxxxxx.onion (Tor) address
 --------------------------------------------------------------------------------
