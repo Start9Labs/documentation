@@ -14,6 +14,5 @@ On Mac, you only need to instruct Firefox to trust your Embassy's Root CA. The o
   :maxdepth: 1
 
   Firefox <lan-ff>
-  Brave <lan-brave>
-  Chrome <lan-chrome>
+  Chrome / Brave <lan-chrome-brave>
   Safari <lan-safari>

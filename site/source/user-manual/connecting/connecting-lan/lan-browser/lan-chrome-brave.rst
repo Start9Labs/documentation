@@ -1,32 +1,34 @@
-.. _lan-brave:
+.. _lan-chrome-brave:
 
 =========================
-Trust Embassy CA in Brave
+Trust Embassy CA in Chrome / Brave Browser
 =========================
 
 .. caution:: You will first need to complete :ref:`lan-os` for your device before continuing.
+
+.. note:: This guide will work for Chrome, Chromium, Brave Browser or Vivaldi
 
 .. tabs::
 
     .. group-tab:: Linux
 
-        #. Open a new tab in Brave and open to "Settings" from the top-right hamburger menu.
+        #. Open a new tab in the browser and open to "Settings" from the top-right hamburger menu.
 
             .. figure:: /_static/images/ssl/browser/brave_settings.png
               :width: 30%
-              :alt: Brave settings page
+              :alt: Chrome / Brave settings page
 
         #. On the left hand sidebar, select the "Privacy and security" section, then the "Security" menu item.
 
             .. figure:: /_static/images/ssl/browser/brave_security.png
               :width: 60%
-              :alt: Brave Privacy and security settings
+              :alt: Chrome / Brave Privacy and security settings
 
         #. At the bottom of the section, select "Manage Certificates".
         
             .. figure:: /_static/images/ssl/browser/brave_security_settings.png
               :width: 60%
-              :alt: Brave Security settings page
+              :alt: Chrome / Brave Security settings page
 
         #. Click the "Authorities" tab
 
@@ -34,18 +36,18 @@ Trust Embassy CA in Brave
               :width: 60%
               :alt: Certificate Authorities
 
-        #. If you see "org-Start9" with a trusted “Embassy Local Root CA” listed under it, open a new tab to apply the certificate. If this does not work, quit and restart Brave.
+        #. If you see "org-Start9" with a trusted “Embassy Local Root CA” listed under it, your work is already done. Open a new tab and visit your embassy's address.  The browser shouldn't give any warning pages about the certificate anymore.  If it still does, quit and restart the browser using `Menu > Exit`.
 
         #. If you do not see "org-Start9" in the list, click "Import" and open the downloaded "Embassy Local Root CA.crt" file on your device. Check the box for "Trust this certificate for identifying websites" and click "OK".
 
             .. figure:: /_static/images/ssl/browser/brave_view_certs.png
               :width: 60%
-              :alt: Brave Manage Certificates sub-menu on macOS
+              :alt: Chrome / Brave Manage Certificates sub-menu on macOS
 
 
     .. group-tab:: Windows
 
-        #. Open a new tab in Brave and open to "Settings" from the top-right hamburger menu.
+        #. Open a new tab in the browser and click "Settings" from the top-right hamburger menu.
 
             .. figure:: /_static/images/ssl/browser/brave_settings.png
               :width: 30%
@@ -119,4 +121,4 @@ Trust Embassy CA in Brave
 
     .. group-tab:: Mac
 
-       No additional setup is required for Brave on MacOS
+       No additional setup is required for Chrome or Brave on MacOS
