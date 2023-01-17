@@ -64,6 +64,12 @@ Enable Tor System-wide
 
                 sudo curl https://registry.start9labs.com/sys/proxy.pac --output /Library/WebServer/Documents/proxy.pac
 
+        #. Now enable apache service:
+
+            .. code-block::
+        
+                sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
+
         #. Go to System Settings:
 
             .. figure:: /_static/images/tor/systemSettings.png
@@ -82,9 +88,9 @@ Enable Tor System-wide
                 :width: 80%
                 :alt: Click Advanced
 
-        #. Select *Proxies*, toggle *Automatic proxy configuration* and enter **file:////Library/WebServer/Documents/proxy.pac** then click *OK*:
+        #. Select "Automatic Proxy Configuration", add this URL: **http://localhost/proxy.pac** then click "OK":
 
-            .. figure:: /_static/images/tor/ventura-proxies.png
+            .. figure:: /_static/images/tor/ventura-proxies-corrected.png
                 :width: 80%
                 :alt: Select Proxys
 
@@ -101,6 +107,12 @@ Enable Tor System-wide
             .. code-block::
 
                 sudo curl https://registry.start9labs.com/sys/proxy.pac --output /Library/WebServer/Documents/proxy.pac
+
+        #. Now enable apache service:
+
+            .. code-block::
+        
+                sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
 
         #. Go to System Preferences:
 
@@ -126,9 +138,9 @@ Enable Tor System-wide
                 :width: 80%
                 :alt: Select Proxys
 
-        #. Select "Automatic Proxy Configuration", add this URL: **file:////Library/WebServer/Documents/proxy.pac** then click "OK"
+        #. Select "Automatic Proxy Configuration", add this URL: **http://localhost/proxy.pac** then click "OK"
 
-            .. figure:: /_static/images/tor/entertorproxyURL.png
+            .. figure:: /_static/images/tor/entertorproxyURL-pre-ventura.png
                 :width: 80%
                 :alt: Select Automatic proxy config and enter URL
 
