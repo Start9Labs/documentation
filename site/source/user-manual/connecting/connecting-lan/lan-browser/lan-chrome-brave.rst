@@ -36,7 +36,7 @@ Trust Embassy CA in Chrome / Brave Browser
               :width: 60%
               :alt: Certificate Authorities
 
-        #. If you see "org-Start9" with a trusted “Embassy Local Root CA” listed under it, your work is already done. Open a new tab and visit your embassy's address.  The browser shouldn't give any warning pages about the certificate anymore.  If it still does, quit and restart the browser using `Menu > Exit`.
+        #. If you see "org-Start9" with a trusted “Embassy Local Root CA” listed under it, your work is already done. Open a new tab and visit your Embassy's address.  The browser shouldn't give any warning pages about the certificate anymore.  If it still does, quit and restart the browser using `Menu > Exit`.
 
         #. If you do not see "org-Start9" in the list, click "Import" and open the downloaded "Embassy Local Root CA.crt" file on your device. Check the box for "Trust this certificate for identifying websites" and click "OK".
 
