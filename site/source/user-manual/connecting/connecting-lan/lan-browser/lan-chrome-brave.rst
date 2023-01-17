@@ -1,8 +1,8 @@
 .. _lan-chrome-brave:
 
-=========================
+==========================================
 Trust Embassy CA in Chrome / Brave Browser
-=========================
+==========================================
 
 .. caution:: You will first need to complete :ref:`lan-os` for your device before continuing.
 
