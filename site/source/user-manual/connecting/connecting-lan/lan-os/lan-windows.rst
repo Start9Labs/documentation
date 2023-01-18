@@ -42,7 +42,7 @@ Unfortunately, Windows does not have mDNS support built-in, which is necessary i
 
     Add Certificates to selected snap-ins
 
-#. Select “Computer account” and click “Next. Leave defaulted options on the next screen and click “Finish”.
+#. Select “Computer account” and click “Next". Leave defaulted options on the next screen and click “Finish”.
 
 #. When you return to the “Add or Remove Snap-ins” page, ensure “Certificates (Local Computer)” exists under “Console Root” in the “Selected snap-ins” section, then click “OK”.
 
