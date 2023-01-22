@@ -28,25 +28,25 @@ If you want to connect over LAN using a **native app** (e.g. Bitwarden, Nextclou
 
                 .. code-block:: bash
 
-                    libnssckbiso=/usr/lib/firefox/libnssckbi.so sudo mv $libnssckbiso $libnssckbiso.bak && sudo ln -s /usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so $libnssckbiso
+                    libnssckbiso=/usr/lib/firefox/libnssckbi.so && sudo mv $libnssckbiso $libnssckbiso.bak && sudo ln -s /usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so $libnssckbiso
 
                 If you use Firefox ESR:
 
                 .. code-block:: bash
                     
-                    libnssckbiso=/usr/lib/firefox-esr/libnssckbi.so sudo mv $libnssckbiso $libnssckbiso.bak && sudo ln -s /usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so $libnssckbiso
+                    libnssckbiso=/usr/lib/firefox-esr/libnssckbi.so && sudo mv $libnssckbiso $libnssckbiso.bak && sudo ln -s /usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so $libnssckbiso
 
                 If you use Librewolf:
 
                 .. code-block:: bash
                     
-                    libnssckbiso=/usr/share/librewolf/libnssckbi.so sudo mv $libnssckbiso $libnssckbiso.bak && sudo ln -s /usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so $libnssckbiso
+                    libnssckbiso=/usr/share/librewolf/libnssckbi.so && sudo mv $libnssckbiso $libnssckbiso.bak && sudo ln -s /usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so $libnssckbiso
 
                 If you use Thunderbird (Useful for LAN access to NextCloud's calendar/contacts):
 
                 .. code-block:: bash
 
-                    libnssckbiso=/usr/lib/thunderbird/libnssckbi.so sudo mv $libnssckbiso $libnssckbiso.bak && sudo ln -s /usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so $libnssckbiso
+                    libnssckbiso=/usr/lib/thunderbird/libnssckbi.so && sudo mv $libnssckbiso $libnssckbiso.bak && sudo ln -s /usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so $libnssckbiso
 
             Then finally, from the folder you have downloaded your Embassy's Root CA, run the following to add your Embassy's CA certificate to the OS trust store:
 
