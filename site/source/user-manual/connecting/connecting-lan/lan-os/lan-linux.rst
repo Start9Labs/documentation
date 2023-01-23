@@ -48,6 +48,12 @@ If you want to connect over LAN using a **native app** (e.g. Bitwarden, Nextclou
 
                     libnssckbiso=/usr/lib/thunderbird/libnssckbi.so && sudo mv $libnssckbiso $libnssckbiso.bak && sudo ln -s /usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so $libnssckbiso
 
+                If you performed any of the commands above, now we need to move the the mozilla apps' old trust store out of the way:
+
+                .. code-block:: bash
+
+                    mv ~/.pki ~/.pki.mozilla-old
+
             Then finally, from the folder you have downloaded your Embassy's Root CA, run the following to add your Embassy's CA certificate to the OS trust store:
 
             .. code-block:: bash
