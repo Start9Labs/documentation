@@ -12,5 +12,5 @@ Instruct your **operating system** to trust your Embassy's Root CA.
   Linux <lan-linux>
   Mac <lan-mac>
   Windows <lan-windows>
-  Android/Graphene/Calyx <lan-android>
+  Android <lan-android>
   iOS <lan-ios>

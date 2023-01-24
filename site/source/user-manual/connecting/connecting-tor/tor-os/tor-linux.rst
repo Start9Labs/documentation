@@ -12,7 +12,7 @@ Running Tor on Linux
 
         .. note:: The following install is for the LTS (Long Term Support) version of Tor from Debian.  If you would like the latest stable release, The Tor Project maintain their own Debian repository.  The instructions to connect to this can be found `here <https://support.torproject.org/apt/tor-deb-repo/>`_.
 
-        Install the Tor proxy service to your system. To do so, open your terminal and run the following command:
+        Install the Tor proxy service to your system.  To do so, open your terminal and run the following command:
 
         .. code-block:: bash
 
@@ -51,7 +51,7 @@ Running Tor on Linux
 
                 sudo systemctl restart tor
 
-    .. group-tab:: CentOS / RHEL / Fedora
+    .. group-tab:: CentOS / Fedora / RHEL
 
         #. Configure the Tor Package repository.  Add the following to ``/etc/yum.repos.d/tor.repo``:
 
