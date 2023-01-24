@@ -69,6 +69,12 @@ Setup Network Folder
 
             .. figure:: /_static/images/cifs/cifs-lin4.png
                 :width: 60%
+        
+        #. In case your installation of Ubuntu is running a firewall by default or due to your own custom configuration, enter this command to allow connections to Samba.  If it generates an error, you can safely ignore it:
+
+            .. code-block:: bash
+
+                sudo ufw allow Samba
 
 
     .. group-tab:: Mint
@@ -101,6 +107,12 @@ Setup Network Folder
             - You may rename the "Share", if you prefer - **remember this name**, you will need it later in your EmbassyUI.  In this example, we call it ``backup-share``
 
             - (Optional) Create a description in the "Comment" section
+
+        #. In case your installation of Mint is running a firewall by default or due to your own custom configuration, enter this command to allow connections to Samba.  If it generates an error, you can safely ignore it:
+
+            .. code-block:: bash
+
+                sudo ufw allow Samba
 
 
     .. group-tab:: Other Linux
@@ -139,6 +151,12 @@ Setup Network Folder
                     sudo smbpasswd -a YOUR-USER
 
                 This creates a password for the Local Network Share.  Keep it somewhere safe, such as Vaultwarden.
+        
+        #. In case your installation of Linux (Pop-OS users take special note!) is running a firewall by default or due to your own custom configuration, enter this command to allow connections to Samba.  If it generates an error, you can safely ignore it:
+
+            .. code-block:: bash
+
+                sudo ufw allow Samba
 
 
 Connect Embassy
