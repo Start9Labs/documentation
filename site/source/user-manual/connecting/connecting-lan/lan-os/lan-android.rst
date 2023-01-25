@@ -4,7 +4,7 @@
 Trusting Embassy CA on Android
 ==============================
 
-.. note:: This should work on stock Android, and equally well on CalyxOS, GrapheneOS or LineageOS.
+.. note:: This will work on stock Android, and equally well on CalyxOS, GrapheneOS or LineageOS.
 
 .. warning:: This is only possible on Android version 12 or greater.  For LineageOS, that corresponds to v19+.
 
