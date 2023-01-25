@@ -34,6 +34,6 @@ This should work equally well in Firefox, Firefox ESR, or Librewolf.
     
     .. group-tab:: iOS
 
-        No additional configuration for iOS is required.:
+        No additional configuration for iOS is required.
 
 
