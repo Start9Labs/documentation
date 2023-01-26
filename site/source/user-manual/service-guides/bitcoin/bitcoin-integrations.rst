@@ -18,7 +18,7 @@ Blockstream Green
 
 **Available For**
 
- - Android/CalyxOS/GrapheneOS/LineageOS
+ - Android
  - iOS
  - Linux
  - macOS
@@ -36,7 +36,7 @@ BlueWallet
 
  **Available For**
 
-  - Android/CalyxOS/GrapheneOS/LineageOS
+  - Android
   - iOS
  
  **Instructions**
@@ -51,7 +51,7 @@ Electrum
 
  **Available For**
 
-  - Android/CalyxOS/GrapheneOS/LineageOS
+  - Android
   - Linux
   - macOS
   - Windows

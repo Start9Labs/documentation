@@ -12,5 +12,5 @@ Select your Operating System to setup Tor to run in the background (natively) of
   Linux <tor-linux>
   Mac <tor-mac>
   Windows <tor-windows>
-  Android/Calyx/Graphene <tor-android>
+  Android <tor-android>
   iOS <tor-ios>

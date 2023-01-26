@@ -27,7 +27,7 @@ Once Tor is setup on your system, you can proceed to setup Firefox:
 
 5. Search for ``network.proxy.autoconfig_url``, and set the value to ``file:///storage/emulated/0/Download/proxy.pac``.
 
-  .. caution:: No variation of this will work on LineageOS.  For some platforms, such as Calyx/Graphene on a Pixel 5/6, it may be necessary to place the file within the application's ``data`` folder, such as ``file:///storage/emulated/0/Android/data/org.mozilla.firefox_beta/files/Download/proxy.pac``.  Furthermore, the stock file explorer app may not let you do this, so you might have to get a new one, such as `Explorer <https://play.google.com/store/apps/details?id=com.speedsoftware.explorer&hl=en_US&gl=US>`_.  Please reach out to support if you have issues.
+  .. caution:: No variation of this will work on LineageOS.  For some platforms, such as Calyx/Graphene on a Pixel 5/6, it may be necessary to place the file within the application's ``data`` folder, such as ``file:///storage/emulated/0/Android/data/org.mozilla.firefox_beta/files/Download/proxy.pac``.  Furthermore, the stock file explorer app may not let you do this, so you might have to get a new one, such as `Ghost Commander <https://play.google.com/store/apps/details?id=com.ghostsq.commander&hl=en_US&gl=US>` (also available on F-Droid).  Please reach out to support if you have issues.
 
   .. figure:: /_static/images/tor/autoconfig_url.png
     :width: 50%
@@ -45,5 +45,7 @@ Once Tor is setup on your system, you can proceed to setup Firefox:
     :width: 50%
     :alt: Firefox whitelist onions screenshot
 
-8. Restart Firefox, and you're all set! You should now be able to navigate to `.onion` URLs in Firefox. This means you can bookmark Cups Messenger, or other Embassy ``.onion`` addresses, as well as use the :ref:`Bitwarden<vaultwarden>` browser extension.
+8. Optional but recommended: search for ``network.http.referer.hideOnionsSource`` and set the value to ``true``.
+
+9. Restart Firefox, and you're all set! You should now be able to navigate to `.onion` URLs in Firefox. This means you can bookmark Cups Messenger, or other Embassy ``.onion`` addresses, as well as use the :ref:`Bitwarden<vaultwarden>` browser extension.
 
