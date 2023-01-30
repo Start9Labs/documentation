@@ -37,7 +37,7 @@ Adding Others to Your Organization
    .. figure:: /_static/images/services/vaultwarden/user-permissions.png
       :width: 60%
 
-#. The new member should automatically show as `Accepted`.  If the user shows as `Invited`, Remove their account by clikcing the settings icon to the right of their email address, and make sure they sign up *before* you invite them, as mentioned in Step 1.  Once they show as `Accepted`, click the settings icon on the right and click "Confirm":
+#. The new member should automatically show as `Accepted`.  If the user shows as `Invited`, Remove their account by clicking the settings icon to the right of their email address, and make sure they sign up *before* you invite them, as mentioned in Step 1.  Once they show as `Accepted`, click the settings icon on the right and click "Confirm":
 
    .. figure:: /_static/images/services/vaultwarden/confirm-user.png
       :width: 60%
