@@ -4,7 +4,7 @@
 Trusting Embassy CA On Windows
 ==============================
 
-Unfortunately, Windows does not have mDNS support built-in, which is necessary in order to visit .local addresses, so we recommend using the Bonjour service. Check out this :ref:`FAQ answer<why-bonjour>` for details.
+Unfortunately, Windows does not have mDNS alias support built-in, which is necessary in order to visit .local addresses for any service you install on your Embassy, so we recommend using the Bonjour service. Check out this :ref:`FAQ answer<why-bonjour>` for details.
 
 #. Install `Bonjour Print Services <https://support.apple.com/kb/DL999>`_ on your Windows machine.
 
