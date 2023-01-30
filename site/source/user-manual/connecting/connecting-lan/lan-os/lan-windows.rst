@@ -86,4 +86,4 @@ Unfortunately, Windows does not have mDNS support built-in, which is necessary i
 
     Embassy Local Root CA imported into Certificate folder
 
-#. You can save the settings to the console if desired or cancel.
+#. You can save the settings to the console if desired, or not by pressing `Yes` or `No`.  The CA certificate will remain imported to the CA certificate store either way.
