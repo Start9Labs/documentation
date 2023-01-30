@@ -4,7 +4,7 @@
 Trusting Embassy CA On Windows
 ==============================
 
-Unfortunately, Windows does not have mDNS support built-in, which is necessary in order to visit .local addresses, so we recommend using the Bonjour service. Check out this :ref:`FAQ answer<why-bonjour>` for details.
+Unfortunately, Windows does not have mDNS alias support built-in, which is necessary in order to visit .local addresses for any service you install on your Embassy, so we recommend using the Bonjour service. Check out this :ref:`FAQ answer<why-bonjour>` for details.
 
 #. Install `Bonjour Print Services <https://support.apple.com/kb/DL999>`_ on your Windows machine.
 
@@ -16,15 +16,13 @@ Unfortunately, Windows does not have mDNS support built-in, which is necessary i
             #. Restart Windows
             #. Note: Uninstalling Bonjour via the setup package seems to be not enough to solve the issue. Bonjour must be uninstalled via windows system settings.
 
-#. Back in Windows, right-click the “Start” menu and select “Run”.
+#. Back in Windows, click the “Start” menu, type “mmc”, and select "Run as administrator"
 
-#. Type in “mmc” and click “OK”. When prompted on the “User Account Control” window, select “Yes” to allow this program to run.
-
-   .. figure:: /_static/images/ssl/windows/1_windows_mmc.png
+   .. figure:: /_static/images/ssl/windows/0_windows_mmc.png
     :width: 90%
     :alt: Windows MMC
 
-    Access the Windows Management Console
+    Access the Windows Management Console.  When prompted with the “User Account Control” window, select “Yes” to allow this program to run.
 
 #. When the Management Console opens, navigate to *File > Add/Remove Snap-in*.
 
@@ -88,4 +86,4 @@ Unfortunately, Windows does not have mDNS support built-in, which is necessary i
 
     Embassy Local Root CA imported into Certificate folder
 
-#. You can save the settings to the console if desired or cancel.
+#. You can save the settings to the console if desired, or not by pressing `Yes` or `No`.  The CA certificate will remain imported to the CA certificate store either way.
