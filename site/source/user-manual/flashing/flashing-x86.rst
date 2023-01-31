@@ -38,7 +38,7 @@ Once you have the embassyOS image, you will need to flash it onto your USB drive
 
 #. Click "Flash!". You may be asked to (1) approve the unusually large disk target or (2) enter your password. Both are normal.
 
-#. After this completes, you may remove the newly flashed drive from your computer, insert it into the device you intend to install embassyOS onto.  You will need to allow/prioritize "Legacy boot" from your BIOS.  Look up your device or motherboard online for how to access the BIOS and make the change.
+#. After this completes, you may remove the newly flashed drive from your computer, insert it into the device you intend to install embassyOS onto.  You will need to allow/prioritize "Legacy boot" from your BIOS.  Look up your device or motherboard online for how to access the BIOS and make the change. This is *not* necessary when flashing the Embassy Pro.
 
     .. note:: Always perfer the fastest available USB 3.0 port - typically this is blue or labeled "SS" (SuperSpeed)
 
