@@ -26,7 +26,7 @@ If you would like to contribute to the documentation please follow the instructi
 
 .. tabs::
 
-    .. group-tab:: Editing an existing article:
+    .. group-tab:: Editing an existing page:
 
         #. Click through the relevant directory, find the find the article you'd like to edit and select it:
 
@@ -68,7 +68,7 @@ If you would like to contribute to the documentation please follow the instructi
 
         Thank you for contributing to Start9's documentation!
 
-    .. group-tab:: Creating a new article:
+    .. group-tab:: Creating a new page:
 
         #. Click "Add file" and then "Create new file":
 
