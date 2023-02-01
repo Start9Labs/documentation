@@ -32,7 +32,7 @@ Contribute
 
 .. topic-box::
   :title: Documentation
-  :link: promote
+  :link: documentation
   :icon: scylla-icon scylla-icon--docs
   :class: large-4
   :anchor: Edit
