@@ -65,7 +65,7 @@ If you would like to contribute to the documentation please follow the instructi
             .. figure:: /_static/images/contribution/base-repo-then-pr.png
                 :width: 60%
 
-        #. If you are unable to request review, you can either alert us to the PR by `contacting us <https://start9.com/contact/>`_ or you can take no action as we will see it and review it. Once reviewed we will either suggest changes or approve it if no changes are necessary. If we reject your PR we will try to offer an explanation of why the PR was not needed.
+        #. If you are unable to request review you can still click "Create pull request" - you can then either alert us to the PR by `contacting us <https://start9.com/contact/>`_ or you can take no action as we will see it and review it. Once reviewed we will either suggest changes or approve it if no changes are necessary. If we reject your PR we will try to offer an explanation of why the PR was not needed.
 
         Thank you for contributing to Start9's documentation!
 
@@ -104,6 +104,6 @@ If you would like to contribute to the documentation please follow the instructi
             .. figure:: /_static/images/contribution/cog-create-pr.png
                 :width: 60%
 
-        #. If you are unable to request review, you can either alert us to the PR by `contacting us <https://start9.com/contact/>`_ or you can take no action as we will see it and review it. Once reviewed we will either suggest changes or approve it if no changes are necessary. If we reject your PR we will try to offer an explanation of why the PR was not needed.
+        #. If you are unable to request review you can still click "Create pull request" - you can then either alert us to the PR by `contacting us <https://start9.com/contact/>`_ or you can take no action as we will see it and review it. Once reviewed we will either suggest changes or approve it if no changes are necessary. If we reject your PR we will try to offer an explanation of why the PR was not needed.
 
         Thank you for contributing to Start9's documentation!
