@@ -35,7 +35,7 @@ Contribute
   :link: promote
   :icon: scylla-icon scylla-icon--docs
   :class: large-4
-  :anchor: Shill
+  :anchor: Edit
 
   Modify or add to our documentation.
 
