@@ -31,6 +31,15 @@ Contribute
   Help guide community members that are early in their sovereign journey.
 
 .. topic-box::
+  :title: Documentation
+  :link: promote
+  :icon: scylla-icon scylla-icon--docs
+  :class: large-4
+  :anchor: Shill
+
+  Become an affiliate and help propagate the message to your audience.
+
+.. topic-box::
   :title: Decentralize the Ecosystem
   :link: decentralize
   :icon: scylla-icon scylla-icon--cloud
@@ -59,5 +68,6 @@ Contribute
 
    content
    provide-support
+   documentation
    decentralize
    promote
