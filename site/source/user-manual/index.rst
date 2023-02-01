@@ -26,4 +26,3 @@ Welcome to the embassyOS user manual. Here you will discover all that your Embas
   alt-marketplaces
   device-guides/index
   upgrade-hardware/index
-  contribute
