@@ -22,3 +22,5 @@ Name Your Device
     .. figure:: /_static/images/config/basic-config2.png
       :width: 60%
       :alt: Rename Embassy
+
+#. My first contribution to start9's documentation!
