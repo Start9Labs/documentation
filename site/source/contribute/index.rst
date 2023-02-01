@@ -37,7 +37,7 @@ Contribute
   :class: large-4
   :anchor: Shill
 
-  Become an affiliate and help propagate the message to your audience.
+  Modify or add to our documentation.
 
 .. topic-box::
   :title: Decentralize the Ecosystem
