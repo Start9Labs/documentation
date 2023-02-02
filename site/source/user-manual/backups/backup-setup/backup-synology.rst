@@ -21,6 +21,8 @@ Setup Network Folder
 
 #. Under Advanced Settings on the same dropdown, set "Min SMB protocol" to SMB2 and "Max SMB protocol" to SMB3
 
+#. On the rsync tab, under File Services -> turn on rsync protocol.
+
 #. In the same dropdown, under "Note" will be "PC (Windows Explorer): \". This DeviceAddressName is the "Hostname" within the Embassy New Shared Folder dialog, and note that it is case sensitive and that the \ have been removed.
 
 #. Back in Synonogy UI, click "File Station" and navigate so that you can see the the desired destination folder. Right click the folder, then *Properties > General*. Next to "Location" will be a folder location of the format ///, the / portion (so without the volume label) is the "Path" within the Embassy New Shared Folder dialog.
