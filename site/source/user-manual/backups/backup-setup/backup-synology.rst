@@ -19,7 +19,7 @@ Setup Network Folder
         
 #. Back in Synology UI, go to *Control Panel > File Services > SMB* and click the SMB drop down button if it isn't already selected. Ensure that "Enable SMB service" is checked.
 
-    .. note:: Under Advanced Settings on the same dropdown, "Min SMB protocol" was set to SMB2 and "Max SMB protocol set to SMB3" - this may or may not be necessary
+#. Under Advanced Settings on the same dropdown, set "Min SMB protocol" to SMB2 and "Max SMB protocol" to SMB3
 
 #. In the same dropdown, under "Note" will be "PC (Windows Explorer): \". This DeviceAddressName is the "Hostname" within the Embassy New Shared Folder dialog, and note that it is case sensitive and that the \ have been removed.
 
