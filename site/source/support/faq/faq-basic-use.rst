@@ -27,6 +27,7 @@ The short answer is yes, but they can cause some conflicts when accessing your E
 
 - Mullvad - Go to "Settings -> VPN Settings -> Local Network Sharing" - enable this option to be able to access your Embassy's ``.local`` addresses.
 - ProtonVPN - Go to "Preferences -> Connection -> Allow LAN Connections" - enable this option to be able to access your Embassy's ``.local`` addresses.
+- IVPN - Go to "Settings" -> IVPN Firewall -> LAN settings -> Allow LAN traffic when IVPN firewall is enabled - enable this option to be able to access your Embassy's ``.local`` addresses.
 
 What if I forget my Embassy password?
 -------------------------------------
