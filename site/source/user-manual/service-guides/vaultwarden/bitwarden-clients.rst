@@ -38,7 +38,7 @@ If connecting via Tor (i.e using the .onion address) the Bitwarden browser exten
 
 #. If you choose Tor Browser, everything will just work right out of the box. If you choose Firefox, you will need to configure both your :ref:`device <tor-os>` and :ref:`Firefox <tor-firefox>` to use Tor.
 
-#. In this example we will use Firefox.  First, install the `Bitwarden browser extension <https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/>`_.  Once installed, click on the extension and click 'Settings' in the top left.  Under 'Self-hosted environment,' you will see a field for 'Server URL,'. Here, we need to paste in our Vaultwarden Tor address. Go to your Embassy and copy your Vaultwarden Tor address, then return to the Bitwarden extension and paste it in, prefixed by ``http://``. Please note, you must use in ``http``, not ``https``. Click 'Save.'
+#. In this example we will use Firefox.  First, install the `Bitwarden browser extension <https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/>`_.  Once installed, click on the extension and click 'Settings' in the top left.  Under 'Self-hosted environment,' you will see a field for 'Server URL,'. Here, we need to paste in our Vaultwarden Tor address. Go to your Embassy and copy your Vaultwarden Tor address, then return to the Bitwarden extension and paste it in, prefixed by ``http://``. Please note, you must use ``http``, not ``https``. Click 'Save.'
 
 #. Now you can click on the extension again, click 'Log In,' and enter your credentials.  That's it, the extension is all set up!
 
