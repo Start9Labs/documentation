@@ -42,7 +42,7 @@ If connecting via Tor (i.e using the .onion address) the Bitwarden browser exten
 
 #. Now you can click on the extension again, click 'Log In,' and enter your credentials.  That's it, the extension is all set up!
 
-.. note:: If you wish to connect the extension via LAN instead of Tor (i.e your .local address) it will only update while connected to the same network as your Embassy. This isn't generally much of an issue as when you are away from your home network, all passwords previously synced between your device and your Embassy will remain available to you. Any new passwords created while away from your LAN will not be uploaded to Vaultwarden until your device reconnects to your home network.
+.. note:: If you wish to connect the extension via LAN instead of Tor (i.e your .local address), it will only update while connected to the same network as your Embassy. This isn't generally much of an issue as when you are away from your home network, all passwords previously synced between your device and your Embassy will remain cached and available to you. Any new passwords created while away from your LAN will not be uploaded to Vaultwarden until your device reconnects to your home network.  Make sure to use `https://` when adding your LAN address.
 
 Mobile Apps
 -----------
