@@ -158,7 +158,7 @@ _______________________________________________
 
 #. That's it! You now have a lightning node running with a channel open ready to send payments on the lightning network!
 
-.. note:: You will not be able to receive payments until you have inbound liquidity in your channel. After completeing the above process you will only have outbound liquidity. Inbound liquidity can be created by making payments, having someone open a channel to you or via more sophisticated channel creation.
+.. note:: You will not be able to receive payments until you have inbound liquidity in your channel. After completing the above process you will only have outbound liquidity. Inbound liquidity can be created by making payments, having someone open a channel to you or via more sophisticated channel creation.
 
 
 Lightning Wallets
