@@ -1,4 +1,4 @@
-.. _lightning-service:
+.. _lightning-intro:
 
 =====================================
 Lightning: Opening Your First Channel
@@ -43,7 +43,7 @@ _______________________________________________
 #. Now hit **"Start"** and wait for CLN to sync up to the network. This may take a few hours.
 
    .. figure:: /_static/images/lightning/cln-syncing.png
-    :width:
+    :width: 60%
 
 #. Once the **"Synced"** health check turns green (as below) you can proceed to the next step.
 
