@@ -141,7 +141,7 @@ _______________________________________________
    .. figure:: /_static/images/lightning/rtl-open-channel.png
     :width: 60%
 
-   .. note:: Here we are creating a very small channel with a capacity for payments of only a few dollars. You will likely want your channel to be larger than this so that it's actually usable for reasonably sized payments.
+   .. note:: Here we are creating a very small channel with a capacity for payments of only a few dollars. You will likely want your channel to be larger than this so that it's actually usable for reasonably sized payments. Channels this small may well get closed by the remote peer.
 
    .. note:: Using a private channel is what we advise as a default. You may wish for the channel to be public if you intend on becoming a routing node or for other reasons.
 
