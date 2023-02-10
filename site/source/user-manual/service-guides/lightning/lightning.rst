@@ -1,8 +1,8 @@
 .. _lightning-service:
 
-=========
-Lightning
-=========
+=====================================
+Lightning: Opening Your First Channel
+=====================================
 
 .. contents::
   :depth: 2 
@@ -20,7 +20,7 @@ _______________________________________________
    .. figure:: /_static/images/lightning/bitcoin-synced.png
     :width: 60%
 
-#. Install a lightning node. There are two options we offer on the `Start9 marketplace <marketplace.start9.com>`_ - LND and Core-Lightning. In this guide we're going to use Core-Lightning (CLN). Though you can use LND and the process will be almost exactly the same.
+#. Install a lightning node. There are two options we offer on the `Start9 marketplace <https://marketplace.start9.com>`_ - LND and Core Lightning. In this guide we're going to use Core Lightning (CLN). Though you can use LND and the process will be almost exactly the same.
 
    .. figure:: /_static/images/lightning/two-impls-marketplace.png
     :width: 60%
@@ -102,17 +102,19 @@ _______________________________________________
    .. figure:: /_static/images/lightning/rtl-enter-pass.png
     :width: 60%
 
+   .. note:: You can add the password to your password manager for convenience.
+
 #. Once in RTL, click **"On-chain"** then click **"Generate Address"**
 
    .. figure:: /_static/images/lightning/rtl-generate-address.png
     :width: 60%
 
-#. Send money to the generated address to add funds to your lightning wallet:
+#. Send bitcoin to the generated address to add funds to your lightning wallet:
 
    .. figure:: /_static/images/lightning/rtl-address-generated.png
     :width: 60%
 
-   .. note:: Please do not send money to the address pictured above as we will not receive it. If you are intent on sending us money please `head here <donate.start9.com>`_
+   .. note:: Please do not send money to the address pictured above as we will not receive it. If you are intent on sending us money please `head here <https://donate.start9.com>`_
 
 #. Once your sats confirm on-chain you'll see this:
 
@@ -129,7 +131,7 @@ _______________________________________________
    .. figure:: /_static/images/lightning/rtl-peers-add-peer.png
     :width: 60%
 
-#. Enter **025d28dc4c4f5ce4194c31c3109129cd741fafc1ff2f6ea53f97de2f58877b2295@64.225.19.231:9735** - these are the peer details for Start9's lightning node - and click **"Add Peer"**:
+#. Enter the details of the lightning node you'd like to open a channel with. Start9's node can be found `here <https://1ml.com/node/025d28dc4c4f5ce4194c31c3109129cd741fafc1ff2f6ea53f97de2f58877b2295>`_ and is what we'll use in this example. You can use another node if you like - ideally one that is well connected. Once chosen and added as below, click **"Add Peer"**:
 
    .. figure:: /_static/images/lightning/rtl-start9-node-info.png
     :width: 60%
@@ -138,6 +140,8 @@ _______________________________________________
 
    .. figure:: /_static/images/lightning/rtl-open-channel.png
     :width: 60%
+
+   .. note:: Here we are creating a very small channel with a capacity for payments of only a few dollars. You will likely want your channel to be larger than this so that it's actually usable for reasonably sized payments.
 
    .. note:: Using a private channel is what we advise as a default. You may wish for the channel to be public if you intend on becoming a routing node or for other reasons.
 
@@ -159,96 +163,3 @@ _______________________________________________
 #. That's it! You now have a lightning node running with a channel open ready to send payments on the lightning network!
 
 .. note:: You will not be able to receive payments until you have inbound liquidity in your channel. After completing the above process you will only have outbound liquidity. Inbound liquidity can be created by making payments, having someone open a channel to you or via more sophisticated channel creation.
-
-
-Lightning Wallets
-_________________
-
-Below is a list of lightning wallets and clients along with instructions on how to use them with your Embassy.
-
-.. _blue-wallet-lightning:
-
-BlueWallet
-----------
-
-.. note:: Not available at this time - LNDHub is required
-
-.. _rtl:
-
-Ride the Lightning
-------------------
-
-Available For
-.............
-- embassyOS
-
-See the video at the top of this page for an intro to Lightning using RTL.
-
-.. _spark:
-
-Spark
------
-
-.. note:: Compatible with Core Lightning (CLN) only
-
-Available For
-.............
-- Android
-- embassyOS
-- iOS
-
-To use a Spark client, you still need to have Spark installed on the Embassy.  The Spark service on Embassy is both a server (background service) and a client (the :ref:`Web UI<web-ui>`).  Under Properties, there is a "Pairing URL". The first part of this is the server URL, and the end portion of it is the access key.
-
-.. _thunderhub:
-
-Thunderhub
-----------
-
-Available For
-.............
-- embassyOS
-
-Download from your Embassy's Marketplace and follow the included Instructions.
-
-.. _zap:
-
-Zap
----
-
-Available For
-.............
-- Android
-- iOS
-
-.. note:: Compatible with LND only
-
-#. Download from your device's application store.
-#. Go to Settings and activate Tor.
-#. Go to Add a Wallet and scan the LND REST connection QR code found in your Embassy's LND service page -> Properties.
-
-.. _zeus:
-
-Zeus
-----
-
-Available For
-.............
-- Android
-- iOS
-
-.. note:: Compatible with LND only
-
-#. Download the Zeus: Bitcoin and Lightning wallet from your mobile device's application store.
-#. Open your Embassy's web interface and log in
-#. Select Services -> Lightning Network Daemon
-#. Select "Properties"
-#. Click the QR Code icon next to "LND Connect REST URL" to display the QR code
-#. Open Zeus on your mobile device and go to Settings / Get Started -> Connect a node -> +
-#. Select "Use Tor"
-#. Press the "SCAN LNDCONNECT CONFIG" button
-#. Scan the QR Code displayed on the Embassy's LND Connect REST URL screen
-
-   .. note:: If you have trouble scanning it, bring your phone very close to the QR code until it fills the entire target square on your mobile device's QR code camera.
-#. Zeus will fill in your node details based on the information in the QR code
-#. Click "SAVE NODE CONFIG"
-

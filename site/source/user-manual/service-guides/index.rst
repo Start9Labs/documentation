@@ -10,7 +10,7 @@ These guides will help you to setup external tools to connect or interact with s
   :maxdepth: 2
 
   bitcoin/index
-  lightning
+  lightning/index
   matrix
   nextcloud/index
   vaultwarden/index
