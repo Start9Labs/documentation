@@ -136,6 +136,8 @@ _______________________________________________
    .. figure:: /_static/images/lightning/rtl-start9-node-info.png
     :width: 60%
 
+   .. note:: The syntax is as follows **NodePublicKey@ipaddress:port** - If it's a Tor node it will be **PublicKey.onion:port** instead.
+
 #. Then you can enter an amount (the size of the channel), select Private Channel (unless you want a public channel - see below), and a Fee Rate (check a `block explorer <https://mempool.space>`_ for an idea of current necessary fees):
 
    .. figure:: /_static/images/lightning/rtl-open-channel.png
