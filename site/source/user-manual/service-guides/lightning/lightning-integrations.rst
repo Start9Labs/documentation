@@ -1,17 +1,8 @@
-.. _lightning-service:
+======================
+Lightning Integrations
+======================
 
-=========
-Lightning
-=========
-
-.. contents::
-  :depth: 2 
-  :local:
-
-Check out our `Getting Started with Lightning video <https://www.youtube.com/watch?v=KhU_sTiaN8w>`_ for an introduction to the Lightning Network using LND and RTL on Embassy!
-
-    .. youtube:: KhU_sTiaN8w
-        :width: 100%
+Below is a list of lightning wallets and clients along with instructions on how to use them with your Embassy.
 
 .. _blue-wallet-lightning:
 
