@@ -74,7 +74,7 @@ Power the device on and select which mode you would like to continue in on the t
       :width: 60%
       :alt: Fresh Setup
 
-    .. note:: The "Recover" button is used for :ref:`migrating from 0.2.x <upgrade-02>`, :ref:`restoring from backup <backup-restore>`, transferring data from a disk used in an old Embassy into a new one, or simply attaching an old Embassy's data drive to a new setup.
+    .. note:: The "Recover" button is used for :ref:`migrating from 0.2.x <upgrade-hardware>`, :ref:`restoring from backup <backup-restore>`, transferring data from a disk used in an old Embassy into a new one, or simply attaching an old Embassy's data drive to a new setup.
 
 #. Select your storage drive
 

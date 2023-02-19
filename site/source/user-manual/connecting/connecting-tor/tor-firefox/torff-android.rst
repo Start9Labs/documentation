@@ -47,5 +47,5 @@ Once Tor is setup on your system, you can proceed to setup Firefox:
 
 8. Optional but recommended: search for ``network.http.referer.hideOnionsSource`` and set the value to ``true``.
 
-9. Restart Firefox, and you're all set! You should now be able to navigate to `.onion` URLs in Firefox. This means you can bookmark Cups Messenger, or other Embassy ``.onion`` addresses, as well as use the :ref:`Bitwarden<vaultwarden>` browser extension.
+9. Restart Firefox, and you're all set! You should now be able to navigate to `.onion` URLs in Firefox. This means you can bookmark Cups Messenger, or other Embassy ``.onion`` addresses, as well as use the Bitwarden browser extension.
 
