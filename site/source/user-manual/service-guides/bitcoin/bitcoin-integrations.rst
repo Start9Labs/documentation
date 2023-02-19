@@ -147,7 +147,7 @@ Trezor Suite
   
   Follow the `guide <https://github.com/Start9Labs/electrs-wrapper/blob/master/docs/integrations/trezor/guide.md>`__.
   
-  .. _blockstream-green:
+  .. _nunchuk:
 
 Nunchuk
 -----------------
