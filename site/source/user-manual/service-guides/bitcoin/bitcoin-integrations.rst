@@ -146,3 +146,22 @@ Trezor Suite
  **Instructions**
   
   Follow the `guide <https://github.com/Start9Labs/electrs-wrapper/blob/master/docs/integrations/trezor/guide.md>`__.
+  
+  .. _blockstream-green:
+
+Nunchuk
+-----------------
+
+**Available For**
+
+ - Android
+ - iOS
+ - Linux
+ - macOS
+ - Windows
+ 
+**Instructions**
+ 
+ Follow the `guide <https://github.com/Start9Labs/electrs-wrapper/blob/master/docs/integrations/nunchuk/guide.md>`__.
+
+
