@@ -128,8 +128,9 @@ Sparrow
  
  **Instructions**
 
-  #. Connect Sparrow directly to your `Bitcoin Core` service on your Embassy
-  #. Follow this `guide <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/docs/integrations/sparrow/guide.md>`__.
+  Connect Sparrow directly to your `Bitcoin Core` service on your Embassy:
+  
+  * Follow this `guide <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/docs/integrations/sparrow/guide.md>`__.
  
   **OPTIONAL** (but less reliable) -- connect Sparrow to Electrs via Tor:
 
