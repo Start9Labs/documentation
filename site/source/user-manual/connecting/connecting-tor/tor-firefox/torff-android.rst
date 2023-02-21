@@ -11,7 +11,7 @@ Configuring Firefox for Tor on Android
 
 Once Tor is setup on your system, you can proceed to setup Firefox:
 
-#. Download `Firefox Beta <https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta>`_ from the Play Store, or `Fennec <https://f-droid.org/en/packages/org.mozilla.fennec_fdroid/>`_ from F-Droid.
+#. Download `Firefox <https://play.google.com/store/apps/details?id=org.mozilla.firefox>`_ from the Play Store, or `Fennec <https://f-droid.org/en/packages/org.mozilla.fennec_fdroid/>`_ from F-Droid.
 
 #. Next, download a `Proxy Auto Config` file that will use Orbot to resolve `.onion` URLs. We have one hosted `here <https://registry.start9labs.com/sys/proxy.pac>`_.
 
