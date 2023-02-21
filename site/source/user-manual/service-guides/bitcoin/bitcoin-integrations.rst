@@ -89,6 +89,24 @@ FullyNoded
 
 .. .. warning:: UNTESTED
 
+.. _nunchuk:
+
+Nunchuk
+-------
+
+ **Available For**
+
+   - Android
+   - iOS
+   - Linux
+   - macOS
+   - Windows
+ 
+ **Instructions**
+ 
+   #. Install the `Electrs` service from the Start9 Marketplace on your Embassy
+   #. Follow the `guide <https://github.com/Start9Labs/electrs-wrapper/blob/master/docs/integrations/nunchuk/guide.md>`__.
+
 
 .. _samourai:
 
@@ -147,21 +165,3 @@ Trezor Suite
   
   Follow the `guide <https://github.com/Start9Labs/electrs-wrapper/blob/master/docs/integrations/trezor/guide.md>`__.
   
-  .. _nunchuk:
-
-Nunchuk
------------------
-
-**Available For**
-
- - Android
- - iOS
- - Linux
- - macOS
- - Windows
- 
-**Instructions**
- 
- Follow the `guide <https://github.com/Start9Labs/electrs-wrapper/blob/master/docs/integrations/nunchuk/guide.md>`__.
-
-
