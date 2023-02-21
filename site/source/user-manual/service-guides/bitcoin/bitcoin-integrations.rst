@@ -132,7 +132,7 @@ Sparrow
   
   * Follow this `guide <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/docs/integrations/sparrow/guide.md>`__.
  
-  **OPTIONAL** (but less reliable) -- connect Sparrow to Electrs via Tor:
+  **OPTIONAL** (but less reliable) -- Connect Sparrow to Electrs via Tor:
 
   #. Install the `Electrs` service from the Start9 Marketplace on your Embassy
   #. Follow this `guide <https://github.com/Start9Labs/electrs-wrapper/blob/master/docs/integrations/sparrow/guide.md>`__.
