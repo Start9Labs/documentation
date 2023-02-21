@@ -7,7 +7,7 @@ Configuring Firefox for Tor on Android
 .. caution::
   This guide assumes you have completed :ref:`setting up Tor for Android<tor-android>`. Please visit this section before proceeding as it is required for Firefox to properly work with Tor.
 
-.. note:: Setups may strongly vary across different Android forks. We have made specific mention of GrapheneOS which has been tested on Pixel 5 and Pixel 6. This is not currently possible on CalyxOS.
+.. note:: Setups may strongly vary across different Android forks. We have made specific mention of GrapheneOS which has been tested on Pixel 5 and Pixel 6. This is not currently possible on CalyxOS or LineageOS v20.
 
 Once Tor is setup on your system, you can proceed to setup Firefox:
 
