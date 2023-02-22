@@ -6,12 +6,14 @@ Trusting Embassy CA On Windows
 
 Unfortunately, Windows does not have mDNS alias support built-in, which is necessary in order to visit .local addresses for any service you install on your Embassy, so we recommend using the Bonjour service. Check out this :ref:`FAQ answer<why-bonjour>` for details.
 
+.. note:: Recently many users who have run through the following instructions have successfully connected to their Embassy via LAN only to have it stop working a few days or weeks later. We believe this to be due to a recent change in Windows. When this happens the fix is to simply reinstall Bonjour and Bonjour Print Services. A solution is being worked on and Bonjour will not be necessary to connect to your Embassy for much longer.
+
 #. Install `Bonjour Print Services <https://support.apple.com/kb/DL999>`_ on your Windows machine.
 
    .. tip::  If you are experiencing issues after installing Bonjour, you might have had a previous or failed install. To fix:
 
             #. Check out this video: https://www.youtube.com/watch?v=9ECCB3bqNDQ
-            #. Uninstall Bonjour completely via *system settings > remove programs*
+            #. Uninstall Bonjour and Bonjour Print Services completely via *system settings > remove programs*
             #. Reinstall Bonjour Printer Driver package (download at https://support.apple.com/kb/DL999?locale=en_US)
             #. Restart Windows
             #. Note: Uninstalling Bonjour via the setup package seems to be not enough to solve the issue. Bonjour must be uninstalled via windows system settings.
@@ -19,7 +21,7 @@ Unfortunately, Windows does not have mDNS alias support built-in, which is neces
 #. Back in Windows, click the “Start” menu, type “mmc”, and select "Run as administrator"
 
    .. figure:: /_static/images/ssl/windows/0_windows_mmc.png
-    :width: 90%
+    :width: 50%
     :alt: Windows MMC
 
     Access the Windows Management Console.  When prompted with the “User Account Control” window, select “Yes” to allow this program to run.

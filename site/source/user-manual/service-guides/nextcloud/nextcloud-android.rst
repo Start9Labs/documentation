@@ -10,17 +10,8 @@ Nextcloud - Android
 
 Initial Config
 --------------
-During initial configuration, notice the setting called "Enable Tor".
+It is advised to setup your Nextcloud devices on LAN for the best experience.  Once set up, Tor can be used for remote syncing, but remember that large files will likely fail or take a very long time, so it is best to use remote sync only for low-bandwidth activity, such as Calendar, Contacts, Tasks, and Notes.  Streaming your music is also possible.  Later in 2023, new connection options will unlock Nextcloud's full feature-set.
 
-  - If OFF: You can use Nextcloud from the browser or from any mobile or desktop client using its .local URL while connected to the same Local Area Network (LAN) as your Embassy. Note: .onion will not work at all.  Make sure you have setup :ref:`LAN access<lan-android>` on your system.
-  
-  - If ON: You can use NextCloud from the browser by visiting its .onion or .local URL. You can also use Nextcloud from any mobile or desktop client using its .onion URL. Note: .local will not work from mobile or desktop clients.  Make sure you have :ref:`Tor running on your device<tor-android>`.
-
-The default is Off for two reasons:
-
-  1. Initial sync over LAN will be much faster.
-  2. To use Tor with Nextcloud's desktop clients, you must first change a setting in the desktop client that can only be changed if you are already logged in. In other words, you must first login over LAN in order to be able to login over Tor.
-   
 Nextcloud App
 -------------
 The latest version of the official Nextcloud client is available on their `download page <https://nextcloud.com/install/#install-clients>`_.  This is for file syncing and account management.
@@ -44,12 +35,11 @@ Tor Setup
 =========
 You will first need to have the :ref:`Tor daemon running<tor-android>`.
 
-1. First, enable Tor in the Nextcloud Config on Embassy, Services -> Nextcloud -> Config -> Connection Settings -> Connection Type -> LAN and Tor.
-2. On your desktop application, click the account in the top left -> Settings, then in Settings, click Network, then "Specify proxy manually as" and "SOCKS5 proxy." Enter "127.0.0.1" for the Host and "9050" for the port.
-3. Close the Settings screen and click the account in the top left again, then "Add Account."
-4. On the following screen, click "Log in," then enter your Nextcloud Tor server address, which you can copy from the Nextcloud page on your Embassy -> Interfaces - Tor. This must start with http:// and end with .onion. Click Next.
-5. This will launch your browser and prompt you to log in to your account. Log in and then grant access as we did for LAN.
-6. That's it! You may wish to set up some select folders for remote sync, but for large files, it is best to sync on LAN only, so you can "Skip folders configuration" on the resulting screen if you wish. Check your connection by clicking the newly created account in the client app.
+1. On your desktop application, click the account in the top left -> Settings, then in Settings, click Network, then "Specify proxy manually as" and "SOCKS5 proxy." Enter "127.0.0.1" for the Host and "9050" for the port.
+2. Close the Settings screen and click the account in the top left again, then "Add Account."
+3. On the following screen, click "Log in," then enter your Nextcloud Tor server address, which you can copy from the Nextcloud page on your Embassy -> Interfaces - Tor. This must start with http:// and end with .onion. Click Next.
+4. This will launch your browser and prompt you to log in to your account. Log in and then grant access as we did for LAN.
+5. That's it! You may wish to set up some select folders for remote sync, but for large files, it is best to sync on LAN only, so you can "Skip folders configuration" on the resulting screen if you wish. Check your connection by clicking the newly created account in the client app.
 
 Device Integration
 ------------------
@@ -77,4 +67,4 @@ In order to sync calendars and contacts with your Android device, follow the ste
 
      - If given the option, select "Groups are per-contact categories," then tap "Login."  Select the data you want to sync, grant access for contacts, calendars, and optionally tasks if you added that feature in setup.  That's it, you're done!
 
-.. tip:: You may also wish to add the `ICSx5 <https://icsx5.bitfire.at/>`_ app, which allows subscription to remote WebCa or local iCal files (such as public event schedules, iCloud/Google calendars, etc).  It can be found in your favorite app store.
+.. tip:: You may also wish to add the `ICSx5 <https://icsx5.bitfire.at/>`_ app, which allows subscription to remote WebCal or local iCal files (such as public event schedules, iCloud/Google calendars, etc).  It can be found in your favorite app store.

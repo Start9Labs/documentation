@@ -27,11 +27,16 @@ Creating an SSH Key (Linux/Mac)
 
         Your public key has been saved in /home/user/.ssh/id_ed25519.pub
 
-#. Next, start your system's ``ssh-agent`` and add your key to it:
+#. Next, start your system's ``ssh-agent``:
 
     .. code-block:: bash
 
         eval "$(ssh-agent -s)"
+
+#. Now add your key to it:
+
+    .. code-block:: bash
+
         ssh-add ~/.ssh/id_ed25519
 
     Note that if you changed the file name/location in step 1, you will need to use that file/path in this step

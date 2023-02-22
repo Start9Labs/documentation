@@ -24,7 +24,7 @@ No.  Your Embassy only needs to be plugged into power and internet, just like yo
 
 Do I plug in a monitor, keyboard, and mouse?
 --------------------------------------------
-Typically, no.  It is not necessary or recommended to do this as embassyOS runs in "headless" mode - meaning that you will access it from your computer or mobile device.  However, we have recently added "Kiosk Mode," which allows the installation (and use) of embassyOS with a monitor/keyboard/mouse.  For directions on setting this up, please check out the :ref:`x86 DIY Guide <x86-diy>`.
+Typically, no.  It is not necessary or recommended to do this as embassyOS runs in "headless" mode - meaning that you will access it from your computer or mobile device.  However, we have recently added "Kiosk Mode," which allows the installation (and use) of embassyOS with a monitor/keyboard/mouse.  For directions on setting this up, please check out the :ref:`x86 DIY Guide <diy-x86>`.
 
 How much storage does Embassy have?
 -----------------------------------

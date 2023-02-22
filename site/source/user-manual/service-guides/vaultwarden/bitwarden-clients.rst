@@ -34,13 +34,15 @@ You will find the Admin console by adding ``/admin`` to the end of your Vaultwar
 
 Browser Extension
 -----------------
-The Bitwarden browser extension will only work with Tor browser or Firefox, since those are the only two browsers capable of using Tor, or in other words, access .onion URLs. Brave Browser can also access .onion URLs, but only in special tabs, not in extension, so the Bitwarden extension will not work on Brave.
+If connecting via Tor (i.e using the .onion address) the Bitwarden browser extension will only work with Tor browser or Firefox, since those are the only two browsers capable of using Tor, or in other words, access .onion URLs. Brave Browser can also access .onion URLs, but only in special tabs, not in extension, so the Bitwarden extension will not work on Brave.
 
-1. If you choose Tor Browser, everything will just work right out of the box. If you choose Firefox, you will need to configure both your :ref:`device <tor-os>` and :ref:`Firefox <tor-firefox>` to use Tor.
+#. If you choose Tor Browser, everything will just work right out of the box. If you choose Firefox, you will need to configure both your :ref:`device <tor-os>` and :ref:`Firefox <tor-firefox>` to use Tor.
 
-2. In this example we will use Firefox.  First, install the `Bitwarden browser extension <https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/>`_.  Once installed, click on the extension and click 'Settings' in the top left.  Under 'Self-hosted environment,' you will see a field for 'Server URL,'. Here, we need to paste in our Vaultwarden Tor address. Go to your Embassy and copy you Vaultwarden Tor address, then return to the Bitwarden extension and paste it in, prefixed by ``http://``. Please note, you must use in ``http``, not ``https``. Click 'Save.'
+#. In this example we will use Firefox.  First, install the `Bitwarden browser extension <https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/>`_.  Once installed, click on the extension and click 'Settings' in the top left.  Under 'Self-hosted environment,' you will see a field for 'Server URL,'. Here, we need to paste in our Vaultwarden Tor address. Go to your Embassy and copy your Vaultwarden Tor address, then return to the Bitwarden extension and paste it in, prefixed by ``http://``. Please note, you must use ``http``, not ``https``. Click 'Save.'
 
-3. Now you can click on the extension again, click 'Log In,' and enter your credentials.  That's it, the extension is all set up!
+#. Now you can click on the extension again, click 'Log In,' and enter your credentials.  That's it, the extension is all set up!
+
+.. note:: If you wish to connect the extension via LAN instead of Tor (i.e your .local address), it will only update while connected to the same network as your Embassy. This isn't generally much of an issue as when you are away from your home network, all passwords previously synced between your device and your Embassy will remain cached and available to you. Any new passwords created while away from your LAN will not be uploaded to Vaultwarden until your device reconnects to your home network.  Make sure to use `https://` when adding your LAN address.
 
 Mobile Apps
 -----------
