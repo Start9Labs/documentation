@@ -11,6 +11,8 @@ There are 3 different ways that you may choose to restore Embassy data, as well 
 #. "Recover" (as in, disaster recovery) all Embassy data in the event that your backup is the **only** thing you have left.
 #. "Transfer" all data from an existing Embassy.  This is a total migration for use when upgrading hardware only.
 
+.. warning:: If you are restoring data from a drive that you are attaching *directly to your Embassy,* (if using a RasPi or other low-powered board) please ensure that it is getting adequete power.  This is best accomplished via external power to the drive (such as a powered USB hub).  Embassy One (NASPi Geekworm case with built-in power management) and Embassy Pro users can safely ignore this warning.
+
 Select the appropriate tab below to restore your data:
 
 .. tabs::
@@ -107,8 +109,6 @@ Select the appropriate tab below to restore your data:
 
             .. figure:: /_static/images/restore/recover6.png
                 :width: 60%
-
-
 
     .. group-tab:: Transfer
 
