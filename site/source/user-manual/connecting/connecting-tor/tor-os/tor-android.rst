@@ -51,7 +51,7 @@ Orbot VPN mode
 
 To utilize Tor, some apps require that Orbot be running in VPN mode.  This means that you are sending your application's traffic across the Tor network via Orbot.
 
-1. Disable Private DNS on your device.  To switch it off, navigate to:
+1. Disable Private DNS on your device. To switch it off, navigate to:
 
    ``Settings > Network & Internet > Advanced > Private DNS > Off``
 
