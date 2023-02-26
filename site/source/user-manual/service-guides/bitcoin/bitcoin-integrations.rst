@@ -132,7 +132,7 @@ Sparrow
   
   * Follow this `guide <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/docs/integrations/sparrow/guide.md>`__.
 
-  **CAUTION** Until we get per-user rpc restrictions built into Bitcoin Core, this may be technically more dangerous than using the electrum server method, because it requires createwallet and similar RPC calls.  However, exploiting it relies on there being a vulnerability in Bitcoin Core.  Likely there isn't, but if this makes you uneasy, please use the electrs method below.
+  **CAUTION** Until we get per-user rpc restrictions built into Bitcoin Core, this is technically more dangerous than using the electrum server method, because it requires createwallet and similar RPC calls.  However, exploiting it relies on there being a vulnerability in Bitcoin Core.  Likely there isn't, but if this makes you uneasy, please use the electrs method below.
  
   **OPTIONAL** (but less reliable) -- Connect Sparrow to Electrs via Tor:
 
