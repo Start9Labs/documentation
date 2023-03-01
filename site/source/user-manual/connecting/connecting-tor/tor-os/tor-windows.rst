@@ -25,8 +25,6 @@ Running Tor on Windows
 
     Note Tor destination folder when installing
 
-#. It does not matter where you set the destination folder; however, you need to make note of it for later. Go ahead and finish the installation.
-
 #. Now you want to set up Tor to run as a service: to run in the background and keep itself running so you don’t have to worry about it again. To do so, you need to open your Command Prompt as an administrator.
 
    * In Windows 10, you can simply type ``cmd`` in the Windows search bar, right click on the first result, and select `Run as Administrator`.
