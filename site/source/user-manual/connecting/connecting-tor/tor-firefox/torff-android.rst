@@ -29,7 +29,7 @@ Once Tor is setup on your system, you can proceed to setup Firefox:
 
 #. (This step is for GrapheneOS only): Head to *Settings -> Apps -> Firefox Beta -> Permissions -> Photos and videos -> Configure Storage Scopes -> ADD FILE* then navigate to where you placed the proxy.pac file.
 
-   .. figure:: /_static/images/tor/storage-scopes-proxy.png
+   .. figure:: /_static/images/tor/storage-scopes-proxy.jpg
      :width: 30%
 
 #. (All users): Search for ``network.proxy.autoconfig_url``, and set the value to ``file:///storage/emulated/0/Download/proxy.pac``.
