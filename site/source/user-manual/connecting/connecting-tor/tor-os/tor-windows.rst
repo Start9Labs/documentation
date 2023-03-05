@@ -23,6 +23,8 @@ Running Tor on Windows
     :width: 80%
     :alt: Tor install wizard
 
+   We will install it to ``C:\Program Files\Tor Brwoser``.  If you choose a different folder, it needs to *not* be anywhere under ``C:\Users\``.  Note the path you use here for for the step after next.
+
 #. Now you want to set up Tor to run as a service: to run in the background and keep itself running so you don’t have to worry about it again. To do so, you need to open your Command Prompt as an administrator.
 
    * In Windows 10, you can simply type ``cmd`` in the Windows search bar, right click on the first result, and select `Run as Administrator`.
