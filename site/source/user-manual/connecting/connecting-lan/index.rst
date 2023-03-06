@@ -46,6 +46,13 @@ Then instruct your **browser** to trust your Embassy's Root CA.
 
       lan-browser/index
 
+**OPTIONAL**: Setup client integrations for Embassy Services (such as Nextcloud).
+
+    .. toctree::
+      :maxdepth: 2
+
+      lan-integrations/index
+
 Access your Embassy LAN Address
 -------------------------------
 
