@@ -16,7 +16,7 @@ Desktop Integrations
 --------------------
 Many Linux distributions ship with a Desktop Environment (DE) that supports Nextcloud account integration directly for use with their built-in calendars and other applications.  It is recommended to try these first for the best possible experience with your particular flavor of Linux.
 
-You will first need to :ref:`add your Embassy Root CA to your system<lan-linux-system>`.
+You will first need to :ref:`add your Embassy Root CA to your system<lan-linux-system>` and also the :ref:`Thunderbird-specific instructions<lan-thunderbird>`.
 
 The following desktop environments support integrated account syncing, including Nextcloud:
 

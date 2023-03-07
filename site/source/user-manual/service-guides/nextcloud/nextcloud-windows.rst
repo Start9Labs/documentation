@@ -42,7 +42,7 @@ This is Nextcloud's official client application for file syncing and account man
 
 LAN Setup
 .........
-Make sure you have first set up :ref:`LAN access<lan-windows>`.
+Make sure you have first set up :ref:`LAN access<lan-windows>` and complete the :ref:`Thunderbird-specific instructions<lan-thunderbird>`.  Then do the following:
 
 1. Download the appropriate desktop client from https://nextcloud.com/install/#install-clients
 2. Open the client and click "Log In"
