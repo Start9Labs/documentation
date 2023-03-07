@@ -72,7 +72,7 @@ If you wish to use a standalone client for Calendar and Contacts, we recommend M
 1. Install the Contacts and Calendar apps in Nextcloud.
 2. Make sure you are on Thunderbird version 102.3.0 or greater and then import your LAN certificate:
 
-    - First, follow the :ref:`instructions for adding your Embassy's Root CA to your system<connecting-lan>` and then the :ref:`Thunderbird-specific instructions<lan-thunderbird>`.
+    - First, follow the :ref:`instructions for adding your Embassy's Root CA to your system<lan-windows>` and then the :ref:`Thunderbird-specific instructions<lan-thunderbird>`.
 
 3. Download the `TBSync` and `Provider for CalDAV & CardDAV` add-ons by searching for them in the "Tools -> Add-ons and Themes" menu.
 4. Go back to "Tools -> Add-ons and Themes -> Extensions" and click the 'wrench' icon next to TBSync.
