@@ -60,6 +60,13 @@ Connect Embassy
 #. Fill in the following fields:
 
     * Hostname - This is the name of your Computer, as shown in the "Sharing" menu earlier
+
+      .. tip:: Sometimes it can be unclear what your Mac's hostname is. One way to establish it for good is to open up Terminal and type `hostname` as below:
+    
+          .. figure:: /_static/images/config/hostname-terminal-mac.png
+              :width: 60%
+
+
     * Path - This is the *name of the shared folder* you are using and **not** the full directory path.
 
         .. tip:: If you copied the share name from the Mac computer and it contained a space, macOS will have replaced the space with the string "%20".  Please re-replace `%20` with a space in this `Path` field.
