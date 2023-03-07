@@ -42,7 +42,7 @@ This is Nextcloud's official client application for file syncing and account man
 
 LAN Setup
 .........
-Make sure you have first set up :ref:`LAN access<lan-windows>` and complete the :ref:`Thunderbird-specific instructions<lan-thunderbird>`.  Then do the following:
+Make sure you have first set up :ref:`LAN access<lan-windows>`.  Then do the following:
 
 1. Download the appropriate desktop client from https://nextcloud.com/install/#install-clients
 2. Open the client and click "Log In"
@@ -61,7 +61,7 @@ You will first need to have the :ref:`Tor daemon running<tor-windows>`.
 
 1. On your desktop application, click the account in the top left -> Settings, then in Settings, click Network, then "Specify proxy manually as" and "SOCKS5 proxy." Enter "127.0.0.1" for the Host and "9050" for the port.
 2. Close the Settings screen and click the account in the top left again, then "Add Account."
-3. On the following screen, click "Log in," then enter your Nextcloud Tor server address, which you can copy from the Nextcloud page on your Embassy -> Interfaces - Tor. This must start with http:// and end with .onion. Click Next.
+3. On the following screen, click "Log in," then enter your Nextcloud Tor server address, which you can copy from the Nextcloud page on your Embassy -> Interfaces - Tor. This must start with `http://` and end with .onion. Click Next.
 4. This will launch your browser and prompt you to log in to your account. Log in and then grant access as we did for LAN.
 5. That's it! You may wish to set up some select folders for remote sync, but for large files, it is best to sync on LAN only, so you can "Skip folders configuration" on the resulting screen if you wish. Check your connection by clicking the newly created account in the client app.
 
@@ -72,8 +72,7 @@ If you wish to use a standalone client for Calendar and Contacts, we recommend M
 1. Install the Contacts and Calendar apps in Nextcloud.
 2. Make sure you are on Thunderbird version 102.3.0 or greater and then import your LAN certificate:
 
-    - :ref:`Download your certificate<connecting-lan>` and then add it in "Thunderbird -> Settings -> Privacy & Security -> Manage Certificates -> Authorities tab -> Import"
-    - Check the box for "This certificate can identify websites"
+    - First, follow the :ref:`instructions for adding your Embassy's Root CA to your system<connecting-lan>` and then the :ref:`Thunderbird-specific instructions<lan-thunderbird>`.
 
 3. Download the `TBSync` and `Provider for CalDAV & CardDAV` add-ons by searching for them in the "Tools -> Add-ons and Themes" menu.
 4. Go back to "Tools -> Add-ons and Themes -> Extensions" and click the 'wrench' icon next to TBSync.
