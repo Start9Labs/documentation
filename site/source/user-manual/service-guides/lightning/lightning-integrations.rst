@@ -22,7 +22,7 @@ Make sure you are already :ref:`running Tor<connecting-tor>` on your system.
 
 .. tabs::
 
-    .. group-tab:: CLN
+    .. group-tab:: Core Lightning
 
       #. Click Core Lightning.
 
