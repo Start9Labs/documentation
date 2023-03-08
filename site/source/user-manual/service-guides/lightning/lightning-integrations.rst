@@ -12,7 +12,7 @@ Available For
 - Chrome-based browsers
 - Firefox
 
-Make sure you are already :ref:`running Tor<connecting-tor>` on your system.
+Make sure you are already :ref:`running Tor<connecting-tor>` on your system if you want to use Core Lightning. For LND this isn't necessary as you can use their companion app.
 
 #. Download the Alby extension by visiting the `Alby Github <https://github.com/getAlby/lightning-browser-extension#installation>`_, selecting your browser, and installing.
 #. On the Alby welcome screen, select "Get Started."
@@ -58,8 +58,6 @@ Make sure you are already :ref:`running Tor<connecting-tor>` on your system.
 
     .. group-tab:: LND
 
-      .. note:: This is not currently working, but will likely be fixed by the Alby team promptly!
-
       #. Select "Start9"
 
          .. figure:: /_static/images/lightning/start9-lnd-in-alby.png
@@ -70,12 +68,12 @@ Make sure you are already :ref:`running Tor<connecting-tor>` on your system.
          .. figure:: /_static/images/lightning/lnd-connect-rest-url.png
             :width: 60%
 
-      #. Alby will warn that you are connecting over Tor - click "Continue."
+      #. Alby will warn that you are connecting over Tor and prompt you to download the companion app - do so and follow the instructions for adding it to your browser.
 
-         .. figure:: /_static/images/lightning/alby-lnd-connect.png
+         .. figure:: /_static/images/lightning/alby-lnd-connect-companion.png
             :width: 60%
 
-      #. Once the connection is completed you will see a success page that displays the balance of your LND node in Sats.  You can now launch the tutorial and learn how to use Alby!
+      #. Click "Connect" and once connection is completed you will see a success page that displays the balance of your LND node in Sats.  You can now launch the tutorial and learn how to use Alby!
 
 
 .. _blue-wallet-lightning:
