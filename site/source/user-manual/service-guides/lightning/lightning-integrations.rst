@@ -58,7 +58,7 @@ Make sure you are already :ref:`running Tor<connecting-tor>` on your system.
 
     .. group-tab:: LND
 
-      .. note:: This is only known to work on Firefox with Tor enabled.
+      .. note:: This is not currently working, but will likely be fixed by the Alby team promptly!
 
       #. Select "Start9"
 
