@@ -54,7 +54,7 @@ Make sure you are already :ref:`running Tor<connecting-tor>` on your system.
          .. figure:: /_static/images/lightning/alby-cln.png
             :width: 60%
 
-      #. Click Continue.
+      #. Click Continue. Once the connection is completed you will see a success page that displays the balance of your CLN node in Sats.  You can now launch the tutorial and learn how to use Alby!
 
     .. group-tab:: LND
 
