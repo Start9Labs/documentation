@@ -99,7 +99,7 @@ Dependencies - Required
 
     .. code-block::
         
-        curl -fsSL https://get.docker.com -o- | bash
+        curl -fsSL https://get.docker.com | bash
         sudo usermod -aG docker "$USER"
         exec sudo su -l $USER
     
