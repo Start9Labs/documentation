@@ -38,7 +38,15 @@ Install Tor
 
 .. caution:: If you have the Tor Browser open, close it and quit the application.
 
-#. In the command line, install Tor:
+.. note:: If you are on a very old version of macOS, such as High Sierra (10.13) or below, first execute this command in a Terminal window:
+
+    .. code-block::
+
+        echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
+    
+    Then close the Terminal.
+
+#. Open a new Terminal and install Tor using the following command:
 
     .. code-block::
 
