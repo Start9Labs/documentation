@@ -174,7 +174,7 @@ Available For
       #. Open your Embassy's web interface and log in
       #. Select Services -> Lightning Network Daemon
       #. Select "Properties"
-      #. Click the QR Code icon next to "LND Connect REST URL" to display the QR code
+      #. Click the QR code icon next to "LND Connect REST URL" to display the QR code
       #. Open Zeus on your mobile device and go to Settings / Get Started -> Connect a node -> +
       #. Select "Use Tor"
       #. Press the "SCAN LNDCONNECT CONFIG" button
