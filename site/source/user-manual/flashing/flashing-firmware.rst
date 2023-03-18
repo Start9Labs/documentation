@@ -32,7 +32,7 @@ The source code can be viewed on Purism's `firmware git repo <https://source.pur
     .. figure:: /_static/images/flashing/flash_firmware-pro-step3-flash_firmware_with_new_rom.jpg
         :width: 30%
 
-#. The system will ask if you want to proceed to flash the BIOS with a new ROM, select "Yes"
+#. The system will ask if you want to proceed flashing the BIOS with a new ROM, select "Yes"
 
     .. figure:: /_static/images/flashing/flash_firmware-pro-step4-proceed_yes.jpg
         :width: 30%
@@ -47,7 +47,7 @@ The source code can be viewed on Purism's `firmware git repo <https://source.pur
     .. figure:: /_static/images/flashing/flash_firmware-pro-step6-proceed_yes.jpg
         :width: 30%
 
-#. The BIOS will be reflashed with the custom firmware.  This may take a few minutes.  When complete, remove the firmware USB (and insert your embassyOS USB if you are ready to install), then select "OK" to complete the process.
+#. The BIOS will be reflashed with the new firmware.  This may take a few minutes.  When complete, remove the firmware USB (and insert your embassyOS USB if you are ready to install), then select "OK" to complete the process.
 
     .. figure:: /_static/images/flashing/flash_firmware-pro-step7-flashed_successfully.jpg
         :width: 30%
