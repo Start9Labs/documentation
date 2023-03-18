@@ -15,9 +15,12 @@ The source code can be viewed on Purism's `firmware git repo <https://source.pur
 
     .. note:: You'll need a monitor and keyboard plugged into your Librem Mini for this operation
 
-#. Turn on the Librem Mini while pressing the ``ESC`` key on the keyboard repeatedly, until you see the PureBoot Basic Boot Menu appear.
+#. Turn on the Librem Mini while pressing the ``ESC`` key on the keyboard repeatedly while you see this screen:
 
-#. Select "Options -->"
+    .. figure:: /_static/images/flashing/flash_firmware-pro-step0-pureboot_screen.jpg
+        :width: 30%
+
+#. The PureBoot Basic Boot Menu screen will appear.  Select "Options -->"
 
     .. figure:: /_static/images/flashing/flash_firmware-pro-step1-pureboot_basic_boot_menu-options.jpg
         :width: 30%
