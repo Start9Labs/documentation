@@ -4,6 +4,8 @@ Lightning Integrations
 
 Below is a list of lightning wallets and clients along with instructions on how to use them with your Embassy.
 
+.. _alby:
+
 .. collapse:: Alby
 
    Alby
@@ -81,252 +83,266 @@ Below is a list of lightning wallets and clients along with instructions on how 
 
 .. _blue-wallet-lightning:
 
-BlueWallet
-----------
+.. collapse:: Blue Wallet
 
-.. note:: LND only.
+   BlueWallet
+   ----------
 
-.. note:: This guide assumes you already have LND running with channels that have already have liquidity. If you don't please checkout :ref:`this guide<lightning-intro>`.
+   .. note:: LND only.
 
-To connect BlueWallet, we will be using the LndHub extension found within the LnBits service.
+   .. note:: This guide assumes you already have LND running with channels that have already have liquidity. If you don't please checkout :ref:`this guide<lightning-intro>`.
 
-   #. Start by ensuring that LND is installed and running on your server (requires bitcoin core):
+   To connect BlueWallet, we will be using the LndHub extension found within the LnBits service.
 
-      .. figure:: /_static/images/lightning/lnd-running.png
-         :width: 30%
+      #. Start by ensuring that LND is installed and running on your server (requires bitcoin core):
 
-   #. Install LnBits by navigating to the Marketplace tab, selecting the service and clicking "Install":
+         .. figure:: /_static/images/lightning/lnd-running.png
+            :width: 30%
 
-      .. figure:: /_static/images/lightning/lnbits-in-marketplace.png
-         :width: 30%
+      #. Install LnBits by navigating to the Marketplace tab, selecting the service and clicking "Install":
 
-      .. figure:: /_static/images/lightning/lnbits-install.png
-         :width: 30%
+         .. figure:: /_static/images/lightning/lnbits-in-marketplace.png
+            :width: 30%
 
-   #. Once installed, head to the LnBits service and click "CONFIGURE":
+         .. figure:: /_static/images/lightning/lnbits-install.png
+            :width: 30%
 
-      .. figure:: /_static/images/lightning/lnbits-config.png
-         :width: 30%
+      #. Once installed, head to the LnBits service and click "CONFIGURE":
 
-   #. Make sure you have LND selected and click "SAVE":
+         .. figure:: /_static/images/lightning/lnbits-config.png
+            :width: 30%
 
-      .. figure:: /_static/images/lightning/lnbits-save.png
-         :width: 30%
+      #. Make sure you have LND selected and click "SAVE":
 
-   #. Click "START":
+         .. figure:: /_static/images/lightning/lnbits-save.png
+            :width: 30%
 
-      .. figure:: /_static/images/lightning/lnbits-click-start.png
-         :width: 30%
+      #. Click "START":
 
-   #. Head to "Interfaces":
+         .. figure:: /_static/images/lightning/lnbits-click-start.png
+            :width: 30%
 
-      .. figure:: /_static/images/lightning/lnbits-interfaces.png
-         :width: 30%
+      #. Head to "Interfaces":
 
-   #. Copy the Tor address (requires a Tor enabled browser - see :ref:`here<tor-os>` for more info):
+         .. figure:: /_static/images/lightning/lnbits-interfaces.png
+            :width: 30%
 
-      .. figure:: /_static/images/lightning/lnbits-toraddress.png
-         :width: 30%
+      #. Copy the Tor address (requires a Tor enabled browser - see :ref:`here<tor-os>` for more info):
 
-   #. Enter the name of the wallet you'd like to create and click "Add new wallet":
+         .. figure:: /_static/images/lightning/lnbits-toraddress.png
+            :width: 30%
 
-      .. figure:: /_static/images/lightning/lnbits-addnewwallet.png
-         :width: 30%
+      #. Enter the name of the wallet you'd like to create and click "Add new wallet":
 
-   #. Next you will see a warning. Click "I understand":
+         .. figure:: /_static/images/lightning/lnbits-addnewwallet.png
+            :width: 30%
 
-      .. figure:: /_static/images/lightning/lnbits-warning.png
-         :width: 30%
+      #. Next you will see a warning. Click "I understand":
 
-      .. tip:: The warning is about making sure you do not lose the address for this wallet and bookmarking it just in case. On your Start9 server, all wallets created will have their addresses saved in the "Properties" section within the LnBits service helping avoid this pitfall.
+         .. figure:: /_static/images/lightning/lnbits-warning.png
+            :width: 30%
 
-   #. Click "Manage extensions":
+         .. tip:: The warning is about making sure you do not lose the address for this wallet and bookmarking it just in case. On your Start9 server, all wallets created will have their addresses saved in the "Properties" section within the LnBits service helping avoid this pitfall.
 
-      .. figure:: /_static/images/lightning/lnbits-manage-extensions.png
-         :width: 30%
+      #. Click "Manage extensions":
 
-   #. Scroll down to find "LndHub" and click "Enable":
+         .. figure:: /_static/images/lightning/lnbits-manage-extensions.png
+            :width: 30%
 
-      .. figure:: /_static/images/lightning/lnbits-scroll-lndhub.png
-         :width: 30%
+      #. Scroll down to find "LndHub" and click "Enable":
 
-   #. Scroll back up and click on the newly added "LndHub" extension:
+         .. figure:: /_static/images/lightning/lnbits-scroll-lndhub.png
+            :width: 30%
 
-      .. figure:: /_static/images/lightning/lnbits-click-lndhub.png
-         :width: 30%
-      
-   #. You will be presented with two QR codes:
+      #. Scroll back up and click on the newly added "LndHub" extension:
 
-      .. figure:: /_static/images/lightning/lnbits-two-qr-codes.png
-         :width: 30%
+         .. figure:: /_static/images/lightning/lnbits-click-lndhub.png
+            :width: 30%
+         
+      #. You will be presented with two QR codes:
 
-      .. tip:: The QR code on the left allows the user to generate invoices (and thus receive payments). The QR code on the right allows the user to also **make** payments.
+         .. figure:: /_static/images/lightning/lnbits-two-qr-codes.png
+            :width: 30%
 
-   #. Now it's time to set up Blue Wallet so that you can connect it to your lightning node! Start by opening up Blue Wallet and click on the three dots in the top right:
+         .. tip:: The QR code on the left allows the user to generate invoices (and thus receive payments). The QR code on the right allows the user to also **make** payments.
 
-      .. figure:: /_static/images/lightning/bluewallet-three-dots.jpg
-         :width: 30%
+      #. Now it's time to set up Blue Wallet so that you can connect it to your lightning node! Start by opening up Blue Wallet and click on the three dots in the top right:
 
-   #. Click "Network" then "Tor settings":
+         .. figure:: /_static/images/lightning/bluewallet-three-dots.jpg
+            :width: 30%
 
-      .. figure:: /_static/images/lightning/bluewallet-network.jpg
-         :width: 30%
+      #. Click "Network" then "Tor settings":
 
-      .. figure:: /_static/images/lightning/bluewallet-tor-settings.jpg
-         :width: 30%
+         .. figure:: /_static/images/lightning/bluewallet-network.jpg
+            :width: 30%
 
-   #. Click "Start" and it should say "Done" after a short time:
+         .. figure:: /_static/images/lightning/bluewallet-tor-settings.jpg
+            :width: 30%
 
-      .. figure:: /_static/images/lightning/bluewallet-tor-start.jpg
-         :width: 30%
+      #. Click "Start" and it should say "Done" after a short time:
 
-      .. figure:: /_static/images/lightning/bluewallet-tor-done.jpg
-         :width: 30%
+         .. figure:: /_static/images/lightning/bluewallet-tor-start.jpg
+            :width: 30%
 
-   #. Head back to the main screen and click the "+" sign:
+         .. figure:: /_static/images/lightning/bluewallet-tor-done.jpg
+            :width: 30%
 
-      .. figure:: /_static/images/lightning/bluewallet-add-wallet.jpg
-         :width: 30%
+      #. Head back to the main screen and click the "+" sign:
 
-   #. Click "Import wallet":
+         .. figure:: /_static/images/lightning/bluewallet-add-wallet.jpg
+            :width: 30%
 
-      .. figure:: /_static/images/lightning/bluewallet-plus.jpg
-         :width: 30%
+      #. Click "Import wallet":
 
-   #. Click "Scan or import a file"
+         .. figure:: /_static/images/lightning/bluewallet-plus.jpg
+            :width: 30%
 
-      .. note:: Screenshots not possible for this step!
+      #. Click "Scan or import a file"
 
-   #. Scan the appropriate QR code using your phone's camera.
+         .. note:: Screenshots not possible for this step!
 
-   #. You'll see this once the wallet is added:
+      #. Scan the appropriate QR code using your phone's camera.
 
-      .. figure:: /_static/images/lightning/bluewallet-wallet-added.jpg
-         :width: 30%
+      #. You'll see this once the wallet is added:
 
-   #. You are now immediately good to go and can start receiving funds to this lightning wallet.
+         .. figure:: /_static/images/lightning/bluewallet-wallet-added.jpg
+            :width: 30%
 
-      .. note:: You will not be able to spend anything until you first receive some money into the wallet, or unless you allocate funds to the wallet. To learn how to allocate funds, see the guide directly below.
+      #. You are now immediately good to go and can start receiving funds to this lightning wallet.
+
+         .. note:: You will not be able to spend anything until you first receive some money into the wallet, or unless you allocate funds to the wallet. To learn how to allocate funds, see the guide directly below.
 
 
 .. _LnBits-funding:
 
-Allocating Funds to an LnBits Wallet
-------------------------------------
+.. collapse:: Funding LnBits
 
-   #. Go to the "Properties" tab on your LnBits service:
+   Allocating Funds to an LnBits Wallet
+   ------------------------------------
 
-      .. figure:: /_static/images/lightning/lnbits-properties.png
-         :width: 30%
+      #. Go to the "Properties" tab on your LnBits service:
 
-   #. Copy the "Superuser Account" URL:
-
-      .. figure:: /_static/images/lightning/lnbits-properties-copy-super.png
-         :width: 30%
-
-   #. Click the "+" icon and enter the amount of funds you'd like to make available to this wallet:
-
-      .. figure:: /_static/images/lightning/lnbits-fundfund.png
-         :width: 30%
-
-      .. tip:: The numbers you enter here add or subtract from the balance permitted to this owner of this wallet. In the picture below we have added 500 sats to this wallet. You can click the "+" icon again if you wish to add or subtract sats.
-         
-         .. figure:: /_static/images/lightning/lnbits-500-sats.png
+         .. figure:: /_static/images/lightning/lnbits-properties.png
             :width: 30%
+
+      #. Copy the "Superuser Account" URL:
+
+         .. figure:: /_static/images/lightning/lnbits-properties-copy-super.png
+            :width: 30%
+
+      #. Click the "+" icon and enter the amount of funds you'd like to make available to this wallet:
+
+         .. figure:: /_static/images/lightning/lnbits-fundfund.png
+            :width: 30%
+
+         .. tip:: The numbers you enter here add or subtract from the balance permitted to this owner of this wallet. In the picture below we have added 500 sats to this wallet. You can click the "+" icon again if you wish to add or subtract sats.
+            
+            .. figure:: /_static/images/lightning/lnbits-500-sats.png
+               :width: 30%
 
 .. _rtl:
 
-Ride the Lightning
-------------------
+.. collapse::  Ride The Lightning
 
-Available For
-.............
-- embassyOS
+   Ride the Lightning
+   ------------------
 
-See the video at the top of this page for an intro to Lightning using RTL.
+   Available For
+   .............
+   - embassyOS
+
+   This can simply be installed by going to your Start9 server's marketplace clicking on "Ride The Lightning" then installing the latest version. Once installed you can configure it to work with either - or both - LND and Core Lightning!
 
 .. _spark:
 
-Spark
------
+.. collapse:: Spark
 
-.. note:: Compatible with Core Lightning (CLN) only
+   Spark
+   -----
 
-Available For
-.............
-- Android
-- embassyOS
-- iOS
+   .. note:: Only compatible with Core Lightning
 
-To use a Spark client, you still need to have Spark installed on the Embassy.  The Spark service on Embassy is both a server (background service) and a client (the :ref:`Web UI<web-ui>`).  Under Properties, there is a "Pairing URL". The first part of this is the server URL, and the end portion of it is the access key.
+   Available For
+   .............
+   - Android
+   - embassyOS
+   - iOS
+
+   To use a Spark client, you still need to have Spark installed on the Embassy. The Spark service on Embassy is both a server (background service) and a client (the :ref:`Web UI<web-ui>`).  Under Properties, there is a "Pairing URL". The first part of this is the server URL, and the end portion of it is the access key.
 
 .. _thunderhub:
 
-Thunderhub
-----------
+.. collapse:: Thunderhub
 
-Available For
-.............
-- embassyOS
+   Thunderhub
+   ----------
 
-Download from your Embassy's Marketplace and follow the included Instructions.
+   Available For
+   .............
+   - StartOS
+
+   Download from your Start9 server's marketplace and follow the included instructions.
 
 .. _zap:
 
-Zap
----
+.. collapse:: Zap
 
-Available For
-.............
-- Android
-- iOS
+   Zap
+   ---
 
-.. note:: Compatible with LND only
+   Available For
+   .............
+   - Android
+   - iOS
 
-#. Download from your device's application store.
-#. Go to Settings and activate Tor.
-#. Go to Add a Wallet and scan the LND REST connection QR code found in your Embassy's LND service page -> Properties.
+   .. note:: Compatible with LND only
+
+   #. Download from your device's application store.
+   #. Go to Settings and activate Tor.
+   #. Go to Add a Wallet and scan the LND REST connection QR code found in your Embassy's LND service page -> Properties.
 
 .. _zeus:
 
-Zeus
-----
+.. collapse:: Zeus
 
-Available For
-.............
-- Android
-- iOS
+   Zeus
+   ----
 
-.. note:: Works with both LND and CLN
+   Available For
+   .............
+   - Android
+   - iOS
 
-.. tabs::
+   .. note:: Works with both LND and Core Lightning
 
-    .. group-tab:: Core Lightning
+   .. tabs::
 
-      #. Download the Zeus: Bitcoin and Lightning wallet from your mobile device's application store.
-      #. Open your Embassy's web interface and log in
-      #. Select Services -> Core Lightning
-      #. Select "Properties"
-      #. Click the QR code next to "REST API Quick Connect" to display the QR code
-      #. Open Zeus on your mobile device and go to Settings / Get Started -> Connect a node -> +
-      #. Select "Use Tor"
-      #. Chane "Node interface" to "Core Lightning (c-lightning-REST)"
-      #. Press "SCAN C-LIGHTNING-REST QR"
-      #. Press "SAVE NODE CONFIG"
+      .. group-tab:: Core Lightning
 
-    .. group-tab:: LND
+         #. Download the Zeus: Bitcoin and Lightning wallet from your mobile device's application store.
+         #. Open your Embassy's web interface and log in
+         #. Select Services -> Core Lightning
+         #. Select "Properties"
+         #. Click the QR code next to "REST API Quick Connect" to display the QR code
+         #. Open Zeus on your mobile device and go to Settings / Get Started -> Connect a node -> +
+         #. Select "Use Tor"
+         #. Chane "Node interface" to "Core Lightning (c-lightning-REST)"
+         #. Press "SCAN C-LIGHTNING-REST QR"
+         #. Press "SAVE NODE CONFIG"
 
-      #. Download the Zeus: Bitcoin and Lightning wallet from your mobile device's application store.
-      #. Open your Embassy's web interface and log in
-      #. Select Services -> Lightning Network Daemon
-      #. Select "Properties"
-      #. Click the QR code icon next to "LND Connect REST URL" to display the QR code
-      #. Open Zeus on your mobile device and go to Settings / Get Started -> Connect a node -> +
-      #. Select "Use Tor"
-      #. Press the "SCAN LNDCONNECT CONFIG" button
-      #. Scan the QR Code displayed on the Embassy's LND Connect REST URL screen
+      .. group-tab:: LND
 
-         .. note:: If you have trouble scanning it, bring your phone very close to the QR code until it fills the entire target square on your mobile device's QR code camera.
-      #. Zeus will fill in your node details based on the information in the QR code
-      #. Click "SAVE NODE CONFIG"
+         #. Download the Zeus: Bitcoin and Lightning wallet from your mobile device's application store.
+         #. Open your Embassy's web interface and log in
+         #. Select Services -> Lightning Network Daemon
+         #. Select "Properties"
+         #. Click the QR code icon next to "LND Connect REST URL" to display the QR code
+         #. Open Zeus on your mobile device and go to Settings / Get Started -> Connect a node -> +
+         #. Select "Use Tor"
+         #. Press the "SCAN LNDCONNECT CONFIG" button
+         #. Scan the QR Code displayed on the Embassy's LND Connect REST URL screen
+
+            .. note:: If you have trouble scanning it, bring your phone very close to the QR code until it fills the entire target square on your mobile device's QR code camera.
+         #. Zeus will fill in your node details based on the information in the QR code
+         #. Click "SAVE NODE CONFIG"
 
