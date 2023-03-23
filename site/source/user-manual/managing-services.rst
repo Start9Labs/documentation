@@ -94,7 +94,7 @@ You can change your configuration at any time from a Service's main page:
 Service Instructions
 --------------------
 
-* Every services comes with its own set of usage instructions. To view the instructions for a particular service, navigate to the *Services > [Service Name] > Instructions*.
+* Every service comes with its own set of usage instructions. To view the instructions for a particular service, navigate to the *Services > [Service Name] > Instructions*.
 
 .. figure:: /_static/images/services/instruct.png
   :width: 60%
