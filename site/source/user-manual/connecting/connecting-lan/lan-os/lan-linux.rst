@@ -53,11 +53,14 @@ Here we will insert your Embassy's CA certificate into Linux's trust store to en
 
                     mv ~/.pki ~/.pki.mozilla-old
 
-            Finally, from the folder where you downloaded your Embassy's Root CA, run the following commands to add your Embassy's CA certificate to the OS trust store:
+            Finally, we will change directory to the folder where you downloaded your Embassy's Root CA (usually `~/Downloads`), and run the following commands to add your Embassy's CA certificate to the OS trust store:
 
             .. code-block:: bash
             
-                sudo cp "Embassy Local CA.crt" /usr/local/share/ca-certificates/
+                cd ~/Downloads
+                sudo mkdir -p /usr/share/ca-certificates/start9
+                sudo cp "Embassy Local CA.crt" /usr/local/share/ca-certificates/start9/
+                echo "start9/Embassy Local CA.crt" | sudo tee -a /etc/ca-certificates.conf
                 sudo update-ca-certificates
 
         In the output it should say ``1 added`` if it was successful.
