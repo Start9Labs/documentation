@@ -28,7 +28,7 @@ If you would like to contribute to the documentation please follow the instructi
 
     .. group-tab:: Editing an existing page:
 
-        #. Click through the relevant directory, find the find the article you'd like to edit and select it:
+        #. Click through the relevant directory, find the article you'd like to edit and select it:
 
             .. figure:: /_static/images/contribution/click-article.png
                 :width: 60%
