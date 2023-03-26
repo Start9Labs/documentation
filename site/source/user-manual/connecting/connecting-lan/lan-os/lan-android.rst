@@ -10,18 +10,18 @@ Trusting Embassy CA on Android
 
 .. tabs::
 
-    .. group-tab:: Android v12
-
-        Tap **Settings > Security > Advanced > Encryption and Credentials > Install from Storage** and select your "Embassy Local Root CA" certificate.
-
-        .. figure:: /_static/images/ssl/android/droidLAN0.png
-            :width: 30%
-            :alt: Install certificate
-
     .. group-tab:: Android v13+
 
         Tap **Settings > Security > More security settings > Encryption & credentials > Install a certificate > CA Certificate > Install Anyway** and select your "Embassy Local Root CA" certificate.
 
         .. figure:: /_static/images/ssl/android/droidLAN2.png
+            :width: 30%
+            :alt: Install certificate
+    
+    .. group-tab:: Android v12
+
+        Tap **Settings > Security > Advanced > Encryption and Credentials > Install from Storage** and select your "Embassy Local Root CA" certificate.
+
+        .. figure:: /_static/images/ssl/android/droidLAN0.png
             :width: 30%
             :alt: Install certificate

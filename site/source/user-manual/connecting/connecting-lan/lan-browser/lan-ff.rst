@@ -8,6 +8,8 @@ Trusting Embassy CA in Firefox
 
 This should work equally well in Firefox, Firefox ESR, or Librewolf.
 
+.. note:: If you are attempting to set up Firefox on Android, click the "Android" tab below for Android-specific instructions.
+
 .. tabs::
 
     .. group-tab:: Linux/Mac/Windows
