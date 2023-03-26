@@ -58,7 +58,7 @@ Here we will insert your Embassy's CA certificate into Linux's trust store to en
             .. code-block:: bash
             
                 cd ~/Downloads
-                sudo cp "Embassy Local CA.crt" /usr/local/share/ca-certificates/start9/
+                sudo cp "Embassy Local CA.crt" /usr/local/share/ca-certificates/
                 sudo update-ca-certificates
 
         In the output it should say ``1 added`` if it was successful.
