@@ -52,4 +52,4 @@ Connect Embassy
 
 #. Click "Save".
 
-That's it!  You can now :ref:`Create<backup-create>` encrypted, private backups of all your Embassy data to your Linux machine or external drive!!
+That's it!  You can now :ref:`Create<backup-create>` encrypted, private backups of all your Start9 server's data to your Synology NAS!

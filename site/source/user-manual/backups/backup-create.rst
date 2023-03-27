@@ -24,6 +24,7 @@ Select your platform for detailed instructions on how to create a Network Folder
   Mac Network Folder <backup-setup/backup-mac>
   Windows Network Folder <backup-setup/backup-windows>
   Synology Network Folder <backup-setup/backup-synology>
+  TrueNAS Network Folder <backup-setup/backup-truenas>
   Physical Drive via Embassy <backup-setup/backup-physical>
 
 .. _backup-create:
