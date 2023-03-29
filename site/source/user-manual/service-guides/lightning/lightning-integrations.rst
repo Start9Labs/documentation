@@ -12,7 +12,7 @@ Available For
 - Chrome-based browsers
 - Firefox
 
-Make sure you are already :ref:`running Tor<connecting-tor>` on your system if you want to use Core Lightning. For LND this isn't necessary as you can use their companion app.
+Make sure you are already :ref:`running Tor<connecting-tor>` on your system and we suggest using Firefox which must be :ref:`configured to use Tor.<tor-firefox>`
 
 #. Download the Alby extension by visiting the `Alby Github <https://github.com/getAlby/lightning-browser-extension#installation>`_, selecting your browser, and installing.
 #. On the Alby welcome screen, select "Get Started."
@@ -58,22 +58,27 @@ Make sure you are already :ref:`running Tor<connecting-tor>` on your system if y
 
     .. group-tab:: LND
 
-      #. Select "Start9"
+      #. Select "Start9":
 
          .. figure:: /_static/images/lightning/start9-lnd-in-alby.png
             :width: 60%
 
-      #. You'll now need to enter your LND Connect REST URL from your LND service page's "Properties" section.
+      #. You'll now need to enter your LND Connect REST URL from your LND service page's "Properties" section:
 
          .. figure:: /_static/images/lightning/lnd-connect-rest-url.png
             :width: 60%
 
-      #. Alby will warn that you are connecting over Tor and prompt you to download the companion app - do so and follow the instructions for adding it to your browser.
+      #. Alby will pick up that you are connecting over Tor and suggest using their Companion App (only needed if your browser isn't setup to use Tor) or using Tor natively which you will be able to do. Select TOR (native):
 
-         .. figure:: /_static/images/lightning/alby-lnd-connect-companion.png
+         .. figure:: /_static/images/lightning/alby-tor-native.png
             :width: 60%
+      
+         .. note:: If this does not work, please ensure that :ref:`Tor is running on your system<connecting-tor>` and that :ref:`Firefox is configured to use it.<tor-firefox>` If you can't get this to work it's OK to use the Companion App - but you will have a better experience with your Start9 Server elsewhere if you take the time to get Tor running on your devices.
 
-      #. Click "Connect" and once connection is completed you will see a success page that displays the balance of your LND node in Sats.  You can now launch the tutorial and learn how to use Alby!
+      #. Click "Continue" and once connection is completed you will see a success page that displays the balance of your LND node in Sats.  You can now launch the tutorial and learn how to use Alby!
+
+         .. figure:: /_static/images/lightning/alby-success.png
+            :width: 60%
 
 
 .. _blue-wallet-lightning:
