@@ -9,9 +9,9 @@ The source code can be viewed on Purism's `firmware git repo <https://source.pur
 
 .. note:: USB drive *must* be formatted for FAT32
 
-#. Download the firmware (``pureboot-librem_mini_v2-basic_usb_autoboot.rom.gz``) from `Purism's git repository <https://source.puri.sm/firmware/releases/-/tree/master/librem_mini_v2/custom>`_ and extract it.
+#. `Download the firmware from Purism's git repository <https://source.puri.sm/firmware/releases/-/raw/master/librem_mini_v2/custom/coreboot-librem_mini_v2-auto_poweron-4.19-Purism-1.rom.gz?inline=false>`_ and extract it.
 
-#. Copy or move the resulting ``pureboot-librem_mini_v2-basic_usb_autoboot.rom`` file onto your USB drive, then eject the drive and insert it into your (powered down) Librem Mini.  USB 3.0 (blue ports) are faster.
+#. Copy or move the resulting ``coreboot-librem_mini_v2-auto_poweron-4.19-Purism-1.rom`` file onto your USB drive, then eject the drive and insert it into your (powered down) Librem Mini.  USB 3.0 (blue ports) are faster.
 
     .. note:: You'll need a monitor and keyboard plugged into your Librem Mini for this operation
 
@@ -40,7 +40,7 @@ The source code can be viewed on Purism's `firmware git repo <https://source.pur
     .. figure:: /_static/images/flashing/flash_firmware-pro-step4-proceed_yes.jpg
         :width: 30%
 
-#. Choose the file that we downloaded and copied to the USB stick earlier: ``pureboot-librem_mini_v2-basic_usb_autoboot.rom``
+#. Choose the file that we downloaded and copied to the USB stick earlier: ``coreboot-librem_mini_v2-auto_poweron-4.19-Purism-1.rom``
 
     .. figure:: /_static/images/flashing/flash_firmware-pro-step5-select_your_file.jpg
         :width: 30%
