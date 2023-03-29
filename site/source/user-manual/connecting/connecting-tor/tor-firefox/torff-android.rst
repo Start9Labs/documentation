@@ -52,6 +52,12 @@ Once Tor is setup on your system, you can proceed to setup Firefox:
      :width: 50%
      :alt: Firefox whitelist onions screenshot
 
+#. Finally, search for ``network.websocket.allowInsecureFromHTTPS`` and set the value to ``true``:
+
+    .. figure:: /_static/images/tor/firefox_insecure_websockets_droid.png
+      :width: 50%
+      :alt: Firefox allow insecure websockets over https
+
 #. Optional but recommended: search for ``network.http.referer.hideOnionsSource`` and set the value to ``true``.
 
 #. Restart Firefox, and you're all set! You should now be able to navigate to `.onion` URLs in Firefox. This means you can bookmark Cups Messenger, or other Embassy ``.onion`` addresses, as well as use the :ref:`Bitwarden<vaultwarden>` browser extension.

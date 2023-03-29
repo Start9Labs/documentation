@@ -8,11 +8,17 @@ Configuring Firefox for Tor on Windows
 
 #. Open Firefox and enter ``about:config`` in the URL bar. Accept any warnings that may appear about accessing advanced settings.
 
-#. Search for ``dom.securecontext.allowlist_onions`` and set the value to "true".
+#. Search for ``dom.securecontext.allowlist_onions`` and set the value to "true":
 
     .. figure:: /_static/images/tor/firefox_allowlist.png
       :width: 60%
       :alt: Firefox whitelist onions screenshot
+
+#. Next, search for ``network.websocket.allowInsecureFromHTTPS`` and set the value to ``true``:
+
+    .. figure:: /_static/images/tor/firefox_insecure_websockets.png
+      :width: 60%
+      :alt: Firefox allow insecure websockets over https
 
 #. Download a *Proxy Auto Config* file to inform Firefox how to use the Tor daemon running on your computer. You can get Start9's standard file by following instructions below:
 
