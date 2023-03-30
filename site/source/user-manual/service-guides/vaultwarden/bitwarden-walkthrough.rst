@@ -1,8 +1,8 @@
-.. _bitwarden-clients:
+.. _bitwarden-walkthrough:
 
-=================
-Bitwarden Clients
-=================
+=========================
+Vaultwarden Initial Setup
+=========================
 
 .. contents::
   :depth: 2 
@@ -10,29 +10,151 @@ Bitwarden Clients
 
 .. _vaultwarden-webvault:
 
-There are many ways to connect to your Vaultwarden server and make use of it.
-
-.. collapse:: Web Vault & Admin Console
+.. collapse:: Web Vault
 
     Web Vault
     ---------
-    1. First we will open up our Embassy and go to the Marketplace tab, select Vaultwarden, and install if you have not already done so.
+    #. First we will open up our Start9 Server and go to the Marketplace tab. Select **Vaultwarden**, and install if you have not already done so:
 
-    2. After install, click Configure.  A strong admin token has been securely created by your Embassy, but you may change it if you wish.  This can also be changed later.  Click save.  Click start to run the service.
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-in-marketplace.png
+                    :width: 50%
+                    :alt: vaultwarden-in-marketplace
 
-    3. Next launch the Vaultwarden web interface. If you are connected to your Embassy on LAN, Vaultwarden will also launch on LAN. If you are connected over Tor, Vaultwarden will lanuch on Tor. What you are looking at now is your very own Vaultwarden website, served right from your Embassy. Let's create an account. Please note, you are creating an account with yourself on your own Vaultwarden website served from your own Vaultwarden server, there are no third parties involved here.  Enter an email for logging in, a strong password that you will remember, and optionally a password hint.  It is important to realize that this is the 'Master password' for all your other passwords.  Make it very strong, memorize it, write it down, and back it up to a safe place. If you lose it, you may lose access to all your passwords and your entire digital life.
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-install.png
+                    :width: 50%
+                    :alt: vaultwarden-install
 
-        Now you can log in to your new password manager!
+    #. Once installed click **Configure**:
+    
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-needs-config.png
+                    :width: 40%
+                    :alt: vaultwarden-needs-config
 
-    4. We are greeted with our newly setup Vaultwarden password vault.  At the top you can visit 'Tools' for reports, a password generator, and to import data from another program, such as lastpass, onepass, or keepass.  'Settings' gives you all your options, including the ability to set up 2 factor authorization.
+    #. A strong admin token has been securely created by your Server, but you may change it if you wish. This can also be changed later. Click **Save**:
 
-    5. Back at the main page for your vault, let's do a quick example login.  We can setup a new folder here and save new login.  For our example, we're going to use our FileBrowser instance.  So click 'Add item,'  then we'll fill in some test information.  A name for the entry, a username, password, and the website we want to log in to.  Then click 'Save.'
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-save-config.png
+                    :width: 50%
+                    :alt: vaultwarden-save-config
+    
+    #. Click start to run the service:
+
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-start-service.png
+                    :width: 50%
+                    :alt: vaultwarden-start-service
+
+    #. Once the health check turns green, click **Launch UI**:
+    
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-launch-ui.png
+                    :width: 50%
+                    :alt: vaultwarden-launch-ui
+
+    #. Time to create an account! Click **Create account**:
+    
+        .. note:: You are creating an account with yourself on your own Vaultwarden website served from your own Vaultwarden server - there are no third parties involved here.  
+            
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-create-account.png
+                    :width: 50%
+                    :alt: vaultwarden-create-account
+
+    #. Enter an email address for login:
+
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-create-account-email.png
+                    :width: 50%
+                    :alt: vaultwarden-create-account-email
+    
+        .. tip:: This email address can be anything you like. It doesn't have to be real. It is simply a way for you to log into Vaultwarden from Bitwarden apps on your devices. Your Vaultwarden server won't ever email you.
+
+        .. tip:: You cannot use this email address to reset your master password - it is simply used to create an account on your server. 
+            
+        .. warning:: Do not lose it - you will not be able to log in without it!
+
+    #. Enter a name for the account, a strong password and (optionally) a password hint - then click **Create account**:
+
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-account-creation.png
+                    :width: 50%
+                    :alt: vaultwarden-account-creation
+    
+        .. warning:: It is important to realize that this is the 'Master password' for all your other passwords. Make it very strong, memorize it, write it down, and back it up to a safe place. If you lose it, you may lose access to all your passwords and your entire digital life.
+
+    #. Now you can log in to your new password manager! Enter your email to login:
+
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-login-email.png
+                    :width: 50%
+                    :alt: vaultwarden-login-email
+
+    #. Then your master password:
+
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-login-password.png
+                    :width: 50%
+                    :alt: vaultwarden-login-password
+
+    #. We are greeted with our newly setup Vaultwarden password vault!
+
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-fresh-vault.png
+                    :width: 50%
+                    :alt: vaultwarden-fresh-vault
+    
+    #. At the top you can visit **Tools** for reports and to use the password generator. You can also import data from another program, such as lastpass, onepass, or keepass!
+
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-tools.png
+                    :width: 50%
+                    :alt: vaultwarden-tools
+    
+    #. **Account settings** gives you all your options, including the ability to set up 2 factor authorization.
+
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-account-settings.png
+                    :width: 50%
+                    :alt: vaultwarden-account-settings
+
+    #. Now you're ready to start storing some passwords!
+
+.. collapse:: Storing your first password
+
+    #. Back at the main page for your vault, let's do a quick example login. We'll start by creating a folder for it:
+
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-click-add-folder.png
+                    :width: 50%
+                    :alt: vaultwarden-click-add-folder
+    
+    #. Name the folder and click **Save**:
+
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-add-folder.png
+                    :width: 50%
+                    :alt: vaultwarden-add-folder
+
+    #. Click **Add item**:
+
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-add-item.png
+                    :width: 50%
+                    :alt: vaultwarden-add-item
+
+    #. Now add the credentials and click **Save**:
+
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-add-new-login.png
+                    :width: 50%
+                    :alt: vaultwarden-add-new-login
+
+    #. And there we have it - our first set of login credentials.
+
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-new-login.png
+                    :width: 50%
+                    :alt: vaultwarden-new-login
+
+    Congratulations! You have setup your own self-hosted password manager and have added a set of login credentials to it!
+
+
 
     .. _vaultwarden-admin:
+
+.. collapse:: Admin Console
 
     Accessing the Admin Console
     ===========================
     You will find the Admin console by adding ``/admin`` to the end of your Vaultwarden WebUI URL, found in the "Interfaces" section of the Vaultwarden Service page.  You will be prompted for your "Admin Token," which is also found on your Vaultwarden Service page under "Properties."
+
+============
+Client Setup
+============
 
 .. collapse:: Browser Extension
 
@@ -93,8 +215,6 @@ There are many ways to connect to your Vaultwarden server and make use of it.
 
             #. Now enter your credentials and the Bitwarden extension will be logged into your self-hosted Vaultwarden server!
 
-Mobile Apps
------------
 
 .. collapse:: Android
 
@@ -227,7 +347,7 @@ Mobile Apps
 Desktop Apps
 ------------
 
-The desktop app is a bit more finicky, and arguably much less useful than the mobile and browser solutions, but below are the configurations that have been tested and are known to work correctly should you wish to use it.
+The desktop app is a bit more finicky, and arguably much less useful than the mobile and browser solutions. We suggest using the browser extension explained above, but below are the configurations for the Bitwarden Desktop App that have been tested and are known to work correctly.
 
 .. collapse:: Linux
 
