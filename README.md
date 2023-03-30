@@ -54,7 +54,7 @@ git submodule update --init
 
 ```
 chmod a+x site/_utils/setup.sh
-.site/_utils/setup.sh
+./site/_utils/setup.sh
 ```
 
 1. Navigate to the `site` folder and start the project:
