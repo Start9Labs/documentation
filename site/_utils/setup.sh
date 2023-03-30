@@ -9,4 +9,3 @@ which python3 || { echo "Failed to find python3. Try installing Python for your 
 which poetry || curl -sSL https://install.python-poetry.org | python3 -
 
 poetry install
-poetry update
