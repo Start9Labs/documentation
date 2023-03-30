@@ -44,13 +44,20 @@ brew install poetry
 git clone https://github.com/Start9Labs/documentation.git && cd documentation
 ```
 
-2. Install theme submodule:
+1. Install theme submodule:
 
 ```
 git submodule update --init
 ```
 
-3. Navigate to the `site` folder and start the project:
+1. Run setup script to install project dependencies:
+
+```
+=chmod a+x site/_utils/setup.sh
+.site/_utils/setup.sh
+```
+
+1. Navigate to the `site` folder and start the project:
 
 ```
 cd site

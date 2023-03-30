@@ -27,7 +27,7 @@ clean:
 	rm -rf $(BUILDDIR)/*
 
 .PHONY: preview
-preview: setup
+preview:
 	npm --prefix ../sphinx-scylladb-theme run build
 	$(POETRY) run sphinx-autobuild -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml --port 5500
 
