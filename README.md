@@ -53,7 +53,7 @@ git submodule update --init
 1. Run setup script to install project dependencies:
 
 ```
-=chmod a+x site/_utils/setup.sh
+chmod a+x site/_utils/setup.sh
 .site/_utils/setup.sh
 ```
 
