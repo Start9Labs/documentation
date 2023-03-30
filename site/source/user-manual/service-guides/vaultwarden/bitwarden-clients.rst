@@ -10,107 +10,328 @@ Bitwarden Clients
 
 .. _vaultwarden-webvault:
 
-There are many ways to connect to and use your Vaultwarden server.
+There are many ways to connect to your Vaultwarden server and make use of it.
 
-Web Vault
----------
-1. First we will open up our Embassy and go to the Marketplace tab, select Vaultwarden, and install if you have not already done so.
+.. collapse:: Web Vault & Admin Console
 
-2. After install, click Configure.  A strong admin token has been securely created by your Embassy, but you may change it if you wish.  This can also be changed later.  Click save.  Click start to run the service.
+    Web Vault
+    ---------
+    1. First we will open up our Embassy and go to the Marketplace tab, select Vaultwarden, and install if you have not already done so.
 
-3. Next launch the Vaultwarden web interface. If you are connected to your Embassy on LAN, Vaultwarden will also launch on LAN. If you are connected over Tor, Vaultwarden will lanuch on Tor. What you are looking at now is your very own Vaultwarden website, served right from your Embassy. Let's create an account. Please note, you are creating an account with yourself on your own Vaultwarden website served from your own Vaultwarden server, there are no third parties involved here.  Enter an email for logging in, a strong password that you will remember, and optionally a password hint.  It is important to realize that this is the 'Master password' for all your other passwords.  Make it very strong, memorize it, write it down, and back it up to a safe place. If you lose it, you may lose access to all your passwords and your entire digital life.
+    2. After install, click Configure.  A strong admin token has been securely created by your Embassy, but you may change it if you wish.  This can also be changed later.  Click save.  Click start to run the service.
 
-    Now you can log in to your new password manager!
+    3. Next launch the Vaultwarden web interface. If you are connected to your Embassy on LAN, Vaultwarden will also launch on LAN. If you are connected over Tor, Vaultwarden will lanuch on Tor. What you are looking at now is your very own Vaultwarden website, served right from your Embassy. Let's create an account. Please note, you are creating an account with yourself on your own Vaultwarden website served from your own Vaultwarden server, there are no third parties involved here.  Enter an email for logging in, a strong password that you will remember, and optionally a password hint.  It is important to realize that this is the 'Master password' for all your other passwords.  Make it very strong, memorize it, write it down, and back it up to a safe place. If you lose it, you may lose access to all your passwords and your entire digital life.
 
-4. We are greeted with our newly setup Vaultwarden password vault.  At the top you can visit 'Tools' for reports, a password generator, and to import data from another program, such as lastpass, onepass, or keepass.  'Settings' gives you all your options, including the ability to set up 2 factor authorization.
+        Now you can log in to your new password manager!
 
-5. Back at the main page for your vault, let's do a quick example login.  We can setup a new folder here and save new login.  For our example, we're going to use our FileBrowser instance.  So click 'Add item,'  then we'll fill in some test information.  A name for the entry, a username, password, and the website we want to log in to.  Then click 'Save.'
+    4. We are greeted with our newly setup Vaultwarden password vault.  At the top you can visit 'Tools' for reports, a password generator, and to import data from another program, such as lastpass, onepass, or keepass.  'Settings' gives you all your options, including the ability to set up 2 factor authorization.
 
-.. _vaultwarden-admin:
+    5. Back at the main page for your vault, let's do a quick example login.  We can setup a new folder here and save new login.  For our example, we're going to use our FileBrowser instance.  So click 'Add item,'  then we'll fill in some test information.  A name for the entry, a username, password, and the website we want to log in to.  Then click 'Save.'
 
-Accessing the Admin Console
-===========================
-You will find the Admin console by adding ``/admin`` to the end of your Vaultwarden WebUI URL, found in the "Interfaces" section of the Vaultwarden Service page.  You will be prompted for your "Admin Token," which is also found on your Vaultwarden Service page under "Properties."
+    .. _vaultwarden-admin:
 
-Browser Extension
------------------
-If connecting via Tor (i.e using the .onion address) the Bitwarden browser extension will only work with Tor browser or Firefox, since those are the only two browsers capable of using Tor, or in other words, access .onion URLs. Brave Browser can also access .onion URLs, but only in special tabs, not in extension, so the Bitwarden extension will not work on Brave.
+    Accessing the Admin Console
+    ===========================
+    You will find the Admin console by adding ``/admin`` to the end of your Vaultwarden WebUI URL, found in the "Interfaces" section of the Vaultwarden Service page.  You will be prompted for your "Admin Token," which is also found on your Vaultwarden Service page under "Properties."
 
-#. If you choose Tor Browser, everything will just work right out of the box. If you choose Firefox, you will need to configure both your :ref:`device <tor-os>` and :ref:`Firefox <tor-firefox>` to use Tor.
+.. collapse:: Browser Extension
 
-#. In this example we will use Firefox.  First, install the `Bitwarden browser extension <https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/>`_.  Once installed, click on the extension and click 'Settings' in the top left.  Under 'Self-hosted environment,' you will see a field for 'Server URL,'. Here, we need to paste in our Vaultwarden Tor address. Go to your Embassy and copy your Vaultwarden Tor address, then return to the Bitwarden extension and paste it in, prefixed by ``http://``. Please note, you must use ``http``, not ``https``. Click 'Save.'
+    .. tabs::
 
-#. Now you can click on the extension again, click 'Log In,' and enter your credentials.  That's it, the extension is all set up!
+        .. group-tab:: Tor
 
-.. note:: If you wish to connect the extension via LAN instead of Tor (i.e your .local address), it will only update while connected to the same network as your Embassy. This isn't generally much of an issue as when you are away from your home network, all passwords previously synced between your device and your Embassy will remain cached and available to you. Any new passwords created while away from your LAN will not be uploaded to Vaultwarden until your device reconnects to your home network.  Make sure to use `https://` when adding your LAN address.
+            Browser Extension
+            -----------------
+            If connecting via Tor (i.e using the .onion address) the Bitwarden browser extension will only work with a Tor enabled browser. You can use Firefox (recommended), Tor Browser or Brave Browser.
+
+            #. If you choose Firefox, you will need to :ref:`setup Tor on your device <tor-os>` and :ref:`configure Firefox to use Tor <tor-firefox>`. If using Brave you will just need to :ref:`setup Tor on your device <tor-os>`. With Tor Browser, everything will just work right out of the box.
+
+                .. tip:: We recommend using Firefox as it is the most compatible browser with Start9 Servers.
+
+            #. In this example we will use Firefox, though these instructions will work just the same for Brave. First, install the `Bitwarden browser extension <https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/>`_.  
+            
+            #. Once installed, click on the extension and click the cog in the top left. Under **Self-hosted environment** you will see a field for **Server URL**. Now we need to grab the address of our Vaultwarden server.
+            
+            #. Head to the "Interfaces" tab in the Vaultwarden service on your Start9 Server:
+
+                .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces.png
+                    :width: 50%
+                    :alt: vaultwarden-interfaces
+
+            #. Copy the Tor address:
+
+                .. figure:: /_static/images/services/vaultwarden/vaultwarden-tor-address.png
+                    :width: 50%
+                    :alt: vaultwarden-tor-address
+
+            #. Paste the address into your extension and click "Save"
+
+            #. Now enter your credentials and the Bitwarden extension will be logged into your self-hosted Vaultwarden server!
+
+
+        .. group-tab:: LAN
+
+            We suggest using Tor, however it is possible have a good experience with LAN. Once synced, your app and all your passwords will be cached and available when you are on the go and not connected to your Start9 Server, and you will only need to be on LAN to update any edits to your vault.
+
+            #. Start by installing the `Bitwarden browser extension <https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/>`_.  
+            
+            #. Once installed, click on the extension and click the cog in the top left. Under **Self-hosted environment** you will see a field for **Server URL**. Now we need to grab the address of our Vaultwarden server.
+            
+            #. Head to the "Interfaces" tab in the Vaultwarden service on your Start9 Server:
+
+                .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces.png
+                    :width: 50%
+                    :alt: vaultwarden-interfaces
+
+            #. Copy the LAN address:
+
+                .. figure:: /_static/images/services/vaultwarden/vaultwarden-lan-address.png
+                    :width: 50%
+                    :alt: vaultwarden-lan-address
+
+            #. Paste the address into your extension and click "Save"
+
+            #. Now enter your credentials and the Bitwarden extension will be logged into your self-hosted Vaultwarden server!
 
 Mobile Apps
 -----------
 
-Android
-=======
+.. collapse:: Android
 
-You will need to :ref:`Setup Tor <tor-android>` on your device first.
+    Android
+    =======
 
-#. Visit your app store of choice and download the Bitwarden app.  Once downloaded and installed, let's go into Orbot, and add the app to the VPN apps list.  You may need to hit the refresh button in the top left to get it to populate.
+    .. tabs::
 
-#. Next, enter the Bitwarden app.  You'll be greeted with a log-in screen, and just like in the extension, you can go to the top left gear icon to enter the Settings.  You'll need to enter your Tor address from your Embassy, so you can copy-paste it over to your phone, or type it in by hand.  Don't forget to ensure the prefix is ``http://`` and NOT ``https://``.  Hit save, and you'll be returned to the log-in screen.
+        .. group-tab:: Tor
 
-#. Go ahead and tap 'Log In,' enter your credentials, and you can access your Bitwarden app / Vaultwarden server.
+            You will need to :ref:`Setup Tor <tor-android>` on your device first.
 
-iOS
-===
+            #. Visit your app store of choice and download the Bitwarden app.  Once downloaded and installed, let's go into Orbot, and add the app to the VPN apps list.  You may need to hit the refresh button in the top left to get it to populate.
 
-Unfortunately, the iOS app does not support Tor, so currently the Bitwarden app can only be synced on LAN.  Once synced, your app and passwords will be cached and available when you are on the go, and you will only need to be on LAN to update any edits to your vault.
+            #. Next, enter the Bitwarden app.  You'll be greeted with a log-in screen. Go to the top left gear icon to enter the settings.  
+            
+            #. Head to the "Interfaces" tab in the Vaultwarden service on your Start9 Server:
 
-You will need to :ref:`Setup LAN <lan-ios>` on your device first.
+                .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces.png
+                    :width: 50%
+                    :alt: vaultwarden-interfaces
 
-#. Visit your app store and download the Bitwarden app.
+            #. Copy the Tor address:
 
-#. Next, enter the Bitwarden app.  You'll be greeted with a log-in screen, and just like in the extension, you can go to the top left gear icon to enter the Settings.  You'll need to enter your Vaultwarden LAN address from your Embassy, so you can copy-paste it over to your phone, or type it in by hand.  Don't forget to ensure the prefix is ``https://``.  Hit save, and you'll be returned to the log-in screen.
+                .. figure:: /_static/images/services/vaultwarden/vaultwarden-tor-address.png
+                    :width: 50%
+                    :alt: vaultwarden-tor-address
 
-#. Go ahead and tap 'Log In,' enter your credentials, and you can access your Bitwarden app / Vaultwarden server.
+            #. Now send that address to your phone and paste it into Bitwarden.
+
+            #. Hit save.
+
+            #. Go ahead and tap 'Log In,' enter your credentials, and you can access your Bitwarden app / Vaultwarden server.
+
+        .. group-tab:: LAN
+
+            We suggest using Tor, however it is possible have a good experience with LAN. Once synced, your app and all your passwords will be cached and available when you are on the go and not connected to your Start9 Server, and you will only need to be on LAN to update any edits to your vault.
+
+            Begin by :ref:`setting up LAN <lan-android>` on your device.
+
+            #. Visit your app store of choice and download the Bitwarden app.  Once downloaded and installed, let's go into Orbot, and add the app to the VPN apps list.  You may need to hit the refresh button in the top left to get it to populate.
+
+            #. Next, enter the Bitwarden app.  You'll be greeted with a log-in screen. Go to the top left gear icon to enter the settings.  
+            
+            #. Head to the "Interfaces" tab in the Vaultwarden service on your Start9 Server:
+
+                .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces.png
+                    :width: 50%
+                    :alt: vaultwarden-interfaces
+
+            #. Copy the LAN address:
+
+                .. figure:: /_static/images/services/vaultwarden/vaultwarden-lan-address.png
+                    :width: 50%
+                    :alt: vaultwarden-lan-address
+
+            #. Now send that address to your phone and paste it into Bitwarden.
+
+            #. Hit save.
+
+            #. Go ahead and tap 'Log In,' enter your credentials, and you can access your Bitwarden app / Vaultwarden server.
+
+.. collapse:: iOS
+
+    iOS
+    ===
+
+    .. tabs::
+
+        .. group-tab:: Tor
+
+            Begin by :ref:`setting up Tor <tor-ios>` on your iPhone.
+
+            #. Visit the App Store and download the `Bitwarden app <https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744>`_
+
+            #. Open the Bitwarden app. You'll be greeted with a log-in screen.
+            
+            #. Go to the top left gear icon to enter the settings.  
+            
+            #. Head to the "Interfaces" tab in the Vaultwarden service on your Start9 Server:
+
+                .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces.png
+                    :width: 50%
+                    :alt: vaultwarden-interfaces
+
+            #. Copy the Tor address:
+
+                .. figure:: /_static/images/services/vaultwarden/vaultwarden-tor-address.png
+                    :width: 50%
+                    :alt: vaultwarden-tor-address
+
+            #. Now send that address to your phone and paste it into Bitwarden but **before you hit save:**
+
+                .. note:: The Tor address you will have copied will begin with **http** - Please change this to **https** instead of **http**
+            
+            #. Now you can hit save, and you'll be returned to the log-in screen.
+
+            #. Go ahead and tap 'Log In,' enter your credentials, and you'll be able to access your Bitwarden app / Vaultwarden server!
+
+        .. group-tab:: LAN
+
+            We suggest using Tor, however it is possible have a good experience with LAN. Once synced, your app and all your passwords will be cached and available when you are on the go and not connected to your Start9 Server, and you will only need to be on LAN to update any edits to your vault.
+
+            Begin by :ref:`setting up LAN <lan-ios>` on your device.
+
+            #. Visit the App Store and download the `Bitwarden app <https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744>`_
+
+            #. Open the Bitwarden app. You'll be greeted with a log-in screen.
+            
+            #. Go to the top left gear icon to enter the settings.  
+            
+            #. Head to the "Interfaces" tab in the Vaultwarden service on your Start9 Server:
+
+                .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces.png
+                    :width: 50%
+                    :alt: vaultwarden-interfaces
+
+            #. Copy the LAN address:
+
+                .. figure:: /_static/images/services/vaultwarden/vaultwarden-lan-address.png
+                    :width: 50%
+                    :alt: vaultwarden-lan-address
+
+            #. Now send that address to your phone and paste it into Bitwarden.
+            
+            #. Now you can hit save, and you'll be returned to the log-in screen.
+
+            #. Go ahead and tap 'Log In,' enter your credentials, and you'll be able to access your Bitwarden app / Vaultwarden server!
 
 Desktop Apps
 ------------
 
-The desktop app is a bit more finicky, and arguably much less useful than the mobile and browser solutions, but below are the known good (tested) configurations if you'd like to use it.
+The desktop app is a bit more finicky, and arguably much less useful than the mobile and browser solutions, but below are the configurations that have been tested and are known to work correctly should you wish to use it.
 
-Linux
-=====
+.. collapse:: Linux
 
-First, be sure to :ref:`Setup Tor <tor-linux>` natively.
+    Linux
+    =====
 
-#. Download the `Bitwarden Desktop app <https://bitwarden.com/download/>`_.  Depending on your Linux distribution and preference, you may want the AppImage, Deb, Snap, etc.  You can also check your favorite package manager.
+    First, be sure to get Tor :ref:`running on your system <tor-linux>`.
 
-#. Run the program with the flag ``--proxy-server=socks5://127.0.0.1:9050`` behind it.  You can run this from a terminal, and if you'd like to use a shortcut, edit that shortcut file to include the flag.
+    #. Download the `Bitwarden Desktop app <https://bitwarden.com/download/>`_.  Depending on your Linux distribution and preference, you may want the AppImage, Deb, Snap, etc.  You can also check your favorite package manager.
 
-#. As with the other solutions above, click the 'Settings' icon, and enter your Vaultwarden Tor address.  You can then log in to your vault.
+    #. Run the program with the flag ``--proxy-server=socks5://127.0.0.1:9050`` behind it.  You can run this from a terminal, and if you'd like to use a shortcut, edit that shortcut file to include the flag.
 
-Alternatively, you may be able to run using your LAN address, but this has proven finicky, especially on Debian/Ubuntu systems.  You will have better luck if you have the Root CA installed at the OS level.  First, be sure to :ref:`Setup LAN <lan-linux>` natively.
+    #. As with the other solutions above, click the 'Settings' icon, and enter your Vaultwarden Tor address.  You can then log in to your vault.
 
-Mac
-===
+    Alternatively, you may be able to run using your LAN address, but this has proven finicky, especially on Debian/Ubuntu systems.  You will have better luck if you have the Root CA installed at the OS level.  First, be sure to :ref:`Setup LAN <lan-linux>` natively.
 
-#. Download the `Bitwarden Desktop app <https://bitwarden.com/download/>`_.
+.. collapse:: Mac
 
-#. LAN
-    #. First, be sure to :ref:`Setup LAN <lan-mac>` natively.
+    Mac
+    ===
 
-    #. For LAN access, follow the LAN setup in the instructions below.  After completing setup, simply open Bitwarden and add your Vaultwarden LAN address in the 'Settings' and login.
+    .. tabs::
+        
+        .. group-tab:: Tor
 
-#. Tor
-    Set up the system-wide proxy on your system with our :ref:`Tor guide<tor-mac>`.
+            #. Begin by making sure that Tor is :ref:`running on your Mac<tor-mac>`.
 
-#. You can now log in to your vault.
+            #. Download the `Bitwarden Desktop app <https://bitwarden.com/download/>`_.
 
-Windows
-=======
+            #. Open the Bitwarden app and click on "Settings" in the top left:
 
-#. Download the `Bitwarden Desktop app <https://bitwarden.com/download/>`_.
+                .. figure:: /_static/images/services/vaultwarden/bitwarden-mac.png
+                    :width: 50%
+                    :alt: bitwarden-mac
 
-#. Follow the Tor setup in the instructions below.  Make sure the Bitwarden directory is located in your user's directory, ``C:\Users\YOURUSER\AppData\Local\Bitwarden``.  This is because you need permission to run over a proxy.  You can make a shortcut wherever you'd like.
+            #. Head to the "Interfaces" tab in the Vaultwarden service on your Start9 Server:
 
-#. Right-click the shortcut and click 'Properties.'  Add the flag ``--proxy-server=socks5://127.0.0.1:9050`` to the end of the 'Target' field.  Click 'Apply,' then 'OK.'  Close Properties and launch the shortcut.
+                .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces.png
+                    :width: 50%
+                    :alt: vaultwarden-interfaces
 
-#. As with the other solutions above, click the 'Settings' icon, and enter your Vaultwarden Tor address.  You can then log in to your vault.
+            #. Copy the Tor address:
+
+                .. figure:: /_static/images/services/vaultwarden/vaultwarden-tor-address.png
+                    :width: 50%
+                    :alt: vaultwarden-tor-address
+
+            #. Paste the address into Bitwarden and click the save button:
+
+                .. figure:: /_static/images/services/vaultwarden/bitwarden-mac-url.png
+                    :width: 50%
+                    :alt: bitwarden-tor-mac-url
+
+            #. Enter the email used to create the account, followed by the password, then click "Log in with master password".
+
+        .. group-tab:: LAN
+
+            We suggest using Tor, however it is possible have a good experience with LAN. Once synced, your app and all your passwords will be cached and available when you are on the go and not connected to your Start9 Server, and you will only need to be on LAN to update any edits to your vault.
+
+            #. Begin by making sure that LAN is :ref:`steup on your Mac<lan-mac>`.
+
+            #. Download the `Bitwarden Desktop app <https://bitwarden.com/download/>`_.
+
+            #. Open the Bitwarden app and click on "Settings" in the top left:
+
+                .. figure:: /_static/images/services/vaultwarden/bitwarden-mac.png
+                    :width: 50%
+                    :alt: bitwarden-mac
+
+            #. Head to the "Interfaces" tab in the Vaultwarden service on your Start9 Server:
+
+                .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces.png
+                    :width: 50%
+                    :alt: vaultwarden-interfaces
+
+            #. Copy the LAN address:
+
+                .. figure:: /_static/images/services/vaultwarden/vaultwarden-lan-address.png
+                    :width: 50%
+                    :alt: vaultwarden-lan-address
+
+            #. Paste the address into Bitwarden and click the save button:
+
+                .. figure:: /_static/images/services/vaultwarden/bitwarden-mac-url.png
+                    :width: 50%
+                    :alt: bitwarden-tor-mac-url
+
+            #. Enter the email used to create the account, followed by the password, then click "Log in with master password".
+
+.. collapse:: Windows
+
+    .. tabs::
+
+        .. group-tab:: Tor
+
+
+            #. Download the `Bitwarden Desktop app <https://bitwarden.com/download/>`_.
+
+            #. Follow the Tor setup in the instructions below.  Make sure the Bitwarden directory is located in your user's directory, ``C:\Users\YOURUSER\AppData\Local\Bitwarden``.  This is because you need permission to run over a proxy.  You can make a shortcut wherever you'd like.
+
+            #. Right-click the shortcut and click 'Properties.'  Add the flag ``--proxy-server=socks5://127.0.0.1:9050`` to the end of the 'Target' field.  Click 'Apply,' then 'OK.'  Close Properties and launch the shortcut.
+
+            #. As with the other solutions above, click the 'Settings' icon, and enter your Vaultwarden Tor address.  You can then log in to your vault.
+
+        .. group-tab:: LAN
+
+            This is not known to work at this time - LAN is tricky with Windows due to the often unreliable Bonjour and Bonjour Print Services required for handling mDNS. We suggest using Tor anyway if you are able as you will then be able to maintain connectivity to your server from anywhere in the world.
