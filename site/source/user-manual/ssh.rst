@@ -120,6 +120,14 @@ Setup
 
                 sudo pacman -S torsocks
 
+        .. group-tab:: macOS
+
+            .. code-block:: bash
+
+                brew install openssh torsocks
+                exec sudo su -l $USER
+
+
 #. SSH in:
 
     .. warning:: The changes you make here are on the overlay and won't persist after a restart of your Embassy.
