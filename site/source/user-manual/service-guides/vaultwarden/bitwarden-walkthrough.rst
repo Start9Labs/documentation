@@ -215,8 +215,6 @@ Client Setup
 
             #. In this example we will use Firefox, though these instructions will work just the same for Brave. First, install the `Bitwarden browser extension <https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/>`_.  
             
-            #. Once installed, click on the extension and click the cog in the top left. Under **Self-hosted environment** you will see a field for **Server URL**. Now we need to grab the address of our Vaultwarden server.
-            
             #. Head to the "Interfaces" tab in the Vaultwarden service on your Start9 Server:
 
                 .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces.png
@@ -229,6 +227,8 @@ Client Setup
                     :width: 50%
                     :alt: vaultwarden-tor-address
 
+            #. Now head to the Bitwarden extension and click the cog in the top left. Under **Self-hosted environment** you will see a field for **Server URL**. Now we need to grab the address of our Vaultwarden server.
+
             #. Paste the address into your extension and click "Save"
 
             #. Now enter your credentials and the Bitwarden extension will be logged into your self-hosted Vaultwarden server!
@@ -239,9 +239,7 @@ Client Setup
             We suggest using Tor, however it is possible have a good experience with LAN. Once synced, your app and all your passwords will be cached and available when you are on the go and not connected to your Start9 Server, and you will only need to be on LAN to update any edits to your vault.
 
             #. Start by installing the `Bitwarden browser extension <https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/>`_.  
-            
-            #. Once installed, click on the extension and click the cog in the top left. Under **Self-hosted environment** you will see a field for **Server URL**. Now we need to grab the address of our Vaultwarden server.
-            
+                        
             #. Head to the "Interfaces" tab in the Vaultwarden service on your Start9 Server:
 
                 .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces.png
@@ -253,6 +251,8 @@ Client Setup
                 .. figure:: /_static/images/services/vaultwarden/vaultwarden-lan-address.png
                     :width: 50%
                     :alt: vaultwarden-lan-address
+
+            #. Now head to the Bitwarden extension and click the cog in the top left. Under **Self-hosted environment** you will see a field for **Server URL**. Now we need to grab the address of our Vaultwarden server.
 
             #. Paste the address into your extension and click "Save"
 
