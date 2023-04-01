@@ -94,7 +94,7 @@ Vaultwarden Initial Setup
                     :width: 50%
                     :alt: vaultwarden-fresh-vault
     
-    #. At the top you can visit **Tools** for reports and to use the password generator. You can also import data from another program, such as lastpass, onepass, or keepass!
+    #. At the top you can visit **Tools** for reports and to use the password generator. You can also import data from another program, such as Lastpass, Onepass, or KeePass!
 
         .. figure:: /_static/images/services/vaultwarden/vaultwarden-tools.png
                     :width: 50%
