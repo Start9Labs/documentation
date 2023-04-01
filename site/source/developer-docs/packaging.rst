@@ -89,11 +89,11 @@ These tools may or may not be necessary, depending on your environment and the p
 
             .. code-block::
             
-                sudo dnf groupinstall "" ""
+                sudo dnf groupinstall "Development Tools" "Development Libraries"
             
             .. code-block::
 
-                sudo dnf install
+                sudo dnf install openssl openssl-devel glibc-devel clang clang-devel ca-certificates perl
             
         - Git - This is a version control system that is used widely in Open Source development.
             
