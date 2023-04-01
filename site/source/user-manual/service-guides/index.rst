@@ -12,6 +12,6 @@ These guides will help you to setup external tools to connect or interact with s
   bitcoin/index
   jellyfin/index
   lightning/index
-  matrix
+  matrix/index
   nextcloud/index
   vaultwarden/index
