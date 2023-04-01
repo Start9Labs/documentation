@@ -134,6 +134,8 @@ Vaultwarden Initial Setup
                     :width: 50%
                     :alt: vaultwarden-add-new-login
 
+        .. tip:: An entry can have multiple URLs - for example you may wish to enter both an onion address and a .local address for one of the services you have running on your server. We are increasing the numbers of ways in which you can connect to your services, soon they may even have simple .com addresses!
+
     #. And there we have it - our first set of login credentials.
 
         .. figure:: /_static/images/services/vaultwarden/vaultwarden-new-login.png
@@ -150,7 +152,46 @@ Vaultwarden Initial Setup
 
     Accessing the Admin Console
     ===========================
-    You will find the Admin console by adding ``/admin`` to the end of your Vaultwarden WebUI URL, found in the "Interfaces" section of the Vaultwarden Service page.  You will be prompted for your "Admin Token," which is also found on your Vaultwarden Service page under "Properties."
+    
+    #. You will find the Admin console by heading to "Interfaces" on the Vaultwarden Service page.  
+
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces.png
+            :width: 50%
+            :alt: vaultwarden-interfaces
+
+    #. Copy either of the addresses here and append **/admin**:
+
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces-both.png
+            :width: 50%
+            :alt: vaultwarden-interfaces-both
+
+        .. tip:: A typical address would look like https://abcdefghijklmnopqrstuvwxz.local/admin or http://abcdefghijklmnopqrstuvwxz.onion/admin 
+
+    #. You will be prompted for your "Admin Token," which can be found on your Vaultwarden Service page under "Properties."
+
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties.png
+            :width: 50%
+            :alt: vaultwarden-admin-properties
+
+    #. Copy the token here:
+
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-admin.png
+            :width: 50%
+            :alt: vaultwarden-admin-properties-admin
+
+    #. And paste it here:
+
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-admin-console-auth.png
+            :width: 50%
+            :alt: vaultwarden-admin-console-auth
+
+    #. You're now logged in to the admin panel.
+
+        .. figure:: /_static/images/services/vaultwarden/vaultwarden-admin-console.png
+            :width: 50%
+            :alt: vaultwarden-admin-console
+
+        .. note:: This cannot be used to reset passwords for accounts created on your Vaultwarden server.
 
 |
 
