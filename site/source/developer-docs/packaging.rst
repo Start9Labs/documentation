@@ -67,25 +67,48 @@ These tools may or may not be necessary, depending on your environment and the p
 
 - Code Editor (IDE) - We recommend `Visual Studio Code <https://code.visualstudio.com/>`_
   
-- Build essentials (Ubuntu) - Common build tools and encryption libraries.
+.. tabs::
 
-    .. code-block::
-    
-        sudo apt-get install -y build-essential openssl libssl-dev libc6-dev clang libclang-dev ca-certificates
-    
-- Git - This is a version control system that is used widely in Open Source development.
-    
-    .. code-block::
+    .. group-tab:: Debian/Ubuntu
 
-        sudo apt install git
-    
-    Use the following verify installation:
-    
+        - Build essentials (Ubuntu) - Common build tools and encryption libraries.
+
+            .. code-block::
+            
+                sudo apt-get install -y build-essential openssl libssl-dev libc6-dev clang libclang-dev ca-certificates
+            
+        - Git - This is a version control system that is used widely in Open Source development.
+            
+            .. code-block::
+
+                sudo apt install git
+            
+    .. group-tab:: CentOS/Fedora
+
+        - Build essentials - Common build tools and encryption libraries.
+
+            .. code-block::
+            
+                sudo dnf groupinstall "Development Tools" "Development Libraries"
+            
+            .. code-block::
+
+                sudo dnf install openssl openssl-devel glibc-devel clang clang-devel ca-certificates perl
+            
+        - Git - This is a version control system that is used widely in Open Source development.
+            
+            .. code-block::
+
+                sudo dnf install git
+            
+- Use the following to verify installation:
+
     .. code-block::
         
         git --version
+                
+.. note:: Anytime you use a ``git clone`` command in this guide, it will create a new directory with code in it, so make sure you are executing this command from a directory that you want to store code in, such as your ``home`` folder.
     
-    .. note:: Anytime you use a ``git clone`` command in this guide, it will create a new directory with code in it, so make sure you are executing this command from a directory that you want to store code in, such as your ``home`` folder.
 
 - yq - A lightweight and portable command-line YAML, JSON and XML processor.
     
