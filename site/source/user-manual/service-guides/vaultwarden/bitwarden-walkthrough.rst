@@ -174,3 +174,4 @@ Accessing the Admin Console
 
 |
 
+Now you'll want to setup some client devices! :ref:`Head here for instructions on how to do so.<bitwarden-client-setup>`
