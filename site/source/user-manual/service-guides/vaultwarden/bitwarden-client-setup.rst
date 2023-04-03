@@ -202,7 +202,7 @@ Desktop Clients
 
         First, be sure to get Tor :ref:`running on your system <tor-linux>`.
 
-        #. Download the `Bitwarden Desktop app <https://bitwarden.com/download/>`_.  Depending on your Linux distribution and preference, you may want the AppImage, Deb, Snap, etc.  You can also check your favorite package manager.
+        #. Install Bitwarden either by using a package manager like **apt** (we recommend against using **snap**) or download it from `here <https://bitwarden.com/download/>`_.
 
         #. Run the program with the flag ``--proxy-server=socks5://127.0.0.1:9050`` behind it.  You can run this from a terminal, and if you'd like to use a shortcut, edit that shortcut file to include the flag.
 
