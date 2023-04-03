@@ -11,7 +11,7 @@ The source code can be viewed on Purism's `firmware git repo <https://source.pur
 
 #. `Download the firmware from Purism's git repository <https://source.puri.sm/firmware/releases/-/raw/master/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-25.rom.gz>`_ and extract it.
 
-#. Copy or move the resulting ``pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-25.rom.gz`` file onto your USB drive, then eject the drive and insert it into your (powered down) Librem Mini.  USB 3.0 (blue ports) are faster.
+#. Copy or move the resulting ``pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-25.rom`` file onto your USB drive, then eject the drive and insert it into your (powered down) Librem Mini.  USB 3.0 (blue ports) are faster.
 
     .. note:: You'll need a monitor and keyboard plugged into your Librem Mini for this operation
 
