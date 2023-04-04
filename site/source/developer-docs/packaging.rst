@@ -82,6 +82,28 @@ These tools may or may not be necessary, depending on your environment and the p
             .. code-block::
 
                 sudo apt install git
+
+        - Use the following to verify installation:
+
+            .. code-block::
+                
+                git --version
+
+        - yq - A lightweight and portable command-line YAML, JSON and XML processor.
+            
+            **Ubuntu**:
+
+            .. code-block::
+                
+                sudo snap install yq
+
+            **Debian**:
+
+                Get and verify the latest version of yq for your platform from here:
+
+                https://github.com/mikefarah/yq/releases/latest
+
+                Place it in `/usr/local/bin/yq`
             
     .. group-tab:: CentOS/Fedora
 
@@ -101,20 +123,22 @@ These tools may or may not be necessary, depending on your environment and the p
 
                 sudo dnf install git
             
-- Use the following to verify installation:
+        - Use the following to verify installation:
 
-    .. code-block::
-        
-        git --version
+            .. code-block::
                 
-.. note:: Anytime you use a ``git clone`` command in this guide, it will create a new directory with code in it, so make sure you are executing this command from a directory that you want to store code in, such as your ``home`` folder.
+                git --version
     
 
-- yq - A lightweight and portable command-line YAML, JSON and XML processor.
-    
-    .. code-block::
-        
-        sudo snap install yq
+        - **yq** - A lightweight and portable command-line YAML, JSON and XML processor.
+
+                Get and verify the latest version of yq for your platform from here:
+
+                https://github.com/mikefarah/yq/releases/latest
+
+                Place it in `/usr/local/bin/yq`
+
+.. note:: Anytime you use a ``git clone`` command in this guide, it will create a new directory with code in it, so make sure you are executing this command from a directory that you want to store code in, such as your ``home`` folder.
 
 Dependencies - Required
 .......................
@@ -167,10 +191,18 @@ Dependencies - Required
     
 - Deno (an optional component for more advanced SDK features) - A simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust. It is used to enable the scripting API portion of the SDK.
     
+    **Ubuntu**:
+
     .. code-block::
 
         sudo snap install deno
         
+    **Other *nix**:
+
+    .. code-block::
+
+        curl -fsSL https://deno.land/x/install/install.sh | sh
+
 .. _hello-world-example:
 
 Demo with Hello World
@@ -184,6 +216,7 @@ Check your environment setup by building a demo project and installing it to emb
         git clone https://github.com/Start9Labs/hello-world-wrapper.git
         cd hello-world-wrapper
         git submodule update --init
+        docker run --rm --privileged multiarch/qemu-user-static --reset -p yes -c yes
     
 #. Build to create ``hello-world.s9pk``
     
@@ -211,7 +244,7 @@ A Dockerfile defines the recipe for building the environment to run a service. C
 
 First, check to see if the upstream project has already built one. This is usually your best source for finding Docker images that are compatible with ARM. Next, you can:
 
-   - Download an image from [Docker Hub](https://hub.docker.com/)
+   - Download an image from `Docker Hub <https://hub.docker.com/>`_
 
    - Make a new Dockerfile, and pull in an image the upstream project hosted on Docker Hub as the base 
 
@@ -368,7 +401,7 @@ Testing
 Submission and Distribution
 ===========================
 
-The ``s9pk`` file can be uploaded for distribution to any website, repository, or marketplace. You can also submit your package for publication consideration on a Start9 Marketplace by emailing us at submissions@start9labs.com or by contacting us in one of our [community channels](https://start9.com/latest/about/contact). Please include a link to the wrapper repository with a detailed README in the submission.
+The ``s9pk`` file can be uploaded for distribution to any website, repository, or marketplace. You can also submit your package for publication consideration on a Start9 Marketplace by emailing us at submissions@start9labs.com or by contacting us in one of our `community channels <https://start9.com/latest/about/contact>`_. Please include a link to the wrapper repository with a detailed README in the submission.
 
 Advanced configuration
 ======================
