@@ -99,36 +99,12 @@ Using SSH Over Tor
 
 .. note:: The following guide requires that you have already added an :ref:`SSH key to your Embassy<ssh>`.
 
-.. caution:: SSH over Tor is only supported on Linux, though it may also work on Windows with `Torifier <https://torifier.com/>`_.
+.. caution:: SSH over Tor is only supported on Linux and macOS, though it may also work on Windows with `Torifier <https://torifier.com/>`_.
 
 Setup
 .....
 
-#. First, you'll need one dependency, ``torsocks``, which will allow you to use SSH over Tor on the machine that you want access with. Select your Linux flavor to install:
-
-    .. tabs::
-
-        .. group-tab:: Debian / Ubuntu
-
-            .. code-block:: bash
-
-                sudo apt install torsocks
-
-        .. group-tab:: Arch / Garuda / Manjaro
-
-            .. code-block:: bash
-
-                sudo pacman -S torsocks
-
-        .. group-tab:: macOS
-
-            .. code-block:: bash
-
-                brew install openssh torsocks
-                exec sudo su -l $USER
-
-
-#. SSH in:
+#. First, you need to enable SSH over tor in your Embassy:
 
     .. warning:: The changes you make here are on the overlay and won't persist after a restart of your Embassy.
 
@@ -167,6 +143,20 @@ Setup
 
         cat /var/lib/tor/ssh/hostname
 
+Configure local SSH client
+.....
+
+#. You'll need to add the following configuration to your SSH config file, which will allow you to use SSH over Tor on any Unix-based system:
+
+    .. code-block:: bash
+
+        echo -e "Host *.onion\n  ProxyCommand nc -xlocalhost:9050 %h %p\n" >> ~/.ssh/config
+
+    This command adds a wildcard setting for .onion domains to your SSH config file. Any .onion domains you connect to using SSH will use the specified proxy command.
+
+    Note: You only need to run this command only once to set up the SSH Over Tor configuration.
+
+
 Access
 ======
 
@@ -174,4 +164,4 @@ To log in, simply use the following command, using the ".onion" hostname you pri
 
     .. code-block::
 
-        torsocks ssh start9@xxxxxxxxxxxxxxxxx.onion
+        ssh start9@xxxxxxxxxxxxxxxxx.onion
