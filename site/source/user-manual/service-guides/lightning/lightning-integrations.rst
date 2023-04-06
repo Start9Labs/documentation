@@ -151,7 +151,7 @@ Available For
 - Android
 - iOS
 
-.. note:: Works with both LND and Core Lightning
+.. note:: Works with both LND and Core Lightning (CLN)
 
 .. tabs::
 
