@@ -97,7 +97,7 @@ Available For
 .............
 - embassyOS
 
-See the video at the top of this page for an intro to Lightning using RTL.
+This can simply be installed by going to your Start9 Server's marketplace clicking on "Ride The Lightning" then installing the latest version. Once installed you can configure it to work with either - or both - Core Lightning and LND!
 
 .. _spark:
 
@@ -112,7 +112,7 @@ Available For
 - embassyOS
 - iOS
 
-To use a Spark client, you still need to have Spark installed on the Embassy.  The Spark service on Embassy is both a server (background service) and a client (the :ref:`Web UI<web-ui>`).  Under Properties, there is a "Pairing URL". The first part of this is the server URL, and the end portion of it is the access key.
+To use a Spark client, you still first need to have Spark installed as a service on your Start9 Server.  The Spark service is both a server (background service) and a client (the :ref:`Web UI<web-ui>`).  Under Properties, there is a "Pairing URL". The first part of this is the server URL, and the end portion of it is the access key.
 
 .. _thunderhub:
 
@@ -151,19 +151,36 @@ Available For
 - Android
 - iOS
 
-.. note:: Compatible with LND only
+.. note:: Works with both LND and Core Lightning (CLN)
 
-#. Download the Zeus: Bitcoin and Lightning wallet from your mobile device's application store.
-#. Open your Embassy's web interface and log in
-#. Select Services -> Lightning Network Daemon
-#. Select "Properties"
-#. Click the QR Code icon next to "LND Connect REST URL" to display the QR code
-#. Open Zeus on your mobile device and go to Settings / Get Started -> Connect a node -> +
-#. Select "Use Tor"
-#. Press the "SCAN LNDCONNECT CONFIG" button
-#. Scan the QR Code displayed on the Embassy's LND Connect REST URL screen
+.. tabs::
 
-   .. note:: If you have trouble scanning it, bring your phone very close to the QR code until it fills the entire target square on your mobile device's QR code camera.
-#. Zeus will fill in your node details based on the information in the QR code
-#. Click "SAVE NODE CONFIG"
+   .. group-tab:: Core Lightning
+
+      #. Download the Zeus: Bitcoin and Lightning wallet from your mobile device's application store.
+      #. Open your Embassy's web interface and log in
+      #. Select Services -> Core Lightning
+      #. Select "Properties"
+      #. Click the QR code next to "REST API Quick Connect" to display the QR code
+      #. Open Zeus on your mobile device and go to Settings / Get Started -> Connect a node -> +
+      #. Select "Use Tor"
+      #. Change "Node interface" to "Core Lightning (c-lightning-REST)"
+      #. Press "SCAN C-LIGHTNING-REST QR"
+      #. Press "SAVE NODE CONFIG"
+
+   .. group-tab:: LND
+
+      #. Download the Zeus: Bitcoin and Lightning wallet from your mobile device's application store.
+      #. Open your Embassy's web interface and log in
+      #. Select Services -> Lightning Network Daemon
+      #. Select "Properties"
+      #. Click the QR code icon next to "LND Connect REST URL" to display the QR code
+      #. Open Zeus on your mobile device and go to Settings / Get Started -> Connect a node -> +
+      #. Select "Use Tor"
+      #. Press the "SCAN LNDCONNECT CONFIG" button
+      #. Scan the QR Code displayed on the Embassy's LND Connect REST URL screen
+
+         .. note:: If you have trouble scanning it, bring your phone very close to the QR code until it fills the entire target square on your mobile device's QR code camera.
+      #. Zeus will fill in your node details based on the information in the QR code
+      #. Click "SAVE NODE CONFIG"
 
