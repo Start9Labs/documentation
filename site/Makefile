@@ -54,7 +54,7 @@ linkcheck: setup
 	$(SPHINXBUILD) -b linkcheck $(SOURCEDIR) $(BUILDDIR)/linkcheck
 
 .PHONY: multiversion
-multiversion: setup
+multiversion:
 	npm --prefix ../sphinx-scylladb-theme run build
 	git diff --quiet || >&2 echo "\033[31;1;4mWARNING: Uncommitted changes will not be included in ./_build\033[0m"
 	@mkdir -p $(HOME)/.cache/pypoetry/virtualenvs
