@@ -164,7 +164,7 @@ Available For
       #. Click the QR code next to "REST API Quick Connect" to display the QR code
       #. Open Zeus on your mobile device and go to Settings / Get Started -> Connect a node -> +
       #. Select "Use Tor"
-      #. Chane "Node interface" to "Core Lightning (c-lightning-REST)"
+      #. Change "Node interface" to "Core Lightning (c-lightning-REST)"
       #. Press "SCAN C-LIGHTNING-REST QR"
       #. Press "SAVE NODE CONFIG"
 
