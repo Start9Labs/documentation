@@ -13,7 +13,7 @@ Once Tor is setup on your system, you can proceed to setup Firefox:
 
 #. Download `Firefox Beta <https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta>`_ from the Play Store, or `Fennec <https://f-droid.org/en/packages/org.mozilla.fennec_fdroid/>`_ from F-Droid.
 
-.. note:: Regular Firefox offered in the Play Store will not work - be sure to use Firefox Beta.
+    .. note:: Regular Firefox offered in the Play Store will not work - be sure to use Firefox Beta.
 
 #. Next, download a `Proxy Auto Config` file that will use Orbot to resolve `.onion` URLs. We have one hosted `here <https://registry.start9labs.com/sys/proxy.pac>`_.
 
