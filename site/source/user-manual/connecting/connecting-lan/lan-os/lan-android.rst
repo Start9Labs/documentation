@@ -18,7 +18,7 @@ Trusting Embassy CA on Android
     
     .. group-tab:: Android v12
 
-        .. tip:: Some phones running Android v12 will work, other won't. It depends on the vendor. Most Androids running v12 that we have tested do work with the exception of the Samsung Galaxy S10 which does not.
+        .. tip:: Some phones running Android v12 will work, others won't. It depends on the vendor. Most Androids running v12 that we have tested do work with the exception of the Samsung Galaxy S10 which does not.
 
         Tap **Settings > Security > Advanced > Encryption and Credentials > Install from Storage** and select your "Embassy Local Root CA" certificate.
 
