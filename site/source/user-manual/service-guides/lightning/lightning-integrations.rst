@@ -115,13 +115,13 @@ Using LnBits allows you to create a wallet that makes use of your node with only
       :width: 60%
       :alt: local-to-onion
 
-#. Now a default wallet will be generated - highlighted on the top left. We'll rename it by clicking **Rename wallet** entering **android-zeus-wallet** then clicking **UPDATE NAME**
+#. Now a default wallet will be generated - highlighted on the top left. We'll rename it by clicking **Rename wallet** entering **android-zeus-wallet** then clicking **UPDATE NAME**:
 
    .. figure:: /_static/images/services/lnbits/rename-default-wallet.png
       :width: 60%
       :alt: rename-default-wallet
 
-#. Click **Manage extensions**
+#. Click **Manage extensions**:
 
    .. figure:: /_static/images/services/lnbits/manage-extensions.png
       :width: 50%
@@ -169,7 +169,7 @@ Using LnBits allows you to create a wallet that makes use of your node with only
       :width: 25%
       :alt: save-node-config
 
-#. Hit **I UNDERSTAND, SAVE NODE CONFIG**
+#. Hit **I UNDERSTAND, SAVE NODE CONFIG**:
 
    .. figure:: /_static/images/services/lnbits/i-understand-save.png
       :width: 25%
