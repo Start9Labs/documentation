@@ -184,3 +184,56 @@ Available For
       #. Zeus will fill in your node details based on the information in the QR code
       #. Click "SAVE NODE CONFIG"
 
+.. _zeus:
+
+Zeus + LNbits
+-------------
+
+.. note:: LND only
+
+Using LnBits allows you to create a wallet that makes use of your node with only an alloted amount of sats. This restriction can be very helpful for if you only want to have a small amount for spending on your phone without making your entire lightning balance available. You can even allow other people to have wallets you create for them - think giving your children an allowance. They can start with a set amount (can be zero) and simply spend what you initially make available. They can also earn more for themselves as they will have the freedom to issue their own invoices - all while making use of your node.
+
+.. tip:: All wallets created this way are ultimately bound by the capacity of your node. If one wallet is allocated 10,000 sats but your underlying node only has 9000 sats of outbound capacity, payments will simply fail.
+
+#. Start by ensuring that you have LND and LNbits installed already. You also need for LND to have at least one channel set up otherwise payments will not work. If you have not set up a channel yet, please follow :ref:`this guide<lightning-intro>`.
+
+   .. figure:: /_static/images/services/lnbits/lnbits-lnd-installed.png
+      :width: 40%
+      :alt: lnbits-lnd-installed
+
+#. Head to LNbits on your server, click on **Properties** and copy address under the **Superuser Account**.
+
+   .. note:: You need to make sure you are going to .onion address - Zeus cannot connect over .local! Please change *.local* to *.onion* and remove the *s* from *https://* as shown in the picture below.
+
+   .. figure:: /_static/images/services/lnbits/local-to-onion.png
+      :width: 60%
+      :alt: local-to-onion
+
+#. You'll be asked to name your LNbits wallet.
+
+   .. figure:: /_static/images/services/lnbits/lnbits-name-wallet.png
+      :width: 40%
+      :alt: lnbits-name-wallet
+
+#. Click **Manage extensions**
+
+   .. figure:: /_static/images/services/lnbits/manage-extensions.png
+      :width: 50%
+      :alt: manage-extensions
+
+#. Click **ENABLE** under the LndHub extension:
+
+   .. figure:: /_static/images/services/lnbits/enable-lndhub.png
+      :width: 40%
+      :alt: enable-lndhub
+
+#. Click **LndHub** under *Extensions* and make sure the wallet you just created is selected below the two QR codes:
+
+   .. figure:: /_static/images/services/lnbits/lndhub-select-wallet.png
+      :width: 40%
+      :alt: lndhub-select-wallet
+
+#. Now install `Zeus <https://zeusln.app/>`_ on your phone.
+
+#. Open it up and click **SCAN NODE CONFIG**
+
