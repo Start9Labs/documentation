@@ -141,7 +141,7 @@ Using LnBits allows you to create a wallet that makes use of your node with only
 
 #. Now install `Zeus <https://zeusln.app/>`_ on your phone and open it up.
 
-   .. Note:: You need to have :ref:`Tor running on your phone<tor-os>` for this to work. For Android you will also need to turn on VPN mode and add Zeus as an app to it.
+   .. Note:: You need to have :ref:`Tor running on your phone<tor-os>` for this to work. For Android you will also need to turn on VPN mode within Orbot and add Zeus as an app to it.
 
 #. Click **SCAN NODE CONFIG**.
 
@@ -201,7 +201,7 @@ Using LnBits allows you to create a wallet that makes use of your node with only
       :width: 60%
       :alt: 1k-sats
    
-   Alternatively you can simply hit **Request** in Zeus and receive sats normally:
+   Alternatively you can simply hit **Request** in Zeus and receive by generating a standard lightning invoice:
 
    .. figure:: /_static/images/services/lnbits/zeus-request.png
       :width: 20%
