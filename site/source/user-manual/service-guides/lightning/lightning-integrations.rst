@@ -86,7 +86,7 @@ Make sure you are already :ref:`running Tor<connecting-tor>` on your system and 
 BlueWallet
 ----------
 
-.. note:: Not available at this time
+.. note:: Not available at this time.
 
 .. _lnbits-zeus:
 
@@ -177,11 +177,11 @@ Using LnBits allows you to create a wallet that makes use of your node with only
 
    .. tip:: This is all necessary because we are using Tor via Orbot instead of via Zeus itself. Using Zeus's built in Tor we have found not to work hence using Orbot, but this triggers the warning about certificates which again, is safe to ignore.
 
-#. Zeus will now connect to your node and have a balance of zero satoshis.
+#. Zeus will now connect to your node and you'll see this screen:
 
-   .. figure:: /_static/images/services/lnbits/zero-sats.png
+   .. figure:: /_static/images/services/lnbits/new-wallet-screen-zeus.png
       :width: 25%
-      :alt: zero-sats
+      :alt: new-wallet-screen-zeus
 
    .. tip:: If it doesn't work, please manually restart the Zeus app.
 
@@ -190,10 +190,18 @@ Using LnBits allows you to create a wallet that makes use of your node with only
    .. figure:: /_static/images/services/lnbits/plus-icon.png
       :width: 60%
       :alt: plus-icon
-   
-   .. tip:: You can also *subtract* sats from this account by clicking the **+** and entering a negative value.
 
-   Or you can simply hit **Request** in Zeus and receive sats normally:
+   Let's add 1000 satoshis:
+
+   .. figure:: /_static/images/services/lnbits/add-1000-sats.png
+      :width: 60%
+      :alt: add-1000-sats
+
+   .. figure:: /_static/images/services/lnbits/1k-sats.png
+      :width: 60%
+      :alt: 1k-sats
+   
+   Alternatively you can simply hit **Request** in Zeus and receive sats normally:
 
    .. figure:: /_static/images/services/lnbits/zeus-request.png
       :width: 20%
@@ -201,7 +209,22 @@ Using LnBits allows you to create a wallet that makes use of your node with only
 
    .. note:: This will only work if your node has inbound liquidity. And you cannot send sats from the LND node LNbits is using as that is not a regular lightning payment - that is a reblanace.
 
-   .. tip:: All of the above instructions will work with accounts created without using the **Superuser account** - the only drawback is that you will not be able to allocate/deallocate satoshis within the LNbits interface.
+#. Once you have added sats, you can click on this button within Zeus and see your new balance:
+
+   .. figure:: /_static/images/services/lnbits/zeus-balance-button.png
+      :width: 20%
+      :alt: zeus-balance-button
+
+   .. figure:: /_static/images/services/lnbits/zeus-balance.png
+      :width: 20%
+      :alt: zeus-balance
+
+   You are now free to make lightning payments - as mentioned your lightning node will need to have the necessary liquidity.
+
+.. tip:: You can delete Zeus and/or LNbits without ever losing the sats. They will remain on your node.
+
+.. tip:: All of the above instructions will work with accounts created without using the **Superuser account** - the only drawback is that you will not be able to allocate/deallocate satoshis within the LNbits interface.
+
 
 .. _rtl:
 
