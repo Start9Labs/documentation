@@ -209,11 +209,11 @@ Using LnBits allows you to create a wallet that makes use of your node with only
       :width: 60%
       :alt: local-to-onion
 
-#. You'll be asked to name your LNbits wallet.
+#. Now a default wallet will be generated - highlighted on the top left. We'll rename it by clicking **Rename wallet** entering **android-zeus-wallet** then clicking **UPDATE NAME**
 
-   .. figure:: /_static/images/services/lnbits/lnbits-name-wallet.png
-      :width: 40%
-      :alt: lnbits-name-wallet
+   .. figure:: /_static/images/services/lnbits/rename-default-wallet.png
+      :width: 60%
+      :alt: rename-default-wallet
 
 #. Click **Manage extensions**
 
@@ -233,7 +233,60 @@ Using LnBits allows you to create a wallet that makes use of your node with only
       :width: 40%
       :alt: lndhub-select-wallet
 
-#. Now install `Zeus <https://zeusln.app/>`_ on your phone.
+#. Now install `Zeus <https://zeusln.app/>`_ on your phone and open it up.
 
-#. Open it up and click **SCAN NODE CONFIG**
+   .. Note:: You need to have :ref:`Tor running on your phone<tor-os>` for this to work. For Android you will also need to turn on VPN mode and add Zeus as an app to it.
 
+#. Click **SCAN NODE CONFIG**.
+
+   .. figure:: /_static/images/services/lnbits/scan-node-config.jpg
+      :width: 25%
+      :alt: scan-node-config
+
+#. *If you only want this wallet to be able to RECEIVE PAYMENTS, scan this QR code:*
+
+   .. figure:: /_static/images/services/lnbits/left-qr.png
+      :width: 40%
+      :alt: left-qr
+
+   *If you are happy for this wallet to be able to both receive and MAKE payments scan this QR code:*
+
+   .. figure:: /_static/images/services/lnbits/right-qr.png
+      :width: 40%
+      :alt: right-qr
+
+#. Once scanned, name the wallet if you wish - then disable **Use Tor** and disable **Certificate verification** then hit **SAVE NODE CONFIG**.
+
+   .. note:: Certificate verification is not necessary when using Tor
+
+   .. figure:: /_static/images/services/lnbits/save-node-config.png
+      :width: 25%
+      :alt: save-node-config
+
+#. Hit **I UNDERSTAND, SAVE NODE CONFIG**
+
+   .. figure:: /_static/images/services/lnbits/i-understand-save.png
+      :width: 25%
+      :alt: understand-save
+
+#. Zeus will now connect to your node and have a balance of zero satoshis.
+
+   .. figure:: /_static/images/services/lnbits/zero-sats.png
+      :width: 25%
+      :alt: zero-sats
+
+   .. tip:: If it doesn't work, please manually restart the Zeus app.
+
+#. You can now add sats to this wallet in two ways. You can allocate sats within LNbits by clicking the **+** icon here:
+
+   .. figure:: /_static/images/services/lnbits/local-to-onion.png
+      :width: 60%
+      :alt: local-to-onion
+   
+   .. tip:: You can also *subtract* sats from this account by clicking the **+** and entering a negative value here.
+
+   Or you can simply hit **Request** in Zeus:
+
+   .. figure:: /_static/images/services/lnbits/local-to-onion.png
+      :width: 60%
+      :alt: local-to-onion
