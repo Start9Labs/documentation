@@ -34,7 +34,7 @@ Visit the `Github release page <https://github.com/Start9Labs/embassy-os/release
         
     .. group-tab:: Mac
         
-        #. At the bottom of the page, under "Assets," download the ``embassyOS_raspberrypi.tar.gz`` file.
+        #. At the bottom of the page, under "Assets," download the ``embassyos_raspberrypi.tar.gz`` file.
 
                 .. figure:: /_static/images/flashing/raspi-tar-asset.png
                     :width: 60%
@@ -43,13 +43,13 @@ Visit the `Github release page <https://github.com/Start9Labs/embassy-os/release
 
             .. code-block::
 
-                openssl dgst -sha256 embassyOS_raspberrypi.tar.gz
+                openssl dgst -sha256 embassyos_raspberrypi.tar.gz
 
         #. Right-click ``embassyOS_raspberrypi.tar.gz``, click "open with," then click Archive Utility to extract.
 
     .. group-tab:: Windows
 
-        #. At the bottom of the page, under "Assets," download the ``embassyOS_raspberrypi.zip`` file
+        #. At the bottom of the page, under "Assets," download the ``embassyos_raspberrypi.zip`` file
 
                 .. figure:: /_static/images/flashing/raspi-zip-asset.png
                     :width: 60%
@@ -58,7 +58,7 @@ Visit the `Github release page <https://github.com/Start9Labs/embassy-os/release
 
             .. code-block::
 
-                Get-FileHash embassyOS_raspberrypi.zip
+                Get-FileHash embassyos_raspberrypi.zip
     
         #. Right-click eos.zip and click "Extract all"
 
