@@ -94,7 +94,7 @@ html_theme_path = ["../../sphinx-scylladb-theme"]
 html_theme_options = {
     "conf_py_path": "site/source/",
     "banner_button_text": "Learn more",
-    "banner_button_url": "https://start9labs.medium.com/announcing-StartOS-0-3-0-f3d2d2ea016f",
+    "banner_button_url": "https://start9labs.medium.com/announcing-embassyOS-0-3-0-f3d2d2ea016f",
     "banner_title_text": "StartOS 0.3.0 is now available 🥳",
     "hide_banner": "true",
     "hide_edit_this_page_button": "false",
