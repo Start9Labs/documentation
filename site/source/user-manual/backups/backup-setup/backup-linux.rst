@@ -114,7 +114,7 @@ Setup Network Folder
             * ``sudo yum install samba``                                    For CentOS/Redhat
             * ``sudo dnf install samba``                                    For Fedora
 
-        2. Create a directory to share or choose an existing one and make note of its location (path).  For this example, we will call the share ``backup-share`` and its corresponding shared directory will be located at ``/home/$USER/start9-backup``, replacing ``$USER`` with your Linux username.
+        2. Create a directory to share or choose an existing one and make note of its location (path).  For this example, we will call the share ``backup-share`` and its corresponding shared directory will be located at ``/home/$USER/start9-backup``.  Replace ``$USER`` with your Linux username below.
 
         .. code-block:: bash
 
