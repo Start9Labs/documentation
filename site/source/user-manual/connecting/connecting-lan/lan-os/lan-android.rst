@@ -4,9 +4,7 @@
 Trusting Embassy CA on Android
 ==============================
 
-.. note:: This will work on stock Android, and equally well on CalyxOS, GrapheneOS or LineageOS.
-
-.. warning:: This is only possible on Android version 12 or greater.  For LineageOS, that corresponds to v19+.
+.. note:: This will work on most Android phones running Android v13+, as well as phones running CalyxOS, GrapheneOS or LineageOS (v19+).
 
 .. tabs::
 
@@ -19,6 +17,8 @@ Trusting Embassy CA on Android
             :alt: Install certificate
     
     .. group-tab:: Android v12
+
+        .. tip:: Some phones running Android v12 will work, others won't. It depends on the vendor. Most Androids running v12 that we have tested do work with the exception of the Samsung Galaxy S10 which does not.
 
         Tap **Settings > Security > Advanced > Encryption and Credentials > Install from Storage** and select your "Embassy Local Root CA" certificate.
 
