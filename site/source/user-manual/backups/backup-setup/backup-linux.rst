@@ -56,7 +56,7 @@ Setup Network Folder
             .. figure:: /_static/images/cifs/cifs-lin2.png
                 :width: 60%
 
-            - You may name the share whatever you like, but **remember this name**, as you will need it later in your server's web UI.  Here, we used ``backup-share``.
+            - You may name the share whatever you like, but **remember this name**, as you will need it later in your Start9 server's web UI.  Here, we used ``backup-share``.
 
             - (Optional) Create a description in the "Comment" section
         
@@ -94,7 +94,7 @@ Setup Network Folder
             .. figure:: /_static/images/cifs/cifs-mint1.png
                 :width: 60%
 
-            - You may rename the "Share", if you prefer - **remember this name**, you will need it later in your server's web UI.  In this example, we call it ``backup-share``.
+            - You may rename the "Share", if you prefer - **remember this name**, you will need it later in your Start9 server's web UI.  In this example, we call it ``backup-share``.
 
             - (Optional) Create a description in the "Comment" section
 
