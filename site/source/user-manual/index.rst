@@ -4,7 +4,7 @@
 User Manual
 ===========
 
-Welcome to the embassyOS user manual. Here you will discover all that your Embassy can do!
+Welcome to the StartOS user manual. Here you will discover all that your Embassy can do!
 
 .. toctree::
   :includehidden:

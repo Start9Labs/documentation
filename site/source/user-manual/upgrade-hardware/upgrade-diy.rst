@@ -8,7 +8,7 @@ Using your own hardware
   :depth: 2
   :local:
 
-This guide will cover how to upgrade from embassyOS version 0.2.x to version 0.3.x with your own equipment.
+This guide will cover how to upgrade from StartOS version 0.2.x to version 0.3.x with your own equipment.
 
 Hardware Requirements
 ---------------------
@@ -27,7 +27,7 @@ Hardware Requirements
 Downloading
 -----------
 
-#. Once you have all these you will need to `download embassyOS v0.3.2.1 image from our github <https://github.com/Start9Labs/embassy-os/releases/tag/v0.3.2.1>`_, scroll to the Assets section, and download ``eos.tar.gz`` for Linux/Mac or ``eos.zip`` for Windows.
+#. Once you have all these you will need to `download StartOS v0.3.2.1 image from our github <https://github.com/Start9Labs/embassy-os/releases/tag/v0.3.2.1>`_, scroll to the Assets section, and download ``eos.tar.gz`` for Linux/Mac or ``eos.zip`` for Windows.
 
 .. warning:: Only use v0.3.2.1 to perform this upgrade.  Newer versions have deprecated the 02x to 03x flow, so you must choose this intermediate version first, then you can upgrade via the operating system to get to the latest version.
 

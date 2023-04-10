@@ -10,8 +10,9 @@ Contributing FAQ
 
 We ❤️ contributions!
 
-How can I contribute to embassyOS?
-----------------------------------
+
+How can I contribute to StartOS?
+--------------------------------
 Please follow the guide `here <https://github.com/Start9Labs/embassy-os/blob/master/CONTRIBUTING.md>`_ and reach out to the `Community Dev <https://matrix.to/#/#community-dev:matrix.start9labs.com>`_ channel on Matrix with any questions.
 
 Do I need to be a professional developer or have coding experience to contribute?

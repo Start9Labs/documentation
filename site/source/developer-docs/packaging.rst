@@ -8,7 +8,7 @@ Service Packaging
   :depth: 2 
   :local:
 
-Welcome! Thank you for your interest in contributing to the growing ecosystem of open software. We call the software applications that run on :ref:`embassyOS<embassy-os>` "services."  This distinction is made to differentiate from "applications" (apps), which are generally run on a client, and used to access server-side software (services).  To run services on embassyOS, a package of file components needs to be composed. This guide will dive into the basic structure of how to compose this package.
+Welcome! Thank you for your interest in contributing to the growing ecosystem of open software. We call the software applications that run on :ref:`StartOS<start-os>` "services."  This distinction is made to differentiate from "applications" (apps), which are generally run on a client, and used to access server-side software (services).  To run services on StartOS, a package of file components needs to be composed. This guide will dive into the basic structure of how to compose this package.
 
 Check out the :ref:`glossary <glossary>` to get acquainted with unfamiliar terms.  The bottom of this guide also includes :ref:`support <packaging-support>` links, including a master checklist. 
 
@@ -26,7 +26,7 @@ Steps
     #. :ref:`Create the file structure <create-file-structure>`
     #. :ref:`Format the package <format-package>`
 
-#. :ref:`Test the service on embassyOS <testing>`
+#. :ref:`Test the service on StartOS <testing>`
 #. :ref:`Submit and/or distribute <submission-and-distribution>`
 
 .. _choosing-software:
@@ -34,9 +34,9 @@ Steps
 Choosing Software
 =================
 
-Almost any type of open source software can be run on embassyOS. No matter what programming language, framework, database or interface the service has, it can be adapted for embassyOS. This is made possible by the power of Docker containers (don't worry, we'll get to this). We do have a few recommendations for choosing a service that will perform optimally across platforms:
+Almost any type of open source software can be run on StartOS. No matter what programming language, framework, database or interface the service has, it can be adapted for StartOS. This is made possible by the power of Docker containers (don't worry, we'll get to this). We do have a few recommendations for choosing a service that will perform optimally across platforms:
 
-#. It either has a web user interface (it can be interacted with in a web browser), or is server software that external applications or internal services can connect to. Please keep in mind that embassyOS users are not expected to have SSH and/or CLI access.
+#. It either has a web user interface (it can be interacted with in a web browser), or is server software that external applications or internal services can connect to. Please keep in mind that StartOS users are not expected to have SSH and/or CLI access.
 
     - The interfaces supported are: HTTP, TCP, and REST APIs
 
@@ -51,7 +51,7 @@ Development Environment
 
 A basic development and testing environment includes:
 
-#. An Embassy One or Pro with latest `embassyOS <https://github.com/start9labs/embassy-os/releases>`_
+#. An Embassy One or Pro with latest `StartOS <https://github.com/start9labs/embassy-os/releases>`_
     
     - Use your own hardware to `DIY <https://start9.com/latest/diy>`_
     - Purchase a device from the `Start9 Store <https://store.start9.com>`_
@@ -142,7 +142,7 @@ These tools may or may not be necessary, depending on your environment and the p
 
 Dependencies - Required
 .......................
-- `Docker <https://docs.docker.com/get-docker/>`_ - Docker is currently the only supported containerization method for embassyOS. This declares the necessary environment and building stages for your package to run. Install the desktop GUI or via the command line:
+- `Docker <https://docs.docker.com/get-docker/>`_ - Docker is currently the only supported containerization method for StartOS. This declares the necessary environment and building stages for your package to run. Install the desktop GUI or via the command line:
 
     .. code-block::
         
@@ -176,7 +176,7 @@ Dependencies - Required
 
         cargo --version
     
-- Embassy SDK - embassyOS has an embedded Software Development Kit (SDK). You can install this component on any system, without needing to run embassyOS.
+- Embassy SDK - StartOS has an embedded Software Development Kit (SDK). You can install this component on any system, without needing to run StartOS.
     
     .. code-block::
 
@@ -207,7 +207,7 @@ Dependencies - Required
 
 Demo with Hello World
 =====================
-Check your environment setup by building a demo project and installing it to embassyOS.
+Check your environment setup by building a demo project and installing it to StartOS.
 
 #. Get Hello World
     
@@ -225,7 +225,7 @@ Check your environment setup by building a demo project and installing it to emb
         make
     
 #. Sideload & Run
-    - In the embassyOS web UI menu, navigate to `Embassy -> Settings -> Sideload Service`
+    - In the StartOS web UI menu, navigate to `Embassy -> Settings -> Sideload Service`
     - Drag and drop or select the ``hello-world.s9pk`` from your filesystem to install
     - Once the service has installed, navigate to `Services -> Hello World` and click "Start"
     - Once the Health Check is successful, click "Launch UI" and verify you see the Hello World page
@@ -234,13 +234,13 @@ Check your environment setup by building a demo project and installing it to emb
 
 Package the service
 ===================
-The package file produced by this process has a ``s9pk`` extension. This file is what is installed to run a service on embassyOS.
+The package file produced by this process has a ``s9pk`` extension. This file is what is installed to run a service on StartOS.
 
 .. _build-a-dockerfile:
 
 Build a Dockerfile
 ..................
-A Dockerfile defines the recipe for building the environment to run a service. Currently, embassyOS only supports one Dockerfile per project (i.e. no Docker compose), so it should include any necessary database configurations. There are several methods to build a Dockerfile for your service.
+A Dockerfile defines the recipe for building the environment to run a service. Currently, StartOS only supports one Dockerfile per project (i.e. no Docker compose), so it should include any necessary database configurations. There are several methods to build a Dockerfile for your service.
 
 First, check to see if the upstream project has already built one. This is usually your best source for finding Docker images that are compatible with ARM. Next, you can:
 
@@ -363,13 +363,13 @@ Testing
 
     #. Drag and drop:
 
-        - In the embassyOS web UI menu, navigate to `Embassy -> Settings -> Sideload Service`
+        - In the StartOS web UI menu, navigate to `Embassy -> Settings -> Sideload Service`
 
         - Drag and drop or select the ``<package>.s9pk`` from your filesystem to install
 
     #. Use the CLI:
 
-        - Create a config file with the IP address of the device running embassyOS:
+        - Create a config file with the IP address of the device running StartOS:
             
             .. code-block::
 
@@ -410,8 +410,8 @@ The ``s9pk`` file can be uploaded for distribution to any website, repository, o
 Advanced configuration
 ======================
 
-Scripting on embassyOS
-......................
+Scripting on StartOS
+....................
 
 Start9 has developed a highly extensible scripting API for developers to create the best possible user experience. This is your toolkit for creating the most powerful service possible by enabling features such as:
 
@@ -440,7 +440,7 @@ You may like to use this handy :ref:`Checklist <packaging-checklist>` to be sure
 Glossary
 ========
 
-`service` - open software applications that run on embassyOS
+`service` - open software applications that run on StartOS
 
 `package` - the composed set of a Docker image, a service manifest, and service instructions, icon, and license, that are formatted into a file with the `s9pk` extension using `embassy-sdk`
 
@@ -448,17 +448,17 @@ Glossary
 
 `scripts` - a set of developer APIs that enable advanced configuration options for services
 
-`embassy-sdk` - the Software Development Toolkit used to package and verify services for embassyOS
+`embassy-sdk` - the Software Development Toolkit used to package and verify services for StartOS
 
 `open source software` - computer software that is released under a license in which the copyright holder grants users the rights to use, study, change, and distribute the software and its source code to anyone and for any purpose
 
 `upstream project` - the original, source project code that is used as the base for a service
 
-`embassyOS` - a browser-based, graphical operating system for a personal server
+`StartOS` - a browser-based, graphical operating system for a personal server
 
-`eOS` - shorthand for embassyOS
+`eOS` - shorthand for StartOS
 
-`s9pk` - the file extension for the packaged service artifact needed to install and run a service on embassyOS
+`s9pk` - the file extension for the packaged service artifact needed to install and run a service on StartOS
 
 
 :ref:`Back to Top <service-packaging>`

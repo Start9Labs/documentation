@@ -22,7 +22,7 @@ We can quickly realize the problem with a model like this.  The server has **ALL
 "Self-Hosting"
 --------------
 
-Since a server is "just a computer," one might ask why we can't just host our own data and software.  Unfortunately, running a server is no trivial task, and typically requires Linux and systems administration skills.  That is, until now.  embassyOS was designed specifically to allow anyone to be able to run their own server-side software and host their own data, with no special tech skills or excessive effort.
+Since a server is "just a computer," one might ask why we can't just host our own data and software.  Unfortunately, running a server is no trivial task, and typically requires Linux and systems administration skills.  That is, until now.  StartOS was designed specifically to allow anyone to be able to run their own server-side software and host their own data, with no special tech skills or excessive effort.
 
 For an overview, please check out the video below:
 

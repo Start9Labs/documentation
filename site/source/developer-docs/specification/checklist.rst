@@ -8,7 +8,7 @@ Checklist
   :depth: 2 
   :local:
 
-This guide outlines a checklist of steps to complete in order to package a service for embassyOS. For a more in depth example, visit the :ref:`build your first package <service-packaging>` guide.
+This guide outlines a checklist of steps to complete in order to package a service for StartOS. For a more in depth example, visit the :ref:`build your first package <service-packaging>` guide.
 
 Packaging
 ---------

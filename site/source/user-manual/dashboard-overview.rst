@@ -57,7 +57,7 @@ Use this tab to update services. A green icon will appear next to this tab when 
 Notifications Tab
 -----------------
 
-Notifications issued by embassyOS will appear in this tab. You can delete these notifications individually or all at once by clicking "Delete All".
+Notifications issued by StartOS will appear in this tab. You can delete these notifications individually or all at once by clicking "Delete All".
 
     .. figure:: /_static/images/walkthrough/notiftab.png
         :width: 60%

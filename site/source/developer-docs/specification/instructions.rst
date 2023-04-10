@@ -6,7 +6,7 @@ Instructions
 
 Within each wrapper repository, a file should exist that includes instructions for a service. This file should include any pertinent documentation, instructions, external integrations, or other details about the service that users or developers might find relevant.
 
-This markdown formatted file will be rendered in the "Instructions" section within the service page on embassyOS:
+This markdown formatted file will be rendered in the "Instructions" section within the service page on StartOS:
 
   .. figure:: /_static/images/services/service-instruct.png
     :width: 80%

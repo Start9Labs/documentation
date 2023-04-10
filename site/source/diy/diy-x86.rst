@@ -8,7 +8,7 @@ DIY Guidelines (x86_64)
     :depth: 2 
     :local:
 
-Start9 is committed to ensuring that sovereign computing is accessible. This guide is to install StartOS on **most** x86_64 platforms (your mileage will vary).  The x86_64-based Server One and Server Pure are available for purchase on the `Start9 Store <https://store.start9.com/products>`_.
+Start9 is committed to ensuring that StartOS is accessible. This guide is to install StartOS on **most** x86_64 platforms (your mileage will vary).  The x86_64-based Server One and Server Pure are available for purchase on the `Start9 Store <https://store.start9.com/products>`_.
 
 For more guidance or to share your experience with others, please `head to our community forum <https://community.start9.com/>`_.  Want to support sovereign computing?  Please consider a `donation to Start9 <https://btcpay.start9.com/apps/2Et1JUmJnDwzKncfVBXvspeXiFsa/crowdfund>`_.
 

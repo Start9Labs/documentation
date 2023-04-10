@@ -7,9 +7,9 @@ Config Spec
 Introduction
 ============
 
-Most self-hosted applications require the user to tell the application how to behave using a config file in a specific format, environment variables, command-line arguments, or some combination of these inputs. One of the coolest features of embassyOS is that the services' configuration will be available to the user as a slick GUI that always produces a valid configuration no matter how little experience or skill the user has.
+Most self-hosted applications require the user to tell the application how to behave using a config file in a specific format, environment variables, command-line arguments, or some combination of these inputs. One of the coolest features of StartOS is that the services' configuration will be available to the user as a slick GUI that always produces a valid configuration no matter how little experience or skill the user has.
 
-With embassyOS, this means a services' configuration requires a file to define the particular format to ensure it integrates smoothly with the user interface. This format enables clean handling of improper values and dependency management.
+With StartOS, this means a services' configuration requires a file to define the particular format to ensure it integrates smoothly with the user interface. This format enables clean handling of improper values and dependency management.
 
 This file defines the *structure* of the service's native config and should be curated according to the ``ConfigSpec`` type, which is a detailed mapping of the configuration options with acceptable values, defined patterns, and defaults.
 
@@ -150,7 +150,7 @@ Example
 List
 ----
 
-The list type describes an array of values. The values must consist of the same subtype, which can be any of the ValueSpec types available in the embassyOS config specification.
+The list type describes an array of values. The values must consist of the same subtype, which can be any of the ValueSpec types available in the StartOS config specification.
 Lists of any type do not contain the default for each item in list. The list *itself* can have a default. If no default is provided, ``null`` will be the assumed value.
 
 Range is loosely based off mathematical range syntax, with infinity replaced with ``*``:
@@ -358,7 +358,7 @@ Examples
 Pointer
 --------
 
-The pointer type *points* to a config value on another service installed on embassyOS (ie. package subtype) or to the embassyOS system (ie. system subtype). When pointing to another service, the ``selector`` field indicates the path to the desired config variable.
+The pointer type *points* to a config value on another service installed on StartOS (ie. package subtype) or to the StartOS system (ie. system subtype). When pointing to another service, the ``selector`` field indicates the path to the desired config variable.
 
 .. code-block::
     :caption: ValueSpec Type
@@ -396,7 +396,7 @@ Union
 
 This type describes a necessary dependency. Multiple variants can be expressed to enable the user the option to connect to another service (internal dependency) or outside source (external dependency).
 
-For example, the Bitcoin Proxy service is united with an instance of Bitcoin. Three variants are defined: internal, external, and a quick connect. In this case, internal refers to the Bitcoin Core instance running on embassyOS, and defines the RPC credentials necessary for connecting; external refers to a Bitcoin Core node running on a different device, and defines the RPC credentials necessary for connecting; quick connect refers to yet another method of connecting to a Bitcoin Core node, optimized for convenience.
+For example, the Bitcoin Proxy service is united with an instance of Bitcoin. Three variants are defined: internal, external, and a quick connect. In this case, internal refers to the Bitcoin Core instance running on StartOS, and defines the RPC credentials necessary for connecting; external refers to a Bitcoin Core node running on a different device, and defines the RPC credentials necessary for connecting; quick connect refers to yet another method of connecting to a Bitcoin Core node, optimized for convenience.
 
 Default is required and corresponds to one of the variants.
 

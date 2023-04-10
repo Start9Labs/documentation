@@ -6,7 +6,7 @@ Embassy Command Line Interface
 
 .. warning:: This is for advanced users only!! Anything you do while SSH'd into your Embassy is NOT SUPPORTED, unless under the guidance of a Start9 technician.
 
-When interacting with Embassy directly, you will invariably want to use ``embassy-cli``.  Embassy-CLI can control embassyOS in many of the same ways that the UI can, but with finer controls and deeper insights.
+When interacting with Embassy directly, you will invariably want to use ``embassy-cli``.  Embassy-CLI can control StartOS in many of the same ways that the UI can, but with finer controls and deeper insights.
 
 In order to use Embassy-CLI, you will first need to authorize yourself with the following command...
 
@@ -47,6 +47,6 @@ You can enter ``embassy-cli help`` or ``embassy-cli <option> help`` to get an ov
             net             Network information
             notification    Control UI notifications
             package         Interact with packages
-            server          embassyOS operations and information
+            server          StartOS operations and information
             ssh             Manage SSH keys
             wifi            Manage WiFi networks

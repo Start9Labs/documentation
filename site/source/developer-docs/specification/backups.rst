@@ -6,7 +6,7 @@ Backups
 
 Backups are defined by the service developer in the backups section of the Manifest. By default, this action is a command executed within a Docker container.
 
-embassyOS provides a system utility for creating backups. This system utility is the `duplicity <https://en.wikipedia.org/wiki/Duplicity_(software)>`_ library that is run inside the Docker image entitled _compat_. 
+StartOS provides a system utility for creating backups. This system utility is the `duplicity <https://en.wikipedia.org/wiki/Duplicity_(software)>`_ library that is run inside the Docker image entitled _compat_. 
 
 The path to be backed up can be specified in the Manifest. In the create backup example below, it is the last argument:
 
