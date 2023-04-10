@@ -10,11 +10,11 @@ General FAQ
 
 What is Start9 Labs?
 --------------------
-Start9 Labs is a small, but quickly growing group of builders based in Denver, CO (with a global team) that build Embassy and embassyOS.
+Start9 Labs is a small, but quickly growing group of builders based in Denver, CO (with a global team) that build Start9 Servers and StartOS.
 
 What is Embassy?
 ----------------
-Embassy is a "shelf-top" personal server running embassyOS software.
+Embassy is a "shelf-top" personal server running StartOS software.
 
 The internet as we know it is organized into questioners, or clients, and answerers, or servers. When you open a mobile email app, say Gmail, the app (client) begins asking questions: "have I received new mail?", "what are my last 50 messages?", "what drafts am I in the midst of writing?", and so on. Your app's questions are sent to and heard by a Google-run server which then provides answers back to the client and are subsequently displayed to the screen.
 
@@ -39,7 +39,7 @@ This `podcast <https://www.youtube.com/watch?v=aylDowaSdzU>`_ may help expound u
 
 How does Embassy work?
 ----------------------
-embassyOS (see next question) is based on Linux and handles all operations of your Embassy device. This core element of the technology stack is what enables you to set up, login, access your Embassy's dashboard, and install services.
+StartOS (see next question) is based on Linux and handles all operations of your Embassy device. This core element of the technology stack is what enables you to set up, login, access your Embassy's dashboard, and install services.
 
 One of these operations is creating and managing Tor addresses, which are uniquely attributed to each service you download, as well as to the Embassy device itself. You can see your uniquely generated Tor address when you complete the setup process using the Setup App. This address is how you view your Embassy's dashboard, which is actually just a website served up from your Embassy itself! It is authenticated, of course, so only you can access it.
 
@@ -49,11 +49,11 @@ Once on Embassy's web page, you can choose what services to install. Then, each 
 
 The list of services will grow rapidly over the coming months and years, such that many things you currently do using cloud-based third party servers can be just as easily accomplished using your own personal cloud serving your own personal apps and storing your own private data. No trusted third parties at all.
 
-What is embassyOS?
-------------------
-embassyOS is a new kind of Operating System (OS). It is a built from the ground up to allow anyone to easily run their own "cloud," become independent from Big Tech, and own their own data. embassyOS allows anyone to easily host their own software services.
+What is StartOS?
+----------------
+StartOS is a new kind of Operating System (OS). It is a built from the ground up to allow anyone to easily run their own "cloud," become independent from Big Tech, and own their own data. StartOS allows anyone to easily host their own software services.
 
-embassyOS is custom-built Linux distribution with a suite of software tools which make it easy to:
+StartOS is custom-built Linux distribution with a suite of software tools which make it easy to:
 
 * Install, uninstall, and upgrade services from a Marketplace (similar to your phone's app store)
 * Manage and run services that YOU own and control
@@ -66,17 +66,17 @@ It includes:
 * a layer responsible for Embassy specific operations, such as Tor, Backups, and Notifications
 * a system of :ref:`Health Checks<health-checks>` for simple monitoring
 * an SDK for developers, including an "Actions" API to simplify complex operations for the common user
-* and much, much more.  Please see the corresponding :ref:`Concepts<embassy-os>` section.
+* and much, much more.  Please see the corresponding :ref:`Concepts<start-os>` section.
 
 The `.s9pk` extension is Start9's custom package format based on `tar`. It encompasses the necessary components to compress, host, and install a service on a Marketplace registry.
 
-What are embassyOS Services?
-----------------------------
+What are StartOS Services?
+--------------------------
 A Service can be any piece of software added to the Marketplace.  Unlike "apps," services are (usually) "server-side" software, meaning they are intended to run 24/7/365 and listen for requests from your clients (apps).  All services are "self-hosted," meaning that you are in complete control of your data.  This means you can run your own "cloud!"  Learn more about managing services :ref:`here <managing-services>` and see our currently `Available Services <https://marketplace.start9.com/>`_.
 
 Does the Embassy ship worldwide?
 --------------------------------
-We ship everywhere that DHL ships.  Please consider that in some countries, the VAT and Customs fees are so ridiculous that they cost as much as Embassy itself or more.  You may wish to consider buying your hardware locally and building your own device, downloading embassyOS from our github, and `donating <https://donate.start9.com/>`_ to us.  Please see the :ref:`DIY<diy>` page for details.
+We ship everywhere that DHL ships.  Please consider that in some countries, the VAT and Customs fees are so ridiculous that they cost as much as Embassy itself or more.  You may wish to consider buying your hardware locally and building your own device, downloading StartOS from our github, and `donating <https://donate.start9.com/>`_ to us.  Please see the :ref:`DIY<diy>` page for details.
 
 Does the Embassy have international electrical plugs?
 -----------------------------------------------------
@@ -88,11 +88,11 @@ Yes.
 
 Is the software Open Source?
 ----------------------------
-Yes! embassyOS is open source under the `Start9 Personal Use License <https://start9.com/latest/about/license>`_.  Some of our other projects are currently open sourced under MIT. You can find these in the Start9 `GitHub repository <https://github.com/Start9Labs>`_.
+Yes! StartOS is open source under the `Start9 Personal Use License <https://start9.com/latest/about/license>`_.  Some of our other projects are currently open sourced under MIT. You can find these in the Start9 `GitHub repository <https://github.com/Start9Labs>`_.
 
 Can you tell me about the License?
 ----------------------------------
-embassyOS is published under our own Start9 Non-Commercial License, which has similar properties to many open source licenses with the exception that users cannot in any way, either through products or services, commercialize the source code, and any changes to the code or derivative works of the code are treated in the same manner. This means people will be welcome to access the source code, download it, use it, run it, fork it, change it, improve it - whatever they want - except sell it or sell services related to it.
+StartOS is published under our own Start9 Non-Commercial License, which has similar properties to many open source licenses with the exception that users cannot in any way, either through products or services, commercialize the source code, and any changes to the code or derivative works of the code are treated in the same manner. This means people will be welcome to access the source code, download it, use it, run it, fork it, change it, improve it - whatever they want - except sell it or sell services related to it.
 
 Is there a product warranty?
 ----------------------------
@@ -113,7 +113,7 @@ What are you using for a store backend?  Do you store my data?
 Here is our exact situation currently:
 Embassy device sales are processed through Shopify, which we do not like, but it was expedient in the early days, especially for shipping, so we went with it. Aside from a master list of email addresses for those who have explicitly opted in to our mailing list, all customer data is contained within Shopify. We do not duplicate it anywhere. We are asking Shopify to delete our customer data, but they claim it will take upward of 3 months to comply and we of course have no guarantee the data will actually be deleted permanently. This is partly why we exist...as such, we will be moving off of Shopify and onto a self-hosted solution, where Start9 alone controls our customer data for Embassy purchases, which we will delete as a matter of policy following a short grace period after delivery.
 
-In summary: (1) the shipping data we currently have is stored in Shopify (2) we are asking Shopify to delete all our customer data (3) we will be migrating off of Shopify (4) going forward, we alone will control customer data and will purge it regularly (5) you can always assemble the hardware yourself and just download embassyOS for free.
+In summary: (1) the shipping data we currently have is stored in Shopify (2) we are asking Shopify to delete all our customer data (3) we will be migrating off of Shopify (4) going forward, we alone will control customer data and will purge it regularly (5) you can always assemble the hardware yourself and just download StartOS for free.
 
 We are currently working on a better solution.
 

@@ -69,7 +69,7 @@ Umbrel uses docker images pushed to Docker Hub to catalog services on the Umbrel
 
 **Embassy**
 
-Embassy uses the concept of a ‘wrapper’ around a docker container to package custom services and provides detailed documentation on how to package a service for the Embassy using any desired programming language. This wrapper acts as a translation layer such that developers can take advantage of the embassyOS’ various APIs mentioned throughout this writing. Embassy will host the service over Tor and LAN without any additional configuration needed. They also provide a hello-world example to refer to when packaging a custom service.
+Embassy uses the concept of a ‘wrapper’ around a docker container to package custom services and provides detailed documentation on how to package a service for the Embassy using any desired programming language. This wrapper acts as a translation layer such that developers can take advantage of the StartOS’ various APIs mentioned throughout this writing. Embassy will host the service over Tor and LAN without any additional configuration needed. They also provide a hello-world example to refer to when packaging a custom service.
 
 Services can then be submitted to the Start9 Service Marketplace for review and distribution, or they can be hosted on any alternative marketplace.
 

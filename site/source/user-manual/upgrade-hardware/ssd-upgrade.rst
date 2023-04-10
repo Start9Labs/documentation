@@ -75,7 +75,7 @@ This is not the same as backing up services and recovering them onto a new Embas
     .. figure:: /_static/images/hardware-pics/back-screws-usb-loop.jpg
         :width: 50%
 
-#. Flash the micro SD card with a fresh install of embassyOS - you can follow the flashing guide :ref:`here <flashing-pi>`
+#. Flash the micro SD card with a fresh install of StartOS - you can follow the flashing guide :ref:`here <flashing-pi>`
 
 #. Once flashed, reinsert the micro SD card into the Embassy:
 

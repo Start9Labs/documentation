@@ -45,7 +45,7 @@ Upgrade Hardware
   :class: large-5
   :anchor: Upgrade
 
-  This is for if you purchased an upgrade kit from us to migrate from embassyOS v0.2.x to v0.3+
+  This is for if you purchased an upgrade kit from us to migrate from StartOS v0.2.x to v0.3+
 
 .. topic-box::
   :title: Bring your own equipment
@@ -54,7 +54,7 @@ Upgrade Hardware
   :class: large-5
   :anchor: Upgrade
 
-  This is for if you purchased your own hardware to migrate from embassyOS v0.2.x to v0.3+
+  This is for if you purchased your own hardware to migrate from StartOS v0.2.x to v0.3+
 
 
 

@@ -46,7 +46,7 @@ Powering On
 
     .. caution:: Glance through the :ref:`troubleshooting<setup-troubleshooting>` section if you hear any different sounds.
       
-      If you followed the DIY guide and built embassyOS from source code, it may take up to 20 minutes to first initialize.
+      If you followed the DIY guide and built StartOS from source code, it may take up to 20 minutes to first initialize.
 
 You can either boot your Embassy with no monitor (headless mode) or with a monitor, mouse, and keyboard (kiosk mode).  The Embassy One (based on a Raspberry Pi) currently does not have the ability to do kiosk mode.  The Embassy One and the Embassy Pro (x86_64) both work in headless mode, as the local ethernet network must be available to setup your Embassy.
 
@@ -64,7 +64,7 @@ Power the device on and select which mode you would like to continue in on the t
         
     .. group-tab:: Kiosk Mode
         
-        Once your Embassy boots, if you've attached a monitor, keyboard and mouse, you can set it up using the graphical kiosk mode.  A familiar browser interface will display the embassyOS setup page.
+        Once your Embassy boots, if you've attached a monitor, keyboard and mouse, you can set it up using the graphical kiosk mode.  A familiar browser interface will display the StartOS setup page.
 
         .. caution:: If you followed the DIY guide and your graphics card or monitor is unsupported hardware, you may not see the intended setup screen.  If so, simply click on the "Headless Mode" tab above.
 
@@ -139,7 +139,7 @@ If you are experiencing issues with setup, try the following:
 
     - From your browser, navigate to your router configuration settings. This is usually an IP address such as 192.168.1.1. A simple web search will usually reveal how to access the router configuration settings for a particular brand.
     - Once in the router config settings, find the section that lists the devices on your network. You should see an item labeled "embassy". Take note of the associated IP address and enter it into your browser's URL field to enter the setup.
-    - In some cases, if you are working with a very old image of embassyOS, the device name will show up as `start9-shortcode`.  If this is the case, and you want to start fresh, wiping out the previous install and all data residing on it, :ref:`flash the newest version of embassyOS<flashing>`.
+    - In some cases, if you are working with a very old image of StartOS, the device name will show up as `start9-shortcode`.  If this is the case, and you want to start fresh, wiping out the previous install and all data residing on it, :ref:`flash the newest version of StartOS<flashing>`.
 
 Raspberry Pi Lights
 -------------------

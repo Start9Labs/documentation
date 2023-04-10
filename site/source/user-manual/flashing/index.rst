@@ -4,7 +4,7 @@
 Flashing
 ========
 
-Here you will find our flashing guides for Raspberry Pi and x86 (most desktops, laptops, mini PCs, servers, etc) architectures. Librem Mini owners can use the firmware flashing guide to get embassyOS-specific firmware.
+Here you will find our flashing guides for Raspberry Pi and x86 (most desktops, laptops, mini PCs, servers, etc) architectures. Librem Mini owners can use the firmware flashing guide to get StartOS-specific firmware.
 
 .. raw:: html
 
@@ -19,7 +19,7 @@ Here you will find our flashing guides for Raspberry Pi and x86 (most desktops, 
   :class: large-4
   :anchor: View Guide
 
-  Flash embassyOS for use on a Raspberry Pi
+  Flash StartOS for use on a Raspberry Pi
 
 .. topic-box::
   :title: Flashing (x86)
@@ -28,7 +28,7 @@ Here you will find our flashing guides for Raspberry Pi and x86 (most desktops, 
   :class: large-4
   :anchor: View Guide
 
-  Flash embassyOS for use on an x86 machine
+  Flash StartOS for use on an x86 machine
 
 .. topic-box::
   :title: Flashing (Firmware)

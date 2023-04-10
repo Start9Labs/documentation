@@ -3,7 +3,7 @@
 ===================
 Flashing (Firmware)
 ===================
-This page is for existing Librem Mini owners ONLY.  This will allow you to flash the custom firmware on your Librem to neutralize the Intel Management Engine (IME) and add embassyOS-specific tweaks to your system, such that it will operate just as an Embassy Pro bought from Start9 would.  If you need hardware and want all the benefits listed here, you'll have to `buy an Embassy Pro <https://store.start9.com/products/embassy-pro>`_.
+This page is for existing Librem Mini owners ONLY.  This will allow you to flash the custom firmware on your Librem to neutralize the Intel Management Engine (IME) and add StartOS-specific tweaks to your system, such that it will operate just as an Embassy Pro bought from Start9 would.  If you need hardware and want all the benefits listed here, you'll have to `buy an Embassy Pro <https://store.start9.com/products/embassy-pro>`_.
 
 The source code can be viewed on Purism's `firmware git repo <https://source.puri.sm/firmware/releases/-/tree/master/librem_mini_v2/custom>`_.
 
@@ -50,7 +50,7 @@ The source code can be viewed on Purism's `firmware git repo <https://source.pur
     .. figure:: /_static/images/flashing/flash_firmware-pro-step6-proceed_yes.jpg
         :width: 30%
 
-#. The BIOS will be reflashed with the new firmware.  This may take a few minutes.  When complete, remove the firmware USB (and insert your embassyOS USB if you are ready to install), then select "OK" to complete the process.
+#. The BIOS will be reflashed with the new firmware.  This may take a few minutes.  When complete, remove the firmware USB (and insert your StartOS USB if you are ready to install), then select "OK" to complete the process.
 
     .. figure:: /_static/images/flashing/flash_firmware-pro-step7-flashed_successfully.jpg
         :width: 30%

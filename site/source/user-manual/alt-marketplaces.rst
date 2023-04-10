@@ -4,11 +4,11 @@
 Alt Marketplaces
 ================
 
-It is critical to Start9's mission that Start9 is **not** a central point of failure. The Marketplace is a critical piece of infrastructure and therefore embassyOS supports accessing alternative marketplaces.
+It is critical to Start9's mission that Start9 is **not** a central point of failure. The Marketplace is a critical piece of infrastructure and therefore StartOS supports accessing alternative marketplaces.
 
 .. caution:: Start9 is not responsible for issues encountered when downloading services from alternative marketplaces, and cannot provide support for services that are not from our official marketplace. Here be dragons!!
 
-.. note:: Currently this change will only permit the downloading of *services* from alternative marketplaces. embassyOS itself may only be obtained from Start9.
+.. note:: Currently this change will only permit the downloading of *services* from alternative marketplaces. StartOS itself may only be obtained from Start9.
 
 #. Go to *Marketplace > Change*.
 

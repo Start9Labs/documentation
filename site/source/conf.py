@@ -94,8 +94,8 @@ html_theme_path = ["../../sphinx-scylladb-theme"]
 html_theme_options = {
     "conf_py_path": "site/source/",
     "banner_button_text": "Learn more",
-    "banner_button_url": "https://start9labs.medium.com/announcing-embassyOS-0-3-0-f3d2d2ea016f",
-    "banner_title_text": "embassyOS 0.3.0 is now available 🥳",
+    "banner_button_url": "https://start9labs.medium.com/announcing-StartOS-0-3-0-f3d2d2ea016f",
+    "banner_title_text": "StartOS 0.3.0 is now available 🥳",
     "hide_banner": "true",
     "hide_edit_this_page_button": "false",
     "hide_sidebar_index": "true",
@@ -103,7 +103,7 @@ html_theme_options = {
     "github_issues_repository": "Start9Labs/documentation",
     "github_repository": "Start9Labs/documentation",
     "navigation_depth": 3,
-    "site_description": "Start9 documentation for sovereign computing with embassyOS",
+    "site_description": "Start9 documentation for sovereign computing with StartOS",
 }
 
 # Last updated format

@@ -8,7 +8,7 @@ Reset Your Password
   :depth: 2
   :local:
 
-#. Download and flash the latest version of embassyOS, using the appropriate :ref:`flashing guide <flashing>` for your hardware.
+#. Download and flash the latest version of StartOS, using the appropriate :ref:`flashing guide <flashing>` for your hardware.
 #. Power on your Embassy, ensuring it is plugged in to Ethernet.
 
     .. note:: Embassy will power up and then initialize.  If you have a speaker, you will hear first hear a _bep_ then a _chime_ sound to indicate the device is ready.

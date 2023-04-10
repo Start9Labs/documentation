@@ -8,7 +8,7 @@ DIY Guide (Raspberry Pi)
     :depth: 2 
     :local:
 
-Start9 is committed to ensuring that embassyOS is accessible.  It will always be possible to build your own Embassy similar to the ones we sell.  This guide is to build a device exactly like Start9's Embassy One, available for purchase on the `Start9 Store <https://store.start9.com/products/embassy-one>`_.
+Start9 is committed to ensuring that StartOS is accessible.  It will always be possible to build your own Embassy similar to the ones we sell.  This guide is to build a device exactly like Start9's Embassy One, available for purchase on the `Start9 Store <https://store.start9.com/products/embassy-one>`_.
 
 For help with this guide or to share your experience with others, please `head to our community forum <https://community.start9.com/>`_.  Want to support Sovereign Computing?  Please consider a `donation to Start9 <https://btcpay.start9.com/apps/2Et1JUmJnDwzKncfVBXvspeXiFsa/crowdfund>`_.
 
@@ -75,6 +75,6 @@ You can follow along with this `written guide <https://community.start9.com/t/di
 
     <div style="margin-bottom: 48px;">
 
-Flash and Install embassyOS
----------------------------
-After building your hardware build, you will need a copy of embassyOS.  Head over to our :ref:`Flashing (Raspberry Pi) Guide <flashing-pi>` to complete your Embassy One build.
+Flash and Install StartOS
+-------------------------
+After building your hardware build, you will need a copy of StartOS.  Head over to our :ref:`Flashing (Raspberry Pi) Guide <flashing-pi>` to complete your Embassy One build.

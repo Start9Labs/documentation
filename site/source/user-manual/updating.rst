@@ -1,25 +1,25 @@
 .. _updating-eos:
 
-==================
-Updating embassyOS
-==================
+================
+Updating StartOS
+================
 
 .. contents::
   :depth: 2
   :local:
 
-.. note:: embassyOS will **NEVER** update itself without your approval. But we highly recommended keeping embassyOS up to date for the latest security and performance patches, as well as to take advantage of new features.
+.. note:: StartOS will **NEVER** update itself without your approval. But we highly recommended keeping StartOS up to date for the latest security and performance patches, as well as to take advantage of new features.
 
 How to Update
 -------------
 
-#. When a new version of embassyOS is available, a badge will appear on the "Embassy" tab.
+#. When a new version of StartOS is available, a badge will appear on the "Embassy" tab.
 #. Go to *System > Software Update*.
 
-    .. warning:: Ensure you have a stable Internet connection before beginning an OS update, and do not unplug your Embassy while embassyOS is downloading.
+    .. warning:: Ensure you have a stable Internet connection before beginning an OS update, and do not unplug your Embassy while StartOS is downloading.
 
 #. Read the release notes and click "Begin Update".
-#. While the new version of embassyOS is downloading, you may continue to use your device as usual.
+#. While the new version of StartOS is downloading, you may continue to use your device as usual.
 #. Once the download is complete, you will be prompted to restart Embassy.
 #. After restart, but before the web interface becomes available again, there may be an upgrade period of up to thirty minutes while data is transitioned.  
   
@@ -34,7 +34,7 @@ Manual Update by Re-flashing
 
     .. tip:: This guide will cover how to recover existing Embassy 0.3.x service and user data with a newly flashed SD card or Embassy Pro.
 
-#. Obtain the latest copy of embassyOS either by `downloading <https://github.com/Start9Labs/embassy-os/releases/latest>`_ or `building from source <https://github.com/Start9Labs/embassy-os/tree/latest/build>`_.
+#. Obtain the latest copy of StartOS either by `downloading <https://github.com/Start9Labs/embassy-os/releases/latest>`_ or `building from source <https://github.com/Start9Labs/embassy-os/tree/latest/build>`_.
 #. :ref:`Flash the downloaded image <flashing>` to your microSD card.
 #. Insert the microSD card into your Embassy and power it on.
 

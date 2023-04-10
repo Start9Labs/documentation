@@ -4,7 +4,7 @@
 Package Bundle
 ==============
 
-All assets get bundled into a custom filetype with an extension of ``.s9pk``, short for Start9 Package. This is the file that will be downloaded from a marketplace. When the user clicks a service's "Install" button, embassyOS unpacks and installs the service.
+All assets get bundled into a custom filetype with an extension of ``.s9pk``, short for Start9 Package. This is the file that will be downloaded from a marketplace. When the user clicks a service's "Install" button, StartOS unpacks and installs the service.
 
 The minimum necessary files for this bundle are:
 

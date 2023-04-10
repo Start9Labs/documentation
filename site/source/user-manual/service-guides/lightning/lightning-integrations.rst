@@ -95,7 +95,7 @@ Ride the Lightning
 
 Available For
 .............
-- embassyOS
+- StartOS
 
 This can simply be installed by going to your Start9 Server's marketplace clicking on "Ride The Lightning" then installing the latest version. Once installed you can configure it to work with either - or both - Core Lightning and LND!
 
@@ -109,7 +109,7 @@ Spark
 Available For
 .............
 - Android
-- embassyOS
+- StartOS
 - iOS
 
 To use a Spark client, you still first need to have Spark installed as a service on your Start9 Server.  The Spark service is both a server (background service) and a client (the :ref:`Web UI<web-ui>`).  Under Properties, there is a "Pairing URL". The first part of this is the server URL, and the end portion of it is the access key.
@@ -121,7 +121,7 @@ Thunderhub
 
 Available For
 .............
-- embassyOS
+- StartOS
 
 Download from your Embassy's Marketplace and follow the included Instructions.
 

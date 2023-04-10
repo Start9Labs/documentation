@@ -8,7 +8,7 @@ Setup with Upgrade Kit
   :depth: 2
   :local:
 
-This guide will cover how to upgrade from embassyOS version 0.2.x to version 0.3.x.
+This guide will cover how to upgrade from StartOS version 0.2.x to version 0.3.x.
 
 .. note::
    If you purchased your own equipment please follow :ref:`this guide<upgrade-diy>`.
