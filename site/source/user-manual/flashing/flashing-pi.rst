@@ -15,7 +15,7 @@ Visit the `Github release page <https://github.com/Start9Labs/embassy-os/release
 
     .. group-tab:: Linux
 
-        #. At the bottom of the page, under "Assets," download the ``embassyOS_raspberrypi.tar.gz`` file and open a terminal in the directory you save it to.
+        #. At the bottom of the page, under "Assets," download the ``embassyos_raspberrypi.tar.gz`` file and open a terminal in the directory you save it to.
 
                 .. figure:: /_static/images/flashing/raspi-tar-asset.png
                     :width: 60%
@@ -24,13 +24,13 @@ Visit the `Github release page <https://github.com/Start9Labs/embassy-os/release
         
             .. code-block::
             
-                sha256sum embassyOS_raspberrypi.tar.gz
+                sha256sum embassyos_raspberrypi.tar.gz
         
         #. Extract with:
         
             .. code-block::
             
-                tar -xzvf embassyOS_raspberrypi.tar.gz
+                tar -xzvf embassyos_raspberrypi.tar.gz
         
     .. group-tab:: Mac
         
@@ -45,7 +45,7 @@ Visit the `Github release page <https://github.com/Start9Labs/embassy-os/release
 
                 openssl dgst -sha256 embassyos_raspberrypi.tar.gz
 
-        #. Right-click ``embassyOS_raspberrypi.tar.gz``, click "open with," then click Archive Utility to extract.
+        #. Right-click ``embassyos_raspberrypi.tar.gz``, click "open with," then click Archive Utility to extract.
 
     .. group-tab:: Windows
 
