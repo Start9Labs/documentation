@@ -90,16 +90,16 @@ BlueWallet
 
 .. _lnbits-zeus:
 
-LNbits & Zeus
--------------
+LNbits
+------
+
+Using LNbits allows you to create a wallet that makes use of your node with only an alloted amount of sats. This restriction can be very helpful for if you only want to have a small amount for spending on your phone without making your entire lightning balance available. You can even allow other people to have wallets you create for them - think giving your children an allowance. They can start with a set amount (can be zero) and simply spend what you initially make available. They can also earn more for themselves as they will have the freedom to issue their own invoices - all while making use of your node.
+
+.. tip:: All wallets created this way are ultimately bound by the capacity of your node. If one wallet is allocated 10,000 sats but your underlying node only has 9000 sats of outbound capacity, payments will simply fail.
 
 .. note:: LND only
 
-.. note:: Requires Tor to be running on your phone - use :ref:`this guide<tor-os>` if necessary.
-
-Using LnBits allows you to create a wallet that makes use of your node with only an alloted amount of sats. This restriction can be very helpful for if you only want to have a small amount for spending on your phone without making your entire lightning balance available. You can even allow other people to have wallets you create for them - think giving your children an allowance. They can start with a set amount (can be zero) and simply spend what you initially make available. They can also earn more for themselves as they will have the freedom to issue their own invoices - all while making use of your node.
-
-.. tip:: All wallets created this way are ultimately bound by the capacity of your node. If one wallet is allocated 10,000 sats but your underlying node only has 9000 sats of outbound capacity, payments will simply fail.
+.. note:: You will need a Tor enabled browser. We suggest using Firefox which will need to have been setup to use Tor - if you have yet to do this please see our guide :ref:`here<tor-firefox>`. This also requires having :ref:`native tor setup<tor-os>`.
 
 #. Start by ensuring that you have LND and LNbits installed already. You also need for LND to have at least one channel set up otherwise payments will not work. If you have not set up a channel yet, please follow :ref:`this guide<lightning-intro>`.
 
@@ -109,119 +109,167 @@ Using LnBits allows you to create a wallet that makes use of your node with only
 
 #. Head to LNbits on your server, click on **Properties** and copy address under the **Superuser Account**.
 
-   .. note:: You need to make sure you are going to .onion address - Zeus cannot connect over .local! Please change *.local* to *.onion* and remove the *s* from *https://* as shown in the picture below.
+   .. note:: In this guide we are connecting via Tor so please change *.local* to *.onion* and remove the *s* from *https://* as shown in the picture below.
 
    .. figure:: /_static/images/services/lnbits/local-to-onion.png
       :width: 60%
       :alt: local-to-onion
 
-#. Now a default wallet will be generated - highlighted on the top left. We'll rename it by clicking **Rename wallet** entering **android-zeus-wallet** then clicking **UPDATE NAME**:
+   .. tip:: The address should look something like this - http://lotsofrandomletters.onion/wallet?usr=morerandomletters
+
+#. Paste this address into your browser and you'll see the following screen - please click "I understand":
+
+   .. figure:: /_static/images/services/lnbits/superuser-first-open.png
+      :width: 60%
+      :alt: superuser-first-open
+
+#. Now a default wallet will have already been generated - highlighted on the top left. We'll rename it by clicking **Rename wallet** entering **android-zeus-wallet** then clicking **UPDATE NAME**:
 
    .. figure:: /_static/images/services/lnbits/rename-default-wallet.png
       :width: 60%
       :alt: rename-default-wallet
 
-#. Click **Manage extensions**:
+   .. tip:: This will also work for running Zeus on iPhone or using the Alby extension so feel free to name the wallet accordingly.
+
+#. Now it's time to add the LndHub extension which we will allow us to connect lightning apps to LNbits. Click **Manage extensions**:
 
    .. figure:: /_static/images/services/lnbits/manage-extensions.png
       :width: 50%
       :alt: manage-extensions
 
-#. Click **ENABLE** under the LndHub extension:
+#. Click **MANAGE** under the LndHub extension:
 
-   .. figure:: /_static/images/services/lnbits/enable-lndhub.png
+   .. figure:: /_static/images/services/lnbits/lndhub-manage.png
       :width: 40%
-      :alt: enable-lndhub
+      :alt: lndhub-manage
 
-#. Click **LndHub** under *Extensions* and make sure the wallet you just created is selected below the two QR codes:
+#. Click the two arrows on the right, then click install:
+
+   .. figure:: /_static/images/services/lnbits/arrows-install.png
+      :width: 40%
+      :alt: arrows-install
+
+#. Now ensure that it says **Activated** underneath LndHub and then click **Extensions** on the left:
+
+   .. figure:: /_static/images/services/lnbits/activated-click-extensions.png
+      :width: 40%
+      :alt: activated-click-extensions
+
+#. Click **ENABLE**:
+
+   .. figure:: /_static/images/services/lnbits/extensions-enable.png
+      :width: 40%
+      :alt: extensions-enable
+
+#. Click **OPEN** *or* **LndHub** under extensions:
+
+   .. figure:: /_static/images/services/lnbits/lndhub-open.png
+      :width: 40%
+      :alt: lndhub-open
+
+#. Make sure the wallet you just created is selected below the two QR codes:
 
    .. figure:: /_static/images/services/lnbits/lndhub-select-wallet.png
       :width: 40%
       :alt: lndhub-select-wallet
 
-#. Now install `Zeus <https://zeusln.app/>`_ on your phone and open it up.
+   Now you'll need to choose a wallet with which to connect to LNbits - Zeus and Alby have been tested to work:
 
-   .. Note:: You need to have :ref:`Tor running on your phone<tor-os>` for this to work. For Android you will also need to turn on VPN mode within Orbot and add Zeus as an app to it.
+   .. note:: This is not the same as connecting Zeus and Alby directly to your lightning node - using LNbits allows us to allocate a specific amount of funds to Zeus/Alby instead of giving them full access to a lightning node. We can also use LNbits to permit only receiving and not spending - see below)
 
-#. Click **SCAN NODE CONFIG**.
+.. tabs::
 
-   .. figure:: /_static/images/services/lnbits/scan-node-config.jpg
-      :width: 25%
-      :alt: scan-node-config
+   .. group-tab:: Zeus
 
-#. *If you only want this wallet to be able to RECEIVE PAYMENTS, scan this QR code:*
+      .. note:: Requires Tor to be running on your phone - use :ref:`this guide<tor-os>` if necessary.
 
-   .. figure:: /_static/images/services/lnbits/left-qr.png
-      :width: 40%
-      :alt: left-qr
+      #. Install `Zeus <https://zeusln.app/>`_ on your phone and open it up.
 
-   *If you are happy for this wallet to be able to both receive and MAKE payments scan this QR code:*
+         .. Note:: You need to have :ref:`Tor running on your phone<tor-os>` for this to work. For Android you will also need to turn on VPN mode within Orbot and add Zeus as an app to it.
 
-   .. figure:: /_static/images/services/lnbits/right-qr.png
-      :width: 40%
-      :alt: right-qr
+      #. Click **SCAN NODE CONFIG**.
 
-#. Once scanned, name the wallet if you wish - then disable **Use Tor** and disable **Certificate verification** then hit **SAVE NODE CONFIG**.
+         .. figure:: /_static/images/services/lnbits/scan-node-config.jpg
+            :width: 25%
+            :alt: scan-node-config
 
-   .. note:: Certificate verification is not necessary when using Tor
+      #. *If you only want this wallet to be able to RECEIVE PAYMENTS, scan this QR code:*
 
-   .. figure:: /_static/images/services/lnbits/save-node-config.png
-      :width: 25%
-      :alt: save-node-config
+         .. figure:: /_static/images/services/lnbits/left-qr.png
+            :width: 40%
+            :alt: left-qr
 
-#. Hit **I UNDERSTAND, SAVE NODE CONFIG**:
+         *If you are happy for this wallet to be able to both receive and MAKE payments scan this QR code:*
 
-   .. figure:: /_static/images/services/lnbits/i-understand-save.png
-      :width: 25%
-      :alt: understand-save
+         .. figure:: /_static/images/services/lnbits/right-qr.png
+            :width: 40%
+            :alt: right-qr
 
-   .. tip:: This is all necessary because we are using Tor via Orbot instead of via Zeus itself. Using Zeus's built in Tor we have found not to work hence using Orbot, but this triggers the warning about certificates which again, is safe to ignore.
+      #. Once scanned, name the wallet if you wish - then disable **Use Tor** and disable **Certificate verification** then hit **SAVE NODE CONFIG**.
 
-#. Zeus will now connect to your node and you'll see this screen:
+         .. note:: Certificate verification is not necessary when using Tor
 
-   .. figure:: /_static/images/services/lnbits/new-wallet-screen-zeus.png
-      :width: 25%
-      :alt: new-wallet-screen-zeus
+         .. figure:: /_static/images/services/lnbits/save-node-config.png
+            :width: 25%
+            :alt: save-node-config
 
-   .. tip:: If it doesn't work, please manually restart the Zeus app.
+      #. Hit **I UNDERSTAND, SAVE NODE CONFIG**:
 
-#. You can now add sats to this wallet in two ways. You can allocate sats within LNbits by clicking the **+** icon here:
+         .. figure:: /_static/images/services/lnbits/i-understand-save.png
+            :width: 25%
+            :alt: understand-save
 
-   .. figure:: /_static/images/services/lnbits/plus-icon.png
-      :width: 60%
-      :alt: plus-icon
+         .. tip:: This is all necessary because we are using Tor via Orbot instead of via Zeus itself. Using Zeus's built in Tor we have found not to work hence using Orbot, but this triggers the warning about certificates which again, is safe to ignore.
 
-   Let's add 1000 satoshis:
+      #. Zeus will now connect to your node and you'll see this screen:
 
-   .. figure:: /_static/images/services/lnbits/add-1000-sats.png
-      :width: 60%
-      :alt: add-1000-sats
+         .. figure:: /_static/images/services/lnbits/new-wallet-screen-zeus.png
+            :width: 25%
+            :alt: new-wallet-screen-zeus
 
-   .. figure:: /_static/images/services/lnbits/1k-sats.png
-      :width: 60%
-      :alt: 1k-sats
-   
-   Alternatively you can simply hit **Request** in Zeus and receive by generating a standard lightning invoice:
+         .. tip:: If it doesn't work, please manually restart the Zeus app.
 
-   .. figure:: /_static/images/services/lnbits/zeus-request.png
-      :width: 20%
-      :alt: zeus-request
+      #. You can now add sats to this wallet in two ways. You can allocate sats within LNbits by clicking the **+** icon here:
 
-   .. note:: This will only work if your node has inbound liquidity. And you cannot send sats from the LND node LNbits is using as that is not a regular lightning payment - that is a reblanace.
+         .. figure:: /_static/images/services/lnbits/plus-icon.png
+            :width: 60%
+            :alt: plus-icon
 
-#. Once you have added sats, you can click on this button within Zeus and see your new balance:
+         Let's add 1000 satoshis:
 
-   .. figure:: /_static/images/services/lnbits/zeus-balance-button.png
-      :width: 20%
-      :alt: zeus-balance-button
+         .. figure:: /_static/images/services/lnbits/add-1000-sats.png
+            :width: 60%
+            :alt: add-1000-sats
 
-   .. figure:: /_static/images/services/lnbits/zeus-balance.png
-      :width: 20%
-      :alt: zeus-balance
+         .. figure:: /_static/images/services/lnbits/1k-sats.png
+            :width: 60%
+            :alt: 1k-sats
+      
+      Alternatively you can simply hit **Request** in Zeus and receive by generating a standard lightning invoice:
 
-   You are now free to make lightning payments - as mentioned your lightning node will need to have the necessary liquidity.
+      .. figure:: /_static/images/services/lnbits/zeus-request.png
+         :width: 20%
+         :alt: zeus-request
 
-.. tip:: You can delete Zeus and/or LNbits without ever losing the sats. They will remain on your node.
+      .. note:: This will only work if your node has inbound liquidity. And you cannot send sats from the LND node LNbits is using as that is not a regular lightning payment - that is a reblanace.
+
+      #. Once you have added sats, you can click on this button within Zeus and see your new balance:
+
+         .. figure:: /_static/images/services/lnbits/zeus-balance-button.png
+            :width: 20%
+            :alt: zeus-balance-button
+
+         .. figure:: /_static/images/services/lnbits/zeus-balance.png
+            :width: 20%
+            :alt: zeus-balance
+
+         You are now free to make lightning payments - as mentioned your lightning node will need to have the necessary liquidity.
+
+      .. tip:: You can delete Zeus and/or LNbits without ever losing the sats. They will remain on your node.
+
+   .. group-tab:: Alby
+
+   #. Placeholder
 
 .. tip:: All of the above instructions will work with accounts created without using the **Superuser account** - the only drawback is that you will not be able to allocate/deallocate satoshis within the LNbits interface.
 
