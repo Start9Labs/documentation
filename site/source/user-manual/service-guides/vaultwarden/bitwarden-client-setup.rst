@@ -13,8 +13,6 @@ Browser Extension
 
         .. group-tab:: Tor
 
-            Browser Extension
-            -----------------
             If connecting via Tor (i.e using the .onion address) the Bitwarden browser extension will only work with a Tor enabled browser. You can use Firefox (recommended), Tor Browser or Brave Browser.
 
             #. If you choose Firefox, you will need to :ref:`setup Tor on your device <tor-os>` and :ref:`configure Firefox to use Tor <tor-firefox>`. If using Brave you will just need to :ref:`setup Tor on your device <tor-os>`. With Tor Browser, everything will just work right out of the box.
@@ -197,9 +195,6 @@ Desktop Clients
 
     .. collapse:: Linux
 
-        Linux
-        =====
-
         First, be sure to get Tor :ref:`running on your system <tor-linux>`.
 
         #. Install Bitwarden either by using a package manager like **apt** (we recommend against using **snap**) or download it from `here <https://bitwarden.com/download/>`_.
@@ -211,9 +206,6 @@ Desktop Clients
         Alternatively, you may be able to run using your LAN address, but this has proven finicky, especially on Debian/Ubuntu systems.  You will have better luck if you have the Root CA installed at the OS level.  First, be sure to :ref:`Setup LAN <lan-linux>` natively.
 
     .. collapse:: Mac
-
-        Mac
-        ===
 
         .. tabs::
             
