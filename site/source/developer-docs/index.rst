@@ -13,6 +13,15 @@ Developer Docs
   <div class="grid-x grid-margin-x">
 
 .. topic-box::
+  :title: Listing a Service
+  :link: submission
+  :icon: scylla-icon scylla-icon--contact-us
+  :class: large-4
+  :anchor: Submit
+
+  The process for submitting a service to the Community Registry
+
+.. topic-box::
   :title: Service Packaging
   :link: packaging
   :icon: scylla-icon scylla-icon--resource-center
@@ -48,6 +57,7 @@ Developer Docs
   :maxdepth: 1
   :hidden:
 
+  submission
   packaging
   specification/index
   advanced/index
