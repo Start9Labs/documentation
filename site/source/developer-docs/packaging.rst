@@ -299,6 +299,10 @@ The following files should be included in the service wrapper repository:
     
        - `Example MAKEFILE <https://github.com/Start9Labs/hello-world-wrapper/blob/f44899be8523b784861aac92e43fe60f0bf219eb/Makefile#L1-L28>`_
 
+- ``prepare.sh``
+
+    - A script that setups up the build environment for a Debian system so that Start9 can verify the build process upon submission.
+  
 - ``Dockerfile``
  
        - A recipe for service creation
@@ -401,7 +405,7 @@ Testing
 Submission and Distribution
 ===========================
 
-The ``s9pk`` file can be uploaded for distribution to any website, repository, or marketplace. You can also submit your package for publication consideration on a Start9 Marketplace by emailing us at submissions@start9labs.com or by contacting us in one of our `community channels <https://start9.com/latest/about/contact>`_. Please include a link to the wrapper repository with a detailed README in the submission.
+The ``s9pk`` file can be uploaded for distribution to any website, repository, or marketplace. You can also submit your package for publication to the Community Registry by following the :ref:`submission process <community-submission>`.
 
 Advanced configuration
 ======================
