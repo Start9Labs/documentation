@@ -337,7 +337,7 @@ Using LNbits allows you to create a wallet that makes use of your node with only
 
       #. Install `Zeus <https://zeusln.app/>`_.
 
-      #. Click **SCAN NODE CONFIG**.
+      #. Open it up and click **SCAN NODE CONFIG**.
 
          .. figure:: /_static/images/services/lnbits/scan-node-config.jpg
             :width: 25%
