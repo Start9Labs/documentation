@@ -185,33 +185,33 @@ Using LNbits allows you to create a wallet that makes use of your node with only
 
       #. Now it's time to set up Blue Wallet so that you can connect it to your lightning node! Start by opening up Blue Wallet and click on the three dots in the top right:
 
-         .. figure:: /_static/images/lightning/bluewallet-three-dots.jpg
+         .. figure:: /_static/images/services/lnbits/bluewallet-three-dots.jpg
             :width: 30%
 
       #. Click "Network" then "Tor settings":
 
-         .. figure:: /_static/images/lightning/bluewallet-network.jpg
+         .. figure:: /_static/images/services/lnbits/bluewallet-network.jpg
             :width: 30%
 
-         .. figure:: /_static/images/lightning/bluewallet-tor-settings.jpg
+         .. figure:: /_static/images/services/lnbits/bluewallet-tor-settings.jpg
             :width: 30%
 
       #. Click "Start" and it should say "Done" after a short time:
 
-         .. figure:: /_static/images/lightning/bluewallet-tor-start.jpg
+         .. figure:: /_static/images/services/lnbits/bluewallet-tor-start.jpg
             :width: 30%
 
-         .. figure:: /_static/images/lightning/bluewallet-tor-done.jpg
+         .. figure:: /_static/images/services/lnbits//bluewallet-tor-done.jpg
             :width: 30%
 
-      #. Head back to the main screen and click the "+" sign:
+      #. Head back to the main screen and click the **+** sign:
 
-         .. figure:: /_static/images/lightning/bluewallet-add-wallet.jpg
+         .. figure:: /_static/images/services/lnbits/bluewallet-add-wallet.jpg
             :width: 30%
 
       #. Click "Import wallet":
 
-         .. figure:: /_static/images/lightning/bluewallet-plus.jpg
+         .. figure:: /_static/images/services/lnbits/bluewallet-plus.jpg
             :width: 30%
 
       #. Click "Scan or import a file"
@@ -222,13 +222,40 @@ Using LNbits allows you to create a wallet that makes use of your node with only
 
       #. You'll see this once the wallet is added:
 
-         .. figure:: /_static/images/lightning/bluewallet-wallet-added.jpg
+         .. figure:: /_static/images/services/lnbits/bluewallet-wallet-added.jpg
             :width: 30%
 
-      #. You are now immediately good to go and can start receiving funds to this lightning wallet.
+      #. You can now add sats to this wallet in two ways. You can allocate sats within LNbits by clicking the **+** icon here:
 
-         .. note:: You will not be able to spend anything until you first receive some money into the wallet, or unless you allocate funds to the wallet. To learn how to allocate funds, see the guide directly below.
+         .. figure:: /_static/images/services/lnbits/plus-icon.png
+            :width: 60%
+            :alt: plus-icon
 
+         Let's add 1000 satoshis:
+
+         .. figure:: /_static/images/services/lnbits/add-1000-sats.png
+            :width: 60%
+            :alt: add-1000-sats
+
+         .. figure:: /_static/images/services/lnbits/1k-sats.png
+            :width: 60%
+            :alt: 1k-sats
+
+      #. BlueWallet should now show a balance:
+
+         .. figure:: /_static/images/services/lnbits/blue-wallet-balance.jpg
+            :width: 25%
+            :alt: blue-wallet-balance
+
+      #. You can also receive funds the normal way by hitting "Receive" within BlueWallet.
+
+         .. figure:: /_static/images/services/lnbits/blue-wallet-receive.jpg
+            :width: 25%
+            :alt: blue-wallet-receive
+
+         .. note:: Funds received this way must be sent from another lightning node, not the LND node underneath LNbits. A lightning payment that originates and terminates at the same node is technically a rebalance, not a normal payment.
+
+      Congratulations! BlueWallet is set up and ready to use lightning via your own lightning node!
 
    .. group-tab:: Zeus
 
@@ -303,8 +330,6 @@ Using LNbits allows you to create a wallet that makes use of your node with only
             :alt: zeus-balance
 
          You are now free to make lightning payments - as mentioned your lightning node will need to have the necessary liquidity.
-
-         .. tip:: You can delete Zeus and/or LNbits without ever losing the sats. They will remain on your node.
 
 .. tip:: All of the above instructions will work with accounts created without using the **Superuser account** - the only drawback is that you will not be able to allocate satoshis within the LNbits interface.
 
