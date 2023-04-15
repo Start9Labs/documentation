@@ -177,6 +177,8 @@ Using LNbits allows you to create a wallet that makes use of your node with only
 
       .. note:: This is not the same as connecting Alby directly to your lightning node - using LNbits allows us to allocate a specific amount of funds to Alby instead of giving it full access to your lightning node. We can also use LNbits to permit your Alby wallet to **just receive** satoshis, or the ability to both **receive and spend** satoshis.
 
+      .. note:: Requires a Tor enabled browser - Make sure you are already :ref:`running Tor<connecting-tor>` on your system and we suggest using Firefox which must be :ref:`configured to use Tor.<tor-firefox>`
+
       #. Download the Alby extension by visiting the `Alby Github <https://github.com/getAlby/lightning-browser-extension#installation>`_, selecting your browser, and installing.
       
       #. On the Alby welcome screen, select "Get Started."
