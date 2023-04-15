@@ -241,7 +241,7 @@ Using LNbits allows you to create a wallet that makes use of your node with only
 
          .. note:: Funds received this way must be sent from another lightning node, not the LND node underneath LNbits. A lightning payment that originates and terminates at the same node is technically a rebalance, not a normal payment.
 
-      Congratulations! Alby is set up and ready to use lightning via your own lightning node!
+   Congratulations! Alby is set up and ready to use lightning via your own lightning node!
 
    .. group-tab:: BlueWallet
 
@@ -329,7 +329,7 @@ Using LNbits allows you to create a wallet that makes use of your node with only
 
          .. note:: Funds received this way must be sent from another lightning node, not the LND node underneath LNbits. A lightning payment that originates and terminates at the same node is technically a rebalance, not a normal payment.
 
-      Congratulations! BlueWallet is set up and ready to use lightning via your own lightning node!
+   Congratulations! BlueWallet is set up and ready to use lightning via your own lightning node!
 
    .. group-tab:: Zeus
 
@@ -403,7 +403,7 @@ Using LNbits allows you to create a wallet that makes use of your node with only
             :width: 20%
             :alt: zeus-balance
 
-         You are now free to make lightning payments - as mentioned your lightning node will need to have the necessary liquidity.
+      Congratulations! Zeus is set up and ready to use lightning via your own lightning node!
 
 .. tip:: All of the above instructions will work with accounts created without using the **Superuser account** - the only drawback is that you will not be able to allocate satoshis within the LNbits interface.
 
