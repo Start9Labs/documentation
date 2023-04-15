@@ -107,17 +107,13 @@ Using LNbits allows you to create a wallet that makes use of your node with only
       :width: 40%
       :alt: lnbits-lnd-installed
 
-#. Head to LNbits on your server, click on **Properties** and copy address under the **Superuser Account**.
+#. Head to LNbits on your server, click on **Properties** and copy the address under **(Tor) Superuser Account**:
 
-   .. note:: In this guide we are connecting via Tor so please change *.local* to *.onion* and remove the *s* from *https://* as shown in the picture below.
+   .. figure:: /_static/images/services/lnbits/tor-super-user.png
+      :width: 40%
+      :alt: tor-super-user
 
-   .. figure:: /_static/images/services/lnbits/local-to-onion.png
-      :width: 60%
-      :alt: local-to-onion
-
-   .. tip:: The address should look something like this - http://lotsofrandomletters.onion/wallet?usr=morerandomletters
-
-#. Paste this address into your browser and you'll see the following screen - please click "I understand":
+#. Paste this address into your browser and you'll see the following screen - click **I understand**:
 
    .. figure:: /_static/images/services/lnbits/superuser-first-open.png
       :width: 60%
@@ -128,6 +124,8 @@ Using LNbits allows you to create a wallet that makes use of your node with only
    .. figure:: /_static/images/services/lnbits/rename-default-wallet.png
       :width: 60%
       :alt: rename-default-wallet
+
+   .. note:: I have called the wallet "android-zeus-wallet" but it is fine to use other wallets to as we'll show further on in this guide.
 
 #. Now it's time to add the LndHub extension which we will allow us to connect lightning apps to LNbits. Click **Manage Extensions**:
 
@@ -179,6 +177,34 @@ Using LNbits allows you to create a wallet that makes use of your node with only
 
       .. note:: This is not the same as connecting Alby directly to your lightning node - using LNbits allows us to allocate a specific amount of funds to Alby instead of giving it full access to your lightning node. We can also use LNbits to permit your Alby wallet to **just receive** satoshis, or the ability to both **receive and spend** satoshis.
 
+      #. Download the Alby extension by visiting the `Alby Github <https://github.com/getAlby/lightning-browser-extension#installation>`_, selecting your browser, and installing.
+      
+      #. On the Alby welcome screen, select "Get Started."
+      
+      #. Create a strong password and store it somewhere safe, like your Vaultwarden password manager.
+      
+      #. On the next screen, select "Other Wallets".
+
+      #. Click **LNDhub**:
+
+         .. figure:: /_static/images/services/lnbits/alby-lndhub.png
+            :width: 40%
+            :alt: alby-lndhub
+      
+      #. Head back to LNbits and copy one of the two LNDhub URLs:
+
+         .. note:: If you only want this wallet to be able to RECEIVE PAYMENTS copy the URL on the left. If you are happy for this wallet to be able to both receive and MAKE payments copy the URL on the right.
+
+         .. figure:: /_static/images/services/lnbits/lndhub-both-qrs.png
+            :width: 40%
+            :alt: lndhub-both-qrs 
+         
+      #. Paste the URL into Alby, select Tor (native) and click **Continue**:
+
+         .. figure:: /_static/images/services/lnbits/alby-paste-tor-native.png
+            :width: 40%
+            :alt: alby-paste-tor-native
+
    .. group-tab:: BlueWallet
 
       .. note:: This is not the same as connecting BlueWallet directly to your lightning node - using LNbits allows us to allocate a specific amount of funds to BlueWallet instead of giving it full access to your lightning node. We can also use LNbits to permit BlueWallet to **just receive** satoshis, or the ability to both **receive and spend** satoshis.
@@ -218,7 +244,17 @@ Using LNbits allows you to create a wallet that makes use of your node with only
 
          .. note:: Screenshots not possible for this step!
 
-      #. Scan the appropriate QR code using your phone's camera.
+      #. *If you only want this wallet to be able to RECEIVE PAYMENTS, scan this QR code:*
+
+         .. figure:: /_static/images/services/lnbits/left-qr.png
+            :width: 40%
+            :alt: left-qr
+
+         *If you are happy for this wallet to be able to both receive and MAKE payments scan this QR code:*
+
+         .. figure:: /_static/images/services/lnbits/right-qr.png
+            :width: 40%
+            :alt: right-qr
 
       #. You'll see this once the wallet is added:
 
