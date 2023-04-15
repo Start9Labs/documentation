@@ -183,6 +183,53 @@ Using LNbits allows you to create a wallet that makes use of your node with only
 
       .. note:: This is not the same as connecting BlueWallet directly to your lightning node - using LNbits allows us to allocate a specific amount of funds to BlueWallet instead of giving it full access to your lightning node. We can also use LNbits to permit BlueWallet to **just receive** satoshis, or the ability to both **receive and spend** satoshis.
 
+      #. Now it's time to set up Blue Wallet so that you can connect it to your lightning node! Start by opening up Blue Wallet and click on the three dots in the top right:
+
+         .. figure:: /_static/images/lightning/bluewallet-three-dots.jpg
+            :width: 30%
+
+      #. Click "Network" then "Tor settings":
+
+         .. figure:: /_static/images/lightning/bluewallet-network.jpg
+            :width: 30%
+
+         .. figure:: /_static/images/lightning/bluewallet-tor-settings.jpg
+            :width: 30%
+
+      #. Click "Start" and it should say "Done" after a short time:
+
+         .. figure:: /_static/images/lightning/bluewallet-tor-start.jpg
+            :width: 30%
+
+         .. figure:: /_static/images/lightning/bluewallet-tor-done.jpg
+            :width: 30%
+
+      #. Head back to the main screen and click the "+" sign:
+
+         .. figure:: /_static/images/lightning/bluewallet-add-wallet.jpg
+            :width: 30%
+
+      #. Click "Import wallet":
+
+         .. figure:: /_static/images/lightning/bluewallet-plus.jpg
+            :width: 30%
+
+      #. Click "Scan or import a file"
+
+         .. note:: Screenshots not possible for this step!
+
+      #. Scan the appropriate QR code using your phone's camera.
+
+      #. You'll see this once the wallet is added:
+
+         .. figure:: /_static/images/lightning/bluewallet-wallet-added.jpg
+            :width: 30%
+
+      #. You are now immediately good to go and can start receiving funds to this lightning wallet.
+
+         .. note:: You will not be able to spend anything until you first receive some money into the wallet, or unless you allocate funds to the wallet. To learn how to allocate funds, see the guide directly below.
+
+
    .. group-tab:: Zeus
 
       .. note:: This is not the same as connecting Zeus directly to your lightning node - using LNbits allows us to allocate a specific amount of funds to Zeus instead of giving it full access to your lightning node. We can also use LNbits to permit Zeus to **just receive** satoshis, or the ability to both **receive and spend** satoshis.
