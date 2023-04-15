@@ -129,9 +129,7 @@ Using LNbits allows you to create a wallet that makes use of your node with only
       :width: 60%
       :alt: rename-default-wallet
 
-   .. tip:: This will also work for running Zeus on iPhone or using the Alby extension so feel free to name the wallet accordingly.
-
-#. Now it's time to add the LndHub extension which we will allow us to connect lightning apps to LNbits. Click **Manage extensions**:
+#. Now it's time to add the LndHub extension which we will allow us to connect lightning apps to LNbits. Click **Manage Extensions**:
 
    .. figure:: /_static/images/services/lnbits/manage-extensions.png
       :width: 50%
@@ -161,7 +159,7 @@ Using LNbits allows you to create a wallet that makes use of your node with only
       :width: 40%
       :alt: extensions-enable
 
-#. Click **OPEN** *or* **LndHub** under extensions:
+#. Click **OPEN** *or* **LndHub** under *Extensions*:
 
    .. figure:: /_static/images/services/lnbits/lndhub-open.png
       :width: 40%
@@ -173,19 +171,23 @@ Using LNbits allows you to create a wallet that makes use of your node with only
       :width: 40%
       :alt: lndhub-select-wallet
 
-   Now you'll need to choose a wallet with which to connect to LNbits - Zeus and Alby have been tested to work:
-
-   .. note:: This is not the same as connecting Zeus and Alby directly to your lightning node - using LNbits allows us to allocate a specific amount of funds to Zeus/Alby instead of giving them full access to a lightning node. We can also use LNbits to permit only receiving and not spending - see below)
+   Now you'll need to choose a wallet with which to connect to LNbits. We can offer details instructions for **Alby**, **BlueWallet**, and **Zeus** which have been tested and will work. Other wallets may also work.
 
 .. tabs::
 
+   .. group-tab:: Alby
+
+      .. note:: This is not the same as connecting Alby directly to your lightning node - using LNbits allows us to allocate a specific amount of funds to Alby instead of giving it full access to your lightning node. We can also use LNbits to permit your Alby wallet to **just receive** satoshis, or the ability to both **receive and spend** satoshis.
+
+   .. group-tab:: BlueWallet
+
+      .. note:: This is not the same as connecting BlueWallet directly to your lightning node - using LNbits allows us to allocate a specific amount of funds to BlueWallet instead of giving it full access to your lightning node. We can also use LNbits to permit BlueWallet to **just receive** satoshis, or the ability to both **receive and spend** satoshis.
+
    .. group-tab:: Zeus
 
-      .. note:: Requires Tor to be running on your phone - use :ref:`this guide<tor-os>` if necessary.
+      .. note:: This is not the same as connecting Zeus directly to your lightning node - using LNbits allows us to allocate a specific amount of funds to Zeus instead of giving it full access to your lightning node. We can also use LNbits to permit Zeus to **just receive** satoshis, or the ability to both **receive and spend** satoshis.
 
-      #. Install `Zeus <https://zeusln.app/>`_ on your phone and open it up.
-
-         .. Note:: You need to have :ref:`Tor running on your phone<tor-os>` for this to work. For Android you will also need to turn on VPN mode within Orbot and add Zeus as an app to it.
+      #. Install `Zeus <https://zeusln.app/>`_.
 
       #. Click **SCAN NODE CONFIG**.
 
@@ -205,21 +207,11 @@ Using LNbits allows you to create a wallet that makes use of your node with only
             :width: 40%
             :alt: right-qr
 
-      #. Once scanned, name the wallet if you wish - then disable **Use Tor** and disable **Certificate verification** then hit **SAVE NODE CONFIG**.
+      #. Once scanned, name the wallet if you wish then hit **SAVE NODE CONFIG**.
 
-         .. note:: Certificate verification is not necessary when using Tor
-
-         .. figure:: /_static/images/services/lnbits/save-node-config.png
+         .. figure:: /_static/images/services/lnbits/save-node-config.jpg
             :width: 25%
             :alt: save-node-config
-
-      #. Hit **I UNDERSTAND, SAVE NODE CONFIG**:
-
-         .. figure:: /_static/images/services/lnbits/i-understand-save.png
-            :width: 25%
-            :alt: understand-save
-
-         .. tip:: This is all necessary because we are using Tor via Orbot instead of via Zeus itself. Using Zeus's built in Tor we have found not to work hence using Orbot, but this triggers the warning about certificates which again, is safe to ignore.
 
       #. Zeus will now connect to your node and you'll see this screen:
 
@@ -245,13 +237,13 @@ Using LNbits allows you to create a wallet that makes use of your node with only
             :width: 60%
             :alt: 1k-sats
       
-      Alternatively you can simply hit **Request** in Zeus and receive by generating a standard lightning invoice:
+         Alternatively you can simply hit **Request** in Zeus and receive by generating a standard lightning invoice:
 
-      .. figure:: /_static/images/services/lnbits/zeus-request.png
-         :width: 20%
-         :alt: zeus-request
+         .. figure:: /_static/images/services/lnbits/zeus-request.png
+            :width: 20%
+            :alt: zeus-request
 
-      .. note:: This will only work if your node has inbound liquidity. And you cannot send sats from the LND node LNbits is using as that is not a regular lightning payment - that is a reblanace.
+         .. note:: This will only work if your node has inbound liquidity. And you cannot send sats from the LND node LNbits is using as that is not a regular lightning payment - that is a reblanace.
 
       #. Once you have added sats, you can click on this button within Zeus and see your new balance:
 
@@ -265,13 +257,9 @@ Using LNbits allows you to create a wallet that makes use of your node with only
 
          You are now free to make lightning payments - as mentioned your lightning node will need to have the necessary liquidity.
 
-      .. tip:: You can delete Zeus and/or LNbits without ever losing the sats. They will remain on your node.
+         .. tip:: You can delete Zeus and/or LNbits without ever losing the sats. They will remain on your node.
 
-   .. group-tab:: Alby
-
-   #. Placeholder
-
-.. tip:: All of the above instructions will work with accounts created without using the **Superuser account** - the only drawback is that you will not be able to allocate/deallocate satoshis within the LNbits interface.
+.. tip:: All of the above instructions will work with accounts created without using the **Superuser account** - the only drawback is that you will not be able to allocate satoshis within the LNbits interface.
 
 
 .. _rtl:
