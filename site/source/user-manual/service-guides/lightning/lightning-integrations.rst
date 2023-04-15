@@ -205,6 +205,44 @@ Using LNbits allows you to create a wallet that makes use of your node with only
             :width: 40%
             :alt: alby-paste-tor-native
 
+      #. Once connected you will see a success screen:
+
+         .. figure:: /_static/images/services/lnbits/alby-success.png
+            :width: 40%
+            :alt: alby-success
+
+      #. You can now allocate sats to this wallet within LNbits by clicking the **+** icon here:
+
+         .. figure:: /_static/images/services/lnbits/plus-icon.png
+            :width: 60%
+            :alt: plus-icon
+
+         Let's add 1000 satoshis:
+
+         .. figure:: /_static/images/services/lnbits/add-1000-sats.png
+            :width: 60%
+            :alt: add-1000-sats
+
+         .. figure:: /_static/images/services/lnbits/1k-sats.png
+            :width: 60%
+            :alt: 1k-sats
+
+      #. Alby should now show a balance:
+
+         .. figure:: /_static/images/services/lnbits/alby-balance.png
+            :width: 25%
+            :alt: alby-balance
+
+      #. You can also receive funds the normal way by hitting "Receive" within Alby.
+
+         .. figure:: /_static/images/services/lnbits/alby-receive.png
+            :width: 25%
+            :alt: alby-receive
+
+         .. note:: Funds received this way must be sent from another lightning node, not the LND node underneath LNbits. A lightning payment that originates and terminates at the same node is technically a rebalance, not a normal payment.
+
+      Congratulations! Alby is set up and ready to use lightning via your own lightning node!
+
    .. group-tab:: BlueWallet
 
       .. note:: This is not the same as connecting BlueWallet directly to your lightning node - using LNbits allows us to allocate a specific amount of funds to BlueWallet instead of giving it full access to your lightning node. We can also use LNbits to permit BlueWallet to **just receive** satoshis, or the ability to both **receive and spend** satoshis.
@@ -261,7 +299,7 @@ Using LNbits allows you to create a wallet that makes use of your node with only
          .. figure:: /_static/images/services/lnbits/bluewallet-wallet-added.jpg
             :width: 30%
 
-      #. You can now add sats to this wallet in two ways. You can allocate sats within LNbits by clicking the **+** icon here:
+      #. You can now allocate sats to this wallet within LNbits by clicking the **+** icon here:
 
          .. figure:: /_static/images/services/lnbits/plus-icon.png
             :width: 60%
