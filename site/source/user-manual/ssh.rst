@@ -106,17 +106,15 @@ Setup
 
 #. First, you need to enable SSH over tor in your Embassy:
 
-    .. warning:: The changes you make here are on the overlay and won't persist after a restart of your Embassy.
-
     .. code-block:: bash
 
         ssh start9@embassy-xxxxxxx.local
 
-#. Elevate yourself to root for the rest of the ssh session:
+#. Elevate yourself to root in chroot edit mode:
 
     .. code-block:: bash
 
-        sudo -i
+        sudo /usr/lib/embassy/scripts/chroot-and-upgrade
 
 #. Using Vim or Nano, add the following 2 lines to ``/etc/tor/torrc``
 
@@ -131,17 +129,19 @@ Setup
 
             echo "HiddenServiceDir /var/lib/tor/ssh" >> /etc/tor/torrc && echo "HiddenServicePort 22 127.0.0.1:22" >> /etc/tor/torrc
 
-#. Reload the Tor configuration with your edits:
+#. Restart your Embassy by exiting chroot edit mode:
 
     .. code-block:: bash
 
-        systemctl reload tor
+        exit
 
-#. Gather the ".onion" address you just created:
+#. Ssh in to your embassy again and gather the ".onion" address that was generated:
 
     .. code-block:: bash
 
         cat /var/lib/tor/ssh/hostname
+
+.. note:: Your newly generated .onion address is unique for SSH access only and should not be confused with the main .onion address for the Embassy.
 
 Configure local SSH client
 .....
