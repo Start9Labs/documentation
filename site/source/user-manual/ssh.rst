@@ -44,7 +44,7 @@ Creating an SSH Key (Linux/Mac)
 Registering an SSH Key
 ----------------------
 
-#. In your Embassy's web interface, navigate to *System > SSH*.
+#. In your Start9 server's web interface, navigate to *System > SSH*.
 #. Click "Add New Key".
 #. Back in the terminal of your workstation, display and copy your SSH *public* key (created above):
 
@@ -66,26 +66,26 @@ Registering an SSH Key
 
           ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINH3tqX71XsPlzYhhoo9CqAP2Yx7gsGTh43bQXr1zqoq user@ema.il
 
-#. Paste that line into the `Add New Key` text field of your Embassy
+#. Paste that line into the `Add New Key` text field of your Start9 server
 
     .. figure:: /_static/images/walkthrough/ssh_key_add.jpg
 
 #. Click **Submit**
 
-You are now ready to SSH into your Embassy!
+You are now ready to SSH into your server!
 
 .. _connecting-via-ssh:
 
 Connecting via CLI (Linux/Mac)
 ------------------------------
 
-#. You can now access your Embassy from the command line (Linux and Mac) using:
+#. You can now access your Start9 server from the command line (Linux and Mac) using:
 
     .. code-block:: bash
 
-        ssh start9@<LAN URL>
+        ssh start9@<SERVER-HOSTNAME>
 
-Replacing ``<LAN URL>`` with your Embassy's LAN (``embassy-xxxxxxx.local``) address
+Replacing ``<SERVER-HOSTNAME>`` with your Start9 server's LAN (``server-hostname.local``) hostname
 
 .. note:: If you get a scary looking warning that says something like "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!" - fear not!  This is most likely happening because you have recently reflashed or did an update from pre-v0.3.3, which would cause a change in the key for your device's hostname (e.g. `xxxxxxxx.local`) or IP address (e.g. `192.168.1.x`).  The solution is to delete the existing entry from your `known_hosts` file, which is typically located at `~/.ssh/known_hosts`.  This should be named in the warning, along with a helpful line number (in case your file is lengthy).
 
@@ -97,20 +97,20 @@ Community member `BrewsBitcoin <https://brewsbitcoin.com>`_ has created `a guide
 Using SSH Over Tor
 ------------------
 
-.. note:: The following guide requires that you have already added an :ref:`SSH key to your Embassy<ssh>`.
+.. note:: The following guide requires that you have already added an :ref:`SSH key to your Start9 server<ssh>`.
 
-.. caution:: SSH over Tor is only supported on Linux and macOS, though it may also work on Windows with `Torifier <https://torifier.com/>`_.
+.. caution:: SSH over Tor is only supported on Linux and macOS, although it can also work on Windows with in PuTTY `like this <https://tor.stackexchange.com/a/143>`_.  Note that those instructions use port 9150 but we've configured Tor in Windows on the traditional port: ``9050``.
 
 Setup
 .....
 
-#. First, you need to enable SSH over tor in your Embassy:
+#. First, you need to enable SSH over tor on your Start9 server:
 
     .. code-block:: bash
 
-        ssh start9@embassy-xxxxxxx.local
+        ssh start9@SERVER-HOSTNAME.local
 
-#. Elevate yourself to root in chroot edit mode:
+#. Elevate yourself to root in chroot edit mode (which will make your changes persist across reboots):
 
     .. code-block:: bash
 
@@ -129,19 +129,19 @@ Setup
 
             echo "HiddenServiceDir /var/lib/tor/ssh" >> /etc/tor/torrc && echo "HiddenServicePort 22 127.0.0.1:22" >> /etc/tor/torrc
 
-#. Restart your Embassy by exiting chroot edit mode:
+#. Restart your Start9 server by exiting chroot edit mode:
 
     .. code-block:: bash
 
         exit
 
-#. Ssh in to your embassy again and gather the ".onion" address that was generated:
+#. SSH in to your Start9 server again and gather the ".onion" address that was generated:
 
     .. code-block:: bash
 
         cat /var/lib/tor/ssh/hostname
 
-.. note:: Your newly generated .onion address is unique for SSH access only and should not be confused with the main .onion address for the Embassy.
+.. note:: Your newly generated .onion address is unique for SSH access only and should not be confused with the main .onion address for the server.
 
 Configure local SSH client
 .....
