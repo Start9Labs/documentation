@@ -133,7 +133,7 @@ iOS
 
         Begin by :ref:`setting up Tor <tor-ios>` on your iPhone.
 
-        You will also need :ref:`LAN setup <lan-ios>` on your iPhone.
+        You will also need :ref:`LAN access <lan-ios>` setup on your iPhone.
 
         #. Visit the App Store and download the `Bitwarden app <https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744>`_
 
