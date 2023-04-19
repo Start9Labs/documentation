@@ -1,12 +1,12 @@
 .. _lan-windows:
 
-==============================
-Trusting Embassy CA On Windows
-==============================
+======================
+Trusting CA On Windows
+======================
 
-Unfortunately, Windows does not have mDNS alias support built-in, which is necessary in order to visit .local addresses for any service you install on your Embassy, so we recommend using the Bonjour service. Check out this :ref:`FAQ answer<why-bonjour>` for details.
+Unfortunately, Windows does not have mDNS alias support built-in, which is necessary in order to visit .local addresses for any service you install on your Start9 server, so we recommend using the Bonjour service. Check out this :ref:`FAQ answer<why-bonjour>` for details.
 
-.. note:: Recently many users who have run through the following instructions have successfully connected to their Embassy via LAN only to have it stop working a few days or weeks later. We believe this to be due to a recent change in Windows. When this happens the fix is to simply reinstall Bonjour and Bonjour Print Services. A solution is being worked on and Bonjour will not be necessary to connect to your Embassy for much longer.
+.. note:: Recently many users who have run through the following instructions have successfully connected to their Start9 server via LAN only to have it stop working a few days or weeks later. We believe this to be due to a recent change in Windows. When this happens the fix is to simply reinstall Bonjour and Bonjour Print Services. A solution is being worked on and Bonjour will not be necessary to connect to your Start9 server for much longer.
 
 #. Install `Bonjour Print Services <https://support.apple.com/kb/DL999>`_ on your Windows machine.
 
@@ -80,12 +80,12 @@ Unfortunately, Windows does not have mDNS alias support built-in, which is neces
 
 #. Select “OK” when the import is successful.
 
-#. Verify the Embassy Local Root CA certificate is in the “Certificates” folder.
+#. Verify your server's Local Root CA certificate is in the “Certificates” folder:
 
    .. figure:: /_static/images/ssl/windows/8_windows_successful_cert_install.png
     :width: 90%
     :alt: Successful cert install
 
-    Embassy Local Root CA imported into Certificate folder
+    Your server's unique `adjective-noun Local Root CA` is now imported into Certificate folder
 
 #. You can save the settings to the console if desired, or not by pressing `Yes` or `No`.  The CA certificate will remain imported to the CA certificate store either way.
