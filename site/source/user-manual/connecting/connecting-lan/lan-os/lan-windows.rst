@@ -1,8 +1,8 @@
 .. _lan-windows:
 
-====================================
+======================
 Trusting CA On Windows
-====================================
+======================
 
 Unfortunately, Windows does not have mDNS alias support built-in, which is necessary in order to visit .local addresses for any service you install on your Start9 server, so we recommend using the Bonjour service. Check out this :ref:`FAQ answer<why-bonjour>` for details.
 
