@@ -15,6 +15,8 @@ Community Channels
 
 * `Start9 Community Hub <https://community.start9.com>`_ - Primary repository for open source sovereign computing knowledge.  Start here.
 
+* `Start9.com Live Chat <https://community.start9.com>`_ - Get instant help from a Start9 Support Tech (available during most Western hemisphere daylight hours).
+
 * `Telegram <https://t.me/start9_labs>`_ - Primary instant messaging channel (now bridged to Matrix for convenience).
 
 * `Matrix <https://matrix.to/#/#community:matrix.start9labs.com>`_ - Community channel that will gradually replace Telegram (now bridged to Telegram for convenience).
@@ -31,14 +33,3 @@ Social Media
 * `Twitter <https://twitter.com/start9labs>`_
 
 * `GitHub <https://github.com/start9labs>`_
-
-Email
------
-
-* support@start9.com - for getting help with your Embassy and asking general questions about Start9.
-
-* security@start9.com - for reporting sensitive information or security concerns.
-
-* jobs@start9.com - for those interested in doing work for Start9.
-
-* affiliate@start9.com - for those interested in becoming a Start9 affiliate.
