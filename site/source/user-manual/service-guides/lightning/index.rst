@@ -10,4 +10,11 @@ These guides will help get you started with Lightning.
   :maxdepth: 1
 
   lightning-first-channel
-  lightning-integrations
+  alby
+  bluewallet
+  lnbits
+  ride-the-lightning
+  spark
+  thunderhub
+  zap
+  zeus

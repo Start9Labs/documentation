@@ -1,8 +1,8 @@
 .. _lightning-intro:
 
-=====================================
-Lightning: Opening Your First Channel
-=====================================
+==========================
+Opening Your First Channel
+==========================
 
 .. contents::
   :depth: 2 
