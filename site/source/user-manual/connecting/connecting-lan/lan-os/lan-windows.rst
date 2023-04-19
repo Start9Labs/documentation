@@ -80,7 +80,7 @@ Unfortunately, Windows does not have mDNS alias support built-in, which is neces
 
 #. Select “OK” when the import is successful.
 
-#. Verify the your Start9 server's Local Root CA certificate is in the “Certificates” folder:
+#. Verify your server's Local Root CA certificate is in the “Certificates” folder:
 
    .. figure:: /_static/images/ssl/windows/8_windows_successful_cert_install.png
     :width: 90%
