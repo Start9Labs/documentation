@@ -92,14 +92,6 @@ The following guides provide an in depth overview of the full capabilities avail
 
   Understand the purpose of a wrapper repository.
 
-.. topic-box::
-  :title: Submission
-  :link: submission
-  :class: large-4
-  :anchor: View
-
-  Learn about how to submit a package for review to a marketplace.
-
 .. raw:: html
 
   </div></div>
@@ -118,6 +110,5 @@ The following guides provide an in depth overview of the full capabilities avail
   wrapper
   makefile
   js-procedure
-  submission
   compat/index
   checklist
