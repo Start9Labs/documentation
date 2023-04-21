@@ -5,8 +5,8 @@ Spark
 
 .. note:: Compatible with Core Lightning (CLN) only
 
-Available For
-.............
+Available For:
+
 - Android
 - StartOS
 - iOS

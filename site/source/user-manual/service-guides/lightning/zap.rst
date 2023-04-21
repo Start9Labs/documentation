@@ -3,8 +3,8 @@
 Zap
 ---
 
-Available For
-.............
+Available For:
+
 - Android
 - iOS
 

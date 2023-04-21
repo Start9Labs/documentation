@@ -13,14 +13,12 @@ The following guide will get you up and running with a lightning node and walk y
 
 Now that you're up and running, it's time to connect some wallets to your node so that you can use lightning from anywhere!
 
-.. toctree::
-  :maxdepth: 1 
 
-  alby
-  bluewallet
-  lnbits
-  ride-the-lightning
-  spark
-  thunderhub
-  zap
-  zeus
+
+.. toctree::
+  :maxdepth: 2
+
+  connecting-cln
+  connecting-lnd
+  connecting-lnbits
+  connecting-lndc
