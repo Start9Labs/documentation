@@ -131,4 +131,4 @@ BlueWallet
 
     .. note:: Funds received this way must be sent from another lightning node, not the LND node underneath LNbits. A lightning payment that originates and terminates at the same node is technically a rebalance, not a normal payment.
 
-   Congratulations! BlueWallet is set up and ready to use lightning via your own lightning node!
+Congratulations! BlueWallet is set up and ready to use lightning via your own lightning node - furthermore it will only be able to use your node in the way LNbits allows it.

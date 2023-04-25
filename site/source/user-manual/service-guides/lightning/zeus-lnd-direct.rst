@@ -3,7 +3,7 @@
 Zeus
 ----
 
-Zeus is a powerful mobile wallet that can be connected directly to both LND and Core Lightning. If you'd like to connect via LNbits which allows allocation of funds, please see :ref:`this guide<lnbits>`.
+Zeus is a powerful mobile wallet that can be connected directly to both LND and Core Lightning. If you'd like to connect via LNbits which allows allocation of funds, please see :ref:`this guide<connecting-lnbits>`.
 
 Available For:
 

@@ -119,4 +119,4 @@ Zeus
      :width: 20%
      :alt: zeus-balance
 
-Congratulations! Zeus is set up and ready to use lightning via your own lightning node!
+Congratulations! Zeus is set up and ready to use lightning via your own lightning node - furthermore it will only be able to use your node in the way LNbits allows it.

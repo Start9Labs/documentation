@@ -39,6 +39,7 @@ LNbits allows you to create a wallet that makes use of your node with only an al
 
    .. note:: I have called the wallet "android-zeus-wallet" but it is fine to use other wallets.
 
+Now you can proceed to connect one of the following wallets to LNbits using the guides below:
 
 .. toctree::
   :maxdepth: 1
