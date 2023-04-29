@@ -1,7 +1,7 @@
 .. _lan-ios:
 
 ================================
-Trusting your server's CA on iOS
+Trusting Your Server's CA on iOS
 ================================
 
 This applies to iOS v15 and v16.  For older versions, see the `v14 guide </0.3.1.x/user-manual/connecting/connecting-lan/lan-os/lan-ios>`_.
