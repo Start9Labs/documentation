@@ -79,6 +79,12 @@ Connect Embassy
 
     .. note:: If you are on MacOS Catalina (version 10.15.7), and the backup fails, please `see this Apple support thread <https://discussions.apple.com/thread/253970425>`_.  If the provided solution still doesn't work, SMB file sharing probably will not work for this old Mac.  Consider backing up to a USB thumb drive instead.
 
+    .. note:: If you recently updated to MacOS Ventura (version 13.2), and you cannot get the share to connect:
+
+        #. Turn off file sharing switch in **General > Sharing**
+        #. Restart macOS
+        #. Turn on file sharing switch in **General > Sharing**
+
 #. Click "Save".
 
 That's it!  You can now :ref:`Create<backup-create>` encrypted, private backups of all your Embassy data to your Mac or external drive!!
