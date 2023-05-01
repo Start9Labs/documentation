@@ -24,7 +24,7 @@ You can install embassyOS directly to your hardware, however, for advanced funct
 
 Minimum OS Requirements
 .......................
-The specs below would be acceptable for an server running minimal services with minimal storage needs
+The specs below would be acceptable for a server running minimal services with minimal storage needs
 
 - Single vCPU Core 2Ghz
 - 4GB RAM
