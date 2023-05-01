@@ -20,11 +20,11 @@ You can install embassyOS directly to your hardware, however, for advanced funct
 
 .. _os-reqs:
 
-.. note:: embassyOS is based on Linux, and on its own, is fairly lightweight.  The hardware you require will depend mostly on how you intend to use your Embassy.  If you intend to use a Bitcoin stack, you will want at least 8GB of RAM and 1TB of storage.  If you mostly intend to use your server to store and manage files/passwords, then RAM will be less important and storage will depend on your needs.  Check the current size of your existing storage solution (such as Dropbox or iCloud) to get an idea what you will require.
+.. note:: embassyOS is based on Linux, and on its own, is fairly lightweight.  The hardware you require will depend mostly on how you intend to use your server.  If you intend to use a Bitcoin stack, you will want at least 8GB of RAM and 1TB of storage.  If you mostly intend to use your server to store and manage files/passwords, then RAM will be less important and storage will depend on your needs.  Check the current size of your existing storage solution (such as Dropbox or iCloud) to get an idea what you will require.
 
 Minimum OS Requirements
 .......................
-The specs below would be acceptable for an Embassy running minimal services with minimal storage needs
+The specs below would be acceptable for an server running minimal services with minimal storage needs
 
 - Single vCPU Core 2Ghz
 - 4GB RAM
@@ -40,5 +40,5 @@ If you intend to run Bitcoin or store any meaningful amount of data, you will ne
 - 1TB+ Storage
 
 Flash and Install embassyOS
--------------------------
-After building your hardware, you will need a copy of embassyOS.  Head over to our :ref:`Flashing (x86_64) Guide <flashing-x86>` to complete your Embassy build.
+---------------------------
+After building your hardware, you will need a copy of embassyOS.  Head over to our :ref:`Flashing (x86_64) Guide <flashing-x86>` to complete your Start9 build.
