@@ -41,4 +41,4 @@ If you intend to run Bitcoin or store any meaningful amount of data, you will ne
 
 Flash and Install embassyOS
 ---------------------------
-After building your hardware, you will need a copy of embassyOS.  Head over to our :ref:`Flashing (x86_64) Guide <flashing-x86>` to complete your Start9 build.
+After building your hardware, you will need a copy of embassyOS.  Head over to our :ref:`Flashing (x86_64) Guide <flashing-x86>` to complete your Start9 server build.
