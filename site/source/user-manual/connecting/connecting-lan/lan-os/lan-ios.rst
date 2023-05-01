@@ -1,15 +1,17 @@
 .. _lan-ios:
 
-==========================
-Trusting Embassy CA on iOS
-==========================
+================================
+Trusting Your Server's CA on iOS
+================================
 
 This applies to iOS v15 and v16.  For older versions, see the `v14 guide </0.3.1.x/user-manual/connecting/connecting-lan/lan-os/lan-ios>`_.
 
 
 #. Download the certificate to your Downloads folder
 
-#. Open your Downloads folder and click on the certificate
+   .. note:: If you downloaded the certificate from a browser such as Firefox, you will need to copy the file from that Downloads folder to your iCloud Downloads folder.  Navigate there via `Files > iCloud Drive > Downloads`.  Otherwise, the "Profile Download" dialog will not appear when you click on the file in the next step.
+
+#. Open your iCloud Downloads folder and click on the certificate.  It will display a dialog box that says "Profile Downloaded."  Click `Close`.
 
    .. figure:: /_static/images/ssl/ios/import_cert.png
     :width: 20%
@@ -21,7 +23,7 @@ This applies to iOS v15 and v16.  For older versions, see the `v14 guide </0.3.1
     :width: 20%
     :alt: Profiles
 
-#. Locate the profile and tap on it
+#. Locate the profile under "DOWNLOADED PROFILE" and tap on it
 
    .. figure:: /_static/images/ssl/ios/install_1.png
     :width: 20%
@@ -51,7 +53,7 @@ This applies to iOS v15 and v16.  For older versions, see the `v14 guide </0.3.1
     :width: 20%
     :alt: Profiles
 
-#. Hit *Done*
+#. Tap *Done* near the top right.
 
 #. Next, navigate to *General > About > Certificate Trust Settings*.
 
@@ -59,13 +61,13 @@ This applies to iOS v15 and v16.  For older versions, see the `v14 guide </0.3.1
     :width: 20%
     :alt: Certificate trust settings
 
-#. Under "Enable full trust for root certificates", enable "Embassy Local Root CA".
+#. Under "Enable full trust for root certificates", enable your "adjective-noun Local Root CA".
 
    .. figure:: /_static/images/ssl/ios/trust_2.png
     :width: 20%
     :alt: Enable full trust
 
-#. Hit *Continue*
+#. Tap *Continue*
 
    .. figure:: /_static/images/ssl/ios/trust_3.png
     :width: 20%
