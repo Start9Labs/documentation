@@ -144,7 +144,7 @@ Setup
 .. note:: Your newly generated .onion address is unique for SSH access only and should not be confused with the main .onion address for the server.
 
 Configure local SSH client
-.....
+..........................
 
 #. You'll need to add the following configuration to your SSH config file, which will allow you to use SSH over Tor on any Unix-based system:
 
