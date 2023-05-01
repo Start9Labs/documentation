@@ -73,4 +73,11 @@ Connect Embassy
 .. caution::
     If you use a "PIN" to log in to Windows, keep in mind that your password needs to be the user's full password, NOT the PIN!  Office365 accounts also may **not** work, try a regular user in this case.
 
+.. tip::
+    If you recieve the following error:
+    
+    **Filesystem I/O Error mount error(115): Operation now in progress**
+
+    Click Start > Settings > Network & Internet > Ethernet (or WiFi) and select the "Private" profile to treat your LAN as a trusted network that allows file sharing.
+
 That's it!  You can now :ref:`Create<backup-create>` encrypted, private backups of all your Embassy data to your Windows machine or external drive!!
