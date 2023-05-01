@@ -3,7 +3,7 @@
 ===
 DIY
 ===
-Here you will find guides for building your own Embassy!  Currently, embassyOS supports the Raspberry Pi and on most x86 platforms (desktops, laptops, mini PCs, servers, and virtual machines).
+Here you will find guides for building your own Embassy!  Currently, embassyOS supports the Raspberry Pi and on most x86_64 platforms (desktops, laptops, mini PCs, servers, and virtual machines).
 
 Motivation
 ----------
@@ -31,13 +31,13 @@ There are several reasons you might prefer to build your own Embassy instead of 
   Build an Embassy using a Raspberry Pi
 
 .. topic-box::
-  :title: DIY (x86)
+  :title: DIY (x86_64)
   :link: diy-x86
   :icon: scylla-icon scylla-icon--overview
   :class: large-4
   :anchor: View Guide
 
-  Build an Embassy on an x86 machine
+  Build an Embassy on an x86_64 machine
 
 .. toctree::
   :hidden:

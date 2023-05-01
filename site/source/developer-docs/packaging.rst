@@ -55,7 +55,7 @@ A basic development and testing environment includes:
     
     - Use your own hardware to `DIY <https://start9.com/latest/diy>`_
     - Purchase a device from the `Start9 Store <https://store.start9.com>`_
-    - x86/VM support coming soon
+    - x86_64/VM support coming soon
 
 #. A development machine
     
