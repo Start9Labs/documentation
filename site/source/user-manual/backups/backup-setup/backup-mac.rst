@@ -8,14 +8,14 @@ Mac Network Folder
   :depth: 2 
   :local:
 
-Check out the video below, and follow along with the steps in this guide to setup a Network Folder on your Mac (or attached drive), such that you may create encrypted, private backups of all your Embassy data.
+Check out the video below, and follow along with the steps in this guide to setup a Network Folder on your Mac (or attached drive), such that you may create encrypted, private backups of all your Start9 server's data.
 
    .. youtube:: Uv7ul6ZKW5k
       :width: 100%
 
 Setup Network Folder
 --------------------
-#. Either select or create a folder you would like to use to store your Embassy backups
+#. Either select or create a folder you would like to use to store your Start9 server's backups
 
 #. Go to "System Preferences" and click "Sharing"
 
@@ -44,8 +44,8 @@ Setup Network Folder
 
 You'll need the "Computer Name," and the name of the "Shared Folder" you chose above, as well as your Mac username and password for the following section
 
-Connect Embassy
----------------
+Connect Your Server
+-------------------
 
 #. Go to *System > Create Backup*.
 
@@ -79,6 +79,12 @@ Connect Embassy
 
     .. note:: If you are on MacOS Catalina (version 10.15.7), and the backup fails, please `see this Apple support thread <https://discussions.apple.com/thread/253970425>`_.  If the provided solution still doesn't work, SMB file sharing probably will not work for this old Mac.  Consider backing up to a USB thumb drive instead.
 
+    .. note:: If you recently updated to MacOS Ventura (version 13.2), and you cannot get the share to connect:
+
+        #. Turn off file sharing switch in **General > Sharing**
+        #. Restart macOS
+        #. Turn on file sharing switch in **General > Sharing**
+
 #. Click "Save".
 
-That's it!  You can now :ref:`Create<backup-create>` encrypted, private backups of all your Embassy data to your Mac or external drive!!
+That's it!  You can now :ref:`Create<backup-create>` encrypted, private backups of all your Start9 server's data to your Mac or external drive!!
