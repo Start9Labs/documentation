@@ -10,6 +10,7 @@ Available For:
 - Android
 - iOS
 
+.. note:: Works with both Core Lightning (CLN) and LND! If you'd like to connect Zeus to CLN instead - please use :ref:`this guide<zeus-cln>`.
 
 #. Download the Zeus: Bitcoin and Lightning wallet from your mobile device's application store.
 #. Open your Embassy's web interface and log in
@@ -21,7 +22,7 @@ Available For:
 #. Press the "SCAN LNDCONNECT CONFIG" button
 #. Scan the QR Code displayed on the Embassy's LND Connect REST URL screen
 
-   .. note:: If you have trouble scanning it, bring your phone very close to the QR code until it fills the entire target square on your mobile device's QR code camera.
+   .. tip:: If you are having trouble scanning it, bring your phone very close to the QR code until it fills the entire target square on your mobile device's QR code camera.
 #. Zeus will fill in your node details based on the information in the QR code
 #. Click "SAVE NODE CONFIG"
 

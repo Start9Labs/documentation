@@ -5,7 +5,9 @@ Zeus
 
 .. note:: This is not the same as connecting Zeus directly to your lightning node - using LNbits allows us to allocate a specific amount of funds to Zeus instead of giving it full access to your lightning node. We can also use LNbits to permit Zeus to **just receive** satoshis, or the ability to both **receive and spend** satoshis.
 
-.. note:: This guide assumes you have already setup LNbits as per :ref:`this guide <connecting-lnbits>`.
+.. note:: This guide assumes you have already setup LNbits as per :ref:`this guide <connecting-lnbits>` with **LND** as your underlying node.
+
+.. warning:: This will not work with CLN as your underlying node!
 
 #. Zeus requires that we use the LnbHub extension in order to connect to LNbits.
 

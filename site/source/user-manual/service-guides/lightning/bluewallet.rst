@@ -3,7 +3,9 @@
 BlueWallet
 ----------
 
-.. note:: This guide assumes you have already setup LNbits as per :ref:`this guide <connecting-lnbits>`.
+.. note:: This guide assumes you have already setup LNbits as per :ref:`this guide <connecting-lnbits>` with **LND** as your underlying node.
+
+.. warning:: This will not work with CLN as your underlying node!
 
 #. Bluewallet requires that we use the LnbHub extension in order to connect to LNbits.
 
@@ -92,9 +94,9 @@ BlueWallet
 
     *If you are happy for this wallet to be able to both receive and MAKE payments scan this QR code:*
 
-    .. figure:: /_static/images/services/lnbits/right-qr.png
-     :width: 40%
-      :alt: right-qr
+        .. figure:: /_static/images/services/lnbits/right-qr.png
+            :width: 40%
+            :alt: right-qr
 
 #. You'll see this once the wallet is added:
 

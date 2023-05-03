@@ -10,7 +10,7 @@ Available For:
 - Android
 - iOS
 
-.. note:: Works with both Core Lightning (CLN) and LND!
+.. note:: Works with both Core Lightning (CLN) and LND! If you'd like to connect Zeus to LND instead - please use :ref:`this guide<zeus-lnd>`.
 
 
 #. Download the Zeus: Bitcoin and Lightning wallet from your mobile device's application store.

@@ -34,7 +34,7 @@ If you would like to connect to LND via LND Connect (LNC) you can do so with Alb
 
     connecting-lndc
 
-If you'd like to allocate only a portion of your lightning node's liquidity to a wallet or have a wallet that can receive but not make payments, you can connect to your node via LNbits:
+If you'd like to allocate only a portion of your lightning node's liquidity to a wallet or have a wallet that can receive but not make payments, you can use LNbits:
 
   .. toctree::
     :maxdepth: 2
