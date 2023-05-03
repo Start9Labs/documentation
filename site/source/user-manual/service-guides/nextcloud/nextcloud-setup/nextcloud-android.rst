@@ -10,7 +10,7 @@ Nextcloud - Android
 
 Initial Config
 --------------
-It is advised to setup your Nextcloud devices on LAN for the best experience.  Once set up, Tor can be used for remote syncing, but remember that large files will likely fail or take a very long time, so it is best to use remote sync only for low-bandwidth activity, such as Calendar, Contacts, Tasks, and Notes.  Streaming your music is also possible.  Later in 2023, new connection options will unlock Nextcloud's full feature-set.
+It is advised to setup your Nextcloud devices on LAN (if available) for the best experience.  Once set up, Tor can be used for remote syncing, but remember that large files will likely fail or take a very long time, so it is best to use remote sync only for low-bandwidth activity, such as Calendar, Contacts, Tasks, and Notes.  Streaming your music is also possible.  Later in 2023, new connection options will unlock Nextcloud's full feature-set.
 
 Nextcloud App
 -------------
@@ -66,5 +66,5 @@ In order to sync calendars and contacts with your Android device, follow the ste
      - Password - Your Nextcloud user's password (defaults are found in "Properties" on your Nextcloud service page)
 
      - If given the option, select "Groups are per-contact categories," then tap "Login."  Select the data you want to sync, grant access for contacts, calendars, and optionally tasks if you added that feature in setup.  That's it, you're done!
-
+     
 .. tip:: You may also wish to add the `ICSx5 <https://icsx5.bitfire.at/>`_ app, which allows subscription to remote WebCal or local iCal files (such as public event schedules, iCloud/Google calendars, etc).  It can be found in your favorite app store.
