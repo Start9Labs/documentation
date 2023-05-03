@@ -77,5 +77,4 @@
   support/index
   diy/index
   learn/index
-  contribute/index
   developer-docs/index
