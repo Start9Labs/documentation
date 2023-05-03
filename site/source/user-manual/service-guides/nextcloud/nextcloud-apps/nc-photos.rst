@@ -21,7 +21,7 @@ Les Pas (Android)
 .................
 `Les Pas <https://github.com/scubajeff/lespas>`_ is a great mobile gallery for viewing and organizing your photos, gifs, and videos.
 
-#. First, install Les Pas from your favorite app store (Aurora, F-Droid, or Play Store), or from `the github repository<https://github.com/scubajeff/lespas/releases>`_.
+#. First, install Les Pas from your favorite app store (Aurora, F-Droid, or Play Store), or from `the github repository <https://github.com/scubajeff/lespas/releases>`_.
 
 #. At the welcome screen, you will be asked to either enter your server URL or scan a QR code.  In your Nextcloud instance, click the top right-hand menu -> Personal Settings -> Security and create an app password.  Hit "show QR Code" and then scan it with Les Pas.
 
