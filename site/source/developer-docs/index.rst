@@ -48,6 +48,15 @@ Developer Docs
 
   Guides for implementing advanced service configurations
 
+.. topic-box::
+  :title: Documentation
+  :link: documentation
+  :icon: scylla-icon scylla-icon--docs
+  :class: large-4
+  :anchor: Edit
+
+  Contribute to our documentation.
+
 .. raw:: html
 
   </div></div>
@@ -61,3 +70,4 @@ Developer Docs
   packaging
   specification/index
   advanced/index
+  documentation
