@@ -20,16 +20,89 @@ LAN Setup
 =========
 Make sure you have first set up :ref:`LAN access<lan-android>`.
 
-1. Download the appropriate desktop client from https://nextcloud.com/install/#install-clients
-2. Open the client and click "Log In"
-3. From your Embassy's Nextcloud Service page, go to "Interfaces" and copy the LAN address
-4. Enter your LAN address under "Server Address" and click "Next"
-5. You will be asked to Trust your Embassy's certificate, which is safe to do as you generate and sign this during LAN Setup
-6. Tick the box for "Trust this certificate anyway" and click "Next"
-7. This will launch a page in your web browser, click "Log In" and then "Grant access" to link the desktop client. You can close this browser window afterwards
-8. Next, configure the local directory that you want to sync with Nextcloud. You may use the default or change it, and edit the sync settings to desired. When satisfied, click "Connect"
-9. Files will begin to sync immediately and you will see a green check when this is complete.
-10. That's it! From this desktop client you will recieve notifications, control accounts and syncing, and quickly access your Apps' WebUI pages
+1. Open Nextcloud via your server's Services -> Nextcloud -> Launch UI
+
+2. Log in and select the top right icon -> Personal Settings:
+
+  .. figure:: /_static/images/services/nextcloud/web-step1-personal_settings.png
+    :width: 30%
+    :alt: Nextcloud: > Personal Settings
+
+3. Select the hamburger (3 lines) menu:
+
+  .. figure:: /_static/images/services/nextcloud/web-step2-ps-profile.png
+    :width: 30%
+    :alt: Nextcloud: Personal Settings > Hamburger menu
+
+4. Select Security:
+
+  .. figure:: /_static/images/services/nextcloud/web-step3-security.png
+    :width: 30%
+    :alt: Nextcloud: Personal Settings > Security
+
+5. Under `Devices & sessions`, give this Nextcloud mobile app a session name, such as "Mobile" and click `Create new app password`:
+
+  .. figure:: /_static/images/services/nextcloud/web-step4-new_session.png
+    :width: 30%
+    :alt: Nextcloud: Devices & sessions > Create new app password
+    
+6.  Click `Show QR code for mobile apps`:
+  
+  .. figure:: /_static/images/services/nextcloud/web-step5-show_qr_code.png
+    :width: 30%
+    :alt: Nextcloud Show new session's QR code
+
+7. The new session's QR code will be displayed:
+
+  .. figure:: /_static/images/services/nextcloud/web-step6-qr_code_shown.png
+    :width: 30%
+    :alt: Nextcloud: New session's QR code is shown
+
+8. Download and install the appropriate desktop client for your Android device from https://nextcloud.com/install/#install-clients
+
+9. Open the Nextcloud client on your Android device and click "Log in"
+
+  .. figure:: /_static/images/services/nextcloud/step1-login.png
+    :width: 30%
+    :alt: Nextcloud mobile app Log in
+
+10. Tap the QR code icon:
+
+  .. figure:: /_static/images/services/nextcloud/step2-read_qrcode.png
+    :width: 30%
+    :alt: Nextcloud mobile app QR Code button
+
+11. Scan the QR code presented in Step 7.
+
+.. note::
+
+    Here you may see an error about the Nextcloud app being unable to find the host that was decoded from the QR code:
+
+    .. figure:: /_static/images/services/nextcloud/pitfall1-could_not_connect_to_host-wifi-mdns-orbot.png
+      :width: 30%
+      :alt: Nextcloud mobile app error: Could not find host
+
+    If you see this message, you may be on an Android version that does not support mDNS .local name resolution (it is available on Android 13+ and some builds of Android 12, but not all.  The other possibility is that your WiFi network is not properly "bridged" with the ethernet network that your Start9 server is on, or you lack WiFi connectivity to your network in general.
+
+    Alternatively, you may see a warning about an untrusted certificate:
+  
+    .. figure:: /_static/images/services/nextcloud/pitfall2-untrusted_cert.png
+      :width: 30%
+      :alt: Nextcloud mobile app QR Code button
+    
+    In this case, make sure you have :ref:`added your server's CA certificate to the Android trust store<lan-android>` as noted at the top of the `LAN Setup` section of this guide, close the Nextcloud mobile app and try again.  Otherwise, proceed to the next step.
+
+12. Android may ask you about Storage permissions.  Grant "Full access":
+
+  .. figure:: /_static/images/services/nextcloud/step3-grant_file_access.png
+    :width: 30%
+    :alt: Nextcloud Storage permissions
+
+13. Next, configure the local directory that you want to sync with Nextcloud. You may use the default or change it, and edit the sync settings to desired. When satisfied, click "Connect"
+
+14. Files will begin to sync immediately and you will see a green check when this is complete.
+
+15. That's it! From this desktop client you will recieve notifications, control accounts and syncing, and quickly access your Apps' WebUI pages
 
 Tor Setup
 =========
