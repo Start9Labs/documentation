@@ -4,9 +4,13 @@
 Alby
 ====
 
-Alby is a browser extension that can be connected to your lightning node a number of ways. This guide will go over direct connections between Alby and LND using LNC. If you'd like to connect via LNbits which allows allocation of funds, please see :ref:`this guide<connecting-lnbits>`. If you'd like to connect using LND's REST API see :ref:`here<alby-lnd>`.
+Alby is a browser extension that can be connected to your lightning node a number of ways. 
 
-.. note:: Requires LND and the `Lightning Terminal <https://marketplace.start9.com/marketplace/lightning-terminal>`_ service.
+This guide will go over **direct connections** between **Alby and LND** using **LNC**. 
+
+.. tip:: If you'd like to connect using LND's REST API see :ref:`here<alby-lnd>`. If you'd like to connect via LNbits which allows allocation of funds, please see :ref:`this guide<connecting-lnbits>`. 
+
+.. note:: Requires the `Lightning Terminal <https://marketplace.start9.com/marketplace/lightning-terminal>`_ service and only possible with LND nodes.
 
 Available For:
 

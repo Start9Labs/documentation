@@ -4,11 +4,13 @@
 Connect to LND via Lightning Node Connect (LNC)
 ===============================================
 
-Lightning Node Connect (LNC) provides a very simple way to connect to an LND node that does not require the Tor network. 
+Lightning Node Connect (LNC) provides a very simple way to connect to an LND node that **does not require the Tor network**. 
 
-.. note:: This is not the same as LND Connect for which guides can be found :ref:`here<connecting-lnd>`. Lightning Node Connect (LNC) is a different protocol.
+This is not the same as **LND Connect** for which guides can be found :ref:`here<connecting-lnd>`.
 
-The following two guides go over how to connect wallets via LNC.
+.. note:: This requires installing the `Lightning Terminal <https://marketplace.start9.com/marketplace/lightning-terminal>`_ service on your Start9 server.
+
+The following two guides go over how to connect wallets to LND via LNC.
 
 .. toctree::
     :maxdepth: 1
