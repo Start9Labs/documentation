@@ -17,36 +17,43 @@ _______________________________________________
 
    .. figure:: /_static/images/lightning/bitcoin-synced.png
     :width: 60%
+    :alt: bitcoin-synced
 
 #. Install a lightning node. There are two options we offer on the `Start9 marketplace <https://marketplace.start9.com>`_ - LND and Core Lightning. In this guide we're going to use Core Lightning (CLN). Though you can use LND and the process will be almost exactly the same.
 
    .. figure:: /_static/images/lightning/two-impls-marketplace.png
     :width: 60%
+    :alt: two-impls-marketplace
 
 #. Install one of the above lightning implementations - as mentioned in this guide we'll use CLN.
 
    .. figure:: /_static/images/lightning/cln-installing.png
     :width: 60%
+    :alt: cln-installing
 
 #. You'll see CLN say **Needs Config**. Click **Configure**:
 
    .. figure:: /_static/images/lightning/cln-needs-config.png
     :width: 60%
+    :alt: cln-needs-config
 
 #. You can leave the settings as their default values and hit **SAVE**.
 
    .. figure:: /_static/images/lightning/cln-save-config.png
     :width: 60%
+    :alt: cln-save-config
 
 #. Now hit **Start** and wait for CLN to sync up to the network. This may take a few hours.
 
    .. figure:: /_static/images/lightning/cln-syncing.png
     :width: 60%
+    :alt: cln-syncing
 
 #. Once the **Synced** health check turns green (as below) you can proceed to the next step.
 
    .. figure:: /_static/images/lightning/cln-green.png
     :width: 60%
+    :alt: cln-green
 
 #. To interact with your node we will use Ride The Lightning (RTL) - this is a service that provides a graphical user interface for our lightning node.
 
@@ -54,63 +61,75 @@ _______________________________________________
 
       .. figure:: /_static/images/lightning/rtl-in-marketplace1.png
         :width: 60%
+        :alt: rtl-marketplace
 
 #. Install it and click on **Configure** just like with CLN.
 
    .. figure:: /_static/images/lightning/rtl-needs-config.png
     :width: 60%
+    :alt: rtl-needs-config
 
 #. It will default to LND. In this case we are using a CLN node instead, so we will change the default setting as shown:
 
    .. figure:: /_static/images/lightning/rtl-config-lnd.png
     :width: 60%
+    :alt: rtl-config-lnd
 
-   Change to Core Lightning (CLN) and hit OK
+   Change to Core Lightning (CLN) and hit OK:
 
    .. figure:: /_static/images/lightning/rtl-change-to-cln.png
     :width: 60%
+    :alt: rtl-change-to-cln
 
-   Hit **Save**
+   Hit **Save**:
 
    .. figure:: /_static/images/lightning/rtl-config-save.png
     :width: 60%
+    :alt: rtl-config-save
 
-#. Now hit **Start**
+#. Now hit **Start**:
 
    .. figure:: /_static/images/lightning/rtl-start.png
     :width: 60%
+    :alt: rtl-start
 
-#. With RTL started, click **Properties**
+#. With RTL started, click **Properties**:
 
    .. figure:: /_static/images/lightning/rtl-click-properties.png
     :width: 60%
+    :alt: rtl-click-properties
 
-#. Copy the automatically generated password
+#. Copy the automatically generated password:
 
    .. figure:: /_static/images/lightning/rtl-copy-pass.png
     :width: 60%
+    :alt: rtl-copy-pass
 
-#. Head back to the RTL service and click **Launch UI**
+#. Head back to the RTL service and click **Launch UI**:
 
    .. figure:: /_static/images/lightning/rtl-launch-ui.png
     :width: 60%
+    :alt: rtl-launch-ui
 
    Enter the copied password and log in:
 
    .. figure:: /_static/images/lightning/rtl-enter-pass.png
     :width: 60%
+    :alt: rtl-enter-pass
 
    .. note:: You can add the password to your password manager for convenience.
 
-#. Once in RTL, click **On-chain** then click **Generate Address**
+#. Once in RTL, click **On-chain** then click **Generate Address**:
 
    .. figure:: /_static/images/lightning/rtl-generate-address.png
     :width: 60%
+    :alt: rtl-generate-address
 
 #. Send bitcoin to the generated address to add funds to your lightning wallet:
 
    .. figure:: /_static/images/lightning/rtl-address-generated.png
     :width: 60%
+    :alt: rtl-address-generated
 
    .. note:: Please do not send money to the address pictured above as we will not receive it. If you are intent on sending us money please `head here <https://donate.start9.com>`_
 
@@ -118,21 +137,25 @@ _______________________________________________
 
    .. figure:: /_static/images/lightning/rtl-on-chain.png
     :width: 60%
+    :alt: rtl-on-chain
 
 #. Now we must add a peer with which to make channels. In this example we will be opening a channel with Start9 so we will add Start9's node as a peer. Click **Peers/Channels**:
 
    .. figure:: /_static/images/lightning/rtl-peers-channels.png
     :width: 60%
+    :alt: rtl-peers-channels
 
 #. Click **Peers** then **Add Peer**:
 
    .. figure:: /_static/images/lightning/rtl-peers-add-peer.png
     :width: 60%
+    :alt: rtl-peers-add-peer
 
 #. Enter the details of the lightning node you'd like to open a channel with. Start9's node can be found `here <https://1ml.com/node/025d28dc4c4f5ce4194c31c3109129cd741fafc1ff2f6ea53f97de2f58877b2295>`_ and is what we'll use in this example. You can use another node if you like - ideally one that is well connected. Once chosen and added as below, click **Add Peer**:
 
    .. figure:: /_static/images/lightning/rtl-start9-node-info.png
     :width: 60%
+    :alt: rtl-start9-node-info
 
    .. note:: The syntax is as follows **NodePublicKey@ipaddress:port** - If it's a Tor node it will be **PublicKey.onion:port** instead.
 
@@ -140,6 +163,7 @@ _______________________________________________
 
    .. figure:: /_static/images/lightning/rtl-open-channel.png
     :width: 60%
+    :alt: rtl-open-channel
 
    .. note:: Here we are creating a very small channel with a capacity for payments of only a few dollars. You will likely want your channel to be larger than this so that it's actually usable for reasonably sized payments. Channels this small may well get closed by the remote peer.
 
@@ -149,16 +173,19 @@ _______________________________________________
 
    .. figure:: /_static/images/lightning/rtl-pending-inactive.png
     :width: 60%
+    :alt: rtl-pending-inactive
 
 #. Once the transaction opening the channel gets added to a block your channel will soon appear here under **Open**:
 
    .. figure:: /_static/images/lightning/rtl-open-channels.png
     :width: 60%
+    :alt: rtl-open-channels
 
 #. To make a payment head to the **Transactions** tab and press **Send Payment**:
 
    .. figure:: /_static/images/lightning/rtl-transactions-tab.png
      :width: 60%
+     :alt: rtl-transactions-tab
 
 #. That's it! You now have a lightning node running with a channel open ready to send payments on the lightning network!
 
