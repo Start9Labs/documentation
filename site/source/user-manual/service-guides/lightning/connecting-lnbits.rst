@@ -43,6 +43,8 @@ Setting up LNbits
       :width: 60%
       :alt: superuser-first-open
 
+   .. note:: This isn't a concern on StartOS as all wallets created will have the address they generated stored within **properties** within the LNbits serivce.
+
 #. Now a default wallet will have already been generated - highlighted on the top left. We'll rename it by clicking **Rename wallet** entering **android-zeus-wallet** then clicking **UPDATE NAME**:
 
    .. figure:: /_static/images/services/lnbits/rename-default-wallet.png

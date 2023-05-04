@@ -11,9 +11,9 @@ The following guide will get you up and running with a lightning node and walk y
 
   lightning-first-channel
 
-Now that you're up and running, it's time to connect a wallets to your node so that you can operate your node and use lightning to make and receive payments from anywhere!
+Now that you're up and running, it's time to connect an interface so that you can use your node to make and receive payments from anywhere!
 
-If you're using **Core Lightning (CLN)**, you can select one of the following options:
+If you're using **Core Lightning (CLN)** and would like a direct connection you can select one of the following options:
 
   .. toctree::
     :maxdepth: 2
@@ -27,7 +27,7 @@ If you're using **LND**, you can select one of the following options:
 
     connecting-lnd
 
-If you would like to connect to LND via LND Connect **(LNC)** you can do so with Alby and Zeus via the Lightning Terminal service:
+If you would like to connect to LND via LND Connect **(LNC)** in order to avoid using Tor, you can do so with Alby and Zeus via the Lightning Terminal service:
 
   .. toctree::
     :maxdepth: 2
