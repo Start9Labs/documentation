@@ -29,7 +29,7 @@ Setting up LNbits
       :width: 40%
       :alt: lnbits-lnd-cln-installed
 
-   .. tip:: Remember - if you intend to connect BlueWallet or Zeus, that will only be possible with LND.
+   .. tip:: Remember - if you intend to connect BlueWallet or Zeus, that will only be possible with LND. Alby can work with both.
 
 #. Head to LNbits on your server, click on **Properties** and copy the address under **(Tor) Superuser Account**:
 
