@@ -101,7 +101,7 @@ Zeus
 
     .. figure:: /_static/images/services/lnbits/1k-sats.png
       :width: 60%
-        :alt: 1k-sats
+      :alt: 1k-sats
 
     Alternatively you can simply hit **Request** in Zeus and receive by generating a standard lightning invoice:
 
