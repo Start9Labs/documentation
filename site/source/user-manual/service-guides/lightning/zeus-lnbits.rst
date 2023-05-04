@@ -7,11 +7,11 @@ Zeus
 
 .. note:: This guide assumes you have already setup LNbits as per :ref:`this guide <connecting-lnbits>` with **LND** as your underlying node.
 
-.. warning:: This will not work with CLN as your underlying node!
+.. warning:: **This will not work with CLN as your underlying node!**
 
 #. Zeus requires that we use the LnbHub extension in order to connect to LNbits.
 
-#. TO do this, click **Manage Extensions**:
+#. To do this, click **Manage Extensions**:
 
    .. figure:: /_static/images/services/lnbits/manage-extensions.png
       :width: 50%

@@ -5,7 +5,7 @@ BlueWallet
 
 .. note:: This guide assumes you have already setup LNbits as per :ref:`this guide <connecting-lnbits>` with **LND** as your underlying node.
 
-.. warning:: This will not work with CLN as your underlying node!
+.. warning:: **This will not work with CLN as your underlying node!**
 
 #. Bluewallet requires that we use the LnbHub extension in order to connect to LNbits.
 
