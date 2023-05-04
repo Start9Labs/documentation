@@ -38,7 +38,7 @@ There are 2 versions of this app available on Android, and one on iOS.  Check th
 
     - Server URL - get this from your server -> Nextcloud -> Interfaces (LAN is recommended)
     - Username - get this from your server -> Nextcloud -> Properties (embassy is default)
-    - Password - get this from your server -> Nextcloud -> Properties
+    - Password - get this from your server's Services -> Nextcloud -> Properties
 
     .. note:: You may need to enable "self-signed certificates" for LAN.  This is safe to do as you are the signer of the cert and owner of all involved hardware.
 
