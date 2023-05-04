@@ -39,7 +39,7 @@ If you'd like to allocate only a portion of your lightning node's liquidity to a
   .. note:: LNbits allows you to create a wallet that makes use of your node with only an alloted amount of sats and it works with both **Core Lightning** and **LND**
 
   .. toctree::
-    :maxdepth: 2
+    :maxdepth: 3
 
     connecting-lnbits
 
