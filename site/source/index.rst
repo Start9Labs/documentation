@@ -56,15 +56,6 @@
   Read our FAQ, watch videos, and understand platform concepts
 
 .. topic-box::
-  :title: Contribute
-  :link: contribute
-  :icon: scylla-icon scylla-icon--networking
-  :class: large-4
-  :anchor: Join us
-
-  Use your skills to add to the Start9 ecosystem
-
-.. topic-box::
   :title: Developer Docs
   :link: developer-docs
   :icon: scylla-icon scylla-icon--open-source
@@ -86,5 +77,4 @@
   support/index
   diy/index
   learn/index
-  contribute/index
   developer-docs/index

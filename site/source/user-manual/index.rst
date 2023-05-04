@@ -23,6 +23,6 @@ Welcome to the embassyOS user manual. Here you will discover all that your Embas
   sessions
   wifi
   ssh
-  alt-marketplaces
+  alt-registries
   device-guides/index
   upgrade-hardware/index
