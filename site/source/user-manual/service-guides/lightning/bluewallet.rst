@@ -128,8 +128,8 @@ BlueWallet
 #. You can also receive funds the normal way by hitting "Receive" within BlueWallet.
 
     .. figure:: /_static/images/services/lnbits/blue-wallet-receive.jpg
-       :width: 25%
-      :alt: blue-wallet-receive
+        :width: 25%
+        :alt: blue-wallet-receive
 
     .. note:: Funds received this way must be sent from another lightning node, not the LND node underneath LNbits. A lightning payment that originates and terminates at the same node is technically a rebalance, not a normal payment.
 
