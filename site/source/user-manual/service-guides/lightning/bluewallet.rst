@@ -101,29 +101,30 @@ BlueWallet
 #. You'll see this once the wallet is added:
 
     .. figure:: /_static/images/services/lnbits/bluewallet-wallet-added.jpg
-     :width: 30%
+        :width: 30%
+        :alt: bluewallet-with-funds
 
 #. You can now allocate sats to this wallet within LNbits by clicking the **+** icon here:
 
     .. figure:: /_static/images/services/lnbits/plus-icon.png
-     :width: 60%
+        :width: 60%
         :alt: plus-icon
 
     Let's add 1000 satoshis:
 
     .. figure:: /_static/images/services/lnbits/add-1000-sats.png
-     :width: 60%
-     :alt: add-1000-sats
+        :width: 60%
+        :alt: add-1000-sats
 
     .. figure:: /_static/images/services/lnbits/1k-sats.png
-       :width: 60%
-       :alt: 1k-sats
+        :width: 60%
+        :alt: 1k-sats
 
 #. BlueWallet should now show a balance:
 
     .. figure:: /_static/images/services/lnbits/blue-wallet-balance.jpg
-      :width: 25%
-      :alt: blue-wallet-balance
+        :width: 25%
+        :alt: blue-wallet-balance
 
 #. You can also receive funds the normal way by hitting "Receive" within BlueWallet.
 
