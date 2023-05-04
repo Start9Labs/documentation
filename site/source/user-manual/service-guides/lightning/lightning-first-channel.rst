@@ -28,22 +28,22 @@ _______________________________________________
    .. figure:: /_static/images/lightning/cln-installing.png
     :width: 60%
 
-#. You'll see CLN say **"Needs Config"**. Click "**Configure**":
+#. You'll see CLN say **Needs Config**. Click **Configure**:
 
    .. figure:: /_static/images/lightning/cln-needs-config.png
     :width: 60%
 
-#. You can leave the settings as their default values and hit **"save"**.
+#. You can leave the settings as their default values and hit **SAVE**.
 
    .. figure:: /_static/images/lightning/cln-save-config.png
     :width: 60%
 
-#. Now hit **"Start"** and wait for CLN to sync up to the network. This may take a few hours.
+#. Now hit **Start** and wait for CLN to sync up to the network. This may take a few hours.
 
    .. figure:: /_static/images/lightning/cln-syncing.png
     :width: 60%
 
-#. Once the **"Synced"** health check turns green (as below) you can proceed to the next step.
+#. Once the **Synced** health check turns green (as below) you can proceed to the next step.
 
    .. figure:: /_static/images/lightning/cln-green.png
     :width: 60%
@@ -55,7 +55,7 @@ _______________________________________________
       .. figure:: /_static/images/lightning/rtl-in-marketplace1.png
         :width: 60%
 
-#. Install it and click on **"Configure"** just like with CLN.
+#. Install it and click on **Configure** just like with CLN.
 
    .. figure:: /_static/images/lightning/rtl-needs-config.png
     :width: 60%
@@ -70,17 +70,17 @@ _______________________________________________
    .. figure:: /_static/images/lightning/rtl-change-to-cln.png
     :width: 60%
 
-   Hit **"Save"**
+   Hit **Save**
 
    .. figure:: /_static/images/lightning/rtl-config-save.png
     :width: 60%
 
-#. Now hit **"Start"**
+#. Now hit **Start**
 
    .. figure:: /_static/images/lightning/rtl-start.png
     :width: 60%
 
-#. With RTL started, click **"Properties"**
+#. With RTL started, click **Properties**
 
    .. figure:: /_static/images/lightning/rtl-click-properties.png
     :width: 60%
@@ -90,7 +90,7 @@ _______________________________________________
    .. figure:: /_static/images/lightning/rtl-copy-pass.png
     :width: 60%
 
-#. Head back to the RTL service and click **"Launch UI"**
+#. Head back to the RTL service and click **Launch UI**
 
    .. figure:: /_static/images/lightning/rtl-launch-ui.png
     :width: 60%
@@ -102,7 +102,7 @@ _______________________________________________
 
    .. note:: You can add the password to your password manager for convenience.
 
-#. Once in RTL, click **"On-chain"** then click **"Generate Address"**
+#. Once in RTL, click **On-chain** then click **Generate Address**
 
    .. figure:: /_static/images/lightning/rtl-generate-address.png
     :width: 60%
@@ -119,17 +119,17 @@ _______________________________________________
    .. figure:: /_static/images/lightning/rtl-on-chain.png
     :width: 60%
 
-#. Now we must add a peer with which to make channels. In this example we will be opening a channel with Start9 so we will add Start9's node as a peer. Click **"Peers/Channels"**:
+#. Now we must add a peer with which to make channels. In this example we will be opening a channel with Start9 so we will add Start9's node as a peer. Click **Peers/Channels**:
 
    .. figure:: /_static/images/lightning/rtl-peers-channels.png
     :width: 60%
 
-#. Click **"Peers"** then **"Add Peer"**:
+#. Click **Peers** then **Add Peer**:
 
    .. figure:: /_static/images/lightning/rtl-peers-add-peer.png
     :width: 60%
 
-#. Enter the details of the lightning node you'd like to open a channel with. Start9's node can be found `here <https://1ml.com/node/025d28dc4c4f5ce4194c31c3109129cd741fafc1ff2f6ea53f97de2f58877b2295>`_ and is what we'll use in this example. You can use another node if you like - ideally one that is well connected. Once chosen and added as below, click **"Add Peer"**:
+#. Enter the details of the lightning node you'd like to open a channel with. Start9's node can be found `here <https://1ml.com/node/025d28dc4c4f5ce4194c31c3109129cd741fafc1ff2f6ea53f97de2f58877b2295>`_ and is what we'll use in this example. You can use another node if you like - ideally one that is well connected. Once chosen and added as below, click **Add Peer**:
 
    .. figure:: /_static/images/lightning/rtl-start9-node-info.png
     :width: 60%
@@ -145,17 +145,17 @@ _______________________________________________
 
    .. note:: Using a private channel is what we advise as a default. You may wish for the channel to be public if you intend on becoming a routing node or for other reasons.
 
-#. You will now see your channel in **"Channels"** -> **"Pending/Inactive"**:
+#. You will now see your channel in **Channels** -> **Pending/Inactive**:
 
    .. figure:: /_static/images/lightning/rtl-pending-inactive.png
     :width: 60%
 
-#. Once the transaction opening the channel gets added to a block your channel will soon appear here under **"Open"**:
+#. Once the transaction opening the channel gets added to a block your channel will soon appear here under **Open**:
 
    .. figure:: /_static/images/lightning/rtl-open-channels.png
     :width: 60%
 
-#. To make a payment head to the **"Transactions"** tab and press **"Send Payment"**:
+#. To make a payment head to the **Transactions** tab and press **Send Payment**:
 
    .. figure:: /_static/images/lightning/rtl-transactions-tab.png
      :width: 60%
