@@ -10,8 +10,6 @@ Opening Your First Channel
 
 Here we'll show you how to install a lightning node and how to open a channel with Start9!
 
-Further below you can find instructions on how to use other additional lightning software either on or external to your Embassy.
-
 Running a Node and Making a Channel with Start9
 _______________________________________________
 
@@ -165,3 +163,5 @@ _______________________________________________
 #. That's it! You now have a lightning node running with a channel open ready to send payments on the lightning network!
 
 .. note:: You will not be able to receive payments until you have inbound liquidity in your channel. After completing the above process you will only have outbound liquidity. Inbound liquidity can be created by making payments, having someone open a channel to you or via more sophisticated channel creation.
+
+If you want to connect other applications or wallets to your node, please see the guides :ref:`here<lightning-service>`.
