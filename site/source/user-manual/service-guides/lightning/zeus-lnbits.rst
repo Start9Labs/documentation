@@ -73,7 +73,7 @@ Zeus
         :width: 40%
         :alt: right-qr
 
-#. Once scanned, name the wallet if you wish then hit **SAVE NODE CONFIG**.
+#. Once scanned, name the wallet if you wish, then hit **SAVE NODE CONFIG**.
 
     .. figure:: /_static/images/services/lnbits/save-node-config.jpg
       :width: 25%
@@ -121,4 +121,4 @@ Zeus
      :width: 20%
      :alt: zeus-balance
 
-Congratulations! Zeus is set up and ready to use lightning via your own lightning node - furthermore it will only be able to use your node in the way LNbits allows it.
+Congratulations! Zeus is set up and ready to use lightning via your own lightning node - furthermore it will only be able to use your node in the way you allow it, via LNbits.

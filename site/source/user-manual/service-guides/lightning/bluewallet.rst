@@ -72,7 +72,7 @@ BlueWallet
     .. figure:: /_static/images/services/lnbits//bluewallet-tor-done.jpg
         :width: 20%
 
-#. Head back to the main screen and click the **+** sign:
+#. Head back to the main screen and click the **"+"** sign:
 
     .. figure:: /_static/images/services/lnbits/bluewallet-add-wallet.jpg
         :width: 20%
@@ -104,7 +104,7 @@ BlueWallet
         :width: 30%
         :alt: bluewallet-with-funds
 
-#. You can now allocate sats to this wallet within LNbits by clicking the **+** icon here:
+#. You can now allocate sats to this wallet within LNbits by clicking the **"+"** icon here:
 
     .. figure:: /_static/images/services/lnbits/plus-icon.png
         :width: 60%
@@ -134,4 +134,4 @@ BlueWallet
 
     .. note:: Funds received this way must be sent from another lightning node, not the LND node underneath LNbits. A lightning payment that originates and terminates at the same node is technically a rebalance, not a normal payment.
 
-Congratulations! BlueWallet is set up and ready to use lightning via your own lightning node - furthermore it will only be able to use your node in the way LNbits allows it.
+Congratulations! BlueWallet is set up and ready to use lightning via your own lightning node - furthermore it will only be able to use your node in the way you allow it, via LNbits.

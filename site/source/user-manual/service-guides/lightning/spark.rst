@@ -13,7 +13,9 @@ Available For:
 
 .. warning:: Please be careful - there are multiple fake "Spark Wallets" out there. The above links have been verified and can be trusted.
 
-To use a Spark, you simply install it as a service on your Start9 Server. You can then use it to operate your CLN node by clicking **Launch UI** within the service:
+To use Spark, you simply install it as a service on your Start9 Server. You can then use it to operate your CLN node by clicking **Launch UI** within the service:
+
+    .. note:: This will act as a server as well, and is required if you want to use the mobile app.
 
 .. figure:: /_static/images/lightning/spark-launch-ui.png
     :width: 45%

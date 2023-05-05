@@ -34,9 +34,7 @@ If you would like to connect to LND via LND Connect **(LNC)** in order to avoid 
 
     connecting-lndc
 
-If you'd like to allocate only a portion of your lightning node's liquidity to a wallet or have a wallet that can receive but not make payments, you can use **LNbits**:
-
-  .. note:: LNbits allows you to create a wallet that makes use of your node with only an alloted amount of sats and it works with both **Core Lightning** and **LND**
+If you'd like to allocate only a portion of your lightning node's liquidity to a wallet or have a wallet that can receive but not make payments, you can use **LNbits** - LNbits allows you to create a wallet that makes use of your node with only an alloted amount of sats and it works with both **Core Lightning** and **LND**
 
   .. toctree::
     :maxdepth: 3

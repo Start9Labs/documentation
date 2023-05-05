@@ -14,7 +14,7 @@ LNbits allows you to create a wallet that makes use of your node with only an al
 What lightning node should I use?
 ---------------------------------
 
-This will work for both **Core Lightning (CLN)** and **LND** *but* if you want to connect mobile wallets :ref:`Zeus<zeus-lnbits>` or :ref:`BlueWallet<blue-wallet>` to LNbits then **this will only work with LND** as the underlying node. This is because the LNDhub plugin will be required. 
+This will work for both **Core Lightning (CLN)** and **LND** *but* if you want to connect :ref:`Zeus<zeus-lnbits>` or :ref:`BlueWallet<blue-wallet>` to LNbits then **this will only work with LND** as the underlying node. This is because the LNDhub plugin will be required. 
 
 If you are looking to connect the `Alby <https://github.com/getAlby/lightning-browser-extension#installation>`_ browser extension to your LNbits wallet, that will work with **both CLN** *and* **LND**.
 
@@ -43,7 +43,7 @@ Setting up LNbits
       :width: 60%
       :alt: superuser-first-open
 
-   .. note:: This isn't a concern on StartOS as all wallets created will have the address they generated stored within **properties** within the LNbits serivce.
+   .. note:: This isn't a concern on StartOS as all wallets created will have the address they generated stored within **Properties** within the LNbits serivce.
 
 #. Now a default wallet will have already been generated - highlighted on the top left. We'll rename it by clicking **Rename wallet** entering **android-zeus-wallet** then clicking **UPDATE NAME**:
 
