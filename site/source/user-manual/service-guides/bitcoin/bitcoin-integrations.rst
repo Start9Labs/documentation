@@ -29,7 +29,7 @@ Blockstream Green
  Follow the `guide <https://github.com/Start9Labs/electrs-wrapper/blob/master/docs/integrations/blockstreamgreen/guide.md>`__.
 
 
-.. _blue-wallet:
+.. _blue-wallet-bitcoin:
 
 BlueWallet
 ----------
