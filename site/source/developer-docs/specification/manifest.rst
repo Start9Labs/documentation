@@ -293,7 +293,7 @@ Examples
 
 - `Hello World <https://github.com/Start9Labs/hello-world-wrapper/blob/master/manifest.yaml>`__
 - `Filebrowser <https://github.com/Start9Labs/filebrowser-wrapper/blob/master/manifest.yaml>`__
-- `Embassy-pages <https://github.com/Start9Labs/embassy-pages-wrapper/blob/master/manifest.toml>`__
-- `Photoview <https://github.com/Start9Labs/embassyOS-photoview-wrapper/blob/master/manifest.yaml>`__
+- `Start9-pages <https://github.com/Start9Labs/start9-pages-wrapper/blob/master/manifest.toml>`__
+- `Photoview <https://github.com/Start9Labs/photoview-wrapper/blob/master/manifest.yaml>`__
 - `BTCPay Server <https://github.com/Start9Labs/btcpayserver-wrapper/blob/master/manifest.yaml>`__
 - `Synapse <https://github.com/Start9Labs/synapse-wrapper/blob/master/manifest.yaml>`__
