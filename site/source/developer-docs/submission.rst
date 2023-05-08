@@ -23,7 +23,7 @@ Community Submission Process
 	* Health Checks: if the service offers Health Checks, they must display and run without error
 	* Interfaces: the service must offer at least one interface, otherwise there is no way to use it
 	* Logs: the logs page must display without error
-	* Compatibility: the service must run smoothly alongside the entire set of services on the Start9 Registry on a low resource device: think Raspberry PI (8GB) or an equivalent x86 machine
+	* Compatibility: the service must run smoothly alongside the entire set of services on the Start9 Registry on a low resource device: think Raspberry PI (8GB) or an equivalent x86_64 machine
 	* Backup/Restore: the service must successfully backup and restore
 
 Upon satisfying all the above criteria, Start9 will publish the s9pk to the Community Beta Registry and send you an email to confirm acceptance. Except in emergency situations, we highly recommend that you leave your service on Beta for a couple of days, such that it can be tested by your own testers plus anyone else who enjoys testing new releases. This will maximize the probability that any bugs will be caught before shipping to production.

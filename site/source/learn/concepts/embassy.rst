@@ -27,7 +27,7 @@ embassyOS
 ---------
 embassyOS (eOS) is a Linux-based operating system custom built for self-hosting open source software.  eOS has a range of features that allow anyone to run their own server software without needing all of the traditionally required systems administration skills.  Features such as advanced dependency management, sensible default configuration with potential for customization, and a sleek GUI make for a smooth user experience with minimal reliance on the developers for people with all levels of technical expertise.
 
-Currently, 2 builds of eOS exist, one for the Raspberry Pi (Embassy One) and one for x86 (Embassy Pro). We currently only support the Raspberry Pi and Librem Mini hardware platforms, however with some minor tweaking, our builds should work on many other ARM and x86 devices.  We hope to officially support more platforms soon, and we highly encourage hacking and community builds!  Drop in our :ref:`community channels<contact>` to learn more and collaborate!!
+Currently, 2 builds of eOS exist, one for the Raspberry Pi (Embassy One) and one for x86_64 (Embassy Pro). We currently only support the Raspberry Pi and Librem Mini hardware platforms, however with some minor tweaking, our builds should work on many other ARM and x86_64 devices.  We hope to officially support more platforms soon, and we highly encourage hacking and community builds!  Drop in our :ref:`community channels<contact>` to learn more and collaborate!!
 
 .. _sounds:
 
