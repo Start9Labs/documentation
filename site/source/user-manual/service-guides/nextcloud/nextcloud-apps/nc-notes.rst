@@ -34,7 +34,7 @@ Nextcloud Notes (Android)
 .........................
 #. Download the Nextcloud Notes app from your favorite app store (Aurora, F-Droid, or Play Store).
 
-#. On the opening screen, select your existing Nextcloud account.  If one does not exist, make sure to start with your :ref:`client setup<nextcloud-setup>` or you can hit "Add Account," then create an app passcode QR under Nextcloud's main top-right menu -> Personal Settings -> Security and scan it to grant access.
+#. On the opening screen, select your existing Nextcloud account.  If one does not exist, make sure to start with your :ref:`client setup<nextcloud-setup>` or you can hit "Add Account," then create an app passcode QR under Nextcloud's main top-right menu -> Personal Settings -> Hamburger (3 lines) Menu > Security > Devices & Sessions > _Create new app password_ and scan it to grant access.
 
 #.  You existing notes will now sync, or you can create your first note to test!
 
