@@ -124,4 +124,4 @@ I want to help, but I'm not a developer.  Are there any ways for non-coders to c
 3. Make tutorial videos
 4. Write instruction manuals or commit to the docs
 
-Check out the :ref:`Contribute<contribute>` section of this site for more details.
+Check out the `Contribute <https://start9.com/contribute>` page for more details.
