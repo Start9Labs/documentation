@@ -9,7 +9,14 @@ This applies to iOS v15 and v16.  For older versions, see the `v14 guide </0.3.1
 
 #. Download the certificate to your Downloads folder
 
-   .. note:: If you downloaded the certificate from a browser such as Firefox, you will need to copy the file from that Downloads folder to your iCloud Downloads folder.  Navigate there via `Files > iCloud Drive > Downloads`.  Otherwise, the "Profile Download" dialog will not appear when you click on the file in the next step.
+   .. note::
+      In order to do this, open Safari and visit your Start9 server's .local URL while connected to WiFi, but make sure it is prefixed with `http://` and not `https://`.
+
+      Log in using your password, then click the hamburger (3 lines) menu at the top right, select System > LAN > Download Certificate.  It may say `This website is trying to download a configuration profile.  Do you want to allow this?` Click `Allow`.
+
+      Once this is done, you can skip to step 3, below.
+      
+      If you downloaded the certificate from a browser such as Firefox, you will need to copy the file from that Downloads folder to your iCloud Downloads folder.  Navigate there via `Files > iCloud Drive > Downloads`.  Otherwise, the "Profile Download" dialog will not appear when you click on the file in the next step.
 
 #. Open your iCloud Downloads folder and click on the certificate.  It will display a dialog box that says "Profile Downloaded."  Click `Close`.
 
