@@ -3,8 +3,7 @@
 =============
 Initial Setup
 =============
-
-Check out the video below for a guide on setting up your Embassy!
+Check out the video below for a guide on setting up your Start9 server!
 
     .. youtube:: HI9WDq0tWm4
       :width: 60%
@@ -17,14 +16,103 @@ Check out the video below for a guide on setting up your Embassy!
   :depth: 2
   :local:
 
-Powering On
------------
+Power On
+--------
+#. Connect your server to power and Ethernet.
+
+    .. caution:: If you built StartOS from `source <https://github.com/start9labs/embassy-os>`_, it may take up to 20 minutes to first initialize.
+
+#. Power the device on and select which mode you would like to continue in on the tab below:
+
+  You can either boot your server as-is (headless mode) or add a monitor, mouse, and keyboard (kiosk mode).  Server Lite (Raspberry Pi) is currently headless **only**.  Headless is the default and recommended option.  All control of your server can be done from your computer or mobile device.
+
+.. tabs::
+
+    .. group-tab:: Headless Mode
+        
+        Ensure the device you are using (desktop/laptop or mobile) is connected to the same network as your server.
+        
+        .. caution:: Sometimes a router will have a "guest WiFi network," which might be different than the network your server is placed on via ethernet.
+        
+        Visit ``http://start.local`` from your web browser.
+        
+    .. group-tab:: Kiosk Mode
+        
+        Once your server boots, if you've attached a monitor, keyboard and mouse, you can set it up using the graphical kiosk mode.  A familiar browser interface will display the StartOS setup page.
+
+#. Select "Start Fresh."
+
+    .. figure:: /_static/images/setup/screen0-startfresh_or_recover.jpg
+      :width: 60%
+      :alt: Fresh Setup
+
+    .. note:: The "Recover" button is used for :ref:`hardware upgrades <upgrade-hardware>`, :ref:`restoring from backup <backup-restore>`, data migration, or disaster recovery.
+
+#. Select your storage drive
+
+    .. figure:: /_static/images/setup/screen4-select_storage.jpg
+      :width: 60%
+      :alt: Select Drive
+
+#. Create a master password for your server and click "Finish."
+
+    .. warning:: Choose a strong master password.  Write it down.  Store it somewhere safe.  DO NOT LOSE IT.
+
+   .. figure:: /_static/images/setup/screen5-set_password.jpg
+      :width: 60%
+      :alt: Create New Password
+
+#. StartOS will initialize.  This can take up to a few minutes.
+
+    .. figure:: /_static/images/setup/screen6-storage_initialize.jpg
+      :width: 60%
+      :alt: SSD Initialization
+
+#. You are now hosting your own private server!
+
+    .. tip:: If you are in headless mode, click "Download This Page" to save your server address and certificate info to your computer.
+
+    .. figure:: /_static/images/setup/screen7-startfresh_complete.jpg
+      :width: 60%
+      :alt: Setup Complete
+
+#. You may now log in.  Continue to the section on :ref:`connecting<connecting>` to learn more about using your server over Tor and LAN.
+
+    .. figure:: /_static/images/setup/screen9-startfresh_complete-savedfile-go_to_embassy_login.jpg
+      :width: 60%
+      :alt: Setup Complete
+
+.. _setup-troubleshooting:
+
+Troubleshooting
+---------------
+If you are experiencing issues with setup, try the following:
+
+#. Confirm that the server is plugged into both power and Ethernet
+
+   - An ethernet network with DHCP server must be available at setup.  Most routers provide one.  If such ethernet connectivity is not available, or there is another hardware issue, you may hear this sound:
+      
+#. Confirm your phone/computer is **not** connected to a "Guest" network
+#. Confirm your phone/computer is not using a VPN, or that if you are, that it allows LAN connections, such as the examples below:
+
+    - Mullvad - Go to "Settings -> VPN Settings -> Local Network Sharing"
+    - ProtonVPN - Go to "Preferences -> Connection -> Allow LAN Connections"
+
+#. Visit or refresh (ctrl+shift+R - Linux/Windows, cmd+shift+R - Mac) the start.local page in a web browser
+#. To avoid networking issues, it is recommended to use your `primary` router, not an extender or mesh router.
+#. Very rarely, your firewall settings may block mDNS. In this case:
+
+    - From your browser, navigate to your router configuration settings. This is usually an IP address such as 192.168.1.1. A simple web search will usually reveal how to access the router configuration settings for a particular brand.
+    - Once in the router config settings, find the section that lists the devices on your network. You should see a device labeled ``start``. Take note of the associated IP address and enter it into your browser's URL field to enter the setup.
+
+You can always to :ref:`reach out to support<contact>` if you need a hand.
+
+Server Models With Speakers
+---------------------------
 
 .. _sounds-bepchime:
 
-#. Connect your Embassy to power and Ethernet.
-
-#. If all is well, you will hear 2 distinct sounds:
+Server Pure and Server One (model 2023 and older) have an internal speaker and may provide the following audio feedback:
 
     .. raw:: HTML
 
@@ -42,115 +130,25 @@ Powering On
         Your browser does not support the audio element.
       </audio>
 
-    * "chime" - Embassy is ready
+    * "chime" - Server is ready
 
-    .. caution:: Glance through the :ref:`troubleshooting<setup-troubleshooting>` section if you hear any different sounds.
-      
-      If you followed the DIY guide and built embassyOS from source code, it may take up to 20 minutes to first initialize.
+    .. raw:: HTML
 
-You can either boot your Embassy with no monitor (headless mode) or with a monitor, mouse, and keyboard (kiosk mode).  The Embassy One (based on a Raspberry Pi) currently does not have the ability to do kiosk mode.  The Embassy One and the Embassy Pro (x86_64) both work in headless mode, as the local ethernet network must be available to setup your Embassy.
+      <audio controls>
+        <source src="/_static/sounds/FLATLINE.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
 
-Power the device on and select which mode you would like to continue in on the tab below:
-
-.. tabs::
-
-    .. group-tab:: Headless Mode
-        
-        Ensure the device you are using (desktop/laptop or mobile) is connected to the same network as your Embassy.
-        
-        .. caution:: Sometimes a router will have a "guest WiFi network," which might be different than the network your Embassy is placed on via ethernet.
-        
-        Visit http://embassy.local from your web browser.
-        
-    .. group-tab:: Kiosk Mode
-        
-        Once your Embassy boots, if you've attached a monitor, keyboard and mouse, you can set it up using the graphical kiosk mode.  A familiar browser interface will display the embassyOS setup page.
-
-        .. caution:: If you followed the DIY guide and your graphics card or monitor is unsupported hardware, you may not see the intended setup screen.  If so, simply click on the "Headless Mode" tab above.
-
-#. Select "Start Fresh"
-
-    .. figure:: /_static/images/setup/screen0-startfresh_or_recover.jpg
-      :width: 60%
-      :alt: Fresh Setup
-
-    .. note:: The "Recover" button is used for :ref:`migrating from 0.2.x <upgrade-hardware>`, :ref:`restoring from backup <backup-restore>`, transferring data from a disk used in an old Embassy into a new one, or simply attaching an old Embassy's data drive to a new setup.
-
-#. Select your storage drive
-
-    .. figure:: /_static/images/setup/screen4-select_storage.jpg
-      :width: 60%
-      :alt: Select Drive
-
-#. Create a master password for your Embassy and click "Finish"
-
-    .. warning:: Choose a strong master password.  Write it down.  Store it somewhere safe.  DO NOT LOSE IT.
-
-   .. figure:: /_static/images/setup/screen5-set_password.jpg
-      :width: 60%
-      :alt: Create New Password
-
-#. The drive will be initialized for a few minutes
-
-    .. figure:: /_static/images/setup/screen6-storage_initialize.jpg
-      :width: 60%
-      :alt: SSD Initialization
-
-#. Your Embassy is now a private website on the private web!
-
-    .. tip:: If you used headless mode, click "Download This Page" to save your Embassy address and certificate info to your computer.
-
-    .. figure:: /_static/images/setup/screen7-startfresh_complete.jpg
-      :width: 60%
-      :alt: Setup Complete
-
-#. Finally, you will be able to login to your newly setup Embassy.  Continue to the section on :ref:`connecting` to learn more about using your Embassy over Tor and LAN.
-
-    .. figure:: /_static/images/setup/screen9-startfresh_complete-savedfile-go_to_embassy_login.jpg
-      :width: 60%
-      :alt: Setup Complete
-
-.. _setup-troubleshooting:
-
-Troubleshooting
----------------
-If you are experiencing issues with setup, try the following:
-
-#. Confirm that the Embassy is plugged into both power and Ethernet
-
-   - An ethernet network with DHCP server must be available at setup.  Most routers provide one.  If such ethernet connectivity is not available, or there is another hardware issue, you may hear this sound:
-      
-      .. raw:: HTML
-
-        <audio controls>
-          <source src="/_static/sounds/FLATLINE.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-#. Confirm the Embassy emitted two sounds when powering on: :ref:`a bep and a chime<sounds-bepchime>`
-#. Confirm your phone/computer is **not** connected to a "Guest" network
-#. Confirm your phone/computer is not using a VPN, or that if you are, it allows LAN connections, such as the options below:
-
-    - Mullvad - Go to "Settings -> VPN Settings -> Local Network Sharing"
-    - ProtonVPN - Go to "Preferences -> Connection -> Allow LAN Connections"
-
-#. Visit or Refresh the embassy.local page in a web browser
-#. To avoid networking issues, it is recommended to use your `primary` router, not an extender or mesh router.
-#. Very rarely, your firewall settings may block mDNS. In this case:
-
-    - From your browser, navigate to your router configuration settings. This is usually an IP address such as 192.168.1.1. A simple web search will usually reveal how to access the router configuration settings for a particular brand.
-    - Once in the router config settings, find the section that lists the devices on your network. You should see an item labeled "embassy". Take note of the associated IP address and enter it into your browser's URL field to enter the setup.
-    - In some cases, if you are working with a very old image of embassyOS, the device name will show up as `start9-shortcode`.  If this is the case, and you want to start fresh, wiping out the previous install and all data residing on it, :ref:`flash the newest version of embassyOS<flashing>`.
+    * "flatline" - Server initialization failed / no network connection
 
 Raspberry Pi Lights
 -------------------
-The Raspberry Pi has 2 status lights.
+Server Lite has 2 status lights:
 
 - Red - Power.  This will be on solid when powered up and running normally.
 - Green - SD Card.  This will display when there is SD Card activity, such as during OS installation.  It may be off, flashing, or on solid during normal operation.
 
-Embassy One (NASPi case) has 2 additional lights.
+Server One (model 2023 and older) has 2 additional lights:
 
 - Blue power button - Power.  This will be on solid when powered up and running normally.
 - Blue drive light - SSD.  This will display when there is SSD activity.  It may be off, flashing, or on solid during normal operation. 
-
-If you are still having issues, please :ref:`contact support <contact>`.
