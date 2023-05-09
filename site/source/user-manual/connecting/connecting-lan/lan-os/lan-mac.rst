@@ -29,7 +29,7 @@ Trusting Embassy CA on Mac
 
     .. note:: If the keychain console did not open, press "Command + spacebar" and type “Keychain Access”, and hit enter to open it.
 
-#. Navigate to the "System" tab on the left, find the certificate named "Embassy Local Root CA", and double click on this certificate. A second window will pop up.
+#. Navigate to the "System" tab on the left, find the certificate, which is usually named as your server's unique "adjective-noun.local", and double click on this certificate. A second window will pop up.
 
 #. Open the "Trust" dropdown and select "Always Trust" from the dropdown next to "When using this certificate".
 

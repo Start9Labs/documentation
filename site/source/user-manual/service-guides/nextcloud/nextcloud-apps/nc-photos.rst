@@ -23,7 +23,7 @@ Les Pas (Android)
 
 #. First, install Les Pas from your favorite app store (Aurora, F-Droid, or Play Store), or from `the github repository <https://github.com/scubajeff/lespas/releases>`_.
 
-#. At the welcome screen, you will be asked to either enter your server URL or scan a QR code.  In your Nextcloud instance, click the top-right menu -> Personal Settings -> Hamburger (3 lines) Menu > Security > Devices & Sessions > _Create new app password_.  Hit "show QR Code" and then scan it with Les Pas.
+#. At the welcome screen, you will be asked to either enter your server URL or scan a QR code.  In your Nextcloud instance, click the top-right menu -> Personal Settings -> Hamburger (3 lines) Menu > Security > Devices & Sessions > "Create new app password."  Hit "Show QR Code" and then scan it with Les Pas.
 
 #. You'll be sent to your Nextcloud instance to log in and grant access to the app.
 
