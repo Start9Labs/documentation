@@ -34,7 +34,7 @@ Please select what version of MacOS you are using from the two tabs below:
                 :width: 40%
                 :alt: general-sharing
 
-        #. Click the toggle to enable file sharing:
+        #. Click the toggle to enable file sharing then click the **"i"** symbol next to it:
 
             .. figure:: /_static/images/cifs/ventura-enable-file-sharing.png
                 :width: 40%
