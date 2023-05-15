@@ -9,7 +9,7 @@ Install Homebrew
 
 #. If you do not have Homebrew installed, follow the installation instructions `here <https://brew.sh/>`_.  TLDR: Open the Terminal and paste the following line:
 
-    .. code-block::
+    .. code-block:: bash
 
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
@@ -46,16 +46,16 @@ Install Tor
     
     Then close the Terminal.
 
-#. Open a new Terminal and install Tor using the following command:
+1. Open a new Terminal and install Tor using the following command:
 
-    .. code-block::
+    .. code-block:: bash
 
         brew install tor
 
 
-#. Then run Tor with:
+2. Then run Tor with:
 
-    .. code-block::
+    .. code-block:: bash
 
         brew services start tor
 
@@ -70,13 +70,13 @@ Enable Tor System-wide
 
         #. Enable proxy autoconfig file (This will download the Start9 standard proxy config file. You can use your own if you prefer):
 
-            .. code-block::
+            .. code-block:: bash
 
                 sudo curl https://registry.start9labs.com/sys/proxy.pac --output /Library/WebServer/Documents/proxy.pac
 
         #. Now enable apache service:
 
-            .. code-block::
+            .. code-block:: bash
         
                 sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
 
@@ -106,7 +106,13 @@ Enable Tor System-wide
 
         Done! You have now enabled system-wide Tor potential.
 
-        We advise going back to step three and repeating this for Wifi/Ethernet depending on which interface you haven't done yet.
+        We advise going back to step 4 and repeating this for Wifi/Ethernet depending on which interface you haven't done yet.
+
+        If you ever need to view the status of the tor service, enter the following into a Terminal:
+
+            .. code-block:: bash
+                
+                cat /usr/local/var/log/tor.log || sudo cat /opt/homebrew/var/log/tor.log
 
         If you'd like to setup Firefox to use Tor you can follow  :ref:`this guide<torff-mac>`.
 
@@ -114,13 +120,13 @@ Enable Tor System-wide
 
         #. Enable proxy autoconfig file (This will download the Start9 standard proxy config file. You can use your own if you prefer):
 
-            .. code-block::
+            .. code-block:: bash
 
                 sudo curl https://registry.start9labs.com/sys/proxy.pac --output /Library/WebServer/Documents/proxy.pac
 
         #. Now enable apache service:
 
-            .. code-block::
+            .. code-block:: bash
         
                 sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
 
@@ -162,6 +168,12 @@ Enable Tor System-wide
 
         Done! You have now enabled system-wide Tor potential.
 
-        We suggest heading back to Step 4 and enabling Tor system-wide on Ethernet/WiFi now - whichever you did not do already.
+        We suggest heading back to step 5 and enabling Tor system-wide on Ethernet/WiFi now - whichever you did not do already.
+
+        If you ever need to view the status of the tor service, enter the following into a Terminal:
+
+            .. code-block:: bash
+                
+                cat /usr/local/var/log/tor.log || sudo cat /opt/homebrew/var/log/tor.log
 
         If you'd like to setup Firefox to use Tor you can follow  :ref:`this guide<torff-mac>`.
