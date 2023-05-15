@@ -34,7 +34,7 @@ Config files can be empty( ``{}`` ), if you do not require config.  `File Browse
 
 How can my service access the data directory of another service?
 ----------------------------------------------------------------
-#. Provider service needs to expose datadir to other services on embassy
+#. Provider service needs to expose datadir to other services on ServerOS
 #. Consumer services needs to list the provider service as a dependency AND set a particular config value, stating that it wants data from that particular service
 
 Check out `LND <https://github.com/Start9Labs/lnd-wrapper/blob/master/manifest.yaml>`_ and `RTL <https://github.com/Start9Labs/ride-the-lightning-wrapper/blob/master/manifest.yaml>`_ as an example.

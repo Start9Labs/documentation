@@ -10,7 +10,7 @@ Basic Use FAQ
 
 Is it easy to use?
 ------------------
-Yes!  A Start9 servers is designed to be plugged into power and internet, and after a short setup, is immediately ready to use.  Getting Services is as easy as getting apps for a smartphone.
+Yes!  A Start9 server is designed to be plugged into power and internet, and after a short setup, is immediately ready to use.  Getting Services is as easy as getting apps for a smartphone.
 As with anything new, you should expect to spend a little time learning the functions and features, and keep in mind that some Services may be more complex to understand and use than others.
 
 So I can run my own cloud?

@@ -29,7 +29,7 @@ How is that fee estimation calculated?
 --------------------------------------
 The commitment fees are automatically negotiated every few blocks with your peer. They are on chain txs like all channel closes but they are not broadcast until you attempt to close the channel.
 
-What would happen if I shut down an Embassy that is running a Lightning node with open channels?
+What would happen if I shut down StartOS while it is running a Lightning node with open channels?
 ------------------------------------------------------------------------------------------------
 It is REALLY IMPORTANT to understand that if Lightning services are shut off for long periods of time (several days or more) it is possible for your peers to cheat you out of money. If you are not prepared to LOSE ALL THE MONEY IN YOUR CHANNELS, KEEP YOUR NODE RUNNING.
 That said, malicious actors on the network right now are probably sparse, and you may choose to only open channels with friends that may be a lot nicer to you if your node is not active.
@@ -38,11 +38,11 @@ Is there a solution to this?
 ----------------------------
 Yes, the concept of a Watchtower was originally conceptualized in the LN whitepaper.  A Watchtower is simply a lightning node to which you can give the authority to monitor transactions associated with your open payment channels.
 
-Is it possible to run Core Lightning and LND in parallel on Embassy?
+Is it possible to run Core Lightning and LND in parallel on StartOS?
 --------------------------------------------------------------------
 Yes, you may run both.  They will operate in their own environments and allow you to run services that depend on either.
 
-How do I connect my Lightning wallet or mobile app to my Embassy?
+How do I connect my Lightning wallet or mobile app to my Start9 server?
 -----------------------------------------------------------------
 Please see the :ref:`Lightning Service Guides<lightning-service>` section for more details.
 
@@ -52,17 +52,17 @@ This is all on LND, including on-chain funds, and RTL (or ThunderhHub, Zap, etc)
 
 How do I find my LND seed so I can write it down to backup?
 -----------------------------------------------------------
-All LND backups are best done via Embassy's backup flow.  It is not supported to use a seed as backup; LND does not expose this. Everything crucial is backed up by our backup system so you do not need your seed.  The seed is ONLY for the onchain wallet and does not backup your channel state.
+All LND backups are best done via StartOS's backup flow.  It is not supported to use a seed as backup; LND does not expose this. Everything crucial is backed up by our backup system so you do not need your seed.  The seed is ONLY for the onchain wallet and does not backup your channel state.
 
 To clarify some of the reasons for this choice:
 
 First off, Lightning is fundamentally different than on-chain/Layer1(L1) bitcoin. There is no way to compress all of that information down into a single 24 word seed in such a way that it will continue to work throughout your usage of the Lightning Network.
 
-So, what is the LND seed *for*? In short, the seed is only used for the Layer1 portion of the funds you have locked up in LND. Due to the live nature of LND and lightning nodes in general, we tend to discourage keeping any significant amounts of money in the onchain portion of your wallet. Given that we cannot actually recover the Layer2(L2) funds with that seed, we needed to have a more holistic way to backup LND funds such that the backup would encompass the ability to get L2 funds back. The Embassy backup system does this, and this approach also happens to be a perfectly valid backup of your L1 funds as well. While Bitcoin users have been trained that the 24 word seed can be used to recover all of their funds, it is important to state that lightning does not and cannot work this way. Exposing the seed gives you two separate things to keep track of in order to recover your funds instead of just one.
+So, what is the LND seed *for*? In short, the seed is only used for the Layer1 portion of the funds you have locked up in LND. Due to the live nature of LND and lightning nodes in general, we tend to discourage keeping any significant amounts of money in the onchain portion of your wallet. Given that we cannot actually recover the Layer2(L2) funds with that seed, we needed to have a more holistic way to backup LND funds such that the backup would encompass the ability to get L2 funds back. The ServerOS backup system does this, and this approach also happens to be a perfectly valid backup of your L1 funds as well. While Bitcoin users have been trained that the 24 word seed can be used to recover all of their funds, it is important to state that lightning does not and cannot work this way. Exposing the seed gives you two separate things to keep track of in order to recover your funds instead of just one.
 
 Is there a way to use the channel backups made within RTL?
 ----------------------------------------------------------
-The only backup flow we officially support is through Embassy's backup system. This does include the channel backups created automatically by LND, but it must be understood that backups in Lightning are very different than they are on Layer 1 Bitcoin. If you restore from backup all your channels will close, and there is a potential, albeit small, probability for you to lose funds.
+The only backup flow we officially support is through ServerOS's backup system. This does include the channel backups created automatically by LND, but it must be understood that backups in Lightning are very different than they are on Layer 1 Bitcoin. If you restore from backup all your channels will close, and there is a potential, albeit small, probability for you to lose funds.
 
 When attempting to add new peer, RTL says "server is still in the process of starting," but chain state seems to be fully up to date.  What can I do?
 -----------------------------------------------------------------------------------------------------------------------------------------------------
