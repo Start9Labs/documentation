@@ -46,14 +46,14 @@ Install Tor
     
     Then close the Terminal.
 
-1. Open a new Terminal and install Tor using the following command:
+#. Open a new Terminal and install Tor using the following command:
 
     .. code-block:: bash
 
         brew install tor
 
 
-2. Then run Tor with:
+#. Then run Tor with:
 
     .. code-block:: bash
 
