@@ -37,7 +37,7 @@ Connect Embassy
 
 #. Click "Open".
 
-    .. figure:: /_static/images/config/embassy_backup0.png
+    .. figure:: /_static/images/config/backup0.png
         :width: 60%
 
 #. Fill in the following fields:
@@ -47,7 +47,7 @@ Connect Embassy
     * Username - This is the user on the remote machine that you used to create the shared directory
     * Password - This is your user (from above) password
 
-    .. figure:: /_static/images/config/embassy_backup1.png
+    .. figure:: /_static/images/config/backup1.png
         :width: 60%
 
 #. Click "Save".

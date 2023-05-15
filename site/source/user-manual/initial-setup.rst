@@ -112,7 +112,7 @@ Server Models With Speakers
 
 .. _sounds-bepchime:
 
-Server Pure and Server One (2022 and older) have an internal speaker and may provide the following audio feedback:
+Server Lite, Server Pure, and Server One (2022 and older) have an internal speaker and may provide the following audio feedback:
 
     .. raw:: HTML
 

@@ -83,7 +83,7 @@ Connect Embassy
 
 #. Click "Open".
 
-    .. figure:: /_static/images/config/embassy_backup0.png
+    .. figure:: /_static/images/config/backup0.png
         :width: 60%
 
 #. Fill in the following fields:

@@ -170,7 +170,7 @@ Connect Your Start9 Server
 
 #. Click "Open".
 
-    .. figure:: /_static/images/config/embassy_backup0.png
+    .. figure:: /_static/images/config/backup0.png
         :width: 60%
 
 #. Fill in the following fields:
@@ -180,7 +180,7 @@ Connect Your Start9 Server
     * Username - This is your Linux username on the remote machine that you used to create the shared directory
     * Password - This is the password you set above using ``smbpasswd``
 
-    .. figure:: /_static/images/config/embassy_backup1.png
+    .. figure:: /_static/images/config/backup1.png
         :width: 60%
 
 #. Click "Save".

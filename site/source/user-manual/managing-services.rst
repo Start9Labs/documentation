@@ -76,7 +76,7 @@ Navigate to the *Services > [Service Name] > Config*
     .. figure:: /_static/images/services/service-needs-config.png
         :width: 60%
 
-Traditionally, configuring services was a massive headache and a huge barrier to running a personal server. But no more! The Embassy's revolutionary service config system makes the process transparent, simple, and safe.
+Traditionally, configuring services was a massive headache and a huge barrier to running a personal server. But no more! StartOS's revolutionary service config system makes the process transparent, simple, and safe.
 
     .. figure:: /_static/images/services/service4.png
         :width: 60%

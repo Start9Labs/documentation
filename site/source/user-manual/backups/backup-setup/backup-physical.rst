@@ -32,10 +32,10 @@ The recommended method of backup (including with external drives) is to setup a 
 
 #. Enter your StartOS master password.
 
-    .. figure:: /_static/images/config/embassy_backup3.png
+    .. figure:: /_static/images/config/backup3.png
         :width: 60%
 
 #. When the backup is complete, you will receive a notification.  If successful, you will see the date and time of your most recent backup updated under "Backups" in the System tab.
 
-    .. figure:: /_static/images/config/embassy_backup4.png
+    .. figure:: /_static/images/config/backup4.png
         :width: 60%

@@ -115,7 +115,7 @@ Connect Your Server
 
 #. Click **Open New**:
 
-    .. figure:: /_static/images/config/embassy_backup0.png
+    .. figure:: /_static/images/config/backup0.png
         :width: 60%
         :alt: open-new
 

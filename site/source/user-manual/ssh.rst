@@ -48,7 +48,7 @@ Creating an SSH Key
 Registering an SSH Key
 ----------------------
 
-#. In your Start9 server's web interface, navigate to *System > SSH*.
+#. In the StartOS dashboard, navigate to *System > SSH*.
 #. Click "Add New Key".
 #. Back in the terminal of your workstation, display and copy your SSH *public* key (created above):
 
@@ -76,7 +76,7 @@ Registering an SSH Key
 
           ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINH3tqX71XsPlzYhhoo9CqAP2Yx7gsGTh43bQXr1zqoq user@ema.il
 
-#. Paste that line into the `Add New Key` text field of your Start9 server
+#. Paste that line into the `Add New Key` text field
 
     .. figure:: /_static/images/walkthrough/ssh_key_add.jpg
 
@@ -95,7 +95,7 @@ Connecting via CLI
 
         ssh start9@SERVER-HOSTNAME
 
-Replacing ``SERVER-HOSTNAME`` with your Start9 server's LAN (``server-hostname.local``) hostname
+Replacing ``<LAN URL>`` with your server's LAN (``<custom-address>.local``) address
 
 .. note:: If you get a scary looking warning that says something like "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!" - fear not!  This is most likely happening because you have recently reflashed or did an update from pre-v0.3.3, which would cause a change in the key for your device's hostname (e.g. `xxxxxxxx.local`) or IP address (e.g. `192.168.1.x`).  The solution is to delete the existing entry from your `known_hosts` file, which is typically located at `~/.ssh/known_hosts`.  This will be specified in the warning, along with a helpful line number (in case your file is lengthy).
 
@@ -107,18 +107,36 @@ Following the commands above for Windows will get you in.  However, if you prefe
 Using SSH Over Tor
 ------------------
 
-.. note:: The following guide requires that you have already added an :ref:`SSH key to your Start9 server<ssh>`.
+.. note:: The following guide requires that you have already added an :ref:`SSH key to your server<ssh>`.
 
 .. caution:: SSH over Tor is only supported on Linux and macOS, although it can also work on Windows with in PuTTY `like this <https://tor.stackexchange.com/a/143>`_.  Note that those instructions use port 9150 but we've configured Tor in Windows on the traditional port: ``9050``.
 
 Setup
 .....
 
-#. First, you need to enable SSH over tor on your Start9 server:
+#. First, you'll need one dependency, ``torsocks``, which will allow you to use SSH over Tor on the machine that you want access with. Select your Linux flavor to install:
+
+    .. tabs::
+
+        .. group-tab:: Debian / Ubuntu
+
+            .. code-block:: bash
+
+                sudo apt install torsocks
+
+        .. group-tab:: Arch / Garuda / Manjaro
+
+            .. code-block:: bash
+
+                sudo pacman -S torsocks
+
+#. SSH in:
+
+    .. warning:: The changes you make here are on the overlay and won't persist after a restart of your server.
 
     .. code-block:: bash
 
-        ssh start9@SERVER-HOSTNAME.local
+        ssh start9@<custom-address>.local
 
 #. Elevate yourself to root in chroot edit mode (which will make your changes persist across reboots):
 

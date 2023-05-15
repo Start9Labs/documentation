@@ -19,7 +19,7 @@ In addition to the safe-keeping of a good master password, maintaining good back
   :class: large-5
   :anchor: Backup
 
-  Create an encrypted backup of your Embassy data.
+  Create an encrypted backup of your server data.
 
 .. topic-box::
   :title: Restore From Backup
@@ -28,7 +28,7 @@ In addition to the safe-keeping of a good master password, maintaining good back
   :class: large-5
   :anchor: Restore
 
-  Restore your Embassy data from a previous backup.
+  Restore your server data from a previous backup.
 
 .. raw:: html
 

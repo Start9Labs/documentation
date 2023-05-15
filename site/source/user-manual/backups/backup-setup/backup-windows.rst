@@ -58,12 +58,12 @@ Connect Embassy
 
 #. Click "Open" to set up a new connection to your Shared Folder
 
-    .. figure:: /_static/images/config/embassy_backup0.png
+    .. figure:: /_static/images/config/backup0.png
         :width: 60%
 
 #. Fill out the following fields as shown below:
 
-    .. figure:: /_static/images/config/embassy_backup1.png
+    .. figure:: /_static/images/config/backup1.png
         :width: 60%
 
     - For "Hostname" - Enter your Windows computer name (this is shown after a ``\\`` in Windows)

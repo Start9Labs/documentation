@@ -16,7 +16,7 @@ A Local Area Network (LAN) is a computer network that interconnects computers wi
 
 Devices on a LAN are private and protected, such that only devices connected to the same Ethernet or WiFi network can see or communicate with them.
 
-You can reach your StartOS dashboard by visiting its ``start.local`` for initial setup, and ``[adjective]-[noun].local`` after setup from any browser while also connected to the LAN.
+You can reach your StartOS dashboard by visiting its ``start.local`` for initial setup, and ``<custom-address>.local`` after setup from any browser while also connected to the LAN.
 
 .. note:: Any device connected to a LAN can inspect all communications on that LAN. To avoid snooping, LAN communications are encrypted using :ref:`ssl`, which requires :ref:`additional setup <connecting-lan>`.
 
@@ -52,7 +52,7 @@ Valid SSL certificates are typically issued and obtained from Certificate Author
 
 We decided to have StartOS act as a Certificate Authority (CA). It creates a self-signed certificate, which means that the private key used to sign the digital certificate is your server's own private key instead of a third party's.  
 
-When you setup SSL for StartOS and client device, the certificate communicates to the client (a browser) that the server demonstrated ownership of the domain (``[adjective]-[noun].local``) to the certificate authority at the time of certificate issuance (during the setup process). The StartOS dashboard can then be accessed from a home network (LAN) using a secure HTTPS connection!  You own this entire stack and no third party can interfere.
+When you setup SSL for StartOS and client device, the certificate communicates to the client (a browser) that the server demonstrated ownership of the domain (``<custom-address>.local``) to the certificate authority at the time of certificate issuance (during the setup process). The StartOS dashboard can then be accessed from a home network (LAN) using a secure HTTPS connection!  You own this entire stack and no third party can interfere.
 
 For more information on how to setup your devices to enable this feature visit :ref:`connecting-lan`.
 

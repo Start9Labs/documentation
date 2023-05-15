@@ -62,8 +62,6 @@ Some other things that StartOS offers that others do not:
 
 From an architectural perspective, StartOS is a true operating system, giving you the ability to understand and control what is going on.  Many other systems are black boxes offering little insight or agency to you. If something goes wrong, you'll have to put in your engineer hat and go command line diving. Lastly, our team is very responsive and helpful. We pride ourselves on providing incredible customer support.
 
-Since it is often requested, we have put together an :ref:`Umbrel comparison guide<umbrel-compare>`
-
 How can I migrate from Umbrel to StartOS and keep my lightning channels intact?
 -------------------------------------------------------------------------------
 We've created a guide to help you `transform your Umbrel's bitcoin stack into a Start9 server <https://community.start9.com/t/howto-migrate-from-umbrel-0-5-x-to-embassy/56>`_.

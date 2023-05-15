@@ -4,14 +4,14 @@
 Restore
 =======
 
-There are 3 different ways that you may choose to restore Embassy data, as well as a 4th option to migrate data between hardware.
+There are 3 different ways that you may choose to recover server data, as well as a 4th option to migrate/transfer data between hardware.
 
-#. "Restore" *selected service data* to your currently running Embassy.  This is specifically for service data.
-#. "Attach" a drive with existing Embassy data on it during setup.  Use this when re-flashing your SD card, for example.
-#. "Recover" (as in, disaster recovery) all Embassy data in the event that your backup is the **only** thing you have left.
-#. "Transfer" all data from an existing Embassy.  This is a total migration for use when upgrading hardware only.
+#. "Restore [individual services] from Backup" to your currently running server.  This is specifically for service data.
+#. "Use Existing Drive" a drive with existing server data on it during setup.  Use this when re-flashing your SD card, for example.
+#. "Restore [entire server] from Backup" (as in, disaster recovery) all server data in the event that your backup is the **only** thing you have left.
+#. "Transfer" data from an existing server.  This is a total migration for use when upgrading hardware only.
 
-.. warning:: If you are restoring data from a drive that you are attaching *directly to your Embassy,* (if using a RasPi or other low-powered board) please ensure that it is getting adequate power.  This is best accomplished via external power to the drive (such as a powered USB hub).  Embassy One (NASPi Geekworm case with built-in power management) and Embassy Pro users can safely ignore this warning.
+.. warning:: If you are restoring data from a drive that you are attaching *directly to your server,* (if using a RasPi or other low-powered board) please ensure that it is getting adequate power.  This is best accomplished via external power to the drive (such as a powered USB hub).  Server One (NASPi Geekworm case with built-in power management) and Server Pro users can safely ignore this warning.
 
 Select the appropriate tab below to restore your data:
 
@@ -39,7 +39,7 @@ Select the appropriate tab below to restore your data:
             .. figure:: /_static/images/config/restore3.png
                 :width: 60%
 
-        It is not possible to recover services already installed on the Embassy. If you wish to recover a service that is already installed, please uninstall it first to permit recovery.
+        It is not possible to recover services that are already installed. If you wish to recover a service that is already installed, please uninstall it first to permit recovery.
 
     .. group-tab:: Attach
 
@@ -53,7 +53,7 @@ Select the appropriate tab below to restore your data:
             .. figure:: /_static/images/setup/screen3-use_existing.png
                 :width: 60%
 
-        #. Select your Embassy data drive.
+        #. Select your server's data drive.
 
             .. figure:: /_static/images/setup/screen4-use_existing_drive_selection.png
                 :width: 60%
@@ -63,7 +63,7 @@ Select the appropriate tab below to restore your data:
             .. figure:: /_static/images/setup/screen5-set_password.jpg
                 :width: 60%
         
-        #. Your Embassy will initialize again (all previous data will be recovered).
+        #. Your server will initialize again (all previous data will be recovered).
 
             .. figure:: /_static/images/setup/screen6-storage_initialize.jpg
                 :width: 60%
@@ -90,7 +90,7 @@ Select the appropriate tab below to restore your data:
             .. figure:: /_static/images/restore/recover2.png
                 :width: 60%
 
-        #. Enter the encryption password for the drive (this is your Embassy's master password).
+        #. Enter the encryption password for the drive (this is your server's master password).
 
             .. figure:: /_static/images/restore/recover3.png
                 :width: 60%
@@ -105,7 +105,7 @@ Select the appropriate tab below to restore your data:
             .. figure:: /_static/images/restore/recover5.png
                 :width: 60%
 
-        #. Your Embassy will now prepare and then copy the data to the new drive.  The time required can vary greatly depending on how much data you are migrating and from where that data is coming.  Be prepared for this to take many hours, especially if you have 1-2TB+ of data.  Go have a sandwich and contemplate other aspects of your sovereignty.
+        #. Your server will now prepare and then copy the data to the new drive.  The time required can vary greatly depending on how much data you are migrating and from where that data is coming.  Be prepared for this to take many hours, especially if you have 1-2TB+ of data.  Go have a sandwich and contemplate other aspects of your sovereignty.
 
             .. figure:: /_static/images/restore/recover6.png
                 :width: 60%
@@ -122,19 +122,19 @@ Select the appropriate tab below to restore your data:
             .. figure:: /_static/images/transfer/transfer0.png
                 :width: 60%
 
-        #. Plug in the drive (make sure it is powered on) of the Embassy you are migrating **from** and select it (in this example, /dev/sda).  You may need to try a different USB port and hit "Refresh" if you don't see it immediately.  You will see a warning about using the old drive again; read and understand it.
+        #. Plug in the drive (make sure it is powered on) of the server you are migrating **from** and select it (in this example, /dev/sda).  You may need to try a different USB port and hit "Refresh" if you don't see it immediately.  You will see a warning about using the old drive again; read and understand it.
         
             .. figure:: /_static/images/transfer/transfer1.png
                 :width: 60%
 
-        #. Select the drive on your new Embassy (that you are migrating **onto**).
+        #. Select the drive on your new server (that you are migrating **onto**).
         
             .. figure:: /_static/images/transfer/transfer2.png
                 :width: 60%
          
             .. warning:: This will **PERMANENETLY ERASE** any existing data on that drive.  If you re-using an old drive, ensure that you have first removed all your data!!
 
-        #. Set your new Embassy master password.  *Make it good.  Write it down.*  Click finish.
+        #. Set your new master password.  *Make it good.  Write it down.*  Click finish.
         
             .. figure:: /_static/images/transfer/transfer3.png
                 :width: 60%
@@ -142,7 +142,7 @@ Select the appropriate tab below to restore your data:
             .. figure:: /_static/images/transfer/transfer4.png
                 :width: 60%
 
-        #. Your Embassy will now initialize and migrate the old data to the new drive.  The time required can vary greatly depending on how much data you are migrating.  Be prepared for this to take many hours, especially if you have 1-2TB+ of data.  Go have a sandwich and contemplate other aspects of your sovereignty.
+        #. Your server will now initialize and migrate the old data to the new drive.  The time required can vary greatly depending on how much data you are migrating.  Be prepared for this to take many hours, especially if you have 1-2TB+ of data.  Go have a sandwich and contemplate other aspects of your sovereignty.
 
             .. figure:: /_static/images/transfer/transfer5.png
                 :width: 60%

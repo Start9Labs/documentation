@@ -8,10 +8,10 @@ Customize
   :depth: 2 
   :local:
 
-Name Your Device
-----------------
+Custom browser tab title
+------------------------
 
-#. Go to *System > Set Device Name*.
+#. Go to *System > Browser Tab Title*.
 
     .. figure:: /_static/images/config/basic-config1.png
       :width: 60%
@@ -21,4 +21,4 @@ Name Your Device
 
     .. figure:: /_static/images/config/basic-config2.png
       :width: 60%
-      :alt: Rename Embassy
+      :alt: Custom browser tab 
