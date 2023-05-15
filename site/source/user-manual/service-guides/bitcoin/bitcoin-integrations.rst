@@ -8,7 +8,7 @@ Bitcoin Integrations
   :depth: 2
   :local:
 
-Here you will find guides on how to connect different kinds of Bitcoin wallets (hardware and software) to your Embassy node, to complete your sovereign Bitcoin stack!
+Here you will find guides on how to connect different kinds of Bitcoin wallets (hardware and software) to your server's node, to complete your sovereign Bitcoin stack!
 
 
 .. _blockstream-green:
@@ -104,7 +104,7 @@ Nunchuk
  
  **Instructions**
  
-   #. Install the `Electrs` service from the Start9 Marketplace on your Embassy
+   #. Install the `Electrs` service from the Start9 Marketplace
    #. Follow the `guide <https://github.com/Start9Labs/electrs-wrapper/blob/master/docs/integrations/nunchuk/guide.md>`__.
 
 
@@ -128,7 +128,7 @@ Sparrow
  
  **Instructions**
 
-  Connect Sparrow directly to your `Bitcoin Core` service on your Embassy:
+  Connect Sparrow directly to your `Bitcoin Core`:
   
   * Follow this `guide <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/docs/integrations/sparrow/guide.md>`__.
 
@@ -136,7 +136,7 @@ Sparrow
  
   **OPTIONAL** (but less reliable) -- Connect Sparrow to Electrs via Tor:
 
-  #. Install the `Electrs` service from the Start9 Marketplace on your Embassy
+  #. Install the `Electrs` service from the Start9 Marketplace
   #. Follow this `guide <https://github.com/Start9Labs/electrs-wrapper/blob/master/docs/integrations/sparrow/guide.md>`__.
 
 

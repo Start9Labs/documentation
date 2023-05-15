@@ -12,13 +12,13 @@ Upgrade Hardware
   <div class="grid-x grid-margin-x">
 
 .. topic-box::
-  :title: Upgrade from Embassy One to Embassy Pro
+  :title: Upgrading Hardware
   :link: upgrade-pro
   :icon: scylla-icon scylla-icon--enterprise
   :class: large-5
   :anchor: Upgrade
 
-  This is for migrating from an Embassy One to an Embassy Pro
+  This is for migrating from one server to another
 
 .. topic-box::
   :title: Upgrade to all-in-one NASPi case

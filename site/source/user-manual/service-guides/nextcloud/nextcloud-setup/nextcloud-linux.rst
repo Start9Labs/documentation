@@ -16,7 +16,7 @@ Desktop Integrations
 --------------------
 Many Linux distributions ship with a Desktop Environment (DE) that supports Nextcloud account integration directly for use with their built-in calendars and other applications.  It is recommended to try these first for the best possible experience with your particular flavor of Linux.
 
-You will first need to :ref:`add your Embassy Root CA to your system<lan-linux-system>`.
+You will first need to :ref:`add your Root CA to your system<lan-linux-system>`.
 
 The following desktop environments support integrated account syncing, including Nextcloud:
 
@@ -40,9 +40,9 @@ LAN Setup
 Make sure you have first set up :ref:`LAN access<lan-linux>`.
 
 1. Open the client and click "Log In"
-2. From your Embassy's Nextcloud Service page, go to "Interfaces" and copy the LAN address
+2. From your server's Nextcloud Service page, go to "Interfaces" and copy the LAN address
 3. Enter your LAN address under "Server Address" and click "Next"
-4. You will be asked to Trust your Embassy's certificate, which is safe to do as you generate and sign this during LAN Setup
+4. You will be asked to Trust your server's certificate, which is safe to do as you generate and sign this during LAN Setup
 5. Tick the box for "Trust this certificate anyway" and click "Next"
 6. This will launch a page in your web browser, click "Log In" and then "Grant access" to link the desktop client. You can close this browser window afterwards
 7. Next, configure the local directory that you want to sync with Nextcloud. You may use the default or change it, and edit the sync settings to desired. When satisfied, click "Connect"
@@ -66,7 +66,7 @@ If you wish to use a standalone client for Calendar and Contacts, we recommend M
 1. Install the Contacts and Calendar apps in Nextcloud.
 2. Make sure you are on Thunderbird version 102.3.0 or greater and then import your LAN certificate:
 
-    - First, follow the :ref:`instructions for adding your Embassy's Root CA to your system<lan-linux-system>` and then the :ref:`Thunderbird-specific instructions<lan-thunderbird>`.
+    - First, follow the :ref:`instructions for adding your Root CA to your system<lan-linux-system>` and then the :ref:`Thunderbird-specific instructions<lan-thunderbird>`.
 
 3. Download the `TBSync` and `Provider for CalDAV & CardDAV` add-ons by searching for them in the "Tools -> Add-ons and Themes" menu.
 4. Go back to "Tools -> Add-ons and Themes -> Extensions" and click the 'wrench' icon next to TBSync.

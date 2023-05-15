@@ -9,7 +9,7 @@ Bitcoin CLI
  .. warning:: This is an advanced feature and should be used with caution. Start9 is not responsible for any damage you might cause through SSH access.
  
  #. First, you will need SSH access.  Please see the :ref:`setup instructions <ssh>` for details.
- #. Access your Embassy and then you can interact with the bitcoind docker container using the following syntax:
+ #. Access your server and then you can interact with the bitcoind docker container using the following syntax:
 
   .. code-block:: bash
     

@@ -4,7 +4,7 @@
 Nextcloud
 =========
 
-These guides will help you to connect and interact with Nextcloud on your Start9 Server.
+These guides will help you to setup tools to connect or interact with Nextcloud.
 
 .. toctree::
   :maxdepth: 1

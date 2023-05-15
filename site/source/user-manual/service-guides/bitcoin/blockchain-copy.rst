@@ -10,20 +10,20 @@ Blockchain Migration
 
 .. warning:: This is an advanced feature and should be used with caution.  Start9 is not responsible for any damage you might cause through SSH access.
 
-If you have already synced the Bitcoin blockchain to the tip on one Embassy, and would like to skip IBD on another Embassy, follow this guide.
+If you have already synced the Bitcoin blockchain to the tip on one server, and would like to skip IBD on another server, follow this guide.
 
 .. note:: The following guide requires that you have already :ref:`setup SSH on both Start9 servers<ssh>`.
-  In this guide, we will refer to your synced Embassy as embassy-AAAAAAA.local and the Embassy with no Bitcoin synced as embassy-BBBBBBB.local.  Of course, please replace AAAAAAA and BBBBBBB with your appropriate Start9 servers' names.
+  In this guide, we will refer to your synced server as example-A.local and the server with no Bitcoin synced as example-B.local.  Of course, please replace AAAAAAA and BBBBBBB with your appropriate Start9 servers' names.
 
-**Install but don't start Bitcoin Core on the blockchain-less Embassy**
+**Install but don't start Bitcoin Core on the blockchain-less server**
 
-#. Log into `https://embassy-BBBBBBB.local` and install Bitcoin Core (**Marketplace > Bitcoin > Bitcoin Core > Install**).  Do *NOT* yet **CONFIGURE** or **START** Bitcoin Core.
+#. Log into `https://example-B.local` and install Bitcoin Core (**Marketplace > Bitcoin > Bitcoin Core > Install**).  Do *NOT* yet **CONFIGURE** or **START** Bitcoin Core.
 
-**Prep your Embassy with the synced blockchain**
+**Prep your server with the synced blockchain**
 
-#. Stop the Bitcoin Core service on `https://embassy-AAAAAAA.local` (**Services > Bitcoin Core > Stop**)
+#. Stop the Bitcoin Core service on `https://example-A.local` (**Services > Bitcoin Core > Stop**)
 
-#. :ref:`Open an ssh session <connecting-via-ssh>` to embassy-AAAAAAAA.local
+#. :ref:`Open an ssh session <connecting-via-ssh>` to example-A.local
 
 #. Once at the shell, perform the following commands
 
@@ -31,30 +31,30 @@ If you have already synced the Bitcoin blockchain to the tip on one Embassy, and
 
         sudo -i
         mkdir -m 0700 -p .ssh
-        ssh-keygen -t ed25519 -N '' -f .ssh/embassy2.key
-        chmod 600 .ssh/embassy2.key*
-        cat .ssh/embassy2.key.pub
+        ssh-keygen -t ed25519 -N '' -f .ssh/example-b.key
+        chmod 600 .ssh/example-b.key*
+        cat .ssh/example-b.key.pub
 
-#. Copy the output from the cat command into embassy-BBBBBBB's **Embassy > SSH > Add New Key** text field:
+#. Copy the output from the cat command into example-B's **System > SSH > Add New Key** text field:
 
     .. figure:: /_static/images/walkthrough/ssh_key_add.jpg
 
-#. Back on the shell of embassy-AAAAAAA.local, do the following (don't forget to replace embassy-BBBBBBB.local in the rsync command before you perform it):
+#. Back on the shell of example-A.local, do the following (don't forget to replace example-B.local in the rsync command before you perform it):
 
     .. code-block:: bash
 
         cd /embassy-data/package-data/volumes/bitcoind/data/main/
-        rsync -e "ssh -i ~/.ssh/embassy2.key" -povgr --append-verify --rsync-path="sudo mkdir -p /embassy-data/package-data/volumes/bitcoind/data/main ; sudo rsync" ./{blocks,chainstate} start9@embassy-BBBBBBB.local:/embassy-data/package-data/volumes/bitcoind/data/main/
+        rsync -e "ssh -i ~/.ssh/example-b.key" -povgr --append-verify --rsync-path="sudo mkdir -p /embassy-data/package-data/volumes/bitcoind/data/main ; sudo rsync" ./{blocks,chainstate} start9@example-B.local:/embassy-data/package-data/volumes/bitcoind/data/main/
 
-#. Wait some hours until the copy is complete.  On a gigabit network, the limiting factor will be the write speed of your SSD on the receiving Embassy.  When it is complete, clean up a bit:
+#. Wait some hours until the copy is complete.  On a gigabit network, the limiting factor will be the write speed of your SSD on the receiving server.  When it is complete, clean up a bit:
 
     .. code-block:: bash
 
-        rm .ssh/embassy2.key*
+        rm .ssh/example-b.key*
         exit
 
-#. Switch back to `https://embassy-BBBBBBB.local`, selecting **Services > Bitcoin Core**, **CONFIGURE**, configure it as desired, **SAVE** and then **START** your Bitcoin Core service.  You should see it begin at 99%+ pre-synced.
+#. Switch back to `https://example-B.local`, selecting **Services > Bitcoin Core**, **CONFIGURE**, configure it as desired, **SAVE** and then **START** your Bitcoin Core service.  You should see it begin at 99%+ pre-synced.
 
-#. You can now restart your Bitcoin Core service on `https://embassy-AAAAAAA.local` (**Services > Bitcoin Core > Start**)
+#. You can now restart your Bitcoin Core service on `https://example-A.local` (**Services > Bitcoin Core > Start**)
 
 .. _bitcoin-service:

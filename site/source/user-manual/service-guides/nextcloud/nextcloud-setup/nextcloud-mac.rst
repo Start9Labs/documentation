@@ -54,9 +54,9 @@ Make sure you have first set up :ref:`LAN access<lan-mac>`.  Then do the followi
 
 1. Download the appropriate desktop client from https://nextcloud.com/install/#install-clients
 2. Open the client and click "Log In"
-3. From your Embassy's Nextcloud Service page, go to "Interfaces" and copy the LAN address
+3. From your server's Nextcloud Service page, go to "Interfaces" and copy the LAN address
 4. Enter your LAN address under "Server Address" and click "Next"
-5. You will be asked to Trust your Embassy's certificate, which is safe to do as you generate and sign this during LAN Setup
+5. You will be asked to Trust your server's certificate, which is safe to do as you generate and sign this during LAN Setup
 6. Tick the box for "Trust this certificate anyway" and click "Next"
 7. This will launch a page in your web browser, click "Log In" and then "Grant access" to link the desktop client. You can close this browser window afterwards
 8. Next, configure the local directory that you want to sync with Nextcloud. You may use the default or change it, and edit the sync settings to desired. When satisfied, click "Connect"
@@ -68,7 +68,7 @@ Tor Setup
 You will first need to have the :ref:`Tor daemon running<tor-mac>`.
 
 1. Close the Settings screen and click the account in the top left again, then "Add Account."
-2. On the following screen, click "Log in," then enter your Nextcloud Tor server address, which you can copy from the Nextcloud page on your Embassy -> Interfaces - Tor. This must start with `http://` and end with .onion. Click Next.
+2. On the following screen, click "Log in," then enter your Nextcloud Tor server address, which you can copy from Nextcloud -> Interfaces - Tor. This must start with `http://` and end with .onion. Click Next.
 3. This will launch your browser and prompt you to log in to your account. Log in and then grant access as we did for LAN.
 4. That's it! You may wish to set up some select folders for remote sync, but for large files, it is best to sync on LAN only, so you can "Skip folders configuration" on the resulting screen if you wish. Check your connection by clicking the newly created account in the client app.
 
@@ -79,7 +79,7 @@ If you wish to use a standalone client for Calendar and Contacts, we recommend M
 1. Install the Contacts and Calendar apps in Nextcloud.
 2. Make sure you are on Thunderbird version 102.3.0 or greater and then import your LAN certificate:
 
-    - First, follow the :ref:`instructions for adding your Embassy's Root CA to your system<lan-mac>` and then the :ref:`Thunderbird-specific instructions<lan-thunderbird>`.
+    - First, follow the :ref:`instructions for adding your Root CA to your system<lan-mac>` and then the :ref:`Thunderbird-specific instructions<lan-thunderbird>`.
 
 3. Download the `TBSync` and `Provider for CalDAV & CardDAV` add-ons by searching for them in the "Tools -> Add-ons and Themes" menu.
 4. Go back to "Tools -> Add-ons and Themes -> Extensions" and click the 'wrench' icon next to TBSync.
