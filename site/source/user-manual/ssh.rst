@@ -102,7 +102,7 @@ Replacing ``SERVER-HOSTNAME`` with your Start9 server's LAN (``server-hostname.l
 Connecting via PuTTY on Windows
 -------------------------------
 
-Following the commands above for windows should get you in.  However, if you prefer a GUI tool, `BrewsBitcoin <https://brewsbitcoin.com>`_ has created `a guide for connecting via SSH using PuTTY on Windows. <https://medium.com/@brewsbitcoin/ssh-to-start9-embassy-from-windows-4a4e17891b5a>`_
+Following the commands above for Windows should get you in.  However, if you prefer a GUI tool, `BrewsBitcoin <https://brewsbitcoin.com>`_ has created `a guide for connecting via SSH using PuTTY on Windows. <https://medium.com/@brewsbitcoin/ssh-to-start9-embassy-from-windows-4a4e17891b5a>`_
 
 Using SSH Over Tor
 ------------------
