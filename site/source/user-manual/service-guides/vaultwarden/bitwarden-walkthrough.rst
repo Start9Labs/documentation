@@ -172,6 +172,4 @@ Accessing the Admin Console
 
     .. note:: This cannot be used to reset passwords for accounts created on your Vaultwarden server.
 
-|
-
-Now you'll want to setup some client devices! :ref:`Head here for instructions on how to do so.<bitwarden-client-setup>`
+Now you'll want to setup some client devices! :ref:`Head here for instructions on how to do so<bitwarden-client-setup>`.
