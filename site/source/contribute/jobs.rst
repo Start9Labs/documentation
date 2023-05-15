@@ -50,7 +50,7 @@ Frontend Developer (JS)
 
 We are seeking a JS developer who is skilled with CSS and cares deeply about crafting beautiful user interfaces.
 
-Start9 frontend devs leverage Angular, Typescript, and RXJS to deliver clean, modular, and performant codebases. The `StartOS frontend codebase <https://github.com/Start9Labs/embassy-os/tree/master/frontend>`_ uses websockets and Start9's own nonce-based PatchDB to create a real-time sync and state management system with the backend. The user feels "plugged in" to their server, even if they are on the other side of the world.
+Start9 frontend devs leverage Angular, Typescript, and RXJS to deliver clean, modular, and performant codebases. The `StartOS frontend codebase <https://github.com/Start9Labs/start-os/tree/master/frontend>`_ uses websockets and Start9's own nonce-based PatchDB to create a real-time sync and state management system with the backend. The user feels "plugged in" to their server, even if they are on the other side of the world.
 
 Requirements:
 
@@ -65,7 +65,7 @@ Requirements:
 Backend Developer (Rust)
 ========================
 
-We are seeking a Rust developer to contribute to the `StartOS backend codebase <https://github.com/Start9Labs/embassy-os/tree/master/backend>`_. The StartOS backend is a novel and highly performant container management system that affords users granular control over applications running on their personal server.
+We are seeking a Rust developer to contribute to the `StartOS backend codebase <https://github.com/Start9Labs/start-os/tree/master/backend>`_. The StartOS backend is a novel and highly performant container management system that affords users granular control over applications running on their personal server.
 
 Requirements:
 

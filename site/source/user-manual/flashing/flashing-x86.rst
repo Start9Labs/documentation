@@ -9,7 +9,7 @@ This guide is for flashing StartOS to a USB drive in order to install it to an x
 
 Getting StartOS
 ---------------
-#. Visit the `Github release page <https://github.com/Start9Labs/embassy-os/releases/latest>`_ to find the latest StartOS release.
+#. Visit the `Github release page <https://github.com/Start9Labs/start-os/releases/latest>`_ to find the latest StartOS release.
 
 #. Select ``embassyos_amd64.iso`` from the "Assets" section at the bottom of the release.
 

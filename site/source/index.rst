@@ -26,7 +26,7 @@
   :class: large-4
   :anchor: View
 
-  Get started with your Embassy
+  Get started with your Start9 server
 
 .. topic-box::
   :title: Support

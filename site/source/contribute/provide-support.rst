@@ -14,7 +14,7 @@ Community Channels
     - It is important for humans to be heard, so even letting someone know that the team may be offline can mean a lot.  You can mention that the team is most active during North American daylight hours.
     - If you are confident you have the answer to a question, you may answer it yourself.  We ask that you please be certain that you know the correct answer.  You can always verify with a team member first or direct the inquirer to the relevant section of these docs (often the :ref:`FAQ<faq>`).  This may also lead to suggestions about docs additions or edits.
 
-2. Participate in our `Github Discussions <https://github.com/Start9Labs/embassy-os/discussions>`_ channel.
+2. Participate in our `Github Discussions <https://github.com/Start9Labs/start-os/discussions>`_ channel.
 
 3. Make your voice heard in the unofficial feedback forum: https://s9.altweb.me/
 

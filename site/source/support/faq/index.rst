@@ -10,7 +10,7 @@ Answers to Frequently Asked Questions from Embassy users
   :maxdepth: 2
 
   faq-general
-  faq-embassy
+  faq-startos
   faq-basic-use
   faq-troubleshooting
   faq-contributing

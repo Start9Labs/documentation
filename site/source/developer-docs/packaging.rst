@@ -51,7 +51,7 @@ Development Environment
 
 A basic development and testing environment includes:
 
-#. An Embassy One or Pro with latest `StartOS <https://github.com/start9labs/embassy-os/releases>`_
+#. An Server One or Server Pro with latest `StartOS <https://github.com/Start9Labs/start-os/releases>`_
     
     - Use your own hardware to `DIY <https://start9.com/latest/diy>`_
     - Purchase a device from the `Start9 Store <https://store.start9.com>`_
@@ -180,7 +180,7 @@ Dependencies - Required
     
     .. code-block::
 
-        git clone -b latest --recursive https://github.com/Start9Labs/embassy-os.git && cd embassy-os/backend && ./install-sdk.sh
+        git clone -b latest --recursive https://github.com/Start9Labs/start-os.git && cd start-os/backend && ./install-sdk.sh
 
     Initialize sdk & verify install
 
@@ -225,7 +225,7 @@ Check your environment setup by building a demo project and installing it to Sta
         make
     
 #. Sideload & Run
-    - In the StartOS web UI menu, navigate to `Embassy -> Settings -> Sideload Service`
+    - In the StartOS web UI menu, navigate to `System -> Sideload Service`
     - Drag and drop or select the ``hello-world.s9pk`` from your filesystem to install
     - Once the service has installed, navigate to `Services -> Hello World` and click "Start"
     - Once the Health Check is successful, click "Launch UI" and verify you see the Hello World page
@@ -359,7 +359,7 @@ Testing
 
     #. Drag and drop:
 
-        - In the StartOS web UI menu, navigate to `Embassy -> Settings -> Sideload Service`
+        - In the StartOS web UI menu, navigate to `System -> Sideload Service`
 
         - Drag and drop or select the ``<package>.s9pk`` from your filesystem to install
 

@@ -4,7 +4,7 @@
 Podcasts
 ========
 
-Podcasts featuring Start9 Labs and/or Embassy
+Podcasts featuring Start9 Labs and StartOS
 
 .. topic-box::
     :title: September 16, 2022 -  RaspiFUD or fact? Bitcoin nodes and security
@@ -68,7 +68,7 @@ Podcasts featuring Start9 Labs and/or Embassy
     :image: https://www.agoristnexus.com/wp-content/uploads/2021/11/paste-147-750x450.png
     :anchor: Agorist Nexus
 
-    In this episode Brandon and Dag speak with Matt Hill of Start9 Labs about securing your own data with Embassy
+    In this episode Brandon and Dag speak with Matt Hill of Start9 Labs about securing your own data with StartOS
 
 .. topic-box::
     :title: November 22, 2021 - Episode #287: StartOS v0.3.0, building out the independent stack, and philosophy with Matt Hill
@@ -84,7 +84,7 @@ Podcasts featuring Start9 Labs and/or Embassy
     :image: https://assets.libsyn.com/secure/item/21234746
     :anchor: The Bitcoin Matrix
 
-    Matt Hill sits down with Cedric to discuss Start9, building technology for the individual, the Embassy personal server, and how you can leverage the dark net for private Bitcoin, Lightning Network, data, messaging and social media
+    Matt Hill sits down with Cedric to discuss Start9, building technology for the individual, the Start9 personal server, and how you can leverage the dark net for private Bitcoin, Lightning Network, data, messaging and social media
 
 .. topic-box::
     :title: October 5, 2021 - Anarchast Episode 566
@@ -92,7 +92,7 @@ Podcasts featuring Start9 Labs and/or Embassy
     :image: https://i1.sndcdn.com/avatars-h52MnISbZ9tcP7DC-4nV1iQ-t500x500.jpg
     :anchor: Anarchast
 
-    Today we are introduced to David from Start9 to get a demo of their potentially world changing project -- the Embassy!  Become a Digital Sovereign with Start9
+    Today we are introduced to David from Start9 to get a demo of their potentially world changing operating system -- StartOS!  Become a Digital Sovereign with Start9
 
 .. topic-box::
     :title: August 18, 2021 - The Survival Podcast Episode 2937
@@ -180,7 +180,7 @@ Podcasts featuring Start9 Labs and/or Embassy
     :image: https://i.ytimg.com/vi/QYYY9Iw1aXE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCbQy80EnPsOR1s_pW_xYzY64Ufcw
     :anchor: Tucson Bitcoin
 
-    Lucy Cifferello explains how Start9 is a company dedicated to lowering the bar of entry into Self-Sovereignty. Their flagship product, The Embassy, allows for one click installs of privacy oriented apps
+    Lucy Cifferello explains how Start9 is a company dedicated to lowering the bar of entry into Self-Sovereignty. Their flagship software, StartOS, allows for one click installs of privacy oriented apps
 
 .. topic-box::
     :title: March 12, 2021 - Interview with David Croisant
@@ -196,7 +196,7 @@ Podcasts featuring Start9 Labs and/or Embassy
     :image: https://m.media-amazon.com/images/I/41-qTKOsR-L._SL500_.jpg
     :anchor: The Bitcoin Path
 
-    Jon talk with Matt about sovereign computing, privacy, and the Start9 Embassy personal server
+    Jon talk with Matt about sovereign computing, privacy, and the Start9's StartOS
 
 .. topic-box::
     :title: December 29, 2020 - Inteview with Matt Hill
@@ -204,7 +204,7 @@ Podcasts featuring Start9 Labs and/or Embassy
     :image: https://assets.libsyn.com/secure/content/63745304
     :anchor: Tales From The Crypt
 
-    Marty sits down with Matt Hill to discuss: Founding Start9 Labs - The Embassy - Routing around Apple's App Store - Why personal hardware is an imperative moving forward - Self-sovereign surveillance - Making all of this easy
+    Marty sits down with Matt Hill to discuss: Founding Start9 Labs, StartOS, and Routing around Apple's App Store - Why personal hardware is an imperative moving forward - Self-sovereign surveillance - Making all of this easy
 
 .. topic-box::
     :title: September 29, 2020 - Sovereignty in a Box

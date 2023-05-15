@@ -9,7 +9,7 @@ This guide is for flashing StartOS to a micro SD card in order to install it on 
 
 Getting and Extracting the StartOS Image
 ----------------------------------------
-Visit the `Github release page <https://github.com/Start9Labs/embassy-os/releases/latest>`_ to find the latest StartOS release.  Select your OS below to get the correct Asset and extraction directions.
+Visit the `Github release page <https://github.com/Start9Labs/start-os/releases/latest>`_ to find the latest StartOS release.  Select your OS below to get the correct Asset and extraction directions.
 
 .. tabs::
 
