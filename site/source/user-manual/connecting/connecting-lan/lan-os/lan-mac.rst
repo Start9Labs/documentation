@@ -1,10 +1,10 @@
 .. _lan-mac:
 
 ==========================
-Trusting Embassy CA on Mac
+Trusting Start9 CA on Mac
 ==========================
 
-#. In your Embassy, head to *System* -> *Lan* -> click *Download Certificate* and save it to your Mac.
+#. In your Start9 server's UI, navigate to *System* -> *Lan* -> click *Download Certificate* and save it to your Mac.
 
     .. figure:: /_static/images/ssl/macos/mac-lan-setup0.png
         :width: 60%
@@ -45,6 +45,6 @@ Trusting Embassy CA on Mac
         :width: 60%
         :alt: Keychain menu trusted certificate
 
-No additional setup is required for most browsers and you will now be able to safely connect to your Embassy over LAN.
+No additional setup is required for most browsers and you will now be able to safely connect to your Start9 server over LAN.
 
 For Firefox, you will need to follow :ref:`these <lan-ff>` instructions.

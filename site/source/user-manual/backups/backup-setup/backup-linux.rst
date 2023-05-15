@@ -17,7 +17,7 @@ Setup Network Folder
 
     .. group-tab:: Ubuntu
 
-        Check out the video below, and follow along with the steps in this guide to setup a Network Folder on your Linux machine, such that you may create encrypted, private backups of all your Start9 server's data.
+        Check out the video below, and follow along with the steps in this guide to setup a Network Folder on your Linux machine, such that you may create encrypted, private backups of all your StartOS data.
 
         .. youtube:: LLIMC5P3NdY
           :width: 100%
@@ -56,7 +56,7 @@ Setup Network Folder
             .. figure:: /_static/images/cifs/cifs-lin2.png
                 :width: 60%
 
-            - You may name the share whatever you like, but **remember this name**, as you will need it later in your Start9 server's web UI.  Here, we used ``backup-share``.
+            - You may rename the "Share", if you prefer - **remember this name**, you will need it later in the StartOS dashboard
 
             - (Optional) Create a description in the "Comment" section
         
@@ -94,7 +94,7 @@ Setup Network Folder
             .. figure:: /_static/images/cifs/cifs-mint1.png
                 :width: 60%
 
-            - You may rename the "Share", if you prefer - **remember this name**, you will need it later in your Start9 server's web UI.  In this example, we call it ``backup-share``.
+            - You may rename the "Share", if you prefer - **remember this name**, you will need it later in the StartOS dashboard.  In this example, we call it ``backup-share``
 
             - (Optional) Create a description in the "Comment" section
 
@@ -160,12 +160,12 @@ Setup Network Folder
                 sudo ufw allow Samba
 
 
-Connect Your Start9 Server
---------------------------
+Connect StartOS
+---------------
 
 #. Go to *System > Create Backup*.
 
-    .. figure:: /_static/images/config/embassy_backup.png
+    .. figure:: /_static/images/config/backup.png
         :width: 60%
 
 #. Click "Open".
@@ -185,4 +185,4 @@ Connect Your Start9 Server
 
 #. Click "Save".
 
-That's it!  You can now :ref:`Create<backup-create>` encrypted, private backups of all your Start9 server's data to your Linux machine or external drive!!
+That's it!  You can now :ref:`Create<backup-create>` encrypted, private backups of all your StartOS data to your Linux machine or external drive!!

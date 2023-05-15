@@ -4,7 +4,7 @@
 Tor - OS
 ========
 
-Select your Operating System to setup Tor to run in the background (natively) of any device that you might want to use to access your Embassy with remotely.
+Select your Operating System to setup Tor to run in the background (natively) of any device that you might want to use to access your Start9 server with remotely.
 
 .. toctree::
   :maxdepth: 2

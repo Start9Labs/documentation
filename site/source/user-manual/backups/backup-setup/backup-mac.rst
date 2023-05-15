@@ -8,7 +8,6 @@ Mac Network Folder
   :depth: 2 
   :local:
 
-
 Setup a Network Folder
 ----------------------
 
@@ -109,7 +108,7 @@ Connect Your Server
 
 #. Go to the **System** tab and click **Create Backup**:
 
-    .. figure:: /_static/images/config/embassy_backup.png
+    .. figure:: /_static/images/config/backup.png
         :width: 60%
         :alt: system-create-backup
 

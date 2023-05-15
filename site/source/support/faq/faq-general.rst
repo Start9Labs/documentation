@@ -98,7 +98,7 @@ What kind of Internet connection does a server require?
 -------------------------------------------------------
 In general, any modern Internet connection is usually fine.  We have had reports from users on rural satellite connections with high latency (ping), and low up/download speeds who had issues accessing via Tor.  You can check your internet connection at `SpeedTest <https://speedtest.net>`_ to find your ping and speed.  If your ping is higher than 200ms and/or your speeds are lower than 5Mbps, you may want to locate your server somewhere with a better connection.  Please don't hesitate to contact us with any questions.
 
-I run a business, can I use a StartOS for tasks such as password management and file sharing?
+I run a business, can I use StartOS for tasks such as password management and file sharing?
 ----------------------------------------------------------------------------------------------
 Absolutely.  A StartOS server would be a great addition to any business as it is easy to use and provides services that you control, with no subscription fees.
 

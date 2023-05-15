@@ -12,8 +12,8 @@ Blockchain Migration
 
 If you have already synced the Bitcoin blockchain to the tip on one Embassy, and would like to skip IBD on another Embassy, follow this guide.
 
-.. note:: The following guide requires that you have already :ref:`setup SSH on both Embassies<ssh>`.
-  In this guide, we will refer to your synced Embassy as embassy-AAAAAAA.local and the Embassy with no Bitcoin synced as embassy-BBBBBBB.local.  Of course, please replace AAAAAAA and BBBBBBB with your appropriate Embassies' names.
+.. note:: The following guide requires that you have already :ref:`setup SSH on both Start9 servers<ssh>`.
+  In this guide, we will refer to your synced Embassy as embassy-AAAAAAA.local and the Embassy with no Bitcoin synced as embassy-BBBBBBB.local.  Of course, please replace AAAAAAA and BBBBBBB with your appropriate Start9 servers' names.
 
 **Install but don't start Bitcoin Core on the blockchain-less Embassy**
 

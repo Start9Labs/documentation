@@ -8,4 +8,4 @@ iOS
   :depth: 2 
   :local:
 
-iOS has no known limitations in regard to Embassy.
+iOS has no known limitations in regard to StartOS.

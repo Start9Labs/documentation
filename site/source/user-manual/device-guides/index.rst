@@ -4,7 +4,7 @@
 Device Guides
 =============
 
-Guides to get connected with or improve your Embassy by device-type.
+Guides to get connected with or improve your Start9 server experience by device-type.
 
 .. toctree::
   :maxdepth: 3

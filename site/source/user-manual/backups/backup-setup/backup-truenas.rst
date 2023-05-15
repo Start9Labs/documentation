@@ -73,12 +73,12 @@ Setup Network Folder
     Off to the right-hand side, *Permissions Type* should be set to "Basic" and *Permissions* should be set to "Full Control".
     Click **SAVE**
 
-Connect Embassy
+Connect StartOS
 ---------------
 
 #. Go to *System > Create Backup*.
 
-    .. figure:: /_static/images/config/embassy_backup.png
+    .. figure:: /_static/images/config/backup.png
         :width: 60%
 
 #. Click "Open".

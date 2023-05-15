@@ -4,4 +4,4 @@
 Linux
 =====
 
-Linux has no known limitations in regard to Embassy.
+Linux has no known limitations in regard to StartOS.

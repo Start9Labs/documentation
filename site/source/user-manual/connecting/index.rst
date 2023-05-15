@@ -26,7 +26,7 @@ Connecting
   :class: large-5
   :anchor: Setup
 
-  Leverage Tor to connect to your Embassy privately and anonymously from anywhere in the world.
+  Leverage Tor to connect to your Start9 server privately and anonymously from anywhere in the world.
 
 .. raw:: html
 

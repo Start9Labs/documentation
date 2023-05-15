@@ -3,10 +3,10 @@
 .. _lan-linux-system:
 
 ============================
-Trusting Embassy CA on Linux
+Trusting Start9 CA on Linux
 ============================
 
-Here we will insert your Embassy's CA certificate into Linux's trust store to ensure that applications will trust your Embassy's services.
+Here we will insert your Start9 server's CA certificate into Linux's trust store to ensure that applications will trust your Start9 server's services.
 
 .. tabs::
 
@@ -20,7 +20,7 @@ Here we will insert your Embassy's CA certificate into Linux's trust store to en
 
                 sudo apt install -y ca-certificates p11-kit
 
-            .. note:: For each Mozilla-based application you plan on using, in order for them to trust your Embassy's CA certificate directly from your Linux distribution's certificate trust store, execute the following command(s):
+            .. note:: For each Mozilla-based application you plan on using, in order for them to trust your Start9 server's CA certificate directly from your Linux distribution's certificate trust store, execute the following command(s):
 
 
                 If you use Firefox:
@@ -53,7 +53,7 @@ Here we will insert your Embassy's CA certificate into Linux's trust store to en
 
                     mv ~/.pki ~/.pki.mozilla-old
 
-            Finally, we will change directory to the folder where you downloaded your Embassy's Root CA (usually `~/Downloads`), and run the following commands to add your Embassy's CA certificate to the OS trust store:
+            Finally, we will change directory to the folder where you downloaded your Start9 server's Root CA (usually `~/Downloads`), and run the following commands to add your Start9 server's CA certificate to the OS trust store:
 
             .. code-block:: bash
             
@@ -65,7 +65,7 @@ Here we will insert your Embassy's CA certificate into Linux's trust store to en
 
     .. group-tab:: Arch/Garuda
 
-        From the folder you have downloaded your Embassy's Root CA, run the following commands (if you have changed the certificate's filename, be sure to change it here):
+        From the folder you have downloaded your Start9 server's Root CA, run the following commands (if you have changed the certificate's filename, be sure to change it here):
 
             .. code-block:: bash
 
@@ -77,7 +77,7 @@ Here we will insert your Embassy's CA certificate into Linux's trust store to en
 
     .. group-tab:: CentOS/Fedora
         
-        From the folder you have downloaded your Embassy's Root CA, run the following commands (if you have changed the certificate's filename, be sure to change it here):
+        From the folder you have downloaded your Start9 server's Root CA, run the following commands (if you have changed the certificate's filename, be sure to change it here):
 
         .. code-block:: bash
 

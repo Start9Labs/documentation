@@ -1,7 +1,7 @@
 .. _lan-android:
 
 ==============================
-Trusting Embassy CA on Android
+Trusting Start9 CA on Android
 ==============================
 
 .. note:: This will work on most Android phones running Android v13+, as well as phones running CalyxOS, GrapheneOS or LineageOS (v19+).

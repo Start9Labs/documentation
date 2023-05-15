@@ -4,7 +4,7 @@
 Trust CA - OS
 =============
 
-Instruct your **operating system** to trust your Embassy's Root CA.
+Instruct your **operating system** to trust your Start9 server's Root CA.
 
 .. toctree::
   :maxdepth: 2

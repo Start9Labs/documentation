@@ -4,14 +4,14 @@
 Connecting Over Tor
 ===================
 
-You can connect to your Embassy from anywhere in the world, privately and anonymously, by using its unique Tor Address (.onion URL).
+You can connect to your Start9 server from anywhere in the world, privately and anonymously, by using its unique Tor Address (``.onion`` URL).
 
 .. note:: Tor connection can sometimes be unreliable and have higher latency than normal internet connections.
 
 Using Firefox
 -------------
 
-.. tip:: This is recommended way to connect to your Embassy over Tor, but it requires some additional steps.
+.. tip:: This is the recommended way to connect to your Start9 server over Tor, but it requires some additional steps.
 
 #. Run Tor (**not Tor Browser**) in the background on your connecting device.
 
@@ -20,7 +20,7 @@ Using Firefox
 
       tor-os/index
 
-#. Configure Firefox to handle *.onion* URLs.
+#. Configure Firefox to handle *``.onion``* URLs.
 
     .. toctree::
       :maxdepth: 2
@@ -31,7 +31,7 @@ Using Firefox
 Using TorBrowser
 -------------------
 
-.. caution::  Tor Browser will allow you to use your Embassy's .onion URL without any manual configuration, however *all* connections are proxied via Tor, so you will not be able to access your Embassy's .local LAN address with it.  `Using Firefox <#using-firefox>`_ is recommended over TorBrowser.
+.. caution::  Tor Browser will allow you to use your Start9 server's ``.onion`` URL without any manual configuration, however *all* connections are proxied via Tor, so you will not be able to access your Start9 server's ``.local`` LAN address with it.  `Using Firefox <#using-firefox>`_ is recommended over TorBrowser.
 
 * Linux, Mac, Windows, Android
 

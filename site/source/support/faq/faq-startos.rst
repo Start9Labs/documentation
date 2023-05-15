@@ -38,9 +38,9 @@ Does Start9 have access to my personal Start9 server's encryption keys?
 --------------------------------------------------------
 No.  Your keys are generated on your device using the password you create so we CAN NOT, nor would we like to, see your private keys.
 
-Can multiple Embassies be setup to run redundantly in physically separate locations?
+Can multiple Start9 servers be setup to run redundantly in physically separate locations?
 ------------------------------------------------------------------------------------
-Currently no, but we have plans for a feature that will enable Embassies to provide encrypted, automated backup services for one another.
+Currently no, but we have plans for a feature that will enable StartOS to provide encrypted, automated backups across multiple servers.
 
 How does StartOS compare to other Bitcoin nodes or personal servers?
 --------------------------------------------------------------------
