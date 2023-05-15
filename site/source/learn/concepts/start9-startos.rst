@@ -12,11 +12,11 @@ Start9 Server & StartOS
 
 Server One
 ----------
-Server One is a plug 'n' play hardware device, based on the `Raspberry Pi <https://www.raspberrypi.org/>`_, assembled in-house by Start9.  The current iteration features an internal SSD, speaker, active cooling, and power management in a custom AIO (all-in-one) case. The One comes pre-loaded with :ref:`StartOS<start-os>`.  For more details, check out the `Server One tech specs <https://store.start9.com/products/embassy-one>`_.
+Server One is a plug 'n' play hardware device, based on the `Raspberry Pi <https://www.raspberrypi.org/>`_, assembled in-house by Start9.  The current iteration features an internal SSD, speaker, active cooling, and power management in a custom AIO (all-in-one) case. The One comes pre-loaded with :ref:`StartOS<start-os>`.  For more details, check out the `Server One tech specs <https://store.start9.com/products/server-one>`_.
 
 Server Pro
 ----------
-Server Pro is a plug 'n' play hardware device, based on the `Librem Mini <https://puri.sm/products/librem-mini/>`_, built by `Purism <https://puri.sm/about/>`_.  The Pro features a custom-built circuit board with active cooling, and an open-source firmware / boot stack. The Pro comes pre-loaded with :ref:`StartOS<start-os>`.  For more details, check out the `Server Pro tech specs <https://store.start9.com/products/embassy-pro>`_.
+Server Pro is a plug 'n' play hardware device, based on the `Librem Mini <https://puri.sm/products/librem-mini/>`_, built by `Purism <https://puri.sm/about/>`_.  The Pro features a custom-built circuit board with active cooling, and an open-source firmware / boot stack. The Pro comes pre-loaded with :ref:`StartOS<start-os>`.  For more details, check out the `Server Pro tech specs <https://store.start9.com/products/server-pro>`_.
 
 .. _start-os:
 
@@ -24,7 +24,7 @@ StartOS
 -------
 StartOS is a Linux-based operating system custom built for self-hosting open source software. It has a range of features that allow anyone to run their own server software without needing all of the traditionally required systems administration skills.  Features such as advanced dependency management, sensible default configuration with potential for customization, and a sleek GUI make for a smooth user experience with minimal reliance on the developers for people with all levels of technical expertise.
 
-Currently, 2 builds of StartOS exist, one for the Raspberry Pi (Server One) and one for x86 (Embassy Pro). We currently only support the Raspberry Pi and Librem Mini hardware platforms, however with some minor tweaking, our builds should work on many other ARM and x86 devices.  We hope to officially support more platforms soon, and we highly encourage hacking and community builds!  Drop in our :ref:`community channels<contact>` to learn more and collaborate!!
+Currently, 2 builds of StartOS exist, one for the Raspberry Pi (Server One) and one for x86 (Server Pro). We currently only support the Raspberry Pi and Librem Mini hardware platforms, however with some minor tweaking, our builds should work on many other ARM and x86 devices.  We hope to officially support more platforms soon, and we highly encourage hacking and community builds!  Drop in our :ref:`community channels<contact>` to learn more and collaborate!!
 
 .. _sounds:
 
@@ -39,7 +39,7 @@ StartOS emits several sounds for user feedback and troubleshooting.  Below is th
         Your browser does not support the audio element.
       </audio>
 
-    * "bep" - Embassy is starting up
+    * "bep" - StartOS is starting up
 
     .. raw:: HTML
 
@@ -48,7 +48,7 @@ StartOS emits several sounds for user feedback and troubleshooting.  Below is th
         Your browser does not support the audio element.
       </audio>
 
-    * "chime" - Embassy is ready
+    * "chime" - StartOS is ready
 
     .. raw:: HTML
 
@@ -57,7 +57,7 @@ StartOS emits several sounds for user feedback and troubleshooting.  Below is th
         Your browser does not support the audio element.
       </audio>
 
-    * "shutdown" - Embassy is shutting down
+    * "shutdown" - StartOS is shutting down
 
     .. raw:: HTML
 
@@ -78,7 +78,7 @@ The server-side software available on StartOS are referred to as "Services."  It
 
 Sessions
 --------
-A session is simply a logged-in connection to your Embassy.  You can view your :ref:`Active Sessions<session-management>`, and kill one if you suspect it is not legitimate, or no longer use it.
+A session is simply a logged-in connection to the StartOS dashboard.  You can view your :ref:`Active Sessions<session-management>`, and kill one if you suspect it is not legitimate, or no longer use it.
 
 .. _service-container:
 
@@ -94,9 +94,9 @@ A software dependency is a code library or package that is reused in a new piece
 
 Traditionally, managing dependencies has been a massive headache and has served as a huge barrier to running a personal server. But no more! The StartOS dependency management system makes the process transparent and simple.
 
-If a service has one or more dependencies, or a dependency needs to be configured in a particular way, your Embassy device will inform you and provide an automated solution, giving details of what will be done so you can make an informed decision before taking action.
+If a service has one or more dependencies, or a dependency needs to be configured in a particular way, StartOS will inform you and provide an automated solution, giving details of what will be done so you can make an informed decision before taking action.
 
-Sometimes, a dependency can be satisfied in multiple ways. For example, Lightning has a dependency on Bitcoin. However, this does not necessarily mean you need to have Bitcoin installed on your Embassy. You could just as easily configure Lightning to use another Bitcoin node located somewhere else!
+Sometimes, a dependency can be satisfied in multiple ways. For example, Lightning has a dependency on Bitcoin. However, this does not necessarily mean you need to have Bitcoin installed on StartOS. You could just as easily configure Lightning to use another Bitcoin node located somewhere else!
 
 .. _web-ui:
 

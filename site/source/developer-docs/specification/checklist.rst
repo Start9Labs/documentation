@@ -30,7 +30,7 @@ Packaging
 Testing:
 --------
 
-    1. Sideload ``<package-id>.s9pk`` onto an Embassy
+    1. Sideload ``<package-id>.s9pk`` onto StartOS
     2. Install package using embassy-cli
     3. Start package using embassy-cli, or in the UI
     4. Check logs to see if errors

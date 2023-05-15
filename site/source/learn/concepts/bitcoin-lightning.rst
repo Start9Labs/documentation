@@ -18,7 +18,7 @@ Bitcoin is a revolutionary piece of software that allows users to exchange value
 
 Bitcoin Node
 ------------
-The Embassy can optionally run a Bitcoin node.  When most people say "Bitcoin node" what they mean is a "validating node", meaning that the node is capable of enforcing the consensus rules of Bitcoin by accepting, validating, and relaying every transaction and block produced by the network. Fully validating nodes are necessary for Bitcoin to exist and function properly.  They protect the network from attackers attempting to bypass the consensus rules.  When you run a Bitcoin node, you are "being your own bank."  
+StartOS can optionally run a Bitcoin node.  When most people say "Bitcoin node" what they mean is a "validating node", meaning that the node is capable of enforcing the consensus rules of Bitcoin by accepting, validating, and relaying every transaction and block produced by the network. Fully validating nodes are necessary for Bitcoin to exist and function properly.  They protect the network from attackers attempting to bypass the consensus rules.  When you run a Bitcoin node, you are "being your own bank."  
 
 Here is a video explaining the importance of `running a node <https://www.youtube.com/watch?v=oX0Yrv-6jVs>`_.
 

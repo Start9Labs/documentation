@@ -1,4 +1,4 @@
-.. _faq-embassy:
+.. _faq-startos:
 
 ===========
 Embassy FAQ

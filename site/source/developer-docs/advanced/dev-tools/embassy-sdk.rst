@@ -15,7 +15,7 @@ You can install this component on any system, without needing to run StartOS, by
 
     .. code-block::
 
-        git clone -b latest --recursive https://github.com/Start9Labs/embassy-os.git && cd embassy-os/backend && ./install-sdk.sh
+        git clone -b latest --recursive https://github.com/Start9Labs/start-os.git && cd embassy-os/backend && ./install-sdk.sh
 
     
 Next, initialize the SDK and verify the installation was successful:

@@ -28,7 +28,7 @@ View frequently asked questions, troubleshoot common issues, or contact support.
   :class: large-5
   :anchor: View
 
-  Answers to Frequently Asked Questions from Embassy users
+  Answers to Frequently Asked Questions from StartOS users
 
 .. topic-box::
   :title: Contact
@@ -46,7 +46,7 @@ View frequently asked questions, troubleshoot common issues, or contact support.
   :class: large-5
   :anchor: Get help
 
-  Get help for third party apps that connect to your Embassy services
+  Get help for third party apps that connect to your StartOS services
 
 .. raw:: html
 

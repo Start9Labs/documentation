@@ -34,7 +34,7 @@ Manual Update by Re-flashing
 
     .. tip:: This guide will cover how to recover existing Embassy 0.3.x service and user data with a newly flashed SD card or Embassy Pro.
 
-#. Obtain the latest copy of StartOS either by `downloading <https://github.com/Start9Labs/embassy-os/releases/latest>`_ or `building from source <https://github.com/Start9Labs/embassy-os/tree/latest/build>`_.
+#. Obtain the latest copy of StartOS either by `downloading <https://github.com/Start9Labs/start-os/releases/latest>`_ or `building from source <https://github.com/Start9Labs/start-os/tree/latest/build>`_.
 #. :ref:`Flash the downloaded image <flashing>` to your microSD card.
 #. Insert the microSD card into your Embassy and power it on.
 
