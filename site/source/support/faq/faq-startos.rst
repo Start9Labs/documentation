@@ -68,7 +68,7 @@ How can I migrate from Umbrel to StartOS and keep my lightning channels intact?
 -------------------------------------------------------------------------------
 We've created a guide to help you `transform your Umbrel's bitcoin stack into a Start9 server <https://community.start9.com/t/howto-migrate-from-umbrel-0-5-x-to-embassy/56>`_.
 
-Alternatively, if you have an Umbrel and an Start9 server and they're on the same network, you can just select *Services > Lightning Network Daemon > Actions > Import from Umbrel* in your Start9 server's web interface and your LND settings and channels will be automatically migrated.
+Alternatively, if you have an Umbrel and a Start9 server and they're on the same network, you can just select *Services > Lightning Network Daemon > Actions > Import from Umbrel* in your Start9 server's web interface and your LND settings and channels will be automatically migrated.
 
 Can I mine Bitcoin with this?
 -----------------------------
