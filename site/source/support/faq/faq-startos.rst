@@ -35,7 +35,7 @@ Are my Internet requests anonymous and secure?
 StartOS and every service on our Marketplace serve their own Tor Hidden Services with unique Tor addresses. The private keys used to create these addresses are generated on your phone or computer when you first set up StartOS. No one, not even Start9, has any idea what your Tor addresses are, let alone the password(s) you choose to authenticate with them.
 
 Does Start9 have access to my personal Start9 server's encryption keys?
---------------------------------------------------------
+-----------------------------------------------------------------------
 No.  Your keys are generated on your device using the password you create so we CAN NOT, nor would we like to, see your private keys.
 
 Can multiple Start9 servers be setup to run redundantly in physically separate locations?

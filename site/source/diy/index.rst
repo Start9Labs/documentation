@@ -3,7 +3,7 @@
 ===
 DIY
 ===
-Here you will find guidelines for building your own Start9 server!  Currently, StartOS is known to work well on the Raspberry Pi and on **most** x86_64 platforms (desktops, laptops, mini PCs, servers, and virtual machines).  ARM builds are also available, but are relativey untested.
+Here you will find guidelines for building your own Start9 server!  Currently, StartOS is known to work well on the Raspberry Pi and on **most** x86_64 platforms (desktops, laptops, mini PCs, servers, and virtual machines).  ARM builds are also available, but are relatively untested.
 
 Motivation
 ----------

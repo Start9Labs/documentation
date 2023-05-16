@@ -30,7 +30,7 @@ How is that fee estimation calculated?
 The commitment fees are automatically negotiated every few blocks with your peer. They are on chain txs like all channel closes but they are not broadcast until you attempt to close the channel.
 
 What would happen if I shut down StartOS while it is running a Lightning node with open channels?
-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
 It is REALLY IMPORTANT to understand that if Lightning services are shut off for long periods of time (several days or more) it is possible for your peers to cheat you out of money. If you are not prepared to LOSE ALL THE MONEY IN YOUR CHANNELS, KEEP YOUR NODE RUNNING.
 That said, malicious actors on the network right now are probably sparse, and you may choose to only open channels with friends that may be a lot nicer to you if your node is not active.
 
@@ -43,7 +43,7 @@ Is it possible to run Core Lightning and LND in parallel on StartOS?
 Yes, you may run both.  They will operate in their own environments and allow you to run services that depend on either.
 
 How do I connect my Lightning wallet or mobile app to my Start9 server?
------------------------------------------------------------------
+-----------------------------------------------------------------------
 Please see the :ref:`Lightning Service Guides<lightning-service>` section for more details.
 
 Are my addresses, channels, and balances all stored in LND or in RTL?  Core Lightning or Spark, etc?

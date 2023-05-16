@@ -29,7 +29,7 @@ The smoothest experience will be using direct account integration with your Mac.
 
 4. Select "Manual" from the "Account Type" dropdown menu and fill in the following fields:
 
-  - Username - The default user is "embassy," but this is your user within Nextcloud, so be sure it is the correct user if you have more than one
+  - Username - The default user is "admin," but this is your user within Nextcloud, so be sure it is the correct user if you have more than one
   
   - Password - In your Nextcloud WebUI, visit the top-righthand menu and select "Personal Settings" -> "Security."  At the bottom, under Devices & Sessions, create a new app password with a name of your choice, such as "MacCalDAV," and then copy the resulting password into your Mac's account config
   
@@ -85,7 +85,7 @@ If you wish to use a standalone client for Calendar and Contacts, we recommend M
 4. Go back to "Tools -> Add-ons and Themes -> Extensions" and click the 'wrench' icon next to TBSync.
 5. Click "Account Actions" in the bottom left of the resulting screen, then "Add New Account -> CalDAV & CardDAV"
 6. Select "Automatic Configuration" and click `Next`
-7. Enter a name for your account, your nextcloud user name (found in Properties, default is 'embassy'), password (found in Properties), and server LAN address (found in Interfaces, ending in `.local`) - then click "Next."
+7. Enter a name for your account, your nextcloud user name (found in Properties, default is 'admin'), password (found in Properties), and server LAN address (found in Interfaces, ending in `.local`) - then click "Next."
 8.  After connecting, click "Finish."
 9.  In the resulting window, click "Enable and synchronize this account."
 10. Select the items you want to sync, such as contacts and a calendar.

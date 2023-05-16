@@ -55,7 +55,7 @@ In order to sync calendars and contacts with your iOS device, follow the steps b
 
   - Server - Enter your Nextcloud server LAN URL (found in "Interfaces" in the Nextcloud service page), and add `/remote.php/dav` after `.local`
   
-  - User name - Your Nextcloud user (Default is "embassy")
+  - User name - Your Nextcloud user (Default is "admin")
   
   - Password - Your Nextcloud user's password (Default found in "Properties" in the Nextcloud service page)
 

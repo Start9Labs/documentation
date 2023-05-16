@@ -51,7 +51,7 @@ Development Environment
 
 A basic development and testing environment includes:
 
-#. An Server One or Server Pro with latest `StartOS <https://github.com/Start9Labs/start-os/releases>`_
+#. A Server One or Server Pro with latest `StartOS <https://github.com/Start9Labs/start-os/releases>`_
     
     - Use your own hardware to `DIY <https://start9.com/latest/diy>`_
     - Purchase a device from the `Start9 Store <https://store.start9.com>`_
@@ -163,7 +163,7 @@ Dependencies - Required
         docker buildx install
         docker buildx create --use
         
-- Rust & Cargo - Cargo is the package management solution for the Rust programming language. It is needed to build the Embassy SDK. The following will install both Rust and Cargo:
+- Rust & Cargo - Cargo is the package management solution for the Rust programming language. It is needed to build the Start SDK. The following will install both Rust and Cargo:
     
     .. code-block::
 
@@ -176,7 +176,7 @@ Dependencies - Required
 
         cargo --version
     
-- Embassy SDK - StartOS has an embedded Software Development Kit (SDK). You can install this component on any system, without needing to run StartOS.
+- Start SDK - StartOS has an embedded Software Development Kit (SDK). You can install this component on any system, without needing to run StartOS.
     
     .. code-block::
 

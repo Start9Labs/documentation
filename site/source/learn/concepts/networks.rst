@@ -16,7 +16,7 @@ A Local Area Network (LAN) is a computer network that interconnects computers wi
 
 Devices on a LAN are private and protected, such that only devices connected to the same Ethernet or WiFi network can see or communicate with them.
 
-You can reach your StartOS dashboard by visiting its ``start.local`` for initial setup, and ``<custom-address>.local`` after setup from any browser while also connected to the LAN.
+You can reach your StartOS dashboard by visiting ``start.local`` for initial setup, and ``<custom-address>.local`` after setup from any browser while also connected to the LAN.
 
 .. note:: Any device connected to a LAN can inspect all communications on that LAN. To avoid snooping, LAN communications are encrypted using :ref:`ssl`, which requires :ref:`additional setup <connecting-lan>`.
 

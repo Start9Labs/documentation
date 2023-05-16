@@ -74,7 +74,7 @@ What are StartOS Services?
 --------------------------
 A Service can be any piece of software added to the Marketplace.  Unlike "apps," services are (usually) "server-side" software, meaning they are intended to run 24/7/365 and listen for requests from your clients (apps).  All services are "self-hosted," meaning that you are in complete control of your data.  This means you can run your own "cloud!"  Learn more about managing services :ref:`here <managing-services>` and see our currently `Available Services <https://marketplace.start9.com/>`_.
 
-Does Start ship worldwide?
+Does Start9 ship worldwide?
 --------------------------
 We ship everywhere that DHL ships.  Please consider that in some countries, the VAT and Customs fees are so ridiculous that they cost as much as the server itself.  You may wish to consider buying your hardware locally and building your own device, downloading StartOS from our github, and `donating <https://donate.start9.com/>`_ to us.  Please see the :ref:`DIY<diy>` page for details.
 
@@ -99,7 +99,7 @@ What kind of Internet connection does a server require?
 In general, any modern Internet connection is usually fine.  We have had reports from users on rural satellite connections with high latency (ping), and low up/download speeds who had issues accessing via Tor.  You can check your internet connection at `SpeedTest <https://speedtest.net>`_ to find your ping and speed.  If your ping is higher than 200ms and/or your speeds are lower than 5Mbps, you may want to locate your server somewhere with a better connection.  Please don't hesitate to contact us with any questions.
 
 I run a business, can I use StartOS for tasks such as password management and file sharing?
-----------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
 Absolutely.  A StartOS server would be a great addition to any business as it is easy to use and provides services that you control, with no subscription fees.
 
 With the addition of `BTCPay Server <https://btcpayserver.org/>`_, you can even run your own payment processor and accept cryptocurrency payments with no third party necessary!
