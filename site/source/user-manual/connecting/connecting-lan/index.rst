@@ -54,6 +54,6 @@ Then instruct your **browser** to trust your Start9 server's Root CA.
       lan-integrations/index
 
 Access your Start9 server's LAN Address
--------------------------------
+---------------------------------------
 
 With the Root CA downloaded and trusted by both your operating system and your browser, you can now visit your Start9 server's LAN Address (.local URL) over secure https. Any service that offers a LAN URL will also be securely accessible!

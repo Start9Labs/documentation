@@ -1,8 +1,8 @@
 .. _lan-ff:
 
-==============================
-Trusting Start9 CA in Firefox
-==============================
+==================================
+Trusting Your Start9 CA in Firefox
+==================================
 
 .. caution:: You will first need to complete :ref:`lan-os` for your device before continuing.
 

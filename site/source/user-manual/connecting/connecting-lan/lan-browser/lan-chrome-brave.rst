@@ -1,8 +1,8 @@
 .. _lan-chrome-brave:
 
-==========================================
-Trusting Start9 CA in Chrome / Brave Browser
-==========================================
+=================================================
+Trusting Your Start9 CA in Chrome / Brave Browser
+=================================================
 
 .. caution:: You will first need to complete :ref:`lan-os` for your device before continuing.
 
@@ -36,13 +36,13 @@ Trusting Start9 CA in Chrome / Brave Browser
               :width: 60%
               :alt: Certificate Authorities
 
-        #. If you see "org-Start9" with a trusted “[adjective-noun] Local Root CA” listed under it, your work is already done. Open a new tab and visit your Start9 server's ``.local`` address.  The browser shouldn't give any warning pages about the certificate anymore.  If it still does, quit and restart the browser using `Menu > Exit`.
+        #. If you see "org-Start9" with a trusted “<custom-address> Local Root CA” listed under it, your work is already done. Open a new tab and visit your Start9 server's ``.local`` address.  The browser shouldn't give any warning pages about the certificate anymore.  If it still does, quit and restart the browser using `Menu > Exit`.
 
-        #. If you do not see "org-Start9" in the list, click "Import" and open the downloaded "[adjective-noun] Local Root CA.crt" file on your device.
+        #. If you do not see "org-Start9" in the list, click "Import" and open the downloaded "<custom-address> Local Root CA.crt" file on your device.
         
             .. figure:: /_static/images/ssl/browser/chrome_authorities.png
               :width: 60%
-              :alt: Chrome / Brave Import "[adjective-noun].crt"
+              :alt: Chrome / Brave Import "<custom-address>.crt"
 
         #. Check the box for "Trust this certificate for identifying websites" and click "OK".
 
@@ -89,7 +89,7 @@ Trusting Start9 CA in Chrome / Brave Browser
               :width: 40%
               :alt: Windows Certificates CA Cert Import Step 3
 
-        #. Navigate to the location of and select your previously downloaded `[adjective-noun].crt` file, and click `Open`
+        #. Navigate to the location of and select your previously downloaded `<custom-address>.crt` file, and click `Open`
 
             .. figure:: /_static/images/ssl/windows/windows_certificates_caimport_step4.jpg
               :width: 40%

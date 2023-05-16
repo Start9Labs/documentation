@@ -2,9 +2,9 @@
 
 .. _lan-linux-system:
 
-============================
-Trusting Start9 CA on Linux
-============================
+================================
+Trusting Your Start9 CA on Linux
+================================
 
 Here we will insert your Start9 server's CA certificate into Linux's trust store to ensure that applications will trust your Start9 server's services.
 
@@ -58,7 +58,7 @@ Here we will insert your Start9 server's CA certificate into Linux's trust store
             .. code-block:: bash
             
                 cd ~/Downloads
-                sudo cp "[adjective-noun].crt" /usr/local/share/ca-certificates/
+                sudo cp "<custom-address>.crt" /usr/local/share/ca-certificates/
                 sudo update-ca-certificates
 
         In the output it should say ``1 added`` if it was successful.
@@ -70,7 +70,7 @@ Here we will insert your Start9 server's CA certificate into Linux's trust store
             .. code-block:: bash
 
                 sudo pacman -S ca-certificates
-                sudo cp "[adjective-noun].crt" /etc/ca-certificates/trust-source/anchors/
+                sudo cp "<custom-address>.crt" /etc/ca-certificates/trust-source/anchors/
                 sudo update-ca-trust
 
         Despite no output from the last command, you can test your app right away.
@@ -82,5 +82,5 @@ Here we will insert your Start9 server's CA certificate into Linux's trust store
         .. code-block:: bash
 
             sudo yum install ca-certificates
-            sudo cp "[adjective-noun].crt" /etc/pki/ca-trust/source/anchors/
+            sudo cp "<custom-address>.crt" /etc/pki/ca-trust/source/anchors/
             sudo update-ca-trust

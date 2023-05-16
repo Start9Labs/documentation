@@ -1,8 +1,8 @@
 .. _lan-thunderbird:
 
-==================================
-Trusting Start9 CA in Thunderbird
-==================================
+======================================
+Trusting Your Start9 CA in Thunderbird
+======================================
 
 .. caution:: You will first need to complete :ref:`lan-os` for your device before continuing.  Take special note of the Thunderbird-specific instructions there.
 

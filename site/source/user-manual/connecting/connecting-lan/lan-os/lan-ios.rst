@@ -68,7 +68,7 @@ This applies to iOS v15 and v16.  For older versions, see the `v14 guide </0.3.1
     :width: 20%
     :alt: Certificate trust settings
 
-#. Under "Enable full trust for root certificates", enable your "[adjective-noun] Local Root CA".
+#. Under "Enable full trust for root certificates", enable your "<custom-address> Local Root CA".
 
    .. figure:: /_static/images/ssl/ios/trust_2.png
     :width: 20%

@@ -1,8 +1,8 @@
 .. _lan-windows:
 
-======================
-Trusting CA On Windows
-======================
+==================================
+Trusting Your Start9 CA On Windows
+==================================
 
 Unfortunately, Windows does not have mDNS alias support built-in, which is necessary in order to visit .local addresses for any service you install on your Start9 server, so we recommend using the Bonjour service. Check out this :ref:`FAQ answer<why-bonjour>` for details.
 
@@ -86,6 +86,6 @@ Unfortunately, Windows does not have mDNS alias support built-in, which is neces
     :width: 90%
     :alt: Successful cert install
 
-    Your server's unique `adjective-noun Local Root CA` is now imported into Certificate folder
+    Your server's unique `<custom-address> Local Root CA` is now imported into Certificate folder
 
 #. You can save the settings to the console if desired, or not by pressing `Yes` or `No`.  The CA certificate will remain imported to the CA certificate store either way.
