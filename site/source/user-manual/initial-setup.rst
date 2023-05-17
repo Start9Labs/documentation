@@ -20,7 +20,7 @@ Power On
 --------
 #. Connect your server to power and Ethernet.
 
-    .. caution:: If you built StartOS from `source <https://github.com/start9labs/embassy-os>`_, it may take up to 20 minutes to first initialize.
+    .. caution:: If you built StartOS from `source <https://github.com/start9labs/start-os>`_, it may take up to 20 minutes to first initialize.
 
 #. Power the device on and select which mode you would like to continue in on the tab below:
 
@@ -78,7 +78,7 @@ Power On
 
 #. You may now log in.  Continue to the section on :ref:`connecting<connecting>` to learn more about using your server over Tor and LAN.
 
-    .. figure:: /_static/images/setup/screen9-startfresh_complete-savedfile-go_to_embassy_login.jpg
+    .. figure:: /_static/images/setup/screen9-startfresh_complete-savedfile-go_to_start_login.jpg
       :width: 60%
       :alt: Setup Complete
 
@@ -112,7 +112,7 @@ Server Models With Speakers
 
 .. _sounds-bepchime:
 
-Server Pure and Server One (model 2023 and older) have an internal speaker and may provide the following audio feedback:
+Server Pure and Server One (2022 and older) have an internal speaker and may provide the following audio feedback:
 
     .. raw:: HTML
 
@@ -148,7 +148,7 @@ Server Lite has 2 status lights:
 - Red - Power.  This will be on solid when powered up and running normally.
 - Green - SD Card.  This will display when there is SD Card activity, such as during OS installation.  It may be off, flashing, or on solid during normal operation.
 
-Server One (model 2023 and older) has 2 additional lights:
+Server One (2022) has 2 additional lights:
 
 - Blue power button - Power.  This will be on solid when powered up and running normally.
 - Blue drive light - SSD.  This will display when there is SSD activity.  It may be off, flashing, or on solid during normal operation. 
