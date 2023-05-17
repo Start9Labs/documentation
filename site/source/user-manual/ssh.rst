@@ -8,8 +8,8 @@ Using SSH
   :depth: 2
   :local:
 
-Creating an SSH Key (Linux/Mac)
--------------------------------
+Creating an SSH Key
+-------------------
 
 #. Open a terminal and enter the following command:
 
@@ -20,6 +20,8 @@ Creating an SSH Key (Linux/Mac)
     You will be asked to ``Enter a file in which to save the key`` - we recommend you press ``Enter`` to use the default location
 
 #. Create a strong passphrase and save it somewhere safe, or press ``Enter`` for no passphrase
+
+  .. note:: The next 3 steps only apply to Linux and macOS.  If you are on Windows, please skip down to :ref:`Registering an SSH Key<registering-an-ssh-key>`.
 
 #. It will inform you that your public key has been saved.  Take note of this path:
 
@@ -41,6 +43,8 @@ Creating an SSH Key (Linux/Mac)
 
     Note that if you changed the file name/location in step 1, you will need to use that file/path in this step
 
+.. _registering-an-ssh-key:
+
 Registering an SSH Key
 ----------------------
 
@@ -58,7 +62,13 @@ Registering an SSH Key
   
       .. code-block:: bash
 
-          cat ~/.ssh/id_ed25519.pub
+        cat ~/.ssh/id_ed25519.pub
+
+    On Windows:
+
+      .. code-block:: bash
+
+        type .ssh/id_ed25519.pub
 
     Copy the whole resulting line that looks similar to:
 
@@ -76,23 +86,23 @@ You are now ready to SSH into your server!
 
 .. _connecting-via-ssh:
 
-Connecting via CLI (Linux/Mac)
-------------------------------
+Connecting via CLI
+------------------
 
 #. You can now access your Start9 server from the command line (Linux and Mac) using:
 
     .. code-block:: bash
 
-        ssh start9@<SERVER-HOSTNAME>
+        ssh start9@SERVER-HOSTNAME
 
-Replacing ``<SERVER-HOSTNAME>`` with your Start9 server's LAN (``server-hostname.local``) hostname
+Replacing ``SERVER-HOSTNAME`` with your Start9 server's LAN (``server-hostname.local``) hostname
 
-.. note:: If you get a scary looking warning that says something like "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!" - fear not!  This is most likely happening because you have recently reflashed or did an update from pre-v0.3.3, which would cause a change in the key for your device's hostname (e.g. `xxxxxxxx.local`) or IP address (e.g. `192.168.1.x`).  The solution is to delete the existing entry from your `known_hosts` file, which is typically located at `~/.ssh/known_hosts`.  This should be named in the warning, along with a helpful line number (in case your file is lengthy).
+.. note:: If you get a scary looking warning that says something like "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!" - fear not!  This is most likely happening because you have recently reflashed or did an update from pre-v0.3.3, which would cause a change in the key for your device's hostname (e.g. `xxxxxxxx.local`) or IP address (e.g. `192.168.1.x`).  The solution is to delete the existing entry from your `known_hosts` file, which is typically located at `~/.ssh/known_hosts`.  This will be specified in the warning, along with a helpful line number (in case your file is lengthy).
 
 Connecting via PuTTY on Windows
 -------------------------------
 
-Community member `BrewsBitcoin <https://brewsbitcoin.com>`_ has created `a guide for connecting via SSH using PuTTY on Windows. <https://medium.com/@brewsbitcoin/ssh-to-start9-embassy-from-windows-4a4e17891b5a>`_
+Following the commands above for Windows will get you in.  However, if you prefer a GUI tool, `BrewsBitcoin <https://brewsbitcoin.com>`_ has created `a guide for connecting via SSH using PuTTY on Windows. <https://medium.com/@brewsbitcoin/ssh-to-start9-embassy-from-windows-4a4e17891b5a>`_
 
 Using SSH Over Tor
 ------------------
