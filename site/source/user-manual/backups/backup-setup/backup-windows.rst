@@ -67,7 +67,7 @@ Connect Embassy
         :width: 60%
 
     - For "Hostname" - Enter your Windows computer name (this is shown after a ``\\`` in Windows)
-    - For "Path" - Enter the share name displayed in the Windows sharing dialog shown in Step 4 above.  In our example this would be, literally, ``SharedFolder``
+    - For "Path" - Enter the full path followed by the share name displayed in the Windows sharing dialog shown in Step 4 above.  In our example this would be, literally, ``/Users/win/Desktop/SharedFolder``. When entering the path, make sure replace the backshashes ``\`` shown by Windows with forward slashes ``/``.
     - Enter your Windows username and password in the "User" and "Password" fields
 
 .. caution::
