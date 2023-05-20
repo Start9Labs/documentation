@@ -3,13 +3,13 @@
 ===================
 Flashing (Firmware)
 ===================
-This page is for existing Librem Mini owners ONLY.  This will allow you to flash the custom firmware on your Librem to neutralize the Intel Management Engine (IME) and add embassyOS-specific tweaks to your system, such that it will operate just as an Embassy Pro bought from Start9 would.  If you need hardware and want all the benefits listed here, you'll have to `buy an Embassy Pro <https://store.start9.com/products/embassy-pro>`_.
+This page is for existing Librem Mini owners ONLY.  This will add StartOS-specific tweaks to your system, such that it will operate just as a Start9 Pure bought from the `Start9 Store <https://store.start9.com/products/server-pro>`_.
 
 The source code can be viewed on Purism's `firmware git repo <https://source.puri.sm/firmware/releases/-/tree/master/librem_mini_v2/custom>`_.
 
-.. note:: USB drive *must* be formatted for FAT32
-
-#. `Download the firmware from Purism's git repository <https://source.puri.sm/firmware/releases/-/raw/master/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-25.rom.gz>`_ and extract it.
+#. `Download the firmware from Purism's git repository <https://source.puri.sm/firmware/releases/-/raw/master/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-25.rom.gz>`_ and extract it.  You'll need a USB flash drive, formatted FAT32.
+    
+    .. warning:: USB drive **must** be formatted for FAT32
 
 #. Copy or move the resulting ``pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-25.rom`` file onto your USB drive, then eject the drive and insert it into your (powered down) Librem Mini.  USB 3.0 (blue ports) are faster.
 
@@ -50,7 +50,7 @@ The source code can be viewed on Purism's `firmware git repo <https://source.pur
     .. figure:: /_static/images/flashing/flash_firmware-pro-step6-proceed_yes.jpg
         :width: 30%
 
-#. The BIOS will be reflashed with the new firmware.  This may take a few minutes.  When complete, remove the firmware USB (and insert your embassyOS USB if you are ready to install), then select "OK" to complete the process.
+#. The BIOS will be reflashed with the new firmware.  This may take a few minutes.  When complete, remove the firmware USB (and insert your StartOS USB if you are ready to install), then select "OK" to complete the process.
 
     .. figure:: /_static/images/flashing/flash_firmware-pro-step7-flashed_successfully.jpg
         :width: 30%
