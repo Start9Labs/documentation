@@ -18,7 +18,9 @@ Hardware Requirements
 
 - Power Supply (20w - 5v/4a recommended)
 
-- SD Card (128GB or 256GB recommended)
+- SD Card (64GB minimum, 128GB or 256GB recommended - "High Endurance" highly recommended)
+
+.. warning:: It is possible, but no longer recommended, to flash the OS to a small SD card and attach an external SSD, as done in the 2022 model Server One.  If you insist on doing this, you **MUST** provide adequeate power via a USB hub or, preferably, a powered expansion board, such as those sold by Geekworm.  See the `Community Hub <https://community.start9.com/c/hacking/>`_ for more info.
 
 Flash and Install StartOS
 -------------------------
