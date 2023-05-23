@@ -438,7 +438,7 @@ Example
             id: type
             name: Type
             description: |
-            - Internal: The Bitcoin Core service installed to your server
+            - Internal: The Bitcoin Core service installed on your server
             - External: A Bitcoin Core node running on a different device
             - Quick Connect: A Quick Connect URL for an unpruned Bitcoin Core node
             variant-names:
