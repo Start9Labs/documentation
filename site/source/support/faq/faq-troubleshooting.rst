@@ -61,7 +61,7 @@ What if I have an unique network issue, for example, with a firewall?
 StartOS is designed to work as simply as possible, for as many as possible, while providing the ability to host in a private manner.  If you have an aggressive or custom firewall, or other custom network settings, there is a good chance that addtional configuration may be necessary.  We will continue to learn about custom networking issues, update our docs with resources, and help in the :ref:`Community Channels <contact>` to the best of our ability.
 
 Can I use my server from behind a VPN, for example, if my router has a built-in VPN?
--------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 Yes, this is possible, but it adds complexity, which may lead to problems.  You will need to understand the setup of your router/VPN and how it supports (or doesn't support) Tor/LAN connections.
 
 If you are having trouble with this, you might consider letting your server out "in the clear," since all services are accessible over the Tor network, offering a high level of privacy.  Obviously, Start9 cannot support every variation of router and network.
