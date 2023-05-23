@@ -1,12 +1,12 @@
 .. _embassy-cli:
 
 ==============================
-Embassy Command Line Interface
+StartOS Command Line Interface
 ==============================
 
 .. warning:: This is for advanced users only!! Anything you do while SSH'd into your Embassy is NOT SUPPORTED, unless under the guidance of a Start9 technician.
 
-When interacting with Embassy directly, you will invariably want to use ``embassy-cli``.  Embassy-CLI can control StartOS in many of the same ways that the UI can, but with finer controls and deeper insights.
+When interacting with StartOS directly, you will invariably want to use ``embassy-cli``.  Embassy-CLI can control StartOS in many of the same ways that the UI can, but with finer controls and deeper insights.
 
 In order to use Embassy-CLI, you will first need to authorize yourself with the following command...
 
@@ -14,14 +14,14 @@ In order to use Embassy-CLI, you will first need to authorize yourself with the 
 
         embassy-cli auth login
 
-    and enter your Embassy Master Password at the prompt.
+    and enter your StartOS Master Password at the prompt.
 
 
 You can enter ``embassy-cli help`` or ``embassy-cli <option> help`` to get an overview of capabilities:
 
     .. code-block:: bash
 
-        Embassy CLI
+        Embassy-CLI
 
         USAGE:
             embassy-cli [OPTIONS] <SUBCOMMAND>

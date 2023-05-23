@@ -80,4 +80,4 @@ Connect StartOS
 
     Click Start > Settings > Network & Internet > Ethernet (or WiFi) and select the "Private" profile to treat your LAN as a trusted network that allows file sharing.
 
-That's it!  You can now :ref:`Create<backup-create>` encrypted, private backups of all your Embassy data to your Windows machine or external drive!!
+That's it!  You can now :ref:`Create<backup-create>` encrypted, private backups of all your server data to your Windows machine or external drive!!

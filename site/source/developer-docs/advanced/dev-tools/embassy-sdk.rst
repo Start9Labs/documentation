@@ -1,10 +1,10 @@
 .. _embassy-sdk:
 
-===========
-Embassy SDK
-===========
+=========
+Start SDK
+=========
 
-The StartOS embedded Software Development Kit (SDK), is a CLI (Command Line Interface) tool that aids in building and packaging services you wish to deploy to the Embassy.
+The StartOS embedded Software Development Kit (SDK), is a CLI (Command Line Interface) tool that aids in building and packaging services you wish to deploy to StartOS.
 
 It helps validate that the necessary components of the package exist, and package all of those components into a special file type (``s9pk``) that is understood by StartOS.
 

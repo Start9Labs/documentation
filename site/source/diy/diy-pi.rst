@@ -8,7 +8,7 @@ DIY Guidelines (Raspberry Pi)
     :depth: 2 
     :local:
 
-Start9 is committed to ensuring that StartOS is accessible.  It will always be possible to build your own Embassy similar to the ones we sell.  This guide is to build a device exactly like Start9's Embassy One, available for purchase on the `Start9 Store <https://store.start9.com/products/embassy-one>`_.
+Start9 is committed to ensuring that StartOS is accessible.  It will always be possible to build your own Start9 server similar to the ones we sell.  This guide is to build a device exactly like Start9's Server One, available for purchase on the `Start9 Store <https://store.start9.com/products/server-one>`_.
 
 For more guidance or to share your experience with others, please `head to our community forum <https://community.start9.com/>`_.  Want to support sovereign computing?  Please consider a `donation to Start9 <https://btcpay.start9.com/apps/2Et1JUmJnDwzKncfVBXvspeXiFsa/crowdfund>`_.
 

@@ -1,14 +1,14 @@
 .. _embassyd:
 
 ==============
-Embassy Daemon
+StartOS Daemon
 ==============
 
 .. warning:: This is for advanced users only!! Anything you do while SSH'd into your Embassy is NOT SUPPORTED, unless under the guidance of a Start9 technician.
 
 ``embassyd`` is the daemon that runs everything that could be considered StartOS.
 
-When SSH'd into your Embassy, you may see the status of EmbassyD with the following:
+When SSH'd into your Start9 server, you may see the status of EmbassyD with the following:
 
     .. code-block:: bash
 
