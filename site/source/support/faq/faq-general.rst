@@ -100,7 +100,7 @@ In general, any modern Internet connection is usually fine.  We have had reports
 
 I run a business, can I use StartOS for tasks such as password management and file sharing?
 -------------------------------------------------------------------------------------------
-Absolutely.  A StartOS server would be a great addition to any business as it is easy to use and provides services that you control, with no subscription fees.
+Absolutely.  A Start9 server would be a great addition to any business as it is easy to use and provides services that you control, with no subscription fees.
 
 With the addition of `BTCPay Server <https://btcpayserver.org/>`_, you can even run your own payment processor and accept cryptocurrency payments with no third party necessary!
 
