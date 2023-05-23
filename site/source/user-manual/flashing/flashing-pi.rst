@@ -3,68 +3,71 @@
 =======================
 Flashing (Raspberry Pi)
 =======================
-This guide is for flashing embassyOS to a micro SD card in order to install it on a Raspberry Pi.
+This guide is for flashing StartOS to a micro SD card in order to install it on a Raspberry Pi.
 
- .. note:: You will need a micro SD card of at least 16GB in size, 32GB recommended
+ .. note:: You will need a micro SD card of at least 16GB in size (32GB recommended) for the OS only (using an additional drive for storage), and at least 128GB is recommended if using the SD as your storage device.
 
-Getting and Extracting the embassyOS Image
-------------------------------------------
-Visit the `Github release page <https://github.com/Start9Labs/embassy-os/releases/latest>`_ to find the latest embassyOS release.  Select your OS below to get the correct Asset and extraction directions.
+Getting and Extracting the Image
+--------------------------------
+Visit the `Github release page <https://github.com/Start9Labs/start-os/releases/latest>`_ to find the latest StartOS release.
+
+At the bottom of the page, under "Assets," download the ``raspberrypi.img.gz`` file.
+
+    .. figure:: /_static/images/flashing/raspi-asset.png
+      :width: 60%
+      :alt: Raspberry Pi Asset
+
+Select your OS to continue:
 
 .. tabs::
 
     .. group-tab:: Linux
 
-        #. At the bottom of the page, under "Assets," download the ``embassyos_raspberrypi.tar.gz`` file and open a terminal in the directory you save it to.
+        #. Open a terminal in the folder you downloaded to and extract with:
+        
+            .. code-block::
+            
+                tar -xzvf startos-0.3.4.2-bbd66e9-20230519_raspberrypi.img.gz
 
-                .. figure:: /_static/images/flashing/raspi-tar-asset.png
-                    :width: 60%
-            
-        #. (Optional, but recommended) Verify the checksum against the one listed on GitHub:
+        #. (Optional, but recommended) Verify the checksum against the one listed on GitHub (SHA256):
         
             .. code-block::
             
-                sha256sum embassyos_raspberrypi.tar.gz
-        
-        #. Extract with:
-        
+                sha256sum startos-0.3.4.2-bbd66e9-20230519_raspberrypi.img
+
+            or (BLAKE3):
+
             .. code-block::
             
-                tar -xzvf embassyos_raspberrypi.tar.gz
+                b3sum startos-0.3.4.2-bbd66e9-20230519_raspberrypi.img
         
     .. group-tab:: Mac
-        
-        #. At the bottom of the page, under "Assets," download the ``embassyos_raspberrypi.tar.gz`` file.
-
-                .. figure:: /_static/images/flashing/raspi-tar-asset.png
-                    :width: 60%
             
+        #. Right-click ``startos-0.3.4.2-bbd66e9-20230519_raspberrypi.img.gz``, click "Open with," then click Archive Utility to extract.
+
         #. (Optional, but recommended) Verify the checksum against the one listed on GitHub by opening a terminal and entering:
 
             .. code-block::
 
-                openssl dgst -sha256 embassyos_raspberrypi.tar.gz
-
-        #. Right-click ``embassyos_raspberrypi.tar.gz``, click "open with," then click Archive Utility to extract.
+                openssl dgst -sha256 startos-0.3.4.2-bbd66e9-20230519_raspberrypi.img
 
     .. group-tab:: Windows
-
-        #. At the bottom of the page, under "Assets," download the ``embassyos_raspberrypi.zip`` file
-
-                .. figure:: /_static/images/flashing/raspi-zip-asset.png
-                    :width: 60%
             
-        #. (Optional, but recommended) Verify the checksum against the one listed on GitHub by opening a CMD terminal and entering:
+        #. Open a ``cmd`` prompt "As Administrator" in the folder you saved the image to and use the following command to extract it:
+
+            .. code-block::
+            
+                tar -xzvf startos-0.3.4.2-bbd66e9-20230519_raspberrypi.img.gz
+
+        #. (Optional, but recommended) Verify the checksum against the one listed on GitHub by running:
 
             .. code-block::
 
-                Get-FileHash embassyos_raspberrypi.zip
-    
-        #. Right-click eos.zip and click "Extract all"
+                Get-FileHash startos-0.3.4.2-bbd66e9-20230519_raspberrypi.img
 
-Installing embassyOS
---------------------
-Once you have extracted the embassyOS ``.img`` file, you will need to flash it onto a microSD card.
+Installing StartOS
+------------------
+Once you have extracted the StartOS ``.img`` file, you will need to flash it onto a microSD card.
 
 #. Download `balenaEtcher <https://www.balena.io/etcher/>`_ onto your Linux, Mac, or Windows computer.
 
@@ -80,10 +83,10 @@ Once you have extracted the embassyOS ``.img`` file, you will need to flash it o
 
 #. Click "Select Target" and select your microSD card.
 
-    .. warning:: BE ABSOLUTELY CERTAIN you have selected the correct target microSD card. Whatever target you select will be **COMPLETELY ERASED**!!
+    .. warning:: BE ABSOLUTELY CERTAIN you have selected the correct target microSD card. Whatever drive you select will be **COMPLETELY ERASED**!!
 
-#. Click "Flash!". You may be asked to (1) approve the unusually large disk target or (2) enter your password. Both are normal.
+#. Click "Flash!". You may be asked to approve the unusually large disk target and/or enter your password. Both are normal.
 
-#. After the flash completes, you may remove the newly flashed micro SD card from any adapter, and insert it into your Embassy's SD card slot.
+#. After the flash completes, you may remove the newly flashed micro SD card from any adapter, and insert it into your server's SD card slot.
 
 #. Finally, continue to the :ref:`Initial Setup <initial-setup>`, :ref:`Manual Update <manual-update>`, or :ref:`Reset Password <reset-password>` instructions - depending on your need.
