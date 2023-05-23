@@ -52,7 +52,7 @@ Valid SSL certificates are typically issued and obtained from Certificate Author
 
 We decided to have StartOS act as a Certificate Authority (CA). It creates a self-signed certificate, which means that the private key used to sign the digital certificate is your server's own private key instead of a third party's.  
 
-When you setup SSL for StartOS and client device, the certificate communicates to the client (a browser) that the server demonstrated ownership of the domain (``<custom-address>.local``) to the certificate authority at the time of certificate issuance (during the setup process). The StartOS dashboard can then be accessed from a home network (LAN) using a secure HTTPS connection!  You own this entire stack and no third party can interfere.
+When you setup SSL for StartOS and a client device, the certificate communicates to the client (a browser) that the server demonstrated ownership of the domain (``<custom-address>.local``) to the certificate authority at the time of certificate issuance (during the setup process). The StartOS dashboard can then be accessed from a home network (LAN) using a secure HTTPS connection!  You own this entire stack and no third party can interfere.
 
 For more information on how to setup your devices to enable this feature visit :ref:`connecting-lan`.
 
