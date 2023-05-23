@@ -10,7 +10,7 @@ General FAQ
 
 What is Start9 Labs?
 --------------------
-Start9 Labs is a small, but quickly growing group of builders based in Denver, CO (with a global team) that build Start9 Servers and StartOS.
+Start9 Labs is a small, but quickly growing group of builders based in Denver, CO (with a global team) that build Start9 servers and StartOS.
 
 What is a Start9 server?
 ------------------------
