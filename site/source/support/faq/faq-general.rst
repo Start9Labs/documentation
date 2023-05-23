@@ -84,7 +84,7 @@ Power supplies for EU, AU, US, and UK are available.
 
 Is the power supply 220v compatible?
 ------------------------------------
-Yes.
+Yes.  Start9 server power supplies are rated for 100-240V.
 
 Does StartOS have a license?
 ----------------------------
