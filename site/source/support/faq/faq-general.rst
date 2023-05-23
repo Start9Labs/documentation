@@ -41,7 +41,7 @@ How does StartOS work?
 ----------------------
 StartOS (see next question) is based on Linux and handles all operations on your server. This core element of the technology stack is what enables you to set up, login, access your server's dashboard, and install services.
 
-One of these operations is creating and managing Tor addresses, which are uniquely attributed to each service you download, as well as to the server itself. You can see your uniquely generated Tor address when you complete the setup process using the Setup App. This address is how you view your server's dashboard, which is actually just a website served up from your server itself! It is authenticated, of course, so only you can access it.
+One of these operations is creating and managing Tor addresses, which are uniquely attributed to each service you download, as well as to the server itself. You can see your uniquely generated Tor address when you complete the setup process using the Setup App. This address is how you view your server's dashboard, which is actually just a website hosted by your server itself! It is authenticated, of course, so only you can access it.
 
 You can connect to and manage your server from any mobile device, desktop computer, or laptop computer. This is accomplished right through the browser by visiting your server's private and unique URL.
 
