@@ -141,6 +141,15 @@ Server Lite, Server Pure, and Server One (2022 and older) have an internal speak
 
     * "flatline" - Server initialization failed / no network connection
 
+    .. raw:: HTML
+
+      <audio controls>
+        <source src="/_static/sounds/BEETHOVEN.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    * Beethoven's 5th - Something has gone wrong and Diagnostic Mode has been launched on ``http://start.local``, please check here for solutions.
+
 Raspberry Pi Lights
 -------------------
 Server Lite has 2 status lights:
