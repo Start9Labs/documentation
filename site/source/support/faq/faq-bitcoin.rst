@@ -64,7 +64,7 @@ Which wallets can I use that integrate with my Bitcoin and/or Lightning nodes?
 Please see the :ref:`Bitcoin Service Guides<bitcoin-service>` for all the current options.
 
 I want to use my hardware signer, such as Coldcard or Trezor, with my Bitcoin node.  How does this work?
----------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
 You do not use hardware signers directly with your node. Hardware signers interface with wallets, and wallets interface with nodes.
 
 Node (on StartOS) <— Wallet (Specter, Sparrow, Electrum) <— Hardware signer (Coldcard, Trezor)
