@@ -42,7 +42,7 @@ Packing up a service for StartOS does not require extensive development skills. 
 We are aggressively moving away from service development in favor of a more community driven approach. Meaning you, an app development team, or anyone else on Earth, can bring the service they want to a Marketplace so anyone can run it on StartOS. You don't need our permission.
 
 Does StartOS operate as a Tor relay node?
----------------------------------------------
+-----------------------------------------
 No, currently it does not, but we plan to add that functionality in the near future.
 
 Are files on File Browser encrypted on disk?
