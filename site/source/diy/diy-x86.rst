@@ -39,4 +39,11 @@ If you intend to run Bitcoin or store any meaningful amount of data, you will ne
 
 Flash and Install StartOS
 -------------------------
-After building your hardware, you will need a copy of StartOS.  Head over to our :ref:`Flashing (x86_64) Guide <flashing-x86>` to complete your Start9 server build.
+.. topic-box::
+  :title: Flashing (x86_64)
+  :link: /user-manual/flashing/flashing-x86/
+  :icon: scylla-icon scylla-icon--overview
+  :class: large-4
+  :anchor: View Guide
+
+  Flash StartOS for use on an x86_64 machine

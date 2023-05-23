@@ -24,4 +24,11 @@ Hardware Requirements
 
 Flash and Install StartOS
 -------------------------
-After building your hardware build, you will need a copy of StartOS.  Head over to our :ref:`Flashing (Raspberry Pi) Guide <flashing-pi>` to complete your build.
+.. topic-box::
+  :title: Flashing (Raspberry Pi)
+  :link: /user-manual/flashing/flashing-pi/
+  :icon: scylla-icon scylla-icon--apps
+  :class: large-4
+  :anchor: View Guide
+
+  Flash StartOS for use on a Raspberry Pi
