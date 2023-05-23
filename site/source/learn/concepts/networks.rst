@@ -32,7 +32,7 @@ Your certificate is created when you initially setup StartOS, or migrate to a ne
 
 MDNS
 ----
-Multicast Domain Name System (MDNS) is a protocol that resolves a human-readable hostname to an IP address on a small network, such as the home or office network where StartOS runs.
+Multicast Domain Name System (MDNS) is a protocol that resolves a human-readable hostname to an IP address on a small network, such as the home or office network where you host your Start9 server.
 
 This is known as a "zeroconf," or zero-configuration service, meaning that you can instantly visit a human-recognizable domain name, such as ``start.local`` from your network.
 
