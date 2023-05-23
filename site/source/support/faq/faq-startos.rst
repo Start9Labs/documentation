@@ -27,7 +27,7 @@ Do I plug in a monitor, keyboard, and mouse?
 Typically, no.  It is not necessary or recommended to do this as StartOS runs in "headless" mode - meaning that you will access it from your computer or mobile device.  However, we have recently added "Kiosk Mode," which allows the installation (and use) of StartOS with a monitor/keyboard/mouse.  For directions on setting this up, please check out the :ref:`x86 DIY Guide <diy-x86>`.
 
 How much storage does a Start9 server have?
------------------------------------
+-------------------------------------------
 Currently, Start9 servers ship with a 1 or 2TB SSD, but you may use a larger drive if you prefer.  We advise against HDDs at this time for perfomance reasons.
 
 Are my Internet requests anonymous and secure?
