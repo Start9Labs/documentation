@@ -22,9 +22,9 @@ Make sure you have first set up :ref:`LAN access<lan-ios>`.
 
 1. Download the appropriate desktop client from https://nextcloud.com/install/#install-clients
 2. Open the client and click "Log In"
-3. From your Embassy's Nextcloud Service page, go to "Interfaces" and copy the LAN address
+3. From your server's Nextcloud Service page, go to "Interfaces" and copy the LAN address
 4. Enter your LAN address under "Server Address" and click "Next"
-5. You will be asked to Trust your Embassy's certificate, which is safe to do as you generate and sign this during LAN Setup
+5. You will be asked to Trust your server's certificate, which is safe to do as you generate and sign this during LAN Setup
 6. Tick the box for "Trust this certificate anyway" and click "Next"
 7. This will launch a page in your web browser, click "Log In" and then "Grant access" to link the desktop client. You can close this browser window afterwards
 8. Next, configure the local directory that you want to sync with Nextcloud. You may use the default or change it, and edit the sync settings to desired. When satisfied, click "Connect"
@@ -37,7 +37,7 @@ You will first need to have the :ref:`Tor daemon running<tor-ios>`.
 
 1. On your desktop application, click the account in the top left -> Settings, then in Settings, click Network, then "Specify proxy manually as" and "SOCKS5 proxy." Enter "127.0.0.1" for the Host and "9050" for the port.
 2. Close the Settings screen and click the account in the top left again, then "Add Account."
-3. On the following screen, click "Log in," then enter your Nextcloud Tor server address, which you can copy from the Nextcloud page on your Embassy -> Interfaces - Tor. This must start with http:// and end with .onion. Click Next.
+3. On the following screen, click "Log in," then enter your Nextcloud Tor server address, which you can copy from Nextcloud -> Interfaces - Tor. This must start with http:// and end with .onion. Click Next.
 4. This will launch your browser and prompt you to log in to your account. Log in and then grant access as we did for LAN.
 5. That's it! You may wish to set up some select folders for remote sync, but for large files, it is best to sync on LAN only, so you can "Skip folders configuration" on the resulting screen if you wish. Check your connection by clicking the newly created account in the client app.
 
@@ -53,11 +53,11 @@ In order to sync calendars and contacts with your iOS device, follow the steps b
 
 3. Select either CalDAV (for Calendar setup) or CardDAV (for Contacts setup), and enter the following fields:
 
-  - Server - Enter your Nextcloud server LAN URL (found in "Interfaces" in the Nextcloud service page on your Embassy), and add `/remote.php/dav` after `.local`
+  - Server - Enter your Nextcloud server LAN URL (found in "Interfaces" in the Nextcloud service page), and add `/remote.php/dav` after `.local`
   
-  - User name - Your Nextcloud user (Default is "embassy")
+  - User name - Your Nextcloud user (Default is "admin")
   
-  - Password - Your Nextcloud user's password (Default found in "Properties" in the Nextcloud service page on your Embassy)
+  - Password - Your Nextcloud user's password (Default found in "Properties" in the Nextcloud service page)
 
   - Description - Anything to describe this account, such as "Nextcloud CalDAV"
 

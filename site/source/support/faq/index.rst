@@ -4,13 +4,13 @@
 FAQ
 ===
 
-Answers to Frequently Asked Questions from Embassy users
+Answers to Frequently Asked Questions
 
 .. toctree::
   :maxdepth: 2
 
   faq-general
-  faq-embassy
+  faq-startos
   faq-basic-use
   faq-troubleshooting
   faq-contributing

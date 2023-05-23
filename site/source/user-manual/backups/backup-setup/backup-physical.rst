@@ -9,17 +9,17 @@ Backup to Physical Drive
 .. youtube:: KJRO9wGOOVw
     :width: 100%
 
-The recommended method of backup (including with external drives) is to setup a :ref:`Network Folder<backup>` via your OS.  However, you may use a powered external drive, or external drive via a powered USB 3.0 hub, connected directly to your Embassy if you prefer.
+The recommended method of backup (including with external drives) is to setup a :ref:`Network Folder<backup>` via your OS.  However, you may use a powered external drive, or external drive via a powered USB 3.0 hub, connected directly to your Start9 server if you prefer.
 
-.. warning:: If you still choose to plug into your Embassy, this drive MUST have external power, or be connected via a powered USB hub in order to prevent any data corruption due to power constraints!  Embassy One (NASPi Geekworm case with built-in power management) and Embassy Pro users can safely ignore this warning.
+.. warning:: If you still choose to plug into your Start9 server, this drive MUST have external power, or be connected via a powered USB hub in order to prevent any data corruption due to power constraints!  Server One (NASPi Geekworm case with built-in power management) and Server Pro users can safely ignore this warning.
 
 #. Ensure your backup drive is properly formatted. The recommended format at this time is ``exFAT``. **Do not** use ``fat32``.
 
-#. If your drive is self-powered, you can plug it directly into your Embassy blue USB 3.0 slot. If not, first plug the drive into a powered USB hub, then plug the hub into your Embassy. Then you may power it up.
+#. If your drive is self-powered, you can plug it directly into your Start9 server blue USB 3.0 slot. If not, first plug the drive into a powered USB hub, then plug the hub into your Start9 server. Then you may power it up.
 
 #. Go to *System > Create Backup*
 
-    .. figure:: /_static/images/config/embassy_backup.png
+    .. figure:: /_static/images/config/backup.png
         :width: 60%
 
 #. Select your drive.
@@ -30,12 +30,12 @@ The recommended method of backup (including with external drives) is to setup a 
     .. figure:: /_static/images/config/physical-backup2.png
         :width: 60%
 
-#. Enter your embassyOS master password.
+#. Enter your StartOS master password.
 
-    .. figure:: /_static/images/config/embassy_backup3.png
+    .. figure:: /_static/images/config/backup3.png
         :width: 60%
 
 #. When the backup is complete, you will receive a notification.  If successful, you will see the date and time of your most recent backup updated under "Backups" in the System tab.
 
-    .. figure:: /_static/images/config/embassy_backup4.png
+    .. figure:: /_static/images/config/backup4.png
         :width: 60%

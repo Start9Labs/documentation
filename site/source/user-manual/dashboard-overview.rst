@@ -11,7 +11,7 @@ Dashboard Overview
 Connection Status
 -----------------
 
-In the bottom left of your screen you can monitor whether or not you are connected to your Embassy.
+In the bottom left of your screen you can monitor whether or not you are connected to your server.
 
 When connected it will look like this:
 
@@ -57,7 +57,7 @@ Use this tab to update services. A green icon will appear next to this tab when 
 Notifications Tab
 -----------------
 
-Notifications issued by embassyOS will appear in this tab. You can delete these notifications individually or all at once by clicking "Delete All".
+Notifications issued by StartOS will appear in this tab. You can delete these notifications individually or all at once by clicking "Delete All".
 
     .. figure:: /_static/images/walkthrough/notiftab.png
         :width: 60%
@@ -66,7 +66,7 @@ Notifications issued by embassyOS will appear in this tab. You can delete these 
 System Tab
 -----------
 
-Use this tab to customize and manage your Embassy.
+Use this tab to customize and manage StartOS.
 
     .. figure:: /_static/images/walkthrough/systemtab.png
         :width: 60%
@@ -76,7 +76,7 @@ Read below for a summary of each section within the System Tab.
 Backups
 =======
 
-The Backups section allows you to create and restore :ref:`Embassy backups <backups>`.
+The Backups section allows you to create and restore :ref:`StartOS backups <backups>`.
 
 Manage
 ======
@@ -86,7 +86,7 @@ The Manage section gives you access to :ref:`updating-eos`, Software Updates, De
 Insights
 ========
 
-The Insights section gives you basic information on your Embassy, monitoring of system resources / temperature, and logs for debugging.
+The Insights section gives you basic information on your your server, monitoring of system resources / temperature, and logs for debugging.
 
 Support
 =======
@@ -103,19 +103,19 @@ Power
 * **Restart**
 
     * Be patient while services shut down. A *tune* will play, indicating the shutdown is complete.
-    * A gentle *bep* will sound when the Embassy is powered back on.
-    * A *chime* will sound when the Embassy is ready to use.  Please be patient as a Restart will take some time.
+    * A gentle *bep* will sound when the server is powered back on.
+    * A *chime* will sound when the server is ready to use.  Please be patient as a Restart will take some time.
 
 * **Shutdown**
 
-    .. caution:: After a shutdown, the *only* way to turn your Embassy back on is to unplug it and plug it back in. As such, we do not recommend shutting down your Embassy when you are not physically near it. Instead, you should use the restart option.
+    .. caution:: After a shutdown, the *only* way to turn your server back on is to unplug it and plug it back in. As such, we do not recommend shutting down your server when you are not physically near it. Instead, you should use the restart option.
 
     * Be patient while services shut down, it may take some minutes. A *tune* will play, indicating the shutdown is complete.
-    * It is now safe to unplug the Embassy from power and the ethernet cable, if connected.
+    * It is now safe to unplug your server from power and the ethernet cable, if connected.
 
 * **System Rebuild**
 
-    This action will tear down all service containers and rebuild them from scratch. No data will be deleted. This action is useful if your system gets into a bad state, and it should only be performed if you are experiencing general performance or reliability issues. It may take multiple minutes to complete. During this time, you will lose all connectivity to your Embassy.
+    This action will tear down all service containers and rebuild them from scratch. No data will be deleted. This action is useful if your system gets into a bad state, and it should only be performed if you are experiencing general performance or reliability issues. It may take multiple minutes to complete. During this time, you will lose all connectivity to your server.
 
 
 

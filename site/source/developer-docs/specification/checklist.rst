@@ -8,7 +8,7 @@ Checklist
   :depth: 2 
   :local:
 
-This guide outlines a checklist of steps to complete in order to package a service for embassyOS. For a more in depth example, visit the :ref:`build your first package <service-packaging>` guide.
+This guide outlines a checklist of steps to complete in order to package a service for StartOS. For a more in depth example, visit the :ref:`build your first package <service-packaging>` guide.
 
 Packaging
 ---------
@@ -30,7 +30,7 @@ Packaging
 Testing:
 --------
 
-    1. Sideload ``<package-id>.s9pk`` onto an Embassy
+    1. Sideload ``<package-id>.s9pk`` onto StartOS
     2. Install package using embassy-cli
     3. Start package using embassy-cli, or in the UI
     4. Check logs to see if errors

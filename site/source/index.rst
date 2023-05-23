@@ -7,7 +7,7 @@
 .. hero-box::
   :title: Welcome
 
-  Here you will find information on embassyOS, including DIY guides, user manuals, and developer docs. Welcome to the era of sovereign computing. Anyone can do it. No one can stop it.
+  Here you will find information on StartOS, including DIY guides, user manuals, and developer docs. Welcome to the era of sovereign computing. Anyone can do it. No one can stop it.
 
 .. raw:: html
 
@@ -26,7 +26,7 @@
   :class: large-4
   :anchor: View
 
-  Get started with your Embassy
+  Get started with your Start9 server
 
 .. topic-box::
   :title: Support

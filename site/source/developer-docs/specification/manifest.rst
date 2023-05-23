@@ -17,9 +17,9 @@ This file describes the service and it's requirements. It is used to:
 
 Each time a service is updated, the Manifest should be updated to include the new version, release notes, and any pertinent updates to the install, uninstall, or restoration flows. All this information is displayed in the marketplace listing, and the optionally denoted alerts will be displayed when appropriate to provide the user with more information.
 
-There is nothing you need to do as a developer to set up Tor for running a service. This is *completely* handled by embassyOS - a Tor address will be automatically generated when the service is installed. Just define an interface with a tor config in the Manifest file. You do, however, need to ensure the service is in fact capable of running over Tor.
+There is nothing you need to do as a developer to set up Tor for running a service. This is *completely* handled by StartOS - a Tor address will be automatically generated when the service is installed. Just define an interface with a tor config in the Manifest file. You do, however, need to ensure the service is in fact capable of running over Tor.
 
-The Manifest is also responsible for outlining service :ref:`dependencies <dependencies-spec>`. By defining rules using the :ref:`embassyOS DSL specification <config_rules>`, users can easily and selectively install, uninstall, and update any service without getting stuck in dependency hell. embassyOS presents this information in a polished install/uninstall/update wizard, so there's no need for editing configuration files or jumping into the command line. For you as a developer, this simply means populating this key in the manifest!
+The Manifest is also responsible for outlining service :ref:`dependencies <dependencies-spec>`. By defining rules using the :ref:`StartOS DSL specification <config_rules>`, users can easily and selectively install, uninstall, and update any service without getting stuck in dependency hell. StartOS presents this information in a polished install/uninstall/update wizard, so there's no need for editing configuration files or jumping into the command line. For you as a developer, this simply means populating this key in the manifest!
 
 Formatting
 ----------
@@ -38,7 +38,7 @@ Below are the types and sub-type definitions, with necessary elaborations. Any i
     id: String
     # A human readable service title
     title: String
-    # Service version - accepts up to four digits, where the last confirms to revisions necessary for embassyOS - see documentation: https://github.com/Start9Labs/emver-rs. This value will change with each release of the service. 
+    # Service version - accepts up to four digits, where the last confirms to revisions necessary for StartOS - see documentation: https://github.com/Start9Labs/emver-rs. This value will change with each release of the service. 
     version: Number
     # Release notes for the update - can be a string, paragraph or URL
     release-notes: String
@@ -54,9 +54,9 @@ Below are the types and sub-type definitions, with necessary elaborations. Any i
     marketing-site: String
     # The series of commands to build the project into an s9pk for arm64/v8. In this case we are using a Makefile with the simple build command "make".
     build: List<String>
-    # Minimum required version of embassyOS
+    # Minimum required version of StartOS
     min-os-version: Number
-    # Human readable descriptors for the service. These are used throughout the embassyOS user interface, primarily in the marketplace.
+    # Human readable descriptors for the service. These are used throughout the StartOS user interface, primarily in the marketplace.
     description:
     # This is the first description visible to the user in the marketplace.
     short: String
@@ -180,13 +180,13 @@ Below are the types and sub-type definitions, with necessary elaborations. Any i
             ui: Boolean
             # Denotes the protocol specifications used by this interface
             protocols: List<String>
-    # Alerts: omitting these will result in using the default alerts in embassyOS, except for start, which has no default.
+    # Alerts: omitting these will result in using the default alerts in StartOS, except for start, which has no default.
     alerts:
         install-alert: String
         uninstall-alert: String
         restore-alert: String
         start-alert: String
-    # Specifies how backups should be run for this service. The default embassyOS provided option is to use the duplicity backup library on a system image (compat)
+    # Specifies how backups should be run for this service. The default StartOS provided option is to use the duplicity backup library on a system image (compat)
     backup:
         create:
             type: String
@@ -293,7 +293,7 @@ Examples
 
 - `Hello World <https://github.com/Start9Labs/hello-world-wrapper/blob/master/manifest.yaml>`__
 - `Filebrowser <https://github.com/Start9Labs/filebrowser-wrapper/blob/master/manifest.yaml>`__
-- `Embassy-pages <https://github.com/Start9Labs/embassy-pages-wrapper/blob/master/manifest.toml>`__
-- `Photoview <https://github.com/Start9Labs/embassyOS-photoview-wrapper/blob/master/manifest.yaml>`__
+- `Start9-pages <https://github.com/Start9Labs/start9-pages-wrapper/blob/master/manifest.toml>`__
+- `Photoview <https://github.com/Start9Labs/photoview-wrapper/blob/master/manifest.yaml>`__
 - `BTCPay Server <https://github.com/Start9Labs/btcpayserver-wrapper/blob/master/manifest.yaml>`__
 - `Synapse <https://github.com/Start9Labs/synapse-wrapper/blob/master/manifest.yaml>`__

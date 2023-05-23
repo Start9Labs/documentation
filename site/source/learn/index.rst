@@ -19,7 +19,7 @@ Learn
   :class: large-4
   :anchor: Learn
 
-   An overview of the ideas and technologies surrounding Start9 Labs and Embassy.
+   An overview of the ideas and technologies surrounding Start9 and StartOS.
 
 .. topic-box::
   :title: FAQ
@@ -28,7 +28,7 @@ Learn
   :class: large-4
   :anchor: Get Answers
 
-  Answers to Frequently Asked Questions from Embassy users.
+  Answers to Frequently Asked Questions from StartOS users.
 
 .. raw:: html
 

@@ -27,8 +27,8 @@ Dependencies
 ------------
 A software dependency is a code library or package that is reused in a new piece of software. The benefit of software dependencies is that they allow developers to more quickly deliver software by building on previous work.  Software may even require its dependency to be configured in a particular way.
 
-Traditionally, managing dependencies has been a massive headache and has served as a huge barrier to running a personal server. But no more! The embassyOS dependency management system makes the process simple and accesible.
+Traditionally, managing dependencies has been a massive headache and has served as a huge barrier to running a personal server. But no more! The StartOS dependency management system makes the process simple and accesible.
 
-If a service has one or more dependencies, or a dependency needs to be configured in a particular way, your Embassy device will inform you and provide an automated solution, giving details of what will be done so you can make an informed decision before taking action.
+If a service has one or more dependencies, or a dependency needs to be configured in a particular way, StartOS will inform you and provide an automated solution, giving details of what will be done so you can make an informed decision before taking action.
 
-Sometimes, a dependency can be satisfied in multiple ways. For example, Lightning has a dependency on Bitcoin. This does not necessarily mean you need to have Bitcoin installed on your Embassy. You could just as easily configure Lightning to use another Bitcoin node located somewhere else!
+Sometimes, a dependency can be satisfied in multiple ways. For example, Lightning has a dependency on Bitcoin. This does not necessarily mean you need to have Bitcoin installed on StartOS. You could just as easily configure Lightning to use another Bitcoin node located somewhere else!

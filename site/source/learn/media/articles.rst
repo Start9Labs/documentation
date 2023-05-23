@@ -4,7 +4,7 @@
 Articles
 ========
 
-Articles featuring Start9 Labs and/or Embassy
+Articles featuring Start9 Labs and/or StartOS
 
 .. topic-box::
     :title: March 11, 2021 - Start9 Labs Pitches a Private At-Home Server. And It Works
@@ -20,6 +20,6 @@ Articles featuring Start9 Labs and/or Embassy
     :link: https://www.coindesk.com/tech/2020/07/08/start9-labs-pitches-a-private-at-home-server-and-it-works/
     :anchor: Coindesk
 
-    Start9 Labs' Embassy server sets up its own private internet network and comes with its own operating system. We tried it.
+    Start9's StartOS sets up its own private internet network and comes with its own operating system. We tried it.
 
 

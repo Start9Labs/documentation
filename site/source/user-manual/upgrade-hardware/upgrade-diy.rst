@@ -8,13 +8,13 @@ Using your own hardware
   :depth: 2
   :local:
 
-This guide will cover how to upgrade from embassyOS version 0.2.x to version 0.3.x with your own equipment.
+This guide will cover how to upgrade from StartOS version 0.2.x to version 0.3.x with your own equipment.
 
 Hardware Requirements
 ---------------------
 
 .. note::
-   If you purchased the `upgrade kit <https://store.start9.com/collections/embassy/products/upgrade-kit>`_ from Start9, you should follow :ref:`this guide<upgrade-kit>`.
+   If you purchased the `upgrade kit <https://store.start9.com/products/upgrade-kit>`_ from Start9, you should follow :ref:`this guide<upgrade-kit>`.
 
 #. `32GB microSD card <https://www.amazon.com/dp/B07P14QHB7/>`_
 
@@ -27,7 +27,7 @@ Hardware Requirements
 Downloading
 -----------
 
-#. Once you have all these you will need to `download embassyOS v0.3.2.1 image from our github <https://github.com/Start9Labs/embassy-os/releases/tag/v0.3.2.1>`_, scroll to the Assets section, and download ``eos.tar.gz`` for Linux/Mac or ``eos.zip`` for Windows.
+#. Once you have all these you will need to `download StartOS v0.3.2.1 image from our github <https://github.com/Start9Labs/start-os/releases/tag/v0.3.2.1>`_, scroll to the Assets section, and download ``eos.tar.gz`` for Linux/Mac or ``eos.zip`` for Windows.
 
 .. warning:: Only use v0.3.2.1 to perform this upgrade.  Newer versions have deprecated the 02x to 03x flow, so you must choose this intermediate version first, then you can upgrade via the operating system to get to the latest version.
 
@@ -72,37 +72,37 @@ Windows
 Flashing
 --------
 
-#. Once you have the image, flash it on to the 32GB SD card - the new one, **NOT** the one currently in your Embassy!
+#. Once you have the image, flash it on to the 32GB SD card - the new one, **NOT** the one currently in your server!
 
 .. tip:: The flashing software we recommend is `Balena Etcher <https://www.balena.io/etcher/>`_
 
 .. _migrate-02-migrate:
 
-Migrate Data
-------------
+Transfer Data
+-------------
 
-You may like to follow along with this video for clarity while migrating:
+You may like to follow along with this video for clarity while transferring:
    .. youtube:: ySd8uFJTbvQ
       :width: 100%
 
-#. Begin by going into your Embassy, stopping all running services, and shutting down the device in the Embassy tab.
+#. Begin by going into your server, stopping all running services, and shutting down the device in the System tab.
 
-#. Once you've heard the power-off sound, wait a few more seconds and then safely unplug the Embassy.
+#. Once you've heard the power-off sound, wait a few more seconds and then safely unplug the server.
 
-#. Next, remove the SD card that is in your Embassy and place it into the SD card adaptor, and then connect the adaptor to a USB port on your Embassy.
+#. Next, remove the SD card that is in your server and place it into the SD card adaptor, and then connect the adaptor to a USB port on your server.
 
-#. Then take the new SD card with 0.3 on it and place it into the microSD card slot on your Embassy (not into the adaptor - that is for the old SD card!)
+#. Then take the new SD card with 0.3 on it and place it into the microSD card slot on your server (not into the adaptor - that is for the old SD card!)
 
-#. Next, plug the SSD into one of the USB 3.0 (blue) ports on your Embassy, then reconnect the Ethernet cable if not already connected.
+#. Next, plug the SSD into one of the USB 3.0 (blue) ports on your server, then reconnect the Ethernet cable if not already connected.
 
-#. Now the power cable can be connected and the Embassy powered up.
+#. Now the power cable can be connected and the server powered up.
 
 Power Up
 --------
 
-#. Embassy will power up and then initialize, a process of less than 5 minutes if you downloaded the image, or about 10-20 minutes if you built from source.  Once complete you will hear a _bep_ to indicate it is initialized and then a _chime_ sound to indicate it is online.
+#. The server will power up and then initialize, a process of less than 5 minutes if you downloaded the image, or about 10-20 minutes if you built from source.  Once complete you will hear a _bep_ to indicate it is initialized and then a _chime_ sound to indicate it is online.
 
-#. On your computer, open up a browser and go to http://embassy.local
+#. On your computer, open up a browser and go to http://start.local
 
 #. Pick `Recover`
 
@@ -114,7 +114,7 @@ Power Up
    .. figure:: /_static/images/setup/screen1-restore_or_useexisting.jpg
       :width: 60%
 
-#. You will be asked to select your old Embassy SD card - select rootfs
+#. You will be asked to select your old server SD card - select rootfs
 
    .. figure:: /_static/images/setup/screen3-restore_drive.jpg
       :width: 60%
@@ -126,28 +126,28 @@ Power Up
 
    .. note:: If your SSD does not show up, unplug it from the USB port and plug it back in a different USB 3.0 (blue) port
 
-#. You will now need to make a password for your Embassy. It needs to be a strong password. This password protects your Embassy. It can be the same one that you used prior to migration, or a new one.  Either way, make it strong, and make a backup of it.
+#. You will now need to make a password for your server. It needs to be a strong password. This password protects your server. It can be the same one that you used prior to migration, or a new one.  Either way, make it strong, and make a backup of it.
 
    .. figure:: /_static/images/setup/screen5-set_password.jpg
       :width: 60%
 
-#. Embassy will now recover all your data from your old Embassy and once finished, you will hear a _bep_, followed by a _chime_.
+#. Your server will now recover all your data from your old server and once finished, you will hear a _bep_, followed by a _chime_.
 
    .. figure:: /_static/images/setup/screen6-storage_initialize.jpg
       :width: 60%
 
-#. Now you will be provided with both a Tor and LAN address with which you can access your Embassy. A file download will contain this important information, which you should keep somewhere safe.  It is also a good idea to make bookmarks on the devices that you will use to access your Embassy.
+#. Now you will be provided with both a Tor and LAN address with which you can access your server. A file download will contain this important information, which you should keep somewhere safe.  It is also a good idea to make bookmarks on the devices that you will use to access your server.
 
    .. figure:: /_static/images/setup/screen7-upgrade_complete.jpg
       :width: 60%
 
 #. To use LAN safely, the SSL certificate will need to be added to whatever device you are using to access. This can be downloaded by clicking on "Download root CA" and installed by following the :ref:`instructions<connecting-lan>`.
 
-#. You can now log in to your Embassy via Tor or LAN, and you will be given the option of recovering your data on a service-by-service basis.
+#. You can now log in to your server via Tor or LAN, and you will be given the option of recovering your data on a service-by-service basis.
 
 IMPORTANT NOTES
 ---------------
-- You may remove your 0.2.x SD Card once you reach the success page.  It is highly recommended to keep this card in a safe place for a few weeks to ensure your migrated Embassy is working smoothly.  After this you may wipe and repurpose the card however you wish.
+- You may remove your 0.2.x SD Card once you reach the success page.  It is highly recommended to keep this card in a safe place for a few weeks to ensure your new server is working smoothly.  After this you may wipe and repurpose the card however you wish.
 
 - Do NOT use the old 0.2.x card again, unless instructed by a Start9 Support Tech, especially if you have funds on the Lightning Network, as it can lead to loss of funds!
 

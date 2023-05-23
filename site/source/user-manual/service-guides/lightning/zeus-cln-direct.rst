@@ -14,7 +14,7 @@ Available For:
 
 
 #. Download the Zeus: Bitcoin and Lightning wallet from your mobile device's application store.
-#. Open your Embassy's web interface and log in
+#. Open your Start9 server's web interface and log in
 #. Select Services -> Core Lightning
 #. Select "Properties"
 #. Click the QR code next to "REST API Quick Connect" to display the QR code
@@ -23,5 +23,3 @@ Available For:
 #. Change "Node interface" to "Core Lightning (c-lightning-REST)"
 #. Press "SCAN C-LIGHTNING-REST QR"
 #. Press "SAVE NODE CONFIG"
-
-

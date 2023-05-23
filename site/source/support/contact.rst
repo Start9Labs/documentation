@@ -21,9 +21,9 @@ Community Channels
 
 * `Matrix <https://matrix.to/#/#community:matrix.start9labs.com>`_ - Community channel that will gradually replace Telegram (now bridged to Telegram for convenience).
 
-* `Matrix Dev <https://matrix.to/#/#community-dev:matrix.start9labs.com>`_ - Primary channel for collaboration on embassyOS development and service packaging.
+* `Matrix Dev <https://matrix.to/#/#community-dev:matrix.start9labs.com>`_ - Primary channel for collaboration on StartOS development and service packaging.
 
-* `Matrix Tor (Tor required) <https://matrix.to/#/!iRwnQntcjpWfLxdgav:matrix.privacy34kn4ez3y3nijweec6w4g54i3g54sdv7r5mr6soma3w4begyd.onion?via=matrix.start9labs.com&via=matrix.privacy34kn4ez3y3nijweec6w4g54i3g54sdv7r5mr6soma3w4begyd.onion&via=oayal5vhil3zhj7ylixvpi4nr2xvhypdnenji4sx5q4kvaotevjvsxad.onion>`_ - Tor-only community channel for Embassy users
+* `Matrix Tor (Tor required) <https://matrix.to/#/!iRwnQntcjpWfLxdgav:matrix.privacy34kn4ez3y3nijweec6w4g54i3g54sdv7r5mr6soma3w4begyd.onion?via=matrix.start9labs.com&via=matrix.privacy34kn4ez3y3nijweec6w4g54i3g54sdv7r5mr6soma3w4begyd.onion&via=oayal5vhil3zhj7ylixvpi4nr2xvhypdnenji4sx5q4kvaotevjvsxad.onion>`_ - Tor-only community channel for StartOS users
 
 Social Media
 ------------
@@ -33,3 +33,9 @@ Social Media
 * `Twitter <https://twitter.com/start9labs>`_
 
 * `GitHub <https://github.com/start9labs>`_
+
+Email
+-----
+* security@start9.com - for reporting sensitive information or security concerns.
+
+* affiliate@start9.com - for those interested in becoming a Start9 affiliate.

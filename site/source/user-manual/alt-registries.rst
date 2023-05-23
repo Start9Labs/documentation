@@ -27,7 +27,7 @@ Click "Add custom registry" and enter the URL of your desired Marketplace. You m
     .. figure:: /_static/images/marketplaces/marketplace-switch1.png
         :width: 60%
 
-.. note:: Currently this change will only permit the downloading of *services* from alternative marketplaces. embassyOS itself may only be obtained from Start9 (or building from source) at this time.
+.. note:: Currently this change will only permit the downloading of *services* from alternative marketplaces. StartOS itself may only be obtained from Start9 (or building from source) at this time.
 
 Hosting a Registry
 ------------------

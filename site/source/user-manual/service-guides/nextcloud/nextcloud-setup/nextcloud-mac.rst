@@ -29,7 +29,7 @@ The smoothest experience will be using direct account integration with your Mac.
 
 4. Select "Manual" from the "Account Type" dropdown menu and fill in the following fields:
 
-  - Username - The default user is "embassy," but this is your user within Nextcloud, so be sure it is the correct user if you have more than one
+  - Username - The default user is "admin," but this is your user within Nextcloud, so be sure it is the correct user if you have more than one
   
   - Password - In your Nextcloud WebUI, visit the top-righthand menu and select "Personal Settings" -> "Security."  At the bottom, under Devices & Sessions, create a new app password with a name of your choice, such as "MacCalDAV," and then copy the resulting password into your Mac's account config
   
@@ -54,9 +54,9 @@ Make sure you have first set up :ref:`LAN access<lan-mac>`.  Then do the followi
 
 1. Download the appropriate desktop client from https://nextcloud.com/install/#install-clients
 2. Open the client and click "Log In"
-3. From your Embassy's Nextcloud Service page, go to "Interfaces" and copy the LAN address
+3. From your server's Nextcloud Service page, go to "Interfaces" and copy the LAN address
 4. Enter your LAN address under "Server Address" and click "Next"
-5. You will be asked to Trust your Embassy's certificate, which is safe to do as you generate and sign this during LAN Setup
+5. You will be asked to Trust your server's certificate, which is safe to do as you generate and sign this during LAN Setup
 6. Tick the box for "Trust this certificate anyway" and click "Next"
 7. This will launch a page in your web browser, click "Log In" and then "Grant access" to link the desktop client. You can close this browser window afterwards
 8. Next, configure the local directory that you want to sync with Nextcloud. You may use the default or change it, and edit the sync settings to desired. When satisfied, click "Connect"
@@ -68,7 +68,7 @@ Tor Setup
 You will first need to have the :ref:`Tor daemon running<tor-mac>`.
 
 1. Close the Settings screen and click the account in the top left again, then "Add Account."
-2. On the following screen, click "Log in," then enter your Nextcloud Tor server address, which you can copy from the Nextcloud page on your Embassy -> Interfaces - Tor. This must start with `http://` and end with .onion. Click Next.
+2. On the following screen, click "Log in," then enter your Nextcloud Tor server address, which you can copy from Nextcloud -> Interfaces - Tor. This must start with `http://` and end with .onion. Click Next.
 3. This will launch your browser and prompt you to log in to your account. Log in and then grant access as we did for LAN.
 4. That's it! You may wish to set up some select folders for remote sync, but for large files, it is best to sync on LAN only, so you can "Skip folders configuration" on the resulting screen if you wish. Check your connection by clicking the newly created account in the client app.
 
@@ -79,13 +79,13 @@ If you wish to use a standalone client for Calendar and Contacts, we recommend M
 1. Install the Contacts and Calendar apps in Nextcloud.
 2. Make sure you are on Thunderbird version 102.3.0 or greater and then import your LAN certificate:
 
-    - First, follow the :ref:`instructions for adding your Embassy's Root CA to your system<lan-mac>` and then the :ref:`Thunderbird-specific instructions<lan-thunderbird>`.
+    - First, follow the :ref:`instructions for adding your Root CA to your system<lan-mac>` and then the :ref:`Thunderbird-specific instructions<lan-thunderbird>`.
 
 3. Download the `TBSync` and `Provider for CalDAV & CardDAV` add-ons by searching for them in the "Tools -> Add-ons and Themes" menu.
 4. Go back to "Tools -> Add-ons and Themes -> Extensions" and click the 'wrench' icon next to TBSync.
 5. Click "Account Actions" in the bottom left of the resulting screen, then "Add New Account -> CalDAV & CardDAV"
 6. Select "Automatic Configuration" and click `Next`
-7. Enter a name for your account, your nextcloud user name (found in Properties, default is 'embassy'), password (found in Properties), and server LAN address (found in Interfaces, ending in `.local`) - then click "Next."
+7. Enter a name for your account, your nextcloud user name (found in Properties, default is 'admin'), password (found in Properties), and server LAN address (found in Interfaces, ending in `.local`) - then click "Next."
 8.  After connecting, click "Finish."
 9.  In the resulting window, click "Enable and synchronize this account."
 10. Select the items you want to sync, such as contacts and a calendar.

@@ -8,15 +8,15 @@ Packaging FAQ
   :depth: 2 
   :local:
 
-Do I need programming experience to package a service for embassyOS?
---------------------------------------------------------------------
+Do I need programming experience to package a service for StartOS?
+------------------------------------------------------------------
 It would be helpful, but is not a pre-requisite.  Linux, dev-ops, and/or systems administration experience would all be helpful as well.  Keep in mind that everyone has to start somewhere, and perhaps your journey to development begins with packaging a service for eOS!
 
 What considerations are there when choosing a service for packaging?
 --------------------------------------------------------------------
 There are several things you will want to consider.  Requirements include:
 
-#. Most importantly, pick a service you are passionate about seeing on embassyOS
+#. Most importantly, pick a service you are passionate about seeing on StartOS
 #. Make sure it is :ref:`Open Source <open-source>`
 #. A service that incorporates a 'self-hosting' option, or is capable of being self-hosted
 
@@ -34,7 +34,7 @@ Config files can be empty( ``{}`` ), if you do not require config.  `File Browse
 
 How can my service access the data directory of another service?
 ----------------------------------------------------------------
-#. Provider service needs to expose datadir to other services on embassy
+#. Provider service needs to expose datadir to other services on StartOS
 #. Consumer services needs to list the provider service as a dependency AND set a particular config value, stating that it wants data from that particular service
 
 Check out `LND <https://github.com/Start9Labs/lnd-wrapper/blob/master/manifest.yaml>`_ and `RTL <https://github.com/Start9Labs/ride-the-lightning-wrapper/blob/master/manifest.yaml>`_ as an example.

@@ -23,21 +23,21 @@ Setup Network Folder
 
 #. On the rsync tab, under File Services -> turn on rsync protocol.
 
-#. In the same dropdown, under "Note" will be "PC (Windows Explorer): \". This DeviceAddressName is the "Hostname" within the Embassy New Shared Folder dialog, and note that it is case sensitive and that the \ have been removed.
+#. In the same dropdown, under "Note" will be "PC (Windows Explorer): \". This DeviceAddressName is the "Hostname" within the StartOS New Network Folder dialog, and note that it is case sensitive and that the \ characters have been removed.
 
-#. Back in Synonogy UI, click "File Station" and navigate so that you can see the the desired destination folder. Right click the folder, then *Properties > General*. Next to "Location" will be a folder location of the format ///, the / portion (so without the volume label) is the "Path" within the Embassy New Shared Folder dialog.
+#. Back in Synonogy UI, click "File Station" and navigate so that you can see the the desired destination folder. Right click the folder, then *Properties > General*. Next to "Location" will be a folder location of the format ///, the / portion (so without the volume label) is the "Path" within the StartOS New Network Folder dialog.
 
-Connect Embassy
+Connect StartOS
 ---------------
 
 #. Go to *System > Create Backup*.
 
-    .. figure:: /_static/images/config/embassy_backup.png
+    .. figure:: /_static/images/config/backup.png
         :width: 60%
 
 #. Click "Open".
 
-    .. figure:: /_static/images/config/embassy_backup0.png
+    .. figure:: /_static/images/config/backup0.png
         :width: 60%
 
 #. Fill in the following fields:
@@ -47,7 +47,7 @@ Connect Embassy
     * Username - This is the user on the remote machine that you used to create the shared directory
     * Password - This is your user (from above) password
 
-    .. figure:: /_static/images/config/embassy_backup1.png
+    .. figure:: /_static/images/config/backup1.png
         :width: 60%
 
 #. Click "Save".

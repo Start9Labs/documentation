@@ -4,7 +4,7 @@
 Advanced
 ========
 
-This section included advanced commands for working with packages in embassyOS.
+This section included advanced commands for working with packages in StartOS.
 
 .. raw:: html
 
@@ -19,7 +19,7 @@ This section included advanced commands for working with packages in embassyOS.
   :class: large-4
   :anchor: View
 
-  embassyOS developer CLI tools
+  StartOS developer CLI tools
 
 .. topic-box::
   :title: Service Containers
@@ -28,7 +28,7 @@ This section included advanced commands for working with packages in embassyOS.
   :class: large-4
   :anchor: View
 
-  How to interact with containers on the Embassy
+  How to interact with containers on the StartOS
 
 .. raw:: html
 

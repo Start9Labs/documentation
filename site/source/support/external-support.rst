@@ -11,8 +11,8 @@ External Support
 If you ever need direct support from the developers or community of a particular service or integration, you can find it here.
 
 
-Embassy Services
-----------------
+Start9 Sponsored Services
+-------------------------
 
 Bitcoin Core
 ============

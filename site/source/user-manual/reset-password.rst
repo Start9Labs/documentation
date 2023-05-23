@@ -8,12 +8,12 @@ Reset Your Password
   :depth: 2
   :local:
 
-#. Download and flash the latest version of embassyOS, using the appropriate :ref:`flashing guide <flashing>` for your hardware.
-#. Power on your Embassy, ensuring it is plugged in to Ethernet.
+#. Download and flash the latest version of StartOS, using the appropriate :ref:`flashing guide <flashing>` for your hardware.
+#. Power on your server, ensuring it is plugged in to Ethernet.
 
-    .. note:: Embassy will power up and then initialize.  If you have a speaker, you will hear first hear a _bep_ then a _chime_ sound to indicate the device is ready.
+    .. note:: Server will power up and then initialize.  If you have a speaker, you will hear first hear a _bep_ then a _chime_ sound to indicate the device is ready.
 
-#. Using a phone or computer connected to the same network, open up a browser and go to http://embassy.local.
+#. Using a phone or computer connected to the same network, open up a browser and go to http://start.local.
 
 #. Select "Recover".
 
@@ -25,7 +25,7 @@ Reset Your Password
    .. figure:: /_static/images/setup/screen3-use_existing.png
       :width: 60%
 
-#. Select your Embassy data drive.
+#. Select your server's data drive.
 
    .. figure:: /_static/images/setup/screen4-use_existing_drive_selection.png
       :width: 60%
@@ -35,14 +35,14 @@ Reset Your Password
    .. figure:: /_static/images/setup/screen5-set_password.jpg
       :width: 60%
 
-#. Your Embassy will initialize again (all previous data will be recovered).
+#. Your server will initialize again (all previous data will be recovered).
 
    .. figure:: /_static/images/setup/screen6-storage_initialize.jpg
       :width: 60%
 
 #. Your password change is complete!
 
-    .. tip:: The "Go to Emassy Login" button will not be usable until you click download. The address information and root certificate contained in this download will not have changed from what you were using before this whole process so if you do not require it you can close this tab and simply go to your Embassy's Lan or Tor address.
+    .. tip:: The "Go to Emassy Login" button will not be usable until you click download. The address information and root certificate contained in this download will not have changed from what you were using before this whole process so if you do not require it you can close this tab and simply go to your server's Lan or Tor address.
    
    .. figure:: /_static/images/setup/setup_complete_pre_download.png
       :width: 60%

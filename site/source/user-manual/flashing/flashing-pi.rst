@@ -5,8 +5,6 @@ Flashing (Raspberry Pi)
 =======================
 This guide is for flashing StartOS to a micro SD card in order to install it on a Raspberry Pi.
 
- .. note:: You will need a micro SD card of at least 16GB in size (32GB recommended) for the OS only (using an additional drive for storage), and at least 128GB is recommended if using the SD as your storage device.
-
 Getting and Extracting the Image
 --------------------------------
 Visit the `Github release page <https://github.com/Start9Labs/start-os/releases/latest>`_ to find the latest StartOS release.

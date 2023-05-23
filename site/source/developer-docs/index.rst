@@ -4,7 +4,7 @@
 Developer Docs
 ==============
 
-  Welcome to the Service Packaging documentation for embassyOS.  If you are here, you have heard the call to help empower users with sovereign computing!
+  Welcome to the Service Packaging documentation for StartOS.  If you are here, you have heard the call to help empower users with sovereign computing!
 
 .. raw:: html
 

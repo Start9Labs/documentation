@@ -1,21 +1,21 @@
 .. _embassy-sdk:
 
-===========
-Embassy SDK
-===========
+=========
+Start SDK
+=========
 
-The embassyOS embedded Software Development Kit (SDK), is a CLI (Command Line Interface) tool that aids in building and packaging services you wish to deploy to the Embassy.
+The StartOS embedded Software Development Kit (SDK), is a CLI (Command Line Interface) tool that aids in building and packaging services you wish to deploy to StartOS.
 
-It helps validate that the necessary components of the package exist, and package all of those components into a special file type (``s9pk``) that is understood by embassyOS.
+It helps validate that the necessary components of the package exist, and package all of those components into a special file type (``s9pk``) that is understood by StartOS.
 
 Installation
 ============
 
-You can install this component on any system, without needing to run embassyOS, by running the following command:
+You can install this component on any system, without needing to run StartOS, by running the following command:
 
     .. code-block::
 
-        git clone -b latest --recursive https://github.com/Start9Labs/embassy-os.git && cd embassy-os/backend && ./install-sdk.sh
+        git clone -b latest --recursive https://github.com/Start9Labs/start-os.git && cd embassy-os/backend && ./install-sdk.sh
 
     
 Next, initialize the SDK and verify the installation was successful:
@@ -63,7 +63,7 @@ And load it by running:
 embassy-sdk pack
 ----------------
 
-This command takes the necessary package components and assembles them into the `s9pk` file format needed to install a service on embassyOS. It expects the following files to exist:
+This command takes the necessary package components and assembles them into the `s9pk` file format needed to install a service on StartOS. It expects the following files to exist:
 
     - Manifest
     - Instructions

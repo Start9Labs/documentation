@@ -30,7 +30,7 @@ Terms:
 
 **Procedure**: A procedure is run during times that we would like to do an operation. An operation would include actions such as getting or setting a service's configuration file.
 
-**Effects**: A TypeScript object that is used to interact with embassyOS. See the `full definition here <https://deno.land/x/embassyd_sdk/types.ts>`__.
+**Effects**: A TypeScript object that is used to interact with StartOS. See the `full definition here <https://deno.land/x/embassyd_sdk/types.ts>`__.
 
 This new process enabled faster service configuration operations. Previously, Docker was used to preform these actions; however, Docker containers took a long time to spin up.
 
@@ -73,7 +73,7 @@ How to Setup
             set:
                 type: script
 
-4. Fill in the todos in the above template to match the expected Effect parameter defined by the `exported type <https://deno.land/x/embassyd_sdk@v0.3.3.0.5/types.ts#L32>`_. This type describes how to call functions that interact with embassyOS.
+4. Fill in the todos in the above template to match the expected Effect parameter defined by the `exported type <https://deno.land/x/embassyd_sdk@v0.3.3.0.5/types.ts#L32>`_. This type describes how to call functions that interact with StartOS.
 5. In the build process for packaging the final s9pk, include the following step. **The location of the js is important, and can't be changed**. It must exist at `scripts/embassy.js` in the root of the project's wrapper repository.
 
     .. code:: bash

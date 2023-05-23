@@ -4,13 +4,13 @@
 Upgrade Your SSD
 ================
 
-This guide will go over how to switch out an old drive on your Embassy One to a different drive and migrate the data from the old one to the new one.
+This guide will go over how to switch out an old drive on your server to a different drive and transfer the data from the old one to the new one.
 
-This will preserve the entire state of your Embassy, inlcluding all Tor and LAN addresses as well as channels you have open on the lightning network!
+This will preserve the entire state of your server, including all Tor and LAN addresses as well as channels you have open on the lightning network!
 
-This is not the same as backing up services and recovering them onto a new Embassy.
+This is not the same as backing up services and recovering them onto a new server.
 
-#. Start by shutting down your Embassy:
+#. Start by shutting down your server:
 
     .. figure:: /_static/images/walkthrough/shutdown.png
         :width: 50%
@@ -35,7 +35,7 @@ This is not the same as backing up services and recovering them onto a new Embas
     .. figure:: /_static/images/hardware-pics/bottom-screws.jpg
         :width: 50%
 
-#. Carefully slide the contents of the case out and disassemble the Embassy by disconnecting the power wire and removing the 5 screws (and 4 brass spacers beneath the fan bracket) highlighted below:
+#. Carefully slide the contents of the case out and disassemble the server by disconnecting the power wire and removing the 5 screws (and 4 brass spacers beneath the fan bracket) highlighted below:
 
     .. figure:: /_static/images/hardware-pics/disassembly-0.png
         :width: 50%
@@ -65,7 +65,7 @@ This is not the same as backing up services and recovering them onto a new Embas
     .. figure:: /_static/images/hardware-pics/disassembly-0.png
         :width: 50%
 
-#. Now reinsert the Embassy back into the case and reattach the bottom four black screws:
+#. Now reinsert the server back into the case and reattach the bottom four black screws:
 
     .. figure:: /_static/images/hardware-pics/bottom-screws.jpg
         :width: 50%
@@ -75,9 +75,9 @@ This is not the same as backing up services and recovering them onto a new Embas
     .. figure:: /_static/images/hardware-pics/back-screws-usb-loop.jpg
         :width: 50%
 
-#. Flash the micro SD card with a fresh install of embassyOS - you can follow the flashing guide :ref:`here <flashing-pi>`
+#. Flash the micro SD card with a fresh install of StartOS - you can follow the flashing guide :ref:`here <flashing-pi>`
 
-#. Once flashed, reinsert the micro SD card into the Embassy:
+#. Once flashed, reinsert the micro SD card into the server:
 
     .. figure:: /_static/images/hardware-pics/front-sd-card.jpg
         :width: 50%
@@ -90,7 +90,7 @@ This is not the same as backing up services and recovering them onto a new Embas
     .. figure:: /_static/images/hardware-pics/plugged-in-front.jpg
         :width: 50%
 
-#. Head to http://embassy.local on any device on the same LAN
+#. Head to http://start.local on any device on the same LAN
 
 #. Select "Recover"
 
@@ -102,17 +102,17 @@ This is not the same as backing up services and recovering them onto a new Embas
    .. figure:: /_static/images/setup/transfer.png
       :width: 60%
 
-#. Now connect the **old ssd** to your Embassy:
+#. Now connect the **old ssd** to your server:
 
     .. figure:: /_static/images/hardware-pics/attach-ssd.jpg
        :width: 60%
 
-#. Select the **old drive** - the one that is externally connect to your Embassy (you may need to hit *REFRESH*):
+#. Select the **old drive** - the one that is externally connect to your server (you may need to hit *REFRESH*):
 
     .. figure:: /_static/images/setup/transfer-from.png
        :width: 60%
 
-#. Select the drive **inside the Embassy** that you are migrating **to** - this is your **NEW** drive - and any data on this drive will be erased:
+#. Select the drive **inside the server** that you are migrating **to** - this is your **NEW** drive - and any data on this drive will be erased:
 
     .. figure:: /_static/images/setup/transfer-to.png
        :width: 60%
@@ -127,9 +127,9 @@ This is not the same as backing up services and recovering them onto a new Embas
     .. figure:: /_static/images/setup/screen6-storage_initialize.jpg
         :width: 60%
 
-#. You are now ready to proceed and use your Embassy with its new drive! It will have the same addresses and root certificate as it did before migrating.
+#. You are now ready to proceed and use your server with its new drive! It will have the same addresses and root certificate as it did before migrating.
 
     .. figure:: /_static/images/setup/screen7-startfresh_complete.jpg
         :width: 60%
 
-    .. warning:: Do not unders any circumstances use the old SSD to setup another Embassy unless you wipe it first or wipe it during the initial setup proecess! If you have lightning channels you could lose all your funds!
+    .. warning:: Do not unders any circumstances use the old SSD to setup another server unless you wipe it first or wipe it during the initial setup proecess! If you have lightning channels you could lose all your funds!

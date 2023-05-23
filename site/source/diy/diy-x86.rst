@@ -8,7 +8,7 @@ DIY Guidelines (x86_64)
     :depth: 2 
     :local:
 
-Start9 is committed to ensuring that sovereign computing is accessible. This guide is to install StartOS on **most** x86_64 platforms (your mileage will vary).  The x86_64-based Server One and Server Pure are available for purchase on the `Start9 Store <https://store.start9.com/products>`_.
+Start9 is committed to ensuring that StartOS is accessible. This guide is to install StartOS on **most** x86_64 platforms (your mileage will vary).  The x86_64-based Server One and Server Pure are available for purchase on the `Start9 Store <https://store.start9.com/products>`_.
 
 For more guidance or to share your experience with others, please `head to our community forum <https://community.start9.com/>`_.  Want to support sovereign computing?  Please consider a `donation to Start9 <https://btcpay.start9.com/apps/2Et1JUmJnDwzKncfVBXvspeXiFsa/crowdfund>`_.
 
@@ -39,4 +39,11 @@ If you intend to run Bitcoin or store any meaningful amount of data, you will ne
 
 Flash and Install StartOS
 -------------------------
-After building your hardware, you will need a copy of StartOS.  Head over to our :ref:`Flashing (x86_64) Guide <flashing-x86>` to complete your Start9 server build.
+.. topic-box::
+  :title: Flashing (x86_64)
+  :link: /user-manual/flashing/flashing-x86/
+  :icon: scylla-icon scylla-icon--overview
+  :class: large-4
+  :anchor: View Guide
+
+  Flash StartOS for use on an x86_64 machine
