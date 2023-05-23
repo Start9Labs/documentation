@@ -51,7 +51,7 @@ Development Environment
 
 A basic development and testing environment includes:
 
-#. A Server One or Server Pro with latest `StartOS <https://github.com/Start9Labs/start-os/releases>`_
+#. A Start9 server or VM running the latest `StartOS <https://github.com/Start9Labs/start-os/releases>`_
     
     - Use your own hardware to `DIY <https://start9.com/latest/diy>`_
     - Purchase a device from the `Start9 Store <https://store.start9.com>`_
