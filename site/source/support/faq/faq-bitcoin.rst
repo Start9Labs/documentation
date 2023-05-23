@@ -21,7 +21,7 @@ Can the IBD (Initial Block Download) be made faster?  Or can wait times be impro
 IBD was made significantly faster with the new hardware scheme of version 0.3.0 and up.  Going forward the only way to improve IBD speeds will be on more powerful hardware.
 
 Does StartOS run a full archival Bitcoin node or a pruned one?
-------------------------------------------------------------------
+--------------------------------------------------------------
 Previous versions of StartOS (pre-0.3.0) only allowed a pruned node, but the option is now yours.  In the Bitcoin Config, find the section on pruning, and set to 'Manual' or 'Automatic' to to prune to specified sizes, or turn pruning off entirely for a full archival node.  Please keep in mind that a full archival node will take up between 400-500GB of your drive as of 2022.
 
 What actions, specifically, are only possible with an archival, or 'unpruned' node?

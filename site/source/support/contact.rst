@@ -36,11 +36,6 @@ Social Media
 
 Email
 -----
-
-* support@start9.com - for getting help with your server and asking general questions about Start9 and StartOS.
-
 * security@start9.com - for reporting sensitive information or security concerns.
-
-* jobs@start9.com - for those interested in doing work for Start9.
 
 * affiliate@start9.com - for those interested in becoming a Start9 affiliate.

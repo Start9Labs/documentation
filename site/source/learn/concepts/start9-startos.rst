@@ -30,7 +30,7 @@ Currently, 2 builds of StartOS exist, one for the Raspberry Pi (Server One) and 
 
 Server Sounds
 -------------
-StartOS emits several sounds for user feedback and troubleshooting.  Below is the current library of potential sounds and their prospective meaning:
+On some models (Server Lite, 2022 Server One, and Server Pure), StartOS emits sounds for user feedback and troubleshooting.  Below is the current library of potential sounds and their prospective meaning:
 
     .. raw:: HTML
 

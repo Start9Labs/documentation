@@ -39,7 +39,7 @@ If all answers are yes, then it can run on StartOS.
 
 Packing up a service for StartOS does not require extensive development skills. If you are interested in doing do, please see our :ref:`Developer Docs <developer-docs>`.
 
-We are aggressively moving away from service development in favor of a more community driven approach. Meaning you, an app development team, or anyone else on Earth, can bring the service they want to a Marketplace so anyone can run it on StartOS. You don't need our permission.
+We are aggressively moving away from service development in favor of a more community driven approach. Meaning you, an app development team, or anyone else on Earth, can bring the service they want to a Marketplace registry so anyone can run it on StartOS. You don't need our permission.
 
 Does StartOS operate as a Tor relay node?
 -----------------------------------------
