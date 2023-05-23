@@ -19,7 +19,7 @@ Yes! The :ref:`DIY Guide <diy>` will take you through the setup steps. This opti
 Additionally, StartOS is available for you to download or build from source under the Start9 Personal Use `License <https://start9.com/license>`_, for free.  The caveat is that you will miss out on the perks that come along with purchasing from us, such as white-glove support, and others, which will grow over time.
 
 Do I plug my Start9 server into my computer?
----------------------------------------
+--------------------------------------------
 No. Your Start9 server only needs to be plugged into power and internet, just like your router.  You can set it up right by your router and, similar to a router, generally forget about it.
 
 Do I plug in a monitor, keyboard, and mouse?
