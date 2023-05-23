@@ -8,7 +8,7 @@ Customize
   :depth: 2 
   :local:
 
-Custom browser tab title
+Custom Browser Tab Title
 ------------------------
 
 #. Go to *System > Browser Tab Title*.
