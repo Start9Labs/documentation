@@ -32,8 +32,8 @@ During initial setup, I am unable to connect to "start.local".
 * Confirm your phone is **not** connected to a “Guest” network
 
 * Confirm your phone is **not** using a VPN.
-.. @TODO Matt what is the name in the router?
-If you still cannot connect, try logging into your router (the directions for which can be found with a simple web search for your router model and 'how to log in'). Once you are in your router, find the device labeled 'start,' and visit it's associated IP address, which will look something like: ``192.168.1.9``
+
+If you still cannot connect, try logging into your router (the directions for which can be found with a simple web search for your router model and 'how to log in'). Once you are in your router, find the device labeled ``start``, and visit it's associated IP address, which will look something like: ``192.168.1.9``
 
 I am unable to reach my server via its *<custom-address>.local* (LAN) address
 ------------------------------------------------------------------------------

@@ -18,7 +18,7 @@ So I can run my own cloud?
 Yes! No special skills or knowledge are required to host all your own services and replace those previously thought "necessary" for modern digital life.
 
 Can I run multiple Start9 servers?
------------------------------
+----------------------------------
 Yes, but there is currently no way to synchronize or federate them.  We are working on ways to make this possible in the future.
 
 Can I still use my VPN?

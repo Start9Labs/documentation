@@ -75,7 +75,7 @@ What are StartOS Services?
 A Service can be any piece of software added to the Marketplace.  Unlike "apps," services are (usually) "server-side" software, meaning they are intended to run 24/7/365 and listen for requests from your clients (apps).  All services are "self-hosted," meaning that you are in complete control of your data.  This means you can run your own "cloud!"  Learn more about managing services :ref:`here <managing-services>` and see our currently `Available Services <https://marketplace.start9.com/>`_.
 
 Does Start9 ship worldwide?
---------------------------
+---------------------------
 We ship everywhere that DHL ships.  Please consider that in some countries, the VAT and Customs fees are so ridiculous that they cost as much as the server itself.  You may wish to consider buying your hardware locally and building your own device, downloading StartOS from our github, and `donating <https://donate.start9.com/>`_ to us.  Please see the :ref:`DIY<diy>` page for details.
 
 Do you have international electrical plugs?
