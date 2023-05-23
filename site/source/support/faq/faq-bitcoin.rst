@@ -60,7 +60,7 @@ There are modern wallets that have the ability to use your personal Bitcoin node
 The available wallets are listed in the following FAQ.
 
 Which wallets can I use that integrate with my Bitcoin and/or Lightning nodes?
----------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 Please see the :ref:`Bitcoin Service Guides<bitcoin-service>` for all the current options.
 
 I want to use my hardware signer, such as Coldcard or Trezor, with my Bitcoin node.  How does this work?
