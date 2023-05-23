@@ -88,5 +88,5 @@ Bottom line...We are charging a very marginal rate for something incredibly powe
 The fastest way to get support is via our :ref:`Community channels<contact>`.  Please do not hesitate to reach out!
 
 I bought a server from Start9 before Q3 2022 and it came with a 'product key,' what is that?
-----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 This will entitle you to white glove support as well as future benefits yet to be announced.  Newer products ship with a similar (anonymous) key for these purposes.
