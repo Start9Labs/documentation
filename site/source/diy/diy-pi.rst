@@ -26,7 +26,7 @@ Flash and Install StartOS
 -------------------------
 .. topic-box::
   :title: Flashing (Raspberry Pi)
-  :link: /user-manual/flashing/flashing-pi/
+  :link: /latest/user-manual/flashing/flashing-pi
   :icon: scylla-icon scylla-icon--apps
   :class: large-4
   :anchor: View Guide
