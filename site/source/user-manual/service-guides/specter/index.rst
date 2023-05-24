@@ -1,7 +1,8 @@
 .. _specter:
 
+=======
 Specter
--------
+=======
 
 There are two ways to use Specter with your Start9 server.
 
