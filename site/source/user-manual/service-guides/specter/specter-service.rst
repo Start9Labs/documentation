@@ -23,7 +23,7 @@ Some signing devices permit you to "air gap" which means transferring the xpub (
 
         For devices like the Trezor One, air gapping is not possible. This means importing xpubs via USB - Specter permits this via the HWI which requires running a second instance of Specter on your *local* machine (i.e *not* your server).
 
-        #. Start by heading to Specter running on your Embassy (you can use either Tor or LAN - if you are accessing your Embassy over LAN the Launch UI button will open up the LAN interface for Specter - if you're accessing over Tor it will open up the Tor interface).
+        #. Start by heading to Specter running on your server (you can use either Tor or LAN - if you are accessing your server over LAN the Launch UI button will open up the LAN interface for Specter - if you're accessing over Tor it will open up the Tor interface).
 
         #. Click on the cog in the top right, or **Update your settings**:
 
@@ -51,7 +51,7 @@ Some signing devices permit you to "air gap" which means transferring the xpub (
                 :width: 60%
                 :alt: img-4
 
-        #. Paste in the domain that you copied from Specter running on your Embassy and click Update
+        #. Paste in the domain that you copied from Specter running on your server and click Update
 
             .. figure:: /_static/images/services/specter/img-5.png
                 :width: 60%
@@ -143,9 +143,9 @@ Some signing devices permit you to "air gap" which means transferring the xpub (
                 :width: 60%
                 :alt: img-14
 
-        #. Remove the SD card from your Coldcard and insert it into your *local* machine (not the Embassy)
+        #. Remove the SD card from your Coldcard and insert it into your *local* machine (not the server)
 
-        #. Go to Specter on your Embassy, click "Add new device" and select Coldcard (or other air gap permitting device):
+        #. Go to Specter on your server, click "Add new device" and select Coldcard (or other air gap permitting device):
 
             .. figure:: /_static/images/services/specter/img-15.png
                 :width: 60%
