@@ -15,7 +15,7 @@ There are two ways to create a wallet from a signing device using Specter.
 
 Some signing devices permit you to "air gap" which means transferring the xpub (and subsequent unsigned/signed transactions) back and forth between Specter and the signing device via an SD card (Coldcard for example) - other devices require a direct USB connection between the device and Specter (Trezor One for example).
 
-.. note:: Using an airgapped signing device like a Coldcard is far easier to setup as unsigned transactions can be simply downloaded to your local machine where they can be saved to an SD card and transferred to a signing device for signing. Signing devices that connect via USB is a more complicated setup.
+.. note:: Using an airgapped signing device like a Coldcard is far easier to setup as unsigned transactions can be simply downloaded to your local machine where they can be saved to an SD card and transferred to a signing device for signing. Signing devices that connect via USB require a more complicated setup.
 
 .. tabs:: 
     
