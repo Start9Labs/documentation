@@ -117,7 +117,7 @@ Some signing devices permit you to "air gap" which means transferring the xpub (
 
             .. tip:: (If you only have one key, it will automatically use that key)
 
-        #. Select **Scan for existing funds**"** if you have already used this wallet and wish to establish the transaction history, if this is a brand new wallet this is not necessary and should be deselected.
+        #. Select **Scan for existing funds** if you have already used this wallet and wish to establish the transaction history, if this is a brand new wallet this is not necessary and should be deselected.
 
         #. Click **Create wallet**:
         
