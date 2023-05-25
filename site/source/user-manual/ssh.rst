@@ -95,7 +95,7 @@ Connecting via CLI
 
         ssh start9@SERVER-HOSTNAME
 
-Replacing ``<LAN URL>`` with your server's LAN (``<custom-address>.local``) address
+Replacing ``<SERVER-HOSTNAME>`` with your server's LAN (``<custom-address>.local``) address
 
 .. note:: If you get a scary looking warning that says something like "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!" - fear not!  This is most likely happening because you have recently reflashed or did an update from pre-v0.3.3, which would cause a change in the key for your device's hostname (e.g. `xxxxxxxx.local`) or IP address (e.g. `192.168.1.x`).  The solution is to delete the existing entry from your `known_hosts` file, which is typically located at `~/.ssh/known_hosts`.  This will be specified in the warning, along with a helpful line number (in case your file is lengthy).
 

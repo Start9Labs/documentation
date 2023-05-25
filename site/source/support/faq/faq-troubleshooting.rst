@@ -18,7 +18,7 @@ After plugging into power and your router, you will hear 2 distinct sounds: firs
 
 My server is really hot!  Is this normal?
 -----------------------------------------
-On early devices, yes.  These cases are actually doing 'double duty' as a heat sync.  This means that the metal of the case is actually touching the chips on the circuit board and drawing their heat out and away.  This is known as "passive cooling," as no fan (and therefore no noise) is required to cool the system.
+On early devices, yes.  These cases are actually doing 'double duty' as a heat sink.  This means that the metal of the case is actually touching the chips on the circuit board and drawing their heat out and away.  This is known as "passive cooling," as no fan (and therefore no noise) is required to cool the system.
 
 You can check the chip temperature of your device under "System -> Metrics".
 
