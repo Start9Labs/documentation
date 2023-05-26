@@ -31,19 +31,25 @@ Some signing devices permit you to **airgap** which means transferring the xpub 
                 :width: 60%
                 :alt: img-14
 
-        #. Remove the SD card from your Coldcard and insert it into your *local* machine (not the server)
+        #. Remove the SD card from your Coldcard and insert it into your *local* machine (not your server).
 
-        #. Go to Specter on your server, click "Add new device" and select Coldcard (or other air gap permitting device):
+        #. Go to Specter on your server, click **Add device** and select Coldcard (or other air gap permitting device):
 
-            .. figure:: /_static/images/services/specter/img-15.png
+            .. figure:: /_static/images/services/specter/cc-add-device.png
                 :width: 60%
-                :alt: img-15
+                :alt: cc-add-device
 
-        #. Name the device and click **Upload from SD card**:
+        #. Name the device:
 
-            .. figure:: /_static/images/services/specter/img-16.png
+            .. figure:: /_static/images/services/specter/cc-name-device.png
                 :width: 60%
-                :alt: img-16
+                :alt: cc-name-device
+
+        #. Scroll down and click **Upload from SD**:
+
+            .. figure:: /_static/images/services/specter/upload-sd.png
+                :width: 60%
+                :alt: upload-sd
 
         #. Navitage to the SD card and select **coldcard-export.json** and click open:
 
@@ -213,7 +219,7 @@ Some signing devices permit you to **airgap** which means transferring the xpub 
                 :width: 60%
                 :alt: pick-device
 
-        #. Create a name for this wallet::
+        #. Create a name for this wallet:
 
             .. figure:: /_static/images/services/specter/name-create.png
                 :width: 60%
