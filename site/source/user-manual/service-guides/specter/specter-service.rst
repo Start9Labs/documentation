@@ -1,13 +1,16 @@
 .. _specter-service:
 
-Specter Service
----------------
+====================
+Specter as a Service
+====================
 
 To run Specter as a service on your Start9 server, simply `install it from the marketplace <https://marketplace.start9.com/marketplace/specter>`_.
 
 You can then configure it to connect to the bitcoin network via connecting to Bitcoin Core directly, or to Electrs.
 
 Electrs will be more performant but will use more system resources.
+
+The advantage of using Specter as a service on your Start9 server is that you can have a wallet accessible from anywhere from all your devices that runs on the same system as your bitcoin node. This offers a faster and more smooth experience than connecting Specter Desktop (or other wallets) from other individual devices which would each need to have their own wallet.
 
 Once up and running you can follow these instructions to setup a signing device with Specter.
 
@@ -16,6 +19,8 @@ There are two ways to do this.
 Some signing devices permit you to **airgap** which means transferring the xpub and subsequent unsigned/signed transactions back and forth between Specter and the signing device via an SD card (Coldcard for example) or via QR codes. Other devices require a **direct USB connection** i.e the Trezor One.
 
 .. note:: Using an airgapped signing device like a Coldcard is far easier to setup as unsigned transactions can be simply downloaded to your local machine from the Specter webUI where they can be saved to an SD card and transferred to a signing device for signing, then uploaded back to the Specter UI once signed just like uploading any file to a website or adding an attachment to an email. Signing devices that connect via USB require a more complicated setup.
+
+.. tip:: If you would like to run Specter Desktop (an application that will run on client devices like laptops) and connect it to your Start9 node please see `here <https://github.com/Start9Labs/bitcoind-wrapper/tree/master/docs/integrations/specter>`_.
 
 .. tabs:: 
     
@@ -103,7 +108,7 @@ Some signing devices permit you to **airgap** which means transferring the xpub 
 
     .. group-tab:: USB Connected Signing Devices:
 
-        For devices like the Trezor One on which air gapping is not possible xpubs must be imported via USB - Specter permits this via the HWI which requires running a second instance of Specter on your *local* machine (i.e *not* your server).
+        For devices that do not support air-gap features, such as the Trezor One, xpubs must be imported via USB - Specter permits this via the HWI which requires running a second instance of Specter on your *local* machine (i.e *not* your server).
 
             .. note:: This means you will be running Specter as a service on your Start9 server, which you will be accessing through a webUI and *in addition* you will be running **Specter Desktop** as an application on your local device (laptop/desktop).
 
