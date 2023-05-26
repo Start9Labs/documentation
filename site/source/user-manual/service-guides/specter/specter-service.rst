@@ -57,35 +57,49 @@ Some signing devices permit you to **airgap** which means transferring the xpub 
                 :width: 60%
                 :alt: img-17
 
-        #. You may not want all the default types of extended public key. Remove/keep the ones you want by clicking **edit**.
+        #. Depending on what type of wallet you created in your Coldcard you may see something different from the picture below. If you are using a Coldcard and followed along with this example, you will see just one result as below and you can simply click **Continue**:
 
-        #. Click **Continue**:
-
-            .. figure:: /_static/images/services/specter/img-18.png
+            .. figure:: /_static/images/services/specter/cc-xpub.png
                 :width: 60%
-                :alt: img-18
+                :alt: cc-xpub
 
-        #. You can now **Add new wallet** or **create single key wallet.**:
+        #. Click **Create single key wallet**:
+
+            .. figure:: /_static/images/services/specter/cc-create-wallet.png
+                :width: 60%
+                :alt: cc-create-wallet
 
             .. note:: If you want to create a multisig wallet, add another device first, and make sure you generated an xpub intented for multisig on the first device, then come back to this step.
 
         #. Select the device (or devices if you are making a multisig wallet) that you want to use.
 
-        #. Name the wallet and select the key(s) you want to use.
+        #. Create a name for this wallet:
 
-            (If you only have one key, it will automatically use that key)
+            .. figure:: /_static/images/services/specter/cc-name-wallet.png
+                :width: 60%
+                :alt: cc-name-wallet
 
-        #. Select "Scan for existing funds" if you have already used this wallet and wish to establish its transaction history, if this is a brand new wallet this is not necessary and should be deselected.
+            .. tip:: If you only have one key, it will automatically use that key. You cannot select a configuration that doesn't match the available derivation path(s).
+
+        #. Select **Scan for existing funds** if you have already used this wallet and wish to establish the transaction history, if this is a brand new wallet this is not necessary and should be deselected:
+
+            .. figure:: /_static/images/services/specter/cc-scan.png
+                :width: 60%
+                :alt: cc-scan
+
+            .. note:: Rescanning will be very slow if Specter is configured to connect to Bitcoin Core directly, and extremely fast if connecting via Electrs.
 
         #. Click **Create wallet**:
-
-            .. figure:: /_static/images/services/specter/img-19.png
+        
+            .. figure:: /_static/images/services/specter/cc-click-create-wallet.png
                 :width: 60%
-                :alt: img-19
+                :alt: cc-click-create-wallet
 
-        #. If you selected "rescan" you can refresh the page and watch as your bitcoin node rescans the blockchain for your wallet's history.
+        #. Specter is now setup to use your air gapped signing device!
 
-        Specter is now setup to use your signing device!
+            .. figure:: /_static/images/services/specter/cc-complete.png
+                :width: 60%
+                :alt: cc-complete
 
     .. group-tab:: USB Connected Signing Devices:
 
@@ -197,7 +211,7 @@ Some signing devices permit you to **airgap** which means transferring the xpub 
                 :width: 60%
                 :alt: remove-unwanted
 
-            .. tip:: If you aren't sure what to do here, a sensible default is to leave the second option - with the derivation **m/84h/0h/0h** as in the picture below. This will result in addresses beginning with **bc1** - the most commonly used and most modern address type (native segwit). There is no harm in adding multiple derivation paths, but if you aren't sure which one to use, you probably want **m/84h/0h/0h**.
+            .. tip:: If you aren't sure what to do here, a sensible default is to leave the second option - with the derivation path **m/84h/0h/0h** as in the picture below. This will result in addresses beginning with **bc1** - the most commonly used and most modern address type (native segwit). There is no harm in adding multiple derivation paths, but if you aren't sure which one to use, you probably want **m/84h/0h/0h**.
 
         #. Click **Continue**:
 
@@ -215,17 +229,17 @@ Some signing devices permit you to **airgap** which means transferring the xpub 
 
         #. Select the device (or devices if you are making a multisig wallet) that you want to use and click **Continue**:
 
-            .. figure:: /_static/images/services/specter/pick-device.png
+            .. figure:: /_static/images/services/specter/cc-select-device.png
                 :width: 60%
                 :alt: pick-device
 
         #. Create a name for this wallet:
 
-            .. figure:: /_static/images/services/specter/name-create.png
+            .. figure:: /_static/images/services/specter/cc-name-wallet.png
                 :width: 60%
-                :alt: name-create
+                :alt: cc-name-wallet
 
-            .. tip:: (If you only have one key, it will automatically use that key). You cannot select a configuration that doesn't match the available derivation path(s).
+            .. tip:: If you only have one key, it will automatically use that key. You cannot select a configuration that doesn't match the available derivation path(s).
 
         #. Select **Scan for existing funds** if you have already used this wallet and wish to establish the transaction history, if this is a brand new wallet this is not necessary and should be deselected:
 
@@ -233,15 +247,15 @@ Some signing devices permit you to **airgap** which means transferring the xpub 
                 :width: 60%
                 :alt: scan-funds
 
+            .. note:: Rescanning will be very slow if Specter is configured to connect to Bitcoin Core directly, and extremely fast if connecting via Electrs.
+
         #. Click **Create wallet**:
         
             .. figure:: /_static/images/services/specter/create-wallet.png
                 :width: 60%
                 :alt: create-wallet
 
-            .. note:: Rescanning will be very slow if Specter is configured to connect to Bitcoin Core directly, and extremely fast if connecting via Electrs.
-
-        Specter is now setup to use your signing device!
+        #. Specter is now setup to use your signing device!
 
             .. figure:: /_static/images/services/specter/final-screen-trezor.png
                 :width: 60%
