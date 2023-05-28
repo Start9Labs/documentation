@@ -1,7 +1,7 @@
 .. _specter-service:
 
 ====================
-Specter as a Service
+Specter Server
 ====================
 
 To run Specter as a service on your Start9 server, simply `install it from the marketplace <https://marketplace.start9.com/marketplace/specter>`_.
