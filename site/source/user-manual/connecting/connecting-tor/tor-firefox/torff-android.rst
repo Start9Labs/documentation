@@ -34,7 +34,7 @@ Once Tor is setup on your system, you can proceed to setup Firefox:
    .. figure:: /_static/images/tor/storage-scopes-proxy.jpg
      :width: 30%
 
-#. (All users): Search for ``network.proxy.autoconfig_url``, and set the value to ``file:///storage/emulated/0/Download/proxy.pac``.
+#. (All users): Search for ``network.proxy.autoconfig_url``, and set the value to ``file:///storage/emulated/0/Download/proxy.pac``.  This is the default location of a the proxy.pac file downloaded in step 2, although your path may vary.
 
    .. figure:: /_static/images/tor/autoconfig_url.png
      :width: 50%

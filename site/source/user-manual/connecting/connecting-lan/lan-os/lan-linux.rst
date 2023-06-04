@@ -77,10 +77,20 @@ Here we will insert your Start9 server's CA certificate into Linux's trust store
 
     .. group-tab:: CentOS/Fedora
         
+        First, ensure mDNS resolution is turned on so you can reach your server:
+
+        Ensure ``MulticastDNS=Yes`` is set in /etc/systemd/resolved.conf and then restart systemd-resolved:
+
+        .. code-block:: bash
+            
+            sudo systemctl restart systemd-resolved
+
+        Trust your server's CA certificate:
+
         From the folder you have downloaded your Start9 server's Root CA, run the following commands (if you have changed the certificate's filename, be sure to change it here):
 
         .. code-block:: bash
-
+            
             sudo yum install ca-certificates
             sudo cp "<custom-address>.crt" /etc/pki/ca-trust/source/anchors/
             sudo update-ca-trust
