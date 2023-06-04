@@ -39,7 +39,7 @@ If you have already synced the Bitcoin blockchain to the tip on one server, and 
 
     .. figure:: /_static/images/walkthrough/ssh_key_add.jpg
 
-#. Back on the shell of example-aaa.local, do the following (don't forget to replace example-bbb.local in the rsync command before you perform it):
+#. Back on the shell of example-aaa.local, do the following (don't forget to replace example-bbb in the rsync command below before you perform it):
 
     .. code-block:: bash
 
@@ -55,6 +55,6 @@ If you have already synced the Bitcoin blockchain to the tip on one server, and 
 
 #. Switch back to `https://example-bbb.local`, selecting **Services > Bitcoin Core**, **CONFIGURE**, configure it as desired, **SAVE** and then **START** your Bitcoin Core service.  You should see it begin at 99%+ pre-synced.
 
-#. You can now restart your Bitcoin Core service on `https://example-aaa.local` (**Services > Bitcoin Core > Start**)
+#. You can now restart your Bitcoin Core service on `https://example-aaa.local` via **Services > Bitcoin Core > Start**.
 
 .. _bitcoin-service:
