@@ -13,7 +13,7 @@ Blockchain Migration
 If you have already synced the Bitcoin blockchain to the tip on one server, and would like to skip IBD on another server, follow this guide.
 
 .. note:: The following guide requires that you have already :ref:`setup SSH on both Start9 servers<ssh>`.
-  In this guide, we will refer to your synced server as example-aaa.local and the server with no Bitcoin synced as example-bbb.local.  Of course, please replace example-aaa and example-bbb with your corresponding Start9 servers' unique `adjective-noun` combination.
+  In this guide, we will refer to your synced server as example-aaa.local and the server with no Bitcoin synced as example-bbb.local.  Of course, please replace example-aaa and example-bbb with your corresponding Start9 servers' unique `adjective-noun` names.
 
 **Install but don't start Bitcoin Core on the blockchain-less server**
 
