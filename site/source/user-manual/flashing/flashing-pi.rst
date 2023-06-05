@@ -9,7 +9,7 @@ Getting and Extracting the Image
 --------------------------------
 Visit the `Github release page <https://github.com/Start9Labs/start-os/releases/latest>`_ to find the latest StartOS release.
 
-At the bottom of the page, under "Assets," download the ``raspberrypi.img.gz`` file.
+At the bottom of the page, under "Assets," download the ``startos-..._raspberrypi.img.gz`` file.
 
     .. figure:: /_static/images/flashing/raspi-asset.png
       :width: 60%
@@ -21,53 +21,34 @@ Select your OS to continue:
 
     .. group-tab:: Linux
 
-        #. Open a terminal in the folder you downloaded to and extract with:
+        (Optional, but recommended) Verify the checksum against the one listed on GitHub (SHA256):
         
             .. code-block::
             
-                tar -xzvf startos-0.3.4.2-bbd66e9-20230519_raspberrypi.img.gz
-
-        #. (Optional, but recommended) Verify the checksum against the one listed on GitHub (SHA256):
-        
-            .. code-block::
-            
-                sha256sum startos-0.3.4.2-bbd66e9-20230519_raspberrypi.img
-
-            or (BLAKE3):
-
-            .. code-block::
-            
-                b3sum startos-0.3.4.2-bbd66e9-20230519_raspberrypi.img
+                sha256sum startos-0.3.4.2-efc56c0-20230525_raspberrypi.img.gz
         
     .. group-tab:: Mac
             
-        #. Right-click ``startos-0.3.4.2-bbd66e9-20230519_raspberrypi.img.gz``, click "Open with," then click Archive Utility to extract.
-
-        #. (Optional, but recommended) Verify the checksum against the one listed on GitHub by opening a terminal and entering:
+        (Optional, but recommended) Verify the checksum against the one listed on GitHub by opening a terminal and entering:
 
             .. code-block::
 
-                openssl dgst -sha256 startos-0.3.4.2-bbd66e9-20230519_raspberrypi.img
+                openssl dgst -sha256 startos-0.3.4.2-efc56c0-20230525_raspberrypi.img.gz
 
     .. group-tab:: Windows
-            
-        #. Open a ``cmd`` prompt "As Administrator" in the folder you saved the image to and use the following command to extract it:
-
-            .. code-block::
-            
-                tar -xzvf startos-0.3.4.2-bbd66e9-20230519_raspberrypi.img.gz
-
-        #. (Optional, but recommended) Verify the checksum against the one listed on GitHub by running:
+        
+        (Optional, but recommended) Verify the checksum against the one listed on GitHub by opening Windows PowerShell, changing your directory to where you downloaded the .img.gz file, and running `Get-FileHash`:
 
             .. code-block::
 
-                Get-FileHash startos-0.3.4.2-bbd66e9-20230519_raspberrypi.img
+                cd Downloads
+                Get-FileHash startos-0.3.4.2-efc56c0-20230525_raspberrypi.img.gz
 
 Installing StartOS
 ------------------
-Once you have extracted the StartOS ``.img`` file, you will need to flash it onto a microSD card.
+Once you have the StartOS ``.img.gz`` file, you will need to flash it onto a microSD card.
 
-#. Download `balenaEtcher <https://www.balena.io/etcher/>`_ onto your Linux, Mac, or Windows computer.
+#. Download and install `balenaEtcher <https://www.balena.io/etcher/>`_ onto your Linux, Mac, or Windows computer.
 
 #. Insert the microSD card into your computer, either directly or using an adapter.
 
@@ -77,7 +58,7 @@ Once you have extracted the StartOS ``.img`` file, you will need to flash it ont
       :width: 60%
       :alt: Balena Etcher Dashboard
 
-#. Click "Select Image" and select the ``.img`` file.
+#. Click "Select Image" and select the ``.img.gz`` file.
 
 #. Click "Select Target" and select your microSD card.
 
