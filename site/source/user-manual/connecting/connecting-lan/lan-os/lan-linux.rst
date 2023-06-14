@@ -53,12 +53,16 @@ Here we will insert your Start9 server's CA certificate into Linux's trust store
 
                     mv ~/.pki ~/.pki.mozilla-old
 
-            Finally, we will change directory to the folder where you downloaded your Start9 server's Root CA (usually `~/Downloads`), and run the following commands to add your Start9 server's CA certificate to the OS trust store:
+                .. note:: This step is unnecessary on some systems like Pop-OS, so if you get an error, you can safely ignore it.
+
+            Finally, we will change directory to the folder where you downloaded your Start9 server's Root CA (usually `~/Downloads`), and run the following commands (after carefully replacing `adjective-noun` with your server's unique hostname, below) to add your Start9 server's CA certificate to the OS trust store:
 
             .. code-block:: bash
             
                 cd ~/Downloads
-                sudo cp "<custom-address>.crt" /usr/local/share/ca-certificates/
+                sudo mkdir -p /usr/share/ca-certificates/start9
+                sudo cp "adjective-noun.local.crt" /usr/share/ca-certificates/start9/
+                sudo bash -c "echo 'start9/adjective-noun.local.crt' >> /etc/ca-certificates.conf"
                 sudo update-ca-certificates
 
         In the output it should say ``1 added`` if it was successful.
