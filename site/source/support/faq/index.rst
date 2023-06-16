@@ -18,3 +18,4 @@ Answers to Frequently Asked Questions
   faq-lightning
   faq-services
   faq-service-packaging
+  umbrel-compare
