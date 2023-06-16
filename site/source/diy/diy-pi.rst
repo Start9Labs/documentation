@@ -14,13 +14,14 @@ For more guidance or to share your experience with others, please `head to our c
 
 Hardware Requirements
 ---------------------
-- Raspberry Pi 4 (8GB RAM model)
+
+.. warning:: **READ CAREFULLY!** Start9 recommends **AGAINST** using an SSD with the Raspberry Pi. It can lead to server instability and data corruption. Instead, we recommend using a large, **high endurance** microSD card. If you insist on using an SSD, please ensure you are using a high-quality USB cord and the SSD is *independently* powered by a high-quality powered USB hub or case with powered expansion board. Even then, you will likely encounter issues. See the `Community Hub <https://community.start9.com/c/hacking/>`_ for more info.
+
+- Raspberry Pi 4 (8GB RAM)
 
 - Power Supply (20w - 5v/4a recommended)
 
-- SD Card (64GB minimum, 128GB or 256GB recommended - "High Endurance" highly recommended)
-
-.. warning:: It is possible, but no longer recommended, to flash the OS to a small SD card and attach an external SSD.  If you insist on doing this, you **MUST** provide adequeate power via a USB hub or, preferably, a powered expansion board, such as those sold by Geekworm.  See the `Community Hub <https://community.start9.com/c/hacking/>`_ for more info.
+- MicroSD Card (**high endurance**, 64GB *minimum*) (if you go against our recommendation and use an SSD, you will only need a 32GB microSD card, and it does not need to be high endurance)
 
 Flash and Install StartOS
 -------------------------
