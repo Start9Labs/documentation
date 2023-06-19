@@ -8,6 +8,10 @@ StartOS FAQ
   :depth: 2 
   :local:
 
+How is StartOS different from Umbrel?
+-------------------------------------
+Please see this :ref:`comparison page <umbrel-compare>` for a breakdown.
+
 Can I run StartOS on a VPS or VM?
 ---------------------------------
 Yes! The :ref:`DIY Guide <diy>` will take you through the setup steps.
