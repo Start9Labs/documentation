@@ -31,7 +31,7 @@ Umbrel itself is an *app* that can be *installed* onto most Debian or Ubuntu com
 
 Config
 ======
-Services often provide config files, such as Bitcoin's ``bitcoin.conf``. On Umbrel, updating config files requires using SSH and the command line. With StartOS, config files are presented as rich forms, including descriptions, downdowns, toggles, validated inputs, etc.
+Services often provide config files, such as Bitcoin's ``bitcoin.conf``. On Umbrel, updating config files requires using SSH and the command line. With StartOS, config files are presented as rich forms, including descriptions, dropdowns, toggles, validated inputs, etc.
 
 Backups
 =======
