@@ -8,7 +8,7 @@ Umbrel Comparison
   :depth: 2 
   :local:
 
-By popular demand, Start9 has provided a brief compare/contrast between StartOS and Umbrel.
+By popular demand, Start9 has provided a brief comparison between StartOS and Umbrel.
 
 How are they similar?
 ---------------------
@@ -19,7 +19,7 @@ How are they different?
 
 Appearance
 ==========
-Umbrel uses MacOS's aethetic. The user interface is clean, colorful, and customizable. StartOS offers a functional design with little color or customization.
+Umbrel uses MacOS's aesthetic. The user interface is clean, colorful, and customizable. StartOS offers a functional design with little color or customization.
 
 Services
 ========
