@@ -51,6 +51,6 @@ Both Umbrel and StartOS can be installed for free. As an app, Umbrel can only be
 
 Pricing
 =======
-Both companies offer plug and play devices. Umbrel offers a single device for $700. It has a 2.9GHz processor, 16GB of RAM, and a 2TB NVMe SSD. Start9 offers a similar device for $563.
+Both companies offer plug and play devices. Umbrel offers a single device for $700. It has a 2.0GHz processor, 16GB of RAM, and a 2TB NVMe SSD. Start9 offers a similar device for $563.
 
 Start9 also has other options ranging from $199 to $1546.
