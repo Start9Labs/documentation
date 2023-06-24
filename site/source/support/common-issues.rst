@@ -13,7 +13,7 @@ Sometimes things don't go as planned. Check here for solutions to common problem
 StartOS will not boot
 ---------------------
 
-If the device will not power on at all (no lights whatsoever), then the only issues could be that the Pi is not getting the power it needs, or it is completely dead (extremely rare).  If you sourced your own parts, please ensure that the power supply meets the minimum required specifications in the :ref:`DIY Guide<diy>`. If you received your device from us and it will not power up at all, please :ref:`Contact us<contact>` for assistance.
+If the device will not power on at all (no lights whatsoever), then the only issues could be that the Pi is not getting the power it needs, or it is completely dead (extremely rare).  If you sourced your own parts, please ensure that the power supply meets the minimum required specifications in the :ref:`DIY Guide<diy>`. If you received your device from us and it will not power up at all, please `Contact us <https://start9.com/contact>_` for assistance.
 
 StartOS boots into "Diagnostic Mode"
 ------------------------------------

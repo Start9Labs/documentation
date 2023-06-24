@@ -30,6 +30,7 @@ StartOS is a Linux-based operating system built to simplify open source software
 
 Start9 currently supports the Raspberry Pi, and most x86_64 and ARM hardware architectures.  Our wonderful community is constantly adding to the list of `known good hardware <https://community.start9.com/t/known-good-hardware-master-list-hardware-capable-of-running-startos/66>_` and we hope to add official support for more platforms soon!  Drop in our :ref:`community channels<contact>` to learn more and collaborate!!
 
+
 .. _sounds:
 
 Server Sounds
@@ -70,7 +71,7 @@ On some models (Server Lite, 2022 Server One, and Server Pure), StartOS emits so
         Your browser does not support the audio element.
       </audio>
 
-    * "Beethoven" - An error has occurred.  Check your "Notifications" tab for more info, or :ref:`Contact Support<contact>`
+    * "Beethoven" - An error has occurred.  Check your "Notifications" tab for more info, or `Contact Support <https://start9.com/contact>_`
 
 .. _services-eos:
 
@@ -106,7 +107,7 @@ Sometimes, a dependency can be satisfied in multiple ways. For example, Lightnin
 
 Web User Interface (UI)
 -----------------------
-A User Interface (UI) is the way in which the user interacts with some software.  Typically, this is achieved through a graphical interface (GUI).  A WebUI is a website that is served specifically for a user to issue commands or view data.  A great example of this is StartOS itself, which serves a WebUI for the user to add/remove services, make configurations, etc.  This is your main point of contact with eOS.
+A User Interface (UI) is the way in which the user interacts with some software.  Typically, this is achieved through a graphical interface (GUI).  A WebUI is a website that is served specifically for a user to issue commands or view data.  A great example of this is StartOS itself, which serves a WebUI for the user to add/remove services, make configurations, etc.  This is your main point of contact with StartOS.
 
 .. _interfaces:
 

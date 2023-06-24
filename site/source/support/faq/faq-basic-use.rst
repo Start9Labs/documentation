@@ -85,7 +85,7 @@ Why would I even buy this when I can just build it for free?
 
 Bottom line...We are charging a very marginal rate for something incredibly powerful, and we think the convenience of a plug-and-play device, free service marketplace, and free white glove support is where the money is. Anyone could build their own couches too, but here is a reason furniture stores exist. How much is your time worth?
 
-The fastest way to get support is via our :ref:`Community channels<contact>`.  Please do not hesitate to reach out!
+The fastest way to get support is via our `Community channels <https://start9.com/contact>_`.  Please do not hesitate to reach out!
 
 I bought a server from Start9 before Q3 2022 and it came with a 'product key,' what is that?
 --------------------------------------------------------------------------------------------

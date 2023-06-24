@@ -32,7 +32,7 @@ View frequently asked questions, troubleshoot common issues, or contact support.
 
 .. topic-box::
   :title: Contact
-  :link: contact
+  :link: https://start9.com/contact
   :icon: scylla-icon scylla-icon--support
   :class: large-5
   :anchor: Get help
@@ -59,5 +59,4 @@ View frequently asked questions, troubleshoot common issues, or contact support.
 
   common-issues
   faq/index
-  contact
   external-support
