@@ -64,6 +64,15 @@
 
   Package a service for the Marketplace
 
+.. topic-box::
+  :title: Contact Us
+  :link: https://start9.com/contact
+  :icon: scylla-icon scylla-icon--contact-us
+  :class: large-4
+  :anchor: Reach Out
+
+  Join us in our community channels or get support
+
 .. raw:: html
 
   </div></div>

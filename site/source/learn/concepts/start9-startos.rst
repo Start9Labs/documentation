@@ -24,7 +24,7 @@ StartOS
 -------
 StartOS is a Linux-based operating system custom built for self-hosting open source software. It has a range of features that allow anyone to run their own server software without needing all of the traditionally required systems administration skills.  Features such as advanced dependency management, sensible default configuration with potential for customization, and a sleek GUI make for a smooth user experience with minimal reliance on the developers for people with all levels of technical expertise.
 
-Currently, 2 builds of StartOS exist, one for the Raspberry Pi (Server One) and one for x86 (Server Pro). We currently only support the Raspberry Pi and Librem Mini hardware platforms, however with some minor tweaking, our builds should work on many other ARM and x86 devices.  We hope to officially support more platforms soon, and we highly encourage hacking and community builds!  Drop in our :ref:`community channels<contact>` to learn more and collaborate!!
+Currently, 2 builds of StartOS exist, one for the Raspberry Pi (Server One) and one for x86 (Server Pro). We currently only support the Raspberry Pi and Librem Mini hardware platforms, however with some minor tweaking, our builds should work on many other ARM and x86 devices.  We hope to officially support more platforms soon, and we highly encourage hacking and community builds!  Drop in our `community channels <https://start9.com/contact>_` to learn more and collaborate!!
 
 .. _sounds:
 
@@ -66,7 +66,7 @@ On some models (Server Lite, 2022 Server One, and Server Pure), StartOS emits so
         Your browser does not support the audio element.
       </audio>
 
-    * "Beethoven" - An error has occurred.  Check your "Notifications" tab for more info, or :ref:`Contact Support<contact>`
+    * "Beethoven" - An error has occurred.  Check your "Notifications" tab for more info, or `Contact Support <https://start9.com/contact>_`
 
 .. _services-eos:
 
@@ -102,7 +102,7 @@ Sometimes, a dependency can be satisfied in multiple ways. For example, Lightnin
 
 Web User Interface (UI)
 -----------------------
-A User Interface (UI) is the way in which the user interacts with some software.  Typically, this is achieved through a graphical interface (GUI).  A WebUI is a website that is served specifically for a user to issue commands or view data.  A great example of this is StartOS itself, which serves a WebUI for the user to add/remove services, make configurations, etc.  This is your main point of contact with eOS.
+A User Interface (UI) is the way in which the user interacts with some software.  Typically, this is achieved through a graphical interface (GUI).  A WebUI is a website that is served specifically for a user to issue commands or view data.  A great example of this is StartOS itself, which serves a WebUI for the user to add/remove services, make configurations, etc.  This is your main point of contact with StartOS.
 
 .. _interfaces:
 
