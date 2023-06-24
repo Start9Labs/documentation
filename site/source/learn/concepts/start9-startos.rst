@@ -10,21 +10,25 @@ Start9 Server & StartOS
 
 .. _server:
 
+Server Lite
+-----------
+Server Lite is a plug 'n' play hardware device, based on the `Raspberry Pi <https://www.raspberrypi.org/>`_, assembled in-house by Start9.  The current iteration features an SD card, speaker, and passive cooling in a custom case. Lite comes pre-loaded with :ref:`StartOS<start-os>`.  For more details, check out the `Server Lite tech specs <https://store.start9.com/products/server-lite>`_.
+
 Server One
 ----------
-Server One is a plug 'n' play hardware device, based on the `Raspberry Pi <https://www.raspberrypi.org/>`_, assembled in-house by Start9.  The current iteration features an internal SSD, speaker, active cooling, and power management in a custom AIO (all-in-one) case. The One comes pre-loaded with :ref:`StartOS<start-os>`.  For more details, check out the `Server One tech specs <https://store.start9.com/products/server-one>`_.
+Server One is a plug 'n' play hardware device, based on the `Intel NUC <https://en.wikipedia.org/wiki/Next_Unit_of_Computing>`_, assembled in-house by Start9.  The current iteration features an internal SSD, speaker, active cooling, and power management in a custom AIO (all-in-one) case. One comes pre-loaded with :ref:`StartOS<start-os>`.  For more details, check out the `Server One tech specs <https://store.start9.com/products/server-one>`_.
 
 Server Pro
 ----------
-Server Pro is a plug 'n' play hardware device, based on the `Librem Mini <https://puri.sm/products/librem-mini/>`_, built by `Purism <https://puri.sm/about/>`_.  The Pro features a custom-built circuit board with active cooling, and an open-source firmware / boot stack. The Pro comes pre-loaded with :ref:`StartOS<start-os>`.  For more details, check out the `Server Pro tech specs <https://store.start9.com/products/server-pro>`_.
+Server Pro is a plug 'n' play hardware device, based on the `Librem Mini <https://puri.sm/products/librem-mini/>`_, built by `Purism <https://puri.sm/about/>`_.  Pro features a custom-built circuit board with active cooling, and an open-source firmware / boot stack. Pro comes pre-loaded with :ref:`StartOS<start-os>`.  For more details, check out the `Server Pro tech specs <https://store.start9.com/products/server-pro>`_.
 
 .. _start-os:
 
 StartOS
 -------
-StartOS is a Linux-based operating system custom built for self-hosting open source software. It has a range of features that allow anyone to run their own server software without needing all of the traditionally required systems administration skills.  Features such as advanced dependency management, sensible default configuration with potential for customization, and a sleek GUI make for a smooth user experience with minimal reliance on the developers for people with all levels of technical expertise.
+StartOS is a Linux-based operating system built to simplify open source software hosting. It has a range of features that allow anyone to run their own server software without needing all of the traditionally required systems administration skills.  Features such as advanced dependency management, sensible default configuration with potential for customization, and a sleek GUI make for a smooth user experience with minimal reliance on the developers for people with all levels of technical expertise.
 
-Currently, 2 builds of StartOS exist, one for the Raspberry Pi (Server One) and one for x86 (Server Pro). We currently only support the Raspberry Pi and Librem Mini hardware platforms, however with some minor tweaking, our builds should work on many other ARM and x86 devices.  We hope to officially support more platforms soon, and we highly encourage hacking and community builds!  Drop in our :ref:`community channels<contact>` to learn more and collaborate!!
+Start9 currently supports the Raspberry Pi, and most x86_64 and ARM hardware architectures.  Our wonderful community is constantly adding to the list of `known good hardware <https://community.start9.com/t/known-good-hardware-master-list-hardware-capable-of-running-startos/66>_` and we hope to add official support for more platforms soon!  Drop in our :ref:`community channels<contact>` to learn more and collaborate!!
 
 .. _sounds:
 
