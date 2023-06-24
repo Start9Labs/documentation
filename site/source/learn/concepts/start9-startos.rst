@@ -16,7 +16,7 @@ Server Lite is a plug 'n' play hardware device, based on the `Raspberry Pi <http
 
 Server One
 ----------
-Server One is a plug 'n' play hardware device, based on the `Intel NUC <https://en.wikipedia.org/wiki/Next_Unit_of_Computing>`_, assembled in-house by Start9.  The current iteration features an internal SSD, speaker, active cooling, and power management in a custom AIO (all-in-one) case. One comes pre-loaded with :ref:`StartOS<start-os>`.  For more details, check out the `Server One tech specs <https://store.start9.com/products/server-one>`_.
+Server One is a plug 'n' play hardware device, based on the `Intel NUC <https://en.wikipedia.org/wiki/Next_Unit_of_Computing>`_, assembled in-house by Start9.  The current iteration features an internal SSD, speaker, active cooling, and power management in a custom AIO (all-in-one) case. The Server One comes pre-loaded with :ref:`StartOS<start-os>`.  For more details, check out the `Server One tech specs <https://store.start9.com/products/server-one>`_.
 
 Server Pro
 ----------
