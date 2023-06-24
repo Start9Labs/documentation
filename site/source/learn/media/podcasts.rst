@@ -120,7 +120,7 @@ Podcasts featuring Start9 Labs and StartOS
 
 .. topic-box::
     :title: June 15, 2021 - Matt Odell, @raspiblitz, @ronindojoui, @mynodebtc, @nodl_it, and @start9labs
-    :link: https://citadeldispatch.com/cd26/
+    :link: https://podcasters.spotify.com/pod/show/citadeldispatch/episodes/CD26-using-a-bitcoin-node-with-raspiblitz--ronindojoui--mynodebtc--start9labs--and-nodl_it-e12reo1/a-a5t27sl
     :image: https://citadeldispatch.com/wp-content/uploads/2021/04/cropped-cit2color.png
     :anchor: Citadel Dispatch
 
