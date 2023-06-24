@@ -20,7 +20,7 @@ Server One is a plug 'n' play hardware device, based on the `Intel NUC <https://
 
 Server Pro
 ----------
-Server Pro is a plug 'n' play hardware device, based on the `Librem Mini <https://puri.sm/products/librem-mini/>`_, built by `Purism <https://puri.sm/about/>`_.  Pro features a custom-built circuit board with active cooling, and an open-source firmware / boot stack. Pro comes pre-loaded with :ref:`StartOS<start-os>`.  For more details, check out the `Server Pro tech specs <https://store.start9.com/products/server-pro>`_.
+Server Pro is a plug 'n' play hardware device, based on the `Librem Mini <https://puri.sm/products/librem-mini/>`_, built by `Purism <https://puri.sm/about/>`_.  Pro features a custom-built circuit board with active cooling, and an open-source firmware / boot stack. The Server Pro comes pre-loaded with :ref:`StartOS<start-os>`.  For more details, check out the `Server Pro tech specs <https://store.start9.com/products/server-pro>`_.
 
 .. _start-os:
 
