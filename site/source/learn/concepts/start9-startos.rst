@@ -12,7 +12,7 @@ Start9 Server & StartOS
 
 Server Lite
 -----------
-Server Lite is a plug 'n' play hardware device, based on the `Raspberry Pi <https://www.raspberrypi.org/>`_, assembled in-house by Start9.  The current iteration features an SD card, speaker, and passive cooling in a custom case. Lite comes pre-loaded with :ref:`StartOS<start-os>`.  For more details, check out the `Server Lite tech specs <https://store.start9.com/products/server-lite>`_.
+Server Lite is a plug 'n' play hardware device, based on the `Raspberry Pi <https://www.raspberrypi.org/>`_, assembled in-house by Start9.  The current iteration features an SD card, speaker, and passive cooling. The Server Lite comes pre-loaded with :ref:`StartOS<start-os>`.  For more details, check out the `Server Lite tech specs <https://store.start9.com/products/server-lite>`_.
 
 Server One
 ----------
