@@ -58,7 +58,7 @@ Nothing special is required, however, it is best practice to use good passwords,
 
 What if I have an unique network issue, for example, with a firewall?
 ---------------------------------------------------------------------
-StartOS is designed to work as simply as possible, for as many as possible, while providing the ability to host in a private manner.  If you have an aggressive or custom firewall, or other custom network settings, there is a good chance that addtional configuration may be necessary.  We will continue to learn about custom networking issues, update our docs with resources, and help in the :ref:`Community Channels <contact>` to the best of our ability.
+StartOS is designed to work as simply as possible, for as many as possible, while providing the ability to host in a private manner.  If you have an aggressive or custom firewall, or other custom network settings, there is a good chance that addtional configuration may be necessary.  We will continue to learn about custom networking issues, update our docs with resources, and help in the `Community Channels <https://start9.com/contact>_` to the best of our ability.
 
 Can I use my server from behind a VPN, for example, if my router has a built-in VPN?
 ------------------------------------------------------------------------------------
