@@ -429,7 +429,7 @@ Check out the specification `here <https://start9.com/latest/developer-docs/spec
 
 Support
 =======
-Have a question?  Need a hand? Please jump into our `Community <https://community.start9.com>`_, or our `Matrix Community Dev Channel <https://matrix.to/#/#community-dev:matrix.start9labs.com>`_.  You can also check out our full list of :ref:`Community Channels <contact>`.
+Have a question?  Need a hand? Please jump into our `Community <https://community.start9.com>`_, or our `Matrix Community Dev Channel <https://matrix.to/#/#community-dev:matrix.start9labs.com>`_.  You can also check out our full list of `Community Channels <https://start9.com/contact>`_.
 
 Need more details?  Check out the :ref:`Service Packaging Specification <service-packaging-spec>`
 
