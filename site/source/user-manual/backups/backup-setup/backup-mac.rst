@@ -33,7 +33,7 @@ Please select what version of MacOS you are using from the two tabs below:
                 :width: 40%
                 :alt: general-sharing
 
-        #. Click the toggle to enable file sharing:
+        #. Click the toggle to enable file sharing and then click info icon:
 
             .. figure:: /_static/images/cifs/ventura-enable-file-sharing.png
                 :width: 40%
@@ -58,6 +58,9 @@ Please select what version of MacOS you are using from the two tabs below:
                 :alt: ventura-smb
 
         You can now move on to connecting your server.
+
+             .. tip:: You can find hostname at the bottom of sharing window.
+
 
     .. group-tab:: Pre-Ventura
 
