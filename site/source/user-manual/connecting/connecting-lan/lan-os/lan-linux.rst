@@ -23,7 +23,7 @@ Here we will insert your Start9 server's CA certificate into Linux's trust store
 
             For each Mozilla-based application (Firefox, Firefox ESR, LibreWolf, Thunderbird, etc) you plan on using, in order for them to trust your Start9 server's CA certificate directly from your Linux distribution's certificate trust store, do the following:
 
-            #. Enter ``about:preferences`` into the address bar, then search for "*security devices*", then select "*Security Devices...*"
+            #. Select the hamgurger menu, then *Settings*, then search for "*security devices*", then select "*Security Devices...*"
 
                 .. figure:: /_static/images/ssl/linux/cert-trust-linux-firefox-p11kit-1.png
                     :width: 60%
