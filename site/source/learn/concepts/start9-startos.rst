@@ -28,7 +28,7 @@ StartOS
 -------
 StartOS is a Linux-based operating system built to simplify open source software hosting. It has a range of features that allow anyone to run their own server software without needing all of the traditionally required systems administration skills.  Features such as advanced dependency management, sensible default configuration with potential for customization, and a sleek GUI make for a smooth user experience with minimal reliance on the developers for people with all levels of technical expertise.
 
-Start9 currently supports the Raspberry Pi, and most x86_64 and ARM hardware architectures.  Our wonderful community is constantly adding to the list of `known good hardware <https://community.start9.com/t/known-good-hardware-master-list-hardware-capable-of-running-startos/66>_` and we hope to add official support for more platforms soon!  Drop in our `community channels <https://start9.com/contact>`_ to learn more and collaborate!!
+Start9 currently supports the Raspberry Pi, and most x86_64 and ARM hardware architectures.  Our wonderful community is constantly adding to the list of `known good hardware <https://community.start9.com/t/known-good-hardware-master-list-hardware-capable-of-running-startos/66>`_ and we hope to add official support for more platforms soon!  Drop in our `community channels <https://start9.com/contact>`_ to learn more and collaborate!!
 
 .. _sounds:
 
