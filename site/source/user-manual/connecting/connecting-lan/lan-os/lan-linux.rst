@@ -18,42 +18,34 @@ Here we will insert your Start9 server's CA certificate into Linux's trust store
 
             .. code-block:: bash
 
+                sudo apt update
                 sudo apt install -y ca-certificates p11-kit
 
-            .. note:: For each Mozilla-based application you plan on using, in order for them to trust your Start9 server's CA certificate directly from your Linux distribution's certificate trust store, execute the following command(s):
+            For each Mozilla-based application (Firefox, Firefox ESR, LibreWolf, Thunderbird, etc) you plan on using, in order for them to trust your Start9 server's CA certificate directly from your Linux distribution's certificate trust store, do the following:
 
+            #. Select the hamgurger menu, then *Settings*, then search for "*security devices*", then select "*Security Devices...*"
 
-                If you use Firefox:
+                .. figure:: /_static/images/ssl/linux/cert-trust-linux-firefox-p11kit-1.png
+                    :width: 60%
+                    :alt: Mozilla application p11kit trust #1
 
-                .. code-block:: bash
+            #. When the Device Manager dialog window opens, select "*Load*"
 
-                    libnssckbiso=/usr/lib/firefox/libnssckbi.so && sudo mv $libnssckbiso $libnssckbiso.bak && sudo ln -s /usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so $libnssckbiso
+                .. figure:: /_static/images/ssl/linux/cert-trust-linux-firefox-p11kit-2.png
+                    :width: 60%
+                    :alt: Mozilla application p11kit trust #2
 
-                If you use Firefox ESR:
+            #. Give the Module Name a title such as "*System CA Trust Module*" and for the Module filename, paste in ``/usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so`` and hit *OK*:
 
-                .. code-block:: bash
-                    
-                    libnssckbiso=/usr/lib/firefox-esr/libnssckbi.so && sudo mv $libnssckbiso $libnssckbiso.bak && sudo ln -s /usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so $libnssckbiso
+                .. figure:: /_static/images/ssl/linux/cert-trust-linux-firefox-p11kit-3.png
+                    :width: 60%
+                    :alt: Mozilla application p11kit trust #3
 
-                If you use Librewolf:
+            #. Verify that the new module shows up on the left hand side and select *OK* at the bottom right:
 
-                .. code-block:: bash
-                    
-                    libnssckbiso=/usr/share/librewolf/libnssckbi.so && sudo mv $libnssckbiso $libnssckbiso.bak && sudo ln -s /usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so $libnssckbiso
-
-                If you use Thunderbird (Useful for LAN access to NextCloud's calendar/contacts):
-
-                .. code-block:: bash
-
-                    libnssckbiso=/usr/lib/thunderbird/libnssckbi.so && sudo mv $libnssckbiso $libnssckbiso.bak && sudo ln -s /usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so $libnssckbiso
-
-                If you performed any of the commands above, now we need to move the the mozilla apps' old trust store out of the way so the next time it starts it will use the system trust store:
-
-                .. code-block:: bash
-
-                    mv ~/.pki ~/.pki.mozilla-old
-
-                .. note:: This step is unnecessary on some systems like Pop-OS, so if you get an error, you can safely ignore it.
+                .. figure:: /_static/images/ssl/linux/cert-trust-linux-firefox-p11kit-4.png
+                    :width: 60%
+                    :alt: Mozilla application p11kit trust #4
 
             Finally, we will change directory to the folder where you downloaded your Start9 server's Root CA (usually `~/Downloads`), and run the following commands (after carefully replacing `adjective-noun` with your server's unique hostname, below) to add your Start9 server's CA certificate to the OS trust store:
 
@@ -66,6 +58,8 @@ Here we will insert your Start9 server's CA certificate into Linux's trust store
                 sudo update-ca-certificates
 
         In the output it should say ``1 added`` if it was successful.
+
+        Now restart Firefox (or other Mozilla application) and login to your server using ``https://``.  No SSL warning should appear.  If you still encounter issues, `contact support <https://start9.com/contact>`_.
 
     .. group-tab:: Arch/Garuda
 
