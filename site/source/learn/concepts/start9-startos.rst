@@ -71,7 +71,7 @@ On some models (Server Lite, 2022 Server One, and Server Pure), StartOS emits so
         Your browser does not support the audio element.
       </audio>
 
-    * "Beethoven" - An error has occurred.  Check your "Notifications" tab for more info, or `Contact Support <https://start9.com/contact>_`
+    * "Beethoven" - An error has occurred.  Check your "Notifications" tab for more info, or `Contact Support <https://start9.com/contact>`_
 
 .. _services-eos:
 

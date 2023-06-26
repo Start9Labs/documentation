@@ -96,7 +96,7 @@ Yes! The full warranty for a device purchased from us is located on the insert i
 
 What kind of Internet connection does a server require?
 -------------------------------------------------------
-In general, any modern Internet connection is usually fine.  We have had reports from users on rural satellite connections with high latency (ping), and low up/download speeds who had issues accessing via Tor.  You can check your internet connection at `SpeedTest <https://speedtest.net>`_ to find your ping and speed.  If your ping is higher than 200ms and/or your speeds are lower than 5Mbps, you may want to locate your server somewhere with a better connection.  Please don't hesitate to `contact us <https://start9.com/contact>_` with any questions.
+In general, any modern Internet connection is usually fine.  We have had reports from users on rural satellite connections with high latency (ping), and low up/download speeds who had issues accessing via Tor.  You can check your internet connection at `SpeedTest <https://speedtest.net>`_ to find your ping and speed.  If your ping is higher than 200ms and/or your speeds are lower than 5Mbps, you may want to locate your server somewhere with a better connection.  Please don't hesitate to `contact us <https://start9.com/contact>`_ with any questions.
 
 I run a business, can I use StartOS for tasks such as password management and file sharing?
 -------------------------------------------------------------------------------------------
