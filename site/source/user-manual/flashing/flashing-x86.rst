@@ -11,46 +11,39 @@ Getting StartOS
 ---------------
 Visit the `Github release page <https://github.com/Start9Labs/start-os/releases/latest>`_ to find the latest StartOS release.
 
-At the bottom of the page, under "Assets," download the ``x86_64.iso`` or ``x86_64-nonfree.iso`` file.  The former image contains no proprietary software (built for the Server Pure).  As the title implies, the latter, ``nonfree`` image, contains non-free software.  This may be required for your hardware, especially for Kiosk mode or WiFi.
+At the bottom of the page, under "Assets," download the ``x86_64.iso`` or ``x86_64-nonfree.iso`` file.  The former image contains no proprietary software (built for the Server Pure).  As the title implies, the latter, ``nonfree`` image, contains non-free (closed-source) software.  This may be required for your hardware, especially for graphics and/or wireless device support.
 
     .. figure:: /_static/images/flashing/x86_64-asset.png
         :width: 60%
 
-(OPTIONAL) Select your OS to verify the image (be sure to use the correct file name):
+Select your OS to continue:
 
 .. tabs::
 
     .. group-tab:: Linux
 
-        Verify the checksum against the one listed on GitHub by opening a terminal in the folder you downloaded the image to and running:
-        
-            (SHA256):
+        (Optional, but recommended) Verify the checksum against the one listed on GitHub (SHA256):
         
             .. code-block::
             
-                sha256sum startos-0.3.4.2-bbd66e9-20230519_x86_64.iso
-
-            or (BLAKE3):
-
-            .. code-block::
-            
-                b3sum startos-0.3.4.2-bbd66e9-20230519_x86_64.iso
+                sha256sum startos-0.3.4.2-efc56c0-20230525_x86_64.iso
         
     .. group-tab:: Mac
             
-        Verify the checksum against the one listed on GitHub by opening a terminal in the folder you downloaded the image to and running:
+        (Optional, but recommended) Verify the checksum against the one listed on GitHub by opening a terminal and entering:
 
             .. code-block::
 
-                openssl dgst -sha256 startos-0.3.4.2-bbd66e9-20230519_x86_64.iso
+                openssl dgst -sha256 startos-0.3.4.2-efc56c0-20230525_x86_64.iso
 
     .. group-tab:: Windows
-            
-        Verify the checksum against the one listed on GitHub by opening a ``cmd`` prompt "As Administrator" in the folder you saved the image to and running:
+        
+        (Optional, but recommended) Verify the checksum against the one listed on GitHub by opening Windows PowerShell, changing your directory to where you downloaded the .img.gz file, and running `Get-FileHash`:
 
             .. code-block::
 
-                Get-FileHash startos-0.3.4.2-bbd66e9-20230519_x86_64.iso
+                cd Downloads
+                Get-FileHash startos-0.3.4.2-efc56c0-20230525_x86_64.iso
 
 Installing StartOS
 ------------------

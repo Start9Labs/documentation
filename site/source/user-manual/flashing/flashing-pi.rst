@@ -5,10 +5,10 @@ Flashing (Raspberry Pi)
 =======================
 This guide is for flashing StartOS to a micro SD card in order to install it on a Raspberry Pi with an external SSD.  Please contact support if you need to re-install your OS on a Lite (SD card storage).
 
-.. warning:: DO NOT DO THIS UNLESS YOU HAVE AN EXTERNAL SSD.  If you are running in a "Lite" configuration (everything on an SD card), then flashing in this manner WILL ERASE ALL YOUR DATA!  Contact support for assistance.
+.. warning:: DO NOT DO THIS UNLESS YOU HAVE AN EXTERNAL SSD.  If you are running in a "Lite" configuration (everything on an SD card), then flashing in the manner proscribed below WILL ERASE ALL YOUR DATA!  Contact support for assistance instead.
 
-Getting and Extracting the Image
---------------------------------
+Getting StartOS
+---------------
 Visit the `Github release page <https://github.com/Start9Labs/start-os/releases/latest>`_ to find the latest StartOS release.
 
 At the bottom of the page, under "Assets," download the ``startos-..._raspberrypi.img.gz`` file.
