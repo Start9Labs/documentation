@@ -59,6 +59,8 @@ Here we will insert your Start9 server's CA certificate into Linux's trust store
 
         In the output it should say ``1 added`` if it was successful.
 
+        Now restart Firefox (or other Mozilla application) and login to your server using ``https://``.  No SSL warning should appear.  If you still encounter issues, `contact support <https://start9.com/contact>`_.
+
     .. group-tab:: Arch/Garuda
 
         From the folder you have downloaded your Start9 server's Root CA, run the following commands (if you have changed the certificate's filename, be sure to change it here):
