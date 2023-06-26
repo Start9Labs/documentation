@@ -67,7 +67,9 @@ Once you have the StartOS image, you will need to flash it onto your USB drive.
 
 #. Click "Flash!". You may be asked to approve the unusually large disk target and/or enter your password. Both are normal.
 
-#. After this completes, you may remove the newly flashed drive from your computer, insert it into the device you intend to install StartOS onto.
+#. After this completes, you may remove the newly flashed drive from your computer, and insert it into the device you intend to install StartOS onto.
+
+#. Plug the USB drive into the device and power on. Follow the on-screen instructions to Install StartOS (use "Re-Install" to preserve data, or "Factory Reset" to wipe the device). After install is complete, you will be prompted to remove your USB drive.
 
     .. note:: Always perfer the fastest available USB 3.0+ port - typically this is blue or labeled "SS" (SuperSpeed)
 

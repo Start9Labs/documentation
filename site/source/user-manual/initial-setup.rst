@@ -90,7 +90,7 @@ If you are experiencing issues with setup, try the following:
 
 #. Confirm that the server is plugged into both power and Ethernet
 
-   - An ethernet network with DHCP server must be available at setup.  Most routers provide one.  If such ethernet connectivity is not available, or there is another hardware issue, you may hear this sound:
+   - An ethernet network with DHCP server must be available at setup.  Most routers provide this.
       
 #. Confirm your phone/computer is **not** connected to a "Guest" network
 #. Confirm your phone/computer is not using a VPN, or that if you are, that it allows LAN connections, such as the examples below:
@@ -105,7 +105,7 @@ If you are experiencing issues with setup, try the following:
     - From your browser, navigate to your router configuration settings. This is usually an IP address such as 192.168.1.1. A simple web search will usually reveal how to access the router configuration settings for a particular brand.
     - Once in the router config settings, find the section that lists the devices on your network. You should see a device labeled ``start``. Take note of the associated IP address and enter it into your browser's URL field to enter the setup.
 
-You can always to `reach out to support <https://start9.com/contact>_` if you need a hand.
+You can always to `reach out to support <https://start9.com/contact>`_ if you need a hand.
 
 Server Models With Speakers
 ---------------------------

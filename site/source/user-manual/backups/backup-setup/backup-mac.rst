@@ -57,9 +57,9 @@ Please select what version of MacOS you are using from the two tabs below:
                 :width: 40%
                 :alt: ventura-smb
 
-        You can now move on to connecting your server.
+        #. Click **Done** to close this window.  You can now move on to connecting your server.
 
-             .. tip:: You can find hostname at the bottom of sharing window.
+             .. tip:: You can find hostname at the bottom of sharing window.  You will need this in the next step.
 
 
     .. group-tab:: Pre-Ventura
@@ -131,13 +131,11 @@ Connect Your Server
 
     * **Hostname** - This is the name of your computer.
 
-      .. tip:: Sometimes it can be unclear what your Mac's hostname is. One way to establish it for good is to open up Terminal and type `hostname` as below:
+      .. tip:: Sometimes it can be unclear what your Mac's hostname is. Check the tip in Step 8 of the section above to find it.  On some versions of Mac, you may need to open up Terminal and type `hostname` as below:
     
           .. figure:: /_static/images/cifs/hostname-terminal-mac.png
               :width: 35%
               :alt: hostname-terminal-mac
-
-        In Pre-Ventura versions of MacOS it can be found in the **Sharing** settings mentioned above (step 7).
 
     * **Path** - This is the *name of the shared folder* you are using and **not** the full directory path.
 
