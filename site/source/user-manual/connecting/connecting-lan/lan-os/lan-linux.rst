@@ -35,7 +35,7 @@ Here we will insert your Start9 server's CA certificate into Linux's trust store
                     :width: 60%
                     :alt: Mozilla application p11kit trust #2
 
-            #. Give the Module Name a title such as "*p11-kit PKCS#11 Module*" and for the Module filename, paste in ``/usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so`` and hit *OK*:
+            #. Give the Module Name a title such as "*System CA Trust Module*" and for the Module filename, paste in ``/usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so`` and hit *OK*:
 
                 .. figure:: /_static/images/ssl/linux/cert-trust-linux-firefox-p11kit-3.png
                     :width: 60%
