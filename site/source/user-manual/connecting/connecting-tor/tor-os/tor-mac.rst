@@ -98,7 +98,7 @@ Enable Tor System-wide
                 :width: 80%
                 :alt: Click Advanced
 
-        #. Select "Automatic Proxy Configuration", add this URL: **http://localhost/proxy.pac** then click "OK":
+        #. Click "Proxies," then select "Automatic Proxy Configuration," add this URL: **http://localhost/proxy.pac**, then click "OK":
 
             .. figure:: /_static/images/tor/ventura-proxies-corrected.png
                 :width: 80%
