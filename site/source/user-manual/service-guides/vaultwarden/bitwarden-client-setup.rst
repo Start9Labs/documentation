@@ -205,7 +205,7 @@ iOS
                     :width: 40%
                     :alt: vaultwarden-iOS-log-in-screen
         
-        #. Choose self-hosted option.  
+        #. Choose the "Self-hosted" option.  
 
             .. figure:: /_static/images/services/vaultwarden/bitwarden-iOS-setup-step2.png
                     :width: 40%
