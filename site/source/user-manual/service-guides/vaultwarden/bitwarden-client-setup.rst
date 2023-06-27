@@ -179,7 +179,7 @@ iOS
 
         #. Now send that address to your phone and paste it into Bitwarden.
 
-            .. note::  **before you hit save:** The Tor address you will have copied will begin with **http** - Please change this to **https** instead of **http**
+            .. caution::  **Before you hit save:**  The Tor address you will have copied will begin with **http** - Please change this to **https** instead of **http**
         
             .. figure:: /_static/images/services/vaultwarden/bitwarden-iOS-setup-step3.png
                     :width: 40%
