@@ -199,7 +199,7 @@ iOS
 
         #. Open the Bitwarden app. You'll be greeted with a log-in screen.
         
-        #. Open the Bitwarden app. You'll be greeted with a log-in screen. Click "Region" dropdown menu.
+        #. Open the Bitwarden app. You'll be greeted with a log-in screen. Click the "Region" drop-down menu.
 
             .. figure:: /_static/images/services/vaultwarden/bitwarden-iOS-setup-step1.png
                     :width: 40%
