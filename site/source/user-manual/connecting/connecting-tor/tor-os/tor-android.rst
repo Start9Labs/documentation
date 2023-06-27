@@ -68,6 +68,10 @@ Examples of applications that need this feature for remote access are:
 - Element (Matrix client)
 - Nextcloud
 
+    .. figure:: /_static/images/tor/orbot2.png
+      :width: 30%
+      :alt: Orbot running
+
 You can also add the following browsers to the Tor-Enabled Apps list to easily access Tor addresses (`.onion` URLs):
 
 - Chrome
