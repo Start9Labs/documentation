@@ -9,11 +9,11 @@ Reset Your Password
   :local:
 
 #. Download and flash the latest version of StartOS, using the appropriate :ref:`flashing guide <flashing>` for your hardware.
-#. Power on your server, ensuring it is plugged in to Ethernet.
+#. Plug the flashed drive into a USB port (preferably USB3 - blue in color).  Power on your server, ensuring it is plugged in to Ethernet.
 
     .. note:: Server will power up and then initialize.  If you have a speaker, you will hear first hear a _bep_ then a _chime_ sound to indicate the device is ready.
 
-#. Using a phone or computer connected to the same network, open up a browser and go to http://start.local.
+#. Using a phone or computer connected to the same network, open up a browser and go to http://start.local.  Follow the directions to "Re-install OS, preserving data".  Follow the prompts after removing the drive and rebooting, visit http://start.local again.
 
 #. Select "Recover".
 
