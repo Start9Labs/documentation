@@ -40,7 +40,17 @@ Browser Extension
                     :alt: vaultwarden-firefox-self-host
 
             #. Now we need to grab the address of our Vaultwarden server.Paste the address into your extension and click "Save".
+            #. Now head to the Bitwarden extension and click the "Region" dropdown menu and choose self-hosted. Under **Self-hosted environment** you will see a field for **Server URL**.
 
+                .. figure:: /_static/images/services/vaultwarden/bitwarden-firefox-setup-step1.png
+                    :width: 40%
+                    :alt: vaultwarden-firefox-self-host
+
+            #. Now we need to grab the address of our Vaultwarden server.Paste the address into your extension and click "Save".
+
+                .. figure:: /_static/images/services/vaultwarden/bitwarden-firefox-setup-step2.png
+                    :width: 40%
+                    :alt: vaultwarden-firefox-url
                 .. figure:: /_static/images/services/vaultwarden/bitwarden-firefox-setup-step2.png
                     :width: 40%
                     :alt: vaultwarden-firefox-url
@@ -73,7 +83,17 @@ Browser Extension
                     :alt: vaultwarden-firefox-self-host
 
             #. Now we need to grab the address of our Vaultwarden server.Paste the address into your extension and click "Save".
+             #. Now head to the Bitwarden extension and click the Region dropdown menu and choose self-hosted. Under **Self-hosted environment** you will see a field for **Server URL**.
 
+                .. figure:: /_static/images/services/vaultwarden/bitwarden-firefox-setup-step1.png
+                    :width: 40%
+                    :alt: vaultwarden-firefox-self-host
+
+            #. Now we need to grab the address of our Vaultwarden server.Paste the address into your extension and click "Save".
+
+                .. figure:: /_static/images/services/vaultwarden/bitwarden-firefox-setup-step2.png
+                    :width: 40%
+                    :alt: vaultwarden-firefox-url
                 .. figure:: /_static/images/services/vaultwarden/bitwarden-firefox-setup-step2.png
                     :width: 40%
                     :alt: vaultwarden-firefox-url
@@ -153,13 +173,13 @@ iOS
 
         #. Visit the App Store and download the `Bitwarden app <https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744>`_
 
-        #. Open the Bitwarden app. You'll be greeted with a log-in screen. Click "Region" dropdown menu.
+        #. Open the Bitwarden app. You'll be greeted with a log-in screen. Click the "Region" drop-down menu.
 
             .. figure:: /_static/images/services/vaultwarden/bitwarden-iOS-setup-step1.png
                     :width: 40%
                     :alt: vaultwarden-iOS-log-in-screen
         
-        #. Choose self-hosted option.  
+        #. Choose the "Self-hosted" option.  
 
             .. figure:: /_static/images/services/vaultwarden/bitwarden-iOS-setup-step2.png
                     :width: 40%
@@ -178,8 +198,9 @@ iOS
                 :alt: vaultwarden-tor-address
 
         #. Now send that address to your phone and paste it into Bitwarden.
+        #. Now send that address to your phone and paste it into Bitwarden.
 
-            .. note::  **before you hit save:** The Tor address you will have copied will begin with **http** - Please change this to **https** instead of **http**
+            .. caution::  **Before you hit save:**  The Tor address you will have copied will begin with **http** - Please change this to **https** instead of **http**
         
             .. figure:: /_static/images/services/vaultwarden/bitwarden-iOS-setup-step3.png
                     :width: 40%
@@ -199,13 +220,13 @@ iOS
 
         #. Open the Bitwarden app. You'll be greeted with a log-in screen.
         
-        #. Open the Bitwarden app. You'll be greeted with a log-in screen. Click "Region" dropdown menu.
+        #. Open the Bitwarden app. You'll be greeted with a log-in screen. Click the "Region" drop-down menu.
 
             .. figure:: /_static/images/services/vaultwarden/bitwarden-iOS-setup-step1.png
                     :width: 40%
                     :alt: vaultwarden-iOS-log-in-screen
         
-        #. Choose self-hosted option.  
+        #. Choose the "Self-hosted" option.  
 
             .. figure:: /_static/images/services/vaultwarden/bitwarden-iOS-setup-step2.png
                     :width: 40%
@@ -224,6 +245,11 @@ iOS
                 :alt: vaultwarden-lan-address
 
         #. Now send that address to your phone and paste it into Bitwarden.
+
+            .. figure:: /_static/images/services/vaultwarden/bitwarden-iOS-setup-step3.png
+                    :width: 40%
+                    :alt: vaultwarden-iOS-url-screen
+
 
             .. figure:: /_static/images/services/vaultwarden/bitwarden-iOS-setup-step3.png
                     :width: 40%
@@ -259,8 +285,9 @@ Desktop Clients
 
                 #. Download the `Bitwarden Desktop app <https://bitwarden.com/download/>`_.
 
-                #. Open the Bitwarden app and click on "Region" dropdown menu:
+                #. Open the Bitwarden app and click on the "Region" drop-down menu:
 
+                    .. figure:: /_static/images/services/vaultwarden/bitwarden-macOS-setup-step1.png
                     .. figure:: /_static/images/services/vaultwarden/bitwarden-macOS-setup-step1.png
                         :width: 50%
                         :alt: bitwarden-mac
@@ -280,6 +307,7 @@ Desktop Clients
                 #. Paste the address into Bitwarden and click the save button:
 
                     .. figure:: /_static/images/services/vaultwarden/bitwarden-macOS-setup-step2.png
+                    .. figure:: /_static/images/services/vaultwarden/bitwarden-macOS-setup-step2.png
                         :width: 50%
                         :alt: bitwarden-tor-mac-url
 
@@ -293,8 +321,9 @@ Desktop Clients
 
                 #. Download the `Bitwarden Desktop app <https://bitwarden.com/download/>`_.
 
-                #. Open the Bitwarden app and click on "Region" dropdown menu:
+                #. Open the Bitwarden app and click on the "Region" drop-down menu:
 
+                    .. figure:: /_static/images/services/vaultwarden/bitwarden-macOS-setup-step1.png
                     .. figure:: /_static/images/services/vaultwarden/bitwarden-macOS-setup-step1.png
                         :width: 50%
                         :alt: bitwarden-mac
@@ -313,6 +342,7 @@ Desktop Clients
 
                 #. Paste the address into Bitwarden and click the save button:
 
+                    .. figure:: /_static/images/services/vaultwarden/bitwarden-macOS-setup-step2.png
                     .. figure:: /_static/images/services/vaultwarden/bitwarden-macOS-setup-step2.png
                         :width: 50%
                         :alt: bitwarden-tor-mac-url
