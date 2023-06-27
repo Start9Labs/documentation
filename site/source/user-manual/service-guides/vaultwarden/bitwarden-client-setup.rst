@@ -153,7 +153,7 @@ iOS
 
         #. Visit the App Store and download the `Bitwarden app <https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744>`_
 
-        #. Open the Bitwarden app. You'll be greeted with a log-in screen. Click "Region" dropdown menu.
+        #. Open the Bitwarden app. You'll be greeted with a log-in screen. Click the "Region" drop-down menu.
 
             .. figure:: /_static/images/services/vaultwarden/bitwarden-iOS-setup-step1.png
                     :width: 40%
