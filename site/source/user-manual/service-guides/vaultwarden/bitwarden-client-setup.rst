@@ -293,7 +293,7 @@ Desktop Clients
 
                 #. Download the `Bitwarden Desktop app <https://bitwarden.com/download/>`_.
 
-                #. Open the Bitwarden app and click on "Region" dropdown menu:
+                #. Open the Bitwarden app and click on the "Region" drop-down menu:
 
                     .. figure:: /_static/images/services/vaultwarden/bitwarden-macOS-setup-step1.png
                         :width: 50%
