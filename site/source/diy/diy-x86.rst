@@ -21,19 +21,19 @@ Check out `this forum post <https://community.start9.com/t/known-good-hardware-m
 .. _os-reqs:
 
 Minimum OS Requirements
-.......................
-The specs below would be acceptable for a server running minimal services with minimal storage needs
+=======================
+The specs below would be acceptable for a server running minimal services with minimal storage needs:
 
-- Single vCPU Core 2Ghz
+- Single vCPU Core 2Ghz (boost)
 - 4GB RAM
 - 64GB Storage
 - Ethernet port
 
 Recommended OS Requirements
-...........................
-If you intend to run Bitcoin or store any meaningful amount of data, you will need
+===========================
+If you intend to run Bitcoin or store any meaningful amount of data, we recommend the following:
 
-- Quad-Core CPU 2.5Ghz+
+- Quad-Core CPU 2.5Ghz+ (boost)
 - 8GB+ RAM
 - 1TB+ Storage
 
