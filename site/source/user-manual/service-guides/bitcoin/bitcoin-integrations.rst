@@ -140,7 +140,7 @@ Sparrow
   #. Follow this `guide <https://github.com/Start9Labs/electrs-wrapper/blob/master/docs/integrations/sparrow/guide.md>`__.
 
 
-.. _specter:
+.. _specter-wallet:
 
 Specter
 -------
@@ -149,6 +149,7 @@ Specter
 
   - Linux
   - macOS
+  - StartOS
   - Windows
  
  **Instructions**

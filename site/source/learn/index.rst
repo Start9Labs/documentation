@@ -41,5 +41,5 @@ Learn
    :hidden:
 
    concepts/index
-   support/faq/index
+   ../support/faq/index
    

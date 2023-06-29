@@ -44,6 +44,11 @@ Mempool
 =======
 * Official Support: https://t.me/mempoolspace
 
+Nextcloud
+=========
+* Official Support: https://nextcloud.com/support/
+* Unofficial Telegram Community: https://t.me/Nextcloud
+
 Photoview
 =========
 * Official Support: https://discord.gg/jQ392948u9

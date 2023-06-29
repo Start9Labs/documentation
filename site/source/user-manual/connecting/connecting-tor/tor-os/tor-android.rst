@@ -11,71 +11,66 @@ Running Orbot
 
 Orbot is a system wide proxy for your Android device that enables communications over Tor.
 
-1. Download and install Orbot from the `Play Store <https://play.google.com/store/apps/details?id=org.torproject.android>`_, or from `F-Droid <https://f-droid.org/packages/org.torproject.android>`_ (must open with F-Droid app).
+#. Download and install Orbot from the `Play Store <https://play.google.com/store/apps/details?id=org.torproject.android>`_, or from `F-Droid <https://f-droid.org/packages/org.torproject.android>`_ (must open with F-Droid app).  Then launch the app.
 
-  .. tip:: When using F-Droid, you will want to activate the Guardian Project repository by visiting the ``Settings`` menu (bottom right) -> ``Repositories`` -> ``Guardian Project Official Releases``
+    .. tip:: When using F-Droid, you will want to activate the Guardian Project repository by visiting the ``Settings`` menu (bottom right) -> ``Repositories`` -> ``Guardian Project Official Releases``
 
-2. Launch Orbot.
+    .. figure:: /_static/images/tor/orbot0.png
+      :width: 30%
+      :alt: Orbot
+      
+#. Tap "Start VPN".
 
-3. Open the kebab menu in the upper right hand corner and select `Settings`:
+    .. figure:: /_static/images/tor/orbot1.png
+      :width: 30%
+      :alt: Orbot starting
 
-  .. figure:: /_static/images/tor/orbot_menu.png
-    :width: 50%
-    :alt: Orbot menu
+#. Orbot will start up the Tor service. Once complete, you will see:
 
-4. Make sure the options for `Start Orbot on Boot` and `Allow Background Starts` are checked:
+    .. figure:: /_static/images/tor/orbot2.png
+      :width: 30%
+      :alt: Orbot running
 
-  .. figure:: /_static/images/tor/orbot_settings.png
-    :width: 50%
-    :alt: Orbot settings
+#. Open the kebab menu in the bottom right hand corner and select `Settings`:
 
-5. Go back, and tap start:
+    .. figure:: /_static/images/tor/orbot_menu.png
+      :width: 30%
+      :alt: Orbot settings
 
-  .. figure:: /_static/images/tor/orbot_start.png
-    :width: 50%
-    :alt: Orbot start
+#. Make sure the options for `Start Orbot on Boot` and `Allow Background Starts` are checked:
 
-6. Orbot will start up the Tor service. Once complete, you will see:
+    .. figure:: /_static/images/tor/orbot_settings.png
+      :width: 30%
+      :alt: Orbot menu
 
-  .. figure:: /_static/images/tor/orbot_started.png
-    :width: 50%
-    :alt: Orbot started
-
-7. That's it, you're now running a Tor client on your Android device! Certain apps, such as Firefox, Fennec, and DuckDuckGo will now work after you configure them to use Tor's local proxy.  Other apps do not have sophisticated proxy configurations and require that Orbot be running in VPN mode.
+#. That's it, you're now running a Tor client on your Android device! Certain apps, such as Firefox, Fennec, and DuckDuckGo will now work after you configure them to use Tor's local proxy.  Other apps do not have sophisticated proxy configurations and require that Orbot be running in VPN mode.
 
 Orbot VPN mode
 --------------
 
 To utilize Tor, some apps require that Orbot be running in VPN mode.  This means that you are sending your application's traffic across the Tor network via Orbot.
 
-1. Disable Private DNS on your device. To switch it off, navigate to:
+#. Disable Private DNS on your device. Navigate to: ``Settings > Network & Internet > Advanced > Private DNS > Off`` and toggle Private DNS to "off".
 
-   ``Settings > Network & Internet > Advanced > Private DNS > Off``
+    .. figure:: /_static/images/tor/private_dns_off.png
+      :width: 30%
+      :alt: Private DNS off
 
-  .. figure:: /_static/images/tor/private_dns_off.png
-    :width: 50%
-    :alt: Private DNS off
+#. Tap `Select Apps`, and add the apps you want to utilize Tor.
 
-  Toggle Private DNS to "off"
+    .. figure:: /_static/images/tor/orbot_apps.png
+      :width: 30%
+      :alt: Orbot apps
 
-2. Launch Orbot and toggle VPN Mode on:
-
-  .. figure:: /_static/images/tor/orbot_vpn.png
-    :width: 50%
-    :alt: Orbot vpn mode
-
-  Toggle VPN Mode to "on"
-
-Under `Tor-Enabled Apps`, click the gear icon and add apps you want to utilize Tor.
-
-  .. figure:: /_static/images/tor/orbot_apps.png
-    :width: 50%
-    :alt: Orbot apps
-
-Examples of applications that need this feature are:
+Examples of applications that need this feature for remote access are:
 
 - Bitwarden
 - Element (Matrix client)
+- Nextcloud
+
+    .. figure:: /_static/images/tor/orbot2.png
+      :width: 30%
+      :alt: Orbot running
 
 You can also add the following browsers to the Tor-Enabled Apps list to easily access Tor addresses (`.onion` URLs):
 
