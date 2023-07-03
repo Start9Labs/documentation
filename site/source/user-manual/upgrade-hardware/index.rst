@@ -12,13 +12,13 @@ Upgrade Hardware
   <div class="grid-x grid-margin-x">
 
 .. topic-box::
-  :title: Upgrading Hardware
+  :title: 2022 One to Pro Migration
   :link: upgrade-pro
   :icon: scylla-icon scylla-icon--enterprise
   :class: large-5
   :anchor: Upgrade
 
-  This is for migrating from one server to another
+  This is for migrating from a Server One (Raspi) to Server Pro
 
 .. topic-box::
   :title: Upgrade to all-in-one NASPi case
