@@ -1,8 +1,8 @@
 .. _upgrade-pro:
 
-==================================================
-Transferring From Server One to Server Pro (NASPi)
-==================================================
+===============================================
+Transferring From 2022 Server One to Server Pro
+===============================================
 
 This guide is for Server One users upgrading from a NASPi (pictured below). If you're using a Samsung T5/T7 please go :ref:`here <samsung-drives>`.
 
