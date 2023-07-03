@@ -34,6 +34,7 @@ Core Lightning (CLN)
 
 LND
 ======
+* Official Support: https://app.slack.com/client/T6AK88MGV/C6AFCN3KL
 * Community Support: ircs://irc.libera.chat:6697/#lnd
 
 Mastodon
