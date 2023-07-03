@@ -34,7 +34,7 @@ This guide will go over how to connect Zeus to **LND**. If you'd like to connect
         :width: 25%
         :alt: scan-node-config
 
-#. Scan the QR Code displayed on the Embassy's LND Connect REST URL screen.
+#. Scan the QR Code displayed on the server's LND Connect REST URL screen.
 
 #. Zeus will fill in your node details based on the information in the QR code.
 
