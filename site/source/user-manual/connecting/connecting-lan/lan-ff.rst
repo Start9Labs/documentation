@@ -3,12 +3,9 @@
 ==================================
 Trusting Your Start9 CA in Firefox
 ==================================
+This guide applies to Firefox, Firefox ESR, and Librewolf.  Mozilla apps need to be configured to use the certrificate store of your device.  To find out why Mozilla does this differently, you can read their `blog post <https://blog.mozilla.org/security/2019/02/14/why-does-mozilla-maintain-our-own-root-certificate-store/>`_ on the topic.
 
-.. caution:: You will first need to complete :ref:`lan-os` for your device before continuing.
-
-This should work equally well in Firefox, Firefox ESR, or Librewolf.
-
-.. note:: If you are attempting to set up Firefox on Android, click the "Android" tab below for Android-specific instructions.
+.. caution:: You will first need to complete :ref:`device setup<lan-os>` for your device before continuing.
 
 .. tabs::
 
