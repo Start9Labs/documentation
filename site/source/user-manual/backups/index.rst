@@ -49,4 +49,4 @@ In addition to the safe-keeping of a good master password, maintaining good back
 
   backup-create
   backup-restore
-  backup-mount
+  backup-advanced
