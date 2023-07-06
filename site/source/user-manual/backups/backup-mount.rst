@@ -40,7 +40,7 @@ Mount a Backup
 
     The terminal in will print the directory where your backup is now mounted.
 
-#. `ls` the directory to inspect it, and continue any other copy operations necessary:
+#. `ls` the directory to inspect it, and continue any other operations necessary:
 
     .. figure:: /_static/images/backups/backup-mount-ls.png
         :width: 60%
