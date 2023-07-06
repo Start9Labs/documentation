@@ -30,6 +30,15 @@ In addition to the safe-keeping of a good master password, maintaining good back
 
   Restore your server data from a previous backup.
 
+.. topic-box::
+  :title: Advanced Backup Tools
+  :link: backup-mount
+  :icon: scylla-icon scylla-icon--live-test
+  :class: large-5
+  :anchor: View
+
+  Tools for backups - use only at the direction of support, or at your own risk.
+
 .. raw:: html
 
   </div></div>
@@ -40,3 +49,4 @@ In addition to the safe-keeping of a good master password, maintaining good back
 
   backup-create
   backup-restore
+  backup-advanced
