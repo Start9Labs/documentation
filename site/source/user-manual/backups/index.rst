@@ -31,13 +31,13 @@ In addition to the safe-keeping of a good master password, maintaining good back
   Restore your server data from a previous backup.
 
 .. topic-box::
-  :title: Mount a Backup
+  :title: Advanced Backup Tools
   :link: backup-mount
   :icon: scylla-icon scylla-icon--live-test
   :class: large-5
-  :anchor: Mount
+  :anchor: View
 
-  Mount and inspect your data from an existing encrypted backup.
+  Tools for backups, use only at the direction of support, or at your own risk.
 
 .. raw:: html
 
