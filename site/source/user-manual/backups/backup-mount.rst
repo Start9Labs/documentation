@@ -38,7 +38,7 @@ Mount a Backup
     .. figure:: /_static/images/backups/backup-mount.png
         :width: 60%
 
-    The terminal in will print the directory where your backup is now mounted.
+    The terminal will print the directory where your backup is now mounted.
 
 #. `ls` the directory to inspect it, and continue any other operations necessary:
 
