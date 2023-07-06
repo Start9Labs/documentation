@@ -37,7 +37,7 @@ In addition to the safe-keeping of a good master password, maintaining good back
   :class: large-5
   :anchor: View
 
-  Tools for backups, use only at the direction of support, or at your own risk.
+  Tools for backups - use only at the direction of support, or at your own risk.
 
 .. raw:: html
 
