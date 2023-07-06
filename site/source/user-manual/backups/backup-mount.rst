@@ -14,7 +14,7 @@ Advanced Backup Tools
 Mount a Backup
 --------------
 
-#. :ref:`Setup SSH Access<ssh>` to and connect to your server via SSH.  Elevate yourself to root once in:
+#. :ref:`Setup SSH Access<ssh>` and connect to your server via SSH.  Elevate yourself to root once in:
 
     .. code-block:: bash
 
