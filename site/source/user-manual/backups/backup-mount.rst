@@ -8,6 +8,7 @@ Advanced Backup Tools
   :depth: 2 
   :local:
 
+  .. warning:: The following are advanced tools and using them is only advised when under the instruction of a Start9 Support Technician.  USE AT YOUR OWN RISK - these operations are not supported outside of the context of support.
 
 .. _backup-mount:
 
@@ -20,7 +21,7 @@ Mount a Backup
 
         sudo -i
 
-#. Any previously added Network Folder backup location (or Physical Drive) will be available.  Enter the following command:
+#. Any previously added Network Folder backup location (or physical drive) will be available.  Enter the following command:
 
     .. code-block:: bash
 
@@ -29,7 +30,7 @@ Mount a Backup
     .. figure:: /_static/images/backups/backup-target-list.png
         :width: 60%
 
-#. Select the backup target from the available list.  In this example, we could use either `disk-/dev/sdb1` or `cifs-1`:
+#. Select the backup target from the available list.  In this example, we could use either ``disk-/dev/sdb1`` or ``cifs-1``:
 
     .. code-block:: bash
 
@@ -38,7 +39,7 @@ Mount a Backup
     .. figure:: /_static/images/backups/backup-mount.png
         :width: 60%
 
-    The terminal will print the directory where your backup is now mounted.
+    The terminal will print the directory where your decrypted backup is now mounted.
 
 #. `ls` the directory to inspect it, and continue any other operations necessary:
 
