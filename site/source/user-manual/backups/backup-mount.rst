@@ -8,22 +8,6 @@ Advanced Backup Tools
   :depth: 2 
   :local:
 
-In order to inspect the contents of an encrypted Start9 server backup, you first need to create a backup to mount and inspect.
-
-Create a Backup
----------------
-
-Make sure you have created a backup either to a LAN share or a disk attached to your Start9 server.  For instructions on that, see one of the guides below or if you already have a backup, proceed to :ref:`Mount Encrypted Backup<backup-mount>`.
-
-.. toctree::
-  :maxdepth: 1
-
-  Linux Network Folder <backup-setup/backup-linux>
-  Mac Network Folder <backup-setup/backup-mac>
-  Windows Network Folder <backup-setup/backup-windows>
-  Synology Network Folder <backup-setup/backup-synology>
-  TrueNAS Network Folder <backup-setup/backup-truenas>
-  Physical Drive <backup-setup/backup-physical>
 
 .. _backup-mount:
 
