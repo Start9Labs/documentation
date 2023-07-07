@@ -86,7 +86,7 @@ Unfortunately, Windows does not have mDNS alias support built-in, which is neces
     :width: 50%
     :alt: Successful cert install
 
-#. You can save the console settings (where we added a snap-in) if desired.  The CA certificate will remain imported to the CA certificate store either way, and you wil likely use this guide if you need to import a new certificate.
+#. You can save the console settings (where we added a snap-in), if desired.  The CA certificate will remain imported to the CA certificate store either way, and you will likely use this guide if you need to import a new certificate.
 
    .. figure:: /_static/images/ssl/windows/11_console_settings.png
     :width: 20%
