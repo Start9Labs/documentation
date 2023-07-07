@@ -18,74 +18,78 @@ Unfortunately, Windows does not have mDNS alias support built-in, which is neces
             #. Restart Windows
             #. Note: Uninstalling Bonjour via the setup package seems to be not enough to solve the issue. Bonjour must be uninstalled via windows system settings.
 
-#. Back in Windows, click the “Start” menu, type “mmc”, and select "Run as administrator"
+#. Back in Windows, click the “Start” menu, type “mmc”, and select "Run as administrator" to access the Windows Management Console.
 
    .. figure:: /_static/images/ssl/windows/0_windows_mmc.png
     :width: 50%
     :alt: Windows MMC
 
-    Access the Windows Management Console.  When prompted with the “User Account Control” window, select “Yes” to allow this program to run.
+    When prompted with the “User Account Control” window, select “Yes” to allow this program to run.
 
 #. When the Management Console opens, navigate to *File > Add/Remove Snap-in*.
 
-   .. figure:: /_static/images/ssl/windows/2_windows_console_root.png
-    :width: 90%
+   .. figure:: /_static/images/ssl/windows/1_windows_console_root.png
+    :width: 50%
     :alt: Windows Console Root
-
-    Add Snap-in from Console Root
 
 #. Select “Certificates” in the left side menu, then “Add”. This will open another window.
 
-   .. figure:: /_static/images/ssl/windows/3_windows_add_certificates.png
-    :width: 90%
+   .. figure:: /_static/images/ssl/windows/2_windows_add_certificates.png
+    :width: 50%
     :alt: Add Certificates
 
-    Add Certificates to selected snap-ins
-
 #. Select “Computer account” and click “Next". Leave defaulted options on the next screen and click “Finish”.
+
+   .. figure:: /_static/images/ssl/windows/3_snap_in_wizard.png
+    :width: 50%
+    :alt: Add Snap-in
 
 #. When you return to the “Add or Remove Snap-ins” page, ensure “Certificates (Local Computer)” exists under “Console Root” in the “Selected snap-ins” section, then click “OK”.
 
    .. figure:: /_static/images/ssl/windows/4_windows_selected_snapin.png
-    :width: 90%
+    :width: 50%
     :alt: Snap-in Selected
-
-    Certificates (Local Computer) is selected as snap-in
 
 #. In the left hand menu of the Management Console, navigate to Certificates (Local Computer) > Trusted Root Certification Authorities > Certificates.
 
    .. figure:: /_static/images/ssl/windows/5_windows_trusted_certificate_menu.png
-    :width: 90%
+    :width: 50%
     :alt: Certificates in Management Console
 
-    Access Certificates in Management Console
-
-#. Right click on “Certificates”, then navigate to *All Tasks > Import*.
+#. Right click on the “Certificates” directory, then navigate to *All Tasks > Import*.
 
    .. figure:: /_static/images/ssl/windows/6_windows_import_cert.png
-    :width: 90%
+    :width: 50%
     :alt: Import certificate
 
-    Select "Import" from Certificates sub-menu
-
-#. Click “Next” on the first page of the Certificate Import Wizard, then browse to the location where you saved the downloaded certificate and click “Open”.
+#. Click “Next” on the first page of the Certificate Import Wizard, then browse to the location where you saved the downloaded certificate and open it.  Then click "Next".
 
    .. figure:: /_static/images/ssl/windows/7_windows_import_cert_wizard.png
-    :width: 90%
+    :width: 50%
     :alt: Import cert wizard
 
-    Add downloaded certificate in the Certificate Import Wizard
+#. On the “Certificate Store” window, ensure that it says “Trusted Root Certificate Authorities” and click “Next”.  Then click "Finish" on the final screen.
 
-#. On the “Certificate Store” window, ensure that it says “Trusted Root Certificate Authorities” and click “Next”.
+   .. figure:: /_static/images/ssl/windows/8_windows_import_cert_wizard.png
+    :width: 50%
+    :alt: Import cert wizard
 
 #. Select “OK” when the import is successful.
 
-#. Verify your server's Local Root CA certificate is in the “Certificates” folder:
+   .. figure:: /_static/images/ssl/windows/9_success.png
+    :width: 20%
+    :alt: Import success!
 
-   .. figure:: /_static/images/ssl/windows/8_windows_successful_cert_install.png
-    :width: 90%
+#. Verify your server's unique `<adjective-noun> Local Root CA` certificate is in the “Certificates” folder:
+
+   .. figure:: /_static/images/ssl/windows/10_successful_cert_install.png
+    :width: 50%
     :alt: Successful cert install
 
-    Your server's unique `<custom-address> Local Root CA` is now imported into Certificate folder
+#. You can save the console settings (where we added a snap-in), if desired.  The CA certificate will remain imported to the CA certificate store either way, and you will likely use this guide if you need to import a new certificate.
 
-#. You can save the settings to the console if desired, or not by pressing `Yes` or `No`.  The CA certificate will remain imported to the CA certificate store either way.
+   .. figure:: /_static/images/ssl/windows/11_console_settings.png
+    :width: 20%
+    :alt: Console settings
+
+You're now ready to browse your service UIs with encryption, either via the browser, or with native client apps.  You may wish to :ref:`configure Firefox<lan-ff>` and/or :ref:`Thunderbird<lan-thunderbird>` next.
