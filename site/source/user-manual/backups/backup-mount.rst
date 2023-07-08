@@ -4,10 +4,6 @@
 Advanced Backup Tools
 =====================
 
-.. contents::
-  :depth: 2 
-  :local:
-
   .. warning:: The following are advanced tools and using them is only advised when under the instruction of a Start9 Support Technician.  USE AT YOUR OWN RISK - these operations are not supported outside of the context of support.
 
 .. _backup-mount:
