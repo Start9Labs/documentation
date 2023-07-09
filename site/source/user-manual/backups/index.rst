@@ -3,7 +3,6 @@
 =======
 Backups
 =======
-
 In addition to the safe-keeping of a good master password, maintaining good backups is the major responsibility required to keep the benefits and freedom that come with self-hosting.
 
 .. raw:: html
@@ -32,7 +31,7 @@ In addition to the safe-keeping of a good master password, maintaining good back
 
 .. topic-box::
   :title: Advanced Backup Tools
-  :link: backup-mount
+  :link: backup-advanced
   :icon: scylla-icon scylla-icon--live-test
   :class: large-5
   :anchor: View

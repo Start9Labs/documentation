@@ -1,17 +1,16 @@
 .. _upgrade-pro:
 
-===============================================
-Transferring From 2022 Server One to Server Pro
-===============================================
-
-This guide is for Server One users upgrading from a NASPi (pictured below). If you're using a Samsung T5/T7 please go :ref:`here <samsung-drives>`.
+=============================================
+Migrating From 2022 Server One to Server Pure
+=============================================
+This guide is for Server One users upgrading from a NASPi (pictured below). If you're using an external drive, such as a Samsung T5/T7 please go :ref:`here <external-drives>`.
 
     .. figure:: /_static/images/hardware-pics/server-one.png
         :width: 30%
 
 You will need a high quality `USB-A to USB-A cable <https://www.amazon.com/UGREEN-Transfer-Enclosures-Printers-Cameras/dp/B00P0E3954/?th=1>`_, or a `USB-A to USB-C cable <https://www.amazon.com/AmazonBasics-Type-C-USB-Male-Cable/dp/B01GGKYKQM/?th=1>`_.
 
-#. Shutdown your Server One 
+#. Shutdown your Server One.
 
     .. figure:: /_static/images/walkthrough/shutdown.png
         :width: 60%
@@ -97,10 +96,11 @@ You will need a high quality `USB-A to USB-A cable <https://www.amazon.com/UGREE
 
     .. warning:: Do not unders any circumstances reassemble your Server One without wiping the SD card first and wiping the SSD during initial setup! If you do not this will cause serious problems! If you have lightning channels you could lose all your funds!
 
-.. _samsung-drives:
+.. _external-drives:
 
-Samsung T5/T7/alternative drives
-================================
+External Drives
+===============
+For transferring from an USB-attached drive.
 
 #. Shutdown your Server One 
 
