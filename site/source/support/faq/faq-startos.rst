@@ -80,6 +80,10 @@ Does StartOS only work over Tor?  No http or VPN?
 -------------------------------------------------
 StartOS's current primary communication is over Tor. In many cases we use HTTP over Tor (they are not mutually exclusive), you can see this by navigating to the Tor address in a browser and see the “http” in front of it.  A VPN is a feature we're exploring as an alternative to Tor to make things faster without meaningfully impacting privacy.  You can also connect directly via LAN if you are on the same network as your device.
 
+What traffic travels over tor and which does not?
+-------------------------------------------------
+In StartOS versions previous to v040, inbound connections can only be **initiated** over tor.  Clearnet (IP) connections can be initiated outbound by the OS (in the case of OS updates or accessing the Start9 Marketplace), or by services (such as by Bitcoin when connecting to the Bitcoin p2p network).  In many cases, it is possible to operate **only** via tor by configuring a particular service to do so.  For example, in the Bitcoin config, you can "Disable Clearnet" connections, or remove your node from the public network entirely.
+
 What if someone gets physical access to my device, can they read the contents? Is it encrypted?
 -----------------------------------------------------------------------------------------------
 The data is currently encrypted at rest, but not in a way that would prevent a sophisticated attacker from accessing it.  This is a step towards better security in the near future.  At-rest encryption on servers is a serious challenge, because of the need for remote availability.  For example, you may not be at home to enter an encryption password following a power outage, leaving you without access to your server.
