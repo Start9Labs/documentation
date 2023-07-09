@@ -59,7 +59,7 @@ Here we will insert your Start9 server's CA certificate into Linux's trust store
 
         In the output it should say ``1 added`` if it was successful.
 
-        Now restart Firefox (or other Mozilla application) and login to your server using ``https://``.  No SSL warning should appear.  If you still encounter issues, `contact support <https://start9.com/contact>`_.
+        Now restart Firefox (or other Mozilla application) and login to your server using ``https://``.  No SSL warning should appear.  If you previously added an eception, you may need to remove it by clicking the lock icon in the address bar. If you still encounter issues, `contact support <https://start9.com/contact>`_.
 
     .. group-tab:: Arch/Garuda
 
