@@ -61,7 +61,7 @@ Flash StartOS and Transfer Data
 
 #. Your data will now transfer.  Keep in mind that the more data you have, the longer this process will take, possibly even days.  
 
-    .. note:: As an example, transferring 2TB of data from a Server Pure over a USB-to-enclosure with a new 4TB NVMe drive can take upwards of 36hrs, including up to 14hrs of "initialization," while StartOS indexes all the data (at the beginning of the process).  Please be patient.
+    .. note:: As an example, transferring 2TB of data from a Server Pure via a USB3.2 enclosure to a new 4TB NVMe drive can take upwards of 24hrs, including up to 14hrs of "initialization," while StartOS indexes all the data (at the beginning of the process).  Please be patient.
 
     .. figure:: /_static/images/setup/screen6-storage_initialize.jpg
         :width: 20%
