@@ -40,13 +40,13 @@ Make sure you have first set up :ref:`LAN access<lan-android>`.
     :width: 30%
     :alt: Nextcloud: Personal Settings > Security
 
-5. Under `Devices & sessions`, give this Nextcloud mobile app a session name, such as "Mobile" and click `Create new app password`:
+5. Under `Devices & sessions`, give this Nextcloud mobile app a session name, such as "Mobile" and tap `Create new app password`:
 
   .. figure:: /_static/images/services/nextcloud/web-step4-new_session.png
     :width: 30%
     :alt: Nextcloud: Devices & sessions > Create new app password
     
-6.  Click `Show QR code for mobile apps`:
+6.  Tap `Show QR code for mobile apps`:
   
   .. figure:: /_static/images/services/nextcloud/web-step5-show_qr_code.png
     :width: 30%
@@ -60,7 +60,7 @@ Make sure you have first set up :ref:`LAN access<lan-android>`.
 
 8. Download and install the appropriate desktop client for your Android device from https://nextcloud.com/install/#install-clients
 
-9. Open the Nextcloud client on your Android device and click "Log in"
+9. Open the Nextcloud client on your Android device and tap "Log in"
 
   .. figure:: /_static/images/services/nextcloud/step1-login.png
     :width: 30%
@@ -98,7 +98,7 @@ Make sure you have first set up :ref:`LAN access<lan-android>`.
     :width: 30%
     :alt: Nextcloud Storage permissions
 
-13. Next, configure the local directory that you want to sync with Nextcloud. You may use the default or change it, and edit the sync settings to desired. When satisfied, click "Connect"
+13. Next, configure the local directory that you want to sync with Nextcloud. You may use the default or change it, and edit the sync settings to desired. When satisfied, tap "Connect"
 
 14. Files will begin to sync immediately and you will see a green check when this is complete.
 
@@ -106,13 +106,13 @@ Make sure you have first set up :ref:`LAN access<lan-android>`.
 
 Tor Setup
 =========
-You will first need to have the :ref:`Tor daemon running<tor-android>`.
+You will first need to have :ref:`Orbot running<tor-android>`.
 
-1. On your desktop application, click the account in the top left -> Settings, then in Settings, click Network, then "Specify proxy manually as" and "SOCKS5 proxy." Enter "127.0.0.1" for the Host and "9050" for the port.
-2. Close the Settings screen and click the account in the top left again, then "Add Account."
-3. On the following screen, click "Log in," then enter your Nextcloud Tor server address, which you can copy from Nextcloud -> Interfaces - Tor. This must start with http:// and end with .onion. Click Next.
+1. First, add Nextcloud to your Orbot apps list.
+2. Tap the account in the top-right, then "Add Account."
+3. On the following screen, tap "Log in," then enter your Nextcloud Tor server address, which you can copy from Nextcloud -> Interfaces - Tor. This must start with ``http://`` and end with ``.onion``. tap Next.
 4. This will launch your browser and prompt you to log in to your account. Log in and then grant access as we did for LAN.
-5. That's it! You may wish to set up some select folders for remote sync, but for large files, it is best to sync on LAN only, so you can "Skip folders configuration" on the resulting screen if you wish. Check your connection by clicking the newly created account in the client app.
+5. That's it! You may wish to set up some select folders for remote sync, but for large files, it is best to sync on LAN only, so you can "Skip folders configuration" on the resulting screen if you wish. Check your connection by tapping into the newly created account in the app.
 
 Device Integration
 ------------------
