@@ -36,7 +36,7 @@ The Bitcoin Service is different from the GUI version I am used to using (bitcoi
 -------------------------------------------------------------------------------------------------------------------------
 At present, StartOS does not offer its own node visualization tool (although this is planned). You can view certain properties about your node inside the "Properties" section, but not in an animated GUI. If you want to use bitcoin-cli, you may do so by adding an SSH key to your server and :ref:`exec-ing into the bitcoind docker container<service-container>` (advanced). Otherwise, the main way to actually *use* your node is through a wallet. The QT GUI is not usable because it cannot be served through the browser (which is necessary here), and last we checked, the QT desktop client was incapable of connecting to a remote node over Tor.
 
-Is a wallet vulnerable to hacking if it's always online??
+Is a wallet vulnerable to hacking if it's always online?
 ---------------------------------------------------------
 Funds (private keys) are not typically stored on the node.  The node simply serves as a source of truth for the state of the blockchain.  Attacks depend on where the keys are and where the signing happens. You can use something like a hardware wallet or paper wallet for better security.  Though, to be fair, a lot of attacks depend on you or your machine being targeted specifically, and many attack vectors are highly theoretical and obscure.
 
