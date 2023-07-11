@@ -80,7 +80,7 @@ You do **not** want to do that.  Mining equipment is highly specialized, and thi
 
 Does StartOS only work over Tor?  No http or VPN?
 -------------------------------------------------
-StartOS's current primary communication is over Tor. In many cases we use HTTP over Tor (they are not mutually exclusive), you can see this by navigating to the Tor address in a browser and see the “http” in front of it.  Further networking options (and massive flexibility) are coming with StartOS v040.  You can also connect directly via LAN if you are on the same network as your device.
+Your server's services are currently primarily accessible over Tor. In many cases we use HTTP over Tor (they are not mutually exclusive), you can see this by navigating to the Tor address in a browser and see the “http” in front of it.  Further networking options (and massive flexibility) are coming with StartOS v040.  You can also connect directly via LAN if you are on the same network as your device.
 
 What if someone gets physical access to my device, can they read the contents? Is it encrypted?
 -----------------------------------------------------------------------------------------------
