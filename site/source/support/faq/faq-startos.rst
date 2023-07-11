@@ -86,7 +86,7 @@ What if someone gets physical access to my device, can they read the contents? I
 -----------------------------------------------------------------------------------------------
 The data is currently encrypted at rest, but not in a way that would prevent a sophisticated attacker from accessing it.  This is a step towards better security in the near future.  At-rest encryption on servers is a serious challenge, because of the need for remote availability.  For example, you may not be at home to enter an encryption password following a power outage, leaving you without access to your server.
 
-Services like Bitwarden, however, encrypt all user data, so your passwords will not be compromised unless they know your master password.
+Services like Vaultwarden, however, encrypt all user data, so your passwords will not be compromised unless they know your master password.
 
 Why http and not https for .onion websites?
 -------------------------------------------
