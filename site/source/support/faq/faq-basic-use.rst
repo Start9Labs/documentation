@@ -51,7 +51,7 @@ Yes.  Support was added in version 12 of Android.  For custom ROMs, such as Caly
 
 Can I have multiple users on StartOS?
 -------------------------------------
-Currently, StartOS itself is designed for a single user. There is no way to grant others access to your server without sharing your personal, master password, which is not recommended. There are certain services, however, such as Bitwarden, File Browser, and Nextcloud, that do support multiple users (aka the "Uncle Jim" model) where people who trust you (and vice versa) can create their own, personal accounts for these services. Just remind them that they are trusting you with their data, and that it might be preferable for them to take the final leap of sovereignty and get a server of their own.
+Currently, StartOS itself is designed for a single user. There is no way to grant others access to your server without sharing your personal, master password, which is not recommended. There are certain services, however, such as Vaultwarden, File Browser, and Nextcloud, that do support multiple users (aka the "Uncle Jim" model) where people who trust you (and vice versa) can create their own, personal accounts for these services. Just remind them that they are trusting you with their data, and that it might be preferable for them to take the final leap of sovereignty and get a server of their own.
 
 Multi-tenancy is a desired future OS feature.  Stay tuned.
 
