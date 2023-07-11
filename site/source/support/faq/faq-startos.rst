@@ -90,4 +90,4 @@ Services like Vaultwarden, however, encrypt all user data, so your passwords wil
 
 Why http and not https for .onion websites?
 -------------------------------------------
-When visiting a Tor V3 URL (.onion website), your communications are end-to-end encrypted and onion-routed by default. There is no added benefit to using https.  See this `article <https://community.torproject.org/onion-services/advanced/https/>`_ from the Tor Project for more details.  You will notice that some services implement ``https`` for client compatibility reasons however.
+When visiting a Tor V3 URL (.onion website), your communications are end-to-end encrypted and onion-routed by default. There is no added benefit to using https.  See this `article <https://community.torproject.org/onion-services/advanced/https/>`_ from the Tor Project for more details.  You will notice that some services implement ``https`` for client compatibility reasons, however.
