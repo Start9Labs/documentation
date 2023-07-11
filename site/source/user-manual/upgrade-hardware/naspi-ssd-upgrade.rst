@@ -1,6 +1,6 @@
 .. _naspi-ssd-upgrade:
 
-================
+======================
 Upgrade Your NASPI SSD
 ================
 This guide will go over how to switch out an old drive on your server to a different drive and transfer the data from the old one to the new one.
