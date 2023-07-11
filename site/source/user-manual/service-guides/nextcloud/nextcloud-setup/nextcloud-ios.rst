@@ -20,16 +20,50 @@ LAN Setup
 =========
 Make sure you have first set up :ref:`LAN access<lan-ios>`.
 
-1. Download the appropriate desktop client from https://nextcloud.com/install/#install-clients
-2. Open the client and click "Log In"
-3. From your server's Nextcloud Service page, go to "Interfaces" and copy the LAN address
-4. Enter your LAN address under "Server Address" and click "Next"
-5. You will be asked to Trust your server's certificate, which is safe to do as you generate and sign this during LAN Setup
-6. Tick the box for "Trust this certificate anyway" and click "Next"
-7. This will launch a page in your web browser, click "Log In" and then "Grant access" to link the desktop client. You can close this browser window afterwards
-8. Next, configure the local directory that you want to sync with Nextcloud. You may use the default or change it, and edit the sync settings to desired. When satisfied, click "Connect"
-9. Files will begin to sync immediately and you will see a green check when this is complete.
-10. That's it! From this desktop client you will recieve notifications, control accounts and syncing, and quickly access your Apps' WebUI pages
+1. Download the appropriate iOS client from `App Store <https://apps.apple.com/us/app/nextcloud/id1125420102>`_.
+2. Open the client and click "Log In".
+   
+   .. figure:: /_static/images/services/nextcloud/nextcloud-iOS-step2.png
+    :width: 40%
+    :alt: nextcloud-ios-login   
+  
+3. From your server's Nextcloud Service page, go to "Interfaces" and copy the LAN address.
+   
+   .. figure:: /_static/images/services/nextcloud/nextcloud-stabdalone-client-macos-step3.png
+    :width: 40%
+    :alt: nextcloud-ios-login
+
+4. Enter your LAN address under "Server Address" and click "Next".
+   
+   .. figure:: /_static/images/services/nextcloud/nextcloud-iOS-step3.png
+    :width: 40%
+    :alt: nextcloud-ios-login
+
+5. You will be shown the "Connect to your account" screen, and then click "Log In".
+
+   .. figure:: /_static/images/services/nextcloud/nextcloud-iOS-step4.png
+    :width: 40%
+    :alt: nextcloud-ios-login
+
+6. Next, you will be asked to enter the username and password, which can be found on the startOS Nextcloud Service page under the "Properties" tab.
+
+   .. figure:: /_static/images/services/nextcloud/nextcloud-iOS-step5.png
+    :width: 40%
+    :alt: nextcloud-ios-login
+
+7. The account access page will be displayed, then click "Grant access".
+
+   .. figure:: /_static/images/services/nextcloud/nextcloud-iOS-step6.png
+    :width: 40%
+    :alt: nextcloud-ios-login
+
+8. Files will begin syncing immediately, and you will see your username and account icon in the top left corner.
+
+   .. figure:: /_static/images/services/nextcloud/nextcloud-iOS-step7.png
+    :width: 40%
+    :alt: nextcloud-ios-login
+    
+9.  That's it! From this desktop client you will recieve notifications, control accounts and syncing, and quickly access your Apps' WebUI pages
 
 Tor Setup
 =========
@@ -43,15 +77,23 @@ You will first need to have the :ref:`Tor daemon running<tor-ios>`.
 
 Device Integration
 ------------------
-In order to sync calendars and contacts with your iOS device, follow the steps below, which are adapted from the `Official Nextcloud guide <https://docs.nextcloud.com/server/25/user_manual/en/groupware/sync_ios.html>`_.  First head into the top-righthand menu of your Nextcloud's WebUI and click "Apps," then search for and install the Calendar and/or Contacts Apps.
+In order to sync calendars and contacts with your iOS device, follow the steps below, which are adapted from the `Official Nextcloud guide <https://docs.nextcloud.com/server/25/user_manual/en/groupware/sync_ios.html>`_.  First head into the top-righthand menu of your Nextcloud's WebUI and click "Apps," then search for and install the Calendar and/or Contacts Apps. Next folow this guide for iOS.
 
 1. Open the "Settings" app.
 
   .. note:: You will need to perform 2 individual setups, one for Calendar and one for Contacts.
 
-2. Select "Calendar" (or "Contacts") -> "Accounts" -> "Add Account" -> "Other" (return to this step after completing one in order to add the other).
+2. Select "Calendar" (or "Contacts") -> "Accounts" -> "Add Account" -> "Other" -> "either CalDAV (for Calendar setup) or CardDAV (for Contacts setup)".Return to this step after completing one in order to add the other.
 
-3. Select either CalDAV (for Calendar setup) or CardDAV (for Contacts setup), and enter the following fields:
+  .. figure:: /_static/images/services/nextcloud/native-nextcloud-iOS-step1.PNG
+    :width: 50%
+    :alt: nextcloud account settings
+
+3. Enter the following fields and clik "Next":
+
+  .. figure:: /_static/images/services/nextcloud/native-nextcloud-iOS-step2.PNG
+    :width: 40%
+    :alt: nextcloud account settings
 
   - Server - Enter your Nextcloud server LAN URL (found in "Interfaces" in the Nextcloud service page), and add `/remote.php/dav` after `.local`
   

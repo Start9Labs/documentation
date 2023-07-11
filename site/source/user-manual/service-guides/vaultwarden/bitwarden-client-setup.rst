@@ -41,6 +41,18 @@ Browser Extension
 
             #. Now we need to grab the address of our Vaultwarden server.Paste the address into your extension and click "Save".
 
+            #. Now head to the Bitwarden extension and click the "Region" dropdown menu and choose self-hosted. Under **Self-hosted environment** you will see a field for **Server URL**.
+
+                .. figure:: /_static/images/services/vaultwarden/bitwarden-firefox-setup-step1.png
+                    :width: 40%
+                    :alt: vaultwarden-firefox-self-host
+
+            #. Now we need to grab the address of our Vaultwarden server.Paste the address into your extension and click "Save".
+
+                .. figure:: /_static/images/services/vaultwarden/bitwarden-firefox-setup-step2.png
+                    :width: 40%
+                    :alt: vaultwarden-firefox-url
+
                 .. figure:: /_static/images/services/vaultwarden/bitwarden-firefox-setup-step2.png
                     :width: 40%
                     :alt: vaultwarden-firefox-url
@@ -73,6 +85,18 @@ Browser Extension
                     :alt: vaultwarden-firefox-self-host
 
             #. Now we need to grab the address of our Vaultwarden server.Paste the address into your extension and click "Save".
+
+             #. Now head to the Bitwarden extension and click the Region dropdown menu and choose self-hosted. Under **Self-hosted environment** you will see a field for **Server URL**.
+
+                .. figure:: /_static/images/services/vaultwarden/bitwarden-firefox-setup-step1.png
+                    :width: 40%
+                    :alt: vaultwarden-firefox-self-host
+
+            #. Now we need to grab the address of our Vaultwarden server.Paste the address into your extension and click "Save".
+
+                .. figure:: /_static/images/services/vaultwarden/bitwarden-firefox-setup-step2.png
+                    :width: 40%
+                    :alt: vaultwarden-firefox-url
 
                 .. figure:: /_static/images/services/vaultwarden/bitwarden-firefox-setup-step2.png
                     :width: 40%
