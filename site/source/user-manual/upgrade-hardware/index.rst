@@ -47,6 +47,15 @@ Guides for migrating or upgrading your server's hardware.
 
   This is for upgrading a Pi to an all-in-one NASPi case
 
+.. topic-box::
+  :title: Migrate LND from other nodes to StartOS
+  :link: lnd-migration
+  :icon: scylla-icon scylla-icon--home
+  :class: large-5
+  :anchor: Upgrade
+
+  This is for migrating LND from another node to StartOS without closing channels
+
 .. raw:: html
 
   </div></div>
@@ -58,4 +67,5 @@ Guides for migrating or upgrading your server's hardware.
    SSD upgrade <drive-upgrade>
    Pro upgrade <upgrade-pro>
    NASPi upgrade <naspi-upgrade>
+   LND migration <lnd-migration>
    2022 Server One SSD upgrade <naspi-ssd-upgrade>
