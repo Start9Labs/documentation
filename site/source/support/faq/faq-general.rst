@@ -10,7 +10,7 @@ General FAQ
 
 What is Start9 Labs?
 --------------------
-Start9 Labs is a small, but quickly growing group of builders based in Denver, CO (with a global team) that build Start9 servers and StartOS.
+Start9 Labs is a small, but quickly growing group of builders based in Denver, USA (with a global team) that build Start9 servers and StartOS.
 
 What is a Start9 server?
 ------------------------
@@ -39,40 +39,40 @@ This `podcast <https://www.youtube.com/watch?v=aylDowaSdzU>`_ may help expound u
 
 How does StartOS work?
 ----------------------
-StartOS (see next question) is based on Linux and handles all operations on your server. This core element of the technology stack is what enables you to set up, login, access your server's dashboard, and install services.
+StartOS (see next FAQ) is based on Linux and handles all operations on your server. This core element of the technology stack is what enables you to set up, login, access your server's dashboard, and install services.
 
-One of these operations is creating and managing Tor addresses, which are uniquely attributed to each service you download, as well as to the server itself. You can see your uniquely generated Tor address when you complete the setup process using the Setup App. This address is how you view your server's dashboard, which is actually just a website hosted by your server itself! It is authenticated, of course, so only you can access it.
+One of these operations is creating and managing Tor addresses, which are uniquely attributed to each service you download, as well as to the server itself. You can see your uniquely generated Tor address when you complete the setup process. This address is how you view your server's dashboard, which is actually just a website hosted by your server itself! It is authenticated, of course, so only you can access it.
 
-You can connect to and manage your server from any mobile device, desktop computer, or laptop computer. This is accomplished right through the browser by visiting your server's private and unique URL.
+You can connect to and manage your server from your mobile device, desktop computer, or laptop computer. This is accomplished in the browser by visiting your server's private and unique URL.
 
 Once on your server's web page (the StartOS dashboard), you can choose what services to install. Then, each installed service also receives its own private and unique URL, such that you can access it from the browser or any mobile app that supports using it as a backend.
 
-The list of services will grow rapidly over the coming months and years, such that many things you currently do using cloud-based third party servers can be just as easily accomplished using your own personal cloud serving your own personal apps and storing your own private data. No trusted third parties at all.
+The list of services will grow rapidly over the coming months and years, such that most or all the things you currently do using cloud-based third party servers can be just as easily accomplished using your own personal cloud serving your own personal software and storing your data privately. No trusted third parties at all.
 
 What is StartOS?
 ----------------
-StartOS is a new kind of Linux Operating System (OS). It is a built from the ground up to allow anyone to easily run their own "cloud," become independent from Big Tech, and own their own data. StartOS allows anyone to easily host their own software services.
+StartOS is a new kind of Linux Operating System (OS). It is a built from the ground up to allow anyone to easily run a private "cloud," become independent from Big Tech, and own their own data.
 
-StartOS is custom-built Linux distribution with a suite of software tools which make it easy to:
+StartOS is custom-built Linux distribution (currently based on Debian) with a suite of software tools which make it easy to:
 
-* Install, uninstall, and upgrade services from a Marketplace (similar to your phone's app store)
+* Install, uninstall, and upgrade services from a Marketplace registry (similar to your phone's app store)
 * Manage and run services that YOU own and control
 * Upgrade StartOS with the latest features and security updates
-* Backup services, and restore from backups if needed
+* Backup services and data, and restore from backups if needed
 
 It includes:
 
-* a custom application management layer, specialized for installing, running, and backing up .s9pk packaged services
-* a layer responsible for StartOS specific operations, such as Tor, Backups, and Notifications
-* a system of :ref:`Health Checks<health-checks>` for simple monitoring
+* a custom application management layer, specialized for installing, running, and backing up ``.s9pk`` packaged services
+* a layer responsible for StartOS specific operations, such as Networking, Backups, and Notifications
+* a system of :ref:`Health Checks<health-checks>` for simple monitoring and metrics
 * an SDK for developers, including an "Actions" API to simplify complex operations for the common user
-* and much, much more.  Please see the corresponding :ref:`Concepts<start-os>` section.
+* and much, much more
 
-The `.s9pk` extension is Start9's custom package format based on `tar`. It encompasses the necessary components to compress, host, and install a service on a Marketplace registry.
+The ``.s9pk`` extension is Start9's custom package format based on ``tar``. It encompasses the necessary components to compress, host, and install a service on a Marketplace registry.
 
 What are StartOS Services?
 --------------------------
-A Service can be any piece of software added to the Marketplace.  Unlike "apps," services are (usually) "server-side" software, meaning they are intended to run 24/7/365 and listen for requests from your clients (apps).  All services are "self-hosted," meaning that you are in complete control of your data.  This means you can run your own "cloud!"  Learn more about managing services :ref:`here <managing-services>` and see our currently `Available Services <https://marketplace.start9.com/>`_.
+A Service can be any piece of software added to a Marketplace registry.  Unlike "apps," services are (usually) "server-side" software, meaning they are intended to run 24/7/365 and listen for requests from your clients (apps).  All services are "self-hosted," meaning that you are in complete control of your data.  This means you can run your own "cloud!"  Learn more about managing services :ref:`here <managing-services>` and see our currently `Available Services <https://marketplace.start9.com/>`_.
 
 Does Start9 ship worldwide?
 ---------------------------
@@ -80,11 +80,11 @@ We ship everywhere that DHL ships.  Please consider that in some countries, the 
 
 Do you have international electrical plugs?
 -------------------------------------------
-Power supplies for EU, AU, US, and UK are available.
+Power supplies for the EU, AU, US, and UK standards are usually available.
 
-Is the power supply 220v compatible?
-------------------------------------
-Yes.  Start9 server power supplies are rated for 100-240V.
+Are the power supplies 220v compatible?
+---------------------------------------
+Yes.  Start9 server power supplies are typically rated for 100-240V.
 
 Does StartOS have a license?
 ----------------------------
@@ -100,18 +100,16 @@ In general, any modern Internet connection is usually fine.  We have had reports
 
 I run a business, can I use StartOS for tasks such as password management and file sharing?
 -------------------------------------------------------------------------------------------
-Absolutely.  A Start9 server would be a great addition to any business as it is easy to use and provides services that you control, with no subscription fees.
-
-With the addition of `BTCPay Server <https://btcpayserver.org/>`_, you can even run your own payment processor and accept cryptocurrency payments with no third party necessary!
+Absolutely.  A Start9 server would be a great addition to any business as it is easy to use and provides services that you control, with no subscription fees.  You can even run your own payment processor and accept cryptocurrency payments with no third party necessary!
 
 What are you using for a store backend?  Do you store my data?
 --------------------------------------------------------------
 Here is our exact situation currently:
-Server sales are processed through Shopify, which we do not like, but it was expedient in the early days, especially for shipping, so we went with it. Aside from a master list of email addresses for those who have explicitly opted in to our mailing list, all customer data is contained within Shopify. We do not duplicate it anywhere. We are asking Shopify to delete our customer data, but they claim it will take upward of 3 months to comply and we of course have no guarantee the data will actually be deleted permanently. This is partly why we exist...as such, we will be moving off of Shopify and onto a self-hosted solution, where Start9 alone controls our customer data for purchases, which we will delete as a matter of policy following a short grace period after delivery.
+Credit card sales are processed through Shopify, which we do not like, but it was expedient in the early days, especially for shipping, so we went with it. Aside from a master list of email addresses for those who have explicitly opted in to our mailing list, all customer credit card data is stored within Shopify. We do not duplicate it anywhere. We ask Shopify to delete our customer data, but they claim it takes upward of 3 months to comply and we of course have no guarantee the data will actually be deleted permanently. This is partly why we exist...as such, we are moving off of Shopify and onto a self-hosted solution, where Start9 alone controls our customer data for purchases, which we will delete as a matter of policy following a short grace period after delivery.
 
-In summary: (1) the shipping data we currently have is stored in Shopify (2) we are asking Shopify to delete all our customer data (3) we will be migrating off of Shopify (4) going forward, we alone will control customer data and will purge it regularly (5) you can always assemble the hardware yourself and just download StartOS for free.
+Enter our `Bitcoin Store <https://bitcoin-store.start9.com>`_!  Way less personal information is required to purchase with Bitcoin/Lightning, we offer a discount for these payment methods, and we routinely delete customer data.
 
-We are currently working on a better solution.
+Finally, you can always assemble the hardware yourself and download StartOS for free.
 
 I want to help, but I'm not a developer.  Are there any ways for non-coders to contribute?
 ------------------------------------------------------------------------------------------

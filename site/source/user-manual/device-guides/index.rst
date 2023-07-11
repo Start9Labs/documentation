@@ -3,8 +3,7 @@
 =============
 Device Guides
 =============
-
-Guides to get connected with or improve your Start9 server experience by device-type.
+Guides for integrating your client devices with your Start9 server.
 
 .. toctree::
   :maxdepth: 3
@@ -14,4 +13,3 @@ Guides to get connected with or improve your Start9 server experience by device-
   dg-windows
   dg-android
   dg-ios
-  limitations/index
