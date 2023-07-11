@@ -14,7 +14,7 @@ Please see this :ref:`comparison page <umbrel-compare>` for a breakdown.
 
 Can I run StartOS on a VPS or VM?
 ---------------------------------
-Yes! The :ref:`DIY Guide <diy>` will has some details.  Also check out our `Community Hub <https://community.start9.com>`_ to see guides and tips from Community members.
+Yes! The :ref:`DIY Guide <diy>` has some details.  Also check out our `Community Hub <https://community.start9.com>`_ to see guides and tips from Community members.
 
 Is it possible to use StartOS on my own hardware?
 -------------------------------------------------
