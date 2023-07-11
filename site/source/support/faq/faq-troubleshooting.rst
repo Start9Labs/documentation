@@ -14,7 +14,7 @@ Please check out the :ref:`Initial Setup <initial-setup>` page, and follow the i
 
 How do I know if my server is running?
 --------------------------------------
-After plugging into power and your router, if your device is equipped with a speaker, you will hear 2 distinct sounds: first, a “bep” ‐ indicating the device is powering on, and second, a “chime” ‐ indicating the device is ready for setup. You can hear these sounds on the :ref:`Initial Setup<initial-setup>` page.  Otherwise, your server is available on its unique ``adjective-noun.local`` or ``onion`` addresses.  If something goes wrong, it will serve itself on ``http://start.local``.
+After plugging into power and your router, if your device is equipped with a speaker, you will hear 2 distinct sounds: first, a “bep” ‐ indicating the device is powering on, and second, a “chime” ‐ indicating the device is ready for setup. You can hear these sounds on the :ref:`Initial Setup<initial-setup>` page.  Otherwise, your server is available on its unique ``adjective-noun.local`` or ``onion`` addresses.  If something goes wrong, it will serve a diagnostic page on ``http://start.local``.
 
 My server is really hot!  Is this normal?
 -----------------------------------------
