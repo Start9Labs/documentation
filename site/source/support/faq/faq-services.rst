@@ -37,7 +37,7 @@ We are aggressively moving away from service development in favor of a more comm
 
 Does StartOS operate as a Tor relay node?
 -----------------------------------------
-No, currently it does not, but we plan to add that functionality.
+No, currently it does not, but we plan to add that functionality as an option.
 
 Are files on my server encrypted on disk?
 -----------------------------------------
