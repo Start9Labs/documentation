@@ -66,7 +66,7 @@ CLN/LND backups on StartOS consist of onchain funds and the set of channels.  Th
 
 When you need to perform a recovery, it is important to understand all possible consequences.  For most recoveries, such as a password reset, or hardware upgrade, there is no need to do a restore from backup.  The preferred methods (:ref:`explained here<backup-restore>`) are to "Attach" your existing data, or "Transfer" it.
 
-If you do need to do a disaster recovery, your node reaches out to channel counterparties and requests that they force close the channel at the current balances. You are "trusting" them to report the correct balances. "Trusting" in quotes, because it would be very dangerous for them to try to cheat. They have no way of knowing that you are unaware of the true channel state. If they try to broadcast a fake channel state, you could take all their money.
+If you do need to do a disaster recovery, your node reaches out to channel counterparties and requests that they force close the channel at the current balances. You are "trusting" them to report the correct balances. "Trusting" in quotes, because it would be very dangerous for them to try to cheat. They have no way of knowing that you are unaware of the true channel state. If they try to broadcast a revoked channel state, you could take all their money.
 
 This is the current state of Lightning backups, and we will continue to stay at the forefront to help users protect their funds.
 
