@@ -80,7 +80,7 @@ We ship everywhere that DHL ships.  Please consider that in some countries, the 
 
 Do you have international electrical plugs?
 -------------------------------------------
-Power supplies for EU, AU, US, and UK are usually available.
+Power supplies for the EU, AU, US, and UK standards are usually available.
 
 Are the power supplies 220v compatible?
 ---------------------------------------
