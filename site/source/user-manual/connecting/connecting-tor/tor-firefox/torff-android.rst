@@ -15,7 +15,7 @@ Once Tor is setup on your system, you can proceed to setup Firefox:
 
     .. note:: Regular Firefox offered in the Play Store will not work - be sure to use Firefox Beta.
 
-#. Next, download a `Proxy Auto Config` file that will use Orbot to resolve `.onion` URLs. We have one hosted `here <https://docs.start9.com/_static/sys/proxy.pac>`_.
+#. Next, download a `Proxy Auto Config` file that will use Orbot to resolve `.onion` URLs. We have one hosted `here <https://start9.com/assets/proxy.pac>`_.
 
 #. Navigate to ``about:config`` in the Firefox URL bar.
 

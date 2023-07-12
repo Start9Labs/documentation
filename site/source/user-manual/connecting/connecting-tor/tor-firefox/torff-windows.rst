@@ -22,7 +22,7 @@ Configuring Firefox for Tor on Windows
 
 #. Download a *Proxy Auto Config* file to inform Firefox how to use the Tor daemon running on your computer. You can get Start9's standard file by following instructions below:
 
-    - Click `here <https://docs.start9.com/_static/sys/proxy.pac>`_ to get the file and save the file somewhere you will not delete it. Remember where you save the file. For this example:
+    - Click `here <https://start9.com/assets/proxy.pac>`_ to get the file and save the file somewhere you will not delete it. Remember where you save the file. For this example:
 
     .. code-block::
 
