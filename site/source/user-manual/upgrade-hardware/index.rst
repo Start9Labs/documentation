@@ -64,8 +64,8 @@ Guides for migrating or upgrading your server's hardware.
    :maxdepth: 2
    :hidden:
 
+   LND migration <lnd-migration>
    SSD upgrade <drive-upgrade>
    Pro upgrade <upgrade-pro>
    NASPi upgrade <naspi-upgrade>
-   LND migration <lnd-migration>
    2022 Server One SSD upgrade <naspi-ssd-upgrade>
