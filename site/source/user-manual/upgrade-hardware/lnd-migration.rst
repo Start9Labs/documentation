@@ -23,4 +23,4 @@ This guide is for users seeking to migrate LND on-chain and lightning funds from
     .. figure:: /_static/images/hardware-pics/lnd_migration_actions.png
         :width: 60%
 
-#. The migration action may take several minutes to complete. Once the action had completed and your old node has been unplugged, you may safely start LND on StartOS. **Remember - Do not restart your old node after the migration has completed!**
+#. The migration action may take several minutes to complete. Once the action has completed and your old node has been unplugged, you may safely start LND on StartOS. **Remember - NEVER restart your old node after the migration has completed!**
