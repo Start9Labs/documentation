@@ -25,7 +25,7 @@ Configuring Firefox for Tor on Linux
 
     .. code-block::
 
-      sudo wget -P /etc/tor https://registry.start9labs.com/sys/proxy.pac
+      sudo wget -P /etc/tor https://docs.start9.com/_static/sys/proxy.pac
 
 
 #. Now, back in your Firefox web browser, select ``Settings`` from the right-hand hamburger menu:

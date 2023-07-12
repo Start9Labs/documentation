@@ -72,7 +72,7 @@ Enable Tor System-wide
 
             .. code-block:: bash
 
-                sudo curl https://registry.start9labs.com/sys/proxy.pac --output /Library/WebServer/Documents/proxy.pac
+                sudo curl https://docs.start9.com/_static/sys/proxy.pac --output /Library/WebServer/Documents/proxy.pac
 
         #. Now enable apache service:
 
@@ -122,7 +122,7 @@ Enable Tor System-wide
 
             .. code-block:: bash
 
-                sudo curl https://registry.start9labs.com/sys/proxy.pac --output /Library/WebServer/Documents/proxy.pac
+                sudo curl https://docs.start9.com/_static/sys/proxy.pac --output /Library/WebServer/Documents/proxy.pac
 
         #. Now enable apache service:
 
