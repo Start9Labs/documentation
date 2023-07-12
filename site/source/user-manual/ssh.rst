@@ -71,7 +71,7 @@ Registering an SSH Key
 
       .. code-block:: bash
 
-        type .ssh/id_ed25519.pub
+        type .ssh\id_ed25519.pub
 
     Copy the whole resulting line that looks similar to:
 
