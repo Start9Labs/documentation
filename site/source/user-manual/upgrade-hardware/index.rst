@@ -12,6 +12,15 @@ Guides for migrating or upgrading your server's hardware.
   <div class="grid-x grid-margin-x">
 
 .. topic-box::
+  :title: Migrate LND from other nodes to StartOS
+  :link: lnd-migration
+  :icon: scylla-icon scylla-icon--home
+  :class: large-5
+  :anchor: Upgrade
+
+  This is for migrating LND from another node to StartOS without closing channels
+
+.. topic-box::
   :title: Upgrade SSD
   :link: drive-upgrade
   :icon: scylla-icon scylla-icon--benchmarks
@@ -55,6 +64,7 @@ Guides for migrating or upgrading your server's hardware.
    :maxdepth: 2
    :hidden:
 
+   LND migration <lnd-migration>
    SSD upgrade <drive-upgrade>
    Pro upgrade <upgrade-pro>
    NASPi upgrade <naspi-upgrade>
