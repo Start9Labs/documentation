@@ -89,7 +89,7 @@ In order to sync calendars and contacts with your iOS device, follow the steps b
     :width: 50%
     :alt: nextcloud account settings
 
-3. Enter the following fields and clik "Next":
+3. Enter the following fields and tap "Next":
 
   .. figure:: /_static/images/services/nextcloud/native-nextcloud-iOS-step2.PNG
     :width: 40%
