@@ -12,10 +12,6 @@ Initial Config
 --------------
 It is advised to setup your Nextcloud devices on LAN (if available) for the best experience.  Once set up, Tor can be used for remote syncing, but remember that large files will likely fail or take a very long time, so it is best to use remote sync only for low-bandwidth activity, such as Calendar, Contacts, Tasks, and Notes.  Streaming your music is also possible.  Later in 2023, new connection options will unlock Nextcloud's full feature-set.
 
-Standalone Client
------------------
-The latest version of the official Nextcloud client is available on their `download page <https://nextcloud.com/install/#install-clients>`_.
-
 LAN Setup
 =========
 Make sure you have first set up :ref:`LAN access<lan-ios>`.
