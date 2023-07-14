@@ -39,7 +39,7 @@ Make sure you have first set up :ref:`LAN access<lan-ios>`.
     :width: 40%
     :alt: nextcloud-ios-login
 
-5. You will be shown the "Connect to your account" screen, and then click "Log In".
+5. You will be shown the "Connect to your account" screen.  Tap "Log In".
 
    .. figure:: /_static/images/services/nextcloud/nextcloud-iOS-step4.png
     :width: 40%
