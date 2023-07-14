@@ -105,37 +105,37 @@ Make sure you have first set up :ref:`LAN access<lan-mac>`.  Then do the followi
 1. Download the appropriate desktop client from https://nextcloud.com/install/#install-clients
 2. Open the client and click "Log In"
 
-  .. figure:: /_static/images/services/nextcloud/nextcloud-stabdalone-client-macos-step2.png
+  .. figure:: /_static/images/services/nextcloud/nextcloud-standalone-client-macos-step2.png
     :width: 50%
     :alt: nextcloud-login
 
 3. From your server's Nextcloud Service page, go to "Interfaces" and copy the LAN address
 
-  .. figure:: /_static/images/services/nextcloud/nextcloud-stabdalone-client-macos-step3.png
+  .. figure:: /_static/images/services/nextcloud/nextcloud-standalone-client-macos-step3.png
     :width: 50%
     :alt: nextcloud-login
 
 4. Enter your LAN address under "Server Address" and click "Next"
 
-  .. figure:: /_static/images/services/nextcloud/nextcloud-stabdalone-client-macos-step4.png
+  .. figure:: /_static/images/services/nextcloud/nextcloud-standalone-client-macos-step4.png
     :width: 50%
     :alt: nextcloud-login
 
 5. This will launch a page in your web browser, click "Log In" and then "Grant access" to link the desktop client. You can close this browser window afterwards
 
-  .. figure:: /_static/images/services/nextcloud/nextcloud-stabdalone-client-macos-step5.png
+  .. figure:: /_static/images/services/nextcloud/nextcloud-standalone-client-macos-step5.png
     :width: 50%
     :alt: nextcloud-login
 
 6. Next, configure the local directory that you want to sync with Nextcloud. You may use the default or change it, and edit the sync settings to desired. When satisfied, click "Connect"
 
-  .. figure:: /_static/images/services/nextcloud/nextcloud-stabdalone-client-macos-step6.png
+  .. figure:: /_static/images/services/nextcloud/nextcloud-standalone-client-macos-step6.png
     :width: 50%
     :alt: nextcloud-login
 
 7. Files will begin to sync immediately and you will see a green check when this is complete.
 
-  .. figure:: /_static/images/services/nextcloud/nextcloud-stabdalone-client-macos-step7.png
+  .. figure:: /_static/images/services/nextcloud/nextcloud-standalone-client-macos-step7.png
     :width: 50%
     :alt: nextcloud-login
     
