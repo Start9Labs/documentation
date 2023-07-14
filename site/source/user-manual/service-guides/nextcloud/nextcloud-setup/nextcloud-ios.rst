@@ -45,7 +45,7 @@ Make sure you have first set up :ref:`LAN access<lan-ios>`.
     :width: 40%
     :alt: nextcloud-ios-login
 
-6. Next, you will be asked to enter the username and password, which can be found on the startOS Nextcloud Service page under the "Properties" tab.
+6. Next, you will be asked to enter the username and password.  You can find these on your StartOS Nextcloud service page on the "Properties" tab.
 
    .. figure:: /_static/images/services/nextcloud/nextcloud-iOS-step5.png
     :width: 40%
