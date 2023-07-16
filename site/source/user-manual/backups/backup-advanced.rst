@@ -44,8 +44,8 @@ Mount a Backup
 
 .. _backup-mount-data-drive:
 
-Mount a Data Drive
-------------------
+Mount a StartOS Data Drive
+--------------------------
 
 If you have an encrypted disk from a prior StartOS installation, you can mount its decrypted contents on a Linux computer.
 
