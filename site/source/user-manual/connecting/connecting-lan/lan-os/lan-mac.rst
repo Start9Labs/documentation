@@ -22,7 +22,7 @@ Trusting Your Start9 CA on macOS
         :width: 60%
         :alt: Show certificate file in Downloads folder
 
-#. Finder will open.  Locate the certificate in your *Downloads* folder and double click it to open it in the Keychain Access program.  You will be prompted for your macOS username and password, or thumbprint.  Then select *Modify Keychain*:
+#. Finder will open.  Locate your unique `adjective-noun Local CA.crt` file in your *Downloads* folder and double click it to open it in the Keychain Access program.  You will be prompted for your macOS username and password, or thumbprint.  Then select *Modify Keychain*:
 
     .. figure:: /_static/images/ssl/macos/trust-cert-macos-4-modify_keychain.png
         :width: 60%
