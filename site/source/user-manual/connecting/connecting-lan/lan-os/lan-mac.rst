@@ -39,7 +39,7 @@ Trusting Your Start9 CA on macOS
         :width: 60%
         :alt: Trust CA Certificate
 
-    Then click the red (x) button at the top left of the Local Root CA dialog window.
+    Click the red (x) button at the top left of the Local Root CA dialog window.
 
 #. You will then be prompted again for your username and password, or thumbprint.  Enter those and click **Update Settings**:
 
