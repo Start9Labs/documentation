@@ -56,3 +56,8 @@ Create Backup
 
     .. figure:: /_static/images/config/backup4.png
         :width: 60%
+
+#. If successful, you will also see the date and time of your most recent backup updated under **BACKUPS** in the **System** tab:
+
+    .. figure:: /_static/images/config/backup5.png
+        :width: 60%
