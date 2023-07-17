@@ -68,7 +68,7 @@ Guides for integrating your devices with your Start9 server.
 .. topic-box::
   :title: TrueNAS
   :link: dg-truenas
-  :icon: scylla-icon scylla-icon--integrations
+  :icon: scylla-icon scylla-icon--resource-center
   :class: large-4
   :anchor: Connect
 
@@ -77,14 +77,14 @@ Guides for integrating your devices with your Start9 server.
 .. topic-box::
   :title: Physical Backup Drive
   :link: backup-physical
-  :icon: scylla-icon scylla-icon--integrations
+  :icon: scylla-icon scylla-icon--overview
   :class: large-4
   :anchor: Connect
 
   Create a backup to an external drive directly attached to your server
 
 .. toctree::
-  :maxdepth: 4
+  :maxdepth: 3
   :hidden:
 
   dg-linux/index

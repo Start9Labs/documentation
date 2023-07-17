@@ -6,7 +6,7 @@ Guides
 Guides for integrating your client devices with your Start9 server.
 
 .. toctree::
-  :maxdepth: 4
+  :maxdepth: 3
 
   device-guides/index
   service-guides/index

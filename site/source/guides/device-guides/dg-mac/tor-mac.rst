@@ -114,7 +114,7 @@ Enable Tor System-wide
                 
                 cat /usr/local/var/log/tor.log || sudo cat /opt/homebrew/var/log/tor.log
 
-        If you'd like to setup Firefox to use Tor you can follow  :ref:`this guide<torff-mac>`.
+        If you'd like to setup Firefox to use Tor you can follow  :ref:`this guide<ff-mac>`.
 
     .. group-tab:: Pre-Ventura
 
@@ -176,4 +176,4 @@ Enable Tor System-wide
                 
                 cat /usr/local/var/log/tor.log || sudo cat /opt/homebrew/var/log/tor.log
 
-        If you'd like to setup Firefox to use Tor you can follow  :ref:`this guide<torff-mac>`.
+        If you'd like to setup Firefox to use Tor you can follow  :ref:`this guide<ff-mac>`.

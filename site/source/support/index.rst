@@ -53,7 +53,7 @@ View frequently asked questions, troubleshoot common issues, or contact support.
 
 .. This is for the side navigation display
 .. toctree::
-  :maxdepth: 1
+  :maxdepth: 3
   :hidden:
 
   common-issues
