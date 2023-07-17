@@ -43,7 +43,7 @@ Power On
 #. Select "Start Fresh."
 
     .. figure:: /_static/images/setup/screen0-startfresh_or_recover.jpg
-      :width: 60%
+      :width: 50%
       :alt: Fresh Setup
 
     .. note:: The "Recover" button is used for :ref:`hardware upgrades <upgrade-hardware>`, :ref:`restoring from backup <backup-restore>`, data migration, or disaster recovery.
@@ -51,7 +51,7 @@ Power On
 #. Select your storage drive
 
     .. figure:: /_static/images/setup/screen4-select_storage.jpg
-      :width: 60%
+      :width: 50%
       :alt: Select Drive
 
 #. Create a master password for your server and click "Finish."
@@ -59,13 +59,13 @@ Power On
     .. warning:: Choose a strong master password.  Write it down.  Store it somewhere safe.  DO NOT LOSE IT.
 
    .. figure:: /_static/images/setup/screen5-set_password.jpg
-      :width: 60%
+      :width: 50%
       :alt: Create New Password
 
 #. StartOS will initialize.  This can take up to a few minutes.
 
     .. figure:: /_static/images/setup/screen6-storage_initialize.jpg
-      :width: 60%
+      :width: 50%
       :alt: SSD Initialization
 
 #. You are now hosting your own private server!
@@ -73,13 +73,13 @@ Power On
     .. tip:: If you are in headless mode, click "Download This Page" to save your server address and certificate info to your computer.
 
     .. figure:: /_static/images/setup/screen7-startfresh_complete.jpg
-      :width: 60%
+      :width: 50%
       :alt: Setup Complete
 
-#. You may now log in.  Continue to the section on :ref:`connecting<connecting>` to learn more about using your server over Tor and LAN.
+#. You may now log in.  We **highly** recommend continuing to the :ref:`Device Guides<device-guides>` section to securely integrate your devices.
 
     .. figure:: /_static/images/setup/screen9-startfresh_complete-savedfile-go_to_start_login.jpg
-      :width: 60%
+      :width: 50%
       :alt: Setup Complete
 
 .. _setup-troubleshooting:

@@ -1,8 +1,8 @@
 .. _connecting:
 
-==========
-Connecting
-==========
+===========
+Connections
+===========
 
 .. raw:: html
 
@@ -36,5 +36,6 @@ Connecting
    :maxdepth: 2
    :hidden:
 
-   Lan <connecting-lan/index>
-   Tor <connecting-tor/index>
+   connecting-lan
+   connecting-tor
+   connecting-ff

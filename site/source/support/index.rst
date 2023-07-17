@@ -3,8 +3,7 @@
 =======
 Support
 =======
-
-View frequently asked questions, troubleshoot common issues, or contact support.
+View frequently asked questions, troubleshoot common issues, or contact support.  If you can't find what you need, please `reach out <https://start9.com/contact>`_.  We're here to help your server work for you!
 
 .. raw:: html
 
@@ -31,15 +30,6 @@ View frequently asked questions, troubleshoot common issues, or contact support.
   Answers to Frequently Asked Questions from StartOS users
 
 .. topic-box::
-  :title: Contact
-  :link: https://start9.com/contact
-  :icon: scylla-icon scylla-icon--support
-  :class: large-5
-  :anchor: Get help
-
-  Get help from Start9 and the community directly
-
-.. topic-box::
   :title: External Support
   :link: external-support
   :icon: scylla-icon scylla-icon--mail-list
@@ -47,6 +37,15 @@ View frequently asked questions, troubleshoot common issues, or contact support.
   :anchor: Get help
 
   Get help for third party apps that connect to your StartOS services
+
+  .. topic-box::
+  :title: Contact Us
+  :link: https://start9.com/contact
+  :icon: scylla-icon scylla-icon--contact-us
+  :class: large-4
+  :anchor: Reach Out
+
+  Join us in our community channels or get support
 
 .. raw:: html
 
@@ -59,4 +58,5 @@ View frequently asked questions, troubleshoot common issues, or contact support.
 
   common-issues
   faq/index
+  concepts/index
   external-support

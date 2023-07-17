@@ -29,6 +29,15 @@
   Get started with your Start9 server
 
 .. topic-box::
+  :title: Guides
+  :link: guides
+  :icon: scylla-icon scylla-icon--circe
+  :class: large-4
+  :anchor: Connect
+
+  Integrate your devices and tools
+
+.. topic-box::
   :title: Support
   :link: support
   :icon: scylla-icon scylla-icon--support
@@ -44,23 +53,14 @@
   :class: large-4
   :anchor: Build your own
 
-  Guides for builders, hackers, and tinkerers
-
-.. topic-box::
-  :title: Learn
-  :link: learn
-  :icon: scylla-icon scylla-icon--webinars
-  :class: large-4
-  :anchor: Get started
-
-  Read our FAQ, watch videos, and understand platform concepts
+  Recommendations for builders, hackers, and tinkerers
 
 .. topic-box::
   :title: Developer Docs
   :link: developer-docs
   :icon: scylla-icon scylla-icon--open-source
   :class: large-4
-  :anchor: View
+  :anchor: Hack
 
   Package a service for the Marketplace
 
@@ -79,11 +79,11 @@
 
 .. This is for the side navigation display
 .. toctree::
-  :maxdepth: 4
+  :maxdepth: 5
   :hidden:
 
   user-manual/index
+  guides/index
   support/index
-  diy/index
-  learn/index
+  guides/diy/index
   developer-docs/index

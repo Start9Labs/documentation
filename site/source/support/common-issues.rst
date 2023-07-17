@@ -48,8 +48,8 @@ I am unable to reach my server via its xxxxxxxxxxxxxxxxxx.onion (Tor) address
     #. **If Tor Browser works** - It means the issue is either with the Tor daemon on your device or with the browser settings.
 
         #. **Solutions**
-            #. If you are not yet running a Tor daemon on your device, follow :ref:`these instructions <tor-os>`. If you are already running a Tor daemon, restart it, or in the case of Android, restart your phone.
-            #. If you are using Firefox, ensure it has been :ref:`properly configured <tor-firefox>` to work with .onion URLs.
+            #. If you are not yet running a Tor daemon on your device, follow :ref:`these instructions <connecting-tor>`. If you are already running a Tor daemon, restart it, or in the case of Android, restart your phone.
+            #. If you are using Firefox, ensure it has been :ref:`properly configured <connecting-ff>` to work with .onion URLs.
 
     #. **If Tor Browser does not work** - It means there is an issue with your server or with the Tor network.
 
