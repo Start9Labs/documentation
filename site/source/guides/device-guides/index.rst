@@ -14,7 +14,7 @@ Guides for integrating your devices with your Start9 server.
 .. topic-box::
   :title: Linux
   :link: dg-linux
-  :icon: scylla-icon scylla-icon--integrations
+  :icon: scylla-icon scylla-icon--linux
   :class: large-4
   :anchor: Connect
 
@@ -23,7 +23,7 @@ Guides for integrating your devices with your Start9 server.
 .. topic-box::
   :title: Mac
   :link: dg-mac
-  :icon: scylla-icon scylla-icon--integrations
+  :icon: scylla-icon scylla-icon--apple
   :class: large-4
   :anchor: Connect
 
@@ -32,7 +32,7 @@ Guides for integrating your devices with your Start9 server.
 .. topic-box::
   :title: Windows
   :link: dg-windows
-  :icon: scylla-icon scylla-icon--integrations
+  :icon: scylla-icon scylla-icon--windows
   :class: large-4
   :anchor: Connect
 
@@ -41,7 +41,7 @@ Guides for integrating your devices with your Start9 server.
 .. topic-box::
   :title: Android
   :link: dg-android
-  :icon: scylla-icon scylla-icon--integrations
+  :icon: scylla-icon scylla-icon--android
   :class: large-4
   :anchor: Connect
 
@@ -49,7 +49,7 @@ Guides for integrating your devices with your Start9 server.
 
 .. topic-box::
   :title: iOS
-  :icon: scylla-icon scylla-icon--integrations
+  :icon: scylla-icon scylla-icon--ios
   :link: dg-ios
   :class: large-4
   :anchor: Connect
