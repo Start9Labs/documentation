@@ -7,7 +7,7 @@ Welcome to the StartOS user manual. Here you will discover all that your server 
 
 .. toctree::
   :includehidden:
-  :maxdepth: 2
+  :maxdepth: 3
 
   initial-setup
   connecting/index

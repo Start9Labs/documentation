@@ -84,8 +84,7 @@ Guides for integrating your devices with your Start9 server.
   Create a backup to an external drive directly attached to your server
 
 .. toctree::
-  :maxdepth: 3
-  :hidden:
+  :maxdepth: 2
 
   dg-linux/index
   dg-mac/index

@@ -62,7 +62,6 @@ Guides for migrating or upgrading your server's hardware.
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
    LND migration <lnd-migration>
    SSD upgrade <drive-upgrade>
