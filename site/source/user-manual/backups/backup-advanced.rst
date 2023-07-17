@@ -10,7 +10,6 @@ Advanced Backup Tools
 
 Mount a Backup
 --------------
-
 #. :ref:`Setup SSH Access<ssh>` and connect to your server via SSH.  Elevate yourself to root once in:
 
     .. code-block:: bash
@@ -46,7 +45,6 @@ Mount a Backup
 
 Mount a StartOS Data Drive
 --------------------------
-
 If you have an encrypted disk from a prior StartOS installation, you can mount its decrypted contents on a Linux computer.
 
 #. Attach the StartOS data drive to your Linux desktop or laptop computer.
