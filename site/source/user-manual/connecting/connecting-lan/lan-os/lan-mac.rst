@@ -16,7 +16,7 @@ Trusting Your Start9 CA on macOS
         :width: 60%
         :alt: Download Certificate
 
-#. Among the browser's downloaded files, right click your certificate file and select *Show in Folder*:
+#. Among the browser's downloads, right click your certificate file and select *Show in Folder*:
 
     .. figure:: /_static/images/ssl/macos/trust-cert-macos-3-show_in_folder.png
         :width: 60%
