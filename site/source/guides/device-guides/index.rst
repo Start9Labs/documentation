@@ -85,6 +85,7 @@ Guides for integrating your devices with your Start9 server.
 
 .. toctree::
   :maxdepth: 2
+  :hidden:
 
   dg-linux/index
   dg-mac/index

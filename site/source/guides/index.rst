@@ -6,7 +6,7 @@ Guides
 Guides for integrating your client devices with your Start9 server, building your own server (DIY), upgrading hardware, password resets, and more.
 
 .. toctree::
-  :maxdepth: 3
+  :maxdepth: 2
 
   device-guides/index
   service-guides/index
