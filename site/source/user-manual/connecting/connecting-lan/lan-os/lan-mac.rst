@@ -1,7 +1,7 @@
 .. _lan-mac:
 
 ================================
-Trusting Your Start9 CA on macOS
+Trusting Your Start9 CA on MacOS
 ================================
 
 #. In your Start9 server's UI, navigate to **System** -> **LAN**
