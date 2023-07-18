@@ -53,7 +53,7 @@ Trusting Your Start9 CA on macOS
         :width: 60%
         :alt: Keychain submenu
 
-    .. note:: If the keychain console did not show the certificate as trusted, press "Command + spacebar" and type “Keychain Access”, and hit enter to re-open it.
+    .. tip:: If the keychain console did not show the certificate as trusted, press "Command + spacebar" and type “Keychain Access”, and hit enter to re-open it.
 
 No additional setup is required for most browsers and you will now be able to safely connect to your Start9 server over LAN.
 
