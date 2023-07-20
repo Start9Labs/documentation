@@ -3,28 +3,24 @@
 =============
 Common Issues
 =============
+Sometimes things don't go as planned. Check here for solutions to common problems with StartOS.
 
 .. contents::
   :depth: 2 
   :local:
 
-Sometimes things don't go as planned. Check here for solutions to common problems with StartOS.
-
 StartOS will not boot
 ---------------------
-
 If the device will not power on at all (no lights whatsoever), then the only issues could be that the Pi is not getting the power it needs, or it is completely dead (extremely rare).  If you sourced your own parts, please ensure that the power supply meets the minimum required specifications in the :ref:`DIY Guide<diy>`. If you received your device from us and it will not power up at all, please `Contact us <https://start9.com/contact>`_ for assistance.
 
 StartOS boots into "Diagnostic Mode"
 ------------------------------------
-
 Diagnostic Mode is a new UI that will launch in the event that no drive, or an incorrect drive (such as one from another StartOS server) has been plugged into your server. Simply plug your external drive in and reboot (power off and on again).
 
 .. _setup-troubleshoot:
 
 During initial setup, I am unable to connect to "start.local".
 ----------------------------------------------------------------
-
 * Confirm that the server is plugged into both power and Ethernet.
 
 * Confirm the the server emitted two :ref:`sounds<sounds>` when powering on: a bep and a chime.
@@ -37,7 +33,6 @@ If you still cannot connect, try logging into your router (the directions for wh
 
 I am unable to reach my server via its *<custom-address>.local* (LAN) address
 ------------------------------------------------------------------------------
-
 Make sure you have successfully followed the :ref:`LAN Setup<connecting-lan>` instructions for your device. If you are using Windows, your problem is almost certainly with Bonjour - follow the directions to reinstall, even if you have already done so.  If you still cannot connect, try all the solutions listed under :ref:`initial setup <setup-troubleshoot>`.
 
 I am unable to reach my server via its xxxxxxxxxxxxxxxxxx.onion (Tor) address
@@ -67,5 +62,58 @@ I am unable to reach my server via its xxxxxxxxxxxxxxxxxx.onion (Tor) address
 
 I'm having an issue with a particular Service
 ---------------------------------------------
-
 If a Service is crashing or acting up in some way, check the :ref:`Documentation<service-guides>` and :ref:`FAQ<faq-services>` for that particular Service.  You can also check the "Logs" (on the service page), which might tell you what the problem is.  If that is not helpful, try to restart the service to see if that clears up the issue.  If you are still having issues, please reach out in one of our `Community Channels <https://start9.com/contact>`_ for immediate assistance.
+
+.. _sounds-bepchime:
+
+Server Models With Speakers
+---------------------------
+Server Lite, Server Pure, and Server One (2022 and older) have an internal speaker and may provide the following audio feedback:
+
+    .. raw:: HTML
+
+      <audio controls>
+        <source src="/_static/sounds/BEP.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    * "bep" - Starting up
+
+    .. raw:: HTML
+
+      <audio controls>
+        <source src="/_static/sounds/CHIME.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    * "chime" - Server is ready
+
+    .. raw:: HTML
+
+      <audio controls>
+        <source src="/_static/sounds/FLATLINE.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    * "flatline" - Server initialization failed / no network connection
+
+    .. raw:: HTML
+
+      <audio controls>
+        <source src="/_static/sounds/BEETHOVEN.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    * Beethoven's 5th - Something has gone wrong and Diagnostic Mode has been launched on ``http://start.local``, please check here for solutions.
+
+Raspberry Pi Lights
+-------------------
+Server Lite has 2 status lights:
+
+- Red - Power.  This will be on solid when powered up and running normally.
+- Green - SD Card.  This will display when there is SD Card activity, such as during OS installation.  It may be off, flashing, or on solid during normal operation.
+
+Server One (2022) has 2 additional lights:
+
+- Blue power button - Power.  This will be on solid when powered up and running normally.
+- Blue drive light - SSD.  This will display when there is SSD activity.  It may be off, flashing, or on solid during normal operation. 

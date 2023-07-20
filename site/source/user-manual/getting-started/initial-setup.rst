@@ -76,7 +76,7 @@ Power On
       :width: 50%
       :alt: Setup Complete
 
-#. You may now log in.  We **highly** recommend continuing to the :ref:`Device Guides<device-guides>` section to securely integrate your devices.
+#. Next, you will need to :ref:`Trust Your Root CA<trust-ca>` on the device you are connecting from.  This is required and your server will not work properly with another device until complete.
 
     .. figure:: /_static/images/setup/screen9-startfresh_complete-savedfile-go_to_start_login.jpg
       :width: 50%
@@ -88,10 +88,7 @@ Troubleshooting
 ---------------
 If you are experiencing issues with setup, try the following:
 
-#. Confirm that the server is plugged into both power and Ethernet
-
-   - An ethernet network with DHCP server must be available at setup.  Most routers provide this.
-      
+#. Confirm that the server is plugged into both power and Ethernet      
 #. Confirm your phone/computer is **not** connected to a "Guest" network
 #. Confirm your phone/computer is not using a VPN, or that if you are, that it allows LAN connections, such as the examples below:
 
@@ -106,58 +103,3 @@ If you are experiencing issues with setup, try the following:
     - Once in the router config settings, find the section that lists the devices on your network. You should see a device labeled ``start``. Take note of the associated IP address and enter it into your browser's URL field to enter the setup.
 
 You can always to `reach out to support <https://start9.com/contact>`_ if you need a hand.
-
-Server Models With Speakers
----------------------------
-
-.. _sounds-bepchime:
-
-Server Lite, Server Pure, and Server One (2022 and older) have an internal speaker and may provide the following audio feedback:
-
-    .. raw:: HTML
-
-      <audio controls>
-        <source src="/_static/sounds/BEP.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-
-    * "bep" - Starting up
-
-    .. raw:: HTML
-
-      <audio controls>
-        <source src="/_static/sounds/CHIME.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-
-    * "chime" - Server is ready
-
-    .. raw:: HTML
-
-      <audio controls>
-        <source src="/_static/sounds/FLATLINE.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-
-    * "flatline" - Server initialization failed / no network connection
-
-    .. raw:: HTML
-
-      <audio controls>
-        <source src="/_static/sounds/BEETHOVEN.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-
-    * Beethoven's 5th - Something has gone wrong and Diagnostic Mode has been launched on ``http://start.local``, please check here for solutions.
-
-Raspberry Pi Lights
--------------------
-Server Lite has 2 status lights:
-
-- Red - Power.  This will be on solid when powered up and running normally.
-- Green - SD Card.  This will display when there is SD Card activity, such as during OS installation.  It may be off, flashing, or on solid during normal operation.
-
-Server One (2022) has 2 additional lights:
-
-- Blue power button - Power.  This will be on solid when powered up and running normally.
-- Blue drive light - SSD.  This will display when there is SSD activity.  It may be off, flashing, or on solid during normal operation. 
