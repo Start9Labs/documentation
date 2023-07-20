@@ -5,14 +5,18 @@ Tor Connections
 ===============
 You can connect to your Start9 server from anywhere in the world, privately and anonymously, by using its unique Tor Address (``.onion`` URL).
 
-.. note:: Tor connection can sometimes be unreliable and have higher latency than normal internet connections.
+.. note:: Tor connections can sometimes be unreliable and have higher latency than normal internet connections.
 
 Select your OS below to connect via Tor.  See our :ref:`Device Guides<device-guides>` section for all your client's setup guides.
 
   :ref:`Linux<tor-linux>`
+  
   :ref:`Mac<tor-mac>`
+  
   :ref:`Windows<tor-windows>`
+  
   :ref:`Android<tor-android>`
+  
   :ref:`iOS<tor-ios>`
 
 Using TorBrowser

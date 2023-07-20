@@ -7,7 +7,7 @@ Welcome to StartOS!  Get familiar with your server by discovering all the availa
 
 .. toctree::
   :includehidden:
-  :maxdepth: 2
+  :maxdepth: 1
 
   dashboard-overview
   change-password

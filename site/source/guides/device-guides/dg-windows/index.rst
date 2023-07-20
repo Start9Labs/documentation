@@ -14,7 +14,7 @@ To optimize your device for use with your Start9 server, it is recommended to co
   <div class="grid-x grid-margin-x">
 
 .. topic-box::
-  :title: Establish Secure Link
+  :title: Trust Root CA
   :link: lan-windows
   :icon: scylla-icon scylla-icon--partners
   :class: large-4

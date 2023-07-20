@@ -15,7 +15,7 @@ Trust your server's Root CA to achieve encrypted communications on LAN, access s
 
 .. topic-box::
   :title: Linux
-  :link: dg-linux
+  :link: ../../../guides/device-guides/dg-linux/lan-linux
   :icon: scylla-icon scylla-icon--linux
   :class: large-4
   :anchor: Connect
@@ -24,7 +24,7 @@ Trust your server's Root CA to achieve encrypted communications on LAN, access s
 
 .. topic-box::
   :title: Mac
-  :link: dg-mac
+  :link: ../../../guides/device-guides/dg-mac/lan-mac
   :icon: scylla-icon scylla-icon--apple
   :class: large-4
   :anchor: Connect
@@ -33,7 +33,7 @@ Trust your server's Root CA to achieve encrypted communications on LAN, access s
 
 .. topic-box::
   :title: Windows
-  :link: dg-windows
+  :link: ../../../guides/device-guides/dg-windows/lan-windows
   :icon: scylla-icon scylla-icon--windows
   :class: large-4
   :anchor: Connect
@@ -42,7 +42,7 @@ Trust your server's Root CA to achieve encrypted communications on LAN, access s
 
 .. topic-box::
   :title: Android
-  :link: dg-android
+  :link: ../../../guides/device-guides/dg-android/lan-android
   :icon: scylla-icon scylla-icon--android
   :class: large-4
   :anchor: Connect
@@ -51,8 +51,8 @@ Trust your server's Root CA to achieve encrypted communications on LAN, access s
 
 .. topic-box::
   :title: iOS
+  :link: ../../../guides/device-guides/dg-ios/lan-ios
   :icon: scylla-icon scylla-icon--ios
-  :link: dg-ios
   :class: large-4
   :anchor: Connect
 

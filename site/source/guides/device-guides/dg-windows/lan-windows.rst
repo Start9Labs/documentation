@@ -9,6 +9,21 @@ Unfortunately, Windows does not have mDNS alias support built-in, which is neces
 
 .. note:: Some users who run through the following instructions have successfully connected to their LAN services only to have them stop working weeks or months later. We believe this to be due to a change in Windows. When this happens the fix is to simply reinstall Bonjour and Bonjour Print Services. A solution is being worked on and Bonjour will not be necessary to connect to your Start9 server for much longer.
 
+Download Root CA
+----------------
+First, download your Start9 server's Root CA, if you have not already.
+
+    - Navigate to *System > LAN*, then click "Download Certificate".
+
+      .. figure:: /_static/images/ssl/lan_setup.png
+        :width: 40%
+        :alt: LAN setup menu item
+
+Alternatively, you can download to another machine, then transfer the file to your device.
+
+Trust Root CA
+-------------
+
 #. Install `Bonjour Print Services <https://support.apple.com/kb/DL999>`_ on your Windows machine.
 
    .. tip::  If you are experiencing issues after installing Bonjour, you might have had a previous or failed install. To fix:
