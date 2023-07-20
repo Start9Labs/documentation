@@ -1,8 +1,9 @@
 .. _reset-password:
 
-===================
-Reset Your Password
-===================
+==============
+Password Reset
+==============
+If you forgot or lost your StartOS master password, you can use this guide to reset it.
 
 .. contents::
   :depth: 2

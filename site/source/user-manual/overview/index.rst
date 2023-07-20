@@ -3,17 +3,20 @@
 ================
 StartOS Overview
 ================
-Welcome to the StartOS walkthrough!  Get familiar with your server.
+Welcome to StartOS!  Get familiar with your server by discovering all the available features.
 
 .. toctree::
   :includehidden:
   :maxdepth: 2
 
   dashboard-overview
-  updating
-  customize
+  change-password
   managing-services
+  backup-restore/index
+  customize
+  updating
+  connecting/index
   sessions
-  wifi
   ssh
+  wifi
   alt-registries

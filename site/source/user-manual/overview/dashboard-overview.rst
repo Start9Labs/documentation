@@ -1,8 +1,8 @@
 .. _dashboard-overview:
 
-==================
-Dashboard Overview
-==================
+=========
+Dashboard
+=========
 
 .. contents::
   :depth: 2 

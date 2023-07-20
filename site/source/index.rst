@@ -26,7 +26,7 @@
   :class: large-4
   :anchor: View
 
-  Get started with your Start9 server
+  Setup, understand, and utilize your personal server
 
 .. topic-box::
   :title: Guides
@@ -85,5 +85,5 @@
   user-manual/index
   guides/index
   support/index
-  guides/diy/index
+  diy/index
   developer-docs/index

@@ -1,8 +1,8 @@
 .. _connecting:
 
-===========
-Connections
-===========
+====================
+Network Connectivity
+====================
 
 .. raw:: html
 

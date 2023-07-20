@@ -1,9 +1,11 @@
-.. _device-guides:
+.. _trust-ca:
 
 =============
-Device Guides
+Trust Root CA
 =============
-Guides for integrating your devices with your Start9 server.
+Trust your server's Root CA to achieve encrypted communications on LAN, access services on LAN, and enhance connection speeds over Tor.  Select the OS of the device you are accessing your server with:
+
+.. caution:: This is a required step, and you server will not work properly until it is complete
 
 .. raw:: html
 
@@ -55,13 +57,3 @@ Guides for integrating your devices with your Start9 server.
   :anchor: Connect
 
   Integrate iOS devices
-
-.. toctree::
-  :maxdepth: 2
-  :hidden:
-
-  dg-linux/index
-  dg-mac/index
-  dg-windows/index
-  dg-android/index
-  dg-ios/index

@@ -3,20 +3,21 @@
 ==================================
 Trusting Your Start9 CA On Windows
 ==================================
+Complete this guide to download your Start9 server's Root Certificate Authority (CA), and trust it on your client device (Windows).  This allows you to use encrypted ``https`` connections to your ``.local`` (LAN) and ``.onion`` (tor) server addresses, access services on LAN, and enhances performance on tor.  The self-signed certificate was created by your server when you perfomed the initial setup, and applies to your server's main UI connection, as well as all service connections.
 
 Unfortunately, Windows does not have mDNS alias support built-in, which is necessary in order to visit .local addresses for any service you install on your Start9 server, so we recommend using the Bonjour service. Check out this :ref:`FAQ answer<why-bonjour>` for details.
 
-.. note:: Recently many users who have run through the following instructions have successfully connected to their Start9 server via LAN only to have it stop working a few days or weeks later. We believe this to be due to a recent change in Windows. When this happens the fix is to simply reinstall Bonjour and Bonjour Print Services. A solution is being worked on and Bonjour will not be necessary to connect to your Start9 server for much longer.
+.. note:: Some users who run through the following instructions have successfully connected to their LAN services only to have them stop working weeks or months later. We believe this to be due to a change in Windows. When this happens the fix is to simply reinstall Bonjour and Bonjour Print Services. A solution is being worked on and Bonjour will not be necessary to connect to your Start9 server for much longer.
 
 #. Install `Bonjour Print Services <https://support.apple.com/kb/DL999>`_ on your Windows machine.
 
    .. tip::  If you are experiencing issues after installing Bonjour, you might have had a previous or failed install. To fix:
 
-            #. Check out this video: https://www.youtube.com/watch?v=9ECCB3bqNDQ
-            #. Uninstall Bonjour and Bonjour Print Services completely via *system settings > remove programs*
-            #. Reinstall Bonjour Printer Driver package (download at https://support.apple.com/kb/DL999?locale=en_US)
-            #. Restart Windows
-            #. Note: Uninstalling Bonjour via the setup package seems to be not enough to solve the issue. Bonjour must be uninstalled via windows system settings.
+      #. Check out this video: https://www.youtube.com/watch?v=9ECCB3bqNDQ
+      #. Uninstall Bonjour and Bonjour Print Services completely via *system settings > remove programs*
+      #. Reinstall Bonjour Printer Driver package (download at https://support.apple.com/kb/DL999?locale=en_US)
+      #. Restart Windows
+      #. Note: Uninstalling Bonjour via the setup package seems to be not enough to solve the issue. Bonjour must be uninstalled via windows system settings.
 
 #. Back in Windows, click the “Start” menu, type “mmc”, and select "Run as administrator" to access the Windows Management Console.
 
@@ -92,4 +93,4 @@ Unfortunately, Windows does not have mDNS alias support built-in, which is neces
     :width: 20%
     :alt: Console settings
 
-You're now ready to browse your service UIs with encryption, either via the browser, or with native client apps.  You may wish to :ref:`configure Firefox<lan-ff>` and/or :ref:`Thunderbird<lan-thunderbird>` next.
+You're now ready to browse your service UIs with encryption, either via the browser, or with native client apps.  For Mozilla apps, such as Firefox, you will need to follow the :ref:`Firefox Config <lan-ff>` guide, which we highly recommend.

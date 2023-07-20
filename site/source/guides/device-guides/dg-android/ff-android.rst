@@ -3,8 +3,13 @@
 ===============================
 Configuring Firefox for Android
 ===============================
+Mozilla provides some of the most flexible, secure, and freedom-principled applications for using the web.  We highly recommend completing all configuration below.
 
 .. caution:: Setups may strongly vary across different Android forks
+
+LAN Config
+----------
+
 
 Configure Tor
 -------------

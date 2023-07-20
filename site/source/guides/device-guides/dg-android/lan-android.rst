@@ -3,9 +3,9 @@
 =============================
 Trust Your Root CA on Android
 =============================
-Complete this guide to download your Root Certificate Authority (CA), and trust it on your client device (Android).  This allows you to use encrypted ``https`` connections to your ``.local`` (LAN) and ``.onion`` (tor) server addresses.  The self-signed certificate was created by your server when you first set it up, and applies to your main server UI connection, as well as all service connections.
+Complete this guide to download your Start9 server's Root Certificate Authority (CA), and trust it on your client device (Android).  This allows you to use encrypted ``https`` connections to your ``.local`` (LAN) and ``.onion`` (tor) server addresses, access services on LAN, and enhances performance on tor.  The self-signed certificate was created by your server when you perfomed the initial setup, and applies to your server's main UI connection, as well as all service connections.
 
-.. note:: This guide applies to most Android phones running Android v13+, as well as phones running CalyxOS, GrapheneOS or LineageOS (v19+).
+.. note:: This guide applies to most Android phones running Android v13+, as well as phones running CalyxOS, GrapheneOS, or LineageOS (v19+).
 
 Download Root CA
 ----------------
@@ -50,3 +50,5 @@ On some devices, it may be necessary to also activate this setting in Firefox / 
 #. Tap **Kebab Menu > Settings > About Firefox** and tap the Firefox icon 5 times to enable "developer mode."
 
 #. Go back to **Kebab Menu > Settings > Secret Settings** (at the bottom), and tap "Use third party CA certificates" to enable the use of your system-wide Root CA.
+
+You're now ready to browse your service UIs with encryption, either via the browser, or with native client apps.  For Mozilla apps, such as Firefox, you will need to follow the :ref:`Firefox Config <ff-android>` guide, which we highly recommend.

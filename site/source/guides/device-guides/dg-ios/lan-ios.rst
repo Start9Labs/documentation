@@ -3,6 +3,8 @@
 =========================
 Trust Your Root CA on iOS
 =========================
+Complete this guide to download your Start9 server's Root Certificate Authority (CA), and trust it on your client device (iOS).  This allows you to use encrypted ``https`` connections to your ``.local`` (LAN) and ``.onion`` (tor) server addresses, access services on LAN, and enhances performance on tor.  The self-signed certificate was created by your server when you perfomed the initial setup, and applies to your server's main UI connection, as well as all service connections.
+
 This applies to iOS v15 and v16.  For older versions, see the `v14 guide </0.3.1.x/user-manual/connecting/connecting-lan/lan-os/lan-ios>`_.
 
 #. Download the certificate to your Downloads folder

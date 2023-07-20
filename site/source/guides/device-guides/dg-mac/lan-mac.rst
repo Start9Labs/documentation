@@ -3,6 +3,7 @@
 ================================
 Trusting Your Start9 CA on macOS
 ================================
+Complete this guide to download your Start9 server's Root Certificate Authority (CA), and trust it on your client device (Mac).  This allows you to use encrypted ``https`` connections to your ``.local`` (LAN) and ``.onion`` (tor) server addresses, access services on LAN, and enhances performance on tor.  The self-signed certificate was created by your server when you perfomed the initial setup, and applies to your server's main UI connection, as well as all service connections.
 
 #. In your Start9 server's UI, navigate to **System** -> **LAN**
 
@@ -55,6 +56,4 @@ Trusting Your Start9 CA on macOS
 
     .. tip:: If the keychain console did not show the certificate as trusted, press "Command + spacebar" and type “Keychain Access”, and hit enter to re-open it.
 
-No additional setup is required for most browsers and you will now be able to safely connect to your Start9 server over LAN.
-
-For Firefox, you will need to follow :ref:`these <lan-ff>` instructions.
+You're now ready to browse your service UIs with encryption, either via the browser, or with native client apps.  For Mozilla apps, such as Firefox, you will need to follow the :ref:`Firefox Config <lan-ff>` guide, which we highly recommend.
