@@ -3,7 +3,7 @@
 ==================
 Dashboard Overview
 ==================
-
+This is an introduction to the StartOS Dashboard!
 .. contents::
   :depth: 2 
   :local:
