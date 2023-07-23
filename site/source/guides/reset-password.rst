@@ -3,7 +3,7 @@
 ==============
 Password Reset
 ==============
-If you forgot or lost your StartOS master password, you can use this guide to reset it.
+If you forgot or lost your StartOS master password, you can use this guide to reset it.  If you simply want to change your password, that can be done via the web-UI by following the :ref:`change password guide<change-password>`.
 
 .. contents::
   :depth: 2
