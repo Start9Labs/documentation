@@ -12,6 +12,5 @@ Guides for integrating your client devices with your Start9 server, building you
   service-guides/index
   upgrade-hardware/index
   flashing/index
-  change-password
   reset-password
   misc-guides/index
