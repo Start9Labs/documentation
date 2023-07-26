@@ -3,6 +3,7 @@
 ==================
 Dashboard Overview
 ==================
+This is a walkthrough of the StartOS dashboard.
 
 .. contents::
   :depth: 2 
