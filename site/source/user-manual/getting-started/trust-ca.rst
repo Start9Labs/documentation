@@ -7,53 +7,12 @@ Trust your server's Root CA to achieve encrypted communications on LAN, access s
 
 .. caution:: This is a required step, and you server will not work properly until it is complete
 
-.. raw:: html
+:ref:`Integrate Linux devices<lan-linux>`
 
-  <div class="topics-grid grid-container full">
+:ref:`Integrate Mac devices <lan-mac>`
 
-  <div class="grid-x grid-margin-x">
+:ref:`Integrate Windows devices <lan-windows>`
 
-.. topic-box::
-  :title: Linux
-  :link: ../../../guides/device-guides/dg-linux/lan-linux
-  :icon: scylla-icon scylla-icon--linux
-  :class: large-4
-  :anchor: Connect
+:ref:`Integrate Android devices <lan-android>`
 
-  Integrate Linux devices
-
-.. topic-box::
-  :title: Mac
-  :link: ../../../guides/device-guides/dg-mac/lan-mac
-  :icon: scylla-icon scylla-icon--apple
-  :class: large-4
-  :anchor: Connect
-
-  Integrate Mac devices
-
-.. topic-box::
-  :title: Windows
-  :link: ../../../guides/device-guides/dg-windows/lan-windows
-  :icon: scylla-icon scylla-icon--windows
-  :class: large-4
-  :anchor: Connect
-
-  Integrate Windows devices
-
-.. topic-box::
-  :title: Android
-  :link: ../../../guides/device-guides/dg-android/lan-android
-  :icon: scylla-icon scylla-icon--android
-  :class: large-4
-  :anchor: Connect
-
-  Integrate Android devices
-
-.. topic-box::
-  :title: iOS
-  :link: ../../../guides/device-guides/dg-ios/lan-ios
-  :icon: scylla-icon scylla-icon--ios
-  :class: large-4
-  :anchor: Connect
-
-  Integrate iOS devices
+:ref:`Integrate iOS devices <lan-ios>`
