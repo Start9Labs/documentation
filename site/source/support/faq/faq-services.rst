@@ -53,7 +53,7 @@ You can only follow someone who has an account on a Mastodon server that support
 
 What does it mean when Vaultwarden says "This browser requires HTTPS to use the web vault" upon creating an account or loging in to my Vaultwarden onion?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-You will need to tell your browser to treat .onion URLs as a "secure context".  You will need to follow this guide to configure :ref:`Tor on Firefox<tor-firefox>`.
+You will need to tell your browser to treat .onion URLs as a "secure context".  You will need to follow this guide to configure :ref:`Tor on Firefox<connecting-ff>`.
 
 Can the browser extension be used with Bitwarden hosted on StartOS?
 -------------------------------------------------------------------
