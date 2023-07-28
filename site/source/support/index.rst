@@ -38,11 +38,11 @@ View frequently asked questions, troubleshoot common issues, or contact support.
 
   Get help for third party apps that connect to your StartOS services
 
-  .. topic-box::
+.. topic-box::
   :title: Contact Us
   :link: https://start9.com/contact
   :icon: scylla-icon scylla-icon--contact-us
-  :class: large-4
+  :class: large-5
   :anchor: Reach Out
 
   Join us in our community channels or get support
