@@ -13,19 +13,19 @@ Synology Network Folder
 Setup Network Folder
 --------------------
 
-#. In Synology UI, go to *Control Panel > Shared Folder* and select the folder you want to use.
+#. In the Synology UI, go to *Control Panel > Shared Folder* and choose the folder you want to use as the destination for the backup.
 
-    .. note:: Do not select "Use this shared folder" as folder encryption is not supported at this time
-        
-#. Back in Synology UI, go to *Control Panel > File Services > SMB* and click the SMB drop down button if it isn't already selected. Ensure that "Enable SMB service" is checked.
+    .. note:: Do not select an encrypted folder. Encrypted folders on Synology enforce a character limit of 143 characters.  At this time, StartOS backups use folder/file names that are longer than 143 characters.  The backup process will fail if you try to backup to an encrypted folder.
 
-#. Under Advanced Settings on the same dropdown, set "Min SMB protocol" to SMB2 and "Max SMB protocol" to SMB3
+#. Still in the Synology UI, go to *Control Panel > File Services > SMB* and click the SMB tab if it isn't already selected. Ensure that "Enable SMB service" is checked.
 
-#. On the rsync tab, under File Services -> turn on rsync protocol.
+#. Under Advanced Settings on the same tab, set "Min SMB protocol" to SMB2 and "Max SMB protocol" to SMB3
 
-#. In the same dropdown, under "Note" will be "PC (Windows Explorer): \". This DeviceAddressName is the "Hostname" within the StartOS New Network Folder dialog, and note that it is case sensitive and that the \ characters have been removed.
+#. Also on the SMB tab, take note of your device name.  Just under "Note" in a pale blue box, you will see "PC (Windows Explorer): " and "Mac (Finder):". These both provide network addresses that contain your device's name. This device name is the "Hostname" you will need to provide within the StartOS "New Network Folder" dialog in step 3 of the "Connect StartOS" section below.
 
-#. Back in Synonogy UI, click "File Station" and navigate so that you can see the the desired destination folder. Right click the folder, then *Properties > General*. Next to "Location" will be a folder location of the format ///, the / portion (so without the volume label) is the "Path" within the StartOS New Network Folder dialog.
+#. Still in File Services, click on the rsync tab. Click the checkbox to enable the rsync service.
+
+#. Back in the Synonogy UI, click "File Station" and locate the the desired destination folder. Right click the folder, then *Properties > General*. Next to "Location" will be a folder location. The portion of the location *without the volume label* is the value you will use for the "Path" within the StartOS New Network Folder dialog. For example, if the Location is `/volume1/Backups`, the value you care about is `Backups`.
 
 Connect StartOS
 ---------------
@@ -42,8 +42,8 @@ Connect StartOS
 
 #. Fill in the following fields:
 
-    * Hostname - This is the hostname of the machine that your shared folder is located on
-    * Path - This is the "Share Name" (name of the share in your samba config) and **not** the full directory path
+    * Hostname - This is the hostname of the destination machine
+    * Path - This is the name of the destination folder (e.g. `Backups` from the example above)
     * Username - This is the user on the remote machine that you used to create the shared directory
     * Password - This is your user (from above) password
 

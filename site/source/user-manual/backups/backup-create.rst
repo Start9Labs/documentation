@@ -37,17 +37,27 @@ Create Backup
     .. figure:: /_static/images/config/backup.png
         :width: 60%
 
-#. You will see your previously created Network Folder backup location (or Physical Drive) available.  Click it, then click "Create Backup".
+#. You will see your previously created Network Folder backup location (or Physical Drive) available.  Click it, select the services you wish to backup, then click "**BACK UP SELECTED**":
 
     .. figure:: /_static/images/config/backup2.png
         :width: 60%
 
-#. You can continue to use your server while the backup is in progress.
+#. You will be prompted for your server's master password:
+
+    .. figure:: /_static/images/config/backup2.5.png
+        :width: 60%
+
+#. The backup will begin.  You can continue to use your server while the backup is in progress.
 
     .. figure:: /_static/images/config/backup3.png
         :width: 60%
 
-#. When the backup is complete, you will receive a notification.  If successful, you will see the date and time of your most recent backup updated under "Backups" in the System tab.
+#. When the backup is complete, you will receive a notification where a detailed report is available.
 
     .. figure:: /_static/images/config/backup4.png
+        :width: 60%
+
+#. If successful, you will also see the date and time of your most recent backup under **BACKUPS** in the **System** tab:
+
+    .. figure:: /_static/images/config/backup5.png
         :width: 60%

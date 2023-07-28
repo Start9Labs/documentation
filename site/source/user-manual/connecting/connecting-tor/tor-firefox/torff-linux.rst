@@ -25,7 +25,7 @@ Configuring Firefox for Tor on Linux
 
     .. code-block::
 
-      sudo wget -P /etc/tor https://registry.start9labs.com/sys/proxy.pac
+      sudo wget -P /etc/tor https://start9.com/assets/proxy.pac
 
 
 #. Now, back in your Firefox web browser, select ``Settings`` from the right-hand hamburger menu:
@@ -54,4 +54,4 @@ Configuring Firefox for Tor on Linux
 
 #. Click ``OK`` and then restart Firefox for the changes to take effect.
 
-#. You're all set! You should now be able to navigate to ``.onion`` URLs in Firefox. This means you can access tor-only service :ref:`WebUIs <web-ui>`, such as Cups Messenger, and use your :ref:`Vaultwarden<vaultwarden-service>` Tor address in the `Bitwarden Firefox Plugin <https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/>`_.  You can test this by going to Start9's ``.onion`` homepage, `here <http://privacy34kn4ez3y3nijweec6w4g54i3g54sdv7r5mr6soma3w4begyd.onion/>`_.
+#. You're all set! You should now be able to navigate to ``.onion`` URLs in Firefox. This means you can access tor service :ref:`WebUIs <web-ui>`, and use client integrations such as :ref:`Vaultwarden<vaultwarden-service>` apps and extensions.  You can test this by going to Start9's ``.onion`` homepage, `here <http://privacy34kn4ez3y3nijweec6w4g54i3g54sdv7r5mr6soma3w4begyd.onion/>`_.

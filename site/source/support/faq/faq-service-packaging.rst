@@ -10,7 +10,7 @@ Packaging FAQ
 
 Do I need programming experience to package a service for StartOS?
 ------------------------------------------------------------------
-It would be helpful, but is not a pre-requisite.  Linux, dev-ops, and/or systems administration experience would all be helpful as well.  Keep in mind that everyone has to start somewhere, and perhaps your journey to development begins with packaging a service for eOS!
+It would be helpful, but is not a pre-requisite.  Linux, dev-ops, and/or systems administration experience would all be helpful as well.  Keep in mind that everyone has to start somewhere, and perhaps your journey to development begins with packaging a service for StartOS!
 
 What considerations are there when choosing a service for packaging?
 --------------------------------------------------------------------

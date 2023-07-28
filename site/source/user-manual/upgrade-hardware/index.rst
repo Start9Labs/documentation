@@ -3,7 +3,7 @@
 ================
 Upgrade Hardware
 ================
-
+Guides for migrating or upgrading your server's hardware.
 
 .. raw:: html
 
@@ -12,13 +12,40 @@ Upgrade Hardware
   <div class="grid-x grid-margin-x">
 
 .. topic-box::
+  :title: Migrate LND from other nodes to StartOS
+  :link: lnd-migration
+  :icon: scylla-icon scylla-icon--home
+  :class: large-5
+  :anchor: Upgrade
+
+  This is for migrating LND from another node to StartOS without closing channels
+
+.. topic-box::
+  :title: Upgrade SSD
+  :link: drive-upgrade
+  :icon: scylla-icon scylla-icon--benchmarks
+  :class: large-5
+  :anchor: Upgrade
+
+  This is for replacing or upgrading your SSD
+
+.. topic-box::
+  :title: Upgrade SSD ('22 Server One)
+  :link: naspi-ssd-upgrade
+  :icon: scylla-icon scylla-icon--benchmarks
+  :class: large-5
+  :anchor: Upgrade
+
+  This is for replacing or upgrading your 2022 Server One SSD
+
+.. topic-box::
   :title: 2022 One to Pro Migration
   :link: upgrade-pro
   :icon: scylla-icon scylla-icon--enterprise
   :class: large-5
   :anchor: Upgrade
 
-  This is for migrating from a Server One (Raspi) to Server Pro
+  This is for migrating from a Server One (Raspberry Pi) to Server Pro
 
 .. topic-box::
   :title: Upgrade to all-in-one NASPi case
@@ -29,15 +56,6 @@ Upgrade Hardware
 
   This is for upgrading a Pi to an all-in-one NASPi case
 
-.. topic-box::
-  :title: Upgrade SSD
-  :link: ssd-upgrade
-  :icon: scylla-icon scylla-icon--benchmarks
-  :class: large-5
-  :anchor: Upgrade
-
-  This is for replacing or upgrading your SSD
-
 .. raw:: html
 
   </div></div>
@@ -46,6 +64,8 @@ Upgrade Hardware
    :maxdepth: 2
    :hidden:
 
+   LND migration <lnd-migration>
+   SSD upgrade <drive-upgrade>
    Pro upgrade <upgrade-pro>
    NASPi upgrade <naspi-upgrade>
-   SSD upgrade <ssd-upgrade>
+   2022 Server One SSD upgrade <naspi-ssd-upgrade>

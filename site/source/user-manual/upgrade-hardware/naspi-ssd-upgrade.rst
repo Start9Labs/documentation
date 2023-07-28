@@ -1,14 +1,13 @@
-.. _ssd-upgrade:
+.. _naspi-ssd-upgrade:
 
-================
-Upgrade Your SSD
-================
-
+======================
+Upgrade Your NASPI SSD
+======================
 This guide will go over how to switch out an old drive on your server to a different drive and transfer the data from the old one to the new one.
 
 This will preserve the entire state of your server, including all Tor and LAN addresses as well as channels you have open on the lightning network!
 
-This is not the same as backing up services and recovering them onto a new server.
+This is not the same as running a back up and restoring them onto a new server.
 
 #. Start by shutting down your server:
 

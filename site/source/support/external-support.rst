@@ -68,10 +68,6 @@ Sphinx Chat
 * Official Support: support@stakwork.com
 * Community Support: https://t.me/joinchat/Fb4OcRo4LrRD6NXfsNdeeQ
 
-Spark Wallet
-============
-* https://sparkwallet.io/#sectionContact
-
 Specter
 =========
 * Official Support: https://t.me/spectersupport

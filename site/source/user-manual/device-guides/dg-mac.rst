@@ -3,10 +3,7 @@
 ===
 Mac
 ===
-
 To optimize your device for use with your Start9 server, it is recommended to complete all of the following guides.
-
-.. tip:: Please see Mac's :ref:`Known Limitations<lim-mac>` to understand what is currently not possible on these devices
 
 * :ref:`lan-mac` - Trust your Start9 server's Root Certificate Authority in order to securely connect over LAN.
 * :ref:`tor-mac` - Run Tor natively (in the background) on your Mac. This will allow you to use applications on your machine via the Tor Network so they can communicate with your Start9 server.
@@ -14,8 +11,7 @@ To optimize your device for use with your Start9 server, it is recommended to co
 * :ref:`backup-mac` - Configure a Network Folder on your Mac (or an attached external drive) for StartOS backups.
 
 Screensharing
-_____________
-
+-------------
 You may run into an issue and want to have a support call where we ask you to share your screen with us. While we understand if you'd rather not do this, it can make troubleshooting issues a lot easier. We will send you a Jitsi link and from there you can share your screen. If it doesn't work, please see the following instructions:
 
 .. tabs::
@@ -51,8 +47,6 @@ You may run into an issue and want to have a support call where we ask you to sh
 
             .. figure:: /_static/images/mac-stuff/jitsi-screenshare.png
                 :width: 20%
-
-
 
     .. group-tab:: Ventura:
 
