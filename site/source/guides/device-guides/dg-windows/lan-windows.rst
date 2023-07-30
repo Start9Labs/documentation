@@ -7,11 +7,29 @@ Complete this guide to download your Start9 server's Root Certificate Authority 
 
 Unfortunately, Windows does not have mDNS alias support built-in, which is necessary in order to visit .local addresses for any service you install on your Start9 server, so we recommend using the Bonjour service. Check out this :ref:`FAQ answer<why-bonjour>` for details.
 
-.. note:: Some users who run through the following instructions have successfully connected to their LAN services only to have them stop working weeks or months later. We believe this to be due to a change in Windows. When this happens the fix is to simply reinstall Bonjour and Bonjour Print Services. A solution is being worked on and Bonjour will not be necessary to connect to your Start9 server for much longer.
+.. note:: Some users who run through the following instructions have successfully connected to their LAN services only to have them stop working weeks or months later. We believe these issues to be due to changes in Windows. When this happens the fix is to simply reinstall Bonjour and Bonjour Print Services. A solution is being worked on and Bonjour will not be necessary to connect to your Start9 server for much longer.
+
+Install Bonjour
+---------------
+#. Install `Bonjour Print Services <https://support.apple.com/kb/DL999>`_ on your Windows machine.
+
+   .. tip::  If you are still experiencing issues after installing Bonjour, you might have a faulty install.
+      
+      In that case, run through the known fix:
+
+      #. Uninstall Bonjour and Bonjour Print Services completely via **System Settings > Remove Programs**
+      
+         Note: Uninstalling Bonjour via the Bonjour Print Services setup package itself is not enough to solve the issue. Bonjour must be uninstalled via Windows' System Settings menu.
+
+      #. Install the Bonjour Print Services package from Apple:
+      
+         https://support.apple.com/kb/DL999
+
+      #. Test to see if your .local name resolution issue is resolved.  If not, restart Windows and then test again.
 
 Download Root CA
 ----------------
-First, download your Start9 server's Root CA, if you have not already.
+Download your Start9 server's Root CA, if you have not already.
 
     - Navigate to *System > LAN*, then click "Download Certificate".
 
@@ -19,21 +37,10 @@ First, download your Start9 server's Root CA, if you have not already.
         :width: 40%
         :alt: LAN setup menu item
 
-Alternatively, you can download to another machine, then transfer the file to your device.
+Alternatively, you can download the Root CA to another machine, then transfer the file to your client device.
 
 Trust Root CA
 -------------
-
-#. Install `Bonjour Print Services <https://support.apple.com/kb/DL999>`_ on your Windows machine.
-
-   .. tip::  If you are experiencing issues after installing Bonjour, you might have had a previous or failed install. To fix:
-
-      #. Check out this video: https://www.youtube.com/watch?v=9ECCB3bqNDQ
-      #. Uninstall Bonjour and Bonjour Print Services completely via *system settings > remove programs*
-      #. Reinstall Bonjour Printer Driver package (download at https://support.apple.com/kb/DL999?locale=en_US)
-      #. Restart Windows
-      #. Note: Uninstalling Bonjour via the setup package seems to be not enough to solve the issue. Bonjour must be uninstalled via windows system settings.
-
 #. Back in Windows, click the “Start” menu, type “mmc”, and select "Run as administrator" to access the Windows Management Console.
 
    .. figure:: /_static/images/ssl/windows/0_windows_mmc.png
