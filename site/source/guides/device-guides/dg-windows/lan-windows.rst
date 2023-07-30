@@ -37,7 +37,7 @@ Download your Start9 server's Root CA, if you have not already.
         :width: 40%
         :alt: LAN setup menu item
 
-Alternatively, you can download the CA certificate to another machine, then transfer the file to your client device.
+Alternatively, you can download the Root CA to another machine, then transfer the file to your client device.
 
 Trust Root CA
 -------------
