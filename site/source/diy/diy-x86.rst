@@ -41,7 +41,7 @@ Flash and Install StartOS
 -------------------------
 .. topic-box::
   :title: Flashing (x86_64)
-  :link: /latest/user-manual/flashing/flashing-x86
+  :link: /latest/guides/flashing/flashing-x86
   :icon: scylla-icon scylla-icon--overview
   :class: large-4
   :anchor: View Guide
