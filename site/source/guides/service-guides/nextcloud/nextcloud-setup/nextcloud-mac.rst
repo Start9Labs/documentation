@@ -14,34 +14,84 @@ It is advised to setup your Nextcloud devices on LAN (if available) for the best
 
 Native Desktop Integration
 --------------------------
-
-.. note:: The desktop version of NextCloud doesn't have much of a user interface.  Once installed, it solely lives in the top right hand corner of the Mac desktop in the navbar, near the WiFi icon.  When it's synced, the icon turns into a checkmark with a circle around it.
-
 The smoothest experience will be using direct account integration with your Mac.  First head into the top-righthand menu of your Nextcloud's WebUI and click "Apps," then search for and install the Calendar and/or Contacts Apps.  The steps below are adapted from the `Official Nextcloud guide <https://docs.nextcloud.com/server/24/user_manual/en/groupware/sync_osx.html>`_ and updated for the latest MacOS (Ventura).  Make sure you have first set up :ref:`LAN access<lan-mac>`.
 
-1. Open the "System Settings" and select "Internet Accounts," then click "Add Account."
-
-2. Select "Add Other Account"
+.. tabs::
   
-  .. note:: You will need to perform 2 individual setups, one for Calendar and one for Contacts.
+  .. group-tab:: Ventura
 
-3. Select CalDAV for Calendar setup OR CardDAV for Contacts setup.  If you want to do both, you will need to return to this step after finishing setup of the first.
+    1. Open the "System Settings" and select "Internet Accounts," click "Add Account." and then select "Add Other Account".
+    
+      .. figure:: /_static/images/services/nextcloud/native-nextcloud-macos-step1.png
+        :width: 50%
+        :alt: macOS add account
+      
+      .. figure:: /_static/images/services/nextcloud/native-nextcloud-macos-step1.2.png
+        :width: 50%
+        :alt: macOS add account
 
-4. Select "Manual" from the "Account Type" dropdown menu and fill in the following fields:
+    
+    2. Select CalDAV for calendar setup or CardDAV for contacts setup. If you want to do both, you will need to return to this step after finishing the setup of the first.
+      
+      .. note:: You will need to perform 2 individual setups, one for Calendar and one for Contacts.
+      
+      .. figure:: /_static/images/services/nextcloud/native-nextcloud-macos-step2.png
+        :width: 50%
+        :alt: macOS select account
+    
+    3. Select "Advanced" from the "Account Type" dropdown menu and fill in the following fields:
 
-  - Username - The default user is "admin," but this is your user within Nextcloud, so be sure it is the correct user if you have more than one
+      .. figure:: /_static/images/services/nextcloud/native-nextcloud-macos-step3.png
+        :width: 50%
+        :alt: macOS setup account
+      
+      - Username - The default user is "admin," but this is your user within Nextcloud, so be sure it is the correct user if you have more than one
+
+      - Password - In your Nextcloud WebUI, visit the top-right-hand menu and select "Personal Settings" -> "Security." At the bottom, under Devices & Sessions, create a new app password with a name of your choice, such as "MacCalDAV." Then, copy the resulting password into your Mac's account configuration. 
+      
+        .. figure:: /_static/images/services/nextcloud/native-nextcloud-macos-step4.png
+          :width: 50%
+          :alt: nextcloud app password 
+
+      - Server Address - copy your LAN address from the "Interfaces" section of your Nextcloud service page then paste without `https://` suffix.
+      
+      - Server Path - For CalDav enter this path `/remote.php/dav/principals/users/embassy/`. You can find complete path in Nextcloud -> Calendar settings -> Copy iOS/macOS CalDav address. For setting up contacts/CardDav use this path `/remote.php/dav`.
+
+      - Port - Set port for `443`.
   
-  - Password - In your Nextcloud WebUI, visit the top-righthand menu and select "Personal Settings" -> "Security."  At the bottom, under Devices & Sessions, create a new app password with a name of your choice, such as "MacCalDAV," and then copy the resulting password into your Mac's account config
+    4. Click "Sign In."
+
+      - You can now select the apps you want to use on your Mac, such as Calendars, Reminders.
+      - Return to Step 3 to continue setup.
   
-  - Server Address - copy your LAN address from the "Interfaces" section of your Nextcloud service page then add `/remote.php/dav` after `.local`
+  .. group-tab:: pre-Ventura
 
-5. Click "Sign In."
+    1. Open the "System Settings" and select "Internet Accounts," then click "Add Account."
 
-  - You can now select the apps you want to use on your Mac, such as Calendars, Reminders, or Contacts
-  - Return to Step 3 to continue setup
+    2. Select "Add Other Account"
+      
+      .. note:: You will need to perform 2 individual setups, one for Calendar and one for Contacts.
+
+    3. Select CalDAV for Calendar setup OR CardDAV for Contacts setup.  If you want to do both, you will need to return to this step after finishing setup of the first.
+
+    4. Select "Manual" from the "Account Type" dropdown menu and fill in the following fields:
+
+      - Username - The default user is "admin," but this is your user within Nextcloud, so be sure it is the correct user if you have more than one
+      
+      - Password - In your Nextcloud WebUI, visit the top-righthand menu and select "Personal Settings" -> "Security."  At the bottom, under Devices & Sessions, create a new app password with a name of your choice, such as "MacCalDAV," and then copy the resulting password into your Mac's account config
+      
+      - Server Address - copy your LAN address from the "Interfaces" section of your Nextcloud service page then add `/remote.php/dav` after `.local`
+
+    5. Click "Sign In."
+
+      - You can now select the apps you want to use on your Mac, such as Calendars, Reminders, or Contacts
+      - Return to Step 3 to continue setup
 
 Standalone Clients
 ------------------
+
+.. note:: The desktop version of NextCloud doesn't have much of a user interface.  Once installed, it solely lives in the top right hand corner of the Mac desktop in the navbar, near the WiFi icon.  When it's synced, the icon turns into a checkmark with a circle around it.
+
 For those that prefer to use a desktop client.
 
 File Syncing - Nextcloud Desktop
@@ -54,14 +104,42 @@ Make sure you have first set up :ref:`LAN access<lan-mac>`.  Then do the followi
 
 1. Download the appropriate desktop client from https://nextcloud.com/install/#install-clients
 2. Open the client and click "Log In"
+
+  .. figure:: /_static/images/services/nextcloud/nextcloud-stabdalone-client-macos-step2.png
+    :width: 50%
+    :alt: nextcloud-login
+
 3. From your server's Nextcloud Service page, go to "Interfaces" and copy the LAN address
+
+  .. figure:: /_static/images/services/nextcloud/nextcloud-stabdalone-client-macos-step3.png
+    :width: 50%
+    :alt: nextcloud-login
+
 4. Enter your LAN address under "Server Address" and click "Next"
-5. You will be asked to Trust your server's certificate, which is safe to do as you generate and sign this during LAN Setup
-6. Tick the box for "Trust this certificate anyway" and click "Next"
-7. This will launch a page in your web browser, click "Log In" and then "Grant access" to link the desktop client. You can close this browser window afterwards
-8. Next, configure the local directory that you want to sync with Nextcloud. You may use the default or change it, and edit the sync settings to desired. When satisfied, click "Connect"
-9. Files will begin to sync immediately and you will see a green check when this is complete.
-10. That's it! From this desktop client you will recieve notifications, control accounts and syncing, and quickly access your Apps' WebUI pages
+
+  .. figure:: /_static/images/services/nextcloud/nextcloud-stabdalone-client-macos-step4.png
+    :width: 50%
+    :alt: nextcloud-login
+
+5. This will launch a page in your web browser, click "Log In" and then "Grant access" to link the desktop client. You can close this browser window afterwards
+
+  .. figure:: /_static/images/services/nextcloud/nextcloud-stabdalone-client-macos-step5.png
+    :width: 50%
+    :alt: nextcloud-login
+
+6. Next, configure the local directory that you want to sync with Nextcloud. You may use the default or change it, and edit the sync settings to desired. When satisfied, click "Connect"
+
+  .. figure:: /_static/images/services/nextcloud/nextcloud-stabdalone-client-macos-step6.png
+    :width: 50%
+    :alt: nextcloud-login
+
+7. Files will begin to sync immediately and you will see a green check when this is complete.
+
+  .. figure:: /_static/images/services/nextcloud/nextcloud-stabdalone-client-macos-step7.png
+    :width: 50%
+    :alt: nextcloud-login
+    
+8. That's it! From this desktop client you will recieve notifications, control accounts and syncing, and quickly access your Apps' WebUI pages
 
 Tor Setup
 .........
@@ -71,7 +149,7 @@ You will first need to have the :ref:`Tor daemon running<tor-mac>`.
 2. On the following screen, click "Log in," then enter your Nextcloud Tor server address, which you can copy from Nextcloud -> Interfaces - Tor. This must start with `http://` and end with .onion. Click Next.
 3. This will launch your browser and prompt you to log in to your account. Log in and then grant access as we did for LAN.
 4. That's it! You may wish to set up some select folders for remote sync, but for large files, it is best to sync on LAN only, so you can "Skip folders configuration" on the resulting screen if you wish. Check your connection by clicking the newly created account in the client app.
-
+   
 Calendar & Contacts Syncing - Thunderbird
 =========================================
 If you wish to use a standalone client for Calendar and Contacts, we recommend Mozilla's `Thunderbird <https://www.thunderbird.net>`_.
