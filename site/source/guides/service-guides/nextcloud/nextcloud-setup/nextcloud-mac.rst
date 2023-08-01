@@ -128,7 +128,7 @@ Make sure you have first set up :ref:`LAN access<lan-mac>`.  Then do the followi
     :width: 40%
     :alt: nextcloud-login
 
-5. This will launch a page in your web browser, click "Log In" and then "Grant access" to link the desktop client. You can close this browser window afterwards
+5. This will launch a page in your web browser, click "Log In" and then "Grant access" to link the desktop client. You can close this browser window afterwards.
 
   .. figure:: /_static/images/nextcloud/nextcloud-mac-step5.png
     :width: 40%
