@@ -55,7 +55,7 @@ Make sure you have first set up :ref:`LAN access<lan-ios>`.
     :width: 30%
     :alt: nextcloud-ios-login
 
-7. The account access page will be displayed, then click "Grant access".
+7. The account access page will be displayed, tap "Grant access".
 
    .. figure:: /_static/images/nextcloud/nextcloud-iOS-step6.png
     :width: 30%
