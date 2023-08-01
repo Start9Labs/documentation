@@ -146,7 +146,7 @@ Make sure you have first set up :ref:`LAN access<lan-mac>`.  Then do the followi
     :width: 50%
     :alt: nextcloud-login
     
-8. That's it! From this desktop client you will recieve notifications, control accounts and syncing, and quickly access your Apps' WebUI pages
+8. That's it! From this desktop client you can receive notifications, control accounts and syncing, and quickly access your apps' WebUI pages.
 
 Tor Setup
 .........
