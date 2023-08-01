@@ -116,7 +116,7 @@ Make sure you have first set up :ref:`LAN access<lan-mac>`.  Then do the followi
     :width: 40%
     :alt: nextcloud-login
 
-3. From your server's Nextcloud Service page, go to "Interfaces" and copy the LAN address
+3. From your server's Nextcloud Service page, go to "Interfaces" and copy the LAN address.
 
   .. figure:: /_static/images/nextcloud/nextcloud-mac-step3-lan.png
     :width: 70%
