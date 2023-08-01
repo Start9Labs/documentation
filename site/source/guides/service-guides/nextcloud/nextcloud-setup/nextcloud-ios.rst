@@ -33,7 +33,7 @@ Make sure you have first set up :ref:`LAN access<lan-ios>`.
     :width: 60%
     :alt: nextcloud-ios-login
 
-4. Enter your LAN address under "Server Address" and click "Next".
+4. Enter your LAN address under "Server Address" and tap "Next".
    
    .. figure:: /_static/images/nextcloud/nextcloud-iOS-step4.png
     :width: 30%
