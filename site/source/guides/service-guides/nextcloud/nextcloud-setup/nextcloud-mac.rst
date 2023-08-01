@@ -5,7 +5,7 @@ Nextcloud - MacOS
 =================
 
 .. contents::
-  :depth: 2 
+  :depth: 3 
   :local:
 
 Initial Config
@@ -21,43 +21,50 @@ The smoothest experience will be using direct account integration with your Mac.
   .. group-tab:: Ventura
 
     1. Open the "System Settings" and select "Internet Accounts," click "Add Account." and then select "Add Other Account".
-    
-      .. figure:: /_static/images/services/nextcloud/native-nextcloud-macos-step1.png
-        :width: 50%
-        :alt: macOS add account
       
-      .. figure:: /_static/images/services/nextcloud/native-nextcloud-macos-step1.2.png
-        :width: 50%
+      .. figure:: /_static/images/nextcloud/native-nextcloud-integration-macos-step1.png
+          :width: 40%
+          :alt: macOS add account
+    
+      .. figure:: /_static/images/nextcloud/native-nextcloud-integration-macos-step1.2.png
+        :width: 41%
         :alt: macOS add account
-
     
     2. Select CalDAV for calendar setup or CardDAV for contacts setup. If you want to do both, you will need to return to this step after finishing the setup of the first.
       
       .. note:: You will need to perform 2 individual setups, one for Calendar and one for Contacts.
-      
-      .. figure:: /_static/images/services/nextcloud/native-nextcloud-macos-step2.png
-        :width: 50%
+    
+      .. figure:: /_static/images/nextcloud/native-nextcloud-integration-macos-step2.png
+        :width: 40%
         :alt: macOS select account
     
-    3. Select "Advanced" from the "Account Type" dropdown menu and fill in the following fields:
+    3. Select "Advanced" from the "Account Type" dropdown menu and fill in the following fields.
 
-      .. figure:: /_static/images/services/nextcloud/native-nextcloud-macos-step3.png
-        :width: 50%
+       .. figure:: /_static/images/nextcloud/native-nextcloud-integration-macos-step3.png
+        :width: 40%
         :alt: macOS setup account
-      
-      - Username - The default user is "admin," but this is your user within Nextcloud, so be sure it is the correct user if you have more than one
 
-      - Password - In your Nextcloud WebUI, visit the top-right-hand menu and select "Personal Settings" -> "Security." At the bottom, under Devices & Sessions, create a new app password with a name of your choice, such as "MacCalDAV." Then, copy the resulting password into your Mac's account configuration. 
-      
-        .. figure:: /_static/images/services/nextcloud/native-nextcloud-macos-step4.png
-          :width: 50%
-          :alt: nextcloud app password 
+    - Username - The default user is "admin," but this is your user within Nextcloud, so be sure it is the correct user if you have more than one
 
-      - Server Address - copy your LAN address from the "Interfaces" section of your Nextcloud service page then paste without `https://` suffix.
-      
-      - Server Path - For CalDav enter this path `/remote.php/dav/principals/users/embassy/`. You can find complete path in Nextcloud -> Calendar settings -> Copy iOS/macOS CalDav address. For setting up contacts/CardDav use this path `/remote.php/dav`.
+    - Password - In your Nextcloud WebUI, visit the top-right-hand menu and select "Personal Settings" -> "Security." At the bottom, under Devices & Sessions, create a new app password with a name of your choice, such as "MacCalDAV." Then, copy the resulting password into your Mac's account configuration. 
 
-      - Port - Set port for `443`.
+      .. figure:: /_static/images/nextcloud/native-nextcloud-integration-macos-step3.1.png
+        :width: 70%
+        :alt: nextcloud app password 
+    
+    - Server Address - copy your LAN address from the "Interfaces" section of your Nextcloud service page then paste **WITHOUT** `https://`.
+
+      .. figure:: /_static/images/nextcloud/native-nextcloud-integration-macos-step3.2.png
+        :width: 70%
+        :alt: nextcloud app password
+  
+    - Server Path - For CalDav enter this path `/remote.php/dav/principals/users/embassy/`. You can find complete path in Nextcloud -> Calendar settings -> Copy iOS/macOS CalDav address. For setting up contacts/CardDav use this path `/remote.php/dav`.
+
+      .. figure:: /_static/images/nextcloud/native-nextcloud-integration-macos-step3.3.png
+        :width: 70%
+        :alt: nextcloud app password
+
+    - Port - Set port to `443`.
   
     4. Click "Sign In."
 
@@ -105,37 +112,37 @@ Make sure you have first set up :ref:`LAN access<lan-mac>`.  Then do the followi
 1. Download the appropriate desktop client from https://nextcloud.com/install/#install-clients
 2. Open the client and click "Log In"
 
-  .. figure:: /_static/images/services/nextcloud/nextcloud-stabdalone-client-macos-step2.png
-    :width: 50%
+  .. figure:: /_static/images/nextcloud/nextcloud-mac-step2.png
+    :width: 40%
     :alt: nextcloud-login
 
 3. From your server's Nextcloud Service page, go to "Interfaces" and copy the LAN address
 
-  .. figure:: /_static/images/services/nextcloud/nextcloud-stabdalone-client-macos-step3.png
-    :width: 50%
+  .. figure:: /_static/images/nextcloud/nextcloud-mac-step3-lan.png
+    :width: 70%
     :alt: nextcloud-login
 
 4. Enter your LAN address under "Server Address" and click "Next"
 
-  .. figure:: /_static/images/services/nextcloud/nextcloud-stabdalone-client-macos-step4.png
-    :width: 50%
+  .. figure:: /_static/images/nextcloud/nextcloud-mac-step4.png
+    :width: 40%
     :alt: nextcloud-login
 
 5. This will launch a page in your web browser, click "Log In" and then "Grant access" to link the desktop client. You can close this browser window afterwards
 
-  .. figure:: /_static/images/services/nextcloud/nextcloud-stabdalone-client-macos-step5.png
-    :width: 50%
+  .. figure:: /_static/images/nextcloud/nextcloud-mac-step5.png
+    :width: 40%
     :alt: nextcloud-login
 
 6. Next, configure the local directory that you want to sync with Nextcloud. You may use the default or change it, and edit the sync settings to desired. When satisfied, click "Connect"
 
-  .. figure:: /_static/images/services/nextcloud/nextcloud-stabdalone-client-macos-step6.png
-    :width: 50%
+  .. figure:: /_static/images/nextcloud/nextcloud-mac-step6.png
+    :width: 60%
     :alt: nextcloud-login
 
 7. Files will begin to sync immediately and you will see a green check when this is complete.
 
-  .. figure:: /_static/images/services/nextcloud/nextcloud-stabdalone-client-macos-step7.png
+  .. figure:: /_static/images/nextcloud/nextcloud-mac-step7.png
     :width: 50%
     :alt: nextcloud-login
     
@@ -145,10 +152,40 @@ Tor Setup
 .........
 You will first need to have the :ref:`Tor daemon running<tor-mac>`.
 
-1. Close the Settings screen and click the account in the top left again, then "Add Account."
-2. On the following screen, click "Log in," then enter your Nextcloud Tor server address, which you can copy from Nextcloud -> Interfaces - Tor. This must start with `http://` and end with .onion. Click Next.
-3. This will launch your browser and prompt you to log in to your account. Log in and then grant access as we did for LAN.
-4. That's it! You may wish to set up some select folders for remote sync, but for large files, it is best to sync on LAN only, so you can "Skip folders configuration" on the resulting screen if you wish. Check your connection by clicking the newly created account in the client app.
+1. On your desktop application, click the account in the top left -> Settings.
+
+  .. figure:: /_static/images/nextcloud/nextcloud-mac-tor1.png
+    :width: 40%
+    :alt: nextcloud-login
+
+2. On the following screen, click "Network" tab and then “Specify proxy manually as” and “SOCKS5 proxy.” Enter “127.0.0.1” for the Host and “9050” for the port.
+
+  .. figure:: /_static/images/nextcloud/nextcloud-mac-tor2.png
+    :width: 40%
+    :alt: nextcloud-login
+
+3. Close the Settings screen and click the account in the top left again, then “Add Account.”
+
+  .. figure:: /_static/images/nextcloud/nextcloud-mac-tor3.png
+    :width: 40%
+    :alt: nextcloud-login
+
+4. On the following screen, click “Log in,” then enter your Nextcloud Tor server address, which you can copy from Nextcloud -> Interfaces - Tor. This must start with http:// and end with .onion. Click Next.
+  .. grid:: 2x1
+
+  .. figure:: /_static/images/nextcloud/nextcloud-mac-step2.png
+    :width: 40%
+    :alt: nextcloud-login
+    :align: left
+
+  .. figure:: /_static/images/nextcloud/nextcloud-mac-step4.png
+    :width: 40%
+    :alt: nextcloud-login
+    :align: right
+
+5. This will launch your browser and prompt you to log in to your account. Log in and then grant access as we did for LAN.
+
+6. That’s it! You may wish to set up some select folders for remote sync, but for large files, it is best to sync on LAN only, so you can “Skip folders configuration” on the resulting screen if you wish. Check your connection by clicking the newly created account in the client app.
    
 Calendar & Contacts Syncing - Thunderbird
 =========================================
