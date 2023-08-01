@@ -122,7 +122,7 @@ Make sure you have first set up :ref:`LAN access<lan-mac>`.  Then do the followi
     :width: 70%
     :alt: nextcloud-login
 
-4. Enter your LAN address under "Server Address" and click "Next"
+4. Enter your LAN address under "Server Address" and click "Next".
 
   .. figure:: /_static/images/nextcloud/nextcloud-mac-step4.png
     :width: 40%
