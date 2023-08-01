@@ -134,7 +134,7 @@ Make sure you have first set up :ref:`LAN access<lan-mac>`.  Then do the followi
     :width: 40%
     :alt: nextcloud-login
 
-6. Next, configure the local directory that you want to sync with Nextcloud. You may use the default or change it, and edit the sync settings to desired. When satisfied, click "Connect"
+6. Next, configure the local directory that you want to sync with Nextcloud. You may use the default or change it, and edit the sync settings to desired. When satisfied, click "Connect".
 
   .. figure:: /_static/images/nextcloud/nextcloud-mac-step6.png
     :width: 60%
