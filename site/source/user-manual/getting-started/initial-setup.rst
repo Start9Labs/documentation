@@ -3,14 +3,6 @@
 =============
 Initial Setup
 =============
-Check out the video below for a guide on setting up your Start9 server!
-
-    .. youtube:: HI9WDq0tWm4
-      :width: 60%
-
-    .. raw:: html
-
-        <br/><br/>
 
 .. contents::
   :depth: 2
