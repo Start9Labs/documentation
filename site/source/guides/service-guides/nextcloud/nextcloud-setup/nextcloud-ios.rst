@@ -98,7 +98,7 @@ First head into the top-righthand menu of your Nextcloud's WebUI and click "Apps
   :width: 60%
   :alt: nextcloud account settings
 
-3. Enter the following fields and clik "Next":
+3. Enter the following fields and tap "Next":
 
   - Server - Enter your Nextcloud server LAN URL (found in "Interfaces" in the Nextcloud service page), and add --> **`/remote.php/dav`** <-- after `.local`.
   
