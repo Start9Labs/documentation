@@ -28,7 +28,7 @@ Complete this guide to download your Start9 server's Root Certificate Authority 
     .. figure:: /_static/images/ssl/macos/trust-cert-macos-4-modify_keychain.png
         :width: 60%
 
-#. Press Command + Spacebar to launch a program, type in *Keychain Access* and select the resulting *Keychain Access* program to open it.  You will see the recently imported Root CA:
+#. Press Command + Spacebar to launch a program, type in *Keychain Access* and select the resulting *Keychain Access* program to open it.
 
     .. figure:: /_static/images/ssl/macos/trust-cert-macos-4.5-keychain_access.png
         :width: 60%
