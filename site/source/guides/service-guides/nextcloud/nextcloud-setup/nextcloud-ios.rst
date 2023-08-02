@@ -67,7 +67,7 @@ Make sure you have first set up :ref:`LAN access<lan-ios>`.
     :width: 30%
     :alt: nextcloud-ios-login
     
-9.  That's it! From this desktop client you will recieve notifications, control accounts and syncing, and quickly access your Apps' WebUI pages
+9.  That's it! From this mobile client you can receive notifications, control accounts and syncing, and quickly access your apps' WebUI pages.
 
 Tor Setup
 =========
