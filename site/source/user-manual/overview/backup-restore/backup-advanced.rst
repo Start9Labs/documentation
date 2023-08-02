@@ -20,7 +20,7 @@ Mount a Backup
 
     .. code-block:: bash
 
-        embassy-cli backup target list
+        start-cli backup target list
 
     .. figure:: /_static/images/backups/backup-target-list.png
         :width: 60%
@@ -29,7 +29,7 @@ Mount a Backup
 
     .. code-block:: bash
 
-        embassy-cli backup target mount disk-/dev/sdb1 "YourMasterPasswordGoesHere"
+        start-cli backup target mount disk-/dev/sdb1 "YourMasterPasswordGoesHere"
 
     .. figure:: /_static/images/backups/backup-mount.png
         :width: 60%
@@ -53,7 +53,7 @@ If you have an encrypted disk from a prior StartOS installation, you can mount i
 
     .. code-block:: bash
 
-        sudo apt update && sudo apt install cryptsetup
+        sudo apt update && sudo apt install -y cryptsetup
 
 #. Enter the following command to reveal your disk's crypto_LUKS filesystems and their labels:
 
