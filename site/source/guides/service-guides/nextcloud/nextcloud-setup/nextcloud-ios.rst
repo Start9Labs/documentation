@@ -114,5 +114,5 @@ First head into the top-righthand menu of your Nextcloud's WebUI and click "Apps
 
 4. If you get a warning about verifying the server identity, it is safe to "Continue."  Add the apps you want to use, such as Calendars, Contacts, and/or Reminders, then tap "Save."
 
-  - That's it!  Go back to step 2 above to set up your other account (CalDAV / CardDAV)
+  - That's it!  Go back to step 2 above to set up your other account (CalDAV / CardDAV).
 
