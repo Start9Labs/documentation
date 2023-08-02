@@ -69,7 +69,7 @@ The smoothest experience will be using direct account integration with your Mac.
     4. Click "Sign In."
 
       - You can now select the apps you want to use on your Mac, such as Calendars, Reminders.
-      - Return to Step 3 to continue setup.
+      - Return to Step 3 to set up CalDAV/CardDAV, whichever you have not done yet.
   
   .. group-tab:: Pre-Ventura
 
