@@ -92,7 +92,7 @@ First head into the top-righthand menu of your Nextcloud's WebUI and click "Apps
 
   .. note:: You will need to perform 2 individual setups, one for Calendar and one for Contacts.
 
-2. Select "Calendar" (or "Contacts") -> "Accounts" -> "Add Account" -> "Other" -> "either CalDAV (for Calendar setup) or CardDAV (for Contacts setup)".Return to this step after completing one in order to add the other.
+2. Select "Calendar" (or "Contacts") -> "Accounts" -> "Add Account" -> "Other" -> "either CalDAV (for Calendar setup) or CardDAV (for Contacts setup)".  Return to this step after completing one in order to add the other.
 
 .. figure:: /_static/images/nextcloud/nextcloud-iOS-native-step1.png
   :width: 60%
