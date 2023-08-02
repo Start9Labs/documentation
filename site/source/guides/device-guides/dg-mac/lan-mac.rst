@@ -23,9 +23,14 @@ Complete this guide to download your Start9 server's Root Certificate Authority 
         :width: 60%
         :alt: Show certificate file in Downloads folder
 
-#. Finder will open.  Locate your unique `adjective-noun Local CA.crt` file in your *Downloads* folder and double click it to open it in the Keychain Access program.  You will be prompted for your macOS username and password, or thumbprint.  Then select *Modify Keychain*:
+#. Finder will open.  Locate your unique `adjective-noun.local.crt` file in your *Downloads* folder and double click it to import it into the *Keychain Access* program.  You will be prompted for your macOS username and password, or thumbprint.  Then select *Modify Keychain*:
 
     .. figure:: /_static/images/ssl/macos/trust-cert-macos-4-modify_keychain.png
+        :width: 60%
+
+#. Press Command + Spacebar to launch a program, type in *Keychain Access* and select the resulting *Keychain Access* program to open it.
+
+    .. figure:: /_static/images/ssl/macos/trust-cert-macos-4.5-keychain_access.png
         :width: 60%
 
 #. Your server's CA certificate will be displayed among the imported certificates in Keychain Access.  Right-click on the imported CA cert and select *Get Info*:
