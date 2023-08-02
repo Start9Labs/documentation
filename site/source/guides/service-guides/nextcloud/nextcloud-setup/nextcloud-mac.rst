@@ -14,7 +14,7 @@ It is advised to setup your Nextcloud devices on LAN (if available) for the best
 
 Native Desktop Integration
 --------------------------
-The smoothest experience will be using direct account integration with your Mac.  First head into the top-righthand menu of your Nextcloud's WebUI and click "Apps," then search for and install the Calendar and/or Contacts Apps.  The steps below are adapted from the `Official Nextcloud guide <https://docs.nextcloud.com/server/24/user_manual/en/groupware/sync_osx.html>`_ and updated for the latest MacOS (Ventura).  Make sure you have first set up :ref:`LAN access<lan-mac>`.
+The smoothest experience will be using direct account integration with your Mac.  First head into the top-righthand menu of your Nextcloud's WebUI and click "Apps," then search for and install the Calendar and/or Contacts Apps if you don't have them already (these are installed by default on the latest Nextcloud for StartOS).  The steps below are adapted from the `Official Nextcloud guide <https://docs.nextcloud.com/server/24/user_manual/en/groupware/sync_osx.html>`_ and updated for the latest MacOS (Ventura).  Make sure you have first set up :ref:`LAN access<lan-mac>`.
 
 .. tabs::
   
