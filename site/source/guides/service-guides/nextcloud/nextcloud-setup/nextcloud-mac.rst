@@ -109,7 +109,7 @@ LAN Setup
 .........
 Make sure you have first set up :ref:`LAN access<lan-mac>`.  Then do the following:
 
-1. Download the appropriate desktop client from https://nextcloud.com/install/#install-clients
+1. Download the appropriate desktop client from the `Nextcloud website <https://nextcloud.com/install/#install-clients>`_.
 2. Open the client and click "Log In".
 
   .. figure:: /_static/images/nextcloud/nextcloud-mac-step2.png
