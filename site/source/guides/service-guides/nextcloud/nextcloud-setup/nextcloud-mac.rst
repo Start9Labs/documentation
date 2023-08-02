@@ -71,7 +71,7 @@ The smoothest experience will be using direct account integration with your Mac.
       - You can now select the apps you want to use on your Mac, such as Calendars, Reminders.
       - Return to Step 3 to continue setup.
   
-  .. group-tab:: pre-Ventura
+  .. group-tab:: Pre-Ventura
 
     1. Open the "System Settings" and select "Internet Accounts," then click "Add Account."
 
