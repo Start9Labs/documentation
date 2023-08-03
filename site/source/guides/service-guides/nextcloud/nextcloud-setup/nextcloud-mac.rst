@@ -23,11 +23,11 @@ The smoothest experience will be using direct account integration with your Mac.
     1. Open the "System Settings" and select "Internet Accounts," click "Add Account." and then select "Add Other Account".
       
       .. figure:: /_static/images/nextcloud/native-nextcloud-integration-macos-step1.png
-          :width: 40%
+          :width: 60%
           :alt: macOS add account
     
       .. figure:: /_static/images/nextcloud/native-nextcloud-integration-macos-step1.2.png
-        :width: 41%
+        :width: 60%
         :alt: macOS add account
     
     2. Select CalDAV for calendar setup or CardDAV for contacts setup. If you want to do both, you will need to return to this step after finishing the setup of the first.
@@ -35,13 +35,13 @@ The smoothest experience will be using direct account integration with your Mac.
       .. note:: You will need to perform 2 individual setups, one for Calendar and one for Contacts.
     
       .. figure:: /_static/images/nextcloud/native-nextcloud-integration-macos-step2.png
-        :width: 40%
+        :width: 60%
         :alt: macOS select account
     
     3. Select "Advanced" from the "Account Type" dropdown menu and fill in the following fields.
 
        .. figure:: /_static/images/nextcloud/native-nextcloud-integration-macos-step3.png
-        :width: 40%
+        :width: 60%
         :alt: macOS setup account
 
     - Username - The default user is "admin," but this is your user within Nextcloud, so be sure it is the correct user if you have more than one
@@ -49,19 +49,19 @@ The smoothest experience will be using direct account integration with your Mac.
     - Password - In your Nextcloud WebUI, visit the top-right-hand menu and select "Personal Settings" -> "Security." At the bottom, under Devices & Sessions, create a new app password with a name of your choice, such as "MacCalDAV." Then, copy the resulting password into your Mac's account configuration. 
 
       .. figure:: /_static/images/nextcloud/native-nextcloud-integration-macos-step3.1.png
-        :width: 70%
+        :width: 60%
         :alt: nextcloud app password 
     
-    - Server Address - copy your LAN address from the "Interfaces" section of your Nextcloud service page then paste **WITHOUT** `https://`.
+    - Server Address - copy your LAN address from the "Interfaces" section of your Nextcloud service page then paste.
 
       .. figure:: /_static/images/nextcloud/native-nextcloud-integration-macos-step3.2.png
-        :width: 70%
+        :width: 60%
         :alt: nextcloud app password
   
     - Server Path - For CalDav enter this path `/remote.php/dav/principals/users/embassy/`. You can find complete path in Nextcloud -> Calendar settings -> Copy iOS/macOS CalDav address. For setting up contacts/CardDav use this path `/remote.php/dav`.
 
       .. figure:: /_static/images/nextcloud/native-nextcloud-integration-macos-step3.3.png
-        :width: 70%
+        :width: 60%
         :alt: nextcloud app password
 
     - Port - Set port to `443`.
@@ -119,7 +119,7 @@ Make sure you have first set up :ref:`LAN access<lan-mac>`.  Then do the followi
 3. From your server's Nextcloud Service page, go to "Interfaces" and copy the LAN address.
 
   .. figure:: /_static/images/nextcloud/nextcloud-mac-step3-lan.png
-    :width: 70%
+    :width: 60%
     :alt: nextcloud-login
 
 4. Enter your LAN address under "Server Address" and click "Next".
@@ -171,17 +171,14 @@ You will first need to have the :ref:`Tor daemon running<tor-mac>`.
     :alt: nextcloud-login
 
 4. On the following screen, click “Log in,” then enter your Nextcloud Tor server address, which you can copy from Nextcloud -> Interfaces - Tor. This must start with http:// and end with .onion. Click Next.
-  .. grid:: 2x1
 
   .. figure:: /_static/images/nextcloud/nextcloud-mac-step2.png
     :width: 40%
     :alt: nextcloud-login
-    :align: left
 
   .. figure:: /_static/images/nextcloud/nextcloud-mac-step4.png
     :width: 40%
     :alt: nextcloud-login
-    :align: right
 
 5. This will launch your browser and prompt you to log in to your account. Log in and then grant access as we did for LAN.
 
