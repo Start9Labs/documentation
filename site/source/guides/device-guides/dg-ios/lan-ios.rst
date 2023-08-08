@@ -12,7 +12,7 @@ This applies to iOS v15 and v16.  For older versions, see the `v14 guide </0.3.1
    .. note::
       In order to do this, open Safari and visit your Start9 server's .local URL while connected to WiFi, but make sure it is prefixed with ``http://`` and not ``https://``.
 
-      Log in using your password, then click the hamburger (3 lines) menu at the top right, select System > LAN > Download Certificate.  It may say `This website is trying to download a configuration profile.  Do you want to allow this?` Click `Allow`.
+      Log in using your password, then click the hamburger (3 lines) menu at the top right, select **System** > **Root CA** > **Download Root CA**.  It may say `This website is trying to download a configuration profile.  Do you want to allow this?` Click `Allow`.
 
       Once this is done, you can skip to step 3, below.
       

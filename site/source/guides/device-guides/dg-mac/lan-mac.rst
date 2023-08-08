@@ -9,9 +9,9 @@ Complete this guide to download your Start9 server's Root Certificate Authority 
 
     .. figure:: /_static/images/ssl/macos/trust-cert-macos-1-system-lan.png
         :width: 60%
-        :alt: Navigate to System > LAN
+        :alt: Navigate to System > Root CA
 
-#. Click **Download Certificate** and your browser will either automatically save the certificate to your Downloads folder or ask you where to save it:
+#. Click **Download Root CA** and your browser will either automatically save the certificate to your Downloads folder or ask you where to save it:
 
     .. figure:: /_static/images/ssl/macos/trust-cert-macos-2-download_cert.png
         :width: 60%

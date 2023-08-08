@@ -11,11 +11,11 @@ Download Root CA
 ----------------
 First, download your Start9 server's Root CA, if you have not already.
 
-    - Navigate to *System > LAN*, then click "Download Certificate".
+    - Navigate to **System** -> **Root CA**, then click "Download Root CA".
 
       .. figure:: /_static/images/ssl/lan_setup.png
         :width: 40%
-        :alt: LAN setup menu item
+        :alt: Navigate to System > Root CA
 
 Alternatively, you can download to another machine, then transfer the file to your device.
 
