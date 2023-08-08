@@ -158,7 +158,7 @@ Setup
 
         .. code-block:: bash
 
-            echo "HiddenServiceDir /var/lib/tor/ssh" >> /etc/tor/torrc && echo "HiddenServicePort 22 127.0.0.1:22" >> /etc/tor/torrc
+            sudo bash -c 'echo -e "\nHiddenServiceDir /var/lib/tor/ssh\nHiddenServicePort 22 127.0.0.1:22" >> /etc/tor/torrc'
 
 #. Restart your Start9 server by exiting chroot edit mode:
 
@@ -170,7 +170,7 @@ Setup
 
     .. code-block:: bash
 
-        cat /var/lib/tor/ssh/hostname
+        sudo cat /var/lib/tor/ssh/hostname
 
 .. note:: Your newly generated .onion address is unique for SSH access only and should not be confused with the main .onion address for the server.
 
@@ -181,7 +181,7 @@ Configure local SSH client
 
     .. code-block:: bash
 
-        echo -e "Host *.onion\n  ProxyCommand nc -xlocalhost:9050 %h %p\n" >> ~/.ssh/config
+        echo -e "\nHost *.onion\n\tProxyCommand nc -xlocalhost:9050 %h %p" >> ~/.ssh/config
 
     This command adds a wildcard setting for .onion domains to your SSH config file. Any .onion domains you connect to using SSH will use the specified proxy command.
 
