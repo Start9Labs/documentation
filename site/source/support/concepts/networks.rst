@@ -50,7 +50,7 @@ SSL certificates are what enable websites to move from HTTP to HTTPS, which incr
 
 Valid SSL certificates are typically issued and obtained from Certificate Authorities. These trusted third parties generate and distribute certificates, signing them with their trusted private key, which allows the clients who use them to verify their authenticity. Websites obtain a certificate from a CA then load it onto their website's hosting service or server, allowing the website to load over HTTPS and have all traffic to and from the website be encrypted and secure.
 
-We decided to have StartOS act as a Certificate Authority (CA). It signs all the system's certificates, which means that the private key used to sign the digital certificate is your server's own private key instead of a third party's.
+We decided to have StartOS act as a Certificate Authority (CA). It signs all of your server's certificates, which means that the private key used to sign each digital certificate is your server's own private key instead of a third party's.
 
 When you setup SSL for StartOS and a client device, the certificate communicates to the client (a browser) that the server demonstrated ownership of the domain (``<custom-address>.local``) to the certificate authority at the time of certificate issuance (during the setup process). The StartOS dashboard can then be accessed from a home network (LAN) using a secure HTTPS connection!  You own this entire stack and no third party can interfere.
 
