@@ -158,7 +158,7 @@ Setup
 
         .. code-block:: bash
 
-            bash -c 'echo -e "\nHiddenServiceDir /var/lib/tor/ssh\nHiddenServicePort 22 127.0.0.1:22" >> /etc/tor/torrc'
+            echo -e "\nHiddenServiceDir /var/lib/tor/ssh\nHiddenServicePort 22 127.0.0.1:22" >> /etc/tor/torrc
 
 #. Restart your Start9 server by exiting chroot edit mode:
 
