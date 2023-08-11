@@ -3,7 +3,7 @@
 =============================
 Trust Your Root CA on Android
 =============================
-Complete this guide to download your Start9 server's Root Certificate Authority (CA), and trust it on your client device (Android).  This allows you to use encrypted ``https`` connections to your ``.local`` (LAN) and ``.onion`` (tor) server addresses, access services on LAN, and enhances performance on tor.  The self-signed certificate was created by your server when you perfomed the initial setup, and applies to your server's main UI connection, as well as all service connections.
+Complete this guide to download your Start9 server's Root Certificate Authority (CA), and trust it on your client device (Android).  This allows you to use encrypted ``https`` connections to your ``.local`` (LAN) and ``.onion`` (tor) server addresses, access services on LAN, and enhances performance on tor.  The Root CA was created by your server when you perfomed the initial setup, and signs the certificate of your server's main UI, as well as that of all services.
 
 .. note:: This guide applies to most Android phones running Android v13+, as well as phones running CalyxOS, GrapheneOS, or LineageOS (v19+).
 
@@ -11,11 +11,11 @@ Download Root CA
 ----------------
 First, download your Start9 server's Root CA, if you have not already.
 
-    - Navigate to *System > LAN*, then click "Download Certificate".
+    - Navigate to **System** -> **Root CA**, then click "Download Root CA".
 
       .. figure:: /_static/images/ssl/lan_setup.png
         :width: 40%
-        :alt: LAN setup menu item
+        :alt: Navigate to System > Root CA
 
 Alternatively, you can download to another machine, then transfer the file to your device.
 

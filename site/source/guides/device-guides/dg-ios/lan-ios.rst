@@ -3,7 +3,7 @@
 =========================
 Trust Your Root CA on iOS
 =========================
-Complete this guide to download your Start9 server's Root Certificate Authority (CA), and trust it on your client device (iOS).  This allows you to use encrypted ``https`` connections to your ``.local`` (LAN) and ``.onion`` (tor) server addresses, access services on LAN, and enhances performance on tor.  The self-signed certificate was created by your server when you perfomed the initial setup, and applies to your server's main UI connection, as well as all service connections.
+Complete this guide to download your Start9 server's Root Certificate Authority (CA), and trust it on your client device (iOS).  This allows you to use encrypted ``https`` connections to your ``.local`` (LAN) and ``.onion`` (tor) server addresses, access services on LAN, and enhances performance on tor.  The Root CA was created by your server when you perfomed the initial setup, and signs the certificate of your server's main UI, as well as that of all services.
 
 This applies to iOS v15 and v16.  For older versions, see the `v14 guide </0.3.1.x/user-manual/connecting/connecting-lan/lan-os/lan-ios>`_.
 
@@ -12,7 +12,7 @@ This applies to iOS v15 and v16.  For older versions, see the `v14 guide </0.3.1
    .. note::
       In order to do this, open Safari and visit your Start9 server's .local URL while connected to WiFi, but make sure it is prefixed with ``http://`` and not ``https://``.
 
-      Log in using your password, then click the hamburger (3 lines) menu at the top right, select System > LAN > Download Certificate.  It may say `This website is trying to download a configuration profile.  Do you want to allow this?` Click `Allow`.
+      Log in using your password, then click the hamburger (3 lines) menu at the top right, select **System** > **Root CA** > **Download Root CA**.  It may say `This website is trying to download a configuration profile.  Do you want to allow this?` Click `Allow`.
 
       Once this is done, you can skip to step 3, below.
       
