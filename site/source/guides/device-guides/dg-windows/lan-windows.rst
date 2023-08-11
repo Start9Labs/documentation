@@ -3,7 +3,7 @@
 ==================================
 Trusting Your Start9 CA On Windows
 ==================================
-Complete this guide to download your Start9 server's Root Certificate Authority (CA), and trust it on your client device (Windows).  This allows you to use encrypted ``https`` connections to your ``.local`` (LAN) and ``.onion`` (tor) server addresses, access services on LAN, and enhances performance on tor.  The self-signed certificate was created by your server when you perfomed the initial setup, and applies to your server's main UI connection, as well as all service connections.
+Complete this guide to download your Start9 server's Root Certificate Authority (CA), and trust it on your client device (Windows).  This allows you to use encrypted ``https`` connections to your ``.local`` (LAN) and ``.onion`` (tor) server addresses, access services on LAN, and enhances performance on tor.  The Root CA was created by your server when you perfomed the initial setup, and signs the certificate of your server's main UI, as well as that of all services.
 
 Unfortunately, Windows does not have mDNS alias support built-in, which is necessary in order to visit .local addresses for any service you install on your Start9 server, so we recommend using the Bonjour service. Check out this :ref:`FAQ answer<why-bonjour>` for details.
 
@@ -31,11 +31,11 @@ Download Root CA
 ----------------
 Download your Start9 server's Root CA, if you have not already.
 
-    - Navigate to *System > LAN*, then click "Download Certificate".
+    - Navigate to **System** -> **Root CA**, then click "Download Root CA".
 
       .. figure:: /_static/images/ssl/lan_setup.png
         :width: 40%
-        :alt: LAN setup menu item
+        :alt: Navigate to System > Root CA
 
 Alternatively, you can download the Root CA to another machine, then transfer the file to your client device.
 
