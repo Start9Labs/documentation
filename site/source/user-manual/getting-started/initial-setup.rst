@@ -87,7 +87,7 @@ If you are experiencing issues with setup, try the following:
     - Mullvad - Go to "Settings -> VPN Settings -> Local Network Sharing"
     - ProtonVPN - Go to "Preferences -> Connection -> Allow LAN Connections"
 
-#. Visit or refresh (ctrl+shift+R - Linux/Windows, cmd+option+R - Mac) the start.local page in a web browser
+#. Visit or refresh (ctrl+shift+R on Linux/Windows, cmd+shift+R on macOS in Firefox, or cmd+option+R on macOS in Safari) the start.local page in a web browser
 #. To avoid networking issues, it is recommended to use your `primary` router, not an extender or mesh router.
 #. Very rarely, your firewall settings may block mDNS. In this case:
 
