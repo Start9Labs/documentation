@@ -15,15 +15,15 @@ You can install this component on any system, without needing to run StartOS, by
 
     .. code-block::
 
-        git clone -b latest --recursive https://github.com/Start9Labs/start-os.git && cd embassy-os/backend && ./install-sdk.sh
+        git clone -b latest --recursive https://github.com/Start9Labs/start-os.git && cd start-os/backend && ./install-sdk.sh
 
-    
+
 Next, initialize the SDK and verify the installation was successful:
 
     .. code-block::
 
-        embassy-sdk init
-        embassy-sdk --version
+        start-sdk init
+        start-sdk --version
 
 
 Commands
@@ -33,10 +33,10 @@ To see a list of all available commands provided, run the following from an term
 
 .. code:: bash
 
-    embassy-sdk --help
+    start-sdk --help
 
 
-embassy-sdk init
+start-sdk init
 ----------------
 
 Initialize the developer key for interacting with the SDK.
@@ -57,10 +57,10 @@ And load it by running:
 
     .. code:: bash
 
-        embassy-sdk -c /path/to/config init
+        start-sdk -c /path/to/config init
 
 
-embassy-sdk pack
+start-sdk pack
 ----------------
 
 This command takes the necessary package components and assembles them into the `s9pk` file format needed to install a service on StartOS. It expects the following files to exist:
@@ -73,7 +73,7 @@ This command takes the necessary package components and assembles them into the 
 
 If this command fails, the error response will indicate which component is missing.
 
-embassy-sdk verify
+start-sdk verify
 -------------------
 
 This command verifies aspects about the components assembled into the `s9pk`, such as:
@@ -84,16 +84,16 @@ This command verifies aspects about the components assembled into the `s9pk`, su
     - Ensures all images are tagged correctly in the manifest
     - Ensures the icon is less than 100KB
 
-It should be run _after_ `embassy-sdk pack` in order to verify the validity of each component.
+It should be run _after_ `start-sdk pack` in order to verify the validity of each component.
 
 If this command fails, the error message will indicate the mismatched details.
 
-embassy-sdk git-info
+start-sdk git-info
 --------------------
 
 This command outputs the git commit hash of the SDK version installed on your platform.
 
-embassy-sdk inspect
+start-sdk inspect
 -------------------
 
 This command contains several utilities for reading components once packaged into the `s9pk`. In development, it can be helpful to determine if each component is successfully included in the `s9pk` package.
@@ -111,4 +111,4 @@ For example:
 
 .. code:: bash
 
-    embassy-sdk inspect instructions /path/to/<package-id>.s9pk
+    start-sdk inspect instructions /path/to/<package-id>.s9pk
