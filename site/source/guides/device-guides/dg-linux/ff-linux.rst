@@ -69,7 +69,7 @@ Now restart Firefox (or other Mozilla application), and log in to your server us
         :width: 80%
         :alt: Firefox - Remove security exception (Part 2)
 
-    You should now see that the website is trusted as in the final step show above.
+    You should now see that the website is trusted as in the final step shown above.
 
 Tor Config
 ----------
