@@ -117,7 +117,7 @@ Tor Config
 
 #. Then, check the box labeled ``Proxy DNS when using SOCKS v5``:
 
-    .. figure:: /_static/images/tor/firefox_proxy.png
+    .. figure:: /_static/images/tor/firefox_proxy_linux.png
       :width: 60%
       :alt: Firefox proxy settings screenshot
 
