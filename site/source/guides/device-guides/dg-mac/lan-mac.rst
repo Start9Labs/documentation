@@ -33,13 +33,13 @@ Complete this guide to download your Start9 server's Root Certificate Authority 
     .. figure:: /_static/images/ssl/macos/trust-cert-macos-4.5-keychain_access.png
         :width: 60%
 
-#. Your server's CA certificate will be displayed among the imported certificates in Keychain Access.  Right-click on the imported CA cert and select *Get Info*:
+#. Your server's root CA certificate will be displayed among the imported certificates in Keychain Access.  Right-click on the imported CA cert and select *Get Info*:
 
     .. figure:: /_static/images/ssl/macos/trust-cert-macos-5-cert-get_info.png
         :width: 60%
         :alt: Keychain Access - Get Info of CA Certificate
 
-#. The details of your CA certificate will be displayed in a new dialog window.  Expand the **Trust** heading, then select "**Always Trust**" on **Secure Sockets Layer (SSL)** and **X.509 Basic Policy**.
+#. The details of your root CA certificate will be displayed in a new dialog window.  Expand the **Trust** heading, then select "**Always Trust**" on **Secure Sockets Layer (SSL)** and **X.509 Basic Policy**.
 
     .. figure:: /_static/images/ssl/macos/trust-cert-macos-6-ssl_tls-always_trust.png
         :width: 60%
@@ -53,7 +53,7 @@ Complete this guide to download your Start9 server's Root Certificate Authority 
         :width: 60%
         :alt: Authenticate to change the settings
 
-#. You will see your server's CA certificate as trusted now, signified by a blue (+) sign and the CA cert information will now say "This certificate is marked as trusted for all users" in Keychain Access:
+#. You will see your server's root CA certificate as trusted now, signified by a blue (+) sign and the root CA cert's information will now say "This certificate is marked as trusted for all users" in Keychain Access:
 
     .. figure:: /_static/images/ssl/macos/trust-cert-macos-8-cert_trusted.png
         :width: 60%

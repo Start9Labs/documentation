@@ -21,7 +21,7 @@ This guide applies to Firefox, Firefox ESR, and Librewolf.  Mozilla apps need to
 
         Most Debian-based distributions (Debian, Linux Mint, PopOS, Ubuntu, etc) will require the following setup.  If you run Arch, CentOS, Garuda, Fedora, etc, then you may skip all the way down to :ref:`Restart Firefox<restart-ff>`.
 
-        For each Mozilla-based application (Firefox, Firefox ESR, LibreWolf, Thunderbird, etc) you plan on using, you will need to complete the following guide.  This is in order for them to trust your Start9 server's CA certificate directly from your Linux distribution's certificate trust store.
+        For each Mozilla-based application (Firefox, Firefox ESR, LibreWolf, Thunderbird, etc) you plan on using, you will need to complete the following guide.  This is in order for them to trust your Start9 server's root CA certificate directly from your Linux distribution's certificate trust store.
 
         #. Select the hamgurger menu, then *Settings*, then search for "*security devices*", then select "*Security Devices...*"
 

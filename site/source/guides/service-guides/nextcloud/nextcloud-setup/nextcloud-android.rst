@@ -90,7 +90,7 @@ Make sure you have first set up :ref:`LAN access<lan-android>`.
       :width: 30%
       :alt: Nextcloud mobile app QR Code button
     
-    In this case, make sure you have :ref:`added your server's CA certificate to the Android trust store<lan-android>` as noted at the top of the `LAN Setup` section of this guide, close the Nextcloud mobile app and try again.  Otherwise, proceed to the next step.
+    In this case, make sure you have :ref:`added your server's root CA certificate to the Android trust store<lan-android>` as noted at the top of the `LAN Setup` section of this guide, close the Nextcloud mobile app and try again.  Otherwise, proceed to the next step.
 
 12. Android may ask you about Storage permissions.  Grant "Full access":
 
