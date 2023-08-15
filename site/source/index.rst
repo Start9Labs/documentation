@@ -7,7 +7,7 @@
 .. hero-box::
   :title: Welcome to the Docs
 
-  StartOS user manual, devices guides, DIY guides, developer documentation, FAQs and more.
+  StartOS setup, user manual, devices guides, guides, developer documentation, FAQs and more.
 
 .. raw:: html
 
@@ -20,20 +20,29 @@
   <div class="grid-x grid-margin-x">
 
 .. topic-box::
-  :title: User Manual
-  :link: user-manual
-  :icon: scylla-icon scylla-icon--knowledge-base
+  :title: Getting Started
+  :link: getting-started
+  :icon: scylla-icon scylla-icon--getting-started
   :class: large-4
   :anchor: View
 
-  Setup, understand, and utilize your personal server
+  Get started with your server
+
+.. topic-box::
+  :title: User Manual
+  :link: user-manual
+  :icon: scylla-icon scylla-icon--glossary
+  :class: large-4
+  :anchor: View
+
+  Understand and use your server
 
 .. topic-box::
   :title: Guides
   :link: guides
   :icon: scylla-icon scylla-icon--circe
   :class: large-4
-  :anchor: Connect
+  :anchor: View
 
   Integrate your devices and tools
 
@@ -42,7 +51,7 @@
   :link: support
   :icon: scylla-icon scylla-icon--support
   :class: large-4
-  :anchor: Get help
+  :anchor: View
 
   Find answers to your questions
 
@@ -51,7 +60,7 @@
   :link: diy
   :icon: scylla-icon scylla-icon--memory-management
   :class: large-4
-  :anchor: Build your own
+  :anchor: View
 
   Recommendations for builders, hackers, and tinkerers
 
@@ -60,7 +69,7 @@
   :link: developer-docs
   :icon: scylla-icon scylla-icon--open-source
   :class: large-4
-  :anchor: Hack
+  :anchor: View
 
   Package a service for the Marketplace
 
@@ -69,19 +78,16 @@
   :link: https://start9.com/contact
   :icon: scylla-icon scylla-icon--contact-us
   :class: large-4
-  :anchor: Reach Out
+  :anchor: View
 
   Join us in our community channels or get support
-
-.. raw:: html
-
-  </div></div>
 
 .. This is for the side navigation display
 .. toctree::
   :maxdepth: 5
   :hidden:
 
+  getting-started/index
   user-manual/index
   guides/index
   support/index
