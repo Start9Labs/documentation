@@ -5,9 +5,9 @@ Trusting Your Server's Root CA on Windows
 =========================================
 Complete this guide to trust your server's Root Certificate Authority (Root CA) on Windows.
 
-#. Ensure you have already `downloaded your server's Root CA </user-manual/getting-started/trust-ca/#download-your-server-s-root-ca>`_
+#. Ensure you have already `downloaded your server's Root CA </getting-started/trust-ca/#download-your-server-s-root-ca>`_
 
-#. Ensure you have already `installed bonjour </user-manual/getting-started/connecting-lan/#windows-only>`_
+#. Ensure you have already `installed bonjour </getting-started/connecting-lan/#windows-only>`_
 
 #. Click the “Start” menu, type “mmc”, and select "Run as administrator" to access the Windows Management Console.
 

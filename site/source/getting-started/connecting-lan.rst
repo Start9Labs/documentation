@@ -13,8 +13,8 @@ All clients
 
 Windows Only
 ------------
-On Windows, it is currently necessary to install Bonjour in order to access the `.local` URLs of your installed services. With the release of StartOS v0.4.0, it will no longer be necessary.
+On Windows, it is currently necessary to install Bonjour Print Services in order to access the `.local` URLs of your installed services. With the release of StartOS v0.4.0, it will no longer be necessary.
 
-#. Simply install Bonjour from Apple: https://support.apple.com/kb/DL999
+#. Simply install Bonjour Print Services from Apple: https://support.apple.com/kb/DL999
 
-.. warning:: Bonjour can be unreliable. If your `local` URLs suddenly stop working, you may need to uninstall and re-install Bonjour. Go to `System Settings > Remove Programs`, uninstall Bonjour, re-install Bonjour, then restart Windows.
+.. warning:: Bonjour can be unreliable. If your `local` URLs suddenly stop working, you may need to uninstall and re-install Bonjour. Go to `System Settings > Remove Programs`, uninstall Bonjour `and` Bonjour Print Services, re-install Bonjour Print Services from the link above, then restart Windows.

@@ -7,7 +7,7 @@ Complete this guide to trust your server's Root Certificate Authority (Root CA) 
 
 .. note:: This guide only applies to iOS v15+. For v14, see the `v14 guide </0.3.1.x/user-manual/connecting/connecting-lan/lan-os/lan-ios>`_.
 
-#. Ensure you have already `downloaded your server's Root CA </user-manual/getting-started/trust-ca/#download-your-server-s-root-ca>`_
+#. Ensure you have already `downloaded your server's Root CA </getting-started/trust-ca/#download-your-server-s-root-ca>`_
 
 #. Open your iCloud Downloads folder and click on the certificate.  It will display a dialog box that says "Profile Downloaded."  Click `Close`.
 

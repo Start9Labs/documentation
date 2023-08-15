@@ -7,8 +7,8 @@ You can connect to your server from anywhere in the world, privately and anonymo
 
 .. note:: It is normal for Tor connections to be slow or unreliable at times
 
-Running Tor Natively on Your Phone/Computer Device (Recommended)
-----------------------------------------------------------------
+Running Tor Natively on Your Phone/Computer (Recommended)
+---------------------------------------------------------
 
 Select your OS below:
 
