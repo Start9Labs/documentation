@@ -11,14 +11,6 @@ This guide applies to Firefox, Firefox ESR, Librewolf, and Thunderbird. Mozilla 
 
 #. Ensure you have already :ref:`trusted your server's Root CA<ca-linux>`
 
-#. Open Firefox and enter ``about:config`` in the URL bar. Accept any warnings that appear
-
-#. Search for ``security.enterprise_roots.enabled`` and set it to ``true``:
-
-    .. figure:: /_static/images/ssl/browser/enterprise_roots_enabled_true.png
-        :width: 80%
-        :alt: Firefox security settings
-
 #. Select your distribution below and follow instructions:
 
     .. tabs::
