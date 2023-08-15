@@ -17,7 +17,7 @@ Select your OS:
 
 .. topic-box::
   :title: Linux
-  :link: ../../../../guides/device-guides/dg-linux/ff-linux
+  :link: ../../../../guides/device-guides/linux/ff-linux
   :icon: scylla-icon scylla-icon--linux
   :class: large-4
   :anchor: View
@@ -26,7 +26,7 @@ Select your OS:
 
 .. topic-box::
   :title: Mac
-  :link: ../../../../guides/device-guides/dg-mac/ff-mac
+  :link: ../../../../guides/device-guides/mac/ff-mac
   :icon: scylla-icon scylla-icon--apple
   :class: large-4
   :anchor: View
@@ -35,7 +35,7 @@ Select your OS:
 
 .. topic-box::
   :title: Windows
-  :link: ../../../../guides/device-guides/dg-windows/ff-windows
+  :link: ../../../../guides/device-guides/windows/ff-windows
   :icon: scylla-icon scylla-icon--windows
   :class: large-4
   :anchor: View
@@ -44,7 +44,7 @@ Select your OS:
 
 .. topic-box::
   :title: Android
-  :link: ../../../../guides/device-guides/dg-android/ff-android
+  :link: ../../../../guides/device-guides/android/ff-android
   :icon: scylla-icon scylla-icon--android
   :class: large-4
   :anchor: View

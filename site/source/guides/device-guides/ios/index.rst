@@ -1,4 +1,4 @@
-.. _dg-ios:
+.. _ios:
 
 ===
 iOS
@@ -13,7 +13,7 @@ It is recommended you complete all of the guides below.
 
 .. topic-box::
   :title: Trust Root CA
-  :link: lan-ios
+  :link: ca-ios
   :icon: scylla-icon scylla-icon--partners
   :class: large-4
   :anchor: View
@@ -33,5 +33,5 @@ It is recommended you complete all of the guides below.
   :maxdepth: 4
   :hidden:
 
-  lan-ios
+  ca-ios
   tor-ios

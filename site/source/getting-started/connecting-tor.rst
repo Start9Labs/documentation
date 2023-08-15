@@ -20,7 +20,7 @@ Select your OS below:
 
 .. topic-box::
   :title: Linux
-  :link: ../../../../guides/device-guides/dg-linux/tor-linux
+  :link: ../../../../guides/device-guides/linux/tor-linux
   :icon: scylla-icon scylla-icon--linux
   :class: large-4
   :anchor: View
@@ -29,7 +29,7 @@ Select your OS below:
 
 .. topic-box::
   :title: Mac
-  :link: ../../../../guides/device-guides/dg-mac/tor-mac
+  :link: ../../../../guides/device-guides/mac/tor-mac
   :icon: scylla-icon scylla-icon--apple
   :class: large-4
   :anchor: View
@@ -38,7 +38,7 @@ Select your OS below:
 
 .. topic-box::
   :title: Windows
-  :link: ../../../../guides/device-guides/dg-windows/tor-windows
+  :link: ../../../../guides/device-guides/windows/tor-windows
   :icon: scylla-icon scylla-icon--windows
   :class: large-4
   :anchor: View
@@ -47,7 +47,7 @@ Select your OS below:
 
 .. topic-box::
   :title: Android
-  :link: ../../../../guides/device-guides/dg-android/tor-android
+  :link: ../../../../guides/device-guides/android/tor-android
   :icon: scylla-icon scylla-icon--android
   :class: large-4
   :anchor: View
@@ -56,7 +56,7 @@ Select your OS below:
 
 .. topic-box::
   :title: iOS
-  :link: ../../../../guides/device-guides/dg-ios/tor-ios
+  :link: ../../../../guides/device-guides/ios/tor-ios
   :icon: scylla-icon scylla-icon--ios
   :class: large-4
   :anchor: View

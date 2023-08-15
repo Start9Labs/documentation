@@ -10,7 +10,7 @@ Download `Firefox Beta <https://play.google.com/store/apps/details?id=org.mozill
 
 Local
 -----
-#. Ensure you have already :ref:`trusted your Root CA<lan-android>` on your Android device
+#. Ensure you have already :ref:`trusted your Root CA<ca-android>` on your Android device
 
 #. Tap ``Kebab Menu > Settings > About Firefox`` and tap the Firefox icon 5 times to enable "developer mode"
 

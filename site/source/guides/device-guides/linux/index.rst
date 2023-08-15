@@ -1,8 +1,8 @@
-.. _dg-windows:
+.. _linux:
 
-=======
-Windows
-=======
+=====
+Linux
+=====
 Recommended Guides
 ------------------
 
@@ -14,7 +14,7 @@ Recommended Guides
 
 .. topic-box::
   :title: Trust Root CA
-  :link: lan-windows
+  :link: ca-linux
   :icon: scylla-icon scylla-icon--partners
   :class: large-4
   :anchor: View
@@ -24,7 +24,7 @@ Recommended Guides
 .. topic-box::
   :title: Connect to Tor Network
   :icon: scylla-icon scylla-icon--networking
-  :link: tor-windows
+  :link: tor-linux
   :class: large-4
   :anchor: View
 
@@ -32,7 +32,7 @@ Recommended Guides
 
 .. topic-box::
   :title: Configure Firefox
-  :link: ff-windows
+  :link: ff-linux
   :icon: scylla-icon scylla-icon--integrations
   :class: large-4
   :anchor: View
@@ -50,7 +50,7 @@ Other Useful Guides
 
 .. topic-box::
   :title: Backup Config
-  :link: backup-windows
+  :link: backup-linux
   :icon: scylla-icon scylla-icon--cloud
   :class: large-4
   :anchor: View
@@ -61,7 +61,7 @@ Other Useful Guides
   :maxdepth: 4
   :hidden:
 
-  lan-windows
-  tor-windows
-  ff-windows
-  backup-windows
+  ca-linux
+  tor-linux
+  ff-linux
+  backup-linux

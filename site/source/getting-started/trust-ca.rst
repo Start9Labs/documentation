@@ -29,7 +29,7 @@ Select your OS:
 
 .. topic-box::
   :title: Linux
-  :link: /guides/device-guides/dg-linux/lan-linux/
+  :link: ../../../../guides/device-guides/linux/ca-linux/
   :icon: scylla-icon scylla-icon--linux
   :class: large-4
   :anchor: View
@@ -38,7 +38,7 @@ Select your OS:
 
 .. topic-box::
   :title: Mac
-  :link: /guides/device-guides/dg-mac/lan-mac
+  :link: ../../../../guides/device-guides/mac/ca-mac
   :icon: scylla-icon scylla-icon--apple
   :class: large-4
   :anchor: View
@@ -47,7 +47,7 @@ Select your OS:
 
 .. topic-box::
   :title: Windows
-  :link: /guides/device-guides/dg-windows/lan-windows
+  :link: ../../../../guides/device-guides/windows/ca-windows
   :icon: scylla-icon scylla-icon--windows
   :class: large-4
   :anchor: View
@@ -56,7 +56,7 @@ Select your OS:
 
 .. topic-box::
   :title: Android
-  :link: /guides/device-guides/dg-android/lan-android
+  :link: ../../../../guides/device-guides/android/ca-android
   :icon: scylla-icon scylla-icon--android
   :class: large-4
   :anchor: View
@@ -65,7 +65,7 @@ Select your OS:
 
 .. topic-box::
   :title: iOS
-  :link: /guides/device-guides/dg-ios/lan-ios
+  :link: ../../../../guides/device-guides/ios/ca-ios
   :icon: scylla-icon scylla-icon--ios
   :class: large-4
   :anchor: View

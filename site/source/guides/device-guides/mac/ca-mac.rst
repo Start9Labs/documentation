@@ -1,4 +1,4 @@
-.. _lan-mac:
+.. _ca-mac:
 
 =====================================
 Trusting Your Server's Root CA on Mac

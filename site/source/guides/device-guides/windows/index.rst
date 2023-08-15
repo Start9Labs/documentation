@@ -1,10 +1,11 @@
-.. _dg-mac:
+.. _windows:
 
-===
-Mac
-===
+=======
+Windows
+=======
 Recommended Guides
 ------------------
+
 .. raw:: html
 
   <div class="topics-grid grid-container full">
@@ -13,7 +14,7 @@ Recommended Guides
 
 .. topic-box::
   :title: Trust Root CA
-  :link: lan-mac
+  :link: ca-windows
   :icon: scylla-icon scylla-icon--partners
   :class: large-4
   :anchor: View
@@ -23,7 +24,7 @@ Recommended Guides
 .. topic-box::
   :title: Connect to Tor Network
   :icon: scylla-icon scylla-icon--networking
-  :link: tor-mac
+  :link: tor-windows
   :class: large-4
   :anchor: View
 
@@ -31,7 +32,7 @@ Recommended Guides
 
 .. topic-box::
   :title: Configure Firefox
-  :link: ff-mac
+  :link: ff-windows
   :icon: scylla-icon scylla-icon--integrations
   :class: large-4
   :anchor: View
@@ -40,6 +41,7 @@ Recommended Guides
 
 Other Useful Guides
 -------------------
+
 .. raw:: html
 
   <div class="topics-grid grid-container full">
@@ -48,28 +50,18 @@ Other Useful Guides
 
 .. topic-box::
   :title: Backup Config
-  :link: backup-mac
+  :link: backup-windows
   :icon: scylla-icon scylla-icon--cloud
   :class: large-4
   :anchor: View
 
   Configure a Network Folder for storing StartOS backups
 
-.. topic-box::
-  :title: Screensharing
-  :link: screenshare-mac
-  :icon: scylla-icon scylla-icon--workshop
-  :class: large-4
-  :anchor: Share Screen
-
-  Guide to allow screensharing with a Start9 Support Tech.
-
 .. toctree::
   :maxdepth: 4
   :hidden:
 
-  lan-mac
-  tor-mac
-  ff-mac
-  backup-mac
-  screenshare-mac
+  ca-windows
+  tor-windows
+  ff-windows
+  backup-windows

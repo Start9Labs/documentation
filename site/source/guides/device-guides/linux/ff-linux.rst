@@ -9,7 +9,7 @@ Local
 -----
 This guide applies to Firefox, Firefox ESR, Librewolf, and Thunderbird. Mozilla apps need to be configured to use the certificate store of your device. To find out why Mozilla does this differently, you can read their `blog post <https://blog.mozilla.org/security/2019/02/14/why-does-mozilla-maintain-our-own-root-certificate-store/>`_ on the topic (TLDR: for security purposes).
 
-#. Ensure you have already :ref:`trusted your server's Root CA<lan-linux>`
+#. Ensure you have already :ref:`trusted your server's Root CA<ca-linux>`
 
 #. Open Firefox and enter ``about:config`` in the URL bar. Accept any warnings that appear
 

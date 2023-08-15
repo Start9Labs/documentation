@@ -1,4 +1,4 @@
-.. _lan-ios:
+.. _ca-ios:
 
 =====================================
 Trusting Your Server's Root CA on iOS

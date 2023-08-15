@@ -1,4 +1,4 @@
-.. _dg-android:
+.. _android:
 
 =======
 Android
@@ -13,7 +13,7 @@ It is recommended you complete all of the guides below.
 
 .. topic-box::
   :title: Trust Root CA
-  :link: lan-android
+  :link: ca-android
   :icon: scylla-icon scylla-icon--partners
   :class: large-4
   :anchor: View
@@ -42,6 +42,6 @@ It is recommended you complete all of the guides below.
   :maxdepth: 4
   :hidden:
 
-  lan-android
+  ca-android
   tor-android
   ff-android

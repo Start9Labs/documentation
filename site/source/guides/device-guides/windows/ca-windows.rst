@@ -1,4 +1,4 @@
-.. _lan-windows:
+.. _ca-windows:
 
 =========================================
 Trusting Your Server's Root CA on Windows

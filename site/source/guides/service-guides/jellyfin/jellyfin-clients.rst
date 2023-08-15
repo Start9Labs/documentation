@@ -25,7 +25,7 @@ Mobile Apps
 Android
 =======
 
-Before proceeding, make sure your Android device has been setup to connect over :ref:`LAN <lan-android>`. If you are connecting over tor, you will need to :ref:`Setup Tor <tor-android>`.
+Before proceeding, make sure your Android device has been setup to connect over :ref:`LAN <ca-android>`. If you are connecting over tor, you will need to :ref:`Setup Tor <tor-android>`.
 
 1. Visit the app store of your choice and download the Jellyfin app.
 
@@ -34,7 +34,7 @@ Before proceeding, make sure your Android device has been setup to connect over 
 iOS
 ===
 
-Before proceeding, make sure your Apple device has been setup to connect over :ref:`LAN <lan-ios>`. If you are connecting over tor, you will need to :ref:`Setup Tor <tor-ios>`.
+Before proceeding, make sure your Apple device has been setup to connect over :ref:`LAN <ca-ios>`. If you are connecting over tor, you will need to :ref:`Setup Tor <tor-ios>`.
 
 1. Open the Apple app store and download the Jellyfin app.
 
@@ -46,7 +46,7 @@ Desktop Apps
 MacOS
 =====
 
-Before proceeding, make sure your Apple device has been setup to connect over :ref:`LAN <lan-mac>`.
+Before proceeding, make sure your Apple device has been setup to connect over :ref:`LAN <ca-mac>`.
 
 1. Download the .dmg file for `Jellyfin Media Player <https://github.com/jellyfin/jellyfin-media-player/releases>`_
 

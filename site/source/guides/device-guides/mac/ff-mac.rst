@@ -8,7 +8,7 @@ Here you will configure Firefox to securely resolve the .local and .onion URLs o
 Local
 -----
 
-#. Ensure you have already :ref:`trusted your server's Root CA<lan-mac>`
+#. Ensure you have already :ref:`trusted your server's Root CA<ca-mac>`
 
 #. Open Firefox and enter ``about:config`` in the URL bar. Accept any warnings that appear
 

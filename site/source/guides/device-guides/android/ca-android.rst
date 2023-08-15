@@ -1,4 +1,4 @@
-.. _lan-android:
+.. _ca-android:
 
 =========================================
 Trusting Your Server's Root CA on Android

@@ -14,7 +14,7 @@ It is advised to setup your Nextcloud devices on LAN (if available) for the best
 
 Native Desktop Integration
 --------------------------
-The smoothest experience will be using direct account integration with your Mac.  First head into the top-righthand menu of your Nextcloud's WebUI and click "Apps," then search for and install the Calendar and/or Contacts Apps if you don't have them already (these are installed by default on the latest Nextcloud for StartOS).  The steps below are adapted from the `Official Nextcloud guide <https://docs.nextcloud.com/server/24/user_manual/en/groupware/sync_osx.html>`_ and updated for the latest MacOS (Ventura).  Make sure you have first set up :ref:`LAN access<lan-mac>`.
+The smoothest experience will be using direct account integration with your Mac.  First head into the top-righthand menu of your Nextcloud's WebUI and click "Apps," then search for and install the Calendar and/or Contacts Apps if you don't have them already (these are installed by default on the latest Nextcloud for StartOS).  The steps below are adapted from the `Official Nextcloud guide <https://docs.nextcloud.com/server/24/user_manual/en/groupware/sync_osx.html>`_ and updated for the latest MacOS (Ventura).  Make sure you have first set up :ref:`LAN access<ca-mac>`.
 
 .. tabs::
   
@@ -107,7 +107,7 @@ This is Nextcloud's official client application for file syncing and account man
 
 LAN Setup
 .........
-Make sure you have first set up :ref:`LAN access<lan-mac>`.  Then do the following:
+Make sure you have first set up :ref:`LAN access<ca-mac>`.  Then do the following:
 
 1. Download the appropriate desktop client from the `Nextcloud website <https://nextcloud.com/install/#install-clients>`_.
 2. Open the client and click "Log In".
@@ -191,7 +191,7 @@ If you wish to use a standalone client for Calendar and Contacts, we recommend M
 1. Install the Contacts and Calendar apps in Nextcloud.
 2. Make sure you are on Thunderbird version 102.3.0 or greater and then import your LAN certificate:
 
-    - First, follow the :ref:`instructions for adding your Root CA to your system<lan-mac>` and then the :ref:`Thunderbird-specific instructions<lan-thunderbird>`.
+    - First, follow the :ref:`instructions for adding your Root CA to your system<ca-mac>` and then the :ref:`Thunderbird-specific instructions<lan-thunderbird>`.
 
 3. Download the `TBSync` and `Provider for CalDAV & CardDAV` add-ons by searching for them in the "Tools -> Add-ons and Themes" menu.
 4. Go back to "Tools -> Add-ons and Themes -> Extensions" and click the 'wrench' icon next to TBSync.

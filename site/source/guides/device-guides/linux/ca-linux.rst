@@ -1,4 +1,4 @@
-.. _lan-linux:
+.. _ca-linux:
 
 =======================================
 Trusting Your Server's Root CA on Linux
