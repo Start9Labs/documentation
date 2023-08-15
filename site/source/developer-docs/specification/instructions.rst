@@ -25,7 +25,6 @@ Below is the markdown file for Start9 Pages' instructions, as shown above:
     When you first install Start9 Pages, there will be a default Homepage hosted at the root, <tor-address>.onion. You can change the behavior of this page, and you can also create Subdomain websites. For example, one site could be hello.<tor-address>.onion and another could be goodbye.<tor-address>.onion. What is served from the Homepage and each Subdomain is totally up to you.
 
     Self-hosting Tor  websites using Start9 Pages is easy, permissionless, and censorship-resistant; there are no trusted third parties involved.
-    Anyone can do it. No one can stop it.
 
     ## Instructions
 

@@ -15,7 +15,6 @@ Welcome to StartOS!  Get familiar with your server by discovering all the availa
   backup-restore/index
   customize
   updating
-  connecting/index
   sessions
   ssh
   wifi

@@ -1,31 +1,18 @@
 .. _lan-linux:
 
-================================
-Trusting Your Start9 CA on Linux
-================================
-Complete this guide to download your Start9 server's Root Certificate Authority (CA), and trust it on your client device (Windows).  This allows you to use encrypted ``https`` connections to your ``.local`` (LAN) and ``.onion`` (tor) server addresses, access services on LAN, and enhances performance on tor.  The self-signed certificate was created by your server when you perfomed the initial setup, and applies to your server's main UI connection, as well as all service connections.
+=======================================
+Trusting Your Server's Root CA on Linux
+=======================================
 
-.. caution:: If you cannot connect following this guide, you may be using an application (such as Firefox) that is installed in a jailed environment, such as an appimage, flatpak, or snap.  Please try an alternate install method if so.
+.. caution:: If you cannot connect following this guide, you may be using an application (such as Firefox) that is installed in a jailed environment, such as an appimage, flatpak, or snap. Please try an alternate install method if so.
 
-Download Root CA
-----------------
-First, download your Start9 server's Root CA, if you have not already.
-
-    - Navigate to *System > LAN*, then click "Download Certificate".
-
-      .. figure:: /_static/images/ssl/lan_setup.png
-        :width: 40%
-        :alt: LAN setup menu item
-
-Alternatively, you can download to another machine, then transfer the file to your device.
-
-Trust Root CA
--------------
 .. tabs::
 
     .. group-tab:: Debian/Ubuntu
 
         These instructions will work for most Debian-based Linux distributions, such as Debian, Linux Mint, PopOS, Ubuntu, etc.
+
+        #. Ensure you have already `downloaded your server's Root CA </user-manual/getting-started/trust-ca/#download-your-server-s-root-ca>`_
 
         #. Perform the following commands in the Terminal:
 
@@ -46,11 +33,13 @@ Trust Root CA
                 sudo bash -c "echo 'start9/adjective-noun.local.crt' >> /etc/ca-certificates.conf"
                 sudo update-ca-certificates
 
-        In the output it should say ``1 added`` if it was successful.  For most applications, you will now be able to securely connect via ``https``.  We highly recommend continuing on to our :ref:`Configuring Firefox <ff-linux>` guide.
+            In the output it should say ``1 added`` if it was successful.  For most applications, you will now be able to securely connect via ``https``.  We highly recommend continuing on to our :ref:`Configuring Firefox <ff-linux>` guide.
 
     .. group-tab:: Arch/Garuda
 
-        From the folder you have downloaded your Start9 server's Root CA, run the following commands (if you have changed the certificate's filename, be sure to change it here):
+        #. Ensure you have already `downloaded your server's Root CA </user-manual/getting-started/trust-ca/#download-your-server-s-root-ca>`_
+
+        #. From the folder you have downloaded your Start9 server's Root CA, run the following commands (if you have changed the certificate's filename, be sure to change it here):
 
             .. code-block:: bash
 
@@ -58,26 +47,24 @@ Trust Root CA
                 sudo cp "<custom-address>.crt" /etc/ca-certificates/trust-source/anchors/
                 sudo update-ca-trust
 
-        Despite no output from the last command, you can test your app right away.
+            Despite no output from the last command, you can test your app right away.
 
     .. group-tab:: CentOS/Fedora
+
+        #. Ensure you have already `downloaded your server's Root CA </user-manual/getting-started/trust-ca/#download-your-server-s-root-ca>`_
         
-        First, ensure mDNS resolution is turned on so you can reach your server:
+        #. In `/etc/systemd/resolved.conf`, ensure you have ``MulticastDNS=Yes``
 
-        Ensure ``MulticastDNS=Yes`` is set in /etc/systemd/resolved.conf and then restart systemd-resolved:
+        #. Restart systemd-resolved
 
-        .. code-block:: bash
-            
-            sudo systemctl restart systemd-resolved
+            .. code-block:: bash
+                
+                sudo systemctl restart systemd-resolved
 
-        Trust your server's CA certificate:
+        #. From the folder you have downloaded your Start9 server's Root CA, run the following commands (if you have changed the certificate's filename, be sure to change it here)
 
-        From the folder you have downloaded your Start9 server's Root CA, run the following commands (if you have changed the certificate's filename, be sure to change it here):
-
-        .. code-block:: bash
-            
-            sudo yum install ca-certificates
-            sudo cp "<custom-address>.crt" /etc/pki/ca-trust/source/anchors/
-            sudo update-ca-trust
-
-You're now ready to browse your service UIs with encryption, either via the browser, or with native client apps.  For Mozilla apps, such as Firefox, you will need to follow the :ref:`Firefox Config <lan-ff>` guide, which we highly recommend.
+            .. code-block:: bash
+                
+                sudo yum install ca-certificates
+                sudo cp "<custom-address>.crt" /etc/pki/ca-trust/source/anchors/
+                sudo update-ca-trust

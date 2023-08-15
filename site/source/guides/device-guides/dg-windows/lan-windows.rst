@@ -1,47 +1,15 @@
 .. _lan-windows:
 
-==================================
-Trusting Your Start9 CA On Windows
-==================================
-Complete this guide to download your Start9 server's Root Certificate Authority (CA), and trust it on your client device (Windows).  This allows you to use encrypted ``https`` connections to your ``.local`` (LAN) and ``.onion`` (tor) server addresses, access services on LAN, and enhances performance on tor.  The self-signed certificate was created by your server when you perfomed the initial setup, and applies to your server's main UI connection, as well as all service connections.
+=========================================
+Trusting Your Server's Root CA on Windows
+=========================================
+Complete this guide to trust your server's Root Certificate Authority (Root CA) on Windows.
 
-Unfortunately, Windows does not have mDNS alias support built-in, which is necessary in order to visit .local addresses for any service you install on your Start9 server, so we recommend using the Bonjour service. Check out this :ref:`FAQ answer<why-bonjour>` for details.
+#. Ensure you have already `downloaded your server's Root CA </user-manual/getting-started/trust-ca/#download-your-server-s-root-ca>`_
 
-.. note:: Some users who run through the following instructions have successfully connected to their LAN services only to have them stop working weeks or months later. We believe these issues to be due to changes in Windows. When this happens the fix is to simply reinstall Bonjour and Bonjour Print Services. A solution is being worked on and Bonjour will not be necessary to connect to your Start9 server for much longer.
+#. Ensure you have already `installed bonjour </user-manual/getting-started/connecting-lan/#windows-only>`_
 
-Install Bonjour
----------------
-#. Install `Bonjour Print Services <https://support.apple.com/kb/DL999>`_ on your Windows machine.
-
-   .. tip::  If you are still experiencing issues after installing Bonjour, you might have a faulty install.
-      
-      In that case, run through the known fix:
-
-      #. Uninstall Bonjour and Bonjour Print Services completely via **System Settings > Remove Programs**
-      
-         Note: Uninstalling Bonjour via the Bonjour Print Services setup package itself is not enough to solve the issue. Bonjour must be uninstalled via Windows' System Settings menu.
-
-      #. Install the Bonjour Print Services package from Apple:
-      
-         https://support.apple.com/kb/DL999
-
-      #. Test to see if your .local name resolution issue is resolved.  If not, restart Windows and then test again.
-
-Download Root CA
-----------------
-Download your Start9 server's Root CA, if you have not already.
-
-    - Navigate to *System > LAN*, then click "Download Certificate".
-
-      .. figure:: /_static/images/ssl/lan_setup.png
-        :width: 40%
-        :alt: LAN setup menu item
-
-Alternatively, you can download the Root CA to another machine, then transfer the file to your client device.
-
-Trust Root CA
--------------
-#. Back in Windows, click the “Start” menu, type “mmc”, and select "Run as administrator" to access the Windows Management Console.
+#. Click the “Start” menu, type “mmc”, and select "Run as administrator" to access the Windows Management Console.
 
    .. figure:: /_static/images/ssl/windows/0_windows_mmc.png
     :width: 50%
@@ -109,10 +77,8 @@ Trust Root CA
     :width: 50%
     :alt: Successful cert install
 
-#. You can save the console settings (where we added a snap-in), if desired.  The CA certificate will remain imported to the CA certificate store either way, and you will likely use this guide if you need to import a new certificate.
+#. You can save the console settings (where we added a snap-in), if desired. The CA certificate will remain imported to the CA certificate store either way, and you will likely use this guide if you need to import a new certificate.
 
    .. figure:: /_static/images/ssl/windows/11_console_settings.png
     :width: 20%
     :alt: Console settings
-
-You're now ready to browse your service UIs with encryption, either via the browser, or with native client apps.  For Mozilla apps, such as Firefox, you will need to follow the :ref:`Firefox Config <lan-ff>` guide, which we highly recommend.

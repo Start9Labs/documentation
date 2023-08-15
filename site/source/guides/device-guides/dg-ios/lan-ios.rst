@@ -1,22 +1,13 @@
 .. _lan-ios:
 
-=========================
-Trust Your Root CA on iOS
-=========================
-Complete this guide to download your Start9 server's Root Certificate Authority (CA), and trust it on your client device (iOS).  This allows you to use encrypted ``https`` connections to your ``.local`` (LAN) and ``.onion`` (tor) server addresses, access services on LAN, and enhances performance on tor.  The self-signed certificate was created by your server when you perfomed the initial setup, and applies to your server's main UI connection, as well as all service connections.
+=====================================
+Trusting Your Server's Root CA on iOS
+=====================================
+Complete this guide to trust your server's Root Certificate Authority (Root CA) on iOS.
 
-This applies to iOS v15 and v16.  For older versions, see the `v14 guide </0.3.1.x/user-manual/connecting/connecting-lan/lan-os/lan-ios>`_.
+.. note:: This guide only applies to iOS v15+. For v14, see the `v14 guide </0.3.1.x/user-manual/connecting/connecting-lan/lan-os/lan-ios>`_.
 
-#. Download the certificate to your Downloads folder
-
-   .. note::
-      In order to do this, open Safari and visit your Start9 server's .local URL while connected to WiFi, but make sure it is prefixed with ``http://`` and not ``https://``.
-
-      Log in using your password, then click the hamburger (3 lines) menu at the top right, select System > LAN > Download Certificate.  It may say `This website is trying to download a configuration profile.  Do you want to allow this?` Click `Allow`.
-
-      Once this is done, you can skip to step 3, below.
-      
-      If you downloaded the certificate from a browser such as Firefox, you will need to copy the file from that Downloads folder to your iCloud Downloads folder.  Navigate there via `Files > iCloud Drive > Downloads`.  Otherwise, the "Profile Download" dialog will not appear when you click on the file in the next step.
+#. Ensure you have already `downloaded your server's Root CA </user-manual/getting-started/trust-ca/#download-your-server-s-root-ca>`_
 
 #. Open your iCloud Downloads folder and click on the certificate.  It will display a dialog box that says "Profile Downloaded."  Click `Close`.
 

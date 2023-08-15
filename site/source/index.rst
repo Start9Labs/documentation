@@ -5,9 +5,9 @@
   <div class="landing landing--floating">
 
 .. hero-box::
-  :title: Welcome
+  :title: Welcome to the Docs
 
-  Here you will find information on StartOS, including DIY guides, user manuals, and developer docs. Welcome to the era of sovereign computing. Anyone can do it. No one can stop it.
+  StartOS user manual, devices guides, DIY guides, developer documentation, FAQs and more.
 
 .. raw:: html
 

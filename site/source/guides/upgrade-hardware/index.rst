@@ -1,10 +1,8 @@
 .. _upgrade-hardware:
 
-================
-Upgrade Hardware
-================
-Guides for migrating or upgrading your server's hardware.
-
+===============
+Hardware Guides
+===============
 .. raw:: html
 
   <div class="topics-grid grid-container full">
@@ -12,29 +10,29 @@ Guides for migrating or upgrading your server's hardware.
   <div class="grid-x grid-margin-x">
 
 .. topic-box::
-  :title: Migrate LND from other nodes to StartOS
+  :title: Migrate an LND Node to StartOS
   :link: lnd-migration
   :icon: scylla-icon scylla-icon--home
-  :class: large-5
-  :anchor: Upgrade
+  :class: large-4
+  :anchor: View
 
-  This is for migrating LND from another node to StartOS without closing channels
+  Migrating an LND from another server to StartOS without closing channels
 
 .. topic-box::
-  :title: Upgrade SSD
+  :title: Changing Your SSD
   :link: drive-upgrade
   :icon: scylla-icon scylla-icon--benchmarks
-  :class: large-5
-  :anchor: Upgrade
+  :class: large-4
+  :anchor: View
 
-  This is for replacing or upgrading your SSD
+  Replace or upgrade your SSD
 
 .. topic-box::
   :title: Upgrade SSD ('22 Server One)
   :link: naspi-ssd-upgrade
   :icon: scylla-icon scylla-icon--benchmarks
-  :class: large-5
-  :anchor: Upgrade
+  :class: large-4
+  :anchor: View
 
   This is for replacing or upgrading your 2022 Server One SSD
 
@@ -42,8 +40,8 @@ Guides for migrating or upgrading your server's hardware.
   :title: 2022 One to Pro Migration
   :link: upgrade-pro
   :icon: scylla-icon scylla-icon--enterprise
-  :class: large-5
-  :anchor: Upgrade
+  :class: large-4
+  :anchor: View
 
   This is for migrating from a Server One (Raspberry Pi) to Server Pro
 
@@ -51,8 +49,8 @@ Guides for migrating or upgrading your server's hardware.
   :title: Upgrade to all-in-one NASPi case
   :link: naspi-upgrade
   :icon: scylla-icon scylla-icon--home
-  :class: large-5
-  :anchor: Upgrade
+  :class: large-4
+  :anchor: View
 
   This is for upgrading a Pi to an all-in-one NASPi case
 
@@ -61,10 +59,10 @@ Guides for migrating or upgrading your server's hardware.
   </div></div>
 
 .. toctree::
-   :maxdepth: 2
+  :maxdepth: 2
 
-   LND migration <lnd-migration>
-   SSD upgrade <drive-upgrade>
-   Pro upgrade <upgrade-pro>
-   NASPi upgrade <naspi-upgrade>
-   2022 Server One SSD upgrade <naspi-ssd-upgrade>
+  lnd-migration
+  drive-upgrade
+  upgrade-pro
+  naspi-upgrade
+  naspi-ssd-upgrade

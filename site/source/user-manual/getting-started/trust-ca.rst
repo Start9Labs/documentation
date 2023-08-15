@@ -1,18 +1,73 @@
 .. _trust-ca:
 
-=============
-Trust Root CA
-=============
-Trust your server's Root CA to achieve encrypted communications on LAN, access services on LAN, and enhance connection speeds over Tor.  Select the OS of the device you are accessing your server with:
+=====================
+Trusting Your Root CA
+=====================
 
-.. caution:: This is a required step, and you server will not work properly until it is complete
+Download and trust your server's Root Certificate Authority (Root CA) to enable encrypted communications locally and enhance speeds over Tor.
 
-:ref:`Integrate Linux devices<lan-linux>`
+Download Your Server's Root CA
+------------------------------
+Your server's Root CA was included in the downloaded file at the end of initial setup. If you do not have that file, you can find your server's Root CA inside the StartOS dashboard.
 
-:ref:`Integrate Mac devices <lan-mac>`
+	#. Navigate to `System > Root CA` and click `Download Certificate`
 
-:ref:`Integrate Windows devices <lan-windows>`
+		.. figure:: /_static/images/ssl/lan_setup.png
+			:width: 40%
+			:alt: LAN setup menu item
 
-:ref:`Integrate Android devices <lan-android>`
+Trust Your Server's Root CA
+---------------------------
 
-:ref:`Integrate iOS devices <lan-ios>`
+Select your OS:
+
+.. raw:: html
+
+  <div class="topics-grid grid-container full">
+
+  <div class="grid-x grid-margin-x">
+
+.. topic-box::
+  :title: Linux
+  :link: ../../../../guides/device-guides/dg-linux/lan-linux
+  :icon: scylla-icon scylla-icon--linux
+  :class: large-4
+  :anchor: View
+
+  Trust your Root CA on Linux
+
+.. topic-box::
+  :title: Mac
+  :link: ../../../../guides/device-guides/dg-mac/lan-mac
+  :icon: scylla-icon scylla-icon--apple
+  :class: large-4
+  :anchor: View
+
+  Trust your Root CA on Mac
+
+.. topic-box::
+  :title: Windows
+  :link: ../../../../guides/device-guides/dg-windows/lan-windows
+  :icon: scylla-icon scylla-icon--windows
+  :class: large-4
+  :anchor: View
+
+  Trust your Root CA on Windows
+
+.. topic-box::
+  :title: Android
+  :link: ../../../../guides/device-guides/dg-android/lan-android
+  :icon: scylla-icon scylla-icon--android
+  :class: large-4
+  :anchor: View
+
+  Trust your Root CA on Android
+
+.. topic-box::
+  :title: iOS
+  :link: ../../../../guides/device-guides/dg-ios/lan-ios
+  :icon: scylla-icon scylla-icon--ios
+  :class: large-4
+  :anchor: View
+
+  Trust your Root CA on iOS

@@ -1,70 +1,77 @@
 .. _ff-android:
 
-===============================
-Configuring Firefox for Android
-===============================
-Mozilla provides some of the most flexible, secure, and freedom-principled applications for using the web.  We highly recommend completing all configuration below.
+==============================
+Configuring Firefox on Android
+==============================
 
-.. caution:: Setups may strongly vary across different Android forks
+Download `Firefox Beta <https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta>`_ from the Play Store, or `Fennec <https://f-droid.org/en/packages/org.mozilla.fennec_fdroid/>`_ from F-Droid.
 
-LAN Config
-----------
+	.. caution:: You must use **Firefox Beta** on Android. Regular Firefox does not permit advanced configuration.
 
+Local
+-----
+#. Ensure you have already :ref:`trusted your Root CA<lan-android>` on your Android device
 
-Configure Tor
--------------
-Once you have :ref:`setup your Root CA<lan-android>` and :ref:`Tor is running on your device<tor-android>`, you can proceed to configure Firefox:
+#. Tap ``Kebab Menu > Settings > About Firefox`` and tap the Firefox icon 5 times to enable "developer mode"
 
-#. Download `Firefox Beta <https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta>`_ from the Play Store, or `Fennec <https://f-droid.org/en/packages/org.mozilla.fennec_fdroid/>`_ from F-Droid.
+#. Go back to ``Kebab Menu > Settings > Secret Settings`` (at the bottom), and tap ``Use third party CA certificates``
 
-    .. caution:: Regular Firefox offered in the Play Store will not allow this configuration - be sure to use Firefox Beta.
+Tor
+---
+#. Ensure you are already :ref:`running Tor<tor-android>` on your Android device
 
-#. Next, download the `Proxy Auto Config` file that will use Orbot to resolve `.onion` URLs. We have one hosted `here <https://start9.com/assets/proxy.pac>`_.
+#. Download the `Proxy Auto Config` file that will use Orbot to resolve `.onion` URLs. We have one hosted `here <https://start9.com/assets/proxy.pac>`_
 
-#. Navigate to ``about:config`` in the Firefox URL bar.
+#. Open Firefox and enter ``about:config`` in the URL bar. Accept any warnings that appear
 
-   .. figure:: /_static/images/tor/about_config.png
-     :width: 30%
-     :alt: Firefox about config
+#. Search for ``network.proxy.autoconfig_url``, and set the value to ``file:///storage/emulated/0/Download/proxy.pac``. This is the default location of a the proxy.pac file downloaded in step 2, although your path may vary:
 
-#. You are going to have to change a few options in here. First, type ``network.proxy.type`` into the search bar, and set the value to ``2``.
+	.. figure:: /_static/images/tor/autoconfig_url.png
+		:width: 30%
+		:alt: Firefox autoconfig url setting screenshot
 
-   .. figure:: /_static/images/tor/network_proxy_type.png
-     :width: 30%
-     :alt: Firefox network proxy type setting screenshot
+#. Navigate to ``about:config`` in the Firefox URL bar:
 
-#. (This step is for GrapheneOS users **only**): Head to *Settings -> Apps -> Firefox Beta -> Permissions -> Photos and videos -> Configure Storage Scopes -> ADD FILE* then navigate to where you placed the proxy.pac file.
+	.. figure:: /_static/images/tor/about_config.png
+		:width: 30%
+		:alt: Firefox about config
 
-   .. figure:: /_static/images/tor/storage-scopes-proxy.jpg
-     :width: 15%
+#. Search for ``network.proxy.type`` into the search bar, and set the value to ``2``:
 
-#. (All users): Search for ``network.proxy.autoconfig_url``, and set the value to ``file:///storage/emulated/0/Download/proxy.pac``.  This is the default location of a the proxy.pac file downloaded in step 2, although your path may vary.
+	.. figure:: /_static/images/tor/network_proxy_type.png
+		:width: 30%
+		:alt: Firefox network proxy type setting screenshot
 
-   .. figure:: /_static/images/tor/autoconfig_url.png
-     :width: 30%
-     :alt: Firefox autoconfig url setting screenshot
+#. Search for ``network.proxy.socks_remote_dns``, and set the value to ``true``:
 
-#. Search for ``network.proxy.socks_remote_dns``, and set the value to ``true``.
+	.. figure:: /_static/images/tor/socks_remote_dns.png
+		:width: 30%
+		:alt: Firefox socks remote dns setting screenshot
 
-   .. figure:: /_static/images/tor/socks_remote_dns.png
-     :width: 30%
-     :alt: Firefox socks remote dns setting screenshot
+#. Search for ``dom.securecontext.allowlist_onions`` and set the value to ``true``:
 
-#. Search for ``dom.securecontext.allowlist_onions`` and set the value to ``true``.
+	.. figure:: /_static/images/tor/firefox_allowlist_mobile.png
+		:width: 30%
+		:alt: Firefox whitelist onions screenshot
 
-   .. figure:: /_static/images/tor/firefox_allowlist_mobile.png
-     :width: 30%
-     :alt: Firefox whitelist onions screenshot
+#. Search for ``network.websocket.allowInsecureFromHTTPS`` and set the value to ``true``:
 
-#. Finally, search for ``network.websocket.allowInsecureFromHTTPS`` and set the value to ``true``:
+	.. figure:: /_static/images/tor/firefox_insecure_websockets_droid.png
+		:width: 30%
+		:alt: Firefox allow insecure websockets over https
 
-    .. figure:: /_static/images/tor/firefox_insecure_websockets_droid.png
-      :width: 30%
-      :alt: Firefox allow insecure websockets over https
+#. Search for ``network.http.referer.hideOnionsSource`` and set the value to ``true``
 
-#. Optional but recommended: search for ``network.http.referer.hideOnionsSource`` and set the value to ``true``.
+#. (**GrapheneOS users only**): Head to ``Settings -> Apps -> Firefox Beta -> Permissions -> Photos and videos -> Configure Storage Scopes -> ADD FILE``, then navigate to where you placed the proxy.pac file:
 
-#. Restart Firefox, and you're all set! You should now be able to navigate to ``.onion`` URLs in Firefox. This means you can bookmark your Start9 services' ``.onion`` addresses, as well as use integrations, such as the :ref:`Bitwarden<vaultwarden-service>` browser extension.
+	.. figure:: /_static/images/tor/storage-scopes-proxy.jpg
+		:width: 15%
+
+#. Restart Firefox
+
+#. Test that Firefox can resolve `.onion` URLs by visiting Start9's Tor website: http://privacy34kn4ez3y3nijweec6w4g54i3g54sdv7r5mr6soma3w4begyd.onion. If this does not work, go through this guide again, ensuring you followed every step, including the first which refers to another guide
+
+#. You can now use the `.onion` URLs of your server and installed services
 
 
 Install StartOS as a PWA

@@ -3,9 +3,7 @@
 =======
 Android
 =======
-To optimize your device for use with your Start9 server, it is recommended to complete all of the following guides.  At minimum, you will want to set up your Root CA in the first guide.
-
-.. tip:: Whenever you are connected to the same Local Area Network (LAN) as your Start9 server, it is best to access your Start9 server's LAN Address (.local URL). LAN connections are fast and secure and are available even with no Internet access!
+It is recommended you complete all of the guides below.
 
 .. raw:: html
 
@@ -18,32 +16,32 @@ To optimize your device for use with your Start9 server, it is recommended to co
   :link: lan-android
   :icon: scylla-icon scylla-icon--partners
   :class: large-4
-  :anchor: Connect
+  :anchor: View
 
-  Trust your Start9 server's Root Certificate Authority in order to create encrypted connections.
+  Trust your server's Root Certificate Authority for fast, secure connections
 
 .. topic-box::
-  :title: Setup Orbot
+  :title: Connect to Tor Network
   :icon: scylla-icon scylla-icon--networking
   :link: tor-android
   :class: large-4
-  :anchor: Run Tor
+  :anchor: View
 
-  Run Tor natively (in the background) on your Android device. This will enable apps to communicate with your Start9 server via the Tor Network, remotely.
+  Run Tor natively for remote connectivity
 
 .. topic-box::
   :title: Configure Firefox
   :link: ff-android
   :icon: scylla-icon scylla-icon--integrations
   :class: large-4
-  :anchor: Config
+  :anchor: View
 
-  Configure Firefox for an optimal experience with your server.
+  Configure Firefox for an optimal browser experience
 
 .. toctree::
-   :maxdepth: 4
-   :hidden:
+  :maxdepth: 4
+  :hidden:
 
-   lan-android
-   tor-android
-   ff-android
+  lan-android
+  tor-android
+  ff-android
