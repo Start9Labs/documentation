@@ -116,7 +116,7 @@ Android
 
         We suggest using Tor, however it is possible have a good experience with LAN. Once synced, your app and all your passwords will be cached and available when you are on the go and not connected to your Start9 Server, and you will only need to be on LAN to update any edits to your vault.
 
-        Begin by :ref:`setting up LAN <lan-android>` on your device.
+        Begin by :ref:`setting up LAN <ca-android>` on your device.
 
         #. Visit your app store of choice and download the Bitwarden app.  Once downloaded and installed, let's go into Orbot, and add the app to the VPN apps list.  You may need to hit the refresh button in the top left to get it to populate.
 
@@ -149,7 +149,7 @@ iOS
 
         Begin by :ref:`setting up Tor <tor-ios>` on your iPhone.
 
-        You will also need :ref:`LAN access <lan-ios>` setup on your iPhone.
+        You will also need :ref:`LAN access <ca-ios>` setup on your iPhone.
 
         #. Visit the App Store and download the `Bitwarden app <https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744>`_
 
@@ -193,7 +193,7 @@ iOS
 
         We suggest using Tor, however it is possible have a good experience with LAN. Once synced, your app and all your passwords will be cached and available when you are on the go and not connected to your Start9 Server, and you will only need to be on LAN to update any edits to your vault.
 
-        Begin by :ref:`setting up LAN <lan-ios>` on your device.
+        Begin by :ref:`setting up LAN <ca-ios>` on your device.
 
         #. Visit the App Store and download the `Bitwarden app <https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744>`_
 
@@ -247,7 +247,7 @@ Desktop Clients
 
         #. As with the other solutions above, click the 'Settings' icon, and enter your Vaultwarden Tor address.  You can then log in to your vault.
 
-        Alternatively, you may be able to run using your LAN address, but this has proven finicky, especially on Debian/Ubuntu systems.  You will have better luck if you have the Root CA installed at the OS level.  First, be sure to :ref:`Setup LAN <lan-linux>` natively.
+        Alternatively, you may be able to run using your LAN address, but this has proven finicky, especially on Debian/Ubuntu systems.  You will have better luck if you have the Root CA installed at the OS level.  First, be sure to :ref:`Setup LAN <ca-linux>` natively.
 
     .. collapse:: Mac
 
@@ -289,7 +289,7 @@ Desktop Clients
 
                 We suggest using Tor, however it is possible have a good experience with LAN. Once synced, your app and all your passwords will be cached and available when you are on the go and not connected to your Start9 Server, and you will only need to be on LAN to update any edits to your vault.
 
-                #. Begin by making sure that LAN is :ref:`steup on your Mac<lan-mac>`.
+                #. Begin by making sure that LAN is :ref:`steup on your Mac<ca-mac>`.
 
                 #. Download the `Bitwarden Desktop app <https://bitwarden.com/download/>`_.
 
