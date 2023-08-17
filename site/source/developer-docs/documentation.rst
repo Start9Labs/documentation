@@ -28,7 +28,7 @@ If you would like to contribute to the documentation please follow the instructi
 
     .. group-tab:: Editing an existing page:
 
-        #. Search through the relevant directory, find the article you'd like to edit, select it and tap on the edit button.
+        #. Search through the relevant directory, find the article you'd like to edit, select it, and click on the edit button.
 
             .. figure:: /_static/images/contribution/documentation-update-step1.png
                 :width: 70%
