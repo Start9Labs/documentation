@@ -14,7 +14,7 @@ If you would like to contribute to the documentation please follow the instructi
 
 #. Head to `Start9's documentation repo. <https://github.com/start9labs/documentation>`_
 
-#. Fork the repository by taping here:
+#. Fork the repository by clicking here:
 
     .. figure:: /_static/images/contribution/documentation-fork-step4.png
         :width: 70%
