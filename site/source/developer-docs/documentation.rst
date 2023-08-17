@@ -33,7 +33,7 @@ If you would like to contribute to the documentation please follow the instructi
             .. figure:: /_static/images/contribution/documentation-update-step1.png
                 :width: 70%
 
-        #. Make your edit and tap "Commit changes".
+        #. Make your edit and click "Commit changes".
 
             .. figure:: /_static/images/contribution/documentation-update-step2.png
                 :width: 70%
