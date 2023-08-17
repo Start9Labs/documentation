@@ -58,7 +58,7 @@ If you would like to contribute to the documentation please follow the instructi
             .. figure:: /_static/images/contribution/documentation-update-step6.png
                 :width: 70%
 
-        #. Once reviewed we will either suggest changes or approve it if no changes are necessary. If we reject your PR we will try to offer an explanation of why the PR was not needed.
+        #. From here, a Start9 team member will review your PR, either suggesting changes or approving it if no changes are necessary.
 
         Thank you for contributing to Start9's documentation!
 
