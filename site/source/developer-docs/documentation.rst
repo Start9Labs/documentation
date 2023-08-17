@@ -91,7 +91,7 @@ If you would like to contribute to the documentation please follow the instructi
         
         .. note::
 
-            If you don't see "Compare & pull request" button, then tap "branches" instead, then tap "New pull request" next to the branch you created.
+            If you don't see the "Compare & pull request" button, click "branches", then click "New pull request" next to the branch you created.
 
         
                 .. figure:: /_static/images/contribution/documentation-new-step5.1.png
