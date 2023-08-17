@@ -9,100 +9,103 @@ If you would like to contribute to the documentation please follow the instructi
 
 #. Create an account if you don't have one already:
 
-    .. figure:: /_static/images/contribution/github-signup.png
-        :width: 60%
+    .. figure:: /_static/images/contribution/documentation-fork-step2.png
+        :width: 70%
 
 #. Head to `Start9's documentation repo. <https://github.com/start9labs/documentation>`_
 
 #. Fork the repository by clicking here:
 
-    .. figure:: /_static/images/contribution/fork0.png
-        :width: 60%
+    .. figure:: /_static/images/contribution/documentation-fork-step4.png
+        :width: 70%
 
 #. Click "Create fork"
 
-    .. figure:: /_static/images/contribution/fork1.png
-        :width: 60%
+    .. figure:: /_static/images/contribution/documentation-fork-step5.png
+        :width: 70%
 
 .. tabs::
 
     .. group-tab:: Editing an existing page:
 
-        #. Click through the relevant directory, find the article you'd like to edit and select it:
+        #. Search through the relevant directory, find the article you'd like to edit, select it, and click on the edit button.
 
-            .. figure:: /_static/images/contribution/click-article.png
-                :width: 60%
+            .. figure:: /_static/images/contribution/documentation-update-step1.png
+                :width: 70%
 
-        #. Click on the edit button:
+        #. Make your edit and click "Commit changes".
 
-            .. figure:: /_static/images/contribution/edit-button.png
-                :width: 60%
+            .. figure:: /_static/images/contribution/documentation-update-step2.png
+                :width: 70%
 
-        #. Make your edit:
+        #. Describe your changes in the first field, click "Create new branch for this commit and start a pull request," name the branch in the second field and click "Propose changes".
 
-            .. figure:: /_static/images/contribution/make-edit.png
-                :width: 60%
+            .. figure:: /_static/images/contribution/documentation-update-step3.png
+                :width: 70%
 
-        #. Describe your changes in the first field, click "Create new branch for this commit and start a pull request," name the branch in the second field and click "Propose changes"
+        #. Click "documentation".
 
-            .. figure:: /_static/images/contribution/propose-change.png
-                :width: 60%
+               .. figure:: /_static/images/contribution/documentation-update-step4.png
+                :width: 70%     
 
-        #. Click "documentation":
+        #. Click "Compare & pull request" in the yellow box (if this does not appear, go to "Pull Requests -> New"):
 
-               .. figure:: /_static/images/contribution/go-back-to-documentation.png
-                :width: 60%     
+               .. figure:: /_static/images/contribution/documentation-update-step5.png
+                :width: 70%
 
-        #. Click "new pull request" by the side of the branch you just created:
+        #. Now ensure that the base repository is Start9Labs/documentation, then click "Create pull request".
 
-               .. figure:: /_static/images/contribution/documentation-then-new-pr.png
-                :width: 60%
+            .. figure:: /_static/images/contribution/documentation-update-step6.png
+                :width: 70%
 
-        #. Now ensure that the base repository is Start9Labs/documentation, then click the cog on the right and select someone from the Start9 team to review your PR then finally click "Create pull request".
-
-
-            .. figure:: /_static/images/contribution/base-repo-then-pr.png
-                :width: 60%
-
-        #. If you are unable to request review you can still click "Create pull request" - once reviewed we will either suggest changes or approve it if no changes are necessary. If we reject your PR we will try to offer an explanation of why the PR was not needed.
+        #. From here, a Start9 team member will review your PR, either suggesting changes or approving it if no changes are necessary.
 
         Thank you for contributing to Start9's documentation!
 
     .. group-tab:: Creating a new page:
 
-        #. Click "Add file" and then "Create new file":
+        1. Click "Add file" and then "Create new file".
 
-            .. figure:: /_static/images/contribution/new-file.png
-                :width: 60%
+            .. figure:: /_static/images/contribution/documentation-new-step1.png
+                :width: 70%
 
-        #. Name and enter the contents of your first article:
+        2. Name and enter the contents of your first article and then click "Commit changes".  Remember to put this in the correct location in the file structure.
 
-            .. figure:: /_static/images/contribution/name-write-first-article.png
-                :width: 60%
+            .. figure:: /_static/images/contribution/documentation-new-step2.png
+                :width: 70%
 
-        #. Describe your article in the first field, click "Create new branch for this commit and start a pull request," name the branch in the second field and click "Propose new file"
+        3. Describe your article in the first field, click "Create new branch for this commit and start a pull request," name the branch in the second field and click "Propose new file".
 
-            .. figure:: /_static/images/contribution/propose-new-file.png
-                :width: 60%
+            .. figure:: /_static/images/contribution/documentation-new-step3.png
+                :width: 70%
 
-        #. Now click "documentation" and you will likely see this "Compare and pull request" button - if so click it and head to the next step:
+        4. Now click "documentation" and then click the "Compare and pull request" button.  If this option does not appear, see the note below.
 
-            .. figure:: /_static/images/contribution/if-orange-field.png
-                :width: 60%
+            .. figure:: /_static/images/contribution/documentation-new-step4.1.png
+                :width: 70%
+            
+            .. figure:: /_static/images/contribution/documentation-new-step4.2.png
+                :width: 70%
 
-        #. If you don't see that button click "branches" instead then click "New pull request" next to the branch you created:
 
-            .. figure:: /_static/images/contribution/branches-instead.png
-                :width: 60%
+        
+        .. note::
 
-            .. figure:: /_static/images/contribution/branches-then-new-pr.png
-                :width: 60%
+            If you don't see the "Compare & pull request" button, click "branches", then click "New pull request" next to the branch you created.
 
-        #. Now ensure that the base repository is Start9Labs/documentation, then click the cog on the right and select someone from the Start9 team to review your PR then finally click "Create pull request".
+        
+                .. figure:: /_static/images/contribution/documentation-new-step5.1.png
+                    :width: 60%
 
-            .. figure:: /_static/images/contribution/cog-create-pr.png
-                :width: 60%
+                .. figure:: /_static/images/contribution/documentation-new-step5.2.png
+                    :width: 60%
 
-        #. If you are unable to request review you can still click "Create pull request" - once reviewed we will either suggest changes or approve it if no changes are necessary. If we reject your PR we will try to offer an explanation of why the PR was not needed.
+
+        5. Ensure that the base repository is Start9Labs/documentation, then click "Create pull request".
+
+            .. figure:: /_static/images/contribution/documentation-new-step6.png
+                :width: 70%
+
+        6. From here, a Start9 team member will review your PR, either suggesting changes or approving it if no changes are necessary.
 
         Thank you for contributing to Start9's documentation!
