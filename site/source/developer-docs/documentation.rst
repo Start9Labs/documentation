@@ -69,7 +69,7 @@ If you would like to contribute to the documentation please follow the instructi
             .. figure:: /_static/images/contribution/documentation-new-step1.png
                 :width: 70%
 
-        2. Name and enter the contents of your first article and then tap "Commit changes".
+        2. Name and enter the contents of your first article and then click "Commit changes".  Remember to put this in the correct location in the file structure.
 
             .. figure:: /_static/images/contribution/documentation-new-step2.png
                 :width: 70%
