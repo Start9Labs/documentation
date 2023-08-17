@@ -101,7 +101,7 @@ If you would like to contribute to the documentation please follow the instructi
                     :width: 60%
 
 
-        5. Now ensure that the base repository is Start9Labs/documentation, then finally tap "Create pull request".
+        5. Ensure that the base repository is Start9Labs/documentation, then click "Create pull request".
 
             .. figure:: /_static/images/contribution/documentation-new-step6.png
                 :width: 70%
