@@ -64,7 +64,7 @@ If you would like to contribute to the documentation please follow the instructi
 
     .. group-tab:: Creating a new page:
 
-        1. Tap "Add file" and then "Create new file".
+        1. Click "Add file" and then "Create new file".
 
             .. figure:: /_static/images/contribution/documentation-new-step1.png
                 :width: 70%
