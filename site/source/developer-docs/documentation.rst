@@ -74,7 +74,7 @@ If you would like to contribute to the documentation please follow the instructi
             .. figure:: /_static/images/contribution/documentation-new-step2.png
                 :width: 70%
 
-        3. Describe your article in the first field, tap "Create new branch for this commit and start a pull request," name the branch in the second field and tap "Propose new file".
+        3. Describe your article in the first field, click "Create new branch for this commit and start a pull request," name the branch in the second field and click "Propose new file".
 
             .. figure:: /_static/images/contribution/documentation-new-step3.png
                 :width: 70%
