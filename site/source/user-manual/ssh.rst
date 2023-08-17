@@ -5,7 +5,7 @@ Using SSH
 =========
 Like most Linux distributions, you can go "under-the-hood" via SSH (Secure Shell Protocol) if you choose.  It's a good idea to have set up, but generally, all server access is recommended via the UI.  If you are auditing, doing dev work, hacking (with an understanding of the consequences), or are directed to by a Start9 support tech, then you may need SSH access.
 
-For security reasons, password access is not available by default, so you will need to add an SSH key to your server via the method below.
+For security reasons, password access is not available, so you will need to add an SSH key to your server via the method below.
 
 .. contents::
   :depth: 2
