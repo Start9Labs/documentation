@@ -43,7 +43,7 @@ If you would like to contribute to the documentation please follow the instructi
             .. figure:: /_static/images/contribution/documentation-update-step3.png
                 :width: 70%
 
-        #. Tap "documentation".
+        #. Click "documentation".
 
                .. figure:: /_static/images/contribution/documentation-update-step4.png
                 :width: 70%     
