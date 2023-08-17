@@ -48,7 +48,7 @@ If you would like to contribute to the documentation please follow the instructi
                .. figure:: /_static/images/contribution/documentation-update-step4.png
                 :width: 70%     
 
-        #. Tap "new pull request" by the side of the branch you just created:
+        #. Click "Compare & pull request" in the yellow box (if this does not appear, go to "Pull Requests -> New"):
 
                .. figure:: /_static/images/contribution/documentation-update-step5.png
                 :width: 70%
