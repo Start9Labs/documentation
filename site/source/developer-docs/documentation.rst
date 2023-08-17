@@ -79,7 +79,7 @@ If you would like to contribute to the documentation please follow the instructi
             .. figure:: /_static/images/contribution/documentation-new-step3.png
                 :width: 70%
 
-        4. Now tap "documentation" and you will likely see this "Compare and pull request" button - if so tap it and head to the next step.
+        4. Now click "documentation" and then click the "Compare and pull request" button.  If this option does not appear, see the note below.
 
             .. figure:: /_static/images/contribution/documentation-new-step4.1.png
                 :width: 70%
