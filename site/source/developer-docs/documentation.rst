@@ -19,7 +19,7 @@ If you would like to contribute to the documentation please follow the instructi
     .. figure:: /_static/images/contribution/documentation-fork-step4.png
         :width: 70%
 
-#. Tap "Create fork"
+#. Click "Create fork"
 
     .. figure:: /_static/images/contribution/documentation-fork-step5.png
         :width: 70%
