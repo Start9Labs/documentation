@@ -1,23 +1,13 @@
-.. _lan-mac:
+.. _ca-mac:
 
-================================
-Trusting Your Start9 CA on macOS
-================================
-Complete this guide to download your Start9 server's Root Certificate Authority (CA), and trust it on your client device (Mac).  This allows you to use encrypted ``https`` connections to your ``.local`` (LAN) and ``.onion`` (tor) server addresses, access services on LAN, and enhances performance on tor.  The Root CA was created by your server when you perfomed the initial setup, and signs the certificate of your server's main UI, as well as that of all services.
+=====================================
+Trusting Your Server's Root CA on Mac
+=====================================
+Complete this guide to trust your server's Root Certificate Authority (Root CA) on Mac.
 
-#. In your Start9 server's UI, navigate to **System** -> **LAN**
+#. Ensure you have already `downloaded your server's Root CA </getting-started/trust-ca/#download-your-server-s-root-ca>`_
 
-    .. figure:: /_static/images/ssl/macos/trust-cert-macos-1-system-lan.png
-        :width: 60%
-        :alt: Navigate to System > Root CA
-
-#. Click **Download Root CA** and your browser will either automatically save the certificate to your Downloads folder or ask you where to save it:
-
-    .. figure:: /_static/images/ssl/macos/trust-cert-macos-2-download_cert.png
-        :width: 60%
-        :alt: Download Certificate
-
-#. Among the browser's downloads, right click your certificate file and select *Show in Folder*:
+#. Locate your downloaded Root CA. Right click it and select *Show in Folder*:
 
     .. figure:: /_static/images/ssl/macos/trust-cert-macos-3-show_in_folder.png
         :width: 60%
@@ -60,5 +50,3 @@ Complete this guide to download your Start9 server's Root Certificate Authority 
         :alt: Keychain submenu
 
     .. tip:: If the keychain console did not show the certificate as trusted, press "Command + spacebar" and type “Keychain Access”, and hit enter to re-open it.
-
-You're now ready to browse your service UIs with encryption, either via the browser, or with native client apps.  For Mozilla apps, such as Firefox, you will need to follow the :ref:`Firefox Config <lan-ff>` guide, which we highly recommend.

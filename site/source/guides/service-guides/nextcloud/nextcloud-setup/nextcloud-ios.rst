@@ -18,7 +18,7 @@ The latest version of the official Nextcloud client is available on their `downl
 
 LAN Setup
 =========
-Make sure you have first set up :ref:`LAN access<lan-ios>`.
+Make sure you have first set up :ref:`LAN access<ca-ios>`.
 
 1. Download the iOS Nextcloud client from `App Store <https://apps.apple.com/us/app/nextcloud/id1125420102>`_.
 2. Open the client and tap "Log In".

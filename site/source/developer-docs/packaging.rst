@@ -5,14 +5,14 @@ Service Packaging
 =================
 
 .. contents::
-  :depth: 2 
+  :depth: 2
   :local:
 
 Welcome! Thank you for your interest in contributing to the growing ecosystem of open software. We call the software applications that run on :ref:`StartOS<start-os>` "services."  This distinction is made to differentiate from "applications" (apps), which are generally run on a client, and used to access server-side software (services).  To run services on StartOS, a package of file components needs to be composed. This guide will dive into the basic structure of how to compose this package.
 
-Check out the :ref:`glossary <glossary>` to get acquainted with unfamiliar terms.  The bottom of this guide also includes :ref:`support <packaging-support>` links, including a master checklist. 
+Check out the :ref:`glossary <glossary>` to get acquainted with unfamiliar terms.  The bottom of this guide also includes :ref:`support <packaging-support>` links, including a master checklist.
 
-Let's get started! 
+Let's get started!
 
 Steps
 -----
@@ -21,7 +21,7 @@ Steps
 #. :ref:`Set up the development environment <development-environment>`
 #. :ref:`Try out the hello-world demo project <hello-world-example>`
 #. :ref:`Package the service <package-the-service>`
-    
+
     #. :ref:`Build a Dockerfile <build-a-dockerfile>`
     #. :ref:`Create the file structure <create-file-structure>`
     #. :ref:`Format the package <format-package>`
@@ -52,13 +52,13 @@ Development Environment
 A basic development and testing environment includes:
 
 #. A Start9 server or VM running the latest `StartOS <https://github.com/Start9Labs/start-os/releases>`_
-    
+
     - Use your own hardware to `DIY <https://start9.com/latest/diy>`_
     - Purchase a device from the `Start9 Store <https://store.start9.com>`_
     - Run in a `Virtual Machine <https://community.start9.com/t/installing-embassyos-on-virtual-machine-manager-virt-manager>`_
 
 #. A development machine
-    
+
     - Linux is highly recommended, and this walkthrough will assume a Debian-based (Ubuntu) distribution
 
 Dependencies - Recommended
@@ -66,7 +66,7 @@ Dependencies - Recommended
 These tools may or may not be necessary, depending on your environment and the package you are building.
 
 - Code Editor (IDE) - We recommend `Visual Studio Code <https://code.visualstudio.com/>`_
-  
+
 .. tabs::
 
     .. group-tab:: Debian/Ubuntu
@@ -74,11 +74,11 @@ These tools may or may not be necessary, depending on your environment and the p
         - Build essentials (Ubuntu) - Common build tools and encryption libraries.
 
             .. code-block::
-            
+
                 sudo apt-get install -y build-essential openssl libssl-dev libc6-dev clang libclang-dev ca-certificates
-            
+
         - Git - This is a version control system that is used widely in Open Source development.
-            
+
             .. code-block::
 
                 sudo apt install git
@@ -86,15 +86,15 @@ These tools may or may not be necessary, depending on your environment and the p
         - Use the following to verify installation:
 
             .. code-block::
-                
+
                 git --version
 
         - yq - A lightweight and portable command-line YAML, JSON and XML processor.
-            
+
             **Ubuntu**:
 
             .. code-block::
-                
+
                 sudo snap install yq
 
             **Debian**:
@@ -104,31 +104,31 @@ These tools may or may not be necessary, depending on your environment and the p
                 https://github.com/mikefarah/yq/releases/latest
 
                 Place it in `/usr/local/bin/yq`
-            
+
     .. group-tab:: CentOS/Fedora
 
         - Build essentials - Common build tools and encryption libraries.
 
             .. code-block::
-            
+
                 sudo dnf groupinstall "Development Tools" "Development Libraries"
-            
+
             .. code-block::
 
                 sudo dnf install openssl openssl-devel glibc-devel clang clang-devel ca-certificates perl
-            
+
         - Git - This is a version control system that is used widely in Open Source development.
-            
+
             .. code-block::
 
                 sudo dnf install git
-            
+
         - Use the following to verify installation:
 
             .. code-block::
-                
+
                 git --version
-    
+
 
         - **yq** - A lightweight and portable command-line YAML, JSON and XML processor.
 
@@ -145,39 +145,39 @@ Dependencies - Required
 - `Docker <https://docs.docker.com/get-docker/>`_ - Docker is currently the only supported containerization method for StartOS. This declares the necessary environment and building stages for your package to run. Install the desktop GUI or via the command line:
 
     .. code-block::
-        
+
         curl -fsSL https://get.docker.com | bash
         sudo usermod -aG docker "$USER"
         exec sudo su -l $USER
-    
+
     We need to enable cross-arch emulated builds in Docker (unless you are building on an ARM machine, such as an M1 Mac - in which case, skip this step).
-    
+
     .. code-block::
 
         docker run --privileged --rm linuxkit/binfmt:v0.8
-    
+
 - `Buildx <https://docs.docker.com/buildx/working-with-buildx/>`_ - This adds desirable new features to the Docker build experience. It is included by default with Docker Desktop GUI. If Docker was installed via command line, additionally run:
-    
+
     .. code-block::
 
         docker buildx install
         docker buildx create --use
-        
+
 - Rust & Cargo - Cargo is the package management solution for the Rust programming language. It is needed to build the Start SDK. The following will install both Rust and Cargo:
-    
+
     .. code-block::
 
         curl https://sh.rustup.rs -sSf | sh
         source $HOME/.cargo/env
-    
+
     Verify install:
-    
+
     .. code-block::
 
         cargo --version
-    
+
 - Start SDK - StartOS has an embedded Software Development Kit (SDK). You can install this component on any system, without needing to run StartOS.
-    
+
     .. code-block::
 
         git clone -b latest --recursive https://github.com/Start9Labs/start-os.git && cd start-os/backend && ./install-sdk.sh
@@ -186,17 +186,17 @@ Dependencies - Required
 
     .. code-block::
 
-        embassy-sdk init
-        embassy-sdk --version
-    
+        start-sdk init
+        start-sdk --version
+
 - Deno (an optional component for more advanced SDK features) - A simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust. It is used to enable the scripting API portion of the SDK.
-    
+
     **Ubuntu**:
 
     .. code-block::
 
         sudo snap install deno
-        
+
     **Other *nix**:
 
     .. code-block::
@@ -210,20 +210,20 @@ Demo with Hello World
 Check your environment setup by building a demo project and installing it to StartOS.
 
 #. Get Hello World
-    
+
     .. code-block::
 
         git clone https://github.com/Start9Labs/hello-world-wrapper.git
         cd hello-world-wrapper
         git submodule update --init
         docker run --rm --privileged multiarch/qemu-user-static --reset -p yes -c yes
-    
+
 #. Build to create ``hello-world.s9pk``
-    
+
     .. code-block::
 
         make
-    
+
 #. Sideload & Run
     - In the StartOS web UI menu, navigate to `System -> Sideload Service`
     - Drag and drop or select the ``hello-world.s9pk`` from your filesystem to install
@@ -246,7 +246,7 @@ First, check to see if the upstream project has already built one. This is usual
 
    - Download an image from `Docker Hub <https://hub.docker.com/>`_
 
-   - Make a new Dockerfile, and pull in an image the upstream project hosted on Docker Hub as the base 
+   - Make a new Dockerfile, and pull in an image the upstream project hosted on Docker Hub as the base
 
    - Make a new Dockerfile, and pull in a small distribution base (eg. alpine) and compile the build environment yourself using the upstream project source code
 
@@ -263,7 +263,7 @@ The resulting ``docker-images/aarch64.tar`` or ``docker-images/x86_64.tar`` arti
 Create File Structure
 .....................
 
-Once we have a Docker image, we can create the service wrapper. A service wrapper is a repository of a new git committed project that "wraps" an existing project (i.e. the upstream project). It contains the set of metadata files needed to build a ``s9pk``, define information displayed in the user interface, and establish the data structure of your package. This repository can exist on any hosted git server - it does not need to be a part of the Start9 GitHub ecosystem. 
+Once we have a Docker image, we can create the service wrapper. A service wrapper is a repository of a new git committed project that "wraps" an existing project (i.e. the upstream project). It contains the set of metadata files needed to build a ``s9pk``, define information displayed in the user interface, and establish the data structure of your package. This repository can exist on any hosted git server - it does not need to be a part of the Start9 GitHub ecosystem.
 
 The following files should be included in the service wrapper repository:
 
@@ -282,7 +282,7 @@ The following files should be included in the service wrapper repository:
 - ``instructions.md``
 
        - Instructions for the user
-    
+
        - Appears as a menu item in the service page UI
 
 - ``LICENSE``
@@ -296,19 +296,19 @@ The following files should be included in the service wrapper repository:
 - ``MAKEFILE``
 
        - Build instructions to create the s9pk
-    
+
        - `Example MAKEFILE <https://github.com/Start9Labs/hello-world-wrapper/blob/f44899be8523b784861aac92e43fe60f0bf219eb/Makefile#L1-L28>`_
 
 - ``prepare.sh``
 
     - A script that setups up the build environment for a Debian system so that Start9 can verify the build process upon submission.
-  
+
 - ``Dockerfile``
- 
+
        - A recipe for service creation
-    
+
        - Add here any prerequisite environment variables, files, or permissions
-    
+
        - Examples:
 
         - `Using an existing docker image <https://github.com/kn0wmad/robosats-wrapper/blob/d4a0bd609ce18036dfd7ee57e88d437e54d8efb9/Dockerfile#L1>`_
@@ -318,15 +318,15 @@ The following files should be included in the service wrapper repository:
 - ``docker_entrypoint.sh``
 
        - Starts and governs the operation of a service container
-    
+
        - Gracefully handles container errors and user preferences, i.e. username/password, SIGTERMs
-    
+
        - Examples:
-       
+
           - `Robosats <https://github.com/kn0wmad/robosats-wrapper/blob/master/docker_entrypoint.sh>`_
-        
+
           - `Photoview <https://github.com/Start9Labs/photoview-wrapper/blob/master/docker_entrypoint.sh>`_
-        
+
           - `RTL <https://github.com/Start9Labs/ride-the-lightning-wrapper/blob/master/docker_entrypoint.sh>`_
 
 .. _format-package:
@@ -340,15 +340,15 @@ Building the final ``s9pk`` artifact depends on the existence of the files liste
 
         .. code-block::
 
-            embassy-sdk pack
+            start-sdk pack
 
 - Verify the ``s9pk`` (replace PKG_ID with your package identifier):
 
         .. code-block::
 
-            embassy-sdk verify s9pk PKG_ID.s9pk
+            start-sdk verify s9pk PKG_ID.s9pk
 
-    The verification step will provide details about missing files, or fields in the service manifest file. 
+    The verification step will provide details about missing files, or fields in the service manifest file.
 
 That's it! You now have a package!
 
@@ -370,19 +370,19 @@ Testing
     #. Use the CLI:
 
         - Create a config file with the IP address of the device running StartOS:
-            
+
             .. code-block::
 
                 touch /etc/embassy/config.yaml
                 echo "host: <IP_ADDRESS_REPLACE_ME>" > /etc/embassy/config.yaml
-        
-        - Login with master password 
-        
+
+        - Login with master password
+
             .. code-block::
 
-                embassy-cli auth login
-                embassy-cli package install <PACKAGE_ID_REPLACE_ME>.s9pk
-            
+                start-cli auth login
+                start-cli package install <PACKAGE_ID_REPLACE_ME>.s9pk
+
 
     .. figure:: /_static/images/dev/nc-install.png
         :width: 60%
@@ -442,13 +442,13 @@ Glossary
 
 `service` - open software applications that run on StartOS
 
-`package` - the composed set of a Docker image, a service manifest, and service instructions, icon, and license, that are formatted into a file with the `s9pk` extension using `embassy-sdk`
+`package` - the composed set of a Docker image, a service manifest, and service instructions, icon, and license, that are formatted into a file with the `s9pk` extension using `start-sdk`
 
 `wrapper` - the project repository that "wraps" the upstream project, and includes additionally necessary files for building and packaging a service for eOS
 
 `scripts` - a set of developer APIs that enable advanced configuration options for services
 
-`embassy-sdk` - the Software Development Toolkit used to package and verify services for StartOS
+`start-sdk` - the Software Development Toolkit used to package and verify services for StartOS
 
 `open source software` - computer software that is released under a license in which the copyright holder grants users the rights to use, study, change, and distribute the software and its source code to anyone and for any purpose
 

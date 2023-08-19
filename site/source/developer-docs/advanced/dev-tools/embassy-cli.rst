@@ -4,36 +4,34 @@
 StartOS Command Line Interface
 ==============================
 
-.. warning:: This is for advanced users only!! Anything you do while SSH'd into your Embassy is NOT SUPPORTED, unless under the guidance of a Start9 technician.
+.. warning:: This is for advanced users only!! Anything you do while SSH'd into StartOS is NOT SUPPORTED, unless under the guidance of a Start9 technician.
 
-When interacting with StartOS directly, you will invariably want to use ``embassy-cli``.  Embassy-CLI can control StartOS in many of the same ways that the UI can, but with finer controls and deeper insights.
+When interacting with StartOS directly, you will invariably want to use ``start-cli``.  start-cli can control StartOS in many of the same ways that the UI can, but with finer controls and deeper insights.
 
-In order to use Embassy-CLI, you will first need to authorize yourself with the following command...
+In order to use start-cli, you will first need to authorize yourself with the following command...
 
     .. code-block:: bash
 
-        embassy-cli auth login
+        start-cli auth login
 
     and enter your StartOS Master Password at the prompt.
 
 
-You can enter ``embassy-cli help`` or ``embassy-cli <option> help`` to get an overview of capabilities:
+You can enter ``start-cli help`` or ``start-cli <option> help`` to get an overview of capabilities:
 
     .. code-block:: bash
 
-        Embassy-CLI
+        StartOS-CLI
 
         USAGE:
-            embassy-cli [OPTIONS] <SUBCOMMAND>
-
-        FLAGS:
-                --help       Prints help information
-            -V, --version    Prints version information
+            start-cli [OPTIONS] <SUBCOMMAND>
 
         OPTIONS:
             -c, --config <config>
             -h, --host <host>
+                --help       Prints help information
             -p, --proxy <proxy>
+            -V, --version    Prints version information
 
         SUBCOMMANDS:
             auth            Login/logout and manage sessions
