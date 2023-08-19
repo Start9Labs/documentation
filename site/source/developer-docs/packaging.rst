@@ -103,7 +103,7 @@ These tools may or may not be necessary, depending on your environment and the p
 
                 https://github.com/mikefarah/yq/releases/latest
 
-                Place it at `/usr/local/bin/yq` and ``chmod 555 /usr/local/bin/yq``
+                Place it at `/usr/local/bin/yq` and ``chmod a+rx /usr/local/bin/yq``
 
     .. group-tab:: CentOS/Fedora
 
@@ -136,7 +136,7 @@ These tools may or may not be necessary, depending on your environment and the p
 
                 https://github.com/mikefarah/yq/releases/latest
 
-                Place it at `/usr/local/bin/yq` and ``chmod 555 /usr/local/bin/yq``
+                Place it at `/usr/local/bin/yq` and ``chmod a+rx /usr/local/bin/yq``
 
 .. note:: Anytime you use a ``git clone`` command in this guide, it will create a new directory with code in it, so make sure you are executing this command from a directory that you want to store code in, such as your ``home`` folder.
 
