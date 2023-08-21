@@ -73,7 +73,7 @@ If you wish to use a standalone client for Calendar and Contacts, we recommend M
             :width: 60%
             :alt: thunderbird add calendar password
 
-      - Check wich calendars you want to integrate and click "Subscribe".
+      - Check which calendars you want to integrate and click "Subscribe".
 
         .. figure:: /_static/images/nextcloud/thunderbird-calendar-step5.png
             :width: 60%
