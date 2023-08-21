@@ -29,7 +29,7 @@ If you wish to use a standalone client for Calendar and Contacts, we recommend M
             :width: 60%
             :alt: thunderbird add new contact book
 
-      - Enter username and location wich you can find in Nextcloud > Properties tab on start9 server. You can choose .local or Tor connection. Paste it and click "Continue".
+      - Enter username and location which you can find under Nextcloud > Properties on your start9 server. You can choose a local or remote connection. Click "Continue".
 
         .. figure:: /_static/images/nextcloud/nextcloud-properties.png
             :width: 60%
