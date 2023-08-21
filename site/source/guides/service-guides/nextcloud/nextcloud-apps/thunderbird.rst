@@ -9,7 +9,7 @@ Thunderbird
   :local:
 
 Calendar & Contacts Syncing
-=========================================
+============================
 If you wish to use a standalone client for Calendar and Contacts, we recommend Mozilla's `Thunderbird <https://www.thunderbird.net>`_.
 
 1. Install the :ref:`Contacts<nc-contacts>` and :ref:`Calendar<nc-calendar>` apps in Nextcloud if they are not yet installed.
