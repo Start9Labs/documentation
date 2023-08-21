@@ -5,7 +5,7 @@ Using SSH
 =========
 Like most Linux distributions, you can go "under-the-hood" via SSH (Secure Shell Protocol) if you choose.  It's a good idea to have set up, but generally, all server access is recommended via the UI.  If you are auditing, doing dev work, hacking (with an understanding of the consequences), or are directed to by a Start9 support tech, then you may need SSH access.
 
-For security reasons, password access is not available in most situations, so you will need to add an SSH key to your server via the method below.
+For security reasons, password access is not available, so you will need to add an SSH key to your server via the method below.
 
 .. contents::
   :depth: 2
@@ -24,7 +24,7 @@ Creating an SSH Key
 
 #. Create a strong passphrase and save it somewhere safe, or press ``Enter`` for no passphrase
 
-  .. note:: The next 3 steps only apply to Linux and macOS.  If you are on Windows, please skip down to :ref:`Registering an SSH Key<registering-an-ssh-key>`.
+    .. note:: The next 3 steps only apply to Linux and macOS.  If you are on Windows, please skip down to :ref:`Registering an SSH Key<registering-an-ssh-key>`.
 
 #. It will inform you that your public key has been saved.  Take note of this path:
 
@@ -158,7 +158,7 @@ Setup
 
         .. code-block:: bash
 
-            echo "HiddenServiceDir /var/lib/tor/ssh" >> /etc/tor/torrc && echo "HiddenServicePort 22 127.0.0.1:22" >> /etc/tor/torrc
+            echo -e "\nHiddenServiceDir /var/lib/tor/ssh\nHiddenServicePort 22 127.0.0.1:22" >> /etc/tor/torrc
 
 #. Restart your Start9 server by exiting chroot edit mode:
 
@@ -170,7 +170,7 @@ Setup
 
     .. code-block:: bash
 
-        cat /var/lib/tor/ssh/hostname
+        sudo cat /var/lib/tor/ssh/hostname
 
 .. note:: Your newly generated .onion address is unique for SSH access only and should not be confused with the main .onion address for the server.
 
@@ -181,12 +181,11 @@ Configure local SSH client
 
     .. code-block:: bash
 
-        echo -e "Host *.onion\n  ProxyCommand nc -xlocalhost:9050 %h %p\n" >> ~/.ssh/config
+        echo -e "\nHost *.onion\n\tProxyCommand nc -xlocalhost:9050 %h %p" >> ~/.ssh/config
 
     This command adds a wildcard setting for .onion domains to your SSH config file. Any .onion domains you connect to using SSH will use the specified proxy command.
 
     Note: You only need to run this command only once to set up the SSH Over Tor configuration.
-
 
 Access
 ======
