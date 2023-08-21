@@ -37,7 +37,11 @@ If you wish to use a standalone client for Calendar and Contacts, we recommend M
             :width: 60%
             :alt: thunderbird add new contact book
         
-      - Enter password for CardDav app created in Nextcloud and click "Ok".
+     - Password - In your Nextcloud WebUI, visit the top-right-hand menu and select "Personal Settings" -> "Security." At the bottom, under Devices & Sessions, create a new app password with a name of your choice, such as "CarDAV." Then, copy the resulting password and paste into Thunderbird. 
+
+        .. figure:: /_static/images/nextcloud/native-nextcloud-integration-macos-step3.1.png
+          :width: 60%
+          :alt: nextcloud app password 
 
         .. figure:: /_static/images/nextcloud/thunderbird-contact-step3.png
             :width: 60%
@@ -67,11 +71,15 @@ If you wish to use a standalone client for Calendar and Contacts, we recommend M
             :width: 60%
             :alt: thunderbird add calendar checkbox
 
-      - Enter password for CalDav app created in Nextcloud and click "Ok".
+      - Password - In your Nextcloud WebUI, visit the top-right-hand menu and select "Personal Settings" -> "Security." At the bottom, under Devices & Sessions, create a new app password with a name of your choice, such as "CalDAV." Then, copy the resulting password and paste into Thunderbird. 
 
-        .. figure:: /_static/images/nextcloud/thunderbird-calendar-step4.png
+        .. figure:: /_static/images/nextcloud/native-nextcloud-integration-macos-step3.1.png
+          :width: 60%
+          :alt: nextcloud app password 
+
+        .. figure:: /_static/images/nextcloud/thunderbird-contact-step3.png
             :width: 60%
-            :alt: thunderbird add calendar password
+            :alt: thunderbird add password
 
       - Check which calendars you want to integrate and click "Subscribe".
 
