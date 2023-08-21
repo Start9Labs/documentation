@@ -79,4 +79,4 @@ If you wish to use a standalone client for Calendar and Contacts, we recommend M
             :width: 60%
             :alt: thunderbird add calendar subscribe
 
-4. That's it! Your Nextcloud calendar and contacts are now integrated with Thunderbird. 
+4. Your Nextcloud calendar and contacts are now integrated with Thunderbird. 
