@@ -15,7 +15,7 @@ This purpose of this file is to:
 - Read the docker container and build the project
 - Build all prerequisites for running the docker file
 - Build all dependencies
-- Package assets and docker image using ``embassy-sdk pack``
+- Package assets and docker image using ``start-sdk pack``
 
 Example
 -------

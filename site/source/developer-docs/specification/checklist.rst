@@ -5,7 +5,7 @@ Checklist
 =========
 
 .. contents::
-  :depth: 2 
+  :depth: 2
   :local:
 
 This guide outlines a checklist of steps to complete in order to package a service for StartOS. For a more in depth example, visit the :ref:`build your first package <service-packaging>` guide.
@@ -22,8 +22,8 @@ Packaging
     7. Create instructions file
     8. Create icon file
     9. Add license
-    10. Package all components into s9pk using embassy-sdk
-    11. Verify package components using embassy-sdk
+    10. Package all components into s9pk using start-sdk
+    11. Verify package components using start-sdk
     12. Create a wrapper repository on GitHub to host all package assets for review
     13. (Optional) Add all package build steps to a Makefile for replicability
 
