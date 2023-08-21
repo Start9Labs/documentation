@@ -8,7 +8,7 @@ Thunderbird
   :depth: 2 
   :local:
 
-Calendar & Contacts Syncing - Thunderbird
+Calendar & Contacts Syncing
 =========================================
 If you wish to use a standalone client for Calendar and Contacts, we recommend Mozilla's `Thunderbird <https://www.thunderbird.net>`_.
 
