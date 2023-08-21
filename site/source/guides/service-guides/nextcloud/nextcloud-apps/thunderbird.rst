@@ -13,9 +13,7 @@ Calendar & Contacts Syncing
 If you wish to use a standalone client for Calendar and Contacts, we recommend Mozilla's `Thunderbird <https://www.thunderbird.net>`_.
 
 1. Install the :ref:`Contacts<nc-contacts>` and :ref:`Calendar<nc-calendar>` apps in Nextcloud if they are not yet installed.
-2. Make sure you are on the latest version of Thunderbird and then import your LAN certificate:
-
-    - First, follow the instructions for adding your :ref:`RootCA<trust-ca>` to your system and then the :ref:`Thunderbird-specific instructions<lan-thunderbird>`.
+2. Make sure you are on the latest version of Thunderbird.  Add your :ref:`RootCA<trust-ca>` to your system and then configure :ref:`Thunderbird<lan-thunderbird>`.
 
 3. Choose wich service you want to integrate.
 
