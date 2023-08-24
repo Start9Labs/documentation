@@ -55,7 +55,7 @@ A basic development and testing environment includes:
 
     - Use your own hardware to `DIY <https://start9.com/latest/diy>`_
     - Purchase a device from the `Start9 Store <https://store.start9.com>`_
-    - Run in a `Virtual Machine <https://community.start9.com/t/installing-embassyos-on-virtual-machine-manager-virt-manager>`_
+    - Run in a `Virtual Machine <https://community.start9.com/t/installing-startos-on-virtual-machine-manager-virt-manager/77>`_
 
 #. A development machine
 
