@@ -34,6 +34,8 @@ This guide applies to Firefox, Firefox ESR, Librewolf, and Thunderbird. Mozilla 
                 .. figure:: /_static/images/ssl/linux/cert-trust-linux-firefox-p11kit-3.png
                     :width: 60%
                     :alt: Mozilla application p11kit trust #3
+                
+                .. tip:: The path to p11-kit-trust.so will be slightly different if your processor's architecture is not x86_64.
 
             #. Verify that the new module shows up on the left hand side and select ``OK`` at the bottom right:
 
@@ -65,7 +67,7 @@ This guide applies to Firefox, Firefox ESR, Librewolf, and Thunderbird. Mozilla 
 
 Tor
 ---
-#. Ensure you have already :ref:`set up Tor<tor-mac>`
+#. Ensure you have already :ref:`set up Tor<tor-linux>`
 
 #. Open Firefox and enter ``about:config`` in the URL bar. Accept any warnings that appear
 
@@ -81,12 +83,17 @@ Tor
         :width: 60%
         :alt: Firefox allow insecure websockets over https
 
-#. Download a ``Proxy Auto Config`` file to inform Firefox how to use the Tor daemon running on your computer. You can get Start9's standard file from a terminal, by using:
+#. Download a `Proxy Auto Config` file to inform Firefox how to use the Tor daemon running on your computer. You can get Start9's standard file from a terminal, by using:
 
     .. code-block::
 
-        sudo wget -P /etc/tor https://start9.com/assets/proxy.pac
+        sudo wget -P ~/ https://start9.com/assets/proxy.pac
+    
+#. Determine the full path of `proxy.pac`, which we will use in step 9, by executing the following command in the terminal, and copying its output to your clipboard:
 
+    .. code-block::
+
+        echo file://$HOME/proxy.pac
 
 #. Go to the right-hand hamburger menu and select ``Settings``:
 
@@ -100,17 +107,17 @@ Tor
         :width: 60%
         :alt: Firefox search screenshot
 
-#. Select ``Automatic proxy configuration URL`` and paste in the path to your PAC file from earlier, prefixed with ``file://``. Your path may be different from the one below and the triple ``///`` is intentional
+#. Select ``Automatic proxy configuration URL`` and paste the output from the command you performed in step 6.  Be aware, the triple ``///`` is intentional, and your path *will* be different from the one below - namely, YOUR_LINUX_USERNAME will be your actual linux username:
 
     .. code-block::
 
-        file:///etc/tor/proxy.pac
-
-#. Check the box labeled ``Proxy DNS when using SOCKS v5``:
+        file:///home/YOUR_LINUX_USERNAME/proxy.pac
 
     .. figure:: /_static/images/tor/firefox_proxy_linux.png
         :width: 60%
         :alt: Firefox proxy settings screenshot
+    
+#. Check the box labeled ``Proxy DNS when using SOCKS v5`` in the image above
 
 #. Click ``OK`` and restart Firefox
 
