@@ -69,6 +69,13 @@ Connect StartOS
     If you use a "PIN" to log in to Windows, keep in mind that your password needs to be the user's full password, NOT the PIN!  Office365 accounts also may **not** work, try a regular user in this case.
 
 .. tip::
+
+    If you receive the following error:
+
+    **Filesystem I/O Error mount error(13): Permission denied**
+
+    Ensure your username and password are correct.  Also ensure your windows password meets any length and complexity requirements set by your local Windows policy.
+
     If you receive the following error:
     
     **Filesystem I/O Error mount error(115): Operation now in progress**
