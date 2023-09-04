@@ -1,8 +1,8 @@
 .. _nc-joplin:
 
-==================
-Joplin Integration
-==================
+======
+Joplin
+======
 `Joplin <https://joplinapp.org/>`_  is an open source note-taking app. Capture your thoughts and securely access them from any device.  First set up your :ref:`client devices<nextcloud-setup>`, so that Nextcloud will automatically keep your notes synced.
 
 Clients available for:
