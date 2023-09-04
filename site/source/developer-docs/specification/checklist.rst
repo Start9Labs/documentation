@@ -31,8 +31,8 @@ Testing:
 --------
 
     1. Sideload ``<package-id>.s9pk`` onto StartOS
-    2. Install package using embassy-cli
-    3. Start package using embassy-cli, or in the UI
+    2. Install package using start-cli
+    3. Start package using start-cli, or in the UI
     4. Check logs to see if errors
     5. Ensure service is reachable/launchable
     6. (Optional) Ensure data persists after stopping and restarting service.
