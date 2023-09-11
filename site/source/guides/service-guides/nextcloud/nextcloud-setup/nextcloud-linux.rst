@@ -33,7 +33,7 @@ For if your desktop environment does not support account integrations, or if you
 
 File Syncing - Nextcloud Desktop
 ================================
-This is Nextcloud's official client application for file syncing and account management.  It is available in your favorite package manager (usually as `nextcloud`).  You can also see this `full list of available packages <https://help.nextcloud.com/t/linux-packages-status/>`.   or you can get the latest version as an AppImage from the `Download for Desktop <https://nextcloud.com/install/#install-clients>`_ section of Nextcloud's website.
+This is Nextcloud's official client application for file syncing and account management.  It is available in your favorite package manager (usually as `nextcloud`).  You can also see this `full list of available packages <https://help.nextcloud.com/t/linux-packages-status/>`_.   or you can get the latest version as an AppImage from the `Download for Desktop <https://nextcloud.com/install/#install-clients>`_ section of Nextcloud's website.
 
 LAN Setup
 .........
