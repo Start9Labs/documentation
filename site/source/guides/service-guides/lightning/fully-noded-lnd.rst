@@ -3,7 +3,7 @@
 ===========
 Fully Noded
 ===========
-Sovereign, secure, powerful, and easy-to-use wallet that utilizes your own CLN node as a backend.
+Sovereign, secure, powerful, and easy-to-use wallet that utilizes your own LND node as a backend.
 
 Available For:
 
