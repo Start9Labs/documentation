@@ -30,7 +30,7 @@ You can set up your devices using their :ref:`integrations<nextcloud-setup>`, bu
     2. Choose "On the network," then click "Next".
 
       .. figure:: /_static/images/nextcloud/thunderbird-calendar-step2.png
-          :width: 40%
+          :width: 60%
           :alt: thunderbird add calendar checkbox
 
     3. Fill in the Username and Location fields with the credentials from Nextcloud > Properties on your Start9 server.  Click "Find calendars".
