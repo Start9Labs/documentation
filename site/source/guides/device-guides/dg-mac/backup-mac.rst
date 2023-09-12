@@ -61,10 +61,6 @@ Please select what version of MacOS you are using from the two tabs below:
 
              .. tip:: You can find hostname at the bottom of sharing window.  You will need this in the next step.
 
-
-             .. tip:: You can find hostname at the bottom of sharing window.
-
-
     .. group-tab:: Pre-Ventura
 
         #. Identify or create a folder you would like to use to store your Start9 server's backups.
