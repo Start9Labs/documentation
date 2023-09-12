@@ -10,81 +10,75 @@ Thunderbird
 
 Calendar & Contacts Syncing
 ===========================
-If you wish to use a standalone client for Calendar and Contacts, we recommend Mozilla's `Thunderbird <https://www.thunderbird.net>`_.
+You can set up your devices using their :ref:`integrations<nextcloud-setup>`, but if you wish to use a standalone client for your Calendar and Contacts syncing, we recommend Mozilla's `Thunderbird <https://www.thunderbird.net>`_.
 
-1. Install the :ref:`Contacts<nc-contacts>` and :ref:`Calendar<nc-calendar>` apps in Nextcloud if they are not yet installed.
-2. Make sure you are on the latest version of Thunderbird.  Add your :ref:`RootCA<trust-ca>` to your system and then configure :ref:`Thunderbird<lan-thunderbird>`.
+1. Install the :ref:`Calendar<nc-calendar>` and :ref:`Contacts<nc-contacts>` apps in Nextcloud if they are not currently installed.
+2. Add your :ref:`RootCA<trust-ca>` to your system and then configure :ref:`Thunderbird<lan-thunderbird>`.
 
-3. Choose wich service you want to integrate.
+3. Select Calendar or Contacts from below to complete each unique setup:
 
-  .. tabs::
-    
-    .. group-tab:: Contacts
+.. tabs::
 
-      - Click on the contacts icon, open scroll down menu on "New Address Book" and click "Add CarDav Address Book".
+  .. group-tab:: Calendar 
 
-        .. figure:: /_static/images/nextcloud/thunderbird-contact-step1.png
-            :width: 60%
-            :alt: thunderbird add new contact book
+    1. In Thunderbird, click on the calendar icon, then "New Address Book" in the bottom-left.
 
-      - Enter username and location which you can find under Nextcloud > Properties on your start9 server. You can choose a local or remote connection. Click "Continue".
-      
-        .. figure:: /_static/images/nextcloud/nextcloud-properties.png
-            :width: 60%
-            :alt: start9 nextcloud properties
-
-        .. figure:: /_static/images/nextcloud/thunderbird-contact-step2.png
-            :width: 60%
-            :alt: thunderbird add new contact book
-
-     - Password - In your Nextcloud WebUI, visit the top-right-hand menu and select "Personal Settings" -> "Security." At the bottom, under Devices & Sessions, create a new app password with a name of your choice, such as "CarDAV." Then, copy the resulting password and paste into Thunderbird. 
-
-        .. figure:: /_static/images/nextcloud/native-nextcloud-integration-macos-step3.1.png
+      .. figure:: /_static/images/nextcloud/thunderbird-calendar-step1.png
           :width: 60%
-          :alt: nextcloud app password 
+          :alt: thunderbird add calendar
 
-        .. figure:: /_static/images/nextcloud/thunderbird-contact-step3.png
-            :width: 60%
-            :alt: thunderbird add password
+    2. Choose "On the network," then click "Next".
 
-    .. group-tab:: Calendar 
+      .. figure:: /_static/images/nextcloud/thunderbird-calendar-step2.png
+          :width: 40%
+          :alt: thunderbird add calendar checkbox
 
-      - Click on the calendar icon, open scroll down menu on "New Address Book" and click "Add CarDav Address Book". 
+    3. Fill in the Username and Location fields with the credentials from Nextcloud > Properties on your Start9 server.  Click "Find calendars".
 
-        .. figure:: /_static/images/nextcloud/thunderbird-calendar-step1.png
-            :width: 60%
-            :alt: thunderbird add calendar
-
-      - Choose "On the network" checkbox and click "Next".
-
-        .. figure:: /_static/images/nextcloud/thunderbird-calendar-step2.png
-            :width: 60%
-            :alt: thunderbird add calendar checkbox
-
-      - Enter username and location wich you can find in Nextcloud > Properties tab on start9 server. You can choose .local or Tor connection. Paste it and click "Find calendars".
-
-        .. figure:: /_static/images/nextcloud/nextcloud-properties.png
-            :width: 60%
-            :alt: start9 nextcloud properties
-
-        .. figure:: /_static/images/nextcloud/thunderbird-calendar-step3.png
-            :width: 60%
-            :alt: thunderbird add calendar checkbox
-
-      - Password - In your Nextcloud WebUI, visit the top-right-hand menu and select "Personal Settings" -> "Security." At the bottom, under Devices & Sessions, create a new app password with a name of your choice, such as "CalDAV." Then, copy the resulting password and paste into Thunderbird. 
-
-        .. figure:: /_static/images/nextcloud/native-nextcloud-integration-macos-step3.1.png
+      .. figure:: /_static/images/nextcloud/thunderbird-calendar-step3.png
           :width: 60%
-          :alt: nextcloud app password 
+          :alt: thunderbird add calendar checkbox
 
-        .. figure:: /_static/images/nextcloud/thunderbird-contact-step3.png
-            :width: 60%
-            :alt: thunderbird add password
+    4. Create a unique app password - In your Nextcloud WebUI, visit the top-right-hand menu and select "Personal Settings" -> "Security." At the bottom, under "Devices & Sessions," create a new app password with a name of your choice, such as "CalDAV." Copy the resulting password and paste it into Thunderbird.
 
-      - Check which calendars you want to integrate and click "Subscribe".
+      .. figure:: /_static/images/nextcloud/native-nextcloud-integration-macos-step3.1.png
+        :width: 60%
+        :alt: nextcloud app password 
 
-        .. figure:: /_static/images/nextcloud/thunderbird-calendar-step5.png
-            :width: 60%
-            :alt: thunderbird add calendar subscribe
+      .. figure:: /_static/images/nextcloud/thunderbird-contact-step3.png
+          :width: 60%
+          :alt: thunderbird add password
 
-4. Your Nextcloud calendar and contacts are now integrated with Thunderbird.
+    5. Check which calendars you want to integrate and click "Subscribe".
+
+      .. figure:: /_static/images/nextcloud/thunderbird-calendar-step5.png
+          :width: 60%
+          :alt: thunderbird add calendar subscribe
+
+    Your Nextcloud calendar will now sync with Thunderbird.  Click on the "Contacts" tab above to add your contacts.
+  
+  .. group-tab:: Contacts
+
+    1. Click on the Address Book icon, open the drop-down menu for "New Address Book" and click "Add CarDav Address Book".
+
+      .. figure:: /_static/images/nextcloud/thunderbird-contact-step1.png
+          :width: 60%
+          :alt: thunderbird add new contact book
+
+    2. Fill in the Username and Location fields with the credentials from Nextcloud > Properties on your Start9 server. Click "Continue".
+
+      .. figure:: /_static/images/nextcloud/thunderbird-contact-step2.png
+          :width: 60%
+          :alt: thunderbird add new contact book
+
+    3. Create a unique app password - In your Nextcloud WebUI, visit the top-right-hand menu and select "Personal Settings" -> "Security." At the bottom, under "Devices & Sessions," create a new app password with a name of your choice, such as "CalDAV." Copy the resulting password and paste it into Thunderbird.
+
+      .. figure:: /_static/images/nextcloud/native-nextcloud-integration-macos-step3.1.png
+        :width: 60%
+        :alt: nextcloud app password 
+
+      .. figure:: /_static/images/nextcloud/thunderbird-contact-step3.png
+          :width: 60%
+          :alt: thunderbird add password
+
+    Your Nextcloud contacts will now sync with Thunderbird.
