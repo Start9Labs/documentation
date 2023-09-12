@@ -64,21 +64,3 @@ You will first need to have the :ref:`Tor daemon running<tor-windows>`.
 3. On the following screen, click "Log in," then enter your Nextcloud Tor server address, which you can copy from Nextcloud -> Interfaces - Tor. This must start with `http://` and end with .onion. Click Next.
 4. This will launch your browser and prompt you to log in to your account. Log in and then grant access as we did for LAN.
 5. That's it! You may wish to set up some select folders for remote sync, but for large files, it is best to sync on LAN only, so you can "Skip folders configuration" on the resulting screen if you wish. Check your connection by clicking the newly created account in the client app.
-
-Calendar & Contacts Syncing - Thunderbird
-=========================================
-If you wish to use a standalone client for Calendar and Contacts, we recommend Mozilla's `Thunderbird <https://www.thunderbird.net>`_.
-
-1. Install the Contacts and Calendar apps in Nextcloud.
-2. Make sure you are on Thunderbird version 102.3.0 or greater and then import your LAN certificate:
-
-    - First, follow the :ref:`instructions for adding your Root CA to your system<lan-windows>` and then the :ref:`Thunderbird-specific instructions<lan-thunderbird>`.
-
-3. Download the `TBSync` and `Provider for CalDAV & CardDAV` add-ons by searching for them in the "Tools -> Add-ons and Themes" menu.
-4. Go back to "Tools -> Add-ons and Themes -> Extensions" and click the 'wrench' icon next to TBSync.
-5. Click "Account Actions" in the bottom left of the resulting screen, then "Add New Account -> CalDAV & CardDAV"
-6. Select "Automatic Configuration" and click `Next`
-7. Enter a name for your account, your nextcloud user name (found in Properties, default is 'admin'), password (found in Properties), and server LAN address (found in Interfaces, ending in `.local`) - then click "Next."
-8.  After connecting, click "Finish."
-9.  In the resulting window, click "Enable and synchronize this account."
-10. Select the items you want to sync, such as contacts and a calendar.
