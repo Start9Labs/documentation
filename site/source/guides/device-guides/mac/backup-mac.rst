@@ -59,7 +59,7 @@ Please select what version of MacOS you are using from the two tabs below:
 
         #. Click **Done** to close this window.  You can now move on to connecting your server.
 
-             .. tip:: You can find hostname at the bottom of sharing window.  You will need this in the next step.
+             .. tip:: You can find the hostname at the bottom of sharing window.  You will need this in the next step.
 
     .. group-tab:: Pre-Ventura
 
