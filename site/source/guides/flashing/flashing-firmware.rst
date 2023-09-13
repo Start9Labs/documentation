@@ -9,7 +9,7 @@ The source code can be viewed on Purism's `firmware git repo <https://source.pur
 
     .. caution:: USB drive **must** be formatted FAT32
 
-#. `Download the latest firmware from Purism's git repository <https://source.puri.sm/firmware/releases/-/blob/master/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-28.rom.gz>`_ and extract it.
+#. `Download the latest firmware from Purism's git repository <https://source.puri.sm/firmware/releases/-/raw/master/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-28.rom.gz>`_ and extract it.
     
 #. Copy or move the resulting ``pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-28.rom`` file onto your USB drive, then eject the drive and insert it into your (powered down) server.  USB 3.0 (blue ports) will be faster.
 
