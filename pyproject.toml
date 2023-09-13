@@ -7,7 +7,7 @@ authors = ["elvece <lucy@start9.com>, kn0wmad <david@start9.com>"]
 [tool.poetry.dependencies]
 python = "^3.7"
 pyyaml = "6.0"
-pygments = "^2.7.4"
+pygments = "^2.15.0"
 recommonmark = "0.5.0"
 sphinx-scylladb-theme = "1.2.1"
 sphinx-sitemap = "2.1.0"
@@ -18,8 +18,8 @@ sphinx-tabs = "^3.1.0"
 sphinxcontrib-youtube = "^1.0.1"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
-sphinx-autobuild = "^0.7.1"
+pytest = "^7.2.0"
+sphinx-autobuild = "^2021.3.14"
 
 [build-system]
 requires = ["poetry>=0.12"]
