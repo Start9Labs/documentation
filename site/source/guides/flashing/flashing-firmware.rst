@@ -3,7 +3,7 @@
 ===================
 Flashing (Firmware)
 ===================
-This page is for Server Pro / Purism Librem Mini users ONLY.  This firmware is custom for these devices.
+This page is for Server Pure / Purism Librem Mini users ONLY.  This firmware is custom for these devices.
 
 The source code can be viewed on Purism's `firmware git repo <https://source.puri.sm/firmware/releases/-/tree/master/librem_mini_v2/custom>`_.  You will need a USB flash drive, formatted FAT32, to flash the firmware to your server.
 
