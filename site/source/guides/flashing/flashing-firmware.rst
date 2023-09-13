@@ -7,7 +7,7 @@ This page is for Server Pure / Purism Librem Mini users ONLY.  This firmware is 
 
 The source code can be viewed on Purism's `firmware git repo <https://source.puri.sm/firmware/releases/-/tree/master/librem_mini_v2/custom>`_.  You will need a USB flash drive, formatted FAT32, to flash the firmware to your server.
 
-    .. caution:: USB drive **must** be formatted FAT32
+    .. caution:: The USB drive **must** be formatted with a FAT32 filesystem
 
 #. `Download the latest firmware from Purism's git repository <https://source.puri.sm/firmware/releases/-/blob/master/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-28.rom.gz>`_ and extract it.
     
