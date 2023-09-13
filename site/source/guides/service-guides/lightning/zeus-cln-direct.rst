@@ -30,7 +30,7 @@ Available For:
     .. figure:: /_static/images/lightning/zeus-cln-direct-step5.png
         :width: 60%
         
-    .. note:: If you already have other nodes configured in Zeus, go to Settings.-> Connect a node -> + . Then scan the QR code, and tap "Save node config".
+    .. note:: If you already have other nodes configured in Zeus, go to Settings -> Connect a node -> + . Then scan the QR code, and tap "Save node config".
 
         .. figure:: /_static/images/lightning/zeus-cln-direct-step6.png
             :width: 40%
