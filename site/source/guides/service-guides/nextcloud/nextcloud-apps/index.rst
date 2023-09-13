@@ -31,3 +31,4 @@ Integrations
   :maxdepth: 1
 
   joplin
+  thunderbird
