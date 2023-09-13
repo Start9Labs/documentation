@@ -30,13 +30,13 @@ You can set up your devices using their :ref:`integrations<nextcloud-setup>`, bu
     2. Choose "On the network," then click "Next".
 
       .. figure:: /_static/images/nextcloud/thunderbird-calendar-step2.png
-          :width: 60%
+          :width: 40%
           :alt: thunderbird add calendar checkbox
 
     3. Fill in the Username and Location fields with the credentials from Nextcloud > Properties on your Start9 server.  Click "Find calendars".
 
       .. figure:: /_static/images/nextcloud/thunderbird-calendar-step3.png
-          :width: 60%
+          :width: 40%
           :alt: thunderbird add calendar checkbox
 
     4. Create a unique app password - In your Nextcloud WebUI, visit the top-right-hand menu and select "Personal Settings" -> "Security." At the bottom, under "Devices & Sessions," create a new app password with a name of your choice, such as "CalDAV." Copy the resulting password and paste it into Thunderbird.
@@ -46,13 +46,13 @@ You can set up your devices using their :ref:`integrations<nextcloud-setup>`, bu
         :alt: nextcloud app password 
 
       .. figure:: /_static/images/nextcloud/thunderbird-contact-step3.png
-          :width: 60%
+          :width: 40%
           :alt: thunderbird add password
 
     5. Check which calendars you want to integrate and click "Subscribe".
 
       .. figure:: /_static/images/nextcloud/thunderbird-calendar-step5.png
-          :width: 60%
+          :width: 40%
           :alt: thunderbird add calendar subscribe
 
     Your Nextcloud calendar will now sync with Thunderbird.  Click on the "Contacts" tab above to add your contacts.
@@ -78,7 +78,7 @@ You can set up your devices using their :ref:`integrations<nextcloud-setup>`, bu
         :alt: nextcloud app password 
 
       .. figure:: /_static/images/nextcloud/thunderbird-contact-step3.png
-          :width: 60%
+          :width: 40%
           :alt: thunderbird add password
 
     Your Nextcloud contacts will now sync with Thunderbird.
