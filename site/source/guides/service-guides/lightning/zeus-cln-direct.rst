@@ -2,8 +2,8 @@
 
 Zeus
 ----
-
-Zeus is a powerful mobile wallet that can be connected directly to both LND and Core Lightning. If you'd like to connect via LNbits which allows allocation of funds, please see :ref:`this guide<connecting-lnbits>`.
+.. note:: You must first :ref:`connect to tor on your device<connecting-tor>`.
+Zeus is a powerful mobile wallet that can be connected directly to both LND and Core Lightning. If you'd like to connect via LNbits, which allows allocation of funds, please see :ref:`this guide<connecting-lnbits>`.
 
 Available For:
 
@@ -13,13 +13,26 @@ Available For:
 .. note:: Works with both Core Lightning (CLN) and LND! If you'd like to connect Zeus to LND instead - please use :ref:`this guide<zeus-lnd>`.
 
 
-#. Download the Zeus: Bitcoin and Lightning wallet from your mobile device's application store.
-#. Open your Start9 server's web interface and log in
-#. Select Services -> Core Lightning
-#. Select "Properties"
-#. Click the QR code next to "REST API Quick Connect" to display the QR code
-#. Open Zeus on your mobile device and go to Settings / Get Started -> Connect a node -> +
-#. Select "Use Tor"
-#. Change "Node interface" to "Core Lightning (c-lightning-REST)"
-#. Press "SCAN C-LIGHTNING-REST QR"
-#. Press "SAVE NODE CONFIG"
+#. Download `Zeus <https://zeusln.app/>`_ for your device.
+
+#. Log into StartOS and select Services -> Core Lightning -> Properties.
+
+    .. figure:: /_static/images/lightning/zeus-cln-direct-step3.png
+        :width: 60%
+
+#. Tap the QR code icon for "REST Quick Connect" to display the QR code.
+
+    .. figure:: /_static/images/lightning/zeus-cln-direct-step4.png
+        :width: 60%
+
+#. In Zeus, tap "Scan node config". Allow camera access, scan the QR code, and then tap 'Save node config'.
+
+    .. figure:: /_static/images/lightning/zeus-cln-direct-step5.png
+        :width: 60%
+        
+    .. note:: If you already have other nodes configured in Zeus, go to Settings -> Connect a node -> + . Then scan the QR code, and tap "Save node config".
+
+        .. figure:: /_static/images/lightning/zeus-cln-direct-step6.png
+            :width: 40%
+
+#. That's it. You can now use your Core Lightning Node via Zeus.
