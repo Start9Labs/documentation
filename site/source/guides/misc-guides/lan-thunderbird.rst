@@ -10,7 +10,7 @@ Trusting Your Start9 CA in Thunderbird
 
 #. Open Thunderbird and do the following:
 
-    a. Select the hamburger menu bar and click **Settings** from the resulting drop-down menu.
+    a. Select the hamburger menu and click **Settings** from the resulting drop-down menu.
   
     .. figure:: /_static/images/nextcloud/thunderbird-ca-1.png
         :width: 60%
@@ -31,7 +31,7 @@ Trusting Your Start9 CA in Thunderbird
 Configure Tor in Thunderbird
 ============================
 
-.. note:: This only applies if you have **NOT** enabled sytem-wide Automatic proxy configuration. 
+.. note:: This is not required if you have enabled a system-wide proxy configuration. 
 
 #. Open Thunderbird and do the following:
 
@@ -49,9 +49,9 @@ Configure Tor in Thunderbird
 
 #. Choose **Automatic proxy configuration URL** and paste the appropriate URL:
 
-    .. caution:: This step assumes you saved proxy.pac file as per :ref:`device-guides`. If you saved this file in different location please provide correct path.
+    .. caution:: This step assumes you saved the proxy.pac file as suggested in the :ref:`device-guides`. If you saved this file in different location please provide correct the path.
 
-   - For Linux: ``file:///home/$YOUR_USERNAME/proxy.pac``
+   - For Linux: ``file:///etc/tor/proxy.pac``
    - For macOS: ``file:///Library/WebServer/Documents/proxy.pac``
    - For Windows: ``file://C:/Program Files/Tor Browser/proxy.pac``
 
