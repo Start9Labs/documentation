@@ -46,17 +46,7 @@ If you'd like to connect via `LNbits <https://marketplace.start9.com/marketplace
       :width: 40%
       :alt: cln-nodeid
 
-#. For **Rune** you will need to install the `Spark <https://marketplace.start9.com/marketplace/spark-wallet>`_ service on your server, launch the UI, click in the bottom left where you see "v0.3.2" or something similar, and click **Console**. 
-
-   .. figure:: /_static/images/lightning/enable-console-spark.png
-      :width: 40%
-      :alt: enable-console-spark
-
-#. Enter "commando-rune", hit **execute** and then copy what you see after **rune:** and paste it into Alby.
-
-   .. figure:: /_static/images/lightning/commando-rune.png
-      :width: 40%
-      :alt: commando-rune
+#. To generate a rune on StartOS you will need to navigate to Core Lightning > Actions > Generate Rune. Then copy the value and paste it into Alby.
 
 #. Leave the **Port** as 9735. It should look like this:
 
