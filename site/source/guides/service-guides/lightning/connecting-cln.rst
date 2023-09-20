@@ -12,7 +12,5 @@ If you want to connect a wallet to it, you can do so using one of the following 
   :maxdepth: 1
 
   alby-cln
-  fully-noded-cln
   ride-the-lightning
-  spark
   zeus-cln-direct
