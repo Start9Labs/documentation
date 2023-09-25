@@ -11,7 +11,7 @@ In order to get SMTP credentials for use in a StartOS service, you can follow on
     .. group-tab:: Gmail
         #. Open your **Google Security** by visiting `myaccount.google.com/security <https://myaccount.google.com/security>`_.
 
-        #. You should have your **2-Step Verification** On. If not, please configure it first by `visiting the 2-Step Verification <https://myaccount.google.com/signinoptions/two-step-verification>`_ section.
+        #. You should have your **2-Step Verification** on. If not, please configure it first by `visiting the 2-Step Verification <https://myaccount.google.com/signinoptions/two-step-verification>`_ section.
 
             .. figure:: /_static/images/misc/gmail_smtp/gmail-smtp-2step-verification.png
                 :width: 80%
@@ -23,19 +23,19 @@ In order to get SMTP credentials for use in a StartOS service, you can follow on
                 :width: 80%
                 :alt: Gmail SMTP app password
 
-        #. Select a name for the new App. You may call it SMTP. Click the **Create** button.
+        #. Select a name for the new app password.  You may call it anything, such as "SMTP."  Click the **Create** button.
 
             .. figure:: /_static/images/misc/gmail_smtp/gmail-smtp-create-app-password.png
                 :width: 80%
                 :alt: Gmail SMTP creating an app password
 
-        #. A random 16 character password will be created and shown to you. This is your App password. Save it somewhere secure and click **Done**.
+        #. A random 16 character password will be created and shown to you. This is your app password. Save it somewhere secure and click **Done**.
 
             .. figure:: /_static/images/misc/gmail_smtp/gmail-smtp-show-app-password.png
                 :width: 80%
                 :alt: Gmail SMTP app password show
 
-        #. Now you can use this SMTP account in any app which needs them to send an email. Table below, show the required information:
+        #. Now you can use this SMTP account for any service that has the capability to send an email. The table below shows all the details you may need:
 
             .. list-table:: Gmail SMTP information
                 :widths: 33 67
@@ -52,7 +52,7 @@ In order to get SMTP credentials for use in a StartOS service, you can follow on
                 * - Username
                   - yourmail@gmail.com
                 * - Password
-                  - The 16 character secret you got in previous step; no spaces
+                  - The 16 character secret you created in the previous step
 
 
     .. group-tab:: Amazon SES
