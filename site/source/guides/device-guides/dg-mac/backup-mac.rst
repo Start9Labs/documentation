@@ -122,7 +122,7 @@ Connect Your Server
 
 #. You will now see the following:
 
-    .. figure:: /_static/images/cifs/cifs-blank.png
+    .. figure:: /_static/images/cifs/cifs-win6.png
         :width: 50%
         :alt: cifs-blank
 
