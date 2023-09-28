@@ -87,23 +87,7 @@ Zeus
 
     .. tip:: If it doesn't work, please manually restart the Zeus app.
 
-#. You can now add sats to this wallet in two ways. You can allocate sats within LNbits by clicking the **+** icon here:
-
-    .. figure:: /_static/images/services/lnbits/plus-icon.png
-      :width: 60%
-      :alt: plus-icon
-
-    Let's add 1000 satoshis:
-
-    .. figure:: /_static/images/services/lnbits/add-1000-sats.png
-     :width: 60%
-     :alt: add-1000-sats
-
-    .. figure:: /_static/images/services/lnbits/1k-sats.png
-      :width: 60%
-      :alt: 1k-sats
-
-    Alternatively you can simply hit **Request** in Zeus and receive by generating a standard lightning invoice:
+#. In addition to allocating sats to this wallet via the LNbits Superuser Account (see "Funding LNbits section" :ref:`here<connecting-lnbits>`), you can also receive funds the normal way by hitting **Request** within Zeus.
 
     .. figure:: /_static/images/services/lnbits/zeus-request.png
       :width: 20%

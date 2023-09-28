@@ -61,3 +61,24 @@ Now you can proceed to connect one of the following wallets to LNbits using the 
   alby-lnbits
   bluewallet
   zeus-lnbits
+
+Funding LNbits
+--------------
+
+After any of the above wallets has been setup with the corresponding instructions, you can allocate sats to this wallet within LNbits by clicking the **"+"** icon here:
+
+    .. figure:: /_static/images/services/lnbits/plus-icon.png
+        :width: 60%
+        :alt: plus-icon
+
+    Let's add 1000 satoshis:
+
+    .. figure:: /_static/images/services/lnbits/add-1000-sats.png
+        :width: 60%
+        :alt: add-1000-sats
+
+    .. figure:: /_static/images/services/lnbits/1k-sats.png
+        :width: 60%
+        :alt: 1k-sats
+
+Your newly created LNbits wallet has now been funded and is ready to send sats over the Lightning Network!
