@@ -76,29 +76,7 @@ Make sure you are already :ref:`running Tor<connecting-tor>` on your system and 
 
     Alby is now connected to your lightning node via LNbits!
 
-#. You can now allocate sats to this wallet within LNbits by clicking the **+** icon here:
-
-    .. figure:: /_static/images/services/lnbits/lnbits-plus-icon-2.png
-        :width: 60%
-        :alt: plus-icon-2
-
-    Let's add 1000 satoshis:
-
-    .. figure:: /_static/images/services/lnbits/lnbits-1000-sats-2.png
-        :width: 40%
-        :alt: add-1000-sats
-
-    .. figure:: /_static/images/services/lnbits/lnbits-1000-sats-added-2.png
-        :width: 40%
-        :alt: sats-added
-
-#. Alby should now show a balance:
-
-    .. figure:: /_static/images/services/lnbits/alby-lnbits-1000-sats.png
-        :width: 25%
-        :alt: alby-balance
-
-#. You can also receive funds the normal way by hitting **Receive** within Alby.
+#. In addition to allocating sats to this wallet via the LNbits Superuser Account (see "Funding LNbits section" :ref:`here<connecting-lnbits>`), you can also receive funds the normal way by hitting **Receive** within Alby.
 
     .. figure:: /_static/images/services/lnbits/alby-receive.png
         :width: 25%
