@@ -180,7 +180,9 @@ Dependencies - Required
     
     .. code-block::
 
-        git clone -b latest --recursive https://github.com/Start9Labs/start-os.git && cd start-os/backend && ./install-sdk.sh
+        git clone https://github.com/Start9Labs/start-os.git && \
+         cd start-os && make frontends && mkdir -p ./frontend/dist/static && \
+         cd ./backend && ./install-sdk.sh
 
     Initialize sdk & verify install
 
