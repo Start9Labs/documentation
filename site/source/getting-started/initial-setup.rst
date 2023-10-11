@@ -37,17 +37,9 @@ Follow the instructions below to set up your server for the first time.
 		:width: 50%
 		:alt: SSD Initialization
 
-#. Click the ``Download`` button to download a file containing the URLs (`.local` and `.onion`) and Root CA of your server. Keep this file for future reference.
+#. Setup complete! Click ``Continue to login`` to access your new server
 
-	.. note:: If you connected a monitor, you will `not` see the download button
-
-	.. figure:: /_static/images/setup/screen7-startfresh_complete.jpg
-		:width: 50%
-		:alt: Setup Complete
-
-#. Setup complete! Click ``Login to StartOS`` to access your new server
-
-	.. figure:: /_static/images/setup/screen9-startfresh_complete-savedfile-go_to_start_login.jpg
+	.. figure:: /_static/images/setup/screen7-setup_complete.jpg
 		:width: 50%
 		:alt: Setup Complete
 

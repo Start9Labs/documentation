@@ -128,7 +128,7 @@ This is not the same as running a back up and restoring them onto a new server.
 
 #. You are now ready to proceed and use your server with its new drive! It will have the same addresses and root certificate as it did before migrating.
 
-    .. figure:: /_static/images/setup/screen7-startfresh_complete.jpg
+    .. figure:: /_static/images/setup/screen7-setup_complete.jpg
         :width: 60%
 
     .. warning:: Do not unders any circumstances use the old SSD to setup another server unless you wipe it first or wipe it during the initial setup proecess! If you have lightning channels you could lose all your funds!

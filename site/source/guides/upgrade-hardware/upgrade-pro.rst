@@ -91,7 +91,7 @@ You will need a high quality `USB-A to USB-A cable <https://www.amazon.com/UGREE
 
 #. You are now ready to proceed and use your Server Pro - it will have the same addresses and root certificate as it did before migrating.
 
-    .. figure:: /_static/images/setup/screen7-startfresh_complete.jpg
+    .. figure:: /_static/images/setup/screen7-setup_complete.jpg
         :width: 60%
 
     .. warning:: Do not unders any circumstances reassemble your Server One without wiping the SD card first and wiping the SSD during initial setup! If you do not this will cause serious problems! If you have lightning channels you could lose all your funds!
@@ -159,7 +159,7 @@ For transferring from an USB-attached drive.
 
 #. You are now ready to proceed and use your Server Pro - it will have the same addresses and root certificate as it did before migrating.
 
-    .. figure:: /_static/images/setup/screen7-startfresh_complete.jpg
+    .. figure:: /_static/images/setup/screen7-setup_complete.jpg
         :width: 60%
 
     .. warning:: Do not unders any circumstances reassemble your Server One without wiping the SD card first and wiping the SSD during initial setup! If you do not this will cause serious problems! If you have lightning channels you could lose all your funds!

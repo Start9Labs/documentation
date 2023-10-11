@@ -19,7 +19,7 @@ Your server's Root CA was included in the downloaded file at the end of initial 
 Trust Your Server's Root CA
 ---------------------------
 
-Select your OS:
+Select your operating system:
 
 .. raw:: html
 
