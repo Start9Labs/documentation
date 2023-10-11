@@ -11,7 +11,7 @@ User Manual
   dashboard-overview
   change-password
   managing-services
-  backup-restore/index
+  backups/index
   customize
   updating
   sessions
