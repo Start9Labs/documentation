@@ -13,27 +13,27 @@ Trust Root CA on Initial Setup
 
 If you've just completed initial setup, you will automatically be prompted to trust your server's Root CA.  Do these mandatory steps below:
  
-	#. Click DOWNLOAD to download your Root CA
+	#. Click `DOWNLOAD`` to download your Root CA
 
 		.. figure:: /_static/images/setup/trust-ca-1.png
 			:width: 40%
 			:alt: Download your Server's Root CA
 
  
-	#. You may see a dialog box noting it saved to your Downloads folder.  Select :ref:`VIEW DOCS<trust-your-root-ca>` to learn how to trust your server's Root CA
+	#. You may see a dialog box noting it saved to your Downloads folder.  Select :ref:`VIEW DOCS<trust-your-root-ca>` to learn how to trust your server's Root CA on your device's operating system.
 
 		.. figure:: /_static/images/setup/trust-ca-2.png
 			:width: 40%
 			:alt: 
  
-	#. You will see the Go To Login panel "Waiting for trust..."
+	#. The `Go To Login` panel will display "Waiting for trust..." until you have completed the process to install and trust your Root CA on your device.
 
 		.. figure:: /_static/images/setup/trust-ca-3.png
 			:width: 40%
 			:alt:
   
   
-	#. Once you've successfully trusted your Root CA, you can login by selecting OPEN
+	#. Once you've successfully trusted your Root CA, you can login by selecting `OPEN`.
 
 		.. figure:: /_static/images/setup/trust-ca-4.png
 			:width: 40%
