@@ -6,6 +6,42 @@ Trusting Your Root CA
 
 Download and trust your server's Root Certificate Authority (Root CA) to enable encrypted communications locally and enhance speeds over Tor.
 
+.. _trust-root-ca-on-initial-setup:
+
+Trust Root CA on Initial Setup
+------------------------------
+
+If you are installing the certificate on another device after initial setup, skip down to :ref:`Download Your Server's Root CA<trust-ca-on-a-device>`.
+If you've just completed initial setup, you will automatically be prompted to trust your server's Root CA.  Do these mandatory steps below:
+ 
+	#. Click DOWNLOAD to download your Root CA
+
+		.. figure:: /_static/images/setup/trust-ca-1.png
+			:width: 40%
+			:alt: Download your Server's Root CA
+
+ 
+	#. You may see a dialog box noting it saved to your Downloads folder.  Select :ref:`VIEW DOCS<trust-your-root-ca>` to learn how to trust your server's Root CA
+
+		.. figure:: /_static/images/setup/trust-ca-2.png
+			:width: 40%
+			:alt: 
+ 
+	#. You will see the Go To Login panel "Waiting for trust..."
+
+		.. figure:: /_static/images/setup/trust-ca-3.png
+			:width: 40%
+			:alt:
+  
+  
+	#. Once you've successfully trusted your Root CA, you can login by selecting OPEN
+
+		.. figure:: /_static/images/setup/trust-ca-4.png
+			:width: 40%
+			:alt:
+
+.. _trust-ca-on-a-device:
+
 Download Your Server's Root CA
 ------------------------------
 Your server's Root CA was included in the downloaded file at the end of initial setup. If you do not have that file, you can find your server's Root CA inside the StartOS dashboard.
@@ -15,6 +51,8 @@ Your server's Root CA was included in the downloaded file at the end of initial 
 		.. figure:: /_static/images/ssl/lan_setup.png
 			:width: 40%
 			:alt: LAN setup menu item
+
+.. _trust-your-root-ca:
 
 Trust Your Server's Root CA
 ---------------------------

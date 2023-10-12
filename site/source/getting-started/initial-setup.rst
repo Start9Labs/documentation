@@ -43,6 +43,8 @@ Follow the instructions below to set up your server for the first time.
 		:width: 50%
 		:alt: Setup Complete
 
+#. Now you will need to :ref:`trust your root CA<trust-root-ca-on-initial-setup>` in order to login.
+
 .. _setup-troubleshooting:
 
 Troubleshooting
