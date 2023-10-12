@@ -3,10 +3,11 @@
 ===========
 Misc Guides
 ===========
-These guides are for setting up individual applications that may need a manual configuration.  These are only needed in rare cases.
+Guides that do not fit into the categories of "devices" or "services."
 
 .. toctree::
   :maxdepth: 2
 
   lan-ff
   lan-thunderbird
+  smtp
