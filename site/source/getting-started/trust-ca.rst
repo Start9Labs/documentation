@@ -41,8 +41,8 @@ If you've just completed initial setup, you will automatically be prompted to tr
 
 .. _download-root-ca:
 
-Download Your Server's Root CA
-------------------------------
+Download Root CA
+-----------------
 Your server's Root CA was included in the downloaded file at the end of initial setup. If you do not have that file, you can find your server's Root CA inside the StartOS dashboard.
 
 	#. Navigate to `System > Root CA` and click `Download Certificate`
@@ -53,8 +53,8 @@ Your server's Root CA was included in the downloaded file at the end of initial 
 
 .. _trust-your-root-ca:
 
-Trust Your Server's Root CA
----------------------------
+Trust Root CA
+--------------
 
 Select your operating system:
 
