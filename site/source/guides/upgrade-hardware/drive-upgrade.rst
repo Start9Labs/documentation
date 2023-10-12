@@ -30,7 +30,7 @@ Flash StartOS and Transfer Data
 
 #. Select "Recover".
 
-   .. figure:: /_static/images/setup/screen0-startfresh_or_recover.png
+   .. figure:: /_static/images/setup/screen0-recover.jpg
       :width: 30%
 
 #. Select "Transfer".
@@ -68,7 +68,7 @@ Flash StartOS and Transfer Data
 
 #. You are now ready to proceed and use your server with its new drive! It will have the same addresses and root certificate as it did before migrating.
 
-    .. figure:: /_static/images/setup/screen7-setup_complete.jpg
+    .. figure:: /_static/images/setup/screen7-startfresh_complete.jpg
         :width: 30%
 
     .. warning:: Do not under any circumstances use your old drive to setup another server unless you wipe it first or wipe it during the initial setup process. If you have lightning channels you could lose all your funds!

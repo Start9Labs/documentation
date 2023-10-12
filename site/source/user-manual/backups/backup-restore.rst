@@ -45,22 +45,22 @@ Select the appropriate tab below to restore your data:
 
         #. During :ref:`Initial Setup<initial-setup>`, select "Recover."
 
-            .. figure:: /_static/images/setup/screen0-startfresh_or_recover.png
+            .. figure:: /_static/images/setup/screen0-recover.jpg
                 :width: 60%
 
         #. Next, select "Use Existing Drive."
 
-            .. figure:: /_static/images/setup/screen3-use_existing.png
+            .. figure:: /_static/images/setup/screen3-use_existing.jpg
                 :width: 60%
 
         #. Select your server's data drive.
 
-            .. figure:: /_static/images/setup/screen4-use_existing_drive_selection.png
+            .. figure:: /_static/images/setup/screen4-use_existing_drive_selection.jpg
                 :width: 60%
 
         #. Enter and confirm a new password.
 
-            .. figure:: /_static/images/setup/screen5-set_password.jpg
+            .. figure:: /_static/images/setup/screen5-set_password_complete.jpg
                 :width: 60%
         
         #. Your server will initialize again (all previous data will be recovered).
@@ -72,7 +72,7 @@ Select the appropriate tab below to restore your data:
 
         #. During :ref:`Initial Setup<initial-setup>`, select "Recover."
 
-            .. figure:: /_static/images/setup/screen0-startfresh_or_recover.png
+            .. figure:: /_static/images/setup/screen0-recover.jpg
                 :width: 60%
 
         #. Select "Restore From Backup."
@@ -114,7 +114,7 @@ Select the appropriate tab below to restore your data:
 
         #. During :ref:`Initial Setup<initial-setup>`, select "Recover."
 
-            .. figure:: /_static/images/setup/screen0-startfresh_or_recover.png
+            .. figure:: /_static/images/setup/screen0-recover.jpg
                 :width: 60%
 
         #. Select "Transfer"

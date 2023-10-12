@@ -19,7 +19,7 @@ Follow the instructions below to set up your server for the first time.
 
 #. Select your storage drive. In most cases, there will be only one
 
-	.. figure:: /_static/images/setup/screen4-select_storage.jpg
+	.. figure:: /_static/images/setup/screen2-select_storage.jpg
 		:width: 50%
 		:alt: Select Drive
 
@@ -27,7 +27,7 @@ Follow the instructions below to set up your server for the first time.
 
 	.. warning:: Choose a strong master password. Write it down. Store it somewhere safe. DO NOT LOSE IT.
 
-	.. figure:: /_static/images/setup/screen5-set_password.jpg
+	.. figure:: /_static/images/setup/screen5-set_password_complete.jpg
 		:width: 50%
 		:alt: Create New Password
 
@@ -37,9 +37,17 @@ Follow the instructions below to set up your server for the first time.
 		:width: 50%
 		:alt: SSD Initialization
 
-#. Setup complete! Click ``Continue to login`` to access your new server
+#. Click the ``Download`` button to download a file containing the URLs (`.local` and `.onion`) and Root CA of your server. Keep this file for future reference.
 
-	.. figure:: /_static/images/setup/screen7-setup_complete.jpg
+	.. note:: If you connected a monitor, you will `not` see the download button
+
+	.. figure:: /_static/images/setup/screen7-startfresh_complete.jpg
+		:width: 50%
+		:alt: Setup Complete
+
+#. Setup complete! Click ``Login to StartOS`` to access your new server
+
+	.. figure:: /_static/images/setup/screen9-startfresh_complete_saved.jpg
 		:width: 50%
 		:alt: Setup Complete
 
