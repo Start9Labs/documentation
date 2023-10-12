@@ -39,12 +39,12 @@ Trusting Your Server's Root CA on Linux
 
         #. Ensure you have already `downloaded your server's Root CA </getting-started/trust-ca/#download-your-server-s-root-ca>`_
 
-        #. From the folder you have downloaded your Start9 server's Root CA, run the following commands (if you have changed the certificate's filename, be sure to change it here):
+        #. From the folder you have downloaded your Start9 server's Root CA, run the following commands. Take care to replace `adjective-noun` with your server's unique adjective-noun combination in the command below.  If you have changed the certificate's filename, be sure to change it here.
 
             .. code-block:: bash
 
                 sudo pacman -S ca-certificates
-                sudo cp "<custom-address>.crt" /etc/ca-certificates/trust-source/anchors/
+                sudo cp "adjective-noun.local.crt" /etc/ca-certificates/trust-source/anchors/
                 sudo update-ca-trust
 
             Despite no output from the last command, you can test your app right away.
@@ -61,10 +61,10 @@ Trusting Your Server's Root CA on Linux
                 
                 sudo systemctl restart systemd-resolved
 
-        #. From the folder you have downloaded your Start9 server's Root CA, run the following commands (if you have changed the certificate's filename, be sure to change it here)
+        #. From the folder you have downloaded your Start9 server's Root CA, run the following commands.  Take care to replace `adjective-noun`` with your server's unique adjective-noun combination in the command below.  If you have changed the certificate's filename, be sure to change it here.
 
             .. code-block:: bash
                 
                 sudo yum install ca-certificates
-                sudo cp "<custom-address>.crt" /etc/pki/ca-trust/source/anchors/
+                sudo cp "adjective-noun.local.crt" /etc/pki/ca-trust/source/anchors/
                 sudo update-ca-trust

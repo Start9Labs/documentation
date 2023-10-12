@@ -18,9 +18,9 @@ Server One
 ----------
 Server One is a plug 'n' play hardware device, based on the `Intel NUC <https://en.wikipedia.org/wiki/Next_Unit_of_Computing>`_, assembled in-house by Start9.  The current iteration features an internal SSD, speaker, active cooling, and power management in a custom AIO (all-in-one) case. The Server One comes pre-loaded with :ref:`StartOS<start-os>`.  For more details, check out the `Server One tech specs <https://store.start9.com/products/server-one>`_.
 
-Server Pro
-----------
-Server Pro is a plug 'n' play hardware device, based on the `Librem Mini <https://puri.sm/products/librem-mini/>`_, built by `Purism <https://puri.sm/about/>`_.  Pro features a custom-built circuit board with active cooling, and an open-source firmware / boot stack. The Server Pro comes pre-loaded with :ref:`StartOS<start-os>`.  For more details, check out the `Server Pro tech specs <https://store.start9.com/products/server-pro>`_.
+Server Pure
+-----------
+Server Pure is a plug 'n' play hardware device, based on the `Librem Mini <https://puri.sm/products/librem-mini/>`_, built by `Purism <https://puri.sm/about/>`_.  Pure features a custom-built circuit board with active cooling, and an open-source firmware / boot stack. The Server Pure comes pre-loaded with :ref:`StartOS<start-os>`.  For more details, check out the `Server Pure tech specs <https://store.start9.com/products/server-pro>`_.
 
 .. _start-os:
 

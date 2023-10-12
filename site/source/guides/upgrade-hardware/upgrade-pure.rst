@@ -1,4 +1,4 @@
-.. _upgrade-pro:
+.. _upgrade-pure:
 
 =============================================
 Migrating From 2022 Server One to Server Pure
@@ -53,7 +53,7 @@ You will need a high quality `USB-A to USB-A cable <https://www.amazon.com/UGREE
    .. figure:: /_static/images/setup/transfer.png
       :width: 60%
 
-#. Now connect the other end of the USB cable to either an Server Pro USB-3 port or the USB-C port:
+#. Now connect the other end of the USB cable to either an Server Pure USB-3 port or the USB-C port:
 
     .. figure:: /_static/images/hardware-pics/pro-all-highlighted.jpg
        :width: 60%
@@ -74,7 +74,7 @@ You will need a high quality `USB-A to USB-A cable <https://www.amazon.com/UGREE
     .. figure:: /_static/images/setup/transfer-from.png
        :width: 60%
 
-#. Select the drive inside the Server Pro that you are migrating *to* (this will erase any data on this drive):
+#. Select the drive inside the Server Pure that you are migrating *to* (this will erase any data on this drive):
 
     .. figure:: /_static/images/setup/transfer-to.png
        :width: 60%
@@ -135,14 +135,14 @@ For transferring from an USB-attached drive.
    .. figure:: /_static/images/setup/transfer.png
       :width: 60%
 
-#. Now connect your Samsung T5/T7/alternative drive to any USB-3 or USB-C port on your Server Pro
+#. Now connect your Samsung T5/T7/alternative drive to any USB-3 or USB-C port on your Server Pure
 
 #. Select this drive (you may need to hit refresh):
 
     .. figure:: /_static/images/setup/transfer-from.png
        :width: 60%
 
-#. Select the drive inside the Server Pro that you are migrating *to* (this will erase any data on this drive):
+#. Select the drive inside the Server Pure that you are migrating *to* (this will erase any data on this drive):
 
     .. figure:: /_static/images/setup/transfer-to.png
        :width: 60%
@@ -157,7 +157,7 @@ For transferring from an USB-attached drive.
     .. figure:: /_static/images/setup/screen6-storage_initialize.jpg
         :width: 60%
 
-#. You are now ready to proceed and use your Server Pro - it will have the same addresses and root certificate as it did before migrating.
+#. You are now ready to proceed and use your Server Pure - it will have the same addresses and root certificate as it did before migrating.
 
     .. figure:: /_static/images/setup/screen7-setup_complete.jpg
         :width: 60%
