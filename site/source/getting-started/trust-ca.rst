@@ -11,7 +11,6 @@ Download and trust your server's Root Certificate Authority (Root CA) to enable 
 Trust Root CA on Initial Setup
 ------------------------------
 
-If you are installing the certificate on another device after initial setup, skip down to :ref:`Download Your Server's Root CA<trust-ca-on-a-device>`.
 If you've just completed initial setup, you will automatically be prompted to trust your server's Root CA.  Do these mandatory steps below:
  
 	#. Click DOWNLOAD to download your Root CA
