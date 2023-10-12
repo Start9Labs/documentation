@@ -39,7 +39,7 @@ If you've just completed initial setup, you will automatically be prompted to tr
 			:width: 40%
 			:alt:
 
-.. _trust-ca-on-a-device:
+.. _download-root-ca:
 
 Download Your Server's Root CA
 ------------------------------
