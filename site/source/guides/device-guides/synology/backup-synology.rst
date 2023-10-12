@@ -10,9 +10,6 @@ Synology Network Folder
     
 .. note:: This guide was created by a Start9 community member.  This is not yet officially supported.  Please report any feedback that may help improve the process.
 
-Setup Network Folder
---------------------
-
 #. In the Synology UI, go to *Control Panel > Shared Folder* and choose the folder you want to use as the destination for the backup.
 
     .. note:: Do not select an encrypted folder. Encrypted folders on Synology enforce a character limit of 143 characters.  At this time, StartOS backups use folder/file names that are longer than 143 characters.  The backup process will fail if you try to backup to an encrypted folder.

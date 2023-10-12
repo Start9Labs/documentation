@@ -1,52 +1,59 @@
-.. _backup:
-
-======
-Backup
-======
-Backing up your server is easy and secure. Backups are encrypted with your master password.
-
-.. contents::
-  :depth: 2 
-  :local:
-
-.. tip:: Create frequent backups to keep your data safe!
-
-Setup Device
-------------
-Select your platform for detailed instructions on how to create a Network Folder for creating backups.  This can include a drive in, or attached to, a device on your network.  Otherwise, you may backup directly to a :ref:`physical drive<backup-physical>`, attached to your server.
-
-  * :ref:`Linux Network Folder <backup-linux>`
-
-  * :ref:`Mac Network Folder <backup-mac>`
-
-  * :ref:`Windows Network Folder <backup-windows>`
-
-  * :ref:`Synology Network Folder <backup-synology>`
-
-  * :ref:`TrueNAS Network Folder <backup-truenas>`
-
-  * :ref:`Physical Drive <backup-physical>`
-
 .. _backup-create:
 
-Create Backup
--------------
+=============
+Backup Create
+=============
+
+Choose your backup target
+-------------------------
+
+You can back up your data to a physical drive plugged into the server, or over-the-air to a network folder shared from another device on the same LAN.
+
+Physical Drive
+..............
+
+#. Ensure your backup drive is properly formatted. The recommended format at this time is ``exFAT``. **Do not** use ``fat32``.
+
+#. Plug your physical drive into your server.
+
+    .. warning:: If you are using a low-powered device (like a RasPi), this drive MUST have external power, or be connected via a powered USB hub in order to prevent any data corruption due to power constraints!  Server One and Server Pure users can safely ignore this warning.
+
+
+Network Folder
+..............
+
+Choose your destination platform below for instructions on creating and sharing a network folder.
+
+  * :ref:`Linux <backup-linux>`
+
+  * :ref:`Mac <backup-mac>`
+
+  * :ref:`Windows <backup-windows>`
+
+  * :ref:`Synology <backup-synology>`
+
+  * :ref:`TrueNAS <backup-truenas>`
+
+
+Create the Backup
+-----------------
+
 #. Go to *System > Create Backup*
 
     .. figure:: /_static/images/config/backup.png
         :width: 60%
 
-#. You will see your previously created Network Folder backup location (or Physical Drive) available.  Click it, select the services you wish to backup, then click "**BACK UP SELECTED**":
+#. Select the network folder or physical drive you want to target, then select the services you want to back up.
 
     .. figure:: /_static/images/config/backup2.png
         :width: 60%
 
-#. You will be prompted for your server's master password:
+#. You will be prompted for your server's master password.
 
     .. figure:: /_static/images/config/backup2.5.png
         :width: 60%
 
-#. The backup will begin.  You can continue to use your server while the backup is in progress.
+#. The backup will begin. You can continue to use your server while the backup is in progress.
 
     .. figure:: /_static/images/config/backup3.png
         :width: 60%

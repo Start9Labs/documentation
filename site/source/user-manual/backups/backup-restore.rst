@@ -1,8 +1,8 @@
 .. _backup-restore:
 
-=======
-Restore
-=======
+==============
+Backup Restore
+==============
 
 There are 3 different ways that you may choose to recover server data, as well as a 4th option to migrate/transfer data between hardware.
 
@@ -85,7 +85,7 @@ Select the appropriate tab below to restore your data:
             .. figure:: /_static/images/restore/recover1.png
                 :width: 60%
 
-        #. Enter the details for your Network Folder and click "Verify."  Check the appropriate :ref:`backup setup page<backup>` for reference if you are unsure of the parameters.
+        #. Enter the details for your Network Folder and click "Verify".
 
             .. figure:: /_static/images/restore/recover2.png
                 :width: 60%
@@ -97,7 +97,7 @@ Select the appropriate tab below to restore your data:
 
         #. Select the drive (from your new hardware) that you are recovering onto.
 
-            .. warning:: This will **PERMANENETLY ERASE** any existing data on that drive.  If you re-using an old drive, ensure that you have first removed all your data!!
+            .. warning:: This will **PERMANENTLY ERASE** any existing data on that drive.  If you re-using an old drive, ensure that you have first removed all your data!!
 
             .. figure:: /_static/images/restore/recover4.png
                 :width: 60%
