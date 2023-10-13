@@ -100,9 +100,9 @@ First head into the top-righthand menu of your Nextcloud's WebUI and click "Apps
 
 3. Enter the following fields and tap "Next":
 
-  - Server - Enter your Nextcloud server LAN URL (found in "Interfaces" in the Nextcloud service page), and add --> **`/remote.php/dav`** <-- after `.local`.
+  - Server - Enter your Nextcloud WebDAV Base LAN URL (found in "Properties" in the Nextcloud service page).
   
-  - User name - The default user is "admin," but this is your user within Nextcloud, so be sure it is the correct user if you have more than one.
+  - User name - The default user is "embassy," but this is your user within Nextcloud, so be sure it is the correct user if you have more than one.
   
   - Password - Your Nextcloud user's password (Default found in "Properties" in the Nextcloud service page).
 
