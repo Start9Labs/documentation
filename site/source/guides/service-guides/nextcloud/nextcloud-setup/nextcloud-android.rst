@@ -132,7 +132,7 @@ In order to sync calendars and contacts with your Android device, follow the ste
 
    - If you are NOT using the Nextcloud app already, then open DAVx5 and after going through the introduction (optionally selecting additional features), tap the "+" icon to add a new account, then select "Login with URL and user name," and fill in the following fields:
 
-     - Base URL - Enter your Nextcloud LAN address from "Interfaces" on your Nextcloud service page and add `/remote.php/dav` after `.local`
+     - Base URL - Enter your Nextcloud WebDAV Base LAN URL (found in "Properties" in the Nextcloud service page).
 
      - User name - Your Nextcloud user (defaults are found in "Properties" on your Nextcloud service page)
 
