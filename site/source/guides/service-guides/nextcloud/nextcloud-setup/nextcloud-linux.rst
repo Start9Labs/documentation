@@ -16,7 +16,7 @@ Desktop Integrations
 --------------------
 Many Linux distributions ship with a Desktop Environment (DE) that supports Nextcloud account integration directly for use with their built-in calendars and other applications.  It is recommended to try these first for the best possible experience with your particular flavor of Linux.
 
-You will first need to :ref:`add your Root CA to your system<lan-linux>`.
+You will first need to :ref:`trust your Root CA<ca-linux>`.
 
 The following desktop environments support integrated account syncing, including Nextcloud:
 
@@ -39,7 +39,7 @@ The following guide uses Ubuntu as an example.
     :width: 60%
     :alt: online accounts settings
 
-3. Type in the server path from **startOS > Nextcloud > Interfaces** and username and password from **startOS > Nextcloud > Properties**, and click **Connect**.
+3. Paste in the server path from **StartOS > Nextcloud > Interfaces** and the username and password from **StartOS > Nextcloud > Properties**, and click **Connect**.
 
   .. figure:: /_static/images/nextcloud/nextcloud-linux-3.png
     :width: 60%
@@ -57,13 +57,13 @@ The following guide uses Ubuntu as an example.
     :width: 60%
     :alt: nextcloud in file manager
 
-To explore alternative distros beyond this guide, visit this link. `Linuxhint guide <https://linuxhint.com/linux_file_managers_nextcloud/>`_ and our `Nextcloud Master Thread <https://community.start9.com/t/nextcloud-master-thread/>`_.  Please share your feedback - it is very valuable to our community!
+To setup other Linux distributions, check out this `Linuxhint guide <https://linuxhint.com/linux_file_managers_nextcloud/>`_ and our `Nextcloud Master Thread <https://community.start9.com/t/nextcloud-master-thread/>`_.  Please share your feedback - it is very valuable to our community!
 
 Standalone Clients
 ------------------
 For those that prefer to use a desktop client or your desktop environment does not support account integrations.
 
-.. note:: The desktop version of NextCloud doesn't have much of a user interface.  Once installed, it solely lives in the top right hand corner of the desktop in the navbar. When it's synced, the icon turns into a checkmark with a circle around it.
+.. note:: The desktop version of NextCloud doesn't have much of a user interface.  Once installed, it solely lives in the your system tray or navigation bar.  You can click on this icon to access the app.
 
 File Syncing - Nextcloud Desktop
 ================================
@@ -71,7 +71,7 @@ This is Nextcloud's official client application for file syncing and account man
 
 LAN Setup
 .........
-Make sure you have first set up :ref:`LAN access<lan-linux>`.
+Make sure you have first set up :ref:`trusted your Root CA<ca-linux>`.
 
 1. Open the client and click **Log In to your Nextcloud**.
 
@@ -115,7 +115,7 @@ Tor Setup
 .........
 You will first need to have the :ref:`Tor daemon running<tor-linux>`.
 
-1. On your desktop application. Click the account in the top left > Settings, then click Network. Choose **Specify proxy manually as** and **SOCKS5 proxy**. Enter **127.0.0.1** for the Host and **9050** for the port.
+1. On your desktop application. Click the account avatar in the top left > Settings, then click Network. Choose **Specify proxy manually as** and **SOCKS5 proxy**. Enter **127.0.0.1** for the Host and **9050** for the port.
 
   .. figure:: /_static/images/nextcloud/nextcloud-linux-tor-1.png
     :width: 60%
@@ -127,7 +127,7 @@ You will first need to have the :ref:`Tor daemon running<tor-linux>`.
     :width: 60%
     :alt: nextcloud add account
 
-3. On the following screen, click **Log in your Nextcloud**, then enter your Nextcloud Tor server address, which you can copy from the Nextcloud page on your **startOS > Interfaces > Tor**. This must start with **`http://`** and end with **`.onion`**. Click **Next**.
+3. On the following screen, click **Log in your Nextcloud**, then enter your Nextcloud Tor server address, which you can copy from the Nextcloud page on your **StartOS > Interfaces > Tor**.
 
   .. figure:: /_static/images/nextcloud/nextcloud-linux-desktop-1.png
     :width: 60%
@@ -138,4 +138,4 @@ You will first need to have the :ref:`Tor daemon running<tor-linux>`.
     :alt: nextcloud add account
 
 4. This will launch your browser and prompt you to log in to your account. Log in and then grant access as we did for LAN.
-5. That's it! You may wish to set up some select folders for remote sync, but for large files, it is best to sync on LAN only, so you can "Skip folders configuration" on the resulting screen if you wish. Check your connection by clicking the newly created account in the client app.
+5. That's it! You can set up some select folders for remote sync, but for large files, it is best to sync on LAN only. Check your connection by clicking the newly created account in the client app.
