@@ -63,7 +63,7 @@ Standalone Clients
 ------------------
 For those that prefer to use a desktop client or your desktop environment does not support account integrations.
 
-.. note:: The desktop version of NextCloud doesn't have much of a user interface.  Once installed, it solely lives in the top right hand corner of the desktop in the navbar. When it's synced, the icon turns into a checkmark with a circle around it.
+.. note:: The desktop version of NextCloud doesn't have much of a user interface.  Once installed, it solely lives in the your system tray or navigation bar.  You can click on this icon to access the app.
 
 File Syncing - Nextcloud Desktop
 ================================
