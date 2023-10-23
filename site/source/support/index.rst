@@ -22,7 +22,7 @@ View frequently asked questions, troubleshoot common issues, or contact support.
 
 .. topic-box::
   :title: FAQ
-  :link: faq
+  :link: https://start9.com/faq
   :icon: scylla-icon scylla-icon--monitoring
   :class: large-5
   :anchor: View
@@ -57,6 +57,5 @@ View frequently asked questions, troubleshoot common issues, or contact support.
   :hidden:
 
   common-issues
-  faq/index
   concepts/index
   external-support
