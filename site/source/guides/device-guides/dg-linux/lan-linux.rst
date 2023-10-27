@@ -34,15 +34,15 @@ Trust Root CA
                 sudo apt update
                 sudo apt install -y ca-certificates p11-kit
 
-        #. Move into the folder where you downloaded your Start9 server's Root CA (usually ``~/Downloads``), and run the following commands to add your Start9 server's CA certificate to the OS trust store:
+        #. Change directory into the folder where you downloaded your StartOS server's Root CA (usually ``~/Downloads``), and run the following commands to add your Start9 server's CA certificate to the OS trust store:
 
-            .. caution:: BE CERTAIN to replace ``adjective-noun`` with your server's unique hostname in the 3rd and 4th commands below!
+            .. caution:: Be careful to replace ``adjective-noun`` with your server's unique hostname in the 3rd and 4th commands below!
 
             .. code-block:: bash
             
                 cd ~/Downloads
                 sudo mkdir -p /usr/share/ca-certificates/start9
-                sudo cp "adjective-noun.local.crt" /usr/share/ca-certificates/start9/
+                sudo cp adjective-noun.local.crt /usr/share/ca-certificates/start9/
                 sudo bash -c "echo 'start9/adjective-noun.local.crt' >> /etc/ca-certificates.conf"
                 sudo update-ca-certificates
 
@@ -50,12 +50,13 @@ Trust Root CA
 
     .. group-tab:: Arch/Garuda
 
-        From the folder you have downloaded your Start9 server's Root CA, run the following commands (if you have changed the certificate's filename, be sure to change it here):
+        Change directory to the folder where you downloaded your StartOS server's Root CA, and run the following commands, being careful to replace ``adjective-noun`` with your server's unique hostname in the 3rd command below:
 
             .. code-block:: bash
 
+                cd ~/Downloads
                 sudo pacman -S ca-certificates
-                sudo cp "<custom-address>.crt" /etc/ca-certificates/trust-source/anchors/
+                sudo cp adjective-noun.local.crt /etc/ca-certificates/trust-source/anchors/
                 sudo update-ca-trust
 
         Despite no output from the last command, you can test your app right away.
@@ -72,12 +73,13 @@ Trust Root CA
 
         Trust your server's CA certificate:
 
-        From the folder you have downloaded your Start9 server's Root CA, run the following commands (if you have changed the certificate's filename, be sure to change it here):
+        Change directory to the folder where you downloaded your StartOS server's Root CA, and run the following commands, being careful to replace ``adjective-noun`` with your server's unique hostname in the 3rd command below:
 
         .. code-block:: bash
             
+            cd ~/Downloads
             sudo yum install ca-certificates
-            sudo cp "<custom-address>.crt" /etc/pki/ca-trust/source/anchors/
+            sudo cp adjective-noun.local.crt /etc/pki/ca-trust/source/anchors/
             sudo update-ca-trust
 
 You're now ready to browse your service UIs with encryption, either via the browser, or with native client apps.  For Mozilla apps, such as Firefox, you will need to follow the :ref:`Firefox Config <lan-ff>` guide, which we highly recommend.

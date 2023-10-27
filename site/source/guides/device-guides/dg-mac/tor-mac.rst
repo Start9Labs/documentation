@@ -29,7 +29,7 @@ Install Homebrew
 
     Wait a few minutes while it downloads and installs what it needs.
 
-.. note:: Once installation is complete you will need to add "brew" to your path. There will be instructions on how to do this with the specific commands you need to enter if you scroll up a little in your terminal. Look for "Add homebrew to your path". Enter the commands and then type **brew --version** to ensure that brew is working. If you see something like **"Homebrew 3.6.18"** then it is installed. If you see **"zsh: command not found: brew"** then it either hasn't installed correctly, has not been added to your path yet or you simply need to open a new terminal. (If you do try restarting terminal, make a note of the commands suggested in case you need them again).
+    Once installation is complete, close the Terminal.
 
 .. warning:: Surprisingly, Homebrew uses Google Analytics to collect anonymous usage data. You can deselect the option to share usage data by `opting out <https://docs.brew.sh/Analytics#opting-out>`_.
 
