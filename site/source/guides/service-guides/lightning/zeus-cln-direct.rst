@@ -3,6 +3,7 @@
 Zeus
 ----
 .. note:: You must first :ref:`connect to tor on your device<connecting-tor>`.
+
 Zeus is a powerful mobile wallet that can be connected directly to both LND and Core Lightning. If you'd like to connect via LNbits, which allows allocation of funds, please see :ref:`this guide<connecting-lnbits>`.
 
 Available For:

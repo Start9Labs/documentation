@@ -60,6 +60,22 @@ I am unable to reach my server via its xxxxxxxxxxxxxxxxxx.onion (Tor) address
 
                 #. **Solutions** - Power cycle your server by unplugging it and plugging it back in, then wait a few minutes before trying to connect again.
 
+Request Error
+-------------
+This means your client device failed to connect to the server. This can happen for a variety of reasons. The best course of action is:
+
+1. Check your local Internet connection .
+2. Hard refresh the browser.
+3. Clear the browser cache/history.
+4. Try using a different address for your server. For example, if you are using your .onion address, try using your .local or IP address instead. If you are using your .local address, try using your .onion or IP address.
+5. Try from another client device. If the second client works, then you know the issue is with your first client. If the seconds client does not work, then you know the issue is either with your clients' network or with your server.
+6. If after completing the steps above, you still cannot connect using any address from any client, then you will likely need to manually power cycle the server.
+7. If power cycling the server does not resolve the issue, please contact support.
+
+Clock Sync Failure
+------------------
+This means your server was unable to sync its clock with the Internet using the Network Time Protocol (NTP). This is usually due to a firewall issue with your network/router. Make sure you are not blocking NTP. If the issue persists, please contact support.
+
 I'm having an issue with a particular Service
 ---------------------------------------------
 If a Service is crashing or acting up in some way, check the :ref:`Documentation<service-guides>` and :ref:`FAQ<faq-services>` for that particular Service.  You can also check the "Logs" (on the service page), which might tell you what the problem is.  If that is not helpful, try to restart the service to see if that clears up the issue.  If you are still having issues, please reach out in one of our `Community Channels <https://start9.com/contact>`_ for immediate assistance.

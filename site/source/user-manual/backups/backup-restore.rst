@@ -1,8 +1,8 @@
 .. _backup-restore:
 
-=======
-Restore
-=======
+==============
+Backup Restore
+==============
 
 There are 3 different ways that you may choose to recover server data, as well as a 4th option to migrate/transfer data between hardware.
 
@@ -11,7 +11,7 @@ There are 3 different ways that you may choose to recover server data, as well a
 #. "Restore [entire server] from Backup" (as in, disaster recovery) all server data in the event that your backup is the **only** thing you have left.
 #. "Transfer" data from an existing server.  This is a total migration for use when upgrading hardware only.
 
-.. warning:: If you are restoring data from a drive that you are attaching *directly to your server,* (if using a RasPi or other low-powered board) please ensure that it is getting adequate power.  This is best accomplished via external power to the drive (such as a powered USB hub).  Server One (2022 and newer) and Server Pro users can safely ignore this warning.
+.. warning:: If you are restoring data from a drive that you are attaching *directly to your server,* (if using a RasPi or other low-powered board) please ensure that it is getting adequate power.  This is best accomplished via external power to the drive (such as a powered USB hub).  Server One (2022 and newer) and Server Pure users can safely ignore this warning.
 
 Select the appropriate tab below to restore your data:
 
@@ -45,22 +45,22 @@ Select the appropriate tab below to restore your data:
 
         #. During :ref:`Initial Setup<initial-setup>`, select "Recover."
 
-            .. figure:: /_static/images/setup/screen0-startfresh_or_recover.png
+            .. figure:: /_static/images/setup/screen0-recover.jpg
                 :width: 60%
 
         #. Next, select "Use Existing Drive."
 
-            .. figure:: /_static/images/setup/screen3-use_existing.png
+            .. figure:: /_static/images/setup/screen3-use_existing.jpg
                 :width: 60%
 
         #. Select your server's data drive.
 
-            .. figure:: /_static/images/setup/screen4-use_existing_drive_selection.png
+            .. figure:: /_static/images/setup/screen4-use_existing_drive_selection.jpg
                 :width: 60%
 
         #. Enter and confirm a new password.
 
-            .. figure:: /_static/images/setup/screen5-set_password.jpg
+            .. figure:: /_static/images/setup/screen5-set_password_complete.jpg
                 :width: 60%
         
         #. Your server will initialize again (all previous data will be recovered).
@@ -72,7 +72,7 @@ Select the appropriate tab below to restore your data:
 
         #. During :ref:`Initial Setup<initial-setup>`, select "Recover."
 
-            .. figure:: /_static/images/setup/screen0-startfresh_or_recover.png
+            .. figure:: /_static/images/setup/screen0-recover.jpg
                 :width: 60%
 
         #. Select "Restore From Backup."
@@ -85,7 +85,7 @@ Select the appropriate tab below to restore your data:
             .. figure:: /_static/images/restore/recover1.png
                 :width: 60%
 
-        #. Enter the details for your Network Folder and click "Verify."  Check the appropriate :ref:`backup setup page<backup>` for reference if you are unsure of the parameters.
+        #. Enter the details for your Network Folder and click "Verify".
 
             .. figure:: /_static/images/restore/recover2.png
                 :width: 60%
@@ -97,7 +97,7 @@ Select the appropriate tab below to restore your data:
 
         #. Select the drive (from your new hardware) that you are recovering onto.
 
-            .. warning:: This will **PERMANENETLY ERASE** any existing data on that drive.  If you re-using an old drive, ensure that you have first removed all your data!!
+            .. warning:: This will **PERMANENTLY ERASE** any existing data on that drive.  If you re-using an old drive, ensure that you have first removed all your data!!
 
             .. figure:: /_static/images/restore/recover4.png
                 :width: 60%
@@ -114,7 +114,7 @@ Select the appropriate tab below to restore your data:
 
         #. During :ref:`Initial Setup<initial-setup>`, select "Recover."
 
-            .. figure:: /_static/images/setup/screen0-startfresh_or_recover.png
+            .. figure:: /_static/images/setup/screen0-recover.jpg
                 :width: 60%
 
         #. Select "Transfer"

@@ -30,7 +30,7 @@ Flash StartOS and Transfer Data
 
 #. Select "Recover".
 
-   .. figure:: /_static/images/setup/screen0-startfresh_or_recover.png
+   .. figure:: /_static/images/setup/screen0-recover.jpg
       :width: 30%
 
 #. Select "Transfer".

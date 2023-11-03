@@ -93,7 +93,7 @@ This is not the same as running a back up and restoring them onto a new server.
 
 #. Select "Recover"
 
-   .. figure:: /_static/images/setup/screen0-startfresh_or_recover.png
+   .. figure:: /_static/images/setup/screen0-recover.jpg
       :width: 60%
 
 #. Select "Transfer"

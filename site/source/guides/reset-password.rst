@@ -18,22 +18,22 @@ If you forgot or lost your StartOS master password, you can use this guide to re
 
 #. Select "Recover".
 
-   .. figure:: /_static/images/setup/screen0-startfresh_or_recover.png
+   .. figure:: /_static/images/setup/screen0-recover.jpg
       :width: 60%
 
 #. Select "Use Existing Drive".
 
-   .. figure:: /_static/images/setup/screen3-use_existing.png
+   .. figure:: /_static/images/setup/screen3-use_existing.jpg
       :width: 60%
 
 #. Select your server's data drive.
 
-   .. figure:: /_static/images/setup/screen4-use_existing_drive_selection.png
+   .. figure:: /_static/images/setup/screen4-use_existing_drive_selection.jpg
       :width: 60%
 
 #. Enter and confirm a new password. This time, save it somewhere safe!
 
-   .. figure:: /_static/images/setup/screen5-set_password.jpg
+   .. figure:: /_static/images/setup/screen5-set_password_complete.jpg
       :width: 60%
 
 #. Your server will initialize again (all previous data will be recovered).
@@ -45,5 +45,5 @@ If you forgot or lost your StartOS master password, you can use this guide to re
 
     .. tip:: The "Go to Emassy Login" button will not be usable until you click download. The address information and root certificate contained in this download will not have changed from what you were using before this whole process so if you do not require it you can close this tab and simply go to your server's Lan or Tor address.
    
-   .. figure:: /_static/images/setup/setup_complete_pre_download.png
+   .. figure:: /_static/images/setup/screen7-startfresh_complete.jpg
       :width: 60%

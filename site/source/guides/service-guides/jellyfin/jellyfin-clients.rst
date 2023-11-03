@@ -1,4 +1,5 @@
 .. _jellyfin-clients:
+
 ================
 Jellyfin Clients
 ================
@@ -21,7 +22,7 @@ Mobile Apps
 
 Android
 =======
-Before proceeding, make sure your Android device has been setup to connect over :ref:`LAN <lan-android>`. If you are connecting over tor, you will need to :ref:`Setup Tor <tor-android>`.
+Before proceeding, make sure your Android device has been setup to connect over :ref:`LAN <ca-android>`. If you are connecting over tor, you will need to :ref:`Setup Tor <tor-android>`.
 
 1. Visit the app store of your choice and download the `Jellyfin Android app <https://jellyfin.org/downloads>`_.
 
@@ -31,7 +32,7 @@ Before proceeding, make sure your Android device has been setup to connect over 
 
 iOS
 ===
-Before proceeding, make sure your Apple device has been setup to connect over :ref:`LAN <lan-ios>`. If you are connecting over tor, you will need to :ref:`Setup Tor <tor-ios>`.
+Before proceeding, make sure your Apple device has been setup to connect over :ref:`LAN <ca-ios>`. If you are connecting over tor, you will need to :ref:`Setup Tor <tor-ios>`.
 
 1. Open the Apple app store and download the `Jellyfin iOS app <https://apps.apple.com/pl/app/jellyfin-mobile/id1480192618>`_.
 
@@ -40,7 +41,9 @@ Before proceeding, make sure your Apple device has been setup to connect over :r
   .. figure:: /_static/images/services/jellyfin/jellyfin-iOS-1.png
     :width: 40%
     :alt: Server address
+
 3. Next enter your username and password and tap "Sign In".
+
   .. figure:: /_static/images/services/jellyfin/jellyfin-iOS-2.png
     :width: 40%
     :alt: sign in
@@ -53,22 +56,28 @@ Desktop Apps
 
 MacOS
 =====
-Before proceeding, make sure your Apple device has been setup to connect over :ref:`LAN <lan-mac>`.
+Before proceeding, make sure your Apple device has been setup to connect over :ref:`LAN <ca-mac>`.
 
 1. Download the .dmg file for `Jellyfin Media Player <https://github.com/jellyfin/jellyfin-media-player/releases>`_
 
 2. Upon opening the client, you will be prompted to add server. Click "Add Server".
+  
   .. figure:: /_static/images/services/jellyfin/jellyfin-mac-1.png
     :width: 60%
     :alt: add server
+
 3. Next you will be prompted for a server address; paste the URL (``.local`` recommended) from Jellyfin service interfaces and click "Connect".
+
   .. figure:: /_static/images/services/jellyfin/jellyfin-mac-2.png
     :width: 60%
     :alt: server address
+
 4. Next enter your username and password and click "Sign In".
+
   .. figure:: /_static/images/services/jellyfin/jellyfin-mac-3.png
     :width: 60%
     :alt: sign in
+
 That's it. You should be connected to your Jellyfin server. If you encounter connection errors, please ensure that you are connected to the same LAN, and there is no VPN active on your Apple device.
 
 Other Clients

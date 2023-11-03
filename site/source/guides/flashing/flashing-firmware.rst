@@ -9,9 +9,9 @@ The source code can be viewed on Purism's `firmware git repo <https://source.pur
 
     .. caution:: USB drive **must** be formatted FAT32
 
-#. `Download the latest firmware from Purism's git repository <https://source.puri.sm/firmware/releases/-/raw/master/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-28.rom.gz>`_ and extract it.
+#. `Download the latest firmware from Purism's git repository <https://source.puri.sm/firmware/releases/-/raw/master/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-28.1.rom.gz>`_ and extract it.
     
-#. Copy or move the resulting ``pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-28.rom`` file onto your USB drive, then eject the drive and insert it into your (powered down) server.  USB 3.0 (blue ports) will be faster.
+#. Copy or move the resulting ``pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-28.1.rom`` file onto your USB drive, then eject the drive and insert it into your (powered down) server.  USB 3.0 (blue ports) will be faster.
 
     .. note:: You'll need a monitor and keyboard plugged into your server for this operation
 
@@ -35,7 +35,7 @@ The source code can be viewed on Purism's `firmware git repo <https://source.pur
     .. figure:: /_static/images/flashing/flash_firmware-pro-step4-proceed_yes.jpg
         :width: 30%
 
-#. Choose the file that we downloaded and copied to the USB stick earlier: ``pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-28.rom``
+#. Choose the file that we downloaded and copied to the USB stick earlier: ``pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-28.1.rom``
 
     .. figure:: /_static/images/flashing/flash_firmware-pro-step5-select_your_file.jpg
         :width: 30%

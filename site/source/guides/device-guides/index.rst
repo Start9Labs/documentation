@@ -56,6 +56,24 @@ Guides for integrating your client devices with your StartOS server.
 
   Guides for iOS
 
+.. topic-box::
+  :title: Synology
+  :icon: scylla-icon scylla-icon--cloud
+  :link: synology
+  :class: large-4
+  :anchor: View
+
+  Guides for Synology
+
+.. topic-box::
+  :title: Truenas
+  :icon: scylla-icon scylla-icon--cloud
+  :link: truenas
+  :class: large-4
+  :anchor: View
+
+  Guides for Truenas
+
 .. toctree::
   :maxdepth: 2
   :hidden:
@@ -65,3 +83,5 @@ Guides for integrating your client devices with your StartOS server.
   windows/index
   android/index
   ios/index
+  synology/index
+  truenas/index

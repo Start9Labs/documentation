@@ -11,3 +11,5 @@ Guides that do not fit into the categories of "devices" or "services."
   lan-ff
   lan-thunderbird
   smtp
+  backup-mount
+  data-mount

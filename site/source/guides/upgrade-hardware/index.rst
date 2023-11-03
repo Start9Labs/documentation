@@ -37,13 +37,13 @@ Hardware Guides
   This is for replacing or upgrading your 2022 Server One SSD
 
 .. topic-box::
-  :title: 2022 One to Pro Migration
-  :link: upgrade-pro
+  :title: 2022 One to Pure Migration
+  :link: upgrade-pure
   :icon: scylla-icon scylla-icon--enterprise
   :class: large-4
   :anchor: View
 
-  This is for migrating from a Server One (Raspberry Pi) to Server Pro
+  This is for migrating from a Server One (Raspberry Pi) to Server Pure
 
 .. topic-box::
   :title: Upgrade to all-in-one NASPi case
@@ -63,6 +63,6 @@ Hardware Guides
 
   lnd-migration
   drive-upgrade
-  upgrade-pro
+  upgrade-pure
   naspi-upgrade
   naspi-ssd-upgrade

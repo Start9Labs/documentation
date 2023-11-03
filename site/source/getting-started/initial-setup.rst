@@ -19,7 +19,7 @@ Follow the instructions below to set up your server for the first time.
 
 #. Select your storage drive. In most cases, there will be only one
 
-	.. figure:: /_static/images/setup/screen4-select_storage.jpg
+	.. figure:: /_static/images/setup/screen2-select_storage.jpg
 		:width: 50%
 		:alt: Select Drive
 
@@ -27,7 +27,7 @@ Follow the instructions below to set up your server for the first time.
 
 	.. warning:: Choose a strong master password. Write it down. Store it somewhere safe. DO NOT LOSE IT.
 
-	.. figure:: /_static/images/setup/screen5-set_password.jpg
+	.. figure:: /_static/images/setup/screen5-set_password_complete.jpg
 		:width: 50%
 		:alt: Create New Password
 
@@ -47,9 +47,11 @@ Follow the instructions below to set up your server for the first time.
 
 #. Setup complete! Click ``Login to StartOS`` to access your new server
 
-	.. figure:: /_static/images/setup/screen9-startfresh_complete-savedfile-go_to_start_login.jpg
+	.. figure:: /_static/images/setup/screen9-startfresh_complete_saved.jpg
 		:width: 50%
 		:alt: Setup Complete
+
+#. Now you will need to :ref:`trust your root CA<trust-root-ca-on-initial-setup>` in order to login.
 
 .. _setup-troubleshooting:
 
