@@ -1,8 +1,8 @@
 .. _diy-x86:
 
-=======================
-DIY Guidelines (x86_64)
-=======================
+=======
+DIY x86
+=======
 
 .. contents::
     :depth: 2 
@@ -40,8 +40,8 @@ If you intend to run Bitcoin or store any meaningful amount of data, we recommen
 Flash and Install StartOS
 -------------------------
 .. topic-box::
-  :title: Flashing (x86_64)
-  :link: /latest/guides/flashing/flashing-x86
+  :title: Flashing (x86)
+  :link: ../flashing-guides/os-x86
   :icon: scylla-icon scylla-icon--overview
   :class: large-4
   :anchor: View Guide

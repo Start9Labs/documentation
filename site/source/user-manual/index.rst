@@ -6,8 +6,13 @@ User Manual
 
 .. toctree::
   :includehidden:
-  :maxdepth: 1
+  :maxdepth: 2
 
+  initial-setup
+  trust-ca
+  configuring-ff
+  connecting-lan
+  connecting-tor
   dashboard-overview
   change-password
   managing-services

@@ -15,8 +15,6 @@ This may sound cool or neat, but it is more than that: *it's novel*. This has ne
 
 The key to making the system work is a new, domain-specific-language (DSL) and set of standards that are used by developers to define the rules and requirements of their services. Run in the context of StartOS, these rules and requirements appear as simple UI elements, such as inputs, toggles, and drop downs, and they are enforced by validations and clear user instructions. Using this system, what previously required serious time and expertise, can now be done by anyone in a matter of seconds.
 
-This DSL is utilized in the :ref:`config rules <config_rules>` and :ref:`dependencies <service-dependencies>` key in the service manifest.
-
 Context
 -------
 

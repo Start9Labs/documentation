@@ -23,7 +23,7 @@ During initial setup, I am unable to connect to "start.local".
 ----------------------------------------------------------------
 * Confirm that the server is plugged into both power and Ethernet.
 
-* Confirm the the server emitted two :ref:`sounds<sounds>` when powering on: a bep and a chime.
+* Confirm the the server emitted two sounds when powering on: a bep and a chime.
 
 * Confirm your phone is **not** connected to a “Guest” network
 
@@ -38,13 +38,13 @@ Make sure you have successfully followed the :ref:`LAN Setup<connecting-lan>` in
 I am unable to reach my server via its xxxxxxxxxxxxxxxxxx.onion (Tor) address
 --------------------------------------------------------------------------------
 
-#. **Test** - Try connecting to your server using the preferred :ref:`Tor Browser <tor-browser>`.
+#. **Test** - Try connecting to your server using the official Tor Browser.
 
     #. **If Tor Browser works** - It means the issue is either with the Tor daemon on your device or with the browser settings.
 
         #. **Solutions**
             #. If you are not yet running a Tor daemon on your device, follow :ref:`these instructions <connecting-tor>`. If you are already running a Tor daemon, restart it, or in the case of Android, restart your phone.
-            #. If you are using Firefox, ensure it has been :ref:`properly configured <connecting-ff>` to work with .onion URLs.
+            #. If you are using Firefox, ensure it has been :ref:`properly configured <configuring-ff>` to work with .onion URLs.
 
     #. **If Tor Browser does not work** - It means there is an issue with your server or with the Tor network.
 
@@ -78,7 +78,7 @@ This means your server was unable to sync its clock with the Internet using the 
 
 I'm having an issue with a particular Service
 ---------------------------------------------
-If a Service is crashing or acting up in some way, check the :ref:`Documentation<service-guides>` and :ref:`FAQ<faq-services>` for that particular Service.  You can also check the "Logs" (on the service page), which might tell you what the problem is.  If that is not helpful, try to restart the service to see if that clears up the issue.  If you are still having issues, please reach out in one of our `Community Channels <https://start9.com/contact>`_ for immediate assistance.
+If a Service is crashing or acting up in some way, check the :ref:`Documentation<service-guides>` for that particular Service.  You can also check the "Logs" (on the service page), which might tell you what the problem is.  If that is not helpful, try to restart the service to see if that clears up the issue.  If you are still having issues, please reach out in one of our `Community Channels <https://start9.com/contact>`_ for immediate assistance.
 
 .. _sounds-bepchime:
 

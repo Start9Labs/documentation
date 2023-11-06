@@ -4,7 +4,7 @@
 Session Management
 ==================
 
-Every time a login is made with StartOS, such as from a web browser on your laptop or mobile device, a :ref:`Session <sessions>` is created.
+Every time a login is made with StartOS, such as from a web browser on your laptop or mobile device, an authenticated session is created.
 
 * To view and manage your active sessions, go to *System > Active Sessions*.
 

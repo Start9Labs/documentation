@@ -24,9 +24,9 @@ The Service Dashboard provides quick insight into the status and health of your 
     * **Stopped**: Service is installed and configured, but not currently running.
     * **Starting**: Service is in the process of starting up.
     * **Running**: Service is running.
-* **Launch UI**: If the service offer a User Interface (UI), and the UI is currently available, clicking this button will launch the UI in a new browser tab. Learn more about :ref:`Web UIs<web-ui>`.
-* **Health Checks**: This is a critical feature of StartOS. Health Checks are configured by the service packager in order to quickly convey to the user what is happening with their service, as well as possible actions they may want to take. Learn more about :ref:`Health Checks <health-checks>`.
-* **Dependencies**: Some services depend on the presence and proper configuration of other services to function. This section will inform you if all dependencies are satisfied and, if not, what to do about it. Learn more about :ref:`Dependencies <service-dependencies>`.
+* **Launch UI**: If the service offer a User Interface (UI), and the UI is currently available, clicking this button will launch the UI in a new browser tab.
+* **Health Checks**: This is a critical feature of StartOS. Health Checks are configured by the service packager in order to quickly convey to the user what is happening with their service, as well as possible actions they may want to take.
+* **Dependencies**: Some services depend on the presence and proper configuration of other services to function. This section will inform you if all dependencies are satisfied and, if not, what to do about it.
 * **Start / Stop**: Self-explanatory, use these buttons to start or stop a service.
 
 Installing a Service

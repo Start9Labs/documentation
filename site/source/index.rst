@@ -20,8 +20,8 @@
   <div class="grid-x grid-margin-x">
 
 .. topic-box::
-  :title: Getting Started
-  :link: getting-started
+  :title: Quick Start
+  :link: quick-start
   :icon: scylla-icon scylla-icon--getting-started
   :class: large-4
   :anchor: View
@@ -38,22 +38,40 @@
   Understand and use your server
 
 .. topic-box::
-  :title: Guides
-  :link: guides
+  :title: Service Guides
+  :link: service-guides
   :icon: scylla-icon scylla-icon--circe
   :class: large-4
   :anchor: View
 
-  Integrate your devices and tools
+  Guides for officially supported services
 
 .. topic-box::
-  :title: Support
-  :link: support
-  :icon: scylla-icon scylla-icon--support
+  :title: Device Guides
+  :link: device-guides
+  :icon: scylla-icon scylla-icon--circe
   :class: large-4
   :anchor: View
 
-  Find answers to your questions
+  Guides for specific client devices
+
+.. topic-box::
+  :title: Flashing Guides
+  :link: flashing-guides
+  :icon: scylla-icon scylla-icon--circe
+  :class: large-4
+  :anchor: View
+
+  Guides for flashing firmware and StartOS
+
+.. topic-box::
+  :title: Misc Guides
+  :link: misc-guides
+  :icon: scylla-icon scylla-icon--circe
+  :class: large-4
+  :anchor: View
+
+  Miscellaneous guides you might find useful
 
 .. topic-box::
   :title: DIY
@@ -74,22 +92,25 @@
   Package a service for the Marketplace
 
 .. topic-box::
-  :title: Contact Us
-  :link: https://start9.com/contact
-  :icon: scylla-icon scylla-icon--contact-us
+  :title: Get Help
+  :link: support
+  :icon: scylla-icon scylla-icon--support
   :class: large-4
   :anchor: View
 
-  Join us in our community channels or get support
+  View common issues or contact support
 
 .. This is for the side navigation display
 .. toctree::
-  :maxdepth: 5
   :hidden:
+  :maxdepth: 1
 
-  getting-started/index
+  quick-start
   user-manual/index
-  guides/index
-  support/index
+  service-guides/index
+  device-guides/index
+  flashing-guides/index
+  misc-guides/index
   diy/index
   developer-docs/index
+  support/index

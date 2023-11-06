@@ -103,7 +103,7 @@ html_theme_options = {
     "hide_version_dropdown": [],
     "github_issues_repository": "Start9Labs/documentation",
     "github_repository": "Start9Labs/documentation",
-    "navigation_depth": 3,
+    "navigation_depth": 2,
     "site_description": "Start9 documentation for sovereign computing with StartOS",
 }
 

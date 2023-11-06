@@ -8,7 +8,7 @@ Service Packaging
   :depth: 2
   :local:
 
-Welcome! Thank you for your interest in contributing to the growing ecosystem of open software. We call the software applications that run on :ref:`StartOS<start-os>` "services."  This distinction is made to differentiate from "applications" (apps), which are generally run on a client, and used to access server-side software (services).  To run services on StartOS, a package of file components needs to be composed. This guide will dive into the basic structure of how to compose this package.
+Welcome! Thank you for your interest in contributing to the growing ecosystem of open software. We call the software applications that run on StartOS services.  This distinction is made to differentiate from "applications" (apps), which are generally run on a client, and used to access server-side software (services).  To run services on StartOS, a package of file components needs to be composed. This guide will dive into the basic structure of how to compose this package.
 
 Check out the :ref:`glossary <glossary>` to get acquainted with unfamiliar terms.  The bottom of this guide also includes :ref:`support <packaging-support>` links, including a master checklist.
 

@@ -19,7 +19,7 @@ Each time a service is updated, the Manifest should be updated to include the ne
 
 There is nothing you need to do as a developer to set up Tor for running a service. This is *completely* handled by StartOS - a Tor address will be automatically generated when the service is installed. Just define an interface with a tor config in the Manifest file. You do, however, need to ensure the service is in fact capable of running over Tor.
 
-The Manifest is also responsible for outlining service :ref:`dependencies <dependencies-spec>`. By defining rules using the :ref:`StartOS DSL specification <config_rules>`, users can easily and selectively install, uninstall, and update any service without getting stuck in dependency hell. StartOS presents this information in a polished install/uninstall/update wizard, so there's no need for editing configuration files or jumping into the command line. For you as a developer, this simply means populating this key in the manifest!
+The Manifest is also responsible for outlining service :ref:`dependencies <dependencies-spec>`. By defining rules using the :ref:`StartOS DSL specification <config_spec>`, users can easily and selectively install, uninstall, and update any service without getting stuck in dependency hell. StartOS presents this information in a polished install/uninstall/update wizard, so there's no need for editing configuration files or jumping into the command line. For you as a developer, this simply means populating this key in the manifest!
 
 Formatting
 ----------

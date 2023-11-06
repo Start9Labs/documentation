@@ -4,9 +4,9 @@
 Password Change
 ===============
 
-This guide is for changing your password from the web-UI.  If you forgot your password and want to reset it, see the :ref:`reset password guide<reset-password>`.
+This guide is for changing your password from the main StartOS UI. If you forgot your password and want to reset it, see the :ref:`reset password guide<reset-password>`.
 
-#. Login to the web-UI and navigate to System > Change Master Password
+#. Navigate to System > Change Master Password
 
    .. figure:: /_static/images/config/password_change_ui-1.png
       :width: 60%
