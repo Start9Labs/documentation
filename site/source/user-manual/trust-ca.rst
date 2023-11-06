@@ -56,55 +56,10 @@ Your server's Root CA was included in the downloaded file at the end of initial 
 Trust Root CA
 --------------
 
-Select your operating system:
+Select your OS:
 
-.. raw:: html
-
-  <div class="topics-grid grid-container full">
-
-  <div class="grid-x grid-margin-x">
-
-.. topic-box::
-  :title: Linux
-  :link: ../../../../device-guides/linux/ca-linux/
-  :icon: scylla-icon scylla-icon--linux
-  :class: large-4
-  :anchor: View
-
-  Trust your Root CA on Linux
-
-.. topic-box::
-  :title: Mac
-  :link: ../../../../device-guides/mac/ca-mac
-  :icon: scylla-icon scylla-icon--apple
-  :class: large-4
-  :anchor: View
-
-  Trust your Root CA on Mac
-
-.. topic-box::
-  :title: Windows
-  :link: ../../../../device-guides/windows/ca-windows
-  :icon: scylla-icon scylla-icon--windows
-  :class: large-4
-  :anchor: View
-
-  Trust your Root CA on Windows
-
-.. topic-box::
-  :title: Android
-  :link: ../../../../device-guides/android/ca-android
-  :icon: scylla-icon scylla-icon--android
-  :class: large-4
-  :anchor: View
-
-  Trust your Root CA on Android
-
-.. topic-box::
-  :title: iOS
-  :link: ../../../../device-guides/ios/ca-ios
-  :icon: scylla-icon scylla-icon--ios
-  :class: large-4
-  :anchor: View
-
-  Trust your Root CA on iOS
+- :ref:`Linux <ca-linux>`
+- :ref:`Mac <ca-mac>`
+- :ref:`Windows <ca-windows>`
+- :ref:`Android <ca-android>`
+- :ref:`iOS <ca-ios>`

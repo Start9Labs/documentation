@@ -9,44 +9,7 @@ Firefox is a privacy-focused browser that can be configured to resolve LAN (`.lo
 
 Select your OS:
 
-.. raw:: html
-
-  <div class="topics-grid grid-container full">
-
-  <div class="grid-x grid-margin-x">
-
-.. topic-box::
-  :title: Linux
-  :link: ../../../../device-guides/linux/ff-linux
-  :icon: scylla-icon scylla-icon--linux
-  :class: large-4
-  :anchor: View
-
-  Configuring Firefox on Linux
-
-.. topic-box::
-  :title: Mac
-  :link: ../../../../device-guides/mac/ff-mac
-  :icon: scylla-icon scylla-icon--apple
-  :class: large-4
-  :anchor: View
-
-  Configuring Firefox on Mac
-
-.. topic-box::
-  :title: Windows
-  :link: ../../../../device-guides/windows/ff-windows
-  :icon: scylla-icon scylla-icon--windows
-  :class: large-4
-  :anchor: View
-
-  Configuring Firefox on Windows
-
-.. topic-box::
-  :title: Android
-  :link: ../../../../device-guides/android/ff-android
-  :icon: scylla-icon scylla-icon--android
-  :class: large-4
-  :anchor: View
-
-  Configuring Firefox on Android
+- :ref:`Linux <ff-linux>`
+- :ref:`Mac <ff-mac>`
+- :ref:`Windows <ff-windows>`
+- :ref:`Android <ff-android>`

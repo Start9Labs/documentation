@@ -7,7 +7,7 @@
 .. hero-box::
   :title: Welcome to the Docs
 
-  StartOS setup, user manual, devices guides, guides, developer documentation, FAQs and more.
+  StartOS user manual, guides, developer docs, and more.
 
 .. raw:: html
 
@@ -18,15 +18,6 @@
   <div class="topics-grid grid-container full">
 
   <div class="grid-x grid-margin-x">
-
-.. topic-box::
-  :title: Quick Start
-  :link: quick-start
-  :icon: scylla-icon scylla-icon--getting-started
-  :class: large-4
-  :anchor: View
-
-  Get started with your server
 
 .. topic-box::
   :title: User Manual
@@ -74,7 +65,7 @@
   Miscellaneous guides you might find useful
 
 .. topic-box::
-  :title: DIY
+  :title: DIY Guide
   :link: diy
   :icon: scylla-icon scylla-icon--memory-management
   :class: large-4
@@ -105,7 +96,6 @@
   :hidden:
   :maxdepth: 1
 
-  quick-start
   user-manual/index
   service-guides/index
   device-guides/index

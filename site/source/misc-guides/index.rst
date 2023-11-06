@@ -8,7 +8,6 @@ Guides that do not fit into the categories of "devices" or "services."
 .. toctree::
   :maxdepth: 1
 
-  ca-ff
   lnd-migration
   upgrade-hardware/index
   thunderbird

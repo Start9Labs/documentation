@@ -10,58 +10,13 @@ You can connect to your server from anywhere in the world, privately and anonymo
 Running Tor on Your Phone/Computer (Recommended)
 ------------------------------------------------
 
-Select your OS below:
+Select your OS:
 
-.. raw:: html
-
-  <div class="topics-grid grid-container full">
-
-  <div class="grid-x grid-margin-x">
-
-.. topic-box::
-  :title: Linux
-  :link: ../../../../device-guides/linux/tor-linux
-  :icon: scylla-icon scylla-icon--linux
-  :class: large-4
-  :anchor: View
-
-  Running Tor on Linux
-
-.. topic-box::
-  :title: Mac
-  :link: ../../../../device-guides/mac/tor-mac
-  :icon: scylla-icon scylla-icon--apple
-  :class: large-4
-  :anchor: View
-
-  Running Tor on Mac
-
-.. topic-box::
-  :title: Windows
-  :link: ../../../../device-guides/windows/tor-windows
-  :icon: scylla-icon scylla-icon--windows
-  :class: large-4
-  :anchor: View
-
-  Running Tor on Windows
-
-.. topic-box::
-  :title: Android
-  :link: ../../../../device-guides/android/tor-android
-  :icon: scylla-icon scylla-icon--android
-  :class: large-4
-  :anchor: View
-
-  Running Tor on Android
-
-.. topic-box::
-  :title: iOS
-  :link: ../../../../device-guides/ios/tor-ios
-  :icon: scylla-icon scylla-icon--ios
-  :class: large-4
-  :anchor: View
-
-  Running Tor on iOS
+- :ref:`Linux <tor-linux>`
+- :ref:`Mac <tor-mac>`
+- :ref:`Windows <tor-windows>`
+- :ref:`Android <tor-android>`
+- :ref:`iOS <tor-ios>`
 
 Using a Tor Browser
 -------------------
