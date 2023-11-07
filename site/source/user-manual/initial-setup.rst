@@ -3,55 +3,14 @@
 =============
 Initial Setup
 =============
-Follow the instructions below to set up your server for the first time.
 
 #. Connect your server to power and Ethernet
 
 #. From a client device (desktop/laptop/phone), open a browser and visit ``http://start.local``. Your client must be connected to the same Local Area Network (LAN) as your server. This usually means they are using the same router, either by ethernet or WiFi
 
-	.. note:: If you are `not` using a Raspberry Pi, you can also plug a monitor and keyboard into the server.
+	.. note:: If you are `not` using a Raspberry Pi, you can also plug a monitor and keyboard into the server. This is known as "Kiosk mode".
 
-#. Select ``Start Fresh``
-
-	.. figure:: /_static/images/setup/screen0-startfresh_or_recover.jpg
-		:width: 50%
-		:alt: Fresh Setup
-
-#. Select your storage drive. In most cases, there will be only one
-
-	.. figure:: /_static/images/setup/screen2-select_storage.jpg
-		:width: 50%
-		:alt: Select Drive
-
-#. Create a master password for your server and click ``Finish``
-
-	.. warning:: Choose a strong master password. Write it down. Store it somewhere safe. DO NOT LOSE IT.
-
-	.. figure:: /_static/images/setup/screen5-set_password_complete.jpg
-		:width: 50%
-		:alt: Create New Password
-
-#. StartOS will initialize. This can take a few minutes
-
-	.. figure:: /_static/images/setup/screen6-storage_initialize.jpg
-		:width: 50%
-		:alt: SSD Initialization
-
-#. Click the ``Download`` button to download a file containing the URLs (`.local` and `.onion`) and Root CA of your server. Keep this file for future reference.
-
-	.. note:: If you connected a monitor, you will `not` see the download button
-
-	.. figure:: /_static/images/setup/screen7-startfresh_complete.jpg
-		:width: 50%
-		:alt: Setup Complete
-
-#. Setup complete! Click ``Login to StartOS`` to access your new server
-
-	.. figure:: /_static/images/setup/screen9-startfresh_complete_saved.jpg
-		:width: 50%
-		:alt: Setup Complete
-
-#. Now you will need to :ref:`trust your root CA<trust-root-ca-on-initial-setup>` in order to login.
+#. Follow the on-screen instructions.
 
 .. _setup-troubleshooting:
 

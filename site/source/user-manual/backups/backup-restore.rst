@@ -119,30 +119,30 @@ Select the appropriate tab below to restore your data:
 
         #. Select "Transfer"
         
-            .. figure:: /_static/images/transfer/transfer0.png
+            .. figure:: /_static/images/setup/transfer.png
                 :width: 60%
 
         #. Plug in the drive (make sure it is powered on) of the server you are migrating **from** and select it (in this example, /dev/sda).  You may need to try a different USB port and hit "Refresh" if you don't see it immediately.  You will see a warning about using the old drive again; read and understand it.
         
-            .. figure:: /_static/images/transfer/transfer1.png
+            .. figure:: /_static/images/setup/transfer-from.png
                 :width: 60%
 
         #. Select the drive on your new server (that you are migrating **onto**).
         
-            .. figure:: /_static/images/transfer/transfer2.png
+            .. figure:: /_static/images/setup/transfer-to.png
                 :width: 60%
          
             .. warning:: This will **PERMANENETLY ERASE** any existing data on that drive.  If you re-using an old drive, ensure that you have first removed all your data!!
 
         #. Set your new master password.  *Make it good.  Write it down.*  Click finish.
         
-            .. figure:: /_static/images/transfer/transfer3.png
+            .. figure:: /_static/images/setup/screen5-set_password.png
                 :width: 60%
 
-            .. figure:: /_static/images/transfer/transfer4.png
+            .. figure:: /_static/images/setup/transfer-calc-size.png
                 :width: 60%
 
         #. Your server will now initialize and migrate the old data to the new drive.  The time required can vary greatly depending on how much data you are migrating.  Be prepared for this to take many hours, especially if you have 1-2TB+ of data.  Go have a sandwich and contemplate other aspects of your sovereignty.
 
-            .. figure:: /_static/images/transfer/transfer5.png
+            .. figure:: /_static/images/setup/transfer-copying.png
                 :width: 60%
