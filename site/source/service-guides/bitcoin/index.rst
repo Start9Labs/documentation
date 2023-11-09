@@ -10,5 +10,4 @@ These guides will help you to setup external tools to connect or interact with B
   :maxdepth: 1
 
   bitcoin-integrations
-  bitcoin-cli
   blockchain-copy
