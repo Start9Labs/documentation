@@ -21,5 +21,6 @@ User Manual
   updating
   sessions
   ssh
+  container-access
   wifi
   alt-registries
