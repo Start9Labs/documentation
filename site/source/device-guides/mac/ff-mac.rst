@@ -5,11 +5,8 @@ Configuring Firefox on Mac
 ==========================
 Here you will configure Firefox to securely resolve the .local and .onion URLs of your server and installed services.
 
-Local
------
-
-#. Ensure you have already :ref:`trusted your server's Root CA<ca-mac>`
-
+Local (required for initial setup)
+----------------------------------
 #. Open Firefox and enter ``about:config`` in the URL bar. Accept any warnings that appear
 
 #. Search for ``security.enterprise_roots.enable``, set it to ``true``.
@@ -20,24 +17,8 @@ Local
 
 #. Restart Firefox
 
-#. When you visit your server URL using ``https``, you should see this symbol indicating a secure connection:
-
-    .. figure:: /_static/images/ssl/browser/firefox-https-good.png
-        :width: 80%
-        :alt: Firefox security settings
-
-#. If you see an exclamation point inside a triangle by the lock, it means you previously made a security exception in the browser. You will need to remove the exception by clicking the lock -> Connection not secure -> Remove Exception.
-
-    .. figure:: /_static/images/ssl/browser/cert-trust-exception-remove-1.png
-        :width: 80%
-        :alt: Firefox - Remove security exception (Part 1)
-
-    .. figure:: /_static/images/ssl/browser/cert-trust-exception-remove-2.png
-        :width: 80%
-        :alt: Firefox - Remove security exception (Part 2)
-
-Tor
----
+Tor (can be completed later)
+----------------------------
 #. Ensure you have already :ref:`set up Tor<tor-mac>`
 
 #. Open Firefox and enter ``about:config`` in the URL bar. Accept any warnings that appear

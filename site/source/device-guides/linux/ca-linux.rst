@@ -12,7 +12,7 @@ Trusting Your Server's Root CA on Linux
 
         These instructions will work for most Debian-based Linux distributions, such as Debian, Linux Mint, PopOS, Ubuntu, etc.
 
-        #. Ensure you have already `downloaded your server's Root CA </getting-started/trust-ca/#download-root-ca>`_
+        #. Ensure you have already :ref:`downloaded your Root CA <download-root-ca>`
 
         #. Perform the following commands in the Terminal:
 
@@ -37,7 +37,7 @@ Trusting Your Server's Root CA on Linux
 
     .. group-tab:: Arch/Garuda
 
-        #. Ensure you have already `downloaded your server's Root CA </getting-started/trust-ca/#download-root-ca>`_
+        #. Ensure you have already :ref:`downloaded your Root CA <download-root-ca>`
 
         #. From the folder you have downloaded your Start9 server's Root CA, run the following commands. Take care to replace `adjective-noun` with your server's unique adjective-noun combination in the command below.  If you have changed the certificate's filename, be sure to change it here.
 
@@ -51,7 +51,7 @@ Trusting Your Server's Root CA on Linux
 
     .. group-tab:: CentOS/Fedora
 
-        #. Ensure you have already `downloaded your server's Root CA </getting-started/trust-ca/#download-root-ca>`_
+        #. Ensure you have already :ref:`downloaded your Root CA <download-root-ca>`
         
         #. In `/etc/systemd/resolved.conf`, ensure you have ``MulticastDNS=Yes``
 

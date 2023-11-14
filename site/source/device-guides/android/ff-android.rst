@@ -3,21 +3,20 @@
 ==============================
 Configuring Firefox on Android
 ==============================
-
 Download `Firefox Beta <https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta>`_ from the Play Store, or `Fennec <https://f-droid.org/en/packages/org.mozilla.fennec_fdroid/>`_ from F-Droid.
 
 	.. caution:: You must use **Firefox Beta** on Android. Regular Firefox does not permit advanced configuration.
 
-Local
------
+Local (required for initial setup)
+----------------------------------
 #. Ensure you have already :ref:`trusted your Root CA<ca-android>` on your Android device
 
 #. Tap ``Kebab Menu > Settings > About Firefox`` and tap the Firefox icon 5 times to enable "developer mode"
 
 #. Go back to ``Kebab Menu > Settings > Secret Settings`` (at the bottom), and tap ``Use third party CA certificates``
 
-Tor
----
+Tor (can be completed later)
+----------------------------
 #. Ensure you are already :ref:`running Tor<tor-android>` on your Android device
 
 #. Download the `Proxy Auto Config` file that will use Orbot to resolve `.onion` URLs. We have one hosted `here <https://start9.com/assets/proxy.pac>`_

@@ -4,9 +4,16 @@
 Initial Setup
 =============
 
+#. If using Firefox (*highly recommended*) to connect to your server, you must complete the "Local" portion for your OS. For iOS, use Safari:
+
+    - :ref:`Linux <ff-linux>`
+    - :ref:`Mac <ff-mac>`
+    - :ref:`Windows <ff-windows>`
+    - :ref:`Android <ff-android>`
+
 #. Connect your server to power and Ethernet
 
-#. From a client device (desktop/laptop/phone), open a browser and visit ``http://start.local``. Your client must be connected to the same Local Area Network (LAN) as your server. This usually means they are using the same router, either by ethernet or WiFi
+#. From a client device (desktop/laptop/phone), open a browser (Firefox recommended) and visit ``http://start.local``. Your client device must be connected to the same Local Area Network (LAN) as your server. This usually means they are using the same router, either by ethernet or WiFi
 
 	.. note:: If you are `not` using a Raspberry Pi, you can also plug a monitor and keyboard into the server. This is known as "Kiosk mode".
 
@@ -18,8 +25,9 @@ Troubleshooting
 ---------------
 If you are experiencing issues with setup, try the following:
 
-#. Confirm that the server is plugged into both power `and` Ethernet      
+#. Confirm that the server is plugged into both power `and` Ethernet
 #. Confirm your phone/computer is `not` connected to a "Guest" network
+#. If using Firefox (recommended) from Mac, Windows or Android, ensure you have set ``security.enterprise_roots.enable`` to ``true`` in ``about:config`` per the :ref:`instructions<configuring-ff>`
 #. Confirm your phone/computer is not using a VPN, or that if you are, that it allows LAN connections, such as the examples below:
 
     - Mullvad - Go to "Settings -> VPN Settings -> Local Network Sharing"

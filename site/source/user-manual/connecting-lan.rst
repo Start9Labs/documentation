@@ -11,9 +11,20 @@ All clients
 
 #. Follow instructions to :ref:`trust your server's Root CA<trust-ca>`
 
-Windows Only
+If using Firefox (recommended)
+------------------------------
+#. Complete the "Local" portion for your OS. Use Safari for iOS.
+
+- :ref:`Linux <ff-linux>`
+- :ref:`Mac <ff-mac>`
+- :ref:`Windows <ff-windows>`
+- :ref:`Android <ff-android>`
+
+.. _connecting-lan-windows:
+
+Windows only
 ------------
-On Windows, it is currently necessary to install Bonjour Print Services in order to access the `.local` URLs of your installed services. With the release of StartOS v0.4.0, it will no longer be necessary.
+On Windows, it is necessary to install Bonjour Print Services in order to access the `.local` URLs of your installed services. In a future release of StartOS, this will no longer be necessary.
 
 #. Simply install Bonjour Print Services from Apple: https://support.apple.com/kb/DL999
 
