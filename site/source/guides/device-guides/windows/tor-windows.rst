@@ -4,9 +4,6 @@
 Running Tor on Windows
 ======================
 
-.. youtube:: j_ldDT2zPsg
-   :width: 100%
-
 #. Unfortunately, `The Tor Project <https://torproject.org>`_ no longer publishes a standalone Tor binary for Windows, so the recommended way to get it is with the Tor Browser Bundle. You can download it `here <https://www.torproject.org/download/>`_.
 
    .. figure:: /_static/images/tor/tor_download_windows.png
