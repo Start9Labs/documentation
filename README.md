@@ -50,11 +50,31 @@ git clone https://github.com/Start9Labs/documentation.git && cd documentation
 git submodule update --init
 ```
 
+1. Prep NVM:
+
+```
+nvm use v16.11 || nvm install v16.11 && nvm use v16.11
+```
+
+1. Ensure poetry is updated
+
+```
+poetry update
+```
+
 1. Run setup script to install project dependencies:
 
 ```
 chmod a+x site/_utils/setup.sh
 ./site/_utils/setup.sh
+```
+
+1. Make sure sphinx packages in the package.lock file are preset, for consistency:
+
+```
+cd sphinx-scylladb-theme
+npm ci
+cd ..
 ```
 
 1. Navigate to the `site` folder and start the project:
@@ -73,12 +93,13 @@ When editing any css or table of contents organization changes, the livereload e
 If you edit something inside `sphinx-scylladb-theme`, you will need to `cd` into that directory and run `npm run build`.
 
 ### Versioning
+
 - Build for versioning (must be on master) branch: `make multiversion`
 - To view version metadata: `make multiversionpreview`
 
 ## Contributing to the docs
 
-If you notice a mistake in the docs, or you have an idea for improving them, we would like to know about it. You can either fix the mistake yourself and submit a pull request, or you can report the mistake by submitting an `issue <https://github.com/Start9Labs/documentation/issues>`__ .
+If you notice a mistake in the docs, or you have an idea for improving them, we would like to know about it. You can either fix the mistake yourself and submit a pull request, or you can report the mistake by submitting an `issue <https://github.com/Start9Labs/documentation/issues>`\_\_ .
 
 ### Submitting an issue
 
@@ -91,6 +112,7 @@ Click on the "Pull requests" tab in the top navbar. Select the green "New pull r
 ## Helpful Resources
 
 ### Sphinx and RST syntax guides:
+
 http://sphinx-doc.org/rest.html
 http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html
 http://www.siafoo.net/help/reST
