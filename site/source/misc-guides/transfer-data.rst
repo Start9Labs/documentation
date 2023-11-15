@@ -1,8 +1,8 @@
-.. _ssd-upgrade:
+.. _transfer-data:
 
-================
-Upgrade Your SSD
-================
+============================
+Transfer Data to a New Drive
+============================
 This guide will go over how to upgrade your data drive and transfer the data from the old one to the new one.  This will preserve the entire state of your server, including all Tor and LAN addresses as well as channels you have open on the lightning network!  You may like to do this in order to increase storage size, storage speed, or just to move your existing server data to new hardware entirely.
 
 This is not the same as running a back up and restoring them onto a new server.  You can read about the differences on the :ref:`Restore page<backup-restore>`.

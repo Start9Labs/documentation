@@ -4,12 +4,18 @@
 Initial Setup
 =============
 
-#. If using Firefox (*highly recommended*) to connect to your server, you must complete the "Local" portion for your OS. For iOS, use Safari:
+.. _fresh-setup:
+
+Starting Fresh
+--------------
+
+#. If using Firefox (*recommended*) to connect to your server, you must complete the "Local" portion for your OS:
 
     - :ref:`Linux <ff-linux>`
     - :ref:`Mac <ff-mac>`
     - :ref:`Windows <ff-windows>`
     - :ref:`Android <ff-android>`
+    - iOS (use Safari)
 
 #. Connect your server to power and Ethernet
 
@@ -18,6 +24,16 @@ Initial Setup
 	.. note:: If you are `not` using a Raspberry Pi, you can also plug a monitor and keyboard into the server. This is known as "Kiosk mode".
 
 #. Follow the on-screen instructions.
+
+.. _recover-options:
+
+Recover Options
+---------------
+If you are using an existing drive, transferring data from one drive to another, or restoring your entire system from a backup, follow the appropriate guide below:
+
+    - :ref:`Use Existing Drive <attach-drive>`
+    - :ref:`Transfer <transfer-data>`
+    - :ref:`Restore from Backup <backup-restore>`
 
 .. _setup-troubleshooting:
 
