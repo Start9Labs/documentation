@@ -99,7 +99,7 @@ If you edit something inside `sphinx-scylladb-theme`, you will need to `cd` into
 
 ## Contributing to the docs
 
-If you notice a mistake in the docs, or you have an idea for improving them, we would like to know about it. You can either fix the mistake yourself and submit a pull request, or you can report the mistake by submitting an `issue <https://github.com/Start9Labs/documentation/issues>`.
+If you notice a mistake in the docs, or you have an idea for improving them, we would like to know about it. You can either fix the mistake yourself and submit a pull request, or you can report the mistake by submitting an [issue](https://github.com/Start9Labs/documentation/issues).
 
 ### Submitting an issue
 
