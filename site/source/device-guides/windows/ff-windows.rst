@@ -19,7 +19,7 @@ Local (required for initial setup)
 
 Tor (can be completed later)
 ----------------------------
-#. Ensure you have already :ref:`set up Tor<tor-mac>`
+#. Ensure you have already :ref:`set up Tor<tor-windows>`
 
 #. Open Firefox and enter ``about:config`` in the URL bar. Accept any warnings that appear
 
