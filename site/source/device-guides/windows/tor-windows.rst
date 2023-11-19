@@ -4,9 +4,6 @@
 Running Tor on Windows
 ======================
 
-Running Tor
------------
-
 #. Unfortunately, `The Tor Project <https://torproject.org>`_ no longer publishes a standalone Tor binary for Windows, so the recommended way to get it is with the Tor Browser Bundle. You can download it `here <https://www.torproject.org/download/>`_.
 
    .. figure:: /_static/images/tor/tor_download_windows.png
@@ -57,57 +54,4 @@ Running Tor
       2. Uninstall the Tor Browser, following `these steps <https://tb-manual.torproject.org/uninstalling/>`_.
       3. Begin this guide again from the beginning.
 
-#. That's it! Your Windows computer is now setup to natively use Tor.
-
-If using Firefox (recommended)
-------------------------------
-
-#. Open Firefox and enter ``about:config`` in the URL bar. Accept any warnings that appear
-
-#. Search for ``dom.securecontext.allowlist_onions`` and set the value to ``true``:
-
-    .. figure:: /_static/images/tor/firefox_allowlist.png
-        :width: 60%
-        :alt: Firefox whitelist onions screenshot
-
-#. Search for ``network.websocket.allowInsecureFromHTTPS`` and set the value to ``true``:
-
-    .. figure:: /_static/images/tor/firefox_insecure_websockets.png
-        :width: 60%
-        :alt: Firefox allow insecure websockets over https
-
-#. Download a ``Proxy Auto Config`` file to inform Firefox how to use the Tor daemon running on your computer. Click `here <https://start9.com/assets/proxy.pac>`_ to get the one offered by Start9 and save it somewhere you will not delete it. Remember where you save the file. For this example:
-
-    .. code-block::
-
-    	C:\Program Files\Tor Browser\proxy.pac
-
-#. Go to the right-hand hamburger menu and select ``Settings``:
-
-    .. figure:: /_static/images/tor/os_ff_settings.png
-        :width: 30%
-        :alt: Firefox options screenshot
-
-#. Search for the term ``proxy`` in the search bar in the upper right and select ``Settings...``:
-
-    .. figure:: /_static/images/tor/firefox_search.png
-        :width: 60%
-        :alt: Firefox search screenshot
-
-#. Select ``Automatic proxy configuration URL`` and paste in the path to your PAC file from earlier, prefixed with ``file://``. For example:
-
-    .. code-block::
-
-    	file://C:/Program Files/Tor Browser/proxy.pac
-
-#. Check the box labeled ``Proxy DNS when using SOCKS v5``:
-
-    .. figure:: /_static/images/tor/firefox_proxy.png
-        :width: 60%
-        :alt: Firefox proxy settings screenshot
-
-#. Click ``OK`` and restart Firefox
-
-#. Test that Firefox can resolve `.onion` URLs by visiting Start9's Tor website: http://privacy34kn4ez3y3nijweec6w4g54i3g54sdv7r5mr6soma3w4begyd.onion. If this does not work, go through this guide again, ensuring you followed every step, including the first which refers to another guide
-
-#. You can now use the `.onion` URLs of your server and installed services
+#. If using Firefox (recommended), complete :ref:`this final step <tor-ff>`
