@@ -12,4 +12,3 @@ Recommended Guides
 
   ca-android
   tor-android
-  ff-android

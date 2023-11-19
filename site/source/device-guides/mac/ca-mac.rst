@@ -1,11 +1,16 @@
 .. _ca-mac:
 
-=====================================
-Trusting Your Server's Root CA on Mac
-=====================================
+============================
+Trusting Your Root CA on Mac
+============================
 Complete this guide to trust your server's Root Certificate Authority (Root CA) on Mac.
 
-#. Ensure you have already :ref:`downloaded your Root CA <download-root-ca>`
+.. _ca-mac-trust:
+
+Trusting
+--------
+
+#. Ensure you have already :ref:`downloaded your Root CA <root-ca-download>`
 
 #. Locate your downloaded Root CA. Right click it and select *Show in Folder*:
 
@@ -50,3 +55,18 @@ Complete this guide to trust your server's Root Certificate Authority (Root CA) 
         :alt: Keychain submenu
 
     .. tip:: If the keychain console did not show the certificate as trusted, press "Command + spacebar" and type “Keychain Access”, and hit enter to re-open it.
+
+.. _ca-mac-ff:
+
+If using Firefox (recommended)
+------------------------------
+
+#. Open Firefox and enter ``about:config`` in the URL bar. Accept any warnings that appear
+
+#. Search for ``security.enterprise_roots.enable``, set it to ``true``.
+
+    .. figure:: /_static/images/ssl/browser/enterprise_roots_enabled_true.png
+        :width: 80%
+        :alt: Firefox security settings
+
+#. Restart Firefox

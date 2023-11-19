@@ -12,7 +12,6 @@ Recommended Guides
 
   ca-linux
   tor-linux
-  ff-linux
 
 Other Useful Guides
 -------------------

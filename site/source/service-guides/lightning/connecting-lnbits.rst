@@ -21,7 +21,7 @@ If you are looking to connect the `Alby <https://github.com/getAlby/lightning-br
 Setting up LNbits
 -----------------
 
-.. note:: You will need a Tor enabled browser. We suggest using Firefox which will need to have been setup to use Tor - if you have yet to do this please see our guide :ref:`here<configuring-ff>`. This also requires having :ref:`native tor setup<connecting-tor>`.
+.. note:: You will need a Tor enabled browser. We suggest using Firefox which will need to have been setup to use Tor - if you have yet to do this please see our guide :ref:`here<connecting-tor-ff>`. This also requires having :ref:`native tor setup<connecting-tor>`.
 
 #. Start by ensuring that you have LNbits installed already as well as LND or Core Lightning (CLN). You also need your lightning node to have at least one channel set up otherwise payments will not work. If you have not set up a channel yet, please follow :ref:`this guide<lightning-intro>`.
 

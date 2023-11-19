@@ -1,11 +1,16 @@
 .. _ca-windows:
 
-=========================================
-Trusting Your Server's Root CA on Windows
-=========================================
+================================
+Trusting Your Root CA on Windows
+================================
 Complete this guide to trust your server's Root Certificate Authority (Root CA) on Windows.
 
-#. Ensure you have already :ref:`downloaded your Root CA <download-root-ca>`
+.. _ca-windows-trust:
+
+Trusting
+--------
+
+#. Ensure you have already :ref:`downloaded your Root CA <root-ca-download>`
 
 #. Ensure you have already :ref:`installed bonjour <connecting-lan-windows>`
 
@@ -82,3 +87,16 @@ Complete this guide to trust your server's Root Certificate Authority (Root CA) 
    .. figure:: /_static/images/ssl/windows/11_console_settings.png
     :width: 20%
     :alt: Console settings
+
+.. _ca-windows-ff:
+
+If using Firefox (recommended)
+------------------------------
+
+#. Open Firefox and enter ``about:config`` in the URL bar. Accept any warnings that appear
+
+#. Search for ``security.enterprise_roots.enable``, set it to ``true``.
+
+    .. figure:: /_static/images/ssl/browser/enterprise_roots_enabled_true.png
+        :width: 80%
+        :alt: Firefox security settings

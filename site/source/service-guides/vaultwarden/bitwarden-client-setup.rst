@@ -15,7 +15,7 @@ Browser Extension
 
             If connecting via Tor (i.e using the .onion address) the Bitwarden browser extension will only work with a Tor enabled browser. You can use Firefox (recommended), Tor Browser or Brave Browser.
 
-            #. If you choose Firefox, you will need to :ref:`setup Tor on your device <connecting-tor>` and :ref:`configure Firefox to use Tor <configuring-ff>`. If using Brave you will just need to :ref:`setup Tor on your device <connecting-tor>`. With Tor Browser, everything will just work right out of the box.
+            #. If you choose Firefox, you will need to :ref:`follow this guide <connecting-tor>` to run Tor on your device and configure Firefox to use it. If using Brave you will just need to :ref:`setup Tor on your device <connecting-tor>`. With Tor Browser, everything will just work right out of the box.
 
                 .. tip:: We recommend using Firefox as it is the most compatible browser with Start9 Servers.
 

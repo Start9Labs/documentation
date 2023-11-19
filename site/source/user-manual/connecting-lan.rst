@@ -5,20 +5,9 @@ Connecting Locally
 ==================
 When connected to the same Local Area Network (LAN) as your server, you can use its `.local` URLs for fast and secure connections.
 
-All clients
------------
+#. Ensure you have properly :ref:`downloaded and trusted your Root CA<trust-ca>`, including configuring Firefox if you are using it (recommended).
+
 #. Ensure your client device (phone/laptop) is connected to the same Local Area Network (LAN) as your server. This usually means your server and your client device are using the same router, either by ethernet or WiFi
-
-#. Follow instructions to :ref:`trust your server's Root CA<trust-ca>`
-
-If using Firefox (recommended)
-------------------------------
-#. Complete the "Local" portion for your OS. Use Safari for iOS.
-
-- :ref:`Linux <ff-linux>`
-- :ref:`Mac <ff-mac>`
-- :ref:`Windows <ff-windows>`
-- :ref:`Android <ff-android>`
 
 .. _connecting-lan-windows:
 

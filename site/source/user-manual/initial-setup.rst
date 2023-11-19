@@ -9,12 +9,14 @@ Initial Setup
 Starting Fresh
 --------------
 
-#. If using Firefox (*recommended*) to connect to your server, you must complete the "Local" portion for your OS:
+#. If using Firefox (*recommended for all platform except iOS*) to connect to your server, you must complete the "Local" portion for your OS:
 
-    - :ref:`Linux <ff-linux>`
-    - :ref:`Mac <ff-mac>`
-    - :ref:`Windows <ff-windows>`
-    - :ref:`Android <ff-android>`
+    .. note:: Firefox is the only browser that can be configured to access both LAN (`.local`) and Tor (`.onion`) URLs, including extensions, without affecting normal browser functionality. For iOS, all browsers actually use Safari under the hood, so it is preferable not to stack unnecessary software on top of it. Just use Safari.
+
+    - :ref:`Linux <ca-linux-ff>`
+    - :ref:`Mac <ca-mac-ff>`
+    - :ref:`Windows <ca-windows-ff>`
+    - :ref:`Android <ca-android-ff>`
     - iOS (use Safari)
 
 #. Connect your server to power and Ethernet

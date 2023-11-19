@@ -1,10 +1,15 @@
 .. _ca-linux:
 
-=======================================
-Trusting Your Server's Root CA on Linux
-=======================================
+==============================
+Trusting Your Root CA on Linux
+==============================
 
 .. caution:: If you cannot connect following this guide, you may be using an application (such as Firefox) that is installed in a jailed environment, such as an appimage, flatpak, or snap. Please try an alternate install method if so.
+
+.. _ca-linux-trust:
+
+Trusting
+--------
 
 .. tabs::
 
@@ -12,7 +17,7 @@ Trusting Your Server's Root CA on Linux
 
         These instructions will work for most Debian-based Linux distributions, such as Debian, Linux Mint, PopOS, Ubuntu, etc.
 
-        #. Ensure you have already :ref:`downloaded your Root CA <download-root-ca>`
+        #. Ensure you have already :ref:`downloaded your Root CA <root-ca-download>`
 
         #. Perform the following commands in the Terminal:
 
@@ -33,11 +38,11 @@ Trusting Your Server's Root CA on Linux
                 sudo bash -c "echo 'start9/adjective-noun.local.crt' >> /etc/ca-certificates.conf"
                 sudo update-ca-certificates
 
-            In the output it should say ``1 added`` if it was successful.  For most applications, you will now be able to securely connect via ``https``.  We highly recommend continuing on to our :ref:`Configuring Firefox <ff-linux>` guide.
+            In the output it should say ``1 added`` if it was successful.  For most applications, you will now be able to securely connect via ``https``.
 
     .. group-tab:: Arch/Garuda
 
-        #. Ensure you have already :ref:`downloaded your Root CA <download-root-ca>`
+        #. Ensure you have already :ref:`downloaded your Root CA <root-ca-download>`
 
         #. From the folder you have downloaded your Start9 server's Root CA, run the following commands. Take care to replace `adjective-noun` with your server's unique adjective-noun combination in the command below.  If you have changed the certificate's filename, be sure to change it here.
 
@@ -51,7 +56,7 @@ Trusting Your Server's Root CA on Linux
 
     .. group-tab:: CentOS/Fedora
 
-        #. Ensure you have already :ref:`downloaded your Root CA <download-root-ca>`
+        #. Ensure you have already :ref:`downloaded your Root CA <root-ca-download>`
         
         #. In `/etc/systemd/resolved.conf`, ensure you have ``MulticastDNS=Yes``
 
@@ -68,3 +73,48 @@ Trusting Your Server's Root CA on Linux
                 sudo yum install ca-certificates
                 sudo cp "adjective-noun.local.crt" /etc/pki/ca-trust/source/anchors/
                 sudo update-ca-trust
+
+.. _ca-linux-ff:
+
+If using Firefox (recommended)
+------------------------------
+
+This guide applies to Firefox, Firefox ESR, Librewolf, and Thunderbird. Mozilla apps need to be configured to use the certificate store of your device. To find out why Mozilla does this differently, you can read their `blog post <https://blog.mozilla.org/security/2019/02/14/why-does-mozilla-maintain-our-own-root-certificate-store/>`_ on the topic (TLDR: for security purposes).
+
+#. Select your distribution below and follow instructions:
+
+    .. tabs::
+
+        .. group-tab:: Debian/Ubuntu
+
+            #. Select the hamburger menu -> ``Settings``. Search for ``security devices`` and select ``Security Devices...``
+
+                .. figure:: /_static/images/ssl/linux/cert-trust-linux-firefox-p11kit-1.png
+                    :width: 60%
+                    :alt: Mozilla application p11kit trust #1
+
+            #. When the Device Manager dialog window opens, select ``Load``
+
+                .. figure:: /_static/images/ssl/linux/cert-trust-linux-firefox-p11kit-2.png
+                    :width: 60%
+                    :alt: Mozilla application p11kit trust #2
+
+            #. Give the Module Name a title such as "System CA Trust Module". For the Module filename, paste in ``/usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so`` and hit ``OK``
+
+                .. figure:: /_static/images/ssl/linux/cert-trust-linux-firefox-p11kit-3.png
+                    :width: 60%
+                    :alt: Mozilla application p11kit trust #3
+                
+                .. tip:: The path to p11-kit-trust.so will be slightly different if your processor's architecture is not x86_64.
+
+            #. Verify that the new module shows up on the left hand side and select ``OK`` at the bottom right:
+
+                .. figure:: /_static/images/ssl/linux/cert-trust-linux-firefox-p11kit-4.png
+                    :width: 60%
+                    :alt: Mozilla application p11kit trust #4
+
+        .. group-tab:: Arch/Garuda/CentOS/Fedora
+
+            No special steps are needed for Arch/Garuda/CentOS/Fedora. Continue below.
+
+#. Restart Firefox

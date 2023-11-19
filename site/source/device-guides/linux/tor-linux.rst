@@ -1,8 +1,11 @@
 .. _tor-linux:
 
-====================
-Running Tor on Linux
-====================
+==================
+Using Tor on Linux
+==================
+
+Running Tor
+-----------
 
 .. tabs::
 
@@ -93,3 +96,62 @@ Running Tor on Linux
             .. code-block:: bash
 
                 sudo systemctl enable --now tor
+
+If using Firefox (recommended)
+------------------------------
+
+#. Open Firefox and enter ``about:config`` in the URL bar. Accept any warnings that appear
+
+#. Search for ``dom.securecontext.allowlist_onions`` and set the value to ``true``:
+
+    .. figure:: /_static/images/tor/firefox_allowlist.png
+        :width: 60%
+        :alt: Firefox whitelist onions screenshot
+
+#. Search for ``network.websocket.allowInsecureFromHTTPS`` and set the value to ``true``:
+
+    .. figure:: /_static/images/tor/firefox_insecure_websockets.png
+        :width: 60%
+        :alt: Firefox allow insecure websockets over https
+
+#. Download a `Proxy Auto Config` file to inform Firefox how to use the Tor daemon running on your computer. You can get Start9's standard file from a terminal, by using:
+
+    .. code-block::
+
+        sudo wget -P ~/ https://start9.com/assets/proxy.pac
+    
+#. Determine the full path of `proxy.pac`, which we will use in step 9, by executing the following command in the terminal, and copying its output to your clipboard:
+
+    .. code-block::
+
+        echo file://$HOME/proxy.pac
+
+#. Go to the right-hand hamburger menu and select ``Settings``:
+
+    .. figure:: /_static/images/tor/os_ff_settings.png
+        :width: 30%
+        :alt: Firefox options screenshot
+
+#. Search for the term ``proxy`` in the search bar in the upper right and select ``Settings...``:
+
+    .. figure:: /_static/images/tor/firefox_search.png
+        :width: 60%
+        :alt: Firefox search screenshot
+
+#. Select ``Automatic proxy configuration URL`` and paste the output from the command you performed in step 6.  Be aware, the triple ``///`` is intentional, and your path *will* be different from the one below - namely, YOUR_LINUX_USERNAME will be your actual linux username:
+
+    .. code-block::
+
+        file:///home/YOUR_LINUX_USERNAME/proxy.pac
+
+    .. figure:: /_static/images/tor/firefox_proxy_linux.png
+        :width: 60%
+        :alt: Firefox proxy settings screenshot
+    
+#. Check the box labeled ``Proxy DNS when using SOCKS v5`` in the image above
+
+#. Click ``OK`` and restart Firefox
+
+#. Test that Firefox can resolve `.onion` URLs by visiting Start9's Tor website: http://privacy34kn4ez3y3nijweec6w4g54i3g54sdv7r5mr6soma3w4begyd.onion. If this does not work, go through this guide again, ensuring you followed every step, including the first which refers to another guide
+
+#. You can now use the `.onion` URLs of your server and installed services
