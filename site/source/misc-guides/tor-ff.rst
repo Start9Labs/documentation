@@ -1,4 +1,4 @@
-.. _ca-ff:
+.. _tor-ff:
 
 ===========================
 Configuring Firefox for Tor

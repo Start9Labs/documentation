@@ -42,7 +42,7 @@ If you are experiencing issues with setup, try the following:
 
 #. Confirm that the server is plugged into both power `and` Ethernet
 #. Confirm your phone/computer is `not` connected to a "Guest" network
-#. If using Firefox (recommended) from Mac, Windows or Android, ensure you have set ``security.enterprise_roots.enable`` to ``true`` in ``about:config`` per the :ref:`instructions<configuring-ff>`
+#. If using Firefox (recommended) from Mac, Windows or Android, ensure you have set ``security.enterprise_roots.enable`` to ``true`` in ``about:config`` per the :ref:`instructions<ca-ff>`
 #. Confirm your phone/computer is not using a VPN, or that if you are, that it allows LAN connections, such as the examples below:
 
     - Mullvad - Go to "Settings -> VPN Settings -> Local Network Sharing"

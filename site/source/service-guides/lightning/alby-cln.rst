@@ -10,7 +10,7 @@ If you'd like to connect via `LNbits <https://marketplace.start9.com/marketplace
 
 .. note:: We are going to connect using Tor so that Alby will be able to connect from anywhere.
 
-#. Make sure you are already :ref:`running Tor<connecting-tor>` on your system and we suggest using Firefox which must be :ref:`configured to use Tor.<connecting-tor-ff>`
+#. Make sure you are already :ref:`running Tor<connecting-tor>` on your system and we suggest using Firefox which must be :ref:`configured to use Tor.<tor-ff>`
 
 #. Download the Alby extension by visiting the `Alby Github <https://github.com/getAlby/lightning-browser-extension#installation>`_, selecting your browser, and installing.
 #. On the Alby welcome screen, select **Get Started**.
