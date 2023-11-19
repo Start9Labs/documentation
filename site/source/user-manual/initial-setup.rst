@@ -9,16 +9,16 @@ Initial Setup
 Starting Fresh
 --------------
 
-#. Prepare your client device. If using Firefox (recommended), complete this short guide for your OS:
+#. If using Firefox to connect to your server (recommended), complete this short guide for your OS:
 
-    .. note:: Firefox is the only browser that can be configured to access both LAN (`.local`) and Tor (`.onion`) URLs, including extensions, without affecting normal browser functionality. For iOS, all browsers actually use Safari under the hood, so it is preferable not to stack unnecessary software on top of it. Just use Safari.
+    .. note:: Start9 recommends Firefox because it is the only browser that can be configured to access both LAN (`.local`) and Tor (`.onion`) URLs, including through browser extensions, without affecting normal browser functionality. For iOS, all browsers actually use Safari under the hood, so it is preferable not to stack unnecessary software on top of it. Just use Safari.
 
-    - Mac/Windows/Linux/Android :ref:`Linux <ca-ff>`
+    - :ref:`Mac/Windows/Linux/Android<ca-ff>`
     - iOS (use Safari)
 
 #. Connect your server to power and Ethernet
 
-#. From a client device (desktop/laptop/phone), open a browser (Firefox recommended) and visit ``http://start.local``. Your client device must be connected to the same Local Area Network (LAN) as your server. This usually means they are using the same router, either by ethernet or WiFi
+#. From your client device (desktop/laptop/phone), open a browser (Firefox recommended) and visit ``http://start.local``. Your client device must be connected to the same Local Area Network (LAN) as your server. This usually means they are using the same router, either by ethernet or WiFi
 
 	.. note:: If you are `not` using a Raspberry Pi, you can also plug a monitor and keyboard into the server. This is known as "Kiosk mode".
 

@@ -1,9 +1,11 @@
 .. _tor-android:
 
-====================
-Using Tor on Android
-====================
+======================
+Running Tor on Android
+======================
 Some apps, such as the official Tor Browser, have Tor built in. They do not require additional software or configurations to utilize Tor. Most apps, however, do not have Tor built in. They require an app called Orbot to be installed in order to utilize the Tor Network.
+
+.. warning:: You must use `Firefox Beta <https://blog.mozilla.org/security/2019/02/14/why-does-mozilla-maintain-our-own-root-certificate-store/>`_ on Android. The regular Firefox app will not work.
 
 Running Orbot
 -------------

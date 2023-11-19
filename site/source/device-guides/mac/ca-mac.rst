@@ -5,7 +5,7 @@ Trusting Your Root CA on Mac
 ============================
 Complete this guide to trust your server's Root Certificate Authority (Root CA) on Mac.
 
-#. Ensure you have already :ref:`downloaded your Root CA <root-ca-download>`
+#. Ensure you have :ref:`downloaded your Root CA <root-ca-download>`
 
 #. Locate your downloaded Root CA. Right click it and select *Show in Folder*:
 

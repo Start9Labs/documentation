@@ -56,7 +56,7 @@ Configuring Firefox to Respect Your Root CA
 
     .. group-tab:: Android
 
-        .. note:: You must use Firefox Beta on Android. The regular Firefox app will not work.
+        .. warning:: You must use `Firefox Beta <https://blog.mozilla.org/security/2019/02/14/why-does-mozilla-maintain-our-own-root-certificate-store/>`_ on Android. The regular Firefox app will not work.
 
         #. Tap ``Kebab Menu > Settings > About Firefox`` and tap the Firefox icon 5 times to enable "developer mode"
 
