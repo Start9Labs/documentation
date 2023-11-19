@@ -5,6 +5,8 @@ Running Tor on Android
 ======================
 Some apps, such as the official Tor Browser, have Tor built in. They do not require additional software or configurations to utilize Tor. Most apps, however, do not have Tor built in. They require an app called Orbot to be installed in order to utilize the Tor Network.
 
+.. warning:: You must use `Firefox Beta <https://blog.mozilla.org/security/2019/02/14/why-does-mozilla-maintain-our-own-root-certificate-store/>`_ on Android. The regular Firefox app will not work.
+
 Running Orbot
 -------------
 Orbot is a system-wide proxy for your Android device that enables communications over Tor.
@@ -45,7 +47,6 @@ Orbot is a system-wide proxy for your Android device that enables communications
 
 Orbot VPN mode
 --------------
-
 To utilize Tor, some apps require that Orbot be running in VPN mode.  This means that you are sending your application's traffic across the Tor network via Orbot.
 
 #. Disable Private DNS on your device. Navigate to: ``Settings > Network & Internet > Advanced > Private DNS > Off`` and toggle Private DNS to "off".
@@ -76,3 +77,8 @@ You can also add the following browsers to the Tor-Enabled Apps list to easily a
 - Vanadium
 
   .. caution:: Pushing apps through Orbot's VPN mode will allow you to access .onion URLs, however, all other traffic will also go through Tor.  This means connections to some sites may be blocked by site operators' fraud prevention measures, especially e-commerce sites where credit cards are used.  Proceed with caution especially for Web Browsers.
+
+
+If using Firefox (recommended)
+------------------------------
+Complete this guide: :ref:`tor-ff`

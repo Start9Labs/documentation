@@ -10,7 +10,6 @@ User Manual
 
   initial-setup
   trust-ca
-  configuring-ff
   connecting-lan
   connecting-tor
   dashboard-overview

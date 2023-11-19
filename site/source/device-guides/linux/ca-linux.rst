@@ -1,8 +1,8 @@
 .. _ca-linux:
 
-=======================================
-Trusting Your Server's Root CA on Linux
-=======================================
+==============================
+Trusting Your Root CA on Linux
+==============================
 
 .. caution:: If you cannot connect following this guide, you may be using an application (such as Firefox) that is installed in a jailed environment, such as an appimage, flatpak, or snap. Please try an alternate install method if so.
 
@@ -12,7 +12,7 @@ Trusting Your Server's Root CA on Linux
 
         These instructions will work for most Debian-based Linux distributions, such as Debian, Linux Mint, PopOS, Ubuntu, etc.
 
-        #. Ensure you have already :ref:`downloaded your Root CA <download-root-ca>`
+        #. Ensure you have :ref:`downloaded your Root CA <root-ca-download>`
 
         #. Perform the following commands in the Terminal:
 
@@ -33,11 +33,13 @@ Trusting Your Server's Root CA on Linux
                 sudo bash -c "echo 'start9/adjective-noun.local.crt' >> /etc/ca-certificates.conf"
                 sudo update-ca-certificates
 
-            In the output it should say ``1 added`` if it was successful.  For most applications, you will now be able to securely connect via ``https``.  We highly recommend continuing on to our :ref:`Configuring Firefox <ff-linux>` guide.
+            In the output it should say ``1 added`` if it was successful.  For most applications, you will now be able to securely connect via ``https``.
+
+        #. If using Firefox (recommended), complete :ref:`this final step <ca-ff>`
 
     .. group-tab:: Arch/Garuda
 
-        #. Ensure you have already :ref:`downloaded your Root CA <download-root-ca>`
+        #. Ensure you have :ref:`downloaded your Root CA <root-ca-download>`
 
         #. From the folder you have downloaded your Start9 server's Root CA, run the following commands. Take care to replace `adjective-noun` with your server's unique adjective-noun combination in the command below.  If you have changed the certificate's filename, be sure to change it here.
 
@@ -51,7 +53,7 @@ Trusting Your Server's Root CA on Linux
 
     .. group-tab:: CentOS/Fedora
 
-        #. Ensure you have already :ref:`downloaded your Root CA <download-root-ca>`
+        #. Ensure you have :ref:`downloaded your Root CA <root-ca-download>`
         
         #. In `/etc/systemd/resolved.conf`, ensure you have ``MulticastDNS=Yes``
 
@@ -68,3 +70,4 @@ Trusting Your Server's Root CA on Linux
                 sudo yum install ca-certificates
                 sudo cp "adjective-noun.local.crt" /etc/pki/ca-trust/source/anchors/
                 sudo update-ca-trust
+

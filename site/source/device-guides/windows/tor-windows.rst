@@ -54,4 +54,4 @@ Running Tor on Windows
       2. Uninstall the Tor Browser, following `these steps <https://tb-manual.torproject.org/uninstalling/>`_.
       3. Begin this guide again from the beginning.
 
-#. That's it! Your Windows computer is now setup to natively use Tor.
+#. If using Firefox (recommended), complete :ref:`this final step <tor-ff>`

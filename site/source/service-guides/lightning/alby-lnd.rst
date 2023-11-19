@@ -10,7 +10,7 @@ If you'd like to connect via `LNbits <https://marketplace.start9.com/marketplace
 
 .. note:: We are going to connect using Tor so that Alby will be able to connect from anywhere.
 
-#. Make sure you are already :ref:`running Tor<connecting-tor>` on your system and we suggest using Firefox which must be :ref:`configured to use Tor.<configuring-ff>`
+#. Make sure you are already :ref:`running Tor<connecting-tor>` on your system and we suggest using Firefox which must be :ref:`configured to use Tor.<tor-ff>`
 
 #. Download the Alby extension by visiting the `Alby Github <https://github.com/getAlby/lightning-browser-extension#installation>`_, selecting your browser, and installing.
 #. On the Alby welcome screen, select **Get Started**.
@@ -39,7 +39,7 @@ If you'd like to connect via `LNbits <https://marketplace.start9.com/marketplace
       :width: 50%
       :alt: alby-lnd-rest-entered
 
-   .. note:: If this does not work, please ensure that :ref:`Tor is running on your system<connecting-tor>` and that :ref:`Firefox is configured to use it.<configuring-ff>` If you can't get this to work it's OK to use the Companion App - but you will have a better experience with your Start9 server elsewhere if you take the time to get Tor running on your devices.
+   .. note:: If this does not work, please ensure that :ref:`Tor is running on your system<connecting-tor>` and that :ref:`Firefox is configured to use it.<tor-ff>` If you can't get this to work it's OK to use the Companion App - but you will have a better experience with your Start9 server elsewhere if you take the time to get Tor running on your devices.
 
 #. Once connection is completed you will see a success page that displays the balance of your LND node in Sats.
 

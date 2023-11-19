@@ -114,8 +114,6 @@ Enable Tor System-wide
                 
                 cat /usr/local/var/log/tor.log || sudo cat /opt/homebrew/var/log/tor.log
 
-        If you'd like to setup Firefox to use Tor you can follow  :ref:`this guide<ff-mac>`.
-
     .. group-tab:: Pre-Ventura
 
         #. Enable proxy autoconfig file (This will download the Start9 standard proxy config file. You can use your own if you prefer):
@@ -176,4 +174,6 @@ Enable Tor System-wide
                 
                 cat /usr/local/var/log/tor.log || sudo cat /opt/homebrew/var/log/tor.log
 
-        If you'd like to setup Firefox to use Tor you can follow  :ref:`this guide<ff-mac>`.
+If using Firefox (recommended)
+------------------------------
+Complete this guide: :ref:`tor-ff`

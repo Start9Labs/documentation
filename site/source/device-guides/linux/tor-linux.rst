@@ -1,8 +1,8 @@
 .. _tor-linux:
 
-====================
-Running Tor on Linux
-====================
+==================
+Using Tor on Linux
+==================
 
 .. tabs::
 
@@ -93,3 +93,5 @@ Running Tor on Linux
             .. code-block:: bash
 
                 sudo systemctl enable --now tor
+
+If using Firefox (recommended), you will also need to complete this guide: :ref:`tor-ff`

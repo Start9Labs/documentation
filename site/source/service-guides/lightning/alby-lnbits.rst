@@ -9,7 +9,7 @@ Alby
 
 Alby is a browser extension that can be connected to your lightning node a number of ways. This guide will go over connecting via LNbits which allows allocation of funds.
 
-Make sure you are already :ref:`running Tor<connecting-tor>` on your system and we suggest using Firefox which must be :ref:`configured to use Tor.<configuring-ff>`
+Make sure you are already :ref:`running Tor<connecting-tor>` on your system and we suggest using Firefox which must be :ref:`configured to use Tor.<tor-ff>`
 
 #. Download the Alby extension by visiting the `Alby Github <https://github.com/getAlby/lightning-browser-extension#installation>`_, selecting your browser, and installing.
 #. On the Alby welcome screen, select **Get Started**.
@@ -66,7 +66,7 @@ Make sure you are already :ref:`running Tor<connecting-tor>` on your system and 
         :width: 45%
         :alt: alby-lnbits-fields-complete
 
-    .. tip:: Make sure to include the http:// at the start of the address. If it is not working make sure that you are already :ref:`running Tor<connecting-tor>` on your system and that your browser is :ref:`configured to use Tor.<configuring-ff>`
+    .. tip:: Make sure to include the http:// at the start of the address. If it is not working make sure that you are properly :ref:`configured Tor<connecting-tor>` on your system.
 
 #. Once connected you should see the following success page:
 

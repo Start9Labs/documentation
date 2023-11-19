@@ -3,16 +3,9 @@
 =====================
 Trusting Your Root CA
 =====================
-
 Download and trust your server's Root Certificate Authority (Root CA) to establish a secure (HTTPS) connection with your server, and to enhance speeds over Tor.
 
-.. warning:: If using Firefox (recommended), ensure you have completed the "Local" portion for your OS:
-	:ref:`Linux <ff-linux>`,
-	:ref:`Mac <ff-mac>`,
-	:ref:`Windows <ff-windows>`,
-	:ref:`Android <ff-android>`
-
-.. _download-root-ca:
+.. _root-ca-download:
 
 1. Downloading
 ==============
@@ -50,7 +43,7 @@ You can find your server's Root CA inside the StartOS dashboard.
 			:width: 40%
 			:alt: LAN setup menu item
 
-.. _trust-root-ca:
+.. _root-ca-trust:
 
 2. Trusting
 ===========

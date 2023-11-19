@@ -12,7 +12,6 @@ Recommended Guides
 
   ca-mac
   tor-mac
-  ff-mac
 
 Other Useful Guides
 -------------------
