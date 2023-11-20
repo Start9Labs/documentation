@@ -13,7 +13,7 @@ Complete this guide to trust your server's Root Certificate Authority (Root CA) 
         :width: 60%
         :alt: Show certificate file in Downloads folder
 
-#. Finder will open.  Locate your unique `adjective-noun.local.crt` file in your *Downloads* folder and double click it to import it into the *Keychain Access* program.  You will be prompted for your macOS username and password, or thumbprint.  Then select *Modify Keychain*:
+#. Finder will open.  Locate your unique `adjective-noun.crt` file in your *Downloads* folder and double click it to import it into the *Keychain Access* program.  You will be prompted for your macOS username and password, or thumbprint.  Then select *Modify Keychain*:
 
     .. figure:: /_static/images/ssl/macos/trust-cert-macos-4-modify_keychain.png
         :width: 60%

@@ -29,8 +29,8 @@ Trusting Your Root CA on Linux
             
                 cd ~/Downloads
                 sudo mkdir -p /usr/share/ca-certificates/start9
-                sudo cp "adjective-noun.local.crt" /usr/share/ca-certificates/start9/
-                sudo bash -c "echo 'start9/adjective-noun.local.crt' >> /etc/ca-certificates.conf"
+                sudo cp "adjective-noun.crt" /usr/share/ca-certificates/start9/
+                sudo bash -c "echo 'start9/adjective-noun.crt' >> /etc/ca-certificates.conf"
                 sudo update-ca-certificates
 
             In the output it should say ``1 added`` if it was successful.  For most applications, you will now be able to securely connect via ``https``.
@@ -46,7 +46,7 @@ Trusting Your Root CA on Linux
             .. code-block:: bash
 
                 sudo pacman -S ca-certificates
-                sudo cp "adjective-noun.local.crt" /etc/ca-certificates/trust-source/anchors/
+                sudo cp "adjective-noun.crt" /etc/ca-certificates/trust-source/anchors/
                 sudo update-ca-trust
 
             Despite no output from the last command, you can test your app right away.
@@ -68,6 +68,6 @@ Trusting Your Root CA on Linux
             .. code-block:: bash
                 
                 sudo yum install ca-certificates
-                sudo cp "adjective-noun.local.crt" /etc/pki/ca-trust/source/anchors/
+                sudo cp "adjective-noun.crt" /etc/pki/ca-trust/source/anchors/
                 sudo update-ca-trust
 

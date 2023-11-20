@@ -11,7 +11,7 @@ Complete this guide to trust your server's Root Certificate Authority (Root CA) 
 
 #. Ensure you have :ref:`downloaded your Root CA <root-ca-download>`
 
-#. Tap **Settings > Security > More security settings > Encryption & credentials > Install a certificate > CA Certificate > Install Anyway** and select your custom-named ``adjective-noun.local.crt`` certificate.
+#. Tap **Settings > Security > More security settings > Encryption & credentials > Install a certificate > CA Certificate > Install Anyway** and select your custom-named ``adjective-noun.crt`` certificate.
 
     .. figure:: /_static/images/ssl/android/droidLAN2.png
         :width: 15%
