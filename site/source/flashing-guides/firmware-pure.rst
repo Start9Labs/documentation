@@ -5,7 +5,7 @@ Firmware (Server Pure)
 ======================
 This page is for Server Pure / Purism Librem Mini users ONLY.  This firmware is custom for these devices.
 
-If you're about to install StartOS, you do not need to manually flash your device using this guide, as the latest firmware that was available when StartOS was most recently released is embedded in the ``startos-...x86_64.iso`` file and will automatically be flashed when you install StartOS, if the appropriate underlying hardware is detected.  In that case, simply follow the :ref:`x86_64 StartOS flashing guide<os-x86>` and the latest firmware will be automatically flashed upon install.
+Generally, you do not need to manually flash your device using this guide, as the firmware is now automatically updated on supported devices.  Please only use this method if directed by a Start9 Support Technician.
 
 The source code can be viewed on Purism's `firmware git repo <https://source.puri.sm/firmware/releases/-/tree/master/librem_mini_v2/custom>`_.  You will need a USB flash drive, formatted FAT32, to flash the firmware to your server.
 
