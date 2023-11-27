@@ -181,8 +181,8 @@ Dependencies - Required
     .. code-block::
 
         git clone https://github.com/Start9Labs/start-os.git && \
-         cd start-os && make frontends && mkdir -p ./frontend/dist/static && \
-         cd ./backend && ./install-sdk.sh
+         cd start-os && git submodule update --init --recursive && \
+         make sdk
 
     Initialize sdk & verify install
 
