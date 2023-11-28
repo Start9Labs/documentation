@@ -4,8 +4,7 @@
 Nostr
 =====
 
-Nostr is the simplest open protocol that is able to create a censorship-resistant global "social" network once and for all.
-It doesn't rely on any trusted central server, hence it is resilient; it is based on cryptographic keys and signatures, so it is tamperproof; it does not rely on P2P techniques, and therefore it works.
+Nostr is a simple, open protocol that enables global, decentralized, and censorship-resistant social media. 
 
 .. note::
 
@@ -13,19 +12,18 @@ It doesn't rely on any trusted central server, hence it is resilient; it is base
 
 **Initial Config**
 
-* Install **Nostr RS relay** service from Start9 Registry on your server.
+#. Install **Nostr RS relay** service from Start9 Registry on your server.
 
   .. figure:: /_static/images/services/nostr/nostr-1.png
         :width: 50%
         :alt: nostr install
 
-* In service page click **CONFIGURE** and add pubkey in hex format to whitelist your client. Click save.
-
+#. In the service, page click **CONFIGURE** and add the pubkey in hex format to whitelist your client. Click save.
   .. figure:: /_static/images/services/nostr/nostr-2.png
         :width: 50%
         :alt: nostr whitelist pubkey
 
-* Now you will have Nostr relay websocket URL available in Nostr Properties.
+#. Now you will have a Nostr relay websocket URL available in Nostr Properties.
 
 
 **Running a private relay**
@@ -40,9 +38,9 @@ In contrast to a private relay, a public relay lacks a whitelist, permitting any
 
 If you want to test your private relay and verify whether it's storing all your notes, you can SSH into your server and execute the following command.
 
-.. code-block:: bash
-
-  sudo podman exec nostr.embassy sqlite3 /data/nostr.db "SELECT content FROM event;" | grep -o 'content":"[^"]*' | awk -F: '{print $1":"$2}'
+  .. code-block:: bash
+    
+    sudo podman exec nostr.embassy sqlite3 /data/nostr.db "SELECT content FROM event;" | grep -o 'content":"[^"]*' | awk -F: '{print $1":"$2}'
 
 **Client setup**
 
