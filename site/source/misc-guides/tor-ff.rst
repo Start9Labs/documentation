@@ -140,40 +140,40 @@ Configuring Firefox for Tor
 
         #. Search for ``dom.securecontext.allowlist_onions`` and set the value to ``true``:
 
-          .. figure:: /_static/images/tor/firefox_allowlist.png
+            .. figure:: /_static/images/tor/firefox_allowlist.png
               :width: 60%
               :alt: Firefox whitelist onions screenshot
 
         #. Search for ``network.proxy.autoconfig_url``, and set the value to ``file:///storage/emulated/0/Download/proxy.pac``. This is the default location of a the proxy.pac file downloaded in step 2, although your path may vary:
 
-          .. figure:: /_static/images/tor/autoconfig_url.png
-            :width: 30%
-            :alt: Firefox autoconfig url setting screenshot
+            .. figure:: /_static/images/tor/autoconfig_url.png
+              :width: 30%
+              :alt: Firefox autoconfig url setting screenshot
 
         #. Search for ``network.proxy.type`` into the search bar, and set the value to ``2``:
 
-          .. figure:: /_static/images/tor/network_proxy_type.png
-            :width: 30%
-            :alt: Firefox network proxy type setting screenshot
+            .. figure:: /_static/images/tor/network_proxy_type.png
+              :width: 30%
+              :alt: Firefox network proxy type setting screenshot
 
         #. Search for ``network.proxy.socks_remote_dns``, and set the value to ``true``:
 
-          .. figure:: /_static/images/tor/socks_remote_dns.png
-            :width: 30%
-            :alt: Firefox socks remote dns setting screenshot
+            .. figure:: /_static/images/tor/socks_remote_dns.png
+              :width: 30%
+              :alt: Firefox socks remote dns setting screenshot
 
         #. Search for ``dom.securecontext.allowlist_onions`` and set the value to ``true``:
 
-          .. figure:: /_static/images/tor/firefox_allowlist_mobile.png
-            :width: 30%
-            :alt: Firefox whitelist onions screenshot
+            .. figure:: /_static/images/tor/firefox_allowlist_mobile.png
+              :width: 30%
+              :alt: Firefox whitelist onions screenshot
 
-        #. Search for ``network.http.referer.hideOnionsSource`` and set the value to ``true``
+        #. Search for ``network.http.referer.hideOnionSource`` and set the value to ``true``
 
         #. (**GrapheneOS users only**): Head to ``Settings -> Apps -> Firefox Beta -> Permissions -> Photos and videos -> Configure Storage Scopes -> ADD FILE``, then navigate to where you placed the proxy.pac file:
 
-          .. figure:: /_static/images/tor/storage-scopes-proxy.jpg
-            :width: 15%
+            .. figure:: /_static/images/tor/storage-scopes-proxy.jpg
+              :width: 15%
 
         #. Restart Firefox
 
