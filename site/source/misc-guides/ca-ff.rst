@@ -4,6 +4,8 @@
 Configuring Firefox to Respect Your Root CA
 ===========================================
 
+Choose your operating system from among the tabs below:
+
 .. tabs::
 
     .. group-tab:: Mac/Windows
