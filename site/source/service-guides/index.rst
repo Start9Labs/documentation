@@ -13,5 +13,6 @@ These guides will help you to setup external tools to connect or interact with s
   lightning/index
   matrix
   nextcloud/index
+  nostr/index
   specter/index
   vaultwarden/index
