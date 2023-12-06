@@ -28,7 +28,6 @@ clean:
 
 .PHONY: preview
 preview:
-	npm --prefix ../sphinx-scylladb-theme run build
 	$(POETRY) run sphinx-autobuild -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml --port 5500
 
 .PHONY: dirhtml
@@ -55,7 +54,6 @@ linkcheck: setup
 
 .PHONY: multiversion
 multiversion:
-	npm --prefix ../sphinx-scylladb-theme run build
 	git diff --quiet || >&2 echo "\033[31;1;4mWARNING: Uncommitted changes will not be included in ./_build\033[0m"
 	@mkdir -p $(HOME)/.cache/pypoetry/virtualenvs
 	$(POETRY) run sphinx-multiversion source $(BUILDDIR)/dirhtml
@@ -64,5 +62,4 @@ multiversion:
 
 .PHONY: multiversionpreview
 multiversionpreview: multiversion
-	npm --prefix ../sphinx-scylladb-theme run build
 	$(POETRY) run python3 -m http.server 5500 --directory $(BUILDDIR)/dirhtml
