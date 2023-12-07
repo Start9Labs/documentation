@@ -11,13 +11,9 @@ Install Homebrew
 
     .. code-block:: bash
 
-        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 #. You will be prompted for your system password before installation; proceed with entering your password.  You may be asked more than once.
-
-    .. figure:: /_static/images/tor/install_homebrew.png
-        :width: 80%
-        :alt: Homebrew installation
 
 #. You will be notified which directories Homebrew is going to create, hit :code:`RETURN`:
 
