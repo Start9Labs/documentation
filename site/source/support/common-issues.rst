@@ -24,25 +24,33 @@ During initial setup, I am unable to connect to "start.local".
 #. Confirm that the server is plugged into both power `and` Ethernet
 #. Confirm your phone/computer is `not` connected to a "Guest" network
 #. Confirm you are `not` using the Tor Browser.
-#. If using Firefox from Mac, Windows or Android, ensure you have set ``security.enterprise_roots.enable`` to ``true`` in ``about:config`` per the :ref:`instructions<ca-ff>`
 #. Confirm your phone/computer is not using a VPN, or that if you are, that it allows LAN connections, such as the examples below:
-  - Mullvad - Go to "Settings -> VPN Settings -> Local Network Sharing"
-  - ProtonVPN - Go to "Preferences -> Connection -> Allow LAN Connections"
-#. Visit or refresh (ctrl+shift+R on Linux/Windows, cmd+shift+R on macOS Firefox, cmd+option+E then cmd+R on macOS Safari) the start.local page in a web browser
+
+    - Mullvad - Go to "Settings -> VPN Settings -> Local Network Sharing"
+    - ProtonVPN - Go to "Preferences -> Connection -> Allow LAN Connections"
+
+#. Visit or refresh the browser
+
+    - Linux/Windows: ``ctrl+shift+R``
+    - macOS Firefox: ``cmd+shift+R``
+    - macOS Safari: ``cmd+option+E``, then ``cmd+R``
+
 #. To avoid networking issues, it is recommended to use your `primary` router, not an extender or mesh router
 #. Very rarely, your firewall settings may block mDNS. In this case:
-  - From your browser, navigate to your router configuration settings. This is usually an IP address such as 192.168.1.1. A simple web search will usually reveal how to access the router configuration settings for a particular brand.
-  - Once in the router config settings, find the section that lists the devices on your network. You should see a device labeled ``start``. Take note of the associated IP address and enter it into your browser's URL field to enter the setup.
+
+    - From your browser, navigate to your router configuration settings. This is usually an IP address such as 192.168.1.1. A simple web search will usually reveal how to access the router configuration settings for a particular brand.
+    - Once in the router config settings, find the section that lists the devices on your network. You should see a device labeled ``start``. Take note of the associated IP address and enter it into your browser's URL field to enter the setup.
+
 #. Log into your router (the directions for which can be found with a simple web search for your router model and 'how to log in'). Once you are in your router, find the device labeled ``start``, and visit its associated IP address, which will look something like: ``192.168.1.9``
 
 .. _lan-troubleshoot:
 
 I am unable to reach my server via its *<custom-address>.local* (LAN) address
 ------------------------------------------------------------------------------
-In addition to :ref:`these step <setup-troubleshoot>`, try the steps below:
-
+#. First, try :ref:`these step <setup-troubleshoot>`. In none resolve the issue, continue below.
 #. Make sure you have successfully followed the :ref:`connecting-lan` instructions for your device.
-#. If you are using Windows, the problem is almost certainly with Bonjour. Follow the directions to reinstall, even if you have already done so.
+#. If you are using Windows, the problem is almost certainly with Bonjour. Follow the :ref:`directions to reinstall <connecting-lan-windows>`, even if you have already done so.
+#. If using Firefox from Mac, Windows or Android, ensure you have set ``security.enterprise_roots.enable`` to ``true`` in ``about:config`` per the :ref:`instructions<ca-ff>`
 #. Try connecting using a different browser on the same device. If this works, it means you need to clear cache on your current browser.
 #. Try connecting using a different device. If this works, it means you need to clear cache on your current browser and/or restart your current device.
 #. Try visiting start.local. Your server may be in diagnostic mode.
