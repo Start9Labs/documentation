@@ -7,10 +7,24 @@ You can connect to your server and installed services from anywhere in the world
 
 It is not currently supported to access your server and its installed services using a VPN. This functionality is coming in the next major release of StartOS.
 
-.. note:: It is normal for Tor connections to be slow or unreliable at times
+.. caution:: It is normal for Tor connections to be slow or unreliable at times.
 
-Running Tor on Your Phone/Computer (Recommended)
-------------------------------------------------
+Using a Tor Browser
+-------------------
+Your StartOS dashboard, as well as many installed services, can be accessed via their unique Tor (.onion) URLs. These URLs and the websites they serve are completely private, known only to you.
+
+#. To access your private websites, simply download the official Tor Browser and input the URL.
+
+- For Linux, Mac, Windows, and Android, download the `Official Tor Browser <https://torproject.org/download/>`_
+- For iOS, download `Onion Browser <https://onionbrowser.com/>`_ (iOS 17+ only). When prompted, use Orbot *inn-app* Tor, *not* Orbot.
+
+.. _connecting-tor-native:
+
+Using Native Apps
+-----------------
+Some apps have Tor built in, allowing you to use your .onion URLs without extra configuration.
+
+Other apps lack support for Tor. In such cases, you must run Tor as a global process on your laptop/desktop/phone.
 
 - :ref:`Linux <tor-linux>`
 - :ref:`Mac <tor-mac>`
@@ -18,9 +32,6 @@ Running Tor on Your Phone/Computer (Recommended)
 - :ref:`Android <tor-android>`
 - :ref:`iOS <tor-ios>`
 
-Using the Tor Browser
----------------------
-Using the official Tor Browser allows you to access `.onion` URLs without additional configuration. However, accessing clearnet (`.com`, `.org`, ect) websites will also be routed over Tor, making them slower, and `.local` URLs cannot be accessed at all.
-
-#. Linux, Mac, Windows, Android: `Download Tor Browser <https://torproject.org/download/>`_
-#. iOS: lacks a well-functioning Tor Browser. We recommend following the guide above.
+Troubleshooting
+---------------
+If you followed the above instructions and are experiencing issues, click :ref:`here <tor-troubleshoot>` to resolve

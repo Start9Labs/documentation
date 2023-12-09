@@ -94,4 +94,4 @@ Using Tor on Linux
 
                 sudo systemctl enable --now tor
 
-If using Firefox (recommended), you will also need to complete this guide: :ref:`tor-ff`
+If using Firefox, you will also need to complete this guide: :ref:`tor-ff`

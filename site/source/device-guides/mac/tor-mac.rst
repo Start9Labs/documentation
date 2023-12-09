@@ -170,6 +170,6 @@ Enable Tor System-wide
                 
                 cat /usr/local/var/log/tor.log || sudo cat /opt/homebrew/var/log/tor.log
 
-If using Firefox (recommended)
-------------------------------
-Complete this guide: :ref:`tor-ff`
+If using Firefox
+----------------
+Firefox can be configured to use Tor on your Mac to resolve .onion URLs. Complete this guide: :ref:`tor-ff`

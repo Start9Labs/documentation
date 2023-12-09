@@ -5,8 +5,6 @@ Trusting Your Root CA on Android
 ================================
 Complete this guide to trust your server's Root Certificate Authority (Root CA) on Android.
 
-.. warning:: You must use `Firefox Beta <https://blog.mozilla.org/security/2019/02/14/why-does-mozilla-maintain-our-own-root-certificate-store/>`_ on Android. The regular Firefox app will not work.
-
 .. warning:: This guide only applies to Android phones running Android v13+, as well as phones running CalyxOS, GrapheneOS, or LineageOS (v19+).
 
 #. Ensure you have :ref:`downloaded your Root CA <root-ca-download>`
@@ -17,4 +15,4 @@ Complete this guide to trust your server's Root Certificate Authority (Root CA) 
         :width: 15%
         :alt: Install certificate
 
-#. If using Firefox (recommended), complete :ref:`this final step <ca-ff>`
+#. If you choose to use Firefox, you must use `Firefox Beta <https://blog.mozilla.org/security/2019/02/14/why-does-mozilla-maintain-our-own-root-certificate-store/>`_. Then complete :ref:`this final step <ca-ff>`.

@@ -3,7 +3,7 @@
 =====================
 Trusting Your Root CA
 =====================
-Download and trust your server's Root Certificate Authority (Root CA) to establish a secure (HTTPS) connection with your server, and to enhance speeds over Tor.
+Download and trust your server's Root Certificate Authority (Root CA) to establish a secure (HTTPS) connection with your server.
 
 .. _root-ca-download:
 

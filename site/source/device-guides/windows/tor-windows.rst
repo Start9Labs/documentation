@@ -4,6 +4,9 @@
 Running Tor on Windows
 ======================
 
+Install Tor
+-----------
+
 #. Unfortunately, `The Tor Project <https://torproject.org>`_ no longer publishes a standalone Tor binary for Windows, so the recommended way to get it is with the Tor Browser Bundle. You can download it `here <https://www.torproject.org/download/>`_.
 
    .. figure:: /_static/images/tor/tor_download_windows.png
@@ -54,4 +57,6 @@ Running Tor on Windows
       2. Uninstall the Tor Browser, following `these steps <https://tb-manual.torproject.org/uninstalling/>`_.
       3. Begin this guide again from the beginning.
 
-#. If using Firefox (recommended), complete :ref:`this final step <tor-ff>`
+If using Firefox
+----------------
+Firefox can be configured to use Tor running on your Windows machine to resolve .onion URLs. Complete this guide: :ref:`tor-ff`

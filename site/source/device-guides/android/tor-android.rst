@@ -5,12 +5,8 @@ Running Tor on Android
 ======================
 Some apps, such as the official Tor Browser, have Tor built in. They do not require additional software or configurations to utilize Tor. Most apps, however, do not have Tor built in. They require an app called Orbot to be installed in order to utilize the Tor Network.
 
-.. warning:: You must use `Firefox Beta <https://blog.mozilla.org/security/2019/02/14/why-does-mozilla-maintain-our-own-root-certificate-store/>`_ on Android. The regular Firefox app will not work.
-
 Running Orbot
 -------------
-Orbot is a system-wide proxy for your Android device that enables communications over Tor.
-
 #. Download and install Orbot from the `Play Store <https://play.google.com/store/apps/details?id=org.torproject.android>`_, or from `F-Droid <https://f-droid.org/packages/org.torproject.android>`_ (must open with F-Droid app).  Then launch the app.
 
     .. note:: When using F-Droid, you will need to activate the Guardian Project repository by visiting the ``Settings`` menu (bottom right) -> ``Repositories`` -> ``Guardian Project Official Releases``
@@ -75,10 +71,12 @@ You can also add the following browsers to the Tor-Enabled Apps list to easily a
 
 - Chrome
 - Vanadium
+- Firefox (see below)
 
-  .. caution:: Pushing apps through Orbot's VPN mode will allow you to access .onion URLs, however, all other traffic will also go through Tor.  This means connections to some sites may be blocked by site operators' fraud prevention measures, especially e-commerce sites where credit cards are used.  Proceed with caution especially for Web Browsers.
+  .. caution:: Pushing apps through Orbot's VPN mode will allow you to access .onion URLs, however, all other traffic will also go through Tor. This means connections to some sites may be blocked by site operators' fraud prevention measures, especially e-commerce sites where credit cards are used. Proceed with caution especially for Web Browsers. Use Firefox (below) to avoid these issues.
 
+If Using Firefox
+----------------
+.. warning:: You must use `Firefox Beta <https://blog.mozilla.org/security/2019/02/14/why-does-mozilla-maintain-our-own-root-certificate-store/>`_ on Android.
 
-If using Firefox (recommended)
-------------------------------
-Complete this guide: :ref:`tor-ff`
+You can configure the Firefox Beta browser to use Orbot `without` adding it as a VPN app by following :ref:`this guide <tor-ff>`. This way, Firefox will use Tor only when necessary and avoid some of the issue created by using Tor unconditionally.

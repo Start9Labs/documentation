@@ -83,4 +83,4 @@ Complete this guide to trust your server's Root Certificate Authority (Root CA) 
     :width: 20%
     :alt: Console settings
 
-#. If using Firefox (recommended), complete :ref:`this final step <ca-ff>`
+#. If using Firefox, complete :ref:`this final step <ca-ff>`

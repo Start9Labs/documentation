@@ -8,6 +8,8 @@ Configuring Firefox for Tor
 
     .. group-tab:: Mac
 
+        #. Ensure you are already :ref:`running Tor on your Mac <tor-mac>`.
+
         #. Open Firefox and enter ``about:config`` in the URL bar. Accept any warnings that appear
 
         #. Search for ``dom.securecontext.allowlist_onions`` and set the value to ``true``:
@@ -39,6 +41,8 @@ Configuring Firefox for Tor
         #. Test that Firefox can resolve `.onion` URLs by visiting Start9's Tor website: http://privacy34kn4ez3y3nijweec6w4g54i3g54sdv7r5mr6soma3w4begyd.onion.
 
     .. group-tab:: Windows
+
+        #. Ensure you are already :ref:`running Tor on your Windows machine <tor-windows>`.
 
         #. Download the ``Proxy Auto Config`` file to inform Firefox how to resolve `.onion` URLs. Click `here <https://start9.com/assets/proxy.pac>`_ to get the one offered by Start9. Save it somewhere you will not delete it, and remember where you save it. For example:
 
@@ -83,6 +87,8 @@ Configuring Firefox for Tor
         #. Test that Firefox can resolve `.onion` URLs by visiting Start9's Tor website: http://privacy34kn4ez3y3nijweec6w4g54i3g54sdv7r5mr6soma3w4begyd.onion.
 
     .. group-tab:: Linux
+
+        #. Ensure you are already :ref:`running Tor on your Linux machine <tor-linux>`.
 
         #. Download the `Proxy Auto Config` file to inform Firefox how to resolve `.onion` URLs. You can get Start9's standard file from a terminal, by using:
 
@@ -133,6 +139,8 @@ Configuring Firefox for Tor
         #. Test that Firefox can resolve `.onion` URLs by visiting Start9's Tor website: http://privacy34kn4ez3y3nijweec6w4g54i3g54sdv7r5mr6soma3w4begyd.onion.
 
     .. group-tab:: Android
+
+        #. Ensure you are already :ref:`running Tor on your Android device <tor-android>`.
 
         #. Download the `Proxy Auto Config` file to inform Firefox how to resolve `.onion` URLs. We have one hosted `here <https://start9.com/assets/proxy.pac>`_
 

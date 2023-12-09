@@ -35,7 +35,7 @@ Trusting Your Root CA on Linux
 
             In the output it should say ``1 added`` if it was successful.  For most applications, you will now be able to securely connect via ``https``.
 
-        #. If using Firefox (recommended), complete :ref:`this final step <ca-ff>`
+        #. If using Firefox, complete :ref:`this final step <ca-ff>`
 
     .. group-tab:: Arch/Garuda
 

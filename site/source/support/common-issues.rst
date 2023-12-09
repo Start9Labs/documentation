@@ -11,7 +11,7 @@ Sometimes things don't go as planned. Check here for solutions to common problem
 
 StartOS will not boot
 ---------------------
-If the device will not power on at all (no lights whatsoever), then the only issues could be that the Pi is not getting the power it needs, or it is completely dead (extremely rare).  If you sourced your own parts, please ensure that the power supply meets the minimum required specifications in the :ref:`DIY Guide<diy>`. If you received your device from us and it will not power up at all, please `Contact us <https://start9.com/contact>`_ for assistance.
+If the device will not power on at all (no lights whatsoever), then the only issues could be that the Pi is not getting the power it needs, or it is completely dead (extremely rare). If you sourced your own parts, please ensure that the power supply meets the minimum required specifications in the :ref:`DIY Guide<diy>`. If you received your device from us and it will not power up at all, please `Contact us <https://start9.com/contact>`_ for assistance.
 
 StartOS boots into "Diagnostic Mode"
 ------------------------------------
@@ -21,44 +21,41 @@ Diagnostic Mode is a new UI that will launch in the event that no drive, or an i
 
 During initial setup, I am unable to connect to "start.local".
 ----------------------------------------------------------------
-* Confirm that the server is plugged into both power and Ethernet.
+#. Confirm that the server is plugged into both power `and` Ethernet
+#. Confirm your phone/computer is `not` connected to a "Guest" network
+#. Confirm you are `not` using the Tor Browser.
+#. If using Firefox from Mac, Windows or Android, ensure you have set ``security.enterprise_roots.enable`` to ``true`` in ``about:config`` per the :ref:`instructions<ca-ff>`
+#. Confirm your phone/computer is not using a VPN, or that if you are, that it allows LAN connections, such as the examples below:
+  - Mullvad - Go to "Settings -> VPN Settings -> Local Network Sharing"
+  - ProtonVPN - Go to "Preferences -> Connection -> Allow LAN Connections"
+#. Visit or refresh (ctrl+shift+R on Linux/Windows, cmd+shift+R on macOS Firefox, cmd+option+E then cmd+R on macOS Safari) the start.local page in a web browser
+#. To avoid networking issues, it is recommended to use your `primary` router, not an extender or mesh router
+#. Very rarely, your firewall settings may block mDNS. In this case:
+  - From your browser, navigate to your router configuration settings. This is usually an IP address such as 192.168.1.1. A simple web search will usually reveal how to access the router configuration settings for a particular brand.
+  - Once in the router config settings, find the section that lists the devices on your network. You should see a device labeled ``start``. Take note of the associated IP address and enter it into your browser's URL field to enter the setup.
+#. Log into your router (the directions for which can be found with a simple web search for your router model and 'how to log in'). Once you are in your router, find the device labeled ``start``, and visit its associated IP address, which will look something like: ``192.168.1.9``
 
-* Confirm the the server emitted two sounds when powering on: a bep and a chime.
-
-* Confirm your phone is **not** connected to a “Guest” network
-
-* Confirm your phone is **not** using a VPN.
-
-If you still cannot connect, try logging into your router (the directions for which can be found with a simple web search for your router model and 'how to log in'). Once you are in your router, find the device labeled ``start``, and visit it's associated IP address, which will look something like: ``192.168.1.9``
+.. _lan-troubleshoot:
 
 I am unable to reach my server via its *<custom-address>.local* (LAN) address
 ------------------------------------------------------------------------------
-Make sure you have successfully followed the :ref:`LAN Setup<connecting-lan>` instructions for your device. If you are using Windows, your problem is almost certainly with Bonjour - follow the directions to reinstall, even if you have already done so.  If you still cannot connect, try all the solutions listed under :ref:`initial setup <setup-troubleshoot>`.
+In addition to :ref:`these step <setup-troubleshoot>`, try the steps below:
+
+#. Make sure you have successfully followed the :ref:`connecting-lan` instructions for your device.
+#. If you are using Windows, the problem is almost certainly with Bonjour. Follow the directions to reinstall, even if you have already done so.
+#. Try connecting using a different browser on the same device. If this works, it means you need to clear cache on your current browser.
+#. Try connecting using a different device. If this works, it means you need to clear cache on your current browser and/or restart your current device.
+#. Try visiting start.local. Your server may be in diagnostic mode.
+#. Try restarting your router.
+#. Try restarting your server. Be patient and give it plenty of time to come back online.
+
+.. _tor-troubleshoot:
 
 I am unable to reach my server via its xxxxxxxxxxxxxxxxxx.onion (Tor) address
---------------------------------------------------------------------------------
-
-#. **Test** - Try connecting to your server using the official Tor Browser.
-
-    #. **If Tor Browser works** - It means the issue is either with the Tor daemon on your device or with the browser settings.
-
-        #. **Solutions**
-            #. If you are not yet running a Tor daemon on your device, follow :ref:`these instructions <connecting-tor>`. If you are already running a Tor daemon, restart it, or in the case of Android, restart your phone.
-            #. If you are using Firefox, ensure it has been :ref:`properly configured <tor-ff>` to work with .onion URLs.
-
-    #. **If Tor Browser does not work** - It means there is an issue with your server or with the Tor network.
-
-        #. **Test** - Try visiting your server over :ref:`LAN<connecting-lan>` from a non-Tor browser such as Firefox, Chrome, or Safari.
-
-            #. **If LAN works** - it means the issue is an issue your server's Tor connection.
-
-                #. **Solutions**
-                    #. Check if there are any ongoing network-wide service issues with Tor at `the Tor Project status page <https://status.torproject.org/issues/>`_
-                    #. Wait an hour or so to allow Tor on your server to fix itself.
-                    #. Restart your server through the UI (System -> Restart).
-            #. **If LAN does not work** - It means your server is experiencing general networking issues.
-
-                #. **Solutions** - Power cycle your server by unplugging it and plugging it back in, then wait a few minutes before trying to connect again.
+-----------------------------------------------------------------------------
+#. Tor can be slow and unreliable. Often, the solution to poor connectivity is just to wait an hour and try again.
+#. Try connecting using the official Tor Browser. If this works, it means the issue is with (1) your current browser or native app, (2) the Tor daemon running on your phone/laptop. Try clearing cache and restarting things.
+#. Try connecting to your server using its *<custom-address>.local* URL or IP its address. If this works, it means the issue is specific to Tor on your server. Check out your Tor logs (System -> Tor Logs). If you see errors, such as Tor stuck bootstrapping, navigate to System -> Experimental Features -> Reset Tor.
 
 Request Error
 -------------
@@ -121,15 +118,3 @@ Server Lite, Server Pure, and Server One (2022 and older) have an internal speak
       </audio>
 
     * Beethoven's 5th - Something has gone wrong and Diagnostic Mode has been launched on ``http://start.local``, please check here for solutions.
-
-Raspberry Pi Lights
--------------------
-Server Lite has 2 status lights:
-
-- Red - Power.  This will be on solid when powered up and running normally.
-- Green - SD Card.  This will display when there is SD Card activity, such as during OS installation.  It may be off, flashing, or on solid during normal operation.
-
-Server One (2022) has 2 additional lights:
-
-- Blue power button - Power.  This will be on solid when powered up and running normally.
-- Blue drive light - SSD.  This will display when there is SSD activity.  It may be off, flashing, or on solid during normal operation. 
