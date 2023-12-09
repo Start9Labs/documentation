@@ -4,7 +4,7 @@
 Running Tor on iOS
 ==================
 
-Orbot is a system-wide proxy for your Android device that enables communications over Tor.
+Orbot is a system-wide proxy for your iOS device that enables communications over Tor.
 
 #. Download and install `Orbot from the Apple appstore <https://apps.apple.com/us/app/orbot/id1609461599>`_.
 #. Open Orbot and tap on "Settings".
