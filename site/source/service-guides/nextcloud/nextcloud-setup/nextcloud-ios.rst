@@ -100,7 +100,7 @@ First head into the top-righthand menu of your Nextcloud's WebUI and click "Apps
 
 3. Enter the following fields and tap "Next":
 
-  - Server - You can find complete path in Nextcloud -> Calendar settings -> Copy iOS/macOS CalDav address. For setting up contacts/CardDav use the same path.
+  - Server - Copy your URL from Nextcloud -> Calendar settings -> Copy iOS/macOS CalDav address. For setting up contacts/CardDav use the same path.
   
   - User name - The default user is "embassy" but this is your user within Nextcloud, so be sure it is the correct user if you have more than one.
   
