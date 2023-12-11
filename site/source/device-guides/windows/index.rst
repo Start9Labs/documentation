@@ -12,7 +12,6 @@ Recommended Guides
 
   ca-windows
   tor-windows
-  ff-windows
 
 Other Useful Guides
 -------------------

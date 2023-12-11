@@ -1,8 +1,8 @@
 .. _ca-linux:
 
-=======================================
-Trusting Your Server's Root CA on Linux
-=======================================
+==============================
+Trusting Your Root CA on Linux
+==============================
 
 .. caution:: If you cannot connect following this guide, you may be using an application (such as Firefox) that is installed in a jailed environment, such as an appimage, flatpak, or snap. Please try an alternate install method if so.
 
@@ -12,7 +12,7 @@ Trusting Your Server's Root CA on Linux
 
         These instructions will work for most Debian-based Linux distributions, such as Debian, Linux Mint, PopOS, Ubuntu, etc.
 
-        #. Ensure you have already `downloaded your server's Root CA </getting-started/trust-ca/#download-root-ca>`_
+        #. Ensure you have :ref:`downloaded your Root CA <root-ca-download>`
 
         #. Perform the following commands in the Terminal:
 
@@ -29,29 +29,31 @@ Trusting Your Server's Root CA on Linux
             
                 cd ~/Downloads
                 sudo mkdir -p /usr/share/ca-certificates/start9
-                sudo cp "adjective-noun.local.crt" /usr/share/ca-certificates/start9/
-                sudo bash -c "echo 'start9/adjective-noun.local.crt' >> /etc/ca-certificates.conf"
+                sudo cp "adjective-noun.crt" /usr/share/ca-certificates/start9/
+                sudo bash -c "echo 'start9/adjective-noun.crt' >> /etc/ca-certificates.conf"
                 sudo update-ca-certificates
 
-            In the output it should say ``1 added`` if it was successful.  For most applications, you will now be able to securely connect via ``https``.  We highly recommend continuing on to our :ref:`Configuring Firefox <ff-linux>` guide.
+            In the output it should say ``1 added`` if it was successful.  For most applications, you will now be able to securely connect via ``https``.
+
+        #. If using Firefox, complete :ref:`this final step <ca-ff>`
 
     .. group-tab:: Arch/Garuda
 
-        #. Ensure you have already `downloaded your server's Root CA </getting-started/trust-ca/#download-root-ca>`_
+        #. Ensure you have :ref:`downloaded your Root CA <root-ca-download>`
 
         #. From the folder you have downloaded your Start9 server's Root CA, run the following commands. Take care to replace `adjective-noun` with your server's unique adjective-noun combination in the command below.  If you have changed the certificate's filename, be sure to change it here.
 
             .. code-block:: bash
 
                 sudo pacman -S ca-certificates
-                sudo cp "adjective-noun.local.crt" /etc/ca-certificates/trust-source/anchors/
+                sudo cp "adjective-noun.crt" /etc/ca-certificates/trust-source/anchors/
                 sudo update-ca-trust
 
             Despite no output from the last command, you can test your app right away.
 
     .. group-tab:: CentOS/Fedora
 
-        #. Ensure you have already `downloaded your server's Root CA </getting-started/trust-ca/#download-root-ca>`_
+        #. Ensure you have :ref:`downloaded your Root CA <root-ca-download>`
         
         #. In `/etc/systemd/resolved.conf`, ensure you have ``MulticastDNS=Yes``
 
@@ -66,5 +68,6 @@ Trusting Your Server's Root CA on Linux
             .. code-block:: bash
                 
                 sudo yum install ca-certificates
-                sudo cp "adjective-noun.local.crt" /etc/pki/ca-trust/source/anchors/
+                sudo cp "adjective-noun.crt" /etc/pki/ca-trust/source/anchors/
                 sudo update-ca-trust
+

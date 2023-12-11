@@ -1,14 +1,12 @@
 .. _upgrade-pi:
 
 =========================
-Upgrade From Raspberry Pi
+Upgrade Your Raspberry Pi
 =========================
 Follow this guide to upgrade from a Raspberry Pi StartOS server to a Server One, Server Pure, or similar device.
 
-.. _external-drives:
-
-External Drive
-==============
+From Pi with External Drive
+---------------------------
 If your current Raspberry Pi setup uses an external drive over USB.
 
 #. Shutdown your Raspberry Pi server and disconnect from power. If you have a speaker, wait for shutdown noises.
@@ -71,9 +69,8 @@ If your current Raspberry Pi setup uses an external drive over USB.
 
     .. warning:: DO NOT reconnect your old server without first wiping the SD card and SSD! This can cause serious problems! If you have lightning channels you could lose your money!
 
-NASPI (Embassy One)
-===================
-
+From NASPI (Embassy One)
+------------------------
     .. figure:: /_static/images/hardware-pics/server-one.png
         :width: 30%
 

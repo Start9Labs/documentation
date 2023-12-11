@@ -5,7 +5,7 @@ Trusting Your Server's Root CA on iOS
 =====================================
 Complete this guide to trust your server's Root Certificate Authority (Root CA) on iOS.
 
-#. Ensure you have already `downloaded your server's Root CA </getting-started/trust-ca/#download-root-ca>`_
+#. Ensure you have :ref:`downloaded your Root CA <root-ca-download>`
 
 #. Open your iCloud Downloads folder and click on the certificate.  It will display a dialog box that says "Profile Downloaded."  Click `Close`.
 

@@ -10,7 +10,6 @@ User Manual
 
   initial-setup
   trust-ca
-  configuring-ff
   connecting-lan
   connecting-tor
   dashboard-overview
@@ -21,5 +20,6 @@ User Manual
   updating
   sessions
   ssh
+  container-access
   wifi
   alt-registries

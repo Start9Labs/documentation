@@ -1,11 +1,11 @@
 .. _ca-mac:
 
-=====================================
-Trusting Your Server's Root CA on Mac
-=====================================
+============================
+Trusting Your Root CA on Mac
+============================
 Complete this guide to trust your server's Root Certificate Authority (Root CA) on Mac.
 
-#. Ensure you have already `downloaded your server's Root CA </getting-started/trust-ca/#download-root-ca>`_
+#. Ensure you have :ref:`downloaded your Root CA <root-ca-download>`
 
 #. Locate your downloaded Root CA. Right click it and select *Show in Folder*:
 
@@ -13,7 +13,7 @@ Complete this guide to trust your server's Root Certificate Authority (Root CA) 
         :width: 60%
         :alt: Show certificate file in Downloads folder
 
-#. Finder will open.  Locate your unique `adjective-noun.local.crt` file in your *Downloads* folder and double click it to import it into the *Keychain Access* program.  You will be prompted for your macOS username and password, or thumbprint.  Then select *Modify Keychain*:
+#. Finder will open.  Locate your unique `adjective-noun.crt` file in your *Downloads* folder and double click it to import it into the *Keychain Access* program.  You will be prompted for your macOS username and password, or thumbprint.  Then select *Modify Keychain*:
 
     .. figure:: /_static/images/ssl/macos/trust-cert-macos-4-modify_keychain.png
         :width: 60%
@@ -50,3 +50,5 @@ Complete this guide to trust your server's Root Certificate Authority (Root CA) 
         :alt: Keychain submenu
 
     .. tip:: If the keychain console did not show the certificate as trusted, press "Command + spacebar" and type “Keychain Access”, and hit enter to re-open it.
+
+#. If using Firefox, complete :ref:`this final step <ca-ff>`

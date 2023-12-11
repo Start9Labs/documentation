@@ -3,36 +3,38 @@
 =====================
 Trusting Your Root CA
 =====================
+Download and trust your server's Root Certificate Authority (Root CA) to establish a secure (HTTPS) connection with your server.
 
-Download and trust your server's Root Certificate Authority (Root CA) to establish a secure (HTTPS) connection with your server, and to enhance speeds over Tor.
+.. _root-ca-download:
 
-.. _download-root-ca:
+1. Downloading
+==============
+There are multiple ways to obtain your server's Root CA. 
 
-Downloading Root CA
-===================
-
-After Initial Setup
--------------------
-You will be directed to your server's **http**://adjective-noun.local. Follow the on screen instructions to complete these mandatory steps.
-
-		.. note:: You can click "SKIP" to forego trusting your Root CA (not recommended) and bypass the browser's security warning.
+a. After Initial Setup
+----------------------
+To download and trust your Root CA following initial setup, simply follow the on-screen instructions
 
 		.. figure:: /_static/images/setup/trust-ca.png
 			:width: 40%
 			:alt: Trust your Root CA
 
-From StartOS-info.html File
-----------------------------
+		.. note:: You can click "SKIP" to forego trusting your Root CA (not recommended) and then manually bypass the browser's security warning.
 
+b. From StartOS-info.html File
+------------------------------
 You can download your Root CA by clicking "Download certificate" in the file downloaded at the end of initial setup.
 
 		.. figure:: /_static/images/setup/startos-address-info.png
 			:width: 40%
 			:alt: StartOS address info
 
-In StartOS UI
--------------
+c. Sending to yourself
+----------------------
+Once you have downloaded your Root CA on any device, you can simply send the file to yourself using email, messaging app, or other file sharing technique.
 
+d. In StartOS UI
+----------------
 You can find your server's Root CA inside the StartOS dashboard.
 
 	#. Navigate to `System > Root CA` and click `Download Certificate`
@@ -41,11 +43,10 @@ You can find your server's Root CA inside the StartOS dashboard.
 			:width: 40%
 			:alt: LAN setup menu item
 
-.. _trust-root-ca:
+.. _root-ca-trust:
 
-Establishing Trust
-==================
-
+2. Trusting
+===========
 To trust your Root CA, select your operating system and follow the guide:
 
 - :ref:`Linux <ca-linux>`

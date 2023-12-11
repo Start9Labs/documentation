@@ -10,25 +10,6 @@ Managing Services
 
 StartOS provides a rich interface for managing installed Services.
 
-Service Dashboard
------------------
-
-The Service Dashboard provides quick insight into the status and health of your service, as well as exposing a variety of management tools.
-
-.. figure:: /_static/images/services/service00.png
-   :width: 60%
-
-* Status:
-    * **Needs Config**: The Service needs your attention in making a configuration decision.  There will always be default options available to you.
-    * **Stopping**: Service is in the process of stopping.
-    * **Stopped**: Service is installed and configured, but not currently running.
-    * **Starting**: Service is in the process of starting up.
-    * **Running**: Service is running.
-* **Launch UI**: If the service offer a User Interface (UI), and the UI is currently available, clicking this button will launch the UI in a new browser tab.
-* **Health Checks**: This is a critical feature of StartOS. Health Checks are configured by the service packager in order to quickly convey to the user what is happening with their service, as well as possible actions they may want to take.
-* **Dependencies**: Some services depend on the presence and proper configuration of other services to function. This section will inform you if all dependencies are satisfied and, if not, what to do about it.
-* **Start / Stop**: Self-explanatory, use these buttons to start or stop a service.
-
 Installing a Service
 --------------------
 
@@ -51,6 +32,25 @@ Installing a Service
     .. figure:: /_static/images/services/service3.png
         :width: 60%
 
+Service Dashboard
+-----------------
+
+The Service Dashboard provides quick insight into the status and health of your service, as well as exposing a variety of management tools.
+
+.. figure:: /_static/images/services/service00.png
+   :width: 60%
+
+* Status:
+    * **Needs Config**: The Service needs your attention in making a configuration decision.  There will always be default options available to you.
+    * **Stopping**: Service is in the process of stopping.
+    * **Stopped**: Service is installed and configured, but not currently running.
+    * **Starting**: Service is in the process of starting up.
+    * **Running**: Service is running.
+* **Launch UI**: If the service offer a User Interface (UI), and the UI is currently available, clicking this button will launch the UI in a new browser tab.
+* **Health Checks**: This is a critical feature of StartOS. Health Checks are configured by the service packager in order to quickly convey to the user what is happening with their service, as well as possible actions they may want to take.
+* **Dependencies**: Some services depend on the presence and proper configuration of other services to function. This section will inform you if all dependencies are satisfied and, if not, what to do about it.
+* **Start / Stop**: Self-explanatory, use these buttons to start or stop a service.
+
 Updating a Service
 ------------------
 
@@ -65,6 +65,18 @@ To see if an update is available for a service, you can visit the *Updates* tab 
         :width: 60%
 
 If an update is available, simply click "Update" and confirm the action.
+
+.. _install-specific:
+
+Installing a Specific Version
+-----------------------------
+
+* On the Marketplace listing page, under "Additional Info", click "Other Versions".
+
+    .. figure:: /_static/images/services/install-specific.png
+        :width: 60%
+
+* Select the version you want to install, then scroll to the top of the page to complete the update or downgrade.
 
 Configuring a Service
 ---------------------

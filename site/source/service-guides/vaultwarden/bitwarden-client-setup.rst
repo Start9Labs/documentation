@@ -13,9 +13,9 @@ Browser Extension
 
         .. group-tab:: Tor
 
-            If connecting via Tor (i.e using the .onion address) the Bitwarden browser extension will only work with a Tor enabled browser. You can use Firefox (recommended), Tor Browser or Brave Browser.
+            If connecting via Tor (i.e using the .onion address) the Bitwarden browser extension will only work with a Tor enabled browser.
 
-            #. If you choose Firefox, you will need to :ref:`setup Tor on your device <connecting-tor>` and :ref:`configure Firefox to use Tor <configuring-ff>`. If using Brave you will just need to :ref:`setup Tor on your device <connecting-tor>`. With Tor Browser, everything will just work right out of the box.
+            #. If you choose Firefox, you will need to :ref:`follow this guide <tor-ff>` to run Tor on your device and configure Firefox to use it. If using Brave you will just need to :ref:`setup Tor on your device <connecting-tor-native>`. With Tor Browser, everything will just work right out of the box.
 
                 .. tip:: We recommend using Firefox as it is the most compatible browser with Start9 Servers.
 
@@ -147,51 +147,53 @@ iOS
 
     .. group-tab:: Tor
 
-        Begin by :ref:`setting up Tor <tor-ios>` on your iPhone.
+        .. warning:: Orbot is currently broken for iOS, which means it is not possible to use Bitwarden over Tor. We are hopeful that a future release of Orbot or iOS will resolve the issue.
 
-        You will also need :ref:`LAN access <ca-ios>` setup on your iPhone.
+        .. Begin by :ref:`setting up Tor <tor-ios>` on your iPhone.
 
-        #. Visit the App Store and download the `Bitwarden app <https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744>`_
+        .. You will also need :ref:`LAN access <ca-ios>` setup on your iPhone.
 
-        #. Open the Bitwarden app. You'll be greeted with a log-in screen. Click the "Region" drop-down menu.
+        .. #. Visit the App Store and download the `Bitwarden app <https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744>`_
 
-            .. figure:: /_static/images/services/vaultwarden/bitwarden-iOS-setup-step1.png
-                    :width: 40%
-                    :alt: vaultwarden-iOS-log-in-screen
+        .. #. Open the Bitwarden app. You'll be greeted with a log-in screen. Click the "Region" drop-down menu.
+
+        ..     .. figure:: /_static/images/services/vaultwarden/bitwarden-iOS-setup-step1.png
+        ..             :width: 40%
+        ..             :alt: vaultwarden-iOS-log-in-screen
         
-        #. Choose the "Self-hosted" option.  
+        .. #. Choose the "Self-hosted" option.  
 
-            .. figure:: /_static/images/services/vaultwarden/bitwarden-iOS-setup-step2.png
-                    :width: 40%
-                    :alt: vaultwarden-iOS-self-hosted-screen
+        ..     .. figure:: /_static/images/services/vaultwarden/bitwarden-iOS-setup-step2.png
+        ..             :width: 40%
+        ..             :alt: vaultwarden-iOS-self-hosted-screen
         
-        #. Head to the "Interfaces" tab in the Vaultwarden service on your Start9 Server:
+        .. #. Head to the "Interfaces" tab in the Vaultwarden service on your Start9 Server:
 
-            .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces.png
-                :width: 50%
-                :alt: vaultwarden-interfaces
+        ..     .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces.png
+        ..         :width: 50%
+        ..         :alt: vaultwarden-interfaces
 
-        #. Copy the Tor address:
+        .. #. Copy the Tor address:
 
-            .. figure:: /_static/images/services/vaultwarden/vaultwarden-tor-address.png
-                :width: 50%
-                :alt: vaultwarden-tor-address
+        ..     .. figure:: /_static/images/services/vaultwarden/vaultwarden-tor-address.png
+        ..         :width: 50%
+        ..         :alt: vaultwarden-tor-address
 
-        #. Now send that address to your phone and paste it into Bitwarden.
+        .. #. Now send that address to your phone and paste it into Bitwarden.
 
-            .. caution::  **Before you hit save:**  The Tor address you will have copied will begin with **http** - Please change this to **https** instead of **http**
+        ..     .. caution::  **Before you hit save:**  The Tor address you will have copied will begin with **http** - Please change this to **https** instead of **http**
         
-            .. figure:: /_static/images/services/vaultwarden/bitwarden-iOS-setup-step3.png
-                    :width: 40%
-                    :alt: vaultwarden-iOS-url-screen
+        ..     .. figure:: /_static/images/services/vaultwarden/bitwarden-iOS-setup-step3.png
+        ..             :width: 40%
+        ..             :alt: vaultwarden-iOS-url-screen
 
-        #. Now you can hit save, and you'll be returned to the log-in screen.
+        .. #. Now you can hit save, and you'll be returned to the log-in screen.
 
-        #. Go ahead and tap 'Log In,' enter your credentials, and you'll be able to access your Bitwarden app / Vaultwarden server!
+        .. #. Go ahead and tap 'Log In,' enter your credentials, and you'll be able to access your Bitwarden app / Vaultwarden server!
 
     .. group-tab:: LAN
 
-        We suggest using Tor, however it is possible have a good experience with LAN. Once synced, your app and all your passwords will be cached and available when you are on the go and not connected to your Start9 Server, and you will only need to be on LAN to update any edits to your vault.
+        .. note:: You must be connected to your home network to create and update your passwords. The iOS Bitwarden app is good at caching, so you *will* have access to your passwords remotely.
 
         Begin by :ref:`setting up LAN <ca-ios>` on your device.
 

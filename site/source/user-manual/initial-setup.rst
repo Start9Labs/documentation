@@ -4,32 +4,32 @@
 Initial Setup
 =============
 
-#. Connect your server to power and Ethernet
+.. _fresh-setup:
 
-#. From a client device (desktop/laptop/phone), open a browser and visit ``http://start.local``. Your client must be connected to the same Local Area Network (LAN) as your server. This usually means they are using the same router, either by ethernet or WiFi
+Starting Fresh
+--------------
+#. Connect your server to power and ethernet.
+
+#. From a client device (desktop/laptop/phone) connected to the same local network as your server, open a browser and visit ``http://start.local``.
 
 	.. note:: If you are `not` using a Raspberry Pi, you can also plug a monitor and keyboard into the server. This is known as "Kiosk mode".
 
 #. Follow the on-screen instructions.
 
+.. _recover-options:
+
+Recover Options
+---------------
+If you are using an existing drive, transferring data from one drive to another, or restoring your entire system from a backup, follow the appropriate guide below:
+
+    - :ref:`Use Existing Drive <attach-drive>`
+    - :ref:`Transfer <transfer-data>`
+    - :ref:`Restore from Backup <backup-restore>`
+
 .. _setup-troubleshooting:
 
 Troubleshooting
 ---------------
-If you are experiencing issues with setup, try the following:
+If you followed the above instructions and are experiencing issues, click :ref:`here <setup-troubleshoot>` to resolve.
 
-#. Confirm that the server is plugged into both power `and` Ethernet      
-#. Confirm your phone/computer is `not` connected to a "Guest" network
-#. Confirm your phone/computer is not using a VPN, or that if you are, that it allows LAN connections, such as the examples below:
-
-    - Mullvad - Go to "Settings -> VPN Settings -> Local Network Sharing"
-    - ProtonVPN - Go to "Preferences -> Connection -> Allow LAN Connections"
-
-#. Visit or refresh (ctrl+shift+R on Linux/Windows, cmd+shift+R on macOS Firefox, cmd+option+E then cmd+R on macOS Safari) the start.local page in a web browser
-#. To avoid networking issues, it is recommended to use your `primary` router, not an extender or mesh router
-#. Very rarely, your firewall settings may block mDNS. In this case:
-
-    - From your browser, navigate to your router configuration settings. This is usually an IP address such as 192.168.1.1. A simple web search will usually reveal how to access the router configuration settings for a particular brand.
-    - Once in the router config settings, find the section that lists the devices on your network. You should see a device labeled ``start``. Take note of the associated IP address and enter it into your browser's URL field to enter the setup.
-
-You can always to `reach out to support <https://start9.com/contact>`_ if you need a hand.
+You can also to `reach out to support <https://start9.com/contact>`_ if you need a hand.

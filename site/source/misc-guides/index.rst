@@ -8,8 +8,12 @@ Guides that do not fit into the categories of "devices" or "services."
 .. toctree::
   :maxdepth: 1
 
+  ca-ff
+  tor-ff
+  attach-drive
+  transfer-data
+  upgrade-pi
   lnd-migration
-  upgrade-hardware/index
   thunderbird
   smtp
   backup-mount

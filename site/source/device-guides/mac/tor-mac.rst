@@ -11,13 +11,9 @@ Install Homebrew
 
     .. code-block:: bash
 
-        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 #. You will be prompted for your system password before installation; proceed with entering your password.  You may be asked more than once.
-
-    .. figure:: /_static/images/tor/install_homebrew.png
-        :width: 80%
-        :alt: Homebrew installation
 
 #. You will be notified which directories Homebrew is going to create, hit :code:`RETURN`:
 
@@ -114,8 +110,6 @@ Enable Tor System-wide
                 
                 cat /usr/local/var/log/tor.log || sudo cat /opt/homebrew/var/log/tor.log
 
-        If you'd like to setup Firefox to use Tor you can follow  :ref:`this guide<ff-mac>`.
-
     .. group-tab:: Pre-Ventura
 
         #. Enable proxy autoconfig file (This will download the Start9 standard proxy config file. You can use your own if you prefer):
@@ -176,4 +170,6 @@ Enable Tor System-wide
                 
                 cat /usr/local/var/log/tor.log || sudo cat /opt/homebrew/var/log/tor.log
 
-        If you'd like to setup Firefox to use Tor you can follow  :ref:`this guide<ff-mac>`.
+If using Firefox
+----------------
+Firefox can be configured to use Tor on your Mac to resolve .onion URLs. Complete this guide: :ref:`tor-ff`
