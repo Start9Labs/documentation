@@ -145,7 +145,7 @@ Setup
 
     .. code-block:: bash
 
-        sudo /usr/lib/embassy/scripts/chroot-and-upgrade
+        sudo /usr/lib/startos/scripts/chroot-and-upgrade
 
 #. Using Vim or Nano, add the following 2 lines to ``/etc/tor/torrc``
 
