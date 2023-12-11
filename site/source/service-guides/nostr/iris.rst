@@ -42,9 +42,11 @@ Using Iris on StartOS
         :alt: iris sign in
 
 #. To connect to your own private relay, go to Settings -> Network and paste in your Nostr Relay Websocket URL (e.g. ws://address.onion). You can find this value in the Properties section of your Nostr RS Relay service.
+
 .. note:: 
     If you plan to connect to your own private relay, you must first make sure you are already :ref:`running Tor<connecting-tor>` on your system and we suggest using Firefox which must be :ref:`configured to use Tor<connecting-ff>`.
     It is recommended to use your Relay's Tor websocket URL (ws://address.onion), since the LAN websocket URL (wss://address.local) will only work when you are home.
+
 .. figure:: /_static/images/services/nostr/iris-5.png
     :width: 50%
     :alt: iris add url    

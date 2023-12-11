@@ -14,12 +14,13 @@ Nostr is a simple, open protocol that enables global, decentralized, and censors
 
 #. Install **Nostr RS relay** service from Start9 Registry on your server.
 
-  .. figure:: /_static/images/services/nostr/nostr-1.png
+    .. figure:: /_static/images/services/nostr/nostr-1.png
         :width: 50%
         :alt: nostr install
 
 #. In the service, page click **CONFIGURE** and add the pubkey in hex format to whitelist your client. Click save.
-  .. figure:: /_static/images/services/nostr/nostr-2.png
+ 
+    .. figure:: /_static/images/services/nostr/nostr-2.png
         :width: 50%
         :alt: nostr whitelist pubkey
 
