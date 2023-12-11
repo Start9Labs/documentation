@@ -100,11 +100,11 @@ First head into the top-righthand menu of your Nextcloud's WebUI and click "Apps
 
 3. Enter the following fields and tap "Next":
 
-  - Server - Enter your Nextcloud WebDAV Base LAN URL (found in "Properties" in the Nextcloud service page).
+  - Server - You can find complete path in Nextcloud -> Calendar settings -> Copy iOS/macOS CalDav address. For setting up contacts/CardDav use the same path.
   
   - User name - The default user is "embassy" but this is your user within Nextcloud, so be sure it is the correct user if you have more than one.
   
-  - Password - Your Nextcloud user's password (Default found in "Properties" in the Nextcloud service page).
+  - Password - In your Nextcloud WebUI, visit the top-right-hand menu and select “Personal Settings” -> “Security.” At the bottom, under Devices & Sessions, create a new app password with a name of your choice, such as “iOSCalDAV.” Then, copy the resulting password into your iOS CalDAV account configuration.
 
   - Description - Anything to describe this account, such as "Nextcloud CalDAV".
 
@@ -112,7 +112,7 @@ First head into the top-righthand menu of your Nextcloud's WebUI and click "Apps
   :width: 30%
   :alt: nextcloud account settings
 
-4. If you get a warning about verifying the server identity, it is safe to "Continue."  Add the apps you want to use, such as Calendars, Contacts, and/or Reminders, then tap "Save."
+4. If you get a warning about verifying the server identity, it is safe to "Continue."  Add the apps you want to use, such as Calendars, Contacts, and/or Reminders, then tap "Done".
 
   - That's it!  Go back to step 2 above to set up your other account (CalDAV / CardDAV).
 
