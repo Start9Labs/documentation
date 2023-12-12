@@ -29,12 +29,6 @@ During initial setup, I am unable to connect to "start.local".
     - Mullvad - Go to "Settings -> VPN Settings -> Local Network Sharing"
     - ProtonVPN - Go to "Preferences -> Connection -> Allow LAN Connections"
 
-#. Visit or refresh the browser
-
-    - Linux/Windows: ``ctrl+shift+R``
-    - macOS Firefox: ``cmd+shift+R``
-    - macOS Safari: ``cmd+option+E``, then ``cmd+R``
-
 #. To avoid networking issues, it is recommended to use your `primary` router, not an extender or mesh router
 #. Very rarely, your firewall settings may block mDNS. In this case:
 
@@ -48,9 +42,16 @@ During initial setup, I am unable to connect to "start.local".
 I am unable to reach my server via its *<custom-address>.local* (LAN) address
 ------------------------------------------------------------------------------
 #. First, try :ref:`these step <setup-troubleshoot>`. In none resolve the issue, continue below.
+#. Hard refresh the browser
+
+    - Linux/Windows: ``ctrl+shift+R``
+    - macOS Firefox: ``cmd+shift+R``
+    - macOS Safari: ``cmd+option+E``, then ``cmd+R``
+
 #. Make sure you have successfully followed the :ref:`connecting-lan` instructions for your device.
 #. If you are using Windows, the problem is almost certainly with Bonjour. Follow the :ref:`directions to reinstall <connecting-lan-windows>`, even if you have already done so.
 #. If using Firefox from Mac, Windows or Android, ensure you have set ``security.enterprise_roots.enable`` to ``true`` in ``about:config`` per the :ref:`instructions<ca-ff>`
+#. Try connecting using your server's IP address or Tor address. If this works, it means your issue is specific to .local. Try clearing your browser cache and/or restarting your phone/laptop/router. If all fails, try restarting your server.
 #. Try connecting using a different browser on the same device. If this works, it means you need to clear cache on your current browser.
 #. Try connecting using a different device. If this works, it means you need to clear cache on your current browser and/or restart your current device.
 #. Try visiting start.local. Your server may be in diagnostic mode.
