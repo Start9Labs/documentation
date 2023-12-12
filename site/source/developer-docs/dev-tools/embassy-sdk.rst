@@ -15,7 +15,7 @@ You can install this component on any system, without needing to run StartOS, by
 
     .. code-block::
 
-        git clone -b latest --recursive https://github.com/Start9Labs/start-os.git && cd start-os/backend && ./install-sdk.sh
+        git clone -b sdk --recursive https://github.com/Start9Labs/start-os.git && cd start-os && make sdk
 
 
 Next, initialize the SDK and verify the installation was successful:
