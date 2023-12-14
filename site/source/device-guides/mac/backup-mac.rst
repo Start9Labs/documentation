@@ -11,99 +11,50 @@ Mac Network Folder
 Setup a Network Folder
 ----------------------
 
-Please select what version of MacOS you are using from the two tabs below:
+#. Identify or create a folder you would like to use to store your Start9 server's backups.
 
-.. tabs::
+    .. tip:: You can select an external drive or folder within an external drive connected to your Mac if you'd like.
 
-    .. group-tab:: Latest
+#. Go to **System Settings**:
 
-        #. Identify or create a folder you would like to use to store your Start9 server's backups.
+    .. figure:: /_static/images/backups/backup-macos-2.png
+        :width: 50%
+        :alt: System settings
 
-            .. tip:: You can select an external drive or folder within an external drive connected to your Mac if you'd like.
+#. Click on **General** then **Sharing**:
 
-        #. Go to **System Settings**:
+    .. figure:: /_static/images/backups/backup-macos-3.png
+        :width: 50%
+        :alt: general-sharing
 
-            .. figure:: /_static/images/backups/backup-macos-2.png
-                :width: 50%
-                :alt: System settings
+#. Click **info** icon:
 
-        #. Click on **General** then **Sharing**:
+    .. figure:: /_static/images/backups/backup-macos-4.png
+        :width: 50%
+        :alt: enable-cifs
 
-            .. figure:: /_static/images/backups/backup-macos-3.png
-                :width: 50%
-                :alt: general-sharing
+#. Click the toggle to enable file sharing and the **"+"** icon and select the folder you would like to make backups to:
 
-        #. Click **info** icon:
+    .. figure:: /_static/images/backups/backup-macos-5.png
+        :width: 50%
+        :alt: click-plus
 
-            .. figure:: /_static/images/backups/backup-macos-4.png
-                :width: 50%
-                :alt: enable-cifs
+#. Once added, click **Options**:
 
-        #. Click the toggle to enable file sharing and the **"+"** icon and select the folder you would like to make backups to:
+    .. figure:: /_static/images/backups/backup-macos-6.png
+        :width: 50%
+        :alt: ventura-folder-added
+    
+#. Enable SMB sharing for the user you want to use and then click **Done**.
 
-            .. figure:: /_static/images/backups/backup-macos-5.png
-                :width: 50%
-                :alt: click-plus
+    .. figure:: /_static/images/backups/backup-macos-7.png
+        :width: 50%
+        :alt: ventura-smb
 
-        #. Once added, click **Options**:
+#. You can now move on to connecting your server.
 
-            .. figure:: /_static/images/backups/backup-macos-6.png
-                :width: 50%
-                :alt: ventura-folder-added
-            
-        #. Enable SMB sharing for the user you want to use and then click **Done**.
+        .. tip:: You can find the hostname at the bottom of sharing window.  You will need this in the next step.
 
-            .. figure:: /_static/images/backups/backup-macos-7.png
-                :width: 50%
-                :alt: ventura-smb
-
-        #. You can now move on to connecting your server.
-
-             .. tip:: You can find the hostname at the bottom of sharing window.  You will need this in the next step.
-
-    .. group-tab:: Pre-Ventura
-
-        #. Identify or create a folder you would like to use to store your Start9 server's backups.
-
-            .. tip:: You can select an external drive or folder within an external drive connected to your Mac if you'd like.
-
-        #. Go to **System Preferences** and click **Sharing**:
-
-            .. figure:: /_static/images/cifs/cifs-mac0.png
-                :width: 40%
-                :alt: sharing
-
-        #. Click **File Sharing**:
-
-            .. figure:: /_static/images/cifs/cifs-mac1.png
-                :width: 40%
-                :alt: file-sharing
-
-        #. Click the **"+"** icon under **Shared Folders** and add the folder you would like to back up to:
-
-            .. figure:: /_static/images/cifs/cifs-mac2.png
-                :width: 40%
-                :alt: click-plus
-
-        #. After selecting your folder, click **Options**:
-
-            .. figure:: /_static/images/cifs/cifs-mac3.png
-                :width: 40%
-                :alt: options
-
-        #. Enable **Share files and folders using SMB** and turn it on for the user you would like to use to authenticate and then click **Done**:
-
-            .. figure:: /_static/images/cifs/cifs-mac4.png
-                :width: 40%
-                :alt: SMB
-
-        #. Make a note of your computer's **Hostname** which can be found here:
-
-            .. figure:: /_static/images/cifs/cifs-mac-hostname.png
-                :width: 40%
-                :alt: hostname
-        
-        #. You will also need the name of the "Shared Folder" you chose or created, as well as your Mac's username and password.
 
 Connect Your Server
 -------------------
