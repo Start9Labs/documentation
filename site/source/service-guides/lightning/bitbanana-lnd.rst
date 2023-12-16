@@ -3,11 +3,9 @@
 BitBanana
 ---------
 
-Available on `Android <https://play.google.com/store/apps/details?id=app.michaelwuensch.bitbanana>`_.
-
 .. note:: Compatible with LND only
 
-#. Install BitBanana via your phone's app store.
+#. Install `BitBanana <https://bitbanana.app/>`_ on your phone.
 #. In BitBanana go to **Connect Node**. 
 #. Locate the **LND Connect gRPC URL** from your LND service page's **Properties** section:
 
