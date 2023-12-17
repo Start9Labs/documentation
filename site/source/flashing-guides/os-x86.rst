@@ -30,12 +30,11 @@ Select your OS to continue:
         
     .. group-tab:: Mac
             
-        (Optional, but recommended) Verify the checksum against the one listed on GitHub by opening a terminal and entering:
+        (Optional, but recommended) Verify the checksum against the one listed on GitHub by opening a terminal,changing your directory to where you downloaded the .iso file, and entering:
 
             .. code-block::
 
-                openssl dgst -sha256 startos-0.3.4.2-efc56c0-20230525_x86_64.iso
-
+                openssl dgst -sha256 startos-0.3.5.1-39de098_x86_64.iso
     .. group-tab:: Windows
         
         (Optional, but recommended) Verify the checksum against the one listed on GitHub by opening Windows PowerShell, changing your directory to where you downloaded the .img.gz file, and running `Get-FileHash`:
