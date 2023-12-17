@@ -30,7 +30,7 @@ Select your OS to continue:
         
     .. group-tab:: Mac
             
-        (Optional, but recommended) Verify the checksum against the one listed on GitHub by opening a terminal,changing your directory to where you downloaded the .iso file, and entering:
+        (Optional, but recommended) Verify the checksum against the one listed on GitHub by opening a terminal, changing your directory to where you downloaded the .iso file, and entering:
 
             .. code-block::
 
