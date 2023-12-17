@@ -33,4 +33,4 @@ Hosting a Registry
 ------------------
 You can run your own basic registry using your Start9 server!  On each service's GitHub Releases page, such as `Bitcoin <https://github.com/Start9Labs/bitcoind-wrapper/releases/tag/v23.0.0>`_ for example, you will find the ``.s9pk`` Asset.  You can download this package, upload to a folder on `File Browser <https://marketplace.start9.com/marketplace/filebrowser>`_ or `Nextcloud <https://marketplace.start9.com/marketplace/nextcloud>`_, and then host it over Tor using `Start9 Pages <https://marketplace.start9.com/marketplace/embassy-pages>`_!
 
-If you are interested in building and hosting your own full registry that can be accessed in the Start9 Marketplace UI, you can check out the `registry repository <github.com/start9labs/registry>`_.
+If you are interested in building and hosting your own full registry that can be accessed in the Start9 Marketplace UI, you can check out the `registry repository <https://github.com/Start9Labs/registry>`_.
