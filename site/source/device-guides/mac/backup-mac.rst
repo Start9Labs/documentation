@@ -27,7 +27,7 @@ Setup a Network Folder
         :width: 50%
         :alt: general-sharing
 
-#. Click **info** icon:
+#. Click the **info** icon:
 
     .. figure:: /_static/images/backups/backup-macos-4.png
         :width: 50%
