@@ -10,6 +10,22 @@ Bitcoin Integrations
 
 Here you will find guides on how to connect different kinds of Bitcoin wallets (hardware and software) to your server's node, to complete your sovereign Bitcoin stack!
 
+.. _bitbox-app:
+
+BitBoxApp
+---------
+
+**Available For**
+
+ - Android
+ - Linux
+ - macOS
+ - Windows
+ 
+**Instructions**
+ 
+ Follow the `guide <https://shiftcrypto.support/help/en-us/14-privacy/29-how-to-connect-the-bitboxapp-to-my-own-full-node>`__.
+
 
 .. _blockstream-green:
 
