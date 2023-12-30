@@ -24,7 +24,16 @@ BitBoxApp
  
 **Instructions**
  
- Follow the `guide <https://shiftcrypto.support/help/en-us/14-privacy/29-how-to-connect-the-bitboxapp-to-my-own-full-node>`__.
+#. In the BitBoxApp sidebar, select Settings > Enable tor proxy.
+#. Enable the proxy and confirm the proxy address (127.0.0.1:9050).
+#. Then restart the BitBoxApp in order for the new settings to take effect.
+#. In the BitBoxApp sidebar, select Settings > Advanced settings > Connect your own full node
+#. In the field “Enter the endpoint”, paste Tor address and the port from Electrs properties. For example: gwdllz5g7vky2q4gr45zGuvopjzf33czreca3a3exosftx72ekppkuqd.onion:50001
+#. Click “Check”, you should be prompted with the message “Successfully established a connection”.
+#. Click “Add” to add your node to the node list at the top of the page.
+#. Remove the other servers if you want to exclusively connect to your own node.
+
+Guide adopted from `Shiftcrypto <https://shiftcrypto.support/help/en-us/14-privacy/29-how-to-connect-the-bitboxapp-to-my-own-full-node>`__.
 
 
 .. _blockstream-green:
