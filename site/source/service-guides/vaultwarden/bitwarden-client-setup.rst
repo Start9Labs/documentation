@@ -39,7 +39,7 @@ Browser Extension
                     :width: 40%
                     :alt: vaultwarden-firefox-self-host
 
-            #. Now we need to grab the address of our Vaultwarden server.Paste the address into your extension and click "Save".
+            #. Now you need to grab the address of your Vaultwarden server. Paste the address into your extension and click "Save".
 
                 .. figure:: /_static/images/services/vaultwarden/bitwarden-firefox-setup-step2.png
                     :width: 40%
