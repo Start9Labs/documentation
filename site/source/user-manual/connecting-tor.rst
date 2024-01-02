@@ -16,7 +16,7 @@ Your StartOS dashboard, as well as many installed services, can be accessed via 
 #. To access your private websites, simply download the official Tor Browser and input the URL.
 
 - For Linux, Mac, Windows, and Android, download the `Official Tor Browser <https://torproject.org/download/>`_
-- For iOS, download `Onion Browser <https://onionbrowser.com/>`_ (iOS 17+ only). When prompted, use *in-app* Tor, *not* Orbot.
+- For iOS, download `Onion Browser <https://onionbrowser.com/>`_ (iOS 17+ only). When prompted, use *built-in* Tor, *not* Orbot.
 
 .. _connecting-tor-native:
 
