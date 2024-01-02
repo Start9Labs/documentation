@@ -29,7 +29,7 @@ BitBoxApp
 #. Restart BitBoxApp in order for the new settings to take effect.
 #. In the BitBoxApp sidebar, select Settings > Advanced settings > Connect your own full node
 #. In the field “Enter the endpoint”, paste the Tor address and port from your server's Electrs > Properties page. For example: gwdllz5g7vky2q4gr45zGuvopjzf33czreca3a3exosftx72ekppkuqd.onion:50001
-#. Click “Check”, you should be prompted with the message “Successfully established a connection”.
+#. Click “Check,” and you will be prompted with the message “Successfully established a connection.”
 #. Click “Add” to add your node to the node list at the top of the page.
 #. Remove the other servers if you want to exclusively connect to your own node.
 
