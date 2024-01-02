@@ -130,7 +130,7 @@ Sparrow
 
   Connect Sparrow directly to your `Bitcoin Core`:
   
-  * Follow this `guide <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/docs/integrations/sparrow/guide.md>`__.
+  * Follow this `guide <https://github.com/Start9Labs/bitcoind-startos/blob/v25.0.0.3/docs/integrations/sparrow/guide.md>`__.
 
   **CAUTION** Until we get per-user rpc restrictions built into Bitcoin Core, this is technically more dangerous than using the electrum server method, because it requires createwallet and similar RPC calls.  However, exploiting it relies on there being a vulnerability in Bitcoin Core.  Likely there isn't, but if this makes you uneasy, please use the electrs method below.
  
@@ -154,7 +154,7 @@ Specter
  
  **Instructions**
 
-  Follow the guide for `macOS <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/docs/integrations/specter/macos.md>`__ or `Windows <https://github.com/Start9Labs/bitcoind-wrapper/blob/master/docs/integrations/specter/windows.md>`__.
+  Follow the guide for `macOS <https://github.com/Start9Labs/bitcoind-startos/blob/v25.0.0.3/docs/integrations/specter/macos.md>`__ or `Windows <https://github.com/Start9Labs/bitcoind-startos/blob/v25.0.0.3/docs/integrations/specter/windows.md>`__.
 
 
 .. _trezor-suite:
