@@ -8,7 +8,7 @@ Opening Your First Channel
   :depth: 2 
   :local:
 
-Here we'll show you how to install a lightning node and how to open a channel with Start9!
+Here we'll show you how to install a lightning node and how to open a channel with Start9!  We recommend first taking a moment to `understand the important concept of liquidity <https://bitcoin.design/guide/how-it-works/liquidity/>`_.
 
 Running a Node and Making a Channel with Start9
 _______________________________________________
