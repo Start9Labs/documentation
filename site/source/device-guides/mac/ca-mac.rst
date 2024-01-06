@@ -51,4 +51,4 @@ Complete this guide to trust your server's Root Certificate Authority (Root CA) 
 
     .. tip:: If the keychain console did not show the certificate as trusted, press "Command + spacebar" and type “Keychain Access”, and hit enter to re-open it.
 
-#. If using Firefox, complete :ref:`this final step <ca-ff>`
+#. If using Firefox or TorBrowser, complete :ref:`this final step <ca-ff>`

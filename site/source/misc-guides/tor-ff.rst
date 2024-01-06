@@ -18,6 +18,12 @@ Configuring Firefox for Tor
                 :width: 60%
                 :alt: Firefox whitelist onions screenshot
 
+        #. Search for ``security.enterprise_roots.enable``, set it to ``true``.
+
+            .. figure:: /_static/images/ssl/browser/enterprise_roots_enabled_true.png
+                :width: 80%
+                :alt: Firefox security settings
+
         #. Go to the right-hand hamburger menu and select ``Settings``:
 
             .. figure:: /_static/images/tor/os_ff_settings.png
