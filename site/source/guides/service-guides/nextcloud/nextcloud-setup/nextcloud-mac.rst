@@ -170,7 +170,7 @@ You will first need to have the :ref:`Tor daemon running<tor-mac>`.
     :width: 40%
     :alt: nextcloud-login
 
-4. On the following screen, click “Log in,” then enter your Nextcloud Tor server address, which you can copy from Nextcloud -> Interfaces - Tor. This must start with ``https://`` and end with ``.onion``. Click Next.
+4. On the following screen, click “Log in,” then enter your Nextcloud Tor server address, which you can copy from Nextcloud -> Interfaces - Tor. This should start with ``https://`` and end with ``.onion``. Click Next.
 
   .. figure:: /_static/images/nextcloud/nextcloud-mac-step2.png
     :width: 40%
