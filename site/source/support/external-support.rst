@@ -34,7 +34,7 @@ Core Lightning (CLN)
 
 LND
 ======
-* Official Support: https://app.slack.com/client/T6AK88MGV/C6AFCN3KL
+* Official Support: https://lightning.engineering/slack.html
 * Community Support: ircs://irc.libera.chat:6697/#lnd
 
 Mastodon
@@ -49,6 +49,10 @@ Nextcloud
 =========
 * Official Support: https://nextcloud.com/support/
 * Unofficial Telegram Community: https://t.me/Nextcloud
+
+Nunchuk
+=======
+* Official Support: https://join.slack.com/t/nunchukio/shared_invite/zt-xqdlvl5g-xKKohQu_R7IUo7_np8rVaw
 
 Photoview
 =========
@@ -67,6 +71,10 @@ Sphinx Chat
 ===========
 * Official Support: support@stakwork.com
 * Community Support: https://t.me/joinchat/Fb4OcRo4LrRD6NXfsNdeeQ
+
+Sparrow
+=======
+* Official Support: https://t.me/SparrowWallet
 
 Specter
 =========
