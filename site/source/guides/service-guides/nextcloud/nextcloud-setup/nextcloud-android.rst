@@ -110,7 +110,7 @@ You will first need to have :ref:`Orbot running<tor-android>`.
 
 1. First, add Nextcloud to your Orbot apps list.
 2. Tap the account in the top-right, then "Add Account."
-3. On the following screen, tap "Log in," then enter your Nextcloud Tor server address, which you can copy from Nextcloud -> Interfaces - Tor. This must start with ``http://`` and end with ``.onion``. tap Next.
+3. On the following screen, tap "Log in," then enter your Nextcloud Tor server address, which you can copy from Nextcloud -> Interfaces - Tor. This must start with ``https://`` and end with ``.onion``. tap Next.
 4. This will launch your browser and prompt you to log in to your account. Log in and then grant access as we did for LAN.
 5. That's it! You may wish to set up some select folders for remote sync, but for large files, it is best to sync on LAN only, so you can "Skip folders configuration" on the resulting screen if you wish. Check your connection by tapping into the newly created account in the app.
 

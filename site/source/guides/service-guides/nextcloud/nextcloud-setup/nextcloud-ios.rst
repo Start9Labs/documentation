@@ -74,7 +74,7 @@ Tor Setup
 You will first need to have the :ref:`Tor daemon running<tor-ios>`.
 
 1. Click the account in the top left again, then "Add Account."
-2. On the following screen, click "Log in," then enter your Nextcloud Tor server address, which you can copy from Nextcloud -> Interfaces - Tor. This must start with `http://` and end with .onion. Click Next.
+2. On the following screen, click "Log in," then enter your Nextcloud Tor server address, which you can copy from Nextcloud -> Interfaces - Tor. This must start with ``https://`` and end with ``.onion``. Click Next.
 3. This will launch your browser and prompt you to log in to your account. Log in and then grant access as we did for LAN.
 4. That's it! You may wish to set up some select folders for remote sync, but for large files, it is best to sync on LAN only, so you can "Skip folders configuration" on the resulting screen if you wish. Check your connection by clicking the newly created account in the client app.
 
