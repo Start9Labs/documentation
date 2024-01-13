@@ -12,7 +12,7 @@ Choose your operating system from among the tabs below:
 
         #. Open Firefox and enter ``about:config`` in the URL bar. Accept any warnings that appear
 
-        #. Search for ``security.enterprise_roots.enable``, set it to ``true``.
+        #. Search for ``security.enterprise_roots.enabled``, set it to ``true``.
 
             .. figure:: /_static/images/ssl/browser/enterprise_roots_enabled_true.png
                 :width: 80%
