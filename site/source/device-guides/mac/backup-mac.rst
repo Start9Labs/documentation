@@ -53,7 +53,7 @@ Setup a Network Folder
 
 #. You can now move on to connecting your server.
 
-        .. tip:: You can find the hostname at the bottom of sharing window.  You will need this in the next step.
+        .. tip:: You can find the hostname at the top of sharing window. The hostname will be an address beginning with smb://. To use as hostname disregard the smb:// and simply enter the ip address that follows it. You will need this in the next step. (alternatively you can use the computer hostname. (See directions below) Either method should work as a hostname. 
 
 
 Connect Your Server
