@@ -4,7 +4,7 @@
 Running Tor on iOS
 ==================
 
-.. warning:: Orbot is currently broken for iOS. We are hopeful that a future release of Orbot or iOS will resolve the issue.
+.. warning:: Orbot is currently broken for iOS. We are hopeful that a future release of Orbot or iOS will resolve the issue. In the meantime, please refer to the :ref:`Connecting Remotely<connecting-tor>` page and review the available options.
 
 #. Download and install `Orbot from the Apple appstore <https://apps.apple.com/us/app/orbot/id1609461599>`_.
 #. Open Orbot and tap on "Settings".
