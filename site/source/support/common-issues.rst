@@ -108,6 +108,14 @@ Server Lite, Server Pure, and Server One (2022 and older) have an internal speak
         Your browser does not support the audio element.
       </audio>
 
+    * "double bep" - The device is updating
+
+    .. raw:: HTML
+
+      <audio controls>
+        <source src="/_static/sounds/UPDATING.mp3" type="audio/mpeg">
+      </audio>
+
     * "chime" - Server is ready
 
     .. raw:: HTML
