@@ -61,6 +61,6 @@ You will first need to have the :ref:`Tor daemon running<tor-windows>`.
 
 1. On your desktop application, click the account in the top left -> Settings, then in Settings, click Network, then "Specify proxy manually as" and "SOCKS5 proxy." Enter "127.0.0.1" for the Host and "9050" for the port.
 2. Close the Settings screen and click the account in the top left again, then "Add Account."
-3. On the following screen, click "Log in," then enter your Nextcloud Tor server address, which you can copy from Nextcloud -> Interfaces - Tor. This must start with `http://` and end with .onion. Click Next.
+3. On the following screen, click "Log in," then enter your Nextcloud Tor server address, which you can copy from Nextcloud -> Interfaces - Tor. This should start with ``http://`` and end with ``.onion``. Click Next.
 4. This will launch your browser and prompt you to log in to your account. Log in and then grant access as we did for LAN.
 5. That's it! You may wish to set up some select folders for remote sync, but for large files, it is best to sync on LAN only, so you can "Skip folders configuration" on the resulting screen if you wish. Check your connection by clicking the newly created account in the client app.
