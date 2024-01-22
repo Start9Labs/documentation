@@ -100,7 +100,20 @@ Connecting via CLI
 
 Replacing ``<SERVER-HOSTNAME>`` with your server's LAN (``<custom-address>.local``) address
 
-.. note:: If you get a scary looking warning that says something like "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!" - fear not!  This is most likely happening because you have recently reflashed or did an update from pre-v0.3.3, which would cause a change in the key for your device's hostname (e.g. `xxxxxxxx.local`) or IP address (e.g. `192.168.1.x`).  The solution is to delete the existing entry from your `known_hosts` file, which is typically located at `~/.ssh/known_hosts`.  This will be specified in the warning, along with a helpful line number (in case your file is lengthy).
+.. note:: 
+    The first time you connect, you will see something like this:
+
+    ``The authenticity of host 'pregame-margin.local (192.168.1.175)' can't be established.``
+    
+    ``ED25519 key fingerprint is SHA256:BgYhzyIDbshm3annI1cfySd8C4/lh6Gfk2Oi3FdIVAa.``
+    
+    ``This key is not known by any other names.``
+
+    ``Are you sure you want to continue connecting (yes/no/[fingerprint])?``
+
+    Type ``yes`` to start trusting the server's SSH public key.
+
+    If you get a scary looking warning that says something like ``WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!`` - fear not!  This is most likely happening because you have recently reflashed or did an update from pre-v0.3.3, which would cause a change in the key for your device's hostname (e.g. `xxxxxxxx.local`) or IP address (e.g. `192.168.1.x`).  The solution is to delete the existing entry from your `known_hosts` file, which is typically located at `~/.ssh/known_hosts`.  This will be specified in the warning, along with a helpful line number (in case your file is lengthy).
 
 Connecting via PuTTY on Windows
 -------------------------------
