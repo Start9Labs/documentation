@@ -137,7 +137,7 @@ Some signing devices permit you to "air gap" which means transferring the xpub (
 
         #. Power up the Coldcard, enter your pin and any passphrase necessary.
 
-        #. Go down to **Advanced**, **MicroSD card**, **Export Wallet**, **Generic JSON**:
+        #. Go down to **Advanced/Tools**, **Export Wallet**, **Generic JSON**:
 
             .. figure:: /_static/images/services/specter/img-14.png
                 :width: 60%
