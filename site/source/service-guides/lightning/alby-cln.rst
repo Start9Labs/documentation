@@ -34,7 +34,7 @@ If you'd like to connect via `LNbits <https://marketplace.start9.com/marketplace
       :width: 40%
       :alt: alby-cln-empty
 
-#. For "Host" this is your Peer Interface - find this at the top of **Interfaces** within the CLN service on your Start9 server. Copy the address shown here but remove the *http://* at the start and paste it into **Host** within Alby:
+#. For "Host" this is your Peer Interface - find this under **Interfaces -> Machine Interfaces** within the CLN service on your Start9 server. Copy the address shown here but **remove the http://** at the start and paste it into **Host** within Alby:
 
    .. figure:: /_static/images/lightning/cln-peer-interface.png
       :width: 40%
