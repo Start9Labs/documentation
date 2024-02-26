@@ -74,7 +74,8 @@ Enable Tor System-wide
 
             .. code-block:: bash
         
-                sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
+                sudo launchctl enable system/org.apache.httpd
+                sudo launchctl kickstart system/org.apache.httpd
 
         #. Go to System Settings:
 
