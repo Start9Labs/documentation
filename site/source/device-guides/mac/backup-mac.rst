@@ -45,7 +45,7 @@ Setup a Network Folder
         :width: 50%
         :alt: ventura-folder-added
     
-#. Select the user.  This is the user on your Mac with whom your StartOS server will access the share.  In this example, we created a new user called start9 via **Users & Groups > Add User…** within System Settings, but you can select any user you wish. Then, click **Done**.
+#. Select the user.  This is the user on your Mac with whom your StartOS server will create and store backups.  In this example, we created a new user called start9 via **Users & Groups > Add User…** within System Settings, but you can select any user you wish. Then, click **Done**.
 
     .. figure:: /_static/images/backups/backup-macos-7.png
         :width: 50%
