@@ -51,9 +51,11 @@ Setup a Network Folder
         :width: 50%
         :alt: ventura-smb
 
-#. You can now move on to connecting your server.
+    .. tip:: If you don't see a user available in this SMB File Sharing dialog with whom you want to access the share with, you can create a new user by backing out of the **File Sharing** menu and select **Users & Groups** > **Add User...** within System Settings.
 
-        .. tip:: You can find the hostname at the top of sharing window. The hostname will be an address beginning with smb://. To use as hostname disregard the smb:// and simply enter the ip address that follows it. You will need this in the next step. (alternatively you can use the computer hostname. (See directions below) Either method will work.
+#. You can now move on to connecting your server.
+    
+    .. tip:: You can find the hostname at the top of sharing window. The hostname will be an address beginning with smb://. To use as hostname disregard the smb:// and simply enter the ip address that follows it. You will need this in the next step. (alternatively you can use the computer hostname. (See directions below) Either method will work.
 
 
 Connect Your Server
