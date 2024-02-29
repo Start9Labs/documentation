@@ -45,7 +45,7 @@ Setup a Network Folder
         :width: 50%
         :alt: ventura-folder-added
     
-#. Enable SMB sharing for the user you want to use and then click **Done**.
+#. Select the user.  This is the user on your Mac with whom your StartOS server will create and store backups.  In this example, we created a new user called start9 via **Users & Groups > Add User…** within System Settings, but you can select any user you wish. Then, click **Done**.
 
     .. figure:: /_static/images/backups/backup-macos-7.png
         :width: 50%
@@ -53,7 +53,7 @@ Setup a Network Folder
 
 #. You can now move on to connecting your server.
 
-        .. tip:: You can find the hostname at the top of sharing window. The hostname will be an address beginning with smb://. To use as hostname disregard the smb:// and simply enter the ip address that follows it. You will need this in the next step. (alternatively you can use the computer hostname. (See directions below) Either method will work.
+    .. tip:: You can find the hostname at the top of sharing window. The hostname will be an address beginning with smb://. To use as hostname disregard the smb:// and simply enter the ip address that follows it. You will need this in the next step. (alternatively you can use the computer hostname. (See directions below) Either method will work.
 
 
 Connect Your Server
