@@ -45,13 +45,11 @@ Setup a Network Folder
         :width: 50%
         :alt: ventura-folder-added
     
-#. Enable SMB sharing for the user you want to use and then click **Done**.
+#. Select the user.  This is the user on your Mac with whom your StartOS server will access the share.  In this example, we created a new user called start9 via **Users & Groups > Add User…** within System Settings, but you can select any user you wish. Then, click **Done**.
 
     .. figure:: /_static/images/backups/backup-macos-7.png
         :width: 50%
         :alt: ventura-smb
-
-    .. tip:: If you don't see a user available in this SMB File Sharing dialog with whom you want to access the share, you can create a new user by backing out of the **File Sharing** menu and selecting **Users & Groups** > **Add User...** within System Settings.
 
 #. You can now move on to connecting your server.
 
