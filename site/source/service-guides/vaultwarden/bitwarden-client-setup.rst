@@ -147,13 +147,11 @@ iOS
 
     .. group-tab:: Tor
 
-        .. warning:: Orbot is currently broken for iOS, which means it is not possible to use Bitwarden over Tor. We are hopeful that a future release of Orbot or iOS will resolve the issue.
-
         .. Begin by :ref:`setting up Tor <tor-ios>` on your iPhone.
 
         .. You will also need :ref:`LAN access <ca-ios>` setup on your iPhone.
 
-        .. #. Visit the App Store and download the `Bitwarden app <https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744>`_
+        .. #. Visit the App Store and download the `Bitwarden app <https://apps.apple.com/app/bitwarden-password-manager/id1137397744>`_
 
         .. #. Open the Bitwarden app. You'll be greeted with a log-in screen. Click the "Region" drop-down menu.
 
@@ -197,7 +195,7 @@ iOS
 
         Begin by :ref:`setting up LAN <ca-ios>` on your device.
 
-        #. Visit the App Store and download the `Bitwarden app <https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744>`_
+        #. Visit the App Store and download the `Bitwarden app <https://apps.apple.com/app/bitwarden-password-manager/id1137397744>`_
 
         #. Open the Bitwarden app. You'll be greeted with a log-in screen.
         
