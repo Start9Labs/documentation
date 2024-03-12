@@ -12,7 +12,7 @@ Running Tor on iOS
       :width: 25%
       :alt: iOS Orbot -> Settings -> Onion-Only Mode
 
-#. Activate the "Disable GeoIP lookup for nodes" and Always clear cache before start": 
+#. Activate the "Disable GeoIP lookup for nodes" and "Always clear cache before start": 
 
     .. figure:: /_static/images/tor/ios-orbot-settings-geoip-clearcache.png
       :width: 25%
