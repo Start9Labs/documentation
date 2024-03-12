@@ -4,7 +4,7 @@
 Running Tor on iOS
 ==================
 
-.. warning:: Orbot is currently broken for iOS. We are hopeful that a future release of Orbot or iOS will resolve the issue. In the meantime, please refer to the :ref:`Connecting Remotely<connecting-tor>` page to review the available options.
+Orbot is a system-wide proxy for your iOS device that enables communications over Tor.
 
 #. Download and install `Orbot from the Apple appstore <https://apps.apple.com/us/app/orbot/id1609461599>`_.
 #. Open Orbot and tap on "Settings".
@@ -19,3 +19,5 @@ Running Tor on iOS
     .. figure:: /_static/images/tor/ios-orbot-connecting-full.png
       :width: 35%
       :alt: iOS Orbot Connecting to Tor
+
+#. Apps will now work transparently when requesting onion urls!
