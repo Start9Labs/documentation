@@ -20,7 +20,7 @@ LAN Setup
 =========
 Make sure you have first set up :ref:`LAN access<ca-ios>`.
 
-1. Download the iOS Nextcloud client from `App Store <https://apps.apple.com/us/app/nextcloud/id1125420102>`_.
+1. Download the iOS Nextcloud client from `App Store <https://apps.apple.com/app/nextcloud/id1125420102>`_.
 2. Open the client and tap "Log In".
 
    .. figure:: /_static/images/nextcloud/nextcloud-iOS-step2.png

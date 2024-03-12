@@ -5,7 +5,7 @@ Zeus
 
 Zeus is a powerful mobile wallet that can be connected directly to both LND and Core Lightning (CLN). If you'd like to connect via LNbits which allows allocation of funds, please see :ref:`this guide<connecting-lnbits>`.
 
-Zeus is available for `Android <https://zeusln.app/zeus-v0.7.5-universal.apk>`_ & `iOS <https://apps.apple.com/us/app/zeus-ln/id1456038895>`_.
+Zeus is available for `Android <https://zeusln.app/zeus-v0.7.5-universal.apk>`_ & `iOS <https://apps.apple.com/app/zeus-ln/id1456038895>`_.
 
 This guide will go over how to connect Zeus to **LND**. If you'd like to connect Zeus to CLN instead - please use :ref:`this guide<zeus-cln>`.
 
