@@ -34,7 +34,7 @@ iOS
 ===
 Before proceeding, make sure your Apple device has been setup to connect over :ref:`LAN <ca-ios>`. If you are connecting over tor, you will need to :ref:`Setup Tor <tor-ios>`.
 
-1. Open the Apple app store and download the `Jellyfin iOS app <https://apps.apple.com/pl/app/jellyfin-mobile/id1480192618>`_.
+1. Open the Apple App Store and download the `Jellyfin iOS app <https://apps.apple.com/app/jellyfin-mobile/id1480192618>`_.
 
 2. Open the app, you will be prompted for a server address; paste the URL (``.local`` recommended) from your Jellyfin service page -> Interfaces.
 

@@ -6,7 +6,7 @@ Zeus
 
 Lightning Node Connect (LNC) provides a very simple way to connect to an LND node. In this guide we'll cover how to connect to LND via LNC with Zeus.
 
-Zeus is available for `Android <https://zeusln.app/zeus-v0.7.5-universal.apk>`_ & `iOS <https://apps.apple.com/us/app/zeus-ln/id1456038895>`_.
+Zeus is available for `Android and iOS <https://zeusln.app>`_.
 
 .. note:: If you'd like to connect to LND using LND REST instead, follow :ref:`this guide<zeus-lnd>`. If you'd like to connect to LND via LNbits which allows allocation of funds, follow :ref:`this guide<connecting-lnbits>`. 
 
