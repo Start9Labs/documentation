@@ -12,6 +12,8 @@ You can back up your data to a physical drive plugged into the server, or over-t
 Physical Drive
 ..............
 
+.. warning:: Backing up to USB thumb drive or SD card media is highly discouraged, as low-quality flash memory is easily corruptible.
+
 #. Ensure your backup drive is properly formatted. The recommended format at this time is ``exFAT``. **Do not** use ``fat32``.
 
 #. Plug your physical drive into your server.
