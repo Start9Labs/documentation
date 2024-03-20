@@ -14,7 +14,7 @@ Physical Drive
 
 .. warning:: Backing up to USB thumb drive or SD card media is highly discouraged, as low-quality flash memory is easily corruptible.
 
-#. Ensure your backup drive is properly formatted. The recommended format at this time is ``exFAT``. **Do not** use ``fat32``.
+#. Ensure your backup drive is properly formatted. The recommended format at this time is ``EXT4``. **Do not** use ``fat32`` or ``exFAT``.
 
 #. Plug your physical drive into your server.
 
