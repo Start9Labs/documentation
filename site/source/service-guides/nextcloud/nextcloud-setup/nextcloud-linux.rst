@@ -127,7 +127,7 @@ You will first need to have the :ref:`Tor daemon running<tor-linux>`.
     :width: 60%
     :alt: nextcloud add account
 
-3. On the following screen, click **Log in your Nextcloud**, then enter your Nextcloud Tor server address, which you can copy from the Nextcloud page on your **StartOS > Interfaces > Tor**.
+3. On the following screen, click **Log in your Nextcloud**, then enter your Nextcloud Tor server address, which you can copy from the Nextcloud page on your **StartOS > Interfaces > Tor**.  This should start with ``https://`` and end with ``.onion``.
 
   .. figure:: /_static/images/nextcloud/nextcloud-linux-desktop-1.png
     :width: 60%

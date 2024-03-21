@@ -30,12 +30,11 @@ Select your OS to continue:
         
     .. group-tab:: Mac
             
-        (Optional, but recommended) Verify the checksum against the one listed on GitHub by opening a terminal and entering:
+        (Optional, but recommended) Verify the checksum against the one listed on GitHub by opening a terminal, changing your directory to where you downloaded the .iso file, and entering:
 
             .. code-block::
 
-                openssl dgst -sha256 startos-0.3.4.2-efc56c0-20230525_x86_64.iso
-
+                openssl dgst -sha256 startos-0.3.5.1-39de098_x86_64.iso
     .. group-tab:: Windows
         
         (Optional, but recommended) Verify the checksum against the one listed on GitHub by opening Windows PowerShell, changing your directory to where you downloaded the .img.gz file, and running `Get-FileHash`:
@@ -71,7 +70,7 @@ Once you have the StartOS image, you will need to flash it onto your USB drive.
 
 #. Plug the USB drive into the device and power on. Follow the on-screen instructions to Install StartOS (use "Re-Install" to preserve data, or "Factory Reset" to wipe the device). After install is complete, you will be prompted to remove your USB drive.
 
-    .. note:: Always perfer the fastest available USB 3.0+ port - typically this is blue or labeled "SS" (SuperSpeed)
+    .. note:: Always prefer the fastest available USB 3.0+ port - typically this is blue or labeled "SS" (SuperSpeed)
 
     .. tip:: Occasionally, you may need to make some changes in your BIOS, such as turning off Secure Boot, or allowing USB boot for install.  See the `Community Hub <https://community.start9.com>`_ for guides or to get help.
 

@@ -18,6 +18,12 @@ Configuring Firefox for Tor
                 :width: 60%
                 :alt: Firefox whitelist onions screenshot
 
+        #. Search for ``security.enterprise_roots.enable``, set it to ``true``.
+
+            .. figure:: /_static/images/ssl/browser/enterprise_roots_enabled_true.png
+                :width: 80%
+                :alt: Firefox security settings
+
         #. Go to the right-hand hamburger menu and select ``Settings``:
 
             .. figure:: /_static/images/tor/os_ff_settings.png
@@ -70,15 +76,15 @@ Configuring Firefox for Tor
                 :width: 60%
                 :alt: Firefox search screenshot
 
-        #. Select ``Automatic proxy configuration URL`` and paste in the path to your PAC file from earlier, prefixed with ``file://``. For example:
+        #. Select ``Automatic proxy configuration URL`` and paste in the path to your PAC file from earlier, prefixed with ``file://`` and with all backslashes (``\``) replaced by forward slashes (``/``). For example:
 
             .. code-block::
 
               file://C:/Program Files/Tor Browser/proxy.pac
 
-        #. Check the box labeled ``Proxy DNS when using SOCKS v5``:
+        #. Also check the box labeled ``Proxy DNS when using SOCKS v5``:
 
-            .. figure:: /_static/images/tor/firefox_proxy.png
+            .. figure:: /_static/images/tor/firefox_proxy_windows.png
                 :width: 60%
                 :alt: Firefox proxy settings screenshot
 

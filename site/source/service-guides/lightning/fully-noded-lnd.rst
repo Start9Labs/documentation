@@ -10,9 +10,7 @@ Available For:
 - iOS
 - macOS
 
-.. note:: Works with both Core Lightning (CLN) and LND! If you'd like to connect Fully Noded to CLN instead - please use :ref:`this guide<fully-noded-cln>`.
-
-#. Download Fully Noded from the Apple app store.
+#. Download Fully Noded from the Apple App Store.
 #. Log into your Start9 server UI and select Services -> LND -> Properties.
 #. Click the QR code icon next to “LND Connect REST URL” to display the QR code and scan/copy this with your iPhone/mac.
 ## [Scanning QR] From the App, you have to go > Node manager > Add a node + > hit Scan QR (not LND)
