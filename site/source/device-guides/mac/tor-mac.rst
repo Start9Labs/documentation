@@ -111,7 +111,7 @@ Enable Tor System-wide
                 
                 cat /usr/local/var/log/tor.log || sudo cat /opt/homebrew/var/log/tor.log
 
-    .. group-tab:: Ventura (macOS 13 and prior)
+    .. group-tab:: Ventura (macOS 13) and prior
 
         #. Enable proxy autoconfig file (This will download the Start9 standard proxy config file. You can use your own if you prefer):
 
