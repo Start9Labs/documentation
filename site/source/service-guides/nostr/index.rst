@@ -48,4 +48,4 @@ If you want to test your private relay and verify whether it's storing all your 
 .. toctree::
   :maxdepth: 1
 
- nostrudel
+  nostrudel

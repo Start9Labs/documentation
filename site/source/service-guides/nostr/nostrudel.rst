@@ -1,8 +1,8 @@
 .. _nostrudel:
 
-========  
+=========
 noStrudel  
-========  
+========= 
 
 noStrudel is a web app for exploring the nostr protocol. 
     
