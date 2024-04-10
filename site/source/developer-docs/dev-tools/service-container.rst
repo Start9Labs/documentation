@@ -10,7 +10,7 @@ For simplicity, StartOS is designed to be completely operated through its GUI, h
 
 This guide assumes you already have :ref:`SSH Access<ssh>` setup on your machine.
 
-Open a terminal, ssh into your device, and enter the following command, replacing ``<package-id>`` with the name of the service you are trying to access.  You can list the services with ``embassy-cli package list`` (you will need to be logged in under ``embassy-cli`` for this).  You will need to either be ``root`` or use ``sudo``.
+Open a terminal, ssh into your device, and enter the following command, replacing ``<package-id>`` with the name of the service you are trying to access.  You can list the services with ``start-cli package list`` (you will need to be logged in under ``start-cli`` for this).  You will need to either be ``root`` or use ``sudo``.
 
     .. code-block:: bash
 
