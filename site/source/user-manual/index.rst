@@ -21,5 +21,4 @@ User Manual
   sessions
   ssh
   container-access
-  wifi
   alt-registries

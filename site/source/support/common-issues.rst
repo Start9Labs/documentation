@@ -90,7 +90,7 @@ If a Service is crashing or acting up in some way, check the :ref:`Documentation
 
 Server Models With Speakers
 ---------------------------
-Server Lite, Server Pure, and Server One (2022 and older) have an internal speaker and may provide the following audio feedback:
+The  Server Pure (2023 and older) and and Server One (2023 and older) have an internal speaker and may provide the following audio feedback:
 
     .. raw:: HTML
 

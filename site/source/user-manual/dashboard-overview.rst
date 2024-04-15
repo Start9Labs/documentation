@@ -81,7 +81,7 @@ The Backups section allows you to create and restore :ref:`StartOS backups <back
 Manage
 ======
 
-The Manage section gives you access to :ref:`updating-eos`, Software Updates, Device Preferences, :ref:`connecting-lan`, :ref:`ssh`, :ref:`wifi`, and Service Sideloading.
+The Manage section gives you access to :ref:`updating-eos`, Software Updates, Device Preferences, :ref:`connecting-lan`, :ref:`ssh`, and Service Sideloading.
 
 Insights
 ========
@@ -102,15 +102,13 @@ Power
 
 * **Restart**
 
-    * Be patient while services shut down. A *tune* will play, indicating the shutdown is complete.
-    * A gentle *bep* will sound when the server is powered back on.
-    * A *chime* will sound when the server is ready to use.  Please be patient as a Restart will take some time.
+    * Be patient while services shut down and the server restarts, it can take 10 minutes or more, depending on the state of your system.
 
 * **Shutdown**
 
     .. caution:: After a shutdown, the *only* way to turn your server back on is to unplug it and plug it back in. As such, we do not recommend shutting down your server when you are not physically near it. Instead, you should use the restart option.
 
-    * Be patient while services shut down, it may take some minutes. A *tune* will play, indicating the shutdown is complete.
+    * Be patient while services shut down and the server restarts, it can take 10 minutes or more, depending on the state of your system.
     * It is now safe to unplug your server from power and the ethernet cable, if connected.
 
 * **System Rebuild**
