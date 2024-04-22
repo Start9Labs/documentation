@@ -94,7 +94,7 @@ Configuring Firefox for Tor
 
     .. group-tab:: Linux
 
-        .. caution:: If you cannot connect after following this guide, your Firefox may be installed in a jailed environment, such as an AppImage, Flatpak, or SNAP.  Please try an alternate install method that does not isolate the regular filesystem from Firefox.
+        .. caution:: If you cannot connect after following this guide, your Firefox may be installed in a jailed environment, such as an AppImage, Flatpak, or SNAP.  Please try an alternate install method that does not isolate Firefox from the regular filesystem.
 
         #. Ensure you are already :ref:`running Tor on your Linux machine <tor-linux>`.
 
