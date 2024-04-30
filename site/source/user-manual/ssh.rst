@@ -16,7 +16,7 @@ Creating an SSH Key
 
 #. Open a terminal and enter the following command:
 
-    .. code-block:: bash
+    .. code-block:: 
 
         ssh-keygen -t ed25519
 
@@ -28,19 +28,19 @@ Creating an SSH Key
 
 #. It will inform you that your public key has been saved.  Take note of this path:
 
-    .. code-block:: bash
+    .. code-block:: 
 
         Your public key has been saved in /home/user/.ssh/id_ed25519.pub
 
 #. Next, start your system's ``ssh-agent``:
 
-    .. code-block:: bash
+    .. code-block:: 
 
         eval "$(ssh-agent -s)"
 
 #. Now add your key to it:
 
-    .. code-block:: bash
+    .. code-block:: 
 
         ssh-add ~/.ssh/id_ed25519
 
@@ -57,31 +57,32 @@ Registering an SSH Key
 
     On Mac simply copy your key to clipboard by typing the following into a terminal:
   
-    .. code-block:: bash
+    .. code-block:: 
 
         pbcopy < ~/.ssh/id_ed25519.pub
 
     On Linux:
   
-      .. code-block:: bash
+      .. code-block:: 
 
         cat ~/.ssh/id_ed25519.pub
 
     On Windows:
 
-      .. code-block:: bash
+      .. code-block:: 
 
         type .ssh\id_ed25519.pub
 
     Copy the whole resulting line that looks similar to:
 
-      .. code-block:: bash
+      .. code-block:: 
 
           ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINH3tqX71XsPlzYhhoo9CqAP2Yx7gsGTh43bQXr1zqoq user@ema.il
 
 #. Paste that line into the `Add New Key` text field
 
-    .. figure:: /_static/images/walkthrough/ssh_key_add.jpg
+    .. figure:: /_static/images/walkthrough/ssh-add-key.png
+        :width: 50%
 
 #. Click **Submit**
 
@@ -94,7 +95,7 @@ Connecting via CLI
 
 #. You can now access your Start9 server from the command line (Linux and Mac) using:
 
-    .. code-block:: bash
+    .. code-block:: 
 
         ssh start9@SERVER-HOSTNAME
 
@@ -127,81 +128,92 @@ Using SSH Over Tor
 
 .. caution:: SSH over Tor is only supported on Linux and macOS, although it can also work on Windows with in PuTTY `like this <https://tor.stackexchange.com/a/143>`_.  Note that those instructions use port 9150 but we've configured Tor in Windows on the traditional port: ``9050``.
 
-Setup
-.....
+Configure StartOS server:
+.........................
 
-#. First, you'll need one dependency, ``torsocks``, which will allow you to use SSH over Tor on the machine that you want access with. Select your Linux flavor to install:
+    .. warning:: After each server reboot, a new .onion address will be generated, rendering the old one inactive.
 
-    .. tabs::
+    #. SSH into your server.
 
-        .. group-tab:: Debian / Ubuntu
+        .. code-block:: 
 
-            .. code-block:: bash
+            ssh start9@<custom-address>.local
 
-                sudo apt install torsocks
+    #. Elevate yourself to root in chroot edit mode which will make your changes persist across reboots:
 
-        .. group-tab:: Arch / Garuda / Manjaro
+        .. code-block:: 
 
-            .. code-block:: bash
+            sudo /usr/lib/startos/scripts/chroot-and-upgrade
 
-                sudo pacman -S torsocks
+    #. Using Vim or Nano, add the following 2 lines to ``/etc/tor/torrc``
 
-#. SSH in:
+        .. code-block:: 
 
-    .. warning:: The changes you make here are on the overlay and won't persist after a restart of your server.
+            HiddenServiceDir /var/lib/tor/ssh
+            HiddenServicePort 22 127.0.0.1:22
 
-    .. code-block:: bash
+        .. tip:: You can also add these lines by running the following command:
 
-        ssh start9@<custom-address>.local
-
-#. Elevate yourself to root in chroot edit mode (which will make your changes persist across reboots):
-
-    .. code-block:: bash
-
-        sudo /usr/lib/startos/scripts/chroot-and-upgrade
-
-#. Using Vim or Nano, add the following 2 lines to ``/etc/tor/torrc``
-
-    .. code-block:: bash
-
-        HiddenServiceDir /var/lib/tor/ssh
-        HiddenServicePort 22 127.0.0.1:22
-
-    .. tip:: You can also add these lines by running the following command:
-
-        .. code-block:: bash
+        .. code-block:: 
 
             echo -e "\nHiddenServiceDir /var/lib/tor/ssh\nHiddenServicePort 22 127.0.0.1:22" >> /etc/tor/torrc
 
-#. Restart your Start9 server by exiting chroot edit mode:
+    #. Restart your Start9 server by exiting chroot edit mode:
 
-    .. code-block:: bash
+        .. code-block:: 
 
-        exit
+            exit
 
-#. SSH in to your Start9 server again and gather the ".onion" address that was generated:
+    #. SSH in to your Start9 server again and gather the ".onion" address that was generated:
 
-    .. code-block:: bash
+        .. code-block:: 
 
-        sudo cat /var/lib/tor/ssh/hostname
+            sudo cat /var/lib/tor/ssh/hostname
 
-.. note:: Your newly generated .onion address is unique for SSH access only and should not be confused with the main .onion address for the server.
+    .. note:: Your newly generated .onion address is unique for SSH access only and should not be confused with the main .onion address for the server.
 
 Configure local SSH client
 ..........................
 
-#. You'll need to add the following configuration to your SSH config file, which will allow you to use SSH over Tor on any Unix-based system:
+.. tabs::
 
-    .. code-block:: bash
+        .. group-tab:: Linux
 
-        echo -e "\nHost *.onion\n\tProxyCommand nc -xlocalhost:9050 %h %p" >> ~/.ssh/config
+            #. Install ``torsocks`` dependency.
 
-    This command adds a wildcard setting for .onion domains to your SSH config file. Any .onion domains you connect to using SSH will use the specified proxy command.
+                Debian / Ubuntu
 
-    Note: You only need to run this command only once to set up the SSH Over Tor configuration.
+                    .. code-block:: 
 
-Access
-======
+                        sudo apt install torsocks
+
+                Arch / Garuda / Manjaro
+
+                    .. code-block:: 
+
+                        sudo pacman -S torsocks
+
+            #. Run this command to set up your SSH config file to work with .onion domains.
+
+                .. code-block:: 
+
+                    echo -e "\nHost *.onion\n\tProxyCommand nc -xlocalhost:9050 %h %p" >> ~/.ssh/config
+
+               .. Note:: You only need to run this command only once to set up the SSH Over Tor configuration.
+
+        .. group-tab:: macOS
+
+            #. Run this command to set up your SSH config file to work with .onion domains.
+
+                .. code-block::
+
+                    echo -e "\nHost *.onion\n  ProxyCommand /usr/bin/nc -x localhost:9050 -X5 %h %p" >> ~/.ssh/config
+
+            .. Note:: You only need to run this command only once to set up the SSH Over Tor configuration.
+
+
+SSH Over Tor
+............
 
 To log in, simply use the following command, using the ".onion" hostname you printed above:
 
