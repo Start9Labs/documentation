@@ -7,15 +7,35 @@ This page is for Server Pure / Purism Librem Mini users ONLY.  This firmware is 
 
 Generally, you do not need to manually flash your device using this guide, as the firmware is now automatically updated on supported devices.  Please only use this method if directed by a Start9 Support Technician.
 
+Downloading the right firmware
+---------------
+
 The source code can be viewed on Purism's `firmware git repo <https://source.puri.sm/firmware/releases/-/tree/master/librem_mini_v2/custom>`_.  You will need a USB flash drive, formatted FAT32, to flash the firmware to your server.
 
-    .. caution:: USB drive **must** be formatted with the FAT32 filesystem
 
-#. `Download the latest firmware from Purism's git repository <https://source.puri.sm/firmware/releases/-/raw/master/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-29.zip>`_.
-    
-#. Copy or move ``pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-29.zip`` file onto your USB drive, then eject the drive and insert it into your (powered down) server.  USB 3.0 (blue ports) will be faster.
+
+.. tabs::
+
+    .. group-tab:: Server Pure 2024
+        
+        Download the latest firmware from Purism's git repository: `Standard release <https://source.puri.sm/firmware/releases/-/raw/master/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot-Release-29.zip>`_.
+        
+    .. group-tab:: Server Pure (2023 and before)
+        
+        This model of the Server Pure (formally Embassy Pro) supports WiFi. You may choose between firmware that allows for WiFi and firmware that disables and locks it down.
+
+        Download the latest firmware from Purism's git repository:
+        `Standard release <https://source.puri.sm/firmware/releases/-/raw/master/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot-Release-29.zip>`_
+        or `Jailed WiFi <https://source.puri.sm/firmware/releases/-/raw/master/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-29.zip>`_.
+
+
+Flashing the firmware
+---------------
+
+#. Copy or move the zip of the firmware file onto your USB drive formatted to FAT32, then eject the drive and insert it into your (powered down) server.  USB 3.0 (blue ports) will be faster.
 
     .. note:: You'll need a monitor and keyboard plugged into your server for this operation
+    .. caution:: USB drive **must** be formatted with the FAT32 filesystem
 
 #. Turn on the server while pressing the ``ESC`` key on the keyboard repeatedly until you see the PureBoot Basic Boot Menu screen.  Select "Options -->"
 
