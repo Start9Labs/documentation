@@ -8,7 +8,7 @@ This page is for Server Pure / Purism Librem Mini users ONLY.  This firmware is 
 Generally, you do not need to manually flash your device using this guide, as the firmware is now automatically updated on supported devices.  Please only use this method if directed by a Start9 Support Technician.
 
 Downloading the right firmware
----------------
+------------------------------
 
 The source code can be viewed on Purism's `firmware git repo <https://source.puri.sm/firmware/releases/-/tree/master/librem_mini_v2/custom>`_.  You will need a USB flash drive, formatted FAT32, to flash the firmware to your server.
 
@@ -30,7 +30,7 @@ The source code can be viewed on Purism's `firmware git repo <https://source.pur
 
 
 Flashing the firmware
----------------
+---------------------
 
 #. Copy or move the zip of the firmware file onto your USB drive formatted to FAT32, then eject the drive and insert it into your (powered down) server.  USB 3.0 (blue ports) will be faster.
 
