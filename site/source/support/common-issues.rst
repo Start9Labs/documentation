@@ -104,7 +104,7 @@ The  Server Pure (2023 and older) and and Server One (2023 and older) have an in
     .. raw:: HTML
 
       <audio controls>
-        <source src="/_static/sounds/CHIME.mp3" type="audio/mpeg">
+        <source src="/_static/sounds/UPDATING.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
 
@@ -113,7 +113,8 @@ The  Server Pure (2023 and older) and and Server One (2023 and older) have an in
     .. raw:: HTML
 
       <audio controls>
-        <source src="/_static/sounds/UPDATING.mp3" type="audio/mpeg">
+        <source src="/_static/sounds/CHIME.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
       </audio>
 
     * "chime" - Server is ready
