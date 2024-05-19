@@ -60,59 +60,122 @@ This will start Tor and ensure that it is always running, even after a restart. 
 Enable Tor System-wide
 ----------------------
 
+.. tabs::
 
-#. Enable proxy autoconfig file (This will download the Start9 standard proxy config file. You can use your own if you prefer):
+    .. group-tab:: Sonoma (macOS 14)
 
-    .. code-block:: bash
+        #. Enable proxy autoconfig file (This will download the Start9 standard proxy config file. You can use your own if you prefer):
 
-        sudo curl https://start9.com/assets/proxy.pac --output /Library/WebServer/Documents/proxy.pac
+            .. code-block:: bash
 
-#. Now enable apache service:
+                sudo curl https://start9.com/assets/proxy.pac --output /Library/WebServer/Documents/proxy.pac
 
-    .. code-block:: bash
+        #. Now enable apache service:
 
-        sudo launchctl enable system/org.apache.httpd
-        sudo launchctl kickstart system/org.apache.httpd
-
-    .. note:: If these commands fail, your version of macOS may still use the older launchctl syntax:
-
-        .. code-block:: bash
-
-            sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
-
-#. Go to System Settings:
-
-    .. figure:: /_static/images/tor/systemSettings.png
-        :width: 40%
-        :alt: System Preferences
-
-#. Click on *Network* and then select the interface on which you wish to enable Tor system-wide (both Ethernet and WiFi advised - do one then the other):
-
-    .. figure:: /_static/images/tor/ventura-settings.png
-        :width: 80%
-        :alt: Select Network
-
-#. Click *Details*:
-
-    .. figure:: /_static/images/tor/ventura-network-advanced.png
-        :width: 80%
-        :alt: Click Advanced
-
-#. Click "Proxies," then select "Automatic Proxy Configuration," add this URL: ``http://localhost/proxy.pac``, then click "OK":
-
-    .. figure:: /_static/images/tor/ventura-proxies-corrected.png
-        :width: 80%
-        :alt: Select Proxys
-
-Done! You have now enabled system-wide Tor potential.
-
-We advise going back to step 4 and repeating this for Wifi/Ethernet depending on which interface you haven't done yet.
-
-If you ever need to view the status of the tor service, enter the following into a Terminal:
-
-    .. code-block:: bash
+            .. code-block:: bash
         
-        cat /usr/local/var/log/tor.log || sudo cat /opt/homebrew/var/log/tor.log
+                sudo launchctl enable system/org.apache.httpd
+                sudo launchctl kickstart system/org.apache.httpd
+
+            .. note:: If these commands fail, your version of macOS may still use the older launchctl syntax:
+
+                .. code-block:: bash
+
+                    sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
+
+        #. Go to System Settings:
+
+            .. figure:: /_static/images/tor/systemSettings.png
+                :width: 40%
+                :alt: System Preferences
+
+        #. Click on *Network* and then select the interface on which you wish to enable Tor system-wide (both Ethernet and WiFi advised - do one then the other):
+
+            .. figure:: /_static/images/tor/ventura-settings.png
+                :width: 80%
+                :alt: Select Network
+
+        #. Click *Details*:
+
+            .. figure:: /_static/images/tor/ventura-network-advanced.png
+                :width: 80%
+                :alt: Click Advanced
+
+        #. Click "Proxies," then select "Automatic Proxy Configuration," add this URL: ``http://localhost/proxy.pac``, then click "OK":
+
+            .. figure:: /_static/images/tor/ventura-proxies-corrected.png
+                :width: 80%
+                :alt: Select Proxys
+
+        Done! You have now enabled system-wide Tor potential.
+
+        We advise going back to step 4 and repeating this for Wifi/Ethernet depending on which interface you haven't done yet.
+
+        If you ever need to view the status of the tor service, enter the following into a Terminal:
+
+            .. code-block:: bash
+                
+                cat /usr/local/var/log/tor.log || sudo cat /opt/homebrew/var/log/tor.log
+
+    .. group-tab:: Ventura (macOS 13) and prior
+
+        #. Enable proxy autoconfig file (This will download the Start9 standard proxy config file. You can use your own if you prefer):
+
+            .. code-block:: bash
+
+                sudo curl https://start9.com/assets/proxy.pac --output /Library/WebServer/Documents/proxy.pac
+
+        #. Now enable apache service:
+
+            .. code-block:: bash
+        
+                sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
+
+        #. Go to System Preferences:
+
+            .. figure:: /_static/images/tor/systemprefs.png
+                :width: 40%
+                :alt: System Preferences
+
+        #. Click on Network:
+
+            .. figure:: /_static/images/tor/network.png
+                :width: 80%
+                :alt: Select Network
+
+        #. In this example, we'll select WiFi on the left panel. If you're using Ethernet, click that instead. Next click "Advanced" (We suggest returning to this step in order to do both Ethernet AND WiFi):
+
+            .. figure:: /_static/images/tor/wifi_click_advanced.png
+                :width: 80%
+                :alt: Click Advanced
+
+        #. Select "Proxies":
+
+            .. figure:: /_static/images/tor/proxys.png
+                :width: 80%
+                :alt: Select Proxys
+
+        #. Select "Automatic Proxy Configuration", add this URL: **http://localhost/proxy.pac** then click "OK"
+
+            .. figure:: /_static/images/tor/entertorproxyURL-pre-ventura.png
+                :width: 80%
+                :alt: Select Automatic proxy config and enter URL
+
+        #. Finally, click "Apply"
+
+            .. figure:: /_static/images/tor/applyproxy.png
+                :width: 80%
+                :alt: Apply proxy
+
+        Done! You have now enabled system-wide Tor potential.
+
+        We suggest heading back to step 5 and enabling Tor system-wide on Ethernet/WiFi now - whichever you did not do already.
+
+        If you ever need to view the status of the tor service, enter the following into a Terminal:
+
+            .. code-block:: bash
+                
+                cat /usr/local/var/log/tor.log || sudo cat /opt/homebrew/var/log/tor.log
 
 If using Firefox
 ----------------
