@@ -77,6 +77,12 @@ Enable Tor System-wide
                 sudo launchctl enable system/org.apache.httpd
                 sudo launchctl kickstart system/org.apache.httpd
 
+            .. note:: If these commands fail, your version of macOS may still use the older launchctl syntax:
+
+                .. code-block:: bash
+
+                    sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
+
         #. Go to System Settings:
 
             .. figure:: /_static/images/tor/systemSettings.png
