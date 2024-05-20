@@ -37,7 +37,7 @@ If you have already synced the Bitcoin blockchain to the tip on one server, and 
 
 #. Copy the output from the cat command into example-bbb's **System > SSH > Add New Key** text field:
 
-    .. figure:: /_static/images/walkthrough/ssh_key_add.jpg
+    .. figure:: /_static/images/walkthrough/ssh-add-key.png
 
 #. Back on the shell of example-aaa.local, do the following (don't forget to replace example-bbb in the rsync command below before you perform it):
 
