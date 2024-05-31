@@ -74,16 +74,23 @@ From NASPI (Embassy One)
     .. figure:: /_static/images/hardware-pics/server-one.png
         :width: 30%
 
-#. Get a high quality `USB-A to USB-A cable <https://www.amazon.com/UGREEN-Transfer-Enclosures-Printers-Cameras/dp/B00P0E3954/?th=1>`_, or a `USB-A to USB-C cable <https://www.amazon.com/AmazonBasics-Type-C-USB-Male-Cable/dp/B01GGKYKQM/?th=1>`_.
+#. Get a high quality `USB-A to USB-A cable`.
+
+#. Power off the old server, then pull out the micro SD card.
+
+    .. figure:: /_static/images/hardware-pics/naspi-sdcard.png
+        :width: 50%
 
 #. Disconnect the USB adapter.
 
     .. figure:: /_static/images/hardware-pics/naspi-jameson-loop2.png
         :width: 60%
 
-#. Connect one side of the USB-A cable to the lowest blue USB port on the NASPI, and the other side to your new server.
+#. Connect one side of the USB-A cable to the lowest blue USB port on the old server, then the other side to a blue USB port on your new server.
 
     .. figure:: /_static/images/hardware-pics/usb-into-naspi-edited.jpg
         :width: 60%
 
-#. Follow the instructions above.
+#. Power on the old server
+
+#. Follow the instructions :ref:`above<upgrade-pi>` from Step 2.
