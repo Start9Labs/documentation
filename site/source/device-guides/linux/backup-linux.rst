@@ -8,155 +8,124 @@ Linux Network Folder
   :depth: 2 
   :local:
 
-Setup Network Folder
+Installing Samba
 --------------------
-.. note:: This guide is for Ubuntu only.  For Linux Mint, select "Mint", or for different distros such as Arch, Debian, Pop-OS, PureOS, etc, select "Other Linux" below.
 
-.. tabs::
+#. Install Samba if you have not already…
 
-    .. group-tab:: Ubuntu
+    .. note:: You can check if Samba is already running with: ``sudo systemctl status smbd``
 
-        Check out the video below, and follow along with the steps in this guide to setup a Network Folder on your Linux machine, such that you may create encrypted, private backups of all your StartOS data.
+    .. tabs::
 
-        .. youtube:: LLIMC5P3NdY
-          :width: 100%
+        .. group-tab:: Debian-based
 
-        .. raw:: html
-
-            <br/><br/>
-
-        #. Install Samba if you have not already:
-
-            .. code-block::
-
-                sudo apt install samba && sudo systemctl enable smbd
-
-        #. Add your user to samba, replacing ``$USER`` with your Linux username.
-
-            .. code-block:: bash
-
-                sudo smbpasswd -a $USER
-
-            First you will be prompted for your linux password, then you will be asked to create a new SMB password for the user with permission to write to your new backup share.  Keep it somewhere safe, such as Vaultwarden.
-
-        #. Right-click the folder that you want to backup to (or create a new one) and click "Properties"
-
-            .. figure:: /_static/images/cifs/cifs-lin0.png
-                :width: 60%
-
-        #. Select the "Local Network Share" tab
-
-            .. figure:: /_static/images/cifs/cifs-lin1.png
-                :width: 60%
-
-
-        #. Click "Share this folder"
-
-            .. figure:: /_static/images/cifs/cifs-lin2.png
-                :width: 60%
-
-            - You may rename the "Share", if you prefer - **remember this name**, you will need it later in the StartOS dashboard
-
-            - (Optional) Create a description in the "Comment" section
-        
-        #. In case your installation of Ubuntu is running a firewall by default or due to your own custom configuration, enter this command to allow connections to Samba.  If it generates an error, you can safely ignore it:
-
-            .. code-block:: bash
-
-                sudo ufw allow Samba
-
-
-    .. group-tab:: Mint
-
-        #. Install Samba if you have not already:
-
-            .. code-block::
-
-                sudo apt install samba && sudo systemctl enable smbd
-
-        #. Add your user to samba, replacing ``$USER`` with your Linux username.
-
-            .. code-block:: bash
-
-                sudo usermod -a -G sambashare $USER
-                sudo smbpasswd -a $USER
-
-            First you will be prompted for your linux password, then you will be asked to create a new SMB password for the user with permission to write to your new backup share.  Keep it somewhere safe, such as Vaultwarden.
-
-        #. Right-click the folder that you want to backup to (or create a new one, eg. ``start9-backup``) and click "Sharing Options"
-
-            .. figure:: /_static/images/cifs/cifs-mint0.png
-                :width: 60%
-        
-        #. Enter a Share name consisting of 12 or fewer characters and click "Create Share"
-
-            .. figure:: /_static/images/cifs/cifs-mint1.png
-                :width: 60%
-
-            - You may rename the "Share", if you prefer - **remember this name**, you will need it later in the StartOS dashboard.  In this example, we call it ``backup-share``
-
-            - (Optional) Create a description in the "Comment" section
-
-        #. In case your installation of Mint is running a firewall by default or due to your own custom configuration, enter this command to allow connections to Samba.  If it generates an error, you can safely ignore it:
-
-            .. code-block:: bash
-
-                sudo ufw allow Samba
-
-
-    .. group-tab:: Other Linux
-
-        1. Install Samba if it is not already installed.
-
-            * ``sudo pacman -S samba``                                      For Arch
-            * ``sudo apt install samba``                                    For Debian-based distros (Pop-OS, PureOS, etc)
-            * ``sudo yum install samba``                                    For CentOS/Redhat
-            * ``sudo dnf install samba``                                    For Fedora
-
-        2. Create a directory to share or choose an existing one and make note of its location (path).  For this example, we will call the share ``backup-share`` and its corresponding shared directory will be located at ``/home/$USER/start9-backup``.  Replace ``$USER`` with your Linux username below.
-
-        .. code-block:: bash
-
-            mkdir -p /home/$USER/start9-backup
-
-        .. note:: If you are on Fedora 38+, you need to do an extra step to allow the Samba share in SELinux:
-
-            .. code-block:: bash
-
-                sudo semanage fcontext --add --type "samba_share_t" "/home/$USER/start9-backup(/.*)?"
-                sudo restorecon -R /home/$USER/start9-backup
-
-        3. Configure Samba by adding the following to the end of the ``/etc/samba/smb.conf`` file:
-
-            .. code-block::
-
-                [backup-share]
-                    path = "/home/$USER/start9-backup"
-                    create mask = 0600
-                    directory mask = 0700
-                    read only = no
-                    guest ok = no
-
-            Where:
-
-            - ``[backup-share]`` is the *Share Name* inside brakets, and can be called anything you'd like.  We used ``backup-share`` in this example.
-            - ``path`` should be the path to the directory you created earlier
-
-            Copy the remainder of the entry exactly as it is
-
-        4. Open a terminal and enter the following command, replacing ``$USER`` with your Linux username:
+            #. For Ubuntu, Mint, Pop-OS, PureOS, etc
 
                 .. code-block:: bash
 
-                    sudo smbpasswd -a $USER
+                    sudo apt install samba && sudo systemctl enable smbd && sudo systemctl start smbd
 
-                This creates a password for the Local Network Share.  Keep it somewhere safe, such as Vaultwarden.
+
+
+        .. group-tab:: Arch
+
+            #. For Arch
+
+                .. code-block:: bash
+                    
+                    sudo pacman -S samba && sudo systemctl enable smbd && sudo systemctl start smb
+
+
+        .. group-tab:: CentOS/Redhat
+
+            #. For CentOS/Redhat
+
+                .. code-block:: bash
+                    
+                    sudo yum install samba && sudo systemctl enable smb && sudo systemctl start smb
+
+        .. group-tab:: Fedora
+           
+            #. For Fedora
+
+                .. code-block:: bash
+                    
+                    sudo dnf install samba && sudo systemctl enable smb && sudo systemctl start smb
+
+
+#. Add your user to Samba, replacing ``$USER`` with your Linux username.
+
+    .. code-block:: bash
+
+        sudo smbpasswd -a $USER
+
+    First you will be prompted for your Linux password, then you will be asked to create a new **SMB password** for the user with permission to write to your new backup share. It can be the same password, or it can be different. Keep it somewhere safe, such as Vaultwarden.
+
+
+#. Add your user to sambashare group, necessary on some systems.
+
+    .. code-block:: bash
+
+        sudo usermod -a -G sambashare $USER
+    
+    Again, replacing ``$USER`` and entering your Linux password when prompted, not your new SMB password.
+
+
+#. In case your system is running a firewall by default or due to your own custom configuration, enter this command to allow connections to Samba.  If it generates an error, you can safely ignore it:
+
+    .. code-block:: bash
+
+        sudo ufw allow Samba
+
+
+#. Create a directory to share or choose an existing one and make note of its location (path).  For this example, we will call the share ``backup-share`` and its corresponding shared directory will be located at ``/home/$USER/start9-backup``.  Replace ``$USER`` with your Linux username below.
+
+    .. code-block:: bash
+
+        mkdir -p /home/$USER/start9-backup
+
+    .. note:: If you are on Fedora 38+, you need to do an extra step to allow the Samba share in SELinux:
+
+        .. code-block:: bash
+
+            sudo semanage fcontext --add --type "samba_share_t" "/home/$USER/start9-backup(/.*)?"
+            sudo restorecon -R /home/$USER/start9-backup
+
+
+#. Configure Samba by adding the following to the end of the ``/etc/samba/smb.conf`` file:
+
+    a. First open the file...
+
+    .. code-block::
         
-        5. In case your installation of Linux (Pop-OS users take special note!) is running a firewall by default or due to your own custom configuration, enter this command to allow connections to Samba.  If it generates an error, you can safely ignore it:
+        sudo nano /etc/samba/smb.conf
 
-            .. code-block:: bash
+    b. Then add...
 
-                sudo ufw allow Samba
+    .. code-block::
+
+        [backup-share]
+            path = "/home/$USER/start9-backup"
+            create mask = 0600
+            directory mask = 0700
+            read only = no
+            guest ok = no
+
+   
+    - ``[backup-share]`` in brackets is the *Share Name* and can be called anything you'd like.  We used ``backup-share`` in this example.
+    - ``path`` should be the path to the directory you created earlier.
+
+    c. Save/write the file and then exit.
+
+    d. Test the config file with...
+
+    .. code-block::
+        
+        testparm
+
+    Look for "Loaded services file OK". You don't need to do anything else here.
+
+----
 
 
 Connect StartOS
@@ -174,7 +143,7 @@ Connect StartOS
 
 #. Fill in the following fields:
 
-    * Hostname - This is the hostname of the machine that your shared folder is located on
+    * Hostname - This is the hostname of the machine that your shared folder is located on, you can get this with ``hostname`` or ``hostnamectl``
     * Path - This is the "Share Name" (name of the share in your samba config) and **not** the full directory path.  In this guide we use ``backup-share``.
     * Username - This is your Linux username on the remote machine that you used to create the shared directory
     * Password - This is the password you set above using ``smbpasswd``
