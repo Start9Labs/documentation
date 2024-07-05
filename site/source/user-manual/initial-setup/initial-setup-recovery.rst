@@ -1,8 +1,8 @@
 .. _initial-setup-recovery:
 
-=============
-Recovery or Restore
-=============
+================
+Recovery Options
+================
 
 .. contents::
   :depth: 2

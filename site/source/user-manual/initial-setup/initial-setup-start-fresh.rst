@@ -8,14 +8,14 @@ Start Fresh
   :depth: 2
   :local:
 
-Setting up a new server
+Set up a new server
 -----------------------
 
 The video below demonstrations how to set up a newly purchased Start9 server. If you are familar with the process or you have recently :ref:`flashed <_flashing>` an existing server, you may want to skip the video and scroll down straight to Step 1.
 
 
         .. youtube:: DzikmY4S42Y
-            :width: 100%
+            :width: 95%
 
  
 
@@ -39,9 +39,13 @@ To `Factory Reset` an existing server, you must first go through the flashing pr
 
 #. Flash your device with a fresh install of StartOS by following the :ref:`flashing guides <flashing>`, making sure to select `Factory Reset` when booting from external media.
 
-#. After install is complete, you will be prompted to remove your external and restart.
+	.. note:: On a Raspberry Pi you will simply flash the microSD card and reinsert it, connect to power and skip to step 3.
 
-	.. note:: On a Raspberry Pi, you will `not` remove the microSD card you have flashed, it will remain in the device.
+      .. figure:: /_static/images/flashing/factory-reset.png
+            :width: 55%
+
+#. After install is complete, you will be prompted to remove your externally connected USB drive you used with Balena Etcher and restart.
+
 
 #. From a client device (desktop/laptop/phone) connected to the same local network as your server, open a browser and visit ``http://start.local``.
 
