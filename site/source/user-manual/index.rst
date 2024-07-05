@@ -8,7 +8,7 @@ User Manual
   :includehidden:
   :maxdepth: 2
 
-  initial-setup
+  initial-setup/index
   trust-ca
   connecting-lan
   connecting-tor
