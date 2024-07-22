@@ -64,7 +64,7 @@ I am unable to reach my server via its xxxxxxxxxxxxxxxxxx.onion (Tor) address
 -----------------------------------------------------------------------------
 #. Tor can be slow and unreliable. Often, the solution to poor connectivity is just to wait an hour and try again.
 #. Try connecting using the official Tor Browser. If this works, it means the issue is with (1) your current browser or native app, (2) the Tor daemon running on your phone/laptop. Try clearing cache and restarting things.
-#. Try connecting to your server using its *<custom-address>.local* URL or IP its address. If this works, it means the issue is specific to Tor on your server. Check out your Tor logs (System -> Tor Logs). If you see errors, such as Tor stuck bootstrapping, navigate to System -> Experimental Features -> Reset Tor.
+#. Try connecting to your server using its *<custom-address>.local* URL or its IP address. If this works, it means the issue is specific to Tor on your server. Check out your Tor logs (System -> Tor Logs). If you see errors, such as Tor stuck bootstrapping, navigate to System -> Experimental Features -> Reset Tor.
 
 Request Error
 -------------
