@@ -18,15 +18,15 @@ The source code can be viewed on Purism's `firmware git repo <https://source.pur
 
     .. group-tab:: Server Pure 2024
         
-        Download the latest firmware from Purism's git repository: `Standard release <https://source.puri.sm/firmware/releases/-/raw/master/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot-Release-29.zip>`_.
+        Download the latest firmware from Purism's git repository: `Standard release <https://source.puri.sm/firmware/releases/-/raw/master/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot-Release-30.zip>`_.
         
     .. group-tab:: Server Pure (2023 and before)
         
         This model of the Server Pure (formally Embassy Pro) supports WiFi. You may choose between firmware that allows for WiFi and firmware that disables and locks it down.
 
         Download the latest firmware from Purism's git repository:
-        `Standard release <https://source.puri.sm/firmware/releases/-/raw/master/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot-Release-29.zip>`_
-        or `Jailed WiFi <https://source.puri.sm/firmware/releases/-/raw/master/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-29.zip>`_.
+        `Standard release <https://source.puri.sm/firmware/releases/-/raw/master/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot-Release-30.zip>`_
+        or `Jailed WiFi <https://source.puri.sm/firmware/releases/-/raw/master/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-30.zip>`_.
 
 
 Flashing the firmware
@@ -57,7 +57,7 @@ Flashing the firmware
     .. figure:: /_static/images/flashing/flash_firmware-pro-step4-proceed_yes.jpg
         :width: 30%
 
-#. Choose the file that we downloaded and copied to the USB stick earlier: ``pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-29.zip``
+#. Choose the file that we downloaded and copied to the USB stick earlier: ``pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-30.zip``
 
     .. figure:: /_static/images/flashing/flash_firmware-pro-step5-select_your_file.jpg
         :width: 30%
