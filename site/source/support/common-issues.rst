@@ -41,7 +41,7 @@ During initial setup, I am unable to connect to "start.local".
 
 I am unable to reach my server via its *<custom-address>.local* (LAN) address
 ------------------------------------------------------------------------------
-#. First, try :ref:`these step <setup-troubleshoot>`. In none resolve the issue, continue below.
+#. First, try :ref:`these steps <setup-troubleshoot>`. If none resolve the issue, continue below.
 #. Hard refresh the browser
 
     - Linux/Windows: ``ctrl+shift+R``
