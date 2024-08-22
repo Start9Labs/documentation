@@ -14,5 +14,4 @@ These guides will help you to setup external tools to connect or interact with s
   matrix
   nextcloud/index
   nostr/index
-  specter/index
   vaultwarden/index
