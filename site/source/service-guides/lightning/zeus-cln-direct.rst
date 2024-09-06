@@ -2,7 +2,7 @@
 
 Zeus
 ----
-.. note:: You must first :ref:`connect to tor on your device<connecting-tor>`.
+.. note:: You must first enable clnrest in Services -> Core Lightning -> Config -> Advanced -> Plugins -> CLNRest
 
 Zeus is a powerful mobile wallet that can be connected directly to both LND and Core Lightning. If you'd like to connect via LNbits, which allows allocation of funds, please see :ref:`this guide<connecting-lnbits>`.
 
@@ -22,19 +22,24 @@ Available For:
     .. figure:: /_static/images/lightning/zeus-cln-direct-step3.png
         :width: 60%
 
-#. Tap the QR code icon for "REST Quick Connect" to display the QR code.
+#. Tap the QR code icon for "CLNRest Quick Connect" to display the QR code.
 
     .. figure:: /_static/images/lightning/zeus-cln-direct-step4.png
         :width: 60%
 
-#. In Zeus, tap "Scan node config". Allow camera access, scan the QR code, and then tap 'Save node config'.
+#. In Zeus, tap "ADVANCED SET-UP", followed by "Connect a node", and finally click the 'scan' icon in the top right to scan the qr code from step #3.
 
     .. figure:: /_static/images/lightning/zeus-cln-direct-step5.png
         :width: 60%
 
-    .. note:: If you already have other nodes configured in Zeus, go to Settings.-> Connect a node -> + . Then scan the QR code, and tap "Save node config".
+#. Once the node info has been scanned into Zeus, click "SAVE NODE CONFIG" to connect to your node.
 
     .. figure:: /_static/images/lightning/zeus-cln-direct-step6.png
+        :width: 40%
+
+    .. note:: If you already have other nodes configured in Zeus, Click the 'Node' icon in the top right -> 'plus' icon -> 'scan' icon . Then scan the QR code, and tap "SAVE NODE CONFIG".
+
+    .. figure:: /_static/images/lightning/zeus-cln-direct-step7.png
         :width: 40%
 
 #. That's it. You can now use your Core Lightning Node via Zeus.
