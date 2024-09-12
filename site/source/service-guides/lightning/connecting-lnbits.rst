@@ -31,13 +31,13 @@ Setting up LNbits
 
    .. tip:: Remember - if you intend to connect BlueWallet or Zeus, that will only be possible with LND. Alby can work with both.
 
-#. Head to LNbits on your server, click on **Properties** and copy the address under **(Tor) Superuser Account**:
+#. Navigate to Services -> LNbits, click `Launch UI`, and authenticate with your 'Superuser Username' and 'Superuser Default Password' found in LNbits -> Properties:
 
    .. figure:: /_static/images/services/lnbits/tor-super-user.png
       :width: 40%
       :alt: tor-super-user
 
-#. Paste this address into your browser and you'll see the following screen - click **I understand**:
+#. After logging into your LNbits account you'll see the following screen - click **I understand**:
 
    .. figure:: /_static/images/services/lnbits/superuser-first-open.png
       :width: 60%
