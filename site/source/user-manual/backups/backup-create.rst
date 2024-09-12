@@ -20,6 +20,8 @@ Physical Drive
 
     .. warning:: If you are using a low-powered device (like a RasPi), this drive MUST have external power, or be connected via a powered USB hub in order to prevent any data corruption due to power constraints!  Server One and Server Pure users can safely ignore this warning.
 
+#. :ref:`Mount the drive<backup-mount>` on your server.
+
 
 Network Folder
 ..............
