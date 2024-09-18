@@ -33,7 +33,7 @@ BitBoxApp
 #. Click “Add” to add your node to the node list at the top of the page.
 #. Remove the other servers if you want to exclusively connect to your own node.
 
-Guide adapted from `Shiftcrypto<https://shiftcrypto.support/help/en-us/14-privacy/29-how-to-connect-the-bitboxapp-to-my-own-full-node>`__.
+Guide adapted from `Shiftcrypto <https://shiftcrypto.support/help/en-us/14-privacy/29-how-to-connect-the-bitboxapp-to-my-own-full-node>`__.
 
 
 .. _blockstream-green:
