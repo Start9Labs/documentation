@@ -21,7 +21,7 @@ If you are looking to connect the `Alby <https://github.com/getAlby/lightning-br
 Setting up LNbits
 -----------------
 
-.. note:: You will need a Tor enabled browser  This also requires having :ref:`native tor setup<connecting-tor>`.
+.. note:: If you are not connecting locally (on the same LAN), you will need a Tor enabled browser or a :ref:`native tor setup<connecting-tor>`.
 
 #. Start by ensuring that you have LNbits installed already as well as LND or Core Lightning (CLN). You also need your lightning node to have at least one channel set up otherwise payments will not work. If you have not set up a channel yet, please follow :ref:`this guide<lightning-intro>`.
 
@@ -43,7 +43,7 @@ Setting up LNbits
       :width: 60%
       :alt: superuser-first-open
 
-   .. note:: This isn't a concern on StartOS as all wallets created will have the address they generated stored within **Properties** within the LNbits serivce.
+   .. note:: While the LNbits Superuser username and default password are stored in Properties, StartOS will not be aware of the usernames or passwords of any other LNbits accounts created; The usernames and passwords of any other accounts should be stored someplace secure i.e. Vaultwarden.
 
 #. Now a default wallet will have already been generated - highlighted on the top left. We'll rename it by clicking **Rename wallet** entering **android-zeus-wallet** then clicking **UPDATE NAME**:
 
@@ -82,3 +82,23 @@ After any of the above wallets has been setup with the corresponding instruction
         :alt: 1k-sats
 
 Your newly created LNbits wallet has now been funded and is ready to send sats over the Lightning Network!
+
+Allocating funds to the wallets of other (non-admin) users will require logging into the Superuser account and selecting 'Users' from the side panel. Then select the 'Show Wallets' icon for the user to be allocated funds.
+
+    .. figure:: /_static/images/services/lnbits/users.png
+        :width: 60%
+        :alt: users
+
+Next select the **"+"** icon for the desired wallet.
+
+    .. figure:: /_static/images/services/lnbits/users-wallets.png
+        :width: 60%
+        :alt: users-wallets
+
+Finally enter the amount of funds to allocate to the selected wallet.
+
+    .. figure:: /_static/images/services/lnbits/wallet-topup.png
+        :width: 60%
+        :alt: wallet-topup
+
+The selected wallet will now have the allocated funds available to spend!
