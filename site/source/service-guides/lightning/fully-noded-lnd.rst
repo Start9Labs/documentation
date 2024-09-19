@@ -13,8 +13,6 @@ Available For:
 #. Download Fully Noded from the Apple App Store.
 #. Log into your Start9 server UI and select Services -> LND -> Properties.
 #. Click the QR code icon next to “LND Connect REST URL” to display the QR code and scan/copy this with your iPhone/mac.
-## [Scanning QR] From the App, you have to go > Node manager > Add a node + > hit Scan QR (not LND)
-## [Pasting credentials] From the App, you have to go > Node manager > Add a node (+) > select LND (not Scan QR). 
 
  If pasting, there are 4 fields where we'll paste the LND Connect URL we copied earlier:
 
