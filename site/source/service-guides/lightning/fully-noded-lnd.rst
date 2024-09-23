@@ -14,6 +14,7 @@ Available For:
 #. Log into your Start9 server UI and select Services -> LND -> Properties.
 #. Click the QR code icon next to “LND Connect REST URL” to display the QR code and scan/copy this with your iPhone/mac.
 
+
 .. tabs::
 
     .. group-tab:: Scanning QR
