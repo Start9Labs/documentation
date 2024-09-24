@@ -1,25 +1,36 @@
 .. _alby-lnd:
 
-====
-Alby
-====
+======================
+Alby Browser Extension
+======================
+
+.. warning:: This is NOT the guide for setting up **AlbyHub** this is for a direct connection to LND. If you'd like to connect via AlbyHub instead (recommended), click :ref:`here<albyhub>`.
 
 Alby is a browser extension that can be connected to your lightning node a number of ways. This guide will go over direct connections between Alby and your **LND node**.
 
-If you'd like to connect via `LNbits <https://marketplace.start9.com/marketplace/lnbits>`_ which allows allocation of funds, please see :ref:`this guide<connecting-lnbits>`.
+.. note:: If you'd like to connect via `LNbits <https://marketplace.start9.com/marketplace/lnbits>`_ which allows allocation of funds (rather than spend limits within the extension), please see :ref:`this guide<connecting-lnbits>`.
 
 .. note:: We are going to connect using Tor so that Alby will be able to connect from anywhere.
 
 #. Make sure you are already :ref:`running Tor<connecting-tor>` on your system and we suggest using Firefox which must be :ref:`configured to use Tor.<tor-ff>`
 
 #. Download the Alby extension by visiting the `Alby Github <https://github.com/getAlby/lightning-browser-extension#installation>`_, selecting your browser, and installing.
-#. On the Alby welcome screen, select **Get Started**.
-#. Create a strong password and store it somewhere safe, like your Vaultwarden password manager.
-#. On the next screen, select **Other Wallets** and click **Connect**.
+  
+   .. figure:: /_static/images/lightning/alby-unlock-passcode.png
+      :width: 20%
+      :alt: alby-passcode
 
-#. Select **Start9** and then **LND**:
+#. Set an unlock passcode and store it somewhere safe, like your Vaultwarden password manager.
 
-   .. figure:: /_static/images/lightning/alby-start9.png
+   .. figure:: /_static/images/lightning/alby-bring-your-own.png
+      :width: 50%
+      :alt: alby-own
+
+#. On the next screen, select **Find Your Wallet**.
+
+#. Select **StartOS** and then **LND**:
+
+   .. figure:: /_static/images/lightning/alby-select-startos.png
       :width: 50%
       :alt: alby-start9
 

@@ -1,7 +1,7 @@
 .. _alby-lnbits:
 
-Alby
-----
+Alby Browser Extension
+-----------------------
 
 .. note:: This guide assumes you have already setup LNbits as per :ref:`this guide <connecting-lnbits>`.
 

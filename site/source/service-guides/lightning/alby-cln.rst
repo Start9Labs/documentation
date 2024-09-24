@@ -1,30 +1,41 @@
 .. _alby-cln:
 
-====
-Alby
-====
+======================
+Alby Browser Extension
+======================
 
-Alby is a browser extension that can be connected to your lightning node a number of ways. This guide will go over direct connections between Alby and your **Core Lightning** node. 
+Alby provides a browser extension that can be connected to your lightning node a number of ways. This guide will go over direct connections between the Alby browser extension and your **Core Lightning** node. 
 
-If you'd like to connect via `LNbits <https://marketplace.start9.com/marketplace/lnbits>`_ which allows allocation of funds, please see :ref:`this guide<connecting-lnbits>`.
+.. note:: If you are looking for AlbyHub, this is not it. To use :ref:`AlbyHub<albyhub>` you must instead run :ref:`LND<lightning-intro>`.
+
+.. note:: If you'd like to connect via `LNbits <https://marketplace.start9.com/marketplace/lnbits>`_ which allows allocation of funds (rather than spend limits within the extention), please see :ref:`this guide<connecting-lnbits>`.
 
 .. note:: We are going to connect using Tor so that Alby will be able to connect from anywhere.
 
 #. Make sure you are already :ref:`running Tor<connecting-tor>` on your system and we suggest using Firefox which must be :ref:`configured to use Tor.<tor-ff>`
 
 #. Download the Alby extension by visiting the `Alby Github <https://github.com/getAlby/lightning-browser-extension#installation>`_, selecting your browser, and installing.
-#. On the Alby welcome screen, select **Get Started**.
-#. Create a strong password and store it somewhere safe, like your Vaultwarden password manager.
-#. On the next screen, select **Other Wallets** and click **Connect**.
+
+   .. figure:: /_static/images/lightning/alby-unlock-passcode.png
+      :width: 20%
+      :alt: alby-passcode
+
+#. Set an unlock passcode and store it somewhere safe, like your Vaultwarden password manager.
+
+   .. figure:: /_static/images/lightning/alby-bring-your-own.png
+      :width: 50%
+      :alt: alby-own
+
+#. On the next screen, select **Find Your Wallet**.
 
 
-#. Click **Start9** then **Core Lightning**.
+#. Click **StartOS** then **Core Lightning**.
 
-   .. figure:: /_static/images/lightning/alby-start9.png
+   .. figure:: /_static/images/lightning/alby-select-startos.png
       :width: 50%
       :alt: alby-start9
 
-   .. figure:: /_static/images/lightning/alby-cln-0.png
+   .. figure:: /_static/images/lightning/alby-select-cln.png
       :width: 50%
       :alt: alby-cln-0
 

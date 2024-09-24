@@ -25,6 +25,12 @@ If you're using **LND**, you can select one of the following options:
   .. toctree::
     :maxdepth: 2
 
+    connecting-albyhub
+
+
+  .. toctree::
+    :maxdepth: 2
+
     connecting-lnd
 
 If you would like to connect to LND via Lightning Node Connect **(LNC)** in order to avoid using Tor, you can do so with Alby and Zeus via the Lightning Terminal service:
