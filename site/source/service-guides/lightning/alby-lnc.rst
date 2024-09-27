@@ -1,8 +1,8 @@
 .. _alby-lnc:
 
-====
-Alby
-====
+======================
+Alby Browser Extension
+======================
 
 Alby is a browser extension that can be connected to your lightning node a number of ways. 
 
