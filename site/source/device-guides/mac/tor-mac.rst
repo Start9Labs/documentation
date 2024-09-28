@@ -62,7 +62,7 @@ Enable Tor System-wide
 
 .. tabs::
 
-    .. group-tab:: Sonoma (macOS 14)
+    .. group-tab:: Sonoma & Sequoia (macOS 14 & 15)
 
         #. Enable proxy autoconfig file (This will download the Start9 standard proxy config file. You can use your own if you prefer):
 
