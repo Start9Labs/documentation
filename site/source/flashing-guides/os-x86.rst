@@ -73,7 +73,7 @@ Once you have the StartOS image, you will need to flash it onto your USB drive.
       :width: 60%
       :alt: Balena Etcher Dashboard
 
-#. Click "Select Image" and select the ``.iso`` file you just downloaded.
+#. Click "Flash from file" and select the ``.iso`` file you just downloaded.
 
 #. Click "Select Target" and select your USB drive, checking the size to make sure it's the correct drive.
 
