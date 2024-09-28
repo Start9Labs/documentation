@@ -39,7 +39,7 @@ noStrudel is a web app for exploring the nostr protocol.
 #. To connect to your own private relay, go to Relays -> App Relays, paste in your Nostr Relay Websocket URL (e.g. ws://address.onion) and click add. You can find this value in the Properties section of your Nostr RS Relay service.  
 
     .. note:: 
-        If you plan to connect to your own private relay, you must use `Tor browser <https://www.torproject.org/>`_ or :ref:`run Tor<connecting-tor>` on your system.  We recommend using Firefox which must be :ref:`configured to use Tor<connecting-ff>`.  
+        If you plan to connect to your own private relay, you must use `Tor browser <https://www.torproject.org/>`_ or :ref:`run Tor<connecting-tor>` on your system.  We recommend using Firefox which must be :ref:`configured to use Tor<tor-ff>`.  
         It is recommended to use your Relay's Tor websocket URL (ws://address.onion), since the LAN websocket URL (wss://address.local) will only work when you are home.
 
     .. figure:: /_static/images/services/nostr/nostrudel-5.png

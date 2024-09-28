@@ -2,8 +2,9 @@
 
 Zeus
 ----
-.. note:: You must first enable clnrest in Services -> Core Lightning -> Config -> Advanced -> Plugins -> CLNRest
+.. note:: You must first enable clnrest in Services -> Core Lightning -> Config -> Advanced -> Plugins -> clnrest
 
+    
 Zeus is a powerful mobile wallet that can be connected directly to both LND and Core Lightning. If you'd like to connect via LNbits, which allows allocation of funds, please see :ref:`this guide<connecting-lnbits>`.
 
 Available For:
