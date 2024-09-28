@@ -16,11 +16,11 @@ The source code can be viewed on Purism's `firmware git repo <https://source.pur
 
 .. tabs::
 
-    .. group-tab:: Server Pure 2024
+    .. group-tab:: White Windows
         
         Download the latest firmware from Purism's git repository: `Standard release <https://source.puri.sm/firmware/releases/-/blob/75631ad6dcf7e6ee73e06a517ac7dc4e017518b7/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot-Release-29.zip>`_.
         
-    .. group-tab:: Server Pure (2023 and before)
+    .. group-tab:: Dark Windows
         
         This model of the Server Pure (formally Embassy Pro) supports WiFi. You may choose between firmware that allows for WiFi and firmware that disables and locks it down.
 
