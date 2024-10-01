@@ -23,7 +23,7 @@ The ``x86_64.iso`` image contains no proprietary software and is built especiall
 Server One (*x86_64-nonfree.iso*)
 -------------------------------
 
-The ``x86_64-nonfree.iso`` image contains non-free (closed-source) software. This is needed for the Server One and most DIY hardware, especially for graphics and/or wireless device support. 
+The ``x86_64-nonfree.iso`` image contains non-free (closed-source) software. This is needed for the Server One and most DIY hardware, especially for graphics and/or network device support. 
 
 *For a DIY virtual machine build, if using a x86 chip, you'd use the non-free image if the free version does not work for you, but for an Apple Silicon chip you would use* ``aarch64.iso`` *and follow* `this guide <https://blog.start9.com/running-startos-on-apple-silicon/>`_.
 
