@@ -11,12 +11,27 @@ Getting StartOS
 ---------------
 Visit the `Github release page <https://github.com/Start9Labs/start-os/releases/latest>`_ to find the latest StartOS release.
 
-At the bottom of the page, under "Assets," download the ``x86_64.iso`` or ``x86_64-nonfree.iso`` file.  The former image contains no proprietary software (built for the Server Pure).  As the title implies, the latter, ``nonfree`` image, contains non-free (closed-source) software.  This may be required for your hardware, especially for graphics and/or wireless device support.
+At the bottom of the page, under "Assets," download the ``x86_64.iso`` or ``x86_64-nonfree.iso`` file.
+
+-------------------------
+Server Pure (*x86_64.iso*)
+-------------------------
+
+The ``x86_64.iso`` image contains no proprietary software and is built especially for the Server Pure.
+
+-------------------------------
+Server One (*x86_64-nonfree.iso*)
+-------------------------------
+
+The ``x86_64-nonfree.iso`` image contains non-free (closed-source) software. This is needed for the Server One and most DIY hardware, especially for graphics and/or network device support. 
+
+*For a DIY virtual machine build, if using a x86 chip, you'd use the non-free image if the free version does not work for you, but for an Apple Silicon chip you would use* ``aarch64.iso`` *and follow* `this guide <https://blog.start9.com/running-startos-on-apple-silicon/>`_.
+
 
     .. figure:: /_static/images/flashing/x86_64-asset.png
-        :width: 60%
+        :width: 90%
 
-Select your OS to continue:
+Select the client OS you are using to continue:
 
 .. tabs::
 
@@ -58,7 +73,7 @@ Once you have the StartOS image, you will need to flash it onto your USB drive.
       :width: 60%
       :alt: Balena Etcher Dashboard
 
-#. Click "Select Image" and select the ``.iso`` file you just downloaded.
+#. Click "Flash from file" and select the ``.iso`` file you just downloaded.
 
 #. Click "Select Target" and select your USB drive, checking the size to make sure it's the correct drive.
 

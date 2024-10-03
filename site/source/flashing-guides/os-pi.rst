@@ -60,7 +60,7 @@ Once you have the StartOS ``.img.gz`` file, you will need to flash it onto a mic
       :width: 60%
       :alt: Balena Etcher Dashboard
 
-#. Click "Select Image" and select the ``.img.gz`` file.
+#. Click "Flash from file" and select the ``.img.gz`` file.
 
 #. Click "Select Target" and select your microSD card.
 

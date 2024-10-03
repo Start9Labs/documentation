@@ -11,7 +11,7 @@ Start Fresh
 Set up a new server
 -----------------------
 
-The video below demonstrations how to set up a newly purchased Start9 server. If you are familar with the process or you have recently :ref:`flashed <_flashing>` an existing server, you may want to skip the video and scroll down straight to Step 1.
+The video below demonstrations how to set up a newly purchased Start9 server. If you are familar with the process or you have recently :ref:`flashed <flashing>` an existing server, you may want to skip the video and scroll down straight to Step 1.
 
 
         .. youtube:: DzikmY4S42Y
