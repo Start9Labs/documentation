@@ -6,7 +6,7 @@ Alby Browser Extension
 
 Alby provides a browser extension that can be connected to your lightning node a number of ways. This guide will go over direct connections between the Alby browser extension and your **Core Lightning** node. 
 
-.. note:: If you are looking for AlbyHub, this is not it. To use :ref:`AlbyHub<albyhub>` you must instead run :ref:`LND<lightning-intro>`.
+.. note:: If you are looking for Alby Hub, this is not it. To use :ref:`Alby Hub<albyhub>` you must instead run :ref:`LND<lightning-intro>`.
 
 .. note:: If you'd like to connect via `LNbits <https://marketplace.start9.com/marketplace/lnbits>`_ which allows allocation of funds (rather than spend limits within the extention), please see :ref:`this guide<connecting-lnbits>`.
 
