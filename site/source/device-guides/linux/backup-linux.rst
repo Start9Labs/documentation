@@ -81,7 +81,7 @@ Installing Samba
 
                 sudo ufw allow Samba
 
-        .. group-tab:: Fedora
+        .. group-tab:: RedHat-based
 
             .. code-block:: bash
 
