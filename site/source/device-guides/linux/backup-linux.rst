@@ -71,11 +71,23 @@ Installing Samba
     Again, replacing ``$USER`` and entering your Linux password when prompted, not your new SMB password.
 
 
-#. In case your system is running a firewall by default or due to your own custom configuration, enter this command to allow connections to Samba.  If it generates an error, you can safely ignore it:
+#. In case your system is running a firewall by default or due to your own custom configuration, enter these commands to allow connections to Samba. If it generates an error, you can safely ignore it:
 
-    .. code-block:: bash
+    .. tabs::
 
-        sudo ufw allow Samba
+        .. group-tab:: Debian-based
+
+            .. code-block:: bash
+
+                sudo ufw allow Samba
+
+        .. group-tab:: Fedora
+
+            .. code-block:: bash
+
+                sudo firewall-cmd --permanent --add-service=samba
+                sudo firewall-cmd --reload
+
 
 
 #. Create a directory to share or choose an existing one and make note of its location (path).  For this example, we will call the share ``backup-share`` and its corresponding shared directory will be located at ``/home/$USER/start9-backup``.  Replace ``$USER`` with your Linux username below.
