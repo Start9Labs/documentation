@@ -16,6 +16,7 @@ These options assume you have a working StartOS device or data disk containing S
 
     - :ref:`Use Existing Drive <attach-drive>`
     - :ref:`Transfer <transfer-data>`
+    - :ref:`Reset Password <reset-password>`
 
 
 Emergency Restore from Backup
