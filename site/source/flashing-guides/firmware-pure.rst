@@ -1,16 +1,18 @@
 .. _flashing-firmware-pure:
 
-======================
-Firmware (Server Pure)
-======================
+============================
+Firmware (Server Pure only)
+============================
 This page is for Server Pure / Purism Librem Mini users ONLY.  This firmware is custom for these devices.
 
-Generally, you do not need to manually flash your device using this guide, as the firmware is now automatically updated on supported devices.  Please only use this method if directed by a Start9 Support Technician.
+Generally, you do not need to manually flash your device using this guide, as the firmware is now automatically updated on supported devices.  Please only use this method if directed by a Start9 Support Technician. **If you were told to flash your device, you are looking for the StartOS flashing guides instead**.
 
 Downloading the right firmware
 ------------------------------
 
-The source code can be viewed on Purism's `firmware git repo <https://source.puri.sm/firmware/releases/-/tree/master/librem_mini_v2/custom>`_.  You will need a USB flash drive, formatted FAT32, to flash the firmware to your server.
+The source code can be viewed on Purism's `firmware git repo <https://source.puri.sm/firmware/releases/-/tree/master/librem_mini_v2/custom>`_.  You will need a USB flash drive, formatted FAT32, to flash the firmware to your server. 
+
+"Windows" refers to the plastic strips on the side of your Server Pure.
 
 
 
@@ -18,13 +20,13 @@ The source code can be viewed on Purism's `firmware git repo <https://source.pur
 
     .. group-tab:: White Windows
         
-        Download the latest firmware from Purism's git repository: `Standard release <https://source.puri.sm/firmware/releases/-/blob/75631ad6dcf7e6ee73e06a517ac7dc4e017518b7/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot-Release-29.zip>`_.
+        Download firmware from Purism's git repository: `Standard release <https://source.puri.sm/firmware/releases/-/blob/75631ad6dcf7e6ee73e06a517ac7dc4e017518b7/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot-Release-29.zip>`_.
         
     .. group-tab:: Dark Windows
         
         This model of the Server Pure (formally Embassy Pro) supports WiFi. You may choose between firmware that allows for WiFi and firmware that disables and locks it down.
 
-        Download the latest firmware from Purism's git repository:
+        Download firmware from Purism's git repository:
         `Standard release <https://source.puri.sm/firmware/releases/-/blob/75631ad6dcf7e6ee73e06a517ac7dc4e017518b7/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot-Release-29.zip>`_
         or `Jailed WiFi <https://source.puri.sm/firmware/releases/-/blob/75631ad6dcf7e6ee73e06a517ac7dc4e017518b7/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-29.zip>`_.
 

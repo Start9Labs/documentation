@@ -4,14 +4,14 @@
 Flashing Guides
 ===============
 
-Here you will find our flashing guides for the Raspberry Pi and x86_64 (most desktops, laptops, mini PCs, servers, etc) architectures. Librem Mini owners can use the firmware flashing guide to get StartOS-specific firmware.
+Here you will find our flashing guides for the Raspberry Pi and x86_64/ARM (most desktops, laptops, mini PCs, servers, etc) architectures. Librem Mini owners can use the firmware flashing guide to get StartOS-specific firmware if told to do so by a Start9 Support Technician.
 
 ____________
 
 StartOS
 --------------
 
-Download the latest version of StartOS to flash to a USB thumb drive (x86) or to a microSD card (Raspberry Pi)
+Download the latest version of StartOS to flash to a USB thumb drive (x86/ARM) or to a microSD card (Raspberry Pi)
 
   .. toctree::
     :maxdepth: 1
