@@ -24,7 +24,7 @@ ____________
 Firmware only
 --------------
 
-Download the just the firmware (Server Pure only)
+Download just the firmware (Server Pure only)
 
 .. toctree::
   :maxdepth: 1
