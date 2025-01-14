@@ -43,7 +43,9 @@ Complete this guide to trust your server's Root Certificate Authority (Root CA) 
     :width: 20%
     :alt: Profiles
 
-#. You should see green text with a check-mark saying "Verified" under the Profile Installed dialog. 
+#. You should see green text with a check-mark saying "Verified" under the Profile Installed dialog.
+
+   *Note: On recent versions of iOS this check-mark does not appear. It may return in the next version of iOS if removing it was a mistake.*
 
    .. figure:: /_static/images/ssl/ios/install_5.png
     :width: 20%
