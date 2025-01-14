@@ -1,8 +1,8 @@
 .. _flashing-os-x86:
 
-=============
+=================
 StartOS (x86/ARM)
-=============
+=================
 This guide is for flashing StartOS to a USB drive in order to install it to an x86_64 or ARM architecture device. This will include most desktops, laptops, mini PCs, and servers.
 
  .. note:: You will need a USB drive of at least 8GB in size
