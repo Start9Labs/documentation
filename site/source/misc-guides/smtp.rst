@@ -54,4 +54,11 @@ There are several StartOS services that are capable of sending emails, such as B
 
 
     .. group-tab:: Amazon SES
-        To use Amazon SES please refer to the `Amazon SES docs <https://docs.aws.amazon.com/ses/latest/dg/smtp-credentials.html>`_
+
+      To use Amazon SES you will need:
+
+      * An Amazon Web Services (AWS) account. If you don't have one, you can `register here <https://aws.amazon.com/>`_ for free.
+      * To set up Amazon Simple Email Service (SES) on AWS, from `inside your AWS <https://aws.amazon.com/ses>`_ console, also free within certain limits.
+      * Optional: To purchase your own domain name to send emails from, then add the domain records Amazon provides you. This will allow you to request 'Production Access' to send emails to unverified addresses (i.e. to more than just your own email address).
+
+      You can then refer to the `Amazon SES docs <https://docs.aws.amazon.com/ses/latest/dg/smtp-credentials.html>`_ to create a SMTP user. 
