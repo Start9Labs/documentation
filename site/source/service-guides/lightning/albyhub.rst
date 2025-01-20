@@ -1,8 +1,8 @@
 .. _albyhub:
 
-=======
+=========
 Alby Hub
-=======
+=========
 
 Alby Hub is the open-source, self-custodial Lightning wallet that puts you in control. Connect to your LND or to an integrated node, it's more than just a wallet—it's your gateway to Bitcoin. Manage channels, run apps, and take charge of your funds, all through one sleek, user-friendly interface. Empower your Bitcoin journey with simplicity and sovereignty. 
 
