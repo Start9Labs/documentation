@@ -10,6 +10,7 @@ Guides that do not fit into the categories of "devices" or "services."
 
   ca-ff
   tor-ff
+  ssh-tor
   attach-drive
   transfer-data
   upgrade-pi
