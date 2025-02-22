@@ -148,23 +148,19 @@ Configuring Firefox for Tor
 
     .. group-tab:: Android
 
+        .. warning:: 
+            
+            You must use `Firefox Beta <https://blog.mozilla.org/security/2019/02/14/why-does-mozilla-maintain-our-own-root-certificate-store/>`_ on Android. 
+        
+            *You may also use* `Fennec <https://f-droid.org/en/packages/org.mozilla.fennec_fdroid/>`_, *which is based on the latest Firefox release with proprietary bits and telemtry removed.*
+    
+
+
         #. Ensure you are already :ref:`running Tor on your Android device <tor-android>`.
 
         #. Download the `Proxy Auto Config` file to inform Firefox how to resolve `.onion` URLs. We have one hosted `here <https://start9.com/assets/proxy.pac>`_
 
-        #. Open Firefox and enter ``about:config`` in the URL bar. Accept any warnings that appear
-
-        #. Search for ``dom.securecontext.allowlist_onions`` and set the value to ``true``:
-
-            .. figure:: /_static/images/tor/firefox_allowlist.png
-              :width: 60%
-              :alt: Firefox whitelist onions screenshot
-
-        #. Search for ``network.proxy.autoconfig_url``, and set the value to ``file:///storage/emulated/0/Download/proxy.pac``. This is the default location of a the proxy.pac file downloaded in step 2, although your path may vary:
-
-            .. figure:: /_static/images/tor/autoconfig_url.png
-              :width: 30%
-              :alt: Firefox autoconfig url setting screenshot
+        #. Open Firefox and enter ``about:config`` in the URL bar. Accept any warnings that appear. *You must be using Firefox Beta, Nightly or Fennec to access this configuration menu.*
 
         #. Search for ``network.proxy.type`` into the search bar, and set the value to ``2``:
 
@@ -178,19 +174,25 @@ Configuring Firefox for Tor
               :width: 30%
               :alt: Firefox socks remote dns setting screenshot
 
-        #. Search for ``dom.securecontext.allowlist_onions`` and set the value to ``true``:
 
-            .. figure:: /_static/images/tor/firefox_allowlist_mobile.png
-              :width: 30%
-              :alt: Firefox whitelist onions screenshot
-
+        
         #. Search for ``network.http.referer.hideOnionSource`` and set the value to ``true``
+
+        #. Search for ``network.dns.blockDotOnion`` and set the value to ``false``
+
+        #. Search for ``network.proxy.autoconfig_url``, and set the value to ``file:///storage/emulated/0/Download/proxy.pac``. This is the default location of a the proxy.pac file downloaded in step 2, although your path may vary:
+
+            .. figure:: /_static/images/tor/autoconfig_url.png
+              :width: 50%
+              :alt: Firefox autoconfig url setting screenshot
+
+        #. Search for ``dom.securecontext.allowlist_onions`` and set the value to ``true``:
 
         #. (**GrapheneOS users only**): Head to ``Settings -> Apps -> Firefox Beta -> Permissions -> Photos and videos -> Configure Storage Scopes -> ADD FILE``, then navigate to where you placed the proxy.pac file:
 
             .. figure:: /_static/images/tor/storage-scopes-proxy.jpg
               :width: 15%
 
-        #. Restart Firefox
+        #. FULLY close and reopen Firefox (or restart your Android device)
 
         #. Test that Firefox can resolve `.onion` URLs by visiting Start9's Tor website: http://privacy34kn4ez3y3nijweec6w4g54i3g54sdv7r5mr6soma3w4begyd.onion.
