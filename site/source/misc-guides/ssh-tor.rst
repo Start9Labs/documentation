@@ -2,7 +2,7 @@
 
 ======================
 Using SSH Over Tor
-======================
+==================
 
 .. note:: The following guide requires that you have already added an :ref:`SSH key to your server<ssh>` and run :ref:`Tor s a global process on your client<connecting-tor>`.
 
