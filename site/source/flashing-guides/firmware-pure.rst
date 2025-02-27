@@ -10,21 +10,15 @@ Generally, you do not need to manually flash your device using this guide, as th
 Downloading the right firmware
 ------------------------------
 
-The source code can be viewed on Purism's `firmware git repo <https://source.puri.sm/firmware/releases/-/tree/master/librem_mini_v2/custom>`_.  You will need a USB flash drive, formatted FAT32, to flash the firmware to your server. 
-
-"Windows" refers to the plastic strips on the side of your Server Pure.
-
-
-
 .. tabs::
 
-    .. group-tab:: White Windows
+    .. group-tab:: Without WiFi
         
         Download firmware from Purism's git repository: `Standard release <https://source.puri.sm/firmware/releases/-/blob/75631ad6dcf7e6ee73e06a517ac7dc4e017518b7/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot-Release-29.zip>`_.
         
-    .. group-tab:: Dark Windows
-        
-        This model of the Server Pure (formally Embassy Pro) supports WiFi. You may choose between firmware that allows for WiFi and firmware that disables and locks it down.
+    .. group-tab:: With WiFi
+
+        This version of the firmware includes the necessary closed source drivers for WiFi, jailed for security.
 
         Download firmware from Purism's git repository:
         `Standard release <https://source.puri.sm/firmware/releases/-/blob/75631ad6dcf7e6ee73e06a517ac7dc4e017518b7/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot-Release-29.zip>`_
