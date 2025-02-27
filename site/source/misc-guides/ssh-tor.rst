@@ -1,10 +1,10 @@
 .. _ssh-tor:
 
-======================
+==================
 Using SSH Over Tor
-======================
+==================
 
-.. note:: The following guide requires that you have already added an :ref:`SSH key to your server<ssh>`.
+.. note:: The following guide requires that you have already added an :ref:`SSH key to your server<ssh>` and run :ref:`Tor as a background process on your client<connecting-tor>`.
 
 .. caution:: SSH over Tor is only supported on Linux and macOS, although it can also work on Windows with in PuTTY `like this <https://tor.stackexchange.com/a/143>`_.  Note that those instructions use port 9150 but we've configured Tor in Windows on the traditional port: ``9050``.
 
