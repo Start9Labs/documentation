@@ -181,8 +181,10 @@ Dependencies - Required
     .. code-block::
 
         git clone https://github.com/Start9Labs/start-os.git && \
-         cd start-os && git submodule update --init --recursive && \
-         make sdk
+        cd start-os && git submodule update --init --recursive && \
+        cd core/startos && cargo update -p time && \
+        cd ../../ && make sdk
+
 
     Initialize sdk & verify install
 
