@@ -62,3 +62,12 @@ There are several StartOS services that are capable of sending emails, such as B
       * Optional: To purchase your own domain name to send emails from, then add the domain records Amazon provides you. This will allow you to request 'Production Access' to send emails to unverified addresses (i.e. to more than just your own email address).
 
       You can then refer to the `Amazon SES docs <https://docs.aws.amazon.com/ses/latest/dg/smtp-credentials.html>`_ to create a SMTP user. 
+
+   .. group-tab:: Proton Mail
+
+      Access to Proton Mail's SMTP settings is currently only made available by Proton to their customers with **Proton for Business**, as well as certain higher tier individual and family plans (**Proton Duo**, **Proton Family** – both with "SMTP Submission" as a listed feature), and then only when you point a custom domain to your account.
+
+      To set up Proton Mail for SMTP you will need:
+
+      * To purchase and point a domain name from a domain registrar to Proton's servers by following this guide here: `Custom Domain  <https://proton.me/support/custom-domain>`_
+      * To follow the steps in the secion **How to set up SMTP** in the guide here: `SMTP Submission <https://proton.me/support/smtp-submission>`_
