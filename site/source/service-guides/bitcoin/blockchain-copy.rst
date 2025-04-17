@@ -44,7 +44,7 @@ If you have already synced the Bitcoin blockchain to the tip on one server, and 
     .. code-block:: bash
 
         cd /embassy-data/package-data/volumes/bitcoind/data/main/
-        rsync -e "ssh -i ~/.ssh/example-bbb.key" -povgr --append-verify --rsync-path="sudo mkdir -p /embassy-data/package-data/volumes/bitcoind/data/main ; sudo rsync" ./{blocks,chainstate} start9@example-bbb.local:/embassy-data/package-data/volumes/bitcoind/data/main/
+        sudo rsync -e "ssh -i ~/.ssh/example-bbb.key" -povgr --append-verify --rsync-path="sudo mkdir -p /embassy-data/package-data/volumes/bitcoind/data/main ; sudo rsync" ./{blocks,chainstate} start9@example-bbb.local:/embassy-data/package-data/volumes/bitcoind/data/main/
 
 #. Wait some hours until the copy is complete.  On a gigabit network, the limiting factor will be the write speed of your SSD on the receiving server.  When it is complete, clean up a bit:
 
