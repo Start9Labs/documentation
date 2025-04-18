@@ -63,7 +63,7 @@ There are several StartOS services that are capable of sending emails, such as B
 
       You can then refer to the `Amazon SES docs <https://docs.aws.amazon.com/ses/latest/dg/smtp-credentials.html>`_ to create a SMTP user. 
 
-   .. group-tab:: Proton Mail
+    .. group-tab:: Proton Mail
 
       Access to Proton Mail's SMTP settings is currently only made available by Proton to their customers with **Proton for Business**, as well as certain higher tier individual and family plans (**Proton Duo**, **Proton Family** – both with "SMTP Submission" as a listed feature), and then only when you point a custom domain to your account.
 
