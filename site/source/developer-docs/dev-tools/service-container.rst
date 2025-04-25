@@ -14,6 +14,6 @@ Open a terminal, ssh into your device, and enter the following command, replacin
 
     .. code-block:: bash
 
-        docker exec -it <package-id>.embassy sh
+        podman exec -it <package-id>.embassy sh
 
 This will give you a shell within the container.  Reminder that nothing you do in here is supported, please be careful!
