@@ -53,34 +53,22 @@ Using Tor on Linux
 
     .. group-tab:: CentOS / Fedora / RHEL
 
-        #. Configure the Tor Package repository.  Add the following to ``/etc/yum.repos.d/tor.repo``:
+        #. Configure the Tor Package repository
 
-            - CentOS / RHEL:
-
-            .. code-block:: bash
-
-                [Tor]
-                name=Tor for Enterprise Linux $releasever - $basearch
-                baseurl=https://rpm.torproject.org/centos/$releasever/$basearch
-                enabled=1
-                gpgcheck=1
-                gpgkey=https://rpm.torproject.org/centos/public_gpg.key
-                cost=100
-
-
-            - Fedora:
-
-            .. tip:: Latest Fedora versions have Tor package available for installation:
+            Paste the following lines into a shell/Terminal session:
 
             .. code-block:: bash
 
+                os=$(cat /etc/os-release|grep "^ID="|cut -d= -f2|sed "s/\"//g") && \
+                sudo cat << EOF > /etc/yum.repos.d/tor.repo
                 [Tor]
-                name=Tor for Fedora $releasever - $basearch
-                baseurl=https://rpm.torproject.org/fedora/$releasever/$basearch
+                name=Tor for $os \$releasever - \$basearch
+                baseurl=https://rpm.torproject.org/$os/\$releasever/\$basearch
                 enabled=1
                 gpgcheck=1
-                gpgkey=https://rpm.torproject.org/fedora/public_gpg.key
+                gpgkey=https://rpm.torproject.org/$os/public_gpg.key
                 cost=100
+                EOF
 
         #. Install the Tor package:
 
