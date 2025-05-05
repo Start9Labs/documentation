@@ -52,8 +52,9 @@ Select the client OS you are using to continue:
         (Optional, but recommended) Verify the checksum against the one listed on GitHub (SHA256):
         
             .. code-block::
-            
-                sha256sum startos-0.3.4.2-efc56c0-20230525_x86_64.iso
+                
+                cd Downloads
+                sha256sum startos-*.iso
         
     .. group-tab:: Mac
             
@@ -61,15 +62,16 @@ Select the client OS you are using to continue:
 
             .. code-block::
 
-                openssl dgst -sha256 startos-0.3.5.1-39de098_x86_64.iso
+                cd Downloads
+                openssl dgst -sha256 startos-*.iso
     .. group-tab:: Windows
         
         (Optional, but recommended) Verify the checksum against the one listed on GitHub by opening Windows PowerShell, changing your directory to where you downloaded the .img.gz file, and running `Get-FileHash`:
 
             .. code-block::
-
+                
                 cd Downloads
-                Get-FileHash startos-0.3.4.2-efc56c0-20230525_x86_64.iso
+                Get-FileHash startos-*.iso
 
 ____________
 
