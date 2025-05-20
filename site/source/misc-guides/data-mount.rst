@@ -10,7 +10,7 @@ If you have an encrypted disk from a prior StartOS installation, you can mount i
 
 #. Attach the StartOS data drive to your Linux desktop or laptop computer.
 
-#. Ensure cryptsetup is installed:
+#. Ensure cryptsetup is installed (on Raspberry pi 4 ssd was not encrypted):
 
     .. code-block:: bash
 
@@ -46,3 +46,13 @@ If you have an encrypted disk from a prior StartOS installation, you can mount i
 
     .. figure:: /_static/images/backups/disk-mount-3-inspect.png
         :width: 60%
+
+#. run bitcoin core on linux to speedup the process (raspberry pi)
+
+    .. code-block:: bash
+    ./bitcoind \
+  -datadir=/mnt/startos_data/volumes/bitcoind/data/main \
+  -txindex=1 \
+  -prune=0 \
+  -dbcache=8192 \
+  -printtoconsole
