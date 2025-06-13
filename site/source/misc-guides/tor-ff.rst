@@ -84,7 +84,7 @@ Configuring Firefox for Tor
 
         #. Also check the box labeled ``Proxy DNS when using SOCKS v5``:
 
-            .. figure:: /_static/images/tor/firefox_proxy_windows.png
+            .. figure:: /_static/images/tor/firefox_proxy.png
                 :width: 60%
                 :alt: Firefox proxy settings screenshot
 
@@ -136,7 +136,7 @@ Configuring Firefox for Tor
 
                 file:///home/YOUR_LINUX_USERNAME/proxy.pac
 
-            .. figure:: /_static/images/tor/firefox_proxy_linux.png
+            .. figure:: /_static/images/tor/firefox_proxy.png
                 :width: 60%
                 :alt: Firefox proxy settings screenshot
             
