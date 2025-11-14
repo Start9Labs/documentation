@@ -64,8 +64,8 @@ Let all apps reach .onion sites system-wide
    * Open the Start menu and select or type in **Control Panel**, then select **Programs > Programs and Features > Turn Windows features on or off**
 
       .. figure:: /_static/images/tor/windows-proxy-step1-iis-programs_and_features-turn_on_iis_manager.png
-      :width: 80%
-      :alt: Windows System-wide proxy.pac: Control Panel > Programs > Programs and Features > Turn Windows features on or off
+       :width: 80%
+       :alt: Windows System-wide proxy.pac: Control Panel > Programs > Programs and Features > Turn Windows features on or off
 
    * In the Turn Windows features on or off dialog box, enable "Internet Information Server"
 
@@ -83,8 +83,8 @@ Let all apps reach .onion sites system-wide
    a) Open IIS Manager as Administrator. You can search for **IIS Manager** in the Start menu or find it under **Control Panel > System and Security > Windows Tools**:
 
       .. figure:: /_static/images/tor/windows-proxy-step2-iis-manager.png
-      :width: 80%
-      :alt: Windows System-wide proxy.pac: Open IIS Manager
+       :width: 80%
+       :alt: Windows System-wide proxy.pac: Open IIS Manager
 
    b) In the Connections pane on the left, expand your server name and then expand the Sites node.
    c) Click on the Default Web Site
