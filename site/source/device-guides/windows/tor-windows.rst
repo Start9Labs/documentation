@@ -62,9 +62,11 @@ Let all apps reach .onion sites system-wide
 
 #. Enable IIS:
    * Open the Start menu and select or type in **Control Panel**, then select **Programs > Programs and Features > Turn Windows features on or off**
-         .. figure:: /_static/images/tor/windows-proxy-step1-iis-programs_and_features-turn_on_iis_manager.png
-    :width: 80%
-    :alt: Windows System-wide proxy.pac: Control Panel > Programs > Programs and Features > Turn Windows features on or off
+
+      .. figure:: /_static/images/tor/windows-proxy-step1-iis-programs_and_features-turn_on_iis_manager.png
+      :width: 80%
+      :alt: Windows System-wide proxy.pac: Control Panel > Programs > Programs and Features > Turn Windows features on or off
+
    * In the Turn Windows features on or off dialog box, enable "Internet Information Server"
 
 #. Go to the Start menu, type "cmd" into the search box (but don't hit enter).
@@ -79,9 +81,10 @@ Let all apps reach .onion sites system-wide
 #. Configure the proxy.pac MIME type in IIS Manager:
 
    a) Open IIS Manager as Administrator. You can search for **IIS Manager** in the Start menu or find it under **Control Panel > System and Security > Windows Tools**:
-   .. figure:: /_static/images/tor/windows-proxy-step2-iis-manager.png
-    :width: 80%
-    :alt: Windows System-wide proxy.pac: Open IIS Manager
+
+      .. figure:: /_static/images/tor/windows-proxy-step2-iis-manager.png
+      :width: 80%
+      :alt: Windows System-wide proxy.pac: Open IIS Manager
 
    b) In the Connections pane on the left, expand your server name and then expand the Sites node.
    c) Click on the Default Web Site
@@ -93,16 +96,19 @@ Let all apps reach .onion sites system-wide
    g) Click OK to save the new MIME type.
 
 #. Go to your Start menu and select Settings:
+
    .. figure:: /_static/images/tor/windows-proxy-step3-settings.png
     :width: 80%
     :alt: Windows System-wide proxy.pac: Start > Settings
 
 #. Select Network & Internet > Proxy​
+
    .. figure:: /_static/images/tor/windows-proxy-step4-network-proxy.png
     :width: 80%
     :alt: Windows System-wide proxy.pac: Network & Internet > Proxy
 
 #. Under Proxy, select Use Setup Script -> Edit
+
    .. figure:: /_static/images/tor/windows-proxy-step5-network-edit.png
     :width: 80%
     :alt: Windows System-wide proxy.pac: Use Setup Script -> Edit
