@@ -120,4 +120,4 @@ Let all apps reach .onion sites system-wide
 
 #. Hit Save
 
- Now your browsers (and any other application system-wide) should be able to access .onion domains.
+Now your browsers (and any other application system-wide) should be able to access .onion domains.
