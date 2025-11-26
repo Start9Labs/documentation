@@ -80,7 +80,7 @@ Enable Tor System-wide
 
             .. code-block:: bash
 
-                sudo curl https://start9.com/assets/proxy.pac --output /opt/homebrew/var/www/proxy.pac
+                curl https://start9.com/assets/proxy.pac --output /opt/homebrew/var/www/proxy.pac
 
         #. Go to System Settings:
 
