@@ -13,4 +13,4 @@ This guide applies to Chrome, Chromium, Brave, Vivaldi and any other Chrome-base
 #. Find and select your *adjective-noun.crt* file
 #. Check “Trust this certificate for identifying websites”
 #. Select OK
-
+#. You may need to restart your browser or computer for the changes to take effect.
