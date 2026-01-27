@@ -87,6 +87,11 @@ Let all apps reach .onion sites system-wide
        :alt: Windows System-wide proxy.pac: Open IIS Manager
 
    b) In the Connections pane on the left, expand your server name and then expand the Sites node.
+
+      .. figure:: /_static/images/tor/windows-proxy-step2.5-select_default_web_site.png
+       :width: 80%
+       :alt: Windows System-wide proxy.pac: Select Default Web Site
+   
    c) Click on the Default Web Site
    d) In the central Home pane, double-click the MIME Types feature icon.
    e) In the MIME Types pane on the right, click Add...
