@@ -67,7 +67,7 @@ Let all apps reach .onion sites system-wide
        :width: 80%
        :alt: Windows System-wide proxy.pac: Control Panel > Programs > Programs and Features > Turn Windows features on or off
 
-   * In the Turn Windows features on or off dialog box, enable "Internet Information Server"
+   * In the Turn Windows features on or off dialog box, enable "Internet Information Services"
 
 #. Go to the Start menu, type "cmd" into the search box (but don't hit enter).
    "Command Prompt" will be the first search result.  Select "Run as Administrator" underneath it.
