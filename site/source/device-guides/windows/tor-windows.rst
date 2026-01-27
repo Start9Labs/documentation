@@ -86,14 +86,18 @@ Let all apps reach .onion sites system-wide
        :width: 80%
        :alt: Windows System-wide proxy.pac: Open IIS Manager
 
-   b) In the Connections pane on the left, expand your server name and then expand the Sites node.
-   c) Click on the Default Web Site
-   d) In the central Home pane, double-click the MIME Types feature icon.
-   e) In the MIME Types pane on the right, click Add...
-   f) In the Add MIME Type dialog box, enter the following information:
+   b) In the Connections pane on the left, expand your server name, then expand the **Sites** node, and select **Default Web Site**
+
+      .. figure:: /_static/images/tor/windows-proxy-step2.5-select_default_web_site.png
+       :width: 80%
+       :alt: Windows System-wide proxy.pac: Select Default Web Site
+   
+   c) In the central Home pane, double-click the MIME Types feature icon.
+   d) In the MIME Types pane on the right, click Add...
+   e) In the Add MIME Type dialog box, enter the following information:
       File name extension: `.pac`
       MIME type: `application/x-ns-proxy-autoconfig`
-   g) Click OK to save the new MIME type.
+   f) Click OK to save the new MIME type.
 
 #. Go to your Start menu and select Settings:
 
