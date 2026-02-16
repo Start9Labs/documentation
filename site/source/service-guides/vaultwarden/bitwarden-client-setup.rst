@@ -17,21 +17,21 @@ Browser Extension
 
             #. If you choose Firefox, you will need to :ref:`follow this guide <tor-ff>` to run Tor on your device and configure Firefox to use it. If using Brave you will just need to :ref:`setup Tor on your device <connecting-tor-native>`. With Tor Browser, everything will just work right out of the box.
 
-                .. tip:: We recommend using Firefox as it is the most compatible browser with Start9 Servers.
+                .. tip:: We recommend using Firefox as it is the most compatible browser with StartOS servers.
 
             #. In this example we will use Firefox, though these instructions will work just the same for Brave. First, install the `Bitwarden browser extension <https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/>`_.  
             
-            #. Head to the "Interfaces" tab in the Vaultwarden service on your Start9 Server:
+            #. Head to the "Properties" tab in the Vaultwarden service on your StartOS server:
 
-                .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces.png
+                .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties.png
                     :width: 50%
-                    :alt: vaultwarden-interfaces
+                    :alt: Vaultwarden > Properties
 
-            #. Copy the Tor address:
+            #. Copy the Tor server URL:
 
-                .. figure:: /_static/images/services/vaultwarden/vaultwarden-tor-address.png
+                .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-tor_server_url.png
                     :width: 50%
-                    :alt: vaultwarden-tor-address
+                    :alt: Vaultwarden > Properties > Copy Tor server URL
 
             #. Now head to the Bitwarden extension and click the "Region" dropdown menu and choose self-hosted. Under **Self-hosted environment** you will see a field for **Server URL**.
 
@@ -50,21 +50,21 @@ Browser Extension
 
         .. group-tab:: LAN
 
-            We suggest using Tor, however it is possible have a good experience with LAN. Once synced, your app and all your passwords will be cached and available when you are on the go and not connected to your Start9 Server, and you will only need to be on LAN to update any edits to your vault.
+            We suggest using Tor, however it is possible have a good experience with LAN. Once synced, your app and all your passwords will be cached and available when you are on the go and not connected to your StartOS server, and you will only need to be on LAN to update any edits to your vault.
 
             #. Start by installing the `Bitwarden browser extension <https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/>`_.  
                         
-            #. Head to the "Interfaces" tab in the Vaultwarden service on your Start9 Server:
+            #. Head to the "Properties" tab in the Vaultwarden service on your StartOS server:
 
-                .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces.png
+                .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties.png
                     :width: 50%
-                    :alt: vaultwarden-interfaces
+                    :alt: Vaultwarden > Properties
 
-            #. Copy the LAN address:
+            #. Copy the Local server URL:
 
-                .. figure:: /_static/images/services/vaultwarden/vaultwarden-lan-address.png
+                .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-local_server_url.png
                     :width: 50%
-                    :alt: vaultwarden-lan-address
+                    :alt: Vaultwarden > Properties > Copy Local server URL
 
              #. Now head to the Bitwarden extension and click the Region dropdown menu and choose self-hosted. Under **Self-hosted environment** you will see a field for **Server URL**.
 
@@ -72,7 +72,7 @@ Browser Extension
                     :width: 40%
                     :alt: vaultwarden-firefox-self-host
 
-            #. Now we need to grab the address of our Vaultwarden server.Paste the address into your extension and click "Save".
+            #. Now we need to grab the address of our Vaultwarden server. Paste the address into your extension and click "Save".
 
                 .. figure:: /_static/images/services/vaultwarden/bitwarden-firefox-setup-step2.png
                     :width: 40%
@@ -94,17 +94,17 @@ Android
 
         #. Next, enter the Bitwarden app.  You'll be greeted with a log-in screen. Go to the top left gear icon to enter the settings.  
         
-        #. Head to the "Interfaces" tab in the Vaultwarden service on your Start9 Server:
+        #. Head to the "Properties" tab in the Vaultwarden service on your StartOS Server:
 
-            .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces.png
+            .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties.png
                 :width: 50%
-                :alt: vaultwarden-interfaces
+                :alt: Vaultwarden > Properties
 
-        #. Copy the Tor address:
+        #. Copy the Tor server URL:
 
-            .. figure:: /_static/images/services/vaultwarden/vaultwarden-tor-address.png
+            .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-tor_server_url.png
                 :width: 50%
-                :alt: vaultwarden-tor-address
+                :alt: Vaultwarden > Properties > Copy Tor server URL
 
         #. Now send that address to your phone and paste it into Bitwarden.
 
@@ -114,7 +114,7 @@ Android
 
     .. group-tab:: LAN
 
-        We suggest using Tor, however it is possible have a good experience with LAN. Once synced, your app and all your passwords will be cached and available when you are on the go and not connected to your Start9 Server, and you will only need to be on LAN to update any edits to your vault.
+        We suggest using Tor, however it is possible have a good experience with LAN. Once synced, your app and all your passwords will be cached and available when you are on the go and not connected to your StartOS server, and you will only need to be on LAN to update any edits to your vault.
 
         Begin by :ref:`setting up LAN <ca-android>` on your device.
 
@@ -122,17 +122,17 @@ Android
 
         #. Next, enter the Bitwarden app.  You'll be greeted with a log-in screen. Go to the top left gear icon to enter the settings.  
         
-        #. Head to the "Interfaces" tab in the Vaultwarden service on your Start9 Server:
+        #. Head to the "Properties" tab in the Vaultwarden service on your StartOS server:
 
-            .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces.png
+            .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties.png
                 :width: 50%
-                :alt: vaultwarden-interfaces
+                :alt: Vaultwarden > Properties
 
-        #. Copy the LAN address:
+        #. Copy the Local server URL:
 
-            .. figure:: /_static/images/services/vaultwarden/vaultwarden-lan-address.png
+            .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-local_server_url.png
                 :width: 50%
-                :alt: vaultwarden-lan-address
+                :alt: Vaultwarden > Properties > Copy Local server URL
 
         #. Now send that address to your phone and paste it into Bitwarden.
 
@@ -165,17 +165,17 @@ iOS
                     :width: 40%
                     :alt: vaultwarden-iOS-self-hosted-screen
         
-        #. Head to the "Interfaces" tab in the Vaultwarden service on your Start9 Server:
+        #. Head to the "Properties" tab in the Vaultwarden service on your StartOS Server:
 
-            .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces.png
+            .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties.png
                 :width: 50%
-                :alt: vaultwarden-interfaces
+                :alt: Vaultwarden > Properties
 
-        #. Copy the Tor address:
+        #. Copy the Tor server URL:
 
-            .. figure:: /_static/images/services/vaultwarden/vaultwarden-tor-address.png
+            .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-tor_server_url.png
                 :width: 50%
-                :alt: vaultwarden-tor-address
+                :alt: Vaultwarden > Properties > Copy Tor server URL
 
         #. Now send that address to your phone and paste it into Bitwarden.
 
@@ -211,17 +211,17 @@ iOS
                     :width: 40%
                     :alt: vaultwarden-iOS-self-hosted-screen 
         
-        #. Head to the "Interfaces" tab in the Vaultwarden service on your Start9 Server:
+        #. Head to the "Properties" tab in the Vaultwarden service on your StartOS server:
 
-            .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces.png
+            .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties.png
                 :width: 50%
-                :alt: vaultwarden-interfaces
+                :alt: Vaultwarden > Properties
 
-        #. Copy the LAN address:
+        #. Copy the Local server URL:
 
-            .. figure:: /_static/images/services/vaultwarden/vaultwarden-lan-address.png
+            .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-local_server_url.png
                 :width: 50%
-                :alt: vaultwarden-lan-address
+                :alt: Vaultwarden > Properties > Copy Local server URL
 
         #. Now send that address to your phone and paste it into Bitwarden.
 
@@ -265,17 +265,17 @@ Desktop Clients
                         :width: 50%
                         :alt: bitwarden-mac
 
-                #. Head to the "Interfaces" tab in the Vaultwarden service on your Start9 Server:
+                #. Head to the "Properties" tab in the Vaultwarden service on your StartOS Server:
 
-                    .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces.png
+                    .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties.png
                         :width: 50%
-                        :alt: vaultwarden-interfaces
+                        :alt: Vaultwarden > Properties
 
-                #. Copy the Tor address:
+                #. Copy the Tor server URL:
 
-                    .. figure:: /_static/images/services/vaultwarden/vaultwarden-tor-address.png
+                    .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-tor_server_url.png
                         :width: 50%
-                        :alt: vaultwarden-tor-address
+                        :alt: Vaultwarden > Properties > Copy Tor server URL
 
                 #. Paste the address into Bitwarden and click the save button:
 
@@ -287,7 +287,7 @@ Desktop Clients
 
             .. group-tab:: LAN
 
-                We suggest using Tor, however it is possible have a good experience with LAN. Once synced, your app and all your passwords will be cached and available when you are on the go and not connected to your Start9 Server, and you will only need to be on LAN to update any edits to your vault.
+                We suggest using Tor, however it is possible have a good experience with LAN. Once synced, your app and all your passwords will be cached and available when you are on the go and not connected to your StartOS server, and you will only need to be on LAN to update any edits to your vault.
 
                 #. Begin by making sure that LAN is :ref:`steup on your Mac<ca-mac>`.
 
@@ -299,17 +299,17 @@ Desktop Clients
                         :width: 50%
                         :alt: bitwarden-mac
 
-                #. Head to the "Interfaces" tab in the Vaultwarden service on your Start9 Server:
+                #. Head to the "Properties" tab in the Vaultwarden service on your StartOS server:
 
-                    .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces.png
+                    .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties.png
                         :width: 50%
-                        :alt: vaultwarden-interfaces
+                        :alt: Vaultwarden > Properties
 
-                #. Copy the LAN address:
+                #. Copy the Local server URL:
 
-                    .. figure:: /_static/images/services/vaultwarden/vaultwarden-lan-address.png
+                    .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-local_server_url.png
                         :width: 50%
-                        :alt: vaultwarden-lan-address
+                        :alt: Vaultwarden > Properties > Copy Local server URL
 
                 #. Paste the address into Bitwarden and click the save button:
 
