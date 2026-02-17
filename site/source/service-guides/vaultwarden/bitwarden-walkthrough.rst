@@ -132,21 +132,21 @@ Storing your first password
 Accessing the Admin Console
 ---------------------------
 
-#. You will find the Admin console by heading to "Interfaces" on the Vaultwarden Service page.  
+#. You will find the Admin console by heading to "Properties" on the Vaultwarden Service page.  
 
-    .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces.png
+    .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties.png
         :width: 40%
-        :alt: vaultwarden-interfaces
+        :alt: Vaultwarden Propterties
 
-#. Copy either of the addresses here and append **/admin**:
+#. Copy whichever Admin URL you need:
 
-    .. figure:: /_static/images/services/vaultwarden/vaultwarden-interfaces-both.png
+    .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-both.png
         :width: 40%
-        :alt: vaultwarden-interfaces-both
+        :alt: Vaultwarden Poperties server admin URLs
 
     .. tip:: A typical address would look like https://abcdefghijklmnopqrstuvwxz.local/admin or http://abcdefghijklmnopqrstuvwxz.onion/admin 
 
-#. You will be prompted for your "Admin Token," which can be found on your Vaultwarden Service page under "Properties."
+#. You will be prompted for your "Admin Token," which can also be found on your Vaultwarden Service page under "Properties."
 
     .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties.png
         :width: 40%
