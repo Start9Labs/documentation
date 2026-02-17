@@ -62,7 +62,62 @@ Enable Tor System-wide
 
 .. tabs::
 
-    .. group-tab:: Sonoma & Sequoia (macOS 14 & 15)
+    .. group-tab:: Sequoia (macOS 15)
+
+        #. Install Homebrew Apache (this will install a webserver independent of the to be deprecated Mac OS webserver)
+
+            .. code-block:: bash
+
+                brew install httpd
+
+        #. Start Apache with:
+
+            .. code-block:: bash
+
+                brew services start httpd
+
+        #. Enable proxy autoconfig file (This will download the Start9 standard proxy config file. You can use your own if you prefer):
+
+            .. code-block:: bash
+
+                curl https://start9.com/assets/proxy.pac --output /opt/homebrew/var/www/proxy.pac
+
+        #. Go to System Settings:
+
+            .. figure:: /_static/images/tor/systemSettings.png
+                :width: 40%
+                :alt: System Preferences
+
+        #. Click on *Network* and then select the interface on which you wish to enable Tor system-wide (both Ethernet and WiFi advised - do one then the other):
+
+            .. figure:: /_static/images/tor/ventura-settings.png
+                :width: 80%
+                :alt: Select Network
+
+        #. Click *Details*:
+
+            .. figure:: /_static/images/tor/ventura-network-advanced.png
+                :width: 80%
+                :alt: Click Advanced
+
+        #. Click "Proxies," then select "Automatic Proxy Configuration," add this URL: ``http://localhost:8080/proxy.pac``, then click "OK":
+
+            .. figure:: /_static/images/tor/ventura-proxies-corrected.png
+                :width: 80%
+                :alt: Select Proxys
+
+        Done! You have now enabled system-wide Tor potential.
+
+        We advise going back to step 4 and repeating this for Wifi/Ethernet depending on which interface you haven't done yet.
+
+        If you ever need to view the status of the tor service, enter the following into a Terminal:
+
+            .. code-block:: bash
+                
+                cat /usr/local/var/log/tor.log || sudo cat /opt/homebrew/var/log/tor.log
+            
+
+    .. group-tab:: Sonoma (macOS 14)
 
         #. Enable proxy autoconfig file (This will download the Start9 standard proxy config file. You can use your own if you prefer):
 
