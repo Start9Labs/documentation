@@ -29,7 +29,7 @@ Browser Extension
 
             #. Copy the Tor server URL:
 
-                .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-tor_server_url.png
+                .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-tor_address_copy.png
                     :width: 50%
                     :alt: Vaultwarden > Properties > Copy Tor server URL
 
@@ -62,7 +62,7 @@ Browser Extension
 
             #. Copy the Local server URL:
 
-                .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-local_server_url.png
+                .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-local_address_copy.png
                     :width: 50%
                     :alt: Vaultwarden > Properties > Copy Local server URL
 
@@ -102,7 +102,7 @@ Android
 
         #. Copy the Tor server URL:
 
-            .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-tor_server_url.png
+            .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-tor_address_copy.png
                 :width: 50%
                 :alt: Vaultwarden > Properties > Copy Tor server URL
 
@@ -130,7 +130,7 @@ Android
 
         #. Copy the Local server URL:
 
-            .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-local_server_url.png
+            .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-local_address_copy.png
                 :width: 50%
                 :alt: Vaultwarden > Properties > Copy Local server URL
 
@@ -173,7 +173,7 @@ iOS
 
         #. Copy the Tor server URL:
 
-            .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-tor_server_url.png
+            .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-tor_address_copy.png
                 :width: 50%
                 :alt: Vaultwarden > Properties > Copy Tor server URL
 
@@ -219,7 +219,7 @@ iOS
 
         #. Copy the Local server URL:
 
-            .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-local_server_url.png
+            .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-local_address_copy.png
                 :width: 50%
                 :alt: Vaultwarden > Properties > Copy Local server URL
 
@@ -273,7 +273,7 @@ Desktop Clients
 
                 #. Copy the Tor server URL:
 
-                    .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-tor_server_url.png
+                    .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-tor_address_copy.png
                         :width: 50%
                         :alt: Vaultwarden > Properties > Copy Tor server URL
 
@@ -307,7 +307,7 @@ Desktop Clients
 
                 #. Copy the Local server URL:
 
-                    .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-local_server_url.png
+                    .. figure:: /_static/images/services/vaultwarden/vaultwarden-properties-local_address_copy.png
                         :width: 50%
                         :alt: Vaultwarden > Properties > Copy Local server URL
 
