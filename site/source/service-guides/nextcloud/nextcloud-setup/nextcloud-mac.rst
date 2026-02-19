@@ -58,7 +58,7 @@ The smoothest experience will be using direct account integration with your Mac.
         :width: 60%
         :alt: nextcloud app password
   
-    - Server Path - You can find complete path in Nextcloud -> Calendar settings -> Copy iOS/macOS CalDav address. For setting up contacts/CardDav use the same path.
+    - Server Path - You can find the complete URL, from which you can extract your "Server Path", in Nextcloud -> Calendar settings -> Copy iOS/macOS CalDav address.  Once you've copied the full URL using the button, remove everything that occurs before `/remote.php` -- this will leave you with a text string in the following format: `/remote.php/dav/principals/users/username/`.  So, for example, the admin user's Server Path is `/remote.php/dav/principals/users/admin/` For setting up contacts/CardDav, use this same text string.
 
       .. figure:: /_static/images/nextcloud/native-nextcloud-integration-macos-step3.3.png
         :width: 60%
