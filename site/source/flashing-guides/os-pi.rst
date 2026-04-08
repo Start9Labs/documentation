@@ -9,7 +9,7 @@ This guide is for flashing StartOS to a microSD card in order to install it on a
 
 Download StartOS
 -----------------
-Visit the `Github release page <https://github.com/Start9Labs/start-os/releases/latest>`_ to find the latest StartOS release.
+Visit the `Github release page <https://github.com/Start9Labs/start-os/releases/tag/v0.3.5.1>`_ to find the latest StartOS release.
 
 At the bottom of the page, under "Assets," download the ``startos-..._raspberrypi.img.gz`` file.
 
