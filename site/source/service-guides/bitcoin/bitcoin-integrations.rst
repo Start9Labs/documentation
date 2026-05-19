@@ -51,7 +51,7 @@ Blockstream Green
  
 **Instructions**
  
- Follow the `guide <https://github.com/Start9Labs/electrs-wrapper/blob/master/docs/integrations/blockstreamgreen/guide.md>`__.
+ Follow the `guide <https://github.com/Start9-Community/electrs-startos/blob/v0.11.1/docs/integrations/blockstreamgreen/guide.md>`__.
 
 
 .. _blue-wallet-bitcoin:
@@ -66,7 +66,7 @@ BlueWallet
  
  **Instructions**
 
-  Follow the `guide <https://github.com/Start9Labs/electrs-wrapper/blob/master/docs/integrations/bluewallet/guide.md>`__.
+  Follow the `guide <https://github.com/Start9-Community/electrs-startos/blob/v0.11.1/docs/integrations/bluewallet/guide.md>`__.
 
 
 .. _electrum:
@@ -83,7 +83,7 @@ Electrum
  
  **Instructions**
   
-  Follow the `guide <https://github.com/Start9Labs/electrs-wrapper/blob/master/docs/integrations/electrum/guide.md>`__.
+  Follow the `guide <https://github.com/Start9-Community/electrs-startos/blob/v0.11.1/docs/integrations/electrum/guide.md>`__.
 
 
 .. _fully-noded:
@@ -130,7 +130,7 @@ Nunchuk
  **Instructions**
  
    #. Install the `Electrs` service from the Start9 Marketplace
-   #. Follow the `guide <https://github.com/Start9Labs/electrs-wrapper/blob/master/docs/integrations/nunchuk/guide.md>`__.
+   #. Follow the `guide <https://github.com/Start9-Community/electrs-startos/blob/v0.11.1/docs/integrations/nunchuk/guide.md>`__.
 
 
 .. _samourai:
@@ -155,14 +155,14 @@ Sparrow
 
   Connect Sparrow directly to your `Bitcoin Core`:
   
-  * Follow this `guide <https://github.com/Start9Labs/bitcoind-startos/blob/v25.0.0.3/docs/integrations/sparrow/guide.md>`__.
+  * Follow this `guide <https://github.com/Start9Labs/bitcoin-core-startos/blob/v25.0.0.3/docs/integrations/sparrow/guide.md>`__.
 
   **CAUTION** Until we get per-user rpc restrictions built into Bitcoin Core, this is technically more dangerous than using the electrum server method, because it requires createwallet and similar RPC calls.  However, exploiting it relies on there being a vulnerability in Bitcoin Core.  Likely there isn't, but if this makes you uneasy, please use the electrs method below.
  
   **OPTIONAL** (but less reliable) -- Connect Sparrow to Electrs via Tor:
 
   #. Install the `Electrs` service from the Start9 Marketplace
-  #. Follow this `guide <https://github.com/Start9Labs/electrs-wrapper/blob/master/docs/integrations/sparrow/guide.md>`__.
+  #. Follow this `guide <https://github.com/Start9-Community/electrs-startos/blob/v0.11.1/docs/integrations/sparrow/guide.md>`__.
 
 
 .. _specter-wallet:
@@ -179,7 +179,7 @@ Specter
  
  **Instructions**
 
-  Follow the guide for `macOS <https://github.com/Start9Labs/bitcoind-startos/blob/v25.0.0.3/docs/integrations/specter/macos.md>`__ or `Windows <https://github.com/Start9Labs/bitcoind-startos/blob/v25.0.0.3/docs/integrations/specter/windows.md>`__.
+  Follow the guide for `macOS <https://github.com/Start9Labs/bitcoin-core-startos/blob/v25.0.0.3/docs/integrations/specter/macos.md>`__ or `Windows <https://github.com/Start9Labs/bitcoin-core-startos/blob/v25.0.0.3/docs/integrations/specter/windows.md>`__.
 
 
 .. _trezor-suite:
@@ -197,5 +197,5 @@ Trezor Suite
  
  **Instructions**
   
-  Follow the `guide <https://github.com/Start9Labs/electrs-wrapper/blob/master/docs/integrations/trezor/guide.md>`__.
+  Follow the `guide <https://github.com/Start9-Community/electrs-startos/blob/v0.11.1/docs/integrations/trezor/guide.md>`__.
   
