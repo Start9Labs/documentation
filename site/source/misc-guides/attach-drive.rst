@@ -7,7 +7,7 @@ During initial setup, select this option if you:
   1. have re-flashed StartOS and want to resume normal operation on the same device
   2. are transplanting your existing data drive to a new device, perhaps one with a better CPU or more RAM
 
-#. During select "Recover."
+#. During Setup select "Recover."
 
     .. figure:: /_static/images/setup/screen0-recover.jpg
         :width: 60%
